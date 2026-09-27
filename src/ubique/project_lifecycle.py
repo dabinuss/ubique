@@ -109,10 +109,28 @@ def pause_project(generation: int, review: dict[str, Any], loop: dict[str, Any],
     project = next((p for p in state.get("projects", []) if p.get("id") == loop.get("project_id")), None)
     if project is None:
         raise ValueError("active project disappeared before pause")
+    context = project_review_context(loop)
+    observed = []
+    for item in context.get("observed_evidence_records", []):
+        observed.append({
+            "id": item.get("id"),
+            "generation": item.get("generation"),
+            "experiment_type": item.get("experiment_type"),
+            "success": item.get("success"),
+            "evidence": str(item.get("evidence", ""))[:2000],
+        })
+    grounded_result = {
+        "grounded_observations": observed,
+        "interpretation": review,
+        "grounding_note": (
+            "Only grounded_observations are direct executed-evidence records. "
+            "The interpretation is model-generated synthesis and must not be treated as additional empirical evidence."
+        ),
+    }
     project["status"] = "paused"
     project["paused_generation"] = generation
     project["pause_reason"] = loop.get("reason")
-    project["result"] = review
+    project["result"] = grounded_result
     write_json("projects.json", state)
 
     summary = {
@@ -122,7 +140,7 @@ def pause_project(generation: int, review: dict[str, Any], loop: dict[str, Any],
         "project_title": project.get("title"),
         "status": "paused",
         "loop_metrics": loop,
-        **review,
+        **grounded_result,
     }
     append_memory_record("project_summaries.jsonl", summary, limit=200)
 
