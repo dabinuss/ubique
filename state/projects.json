@@ -291,7 +291,7 @@
       "objective": "Combine memory abstraction (hierarchical indexing) with a meta‑planner to dynamically select depth based on horizon, creating a new solution path that improves multi‑step planning performance.",
       "status": "active",
       "created_generation": 53,
-      "step": 3,
+      "step": 4,
       "history": [
         {
           "generation": 53,
@@ -307,11 +307,16 @@
           "generation": 58,
           "thought": "thought:58",
           "next_action": "Perform the offline FZG analysis to compute the approximated G_A values and compare adaptive vs. static policies."
+        },
+        {
+          "generation": 60,
+          "thought": "thought:60",
+          "next_action": "Schedule and execute the comparative experiment on Gemini, collect the error metrics, and update the policy repository based on the results."
         }
       ],
-      "updated_generation": 58,
-      "latest_thought": "thought:58",
-      "latest_hypothesis": "hypothesis:58"
+      "updated_generation": 60,
+      "latest_thought": "thought:60",
+      "latest_hypothesis": "hypothesis:60"
     }
   ]
 }
