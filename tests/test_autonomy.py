@@ -39,3 +39,19 @@ def test_blocked_preflight_prioritizes_layer_one():
         preflight={"development_allowed": False},
     )
     assert task.body.startswith("/think")
+
+
+def test_healthy_reflection_hides_layer_one_details():
+    task = autonomous_task(
+        30,
+        remote_reasoning_available=True,
+        homeostasis={"needs": [{"name": "cycle_reliability", "level": "stable", "value": 0.95}]},
+        telemetry={"provider_count": 2},
+        environment={"branch": "main", "configured_remote_providers": ["gemini", "groq"]},
+        preflight={"development_allowed": True},
+        cognition={"attention": {}, "projects": {"projects": []}, "curiosity": {"frontiers": []}},
+    )
+    assert task.body.startswith("/reflect")
+    assert "Layer 1 status: healthy" in task.body
+    assert "cycle_reliability" not in task.body
+    assert "configured_remote_providers" not in task.body
