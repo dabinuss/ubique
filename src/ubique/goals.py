@@ -64,7 +64,14 @@ def choose_endogenous_goal(
 
     attention = cognition.get("attention", {})
     next_command = str(attention.get("next_command", "reflect")).lower()
-    cognitive_context = _compact(cognition)
+    cognitive_context = _compact({
+        "attention": cognition.get("attention", {}),
+        "projects": cognition.get("projects", {"projects": []}),
+        "recent_thoughts": cognition.get("recent_thoughts", []),
+        "recent_hypotheses": cognition.get("recent_hypotheses", []),
+        "curiosity": cognition.get("curiosity", {}),
+        "stagnation": cognition.get("stagnation", {}),
+    })
 
     if next_command == "experiment" and attention.get("hypothesis"):
         return Task(
@@ -110,11 +117,15 @@ def choose_endogenous_goal(
         title=f"Autonomous development reflection generation {generation}",
         body=(
             "/reflect\n"
-            "Layer 1 is healthy, so Layer 2 must make epistemic or capability progress. "
-            "Continue an active project when useful; otherwise identify a new concrete unknown, "
-            "weakness, opportunity or contradiction. Avoid status-only output. Use prior thoughts "
-            "and hypotheses so the process continues across generations. "
-            f"Measured context: {_compact(measured_context)}. Cognitive memory: {cognitive_context}"
+            "Layer 1 status: healthy. That is only a gate and is NOT the subject of this reflection. "
+            "Layer 2 must make epistemic or capability progress independent of operational continuity. "
+            "Do not choose provider redundancy, heartbeat reliability, recovery, memory pressure, "
+            "runtime continuity, or other Layer-1 maintenance as the main topic while the gate is healthy. "
+            "Continue an active non-maintenance project when useful; otherwise choose a curiosity frontier "
+            "or generate a new question about planning, memory abstraction, hypothesis revision, experiment "
+            "design, capability composition, or another non-homeostatic capability. Use prior thoughts and "
+            "hypotheses for continuity, but do not inherit an old maintenance topic merely because it is recent. "
+            f"Layer-2 cognitive context: {cognitive_context}"
         ),
         source="autonomous",
     )
