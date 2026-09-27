@@ -8,6 +8,7 @@ from .state import read_json, write_json, utc_now
 
 
 ALLOWED_NEXT_COMMANDS = {"reflect", "experiment", "fzg", "evolve"}
+ALLOWED_EXPERIMENTS = {"provider_probe", "memory_recall", "memory_abstraction", "state_consistency"}
 
 
 def cognitive_snapshot() -> dict[str, Any]:
@@ -17,6 +18,7 @@ def cognitive_snapshot() -> dict[str, Any]:
         "stagnation": read_json("stagnation.json", {"level": 0, "last_command": None}),
         "recent_thoughts": recent_memory_records("thoughts.jsonl", 5),
         "recent_hypotheses": recent_memory_records("hypotheses.jsonl", 5),
+        "recent_concepts": recent_memory_records("concepts.jsonl", 5),
     }
 
 
@@ -49,6 +51,9 @@ def parse_reflection(text: str) -> dict[str, Any]:
         except (TypeError, ValueError):
             value = default
         return max(0.0, min(1.0, value))
+    experiment_type = str(data.get("experiment_type", "memory_recall")).strip()
+    if experiment_type not in ALLOWED_EXPERIMENTS:
+        experiment_type = "memory_recall"
     return {
         "observation": data["observation"].strip()[:4000],
         "question": data["question"].strip()[:3000],
@@ -57,7 +62,7 @@ def parse_reflection(text: str) -> dict[str, Any]:
         "expected_evidence": data["expected_evidence"].strip()[:3000],
         "next_action": data["next_action"].strip()[:3000],
         "next_command": next_command,
-        "experiment_type": str(data.get("experiment_type", "memory_recall")).strip()[:80],
+        "experiment_type": experiment_type,
         "experiment_target": str(data.get("experiment_target", "")).strip()[:80],
         "project_title": str(data.get("project_title", "")).strip()[:200],
         "project_objective": str(data.get("project_objective", "")).strip()[:1200],
