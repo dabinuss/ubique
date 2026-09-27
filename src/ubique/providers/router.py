@@ -99,6 +99,40 @@ class ProviderRouter:
         raise ProviderError("No provider succeeded: " + "; ".join(errors))
 
 
+    def select_remote(self, preferred_name: str | None = None, required_calls: int = 1) -> str:
+        """Select one configured remote provider with enough local daily budget."""
+        required = max(1, int(required_calls))
+        ordered = []
+        if preferred_name:
+            ordered.extend(p for p in self.providers if p.name == preferred_name)
+        ordered.extend(
+            p for p in self.providers
+            if p.name != preferred_name and p.name != "fallback"
+        )
+
+        reasons: list[str] = []
+        for provider in ordered:
+            if provider.name == "fallback":
+                continue
+            if not provider.available():
+                reasons.append(f"{provider.name}: not configured")
+                continue
+            if self._disabled(provider.name):
+                reasons.append(f"{provider.name}: temporarily disabled")
+                continue
+            limit = self.daily_limits.get(provider.name)
+            if limit is not None:
+                rec = self._refresh_daily(provider.name)
+                remaining = max(0, int(limit) - int(rec.get("daily_calls", 0)))
+                if remaining < required:
+                    reasons.append(
+                        f"{provider.name}: needs {required} calls but only {remaining} daily calls remain"
+                    )
+                    continue
+            return provider.name
+
+        raise ProviderError("No eligible remote provider: " + "; ".join(reasons))
+
     def generate_with(self, provider_name: str, prompt: str) -> ProviderResult:
         """Run one bounded experiment through a specifically named configured provider."""
         provider = next((p for p in self.providers if p.name == provider_name), None)
