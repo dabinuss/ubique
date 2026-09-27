@@ -4,7 +4,7 @@ from .models import PlannedTask, Task
 from .fzg import FZG_SYSTEM_PROMPT
 
 
-KNOWN = {"/status", "/summarize", "/plan", "/think", "/evolve", "/fzg"}
+KNOWN = {"/status", "/summarize", "/plan", "/think", "/reflect", "/evolve", "/fzg"}
 
 
 def parse_task(task: Task) -> PlannedTask:
@@ -45,6 +45,21 @@ def make_prompt(command: str, payload: str, recent_memory: list[dict]) -> str:
             "Then determine P only if A_self is actually tested, assess G_A with its causal "
             "identification status, and only afterwards report Z, K, R and L as a non-scalar "
             "I_C profile. End with explicit limitations and prohibited conclusions."
+        )
+    elif command == "reflect":
+        instruction = (
+            "Produce ONE structured autonomous reflection as strict JSON only. "
+            "Use current measured state, persistent projects, attention, recent thoughts and "
+            "hypotheses. Do not merely restate status. Identify a concrete unknown, weakness, "
+            "opportunity or contradiction worth pursuing. Form a falsifiable hypothesis and a "
+            "bounded experiment or next action. Choose next_command only from reflect, fzg, evolve. "
+            "Use evolve only when there is a concrete testable code-improvement hypothesis. "
+            "Schema: {\"observation\":\"...\",\"question\":\"...\","
+            "\"hypothesis\":\"...\",\"proposed_experiment\":\"...\","
+            "\"expected_evidence\":\"...\",\"next_action\":\"...\","
+            "\"next_command\":\"reflect|fzg|evolve\",\"project_title\":\"...\","
+            "\"project_objective\":\"...\",\"confidence\":0.0,"
+            "\"importance\":0.0}. JSON only."
         )
     elif command == "evolve":
         instruction = (
