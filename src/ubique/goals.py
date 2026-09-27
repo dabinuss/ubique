@@ -66,6 +66,17 @@ def choose_endogenous_goal(
     next_command = str(attention.get("next_command", "reflect")).lower()
     cognitive_context = _compact(cognition)
 
+    if next_command == "experiment" and attention.get("hypothesis"):
+        return Task(
+            id=f"autonomous:experiment:{generation}",
+            title=f"Bounded autonomous experiment generation {generation}",
+            body=(
+                "/experiment\n"
+                f"{_compact({'experiment_type': attention.get('experiment_type', 'memory_recall'), 'experiment_target': attention.get('experiment_target', ''), 'hypothesis': attention.get('hypothesis', '')})}"
+            ),
+            source="autonomous",
+        )
+
     if next_command == "evolve" and attention.get("hypothesis"):
         return Task(
             id=f"autonomous:evolve:{generation}",
