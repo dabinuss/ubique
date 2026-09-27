@@ -25,6 +25,9 @@ ALLOWED_PREFIXES = (
 
 DENIED_EXACT = {
     "src/ubique/evolution.py",
+    "src/ubique/fzg.py",
+    "src/ubique/planner.py",
+    "src/ubique/agent.py",
     "src/ubique/github.py",
     "src/ubique/config.py",
     "src/ubique/state.py",
