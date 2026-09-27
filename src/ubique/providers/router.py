@@ -9,14 +9,46 @@ from ..state import read_json, write_json
 
 
 class ProviderRouter:
-    def __init__(self, providers: Iterable[Provider]):
+    def __init__(
+        self,
+        providers: Iterable[Provider],
+        daily_limits: dict[str, int] | None = None,
+    ):
         self.providers = list(providers)
+        self.daily_limits = daily_limits or {}
         self.ledger = read_json("providers.json", {})
 
     def _record(self, name: str) -> dict:
         return self.ledger.setdefault(
-            name, {"successes": 0, "failures": 0, "disabled_until": None}
+            name,
+            {
+                "successes": 0,
+                "failures": 0,
+                "disabled_until": None,
+                "daily_date": None,
+                "daily_calls": 0,
+            },
         )
+
+    def _refresh_daily(self, name: str) -> dict:
+        rec = self._record(name)
+        today = datetime.now(timezone.utc).date().isoformat()
+        if rec.get("daily_date") != today:
+            rec["daily_date"] = today
+            rec["daily_calls"] = 0
+        return rec
+
+    def _daily_budget_available(self, name: str) -> bool:
+        limit = self.daily_limits.get(name)
+        if limit is None:
+            return True
+        rec = self._refresh_daily(name)
+        return int(rec.get("daily_calls", 0)) < max(0, int(limit))
+
+    def _consume_call(self, name: str) -> None:
+        rec = self._refresh_daily(name)
+        rec["daily_calls"] = int(rec.get("daily_calls", 0)) + 1
+        write_json("providers.json", self.ledger)
 
     def _disabled(self, name: str) -> bool:
         rec = self._record(name)
@@ -49,7 +81,14 @@ class ProviderRouter:
         for provider in self.providers:
             if not provider.available() or self._disabled(provider.name):
                 continue
+            if not self._daily_budget_available(provider.name):
+                errors.append(f"{provider.name}: daily request budget exhausted")
+                continue
             try:
+                if provider.name != "fallback":
+                    # Count the attempt before sending it. Failed requests still
+                    # consume quota, so this is deliberately conservative.
+                    self._consume_call(provider.name)
                 result = provider.generate(prompt)
                 self._success(provider.name)
                 return result
