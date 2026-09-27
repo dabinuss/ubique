@@ -21,7 +21,7 @@ def cognitive_snapshot() -> dict[str, Any]:
         "recent_hypotheses": recent_memory_records("hypotheses.jsonl", 5),
         "recent_concepts": recent_memory_records("concepts.jsonl", 5),
         "recent_project_summaries": recent_memory_records("project_summaries.jsonl", 3),
-        "self_observation": self_observation_context(8),
+        "self_observation": self_observation_context(3),
     }
 
 
