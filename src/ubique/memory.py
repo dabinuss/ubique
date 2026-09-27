@@ -55,3 +55,32 @@ def episode_count() -> int:
     if not path.exists():
         return 0
     return sum(1 for line in path.read_text(encoding="utf-8").splitlines() if line.strip())
+
+
+def append_memory_record(name: str, record: dict[str, Any], limit: int = 500) -> None:
+    """Append one structured JSONL memory record with bounded retention."""
+    MEMORY_DIR.mkdir(parents=True, exist_ok=True)
+    path = MEMORY_DIR / name
+    value = {"timestamp": utc_now(), **record}
+    with path.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(value, ensure_ascii=False) + "\n")
+
+    lines = [line for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    if len(lines) > limit:
+        path.write_text("\n".join(lines[-limit:]) + "\n", encoding="utf-8")
+
+
+def recent_memory_records(name: str, limit: int = 8) -> list[dict[str, Any]]:
+    path = MEMORY_DIR / name
+    if not path.exists():
+        return []
+
+    out: list[dict[str, Any]] = []
+    for line in path.read_text(encoding="utf-8").splitlines()[-limit:]:
+        try:
+            value = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if isinstance(value, dict):
+            out.append(value)
+    return out
