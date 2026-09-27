@@ -12,6 +12,7 @@ from .fzg_telemetry import measure_fzg_telemetry
 from .recovery import perform_recovery
 from .preflight import assess_preflight
 from .cognition import cognitive_snapshot, parse_reflection, persist_reflection, update_stagnation
+from .experiments import run_experiment
 from .memory import append_episode, recent_episodes, update_skill
 from .planner import make_prompt, parse_task
 from .evolution import run_evolution
@@ -159,6 +160,16 @@ class Agent:
                 try:
                     if planned.command == "status":
                         result_text = self.status_text(generation)
+                    elif planned.command == "experiment":
+                        spec = json.loads(planned.payload or "{}")
+                        experiment = run_experiment(
+                            str(spec.get("experiment_type", "memory_recall")),
+                            str(spec.get("experiment_target", "")),
+                            self.router,
+                            str(spec.get("hypothesis", "")),
+                        )
+                        provider_name = str(experiment.get("provider", "deterministic"))
+                        result_text = json.dumps(experiment, indent=2, ensure_ascii=False)
                     else:
                         prompt = make_prompt(planned.command, planned.payload, recent_episodes())
                         result = self.router.generate(prompt)
