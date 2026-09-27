@@ -13,22 +13,22 @@ def test_critical_need_becomes_diagnosis_goal():
     assert "cycle_reliability" in task.body
 
 
-def test_stable_generation_24_can_evolve():
+def test_stable_state_enters_layer_two_reflection():
     task = choose_endogenous_goal(
         24,
         {"needs": [{"name": "cycle_reliability", "level": "stable", "value": 1.0}]},
         True,
     )
-    assert task.body.startswith("/evolve")
+    assert task.body.startswith("/reflect")
 
 
-def test_watch_need_requests_fzg_measurement():
+def test_watch_need_does_not_reduce_healthy_cycle_to_status():
     task = choose_endogenous_goal(
         7,
         {"needs": [{"name": "reasoning_redundancy", "level": "watch", "value": 1.0}]},
         True,
     )
-    assert task.body.startswith("/fzg")
+    assert task.body.startswith("/reflect")
 
 
 def test_no_remote_reasoning_remains_deterministic():
