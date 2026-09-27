@@ -91,6 +91,7 @@ def choose_endogenous_goal(
         "project_loop": cognition.get("project_loop", {}),
         "curiosity": cognition.get("curiosity", {}),
         "stagnation": cognition.get("stagnation", {}),
+        "self_observation": cognition.get("self_observation", {}),
     })
 
     if next_command == "experiment" and attention.get("hypothesis"):
