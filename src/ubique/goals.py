@@ -82,6 +82,7 @@ def choose_endogenous_goal(
 
     next_command = str(attention.get("next_command", "reflect")).lower()
     cognitive_context = _compact({
+        "self_observation": cognition.get("self_observation", {}),
         "attention": cognition.get("attention", {}),
         "projects": cognition.get("projects", {"projects": []}),
         "recent_thoughts": cognition.get("recent_thoughts", []),
@@ -91,7 +92,6 @@ def choose_endogenous_goal(
         "project_loop": cognition.get("project_loop", {}),
         "curiosity": cognition.get("curiosity", {}),
         "stagnation": cognition.get("stagnation", {}),
-        "self_observation": cognition.get("self_observation", {}),
     })
 
     if next_command == "experiment" and attention.get("hypothesis"):
