@@ -12,6 +12,7 @@ from .evolution import run_evolution
 from .state import finish_cycle, read_json, start_cycle
 from .providers.fallback import FallbackProvider
 from .providers.gemini import GeminiProvider
+from .providers.groq import GroqProvider
 from .providers.huggingface import HuggingFaceProvider
 from .providers.router import ProviderRouter
 
@@ -47,10 +48,14 @@ class Agent:
         self.router = ProviderRouter(
             [
                 GeminiProvider(config.gemini_api_key, config.gemini_model),
+                GroqProvider(config.groq_api_key, config.groq_model),
                 HuggingFaceProvider(config.hf_token, config.hf_model, config.hf_endpoint),
                 FallbackProvider(),
             ],
-            daily_limits={"gemini": config.gemini_daily_limit},
+            daily_limits={
+                "gemini": config.gemini_daily_limit,
+                "groq": config.groq_daily_limit,
+            },
         )
 
     def status_text(self, generation: int) -> str:
@@ -72,7 +77,9 @@ class Agent:
         try:
             tasks = self.github.list_tasks(self.config.max_tasks)
             remote_reasoning_available = bool(
-                self.config.gemini_api_key or self.config.hf_token
+                self.config.gemini_api_key
+                or self.config.groq_api_key
+                or self.config.hf_token
             )
             tasks.append(
                 autonomous_task(
