@@ -13,6 +13,7 @@ from .recovery import perform_recovery
 from .preflight import assess_preflight
 from .cognition import cognitive_snapshot, parse_reflection, persist_reflection, update_stagnation, record_action_outcome
 from .experiments import run_experiment
+from .curiosity import build_curiosity_snapshot
 from .memory import append_episode, recent_episodes, update_skill
 from .planner import make_prompt, parse_task
 from .evolution import run_evolution
@@ -114,6 +115,7 @@ class Agent:
         telemetry = measure_fzg_telemetry()
         preflight = assess_preflight(generation, homeostasis, environment, recovery)
         cognition = cognitive_snapshot()
+        cognition["curiosity"] = build_curiosity_snapshot(generation)
         log.info(
             "Self-state measured: recovery=%s usable_remote=%s",
             recovery.get("action_count", 0),
