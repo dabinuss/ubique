@@ -1,0 +1,142 @@
+from __future__ import annotations
+
+import json
+import logging
+
+from .config import Config
+from .github import GitHubClient
+from .memory import append_episode, recent_episodes, update_skill
+from .planner import make_prompt, parse_task
+from .evolution import run_evolution
+from .state import finish_cycle, read_json, start_cycle
+from .providers.fallback import FallbackProvider
+from .providers.gemini import GeminiProvider
+from .providers.huggingface import HuggingFaceProvider
+from .providers.router import ProviderRouter
+
+
+log = logging.getLogger("ubique")
+
+
+class Agent:
+    def __init__(self, config: Config):
+        self.config = config
+        self.github = GitHubClient(config.github_token, config.github_repository)
+        self.router = ProviderRouter([
+            GeminiProvider(config.gemini_api_key, config.gemini_model),
+            HuggingFaceProvider(config.hf_token, config.hf_model, config.hf_endpoint),
+            FallbackProvider(),
+        ])
+
+    def status_text(self, generation: int) -> str:
+        providers = read_json("providers.json", {})
+        return (
+            f"Ubique generation: {generation}\n\n"
+            "Provider ledger:\n"
+            f"```json\n{json.dumps(providers, indent=2)}\n```"
+        )
+
+    def run(self) -> int:
+        runtime = start_cycle()
+        generation = int(runtime["generation"])
+        log.info("Starting Ubique generation %s", generation)
+
+        handled = 0
+        failed = 0
+
+        try:
+            tasks = self.github.list_tasks(self.config.max_tasks)
+            log.info("Discovered %s task(s)", len(tasks))
+
+            for task in tasks:
+                planned = parse_task(task)
+                provider_name = "deterministic"
+
+                try:
+                    if planned.command == "status":
+                        result_text = self.status_text(generation)
+                    else:
+                        prompt = make_prompt(planned.command, planned.payload, recent_episodes())
+                        result = self.router.generate(prompt)
+                        result_text = result.text
+                        provider_name = result.provider
+
+                        if planned.command == "evolve":
+                            if provider_name == "fallback":
+                                raise RuntimeError(
+                                    "self-evolution requires a remote reasoning provider; "
+                                    "the deterministic fallback cannot author code"
+                                )
+                            evo = run_evolution(
+                                result_text,
+                                generation,
+                                self.config.github_token,
+                                self.config.github_repository,
+                            )
+                            if not evo.accepted:
+                                raise RuntimeError(evo.reason or "evolution proposal rejected")
+                            result_text = (
+                                f"Evolution candidate validated and published as draft PR.\n\n"
+                                f"- Title: {evo.title}\n"
+                                f"- Branch: `{evo.branch}`\n"
+                                f"- Baseline benchmark: `{evo.baseline_score}`\n"
+                                f"- Candidate benchmark: `{evo.candidate_score}`\n"
+                                f"- Pull request: {evo.pr_url}\n\n"
+                                "Human review is required before merge."
+                            )
+
+                    if not self.config.dry_run and task.number is not None:
+                        reply = (
+                            f"### Ubique generation {generation}\n\n"
+                            f"Provider: `{provider_name}`\n\n"
+                            f"{result_text}\n\n"
+                            "---\n"
+                            "_Processed autonomously by GitHub Actions._"
+                        )
+                        self.github.comment(task.number, reply)
+                        self.github.remove_label(task.number, "ubique")
+
+                    append_episode({
+                        "generation": generation,
+                        "task_id": task.id,
+                        "command": planned.command,
+                        "provider": provider_name,
+                        "success": True,
+                        "result": result_text[:1200],
+                    }, self.config.memory_limit)
+                    update_skill(planned.command, True)
+                    handled += 1
+
+                except Exception as exc:
+                    failed += 1
+                    log.exception("Task %s failed", task.id)
+                    append_episode({
+                        "generation": generation,
+                        "task_id": task.id,
+                        "command": planned.command,
+                        "provider": provider_name,
+                        "success": False,
+                        "result": str(exc)[:800],
+                    }, self.config.memory_limit)
+                    update_skill(planned.command, False)
+
+                    if not self.config.dry_run and task.number is not None:
+                        try:
+                            self.github.comment(
+                                task.number,
+                                f"### Ubique generation {generation}\n\n"
+                                "Task failed safely and remains labelled for retry.\n\n"
+                                f"`{type(exc).__name__}: {str(exc)[:500]}`"
+                            )
+                        except Exception:
+                            log.exception("Could not report task failure")
+
+            summary = f"ok:handled={handled}:failed={failed}"
+            finish_cycle(runtime, summary)
+            log.info(summary)
+            return 0 if failed == 0 else 1
+
+        except Exception as exc:
+            finish_cycle(runtime, f"cycle_failed:{type(exc).__name__}")
+            log.exception("Cycle failed")
+            return 2
