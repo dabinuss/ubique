@@ -133,3 +133,44 @@ def update_stagnation(command: str, generation: int) -> dict[str, Any]:
     state["timestamp"] = utc_now()
     write_json("stagnation.json", state)
     return state
+
+
+def record_action_outcome(
+    generation: int,
+    command: str,
+    success: bool,
+    result_summary: str,
+) -> dict[str, Any]:
+    """Return attention to reflection after an experiment/assessment/evolution outcome."""
+    attention = read_json("attention.json", {})
+    if not isinstance(attention, dict):
+        attention = {}
+
+    if command == "experiment":
+        append_memory_record(
+            "hypotheses.jsonl",
+            {
+                "id": f"evidence:{generation}",
+                "generation": generation,
+                "record_type": "evidence",
+                "hypothesis": attention.get("hypothesis", ""),
+                "experiment_type": attention.get("experiment_type", ""),
+                "experiment_target": attention.get("experiment_target", ""),
+                "success": success,
+                "evidence": result_summary[:2000],
+                "status": "observed",
+            },
+            limit=500,
+        )
+
+    attention["timestamp"] = utc_now()
+    attention["generation"] = generation
+    attention["last_completed_command"] = command
+    attention["last_action_success"] = success
+    attention["last_evidence"] = result_summary[:2000]
+    attention["next_command"] = "reflect"
+    attention["next_action"] = (
+        "Interpret the latest evidence, update the open hypothesis, and choose the next bounded step."
+    )
+    write_json("attention.json", attention)
+    return attention
