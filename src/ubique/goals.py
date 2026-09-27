@@ -89,10 +89,25 @@ def choose_endogenous_goal(
         "recent_hypotheses": cognition.get("recent_hypotheses", []),
         "recent_concepts": cognition.get("recent_concepts", []),
         "recent_project_summaries": cognition.get("recent_project_summaries", []),
+        "recent_knowledge": cognition.get("recent_knowledge", []),
         "project_loop": cognition.get("project_loop", {}),
         "curiosity": cognition.get("curiosity", {}),
         "stagnation": cognition.get("stagnation", {}),
     })
+
+    if next_command == "resolve":
+        return Task(
+            id=f"autonomous:resolve:{generation}",
+            title=f"Evidence resolution generation {generation}",
+            body=(
+                "/resolve\n"
+                "Resolve the current question using only the recorded evidence and observed outcomes. "
+                "Do not propose another experiment inside the answer. If the evidence cannot answer the question, "
+                "mark it unresolved and state exactly what is missing. "
+                f"Attention: {_compact(attention)}. Cognitive context: {cognitive_context}"
+            ),
+            source="autonomous",
+        )
 
     if next_command == "experiment" and attention.get("hypothesis"):
         experiment_type = str(attention.get("experiment_type", "memory_recall"))
