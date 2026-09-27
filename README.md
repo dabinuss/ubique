@@ -1,6 +1,6 @@
 # Ubique — Autonomous GitHub Agent
 
-Ubique is a GitHub-native autonomous agent that can keep operating while your own computer is turned off.
+Ubique is a GitHub-native autonomous agent that can keep operating while your own computer is turned off. Its normative theoretical basis is **FZG v1.0**: self-preservation, functional goal-directedness and intelligence are modeled as distinct constructs.
 
 GitHub Actions provides the wake-up cycle. The repository itself stores identity, runtime state and memory. Issues labelled `ubique` become tasks. Remote LLM providers are optional; when none is available, deterministic tasks still work.
 
@@ -47,7 +47,7 @@ Your PC is not part of the runtime.
 - Hugging Face inference adapter
 - deterministic zero-token fallback
 - issue comments with results
-- `/status`, `/summarize`, `/plan`, `/think`, `/evolve`
+- `/status`, `/summarize`, `/plan`, `/think`, `/fzg`, `/evolve`
 - bounded number of tasks per cycle
 - no execution of model-generated shell commands
 - concurrency protection
@@ -112,6 +112,37 @@ HF_MODEL=Qwen/Qwen2.5-7B-Instruct
 HF_ENDPOINT=https://router.huggingface.co/hf-inference/models
 ```
 
+## FZG v1.0 basis
+
+Ubique treats FZG v1.0 as normative during analysis. The canonical separation is:
+
+```text
+P(S|C) = G_Aself(S|C)
+
+G_A(S|C)
+= E[Q(U_t+n,A) | do(M_S), C]
+- E[Q(U_t+n,A) | do(M_S^-), C]
+
+I_C(S) = (Z_C, K_C, R_C, L_C)
+
+Phi(S,A,C) = [P, G_A, Z_C, K_C, R_C, L_C]
+```
+
+The required order is:
+
+```text
+S -> A -> C -> Q -> M_S -> M_S^-
+  -> P only for A_self
+  -> G_A
+  -> Z, K, R, L
+  -> profile and context-bounded conclusions
+```
+
+Self-preservation is not treated as an intelligence score or as a prerequisite for intelligence.
+The FZG policy core is protected from autonomous `/evolve` modification.
+
+Implementation-facing basis: `docs/FZG_v1_IMPLEMENTATION_BASIS.md`.
+
 ## Commands
 
 ### `/status`
@@ -131,9 +162,18 @@ Long text...
 /plan Add a controlled self-improvement branch workflow
 ```
 
+### `/fzg`
+
+Runs an explicit FZG v1.0 analysis and requires the fields `S, A, C, Q, M_S, M_S^-` before producing `G_A` and the non-scalar `Z-K-R-L` intelligence profile.
+
+```text
+/fzg
+Analyze Ubique's provider-routing mechanism for reliable task completion in scheduled GitHub Actions runs.
+```
+
 ### `/think`
 
-General bounded reasoning task.
+General bounded reasoning task. FZG rules remain binding whenever the answer makes claims about self-preservation, goal-directedness or intelligence.
 
 Unknown input is treated as `/think`.
 
@@ -249,6 +289,7 @@ src/ubique/
   cli.py
   config.py
   github.py
+  fzg.py
   memory.py
   models.py
   planner.py
