@@ -579,6 +579,24 @@
         },
         "grounding_note": "Only grounded_observations are direct executed-evidence records. The interpretation is model-generated synthesis and must not be treated as additional empirical evidence."
       }
+    },
+    {
+      "id": "project:92",
+      "title": "Robust Evaluation of Contextual Relevance Feature Impact on Logistic Regression AUC‑ROC",
+      "objective": "Quantify the true performance gain of the contextual relevance feature under controlled randomness and determine statistical significance of the effect.",
+      "status": "active",
+      "created_generation": 92,
+      "step": 1,
+      "history": [
+        {
+          "generation": 92,
+          "thought": "thought:92",
+          "next_action": "Execute the controlled multi‑run experiment, collect the AUC‑ROC metrics, and update the hypothesis based on the observed effect size."
+        }
+      ],
+      "updated_generation": 92,
+      "latest_thought": "thought:92",
+      "latest_hypothesis": "hypothesis:92"
     }
   ]
 }
