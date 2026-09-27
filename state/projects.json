@@ -291,7 +291,7 @@
       "objective": "Combine memory abstraction (hierarchical indexing) with a meta‑planner to dynamically select depth based on horizon, creating a new solution path that improves multi‑step planning performance.",
       "status": "active",
       "created_generation": 53,
-      "step": 9,
+      "step": 10,
       "history": [
         {
           "generation": 53,
@@ -337,11 +337,16 @@
           "generation": 69,
           "thought": "thought:69",
           "next_action": "Schedule and execute the provider_probe experiment on Gemini, then analyze the results to confirm or refute the adaptive policy hypothesis."
+        },
+        {
+          "generation": 70,
+          "thought": "thought:70",
+          "next_action": "Execute the offline causal inference experiment as described, then analyze the results to confirm or refute the adaptive policy hypothesis."
         }
       ],
-      "updated_generation": 69,
-      "latest_thought": "thought:69",
-      "latest_hypothesis": "hypothesis:69"
+      "updated_generation": 70,
+      "latest_thought": "thought:70",
+      "latest_hypothesis": "hypothesis:70"
     }
   ]
 }

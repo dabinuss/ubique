@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-09-27T20:10:05.494019+00:00",
-  "generation": 69,
+  "timestamp": "2026-09-27T20:10:56.637569+00:00",
+  "generation": 70,
   "focus": "Adaptive Hierarchical Depth Selection via Capability Composition",
-  "question": "Will a prospectively deployed adaptive depth‑selection policy, implemented on a concrete LLM provider, causally achieve a lower average planning error than the best static depth policy identified from the same observational data?",
-  "hypothesis": "When evaluated prospectively on a held‑out set of planning tasks, the adaptive depth‑selection policy will produce a statistically lower mean cumulative planning error than the best static depth policy, with the difference being significant (p < 0.05) in a paired comparison, indicating a positive approximated G_A.",
-  "next_action": "Schedule and execute the provider_probe experiment on Gemini, then analyze the results to confirm or refute the adaptive policy hypothesis.",
+  "question": "Can an offline causal inference experiment using the existing observational dataset demonstrate that the adaptive hierarchical depth‑selection policy is expected to achieve lower average planning error than the best static depth policy?",
+  "hypothesis": "When applied to the held‑out observational dataset, the adaptive depth‑selection policy will yield a statistically lower mean cumulative planning error than the best static depth policy, with a paired difference significant at p < 0.05, indicating a positive approximated G_A for the adaptive policy.",
+  "next_action": "Execute the offline causal inference experiment as described, then analyze the results to confirm or refute the adaptive policy hypothesis.",
   "next_command": "experiment",
-  "experiment_type": "provider_probe",
-  "experiment_target": "gemini",
-  "thought_id": "thought:69",
+  "experiment_type": "hypothesis_ablation",
+  "experiment_target": "",
+  "thought_id": "thought:70",
   "project_id": "project:53"
 }
