@@ -67,8 +67,16 @@ def project_review_context(loop: dict[str, Any]) -> dict[str, Any]:
     project = next((p for p in projects if p.get("id") == loop.get("project_id")), {})
     generations = {int(x.get("generation", -1)) for x in project.get("history", [])}
     thoughts = [x for x in recent_memory_records("thoughts.jsonl", 40) if int(x.get("generation", -2)) in generations]
-    hypotheses = [x for x in recent_memory_records("hypotheses.jsonl", 80) if int(x.get("generation", -2)) in generations]
-    evidence = [x for x in hypotheses if x.get("record_type") == "evidence"]
+    all_hypotheses = recent_memory_records("hypotheses.jsonl", 80)
+    hypotheses = [x for x in all_hypotheses if int(x.get("generation", -2)) in generations]
+    evidence = [
+        x for x in all_hypotheses
+        if x.get("record_type") == "evidence"
+        and (
+            int(x.get("generation", -2)) in generations
+            or (int(x.get("generation", -2)) - 1) in generations
+        )
+    ]
     return {
         "loop": loop,
         "project": project,
