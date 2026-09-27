@@ -28,7 +28,7 @@ class Config:
             github_token=os.getenv("GITHUB_TOKEN", ""),
             github_repository=os.getenv("GITHUB_REPOSITORY", ""),
             gemini_api_key=os.getenv("GEMINI_API_KEY", ""),
-            gemini_model=os.getenv("GEMINI_MODEL", "gemini-2.0-flash"),
+            gemini_model=os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite"),
             hf_token=os.getenv("HF_TOKEN", ""),
             hf_model=os.getenv("HF_MODEL", "Qwen/Qwen2.5-7B-Instruct"),
             hf_endpoint=os.getenv(
