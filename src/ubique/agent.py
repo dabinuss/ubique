@@ -15,6 +15,7 @@ from .cognition import cognitive_snapshot, parse_reflection, persist_reflection,
 from .experiments import run_experiment
 from .curiosity import build_curiosity_snapshot
 from .pulse import decide_pulse
+from .project_lifecycle import assess_project_loop, project_review_context, parse_project_review, pause_project
 from .memory import append_episode, recent_episodes, update_skill
 from .planner import make_prompt, parse_task
 from .evolution import run_evolution
@@ -117,6 +118,9 @@ class Agent:
         preflight = assess_preflight(generation, homeostasis, environment, recovery)
         cognition = cognitive_snapshot()
         cognition["curiosity"] = build_curiosity_snapshot(generation)
+        cognition["project_loop"] = assess_project_loop()
+        if cognition["project_loop"].get("detected"):
+            cognition["project_review_context"] = project_review_context(cognition["project_loop"])
         log.info(
             "Self-state measured: recovery=%s usable_remote=%s",
             recovery.get("action_count", 0),
@@ -178,6 +182,16 @@ class Agent:
                         result = self.router.generate(prompt)
                         result_text = result.text
                         provider_name = result.provider
+
+                        if planned.command == "project_review":
+                            review = parse_project_review(result_text)
+                            paused = pause_project(
+                                generation,
+                                review,
+                                cognition.get("project_loop", {}),
+                                cognition.get("curiosity", {}),
+                            )
+                            result_text = json.dumps(paused, indent=2, ensure_ascii=False)
 
                         if planned.command == "reflect":
                             reflection = parse_reflection(result_text)
