@@ -1,19 +1,13 @@
 {
-  "timestamp": "2026-09-27T20:11:49.140138+00:00",
-  "generation": 71,
-  "focus": "Frontier transition",
-  "question": "What makes an internally generated question worth pursuing when no external task requires it?",
-  "hypothesis": "A new frontier should be explored without inheriting the paused project's local loop.",
-  "next_action": "Start a new project from the highest-novelty frontier and use the paused project only as background knowledge.",
-  "next_command": "reflect",
-  "force_new_project": true,
-  "avoid_project_id": "project:53",
-  "forced_frontier": {
-    "id": "question_generation",
-    "title": "Question generation",
-    "question": "What makes an internally generated question worth pursuing when no external task requires it?",
-    "prior_mentions": 5,
-    "novelty_priority": 0.16666666666666666
-  },
-  "project_summary_id": "project-summary:project:53:71"
+  "timestamp": "2026-09-27T20:12:41.079541+00:00",
+  "generation": 72,
+  "focus": "Internal Question Worthiness Criteria via Expected Information Gain",
+  "question": "What quantitative criteria make an internally generated question worth pursuing in the absence of an external task requirement?",
+  "hypothesis": "An internally generated question is worth pursuing if its estimated expected information gain (EIG) combined with a novelty score exceeds a calibrated threshold, and if answering it is predicted to increase the system's Z (functionally relevant state distinctions) and R (useful relational structures) in subsequent reasoning cycles.",
+  "next_action": "Run the hypothesis_ablation experiment on the Gemini provider, collect the metric data, and analyze the causal impact of the worthiness criterion on downstream capability profiles.",
+  "next_command": "experiment",
+  "experiment_type": "hypothesis_ablation",
+  "experiment_target": "gemini",
+  "thought_id": "thought:72",
+  "project_id": "project:72"
 }
