@@ -97,3 +97,25 @@ class ProviderRouter:
                 errors.append(f"{provider.name}: {exc}")
 
         raise ProviderError("No provider succeeded: " + "; ".join(errors))
+
+
+    def generate_with(self, provider_name: str, prompt: str) -> ProviderResult:
+        """Run one bounded experiment through a specifically named configured provider."""
+        provider = next((p for p in self.providers if p.name == provider_name), None)
+        if provider is None or provider.name == "fallback":
+            raise ProviderError(f"Provider is not eligible for a remote probe: {provider_name}")
+        if not provider.available():
+            raise ProviderError(f"Provider is not configured: {provider_name}")
+        if self._disabled(provider.name):
+            raise ProviderError(f"Provider is temporarily disabled: {provider_name}")
+        if not self._daily_budget_available(provider.name):
+            raise ProviderError(f"Provider daily request budget exhausted: {provider_name}")
+
+        self._consume_call(provider.name)
+        try:
+            result = provider.generate(prompt)
+            self._success(provider.name)
+            return result
+        except Exception:
+            self._failure(provider.name)
+            raise
