@@ -7,7 +7,7 @@ from .memory import append_memory_record, recent_memory_records
 from .state import read_json, write_json, utc_now
 
 
-ALLOWED_NEXT_COMMANDS = {"reflect", "fzg", "evolve"}
+ALLOWED_NEXT_COMMANDS = {"reflect", "experiment", "fzg", "evolve"}
 
 
 def cognitive_snapshot() -> dict[str, Any]:
@@ -57,6 +57,8 @@ def parse_reflection(text: str) -> dict[str, Any]:
         "expected_evidence": data["expected_evidence"].strip()[:3000],
         "next_action": data["next_action"].strip()[:3000],
         "next_command": next_command,
+        "experiment_type": str(data.get("experiment_type", "memory_recall")).strip()[:80],
+        "experiment_target": str(data.get("experiment_target", "")).strip()[:80],
         "project_title": str(data.get("project_title", "")).strip()[:200],
         "project_objective": str(data.get("project_objective", "")).strip()[:1200],
         "confidence": bounded_float("confidence", 0.5),
@@ -111,6 +113,8 @@ def persist_reflection(generation: int, reflection: dict[str, Any]) -> dict[str,
         "hypothesis": reflection["hypothesis"],
         "next_action": reflection["next_action"],
         "next_command": reflection["next_command"],
+        "experiment_type": reflection.get("experiment_type", "memory_recall"),
+        "experiment_target": reflection.get("experiment_target", ""),
         "thought_id": thought_id,
         "project_id": active["id"],
     }
