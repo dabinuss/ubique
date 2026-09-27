@@ -120,6 +120,11 @@ class Agent:
         preflight = assess_preflight(generation, homeostasis, environment, recovery)
         cognition = cognitive_snapshot()
         cognition["provider_eligibility"] = self.router.remote_eligibility()
+        eligible_remote_count = sum(
+            1 for status in cognition["provider_eligibility"].values()
+            if status.get("eligible")
+        )
+        homeostasis["usable_remote_providers"] = eligible_remote_count
         cognition["curiosity"] = build_curiosity_snapshot(generation)
         cognition["project_loop"] = assess_project_loop()
         if cognition["project_loop"].get("detected"):
@@ -135,10 +140,9 @@ class Agent:
 
         try:
             tasks = self.github.list_tasks(self.config.max_tasks)
-            remote_reasoning_available = bool(
-                self.config.gemini_api_key
-                or self.config.groq_api_key
-                or self.config.hf_token
+            remote_reasoning_available = any(
+                status.get("eligible")
+                for status in cognition.get("provider_eligibility", {}).values()
             )
             endogenous = autonomous_task(
                 generation,
