@@ -94,6 +94,25 @@ def choose_endogenous_goal(
     })
 
     if next_command == "experiment" and attention.get("hypothesis"):
+        experiment_type = str(attention.get("experiment_type", "memory_recall"))
+        experiment_target = str(attention.get("experiment_target", ""))
+        if experiment_type == "provider_probe":
+            eligibility = cognition.get("provider_eligibility", {})
+            target_state = eligibility.get(experiment_target, {}) if experiment_target else {}
+            if not target_state.get("eligible", False):
+                return Task(
+                    id=f"autonomous:reflect:{generation}",
+                    title=f"Replan unavailable provider probe generation {generation}",
+                    body=(
+                        "/reflect\n"
+                        "The previously selected provider_probe cannot run because its exact target is not currently eligible. "
+                        "Do not retry that provider and do not substitute a different provider for a provider-specific probe. "
+                        "Choose a non-provider experiment or next action that directly advances the active epistemic/capability project. "
+                        f"Unavailable target state: {_compact({'target': experiment_target, 'state': target_state})}. "
+                        f"Layer-2 cognitive context: {cognitive_context}"
+                    ),
+                    source="autonomous",
+                )
         return Task(
             id=f"autonomous:experiment:{generation}",
             title=f"Bounded autonomous experiment generation {generation}",
