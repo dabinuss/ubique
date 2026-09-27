@@ -291,7 +291,7 @@
       "objective": "Combine memory abstraction (hierarchical indexing) with a meta‑planner to dynamically select depth based on horizon, creating a new solution path that improves multi‑step planning performance.",
       "status": "active",
       "created_generation": 53,
-      "step": 7,
+      "step": 8,
       "history": [
         {
           "generation": 53,
@@ -327,11 +327,16 @@
           "generation": 65,
           "thought": "thought:65",
           "next_action": "Execute the memory_recall experiment to analyze the held‑out dataset and compute the required metrics."
+        },
+        {
+          "generation": 67,
+          "thought": "thought:67",
+          "next_action": "Execute the hypothesis_ablation experiment comparing adaptive vs static depth policies on the held‑out planning task set."
         }
       ],
-      "updated_generation": 65,
-      "latest_thought": "thought:65",
-      "latest_hypothesis": "hypothesis:65"
+      "updated_generation": 67,
+      "latest_thought": "thought:67",
+      "latest_hypothesis": "hypothesis:67"
     }
   ]
 }
