@@ -117,6 +117,7 @@ class Agent:
         telemetry = measure_fzg_telemetry()
         preflight = assess_preflight(generation, homeostasis, environment, recovery)
         cognition = cognitive_snapshot()
+        cognition["provider_eligibility"] = self.router.remote_eligibility()
         cognition["curiosity"] = build_curiosity_snapshot(generation)
         cognition["project_loop"] = assess_project_loop()
         if cognition["project_loop"].get("detected"):
