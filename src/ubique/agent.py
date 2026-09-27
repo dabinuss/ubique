@@ -10,6 +10,8 @@ from .homeostasis import assess_homeostasis
 from .environment import observe_environment
 from .fzg_telemetry import measure_fzg_telemetry
 from .recovery import perform_recovery
+from .preflight import assess_preflight
+from .cognition import cognitive_snapshot, parse_reflection, persist_reflection, update_stagnation
 from .memory import append_episode, recent_episodes, update_skill
 from .planner import make_prompt, parse_task
 from .evolution import run_evolution
@@ -67,6 +69,9 @@ class Agent:
         homeostasis = read_json("homeostasis.json", {})
         telemetry = read_json("fzg_telemetry.json", {})
         environment = read_json("environment.json", {})
+        preflight = read_json("preflight.json", {})
+        attention = read_json("attention.json", {})
+        projects = read_json("projects.json", {"projects": []})
         return (
             f"Ubique generation: {generation}\n\n"
             "Provider ledger:\n"
@@ -76,7 +81,11 @@ class Agent:
             "FZG telemetry:\n"
             f"```json\n{json.dumps(telemetry, indent=2)[:3000]}\n```\n\n"
             "Environment:\n"
-            f"```json\n{json.dumps(environment, indent=2)[:2000]}\n```"
+            f"```json\n{json.dumps(environment, indent=2)[:2000]}\n```\n\n"
+            "Layer-1 preflight:\n"
+            f"```json\n{json.dumps(preflight, indent=2)[:1800]}\n```\n\n"
+            "Layer-2 attention/projects:\n"
+            f"```json\n{json.dumps({'attention': attention, 'projects': projects}, indent=2)[:2400]}\n```"
         )
 
     def run(self) -> int:
@@ -102,6 +111,8 @@ class Agent:
             configured_remote=configured_remote,
         )
         telemetry = measure_fzg_telemetry()
+        preflight = assess_preflight(generation, homeostasis, environment, recovery)
+        cognition = cognitive_snapshot()
         log.info(
             "Self-state measured: recovery=%s usable_remote=%s",
             recovery.get("action_count", 0),
@@ -124,6 +135,8 @@ class Agent:
                 homeostasis=homeostasis,
                 telemetry=telemetry,
                 environment=environment,
+                preflight=preflight,
+                cognition=cognition,
             )
             tasks.append(endogenous)
             write_json("current_goal.json", {
@@ -151,6 +164,18 @@ class Agent:
                         result = self.router.generate(prompt)
                         result_text = result.text
                         provider_name = result.provider
+
+                        if planned.command == "reflect":
+                            reflection = parse_reflection(result_text)
+                            attention = persist_reflection(generation, reflection)
+                            result_text = json.dumps(
+                                {
+                                    "reflection": reflection,
+                                    "persisted_attention": attention,
+                                },
+                                indent=2,
+                                ensure_ascii=False,
+                            )
 
                         if planned.command == "evolve":
                             if provider_name == "fallback":
@@ -224,6 +249,8 @@ class Agent:
                         "result": result_text[:1200],
                     }, self.config.memory_limit)
                     update_skill(planned.command, True)
+                    if task.source == "autonomous":
+                        update_stagnation(planned.command, generation)
                     handled += 1
 
                 except Exception as exc:
@@ -238,6 +265,8 @@ class Agent:
                         "result": str(exc)[:800],
                     }, self.config.memory_limit)
                     update_skill(planned.command, False)
+                    if task.source == "autonomous":
+                        update_stagnation(planned.command, generation)
 
                     if not self.config.dry_run and task.number is not None:
                         try:
