@@ -14,6 +14,7 @@ class Config:
     github_repository: str
     gemini_api_key: str
     gemini_model: str
+    gemini_daily_limit: int
     hf_token: str
     hf_model: str
     hf_endpoint: str
@@ -29,6 +30,10 @@ class Config:
             github_repository=os.getenv("GITHUB_REPOSITORY", ""),
             gemini_api_key=os.getenv("GEMINI_API_KEY", ""),
             gemini_model=os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite"),
+            gemini_daily_limit=max(
+                0,
+                min(int(os.getenv("UBIQUE_GEMINI_DAILY_LIMIT", "20")), 100),
+            ),
             hf_token=os.getenv("HF_TOKEN", ""),
             hf_model=os.getenv("HF_MODEL", "Qwen/Qwen2.5-7B-Instruct"),
             hf_endpoint=os.getenv(
