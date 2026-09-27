@@ -14,6 +14,7 @@ from .preflight import assess_preflight
 from .cognition import cognitive_snapshot, parse_reflection, persist_reflection, update_stagnation, record_action_outcome
 from .experiments import run_experiment
 from .curiosity import build_curiosity_snapshot
+from .pulse import decide_pulse
 from .memory import append_episode, recent_episodes, update_skill
 from .planner import make_prompt, parse_task
 from .evolution import run_evolution
@@ -297,11 +298,29 @@ class Agent:
                             log.exception("Could not report task failure")
 
             summary = f"ok:handled={handled}:failed={failed}"
+            pulse = decide_pulse(
+                generation=generation,
+                preflight=preflight,
+                homeostasis=homeostasis,
+                attention=read_json("attention.json", {}),
+                failed_tasks=failed,
+            )
+            write_json("pulse.json", pulse)
             finish_cycle(runtime, summary)
-            log.info(summary)
+            log.info("%s pulse=%s", summary, pulse.get("mode"))
             return 0 if failed == 0 else 1
 
         except Exception as exc:
+            write_json("pulse.json", {
+                "timestamp": utc_now(),
+                "generation": generation,
+                "mode": "watchdog",
+                "should_continue": False,
+                "next_command": None,
+                "minimum_delay_seconds": 30,
+                "reason": f"cycle_failed:{type(exc).__name__}",
+                "watchdog_schedule": "*/15 * * * *",
+            })
             finish_cycle(runtime, f"cycle_failed:{type(exc).__name__}")
             log.exception("Cycle failed")
             return 2
