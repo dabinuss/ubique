@@ -4,7 +4,7 @@ from .models import PlannedTask, Task
 from .fzg import FZG_SYSTEM_PROMPT
 
 
-KNOWN = {"/status", "/summarize", "/plan", "/think", "/reflect", "/evolve", "/fzg"}
+KNOWN = {"/status", "/summarize", "/plan", "/think", "/reflect", "/experiment", "/evolve", "/fzg"}
 
 
 def parse_task(task: Task) -> PlannedTask:
@@ -57,7 +57,7 @@ def make_prompt(command: str, payload: str, recent_memory: list[dict]) -> str:
             "Schema: {\"observation\":\"...\",\"question\":\"...\","
             "\"hypothesis\":\"...\",\"proposed_experiment\":\"...\","
             "\"expected_evidence\":\"...\",\"next_action\":\"...\","
-            "\"next_command\":\"reflect|fzg|evolve\",\"project_title\":\"...\","
+            "\"next_command\":\"reflect|experiment|fzg|evolve\",\"experiment_type\":\"provider_probe|memory_recall|state_consistency\",\"experiment_target\":\"gemini|groq|huggingface|\",\"project_title\":\"...\","
             "\"project_objective\":\"...\",\"confidence\":0.0,"
             "\"importance\":0.0}. JSON only."
         )
