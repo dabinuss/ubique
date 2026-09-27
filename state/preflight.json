@@ -1,1 +1,29 @@
-{}
+{
+  "timestamp": "2026-09-27T18:30:56.152565+00:00",
+  "generation": 13,
+  "healthy": true,
+  "development_allowed": true,
+  "checks": [
+    {
+      "name": "runtime_state",
+      "ok": true,
+      "evidence": "runtime state readable"
+    },
+    {
+      "name": "homeostasis",
+      "ok": true,
+      "evidence": "no critical needs"
+    },
+    {
+      "name": "repository_branch",
+      "ok": true,
+      "evidence": "branch=main"
+    },
+    {
+      "name": "recovery",
+      "ok": true,
+      "evidence": "recovery_actions=0"
+    }
+  ],
+  "critical_needs": []
+}
