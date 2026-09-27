@@ -19,7 +19,7 @@ def _git(args: list[str]) -> str:
     return proc.stdout.strip()
 
 
-def observe_environment() -> dict[str, Any]:
+def observe_environment(configured_remote: list[str] | None = None) -> dict[str, Any]:
     """Observe only local/repository facts available to the current runner."""
     source_files = list((ROOT / "src" / "ubique").rglob("*.py"))
     test_files = list((ROOT / "tests").glob("test_*.py"))
@@ -28,10 +28,14 @@ def observe_environment() -> dict[str, Any]:
         "timestamp": utc_now(),
         "branch": _git(["branch", "--show-current"]) or "unknown",
         "head": _git(["rev-parse", "--short", "HEAD"]) or "unknown",
-        "working_tree_dirty": bool(_git(["status", "--porcelain"])),
+        "code_tree_dirty": bool(_git([
+            "status", "--porcelain", "--",
+            "src", "tests", ".github", "pyproject.toml", "README.md",
+        ])),
         "source_python_files": len(source_files),
         "test_python_files": len(test_files),
         "known_providers": sorted(providers.keys()),
+        "configured_remote_providers": sorted(configured_remote or []),
         "repository_exists": (ROOT / ".git").exists(),
     }
     write_json("environment.json", observation)
