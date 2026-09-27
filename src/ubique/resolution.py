@@ -94,3 +94,34 @@ def persist_resolution(generation: int, resolution: dict[str, Any]) -> dict[str,
     }
     write_json("attention.json", next_attention)
     return {"knowledge": record, "attention": next_attention}
+
+
+def conservative_resolution_from_attention(attention: dict[str, Any]) -> dict[str, Any]:
+    """Consolidate observed evidence without inventing support that was not measured."""
+    question = str(attention.get("question", "")).strip()
+    hypothesis = str(attention.get("hypothesis", "")).strip()
+    evidence = str(attention.get("last_evidence", "")).strip()
+    experiment_type = str(attention.get("experiment_type", "")).strip()
+
+    answer = (
+        "The recorded evidence does not establish the current hypothesis. "
+        "The question remains unanswered by the executed measurement."
+    )
+    basis = (
+        f"Executed evidence from {experiment_type or 'the last action'}: {evidence[:3000]}"
+        if evidence
+        else "No executed evidence was recorded for the current question."
+    )
+    missing = (
+        "A measurement whose outputs directly correspond to the quantities asserted by the "
+        "question and hypothesis is required before this claim can be resolved."
+    )
+    return {
+        "status": "unresolved",
+        "answer": answer,
+        "evidence_basis": basis,
+        "remaining_unknowns": missing,
+        "confidence": 1.0 if evidence else 0.9,
+        "question": question,
+        "hypothesis": hypothesis,
+    }
