@@ -1,16 +1,13 @@
 {
-  "timestamp": "2026-09-27T20:09:13.134407+00:00",
-  "generation": 68,
+  "timestamp": "2026-09-27T20:10:05.494019+00:00",
+  "generation": 69,
   "focus": "Adaptive Hierarchical Depth Selection via Capability Composition",
-  "question": "Will a prospectively deployed adaptive depth‑selection policy, derived offline by selecting the depth that minimized observed error for each horizon, achieve a lower average planning error than the best single static depth policy on a held‑out set of planning tasks?",
-  "hypothesis": "When evaluated on a held‑out set of planning tasks, the adaptive policy will produce a statistically lower average planning error than the best static depth policy identified from the same observational data, yielding a positive approximated G_A (difference in expected utility between the two interventions).",
-  "next_action": "Interpret the latest evidence, update the open hypothesis, and choose the next bounded step.",
-  "next_command": "reflect",
-  "experiment_type": "hypothesis_ablation",
-  "experiment_target": "self",
-  "thought_id": "thought:67",
-  "project_id": "project:53",
-  "last_completed_command": "experiment",
-  "last_action_success": true,
-  "last_evidence": "{\n  \"kind\": \"hypothesis_ablation\",\n  \"passed\": true,\n  \"provider\": \"groq\",\n  \"requested_provider\": \"gemini\",\n  \"provider_fallback_used\": true,\n  \"question\": \"Will a prospectively deployed adaptive depth‑selection policy, derived offline by selecting the depth that minimized observed error for each horizon, achieve a lower average planning error than the best single static depth policy on a held‑out set of planning tasks?\",\n  \"concept_count\": 6,\n  \"baseline\": {\n    \"hypothesis\": \"An adaptive depth‑selection policy, derived offline by choosing the depth that minimized observed error for each planning horizon, will achieve a lower average planning error on a held‑out set of planning tasks than the best single static depth policy.\",\n    \"rationale\": \"Adaptive selection tailors the planning depth to the specific horizon of each task, potentially balancing computational effort and prediction fidelity more effectively than a one‑size‑fits‑all static depth. By matching depth to the point where marginal gains in accuracy diminish, the adaptive policy can avoid under‑planning (insufficient depth) and over‑planning (excessive depth that introduces noise or overfitting), leading to overall reduced error across heterogeneous tasks.\"\n  },\n  \"with_concepts\": {\n    \"hypothesis\": \"On a held‑out set of planning tasks, the prospectively deployed adaptive depth‑selection policy (which selects, for each planning horizon, the depth that minimized observed error in the offline data) will achieve a lower mean cumulative planning error than the best single static depth policy, with the difference being statistically significant (p < 0.05) in a paired comparison.\",\n    \"rationale\": \"Empirical findings show horizon‑dependent optimal depths (depth 3 for horizons ≤5 and depth 4 for horizons 6‑8) and a U‑shaped error curve across depths, indicating that no single static depth is optimal for all horizons. By matching each horizon to its empirically optimal depth, the adaptive policy can avoid the"
+  "question": "Will a prospectively deployed adaptive depth‑selection policy, implemented on a concrete LLM provider, causally achieve a lower average planning error than the best static depth policy identified from the same observational data?",
+  "hypothesis": "When evaluated prospectively on a held‑out set of planning tasks, the adaptive depth‑selection policy will produce a statistically lower mean cumulative planning error than the best static depth policy, with the difference being significant (p < 0.05) in a paired comparison, indicating a positive approximated G_A.",
+  "next_action": "Schedule and execute the provider_probe experiment on Gemini, then analyze the results to confirm or refute the adaptive policy hypothesis.",
+  "next_command": "experiment",
+  "experiment_type": "provider_probe",
+  "experiment_target": "gemini",
+  "thought_id": "thought:69",
+  "project_id": "project:53"
 }
