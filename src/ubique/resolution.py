@@ -73,6 +73,11 @@ def persist_resolution(generation: int, resolution: dict[str, Any]) -> dict[str,
             project["status"] = "completed"
             project["completed_generation"] = generation
             project["answer"] = resolution["answer"]
+        else:
+            project["status"] = "blocked"
+            project["blocked_generation"] = generation
+            project["blocker"] = resolution["remaining_unknowns"]
+            project["answer"] = resolution["answer"]
         write_json("projects.json", projects_state)
 
     next_attention = {
