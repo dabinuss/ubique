@@ -5,6 +5,7 @@ from typing import Any
 
 from .memory import append_memory_record, recent_memory_records
 from .state import read_json, write_json, utc_now
+from .self_observation import self_observation_context
 
 
 ALLOWED_NEXT_COMMANDS = {"reflect", "experiment", "fzg", "evolve"}
@@ -20,6 +21,7 @@ def cognitive_snapshot() -> dict[str, Any]:
         "recent_hypotheses": recent_memory_records("hypotheses.jsonl", 5),
         "recent_concepts": recent_memory_records("concepts.jsonl", 5),
         "recent_project_summaries": recent_memory_records("project_summaries.jsonl", 3),
+        "self_observation": self_observation_context(8),
     }
 
 
