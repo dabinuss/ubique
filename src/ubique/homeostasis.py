@@ -4,7 +4,7 @@ from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
 from typing import Any
 
-from .memory import recent_episodes
+from .memory import episode_count, recent_episodes
 from .state import read_json, write_json, utc_now
 
 
@@ -33,6 +33,7 @@ def assess_homeostasis(
     runtime = read_json("runtime.json", {})
 
     success_ratio = _recent_success_ratio(episodes)
+    retained_episodes = episode_count()
     configured_remote = configured_remote or [
         name for name in providers if name != "fallback"
     ]
@@ -67,10 +68,10 @@ def assess_homeostasis(
         ),
         Need(
             "memory_pressure",
-            "critical" if len(episodes) >= memory_limit else "watch" if len(episodes) >= int(memory_limit * 0.8) else "stable",
-            float(len(episodes)),
+            "critical" if retained_episodes >= memory_limit else "watch" if retained_episodes >= int(memory_limit * 0.8) else "stable",
+            float(retained_episodes),
             f"<{memory_limit} retained episodes",
-            f"{len(episodes)} recent episodes inspected",
+            f"{retained_episodes}/{memory_limit} retained episode records",
         ),
     ]
 
@@ -79,6 +80,7 @@ def assess_homeostasis(
         "generation": int(runtime.get("generation", 0)),
         "needs": [asdict(n) for n in needs],
         "recent_success_ratio": success_ratio,
+        "retained_episode_count": retained_episodes,
         "configured_remote_providers": sorted(configured_remote),
         "usable_remote_providers": usable_remote,
     }
