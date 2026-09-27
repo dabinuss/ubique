@@ -1,0 +1,28 @@
+name: Ubique task
+description: Give the autonomous agent a task
+title: "[Ubique] "
+labels: ["ubique"]
+body:
+  - type: dropdown
+    id: command
+    attributes:
+      label: Task type
+      options:
+        - /think
+        - /plan
+        - /summarize
+        - /status
+        - /evolve
+    validations:
+      required: true
+
+  - type: textarea
+    id: task
+    attributes:
+      label: Task
+      description: Put the selected command on the first line, followed by the task.
+      placeholder: |
+        /plan
+        Improve provider fallback handling.
+    validations:
+      required: true
