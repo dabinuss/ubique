@@ -23,21 +23,24 @@ def _recent_success_ratio(episodes: list[dict[str, Any]]) -> float:
     return sum(1 for e in episodes if e.get("success")) / len(episodes)
 
 
-def assess_homeostasis(memory_limit: int = 500) -> dict[str, Any]:
+def assess_homeostasis(
+    memory_limit: int = 500,
+    configured_remote: list[str] | None = None,
+) -> dict[str, Any]:
     """Assess operational needs without collapsing them into one score."""
     episodes = recent_episodes(24)
     providers = read_json("providers.json", {})
     runtime = read_json("runtime.json", {})
 
     success_ratio = _recent_success_ratio(episodes)
-    remote = [
-        (name, rec) for name, rec in providers.items()
-        if name not in {"fallback"} and isinstance(rec, dict)
+    configured_remote = configured_remote or [
+        name for name in providers if name != "fallback"
     ]
     usable_remote = 0
     now = datetime.now(timezone.utc)
-    for _, rec in remote:
-        until = rec.get("disabled_until")
+    for name in configured_remote:
+        rec = providers.get(name, {})
+        until = rec.get("disabled_until") if isinstance(rec, dict) else None
         if not until:
             usable_remote += 1
             continue
@@ -76,6 +79,7 @@ def assess_homeostasis(memory_limit: int = 500) -> dict[str, Any]:
         "generation": int(runtime.get("generation", 0)),
         "needs": [asdict(n) for n in needs],
         "recent_success_ratio": success_ratio,
+        "configured_remote_providers": sorted(configured_remote),
         "usable_remote_providers": usable_remote,
     }
     write_json("homeostasis.json", snapshot)
