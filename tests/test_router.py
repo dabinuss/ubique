@@ -37,12 +37,13 @@ class NamedGood(Provider):
 
 
 def test_select_remote_skips_exhausted_preferred(monkeypatch):
+    from datetime import datetime, timezone
+    today = datetime.now(timezone.utc).date().isoformat()
     monkeypatch.setattr(router_mod, "read_json", lambda name, default: {
-        "gemini": {"daily_date": "2099-01-01", "daily_calls": 20},
-        "groq": {"daily_date": "2099-01-01", "daily_calls": 5},
+        "gemini": {"daily_date": today, "daily_calls": 20},
+        "groq": {"daily_date": today, "daily_calls": 5},
     })
     monkeypatch.setattr(router_mod, "write_json", lambda name, value: None)
-    monkeypatch.setattr(router_mod.datetime, "now", classmethod(lambda cls, tz=None: __import__("datetime").datetime(2099,1,1,tzinfo=__import__("datetime").timezone.utc)))
     r = router_mod.ProviderRouter(
         [NamedGood("gemini"), NamedGood("groq")],
         daily_limits={"gemini": 20, "groq": 1000},
