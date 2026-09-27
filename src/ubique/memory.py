@@ -47,3 +47,11 @@ def recent_episodes(limit: int = 8) -> list[dict[str, Any]]:
         except json.JSONDecodeError:
             continue
     return out
+
+
+def episode_count() -> int:
+    """Return the number of retained episode records on disk."""
+    path = MEMORY_DIR / "episodes.jsonl"
+    if not path.exists():
+        return 0
+    return sum(1 for line in path.read_text(encoding="utf-8").splitlines() if line.strip())
