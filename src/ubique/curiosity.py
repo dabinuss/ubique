@@ -68,7 +68,6 @@ def build_curiosity_snapshot(generation: int) -> dict[str, Any]:
         })
     scored.sort(key=lambda item: (-item["novelty_priority"], item["id"]))
 
-    skills = read_json("../memory/skills.json", {}) if False else {}
     source_modules = sorted(
         p.stem for p in (ROOT / "src" / "ubique").glob("*.py")
         if p.stem not in {"__init__", "__main__"}
