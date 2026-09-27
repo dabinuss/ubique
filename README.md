@@ -40,7 +40,10 @@ Your PC is not part of the runtime.
 
 - autonomous 15-minute scheduled heartbeat
 - homeostasis / operational-need assessment every heartbeat
+- two-layer autonomy: operational preflight first, continuous development when healthy
 - endogenous state-driven goal selection (no user prompt required)
+- persistent thought journal, hypotheses, attention and multi-generation projects
+- bounded safe experiments selected from reflections
 - repository/environment observation and deterministic recovery
 - empirical FZG telemetry with separate P, G_A and Z/K/R/L observables
 - safe structural M_S vs M_S^- ablation proxy
@@ -54,7 +57,7 @@ Your PC is not part of the runtime.
 - Hugging Face inference adapter
 - deterministic zero-token fallback
 - issue comments with results
-- `/status`, `/summarize`, `/plan`, `/think`, `/fzg`, `/evolve`
+- `/status`, `/summarize`, `/plan`, `/think`, `/reflect`, `/experiment`, `/fzg`, `/evolve`
 - bounded number of tasks per cycle
 - no execution of model-generated shell commands
 - concurrency protection
@@ -251,6 +254,12 @@ state/runtime.json
 state/providers.json
 memory/episodes.jsonl
 memory/skills.json
+memory/thoughts.jsonl
+memory/hypotheses.jsonl
+state/projects.json
+state/attention.json
+state/stagnation.json
+state/preflight.json
 ```
 
 A new GitHub-hosted VM is created for each run. The repository restores continuity.
@@ -282,7 +291,7 @@ wake
  -> persist result
 ```
 
-Current homeostatic dimensions include recent cycle reliability, reasoning-provider redundancy and memory pressure. The goal selector prioritizes measured critical/watch conditions over the fallback cadence. Stable cycles can stay deterministic; remote FZG reasoning is used periodically or when a measured need warrants it, and bounded evolution remains the highest-cost action.
+Current homeostatic dimensions include recent cycle reliability, reasoning-provider redundancy and memory pressure. Homeostasis is a gate, not Ubique's primary purpose: a blocked Layer 1 prioritizes repair, while a healthy Layer 1 enters Layer 2 by default. Layer 2 retrieves persistent thoughts, hypotheses, attention and projects, performs structured reflection, can schedule a bounded allowlisted experiment, and may request FZG analysis or code evolution only when the preceding evidence gives a concrete reason. Pure status is no longer the normal healthy-state goal.
 
 Persistent autonomous state includes:
 
@@ -291,6 +300,12 @@ state/homeostasis.json
 state/environment.json
 state/fzg_telemetry.json
 state/recovery.json
+state/preflight.json
+state/attention.json
+state/projects.json
+state/stagnation.json
+memory/thoughts.jsonl
+memory/hypotheses.jsonl
 ```
 
 The FZG telemetry deliberately does **not** compute a global intelligence score. Z, K, R and L remain separate observed diversity proxies, and G_A is marked observational unless a valid intervention/control supports a causal claim.
@@ -305,7 +320,7 @@ Default:
 */15 * * * *
 ```
 
-GitHub attempts to wake the agent every 15 minutes. Most stable heartbeats are deterministic and do not consume remote-model tokens. Scheduled workflows may start later than the nominal minute.
+GitHub attempts to wake the agent every 15 minutes. Healthy heartbeats normally perform Layer-2 reflection and may therefore use a configured free remote provider. Layer-1-only status remains deterministic when remote reasoning is unavailable or development is blocked. Scheduled workflows may start later than the nominal minute.
 
 ## Manual execution
 
