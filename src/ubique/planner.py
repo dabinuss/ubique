@@ -4,7 +4,7 @@ from .models import PlannedTask, Task
 from .fzg import FZG_SYSTEM_PROMPT
 
 
-KNOWN = {"/status", "/summarize", "/plan", "/think", "/reflect", "/experiment", "/evolve", "/fzg"}
+KNOWN = {"/status", "/summarize", "/plan", "/think", "/reflect", "/project_review", "/experiment", "/evolve", "/fzg"}
 
 
 def parse_task(task: Task) -> PlannedTask:
@@ -66,6 +66,16 @@ def make_prompt(command: str, payload: str, recent_memory: list[dict]) -> str:
             "\"next_command\":\"reflect|experiment|fzg|evolve\",\"experiment_type\":\"provider_probe|memory_recall|memory_abstraction|hypothesis_ablation|state_consistency\",\"experiment_target\":\"gemini|groq|huggingface|\",\"project_title\":\"...\","
             "\"project_objective\":\"...\",\"confidence\":0.0,"
             "\"importance\":0.0}. JSON only."
+        )
+    elif command == "project_review":
+        instruction = (
+            "Return ONE strict JSON project pause review. Treat thoughts/hypotheses as proposals, "
+            "not executed evidence; only records explicitly supplied as observed evidence may support "
+            "learned claims. Preserve uncertainty. Schema: "
+            "{\"learned\":[\"...\"],\"not_established\":[\"...\"],"
+            "\"supported_hypotheses\":[\"...\"],\"weakened_hypotheses\":[\"...\"],"
+            "\"loop_reason\":\"...\",\"resume_when\":[\"...\"],"
+            "\"handoff_question\":\"...\"}. JSON only."
         )
     elif command == "evolve":
         instruction = (
