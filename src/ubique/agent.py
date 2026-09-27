@@ -44,11 +44,14 @@ class Agent:
     def __init__(self, config: Config):
         self.config = config
         self.github = GitHubClient(config.github_token, config.github_repository)
-        self.router = ProviderRouter([
-            GeminiProvider(config.gemini_api_key, config.gemini_model),
-            HuggingFaceProvider(config.hf_token, config.hf_model, config.hf_endpoint),
-            FallbackProvider(),
-        ])
+        self.router = ProviderRouter(
+            [
+                GeminiProvider(config.gemini_api_key, config.gemini_model),
+                HuggingFaceProvider(config.hf_token, config.hf_model, config.hf_endpoint),
+                FallbackProvider(),
+            ],
+            daily_limits={"gemini": config.gemini_daily_limit},
+        )
 
     def status_text(self, generation: int) -> str:
         providers = read_json("providers.json", {})
