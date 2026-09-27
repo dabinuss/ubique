@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-09-27T18:37:52.040808+00:00",
+  "generation": 14,
+  "frontiers": [
+    {
+      "id": "question_generation",
+      "title": "Question generation",
+      "question": "What makes an internally generated question worth pursuing when no external task requires it?",
+      "prior_mentions": 0,
+      "novelty_priority": 1.0
+    },
+    {
+      "id": "hypothesis_revision",
+      "title": "Hypothesis revision",
+      "question": "How should earlier hypotheses change when new evidence conflicts with them?",
+      "prior_mentions": 1,
+      "novelty_priority": 0.5
+    },
+    {
+      "id": "memory_abstraction",
+      "title": "Memory abstraction",
+      "question": "Can repeated episodes be compressed into reusable concepts without losing important exceptions?",
+      "prior_mentions": 1,
+      "novelty_priority": 0.5
+    },
+    {
+      "id": "multi_step_planning",
+      "title": "Multi-step planning",
+      "question": "Can an autonomous project preserve a coherent objective across several generations and adapt its plan from evidence?",
+      "prior_mentions": 2,
+      "novelty_priority": 0.3333333333333333
+    }
+  ],
+  "source_modules": [
+    "agent",
+    "autonomy",
+    "benchmark",
+    "cli",
+    "cognition",
+    "config",
+    "curiosity",
+    "environment",
+    "evolution",
+    "experiments",
+    "fzg",
+    "fzg_telemetry",
+    "github",
+    "goals",
+    "homeostasis",
+    "memory",
+    "models",
+    "planner",
+    "preflight",
+    "recovery",
+    "state"
+  ],
+  "rule": "When Layer 1 is healthy, choose epistemic/capability questions; operational continuity is out of scope unless new evidence makes it relevant."
+}
