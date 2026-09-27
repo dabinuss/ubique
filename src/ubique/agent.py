@@ -11,7 +11,7 @@ from .environment import observe_environment
 from .fzg_telemetry import measure_fzg_telemetry
 from .recovery import perform_recovery
 from .preflight import assess_preflight
-from .cognition import cognitive_snapshot, parse_reflection, persist_reflection, update_stagnation
+from .cognition import cognitive_snapshot, parse_reflection, persist_reflection, update_stagnation, record_action_outcome
 from .experiments import run_experiment
 from .memory import append_episode, recent_episodes, update_skill
 from .planner import make_prompt, parse_task
@@ -262,6 +262,8 @@ class Agent:
                     update_skill(planned.command, True)
                     if task.source == "autonomous":
                         update_stagnation(planned.command, generation)
+                        if planned.command in {"experiment", "fzg", "evolve"}:
+                            record_action_outcome(generation, planned.command, True, result_text)
                     handled += 1
 
                 except Exception as exc:
@@ -278,6 +280,8 @@ class Agent:
                     update_skill(planned.command, False)
                     if task.source == "autonomous":
                         update_stagnation(planned.command, generation)
+                        if planned.command in {"experiment", "fzg", "evolve"}:
+                            record_action_outcome(generation, planned.command, False, str(exc))
 
                     if not self.config.dry_run and task.number is not None:
                         try:
