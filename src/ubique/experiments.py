@@ -98,7 +98,8 @@ def run_experiment(kind: str, target: str, router: Any, hypothesis: str) -> dict
             + concept_payload
         )
 
-        provider = target if target in SAFE_PROVIDERS else "gemini"
+        requested_provider = target if target in SAFE_PROVIDERS else "gemini"
+        provider = router.select_remote(requested_provider, required_calls=2)
         baseline_result = router.generate_with(provider, base_instruction)
         treatment_result = router.generate_with(provider, treatment_instruction)
 
@@ -145,6 +146,8 @@ def run_experiment(kind: str, target: str, router: Any, hypothesis: str) -> dict
             "kind": kind,
             "passed": True,
             "provider": baseline_result.provider,
+            "requested_provider": requested_provider,
+            "provider_fallback_used": baseline_result.provider != requested_provider,
             "question": question[:1200],
             "concept_count": len(concepts),
             "baseline": baseline,
