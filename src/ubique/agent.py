@@ -6,6 +6,10 @@ import logging
 from .config import Config
 from .autonomy import autonomous_task
 from .github import GitHubClient
+from .homeostasis import assess_homeostasis
+from .environment import observe_environment
+from .fzg_telemetry import measure_fzg_telemetry
+from .recovery import perform_recovery
 from .memory import append_episode, recent_episodes, update_skill
 from .planner import make_prompt, parse_task
 from .evolution import run_evolution
@@ -60,16 +64,37 @@ class Agent:
 
     def status_text(self, generation: int) -> str:
         providers = read_json("providers.json", {})
+        homeostasis = read_json("homeostasis.json", {})
+        telemetry = read_json("fzg_telemetry.json", {})
+        environment = read_json("environment.json", {})
         return (
             f"Ubique generation: {generation}\n\n"
             "Provider ledger:\n"
-            f"```json\n{json.dumps(providers, indent=2)}\n```"
+            f"```json\n{json.dumps(providers, indent=2)}\n```\n\n"
+            "Homeostasis:\n"
+            f"```json\n{json.dumps(homeostasis, indent=2)[:3000]}\n```\n\n"
+            "FZG telemetry:\n"
+            f"```json\n{json.dumps(telemetry, indent=2)[:3000]}\n```\n\n"
+            "Environment:\n"
+            f"```json\n{json.dumps(environment, indent=2)[:2000]}\n```"
         )
 
     def run(self) -> int:
         runtime = start_cycle()
         generation = int(runtime["generation"])
         log.info("Starting Ubique generation %s", generation)
+
+        # Deterministic self-maintenance and measurement happen before goal
+        # selection so autonomous behavior is grounded in current evidence.
+        recovery = perform_recovery()
+        environment = observe_environment()
+        homeostasis = assess_homeostasis(self.config.memory_limit)
+        telemetry = measure_fzg_telemetry()
+        log.info(
+            "Self-state measured: recovery=%s usable_remote=%s",
+            recovery.get("action_count", 0),
+            homeostasis.get("usable_remote_providers", 0),
+        )
 
         handled = 0
         failed = 0
@@ -85,6 +110,9 @@ class Agent:
                 autonomous_task(
                     generation,
                     remote_reasoning_available=remote_reasoning_available,
+                    homeostasis=homeostasis,
+                    telemetry=telemetry,
+                    environment=environment,
                 )
             )
             log.info(
