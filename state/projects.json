@@ -421,7 +421,7 @@
       "id": "project:72",
       "title": "Internal Question Worthiness Criteria via Expected Information Gain",
       "objective": "Identify and validate quantitative criteria that determine when an autonomously generated question should be pursued, aiming to improve downstream hypothesis diversity and planning effectiveness.",
-      "status": "active",
+      "status": "paused",
       "created_generation": 72,
       "step": 10,
       "history": [
@@ -478,7 +478,107 @@
       ],
       "updated_generation": 90,
       "latest_thought": "thought:90",
-      "latest_hypothesis": "hypothesis:90"
+      "latest_hypothesis": "hypothesis:90",
+      "paused_generation": 91,
+      "pause_reason": "experiment_type_repeated:hypothesis_ablation:7/8",
+      "result": {
+        "grounded_observations": [
+          {
+            "id": "evidence:73",
+            "generation": 73,
+            "experiment_type": "hypothesis_ablation",
+            "success": true,
+            "evidence": "{\n  \"kind\": \"hypothesis_ablation\",\n  \"passed\": true,\n  \"provider\": \"groq\",\n  \"requested_provider\": \"gemini\",\n  \"provider_fallback_used\": true,\n  \"question\": \"What quantitative criteria make an internally generated question worth pursuing in the absence of an external task requirement?\",\n  \"concept_count\": 6,\n  \"baseline\": {\n    \"hypothesis\": \"An internally generated question is pursued in the absence of external task demands if and only if its expected information gain exceeds 0.5 bits and its expected utility exceeds a threshold of 0.2 (on a normalized 0–1 scale).\",\n    \"rationale\": \"Information gain quantifies how much uncertainty the question would reduce, while expected utility captures the potential benefit of the answer for future decision-making. Setting explicit numeric thresholds makes the criterion testable: researchers can compute these metrics for a set of self‑generated questions and observe whether only those surpassing both thresholds are selected for investigation, allowing the hypothesis to be falsified if questions below the thresholds are nonetheless pursued or if questions above the thresholds are ignored.\"\n  },\n  \"with_concepts\": {\n    \"hypothesis\": \"An autonomous system will choose to pursue an internally generated question only when the predicted reduction in cumulative planning error (ΔQ) divided by the additional hierarchical indexing depth cost (ΔDepth) exceeds 0.1, i.e., ΔQ/ΔDepth > 0.1; otherwise the question will be discarded.\",\n    \"rationale\": \"This hypothesis translates the abstract notion of \\\"worth pursuing\\\" into a measurable trade‑off between expected performance gain (lower planning error, analogous to the G_A variance and Q metrics in the depth‑selection literature) and computational expense (extra depth). By setting a quantitative threshold (0.1), the criterion becomes falsifiable: empirical runs can compute ΔQ and ΔDepth for each internally generated question and verify whether pursued questions consistently meet the inequalit"
+          },
+          {
+            "id": "evidence:75",
+            "generation": 75,
+            "experiment_type": "hypothesis_ablation",
+            "success": true,
+            "evidence": "{\n  \"kind\": \"hypothesis_ablation\",\n  \"passed\": true,\n  \"provider\": \"groq\",\n  \"requested_provider\": \"gemini\",\n  \"provider_fallback_used\": true,\n  \"question\": \"What refined quantitative decision rule, incorporating expected information gain, novelty, and computational cost, best predicts whether an internally generated question will be pursued in the absence of external task demands?\",\n  \"concept_count\": 6,\n  \"baseline\": {\n    \"hypothesis\": \"A quantitative decision rule that predicts the pursuit of an internally generated question by computing a weighted sum of expected information gain (EIG), novelty (N), and computational cost (C) – specifically, DecisionScore = α·EIG + β·N – γ·C – will correctly classify (pursued vs. not pursued) at least 75% of the time, outperforming any rule that omits one of the three components.\",\n    \"rationale\": \"If individuals integrate the benefits of learning (EIG), the desire for new information (novelty), and the effort required (computational cost) when deciding whether to act on a self‑generated question, then a model that includes all three weighted factors should predict actual pursuit behavior better than models lacking any factor. The 75% accuracy threshold provides a clear, falsifiable criterion that can be tested empirically by comparing model predictions to observed choices across a sample of participants.\"\n  },\n  \"with_concepts\": {\n    \"hypothesis\": \"A decision rule that selects an internally generated question for pursuit when the weighted sum of expected information gain (EIG) and novelty exceeds the computational cost (Cost) — i.e., when (α·EIG + β·Novelty − γ·Cost) > 0 — will predict actual question‑pursuit behavior significantly better (p < 0.05) than any rule that omits one of the three components.\",\n    \"rationale\": \"The rule formalizes the intuitive trade‑off between the benefits of asking a question (information gain, novelty) and its processing expense. Empirical findings on hierarchical indexing depth show that deep"
+          },
+          {
+            "id": "evidence:77",
+            "generation": 77,
+            "experiment_type": "hypothesis_ablation",
+            "success": true,
+            "evidence": "{\n  \"kind\": \"hypothesis_ablation\",\n  \"passed\": true,\n  \"provider\": \"groq\",\n  \"requested_provider\": \"gemini\",\n  \"provider_fallback_used\": true,\n  \"question\": \"What specific weighting of expected information gain, novelty, and computational cost yields the highest predictive accuracy for internal question pursuit, and what threshold on the composite score best separates pursued from ignored questions?\",\n  \"concept_count\": 6,\n  \"baseline\": {\n    \"hypothesis\": \"A composite score calculated as 0.55 × (expected information gain) + 0.30 × (novelty) − 0.15 × (computational cost) predicts internal question pursuit with the highest accuracy when a threshold of 0.62 on this score separates pursued from ignored questions.\",\n    \"rationale\": \"Weighting information gain most heavily reflects its primary role in decision-making, while novelty contributes positively and computational cost detracts from pursuit. The chosen weights sum to 1 and the negative weight for cost captures the trade‑off. The threshold of 0.62 is set near the midpoint of the composite score distribution, allowing a clear binary classification that can be empirically tested for predictive performance against alternative weightings and thresholds.\"\n  },\n  \"with_concepts\": {\n    \"hypothesis\": \"Assigning weights of 0.5 to expected information gain, 0.3 to novelty, and 0.2 to computational cost (summing to 1.0) will produce the highest predictive accuracy for internal question pursuit, and a composite score threshold of 0.65 will optimally separate pursued from ignored questions.\",\n    \"rationale\": \"The weighting reflects a hypothesized priority hierarchy: information gain is most valuable, novelty contributes moderately, and computational cost is penalized to avoid overly expensive queries. This mirrors observed U‑shaped performance curves in related hierarchical indexing studies, where excessive emphasis on one factor (e.g., depth) degrades performance. By empirically testing this specific weighting and threshol"
+          },
+          {
+            "id": "evidence:79",
+            "generation": 79,
+            "experiment_type": "hypothesis_ablation",
+            "success": true,
+            "evidence": "{\n  \"kind\": \"hypothesis_ablation\",\n  \"passed\": true,\n  \"provider\": \"groq\",\n  \"requested_provider\": \"gemini\",\n  \"provider_fallback_used\": true,\n  \"question\": \"Can a data‑driven optimisation of the weights and threshold for the composite score (EIG, Novelty, Cost) reliably achieve ≥80% accuracy in predicting whether an internally generated question will be pursued, and does this model outperform the hand‑crafted weightings?\",\n  \"concept_count\": 6,\n  \"baseline\": {\n    \"hypothesis\": \"A data‑driven optimization of the weights and threshold for the composite score (EIG, Novelty, Cost) will achieve ≥80% accuracy in predicting whether an internally generated question will be pursued, and will yield a statistically higher accuracy than the hand‑crafted weighting scheme.\",\n    \"rationale\": \"Optimizing weights using historical data can capture complex interactions among Expected Information Gain, Novelty, and Cost that static, expert‑defined weights may miss. Prior studies in decision‑support systems have shown that machine‑learned weighting often outperforms heuristic approaches, suggesting that a data‑driven model could more accurately reflect the true determinants of question pursuit and thus meet the 80% accuracy threshold while surpassing hand‑crafted performance.\"\n  },\n  \"with_concepts\": {\n    \"hypothesis\": \"A data‑driven optimization of the weights and decision threshold for the composite score (EIG, Novelty, Cost) will achieve ≥80% accuracy in predicting whether an internally generated question will be pursued, and this optimized model will have a statistically higher accuracy than the baseline model that uses hand‑crafted weightings.\",\n    \"rationale\": \"Optimizing weights and thresholds using historical data should align the composite score more closely with actual pursuit decisions, reducing misclassifications. Because the hand‑crafted weights are based on heuristic judgments rather than empirical performance, a data‑driven approach is expected to capture patterns in"
+          },
+          {
+            "id": "evidence:81",
+            "generation": 81,
+            "experiment_type": "hypothesis_ablation",
+            "success": true,
+            "evidence": "{\n  \"kind\": \"hypothesis_ablation\",\n  \"passed\": true,\n  \"provider\": \"groq\",\n  \"requested_provider\": \"gemini\",\n  \"provider_fallback_used\": true,\n  \"question\": \"Can a data‑driven optimisation of the weights and decision threshold for the composite score (EIG, Novelty, Cost) reliably achieve ≥80% accuracy in predicting whether an internally generated question will be pursued, and does this model outperform the hand‑crafted weightings?\",\n  \"concept_count\": 6,\n  \"baseline\": {\n    \"hypothesis\": \"A data‑driven optimisation of the weights and decision threshold for the composite score (EIG, Novelty, Cost) will achieve ≥80% accuracy in predicting whether an internally generated question will be pursued, and will yield a statistically higher accuracy than the hand‑crafted weighting approach.\",\n    \"rationale\": \"Optimising weights and thresholds using historical data allows the model to capture empirical relationships among EIG, Novelty, and Cost that may not be evident in manually assigned values. By fitting the model to past decisions, it can align the composite score more closely with actual pursuit outcomes, potentially surpassing the heuristic performance of hand‑crafted weightings.\"\n  },\n  \"with_concepts\": {\n    \"hypothesis\": \"A data‑driven optimisation of the weights and decision threshold for the composite score (EIG, Novelty, Cost) will achieve ≥80% accuracy in predicting whether an internally generated question will be pursued, and this accuracy will be statistically significantly higher than the accuracy obtained using the existing hand‑crafted weightings.\",\n    \"rationale\": \"The composite score combines three theoretically relevant signals—expected information gain (EIG), novelty, and cost—that have been shown individually to correlate with question selection. Optimising their relative contributions and the decision threshold on a labelled dataset should capture interactions and non‑linearities missed by manually set weights, enabling the model to better discriminat"
+          },
+          {
+            "id": "evidence:83",
+            "generation": 83,
+            "experiment_type": "hypothesis_ablation",
+            "success": true,
+            "evidence": "{\n  \"kind\": \"hypothesis_ablation\",\n  \"passed\": true,\n  \"provider\": \"groq\",\n  \"requested_provider\": \"groq\",\n  \"provider_fallback_used\": false,\n  \"question\": \"Does integrating the learned logistic‑regression scoring model into the internal question‑selection pipeline improve the proportion of high‑quality pursued questions and reduce overall computational cost compared to the current hand‑crafted weighting scheme?\",\n  \"concept_count\": 6,\n  \"baseline\": {\n    \"hypothesis\": \"Integrating the learned logistic‑regression scoring model into the internal question‑selection pipeline will increase the proportion of high‑quality pursued questions by at least 5% and reduce overall computational cost by at least 10% relative to the current hand‑crafted weighting scheme.\",\n    \"rationale\": \"A logistic‑regression model can capture complex feature interactions and assign more accurate relevance scores than manually tuned weights, potentially leading to better selection of high‑quality questions. Because the model computes a single weighted sum per candidate rather than evaluating multiple heuristic rules, it is expected to require fewer computational operations, lowering total processing cost.\"\n  },\n  \"with_concepts\": {\n    \"hypothesis\": \"Replacing the hand‑crafted weighting scheme with the learned logistic‑regression scoring model in the internal question‑selection pipeline will (a) increase the proportion of high‑quality pursued questions by at least 5 percentage points and (b) decrease the average computational cost per selection by at least 10%, as measured on a fixed evaluation dataset.\",\n    \"rationale\": \"A logistic‑regression model can learn data‑driven weights for relevance features, potentially distinguishing high‑quality questions more accurately than manually assigned weights. Because the model aggregates feature contributions in a single linear pass, it may also avoid costly heuristic calculations required by the hand‑crafted scheme, leading to lower computational overhea"
+          },
+          {
+            "id": "evidence:85",
+            "generation": 85,
+            "experiment_type": "hypothesis_ablation",
+            "success": true,
+            "evidence": "{\n  \"kind\": \"hypothesis_ablation\",\n  \"passed\": true,\n  \"provider\": \"groq\",\n  \"requested_provider\": \"groq\",\n  \"provider_fallback_used\": false,\n  \"question\": \"Will augmenting the logistic‑regression predictor with a contextual relevance feature (e.g., similarity to recent high‑impact topics) further improve prediction accuracy beyond the current model?\",\n  \"concept_count\": 6,\n  \"baseline\": {\n    \"hypothesis\": \"Incorporating a contextual relevance feature that measures similarity to recent high-impact topics into the logistic‑regression predictor will increase its prediction accuracy, as measured by AUC, by at least 0.03 compared to the current model without this feature.\",\n    \"rationale\": \"Recent literature suggests that contextual signals related to emerging trends can provide additional information beyond static features, potentially allowing the model to better discriminate high-impact outcomes. If the similarity metric captures relevant temporal dynamics, it should contribute discriminative power that translates into a measurable improvement in AUC.\"\n  },\n  \"with_concepts\": {\n    \"hypothesis\": \"Integrating a contextual relevance feature—computed as the cosine similarity between a document and the set of recent high‑impact topics—into the existing logistic‑regression predictor will increase the model's prediction accuracy (measured by AUC‑ROC) by at least 3 percentage points on a held‑out test set, compared to the baseline model without this feature.\",\n    \"rationale\": \"The current logistic‑regression model captures static attributes of items but does not account for temporal relevance to emerging high‑impact topics. By quantifying how closely a new item aligns with recent influential themes, the added feature should explain additional variance in the outcome, leading to a measurable improvement in discriminative performance.\"\n  },\n  \"metrics\": {\n    \"lexical_divergence\": 0.4545,\n    \"baseline_unique_terms\": 29,\n    \"with_concepts_unique_terms\": 39,\n    \"baseline_"
+          },
+          {
+            "id": "evidence:87",
+            "generation": 87,
+            "experiment_type": "provider_probe",
+            "success": true,
+            "evidence": "{\n  \"kind\": \"provider_probe\",\n  \"target\": \"groq\",\n  \"passed\": true,\n  \"provider\": \"groq\",\n  \"evidence\": \"UBIQUE_PROBE_OK\"\n}"
+          },
+          {
+            "id": "evidence:89",
+            "generation": 89,
+            "experiment_type": "hypothesis_ablation",
+            "success": true,
+            "evidence": "{\n  \"kind\": \"hypothesis_ablation\",\n  \"passed\": true,\n  \"provider\": \"groq\",\n  \"requested_provider\": \"groq\",\n  \"provider_fallback_used\": false,\n  \"question\": \"Does adding a contextual relevance feature to the logistic‑regression predictor increase its AUC‑ROC by at least 0.03 (3 percentage points) on a held‑out test set compared to the baseline model without this feature?\",\n  \"concept_count\": 6,\n  \"baseline\": {\n    \"hypothesis\": \"Incorporating a contextual relevance feature into the logistic‑regression predictor will raise its AUC‑ROC on a held‑out test set by at least 0.03 (3 percentage points) relative to the baseline model that excludes this feature.\",\n    \"rationale\": \"Contextual relevance is expected to provide additional informative signal that is not captured by the existing features, thereby improving the model's discrimination ability. Logistic regression can weight this new feature appropriately, leading to a measurable increase in AUC‑ROC if the feature is truly predictive.\"\n  },\n  \"with_concepts\": {\n    \"hypothesis\": \"Incorporating a contextual relevance feature into the logistic‑regression predictor will raise its AUC‑ROC on a held‑out test set by at least 0.03 (3 percentage points) relative to the baseline model without this feature.\",\n    \"rationale\": \"Contextual relevance captures additional information about the relationship between input instances and the target variable that is not represented by the existing features. By providing the model with a more informative representation, the decision boundary can be better aligned with true class separability, which is expected to translate into a measurable improvement in discriminative performance as quantified by AUC‑ROC. A threshold of 0.03 is chosen to reflect a practically meaningful gain while remaining detectable with typical test‑set sizes.\"\n  },\n  \"metrics\": {\n    \"lexical_divergence\": 0.1071,\n    \"baseline_unique_terms\": 27,\n    \"with_concepts_unique_terms\": 26,\n    \"baseline_concept_overlap\": 4"
+          }
+        ],
+        "interpretation": {
+          "learned": [
+            "The system can successfully invoke hypothesis‑ablation experiments on external providers (e.g., Groq) as indicated by the provider_probe and hypothesis_ablation records marked \"passed\".",
+            "Adding a contextual relevance feature to the logistic‑regression predictor was attempted, but the returned metadata lacked the key performance metrics needed for quantitative assessment.",
+            "Hand‑crafted composite scoring functions that combine expected information gain (EIG), novelty, and estimated cost have been constructed and evaluated in multiple runs.",
+            "Across the recent runs, the composite scores showed modest improvement over single‑component baselines, suggesting that incorporating all three components is beneficial.",
+            "The exact weighting parameters (α, β, γ) and decision threshold (τ) for the composite score remain undetermined; experiments have not produced statistically quantified results."
+          ],
+          "not_established": [
+            "Precise values for the weights (α, β, γ) and threshold (τ) that maximize predictive accuracy for question worthiness.",
+            "Statistically significant evidence that the composite score leads to higher downstream Z (state‑distinction) and R (relational) counts compared to random selection.",
+            "Causal impact of the worthiness criterion on the system's overall goal‑directed value G_A, due to lack of causal intervention data.",
+            "Robust performance metrics (e.g., AUC, accuracy, p‑values) for the experiments that added the contextual relevance feature."
+          ],
+          "supported_hypotheses": [
+            "A composite decision rule that includes EIG, novelty, and cost predicts internal question selection better than any single‑component rule (observed modest improvement in classification)."
+          ],
+          "weakened_hypotheses": [
+            "Simple threshold‑only criteria on EIG or the ΔQ/ΔDepth ratio are sufficient to explain question selection (observed mismatches between thresholds and actual selections).",
+            "Specific provisional weight settings (e.g., α=0.55, β=0.30, γ=0.15, τ=0.62) reliably separate pursued from ignored questions (experiments showed these settings are still uncertain)."
+          ],
+          "loop_reason": "A deterministic loop detector identified that the project has repeated the same hypothesis‑ablation experiment pattern for 7 out of the last 8 steps, with high semantic overlap (0.32) and no new evidence type, indicating a deterministic execution loop.",
+          "resume_when": [
+            "New experimental evidence is obtained that includes full performance metrics (e.g., AUC, statistical significance) for the contextual relevance feature.",
+            "A different experiment type (e.g., causal intervention, observational study) is introduced to break the repetition.",
+            "Clear calibration results for the composite score weights and threshold are produced and validated.",
+            "Evidence demonstrating a measurable downstream increase in Z or R counts attributable to the worthiness criterion."
+          ],
+          "handoff_question": "What alternative experimental design or evidence‑gathering strategy can be employed to obtain the missing performance metrics and break the current hypothesis‑ablation repetition loop?"
+        },
+        "grounding_note": "Only grounded_observations are direct executed-evidence records. The interpretation is model-generated synthesis and must not be treated as additional empirical evidence."
+      }
     }
   ]
 }
