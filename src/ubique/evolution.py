@@ -3,6 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 import json
 import logging
+import os
 from pathlib import Path
 import re
 import subprocess
@@ -61,7 +62,12 @@ class EvolutionOutcome:
     candidate_score: int | None = None
 
 
-def _run(cmd: list[str], timeout: int = 120, check: bool = True) -> subprocess.CompletedProcess[str]:
+def _run(
+    cmd: list[str],
+    timeout: int = 120,
+    check: bool = True,
+    env: dict[str, str] | None = None,
+) -> subprocess.CompletedProcess[str]:
     return subprocess.run(
         cmd,
         cwd=ROOT,
@@ -69,7 +75,44 @@ def _run(cmd: list[str], timeout: int = 120, check: bool = True) -> subprocess.C
         capture_output=True,
         timeout=timeout,
         check=check,
+        env=env,
     )
+
+
+def _candidate_env() -> dict[str, str]:
+    """Return a child environment with credential-like values removed.
+
+    Candidate code is compiled/tested before publication. It must not inherit
+    provider keys, GitHub tokens, passwords or other credential-shaped values.
+    """
+    blocked_markers = ("TOKEN", "KEY", "SECRET", "PASSWORD", "CREDENTIAL")
+    return {
+        key: value
+        for key, value in os.environ.items()
+        if not any(marker in key.upper() for marker in blocked_markers)
+    }
+
+
+def _suspend_git_auth() -> list[tuple[str, str]]:
+    """Remove checkout-persisted HTTP auth while candidate code executes."""
+    proc = _run(
+        ["git", "config", "--local", "--get-regexp", r"^http\..*\.extraheader$"],
+        check=False,
+    )
+    saved: list[tuple[str, str]] = []
+    for line in proc.stdout.splitlines():
+        if not line.strip():
+            continue
+        key, _, value = line.partition(" ")
+        if key:
+            saved.append((key, value))
+            _run(["git", "config", "--local", "--unset-all", key], check=False)
+    return saved
+
+
+def _restore_git_auth(saved: list[tuple[str, str]]) -> None:
+    for key, value in saved:
+        _run(["git", "config", "--local", "--add", key, value], check=False)
 
 
 def _json_from_text(text: str) -> dict[str, Any]:
@@ -137,7 +180,11 @@ def validate_proposal(raw_text: str) -> dict[str, Any]:
             "exec(",
             "github_token",
             "gemini_api_key",
+            "groq_api_key",
             "hf_token",
+            "os.getenv(",
+            "os.environ",
+            "/proc/",
         )
         if any(fragment in lowered for fragment in forbidden_fragments):
             raise ValueError(f"candidate contains forbidden high-risk fragment: {path}")
@@ -147,8 +194,12 @@ def validate_proposal(raw_text: str) -> dict[str, Any]:
     return {"title": title, "summary": summary, "changes": normalized}
 
 
-def _benchmark() -> int:
-    proc = _run(["python", "-m", "ubique.benchmark"], timeout=60)
+def _benchmark(*, candidate_isolation: bool = False) -> int:
+    proc = _run(
+        ["python", "-m", "ubique.benchmark"],
+        timeout=60,
+        env=_candidate_env() if candidate_isolation else None,
+    )
     data = json.loads(proc.stdout.strip().splitlines()[-1])
     return int(data["score"])
 
@@ -160,7 +211,7 @@ def _tests_pass() -> tuple[bool, str]:
     ]
     output: list[str] = []
     for cmd in commands:
-        proc = _run(cmd, timeout=180, check=False)
+        proc = _run(cmd, timeout=180, check=False, env=_candidate_env())
         output.append((proc.stdout + proc.stderr)[-4000:])
         if proc.returncode != 0:
             return False, "\n".join(output)
@@ -218,6 +269,7 @@ def run_evolution(
 
     accepted = False
     branch: str | None = None
+    suspended_git_auth = _suspend_git_auth()
     try:
         passed, test_output = _tests_pass()
         if not passed:
@@ -227,7 +279,7 @@ def run_evolution(
                 baseline_score=baseline_score,
             )
 
-        candidate_score = _benchmark()
+        candidate_score = _benchmark(candidate_isolation=True)
         if candidate_score < baseline_score:
             return EvolutionOutcome(
                 False, proposal["title"], proposal["summary"],
@@ -235,6 +287,11 @@ def run_evolution(
                 baseline_score=baseline_score,
                 candidate_score=candidate_score,
             )
+
+        # Candidate execution is complete. Restore Git credentials only for
+        # branch publication; generated code no longer runs after this point.
+        _restore_git_auth(suspended_git_auth)
+        suspended_git_auth = []
 
         branch = f"ubique/evolve-g{generation}-{_slug(proposal['title'])}"
         existing = _run(["git", "ls-remote", "--heads", "origin", branch], check=False).stdout.strip()
@@ -290,6 +347,9 @@ def run_evolution(
             baseline_score=baseline_score,
         )
     finally:
+        if suspended_git_auth:
+            _restore_git_auth(suspended_git_auth)
+
         current = _run(["git", "branch", "--show-current"], check=False).stdout.strip()
         if current != original_branch:
             _run(["git", "switch", original_branch], check=False)
