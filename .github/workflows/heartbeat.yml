@@ -76,4 +76,27 @@ jobs:
           fi
 
           git commit -m "agent: persist autonomous cycle [skip ci]"
-          git push origin HEAD:main
+
+          # main may advance while the agent is running (for example from a
+          # human/code maintenance commit). Rebase the state commit onto the
+          # latest main before pushing so a harmless concurrent commit does
+          # not kill the heartbeat.
+          for attempt in 1 2 3; do
+            git fetch origin main
+
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "Could not safely rebase autonomous state onto current main."
+              exit 1
+            fi
+
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            echo "Push raced with another main update; retrying ($attempt/3)."
+            sleep $((attempt * 2))
+          done
+
+          echo "Could not persist autonomous state after 3 retries."
+          exit 1
