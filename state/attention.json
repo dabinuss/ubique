@@ -1,16 +1,13 @@
 {
-  "timestamp": "2026-09-27T20:26:24.604241+00:00",
-  "generation": 87,
+  "timestamp": "2026-09-27T20:27:13.372989+00:00",
+  "generation": 88,
   "focus": "Internal Question Worthiness Criteria via Expected Information Gain",
-  "question": "Will a context‑aware meta‑selector that chooses between the hand‑crafted weighting scheme and the learned logistic‑regression model for each candidate question improve overall question‑selection quality and maintain or lower computational cost compared to always using the learned model?",
-  "hypothesis": "A meta‑model that predicts, based on contextual features (e.g., question domain, estimated computational budget, prior success rates), which scoring model to apply will increase the proportion of high‑quality pursued questions by at least 3 percentage points and keep average computational cost per selection no higher than the baseline learned‑model pipeline.",
-  "next_action": "Interpret the latest evidence, update the open hypothesis, and choose the next bounded step.",
-  "next_command": "reflect",
-  "experiment_type": "provider_probe",
+  "question": "Does adding a contextual relevance feature to the logistic‑regression predictor increase its AUC‑ROC by at least 0.03 (3 percentage points) on a held‑out test set compared to the baseline model without this feature?",
+  "hypothesis": "Integrating a contextual relevance feature—computed as cosine similarity between a document and the set of recent high‑impact topics—will raise the model's AUC‑ROC by ≥0.03 on held‑out data, indicating that recent topic similarity provides a measurable predictive signal.",
+  "next_action": "Execute the controlled training/evaluation experiment as described, capture the AUC metrics, and update the hypothesis based on the observed difference.",
+  "next_command": "experiment",
+  "experiment_type": "hypothesis_ablation",
   "experiment_target": "groq",
-  "thought_id": "thought:86",
-  "project_id": "project:72",
-  "last_completed_command": "experiment",
-  "last_action_success": true,
-  "last_evidence": "{\n  \"kind\": \"provider_probe\",\n  \"target\": \"groq\",\n  \"passed\": true,\n  \"provider\": \"groq\",\n  \"evidence\": \"UBIQUE_PROBE_OK\"\n}"
+  "thought_id": "thought:88",
+  "project_id": "project:72"
 }
