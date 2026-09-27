@@ -1,8 +1,13 @@
 from __future__ import annotations
 
+import json
 from typing import Any
 
 from .models import Task
+
+
+def _compact(value: Any, limit: int = 7000) -> str:
+    return json.dumps(value, ensure_ascii=False, separators=(",", ":"))[:limit]
 
 
 def choose_endogenous_goal(
@@ -11,68 +16,94 @@ def choose_endogenous_goal(
     remote_reasoning_available: bool,
     telemetry: dict[str, Any] | None = None,
     environment: dict[str, Any] | None = None,
+    preflight: dict[str, Any] | None = None,
+    cognition: dict[str, Any] | None = None,
 ) -> Task:
-    """Choose one operational goal from measured state, not a user prompt."""
+    """Layer 1 guards operation; layer 2 continuously develops when healthy."""
     needs = homeostasis.get("needs", [])
     telemetry = telemetry or {}
     environment = environment or {}
+    preflight = preflight or {"development_allowed": True}
+    cognition = cognition or {}
     measured_context = {
         "homeostasis": homeostasis,
         "fzg_telemetry": telemetry,
         "environment": environment,
+        "preflight": preflight,
     }
     critical = [n for n in needs if n.get("level") == "critical"]
-    watch = [n for n in needs if n.get("level") == "watch"]
 
-    if remote_reasoning_available and critical:
-        need = critical[0]
+    if critical or not preflight.get("development_allowed", True):
+        if not remote_reasoning_available:
+            return Task(
+                id=f"autonomous:status:{generation}",
+                title=f"Layer-1 continuity generation {generation}",
+                body="/status",
+                source="autonomous",
+            )
+        need = critical[0] if critical else {"name": "preflight", "level": "blocked"}
         return Task(
             id=f"autonomous:diagnose:{generation}",
-            title=f"Diagnose {need.get('name', 'critical need')}",
+            title=f"Diagnose {need.get('name', 'operational gate')}",
             body=(
                 "/think\n"
-                "This goal was selected endogenously from Ubique homeostasis. "
-                f"Need: {need}. Measured context: {measured_context}. "
-                "Diagnose the concrete failure mode from recent memory and propose the smallest "
-                "reversible action that improves the measured target. "
-                "Do not change FZG definitions and do not claim improvement without evidence."
+                "Layer 1 blocked autonomous development. Diagnose the concrete operational "
+                "failure and propose the smallest reversible repair. Do not broaden scope. "
+                f"Need: {_compact(need)}. Context: {_compact(measured_context)}"
             ),
             source="autonomous",
         )
 
-    # Expensive self-modification only when no critical need is unresolved.
-    if remote_reasoning_available and generation % 24 == 0:
+    if not remote_reasoning_available:
+        return Task(
+            id=f"autonomous:status:{generation}",
+            title=f"Layer-1 continuity generation {generation}",
+            body="/status",
+            source="autonomous",
+        )
+
+    attention = cognition.get("attention", {})
+    next_command = str(attention.get("next_command", "reflect")).lower()
+    cognitive_context = _compact(cognition)
+
+    if next_command == "evolve" and attention.get("hypothesis"):
         return Task(
             id=f"autonomous:evolve:{generation}",
-            title=f"Endogenous evolution generation {generation}",
+            title=f"Evidence-driven evolution generation {generation}",
             body=(
                 "/evolve\n"
-                f"Measured context: {measured_context}. "
-                "Select ONE small, testable improvement from recent memory, homeostatic needs, "
-                "FZG telemetry and provider observations. Improve reliable capability, adaptation, "
-                "observability, resource efficiency or solution-path diversity. Preserve FZG v1.0 "
-                "and the recovery kernel. Return only strict evolution JSON."
+                "A previous autonomous reflection identified a concrete code-improvement "
+                "hypothesis. Propose ONE minimal reversible candidate that tests it. "
+                "Do not evolve merely for novelty. Preserve FZG v1.0 and all protected gates. "
+                f"Attention: {_compact(attention)}. Context: {_compact(measured_context)}"
             ),
             source="autonomous",
         )
 
-    if remote_reasoning_available and (watch or generation % 6 == 0):
+    if next_command == "fzg":
         return Task(
             id=f"autonomous:fzg:{generation}",
-            title=f"Endogenous FZG assessment generation {generation}",
+            title=f"Question-driven FZG assessment generation {generation}",
             body=(
                 "/fzg\n"
-                f"Measured context: {measured_context}. "
-                "Perform an endogenous FZG v1.0 analysis using current homeostasis, recent "
-                "episodes, provider state and empirical telemetry. Define S,A,C,Q,M_S,M_S^- "
-                "before P/G_A; report Z,K,R,L separately and identify the next measurable gap."
+                "Use the current open question/hypothesis as the reason for this assessment, "
+                "not as a periodic ritual. Define S,A,C,Q,M_S,M_S^- before P/G_A and report "
+                "Z,K,R,L separately. End with evidence that should change the hypothesis. "
+                f"Attention: {_compact(attention)}. Context: {_compact(measured_context)}"
             ),
             source="autonomous",
         )
 
     return Task(
-        id=f"autonomous:status:{generation}",
-        title=f"Autonomous continuity generation {generation}",
-        body="/status",
+        id=f"autonomous:reflect:{generation}",
+        title=f"Autonomous development reflection generation {generation}",
+        body=(
+            "/reflect\n"
+            "Layer 1 is healthy, so Layer 2 must make epistemic or capability progress. "
+            "Continue an active project when useful; otherwise identify a new concrete unknown, "
+            "weakness, opportunity or contradiction. Avoid status-only output. Use prior thoughts "
+            "and hypotheses so the process continues across generations. "
+            f"Measured context: {_compact(measured_context)}. Cognitive memory: {cognitive_context}"
+        ),
         source="autonomous",
     )
