@@ -26,9 +26,10 @@ jobs:
     timeout-minutes: 20
 
     steps:
-      - name: Checkout
+      - name: Checkout current main
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Setup Python
@@ -46,7 +47,7 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
 
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.0-flash' }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.5-flash-lite' }}
 
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_MODEL: ${{ vars.HF_MODEL || 'Qwen/Qwen2.5-7B-Instruct' }}
@@ -71,5 +72,4 @@ jobs:
           fi
 
           git commit -m "agent: persist autonomous cycle [skip ci]"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+          git push origin HEAD:main
