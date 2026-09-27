@@ -13,7 +13,7 @@ from .recovery import perform_recovery
 from .memory import append_episode, recent_episodes, update_skill
 from .planner import make_prompt, parse_task
 from .evolution import run_evolution
-from .state import finish_cycle, read_json, start_cycle
+from .state import finish_cycle, read_json, start_cycle, write_json, utc_now
 from .providers.fallback import FallbackProvider
 from .providers.gemini import GeminiProvider
 from .providers.groq import GroqProvider
@@ -87,7 +87,6 @@ class Agent:
         # Deterministic self-maintenance and measurement happen before goal
         # selection so autonomous behavior is grounded in current evidence.
         recovery = perform_recovery()
-        environment = observe_environment()
         configured_remote = [
             name
             for name, configured in (
@@ -97,6 +96,7 @@ class Agent:
             )
             if configured
         ]
+        environment = observe_environment(configured_remote=configured_remote)
         homeostasis = assess_homeostasis(
             self.config.memory_limit,
             configured_remote=configured_remote,
@@ -118,15 +118,22 @@ class Agent:
                 or self.config.groq_api_key
                 or self.config.hf_token
             )
-            tasks.append(
-                autonomous_task(
-                    generation,
-                    remote_reasoning_available=remote_reasoning_available,
-                    homeostasis=homeostasis,
-                    telemetry=telemetry,
-                    environment=environment,
-                )
+            endogenous = autonomous_task(
+                generation,
+                remote_reasoning_available=remote_reasoning_available,
+                homeostasis=homeostasis,
+                telemetry=telemetry,
+                environment=environment,
             )
+            tasks.append(endogenous)
+            write_json("current_goal.json", {
+                "timestamp": utc_now(),
+                "generation": generation,
+                "task_id": endogenous.id,
+                "title": endogenous.title,
+                "command": parse_task(endogenous).command,
+                "source": endogenous.source,
+            })
             log.info(
                 "Discovered %s task(s), including endogenous autonomous cycle",
                 len(tasks),
