@@ -94,7 +94,7 @@ GEMINI_API_KEY
 Repository variable, optional:
 
 ```text
-GEMINI_MODEL=gemini-2.0-flash
+GEMINI_MODEL=gemini-3.5-flash-lite
 ```
 
 The model is intentionally configurable because free-tier model availability can change.
@@ -290,7 +290,7 @@ python -m ubique
 
 | Name | Default | Meaning |
 |---|---|---|
-| `GEMINI_MODEL` | `gemini-2.0-flash` | Gemini model |
+| `GEMINI_MODEL` | `gemini-3.5-flash-lite` | Gemini model |
 | `HF_MODEL` | `Qwen/Qwen2.5-7B-Instruct` | HF model |
 | `HF_ENDPOINT` | router endpoint | HF inference base |
 | `UBIQUE_MAX_TASKS` | `3` | maximum issues per cycle |
