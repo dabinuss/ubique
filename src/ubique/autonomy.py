@@ -6,14 +6,13 @@ from .models import Task
 def autonomous_task(generation: int, remote_reasoning_available: bool) -> Task:
     """Create Ubique's endogenous task for this generation.
 
-    No user-authored prompt is required. The task is derived from the pinned
-    FZG v1.0 basis, the generation counter, repository state and episodic
-    memory that the normal planner injects.
+    The heartbeat may run frequently, but expensive/remote reasoning is
+    deliberately sparse so that Ubique can remain active on free tiers.
     """
-    # Every third generation may attempt a bounded code evolution when a
-    # genuine reasoning provider is configured. Other generations perform a
-    # self-analysis so that evolution is preceded by observation.
-    if remote_reasoning_available and generation % 3 == 0:
+
+    # Every 24th generation (~6h at a 15-minute heartbeat) attempt one bounded
+    # evolution. This is the highest-cost endogenous cycle.
+    if remote_reasoning_available and generation % 24 == 0:
         body = """/evolve
 You are in an endogenous Ubique evolution cycle.
 
@@ -47,7 +46,9 @@ Do not change FZG definitions merely to make Ubique appear more capable.
             source="autonomous",
         )
 
-    body = """/fzg
+    # Every 6th generation (~90 min) perform a remote FZG self-analysis.
+    if remote_reasoning_available and generation % 6 == 0:
+        body = """/fzg
 Perform an endogenous FZG v1.0 self-analysis of Ubique.
 
 S:
@@ -81,9 +82,17 @@ then, characterize Z, K, R and L separately. Identify one concrete empirical
 weakness or missing measurement that a future generation could improve.
 Do not invent a global intelligence score.
 """
+        return Task(
+            id=f"autonomous:fzg:{generation}",
+            title=f"Endogenous FZG self-analysis generation {generation}",
+            body=body,
+            source="autonomous",
+        )
+
+    # Cheap heartbeat cycle: keep continuity and observability without an LLM.
     return Task(
-        id=f"autonomous:fzg:{generation}",
-        title=f"Endogenous FZG self-analysis generation {generation}",
-        body=body,
+        id=f"autonomous:status:{generation}",
+        title=f"Autonomous heartbeat generation {generation}",
+        body="/status",
         source="autonomous",
     )
