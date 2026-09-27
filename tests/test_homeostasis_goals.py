@@ -1,3 +1,4 @@
+import ubique.homeostasis as homeostasis
 from ubique.goals import choose_endogenous_goal
 from ubique.fzg_telemetry import controlled_ablation_proxy
 
@@ -43,3 +44,25 @@ def test_ablation_proxy_declares_identification_limits():
     out = controlled_ablation_proxy()
     assert "M_S" in out and "M_S_minus" in out
     assert "proxy" in out["identification"]
+
+
+def test_memory_pressure_uses_full_retained_count(monkeypatch):
+    monkeypatch.setattr(homeostasis, "recent_episodes", lambda limit=24: [{"success": True}])
+    monkeypatch.setattr(homeostasis, "episode_count", lambda: 400)
+    monkeypatch.setattr(homeostasis, "read_json", lambda name, default: {})
+    monkeypatch.setattr(homeostasis, "write_json", lambda name, value: None)
+    out = homeostasis.assess_homeostasis(memory_limit=500, configured_remote=["gemini", "groq"])
+    memory_need = next(n for n in out["needs"] if n["name"] == "memory_pressure")
+    assert memory_need["level"] == "watch"
+    assert memory_need["value"] == 400.0
+    assert out["retained_episode_count"] == 400
+
+
+def test_memory_pressure_becomes_critical_at_limit(monkeypatch):
+    monkeypatch.setattr(homeostasis, "recent_episodes", lambda limit=24: [{"success": True}])
+    monkeypatch.setattr(homeostasis, "episode_count", lambda: 500)
+    monkeypatch.setattr(homeostasis, "read_json", lambda name, default: {})
+    monkeypatch.setattr(homeostasis, "write_json", lambda name, value: None)
+    out = homeostasis.assess_homeostasis(memory_limit=500, configured_remote=["gemini", "groq"])
+    memory_need = next(n for n in out["needs"] if n["name"] == "memory_pressure")
+    assert memory_need["level"] == "critical"
