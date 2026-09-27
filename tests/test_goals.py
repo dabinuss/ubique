@@ -44,3 +44,22 @@ def test_eligible_provider_probe_remains_experiment():
         },
     )
     assert task.body.startswith("/experiment")
+
+
+def test_resolution_is_scheduled_before_more_experimentation():
+    task = choose_endogenous_goal(
+        generation=95,
+        homeostasis={"needs": [], "usable_remote_providers": 1},
+        remote_reasoning_available=True,
+        preflight={"development_allowed": True},
+        cognition={
+            "attention": {
+                "next_command": "resolve",
+                "question": "Did the experiment answer Q?",
+                "hypothesis": "H",
+                "last_evidence": "observed result",
+            },
+        },
+    )
+    assert task.body.startswith("/resolve")
+    assert "Resolve the current question" in task.body
