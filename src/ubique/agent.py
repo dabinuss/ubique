@@ -88,7 +88,19 @@ class Agent:
         # selection so autonomous behavior is grounded in current evidence.
         recovery = perform_recovery()
         environment = observe_environment()
-        homeostasis = assess_homeostasis(self.config.memory_limit)
+        configured_remote = [
+            name
+            for name, configured in (
+                ("gemini", bool(self.config.gemini_api_key)),
+                ("groq", bool(self.config.groq_api_key)),
+                ("huggingface", bool(self.config.hf_token)),
+            )
+            if configured
+        ]
+        homeostasis = assess_homeostasis(
+            self.config.memory_limit,
+            configured_remote=configured_remote,
+        )
         telemetry = measure_fzg_telemetry()
         log.info(
             "Self-state measured: recovery=%s usable_remote=%s",
