@@ -70,9 +70,10 @@ def measure_fzg_telemetry() -> dict[str, Any]:
         "provider_count": len([p for p in providers if p != "fallback"]),
         "limitations": [
             "Z/K/R/L are observable diversity proxies, not normalized intelligence scores.",
-            "G_A is observational until a controlled ablation is run for the specific mechanism.",
+            "G_A is observational unless the specific mechanism has a valid intervention.",
         ],
     }
+    result["ablation"] = controlled_ablation_proxy()
     write_json("fzg_telemetry.json", result)
     return result
 
