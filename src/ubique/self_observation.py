@@ -44,6 +44,7 @@ def record_self_observation(
     generation: int,
     command: str,
     provider: str,
+    source: str,
     success: bool,
     result: str,
     before_attention: dict[str, Any] | None,
@@ -64,6 +65,7 @@ def record_self_observation(
         "action": {
             "command": str(command)[:80],
             "provider": str(provider)[:80],
+            "source": str(source)[:80],
         },
         "expected": {
             "question": before.get("question"),
