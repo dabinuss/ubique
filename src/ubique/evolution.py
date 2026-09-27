@@ -23,16 +23,16 @@ ALLOWED_PREFIXES = (
     "tests/",
 )
 
+# Minimal recovery kernel. Everything else under src/ubique/ may evolve,
+# including agent behavior, autonomy cadence, planning and provider routing.
+# These files stay pinned because corrupting them could strand the agent,
+# weaken the normative FZG basis, or break credential/state recovery.
 DENIED_EXACT = {
     "src/ubique/evolution.py",
-    "src/ubique/autonomy.py",
     "src/ubique/fzg.py",
-    "src/ubique/planner.py",
-    "src/ubique/agent.py",
     "src/ubique/github.py",
     "src/ubique/config.py",
     "src/ubique/state.py",
-    "src/ubique/providers/router.py",
 }
 
 DENIED_PREFIXES = (
