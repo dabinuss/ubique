@@ -63,6 +63,23 @@ def choose_endogenous_goal(
         )
 
     attention = cognition.get("attention", {})
+    project_loop = cognition.get("project_loop", {})
+    if project_loop.get("detected"):
+        return Task(
+            id=f"autonomous:project-review:{generation}",
+            title=f"Project loop review generation {generation}",
+            body=(
+                "/project_review\n"
+                "A deterministic loop detector found that the active project is repeating itself. "
+                "Produce a bounded pause review before switching topics. Separate executed evidence "
+                "from model-authored proposals: only observed evidence records count as executed evidence. "
+                "Summarize what was actually learned, what remains unestablished, why the loop occurred, "
+                "and concrete conditions that would justify resuming this project later. "
+                f"Review context: {_compact(cognition.get('project_review_context', {}), 11000)}"
+            ),
+            source="autonomous",
+        )
+
     next_command = str(attention.get("next_command", "reflect")).lower()
     cognitive_context = _compact({
         "attention": cognition.get("attention", {}),
@@ -70,6 +87,8 @@ def choose_endogenous_goal(
         "recent_thoughts": cognition.get("recent_thoughts", []),
         "recent_hypotheses": cognition.get("recent_hypotheses", []),
         "recent_concepts": cognition.get("recent_concepts", []),
+        "recent_project_summaries": cognition.get("recent_project_summaries", []),
+        "project_loop": cognition.get("project_loop", {}),
         "curiosity": cognition.get("curiosity", {}),
         "stagnation": cognition.get("stagnation", {}),
     })
@@ -122,7 +141,7 @@ def choose_endogenous_goal(
             "Layer 2 must make epistemic or capability progress independent of operational continuity. "
             "Do not choose provider redundancy, heartbeat reliability, recovery, memory pressure, "
             "runtime continuity, or other Layer-1 maintenance as the main topic while the gate is healthy. "
-            "Continue an active non-maintenance project when useful; otherwise choose a curiosity frontier "
+            "If attention.force_new_project is true, do NOT continue the paused project: start a new project from attention.forced_frontier or the highest-novelty curiosity frontier. Otherwise continue an active non-maintenance project when useful; otherwise choose a curiosity frontier "
             "or generate a new question about planning, memory abstraction, hypothesis revision, experiment "
             "design, capability composition, or another non-homeostatic capability. Use prior thoughts and "
             "hypotheses for continuity, but do not inherit an old maintenance topic merely because it is recent. "
