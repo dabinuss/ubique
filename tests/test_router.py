@@ -49,3 +49,21 @@ def test_select_remote_skips_exhausted_preferred(monkeypatch):
         daily_limits={"gemini": 20, "groq": 1000},
     )
     assert r.select_remote("gemini", required_calls=2) == "groq"
+
+
+def test_remote_eligibility_reports_exhausted_budget(monkeypatch):
+    from datetime import datetime, timezone
+    today = datetime.now(timezone.utc).date().isoformat()
+    monkeypatch.setattr(router_mod, "read_json", lambda name, default: {
+        "gemini": {"daily_date": today, "daily_calls": 20},
+        "groq": {"daily_date": today, "daily_calls": 7},
+    })
+    monkeypatch.setattr(router_mod, "write_json", lambda name, value: None)
+    r = router_mod.ProviderRouter(
+        [NamedGood("gemini"), NamedGood("groq")],
+        daily_limits={"gemini": 20, "groq": 1000},
+    )
+    status = r.remote_eligibility()
+    assert status["gemini"]["eligible"] is False
+    assert status["gemini"]["remaining_calls"] == 0
+    assert status["groq"]["eligible"] is True
