@@ -69,6 +69,7 @@ def choose_endogenous_goal(
         "projects": cognition.get("projects", {"projects": []}),
         "recent_thoughts": cognition.get("recent_thoughts", []),
         "recent_hypotheses": cognition.get("recent_hypotheses", []),
+        "recent_concepts": cognition.get("recent_concepts", []),
         "curiosity": cognition.get("curiosity", {}),
         "stagnation": cognition.get("stagnation", {}),
     })
