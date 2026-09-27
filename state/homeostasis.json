@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-09-27T15:49:03.554136+00:00",
+  "generation": 7,
+  "needs": [
+    {
+      "name": "cycle_reliability",
+      "level": "stable",
+      "value": 0.8333333333333334,
+      "target": ">=0.80 recent successful tasks",
+      "evidence": "10/12 recent tasks succeeded"
+    },
+    {
+      "name": "reasoning_redundancy",
+      "level": "stable",
+      "value": 2.0,
+      "target": ">=2 independently configured remote reasoning paths",
+      "evidence": "2 remote providers currently usable according to the persisted ledger"
+    },
+    {
+      "name": "memory_pressure",
+      "level": "stable",
+      "value": 12.0,
+      "target": "<500 retained episodes",
+      "evidence": "12 recent episodes inspected"
+    }
+  ],
+  "recent_success_ratio": 0.8333333333333334,
+  "configured_remote_providers": [
+    "gemini",
+    "groq"
+  ],
+  "usable_remote_providers": 2
+}
