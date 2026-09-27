@@ -61,6 +61,7 @@ class _AblationResult:
 class _AblationRouter:
     def __init__(self):
         self.prompts = []
+        self.selected = []
         self._responses = [
             _AblationResult(json.dumps({
                 "hypothesis": "Persistent questions can influence later planning choices.",
@@ -71,6 +72,10 @@ class _AblationRouter:
                 "rationale": "Reusable concepts provide additional relations for forming hypotheses."
             })),
         ]
+
+    def select_remote(self, preferred, required_calls=1):
+        self.selected.append((preferred, required_calls))
+        return "gemini"
 
     def generate_with(self, provider, prompt):
         assert provider == "gemini"
@@ -112,3 +117,35 @@ def test_hypothesis_ablation_compares_with_and_without_concepts(monkeypatch):
     assert out["metrics"]["lexical_divergence"] > 0
     assert out["metrics"]["with_concepts_concept_overlap"] >= out["metrics"]["baseline_concept_overlap"]
     assert "not a general causal estimate" in out["identification"]
+
+
+class _FallbackAblationRouter(_AblationRouter):
+    def select_remote(self, preferred, required_calls=1):
+        self.selected.append((preferred, required_calls))
+        return "groq"
+
+    def generate_with(self, provider, prompt):
+        assert provider == "groq"
+        self.prompts.append(prompt)
+        result = self._responses[len(self.prompts) - 1]
+        result.provider = "groq"
+        return result
+
+
+def test_hypothesis_ablation_falls_back_from_exhausted_target(monkeypatch):
+    monkeypatch.setattr(
+        experiments,
+        "recent_memory_records",
+        lambda name, limit=6: [{"name": "Memory abstraction", "summary": "Concept memory."}] if name == "concepts.jsonl" else [],
+    )
+    monkeypatch.setattr(
+        experiments,
+        "read_json",
+        lambda name, default: {"question": "Does memory change hypotheses?"} if name == "attention.json" else default,
+    )
+    router = _FallbackAblationRouter()
+    out = experiments.run_experiment("hypothesis_ablation", "gemini", router, "x")
+    assert router.selected == [("gemini", 2)]
+    assert out["provider"] == "groq"
+    assert out["requested_provider"] == "gemini"
+    assert out["provider_fallback_used"] is True
