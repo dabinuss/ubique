@@ -242,6 +242,8 @@ def run_evolution(
             branch = f"{branch}-{generation}"
 
         _run(["git", "switch", "-c", branch])
+        _run(["git", "config", "user.name", "ubique-agent[bot]"])
+        _run(["git", "config", "user.email", "ubique-agent[bot]@users.noreply.github.com"])
         _run(["git", "add", "--", *changed_paths])
         diff = _run(["git", "diff", "--cached", "--stat"]).stdout.strip()
         if not diff:
@@ -293,6 +295,12 @@ def run_evolution(
             _run(["git", "switch", original_branch], check=False)
 
         if not accepted:
+            # A failed commit may leave candidate files staged even after
+            # switching back to main. Unstage them before restoring backups,
+            # otherwise the heartbeat persistence commit could accidentally
+            # publish a rejected candidate on main.
+            _run(["git", "reset", "--quiet", "HEAD", "--", *changed_paths], check=False)
+
             for rel, data in backups.items():
                 path = ROOT / rel
                 if data is None:
