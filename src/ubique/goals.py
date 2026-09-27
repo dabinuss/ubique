@@ -63,6 +63,14 @@ def choose_endogenous_goal(
         )
 
     attention = cognition.get("attention", {})
+    if (
+        attention.get("last_completed_command") in {"experiment", "fzg", "evolve"}
+        and attention.get("last_evidence")
+        and not attention.get("resolution_id")
+        and str(attention.get("next_command", "")).lower() != "resolve"
+    ):
+        attention = dict(attention)
+        attention["next_command"] = "resolve"
     project_loop = cognition.get("project_loop", {})
     if project_loop.get("detected"):
         return Task(
