@@ -16,7 +16,7 @@ from .experiments import run_experiment
 from .curiosity import build_curiosity_snapshot
 from .pulse import decide_pulse
 from .project_lifecycle import assess_project_loop, project_review_context, parse_project_review, pause_project
-from .resolution import parse_resolution, persist_resolution
+from .resolution import parse_resolution, persist_resolution, conservative_resolution_from_attention
 from .memory import append_episode, recent_episodes, update_skill
 from .self_observation import record_self_observation
 from .planner import make_prompt, parse_task
@@ -171,6 +171,12 @@ class Agent:
                 try:
                     if planned.command == "status":
                         result_text = self.status_text(generation)
+                    elif planned.command == "resolve":
+                        resolution = conservative_resolution_from_attention(
+                            read_json("attention.json", {})
+                        )
+                        resolved = persist_resolution(generation, resolution)
+                        result_text = json.dumps(resolved, indent=2, ensure_ascii=False)
                     elif planned.command == "experiment":
                         spec = json.loads(planned.payload or "{}")
                         experiment = run_experiment(
@@ -186,11 +192,6 @@ class Agent:
                         result = self.router.generate(prompt)
                         result_text = result.text
                         provider_name = result.provider
-
-                        if planned.command == "resolve":
-                            resolution = parse_resolution(result_text)
-                            resolved = persist_resolution(generation, resolution)
-                            result_text = json.dumps(resolved, indent=2, ensure_ascii=False)
 
                         if planned.command == "project_review":
                             review = parse_project_review(result_text)
