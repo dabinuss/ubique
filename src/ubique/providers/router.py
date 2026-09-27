@@ -99,6 +99,30 @@ class ProviderRouter:
         raise ProviderError("No provider succeeded: " + "; ".join(errors))
 
 
+    def remote_eligibility(self) -> dict[str, dict]:
+        """Return deterministic remote-provider eligibility without consuming quota."""
+        snapshot: dict[str, dict] = {}
+        for provider in self.providers:
+            if provider.name == "fallback":
+                continue
+            configured = bool(provider.available())
+            disabled = self._disabled(provider.name) if configured else False
+            limit = self.daily_limits.get(provider.name)
+            remaining = None
+            budget_available = configured and not disabled
+            if limit is not None:
+                rec = self._refresh_daily(provider.name)
+                remaining = max(0, int(limit) - int(rec.get("daily_calls", 0)))
+                budget_available = budget_available and remaining > 0
+            snapshot[provider.name] = {
+                "configured": configured,
+                "disabled": disabled,
+                "daily_limit": limit,
+                "remaining_calls": remaining,
+                "eligible": bool(budget_available),
+            }
+        return snapshot
+
     def select_remote(self, preferred_name: str | None = None, required_calls: int = 1) -> str:
         """Select one configured remote provider with enough local daily budget."""
         required = max(1, int(required_calls))
