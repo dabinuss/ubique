@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-27T18:37:52.038890+00:00",
-  "generation": 14,
+  "timestamp": "2026-09-27T18:40:19.188718+00:00",
+  "generation": 15,
   "needs": [
     {
       "name": "cycle_reliability",
@@ -19,13 +19,13 @@
     {
       "name": "memory_pressure",
       "level": "stable",
-      "value": 26.0,
+      "value": 28.0,
       "target": "<500 retained episodes",
-      "evidence": "26/500 retained episode records"
+      "evidence": "28/500 retained episode records"
     }
   ],
   "recent_success_ratio": 0.9166666666666666,
-  "retained_episode_count": 26,
+  "retained_episode_count": 28,
   "configured_remote_providers": [
     "gemini",
     "groq"
