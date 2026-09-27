@@ -291,17 +291,22 @@
       "objective": "Combine memory abstraction (hierarchical indexing) with a meta‑planner to dynamically select depth based on horizon, creating a new solution path that improves multi‑step planning performance.",
       "status": "active",
       "created_generation": 53,
-      "step": 1,
+      "step": 2,
       "history": [
         {
           "generation": 53,
           "thought": "thought:53",
           "next_action": "Design and launch the horizon‑varying planning experiment with the three depth conditions on Gemini."
+        },
+        {
+          "generation": 55,
+          "thought": "thought:55",
+          "next_action": "Conduct the FZG analysis on the existing depth‑sweep data to compute G_A estimates and evaluate the adaptive depth‑selection hypothesis."
         }
       ],
-      "updated_generation": 53,
-      "latest_thought": "thought:53",
-      "latest_hypothesis": "hypothesis:53"
+      "updated_generation": 55,
+      "latest_thought": "thought:55",
+      "latest_hypothesis": "hypothesis:55"
     }
   ]
 }
