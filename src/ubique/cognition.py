@@ -8,7 +8,7 @@ from .state import read_json, write_json, utc_now
 from .self_observation import self_observation_context
 
 
-ALLOWED_NEXT_COMMANDS = {"reflect", "experiment", "fzg", "evolve"}
+ALLOWED_NEXT_COMMANDS = {"reflect", "experiment", "fzg", "evolve", "resolve"}
 ALLOWED_EXPERIMENTS = {"provider_probe", "memory_recall", "memory_abstraction", "hypothesis_ablation", "state_consistency"}
 
 
@@ -21,6 +21,7 @@ def cognitive_snapshot() -> dict[str, Any]:
         "recent_hypotheses": recent_memory_records("hypotheses.jsonl", 5),
         "recent_concepts": recent_memory_records("concepts.jsonl", 5),
         "recent_project_summaries": recent_memory_records("project_summaries.jsonl", 3),
+        "recent_knowledge": recent_memory_records("knowledge.jsonl", 5),
         "self_observation": self_observation_context(3),
     }
 
@@ -176,9 +177,9 @@ def record_action_outcome(
     attention["last_completed_command"] = command
     attention["last_action_success"] = success
     attention["last_evidence"] = result_summary[:2000]
-    attention["next_command"] = "reflect"
+    attention["next_command"] = "resolve"
     attention["next_action"] = (
-        "Interpret the latest evidence, update the open hypothesis, and choose the next bounded step."
+        "Resolve the current question against the evidence before proposing another experiment or evolution."
     )
     write_json("attention.json", attention)
     return attention
