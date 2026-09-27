@@ -1,19 +1,13 @@
 {
-  "timestamp": "2026-09-27T19:20:16.589094+00:00",
-  "generation": 52,
-  "focus": "Frontier transition",
-  "question": "Which existing capabilities can be combined into a genuinely new solution path rather than exercised independently?",
-  "hypothesis": "A new frontier should be explored without inheriting the paused project's local loop.",
-  "next_action": "Start a new project from the highest-novelty frontier and use the paused project only as background knowledge.",
-  "next_command": "reflect",
-  "force_new_project": true,
-  "avoid_project_id": "project:14",
-  "forced_frontier": {
-    "id": "capability_composition",
-    "title": "Capability composition",
-    "question": "Which existing capabilities can be combined into a genuinely new solution path rather than exercised independently?",
-    "prior_mentions": 0,
-    "novelty_priority": 1.0
-  },
-  "project_summary_id": "project-summary:project:14:52"
+  "timestamp": "2026-09-27T19:21:04.228360+00:00",
+  "generation": 53,
+  "focus": "Adaptive Hierarchical Depth Selection via Capability Composition",
+  "question": "Can we compose the hierarchical memory abstraction capability with a meta‑planner that dynamically selects indexing depth based on the planning horizon to create a genuinely new solution path that reduces planning error across varied horizons?",
+  "hypothesis": "An adaptive depth‑selection policy that chooses hierarchical indexing depth as a function of the planning horizon will achieve lower cumulative planning error than any fixed depth, thereby demonstrating a functional composition of memory abstraction and meta‑planning capabilities.",
+  "next_action": "Design and launch the horizon‑varying planning experiment with the three depth conditions on Gemini.",
+  "next_command": "experiment",
+  "experiment_type": "hypothesis_ablation",
+  "experiment_target": "gemini",
+  "thought_id": "thought:53",
+  "project_id": "project:53"
 }

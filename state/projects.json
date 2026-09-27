@@ -160,6 +160,24 @@
         ],
         "handoff_question": "What novel experiment (e.g., extending planning horizons, testing deeper hierarchical depths, or employing a different model provider) should be designed to break the current repetition and directly evaluate the horizon‑dependent optimal depth hypothesis?"
       }
+    },
+    {
+      "id": "project:53",
+      "title": "Adaptive Hierarchical Depth Selection via Capability Composition",
+      "objective": "Combine memory abstraction (hierarchical indexing) with a meta‑planner to dynamically select depth based on horizon, creating a new solution path that improves multi‑step planning performance.",
+      "status": "active",
+      "created_generation": 53,
+      "step": 1,
+      "history": [
+        {
+          "generation": 53,
+          "thought": "thought:53",
+          "next_action": "Design and launch the horizon‑varying planning experiment with the three depth conditions on Gemini."
+        }
+      ],
+      "updated_generation": 53,
+      "latest_thought": "thought:53",
+      "latest_hypothesis": "hypothesis:53"
     }
   ]
 }
