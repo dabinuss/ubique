@@ -15,6 +15,9 @@ class Config:
     gemini_api_key: str
     gemini_model: str
     gemini_daily_limit: int
+    groq_api_key: str
+    groq_model: str
+    groq_daily_limit: int
     hf_token: str
     hf_model: str
     hf_endpoint: str
@@ -33,6 +36,12 @@ class Config:
             gemini_daily_limit=max(
                 0,
                 min(int(os.getenv("UBIQUE_GEMINI_DAILY_LIMIT", "20")), 100),
+            ),
+            groq_api_key=os.getenv("GROQ_API_KEY", ""),
+            groq_model=os.getenv("GROQ_MODEL", "openai/gpt-oss-120b"),
+            groq_daily_limit=max(
+                0,
+                min(int(os.getenv("UBIQUE_GROQ_DAILY_LIMIT", "20")), 100),
             ),
             hf_token=os.getenv("HF_TOKEN", ""),
             hf_model=os.getenv("HF_MODEL", "Qwen/Qwen2.5-7B-Instruct"),
