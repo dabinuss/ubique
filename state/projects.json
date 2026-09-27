@@ -423,7 +423,7 @@
       "objective": "Identify and validate quantitative criteria that determine when an autonomously generated question should be pursued, aiming to improve downstream hypothesis diversity and planning effectiveness.",
       "status": "active",
       "created_generation": 72,
-      "step": 5,
+      "step": 6,
       "history": [
         {
           "generation": 72,
@@ -449,11 +449,16 @@
           "generation": 80,
           "thought": "thought:80",
           "next_action": "Execute the data‑collection and logistic‑regression analysis as described."
+        },
+        {
+          "generation": 82,
+          "thought": "thought:82",
+          "next_action": "Execute the comparative evaluation experiment and analyze the collected metrics to determine if the data‑driven model should replace the hand‑crafted scoring in the production pipeline."
         }
       ],
-      "updated_generation": 80,
-      "latest_thought": "thought:80",
-      "latest_hypothesis": "hypothesis:80"
+      "updated_generation": 82,
+      "latest_thought": "thought:82",
+      "latest_hypothesis": "hypothesis:82"
     }
   ]
 }
