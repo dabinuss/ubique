@@ -4,7 +4,7 @@ from .models import PlannedTask, Task
 from .fzg import FZG_SYSTEM_PROMPT
 
 
-KNOWN = {"/status", "/summarize", "/plan", "/think", "/reflect", "/project_review", "/experiment", "/evolve", "/fzg"}
+KNOWN = {"/status", "/summarize", "/plan", "/think", "/reflect", "/project_review", "/experiment", "/evolve", "/fzg", "/resolve"}
 
 
 def parse_task(task: Task) -> PlannedTask:
@@ -61,14 +61,23 @@ def make_prompt(command: str, payload: str, recent_memory: list[dict]) -> str:
             "for a missing planning, memory, or capability experiment. Prefer questions "
             "whose answers could change future behavior. Form a falsifiable hypothesis and a "
             "bounded experiment or next action. Choose next_command only from reflect, experiment, "
-            "fzg, evolve. Use evolve only when there is a concrete testable code-improvement "
+            "fzg, evolve, resolve. Use resolve when evidence already exists and the current question should be answered before more work. Use evolve only when there is a concrete testable code-improvement "
             "hypothesis; use fzg only when the open question genuinely requires FZG analysis. "
             "Schema: {\"observation\":\"...\",\"question\":\"...\","
             "\"hypothesis\":\"...\",\"proposed_experiment\":\"...\","
             "\"expected_evidence\":\"...\",\"next_action\":\"...\","
-            "\"next_command\":\"reflect|experiment|fzg|evolve\",\"experiment_type\":\"provider_probe|memory_recall|memory_abstraction|hypothesis_ablation|state_consistency\",\"experiment_target\":\"gemini|groq|huggingface|\",\"project_title\":\"...\","
+            "\"next_command\":\"reflect|experiment|fzg|evolve|resolve\",\"experiment_type\":\"provider_probe|memory_recall|memory_abstraction|hypothesis_ablation|state_consistency\",\"experiment_target\":\"gemini|groq|huggingface|\",\"project_title\":\"...\","
             "\"project_objective\":\"...\",\"confidence\":0.0,"
             "\"importance\":0.0}. JSON only."
+        )
+    elif command == "resolve":
+        instruction = (
+            "Return ONE strict JSON resolution of the current question. Use only executed evidence and observed outcomes supplied in context; "
+            "do not treat proposals, intended experiments, or model-authored descriptions as measurements. "
+            "Choose status supported only when the evidence supports the hypothesis, weakened when it contradicts or materially undercuts it, "
+            "and unresolved when the available evidence cannot answer the question. Do not invent missing metrics. "
+            "Schema: {\"status\":\"supported|weakened|unresolved\",\"answer\":\"...\","
+            "\"evidence_basis\":\"...\",\"remaining_unknowns\":\"...\",\"confidence\":0.0}. JSON only."
         )
     elif command == "project_review":
         instruction = (
