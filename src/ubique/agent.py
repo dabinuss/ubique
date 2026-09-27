@@ -194,7 +194,21 @@ class Agent:
                             result_text = json.dumps(paused, indent=2, ensure_ascii=False)
 
                         if planned.command == "reflect":
-                            reflection = parse_reflection(result_text)
+                            try:
+                                reflection = parse_reflection(result_text)
+                            except (ValueError, json.JSONDecodeError) as exc:
+                                if provider_name == "fallback":
+                                    raise
+                                repair_prompt = (
+                                    "Repair the following autonomous reflection into valid strict JSON only. "
+                                    "Preserve its meaning and use exactly the reflection schema previously requested. "
+                                    "Do not add markdown or commentary. Parse failure: "
+                                    f"{str(exc)[:500]}. Reflection: {result_text[:9000]}"
+                                )
+                                repair_result = self.router.generate_with(provider_name, repair_prompt)
+                                result_text = repair_result.text
+                                provider_name = repair_result.provider
+                                reflection = parse_reflection(result_text)
                             attention = persist_reflection(generation, reflection)
                             result_text = json.dumps(
                                 {
