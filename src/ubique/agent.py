@@ -19,6 +19,27 @@ from .providers.router import ProviderRouter
 log = logging.getLogger("ubique")
 
 
+def make_evolution_repair_prompt(original_proposal: str, failure_reason: str) -> str:
+    return f"""Your previous autonomous evolution proposal failed validation or tests.
+
+Failure:
+{failure_reason[:5000]}
+
+Original proposal:
+{original_proposal[:14000]}
+
+Return ONE corrected proposal as strict JSON only, using the same schema:
+{{"title":"...","summary":"...","changes":[{{"path":"src/ubique/<file>.py","content":"complete file contents"}}]}}
+
+Rules:
+- Fix the concrete error instead of redesigning unrelated parts.
+- Keep the change minimal.
+- Never modify protected FZG policy, autonomy/evolution gates, workflows, secrets,
+  dependency metadata, state or memory.
+- Output JSON only; no markdown fences or explanation.
+"""
+
+
 class Agent:
     def __init__(self, config: Config):
         self.config = config
@@ -80,20 +101,48 @@ class Agent:
                                     "self-evolution requires a remote reasoning provider; "
                                     "the deterministic fallback cannot author code"
                                 )
+                            original_proposal = result_text
                             evo = run_evolution(
-                                result_text,
+                                original_proposal,
                                 generation,
                                 self.config.github_token,
                                 self.config.github_repository,
                             )
+
+                            repaired = False
+                            if (
+                                not evo.accepted
+                                and evo.reason
+                                and (
+                                    evo.reason.startswith("candidate tests failed:")
+                                    or evo.reason.startswith("proposal rejected:")
+                                )
+                            ):
+                                repair_prompt = make_evolution_repair_prompt(
+                                    original_proposal,
+                                    evo.reason,
+                                )
+                                repair_result = self.router.generate(repair_prompt)
+                                if repair_result.provider != "fallback":
+                                    provider_name = repair_result.provider
+                                    repaired = True
+                                    evo = run_evolution(
+                                        repair_result.text,
+                                        generation,
+                                        self.config.github_token,
+                                        self.config.github_repository,
+                                    )
+
                             if not evo.accepted:
                                 raise RuntimeError(evo.reason or "evolution proposal rejected")
+
                             result_text = (
                                 f"Evolution candidate validated and published as draft PR.\n\n"
                                 f"- Title: {evo.title}\n"
                                 f"- Branch: `{evo.branch}`\n"
                                 f"- Baseline benchmark: `{evo.baseline_score}`\n"
                                 f"- Candidate benchmark: `{evo.candidate_score}`\n"
+                                f"- Self-repair used: `{repaired}`\n"
                                 f"- Pull request: {evo.pr_url}\n\n"
                                 "Human review is required before merge."
                             )
