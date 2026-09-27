@@ -69,5 +69,17 @@ def test_unresolved_resolution_keeps_project_open(monkeypatch):
         "confidence": 0.7,
     })
 
-    assert writes["projects.json"]["projects"][0]["status"] == "active"
+    assert writes["projects.json"]["projects"][0]["status"] == "blocked"
     assert writes["attention.json"]["next_command"] == "reflect"
+
+
+def test_conservative_resolution_never_invents_support():
+    out = resolution.conservative_resolution_from_attention({
+        "question": "Did AUC improve?",
+        "hypothesis": "AUC improved by 0.03.",
+        "experiment_type": "hypothesis_ablation",
+        "last_evidence": '{"kind":"hypothesis_ablation","metrics":{"lexical_divergence":0.4}}',
+    })
+    assert out["status"] == "unresolved"
+    assert "does not establish" in out["answer"]
+    assert "lexical_divergence" in out["evidence_basis"]
