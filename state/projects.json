@@ -584,7 +584,7 @@
       "id": "project:92",
       "title": "Robust Evaluation of Contextual Relevance Feature Impact on Logistic Regression AUC‑ROC",
       "objective": "Quantify the true performance gain of the contextual relevance feature under controlled randomness and determine statistical significance of the effect.",
-      "status": "active",
+      "status": "blocked",
       "created_generation": 92,
       "step": 1,
       "history": [
@@ -594,9 +594,14 @@
           "next_action": "Execute the controlled multi‑run experiment, collect the AUC‑ROC metrics, and update the hypothesis based on the observed effect size."
         }
       ],
-      "updated_generation": 92,
+      "updated_generation": 96,
       "latest_thought": "thought:92",
-      "latest_hypothesis": "hypothesis:92"
+      "latest_hypothesis": "hypothesis:92",
+      "latest_resolution": "resolution:96",
+      "resolution_status": "unresolved",
+      "blocked_generation": 96,
+      "blocker": "A measurement whose outputs directly correspond to the quantities asserted by the question and hypothesis is required before this claim can be resolved.",
+      "answer": "The recorded evidence does not establish the current hypothesis. The question remains unanswered by the executed measurement."
     }
   ]
 }
