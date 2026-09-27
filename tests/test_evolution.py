@@ -46,3 +46,20 @@ def test_forbidden_secret_access_is_rejected():
     })
     with pytest.raises(ValueError):
         validate_proposal(raw)
+
+
+@pytest.mark.parametrize("path", [
+    "src/ubique/agent.py",
+    "src/ubique/autonomy.py",
+    "src/ubique/planner.py",
+    "src/ubique/providers/router.py",
+    "src/ubique/providers/groq.py",
+])
+def test_behavior_layer_paths_may_evolve(path):
+    raw = json.dumps({
+        "title": "Behavior change",
+        "summary": "Allowed autonomous change",
+        "changes": [{"path": path, "content": "x = 1\n"}]
+    })
+    out = validate_proposal(raw)
+    assert out["changes"][0]["path"] == path
