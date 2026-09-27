@@ -18,7 +18,13 @@ def read_json(name: str, default: Any) -> Any:
     path = STATE_DIR / name
     if not path.exists():
         return default
-    return json.loads(path.read_text(encoding="utf-8"))
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError, UnicodeError):
+        # Persistence corruption must not strand the next autonomous cycle.
+        # The caller receives its explicit safe default and can reconstruct
+        # state from repository/memory evidence.
+        return default
 
 
 def write_json(name: str, value: Any) -> None:
