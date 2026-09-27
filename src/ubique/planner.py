@@ -63,7 +63,7 @@ def make_prompt(command: str, payload: str, recent_memory: list[dict]) -> str:
             "Schema: {\"observation\":\"...\",\"question\":\"...\","
             "\"hypothesis\":\"...\",\"proposed_experiment\":\"...\","
             "\"expected_evidence\":\"...\",\"next_action\":\"...\","
-            "\"next_command\":\"reflect|experiment|fzg|evolve\",\"experiment_type\":\"provider_probe|memory_recall|state_consistency\",\"experiment_target\":\"gemini|groq|huggingface|\",\"project_title\":\"...\","
+            "\"next_command\":\"reflect|experiment|fzg|evolve\",\"experiment_type\":\"provider_probe|memory_recall|memory_abstraction|state_consistency\",\"experiment_target\":\"gemini|groq|huggingface|\",\"project_title\":\"...\","
             "\"project_objective\":\"...\",\"confidence\":0.0,"
             "\"importance\":0.0}. JSON only."
         )
