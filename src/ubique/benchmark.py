@@ -23,11 +23,14 @@ def run_benchmark() -> dict:
     fallback = FallbackProvider().generate("Task:\nhello")
     checks.append(("fallback_provider", "hello" in fallback.text))
 
-    auto = autonomous_task(3, remote_reasoning_available=True)
+    auto = autonomous_task(24, remote_reasoning_available=True)
     checks.append(("autonomous_evolution_cycle", auto.body.startswith("/evolve")))
 
-    auto = autonomous_task(4, remote_reasoning_available=True)
+    auto = autonomous_task(6, remote_reasoning_available=True)
     checks.append(("autonomous_observation_cycle", auto.body.startswith("/fzg")))
+
+    auto = autonomous_task(7, remote_reasoning_available=True)
+    checks.append(("autonomous_cheap_heartbeat", auto.body.startswith("/status")))
 
     score = sum(1 for _, ok in checks if ok)
     return {"score": score, "max_score": len(checks),
