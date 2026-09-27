@@ -93,15 +93,23 @@ def controlled_ablation_proxy() -> dict[str, Any]:
         1 for rec in remote
         if not rec.get("disabled_until")
     )
-    observed_q = 1.0 if healthy >= 1 else 0.0
-    ablated_q = 1.0 if healthy == 1 else 0.0
+    # A is deliberately a robustness objective, not ordinary availability.
+    # Under the same hypothetical loss of one healthy provider, a redundant
+    # router can retain a path only when >=2 healthy providers exist. A
+    # single-provider control necessarily loses its sole path.
+    observed_q = 1.0 if healthy >= 2 else 0.0
+    ablated_q = 0.0
     return {
-        "A": "availability of a remote reasoning path in the current provider context",
-        "C": "persisted provider ledger at measurement time",
+        "A": "retain remote reasoning availability after loss of one healthy provider",
+        "C": "persisted provider ledger under a structural one-provider-loss perturbation",
+        "healthy_remote_providers": healthy,
         "Q_M_S": observed_q,
         "Q_M_S_minus": ablated_q,
         "G_A_proxy": observed_q - ablated_q,
-        "identification": "controlled structural proxy; no live provider was disabled",
+        "identification": (
+            "structural robustness proxy only; no live provider was disabled and "
+            "this is not a general causal estimate of task performance"
+        ),
         "M_S": "configured multi-provider router",
-        "M_S_minus": "single-provider structural control",
+        "M_S_minus": "single-provider structural control under the same one-provider-loss perturbation",
     }
