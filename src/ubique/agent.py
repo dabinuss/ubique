@@ -17,6 +17,7 @@ from .curiosity import build_curiosity_snapshot
 from .pulse import decide_pulse
 from .project_lifecycle import assess_project_loop, project_review_context, parse_project_review, pause_project
 from .memory import append_episode, recent_episodes, update_skill
+from .self_observation import record_self_observation
 from .planner import make_prompt, parse_task
 from .evolution import run_evolution
 from .state import finish_cycle, read_json, start_cycle, write_json, utc_now
@@ -164,6 +165,7 @@ class Agent:
             for task in tasks:
                 planned = parse_task(task)
                 provider_name = "deterministic"
+                before_attention = read_json("attention.json", {})
 
                 try:
                     if planned.command == "status":
@@ -296,6 +298,16 @@ class Agent:
                         update_stagnation(planned.command, generation)
                         if planned.command in {"experiment", "fzg", "evolve"}:
                             record_action_outcome(generation, planned.command, True, result_text)
+                    record_self_observation(
+                        generation,
+                        planned.command,
+                        provider_name,
+                        task.source,
+                        True,
+                        result_text,
+                        before_attention,
+                        read_json("attention.json", {}),
+                    )
                     handled += 1
 
                 except Exception as exc:
@@ -314,6 +326,16 @@ class Agent:
                         update_stagnation(planned.command, generation)
                         if planned.command in {"experiment", "fzg", "evolve"}:
                             record_action_outcome(generation, planned.command, False, str(exc))
+                    record_self_observation(
+                        generation,
+                        planned.command,
+                        provider_name,
+                        task.source,
+                        False,
+                        str(exc),
+                        before_attention,
+                        read_json("attention.json", {}),
+                    )
 
                     if not self.config.dry_run and task.number is not None:
                         try:
