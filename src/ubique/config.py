@@ -41,7 +41,7 @@ class Config:
             groq_model=os.getenv("GROQ_MODEL", "openai/gpt-oss-120b"),
             groq_daily_limit=max(
                 0,
-                min(int(os.getenv("UBIQUE_GROQ_DAILY_LIMIT", "20")), 100),
+                min(int(os.getenv("UBIQUE_GROQ_DAILY_LIMIT", "1000")), 1000),
             ),
             hf_token=os.getenv("HF_TOKEN", ""),
             hf_model=os.getenv("HF_MODEL", "Qwen/Qwen2.5-7B-Instruct"),
