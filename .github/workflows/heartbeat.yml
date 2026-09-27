@@ -8,6 +8,7 @@ on:
     types: [opened, labeled, edited]
 
 permissions:
+  actions: write
   contents: write
   issues: write
   pull-requests: write
@@ -100,3 +101,28 @@ jobs:
 
           echo "Could not persist autonomous state after 3 retries."
           exit 1
+
+
+      - name: Continue autonomous pulse
+        if: success()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          SHOULD_CONTINUE="$(python -c 'import json; print(str(bool(json.load(open("state/pulse.json")).get("should_continue"))).lower())')"
+          if [ "$SHOULD_CONTINUE" != "true" ]; then
+            echo "Pulse entered watchdog mode; waiting for the scheduled heartbeat."
+            exit 0
+          fi
+
+          DELAY="$(python -c 'import json; print(max(20, min(int(json.load(open("state/pulse.json")).get("minimum_delay_seconds", 30)), 300)))')"
+          echo "Active cognitive work remains; scheduling the next beat after ${DELAY}s."
+          sleep "$DELAY"
+
+          curl --fail-with-body --silent --show-error \
+            --request POST \
+            --header "Accept: application/vnd.github+json" \
+            --header "Authorization: Bearer ${GITHUB_TOKEN}" \
+            --header "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/heartbeat.yml/dispatches" \
+            --data '{"ref":"main"}'
