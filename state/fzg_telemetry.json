@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-27T15:57:51.618263+00:00",
-  "generation": 8,
+  "timestamp": "2026-09-27T16:24:09.145796+00:00",
+  "generation": 9,
   "context": "current GitHub-hosted Ubique repository and retained episode window",
   "P": {
     "status": "proxy_only",
@@ -9,7 +9,7 @@
   },
   "G_A": {
     "status": "observational_proxy",
-    "successful_tasks": 12,
+    "successful_tasks": 14,
     "failed_tasks": 2,
     "ablation_required_for_causal_claim": true
   },
@@ -40,13 +40,14 @@
     "G_A is observational unless the specific mechanism has a valid intervention."
   ],
   "ablation": {
-    "A": "availability of a remote reasoning path in the current provider context",
-    "C": "persisted provider ledger at measurement time",
+    "A": "retain remote reasoning availability after loss of one healthy provider",
+    "C": "persisted provider ledger under a structural one-provider-loss perturbation",
+    "healthy_remote_providers": 2,
     "Q_M_S": 1.0,
     "Q_M_S_minus": 0.0,
     "G_A_proxy": 1.0,
-    "identification": "controlled structural proxy; no live provider was disabled",
+    "identification": "structural robustness proxy only; no live provider was disabled and this is not a general causal estimate of task performance",
     "M_S": "configured multi-provider router",
-    "M_S_minus": "single-provider structural control"
+    "M_S_minus": "single-provider structural control under the same one-provider-loss perturbation"
   }
 }
