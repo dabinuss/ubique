@@ -4,6 +4,7 @@ import json
 import logging
 
 from .config import Config
+from .autonomy import autonomous_task
 from .github import GitHubClient
 from .memory import append_episode, recent_episodes, update_skill
 from .planner import make_prompt, parse_task
@@ -46,7 +47,19 @@ class Agent:
 
         try:
             tasks = self.github.list_tasks(self.config.max_tasks)
-            log.info("Discovered %s task(s)", len(tasks))
+            remote_reasoning_available = bool(
+                self.config.gemini_api_key or self.config.hf_token
+            )
+            tasks.append(
+                autonomous_task(
+                    generation,
+                    remote_reasoning_available=remote_reasoning_available,
+                )
+            )
+            log.info(
+                "Discovered %s task(s), including endogenous autonomous cycle",
+                len(tasks),
+            )
 
             for task in tasks:
                 planned = parse_task(task)
