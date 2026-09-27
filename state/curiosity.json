@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-27T18:46:03.228904+00:00",
-  "generation": 17,
+  "timestamp": "2026-09-27T18:51:42.394803+00:00",
+  "generation": 18,
   "frontiers": [
     {
       "id": "multi_step_planning",
@@ -13,22 +13,22 @@
       "id": "question_generation",
       "title": "Question generation",
       "question": "What makes an internally generated question worth pursuing when no external task requires it?",
-      "prior_mentions": 10,
-      "novelty_priority": 0.09090909090909091
+      "prior_mentions": 11,
+      "novelty_priority": 0.08333333333333333
     },
     {
       "id": "capability_composition",
       "title": "Capability composition",
       "question": "Which existing capabilities can be combined into a genuinely new solution path rather than exercised independently?",
-      "prior_mentions": 13,
-      "novelty_priority": 0.07142857142857142
+      "prior_mentions": 17,
+      "novelty_priority": 0.05555555555555555
     },
     {
-      "id": "hypothesis_revision",
-      "title": "Hypothesis revision",
-      "question": "How should earlier hypotheses change when new evidence conflicts with them?",
-      "prior_mentions": 13,
-      "novelty_priority": 0.07142857142857142
+      "id": "experiment_design",
+      "title": "Experiment design",
+      "question": "Can Ubique distinguish a useful falsifiable experiment from an action that merely produces more telemetry?",
+      "prior_mentions": 22,
+      "novelty_priority": 0.043478260869565216
     }
   ],
   "source_modules": [
@@ -51,6 +51,7 @@
     "models",
     "planner",
     "preflight",
+    "pulse",
     "recovery",
     "state"
   ],
