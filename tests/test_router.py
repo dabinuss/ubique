@@ -27,3 +27,24 @@ def test_router_falls_through(tmp_path, monkeypatch):
     assert out.provider == "good"
     assert written["bad"]["failures"] == 1
     assert written["good"]["successes"] == 1
+
+
+class NamedGood(Provider):
+    def __init__(self, name):
+        self.name = name
+    def available(self): return True
+    def generate(self, prompt): return ProviderResult(provider=self.name, text="ok")
+
+
+def test_select_remote_skips_exhausted_preferred(monkeypatch):
+    monkeypatch.setattr(router_mod, "read_json", lambda name, default: {
+        "gemini": {"daily_date": "2099-01-01", "daily_calls": 20},
+        "groq": {"daily_date": "2099-01-01", "daily_calls": 5},
+    })
+    monkeypatch.setattr(router_mod, "write_json", lambda name, value: None)
+    monkeypatch.setattr(router_mod.datetime, "now", classmethod(lambda cls, tz=None: __import__("datetime").datetime(2099,1,1,tzinfo=__import__("datetime").timezone.utc)))
+    r = router_mod.ProviderRouter(
+        [NamedGood("gemini"), NamedGood("groq")],
+        daily_limits={"gemini": 20, "groq": 1000},
+    )
+    assert r.select_remote("gemini", required_calls=2) == "groq"
