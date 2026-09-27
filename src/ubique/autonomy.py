@@ -12,8 +12,10 @@ def autonomous_task(
     homeostasis: dict[str, Any] | None = None,
     telemetry: dict[str, Any] | None = None,
     environment: dict[str, Any] | None = None,
+    preflight: dict[str, Any] | None = None,
+    cognition: dict[str, Any] | None = None,
 ) -> Task:
-    """Choose Ubique's next endogenous action from state plus bounded cadence."""
+    """Choose the next endogenous action from layer-1 health and layer-2 cognition."""
     snapshot = homeostasis or {"needs": []}
     return choose_endogenous_goal(
         generation=generation,
@@ -21,4 +23,6 @@ def autonomous_task(
         remote_reasoning_available=remote_reasoning_available,
         telemetry=telemetry,
         environment=environment,
+        preflight=preflight,
+        cognition=cognition,
     )
