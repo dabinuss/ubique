@@ -1,7 +1,14 @@
 {
-  "timestamp": "2026-09-27T19:35:52.534054+00:00",
-  "generation": 60,
+  "timestamp": "2026-09-27T19:36:45.310403+00:00",
+  "generation": 61,
   "frontiers": [
+    {
+      "id": "question_generation",
+      "title": "Question generation",
+      "question": "What makes an internally generated question worth pursuing when no external task requires it?",
+      "prior_mentions": 12,
+      "novelty_priority": 0.07692307692307693
+    },
     {
       "id": "capability_composition",
       "title": "Capability composition",
@@ -10,25 +17,18 @@
       "novelty_priority": 0.07142857142857142
     },
     {
-      "id": "question_generation",
-      "title": "Question generation",
-      "question": "What makes an internally generated question worth pursuing when no external task requires it?",
-      "prior_mentions": 14,
-      "novelty_priority": 0.06666666666666667
-    },
-    {
       "id": "hypothesis_revision",
       "title": "Hypothesis revision",
       "question": "How should earlier hypotheses change when new evidence conflicts with them?",
-      "prior_mentions": 38,
-      "novelty_priority": 0.02564102564102564
+      "prior_mentions": 37,
+      "novelty_priority": 0.02631578947368421
     },
     {
       "id": "experiment_design",
       "title": "Experiment design",
       "question": "Can Ubique distinguish a useful falsifiable experiment from an action that merely produces more telemetry?",
-      "prior_mentions": 54,
-      "novelty_priority": 0.01818181818181818
+      "prior_mentions": 53,
+      "novelty_priority": 0.018518518518518517
     }
   ],
   "source_modules": [
