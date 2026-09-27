@@ -8,6 +8,7 @@ body:
     attributes:
       label: Task type
       options:
+        - /fzg
         - /think
         - /plan
         - /summarize
@@ -22,7 +23,7 @@ body:
       label: Task
       description: Put the selected command on the first line, followed by the task.
       placeholder: |
-        /plan
-        Improve provider fallback handling.
+        /fzg
+        Analyze Ubique's task-completion mechanism in a defined GitHub Actions context.
     validations:
       required: true
