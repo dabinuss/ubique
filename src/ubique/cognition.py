@@ -8,7 +8,7 @@ from .state import read_json, write_json, utc_now
 
 
 ALLOWED_NEXT_COMMANDS = {"reflect", "experiment", "fzg", "evolve"}
-ALLOWED_EXPERIMENTS = {"provider_probe", "memory_recall", "memory_abstraction", "state_consistency"}
+ALLOWED_EXPERIMENTS = {"provider_probe", "memory_recall", "memory_abstraction", "hypothesis_ablation", "state_consistency"}
 
 
 def cognitive_snapshot() -> dict[str, Any]:
