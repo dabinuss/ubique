@@ -23,7 +23,7 @@
       "id": "project:14",
       "title": "Autonomous Epistemic Question Generation & Memory Abstraction",
       "objective": "Develop and validate a mechanism for generating self-directed epistemic questions and compressing episodic memory into reusable conceptual abstractions.",
-      "status": "active",
+      "status": "paused",
       "created_generation": 14,
       "step": 19,
       "history": [
@@ -125,7 +125,41 @@
       ],
       "updated_generation": 50,
       "latest_thought": "thought:50",
-      "latest_hypothesis": "hypothesis:50"
+      "latest_hypothesis": "hypothesis:50",
+      "paused_generation": 52,
+      "pause_reason": "experiment_type_repeated:memory_abstraction:7/8,mean_semantic_overlap:0.583",
+      "result": {
+        "learned": [
+          "Executed memory_abstraction experiments (provider: groq) confirmed a U‑shaped planning error curve for hierarchical indexing depths 2, 3, and 4 on 5‑step counterfactual planning tasks.",
+          "Depth 3 yielded the lowest observed planning error, while depth 4 showed increased error relative to depth 3.",
+          "Repeated execution of the same experiment type (memory_abstraction) across generations 22‑50 produced high semantic overlap (0.583) without introducing new variables.",
+          "FZG analyses applied to existing depth‑sweep data quantified G_A approximations for the tested depths, but causal interventions were not performed."
+        ],
+        "not_established": [
+          "The functional relationship between hierarchical depth and error propagation for planning horizons longer than five steps.",
+          "Whether the optimal depth shifts upward (e.g., to depth 4 or 5) for extended horizons (6+ steps).",
+          "The effect of hierarchical depths beyond 4 (e.g., depth 5 or 6) on planning error and G_A.",
+          "Generalization of the observed depth‑error relationship to other model providers or domains.",
+          "Causal identification of G_A improvements attributable to abstraction depth (only observational estimates are available)."
+        ],
+        "supported_hypotheses": [
+          "There exists an optimal hierarchical indexing depth (d*) that minimizes planning error for a given horizon; observed data support d*≈3 for a 5‑step horizon.",
+          "Hierarchical depths shallower than d* underutilize abstraction benefits, leading to higher error.",
+          "Hierarchical depths deeper than d* introduce over‑compression, increasing planning error (evidenced by depth 4)."
+        ],
+        "weakened_hypotheses": [
+          "The hypothesis that the optimal depth d* shifts upward with longer planning horizons remains untested and therefore lacks support.",
+          "Any claim that depth 5 will necessarily increase error is speculative without empirical evidence."
+        ],
+        "loop_reason": "A deterministic loop detector identified that the project has been repeating the same memory_abstraction experiment type (7 of the last 8 steps) with substantial semantic overlap, resulting in redundant cycles and no novel evidence generation.",
+        "resume_when": [
+          "A new experimental dimension is introduced (e.g., varying planning horizon length, adding depth values beyond 4, or switching to a different provider).",
+          "Causal intervention data become available to compute G_A with identified effects.",
+          "Analysis of existing data yields a concrete policy change that can be validated with a distinct experiment type.",
+          "A peer review or external audit confirms that the current knowledge gap justifies continuation."
+        ],
+        "handoff_question": "What novel experiment (e.g., extending planning horizons, testing deeper hierarchical depths, or employing a different model provider) should be designed to break the current repetition and directly evaluate the horizon‑dependent optimal depth hypothesis?"
+      }
     }
   ]
 }
