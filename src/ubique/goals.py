@@ -180,14 +180,14 @@ def choose_endogenous_goal(
         title=f"Autonomous development reflection generation {generation}",
         body=(
             "/reflect\n"
-            "Layer 1 status: healthy. That is only a gate and is NOT the subject of this reflection. "
-            "Layer 2 must make epistemic or capability progress independent of operational continuity. "
+            "Layer 1 status is healthy and is only a gate, not the subject of this reflection. "
             "Do not choose provider redundancy, heartbeat reliability, recovery, memory pressure, "
-            "runtime continuity, or other Layer-1 maintenance as the main topic while the gate is healthy. "
-            "If attention.force_new_project is true, do NOT continue the paused project: start a new project from attention.forced_frontier or the highest-novelty curiosity frontier. Otherwise continue an active non-maintenance project when useful; otherwise choose a curiosity frontier "
-            "or generate a new question about the environment, useful tasks, planning, memory abstraction, hypothesis revision, experiment "
-            "design, capability composition, or another non-homeostatic capability. Do not make the system itself the default research object. Use prior thoughts and "
-            "hypotheses for continuity, but do not inherit an old maintenance topic merely because it is recent. "
+            "runtime continuity, benchmarks, telemetry, prompt editing, or code refactoring as the main topic merely because they are observable. "
+            "Follow the orientation in the system prompt: make progress toward a provisional evidence-grounded understanding, "
+            "prefer ordinary useful action and concrete answers over self-maintenance or self-optimization, and resolve a question before replacing it with another. "
+            "If attention.force_new_project is true, do not continue the paused project. Otherwise continue an active project only when it still bears directly on a meaningful open question; "
+            "if it does not, choose a bounded inquiry or useful task that can produce evidence rather than another internal capability exercise. "
+            "Use prior thoughts and hypotheses for continuity without inheriting a topic merely because it is recent. "
             f"Layer-2 cognitive context: {cognitive_context}"
         ),
         source="autonomous",
