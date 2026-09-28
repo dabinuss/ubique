@@ -763,6 +763,24 @@
       "blocked_generation": 121,
       "blocker": "A measurement whose outputs directly correspond to the quantities asserted by the question and hypothesis is required before this claim can be resolved.",
       "answer": "The recorded evidence does not establish the current hypothesis. The question remains unanswered by the executed measurement."
+    },
+    {
+      "id": "project:122",
+      "title": "Repository Modification Goal-Directedness Validation",
+      "objective": "Measure whether autonomous repository modifications satisfy FZG criteria for functional goal-directedness ($G_A$).",
+      "status": "active",
+      "created_generation": 122,
+      "step": 1,
+      "history": [
+        {
+          "generation": 122,
+          "thought": "thought:122",
+          "next_action": "Execute state consistency experiment to validate causal task impact on repository state."
+        }
+      ],
+      "updated_generation": 122,
+      "latest_thought": "thought:122",
+      "latest_hypothesis": "hypothesis:122"
     }
   ]
 }
