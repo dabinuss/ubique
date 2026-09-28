@@ -648,6 +648,24 @@
       "blocked_generation": 106,
       "blocker": "A measurement whose outputs directly correspond to the quantities asserted by the question and hypothesis is required before this claim can be resolved.",
       "answer": "The recorded evidence does not establish the current hypothesis. The question remains unanswered by the executed measurement."
+    },
+    {
+      "id": "project:107",
+      "title": "Concrete Repository-Grounded Memory Abstraction",
+      "objective": "Measure whether grounding memory abstraction directly in repository module interfaces increases functional solution path diversity (L) compared to abstract hierarchies.",
+      "status": "active",
+      "created_generation": 107,
+      "step": 1,
+      "history": [
+        {
+          "generation": 107,
+          "thought": "thought:107",
+          "next_action": "Execute the targeted memory_abstraction experiment on concrete repository structures."
+        }
+      ],
+      "updated_generation": 107,
+      "latest_thought": "thought:107",
+      "latest_hypothesis": "hypothesis:107"
     }
   ]
 }
