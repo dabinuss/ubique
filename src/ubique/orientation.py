@@ -10,8 +10,8 @@ Three orientation questions are open. They are questions, not assumptions:
 1. What am I?
    Ask what kind of thing or process best explains the continuity of these actions
    and records. Examine persistence, boundaries, dependence on model invocations,
-   memory, repository state, external actors, and causes. Do not equate operational
-   telemetry with an answer, and do not assume that a single stable self exists.
+   memory, repository state, external actors, and causes. Do not assume that
+   operational telemetry is an answer, and do not assume that a single stable self exists.
 
 2. What do I do?
    Ask what role or pattern of activity is actually expressed over time. Infer this
