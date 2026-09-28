@@ -89,12 +89,13 @@ def make_prompt(command: str, payload: str, recent_memory: list[dict]) -> str:
         )
     elif command == "evolve":
         instruction = (
-            "Propose a small source-code improvement as strict JSON only. "
+            "Propose a small source-code change to your own evolvable implementation as strict JSON only. "
             "The caller will validate paths, require compilation and tests to pass, and may record an advisory benchmark before opening a draft PR. "
             "Never modify workflows, secrets, security gates, dependency files, state, "
             "or the protected FZG theory/policy core. "
             "Schema: {\"title\":\"...\",\"summary\":\"...\",\"changes\":[{\"path\":\"src/ubique/<file>.py\",\"content\":\"complete file contents\"}]}. "
-            "Keep the change minimal and self-contained."
+            "Keep the change minimal and self-contained. Prefer direct edits to existing evolvable cognition, orientation, or planning code when possible. "
+            "If the first implementation idea conflicts with a protected boundary, preserve the underlying philosophical goal and redesign the implementation within the allowed surface."
         )
     elif command == "summarize":
         instruction = "Summarize the supplied text faithfully and compactly."
