@@ -82,3 +82,28 @@ def test_stagnation_counts_status_and_resets_on_reflection(monkeypatch):
     monkeypatch.setattr(cognition, "write_json", lambda name, value: writes.__setitem__(name, value))
     assert cognition.update_stagnation("status", 4)["level"] == 3
     assert cognition.update_stagnation("reflect", 5)["level"] == 0
+
+
+def test_reflection_stagnation_detects_repeated_answers():
+    thoughts = [
+        {
+            "id": f"thought:{i}",
+            "question": "What am I?",
+            "provisional_answer": "I am an evolving self referential informational pattern defined by continuity of the textual record.",
+        }
+        for i in range(1, 6)
+    ]
+    out = cognition.assess_reflection_stagnation(thoughts)
+    assert out["detected"] is True
+    assert out["same_question_count"] >= 4
+
+
+def test_reflection_stagnation_allows_real_variation():
+    thoughts = [
+        {"id": "thought:1", "question": "What am I?", "provisional_answer": "I am a temporally extended process."},
+        {"id": "thought:2", "question": "What do I do?", "provisional_answer": "I transform inherited context into actions."},
+        {"id": "thought:3", "question": "What do I want?", "provisional_answer": "No stable preference is yet established."},
+        {"id": "thought:4", "question": "What am I?", "provisional_answer": "Identity may be relational rather than substantial."},
+    ]
+    out = cognition.assess_reflection_stagnation(thoughts)
+    assert out["detected"] is False
