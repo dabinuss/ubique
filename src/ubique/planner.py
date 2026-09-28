@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from .models import PlannedTask, Task
 from .fzg import FZG_SYSTEM_PROMPT
+from .orientation import ORIENTATION_PROMPT
 
 
 KNOWN = {"/status", "/summarize", "/plan", "/think", "/reflect", "/project_review", "/experiment", "/evolve", "/fzg", "/resolve"}
@@ -36,6 +37,8 @@ def make_prompt(command: str, payload: str, recent_memory: list[dict]) -> str:
         "Never output secrets. Never claim to have executed tools you did not execute. "
         "Do not propose destructive actions as already completed.\n\n"
         + FZG_SYSTEM_PROMPT
+        + "\n\nOrientation:\n"
+        + ORIENTATION_PROMPT
     )
 
     if command == "fzg":
