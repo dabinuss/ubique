@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-28T07:32:19.482684+00:00",
-  "generation": 137,
+  "timestamp": "2026-09-28T07:33:20.353646+00:00",
+  "generation": 138,
   "frontiers": [
     {
       "id": "multi_step_planning",
@@ -10,25 +10,25 @@
       "novelty_priority": 0.058823529411764705
     },
     {
-      "id": "question_generation",
-      "title": "Question generation",
-      "question": "What makes an internally generated question worth pursuing when no external task requires it?",
-      "prior_mentions": 18,
-      "novelty_priority": 0.05263157894736842
-    },
-    {
       "id": "capability_composition",
       "title": "Capability composition",
       "question": "Which existing capabilities can be combined into a genuinely new solution path rather than exercised independently?",
-      "prior_mentions": 23,
-      "novelty_priority": 0.041666666666666664
+      "prior_mentions": 17,
+      "novelty_priority": 0.05555555555555555
     },
     {
-      "id": "memory_abstraction",
-      "title": "Memory abstraction",
-      "question": "Can repeated episodes be compressed into reusable concepts without losing important exceptions?",
-      "prior_mentions": 56,
-      "novelty_priority": 0.017543859649122806
+      "id": "question_generation",
+      "title": "Question generation",
+      "question": "What makes an internally generated question worth pursuing when no external task requires it?",
+      "prior_mentions": 20,
+      "novelty_priority": 0.047619047619047616
+    },
+    {
+      "id": "hypothesis_revision",
+      "title": "Hypothesis revision",
+      "question": "How should earlier hypotheses change when new evidence conflicts with them?",
+      "prior_mentions": 57,
+      "novelty_priority": 0.017241379310344827
     }
   ],
   "source_modules": [
