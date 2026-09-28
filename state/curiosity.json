@@ -1,14 +1,7 @@
 {
-  "timestamp": "2026-09-28T07:24:51.958822+00:00",
-  "generation": 128,
+  "timestamp": "2026-09-28T07:25:42.904131+00:00",
+  "generation": 129,
   "frontiers": [
-    {
-      "id": "question_generation",
-      "title": "Question generation",
-      "question": "What makes an internally generated question worth pursuing when no external task requires it?",
-      "prior_mentions": 13,
-      "novelty_priority": 0.07142857142857142
-    },
     {
       "id": "multi_step_planning",
       "title": "Multi-step planning",
@@ -17,18 +10,25 @@
       "novelty_priority": 0.0625
     },
     {
+      "id": "question_generation",
+      "title": "Question generation",
+      "question": "What makes an internally generated question worth pursuing when no external task requires it?",
+      "prior_mentions": 16,
+      "novelty_priority": 0.058823529411764705
+    },
+    {
       "id": "capability_composition",
       "title": "Capability composition",
       "question": "Which existing capabilities can be combined into a genuinely new solution path rather than exercised independently?",
-      "prior_mentions": 22,
-      "novelty_priority": 0.043478260869565216
+      "prior_mentions": 23,
+      "novelty_priority": 0.041666666666666664
     },
     {
       "id": "memory_abstraction",
       "title": "Memory abstraction",
       "question": "Can repeated episodes be compressed into reusable concepts without losing important exceptions?",
-      "prior_mentions": 54,
-      "novelty_priority": 0.01818181818181818
+      "prior_mentions": 52,
+      "novelty_priority": 0.018867924528301886
     }
   ],
   "source_modules": [
