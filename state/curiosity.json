@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-09-28T07:35:00.045427+00:00",
-  "generation": 140,
+  "timestamp": "2026-09-28T07:35:49.939129+00:00",
+  "generation": 141,
   "frontiers": [
-    {
-      "id": "multi_step_planning",
-      "title": "Multi-step planning",
-      "question": "Can an autonomous project preserve a coherent objective across several generations and adapt its plan from evidence?",
-      "prior_mentions": 16,
-      "novelty_priority": 0.058823529411764705
-    },
     {
       "id": "capability_composition",
       "title": "Capability composition",
       "question": "Which existing capabilities can be combined into a genuinely new solution path rather than exercised independently?",
+      "prior_mentions": 13,
+      "novelty_priority": 0.07142857142857142
+    },
+    {
+      "id": "multi_step_planning",
+      "title": "Multi-step planning",
+      "question": "Can an autonomous project preserve a coherent objective across several generations and adapt its plan from evidence?",
       "prior_mentions": 17,
       "novelty_priority": 0.05555555555555555
     },
@@ -20,15 +20,15 @@
       "id": "question_generation",
       "title": "Question generation",
       "question": "What makes an internally generated question worth pursuing when no external task requires it?",
-      "prior_mentions": 20,
-      "novelty_priority": 0.047619047619047616
+      "prior_mentions": 21,
+      "novelty_priority": 0.045454545454545456
     },
     {
-      "id": "hypothesis_revision",
-      "title": "Hypothesis revision",
-      "question": "How should earlier hypotheses change when new evidence conflicts with them?",
-      "prior_mentions": 56,
-      "novelty_priority": 0.017543859649122806
+      "id": "memory_abstraction",
+      "title": "Memory abstraction",
+      "question": "Can repeated episodes be compressed into reusable concepts without losing important exceptions?",
+      "prior_mentions": 41,
+      "novelty_priority": 0.023809523809523808
     }
   ],
   "source_modules": [
