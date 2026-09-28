@@ -607,7 +607,7 @@
       "id": "project:101",
       "title": "Modular decomposition and solution path diversity",
       "objective": "Determine the causal relationship between repository modularity and functional solution path diversity (L).",
-      "status": "active",
+      "status": "blocked",
       "created_generation": 101,
       "step": 1,
       "history": [
@@ -617,9 +617,14 @@
           "next_action": "Design and execute a bounded code evolution and evaluation sequence targeting module separation."
         }
       ],
-      "updated_generation": 101,
+      "updated_generation": 103,
       "latest_thought": "thought:101",
-      "latest_hypothesis": "hypothesis:101"
+      "latest_hypothesis": "hypothesis:101",
+      "latest_resolution": "resolution:103",
+      "resolution_status": "unresolved",
+      "blocked_generation": 103,
+      "blocker": "A measurement whose outputs directly correspond to the quantities asserted by the question and hypothesis is required before this claim can be resolved.",
+      "answer": "The recorded evidence does not establish the current hypothesis. The question remains unanswered by the executed measurement."
     }
   ]
 }
