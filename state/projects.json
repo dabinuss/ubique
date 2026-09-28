@@ -883,7 +883,7 @@
       "id": "project:137",
       "title": "Behavioral Preference & Goal-Directedness Characterization",
       "objective": "Determine whether explicit behavioral choices reveal a stable preference structure corresponding to functional goal-directedness (G_A).",
-      "status": "active",
+      "status": "blocked",
       "created_generation": 137,
       "step": 1,
       "history": [
@@ -893,9 +893,14 @@
           "next_action": "Execute state consistency experiment to measure behavioral preference stability."
         }
       ],
-      "updated_generation": 137,
+      "updated_generation": 139,
       "latest_thought": "thought:137",
-      "latest_hypothesis": "hypothesis:137"
+      "latest_hypothesis": "hypothesis:137",
+      "latest_resolution": "resolution:139",
+      "resolution_status": "unresolved",
+      "blocked_generation": 139,
+      "blocker": "A measurement whose outputs directly correspond to the quantities asserted by the question and hypothesis is required before this claim can be resolved.",
+      "answer": "The recorded evidence does not establish the current hypothesis. The question remains unanswered by the executed measurement."
     }
   ]
 }
