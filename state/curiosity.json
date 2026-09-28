@@ -1,34 +1,34 @@
 {
-  "timestamp": "2026-09-28T07:09:10.147725+00:00",
-  "generation": 110,
+  "timestamp": "2026-09-28T07:10:11.574204+00:00",
+  "generation": 111,
   "frontiers": [
     {
       "id": "multi_step_planning",
       "title": "Multi-step planning",
       "question": "Can an autonomous project preserve a coherent objective across several generations and adapt its plan from evidence?",
-      "prior_mentions": 3,
-      "novelty_priority": 0.25
+      "prior_mentions": 4,
+      "novelty_priority": 0.2
     },
     {
       "id": "capability_composition",
       "title": "Capability composition",
       "question": "Which existing capabilities can be combined into a genuinely new solution path rather than exercised independently?",
-      "prior_mentions": 27,
-      "novelty_priority": 0.03571428571428571
+      "prior_mentions": 26,
+      "novelty_priority": 0.037037037037037035
     },
     {
       "id": "hypothesis_revision",
       "title": "Hypothesis revision",
       "question": "How should earlier hypotheses change when new evidence conflicts with them?",
-      "prior_mentions": 59,
-      "novelty_priority": 0.016666666666666666
+      "prior_mentions": 56,
+      "novelty_priority": 0.017543859649122806
     },
     {
-      "id": "experiment_design",
-      "title": "Experiment design",
-      "question": "Can Ubique distinguish a useful falsifiable experiment from an action that merely produces more telemetry?",
-      "prior_mentions": 66,
-      "novelty_priority": 0.014925373134328358
+      "id": "question_generation",
+      "title": "Question generation",
+      "question": "What makes an internally generated question worth pursuing when no external task requires it?",
+      "prior_mentions": 57,
+      "novelty_priority": 0.017241379310344827
     }
   ],
   "source_modules": [
