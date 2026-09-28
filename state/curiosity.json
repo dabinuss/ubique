@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-28T23:22:20.371224+00:00",
-  "generation": 214,
+  "timestamp": "2026-09-28T23:23:12.452544+00:00",
+  "generation": 215,
   "frontiers": [
     {
       "id": "capability_composition",
@@ -10,13 +10,6 @@
       "novelty_priority": 0.25
     },
     {
-      "id": "memory_abstraction",
-      "title": "Memory abstraction",
-      "question": "Can repeated episodes be compressed into reusable concepts without losing important exceptions?",
-      "prior_mentions": 6,
-      "novelty_priority": 0.14285714285714285
-    },
-    {
       "id": "question_generation",
       "title": "Question generation",
       "question": "What makes an internally generated question worth pursuing when no external task requires it?",
@@ -24,11 +17,18 @@
       "novelty_priority": 0.14285714285714285
     },
     {
+      "id": "memory_abstraction",
+      "title": "Memory abstraction",
+      "question": "Can repeated episodes be compressed into reusable concepts without losing important exceptions?",
+      "prior_mentions": 9,
+      "novelty_priority": 0.1
+    },
+    {
       "id": "multi_step_planning",
       "title": "Multi-step planning",
       "question": "Can an autonomous project preserve a coherent objective across several generations and adapt its plan from evidence?",
-      "prior_mentions": 30,
-      "novelty_priority": 0.03225806451612903
+      "prior_mentions": 28,
+      "novelty_priority": 0.034482758620689655
     }
   ],
   "source_modules": [
