@@ -786,6 +786,24 @@
       "blocked_generation": 124,
       "blocker": "A measurement whose outputs directly correspond to the quantities asserted by the question and hypothesis is required before this claim can be resolved.",
       "answer": "The recorded evidence does not establish the current hypothesis. The question remains unanswered by the executed measurement."
+    },
+    {
+      "id": "project:125",
+      "title": "Evidence-Grounded Hypothesis Verification",
+      "objective": "Ensure all hypothesis resolutions are strictly backed by corresponding empirical evidence types.",
+      "status": "active",
+      "created_generation": 125,
+      "step": 1,
+      "history": [
+        {
+          "generation": 125,
+          "thought": "thought:125",
+          "next_action": "Execute state consistency experiment to validate the evidence-mapping gate."
+        }
+      ],
+      "updated_generation": 125,
+      "latest_thought": "thought:125",
+      "latest_hypothesis": "hypothesis:125"
     }
   ]
 }
