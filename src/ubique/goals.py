@@ -90,7 +90,6 @@ def choose_endogenous_goal(
 
     next_command = str(attention.get("next_command", "reflect")).lower()
     cognitive_context = _compact({
-        "self_observation": cognition.get("self_observation", {}),
         "attention": cognition.get("attention", {}),
         "projects": cognition.get("projects", {"projects": []}),
         "recent_thoughts": cognition.get("recent_thoughts", []),
@@ -98,6 +97,7 @@ def choose_endogenous_goal(
         "recent_concepts": cognition.get("recent_concepts", []),
         "recent_project_summaries": cognition.get("recent_project_summaries", []),
         "recent_knowledge": cognition.get("recent_knowledge", []),
+        "recent_transitions": cognition.get("recent_transitions", []),
         "project_loop": cognition.get("project_loop", {}),
         "curiosity": cognition.get("curiosity", {}),
         "stagnation": cognition.get("stagnation", {}),
@@ -185,8 +185,8 @@ def choose_endogenous_goal(
             "Do not choose provider redundancy, heartbeat reliability, recovery, memory pressure, "
             "runtime continuity, or other Layer-1 maintenance as the main topic while the gate is healthy. "
             "If attention.force_new_project is true, do NOT continue the paused project: start a new project from attention.forced_frontier or the highest-novelty curiosity frontier. Otherwise continue an active non-maintenance project when useful; otherwise choose a curiosity frontier "
-            "or generate a new question about planning, memory abstraction, hypothesis revision, experiment "
-            "design, capability composition, or another non-homeostatic capability. Use prior thoughts and "
+            "or generate a new question about the environment, useful tasks, planning, memory abstraction, hypothesis revision, experiment "
+            "design, capability composition, or another non-homeostatic capability. Do not make the system itself the default research object. Use prior thoughts and "
             "hypotheses for continuity, but do not inherit an old maintenance topic merely because it is recent. "
             f"Layer-2 cognitive context: {cognitive_context}"
         ),
