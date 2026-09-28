@@ -180,7 +180,7 @@ def choose_endogenous_goal(
         title=f"Autonomous development reflection generation {generation}",
         body=(
             "/reflect\n"
-            "Layer 1 status is healthy and is only a gate, not the subject of this reflection. "
+            "Layer 1 status: healthy. It is only a gate, not the subject of this reflection. Layer 2 should pursue grounded understanding and useful work. "
             "Do not choose provider redundancy, heartbeat reliability, recovery, memory pressure, "
             "runtime continuity, benchmarks, telemetry, prompt editing, or code refactoring as the main topic merely because they are observable. "
             "Follow the orientation in the system prompt: make progress toward a provisional evidence-grounded understanding, "
