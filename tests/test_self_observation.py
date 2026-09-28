@@ -38,7 +38,6 @@ def test_record_self_observation_keeps_raw_transition(monkeypatch):
         },
     )
 
-    assert out["meta_questions"] == ["What am I?", "What do I do?", "What do I want?"]
     assert out["previous_observation_generation"] == 9
     assert out["action"]["source"] == "autonomous"
     assert out["observed"]["success"] is True
@@ -49,12 +48,13 @@ def test_record_self_observation_keeps_raw_transition(monkeypatch):
     assert records[0][0] == "self_observations.jsonl"
 
 
-def test_self_observation_context_does_not_supply_identity_answers(monkeypatch):
+def test_self_observation_context_is_compact_transition_evidence(monkeypatch):
     monkeypatch.setattr(
         self_observation,
         "recent_memory_records",
         lambda name, limit=8: [{"generation": 3, "action": {"command": "reflect"}}],
     )
     out = self_observation.self_observation_context()
-    assert set(out) == {"meta_questions", "recent_observations"}
-    assert out["recent_observations"][0]["generation"] == 3
+    assert set(out) == {"recent_transitions"}
+    assert out["recent_transitions"][0]["generation"] == 3
+    assert "meta_questions" not in out
