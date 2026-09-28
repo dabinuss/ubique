@@ -248,28 +248,34 @@ class Agent:
                             )
 
                             repaired = False
-                            if (
+                            repair_attempts = 0
+                            repair_source = original_proposal
+                            while (
                                 not evo.accepted
                                 and evo.reason
                                 and (
                                     evo.reason.startswith("candidate tests failed:")
                                     or evo.reason.startswith("proposal rejected:")
                                 )
+                                and repair_attempts < 3
                             ):
                                 repair_prompt = make_evolution_repair_prompt(
-                                    original_proposal,
+                                    repair_source,
                                     evo.reason,
                                 )
                                 repair_result = self.router.generate(repair_prompt)
-                                if repair_result.provider != "fallback":
-                                    provider_name = repair_result.provider
-                                    repaired = True
-                                    evo = run_evolution(
-                                        repair_result.text,
-                                        generation,
-                                        self.config.github_token,
-                                        self.config.github_repository,
-                                    )
+                                if repair_result.provider == "fallback":
+                                    break
+                                provider_name = repair_result.provider
+                                repaired = True
+                                repair_attempts += 1
+                                repair_source = repair_result.text
+                                evo = run_evolution(
+                                    repair_result.text,
+                                    generation,
+                                    self.config.github_token,
+                                    self.config.github_repository,
+                                )
 
                             if not evo.accepted:
                                 raise RuntimeError(evo.reason or "evolution proposal rejected")
@@ -281,6 +287,7 @@ class Agent:
                                 f"- Baseline benchmark (advisory): `{evo.baseline_score}`\n"
                                 f"- Candidate benchmark (advisory): `{evo.candidate_score}`\n"
                                 f"- Self-repair used: `{repaired}`\n"
+                                f"- Repair attempts: `{repair_attempts}`\n"
                                 f"- Pull request: {evo.pr_url}\n\n"
                                 "Human review is required before merge."
                             )
