@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-28T07:04:27.472766+00:00",
-  "generation": 105,
+  "timestamp": "2026-09-28T07:05:19.462615+00:00",
+  "generation": 106,
   "frontiers": [
     {
       "id": "multi_step_planning",
@@ -13,22 +13,22 @@
       "id": "capability_composition",
       "title": "Capability composition",
       "question": "Which existing capabilities can be combined into a genuinely new solution path rather than exercised independently?",
-      "prior_mentions": 17,
-      "novelty_priority": 0.05555555555555555
+      "prior_mentions": 18,
+      "novelty_priority": 0.05263157894736842
     },
     {
       "id": "memory_abstraction",
       "title": "Memory abstraction",
       "question": "Can repeated episodes be compressed into reusable concepts without losing important exceptions?",
-      "prior_mentions": 37,
-      "novelty_priority": 0.02631578947368421
+      "prior_mentions": 39,
+      "novelty_priority": 0.025
     },
     {
-      "id": "experiment_design",
-      "title": "Experiment design",
-      "question": "Can Ubique distinguish a useful falsifiable experiment from an action that merely produces more telemetry?",
-      "prior_mentions": 66,
-      "novelty_priority": 0.014925373134328358
+      "id": "hypothesis_revision",
+      "title": "Hypothesis revision",
+      "question": "How should earlier hypotheses change when new evidence conflicts with them?",
+      "prior_mentions": 65,
+      "novelty_priority": 0.015151515151515152
     }
   ],
   "source_modules": [
