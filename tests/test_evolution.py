@@ -89,3 +89,15 @@ def test_groq_secret_access_is_rejected():
     })
     with pytest.raises(ValueError):
         validate_proposal(raw)
+
+
+def test_benchmark_is_advisory_when_unavailable(monkeypatch):
+    def fail(*args, **kwargs):
+        raise RuntimeError("benchmark unavailable")
+    monkeypatch.setattr(evolution, "_benchmark", fail)
+    assert evolution._benchmark_optional() is None
+
+
+def test_benchmark_is_advisory_when_available(monkeypatch):
+    monkeypatch.setattr(evolution, "_benchmark", lambda **kwargs: 7)
+    assert evolution._benchmark_optional() == 7
