@@ -1,20 +1,20 @@
 {
-  "timestamp": "2026-09-28T23:11:45.449367+00:00",
-  "generation": 203,
+  "timestamp": "2026-09-28T23:12:36.329299+00:00",
+  "generation": 204,
   "frontiers": [
-    {
-      "id": "capability_composition",
-      "title": "Capability composition",
-      "question": "Which existing capabilities can be combined into a genuinely new solution path rather than exercised independently?",
-      "prior_mentions": 2,
-      "novelty_priority": 0.3333333333333333
-    },
     {
       "id": "memory_abstraction",
       "title": "Memory abstraction",
       "question": "Can repeated episodes be compressed into reusable concepts without losing important exceptions?",
       "prior_mentions": 2,
       "novelty_priority": 0.3333333333333333
+    },
+    {
+      "id": "capability_composition",
+      "title": "Capability composition",
+      "question": "Which existing capabilities can be combined into a genuinely new solution path rather than exercised independently?",
+      "prior_mentions": 3,
+      "novelty_priority": 0.25
     },
     {
       "id": "question_generation",
@@ -24,11 +24,11 @@
       "novelty_priority": 0.125
     },
     {
-      "id": "hypothesis_revision",
-      "title": "Hypothesis revision",
-      "question": "How should earlier hypotheses change when new evidence conflicts with them?",
-      "prior_mentions": 42,
-      "novelty_priority": 0.023255813953488372
+      "id": "multi_step_planning",
+      "title": "Multi-step planning",
+      "question": "Can an autonomous project preserve a coherent objective across several generations and adapt its plan from evidence?",
+      "prior_mentions": 40,
+      "novelty_priority": 0.024390243902439025
     }
   ],
   "source_modules": [
