@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-09-28T07:10:11.574204+00:00",
-  "generation": 111,
+  "timestamp": "2026-09-28T07:11:00.507314+00:00",
+  "generation": 112,
   "frontiers": [
     {
       "id": "multi_step_planning",
       "title": "Multi-step planning",
       "question": "Can an autonomous project preserve a coherent objective across several generations and adapt its plan from evidence?",
-      "prior_mentions": 4,
-      "novelty_priority": 0.2
+      "prior_mentions": 6,
+      "novelty_priority": 0.14285714285714285
     },
     {
       "id": "capability_composition",
@@ -17,18 +17,18 @@
       "novelty_priority": 0.037037037037037035
     },
     {
+      "id": "question_generation",
+      "title": "Question generation",
+      "question": "What makes an internally generated question worth pursuing when no external task requires it?",
+      "prior_mentions": 55,
+      "novelty_priority": 0.017857142857142856
+    },
+    {
       "id": "hypothesis_revision",
       "title": "Hypothesis revision",
       "question": "How should earlier hypotheses change when new evidence conflicts with them?",
       "prior_mentions": 56,
       "novelty_priority": 0.017543859649122806
-    },
-    {
-      "id": "question_generation",
-      "title": "Question generation",
-      "question": "What makes an internally generated question worth pursuing when no external task requires it?",
-      "prior_mentions": 57,
-      "novelty_priority": 0.017241379310344827
     }
   ],
   "source_modules": [

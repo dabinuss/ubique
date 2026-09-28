@@ -676,7 +676,7 @@
       "id": "project:110",
       "title": "Repository Action Boundary & Persistence Profiling",
       "objective": "Measure system persistence and boundary constraints through concrete repository state interactions rather than internal memory abstraction loops.",
-      "status": "active",
+      "status": "blocked",
       "created_generation": 110,
       "step": 1,
       "history": [
@@ -686,9 +686,14 @@
           "next_action": "Perform a bounded state consistency check on repository structure to establish baseline action boundaries."
         }
       ],
-      "updated_generation": 110,
+      "updated_generation": 112,
       "latest_thought": "thought:110",
-      "latest_hypothesis": "hypothesis:110"
+      "latest_hypothesis": "hypothesis:110",
+      "latest_resolution": "resolution:112",
+      "resolution_status": "unresolved",
+      "blocked_generation": 112,
+      "blocker": "A measurement whose outputs directly correspond to the quantities asserted by the question and hypothesis is required before this claim can be resolved.",
+      "answer": "The recorded evidence does not establish the current hypothesis. The question remains unanswered by the executed measurement."
     }
   ]
 }
