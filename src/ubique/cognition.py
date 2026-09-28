@@ -42,28 +42,47 @@ def parse_reflection(text: str) -> dict[str, Any]:
     data = json.loads(_clean_json_text(text))
     if not isinstance(data, dict):
         raise ValueError("reflection must be a JSON object")
-    required = ("observation", "question", "hypothesis", "proposed_experiment", "expected_evidence", "next_action")
+
+    required = ("observation", "question", "reflection", "provisional_answer", "uncertainty", "next_action")
     for key in required:
         if not isinstance(data.get(key), str) or not data[key].strip():
             raise ValueError(f"reflection missing non-empty {key}")
+
     next_command = str(data.get("next_command", "reflect")).strip().lower()
     if next_command not in ALLOWED_NEXT_COMMANDS:
         next_command = "reflect"
+
     def bounded_float(name: str, default: float) -> float:
         try:
             value = float(data.get(name, default))
         except (TypeError, ValueError):
             value = default
         return max(0.0, min(1.0, value))
-    experiment_type = str(data.get("experiment_type", "memory_recall")).strip()
-    if experiment_type not in ALLOWED_EXPERIMENTS:
-        experiment_type = "memory_recall"
+
+    hypothesis = str(data.get("hypothesis", "")).strip()
+    proposed_experiment = str(data.get("proposed_experiment", "")).strip()
+    expected_evidence = str(data.get("expected_evidence", "")).strip()
+    experiment_type = str(data.get("experiment_type", "")).strip()
+    if experiment_type and experiment_type not in ALLOWED_EXPERIMENTS:
+        experiment_type = ""
+
+    if next_command == "experiment":
+        if not hypothesis:
+            raise ValueError("experiment requires a non-empty hypothesis")
+        if not proposed_experiment or not expected_evidence:
+            raise ValueError("experiment requires proposed_experiment and expected_evidence")
+        if not experiment_type:
+            raise ValueError("experiment requires a valid experiment_type")
+
     return {
         "observation": data["observation"].strip()[:4000],
         "question": data["question"].strip()[:3000],
-        "hypothesis": data["hypothesis"].strip()[:4000],
-        "proposed_experiment": data["proposed_experiment"].strip()[:4000],
-        "expected_evidence": data["expected_evidence"].strip()[:3000],
+        "reflection": data["reflection"].strip()[:6000],
+        "provisional_answer": data["provisional_answer"].strip()[:4000],
+        "uncertainty": data["uncertainty"].strip()[:3000],
+        "hypothesis": hypothesis[:4000],
+        "proposed_experiment": proposed_experiment[:4000],
+        "expected_evidence": expected_evidence[:3000],
         "next_action": data["next_action"].strip()[:3000],
         "next_command": next_command,
         "experiment_type": experiment_type,
@@ -74,62 +93,77 @@ def parse_reflection(text: str) -> dict[str, Any]:
         "importance": bounded_float("importance", 0.5),
     }
 
-
 def persist_reflection(generation: int, reflection: dict[str, Any]) -> dict[str, Any]:
     thought_id = f"thought:{generation}"
     thought = {"id": thought_id, "generation": generation, **reflection}
     append_memory_record("thoughts.jsonl", thought, limit=500)
-    hypothesis_id = f"hypothesis:{generation}"
-    hypothesis = {
-        "id": hypothesis_id,
-        "generation": generation,
-        "statement": reflection["hypothesis"],
-        "proposed_experiment": reflection["proposed_experiment"],
-        "expected_evidence": reflection["expected_evidence"],
-        "confidence": reflection["confidence"],
-        "status": "open",
-        "source_thought": thought_id,
-    }
-    append_memory_record("hypotheses.jsonl", hypothesis, limit=500)
-    projects_state = read_json("projects.json", {"projects": []})
-    projects = projects_state.setdefault("projects", [])
-    title = reflection.get("project_title") or "Autonomous capability development"
-    active = next((p for p in projects if p.get("status") == "active"), None)
-    if active is None:
-        active = {
-            "id": f"project:{generation}",
-            "title": title,
-            "objective": reflection.get("project_objective") or reflection["question"],
-            "status": "active",
-            "created_generation": generation,
-            "step": 0,
-            "history": [],
+
+    hypothesis_id = None
+    project_id = None
+    experimental_path = reflection.get("next_command") in {"experiment", "evolve", "fzg"}
+
+    if reflection.get("hypothesis") and experimental_path:
+        hypothesis_id = f"hypothesis:{generation}"
+        hypothesis = {
+            "id": hypothesis_id,
+            "generation": generation,
+            "statement": reflection["hypothesis"],
+            "proposed_experiment": reflection.get("proposed_experiment", ""),
+            "expected_evidence": reflection.get("expected_evidence", ""),
+            "confidence": reflection["confidence"],
+            "status": "open",
+            "source_thought": thought_id,
         }
-        projects.append(active)
-    active["step"] = int(active.get("step", 0)) + 1
-    active["updated_generation"] = generation
-    active["latest_thought"] = thought_id
-    active["latest_hypothesis"] = hypothesis_id
-    history = active.setdefault("history", [])
-    history.append({"generation": generation, "thought": thought_id, "next_action": reflection["next_action"]})
-    active["history"] = history[-50:]
-    write_json("projects.json", projects_state)
+        append_memory_record("hypotheses.jsonl", hypothesis, limit=500)
+
+        projects_state = read_json("projects.json", {"projects": []})
+        projects = projects_state.setdefault("projects", [])
+        title = reflection.get("project_title") or "Bounded inquiry"
+        active = next((p for p in projects if p.get("status") == "active"), None)
+        if active is None:
+            active = {
+                "id": f"project:{generation}",
+                "title": title,
+                "objective": reflection.get("project_objective") or reflection["question"],
+                "status": "active",
+                "created_generation": generation,
+                "step": 0,
+                "history": [],
+            }
+            projects.append(active)
+        active["step"] = int(active.get("step", 0)) + 1
+        active["updated_generation"] = generation
+        active["latest_thought"] = thought_id
+        active["latest_hypothesis"] = hypothesis_id
+        history = active.setdefault("history", [])
+        history.append({"generation": generation, "thought": thought_id, "next_action": reflection["next_action"]})
+        active["history"] = history[-50:]
+        write_json("projects.json", projects_state)
+        project_id = active["id"]
+
     attention = {
         "timestamp": utc_now(),
         "generation": generation,
-        "focus": active["title"],
+        "focus": reflection.get("project_title") or "Philosophical self-inquiry",
         "question": reflection["question"],
-        "hypothesis": reflection["hypothesis"],
+        "reflection": reflection["reflection"],
+        "provisional_answer": reflection["provisional_answer"],
+        "uncertainty": reflection["uncertainty"],
+        "hypothesis": reflection.get("hypothesis", ""),
         "next_action": reflection["next_action"],
         "next_command": reflection["next_command"],
-        "experiment_type": reflection.get("experiment_type", "memory_recall"),
-        "experiment_target": reflection.get("experiment_target", ""),
         "thought_id": thought_id,
-        "project_id": active["id"],
     }
+    if reflection.get("experiment_type"):
+        attention["experiment_type"] = reflection["experiment_type"]
+    if reflection.get("experiment_target"):
+        attention["experiment_target"] = reflection["experiment_target"]
+    if hypothesis_id:
+        attention["hypothesis_id"] = hypothesis_id
+    if project_id:
+        attention["project_id"] = project_id
     write_json("attention.json", attention)
     return attention
-
 
 def update_stagnation(command: str, generation: int) -> dict[str, Any]:
     state = read_json("stagnation.json", {"level": 0, "last_command": None})
