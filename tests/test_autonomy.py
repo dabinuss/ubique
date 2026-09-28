@@ -55,3 +55,21 @@ def test_healthy_reflection_hides_layer_one_details():
     assert "Layer 1 status: healthy" in task.body
     assert "cycle_reliability" not in task.body
     assert "configured_remote_providers" not in task.body
+
+
+def test_repeated_reflection_forces_counter_direction():
+    task = autonomous_task(
+        40,
+        remote_reasoning_available=True,
+        cognition={
+            "attention": {"next_command": "reflect"},
+            "reflection_stagnation": {
+                "detected": True,
+                "reason": "repeated_provisional_answer",
+            },
+        },
+    )
+    assert task.body.startswith("/reflect")
+    assert "Do not restate or paraphrase" in task.body
+    assert "counter-position" in task.body
+    assert "next_command=evolve" in task.body
