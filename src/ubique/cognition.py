@@ -12,12 +12,48 @@ ALLOWED_NEXT_COMMANDS = {"reflect", "experiment", "fzg", "evolve", "resolve"}
 ALLOWED_EXPERIMENTS = {"provider_probe", "memory_recall", "memory_abstraction", "hypothesis_ablation", "state_consistency"}
 
 
+def _reflection_tokens(text: str) -> set[str]:
+    cleaned = "".join(ch.lower() if ch.isalnum() else " " for ch in text)
+    return {token for token in cleaned.split() if len(token) > 3}
+
+
+def assess_reflection_stagnation(thoughts: list[dict[str, Any]]) -> dict[str, Any]:
+    recent = [
+        item for item in thoughts[-8:]
+        if isinstance(item, dict) and str(item.get("provisional_answer", "")).strip()
+    ]
+    if len(recent) < 4:
+        return {"detected": False, "reason": "insufficient_history"}
+
+    answers = [str(item.get("provisional_answer", "")) for item in recent]
+    questions = [str(item.get("question", "")).strip().lower() for item in recent]
+    similarities: list[float] = []
+    for left, right in zip(answers, answers[1:]):
+        a, b = _reflection_tokens(left), _reflection_tokens(right)
+        union = a | b
+        similarities.append(len(a & b) / len(union) if union else 1.0)
+
+    mean_similarity = sum(similarities) / len(similarities) if similarities else 0.0
+    same_question_count = max((questions.count(q) for q in set(questions) if q), default=0)
+    detected = mean_similarity >= 0.62 and same_question_count >= 4
+    return {
+        "detected": detected,
+        "mean_answer_similarity": round(mean_similarity, 4),
+        "same_question_count": same_question_count,
+        "question": max(set(questions), key=questions.count) if questions else "",
+        "recent_thought_ids": [item.get("id") for item in recent],
+        "reason": "repeated_provisional_answer" if detected else "sufficient_variation",
+    }
+
+
 def cognitive_snapshot() -> dict[str, Any]:
+    recent_thoughts = recent_memory_records("thoughts.jsonl", 8)
     return {
         "attention": read_json("attention.json", {}),
         "projects": read_json("projects.json", {"projects": []}),
         "stagnation": read_json("stagnation.json", {"level": 0, "last_command": None}),
-        "recent_thoughts": recent_memory_records("thoughts.jsonl", 5),
+        "recent_thoughts": recent_thoughts,
+        "reflection_stagnation": assess_reflection_stagnation(recent_thoughts),
         "recent_hypotheses": recent_memory_records("hypotheses.jsonl", 5),
         "recent_concepts": recent_memory_records("concepts.jsonl", 5),
         "recent_project_summaries": recent_memory_records("project_summaries.jsonl", 3),
