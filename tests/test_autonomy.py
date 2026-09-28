@@ -13,14 +13,14 @@ def test_healthy_remote_cycle_reflects_instead_of_idling():
     assert "Layer 2" in task.body
 
 
-def test_attention_can_request_evidence_driven_evolution():
+def test_attention_can_request_reflection_driven_evolution_without_hypothesis():
     task = autonomous_task(
         25,
         remote_reasoning_available=True,
-        cognition={"attention": {"next_command": "evolve", "hypothesis": "router can be simplified safely"}},
+        cognition={"attention": {"next_command": "evolve", "next_action": "Change the reasoning structure."}},
     )
     assert task.body.startswith("/evolve")
-    assert "hypothesis" in task.body.lower()
+    assert "formal empirical hypothesis is not required" in task.body
 
 
 def test_attention_can_request_question_driven_fzg():
