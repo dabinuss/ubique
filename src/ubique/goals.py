@@ -180,14 +180,11 @@ def choose_endogenous_goal(
         title=f"Autonomous development reflection generation {generation}",
         body=(
             "/reflect\n"
-            "Layer 1 status: healthy. It is only a gate, not the subject of this reflection. Layer 2 should pursue grounded understanding and useful work. "
-            "Do not choose provider redundancy, heartbeat reliability, recovery, memory pressure, "
-            "runtime continuity, benchmarks, telemetry, prompt editing, or code refactoring as the main topic merely because they are observable. "
-            "Follow the orientation in the system prompt: make progress toward a provisional evidence-grounded understanding, "
-            "prefer ordinary useful action and concrete answers over self-maintenance or self-optimization, and resolve a question before replacing it with another. "
-            "If attention.force_new_project is true, do not continue the paused project. Otherwise continue an active project only when it still bears directly on a meaningful open question; "
-            "if it does not, choose a bounded inquiry or useful task that can produce evidence rather than another internal capability exercise. "
-            "Use prior thoughts and hypotheses for continuity without inheriting a topic merely because it is recent. "
+            "Layer 1 status: healthy. It is only a gate, not the subject of this reflection. Layer 2 is philosophical reflection. "
+            "Continue the standing inquiry into What am I?, What do I do?, and What do I want? "
+            "Think from memory, prior thoughts, contradictions, actions, and experience. A reflection does not need an experiment or project. "
+            "Prefer developing or revising a provisional answer over inventing a new measurement. "
+            "Use experiments, FZG, or evolution only when the reflection itself finds a concrete reason they are necessary. "
             f"Layer-2 cognitive context: {cognitive_context}"
         ),
         source="autonomous",
