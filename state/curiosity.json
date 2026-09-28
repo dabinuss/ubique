@@ -1,7 +1,14 @@
 {
-  "timestamp": "2026-09-28T07:22:26.739154+00:00",
-  "generation": 125,
+  "timestamp": "2026-09-28T07:23:17.549027+00:00",
+  "generation": 126,
   "frontiers": [
+    {
+      "id": "question_generation",
+      "title": "Question generation",
+      "question": "What makes an internally generated question worth pursuing when no external task requires it?",
+      "prior_mentions": 12,
+      "novelty_priority": 0.07692307692307693
+    },
     {
       "id": "multi_step_planning",
       "title": "Multi-step planning",
@@ -17,18 +24,11 @@
       "novelty_priority": 0.043478260869565216
     },
     {
-      "id": "question_generation",
-      "title": "Question generation",
-      "question": "What makes an internally generated question worth pursuing when no external task requires it?",
-      "prior_mentions": 27,
-      "novelty_priority": 0.03571428571428571
-    },
-    {
-      "id": "hypothesis_revision",
-      "title": "Hypothesis revision",
-      "question": "How should earlier hypotheses change when new evidence conflicts with them?",
-      "prior_mentions": 55,
-      "novelty_priority": 0.017857142857142856
+      "id": "memory_abstraction",
+      "title": "Memory abstraction",
+      "question": "Can repeated episodes be compressed into reusable concepts without losing important exceptions?",
+      "prior_mentions": 62,
+      "novelty_priority": 0.015873015873015872
     }
   ],
   "source_modules": [
