@@ -722,7 +722,7 @@
       "id": "project:116",
       "title": "Repository Persistence and Boundary Verification",
       "objective": "Determine whether repository state modifications provide verifiable evidence of system persistence and boundary definition under FZG observational bounds.",
-      "status": "active",
+      "status": "blocked",
       "created_generation": 116,
       "step": 1,
       "history": [
@@ -732,9 +732,14 @@
           "next_action": "Execute state consistency check on repository state to verify persistent external boundaries."
         }
       ],
-      "updated_generation": 116,
+      "updated_generation": 118,
       "latest_thought": "thought:116",
-      "latest_hypothesis": "hypothesis:116"
+      "latest_hypothesis": "hypothesis:116",
+      "latest_resolution": "resolution:118",
+      "resolution_status": "unresolved",
+      "blocked_generation": 118,
+      "blocker": "A measurement whose outputs directly correspond to the quantities asserted by the question and hypothesis is required before this claim can be resolved.",
+      "answer": "The recorded evidence does not establish the current hypothesis. The question remains unanswered by the executed measurement."
     }
   ]
 }
