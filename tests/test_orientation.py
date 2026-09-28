@@ -8,7 +8,9 @@ def test_orientation_keeps_identity_and_goals_open():
     assert "What do I want?" in ORIENTATION_PROMPT
     assert "Do not assume" in ORIENTATION_PROMPT
     assert "Stated intentions are hypotheses" in ORIENTATION_PROMPT
-    assert "not to make these questions the subject of every cycle" in ORIENTATION_PROMPT
+    assert "Develop provisional, evidence-grounded answers" in ORIENTATION_PROMPT
+    assert "telemetry" in ORIENTATION_PROMPT
+    assert "substitutes for answering it" in ORIENTATION_PROMPT
 
 
 def test_orientation_is_present_in_reasoning_prompt():
