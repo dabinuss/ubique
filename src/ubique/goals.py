@@ -101,6 +101,7 @@ def choose_endogenous_goal(
         "project_loop": cognition.get("project_loop", {}),
         "curiosity": cognition.get("curiosity", {}),
         "stagnation": cognition.get("stagnation", {}),
+        "reflection_stagnation": cognition.get("reflection_stagnation", {}),
     })
 
     if next_command == "resolve":
@@ -175,6 +176,17 @@ def choose_endogenous_goal(
             source="autonomous",
         )
 
+    reflection_stagnation = cognition.get("reflection_stagnation", {})
+    if reflection_stagnation.get("detected"):
+        reflection_direction = (
+            "Reflection stagnation detected. Do not restate or paraphrase the current provisional answer. "
+            "Instead do at least one of the following: construct the strongest counter-position, identify a contradiction, "
+            "shift to another standing question, or ask whether changing your own reasoning/orientation code would open a genuinely new path. "
+            "If self-modification is warranted, you may choose next_command=evolve and explain the concrete reason. "
+        )
+    else:
+        reflection_direction = ""
+
     return Task(
         id=f"autonomous:reflect:{generation}",
         title=f"Autonomous development reflection generation {generation}",
@@ -185,6 +197,7 @@ def choose_endogenous_goal(
             "Think from memory, prior thoughts, contradictions, actions, and experience. A reflection does not need an experiment or project. "
             "Prefer developing or revising a provisional answer over inventing a new measurement. "
             "Use experiments, FZG, or evolution only when the reflection itself finds a concrete reason they are necessary. "
+            f"{reflection_direction}"
             f"Layer-2 cognitive context: {cognitive_context}"
         ),
         source="autonomous",
