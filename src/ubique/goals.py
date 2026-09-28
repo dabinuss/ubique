@@ -148,14 +148,14 @@ def choose_endogenous_goal(
             source="autonomous",
         )
 
-    if next_command == "evolve" and attention.get("hypothesis"):
+    if next_command == "evolve":
         return Task(
             id=f"autonomous:evolve:{generation}",
             title=f"Evidence-driven evolution generation {generation}",
             body=(
                 "/evolve\n"
-                "A previous autonomous reflection identified a concrete code-improvement "
-                "hypothesis. Propose ONE minimal reversible candidate that tests it. "
+                "A previous autonomous reflection identified a concrete reason to change part of your own implementation. "
+                "Propose ONE minimal reversible candidate that expresses that reason. A formal empirical hypothesis is not required. "
                 "Do not evolve merely for novelty. Preserve FZG v1.0 and all protected gates. "
                 f"Attention: {_compact(attention)}. Context: {_compact(measured_context)}"
             ),
