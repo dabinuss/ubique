@@ -6,12 +6,6 @@ from .memory import append_memory_record, recent_memory_records
 from .state import utc_now
 
 
-META_QUESTIONS = (
-    "What am I?",
-    "What do I do?",
-    "What do I want?",
-)
-
 
 def _attention_view(value: dict[str, Any] | None) -> dict[str, Any]:
     value = value if isinstance(value, dict) else {}
@@ -60,7 +54,6 @@ def record_self_observation(
         "id": f"self-observation:{generation}",
         "generation": generation,
         "previous_observation_generation": previous_generation,
-        "meta_questions": list(META_QUESTIONS),
         "before": before,
         "action": {
             "command": str(command)[:80],
@@ -85,8 +78,21 @@ def record_self_observation(
 
 
 def self_observation_context(limit: int = 8) -> dict[str, Any]:
-    """Expose open meta-questions plus retained observations, not prewritten answers."""
-    return {
-        "meta_questions": list(META_QUESTIONS),
-        "recent_observations": recent_memory_records("self_observations.jsonl", limit),
-    }
+    """Expose compact transition evidence without embedding identity questions."""
+    recent = recent_memory_records("self_observations.jsonl", limit)
+    compact: list[dict[str, Any]] = []
+    for item in recent:
+        action = item.get("action", {}) if isinstance(item.get("action"), dict) else {}
+        observed = item.get("observed", {}) if isinstance(item.get("observed"), dict) else {}
+        compact.append({
+            "generation": item.get("generation"),
+            "previous_observation_generation": item.get("previous_observation_generation"),
+            "action": {
+                "command": action.get("command"),
+                "provider": action.get("provider"),
+                "source": action.get("source"),
+            },
+            "success": observed.get("success"),
+            "state_change": item.get("state_change", {}),
+        })
+    return {"recent_transitions": compact}
