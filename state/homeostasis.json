@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-28T09:44:36.912224+00:00",
-  "generation": 176,
+  "timestamp": "2026-09-28T17:49:53.587224+00:00",
+  "generation": 177,
   "needs": [
     {
       "name": "cycle_reliability",
@@ -11,24 +11,24 @@
     },
     {
       "name": "reasoning_redundancy",
-      "level": "watch",
-      "value": 1.0,
+      "level": "stable",
+      "value": 2.0,
       "target": ">=2 independently configured remote reasoning paths",
-      "evidence": "1 remote providers currently usable according to the persisted ledger"
+      "evidence": "2 remote providers currently usable according to the persisted ledger"
     },
     {
       "name": "memory_pressure",
       "level": "stable",
-      "value": 200.0,
+      "value": 201.0,
       "target": "<500 retained episodes",
-      "evidence": "200/500 retained episode records"
+      "evidence": "201/500 retained episode records"
     }
   ],
   "recent_success_ratio": 0.9583333333333334,
-  "retained_episode_count": 200,
+  "retained_episode_count": 201,
   "configured_remote_providers": [
     "gemini",
     "groq"
   ],
-  "usable_remote_providers": 1
+  "usable_remote_providers": 2
 }
