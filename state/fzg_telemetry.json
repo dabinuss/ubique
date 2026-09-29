@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-29T15:31:25.632538+00:00",
-  "generation": 280,
+  "timestamp": "2026-09-29T20:06:06.894171+00:00",
+  "generation": 281,
   "context": "current GitHub-hosted Ubique repository and retained episode window",
   "P": {
     "status": "proxy_only",
@@ -32,8 +32,7 @@
     }
   },
   "failure_modes": {
-    "evolve": 1,
-    "reflect": 2
+    "reflect": 3
   },
   "provider_count": 3,
   "limitations": [
@@ -43,7 +42,7 @@
   "ablation": {
     "A": "retain remote reasoning availability after loss of one healthy provider",
     "C": "persisted provider ledger under a structural one-provider-loss perturbation",
-    "healthy_remote_providers": 3,
+    "healthy_remote_providers": 2,
     "Q_M_S": 1.0,
     "Q_M_S_minus": 0.0,
     "G_A_proxy": 1.0,
