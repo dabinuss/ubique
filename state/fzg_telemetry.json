@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-09-29T20:06:06.894171+00:00",
-  "generation": 281,
+  "timestamp": "2026-09-29T23:41:50.852798+00:00",
+  "generation": 282,
   "context": "current GitHub-hosted Ubique repository and retained episode window",
   "P": {
     "status": "proxy_only",
@@ -15,7 +15,7 @@
   },
   "I_C": {
     "Z": {
-      "observable": 3,
+      "observable": 2,
       "basis": "distinct successful functional command states in retained episodes"
     },
     "K": {
@@ -23,11 +23,11 @@
       "basis": "distinct observed task-source/provider context classes"
     },
     "R": {
-      "observable": 4,
+      "observable": 3,
       "basis": "distinct successful command-provider relations"
     },
     "L": {
-      "observable": 4,
+      "observable": 3,
       "basis": "distinct observed successful source-provider-command solution paths"
     }
   },
@@ -42,7 +42,7 @@
   "ablation": {
     "A": "retain remote reasoning availability after loss of one healthy provider",
     "C": "persisted provider ledger under a structural one-provider-loss perturbation",
-    "healthy_remote_providers": 2,
+    "healthy_remote_providers": 3,
     "Q_M_S": 1.0,
     "Q_M_S_minus": 0.0,
     "G_A_proxy": 1.0,
