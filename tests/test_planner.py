@@ -49,3 +49,12 @@ def test_reflect_prompt_does_not_replay_old_reflection_results():
     )
     assert "invented hidden-state observation" not in prompt
     assert "intentionally omitted" in prompt
+
+
+def test_reflect_prompt_requires_typed_claims():
+    prompt = make_prompt("reflect", "{}", [])
+    assert '"interpretation"' in prompt
+    assert '"claims"' in prompt
+    assert '"kind":"inference|hypothesis"' in prompt
+    assert "basis_fact_ids" in prompt
+    assert "unsupported claims must be hypotheses" in prompt
