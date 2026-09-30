@@ -261,3 +261,21 @@ def test_record_reflection_deferred_preserves_prior_interpretation(monkeypatch):
     assert out["reflection_deferred"] is True
     assert out["next_command"] == "reflect"
     assert "Retry philosophical reflection" in out["next_action"]
+
+
+def test_technical_self_claim_requires_explicit_assumption():
+    raw = json.dumps({
+        "question": "What am I?",
+        "interpretation": "I am a language model with a token window.",
+        "assumptions": [],
+        "provisional_answer": "I am a language model.",
+        "uncertainty": "High.",
+        "next_action": "Reflect further.",
+        "next_command": "reflect",
+    })
+    try:
+        cognition.parse_reflection(raw)
+    except ValueError as exc:
+        assert "explicit assumptions" in str(exc)
+    else:
+        raise AssertionError("technical self-claim without assumptions should be rejected")
