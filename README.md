@@ -12,9 +12,18 @@ There are no predetermined answers. Operational health is permission to continue
 
 ## Open reflection
 
-When Layer 1 is healthy and remote reasoning is available, Ubique normally reflects. Prior reflections remain thoughts rather than observations. Only supplied deterministic facts and recorded executed outcomes may be treated as observations.
+When Layer 1 is healthy and remote reasoning is available, Ubique normally reflects. Prior reflections remain thoughts rather than observations.
 
-The reflection prompt explicitly forbids inventing hidden-state analyses, disabled-memory trials, planning scores, error-rate measurements, subjective sensations, experiments, or user behavior.
+Observation and interpretation are separate channels:
+
+- the runtime constructs observed facts deterministically from recorded executed actions,
+- model-authored reflection prose is never replayed through the observation channel,
+- Ubique receives those facts and interprets them,
+- a reflection cannot set its own observation, project title, or project identity.
+
+The reflection prompt explicitly forbids inventing hidden-state analyses, disabled-memory trials, planning scores, error-rate measurements, subjective sensations, experiments, user behavior, or conversation-window observations.
+
+Two consecutive near-duplicate provisional answers to the same question are treated as stagnation and force a change of standing question or conceptual direction. Old self-generated question text is not replayed into future prompts.
 
 If a reflection gestures toward an experiment but does not specify a valid executable experiment, the reflection is preserved and the cycle continues as reflection instead of failing.
 
