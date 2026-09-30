@@ -34,7 +34,7 @@ def test_fzg_command_is_no_longer_first_class():
 
 def test_reflect_prompt_removes_model_observation_and_project_fields():
     prompt = make_prompt("reflect", "{}", [])
-    assert "Do not output an observation field" in prompt
+    assert "Do not output observation, facts, project_title, or project_objective" in prompt
     assert "project_title" in prompt
     assert "project_objective" in prompt
     assert '"observation"' not in prompt.split("Schema:", 1)[1]
