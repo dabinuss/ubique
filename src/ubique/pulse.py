@@ -27,6 +27,8 @@ def decide_pulse(
         reasons.append("layer1_blocked")
     if usable_remote <= 0:
         reasons.append("no_usable_remote_reasoning")
+    if attention.get("reflection_deferred"):
+        reasons.append("reflection_deferred")
     if next_command not in CONTINUATION_COMMANDS:
         reasons.append("no_continuation_command")
 

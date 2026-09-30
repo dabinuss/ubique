@@ -9,6 +9,7 @@ from .state import read_json, write_json, utc_now
 ALLOWED_NEXT_COMMANDS = {"reflect", "experiment", "evolve", "resolve", "library"}
 ALLOWED_EXPERIMENTS = {"provider_probe", "memory_recall", "memory_abstraction", "hypothesis_ablation", "state_consistency"}
 ALLOWED_LIBRARY_ACTIONS = {"list", "read", "add", "request", "note"}
+ALLOWED_CLAIM_KINDS = {"inference", "hypothesis"}
 
 
 def _tokens(text: str) -> set[str]:
@@ -96,8 +97,11 @@ def _executed_action_facts() -> list[dict[str, Any]]:
         if not command:
             continue
 
+        generation = item.get("generation")
+        task_id = str(item.get("task_id", "")).strip() or command
         fact: dict[str, Any] = {
-            "generation": item.get("generation"),
+            "fact_id": f"episode:{generation}:{task_id}",
+            "generation": generation,
             "command": command,
             "success": bool(item.get("success")),
         }
@@ -182,6 +186,28 @@ def parse_reflection(text: str) -> dict[str, Any]:
         if isinstance(item, str) and str(item).strip()
     ]
 
+    raw_claims = data.get("claims")
+    if not isinstance(raw_claims, list):
+        raise ValueError("reflection claims must be a list")
+    claims: list[dict[str, Any]] = []
+    for raw in raw_claims[:12]:
+        if not isinstance(raw, dict):
+            continue
+        statement = str(raw.get("statement", "")).strip()[:3000]
+        if not statement:
+            continue
+        kind = str(raw.get("kind", "hypothesis")).strip().lower()
+        if kind not in ALLOWED_CLAIM_KINDS:
+            kind = "hypothesis"
+        basis = raw.get("basis_fact_ids", [])
+        if not isinstance(basis, list):
+            basis = []
+        claims.append({
+            "kind": kind,
+            "statement": statement,
+            "basis_fact_ids": [str(x).strip()[:300] for x in basis[:12] if str(x).strip()],
+        })
+
     technical_markers = (
         "architecture",
         "training",
@@ -264,6 +290,7 @@ def parse_reflection(text: str) -> dict[str, Any]:
         "reflection": interpretation.strip()[:6000],
         "interpretation_status": "model_interpretation_not_evidence",
         "assumptions": assumptions,
+        "claims": claims,
         "provisional_answer": data["provisional_answer"].strip()[:4000],
         "uncertainty": data["uncertainty"].strip()[:3000],
         "hypothesis": hypothesis[:4000],
@@ -285,12 +312,61 @@ def parse_reflection(text: str) -> dict[str, Any]:
     }
 
 
+
+def _normalize_claims(
+    claims: list[dict[str, Any]],
+    facts: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    known = {
+        str(fact.get("fact_id", ""))
+        for fact in facts
+        if isinstance(fact, dict) and fact.get("fact_id")
+    }
+    out: list[dict[str, Any]] = []
+    for claim in claims[:12]:
+        if not isinstance(claim, dict):
+            continue
+        statement = str(claim.get("statement", "")).strip()[:3000]
+        if not statement:
+            continue
+        requested_kind = str(claim.get("kind", "hypothesis")).strip().lower()
+        if requested_kind not in ALLOWED_CLAIM_KINDS:
+            requested_kind = "hypothesis"
+        raw_basis = claim.get("basis_fact_ids", [])
+        if not isinstance(raw_basis, list):
+            raw_basis = []
+        basis = [str(x) for x in raw_basis if str(x) in known][:12]
+        final_kind = requested_kind
+        downgraded = False
+        if requested_kind == "inference" and not basis:
+            final_kind = "hypothesis"
+            downgraded = True
+        normalized = {
+            "kind": final_kind,
+            "statement": statement,
+            "basis_fact_ids": basis,
+            "epistemic_status": (
+                "grounded_inference"
+                if final_kind == "inference"
+                else "hypothesis"
+            ),
+        }
+        if downgraded:
+            normalized["downgraded_from"] = "inference"
+            normalized["downgrade_reason"] = "no valid recorded fact reference"
+        out.append(normalized)
+    return out
+
+
 def persist_reflection(
     generation: int,
     reflection: dict[str, Any],
     observed_facts: list[dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     facts = list(observed_facts or [])
+    claims = _normalize_claims(list(reflection.get("claims", [])), facts)
+    reflection = dict(reflection)
+    reflection["claims"] = claims
     observation = deterministic_observation_summary(facts)
     thought_id = f"thought:{generation}"
     thought = {
@@ -299,6 +375,7 @@ def persist_reflection(
         "observation": observation,
         "observation_status": "recorded_system_facts",
         "observed_facts": facts,
+        "epistemic_schema_version": 3,
         **reflection,
     }
     append_memory_record("thoughts.jsonl", thought, limit=500)
@@ -357,10 +434,12 @@ def persist_reflection(
         "observation": observation,
         "observation_status": "recorded_system_facts",
         "observed_facts": facts,
+        "epistemic_schema_version": 3,
         "question": reflection["question"],
         "reflection": reflection["reflection"],
         "interpretation_status": "model_interpretation_not_evidence",
         "assumptions": list(reflection.get("assumptions", [])),
+        "claims": claims,
         "provisional_answer": reflection["provisional_answer"],
         "uncertainty": reflection["uncertainty"],
         "hypothesis": reflection.get("hypothesis", ""),

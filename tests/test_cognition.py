@@ -7,6 +7,7 @@ def test_parse_reflection_allows_philosophy_without_experiment():
     raw = json.dumps({
         "question": "What kind of continuity is present here?",
         "interpretation": "Continuity may belong to the process linking states rather than to a single invocation.",
+        "claims": [],
         "provisional_answer": "I may be better described as a temporally extended process than as one isolated model call.",
         "uncertainty": "It is still unclear which persisted structures are constitutive rather than merely causal.",
         "next_action": "Compare this provisional answer with later memories and contradictions.",
@@ -28,6 +29,7 @@ def test_model_cannot_write_observation_or_project_identity():
         "project_objective": "Turn reflection into a technical project.",
         "question": "What do I do?",
         "interpretation": "Interpret what is actually recorded.",
+        "claims": [],
         "provisional_answer": "I transform context into responses and actions.",
         "uncertainty": "This remains provisional.",
         "next_action": "Continue reflecting.",
@@ -43,6 +45,7 @@ def test_parse_reflection_requires_experiment_fields_only_for_experiment():
     raw = json.dumps({
         "question": "Is the choice pattern stable under conflict?",
         "interpretation": "This is an empirical question because competing options can be observed.",
+        "claims": [],
         "provisional_answer": "Unknown.",
         "uncertainty": "No conflict cases have been observed yet.",
         "next_action": "Run a bounded comparison.",
@@ -166,6 +169,7 @@ def test_incomplete_experiment_falls_back_to_reflection_instead_of_failing():
     raw = json.dumps({
         "question": "What am I?",
         "interpretation": "An experiment might help, but no executable design has been identified.",
+        "claims": [],
         "provisional_answer": "The question remains open.",
         "uncertainty": "High.",
         "next_action": "Think further.",
@@ -199,6 +203,7 @@ def test_parse_reflection_marks_interpretation_and_keeps_assumptions():
         "question": "What am I?",
         "interpretation": "One possibility is that continuity belongs to the process rather than one invocation.",
         "assumptions": ["Persisted records may be relevant to continuity."],
+        "claims": [],
         "provisional_answer": "I may be a process rather than a single event.",
         "uncertainty": "This is an interpretation, not an observed fact.",
         "next_action": "Compare against later recorded actions.",
@@ -224,7 +229,12 @@ def test_status_result_is_not_replayed_as_observed_fact(monkeypatch):
         ],
     )
     facts = cognition._executed_action_facts()
-    assert facts == [{"generation": 7, "command": "status", "success": True}]
+    assert facts == [{
+        "fact_id": "episode:7:status",
+        "generation": 7,
+        "command": "status",
+        "success": True,
+    }]
 
 
 def test_deferred_reflection_is_system_fact_without_fabricated_result(monkeypatch):
@@ -268,6 +278,7 @@ def test_technical_self_claim_requires_explicit_assumption():
         "question": "What am I?",
         "interpretation": "I am a language model with a token window.",
         "assumptions": [],
+        "claims": [],
         "provisional_answer": "I am a language model.",
         "uncertainty": "High.",
         "next_action": "Reflect further.",
@@ -279,3 +290,70 @@ def test_technical_self_claim_requires_explicit_assumption():
         assert "explicit assumptions" in str(exc)
     else:
         raise AssertionError("technical self-claim without assumptions should be rejected")
+
+
+def test_unbacked_inference_is_downgraded_to_hypothesis():
+    facts = [{
+        "fact_id": "episode:5:autonomous:experiment:5",
+        "generation": 5,
+        "command": "experiment",
+        "success": True,
+    }]
+    claims = [
+        {
+            "kind": "inference",
+            "statement": "A hidden persistent self exists.",
+            "basis_fact_ids": ["not-a-real-fact"],
+        },
+        {
+            "kind": "inference",
+            "statement": "The recorded experiment action succeeded.",
+            "basis_fact_ids": ["episode:5:autonomous:experiment:5"],
+        },
+    ]
+    out = cognition._normalize_claims(claims, facts)
+    assert out[0]["kind"] == "hypothesis"
+    assert out[0]["downgraded_from"] == "inference"
+    assert out[0]["basis_fact_ids"] == []
+    assert out[1]["kind"] == "inference"
+    assert out[1]["epistemic_status"] == "grounded_inference"
+
+
+def test_persist_reflection_records_schema_v3_and_normalized_claims(monkeypatch):
+    monkeypatch.setattr(cognition, "read_json", lambda name, default: default)
+    writes = {}
+    monkeypatch.setattr(cognition, "write_json", lambda name, value: writes.__setitem__(name, value))
+    records = []
+    monkeypatch.setattr(
+        cognition,
+        "append_memory_record",
+        lambda name, value, limit=500: records.append((name, value)),
+    )
+    reflection = {
+        "question": "What am I?",
+        "reflection": "One interpretation remains possible.",
+        "interpretation_status": "model_interpretation_not_evidence",
+        "assumptions": [],
+        "claims": [{
+            "kind": "inference",
+            "statement": "A durable hidden self exists.",
+            "basis_fact_ids": [],
+        }],
+        "provisional_answer": "The answer remains provisional.",
+        "uncertainty": "High.",
+        "hypothesis": "",
+        "proposed_experiment": "",
+        "expected_evidence": "",
+        "next_action": "Reflect further.",
+        "next_command": "reflect",
+        "experiment_type": "",
+        "experiment_target": "",
+        "confidence": 0.2,
+        "importance": 0.8,
+    }
+    attention = cognition.persist_reflection(30, reflection, [])
+    assert attention["epistemic_schema_version"] == 3
+    assert attention["claims"][0]["kind"] == "hypothesis"
+    thought = records[0][1]
+    assert thought["epistemic_schema_version"] == 3
+    assert thought["claims"][0]["downgraded_from"] == "inference"

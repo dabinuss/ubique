@@ -230,34 +230,75 @@ class Agent:
                                     ensure_ascii=False,
                                 )
                             else:
+                                reflection = None
                                 try:
                                     reflection = parse_reflection(result_text)
                                 except (ValueError, json.JSONDecodeError) as exc:
                                     repair_prompt = (
                                         "Repair the following autonomous interpretation into valid strict JSON only. "
                                         "Do not add observation, facts, project_title, project_objective, experiments, measurements, or library reads that were not already requested. "
-                                        "Use interpretation plus explicit assumptions for any unsupported premise. "
+                                        "Use interpretation plus explicit assumptions for unsupported premises. "
+                                        "Every contingent conclusion must appear in claims as inference or hypothesis. "
+                                        "Inference requires exact basis_fact_ids from supplied observed_facts; unsupported conclusions must be hypotheses. "
                                         "Preserve the philosophical meaning and use exactly the schema previously requested. "
                                         "Do not add markdown or commentary. Parse failure: "
                                         f"{str(exc)[:500]}. Reflection: {result_text[:9000]}"
                                     )
-                                    repair_result = self.router.generate_with(provider_name, repair_prompt)
+                                    repair_result = self.router.generate(repair_prompt)
                                     result_text = repair_result.text
                                     provider_name = repair_result.provider
-                                    reflection = parse_reflection(result_text)
-                                attention = persist_reflection(
-                                    generation,
-                                    reflection,
-                                    cognition.get("executed_action_facts", []),
-                                )
-                                result_text = json.dumps(
-                                    {
-                                        "reflection": reflection,
-                                        "persisted_attention": attention,
-                                    },
-                                    indent=2,
-                                    ensure_ascii=False,
-                                )
+                                    if provider_name == "fallback":
+                                        deferred = True
+                                        defer_reason = (
+                                            "Remote reasoning became unavailable while repairing a malformed reflection. "
+                                            "The reflection was deferred instead of fabricating replacement content."
+                                        )
+                                        attention = record_reflection_deferred(generation, defer_reason)
+                                        result_text = json.dumps(
+                                            {
+                                                "status": "deferred",
+                                                "reason": defer_reason,
+                                                "next_command": "reflect",
+                                                "persisted_attention": attention,
+                                            },
+                                            indent=2,
+                                            ensure_ascii=False,
+                                        )
+                                    else:
+                                        try:
+                                            reflection = parse_reflection(result_text)
+                                        except (ValueError, json.JSONDecodeError) as repair_exc:
+                                            deferred = True
+                                            defer_reason = (
+                                                "A remote reflection remained invalid after one repair attempt. "
+                                                "Retry later rather than accepting untyped or fabricated content: "
+                                                f"{str(repair_exc)[:300]}"
+                                            )
+                                            attention = record_reflection_deferred(generation, defer_reason)
+                                            result_text = json.dumps(
+                                                {
+                                                    "status": "deferred",
+                                                    "reason": defer_reason,
+                                                    "next_command": "reflect",
+                                                    "persisted_attention": attention,
+                                                },
+                                                indent=2,
+                                                ensure_ascii=False,
+                                            )
+                                if not deferred and reflection is not None:
+                                    attention = persist_reflection(
+                                        generation,
+                                        reflection,
+                                        cognition.get("executed_action_facts", []),
+                                    )
+                                    result_text = json.dumps(
+                                        {
+                                            "reflection": reflection,
+                                            "persisted_attention": attention,
+                                        },
+                                        indent=2,
+                                        ensure_ascii=False,
+                                    )
 
                         if planned.command == "evolve":
                             if provider_name == "fallback":
