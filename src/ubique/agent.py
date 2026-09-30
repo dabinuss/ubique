@@ -210,20 +210,12 @@ class Agent:
                             result_text = json.dumps(paused, indent=2, ensure_ascii=False)
 
                         if planned.command == "reflect":
+                            reflection = None
+                            deferred_reason = ""
                             if provider_name == "fallback":
-                                attention = defer_reflection(
-                                    generation,
-                                    "No remote reasoning provider was available. Reflection was deferred without synthesizing a substitute thought.",
-                                )
-                                result_text = json.dumps(
-                                    {
-                                        "status": "deferred",
-                                        "command": "reflect",
-                                        "reason": attention.get("deferred_reason"),
-                                        "next_command": "reflect",
-                                    },
-                                    indent=2,
-                                    ensure_ascii=False,
+                                deferred_reason = (
+                                    "No remote reasoning provider was available. "
+                                    "Reflection was deferred without synthesizing a substitute thought."
                                 )
                             else:
                                 try:
@@ -238,10 +230,36 @@ class Agent:
                                         "Use exactly the reflection schema previously requested. Do not add markdown or commentary. Parse failure: "
                                         f"{str(exc)[:500]}. Reflection: {result_text[:9000]}"
                                     )
-                                    repair_result = self.router.generate_with(provider_name, repair_prompt)
-                                    result_text = repair_result.text
+                                    repair_result = self.router.generate(repair_prompt)
                                     provider_name = repair_result.provider
-                                    reflection = parse_reflection(result_text)
+                                    result_text = repair_result.text
+                                    if provider_name == "fallback":
+                                        deferred_reason = (
+                                            "Remote reasoning became unavailable while repairing a malformed reflection. "
+                                            "The reflection was deferred without inventing replacement content."
+                                        )
+                                    else:
+                                        try:
+                                            reflection = parse_reflection(result_text)
+                                        except (ValueError, json.JSONDecodeError) as repair_exc:
+                                            deferred_reason = (
+                                                "A remote reflection remained invalid after one repair attempt. "
+                                                f"Retry later instead of inventing content: {str(repair_exc)[:300]}"
+                                            )
+
+                            if deferred_reason:
+                                attention = defer_reflection(generation, deferred_reason)
+                                result_text = json.dumps(
+                                    {
+                                        "status": "deferred",
+                                        "command": "reflect",
+                                        "reason": attention.get("deferred_reason"),
+                                        "next_command": "reflect",
+                                    },
+                                    indent=2,
+                                    ensure_ascii=False,
+                                )
+                            elif reflection is not None:
                                 attention = persist_reflection(
                                     generation,
                                     reflection,
