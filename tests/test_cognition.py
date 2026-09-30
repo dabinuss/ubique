@@ -6,7 +6,7 @@ import ubique.cognition as cognition
 def test_parse_reflection_allows_philosophy_without_experiment():
     raw = json.dumps({
         "question": "What kind of continuity is present here?",
-        "reflection": "Continuity may belong to the process linking states rather than to a single invocation.",
+        "interpretation": "Continuity may belong to the process linking states rather than to a single invocation.",
         "provisional_answer": "I may be better described as a temporally extended process than as one isolated model call.",
         "uncertainty": "It is still unclear which persisted structures are constitutive rather than merely causal.",
         "next_action": "Compare this provisional answer with later memories and contradictions.",
@@ -27,7 +27,7 @@ def test_model_cannot_write_observation_or_project_identity():
         "project_title": "Autonomous Epistemic Question Generation & Memory Abstraction",
         "project_objective": "Turn reflection into a technical project.",
         "question": "What do I do?",
-        "reflection": "Interpret what is actually recorded.",
+        "interpretation": "Interpret what is actually recorded.",
         "provisional_answer": "I transform context into responses and actions.",
         "uncertainty": "This remains provisional.",
         "next_action": "Continue reflecting.",
@@ -42,7 +42,7 @@ def test_model_cannot_write_observation_or_project_identity():
 def test_parse_reflection_requires_experiment_fields_only_for_experiment():
     raw = json.dumps({
         "question": "Is the choice pattern stable under conflict?",
-        "reflection": "This is an empirical question because competing options can be observed.",
+        "interpretation": "This is an empirical question because competing options can be observed.",
         "provisional_answer": "Unknown.",
         "uncertainty": "No conflict cases have been observed yet.",
         "next_action": "Run a bounded comparison.",
@@ -165,7 +165,7 @@ def test_reflection_stagnation_allows_real_variation():
 def test_incomplete_experiment_falls_back_to_reflection_instead_of_failing():
     raw = json.dumps({
         "question": "What am I?",
-        "reflection": "An experiment might help, but no executable design has been identified.",
+        "interpretation": "An experiment might help, but no executable design has been identified.",
         "provisional_answer": "The question remains open.",
         "uncertainty": "High.",
         "next_action": "Think further.",
@@ -175,3 +175,89 @@ def test_incomplete_experiment_falls_back_to_reflection_instead_of_failing():
     out = cognition.parse_reflection(raw)
     assert out["next_command"] == "reflect"
     assert "Incomplete experiment request" in out["planning_note"]
+
+
+def test_parse_reflection_requires_interpretation_not_legacy_reflection():
+    raw = json.dumps({
+        "question": "What am I?",
+        "reflection": "This old free-form field should not pass the new schema.",
+        "provisional_answer": "Open.",
+        "uncertainty": "High.",
+        "next_action": "Reflect.",
+        "next_command": "reflect",
+    })
+    try:
+        cognition.parse_reflection(raw)
+    except ValueError as exc:
+        assert "interpretation" in str(exc)
+    else:
+        raise AssertionError("legacy reflection schema should be rejected")
+
+
+def test_parse_reflection_marks_interpretation_and_keeps_assumptions():
+    raw = json.dumps({
+        "question": "What am I?",
+        "interpretation": "One possibility is that continuity belongs to the process rather than one invocation.",
+        "assumptions": ["Persisted records may be relevant to continuity."],
+        "provisional_answer": "I may be a process rather than a single event.",
+        "uncertainty": "This is an interpretation, not an observed fact.",
+        "next_action": "Compare against later recorded actions.",
+        "next_command": "reflect",
+    })
+    out = cognition.parse_reflection(raw)
+    assert out["interpretation_status"] == "model_interpretation_not_evidence"
+    assert out["assumptions"] == ["Persisted records may be relevant to continuity."]
+    assert out["reflection"].startswith("One possibility")
+
+
+def test_status_result_is_not_replayed_as_observed_fact(monkeypatch):
+    monkeypatch.setattr(
+        cognition,
+        "recent_episodes",
+        lambda limit=30: [
+            {
+                "generation": 7,
+                "command": "status",
+                "success": True,
+                "result": "attention contains old model-authored identity claim",
+            }
+        ],
+    )
+    facts = cognition._executed_action_facts()
+    assert facts == [{"generation": 7, "command": "status", "success": True}]
+
+
+def test_deferred_reflection_is_system_fact_without_fabricated_result(monkeypatch):
+    monkeypatch.setattr(
+        cognition,
+        "recent_episodes",
+        lambda limit=30: [
+            {
+                "generation": 8,
+                "command": "reflect",
+                "success": True,
+                "deferred": True,
+                "result": "provider unavailable",
+            }
+        ],
+    )
+    facts = cognition._executed_action_facts()
+    assert facts[0]["deferred"] is True
+    assert "recorded_result" not in facts[0]
+    assert "reflect deferred" in cognition.deterministic_observation_summary(facts)
+
+
+def test_record_reflection_deferred_preserves_prior_interpretation(monkeypatch):
+    prior = {
+        "question": "What am I?",
+        "reflection": "Prior interpretation.",
+        "next_command": "reflect",
+    }
+    monkeypatch.setattr(cognition, "read_json", lambda name, default: prior.copy())
+    writes = {}
+    monkeypatch.setattr(cognition, "write_json", lambda name, value: writes.__setitem__(name, value))
+    out = cognition.record_reflection_deferred(20, "No remote provider.")
+    assert out["reflection"] == "Prior interpretation."
+    assert out["reflection_deferred"] is True
+    assert out["next_command"] == "reflect"
+    assert "Retry philosophical reflection" in out["next_action"]
