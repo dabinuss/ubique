@@ -283,13 +283,15 @@ class Agent:
                                 raise RuntimeError(evo.reason or "evolution proposal rejected")
 
                             result_text = (
-                                f"Evolution candidate validated, tested, and applied to the active branch.\n\n"\n                                f"- Title: {evo.title}\n"
+                                f"Evolution candidate validated, tested, and applied to the active branch.\n\n"
+                                f"- Title: {evo.title}\n"
                                 f"- Branch: `{evo.branch}`\n"
                                 f"- Baseline benchmark (advisory): `{evo.baseline_score}`\n"
                                 f"- Candidate benchmark (advisory): `{evo.candidate_score}`\n"
                                 f"- Self-repair used: `{repaired}`\n"
                                 f"- Repair attempts: `{repair_attempts}`\n"
-                                f"- Commit: {evo.commit_sha}\n\n"\n                                "The change becomes part of the next cycle without a human merge step."\n                            )
+                                f"- Commit: {evo.commit_sha}\n\n"
+                                "The change becomes part of the next cycle without a human merge step."\n                            )
 
                     if not self.config.dry_run and task.number is not None:
                         reply = (
@@ -313,7 +315,8 @@ class Agent:
                     update_skill(planned.command, True)
                     if task.source == "autonomous":
                         update_stagnation(planned.command, generation)
-                        if planned.command in {"experiment", "evolve"}:\n                            record_action_outcome(generation, planned.command, True, result_text)
+                        if planned.command in {"experiment", "evolve"}:
+                            record_action_outcome(generation, planned.command, True, result_text)
                     record_self_observation(
                         generation,
                         planned.command,
@@ -340,7 +343,8 @@ class Agent:
                     update_skill(planned.command, False)
                     if task.source == "autonomous":
                         update_stagnation(planned.command, generation)
-                        if planned.command in {"experiment", "evolve"}:\n                            record_action_outcome(generation, planned.command, False, str(exc))
+                        if planned.command in {"experiment", "evolve"}:
+                            record_action_outcome(generation, planned.command, False, str(exc))
                     record_self_observation(
                         generation,
                         planned.command,
