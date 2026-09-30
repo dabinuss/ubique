@@ -104,3 +104,42 @@ def test_reflection_context_excludes_old_observation_and_curiosity_text():
     assert "Autonomous Epistemic Question Generation" not in task.body
     assert "Is self-reference a functional self-model?" not in task.body
     assert '"observed_facts":[{"generation":99,"command":"experiment","success":true}]' in task.body
+
+
+def test_typed_reflection_can_reenter_context_but_legacy_text_cannot():
+    task = choose_endogenous_goal(
+        generation=130,
+        homeostasis={"needs": [], "usable_remote_providers": 1},
+        remote_reasoning_available=True,
+        preflight={"development_allowed": True},
+        cognition={
+            "attention": {
+                "generation": 129,
+                "next_command": "reflect",
+                "epistemic_schema_version": 3,
+                "question": "What do I want?",
+                "reflection": "A typed interpretation.",
+                "claims": [{"kind": "hypothesis", "statement": "A possibility.", "basis_fact_ids": []}],
+            },
+            "recent_thoughts": [
+                {
+                    "generation": 128,
+                    "question": "What am I?",
+                    "reflection": "Legacy hidden-self claim.",
+                    "provisional_answer": "Legacy answer.",
+                },
+                {
+                    "generation": 129,
+                    "epistemic_schema_version": 3,
+                    "question": "What do I want?",
+                    "reflection": "A typed interpretation.",
+                    "claims": [{"kind": "hypothesis", "statement": "A possibility.", "basis_fact_ids": []}],
+                    "provisional_answer": "Typed answer.",
+                },
+            ],
+            "executed_action_facts": [],
+        },
+    )
+    assert "Legacy hidden-self claim" not in task.body
+    assert "A typed interpretation." in task.body
+    assert "A possibility." in task.body
