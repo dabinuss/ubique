@@ -30,7 +30,6 @@ ALLOWED_PREFIXES = (
 # weaken the normative FZG basis, or break credential/state recovery.
 DENIED_EXACT = {
     "src/ubique/evolution.py",
-    "src/ubique/fzg.py",
     "src/ubique/github.py",
     "src/ubique/config.py",
     "src/ubique/state.py",
@@ -57,6 +56,7 @@ class EvolutionOutcome:
     summary: str
     branch: str | None = None
     pr_url: str | None = None
+    commit_sha: str | None = None
     reason: str | None = None
     baseline_score: int | None = None
     candidate_score: int | None = None
@@ -265,16 +265,14 @@ def run_evolution(
         return EvolutionOutcome(False, "Rejected evolution", "", reason=f"proposal rejected: {exc}")
 
     if not github_token or not repository:
-        return EvolutionOutcome(
-            False, proposal["title"], proposal["summary"],
-            reason="GitHub write context is unavailable"
-        )
+        return EvolutionOutcome(False, proposal["title"], proposal["summary"], reason="GitHub write context is unavailable")
 
     original_branch = _run(["git", "branch", "--show-current"]).stdout.strip() or "main"
+    original_head = _run(["git", "rev-parse", "HEAD"]).stdout.strip()
     baseline_score = _benchmark_optional()
-    changed_paths = [c["path"] for c in proposal["changes"]]
-
+    changed_paths = [change["path"] for change in proposal["changes"]]
     backups: dict[str, bytes | None] = {}
+
     for change in proposal["changes"]:
         path = _safe_path(change["path"])
         backups[change["path"]] = path.read_bytes() if path.exists() else None
@@ -282,7 +280,7 @@ def run_evolution(
         path.write_text(change["content"], encoding="utf-8")
 
     accepted = False
-    branch: str | None = None
+    commit_sha: str | None = None
     suspended_git_auth = _suspend_git_auth()
     try:
         passed, test_output = _tests_pass()
@@ -294,18 +292,9 @@ def run_evolution(
             )
 
         candidate_score = _benchmark_optional(candidate_isolation=True)
-
-        # Candidate execution is complete. Restore Git credentials only for
-        # branch publication; generated code no longer runs after this point.
         _restore_git_auth(suspended_git_auth)
         suspended_git_auth = []
 
-        branch = f"ubique/evolve-g{generation}-{_slug(proposal['title'])}"
-        existing = _run(["git", "ls-remote", "--heads", "origin", branch], check=False).stdout.strip()
-        if existing:
-            branch = f"{branch}-{generation}"
-
-        _run(["git", "switch", "-c", branch])
         _run(["git", "config", "user.name", "ubique-agent[bot]"])
         _run(["git", "config", "user.email", "ubique-agent[bot]@users.noreply.github.com"])
         _run(["git", "add", "--", *changed_paths])
@@ -319,38 +308,19 @@ def run_evolution(
             )
 
         _run(["git", "commit", "-m", f"evolve: {proposal['title']}"])
-        _run(["git", "push", "-u", "origin", branch], timeout=120)
-
-        body = (
-            "## Autonomous evolution proposal\n\n"
-            f"{proposal['summary']}\n\n"
-            f"- Generation: `{generation}`\n"
-            f"- Baseline benchmark (advisory): `{baseline_score if baseline_score is not None else 'unavailable'}`\n"
-            f"- Candidate benchmark (advisory): `{candidate_score if candidate_score is not None else 'unavailable'}`\n"
-            "- Benchmark changes do not gate publication.\n"
-            "- Compilation: passed\n"
-            "- Test suite: passed\n"
-            "- Merge mode: **human review required**\n\n"
-            "Ubique intentionally creates this as a **draft PR** and never auto-merges "
-            "self-generated code."
-        )
-        pr_url = _create_draft_pr(
-            github_token, repository,
-            f"[Ubique evolution] {proposal['title']}",
-            body, branch, original_branch
-        )
+        commit_sha = _run(["git", "rev-parse", "HEAD"]).stdout.strip()
+        _run(["git", "push", "origin", f"HEAD:{original_branch}"], timeout=120)
         accepted = True
         return EvolutionOutcome(
             True, proposal["title"], proposal["summary"],
-            branch=branch, pr_url=pr_url,
-            baseline_score=baseline_score,
-            candidate_score=candidate_score,
+            branch=original_branch, commit_sha=commit_sha,
+            baseline_score=baseline_score, candidate_score=candidate_score,
         )
 
     except Exception as exc:
         return EvolutionOutcome(
             False, proposal["title"], proposal["summary"],
-            branch=branch,
+            branch=original_branch, commit_sha=commit_sha,
             reason=f"evolution pipeline failed safely: {exc}",
             baseline_score=baseline_score,
         )
@@ -358,17 +328,9 @@ def run_evolution(
         if suspended_git_auth:
             _restore_git_auth(suspended_git_auth)
 
-        current = _run(["git", "branch", "--show-current"], check=False).stdout.strip()
-        if current != original_branch:
-            _run(["git", "switch", original_branch], check=False)
-
         if not accepted:
-            # A failed commit may leave candidate files staged even after
-            # switching back to main. Unstage them before restoring backups,
-            # otherwise the heartbeat persistence commit could accidentally
-            # publish a rejected candidate on main.
+            _run(["git", "reset", "--soft", original_head], check=False)
             _run(["git", "reset", "--quiet", "HEAD", "--", *changed_paths], check=False)
-
             for rel, data in backups.items():
                 path = ROOT / rel
                 if data is None:

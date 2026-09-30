@@ -15,7 +15,11 @@ def autonomous_task(
     preflight: dict[str, Any] | None = None,
     cognition: dict[str, Any] | None = None,
 ) -> Task:
-    """Choose the next endogenous action from layer-1 health and layer-2 cognition."""
+    """Choose the next endogenous action from operational health and open cognition.
+
+    telemetry remains an accepted compatibility argument but is no longer a required
+    or automatically interpreted theoretical input.
+    """
     snapshot = homeostasis or {"needs": []}
     return choose_endogenous_goal(
         generation=generation,

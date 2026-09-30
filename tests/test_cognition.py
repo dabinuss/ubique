@@ -107,3 +107,19 @@ def test_reflection_stagnation_allows_real_variation():
     ]
     out = cognition.assess_reflection_stagnation(thoughts)
     assert out["detected"] is False
+
+
+def test_incomplete_experiment_falls_back_to_reflection_instead_of_failing():
+    raw = json.dumps({
+        "observation": "No new recorded observation.",
+        "question": "What am I?",
+        "reflection": "An experiment might help, but no executable design has been identified.",
+        "provisional_answer": "The question remains open.",
+        "uncertainty": "High.",
+        "next_action": "Think further.",
+        "next_command": "experiment",
+        "experiment_type": "",
+    })
+    out = cognition.parse_reflection(raw)
+    assert out["next_command"] == "reflect"
+    assert "Incomplete experiment request" in out["planning_note"]

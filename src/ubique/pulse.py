@@ -5,7 +5,7 @@ from typing import Any
 from .state import utc_now
 
 
-CONTINUATION_COMMANDS = {"reflect", "experiment", "fzg", "evolve", "resolve"}
+CONTINUATION_COMMANDS = {"reflect", "experiment", "evolve", "resolve", "library"}
 
 
 def decide_pulse(
