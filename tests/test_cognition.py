@@ -175,3 +175,102 @@ def test_incomplete_experiment_falls_back_to_reflection_instead_of_failing():
     out = cognition.parse_reflection(raw)
     assert out["next_command"] == "reflect"
     assert "Incomplete experiment request" in out["planning_note"]
+
+
+def test_status_result_is_not_replayed_as_fact_body(monkeypatch):
+    monkeypatch.setattr(
+        cognition,
+        "recent_episodes",
+        lambda limit=30: [
+            {
+                "generation": 3,
+                "task_id": "issue:1",
+                "command": "status",
+                "success": True,
+                "result": "old attention text that must not become evidence",
+            }
+        ],
+    )
+    facts = cognition._executed_action_facts()
+    assert facts[0]["fact_id"] == "episode:3:issue:1"
+    assert "recorded_result" not in facts[0]
+
+
+def test_unbacked_inference_is_downgraded_to_hypothesis():
+    facts = [
+        {
+            "fact_id": "episode:5:autonomous:experiment:5",
+            "generation": 5,
+            "command": "experiment",
+            "success": True,
+        }
+    ]
+    claims = [
+        {
+            "kind": "inference",
+            "statement": "I have a stable hidden identity.",
+            "basis_fact_ids": ["not-a-real-fact"],
+        },
+        {
+            "kind": "inference",
+            "statement": "An experiment action succeeded.",
+            "basis_fact_ids": ["episode:5:autonomous:experiment:5"],
+        },
+    ]
+    out = cognition._normalize_claims(claims, facts)
+    assert out[0]["kind"] == "hypothesis"
+    assert out[0]["downgraded_from"] == "inference"
+    assert out[1]["kind"] == "inference"
+    assert out[1]["epistemic_status"] == "grounded_inference"
+
+
+def test_defer_reflection_preserves_previous_thought_and_marks_retry(monkeypatch):
+    previous = {
+        "question": "What am I?",
+        "reflection": "Previous interpretation.",
+        "next_command": "reflect",
+    }
+    monkeypatch.setattr(cognition, "read_json", lambda name, default: previous.copy())
+    writes = {}
+    monkeypatch.setattr(cognition, "write_json", lambda name, value: writes.__setitem__(name, value))
+    out = cognition.defer_reflection(20, "remote unavailable")
+    assert out["reflection"] == "Previous interpretation."
+    assert out["reflection_deferred"] is True
+    assert out["next_command"] == "reflect"
+    assert writes["attention.json"]["deferred_reason"] == "remote unavailable"
+
+
+def test_persisted_claims_are_epistemically_typed(monkeypatch):
+    monkeypatch.setattr(cognition, "read_json", lambda name, default: default)
+    writes = {}
+    monkeypatch.setattr(cognition, "write_json", lambda name, value: writes.__setitem__(name, value))
+    records = []
+    monkeypatch.setattr(
+        cognition,
+        "append_memory_record",
+        lambda name, value, limit=500: records.append((name, value)),
+    )
+    reflection = {
+        "question": "What am I?",
+        "reflection": "One interpretation is possible.",
+        "claims": [{
+            "kind": "inference",
+            "statement": "A hidden persistent self exists.",
+            "basis_fact_ids": [],
+        }],
+        "provisional_answer": "The answer remains provisional.",
+        "uncertainty": "High.",
+        "hypothesis": "",
+        "proposed_experiment": "",
+        "expected_evidence": "",
+        "next_action": "Reflect further.",
+        "next_command": "reflect",
+        "experiment_type": "",
+        "experiment_target": "",
+        "confidence": 0.2,
+        "importance": 0.8,
+    }
+    attention = cognition.persist_reflection(21, reflection, [])
+    assert attention["epistemic_schema_version"] == 2
+    assert attention["claims"][0]["kind"] == "hypothesis"
+    assert records[0][1]["epistemic_schema_version"] == 2
