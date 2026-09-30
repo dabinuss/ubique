@@ -291,7 +291,8 @@ class Agent:
                                 f"- Self-repair used: `{repaired}`\n"
                                 f"- Repair attempts: `{repair_attempts}`\n"
                                 f"- Commit: {evo.commit_sha}\n\n"
-                                "The change becomes part of the next cycle without a human merge step."\n                            )
+                                "The change becomes part of the next cycle without a human merge step."
+                            )
 
                     if not self.config.dry_run and task.number is not None:
                         reply = (
