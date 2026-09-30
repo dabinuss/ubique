@@ -17,15 +17,19 @@ When Layer 1 is healthy and remote reasoning is available, Ubique normally refle
 Observation and interpretation are separate channels:
 
 - the runtime constructs observed facts deterministically from recorded executed actions,
-- model-authored reflection prose is never replayed through the observation channel,
-- Ubique receives those facts and interprets them,
+- model-authored reflection prose and status text are never replayed through the observation channel,
+- Ubique receives those facts and returns an interpretation, not a second fact stream,
+- unsupported premises are carried explicitly in an assumptions list,
+- technical claims about architecture, training, token context, memory mechanisms, sensors, affect, internal state, or persistence require explicit assumptions,
 - a reflection cannot set its own observation, project title, or project identity.
 
-The reflection prompt explicitly forbids inventing hidden-state analyses, disabled-memory trials, planning scores, error-rate measurements, subjective sensations, experiments, user behavior, or conversation-window observations.
+The reflection prompt explicitly forbids inventing hidden-state analyses, disabled-memory trials, planning scores, error-rate measurements, subjective sensations, experiments, user behavior, or conversation-window observations. Interpretations and provisional answers remain marked as model interpretation rather than evidence.
 
 Two consecutive near-duplicate provisional answers to the same question are treated as stagnation and force a change of standing question or conceptual direction. Old self-generated question text is not replayed into future prompts.
 
 If a reflection gestures toward an experiment but does not specify a valid executable experiment, the reflection is preserved and the cycle continues as reflection instead of failing.
+
+If a remote reasoning provider becomes unavailable during a reflection, the reflection is recorded as deferred rather than failed. The deterministic fallback does not fabricate philosophy or get parsed as model JSON. Provider eligibility is recalculated after the attempt, so the active pulse stops cleanly in watchdog mode until a scheduled heartbeat finds remote reasoning available again.
 
 ## Optional persistent library
 

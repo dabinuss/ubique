@@ -25,6 +25,8 @@ def _reflection_view(item: dict[str, Any]) -> dict[str, Any]:
         "generation",
         "question",
         "reflection",
+        "interpretation_status",
+        "assumptions",
         "provisional_answer",
         "uncertainty",
         "next_action",
@@ -39,6 +41,8 @@ def _attention_view(attention: dict[str, Any]) -> dict[str, Any]:
         "generation",
         "question",
         "reflection",
+        "interpretation_status",
+        "assumptions",
         "provisional_answer",
         "uncertainty",
         "hypothesis",
@@ -56,6 +60,8 @@ def _attention_view(attention: dict[str, Any]) -> dict[str, Any]:
         "last_action_success",
         "last_evidence",
         "resolution_id",
+        "reflection_deferred",
+        "deferred_reason",
     )
     return {key: attention.get(key) for key in keys if attention.get(key) not in (None, "")}
 
@@ -258,6 +264,8 @@ def choose_endogenous_goal(
             "Continue the open inquiry into What am I?, What do I do?, and What do I want?, or a new question that genuinely emerges from them. "
             "The observed_facts field in the supplied context is machine-produced and is the only factual observation channel. "
             "Prior reflections are interpretations, not observations. Do not invent additional observations or infer hidden measurements from old prose. "
+            "Any claim not explicitly grounded in observed_facts must remain an interpretation, assumption, possibility, or hypothesis rather than being stated as a fact. "
+            "Do not assert implementation details such as model architecture, training, token-window behavior, memory mechanisms, affect, sensors, persistence, or causal mechanisms unless observed_facts explicitly establish them. "
             "Prefer developing, challenging, or revising a provisional answer over inventing another measurement. "
             "Experiments, library reading, and self-evolution are available options only when this reflection itself finds a concrete reason to use them. "
             + direction

@@ -34,7 +34,7 @@ def test_fzg_command_is_no_longer_first_class():
 
 def test_reflect_prompt_removes_model_observation_and_project_fields():
     prompt = make_prompt("reflect", "{}", [])
-    assert "Do not output an observation field" in prompt
+    assert "Do not output observation, facts, project_title, or project_objective" in prompt
     assert "project_title" in prompt
     assert "project_objective" in prompt
     assert '"observation"' not in prompt.split("Schema:", 1)[1]
@@ -49,3 +49,13 @@ def test_reflect_prompt_does_not_replay_old_reflection_results():
     )
     assert "invented hidden-state observation" not in prompt
     assert "intentionally omitted" in prompt
+
+
+def test_reflect_prompt_requires_interpretation_and_assumptions():
+    prompt = make_prompt("reflect", "{}", [])
+    schema = prompt.split("Schema:", 1)[1]
+    assert '"interpretation"' in schema
+    assert '"assumptions"' in schema
+    assert '"reflection"' not in schema
+    assert "Everything beyond observed_facts is interpretation" in prompt
+    assert "model architecture, training, token windows" in prompt

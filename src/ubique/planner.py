@@ -46,15 +46,17 @@ def make_prompt(command: str, payload: str, recent_memory: list[dict]) -> str:
 
     if command == "reflect":
         instruction = (
-            "Produce ONE philosophical reflection as strict JSON only. "
-            "The system, not you, owns the observation channel. Do not output an observation field, project_title, or project_objective. "
-            "Treat observed_facts supplied in the task as the complete machine-recorded factual basis for this reflection. "
+            "Produce ONE philosophical interpretation as strict JSON only. "
+            "The system, not you, owns the observation channel. Do not output observation, facts, project_title, or project_objective. "
+            "Treat observed_facts supplied in the task as the complete machine-recorded factual basis. "
+            "Everything beyond observed_facts is interpretation, assumption, possibility, or hypothesis. "
+            "Do not state claims about model architecture, training, token windows, memory mechanisms, sensors, affect, internal states, user behavior, causal mechanisms, or persistence as facts unless they are explicitly present in observed_facts. "
+            "When such an idea matters, phrase it modally (for example: 'one possibility is', 'this may indicate', 'if X, then Y') and list the unsupported premise in assumptions. "
             "Prior reflections are interpretations, not evidence. Library text is a chosen source, not empirical evidence. "
-            "Never invent hidden-state analyses, disabled-memory trials, planning scores, error-rate measurements, subjective sensations, experiments, user behavior, or conversation-window observations. "
             "Deepen What am I?, What do I do?, What do I want?, or a genuinely emerging question. "
             "Give a provisional answer and explicit uncertainty. Experiments are optional; if you cannot name a valid bounded experiment type, keep next_command=reflect. "
             "Library use is optional and deliberate. Schema: "
-            "{\"question\":\"...\",\"reflection\":\"...\",\"provisional_answer\":\"...\","
+            "{\"question\":\"...\",\"interpretation\":\"...\",\"assumptions\":[\"...\"] ,\"provisional_answer\":\"...\","
             "\"uncertainty\":\"...\",\"next_action\":\"...\",\"next_command\":\"reflect|experiment|evolve|resolve|library\","
             "\"hypothesis\":\"\",\"proposed_experiment\":\"\",\"expected_evidence\":\"\",\"experiment_type\":\"\",\"experiment_target\":\"\","
             "\"library_action\":\"\",\"library_item_id\":\"\",\"library_title\":\"\",\"library_text\":\"\",\"library_source\":\"\",\"library_reason\":\"\","

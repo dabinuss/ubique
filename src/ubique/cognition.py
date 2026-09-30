@@ -101,8 +101,10 @@ def _executed_action_facts() -> list[dict[str, Any]]:
             "command": command,
             "success": bool(item.get("success")),
         }
+        if item.get("deferred"):
+            fact["deferred"] = True
 
-        if command in {"experiment", "evolve", "resolve", "status"}:
+        if command in {"experiment", "evolve", "resolve"}:
             fact["recorded_result"] = str(item.get("result", ""))[:1800]
         elif command == "library":
             fact["library_action"] = _safe_library_fact(str(item.get("result", "")))
@@ -120,7 +122,10 @@ def deterministic_observation_summary(facts: list[dict[str, Any]]) -> str:
     for fact in facts[-6:]:
         generation = fact.get("generation")
         command = str(fact.get("command", "action"))
-        status = "succeeded" if fact.get("success") else "failed"
+        if fact.get("deferred"):
+            status = "deferred"
+        else:
+            status = "succeeded" if fact.get("success") else "failed"
         parts.append(f"generation {generation}: {command} {status}")
     return "Recorded executed actions: " + "; ".join(parts) + "."
 
@@ -159,9 +164,48 @@ def parse_reflection(text: str) -> dict[str, Any]:
     if not isinstance(data, dict):
         raise ValueError("reflection must be a JSON object")
 
-    for key in ("question", "reflection", "provisional_answer", "uncertainty", "next_action"):
+    interpretation = data.get("interpretation")
+    if not isinstance(interpretation, str) or not interpretation.strip():
+        raise ValueError("reflection missing non-empty interpretation")
+
+    for key in ("question", "provisional_answer", "uncertainty", "next_action"):
         if not isinstance(data.get(key), str) or not data[key].strip():
             raise ValueError(f"reflection missing non-empty {key}")
+    raw_assumptions = data.get("assumptions", [])
+    if raw_assumptions is None:
+        raw_assumptions = []
+    if not isinstance(raw_assumptions, list):
+        raise ValueError("reflection assumptions must be a list")
+    assumptions = [
+        str(item).strip()[:1200]
+        for item in raw_assumptions[:12]
+        if isinstance(item, str) and str(item).strip()
+    ]
+
+    technical_markers = (
+        "architecture",
+        "training",
+        "token window",
+        "token context",
+        "memory mechanism",
+        "internal state",
+        "sensor",
+        "affect",
+        "persistent substrate",
+        "language model",
+        "model weights",
+    )
+    epistemic_text = " ".join(
+        [
+            interpretation,
+            str(data.get("provisional_answer", "")),
+            str(data.get("next_action", "")),
+        ]
+    ).lower()
+    if any(marker in epistemic_text for marker in technical_markers) and not assumptions:
+        raise ValueError(
+            "technical interpretation requires explicit assumptions instead of unsupported factual claims"
+        )
 
     next_command = str(data.get("next_command", "reflect")).strip().lower()
     if next_command not in ALLOWED_NEXT_COMMANDS:
@@ -217,7 +261,9 @@ def parse_reflection(text: str) -> dict[str, Any]:
 
     return {
         "question": data["question"].strip()[:3000],
-        "reflection": data["reflection"].strip()[:6000],
+        "reflection": interpretation.strip()[:6000],
+        "interpretation_status": "model_interpretation_not_evidence",
+        "assumptions": assumptions,
         "provisional_answer": data["provisional_answer"].strip()[:4000],
         "uncertainty": data["uncertainty"].strip()[:3000],
         "hypothesis": hypothesis[:4000],
@@ -313,6 +359,8 @@ def persist_reflection(
         "observed_facts": facts,
         "question": reflection["question"],
         "reflection": reflection["reflection"],
+        "interpretation_status": "model_interpretation_not_evidence",
+        "assumptions": list(reflection.get("assumptions", [])),
         "provisional_answer": reflection["provisional_answer"],
         "uncertainty": reflection["uncertainty"],
         "hypothesis": reflection.get("hypothesis", ""),
@@ -341,6 +389,26 @@ def persist_reflection(
         attention["hypothesis_id"] = hypothesis_id
     if project_id:
         attention["project_id"] = project_id
+    write_json("attention.json", attention)
+    return attention
+
+
+def record_reflection_deferred(generation: int, reason: str) -> dict[str, Any]:
+    """Record a clean pause when no remote model can produce a reflection."""
+    attention = read_json("attention.json", {})
+    if not isinstance(attention, dict):
+        attention = {}
+    attention.update(
+        {
+            "timestamp": utc_now(),
+            "generation": generation,
+            "focus": "Philosophical self-inquiry",
+            "reflection_deferred": True,
+            "deferred_reason": reason[:1200],
+            "next_command": "reflect",
+            "next_action": "Retry philosophical reflection when a remote reasoning provider is available.",
+        }
+    )
     write_json("attention.json", attention)
     return attention
 
