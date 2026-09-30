@@ -56,6 +56,15 @@ def test_reflect_prompt_requires_interpretation_and_assumptions():
     schema = prompt.split("Schema:", 1)[1]
     assert '"interpretation"' in schema
     assert '"assumptions"' in schema
+    assert '"claims"' in schema
+    assert '"kind":"inference|hypothesis"' in schema
+    assert "basis_fact_ids" in schema
     assert '"reflection"' not in schema
     assert "Everything beyond observed_facts is interpretation" in prompt
     assert "model architecture, training, token windows" in prompt
+
+
+def test_reflect_prompt_requires_fact_ids_for_inference():
+    prompt = make_prompt("reflect", "{}", [])
+    assert "Type it as inference only when basis_fact_ids cites exact fact_id values" in prompt
+    assert "otherwise type it as hypothesis" in prompt
