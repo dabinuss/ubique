@@ -4,16 +4,20 @@ from collections import Counter
 from typing import Any
 
 from .memory import recent_memory_records
-from .state import ROOT, write_json, utc_now
+from .state import write_json, utc_now
 
 
 STANDING_QUESTIONS = ("What am I?", "What do I do?", "What do I want?")
 
 
 def build_curiosity_snapshot(generation: int) -> dict[str, Any]:
-    """Offer open philosophical frontiers without prescribing technical research topics."""
+    """Track only standing-question balance without replaying old generated prompts."""
     thoughts = recent_memory_records("thoughts.jsonl", 20)
-    questions = [str(item.get("question", "")).strip() for item in thoughts if str(item.get("question", "")).strip()]
+    questions = [
+        str(item.get("question", "")).strip()
+        for item in thoughts
+        if str(item.get("question", "")).strip()
+    ]
     normalized = Counter(q.lower() for q in questions)
 
     frontiers = [
@@ -28,27 +32,16 @@ def build_curiosity_snapshot(generation: int) -> dict[str, Any]:
     ]
     frontiers.sort(key=lambda item: (-item["novelty_priority"], item["question"]))
 
-    generated: list[str] = []
-    seen = {q.lower() for q in STANDING_QUESTIONS}
-    for question in reversed(questions):
-        key = question.lower()
-        if key in seen:
-            continue
-        seen.add(key)
-        generated.append(question)
-        if len(generated) >= 5:
-            break
-
     result = {
         "timestamp": utc_now(),
         "generation": generation,
         "frontiers": frontiers,
         "standing_questions": frontiers,
-        "recent_self_generated_questions": generated,
+        "recent_self_generated_questions": [],
         "rule": (
-            "These are optional openings, not goals; operational continuity is out of scope while Layer 1 is healthy. "
-            "Ubique may continue, revise, reject, or generate questions from its own reflections and experience. "
-            "Technical self-analysis is not privileged merely because implementation details are available."
+            "This snapshot only tracks balance among the three standing questions. "
+            "Old model-generated question text is intentionally not replayed into future reasoning. "
+            "Ubique remains free to generate a new question in the current reflection."
         ),
     }
     write_json("curiosity.json", result)
