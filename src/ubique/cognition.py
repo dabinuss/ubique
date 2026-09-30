@@ -166,15 +166,11 @@ def parse_reflection(text: str) -> dict[str, Any]:
 
     interpretation = data.get("interpretation")
     if not isinstance(interpretation, str) or not interpretation.strip():
-        legacy = data.get("reflection")
-        interpretation = legacy if isinstance(legacy, str) else ""
+        raise ValueError("reflection missing non-empty interpretation")
 
     for key in ("question", "provisional_answer", "uncertainty", "next_action"):
         if not isinstance(data.get(key), str) or not data[key].strip():
             raise ValueError(f"reflection missing non-empty {key}")
-    if not interpretation.strip():
-        raise ValueError("reflection missing non-empty interpretation")
-
     raw_assumptions = data.get("assumptions", [])
     if raw_assumptions is None:
         raw_assumptions = []
