@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-09-30T00:10:20.705605+00:00",
-  "generation": 315,
-  "healthy": true,
-  "development_allowed": true,
+  "timestamp": "2026-09-30T02:24:27.881603+00:00",
+  "generation": 316,
+  "healthy": false,
+  "development_allowed": false,
   "checks": [
     {
       "name": "runtime_state",
@@ -11,8 +11,8 @@
     },
     {
       "name": "homeostasis",
-      "ok": true,
-      "evidence": "no critical needs"
+      "ok": false,
+      "evidence": "1 critical need(s)"
     },
     {
       "name": "repository_branch",
@@ -25,5 +25,13 @@
       "evidence": "recovery_actions=0"
     }
   ],
-  "critical_needs": []
+  "critical_needs": [
+    {
+      "name": "reasoning_redundancy",
+      "level": "critical",
+      "value": 0.0,
+      "target": ">=2 independently configured remote reasoning paths",
+      "evidence": "0 remote providers currently usable according to the persisted ledger"
+    }
+  ]
 }
