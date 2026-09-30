@@ -49,3 +49,16 @@ def test_pulse_stops_without_remote_reasoning():
     )
     assert out["should_continue"] is False
     assert "no_usable_remote_reasoning" in out["reason"]
+
+
+def test_pulse_stops_when_reflection_is_deferred():
+    out = decide_pulse(
+        generation=24,
+        preflight={"development_allowed": True},
+        homeostasis={"usable_remote_providers": 1},
+        attention={"next_command": "reflect", "reflection_deferred": True},
+        failed_tasks=0,
+    )
+    assert out["should_continue"] is False
+    assert out["mode"] == "watchdog"
+    assert "reflection_deferred" in out["reason"]
