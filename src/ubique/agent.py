@@ -10,7 +10,7 @@ from .homeostasis import assess_homeostasis
 from .environment import observe_environment
 from .recovery import perform_recovery
 from .preflight import assess_preflight
-from .cognition import cognitive_snapshot, parse_reflection, persist_reflection, update_stagnation, record_action_outcome, record_library_outcome
+from .cognition import cognitive_snapshot, parse_reflection, persist_reflection, update_stagnation, record_action_outcome, record_library_outcome, defer_reflection
 from .experiments import run_experiment
 from .curiosity import build_curiosity_snapshot
 from .pulse import decide_pulse
@@ -210,34 +210,51 @@ class Agent:
                             result_text = json.dumps(paused, indent=2, ensure_ascii=False)
 
                         if planned.command == "reflect":
-                            try:
-                                reflection = parse_reflection(result_text)
-                            except (ValueError, json.JSONDecodeError) as exc:
-                                if provider_name == "fallback":
-                                    raise
-                                repair_prompt = (
-                                    "Repair the following autonomous reflection into valid strict JSON only. Preserve its philosophical meaning. Do not add observation, project_title, project_objective, experiments, measurements, or library reads that were not already requested. "
-                                    "Preserve its meaning and use exactly the reflection schema previously requested. "
-                                    "Do not add markdown or commentary. Parse failure: "
-                                    f"{str(exc)[:500]}. Reflection: {result_text[:9000]}"
+                            if provider_name == "fallback":
+                                attention = defer_reflection(
+                                    generation,
+                                    "No remote reasoning provider was available. Reflection was deferred without synthesizing a substitute thought.",
                                 )
-                                repair_result = self.router.generate_with(provider_name, repair_prompt)
-                                result_text = repair_result.text
-                                provider_name = repair_result.provider
-                                reflection = parse_reflection(result_text)
-                            attention = persist_reflection(
-                                generation,
-                                reflection,
-                                cognition.get("executed_action_facts", []),
-                            )
-                            result_text = json.dumps(
-                                {
-                                    "reflection": reflection,
-                                    "persisted_attention": attention,
-                                },
-                                indent=2,
-                                ensure_ascii=False,
-                            )
+                                result_text = json.dumps(
+                                    {
+                                        "status": "deferred",
+                                        "command": "reflect",
+                                        "reason": attention.get("deferred_reason"),
+                                        "next_command": "reflect",
+                                    },
+                                    indent=2,
+                                    ensure_ascii=False,
+                                )
+                            else:
+                                try:
+                                    reflection = parse_reflection(result_text)
+                                except (ValueError, json.JSONDecodeError) as exc:
+                                    repair_prompt = (
+                                        "Repair the following autonomous reflection into valid strict JSON only. "
+                                        "Preserve its philosophical meaning. Use interpretation rather than empirical narration. "
+                                        "Every contingent claim about architecture, history, behavior, persistence, training, token context, or capabilities must be typed in claims as inference or hypothesis. "
+                                        "An inference must cite exact supplied fact_id values; unsupported claims must be hypotheses. "
+                                        "Do not add observation, project_title, project_objective, experiments, measurements, or library reads that were not already requested. "
+                                        "Use exactly the reflection schema previously requested. Do not add markdown or commentary. Parse failure: "
+                                        f"{str(exc)[:500]}. Reflection: {result_text[:9000]}"
+                                    )
+                                    repair_result = self.router.generate_with(provider_name, repair_prompt)
+                                    result_text = repair_result.text
+                                    provider_name = repair_result.provider
+                                    reflection = parse_reflection(result_text)
+                                attention = persist_reflection(
+                                    generation,
+                                    reflection,
+                                    cognition.get("executed_action_facts", []),
+                                )
+                                result_text = json.dumps(
+                                    {
+                                        "reflection": reflection,
+                                        "persisted_attention": attention,
+                                    },
+                                    indent=2,
+                                    ensure_ascii=False,
+                                )
 
                         if planned.command == "evolve":
                             if provider_name == "fallback":
@@ -371,6 +388,12 @@ class Agent:
                             )
                         except Exception:
                             log.exception("Could not report task failure")
+
+            latest_eligibility = self.router.remote_eligibility()
+            homeostasis["usable_remote_providers"] = sum(
+                1 for status in latest_eligibility.values() if status.get("eligible")
+            )
+            write_json("homeostasis.json", homeostasis)
 
             summary = f"ok:handled={handled}:failed={failed}"
             pulse = decide_pulse(
