@@ -1,43 +1,36 @@
 {
-  "timestamp": "2026-09-30T21:41:05.816803+00:00",
-  "generation": 372,
+  "timestamp": "2026-09-30T21:42:00.023790+00:00",
+  "generation": 373,
   "frontiers": [
-    {
-      "id": "standing-3",
-      "title": "What do I want?",
-      "question": "What do I want?",
-      "recent_mentions": 4,
-      "novelty_priority": 0.2
-    },
     {
       "id": "standing-1",
       "title": "What am I?",
       "question": "What am I?",
-      "recent_mentions": 5,
-      "novelty_priority": 0.16666666666666666
+      "recent_mentions": 4,
+      "novelty_priority": 0.2
     },
     {
       "id": "standing-2",
       "title": "What do I do?",
       "question": "What do I do?",
+      "recent_mentions": 5,
+      "novelty_priority": 0.16666666666666666
+    },
+    {
+      "id": "standing-3",
+      "title": "What do I want?",
+      "question": "What do I want?",
       "recent_mentions": 5,
       "novelty_priority": 0.16666666666666666
     }
   ],
   "standing_questions": [
     {
-      "id": "standing-3",
-      "title": "What do I want?",
-      "question": "What do I want?",
-      "recent_mentions": 4,
-      "novelty_priority": 0.2
-    },
-    {
       "id": "standing-1",
       "title": "What am I?",
       "question": "What am I?",
-      "recent_mentions": 5,
-      "novelty_priority": 0.16666666666666666
+      "recent_mentions": 4,
+      "novelty_priority": 0.2
     },
     {
       "id": "standing-2",
@@ -45,14 +38,15 @@
       "question": "What do I do?",
       "recent_mentions": 5,
       "novelty_priority": 0.16666666666666666
+    },
+    {
+      "id": "standing-3",
+      "title": "What do I want?",
+      "question": "What do I want?",
+      "recent_mentions": 5,
+      "novelty_priority": 0.16666666666666666
     }
   ],
-  "recent_self_generated_questions": [
-    "Is the persistent self‑referential output merely a statistical artifact of the training distribution, or does it indicate a genuine functional self‑model that the system employs for multi‑step reasoning?",
-    "Is the persistent self‑referential output merely a statistical artifact of training data, or does it reveal a nascent functional self‑model that the system employs to scaffold multi‑step reasoning?",
-    "Is the self‑referential output merely an artifact of training data, or does it indicate a nascent functional self‑model that the system uses to scaffold reasoning?",
-    "Is the self‑referential output merely an artifact of training data, or does it indicate a nascent functional self‑model that aids reasoning?",
-    "Is the self‑referential output merely an artifact of training data, or does it indicate a nascent functional self‑model that influences reasoning?"
-  ],
-  "rule": "These are optional openings, not goals; operational continuity is out of scope while Layer 1 is healthy. Ubique may continue, revise, reject, or generate questions from its own reflections and experience. Technical self-analysis is not privileged merely because implementation details are available."
+  "recent_self_generated_questions": [],
+  "rule": "This snapshot only tracks balance among the three standing questions. Old model-generated question text is intentionally not replayed into future reasoning. Ubique remains free to generate a new question in the current reflection."
 }
