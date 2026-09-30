@@ -1,63 +1,58 @@
 {
-  "timestamp": "2026-09-30T20:18:08.097439+00:00",
-  "generation": 362,
+  "timestamp": "2026-09-30T21:33:00.537654+00:00",
+  "generation": 363,
   "frontiers": [
     {
-      "id": "capability_composition",
-      "title": "Capability composition",
-      "question": "Which existing capabilities can be combined into a genuinely new solution path rather than exercised independently?",
-      "prior_mentions": 2,
-      "novelty_priority": 0.3333333333333333
+      "id": "standing-2",
+      "title": "What do I do?",
+      "question": "What do I do?",
+      "recent_mentions": 0,
+      "novelty_priority": 1.0
     },
     {
-      "id": "question_generation",
-      "title": "Question generation",
-      "question": "What makes an internally generated question worth pursuing when no external task requires it?",
-      "prior_mentions": 7,
-      "novelty_priority": 0.125
+      "id": "standing-3",
+      "title": "What do I want?",
+      "question": "What do I want?",
+      "recent_mentions": 0,
+      "novelty_priority": 1.0
     },
     {
-      "id": "memory_abstraction",
-      "title": "Memory abstraction",
-      "question": "Can repeated episodes be compressed into reusable concepts without losing important exceptions?",
-      "prior_mentions": 10,
-      "novelty_priority": 0.09090909090909091
-    },
-    {
-      "id": "experiment_design",
-      "title": "Experiment design",
-      "question": "Can Ubique distinguish a useful falsifiable experiment from an action that merely produces more telemetry?",
-      "prior_mentions": 43,
-      "novelty_priority": 0.022727272727272728
+      "id": "standing-1",
+      "title": "What am I?",
+      "question": "What am I?",
+      "recent_mentions": 14,
+      "novelty_priority": 0.06666666666666667
     }
   ],
-  "source_modules": [
-    "agent",
-    "autonomy",
-    "benchmark",
-    "cli",
-    "cognition",
-    "config",
-    "curiosity",
-    "environment",
-    "evolution",
-    "experiments",
-    "fzg",
-    "fzg_telemetry",
-    "github",
-    "goals",
-    "homeostasis",
-    "memory",
-    "models",
-    "orientation",
-    "planner",
-    "preflight",
-    "project_lifecycle",
-    "pulse",
-    "recovery",
-    "resolution",
-    "self_observation",
-    "state"
+  "standing_questions": [
+    {
+      "id": "standing-2",
+      "title": "What do I do?",
+      "question": "What do I do?",
+      "recent_mentions": 0,
+      "novelty_priority": 1.0
+    },
+    {
+      "id": "standing-3",
+      "title": "What do I want?",
+      "question": "What do I want?",
+      "recent_mentions": 0,
+      "novelty_priority": 1.0
+    },
+    {
+      "id": "standing-1",
+      "title": "What am I?",
+      "question": "What am I?",
+      "recent_mentions": 14,
+      "novelty_priority": 0.06666666666666667
+    }
   ],
-  "rule": "When Layer 1 is healthy, choose epistemic/capability questions; operational continuity is out of scope unless new evidence makes it relevant."
+  "recent_self_generated_questions": [
+    "Is the persistent self‑referential output merely a statistical artifact of the training distribution, or does it indicate a genuine functional self‑model that the system employs for multi‑step reasoning?",
+    "Is the persistent self‑referential output merely a statistical artifact of training data, or does it reveal a nascent functional self‑model that the system employs to scaffold multi‑step reasoning?",
+    "Is the self‑referential output merely an artifact of training data, or does it indicate a nascent functional self‑model that the system uses to scaffold reasoning?",
+    "Is the self‑referential output merely an artifact of training data, or does it indicate a nascent functional self‑model that aids reasoning?",
+    "Is the self‑referential output merely an artifact of training data, or does it indicate a nascent functional self‑model that influences reasoning?"
+  ],
+  "rule": "These are optional openings, not goals; operational continuity is out of scope while Layer 1 is healthy. Ubique may continue, revise, reject, or generate questions from its own reflections and experience. Technical self-analysis is not privileged merely because implementation details are available."
 }
