@@ -163,16 +163,16 @@ def parse_reflection(text: str) -> dict[str, Any]:
     if not isinstance(data, dict):
         raise ValueError("reflection must be a JSON object")
 
-    interpretation = data.get("interpretation", data.get("reflection", ""))
+    interpretation = data.get("interpretation")
     if not isinstance(interpretation, str) or not interpretation.strip():
         raise ValueError("reflection missing non-empty interpretation")
     for key in ("question", "provisional_answer", "uncertainty", "next_action"):
         if not isinstance(data.get(key), str) or not data[key].strip():
             raise ValueError(f"reflection missing non-empty {key}")
 
-    raw_claims = data.get("claims", [])
+    raw_claims = data.get("claims")
     if not isinstance(raw_claims, list):
-        raw_claims = []
+        raise ValueError("reflection missing claims list")
     claims: list[dict[str, Any]] = []
     for raw in raw_claims[:12]:
         if not isinstance(raw, dict):
