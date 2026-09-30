@@ -13,6 +13,6 @@ def test_repair_prompt_contains_failure_and_original():
 
 def test_repair_prompt_reasserts_protected_core():
     prompt = make_evolution_repair_prompt("{}", "proposal rejected: bad")
-    assert "protected FZG policy" in prompt
+    assert "protected recovery/evolution kernel" in prompt\n    assert "Philosophical orientation and optional theories are not protected doctrine" in prompt
     assert "workflows" in prompt
     assert "JSON only" in prompt
