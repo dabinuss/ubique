@@ -18,3 +18,16 @@ def test_empty_body_uses_title():
     p = parse_task(Task(id="1", title="Do this", body=""))
     assert p.command == "think"
     assert p.payload == "Do this"
+
+
+def test_fzg_is_not_injected_as_normative_system_basis():
+    from ubique.planner import make_prompt
+    prompt = make_prompt("reflect", "{}", [])
+    assert "FZG v1.0 is the normative theoretical basis" not in prompt
+    assert "Optional library catalog" in prompt
+    assert "Library entries are optional sources" in prompt
+
+
+def test_fzg_command_is_no_longer_first_class():
+    p = parse_task(Task(id="1", title="old", body="/fzg\nAnalyze this"))
+    assert p.command == "think"
