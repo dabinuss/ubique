@@ -23,7 +23,11 @@ Observation and interpretation are separate channels:
 
 The reflection prompt explicitly forbids inventing hidden-state analyses, disabled-memory trials, planning scores, error-rate measurements, subjective sensations, experiments, user behavior, or conversation-window observations.
 
+Reflections use an epistemically typed schema. The model supplies an interpretation plus explicit claims. Each contingent claim must be either an inference citing exact recorded fact IDs or a hypothesis. If an alleged inference does not cite a valid recorded fact, the runtime automatically downgrades it to a hypothesis. Untyped legacy reflections are not replayed into the new reflection context.
+
 Two consecutive near-duplicate provisional answers to the same question are treated as stagnation and force a change of standing question or conceptual direction. Old self-generated question text is not replayed into future prompts.
+
+If no remote reasoning provider is available, Ubique does not synthesize a deterministic pseudo-reflection. The pending reflection is marked deferred and the pulse returns successfully to watchdog mode until remote reasoning is available again. The same rule applies if a malformed remote reflection cannot be repaired without falling back to deterministic text.
 
 If a reflection gestures toward an experiment but does not specify a valid executable experiment, the reflection is preserved and the cycle continues as reflection instead of failing.
 
