@@ -182,6 +182,31 @@ def parse_reflection(text: str) -> dict[str, Any]:
         if isinstance(item, str) and str(item).strip()
     ]
 
+    technical_markers = (
+        "architecture",
+        "training",
+        "token window",
+        "token context",
+        "memory mechanism",
+        "internal state",
+        "sensor",
+        "affect",
+        "persistent substrate",
+        "language model",
+        "model weights",
+    )
+    epistemic_text = " ".join(
+        [
+            interpretation,
+            str(data.get("provisional_answer", "")),
+            str(data.get("next_action", "")),
+        ]
+    ).lower()
+    if any(marker in epistemic_text for marker in technical_markers) and not assumptions:
+        raise ValueError(
+            "technical interpretation requires explicit assumptions instead of unsupported factual claims"
+        )
+
     next_command = str(data.get("next_command", "reflect")).strip().lower()
     if next_command not in ALLOWED_NEXT_COMMANDS:
         next_command = "reflect"
