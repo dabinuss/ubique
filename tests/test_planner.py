@@ -57,4 +57,4 @@ def test_reflect_prompt_requires_typed_claims():
     assert '"claims"' in prompt
     assert '"kind":"inference|hypothesis"' in prompt
     assert "basis_fact_ids" in prompt
-    assert "unsupported claims must be hypotheses" in prompt
+    assert "label it hypothesis instead" in prompt
