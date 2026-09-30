@@ -1,11 +1,8 @@
 import ubique.curiosity as curiosity
 
 
-def test_curiosity_prioritizes_unmentioned_frontiers(tmp_path, monkeypatch):
-    monkeypatch.setattr(curiosity, "ROOT", tmp_path)
-    (tmp_path / "src" / "ubique").mkdir(parents=True)
-    (tmp_path / "src" / "ubique" / "planner.py").write_text("", encoding="utf-8")
-    monkeypatch.setattr(curiosity, "recent_memory_records", lambda name, limit=12: [])
+def test_curiosity_prioritizes_unmentioned_frontiers(monkeypatch):
+    monkeypatch.setattr(curiosity, "recent_memory_records", lambda name, limit=20: [])
     writes = {}
     monkeypatch.setattr(curiosity, "write_json", lambda name, value: writes.__setitem__(name, value))
     out = curiosity.build_curiosity_snapshot(7)
@@ -15,10 +12,18 @@ def test_curiosity_prioritizes_unmentioned_frontiers(tmp_path, monkeypatch):
     assert "curiosity.json" in writes
 
 
-def test_curiosity_is_explicitly_non_homeostatic(monkeypatch, tmp_path):
-    monkeypatch.setattr(curiosity, "ROOT", tmp_path)
-    (tmp_path / "src" / "ubique").mkdir(parents=True)
-    monkeypatch.setattr(curiosity, "recent_memory_records", lambda name, limit=12: [])
+def test_curiosity_does_not_replay_old_generated_questions(monkeypatch):
+    monkeypatch.setattr(
+        curiosity,
+        "recent_memory_records",
+        lambda name, limit=20: [
+            {
+                "question": "Is self-reference a functional self-model?",
+                "provisional_answer": "old answer",
+            }
+        ],
+    )
     monkeypatch.setattr(curiosity, "write_json", lambda name, value: None)
     out = curiosity.build_curiosity_snapshot(8)
-    assert "operational continuity is out of scope" in out["rule"]
+    assert out["recent_self_generated_questions"] == []
+    assert "Old model-generated question text is intentionally not replayed" in out["rule"]
