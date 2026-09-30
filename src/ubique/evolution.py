@@ -55,7 +55,9 @@ class EvolutionOutcome:
     title: str
     summary: str
     branch: str | None = None
-    pr_url: str | None = None\n    commit_sha: str | None = None\n    reason: str | None = None
+    pr_url: str | None = None
+    commit_sha: str | None = None
+    reason: str | None = None
     baseline_score: int | None = None
     candidate_score: int | None = None
 
