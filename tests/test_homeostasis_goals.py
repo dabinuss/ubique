@@ -1,6 +1,5 @@
 import ubique.homeostasis as homeostasis
 from ubique.goals import choose_endogenous_goal
-from ubique.fzg_telemetry import controlled_ablation_proxy
 
 
 def test_critical_need_becomes_diagnosis_goal():
@@ -39,11 +38,6 @@ def test_no_remote_reasoning_remains_deterministic():
     )
     assert task.body.startswith("/status")
 
-
-def test_ablation_proxy_declares_identification_limits():
-    out = controlled_ablation_proxy()
-    assert "M_S" in out and "M_S_minus" in out
-    assert "proxy" in out["identification"]
 
 
 def test_memory_pressure_uses_full_retained_count(monkeypatch):

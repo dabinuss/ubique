@@ -40,7 +40,7 @@ FZG v1.0 is no longer injected into the system prompt, no longer measured on eve
 
 It is offered as the library item fzg-v1. Ubique may choose to read it, use it, criticize it, annotate it, revise its own view of it, or ignore it.
 
-Legacy helper modules may remain for compatibility and explicit historical experiments; their presence does not make FZG normative.
+The former runtime FZG helper and telemetry modules have been removed. The library item is the only retained FZG representation in the active project.
 
 ## Self-modification
 
