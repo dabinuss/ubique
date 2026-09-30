@@ -9,8 +9,6 @@ import re
 import subprocess
 from typing import Any
 
-import httpx
-
 from .state import ROOT
 
 
@@ -27,7 +25,7 @@ ALLOWED_PREFIXES = (
 # Minimal recovery kernel. Everything else under src/ubique/ may evolve,
 # including agent behavior, autonomy cadence, planning and provider routing.
 # These files stay pinned because corrupting them could strand the agent,
-# weaken the normative FZG basis, or break credential/state recovery.
+# weaken runtime recovery, or break credential/state recovery.
 DENIED_EXACT = {
     "src/ubique/evolution.py",
     "src/ubique/github.py",
@@ -231,26 +229,6 @@ def _tests_pass() -> tuple[bool, str]:
             return False, "\n".join(output)
     return True, "\n".join(output)
 
-
-def _slug(value: str) -> str:
-    value = re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
-    return (value or "improvement")[:36]
-
-
-def _create_draft_pr(token: str, repository: str, title: str, body: str, head: str, base: str) -> str:
-    url = f"https://api.github.com/repos/{repository}/pulls"
-    headers = {
-        "Accept": "application/vnd.github+json",
-        "Authorization": f"Bearer {token}",
-        "X-GitHub-Api-Version": "2022-11-28",
-        "User-Agent": "ubique-autonomous-agent",
-    }
-    payload = {"title": title, "body": body, "head": head, "base": base, "draft": True}
-    with httpx.Client(timeout=30) as client:
-        r = client.post(url, headers=headers, json=payload)
-    if r.status_code >= 400:
-        raise RuntimeError(f"PR creation failed HTTP {r.status_code}: {r.text[:500]}")
-    return str(r.json()["html_url"])
 
 
 def run_evolution(
