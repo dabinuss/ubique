@@ -20,25 +20,35 @@ def _stagnation_target(repeated_question: str) -> str:
 
 
 def _reflection_view(item: dict[str, Any]) -> dict[str, Any]:
+    if int(item.get("epistemic_schema_version", 0) or 0) < 2:
+        return {}
     keys = (
         "id",
         "generation",
         "question",
         "reflection",
+        "claims",
         "provisional_answer",
         "uncertainty",
         "next_action",
         "next_command",
         "hypothesis",
     )
-    return {key: item.get(key) for key in keys if item.get(key) not in (None, "")}
+    return {key: item.get(key) for key in keys if item.get(key) not in (None, "", [])}
 
 
 def _attention_view(attention: dict[str, Any]) -> dict[str, Any]:
+    if int(attention.get("epistemic_schema_version", 0) or 0) < 2:
+        return {
+            key: attention.get(key)
+            for key in ("generation", "question", "next_command")
+            if attention.get(key) not in (None, "")
+        }
     keys = (
         "generation",
         "question",
         "reflection",
+        "claims",
         "provisional_answer",
         "uncertainty",
         "hypothesis",
@@ -57,7 +67,7 @@ def _attention_view(attention: dict[str, Any]) -> dict[str, Any]:
         "last_evidence",
         "resolution_id",
     )
-    return {key: attention.get(key) for key in keys if attention.get(key) not in (None, "")}
+    return {key: attention.get(key) for key in keys if attention.get(key) not in (None, "", [])}
 
 
 def choose_endogenous_goal(
@@ -141,9 +151,11 @@ def choose_endogenous_goal(
         {
             "current_interpretation_not_evidence": _attention_view(attention),
             "prior_reflections_not_evidence": [
-                _reflection_view(item)
+                view
                 for item in cognition.get("recent_thoughts", [])
                 if isinstance(item, dict)
+                for view in [_reflection_view(item)]
+                if view
             ],
             "hypotheses_are_proposals": cognition.get("recent_hypotheses", []),
             "observed_facts": cognition.get("executed_action_facts", []),
@@ -257,7 +269,9 @@ def choose_endogenous_goal(
             "/reflect\nLayer 1 is healthy and is only permission to proceed, not the subject of this reflection. "
             "Continue the open inquiry into What am I?, What do I do?, and What do I want?, or a new question that genuinely emerges from them. "
             "The observed_facts field in the supplied context is machine-produced and is the only factual observation channel. "
-            "Prior reflections are interpretations, not observations. Do not invent additional observations or infer hidden measurements from old prose. "
+            "Prior reflections are interpretations, not observations. Untyped legacy reflections are deliberately omitted. "
+            "Do not invent additional observations or infer hidden measurements from old prose. "
+            "Treat every contingent statement about your own operation as either a fact-backed inference with fact_id references or an explicit hypothesis. "
             "Prefer developing, challenging, or revising a provisional answer over inventing another measurement. "
             "Experiments, library reading, and self-evolution are available options only when this reflection itself finds a concrete reason to use them. "
             + direction
