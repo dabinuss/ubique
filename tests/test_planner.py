@@ -49,3 +49,13 @@ def test_reflect_prompt_does_not_replay_old_reflection_results():
     )
     assert "invented hidden-state observation" not in prompt
     assert "intentionally omitted" in prompt
+
+
+def test_reflect_prompt_requires_interpretation_and_assumptions():
+    prompt = make_prompt("reflect", "{}", [])
+    schema = prompt.split("Schema:", 1)[1]
+    assert '"interpretation"' in schema
+    assert '"assumptions"' in schema
+    assert '"reflection"' not in schema
+    assert "Everything beyond observed_facts is interpretation" in prompt
+    assert "model architecture, training, token windows" in prompt
