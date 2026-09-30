@@ -25,11 +25,13 @@ Observation and interpretation are separate channels:
 
 The reflection prompt explicitly forbids inventing hidden-state analyses, disabled-memory trials, planning scores, error-rate measurements, subjective sensations, experiments, user behavior, or conversation-window observations. Interpretations and provisional answers remain marked as model interpretation rather than evidence.
 
+Reflections use an epistemically typed schema. Unsupported premises remain explicit in assumptions. Each contingent conclusion also appears in claims as either an inference or a hypothesis. An inference must cite exact recorded fact IDs; if those references are missing or invalid, the runtime automatically downgrades it to a hypothesis. Only schema-v3 typed reflections are replayed into active reflection context; older untyped prose remains in memory but is not used as a fresh premise.
+
 Two consecutive near-duplicate provisional answers to the same question are treated as stagnation and force a change of standing question or conceptual direction. Old self-generated question text is not replayed into future prompts.
 
 If a reflection gestures toward an experiment but does not specify a valid executable experiment, the reflection is preserved and the cycle continues as reflection instead of failing.
 
-If a remote reasoning provider becomes unavailable during a reflection, the reflection is recorded as deferred rather than failed. The deterministic fallback does not fabricate philosophy or get parsed as model JSON. Provider eligibility is recalculated after the attempt, so the active pulse stops cleanly in watchdog mode until a scheduled heartbeat finds remote reasoning available again.
+If a remote reasoning provider becomes unavailable during a reflection, the reflection is recorded as deferred rather than failed. The deterministic fallback does not fabricate philosophy or get parsed as model JSON. The same applies when a provider is lost during JSON repair or when one repair attempt still produces invalid structured output. Provider eligibility is recalculated after the attempt, and a deferred reflection holds the pulse in watchdog mode until a later scheduled heartbeat can reason remotely again.
 
 ## Optional persistent library
 
