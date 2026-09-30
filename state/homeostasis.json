@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-09-30T09:08:11.574984+00:00",
-  "generation": 339,
+  "timestamp": "2026-09-30T09:09:03.881054+00:00",
+  "generation": 340,
   "needs": [
     {
       "name": "cycle_reliability",
       "level": "stable",
-      "value": 0.9583333333333334,
+      "value": 1.0,
       "target": ">=0.80 recent successful tasks",
-      "evidence": "23/24 recent tasks succeeded"
+      "evidence": "24/24 recent tasks succeeded"
     },
     {
       "name": "reasoning_redundancy",
@@ -19,13 +19,13 @@
     {
       "name": "memory_pressure",
       "level": "stable",
-      "value": 363.0,
+      "value": 364.0,
       "target": "<500 retained episodes",
-      "evidence": "363/500 retained episode records"
+      "evidence": "364/500 retained episode records"
     }
   ],
-  "recent_success_ratio": 0.9583333333333334,
-  "retained_episode_count": 363,
+  "recent_success_ratio": 1.0,
+  "retained_episode_count": 364,
   "configured_remote_providers": [
     "gemini",
     "groq"
