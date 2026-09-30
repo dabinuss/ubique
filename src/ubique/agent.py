@@ -216,7 +216,7 @@ class Agent:
                                 if provider_name == "fallback":
                                     raise
                                 repair_prompt = (
-                                    "Repair the following autonomous reflection into valid strict JSON only. Preserve its philosophical meaning. Do not invent observations, experiments, measurements, or library reads. "
+                                    "Repair the following autonomous reflection into valid strict JSON only. Preserve its philosophical meaning. Do not add observation, project_title, project_objective, experiments, measurements, or library reads that were not already requested. "
                                     "Preserve its meaning and use exactly the reflection schema previously requested. "
                                     "Do not add markdown or commentary. Parse failure: "
                                     f"{str(exc)[:500]}. Reflection: {result_text[:9000]}"
@@ -225,7 +225,11 @@ class Agent:
                                 result_text = repair_result.text
                                 provider_name = repair_result.provider
                                 reflection = parse_reflection(result_text)
-                            attention = persist_reflection(generation, reflection)
+                            attention = persist_reflection(
+                                generation,
+                                reflection,
+                                cognition.get("executed_action_facts", []),
+                            )
                             result_text = json.dumps(
                                 {
                                     "reflection": reflection,
