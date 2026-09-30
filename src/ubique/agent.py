@@ -184,7 +184,18 @@ class Agent:
                         )
                         provider_name = str(experiment.get("provider", "deterministic"))
                         result_text = json.dumps(experiment, indent=2, ensure_ascii=False)
-                    elif planned.command == "library":\n                        spec = json.loads(planned.payload or "{}")\n                        library_result = apply_library_action(spec, actor="ubique" if task.source == "autonomous" else "external")\n                        result_text = json.dumps(library_result, indent=2, ensure_ascii=False)\n                        if task.source == "autonomous":\n                            record_library_outcome(generation, library_result)\n                    else:\n                        prompt = make_prompt(planned.command, planned.payload, recent_episodes())\n                        result = self.router.generate(prompt)
+                    elif planned.command == "library":
+                        spec = json.loads(planned.payload or "{}")
+                        library_result = apply_library_action(
+                            spec,
+                            actor="ubique" if task.source == "autonomous" else "external",
+                        )
+                        result_text = json.dumps(library_result, indent=2, ensure_ascii=False)
+                        if task.source == "autonomous":
+                            record_library_outcome(generation, library_result)
+                    else:
+                        prompt = make_prompt(planned.command, planned.payload, recent_episodes())
+                        result = self.router.generate(prompt)
                         result_text = result.text
                         provider_name = result.provider
 
@@ -205,7 +216,7 @@ class Agent:
                                 if provider_name == "fallback":
                                     raise
                                 repair_prompt = (
-                                    "Repair the following autonomous reflection into valid strict JSON only. "
+                                    "Repair the following autonomous reflection into valid strict JSON only. Preserve its philosophical meaning. Do not invent observations, experiments, measurements, or library reads. "
                                     "Preserve its meaning and use exactly the reflection schema previously requested. "
                                     "Do not add markdown or commentary. Parse failure: "
                                     f"{str(exc)[:500]}. Reflection: {result_text[:9000]}"
