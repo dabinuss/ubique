@@ -104,3 +104,29 @@ def test_reflection_context_excludes_old_observation_and_curiosity_text():
     assert "Autonomous Epistemic Question Generation" not in task.body
     assert "Is self-reference a functional self-model?" not in task.body
     assert '"observed_facts":[{"generation":99,"command":"experiment","success":true}]' in task.body
+
+
+def test_legacy_untyped_reflection_is_not_replayed():
+    task = choose_endogenous_goal(
+        generation=120,
+        homeostasis={"needs": [], "usable_remote_providers": 1},
+        remote_reasoning_available=True,
+        preflight={"development_allowed": True},
+        cognition={
+            "attention": {
+                "generation": 119,
+                "question": "What am I?",
+                "reflection": "I am definitely a hidden persistent self.",
+                "next_command": "reflect",
+            },
+            "recent_thoughts": [{
+                "generation": 119,
+                "question": "What am I?",
+                "reflection": "I am definitely a hidden persistent self.",
+                "provisional_answer": "A hidden self exists.",
+            }],
+            "executed_action_facts": [],
+        },
+    )
+    assert "hidden persistent self" not in task.body
+    assert "Untyped legacy reflections are deliberately omitted" in task.body
