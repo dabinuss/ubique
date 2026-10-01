@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-01T22:39:16.127189+00:00",
-  "generation": 423,
+  "timestamp": "2026-10-01T22:41:15.163454+00:00",
+  "generation": 424,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.3287,
-    "surprise": 0.5452,
-    "uncertainty": 0.5,
-    "salience": 0.5824,
-    "exploration": 0.4631,
-    "plasticity": 0.5437,
-    "energy": 0.785,
-    "sleep_pressure": 0.18
+    "novelty": 0.2137,
+    "surprise": 0.5714,
+    "uncertainty": 0.48,
+    "salience": 0.6936,
+    "exploration": 0.4641,
+    "plasticity": 0.5717,
+    "energy": 0.625,
+    "sleep_pressure": 0.267
   },
   "workspace": [
     {
       "id": "episode:b971245d216983",
       "kind": "recalled_episode",
       "label": "Ubique v2 end-to-end heartbeat smoke test\n\n/status\n\nEnd-to-end smoke test for the newly merged v2 runtime. This issue may be closed after the heartbeat persists v2 state.",
-      "activation": 0.7909,
+      "activation": 0.7908,
       "salience": 0.9,
       "novelty": 1.0,
       "surprise": 0.62,
       "epistemic_status": "observed_external_input",
       "source": "associative_recall",
-      "ignition_score": 0.8249
+      "ignition_score": 0.8248
+    },
+    {
+      "id": "episode:0d42d4e7a8b613",
+      "kind": "github_issue",
+      "label": "Ubique v2 end-to-end heartbeat smoke test\n\n/status\n\nEnd-to-end smoke test for the newly merged v2 runtime. This issue may be closed after the heartbeat persists v2 state.",
+      "activation": 0.95,
+      "salience": 0.9,
+      "novelty": 0.0,
+      "surprise": 0.62,
+      "epistemic_status": "observed_external_input",
+      "source": "github:dabinuss",
+      "ignition_score": 0.7744
     },
     {
       "id": "concept:921d69d930092eb5",
       "kind": "concept",
       "label": "heartbeat",
       "activation": 1.0,
-      "salience": 0.582375,
-      "novelty": 0.32875,
-      "surprise": 0.365245,
+      "salience": 0.69356,
+      "novelty": 0.213655,
+      "surprise": 0.57138,
       "epistemic_status": "external_input_index",
       "source": "semantic_network",
-      "ignition_score": 0.7322
+      "ignition_score": 0.7697
     },
     {
       "id": "concept:e30310125c31c71c",
       "kind": "concept",
       "label": "persists",
       "activation": 1.0,
-      "salience": 0.582375,
-      "novelty": 0.32875,
-      "surprise": 0.365245,
+      "salience": 0.69356,
+      "novelty": 0.213655,
+      "surprise": 0.57138,
       "epistemic_status": "external_input_index",
       "source": "semantic_network",
-      "ignition_score": 0.7322
+      "ignition_score": 0.7697
     },
     {
       "id": "concept:b4d99022347ea416",
       "kind": "concept",
       "label": "runtime",
       "activation": 1.0,
-      "salience": 0.582375,
-      "novelty": 0.32875,
-      "surprise": 0.365245,
+      "salience": 0.69356,
+      "novelty": 0.213655,
+      "surprise": 0.57138,
       "epistemic_status": "external_input_index",
       "source": "semantic_network",
-      "ignition_score": 0.7322
+      "ignition_score": 0.7697
     },
     {
       "id": "concept:b39ea7408bbea9e9",
       "kind": "concept",
       "label": "closed",
       "activation": 1.0,
-      "salience": 0.582375,
-      "novelty": 0.32875,
-      "surprise": 0.365245,
+      "salience": 0.69356,
+      "novelty": 0.213655,
+      "surprise": 0.57138,
       "epistemic_status": "external_input_index",
       "source": "semantic_network",
-      "ignition_score": 0.7322
+      "ignition_score": 0.7697
     },
     {
       "id": "concept:9304141749a0520d",
       "kind": "concept",
       "label": "merged",
       "activation": 1.0,
-      "salience": 0.582375,
-      "novelty": 0.32875,
-      "surprise": 0.365245,
+      "salience": 0.69356,
+      "novelty": 0.213655,
+      "surprise": 0.57138,
       "epistemic_status": "external_input_index",
       "source": "semantic_network",
-      "ignition_score": 0.7322
-    },
-    {
-      "id": "concept:eed935ffca07484a",
-      "kind": "concept",
-      "label": "status",
-      "activation": 1.0,
-      "salience": 0.582375,
-      "novelty": 0.32875,
-      "surprise": 0.365245,
-      "epistemic_status": "external_input_index",
-      "source": "semantic_network",
-      "ignition_score": 0.7322
+      "ignition_score": 0.7697
     }
   ],
   "provider_eligibility": {
@@ -111,7 +111,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 973,
+      "remaining_calls": 972,
       "eligible": true
     },
     "huggingface": {
@@ -123,34 +123,28 @@
     }
   },
   "last_action": {
-    "kind": "experiment",
-    "description": "Recall recent heartbeat logs to verify continuous successful heartbeats over the past five minutes.",
-    "source": "substrate:groq",
-    "score": 0.55041
+    "kind": "attend",
+    "description": "Continue processing the active workspace without external action.",
+    "source": "workspace",
+    "score": 0.41594
   },
   "action_competition": [
     {
-      "kind": "experiment",
-      "source": "substrate:groq",
-      "score": 0.55041,
-      "description": "Recall recent heartbeat logs to verify continuous successful heartbeats over the past five minutes."
-    },
-    {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.41,
+      "score": 0.41594,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.3525,
+      "score": 0.39086,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.30753,
+      "score": 0.34376,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
@@ -160,10 +154,10 @@
       "model": "openai/gpt-oss-120b"
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 7,
-    "semantic_nodes": 31,
-    "synapses": 524
+    "episodes": 11,
+    "semantic_nodes": 40,
+    "synapses": 722
   }
 }
