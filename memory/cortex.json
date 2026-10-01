@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-01T22:38:53.554955+00:00",
+  "updated_at": "2026-10-01T22:39:16.120758+00:00",
   "nodes": [
     {
       "id": "concept:921d69d930092eb5",
@@ -138,7 +138,7 @@
       "id": "runtime_state:423b4a0b7d2066e3",
       "kind": "runtime_state",
       "label": "provider:gemini",
-      "activation": 0.40678000000000003,
+      "activation": 0.22864941088,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 1,
@@ -149,7 +149,7 @@
       "id": "runtime_state:0a71e857be2cd9b7",
       "kind": "runtime_state",
       "label": "provider:groq",
-      "activation": 0.40678000000000003,
+      "activation": 0.22864941088,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 1,
@@ -160,7 +160,7 @@
       "id": "runtime_state:1d939659a8519d8c",
       "kind": "runtime_state",
       "label": "provider:huggingface",
-      "activation": 0.40678000000000003,
+      "activation": 0.22864941088,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 1,
@@ -171,62 +171,62 @@
       "id": "concept:3944b723abcbc913",
       "kind": "concept",
       "label": "heartbeat persists",
-      "activation": 0.72964,
+      "activation": 1.0,
       "excitability": 0.48,
       "threshold": 0.18,
-      "access_count": 1,
-      "last_activated_at": "2026-10-01T22:38:53.552799+00:00",
+      "access_count": 2,
+      "last_activated_at": "2026-10-01T22:39:16.117339+00:00",
       "epistemic_status": "model_proposal"
     },
     {
       "id": "concept:5875cb7f34264d12",
       "kind": "concept",
       "label": "v2 runtime",
-      "activation": 0.70992,
+      "activation": 1.0,
       "excitability": 0.48,
       "threshold": 0.18,
-      "access_count": 1,
-      "last_activated_at": "2026-10-01T22:38:53.552861+00:00",
+      "access_count": 2,
+      "last_activated_at": "2026-10-01T22:39:16.117405+00:00",
       "epistemic_status": "model_proposal"
     },
     {
       "id": "concept:80430a8046bb5e95",
       "kind": "concept",
       "label": "smoke test",
-      "activation": 0.69513,
+      "activation": 1.0,
       "excitability": 0.48,
       "threshold": 0.18,
-      "access_count": 1,
-      "last_activated_at": "2026-10-01T22:38:53.552910+00:00",
+      "access_count": 2,
+      "last_activated_at": "2026-10-01T22:39:16.117451+00:00",
       "epistemic_status": "model_proposal"
     },
     {
       "id": "concept:40ee36016862a881",
       "kind": "concept",
       "label": "provider:groq eligible",
-      "activation": 0.66062,
+      "activation": 1.0,
       "excitability": 0.48,
       "threshold": 0.18,
-      "access_count": 1,
-      "last_activated_at": "2026-10-01T22:38:53.552958+00:00",
+      "access_count": 2,
+      "last_activated_at": "2026-10-01T22:39:16.117493+00:00",
       "epistemic_status": "model_proposal"
     },
     {
       "id": "question:a38a8b68b2418bff",
       "kind": "question",
       "label": "issue closure criteria",
-      "activation": 0.62611,
+      "activation": 1.0,
       "excitability": 0.48,
       "threshold": 0.18,
-      "access_count": 1,
-      "last_activated_at": "2026-10-01T22:38:53.553012+00:00",
+      "access_count": 2,
+      "last_activated_at": "2026-10-01T22:39:16.117533+00:00",
       "epistemic_status": "model_proposal"
     },
     {
       "id": "hypothesis:fc373915ed88d28b",
       "kind": "hypothesis",
       "label": "if the v2 runtime continues to emit a successful heartbeat for the next 5 minutes, the system can be considered stable and the issue may be closed.",
-      "activation": 0.41412,
+      "activation": 0.9926054427829154,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -237,7 +237,7 @@
       "id": "hypothesis:bbf549af5d2dfd1c",
       "kind": "hypothesis",
       "label": "the groq provider will successfully handle any required calls for the heartbeat test, while gemini remains unavailable due to exhausted quota.",
-      "activation": 0.41412,
+      "activation": 0.9926054427829154,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -248,18 +248,18 @@
       "id": "question:afaddb643ea8cc86",
       "kind": "question",
       "label": "what is the minimum duration of a persistent heartbeat required to deem the v2 runtime stable?",
-      "activation": 0.45356,
+      "activation": 1.0,
       "excitability": 0.48,
       "threshold": 0.18,
-      "access_count": 1,
-      "last_activated_at": "2026-10-01T22:38:53.553179+00:00",
+      "access_count": 2,
+      "last_activated_at": "2026-10-01T22:39:16.117718+00:00",
       "epistemic_status": "model_question"
     },
     {
       "id": "question:8b96552a7b5a47a6",
       "kind": "question",
       "label": "are there any additional provider configurations needed before the smoke test can be considered complete?",
-      "activation": 0.45356,
+      "activation": 1.0,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -270,18 +270,18 @@
       "id": "question:1a6b1a6c01d978d1",
       "kind": "question",
       "label": "should the issue be closed automatically after the heartbeat persists, or is a manual verification step required?",
-      "activation": 0.45356,
+      "activation": 1.0,
       "excitability": 0.48,
       "threshold": 0.18,
-      "access_count": 1,
-      "last_activated_at": "2026-10-01T22:38:53.553286+00:00",
+      "access_count": 2,
+      "last_activated_at": "2026-10-01T22:39:16.117820+00:00",
       "epistemic_status": "model_question"
     },
     {
       "id": "world_model:7c187228716894b2",
       "kind": "world_model",
       "label": "the v2 runtime has successfully executed an external status check at generation 422.",
-      "activation": 0.37468,
+      "activation": 0.9700292207975253,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -292,11 +292,55 @@
       "id": "world_model:96886b5d4c0745c7",
       "kind": "world_model",
       "label": "current heartbeat status is unknown; further observation is required to confirm persistence.",
-      "activation": 0.37468,
+      "activation": 0.9700292207975253,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
       "last_activated_at": "2026-10-01T22:38:53.553394+00:00",
+      "epistemic_status": "model_interpretation"
+    },
+    {
+      "id": "hypothesis:fa4ef826620b9e7e",
+      "kind": "hypothesis",
+      "label": "if the v2 runtime continues to emit a successful heartbeat for at least five consecutive minutes, the system can be considered stable and the issue may be closed.",
+      "activation": 0.41412,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-01T22:39:16.117589+00:00",
+      "epistemic_status": "model_hypothesis"
+    },
+    {
+      "id": "hypothesis:8ffa000a657a3feb",
+      "kind": "hypothesis",
+      "label": "the groq provider will successfully service all heartbeat‑related calls, while the gemini provider remains unavailable due to exhausted quota.",
+      "activation": 0.41412,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-01T22:39:16.117658+00:00",
+      "epistemic_status": "model_hypothesis"
+    },
+    {
+      "id": "question:171b164fa2058d4e",
+      "kind": "question",
+      "label": "are any additional provider configurations or health checks needed before the smoke test can be considered complete?",
+      "activation": 0.45356,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-01T22:39:16.117769+00:00",
+      "epistemic_status": "model_question"
+    },
+    {
+      "id": "world_model:b0dd1c06d01bd4c6",
+      "kind": "world_model",
+      "label": "current evidence suggests the v2 runtime is emitting heartbeats, but persistence over the required interval has not yet been confirmed.",
+      "activation": 0.37468,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-01T22:39:16.117896+00:00",
       "epistemic_status": "model_interpretation"
     }
   ],
@@ -2033,7 +2077,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "hypothesis:fc373915ed88d28b",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2042,7 +2086,7 @@
       "source": "hypothesis:fc373915ed88d28b",
       "target": "concept:921d69d930092eb5",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2051,7 +2095,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "hypothesis:fc373915ed88d28b",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2060,7 +2104,7 @@
       "source": "hypothesis:fc373915ed88d28b",
       "target": "concept:e30310125c31c71c",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2069,7 +2113,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "hypothesis:fc373915ed88d28b",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2078,7 +2122,7 @@
       "source": "hypothesis:fc373915ed88d28b",
       "target": "concept:b4d99022347ea416",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2087,7 +2131,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "hypothesis:fc373915ed88d28b",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2096,7 +2140,7 @@
       "source": "hypothesis:fc373915ed88d28b",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2105,7 +2149,7 @@
       "source": "concept:9304141749a0520d",
       "target": "hypothesis:fc373915ed88d28b",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2114,7 +2158,7 @@
       "source": "hypothesis:fc373915ed88d28b",
       "target": "concept:9304141749a0520d",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2123,7 +2167,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "hypothesis:fc373915ed88d28b",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2132,7 +2176,7 @@
       "source": "hypothesis:fc373915ed88d28b",
       "target": "concept:eed935ffca07484a",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2141,7 +2185,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "hypothesis:bbf549af5d2dfd1c",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2150,7 +2194,7 @@
       "source": "hypothesis:bbf549af5d2dfd1c",
       "target": "concept:921d69d930092eb5",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2159,7 +2203,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "hypothesis:bbf549af5d2dfd1c",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2168,7 +2212,7 @@
       "source": "hypothesis:bbf549af5d2dfd1c",
       "target": "concept:e30310125c31c71c",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2177,7 +2221,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "hypothesis:bbf549af5d2dfd1c",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2186,7 +2230,7 @@
       "source": "hypothesis:bbf549af5d2dfd1c",
       "target": "concept:b4d99022347ea416",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2195,7 +2239,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "hypothesis:bbf549af5d2dfd1c",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2204,7 +2248,7 @@
       "source": "hypothesis:bbf549af5d2dfd1c",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2213,7 +2257,7 @@
       "source": "concept:9304141749a0520d",
       "target": "hypothesis:bbf549af5d2dfd1c",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2222,7 +2266,7 @@
       "source": "hypothesis:bbf549af5d2dfd1c",
       "target": "concept:9304141749a0520d",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2231,7 +2275,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "hypothesis:bbf549af5d2dfd1c",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2240,7 +2284,7 @@
       "source": "hypothesis:bbf549af5d2dfd1c",
       "target": "concept:eed935ffca07484a",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2357,7 +2401,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "question:8b96552a7b5a47a6",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2366,7 +2410,7 @@
       "source": "question:8b96552a7b5a47a6",
       "target": "concept:921d69d930092eb5",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2375,7 +2419,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "question:8b96552a7b5a47a6",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2384,7 +2428,7 @@
       "source": "question:8b96552a7b5a47a6",
       "target": "concept:e30310125c31c71c",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2393,7 +2437,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "question:8b96552a7b5a47a6",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2402,7 +2446,7 @@
       "source": "question:8b96552a7b5a47a6",
       "target": "concept:b4d99022347ea416",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2411,7 +2455,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "question:8b96552a7b5a47a6",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2420,7 +2464,7 @@
       "source": "question:8b96552a7b5a47a6",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2429,7 +2473,7 @@
       "source": "concept:9304141749a0520d",
       "target": "question:8b96552a7b5a47a6",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2438,7 +2482,7 @@
       "source": "question:8b96552a7b5a47a6",
       "target": "concept:9304141749a0520d",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2447,7 +2491,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "question:8b96552a7b5a47a6",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2456,7 +2500,7 @@
       "source": "question:8b96552a7b5a47a6",
       "target": "concept:eed935ffca07484a",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2573,7 +2617,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "world_model:7c187228716894b2",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2582,7 +2626,7 @@
       "source": "world_model:7c187228716894b2",
       "target": "concept:921d69d930092eb5",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2591,7 +2635,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "world_model:7c187228716894b2",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2600,7 +2644,7 @@
       "source": "world_model:7c187228716894b2",
       "target": "concept:e30310125c31c71c",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2609,7 +2653,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "world_model:7c187228716894b2",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2618,7 +2662,7 @@
       "source": "world_model:7c187228716894b2",
       "target": "concept:b4d99022347ea416",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2627,7 +2671,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "world_model:7c187228716894b2",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2636,7 +2680,7 @@
       "source": "world_model:7c187228716894b2",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2645,7 +2689,7 @@
       "source": "concept:9304141749a0520d",
       "target": "world_model:7c187228716894b2",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2654,7 +2698,7 @@
       "source": "world_model:7c187228716894b2",
       "target": "concept:9304141749a0520d",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2663,7 +2707,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "world_model:7c187228716894b2",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2672,7 +2716,7 @@
       "source": "world_model:7c187228716894b2",
       "target": "concept:eed935ffca07484a",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2681,7 +2725,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "world_model:96886b5d4c0745c7",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2690,7 +2734,7 @@
       "source": "world_model:96886b5d4c0745c7",
       "target": "concept:921d69d930092eb5",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2699,7 +2743,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "world_model:96886b5d4c0745c7",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2708,7 +2752,7 @@
       "source": "world_model:96886b5d4c0745c7",
       "target": "concept:e30310125c31c71c",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2717,7 +2761,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "world_model:96886b5d4c0745c7",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2726,7 +2770,7 @@
       "source": "world_model:96886b5d4c0745c7",
       "target": "concept:b4d99022347ea416",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2735,7 +2779,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "world_model:96886b5d4c0745c7",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2744,7 +2788,7 @@
       "source": "world_model:96886b5d4c0745c7",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2753,7 +2797,7 @@
       "source": "concept:9304141749a0520d",
       "target": "world_model:96886b5d4c0745c7",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2762,7 +2806,7 @@
       "source": "world_model:96886b5d4c0745c7",
       "target": "concept:9304141749a0520d",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2771,7 +2815,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "world_model:96886b5d4c0745c7",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2780,7 +2824,7 @@
       "source": "world_model:96886b5d4c0745c7",
       "target": "concept:eed935ffca07484a",
       "relation": "proposed_association",
-      "weight": 0.16,
+      "weight": 0.159952,
       "plasticity": 0.35,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2789,73 +2833,73 @@
       "source": "concept:3944b723abcbc913",
       "target": "concept:5875cb7f34264d12",
       "relation": "coactivated",
-      "weight": 0.1317841821552,
+      "weight": 0.15453418215519998,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:5875cb7f34264d12",
       "target": "concept:3944b723abcbc913",
       "relation": "coactivated",
-      "weight": 0.1317841821552,
+      "weight": 0.15453418215519998,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:3944b723abcbc913",
       "target": "concept:80430a8046bb5e95",
       "relation": "coactivated",
-      "weight": 0.1315386783603,
+      "weight": 0.1542886783603,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:80430a8046bb5e95",
       "target": "concept:3944b723abcbc913",
       "relation": "coactivated",
-      "weight": 0.1315386783603,
+      "weight": 0.1542886783603,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:3944b723abcbc913",
       "target": "concept:40ee36016862a881",
       "relation": "coactivated",
-      "weight": 0.1309658361722,
+      "weight": 0.1537158361722,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:40ee36016862a881",
       "target": "concept:3944b723abcbc913",
       "relation": "coactivated",
-      "weight": 0.1309658361722,
+      "weight": 0.1537158361722,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:3944b723abcbc913",
       "target": "question:a38a8b68b2418bff",
       "relation": "coactivated",
-      "weight": 0.1303929939841,
+      "weight": 0.1531429939841,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "question:a38a8b68b2418bff",
       "target": "concept:3944b723abcbc913",
       "relation": "coactivated",
-      "weight": 0.1303929939841,
+      "weight": 0.1531429939841,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:3944b723abcbc913",
@@ -2897,19 +2941,19 @@
       "source": "concept:3944b723abcbc913",
       "target": "question:afaddb643ea8cc86",
       "relation": "coactivated",
-      "weight": 0.1275287830436,
+      "weight": 0.15027878304359998,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "question:afaddb643ea8cc86",
       "target": "concept:3944b723abcbc913",
       "relation": "coactivated",
-      "weight": 0.1275287830436,
+      "weight": 0.15027878304359998,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:3944b723abcbc913",
@@ -2933,19 +2977,19 @@
       "source": "concept:3944b723abcbc913",
       "target": "question:1a6b1a6c01d978d1",
       "relation": "coactivated",
-      "weight": 0.1275287830436,
+      "weight": 0.15027878304359998,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "question:1a6b1a6c01d978d1",
       "target": "concept:3944b723abcbc913",
       "relation": "coactivated",
-      "weight": 0.1275287830436,
+      "weight": 0.15027878304359998,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:3944b723abcbc913",
@@ -2987,55 +3031,55 @@
       "source": "concept:5875cb7f34264d12",
       "target": "concept:80430a8046bb5e95",
       "relation": "coactivated",
-      "weight": 0.13122682218839998,
+      "weight": 0.15397682218839998,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:80430a8046bb5e95",
       "target": "concept:5875cb7f34264d12",
       "relation": "coactivated",
-      "weight": 0.1312268221884,
+      "weight": 0.1539768221884,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:5875cb7f34264d12",
       "target": "concept:40ee36016862a881",
       "relation": "coactivated",
-      "weight": 0.1306694622216,
+      "weight": 0.1534194622216,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:40ee36016862a881",
       "target": "concept:5875cb7f34264d12",
       "relation": "coactivated",
-      "weight": 0.1306694622216,
+      "weight": 0.1534194622216,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:5875cb7f34264d12",
       "target": "question:a38a8b68b2418bff",
       "relation": "coactivated",
-      "weight": 0.1301121022548,
+      "weight": 0.1528621022548,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "question:a38a8b68b2418bff",
       "target": "concept:5875cb7f34264d12",
       "relation": "coactivated",
-      "weight": 0.1301121022548,
+      "weight": 0.1528621022548,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:5875cb7f34264d12",
@@ -3077,19 +3121,19 @@
       "source": "concept:5875cb7f34264d12",
       "target": "question:afaddb643ea8cc86",
       "relation": "coactivated",
-      "weight": 0.1273253024208,
+      "weight": 0.1500753024208,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "question:afaddb643ea8cc86",
       "target": "concept:5875cb7f34264d12",
       "relation": "coactivated",
-      "weight": 0.1273253024208,
+      "weight": 0.1500753024208,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:5875cb7f34264d12",
@@ -3113,19 +3157,19 @@
       "source": "concept:5875cb7f34264d12",
       "target": "question:1a6b1a6c01d978d1",
       "relation": "coactivated",
-      "weight": 0.1273253024208,
+      "weight": 0.1500753024208,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "question:1a6b1a6c01d978d1",
       "target": "concept:5875cb7f34264d12",
       "relation": "coactivated",
-      "weight": 0.1273253024208,
+      "weight": 0.1500753024208,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:5875cb7f34264d12",
@@ -3167,37 +3211,37 @@
       "source": "concept:80430a8046bb5e95",
       "target": "concept:40ee36016862a881",
       "relation": "coactivated",
-      "weight": 0.13044718175865,
+      "weight": 0.15319718175865,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:40ee36016862a881",
       "target": "concept:80430a8046bb5e95",
       "relation": "coactivated",
-      "weight": 0.13044718175865,
+      "weight": 0.15319718175865,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:80430a8046bb5e95",
       "target": "question:a38a8b68b2418bff",
       "relation": "coactivated",
-      "weight": 0.129901433457825,
+      "weight": 0.152651433457825,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "question:a38a8b68b2418bff",
       "target": "concept:80430a8046bb5e95",
       "relation": "coactivated",
-      "weight": 0.129901433457825,
+      "weight": 0.152651433457825,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:80430a8046bb5e95",
@@ -3239,19 +3283,19 @@
       "source": "concept:80430a8046bb5e95",
       "target": "question:afaddb643ea8cc86",
       "relation": "coactivated",
-      "weight": 0.12717269195369998,
+      "weight": 0.14992269195369998,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "question:afaddb643ea8cc86",
       "target": "concept:80430a8046bb5e95",
       "relation": "coactivated",
-      "weight": 0.12717269195369998,
+      "weight": 0.14992269195369998,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:80430a8046bb5e95",
@@ -3275,19 +3319,19 @@
       "source": "concept:80430a8046bb5e95",
       "target": "question:1a6b1a6c01d978d1",
       "relation": "coactivated",
-      "weight": 0.12717269195369998,
+      "weight": 0.14992269195369998,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "question:1a6b1a6c01d978d1",
       "target": "concept:80430a8046bb5e95",
       "relation": "coactivated",
-      "weight": 0.12717269195369998,
+      "weight": 0.14992269195369998,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:80430a8046bb5e95",
@@ -3329,19 +3373,19 @@
       "source": "concept:40ee36016862a881",
       "target": "question:a38a8b68b2418bff",
       "relation": "coactivated",
-      "weight": 0.12940987293154999,
+      "weight": 0.15215987293154998,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "question:a38a8b68b2418bff",
       "target": "concept:40ee36016862a881",
       "relation": "coactivated",
-      "weight": 0.12940987293154999,
+      "weight": 0.15215987293154998,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:40ee36016862a881",
@@ -3383,19 +3427,19 @@
       "source": "concept:40ee36016862a881",
       "target": "question:afaddb643ea8cc86",
       "relation": "coactivated",
-      "weight": 0.1268166008638,
+      "weight": 0.1495666008638,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "question:afaddb643ea8cc86",
       "target": "concept:40ee36016862a881",
       "relation": "coactivated",
-      "weight": 0.1268166008638,
+      "weight": 0.1495666008638,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:40ee36016862a881",
@@ -3419,19 +3463,19 @@
       "source": "concept:40ee36016862a881",
       "target": "question:1a6b1a6c01d978d1",
       "relation": "coactivated",
-      "weight": 0.1268166008638,
+      "weight": 0.1495666008638,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "question:1a6b1a6c01d978d1",
       "target": "concept:40ee36016862a881",
       "relation": "coactivated",
-      "weight": 0.1268166008638,
+      "weight": 0.1495666008638,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "concept:40ee36016862a881",
@@ -3509,19 +3553,19 @@
       "source": "question:a38a8b68b2418bff",
       "target": "question:afaddb643ea8cc86",
       "relation": "coactivated",
-      "weight": 0.1264605097739,
+      "weight": 0.1492105097739,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "question:afaddb643ea8cc86",
       "target": "question:a38a8b68b2418bff",
       "relation": "coactivated",
-      "weight": 0.1264605097739,
+      "weight": 0.1492105097739,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "question:a38a8b68b2418bff",
@@ -3545,19 +3589,19 @@
       "source": "question:a38a8b68b2418bff",
       "target": "question:1a6b1a6c01d978d1",
       "relation": "coactivated",
-      "weight": 0.1264605097739,
+      "weight": 0.1492105097739,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "question:1a6b1a6c01d978d1",
       "target": "question:a38a8b68b2418bff",
       "relation": "coactivated",
-      "weight": 0.1264605097739,
+      "weight": 0.1492105097739,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "question:a38a8b68b2418bff",
@@ -3815,19 +3859,19 @@
       "source": "question:afaddb643ea8cc86",
       "target": "question:1a6b1a6c01d978d1",
       "relation": "coactivated",
-      "weight": 0.12468005432439999,
+      "weight": 0.14743005432439998,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "question:1a6b1a6c01d978d1",
       "target": "question:afaddb643ea8cc86",
       "relation": "coactivated",
-      "weight": 0.12468005432439999,
+      "weight": 0.14743005432439998,
       "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+      "coactivation_count": 2,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     },
     {
       "source": "question:afaddb643ea8cc86",
@@ -3972,6 +4016,1050 @@
       "plasticity": 0.65,
       "coactivation_count": 1,
       "last_coactivated_at": "2026-10-01T22:38:53.553436+00:00"
+    },
+    {
+      "source": "concept:921d69d930092eb5",
+      "target": "hypothesis:fa4ef826620b9e7e",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "hypothesis:fa4ef826620b9e7e",
+      "target": "concept:921d69d930092eb5",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:e30310125c31c71c",
+      "target": "hypothesis:fa4ef826620b9e7e",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "hypothesis:fa4ef826620b9e7e",
+      "target": "concept:e30310125c31c71c",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:b4d99022347ea416",
+      "target": "hypothesis:fa4ef826620b9e7e",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "hypothesis:fa4ef826620b9e7e",
+      "target": "concept:b4d99022347ea416",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:b39ea7408bbea9e9",
+      "target": "hypothesis:fa4ef826620b9e7e",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "hypothesis:fa4ef826620b9e7e",
+      "target": "concept:b39ea7408bbea9e9",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:9304141749a0520d",
+      "target": "hypothesis:fa4ef826620b9e7e",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "hypothesis:fa4ef826620b9e7e",
+      "target": "concept:9304141749a0520d",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:eed935ffca07484a",
+      "target": "hypothesis:fa4ef826620b9e7e",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "hypothesis:fa4ef826620b9e7e",
+      "target": "concept:eed935ffca07484a",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:921d69d930092eb5",
+      "target": "hypothesis:8ffa000a657a3feb",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "hypothesis:8ffa000a657a3feb",
+      "target": "concept:921d69d930092eb5",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:e30310125c31c71c",
+      "target": "hypothesis:8ffa000a657a3feb",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "hypothesis:8ffa000a657a3feb",
+      "target": "concept:e30310125c31c71c",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:b4d99022347ea416",
+      "target": "hypothesis:8ffa000a657a3feb",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "hypothesis:8ffa000a657a3feb",
+      "target": "concept:b4d99022347ea416",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:b39ea7408bbea9e9",
+      "target": "hypothesis:8ffa000a657a3feb",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "hypothesis:8ffa000a657a3feb",
+      "target": "concept:b39ea7408bbea9e9",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:9304141749a0520d",
+      "target": "hypothesis:8ffa000a657a3feb",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "hypothesis:8ffa000a657a3feb",
+      "target": "concept:9304141749a0520d",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:eed935ffca07484a",
+      "target": "hypothesis:8ffa000a657a3feb",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "hypothesis:8ffa000a657a3feb",
+      "target": "concept:eed935ffca07484a",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:921d69d930092eb5",
+      "target": "question:171b164fa2058d4e",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "question:171b164fa2058d4e",
+      "target": "concept:921d69d930092eb5",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:e30310125c31c71c",
+      "target": "question:171b164fa2058d4e",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "question:171b164fa2058d4e",
+      "target": "concept:e30310125c31c71c",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:b4d99022347ea416",
+      "target": "question:171b164fa2058d4e",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "question:171b164fa2058d4e",
+      "target": "concept:b4d99022347ea416",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:b39ea7408bbea9e9",
+      "target": "question:171b164fa2058d4e",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "question:171b164fa2058d4e",
+      "target": "concept:b39ea7408bbea9e9",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:9304141749a0520d",
+      "target": "question:171b164fa2058d4e",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "question:171b164fa2058d4e",
+      "target": "concept:9304141749a0520d",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:eed935ffca07484a",
+      "target": "question:171b164fa2058d4e",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "question:171b164fa2058d4e",
+      "target": "concept:eed935ffca07484a",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:921d69d930092eb5",
+      "target": "world_model:b0dd1c06d01bd4c6",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "world_model:b0dd1c06d01bd4c6",
+      "target": "concept:921d69d930092eb5",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:e30310125c31c71c",
+      "target": "world_model:b0dd1c06d01bd4c6",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "world_model:b0dd1c06d01bd4c6",
+      "target": "concept:e30310125c31c71c",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:b4d99022347ea416",
+      "target": "world_model:b0dd1c06d01bd4c6",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "world_model:b0dd1c06d01bd4c6",
+      "target": "concept:b4d99022347ea416",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:b39ea7408bbea9e9",
+      "target": "world_model:b0dd1c06d01bd4c6",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "world_model:b0dd1c06d01bd4c6",
+      "target": "concept:b39ea7408bbea9e9",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:9304141749a0520d",
+      "target": "world_model:b0dd1c06d01bd4c6",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "world_model:b0dd1c06d01bd4c6",
+      "target": "concept:9304141749a0520d",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:eed935ffca07484a",
+      "target": "world_model:b0dd1c06d01bd4c6",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "world_model:b0dd1c06d01bd4c6",
+      "target": "concept:eed935ffca07484a",
+      "relation": "proposed_association",
+      "weight": 0.16,
+      "plasticity": 0.35,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:3944b723abcbc913",
+      "target": "hypothesis:fa4ef826620b9e7e",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:fa4ef826620b9e7e",
+      "target": "concept:3944b723abcbc913",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "concept:3944b723abcbc913",
+      "target": "hypothesis:8ffa000a657a3feb",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:8ffa000a657a3feb",
+      "target": "concept:3944b723abcbc913",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "concept:3944b723abcbc913",
+      "target": "question:171b164fa2058d4e",
+      "relation": "coactivated",
+      "weight": 0.13031849,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:171b164fa2058d4e",
+      "target": "concept:3944b723abcbc913",
+      "relation": "coactivated",
+      "weight": 0.13031849,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "concept:3944b723abcbc913",
+      "target": "world_model:b0dd1c06d01bd4c6",
+      "relation": "coactivated",
+      "weight": 0.12852397,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "world_model:b0dd1c06d01bd4c6",
+      "target": "concept:3944b723abcbc913",
+      "relation": "coactivated",
+      "weight": 0.12852397,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "concept:5875cb7f34264d12",
+      "target": "hypothesis:fa4ef826620b9e7e",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:fa4ef826620b9e7e",
+      "target": "concept:5875cb7f34264d12",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "concept:5875cb7f34264d12",
+      "target": "hypothesis:8ffa000a657a3feb",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:8ffa000a657a3feb",
+      "target": "concept:5875cb7f34264d12",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "concept:5875cb7f34264d12",
+      "target": "question:171b164fa2058d4e",
+      "relation": "coactivated",
+      "weight": 0.13031849,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:171b164fa2058d4e",
+      "target": "concept:5875cb7f34264d12",
+      "relation": "coactivated",
+      "weight": 0.13031849,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "concept:5875cb7f34264d12",
+      "target": "world_model:b0dd1c06d01bd4c6",
+      "relation": "coactivated",
+      "weight": 0.12852397,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "world_model:b0dd1c06d01bd4c6",
+      "target": "concept:5875cb7f34264d12",
+      "relation": "coactivated",
+      "weight": 0.12852397,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "concept:80430a8046bb5e95",
+      "target": "hypothesis:fa4ef826620b9e7e",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:fa4ef826620b9e7e",
+      "target": "concept:80430a8046bb5e95",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "concept:80430a8046bb5e95",
+      "target": "hypothesis:8ffa000a657a3feb",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:8ffa000a657a3feb",
+      "target": "concept:80430a8046bb5e95",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "concept:80430a8046bb5e95",
+      "target": "question:171b164fa2058d4e",
+      "relation": "coactivated",
+      "weight": 0.13031849,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:171b164fa2058d4e",
+      "target": "concept:80430a8046bb5e95",
+      "relation": "coactivated",
+      "weight": 0.13031849,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "concept:80430a8046bb5e95",
+      "target": "world_model:b0dd1c06d01bd4c6",
+      "relation": "coactivated",
+      "weight": 0.12852397,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "world_model:b0dd1c06d01bd4c6",
+      "target": "concept:80430a8046bb5e95",
+      "relation": "coactivated",
+      "weight": 0.12852397,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "concept:40ee36016862a881",
+      "target": "hypothesis:fa4ef826620b9e7e",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:fa4ef826620b9e7e",
+      "target": "concept:40ee36016862a881",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "concept:40ee36016862a881",
+      "target": "hypothesis:8ffa000a657a3feb",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:8ffa000a657a3feb",
+      "target": "concept:40ee36016862a881",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "concept:40ee36016862a881",
+      "target": "question:171b164fa2058d4e",
+      "relation": "coactivated",
+      "weight": 0.13031849,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:171b164fa2058d4e",
+      "target": "concept:40ee36016862a881",
+      "relation": "coactivated",
+      "weight": 0.13031849,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "concept:40ee36016862a881",
+      "target": "world_model:b0dd1c06d01bd4c6",
+      "relation": "coactivated",
+      "weight": 0.12852397,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "world_model:b0dd1c06d01bd4c6",
+      "target": "concept:40ee36016862a881",
+      "relation": "coactivated",
+      "weight": 0.12852397,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:a38a8b68b2418bff",
+      "target": "hypothesis:fa4ef826620b9e7e",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:fa4ef826620b9e7e",
+      "target": "question:a38a8b68b2418bff",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:a38a8b68b2418bff",
+      "target": "hypothesis:8ffa000a657a3feb",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:8ffa000a657a3feb",
+      "target": "question:a38a8b68b2418bff",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:a38a8b68b2418bff",
+      "target": "question:171b164fa2058d4e",
+      "relation": "coactivated",
+      "weight": 0.13031849,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:171b164fa2058d4e",
+      "target": "question:a38a8b68b2418bff",
+      "relation": "coactivated",
+      "weight": 0.13031849,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:a38a8b68b2418bff",
+      "target": "world_model:b0dd1c06d01bd4c6",
+      "relation": "coactivated",
+      "weight": 0.12852397,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "world_model:b0dd1c06d01bd4c6",
+      "target": "question:a38a8b68b2418bff",
+      "relation": "coactivated",
+      "weight": 0.12852397,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:fa4ef826620b9e7e",
+      "target": "hypothesis:8ffa000a657a3feb",
+      "relation": "coactivated",
+      "weight": 0.1239015197676,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:8ffa000a657a3feb",
+      "target": "hypothesis:fa4ef826620b9e7e",
+      "relation": "coactivated",
+      "weight": 0.1239015197676,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:fa4ef826620b9e7e",
+      "target": "question:afaddb643ea8cc86",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:afaddb643ea8cc86",
+      "target": "hypothesis:fa4ef826620b9e7e",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:fa4ef826620b9e7e",
+      "target": "question:171b164fa2058d4e",
+      "relation": "coactivated",
+      "weight": 0.1242730930788,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:171b164fa2058d4e",
+      "target": "hypothesis:fa4ef826620b9e7e",
+      "relation": "coactivated",
+      "weight": 0.1242730930788,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:fa4ef826620b9e7e",
+      "target": "question:1a6b1a6c01d978d1",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:1a6b1a6c01d978d1",
+      "target": "hypothesis:fa4ef826620b9e7e",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:fa4ef826620b9e7e",
+      "target": "world_model:b0dd1c06d01bd4c6",
+      "relation": "coactivated",
+      "weight": 0.1235299464564,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "world_model:b0dd1c06d01bd4c6",
+      "target": "hypothesis:fa4ef826620b9e7e",
+      "relation": "coactivated",
+      "weight": 0.1235299464564,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:8ffa000a657a3feb",
+      "target": "question:afaddb643ea8cc86",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:afaddb643ea8cc86",
+      "target": "hypothesis:8ffa000a657a3feb",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:8ffa000a657a3feb",
+      "target": "question:171b164fa2058d4e",
+      "relation": "coactivated",
+      "weight": 0.1242730930788,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:171b164fa2058d4e",
+      "target": "hypothesis:8ffa000a657a3feb",
+      "relation": "coactivated",
+      "weight": 0.1242730930788,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:8ffa000a657a3feb",
+      "target": "question:1a6b1a6c01d978d1",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:1a6b1a6c01d978d1",
+      "target": "hypothesis:8ffa000a657a3feb",
+      "relation": "coactivated",
+      "weight": 0.12942123,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "hypothesis:8ffa000a657a3feb",
+      "target": "world_model:b0dd1c06d01bd4c6",
+      "relation": "coactivated",
+      "weight": 0.1235299464564,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "world_model:b0dd1c06d01bd4c6",
+      "target": "hypothesis:8ffa000a657a3feb",
+      "relation": "coactivated",
+      "weight": 0.1235299464564,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:afaddb643ea8cc86",
+      "target": "question:171b164fa2058d4e",
+      "relation": "coactivated",
+      "weight": 0.13031849,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:171b164fa2058d4e",
+      "target": "question:afaddb643ea8cc86",
+      "relation": "coactivated",
+      "weight": 0.13031849,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:afaddb643ea8cc86",
+      "target": "world_model:b0dd1c06d01bd4c6",
+      "relation": "coactivated",
+      "weight": 0.12852397,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "world_model:b0dd1c06d01bd4c6",
+      "target": "question:afaddb643ea8cc86",
+      "relation": "coactivated",
+      "weight": 0.12852397,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:171b164fa2058d4e",
+      "target": "question:1a6b1a6c01d978d1",
+      "relation": "coactivated",
+      "weight": 0.13031849,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:1a6b1a6c01d978d1",
+      "target": "question:171b164fa2058d4e",
+      "relation": "coactivated",
+      "weight": 0.13031849,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:171b164fa2058d4e",
+      "target": "world_model:b0dd1c06d01bd4c6",
+      "relation": "coactivated",
+      "weight": 0.1238661318332,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "world_model:b0dd1c06d01bd4c6",
+      "target": "question:171b164fa2058d4e",
+      "relation": "coactivated",
+      "weight": 0.1238661318332,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "question:1a6b1a6c01d978d1",
+      "target": "world_model:b0dd1c06d01bd4c6",
+      "relation": "coactivated",
+      "weight": 0.12852397,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "world_model:b0dd1c06d01bd4c6",
+      "target": "question:1a6b1a6c01d978d1",
+      "relation": "coactivated",
+      "weight": 0.12852397,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
     }
   ]
 }
