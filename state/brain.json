@@ -1,0 +1,175 @@
+{
+  "version": 2,
+  "timestamp": "2026-10-01T22:38:53.559982+00:00",
+  "generation": 422,
+  "architecture": "neurocognitive-v2",
+  "modulators": {
+    "novelty": 0.425,
+    "surprise": 0.4973,
+    "uncertainty": 0.5,
+    "salience": 0.3575,
+    "exploration": 0.4872,
+    "plasticity": 0.5317,
+    "energy": 0.81,
+    "sleep_pressure": 0.145
+  },
+  "workspace": [
+    {
+      "id": "episode:b971245d216983",
+      "kind": "github_issue",
+      "label": "Ubique v2 end-to-end heartbeat smoke test\n\n/status\n\nEnd-to-end smoke test for the newly merged v2 runtime. This issue may be closed after the heartbeat persists v2 state.",
+      "activation": 0.95,
+      "salience": 0.9,
+      "novelty": 1.0,
+      "surprise": 0.62,
+      "epistemic_status": "observed_external_input",
+      "source": "github:dabinuss",
+      "ignition_score": 0.9044
+    },
+    {
+      "id": "episode:0afbe867d943c0",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 975}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
+    },
+    {
+      "id": "concept:921d69d930092eb5",
+      "kind": "concept",
+      "label": "heartbeat",
+      "activation": 1.0,
+      "salience": 0.3575,
+      "novelty": 0.42499999999999993,
+      "surprise": 0.31725000000000003,
+      "epistemic_status": "external_input_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6827
+    },
+    {
+      "id": "concept:e30310125c31c71c",
+      "kind": "concept",
+      "label": "persists",
+      "activation": 1.0,
+      "salience": 0.3575,
+      "novelty": 0.42499999999999993,
+      "surprise": 0.31725000000000003,
+      "epistemic_status": "external_input_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6827
+    },
+    {
+      "id": "concept:b4d99022347ea416",
+      "kind": "concept",
+      "label": "runtime",
+      "activation": 1.0,
+      "salience": 0.3575,
+      "novelty": 0.42499999999999993,
+      "surprise": 0.31725000000000003,
+      "epistemic_status": "external_input_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6827
+    },
+    {
+      "id": "concept:b39ea7408bbea9e9",
+      "kind": "concept",
+      "label": "closed",
+      "activation": 1.0,
+      "salience": 0.3575,
+      "novelty": 0.42499999999999993,
+      "surprise": 0.31725000000000003,
+      "epistemic_status": "external_input_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6827
+    },
+    {
+      "id": "concept:9304141749a0520d",
+      "kind": "concept",
+      "label": "merged",
+      "activation": 1.0,
+      "salience": 0.3575,
+      "novelty": 0.42499999999999993,
+      "surprise": 0.31725000000000003,
+      "epistemic_status": "external_input_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6827
+    }
+  ],
+  "provider_eligibility": {
+    "gemini": {
+      "configured": true,
+      "disabled": false,
+      "daily_limit": 20,
+      "remaining_calls": 0,
+      "eligible": false
+    },
+    "groq": {
+      "configured": true,
+      "disabled": false,
+      "daily_limit": 1000,
+      "remaining_calls": 974,
+      "eligible": true
+    },
+    "huggingface": {
+      "configured": false,
+      "disabled": false,
+      "daily_limit": null,
+      "remaining_calls": null,
+      "eligible": false
+    }
+  },
+  "last_action": {
+    "kind": "experiment",
+    "description": "Probe the groq provider with a lightweight request to verify it can service the heartbeat test.",
+    "source": "substrate:groq",
+    "score": 0.51174
+  },
+  "action_competition": [
+    {
+      "kind": "experiment",
+      "source": "substrate:groq",
+      "score": 0.51174,
+      "description": "Probe the groq provider with a lightweight request to verify it can service the heartbeat test."
+    },
+    {
+      "kind": "experiment",
+      "source": "substrate:groq",
+      "score": 0.47414,
+      "description": "Recall recent heartbeat logs from memory to assess persistence duration."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.375,
+      "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.3101,
+      "description": "Replay and consolidate existing experience offline."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.26569,
+      "description": "Allow activation to decay without forcing cognition."
+    }
+  ],
+  "substrate_contributors": [
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    }
+  ],
+  "consecutive_pulses": 0,
+  "memory": {
+    "episodes": 5,
+    "semantic_nodes": 27,
+    "synapses": 408
+  }
+}
