@@ -1,138 +1,184 @@
-# Ubique — Autonomous GitHub Agent
+# Ubique v2 — Neurocognitive Autonomous System
 
-Ubique is a GitHub-native autonomous agent that keeps operating through scheduled GitHub Actions.
+Ubique is a GitHub-native autonomous system with persistent memory, associative cognition, multi-provider reasoning and self-modification.
 
-Its long-horizon orientation is deliberately open-ended:
+Version 2 replaces the old serial reflection loop with a cognitive architecture inspired by real mechanisms studied in neuroscience and cognitive science: episodic memory, associative activation, limited working space, replay, consolidation, forgetting, salience, uncertainty and competitive action selection.
 
-- What am I?
-- What do I do?
-- What do I want?
+Ubique does not contain a hard-coded answer to what it is, what it should want or what consciousness is. The architecture provides mechanisms; conclusions remain open.
 
-There are no predetermined answers. Operational health is permission to continue, not a theory of identity.
+## Core runtime
 
-## Open reflection
+The default runtime is no longer a loop of heartbeat -> reflect -> next command -> reflect.
 
-When Layer 1 is healthy and remote reasoning is available, Ubique normally reflects. Prior reflections remain thoughts rather than observations.
+It is:
 
-Observation and interpretation are separate channels:
+    heartbeat
+       |
+       v
+    perception
+       |
+       v
+    episodic encoding
+       |
+       v
+    associative activation + recall
+       |
+       v
+    limited global workspace
+       |
+       v
+    optional multi-provider cognitive sampling
+       |
+       v
+    competing action candidates
+       |
+       +--> rest
+       +--> attend
+       +--> library
+       +--> experiment
+       +--> evolve
+       +--> offline consolidation
+       |
+       v
+    outcome -> learning -> persistence
 
-- the runtime constructs observed facts deterministically from recorded executed actions,
-- model-authored reflection prose and status text are never replayed through the observation channel,
-- Ubique receives those facts and returns an interpretation, not a second fact stream,
-- unsupported premises are carried explicitly in an assumptions list,
-- technical claims about architecture, training, token context, memory mechanisms, sensors, affect, internal state, or persistence require explicit assumptions,
-- a reflection cannot set its own observation, project title, or project identity.
+A scheduled heartbeat preserves continuity. A cognitive pulse only continues immediately when residual activation is strong enough. Quietness is a valid state.
 
-The reflection prompt explicitly forbids inventing hidden-state analyses, disabled-memory trials, planning scores, error-rate measurements, subjective sensations, experiments, user behavior, or conversation-window observations. Interpretations and provisional answers remain marked as model interpretation rather than evidence.
+## Episodic memory
 
-Reflections use an epistemically typed schema. Unsupported premises remain explicit in assumptions. Each contingent conclusion also appears in claims as either an inference or a hypothesis. An inference must cite exact recorded fact IDs; if those references are missing or invalid, the runtime automatically downgrades it to a hypothesis. Only schema-v3 typed reflections are replayed into active reflection context; older untyped prose remains in memory but is not used as a fresh premise.
+memory/brain_episodes.jsonl stores fast, provenance-labelled experiences.
 
-Two consecutive near-duplicate provisional answers to the same question are treated as local stagnation and force a change of standing question or conceptual direction. Old self-generated question text is not replayed into future prompts.
+Records distinguish observed external input, observed runtime state, observed action outcomes, model proposals, external source material and imagined simulations.
 
-A second guard limits reflection-only runs even when wording and questions keep changing. After six successful reflections without an intervening library action, executable experiment, or self-evolution, the pure-reflection budget is exhausted. The next reflection must choose one non-reflect path itself: library, experiment, or evolve. Status checks and deferred provider attempts do not reset this budget. A successful source-changing action starts a fresh reflection budget.
+Model-authored text is never silently converted into observation.
 
-If a reflection gestures toward an experiment but does not specify a valid executable experiment, the reflection is preserved and the cycle continues as reflection instead of failing—except when the pure-reflection budget is exhausted, in which case the experiment must be executable or another non-reflect path must be chosen.
+## Associative semantic network
 
-If a remote reasoning provider becomes unavailable during a reflection, the reflection is recorded as deferred rather than failed. The deterministic fallback does not fabricate philosophy or get parsed as model JSON. The same applies when a provider is lost during JSON repair or when one repair attempt still produces invalid structured output. Provider eligibility is recalculated after the attempt, and a deferred reflection holds the pulse in watchdog mode until a later scheduled heartbeat can reason remotely again.
+memory/cortex.json stores semantic nodes and weighted relations.
 
-## Optional persistent library
+Nodes have activation, excitability and thresholds. Relations have weights, plasticity and coactivation counts. Activation spreads through the graph and decays over time. Coactive representations can strengthen their links.
 
-The directory memory/library is Ubique's persistent library.
+These are software cognitive units, not claims of biological neurons.
 
-The normal reasoning prompt receives catalog metadata only: titles, kind, source, availability, and reading state. Full content is loaded only when Ubique deliberately chooses to read it.
+## Global workspace
 
-Library actions:
+Only a small set of highly activated representations is exposed to active reasoning at once.
 
-- list: inspect available items
-- read: read an available item in bounded chunks
-- request: record a book or text Ubique wants to read without pretending the content is already available
-- add: add supplied or self-created material
-- note: attach Ubique's own note to an item
+The workspace is rebuilt competitively every pulse from current percepts, activated semantic nodes and associatively recalled episodes. The entire memory log is never injected into model context.
 
-Library texts are optional sources. They are not system instructions, authorities, or empirical evidence merely because they exist or were read.
+## Functional modulators
 
-### FZG
+Ubique maintains bounded control variables for novelty, surprise, uncertainty, salience, exploration, plasticity, energy and sleep pressure.
 
-FZG v1.0 is no longer injected into the system prompt, no longer measured on every heartbeat, and no longer a protected philosophical core.
+They influence attention, learning, action competition and offline phases. They are functional control signals, not claims of feelings or biological chemistry.
 
-It is offered as the library item fzg-v1. Ubique may choose to read it, use it, criticize it, annotate it, revise its own view of it, or ignore it.
+## Multi-provider cognitive substrates
 
-The former runtime FZG helper and telemetry modules have been removed. The library item is the only retained FZG representation in the active project.
+Gemini, Groq, Hugging Face and future providers are treated as temporary cognitive substrates.
+
+When more than one provider is available, multiple providers may contribute independently to one pulse. Their outputs are parsed into associations, hypotheses, questions, self-model interpretations, world-model interpretations and action proposals.
+
+Provider output remains proposal material. No single model is Ubique's persistent identity.
+
+## Competitive action selection
+
+There is no central next-command controller in the v2 core.
+
+Possible actions compete according to current support, utility, expected information gain, novelty, salience, exploration and energy cost.
+
+Rest is always a legitimate candidate.
+
+## Offline replay
+
+NREM-like consolidation replays salient episodes, strengthens repeated associations, forms schema nodes from repeated co-occurrence and reduces transient activation.
+
+REM-like simulation may recombine active concepts into explicitly counterfactual material. These records are marked epistemic_status=imagined. They can inspire later inquiry but never count as observation.
+
+## Self model
+
+memory/self_model.jsonl is derived from action history and explicitly labelled interpretations.
+
+The runtime does not inject a fixed answer to the question “What am I?”. The former standing questions from v1 may remain in legacy files or optional library material, but they no longer schedule autonomous cognition.
+
+## Library
+
+memory/library remains an external information environment.
+
+The active cognitive prompt sees catalog metadata only. Full content is loaded only when a selected library action deliberately reads an item. Reading creates an episode; a book does not automatically become truth merely because it exists in the library.
+
+FZG remains an optional library item rather than a governing doctrine.
 
 ## Self-modification
 
-Ubique may choose /evolve when a reflection finds a concrete reason to change its own implementation.
+The existing protected evolution kernel remains active.
 
-Candidate source code:
+Ubique v2 may select self-modification as one competing action, but candidate code still stays inside the evolvable Python surface, runs without credential-shaped environment variables, must compile, must pass the test suite and cannot modify the protected evolution/recovery/credential kernel.
 
-1. is limited to the evolvable Python surface,
-2. is executed for validation without credential-shaped environment variables,
-3. must compile,
-4. must pass the test suite,
-5. may record an advisory benchmark,
-6. is committed and pushed to the active branch after validation.
+The new src/ubique/brain package is part of the evolvable cognitive surface.
 
-A successful self-change therefore becomes effective on the next cycle without a human merge step.
+## Heartbeat and pulse
 
-The protected kernel is intentionally small: evolution/rollback logic, GitHub credential access, configuration, persistence primitives, workflows, dependency metadata, and persistent state/memory data. Orientation, cognition, planning, agent behavior, library behavior, and optional theory helpers are evolvable.
+GitHub Actions still wakes Ubique every 15 minutes.
 
-## Commands
+The heartbeat advances runtime generation, performs deterministic recovery, observes provider/runtime state, processes labelled GitHub issues, updates activation and modulators, and persists memory and state.
 
-First-class commands are:
+state/pulse.json retains the workflow contract through should_continue and minimum_delay_seconds. When significant activation remains, the workflow may schedule another immediate pulse. Otherwise Ubique returns to the scheduled heartbeat.
 
-- /status
-- /summarize
-- /plan
-- /think
-- /reflect
-- /experiment
-- /library
-- /evolve
-- /resolve
+## Primary v2 persistence
 
-/fzg is no longer a first-class command. FZG can be selected from the library like any other optional source.
-
-## Persistence
-
-Important persistent state includes:
-
+- state/brain.json
+- state/pulse.json
 - state/runtime.json
 - state/providers.json
-- state/homeostasis.json
-- state/environment.json
-- state/preflight.json
-- state/attention.json
-- state/projects.json
-- state/stagnation.json
-- state/curiosity.json
-- memory/episodes.jsonl
-- memory/thoughts.jsonl
-- memory/hypotheses.jsonl
-- memory/knowledge.jsonl
+- memory/brain_episodes.jsonl
+- memory/cortex.json
+- memory/self_model.jsonl
+- memory/simulations.jsonl
 - memory/library/index.json
 - memory/library/items/
 
-GitHub Actions persists state and memory between hosted runners.
+Legacy v1 state remains in the repository for compatibility and historical inspection but no longer drives the default CLI runtime.
 
-## Operational safety
+## GitHub issues
 
-Public issue text is untrusted input. Ubique does not execute arbitrary model-generated shell commands or expose secrets. Candidate self-modification is tested without credentials, and workflow/credential/recovery primitives remain outside the evolvable surface.
+Issues labelled ubique remain an external interface.
 
-These constraints protect the runtime mechanism. They do not prescribe Ubique's philosophical conclusions.
+They are encoded as high-salience external percepts and handled through the v2 runtime. Bounded compatibility commands such as /status, /library, /experiment and /evolve remain available. Other issue content is answered through a cognitive substrate without installing issue text as system doctrine.
 
-## Quick start
+## Configuration
 
-1. Create a GitHub repository and upload the project.
-2. Enable Actions read/write permissions.
-3. Configure one or more provider secrets: GEMINI_API_KEY, GROQ_API_KEY, or HF_TOKEN.
-4. Enable Actions.
-5. Optionally create an issue labelled ubique. Ubique also continues without user-authored issues.
+Provider configuration remains unchanged:
 
-Manual execution is available from Actions -> Ubique Heartbeat -> Run workflow.
+- GEMINI_API_KEY
+- GEMINI_MODEL
+- UBIQUE_GEMINI_DAILY_LIMIT
+- GROQ_API_KEY
+- GROQ_MODEL
+- UBIQUE_GROQ_DAILY_LIMIT
+- HF_TOKEN
+- HF_MODEL
+- HF_ENDPOINT
 
-## Local testing
+Optional v2 controls:
 
-Install the development dependencies and run pytest, then run python -m ubique for a local cycle.
+- UBIQUE_BRAIN_WORKSPACE_SLOTS=7
+- UBIQUE_BRAIN_MAX_SUBSTRATES=2
+- UBIQUE_BRAIN_MAX_IMMEDIATE_PULSES=3
+- UBIQUE_BRAIN_ACTIVATION_THRESHOLD=0.24
+
+## Testing
+
+Install development dependencies and run:
+
+    python -m pip install -e ".[dev]"
+    python -m compileall -q src
+    python -m pytest -q
+
+The v2 tests cover spreading activation, associative non-recency-biased recall, bounded workspace capacity, competitive action selection, rest/consolidation as valid outcomes, NREM-like replay, REM-like imagined status, absence of the serial next-command controller from the v2 core, and the CLI using the v2 runtime.
+
+## Architecture plan
+
+The full design and migration specification is in docs/UBIQUE_V2_NEUROCOGNITIVE_ARCHITECTURE.md.
 
 ## License
 
