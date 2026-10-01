@@ -15,6 +15,32 @@ ALLOWED_ACTIONS = {
     "consolidate",
 }
 
+SAFE_EXPERIMENTS = {
+    "provider_probe",
+    "memory_recall",
+    "memory_abstraction",
+    "hypothesis_ablation",
+    "state_consistency",
+}
+SAFE_LIBRARY_ACTIONS = {"list", "read", "add", "request", "note"}
+
+
+def _payload_is_executable(kind: str, payload: dict[str, Any]) -> bool:
+    """Reject incomplete model proposals before they enter action competition."""
+    if kind == "experiment":
+        return str(payload.get("experiment_type", "")).strip() in SAFE_EXPERIMENTS
+    if kind == "library":
+        action = str(payload.get("action", "")).strip().lower()
+        if action not in SAFE_LIBRARY_ACTIONS:
+            return False
+        if action in {"read", "note"} and not str(payload.get("item_id", "")).strip():
+            return False
+        if action in {"add", "request"} and not str(payload.get("title", "")).strip():
+            return False
+        if action == "note" and not str(payload.get("text", "")).strip():
+            return False
+    return True
+
 
 @dataclass(slots=True)
 class ActionCandidate:
@@ -114,6 +140,8 @@ class ActionSelector:
             payload = raw.get("payload", {})
             if not isinstance(payload, dict):
                 payload = {}
+            if not _payload_is_executable(kind, payload):
+                continue
             out.append(ActionCandidate(
                 kind=kind,
                 description=description[:1600],
