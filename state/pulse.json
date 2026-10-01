@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-10-01T06:05:23.479136+00:00",
-  "generation": 418,
-  "mode": "active",
-  "should_continue": true,
+  "timestamp": "2026-10-01T06:06:12.671142+00:00",
+  "generation": 419,
+  "mode": "watchdog",
+  "should_continue": false,
   "next_command": "reflect",
   "minimum_delay_seconds": 30,
-  "reason": "continuation_ready",
+  "reason": "no_usable_remote_reasoning,reflection_deferred",
   "watchdog_schedule": "*/15 * * * *"
 }
