@@ -512,7 +512,9 @@ Issue body:
             success, result, provider = self._act(
                 selected, generation, bool(preflight.get("development_allowed", False))
             )
-            failed += 0 if success else 1
+            # An endogenous action can fail without making the heartbeat itself
+            # operationally unhealthy. Preserve the outcome as experience and
+            # raise surprise so the next pulse can adapt.
             if not success:
                 self.modulators.surprise = clamp(self.modulators.surprise + 0.18)
             elif selected.kind not in {"rest", "consolidate"}:

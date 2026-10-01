@@ -44,3 +44,49 @@ def test_model_action_competes_instead_of_becoming_command():
     )
     assert any(item.kind == "library" for item in ranked)
     assert all(hasattr(item, "score") for item in ranked)
+
+
+def test_incomplete_experiment_never_enters_competition():
+    selector = ActionSelector()
+    actions = selector.from_model_actions(
+        [{
+            "kind": "experiment",
+            "description": "Probe a provider",
+            "support": 1.0,
+            "utility": 1.0,
+            "payload": {},
+        }],
+        source="substrate:test",
+    )
+    assert actions == []
+
+
+def test_executable_experiment_is_admitted():
+    selector = ActionSelector()
+    actions = selector.from_model_actions(
+        [{
+            "kind": "experiment",
+            "description": "Probe a provider",
+            "payload": {
+                "experiment_type": "provider_probe",
+                "experiment_target": "groq",
+                "hypothesis": "the configured provider responds",
+            },
+        }],
+        source="substrate:test",
+    )
+    assert len(actions) == 1
+    assert actions[0].payload["experiment_type"] == "provider_probe"
+
+
+def test_incomplete_library_action_is_rejected():
+    selector = ActionSelector()
+    actions = selector.from_model_actions(
+        [{
+            "kind": "library",
+            "description": "Read something",
+            "payload": {"action": "read"},
+        }],
+        source="substrate:test",
+    )
+    assert actions == []
