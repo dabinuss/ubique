@@ -143,3 +143,48 @@ def test_typed_reflection_can_reenter_context_but_legacy_text_cannot():
     assert "Legacy hidden-self claim" not in task.body
     assert "A typed interpretation." in task.body
     assert "A possibility." in task.body
+
+
+def test_saturated_reflection_requires_non_reflect_source_change():
+    task = choose_endogenous_goal(
+        generation=140,
+        homeostasis={"needs": [], "usable_remote_providers": 1},
+        remote_reasoning_available=True,
+        preflight={"development_allowed": True},
+        cognition={
+            "attention": {"next_command": "reflect"},
+            "reflection_saturation": {
+                "detected": True,
+                "completed_reflections_since_source_change": 8,
+                "budget": 6,
+                "required_next_commands": ["library", "experiment", "evolve"],
+            },
+            "recent_thoughts": [],
+            "executed_action_facts": [],
+        },
+    )
+    assert task.body.startswith("/reflect")
+    assert "pure-reflection budget is exhausted" in task.body
+    assert "next_command to exactly one of: library, experiment, evolve" in task.body
+    assert "next_command=reflect and next_command=resolve are not allowed" in task.body
+
+
+def test_unsaturated_reflection_remains_open():
+    task = choose_endogenous_goal(
+        generation=141,
+        homeostasis={"needs": [], "usable_remote_providers": 1},
+        remote_reasoning_available=True,
+        preflight={"development_allowed": True},
+        cognition={
+            "attention": {"next_command": "reflect"},
+            "reflection_saturation": {
+                "detected": False,
+                "completed_reflections_since_source_change": 2,
+                "budget": 6,
+            },
+            "recent_thoughts": [],
+            "executed_action_facts": [],
+        },
+    )
+    assert task.body.startswith("/reflect")
+    assert "pure-reflection budget is exhausted" not in task.body
