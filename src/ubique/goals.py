@@ -166,6 +166,7 @@ def choose_endogenous_goal(
             "hypotheses_are_proposals": cognition.get("recent_hypotheses", []),
             "observed_facts": cognition.get("executed_action_facts", []),
             "reflection_stagnation": cognition.get("reflection_stagnation", {}),
+            "reflection_saturation": cognition.get("reflection_saturation", {}),
             "selected_library_source_not_evidence": attention.get("library_context", {}),
         },
         12000,
@@ -257,9 +258,21 @@ def choose_endogenous_goal(
             source="autonomous",
         )
 
+    reflection_saturation = cognition.get("reflection_saturation", {})
     reflection_stagnation = cognition.get("reflection_stagnation", {})
     direction = ""
-    if reflection_stagnation.get("detected"):
+    if reflection_saturation.get("detected"):
+        direction = (
+            "The pure-reflection budget is exhausted. Rephrasing, rotating the standing question, or inventing another abstract distinction does not count as progress. "
+            "You must now choose a different information source or change your reasoning mechanism. "
+            "Set next_command to exactly one of: library, experiment, evolve. "
+            "Use library to deliberately read an available item or request material you actually want to encounter; "
+            "use experiment only for a concrete executable empirical question; "
+            "use evolve only when changing your own reasoning implementation is the relevant response. "
+            "next_command=reflect and next_command=resolve are not allowed in this cycle. "
+            "Choose among these paths yourself; none is preferred by the system. "
+        )
+    elif reflection_stagnation.get("detected"):
         repeated = str(reflection_stagnation.get("question", ""))
         target = _stagnation_target(repeated)
         direction = (

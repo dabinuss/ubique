@@ -27,9 +27,11 @@ The reflection prompt explicitly forbids inventing hidden-state analyses, disabl
 
 Reflections use an epistemically typed schema. Unsupported premises remain explicit in assumptions. Each contingent conclusion also appears in claims as either an inference or a hypothesis. An inference must cite exact recorded fact IDs; if those references are missing or invalid, the runtime automatically downgrades it to a hypothesis. Only schema-v3 typed reflections are replayed into active reflection context; older untyped prose remains in memory but is not used as a fresh premise.
 
-Two consecutive near-duplicate provisional answers to the same question are treated as stagnation and force a change of standing question or conceptual direction. Old self-generated question text is not replayed into future prompts.
+Two consecutive near-duplicate provisional answers to the same question are treated as local stagnation and force a change of standing question or conceptual direction. Old self-generated question text is not replayed into future prompts.
 
-If a reflection gestures toward an experiment but does not specify a valid executable experiment, the reflection is preserved and the cycle continues as reflection instead of failing.
+A second guard limits reflection-only runs even when wording and questions keep changing. After six successful reflections without an intervening library action, executable experiment, or self-evolution, the pure-reflection budget is exhausted. The next reflection must choose one non-reflect path itself: library, experiment, or evolve. Status checks and deferred provider attempts do not reset this budget. A successful source-changing action starts a fresh reflection budget.
+
+If a reflection gestures toward an experiment but does not specify a valid executable experiment, the reflection is preserved and the cycle continues as reflection instead of failing—except when the pure-reflection budget is exhausted, in which case the experiment must be executable or another non-reflect path must be chosen.
 
 If a remote reasoning provider becomes unavailable during a reflection, the reflection is recorded as deferred rather than failed. The deterministic fallback does not fabricate philosophy or get parsed as model JSON. The same applies when a provider is lost during JSON repair or when one repair attempt still produces invalid structured output. Provider eligibility is recalculated after the attempt, and a deferred reflection holds the pulse in watchdog mode until a later scheduled heartbeat can reason remotely again.
 

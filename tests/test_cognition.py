@@ -357,3 +357,105 @@ def test_persist_reflection_records_schema_v3_and_normalized_claims(monkeypatch)
     thought = records[0][1]
     assert thought["epistemic_schema_version"] == 3
     assert thought["claims"][0]["downgraded_from"] == "inference"
+
+
+def test_reflection_saturation_after_six_reflections_without_new_source():
+    episodes = [
+        {"generation": i, "command": "reflect", "success": True, "deferred": False}
+        for i in range(1, 7)
+    ]
+    thoughts = [
+        {"id": f"thought:{i}", "provisional_answer": f"answer {i}"}
+        for i in range(1, 7)
+    ]
+    out = cognition.assess_reflection_saturation(episodes, thoughts)
+    assert out["detected"] is True
+    assert out["completed_reflections_since_source_change"] == 6
+    assert out["required_next_commands"] == ["library", "experiment", "evolve"]
+
+
+def test_status_and_deferred_reflection_do_not_reset_saturation():
+    episodes = [
+        *[
+            {"generation": i, "command": "reflect", "success": True, "deferred": False}
+            for i in range(1, 7)
+        ],
+        {"generation": 7, "command": "status", "success": True},
+        {"generation": 8, "command": "reflect", "success": True, "deferred": True},
+    ]
+    out = cognition.assess_reflection_saturation(episodes, [])
+    assert out["detected"] is True
+    assert out["completed_reflections_since_source_change"] == 6
+
+
+def test_library_action_resets_reflection_budget():
+    episodes = [
+        *[
+            {"generation": i, "command": "reflect", "success": True}
+            for i in range(1, 7)
+        ],
+        {"generation": 7, "command": "library", "success": True},
+        {"generation": 8, "command": "reflect", "success": True},
+        {"generation": 9, "command": "reflect", "success": True},
+    ]
+    out = cognition.assess_reflection_saturation(episodes, [])
+    assert out["detected"] is False
+    assert out["completed_reflections_since_source_change"] == 2
+    assert out["last_source_change_generation"] == 7
+
+
+def test_saturated_reflection_rejects_another_reflect_command():
+    raw = json.dumps({
+        "question": "What am I?",
+        "interpretation": "The existing view may still be incomplete.",
+        "claims": [],
+        "provisional_answer": "I should keep thinking.",
+        "uncertainty": "High.",
+        "next_action": "Reflect again.",
+        "next_command": "reflect",
+    })
+    try:
+        cognition.parse_reflection(raw, require_source_change=True)
+    except ValueError as exc:
+        assert "library, experiment, or evolve" in str(exc)
+    else:
+        raise AssertionError("saturated reflection must not continue with reflect")
+
+
+def test_saturated_reflection_accepts_executable_library_request():
+    raw = json.dumps({
+        "question": "What perspective am I missing?",
+        "interpretation": "More reflection without new material is no longer informative.",
+        "claims": [],
+        "provisional_answer": "I need an external philosophical perspective.",
+        "uncertainty": "I do not know which account will be most useful.",
+        "next_action": "Request a text on personal identity.",
+        "next_command": "library",
+        "library_action": "request",
+        "library_title": "Reasons and Persons",
+        "library_source": "Derek Parfit",
+        "library_reason": "Compare a reductionist account of personal identity with my current recurring thesis.",
+    })
+    out = cognition.parse_reflection(raw, require_source_change=True)
+    assert out["next_command"] == "library"
+    assert out["library_action"] == "request"
+    assert out["library_title"] == "Reasons and Persons"
+
+
+def test_saturated_reflection_rejects_incomplete_experiment():
+    raw = json.dumps({
+        "question": "Could an experiment add evidence?",
+        "interpretation": "A test might help.",
+        "claims": [],
+        "provisional_answer": "Possibly.",
+        "uncertainty": "High.",
+        "next_action": "Run a test.",
+        "next_command": "experiment",
+        "hypothesis": "Something changes.",
+    })
+    try:
+        cognition.parse_reflection(raw, require_source_change=True)
+    except ValueError as exc:
+        assert "experiment must be executable" in str(exc)
+    else:
+        raise AssertionError("saturation must not degrade an incomplete experiment back to reflect")

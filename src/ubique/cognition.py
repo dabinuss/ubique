@@ -71,6 +71,46 @@ def assess_reflection_stagnation(thoughts: list[dict[str, Any]]) -> dict[str, An
     }
 
 
+SOURCE_CHANGING_COMMANDS = {"experiment", "library", "evolve"}
+REFLECTION_BUDGET = 6
+
+
+def assess_reflection_saturation(
+    episodes: list[dict[str, Any]],
+    thoughts: list[dict[str, Any]],
+) -> dict[str, Any]:
+    """Detect reflection-only runs that have stopped acquiring new information."""
+    completed_reflections = 0
+    last_source_change_generation = None
+
+    for item in reversed(episodes):
+        if not isinstance(item, dict):
+            continue
+        command = str(item.get("command", "")).strip().lower()
+        if command in SOURCE_CHANGING_COMMANDS and item.get("success") and not item.get("deferred"):
+            last_source_change_generation = item.get("generation")
+            break
+        if command == "reflect" and item.get("success") and not item.get("deferred"):
+            completed_reflections += 1
+        # status, resolve, think, plan, and deferred attempts neither add a new
+        # source nor reset the reflection budget.
+
+    recent = [
+        x for x in thoughts[-8:]
+        if isinstance(x, dict) and str(x.get("provisional_answer", "")).strip()
+    ]
+    detected = completed_reflections >= REFLECTION_BUDGET
+    return {
+        "detected": detected,
+        "reason": "reflection_budget_exhausted" if detected else "reflection_budget_available",
+        "completed_reflections_since_source_change": completed_reflections,
+        "budget": REFLECTION_BUDGET,
+        "last_source_change_generation": last_source_change_generation,
+        "recent_thought_ids": [x.get("id") for x in recent],
+        "required_next_commands": ["library", "experiment", "evolve"] if detected else [],
+    }
+
+
 def _safe_library_fact(result_text: str) -> dict[str, Any]:
     try:
         data = json.loads(result_text)
@@ -136,12 +176,14 @@ def deterministic_observation_summary(facts: list[dict[str, Any]]) -> str:
 
 def cognitive_snapshot() -> dict[str, Any]:
     thoughts = recent_memory_records("thoughts.jsonl", 8)
+    episodes = recent_episodes(30)
     return {
         "attention": read_json("attention.json", {}),
         "projects": read_json("projects.json", {"projects": []}),
         "stagnation": read_json("stagnation.json", {"level": 0, "last_command": None}),
         "recent_thoughts": thoughts,
         "reflection_stagnation": assess_reflection_stagnation(thoughts),
+        "reflection_saturation": assess_reflection_saturation(episodes, thoughts),
         "recent_hypotheses": recent_memory_records("hypotheses.jsonl", 5),
         "recent_concepts": recent_memory_records("concepts.jsonl", 5),
         "recent_project_summaries": recent_memory_records("project_summaries.jsonl", 3),
@@ -163,7 +205,7 @@ def _clean_json_text(text: str) -> str:
     return value
 
 
-def parse_reflection(text: str) -> dict[str, Any]:
+def parse_reflection(text: str, require_source_change: bool = False) -> dict[str, Any]:
     data = json.loads(_clean_json_text(text))
     if not isinstance(data, dict):
         raise ValueError("reflection must be a JSON object")
@@ -237,6 +279,11 @@ def parse_reflection(text: str) -> dict[str, Any]:
     if next_command not in ALLOWED_NEXT_COMMANDS:
         next_command = "reflect"
 
+    if require_source_change and next_command not in SOURCE_CHANGING_COMMANDS:
+        raise ValueError(
+            "reflection budget exhausted: next_command must be library, experiment, or evolve"
+        )
+
     hypothesis = str(data.get("hypothesis", "")).strip()
     proposed = str(data.get("proposed_experiment", "")).strip()
     expected = str(data.get("expected_evidence", "")).strip()
@@ -257,6 +304,11 @@ def parse_reflection(text: str) -> dict[str, Any]:
         if not experiment_type:
             missing.append("valid experiment_type")
         if missing:
+            if require_source_change:
+                raise ValueError(
+                    "reflection budget exhausted: experiment must be executable: "
+                    + ", ".join(missing)
+                )
             next_command = "reflect"
             planning_note = (
                 "Incomplete experiment request was kept as reflection instead of failing: "
@@ -275,6 +327,10 @@ def parse_reflection(text: str) -> dict[str, Any]:
         bad = bad or (library_action in {"add", "request"} and not library_title)
         bad = bad or (library_action == "note" and not library_text.strip())
         if bad:
+            if require_source_change:
+                raise ValueError(
+                    "reflection budget exhausted: library action must be executable"
+                )
             next_command = "reflect"
             planning_note = "Invalid library request was kept as reflection instead of failing."
 

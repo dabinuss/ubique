@@ -212,6 +212,9 @@ class Agent:
                             result_text = json.dumps(paused, indent=2, ensure_ascii=False)
 
                         if planned.command == "reflect":
+                            source_change_required = bool(
+                                cognition.get("reflection_saturation", {}).get("detected")
+                            )
                             if provider_name == "fallback":
                                 deferred = True
                                 defer_reason = (
@@ -232,12 +235,26 @@ class Agent:
                             else:
                                 reflection = None
                                 try:
-                                    reflection = parse_reflection(result_text)
+                                    reflection = parse_reflection(
+                                        result_text,
+                                        require_source_change=source_change_required,
+                                    )
                                 except (ValueError, json.JSONDecodeError) as exc:
+                                    if source_change_required:
+                                        source_change_repair = (
+                                            "The reflection budget is exhausted. The corrected JSON must set next_command to exactly one of library, experiment, evolve. "
+                                            "Do not return reflect or resolve. If choosing library, provide an executable read/request/add action. "
+                                            "If choosing experiment, provide all executable experiment fields. If choosing evolve, give the concrete reason in next_action. "
+                                        )
+                                    else:
+                                        source_change_repair = (
+                                            "Do not add experiments, measurements, library actions, or code changes that were not already requested. "
+                                        )
                                     repair_prompt = (
                                         "Repair the following autonomous interpretation into valid strict JSON only. "
-                                        "Do not add observation, facts, project_title, project_objective, experiments, measurements, or library reads that were not already requested. "
-                                        "Use interpretation plus explicit assumptions for unsupported premises. "
+                                        "Do not add observation, facts, project_title, or project_objective. "
+                                        + source_change_repair
+                                        + "Use interpretation plus explicit assumptions for unsupported premises. "
                                         "Every contingent conclusion must appear in claims as inference or hypothesis. "
                                         "Inference requires exact basis_fact_ids from supplied observed_facts; unsupported conclusions must be hypotheses. "
                                         "Preserve the philosophical meaning and use exactly the schema previously requested. "
@@ -266,7 +283,10 @@ class Agent:
                                         )
                                     else:
                                         try:
-                                            reflection = parse_reflection(result_text)
+                                            reflection = parse_reflection(
+                                                result_text,
+                                                require_source_change=source_change_required,
+                                            )
                                         except (ValueError, json.JSONDecodeError) as repair_exc:
                                             deferred = True
                                             defer_reason = (
