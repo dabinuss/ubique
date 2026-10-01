@@ -1,7 +1,8 @@
 from __future__ import annotations
 
 import logging
-from .agent import Agent
+
+from .brain.runtime import NeurocognitiveRuntime
 from .config import Config
 
 
@@ -11,7 +12,7 @@ def main() -> None:
         level=getattr(logging, config.log_level, logging.INFO),
         format="%(asctime)s %(levelname)s %(name)s: %(message)s",
     )
-    raise SystemExit(Agent(config).run())
+    raise SystemExit(NeurocognitiveRuntime(config).run())
 
 
 if __name__ == "__main__":
