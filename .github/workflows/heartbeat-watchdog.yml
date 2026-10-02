@@ -1,0 +1,74 @@
+name: Ubique Heartbeat Watchdog
+
+on:
+  schedule:
+    - cron: "10,25,40,55 * * * *"
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: ubique-heartbeat-watchdog
+  cancel-in-progress: true
+
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout current main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Check heartbeat freshness
+        id: freshness
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          path = Path("state/runtime.json")
+          stale = True
+          age_minutes = None
+
+          if path.exists():
+              try:
+                  data = json.loads(path.read_text(encoding="utf-8"))
+                  value = data.get("last_cycle_finished_at")
+                  if value:
+                      finished = datetime.fromisoformat(value)
+                      age_minutes = (datetime.now(timezone.utc) - finished).total_seconds() / 60
+                      stale = age_minutes > 22
+              except Exception:
+                  stale = True
+
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as handle:
+              handle.write(f"stale={'true' if stale else 'false'}\n")
+              handle.write(f"age_minutes={age_minutes if age_minutes is not None else 'unknown'}\n")
+          PY
+
+      - name: Dispatch heartbeat when stale
+        if: steps.freshness.outputs.stale == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          echo "Heartbeat stale for ${{ steps.freshness.outputs.age_minutes }} minutes; dispatching recovery beat."
+          curl --fail-with-body --silent --show-error \
+            --request POST \
+            --header "Accept: application/vnd.github+json" \
+            --header "Authorization: Bearer ${GITHUB_TOKEN}" \
+            --header "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/heartbeat.yml/dispatches" \
+            --data '{"ref":"main"}'
+
+      - name: Heartbeat still fresh
+        if: steps.freshness.outputs.stale != 'true'
+        run: echo "Heartbeat is fresh; no recovery dispatch needed."
