@@ -2,10 +2,10 @@ name: Ubique Heartbeat
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "3,18,33,48 * * * *"
   workflow_dispatch:
   issues:
-    types: [opened, labeled, edited]
+    types: [opened, labeled, edited, closed, unlabeled, reopened]
 
 permissions:
   actions: write
@@ -21,7 +21,10 @@ jobs:
   run-agent:
     if: >
       github.event_name != 'issues' ||
-      contains(github.event.issue.labels.*.name, 'ubique')
+      contains(github.event.issue.labels.*.name, 'ubique') ||
+      github.event.action == 'closed' ||
+      github.event.action == 'reopened' ||
+      (github.event.action == 'unlabeled' && github.event.label.name == 'ubique')
 
     runs-on: ubuntu-latest
     timeout-minutes: 20
