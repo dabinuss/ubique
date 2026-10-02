@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-02T04:27:41.254988+00:00",
-  "generation": 441,
+  "timestamp": "2026-10-02T04:31:35.099951+00:00",
+  "generation": 442,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1523,
-    "surprise": 0.122,
+    "novelty": 0.1515,
+    "surprise": 0.1213,
     "uncertainty": 0.07,
-    "salience": 0.3196,
-    "exploration": 0.2022,
-    "plasticity": 0.3957,
+    "salience": 0.2525,
+    "exploration": 0.2018,
+    "plasticity": 0.377,
     "energy": 1.0,
-    "sleep_pressure": 0.1086
+    "sleep_pressure": 0.046
   },
   "workspace": [
     {
       "id": "episode:b971245d216983",
       "kind": "recalled_episode",
       "label": "Ubique v2 end-to-end heartbeat smoke test\n\n/status\n\nEnd-to-end smoke test for the newly merged v2 runtime. This issue may be closed after the heartbeat persists v2 state.",
-      "activation": 0.2771,
+      "activation": 0.289,
       "salience": 0.9,
       "novelty": 1.0,
       "surprise": 0.62,
       "epistemic_status": "observed_external_input",
       "source": "associative_recall",
-      "ignition_score": 0.568
+      "ignition_score": 0.5739
     },
     {
       "id": "episode:fd6ea76e949f95",
       "kind": "recalled_episode",
       "label": "External GitHub issue #11 is now closed. It is no longer an active task. Ubique v2 end-to-end heartbeat smoke test",
-      "activation": 0.2685,
+      "activation": 0.2847,
       "salience": 0.88,
       "novelty": 0.65,
       "surprise": 0.45,
       "epistemic_status": "observed_external_state",
       "source": "associative_recall",
-      "ignition_score": 0.4928
-    },
-    {
-      "id": "episode:e49b8046bfd83e",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"fzg-v1\", \"title\": \"FZG v1.0\", \"kind\": \"theoretical framework\", \"status\": \"offered\", \"source\": \"Offered by the project owner as optional reading\"}, \"offset\": 0, \"excerpt\": \"# FZG v1.0 — optional theoretical framework\\n\\nThis text is available in Ubique's library as an optional framework. It is not a system prompt, a normative identity definition, or a required method. Ubique may read it, use parts of it, criticize it, ignore it, or later annotate its own view of",
-      "activation": 0.2672,
-      "salience": 0.85,
-      "novelty": 0.4,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4401
+      "ignition_score": 0.5009
     },
     {
       "id": "episode:0d42d4e7a8b613",
       "kind": "recalled_episode",
       "label": "Ubique v2 end-to-end heartbeat smoke test\n\n/status\n\nEnd-to-end smoke test for the newly merged v2 runtime. This issue may be closed after the heartbeat persists v2 state.",
-      "activation": 0.2772,
+      "activation": 0.2891,
       "salience": 0.9,
       "novelty": 0.0,
       "surprise": 0.62,
       "epistemic_status": "observed_external_input",
       "source": "associative_recall",
-      "ignition_score": 0.438
+      "ignition_score": 0.444
     },
     {
       "id": "episode:34e0e69b5f1e07",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"fzg-v1\", \"title\": \"FZG v1.0\", \"kind\": \"theoretical framework\", \"status\": \"offered\", \"source\": \"Offered by the project owner as optional reading\"}, \"offset\": 0, \"excerpt\": \"# FZG v1.0 — optional theoretical framework\\n\\nThis text is available in Ubique's library as an optional framework. It is not a system prompt, a normative identity definition, or a required method. Ubique may read it, use parts of it, criticize it, ignore it, or later annotate its own view of",
-      "activation": 0.2744,
+      "activation": 0.2775,
       "salience": 0.9,
       "novelty": 0.2,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4302
+      "ignition_score": 0.4318
     },
     {
-      "id": "world_model:7d0010f82446c45e",
-      "kind": "world_model",
-      "label": "runtime stability",
-      "activation": 0.3796,
-      "salience": 0.41274999999999995,
-      "novelty": 0.152275,
-      "surprise": 0.12195,
-      "epistemic_status": "model_proposal",
-      "source": "semantic_network",
-      "ignition_score": 0.3274
+      "id": "episode:58616a6cde4d84",
+      "kind": "recalled_episode",
+      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"substrate:gemini\", \"concepts\": [\"task 11 closed\", \"if the heartbeat signal remains uninterrupted for at least 5 minutes, the v2 runtime can be considered stable and the issue may be closed.\"]}",
+      "activation": 0.2787,
+      "salience": 0.92,
+      "novelty": 0.05,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4178
     },
     {
-      "id": "concept:a776665960c8ec63",
-      "kind": "concept",
-      "label": "fzg v1.0 framework",
-      "activation": 0.3729,
-      "salience": 0.41274999999999995,
-      "novelty": 0.152275,
-      "surprise": 0.12195,
+      "id": "episode:46c12ee2db778f",
+      "kind": "recalled_episode",
+      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"FZG framework ↔ self‑preservation (P)\",\n      \"kind\": \"concept\",\n      \"strength\": 0.68\n    },\n    {\n      \"label\": \"FZG framework ↔ functional goal‑directedness (G_A)\",\n      \"kind\": \"concept\",\n      \"strength\": 0.73\n    },\n    {\n      \"label\": \"FZG framework ↔ intelligence profile (I_C)\",\n      \"kind\": \"concept\",\n      \"strength\": 0.61\n    }\n  ],\n  \"hypotheses\": [\n    \"If the FZG framework is deliberately applied, it will allow a clearer separation b",
+      "activation": 0.2905,
+      "salience": 0.42,
+      "novelty": 0.1535,
+      "surprise": 0.3,
       "epistemic_status": "model_proposal",
+      "source": "associative_recall",
+      "ignition_score": 0.3062
+    },
+    {
+      "id": "hypothesis:4fc876c93bf4f8f3",
+      "kind": "hypothesis",
+      "label": "if the fzg framework is deliberately applied to the v2 runtime monitoring, the separation of self‑preservation (p) and functional goal‑directedness (g_a) will increase observable stability (e.g., sustained heartbeat).",
+      "activation": 0.1279,
+      "salience": 0.252505,
+      "novelty": 0.151495,
+      "surprise": 0.12129999999999999,
+      "epistemic_status": "model_hypothesis",
       "source": "semantic_network",
-      "ignition_score": 0.3241
+      "ignition_score": 0.1613
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 7,
+      "remaining_calls": 5,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 987,
+      "remaining_calls": 985,
       "eligible": true
     },
     "huggingface": {
@@ -145,46 +145,40 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "System state is stable following the completion of task 11; maintaining resting equilibrium.",
-    "source": "substrate:gemini",
-    "score": 0.53703
+    "kind": "consolidate",
+    "description": "Consolidate recent memory of the FZG framework reading into long‑term storage (rem mode).",
+    "source": "substrate:groq",
+    "score": 0.50133
   },
   "action_competition": [
     {
+      "kind": "consolidate",
+      "source": "substrate:groq",
+      "score": 0.50133,
+      "description": "Consolidate recent memory of the FZG framework reading into long‑term storage (rem mode)."
+    },
+    {
       "kind": "rest",
       "source": "substrate:gemini",
-      "score": 0.53703,
-      "description": "System state is stable following the completion of task 11; maintaining resting equilibrium."
-    },
-    {
-      "kind": "rest",
-      "source": "substrate:groq",
-      "score": 0.45119,
-      "description": "Maintain current low‑uncertainty, high‑energy state while awaiting telemetry updates."
-    },
-    {
-      "kind": "library",
-      "source": "substrate:groq",
-      "score": 0.44815,
-      "description": "Read the full FZG v1.0 document to obtain concrete definitions for S, A, C, Q, M_S, and M_S⁻."
+      "score": 0.44334,
+      "description": "Maintain low-cost monitoring state following successful completion and verification of the v2 heartbeat smoke test."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.35823,
+      "score": 0.3103,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.34038,
+      "score": 0.24139,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.24034,
+      "score": 0.20387,
       "description": "Continue processing the active workspace without external action."
     }
   ],
@@ -200,8 +194,8 @@
   ],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 62,
-    "semantic_nodes": 319,
+    "episodes": 66,
+    "semantic_nodes": 331,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -211,13 +205,13 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 242
+      "removed_edges": 146
     },
     "terminal_inhibition": {
-      "startup": 151,
-      "after_lifecycle": 151,
-      "after_spread": 151,
-      "after_packets": 170
+      "startup": 158,
+      "after_lifecycle": 158,
+      "after_spread": 158,
+      "after_packets": 168
     }
   }
 }
