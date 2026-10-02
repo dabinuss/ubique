@@ -6,7 +6,11 @@ from ubique.brain.network import AssociativeNetwork
 def test_nrem_replay_builds_repeated_schema(tmp_path):
     episodes = EpisodeStore(tmp_path / "episodes.jsonl")
     network = AssociativeNetwork(tmp_path / "cortex.json")
-    for text in ("memory replay changed learning", "memory replay returned during rest"):
+    for text in (
+        "memory replay changed learning",
+        "memory replay returned during rest",
+        "memory replay supported later recall",
+    ):
         episodes.append(
             kind="experience",
             text=text,
@@ -43,3 +47,28 @@ def test_rem_is_explicitly_imagined(tmp_path):
 
     assert result["mode"] == "rem"
     assert '"epistemic_status": "imagined"' in path.read_text(encoding="utf-8")
+
+
+def test_nrem_does_not_explode_pairwise_schemas(tmp_path):
+    episodes = EpisodeStore(tmp_path / "episodes.jsonl")
+    network = AssociativeNetwork(tmp_path / "cortex.json")
+    for index in range(10):
+        episodes.append(
+            kind="experience",
+            text=f"episode {index}",
+            source="test",
+            concepts=[
+                "shared-a", "shared-b", f"unique-{index}",
+                "another", "memory", "context", "learning", "signal",
+            ],
+            salience=0.8,
+        )
+    result = Consolidator(
+        episodes,
+        network,
+        substrate=None,
+        simulations_path=tmp_path / "simulations.jsonl",
+    ).nrem()
+    assert result["schema_nodes_reinforced"] <= 8
+    assert sum(node.kind == "schema" for node in network.nodes.values()) <= 48
+    assert len(network.edges) <= 1200

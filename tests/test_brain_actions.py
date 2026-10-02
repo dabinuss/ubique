@@ -90,3 +90,34 @@ def test_incomplete_library_action_is_rejected():
         source="substrate:test",
     )
     assert actions == []
+
+
+def test_critical_low_energy_blocks_non_rest_actions_even_if_model_support_is_high():
+    modulators = ModulatorState(
+        novelty=1.0,
+        surprise=1.0,
+        uncertainty=1.0,
+        salience=1.0,
+        exploration=1.0,
+        plasticity=0.8,
+        energy=0.10,
+        sleep_pressure=0.7,
+    )
+    selector = ActionSelector()
+    model = selector.from_model_actions(
+        [{
+            "kind": "attend",
+            "description": "Keep focusing",
+            "support": 1.0,
+            "utility": 1.0,
+            "information_gain": 1.0,
+            "novelty": 1.0,
+        }],
+        source="substrate:test",
+    )
+    selected, ranked = selector.select(
+        selector.baseline_candidates(modulators, memory_count=20, workspace_activation=1.0) + model,
+        modulators,
+    )
+    assert selected.kind in {"rest", "consolidate"}
+    assert all(item.kind in {"rest", "consolidate"} for item in ranked)

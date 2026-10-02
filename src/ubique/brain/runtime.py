@@ -61,6 +61,10 @@ class NeurocognitiveRuntime:
         self.consolidator = Consolidator(self.episodes, self.network, self.substrate)
         brain = read_json("brain.json", {})
         self.previous = brain if isinstance(brain, dict) else {}
+        previous_issue_states = self.previous.get("external_issue_states", {})
+        self.external_issue_states = (
+            dict(previous_issue_states) if isinstance(previous_issue_states, dict) else {}
+        )
         self.modulators = ModulatorState.from_dict(self.previous.get("modulators", {}))
 
     def _configured_remote(self) -> list[str]:
@@ -92,6 +96,139 @@ class NeurocognitiveRuntime:
         )
         self.network.hebbian_update(ids, learning_rate=0.05)
         return episode
+
+
+    def _observe_issue_lifecycle(
+        self,
+        tasks: list[Task],
+        generation: int,
+    ) -> list[dict[str, Any]]:
+        """Encode when a previously salient external task stops being active."""
+        active_numbers = {
+            int(task.number): task
+            for task in tasks
+            if task.number is not None
+        }
+        for number, task in active_numbers.items():
+            self.external_issue_states[str(number)] = {
+                "state": "active",
+                "title": task.title[:300],
+                "updated_at": utc_now(),
+            }
+
+        known_numbers = set(active_numbers)
+        recent = self.episodes.recent(100)
+        for episode in recent:
+            if episode.get("kind") != "github_issue":
+                continue
+            payload = episode.get("payload", {})
+            if not isinstance(payload, dict):
+                continue
+            try:
+                known_numbers.add(int(payload.get("issue_number")))
+            except (TypeError, ValueError):
+                continue
+        for key in self.external_issue_states:
+            try:
+                known_numbers.add(int(key))
+            except (TypeError, ValueError):
+                continue
+
+        percepts: list[dict[str, Any]] = []
+        for number in sorted(known_numbers - set(active_numbers)):
+            previous_state = self.external_issue_states.get(str(number), {})
+            previous_name = (
+                str(previous_state.get("state", ""))
+                if isinstance(previous_state, dict)
+                else ""
+            )
+            if previous_name in {"closed", "deactivated"}:
+                continue
+            try:
+                status = self.github.issue_state(number)
+            except Exception:
+                log.exception("Could not observe lifecycle for issue #%s", number)
+                continue
+            if not status:
+                continue
+
+            labels = {str(value) for value in status.get("labels", [])}
+            if str(status.get("state", "")).lower() == "closed":
+                lifecycle = "closed"
+            elif "ubique" not in labels:
+                lifecycle = "deactivated"
+            else:
+                lifecycle = "active"
+
+            if lifecycle == "active":
+                self.external_issue_states[str(number)] = {
+                    "state": "active",
+                    "title": str(status.get("title", ""))[:300],
+                    "updated_at": status.get("updated_at"),
+                }
+                continue
+            if previous_name == lifecycle:
+                continue
+
+            issue_concepts: list[str] = []
+            for episode in recent:
+                payload = episode.get("payload", {})
+                if (
+                    episode.get("kind") == "github_issue"
+                    and isinstance(payload, dict)
+                    and payload.get("issue_number") == number
+                ):
+                    issue_concepts.extend(
+                        str(value)
+                        for value in episode.get("concepts", [])
+                        if str(value).strip()
+                    )
+            inhibited = self.network.inhibit_labels(
+                issue_concepts,
+                factor=0.08,
+                neighbor_factor=0.22,
+            )
+            title = str(status.get("title", "")).strip()
+            text = (
+                f"External GitHub issue #{number} is now {lifecycle}. "
+                f"It is no longer an active task. {title}"
+            ).strip()
+            concepts = [
+                f"issue:{number}",
+                "external-task-ended",
+                "resolved",
+                lifecycle,
+            ]
+            episode = self.episodes.append(
+                kind="external_issue_lifecycle",
+                text=text,
+                source="github:lifecycle",
+                concepts=concepts,
+                epistemic_status="observed_external_state",
+                novelty=0.65,
+                surprise=0.45,
+                salience=0.88,
+                payload={
+                    **status,
+                    "lifecycle": lifecycle,
+                    "inhibited_nodes": inhibited,
+                },
+                generation=generation,
+            )
+            self.network.activate_labels(
+                concepts,
+                amount=0.72,
+                kind="runtime_state",
+                epistemic_status="observed_external_state",
+            )
+            self.external_issue_states[str(number)] = {
+                "state": lifecycle,
+                "title": title[:300],
+                "updated_at": status.get("updated_at"),
+                "closed_at": status.get("closed_at"),
+            }
+            percepts.append(episode)
+        return percepts
 
     def _encode_provider_change(
         self, eligibility: dict[str, dict], generation: int
@@ -169,6 +306,7 @@ Issue body:
                     "architecture": "neurocognitive-v2",
                     "modulators": self.modulators.as_dict(),
                     "provider_eligibility": eligibility,
+                    "external_issue_states": self.external_issue_states,
                     "environment": environment,
                     "memory": {
                         "episodes": self.episodes.count(),
@@ -412,6 +550,7 @@ Issue body:
             "modulators": self.modulators.as_dict(),
             "workspace": self.workspace.snapshot(),
             "provider_eligibility": eligibility,
+            "external_issue_states": self.external_issue_states,
             "last_action": {
                 "kind": selected.kind, "description": selected.description,
                 "source": selected.source, "score": selected.score,
@@ -430,6 +569,7 @@ Issue body:
                 "semantic_nodes": len(self.network.nodes),
                 "synapses": len(self.network.edges),
             },
+            "cortical_maintenance": getattr(self, "_last_maintenance", {}),
         })
 
     def run(self) -> int:
@@ -449,9 +589,12 @@ Issue body:
                 recovery,
             )
 
-            self.network.decay(0.76, 0.9997)
+            self.network.decay(0.72, 0.998)
+            self.network.homeostatic_normalize(target_mean=0.24, ceiling=0.88)
+            startup_maintenance = self.network.prune(max_schema_nodes=48, max_edges=1200)
             tasks = self.github.list_tasks(self.config.max_tasks)
             percepts = [self._encode_issue(task, generation) for task in tasks]
+            percepts.extend(self._observe_issue_lifecycle(tasks, generation))
             changed = self._encode_provider_change(eligibility, generation)
             if changed:
                 percepts.append(changed)
@@ -487,7 +630,7 @@ Issue body:
             )
             if (
                 activation >= self.settings.activation_threshold
-                and self.modulators.energy > 0.18
+                and self.modulators.energy > 0.30
                 and self.substrate.eligible_names()
             ):
                 packets = self.substrate.sample(cognitive_prompt(
@@ -536,6 +679,12 @@ Issue body:
                 generation=generation, action_kind=selected.kind, success=success,
                 evidence=result, episode_id=outcome["id"],
             )
+            self.network.homeostatic_normalize(target_mean=0.24, ceiling=0.88)
+            final_maintenance = self.network.prune(max_schema_nodes=48, max_edges=1200)
+            maintenance = {
+                "startup": startup_maintenance,
+                "final": final_maintenance,
+            }
             self.network.save()
 
             previous = int(self.previous.get("consecutive_pulses", 0) or 0)
@@ -547,6 +696,7 @@ Issue body:
                 and previous < self.settings.max_immediate_pulses
             )
             consecutive = previous + 1 if should_continue else 0
+            self._last_maintenance = maintenance
             self._persist(
                 generation, self.router.remote_eligibility(), selected, ranked, packets, consecutive
             )
@@ -561,7 +711,7 @@ Issue body:
                 "workspace_activation": round(self.workspace.mean_activation(), 4),
                 "energy": round(self.modulators.energy, 4),
                 "sleep_pressure": round(self.modulators.sleep_pressure, 4),
-                "watchdog_schedule": "*/15 * * * *",
+                "watchdog_schedule": "3,18,33,48 * * * *",
             })
             summary = (
                 f"v2:action={selected.kind}:success={success}:"
@@ -576,7 +726,7 @@ Issue body:
                 "mode": "quiet", "should_continue": False,
                 "minimum_delay_seconds": 30,
                 "reason": f"heartbeat_failed:{type(exc).__name__}",
-                "watchdog_schedule": "*/15 * * * *",
+                "watchdog_schedule": "3,18,33,48 * * * *",
             })
             finish_cycle(runtime, f"v2_failed:{type(exc).__name__}")
             log.exception("Ubique v2 heartbeat failed")
