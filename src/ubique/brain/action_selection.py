@@ -172,6 +172,9 @@ class ActionSelector:
             score += 0.19 * modulators.sleep_pressure
         elif candidate.kind == "evolve":
             score -= 0.08
+
+        if candidate.kind not in {"rest", "consolidate"} and modulators.energy < 0.28:
+            score -= (0.28 - modulators.energy) * 1.8
         return score
 
     def select(
@@ -180,8 +183,11 @@ class ActionSelector:
         modulators: ModulatorState,
     ) -> tuple[ActionCandidate, list[ActionCandidate]]:
         ranked: list[ActionCandidate] = []
+        metabolic_lock = modulators.energy < 0.15
         for candidate in candidates:
             if candidate.kind not in ALLOWED_ACTIONS:
+                continue
+            if metabolic_lock and candidate.kind not in {"rest", "consolidate"}:
                 continue
             candidate.score = round(self._score(candidate, modulators), 5)
             ranked.append(candidate)
