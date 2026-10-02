@@ -307,6 +307,45 @@ class AssociativeNetwork:
             if node.activation < 0.01:
                 node.activation = 0.0
 
+
+    def neighborhood_labels(
+        self,
+        labels: Iterable[str],
+        *,
+        limit: int = 120,
+    ) -> list[str]:
+        """Return labels in the immediate associative neighborhood of seed labels."""
+        wanted = {_normalise_label(label) for label in labels if str(label).strip()}
+        seeds = {
+            node.id
+            for node in self.nodes.values()
+            if node.label in wanted
+        }
+        related: list[str] = []
+        seen: set[str] = set()
+        for node_id in seeds:
+            node = self.nodes.get(node_id)
+            if node is not None and node.label not in seen:
+                seen.add(node.label)
+                related.append(node.label)
+        ranked_edges = sorted(
+            (
+                edge for edge in self.edges.values()
+                if edge.source in seeds
+            ),
+            key=lambda edge: (edge.weight, edge.coactivation_count),
+            reverse=True,
+        )
+        for edge in ranked_edges:
+            target = self.nodes.get(edge.target)
+            if target is None or target.label in seen:
+                continue
+            seen.add(target.label)
+            related.append(target.label)
+            if len(related) >= max(1, int(limit)):
+                break
+        return related
+
     def inhibit_labels(
         self,
         labels: Iterable[str],
