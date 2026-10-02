@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-02T10:28:15.837685+00:00",
-  "generation": 444,
+  "timestamp": "2026-10-02T10:29:11.507707+00:00",
+  "generation": 445,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1507,
-    "surprise": 0.1205,
+    "novelty": 0.1505,
+    "surprise": 0.1203,
     "uncertainty": 0.07,
-    "salience": 0.1709,
-    "exploration": 0.2013,
-    "plasticity": 0.3585,
-    "energy": 0.855,
-    "sleep_pressure": 0.1229
+    "salience": 0.2496,
+    "exploration": 0.2012,
+    "plasticity": 0.3761,
+    "energy": 0.908,
+    "sleep_pressure": 0.0505
   },
   "workspace": [
     {
       "id": "episode:b971245d216983",
       "kind": "recalled_episode",
       "label": "Ubique v2 end-to-end heartbeat smoke test\n\n/status\n\nEnd-to-end smoke test for the newly merged v2 runtime. This issue may be closed after the heartbeat persists v2 state.",
-      "activation": 0.2737,
+      "activation": 0.2819,
       "salience": 0.9,
       "novelty": 1.0,
       "surprise": 0.62,
       "epistemic_status": "observed_external_input",
       "source": "associative_recall",
-      "ignition_score": 0.5663
+      "ignition_score": 0.5704
     },
     {
       "id": "episode:fd6ea76e949f95",
       "kind": "recalled_episode",
       "label": "External GitHub issue #11 is now closed. It is no longer an active task. Ubique v2 end-to-end heartbeat smoke test",
-      "activation": 0.2687,
+      "activation": 0.2798,
       "salience": 0.88,
       "novelty": 0.65,
       "surprise": 0.45,
       "epistemic_status": "observed_external_state",
       "source": "associative_recall",
-      "ignition_score": 0.4929
-    },
-    {
-      "id": "episode:d2968f6f9e66f8",
-      "kind": "recalled_episode",
-      "label": "ValueError: unsupported experiment:",
-      "activation": 0.25,
-      "salience": 0.82,
-      "novelty": 0.22,
-      "surprise": 0.7,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4426
+      "ignition_score": 0.4984
     },
     {
       "id": "episode:0d42d4e7a8b613",
       "kind": "recalled_episode",
       "label": "Ubique v2 end-to-end heartbeat smoke test\n\n/status\n\nEnd-to-end smoke test for the newly merged v2 runtime. This issue may be closed after the heartbeat persists v2 state.",
-      "activation": 0.2738,
+      "activation": 0.2819,
       "salience": 0.9,
       "novelty": 0.0,
       "surprise": 0.62,
       "epistemic_status": "observed_external_input",
       "source": "associative_recall",
-      "ignition_score": 0.4363
+      "ignition_score": 0.4404
     },
     {
       "id": "episode:58616a6cde4d84",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"substrate:gemini\", \"concepts\": [\"task 11 closed\", \"if the heartbeat signal remains uninterrupted for at least 5 minutes, the v2 runtime can be considered stable and the issue may be closed.\"]}",
-      "activation": 0.2727,
+      "activation": 0.2931,
       "salience": 0.92,
       "novelty": 0.05,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4148
+      "ignition_score": 0.4251
     },
     {
       "id": "episode:0300a73eb61e33",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"heartbeat stability ↔ task closure\", \"are there any active tasks or upcoming directives following the closure of task 11?\"]}",
-      "activation": 0.2615,
+      "activation": 0.2849,
       "salience": 0.82,
       "novelty": 0.15,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3972
+      "ignition_score": 0.4089
     },
     {
-      "id": "question:fe2b99e612e4713a",
-      "kind": "question",
-      "label": "is the heartbeat signal expected to remain uninterrupted beyond the observed 5‑minute window?",
-      "activation": 0.1401,
-      "salience": 0.17091,
-      "novelty": 0.15065,
-      "surprise": 0.12052,
-      "epistemic_status": "model_question",
+      "id": "episode:faf663ed48a994",
+      "kind": "recalled_episode",
+      "label": "Had the heartbeat signal remained uninterrupted for at least 5 minutes, task 11 would have been closed due to verified v2 runtime stability.",
+      "activation": 0.266,
+      "salience": 0.3,
+      "novelty": 0.7,
+      "surprise": 0.5,
+      "epistemic_status": "imagined",
+      "source": "associative_recall",
+      "ignition_score": 0.359
+    },
+    {
+      "id": "world_model:813e904ca834cd53",
+      "kind": "world_model",
+      "label": "v2 runtime stable >5 minutes",
+      "activation": 0.3957,
+      "salience": 0.24957999999999997,
+      "novelty": 0.150455,
+      "surprise": 0.120325,
+      "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.1468
+      "ignition_score": 0.2942
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 3,
+      "remaining_calls": 1,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 983,
+      "remaining_calls": 981,
       "eligible": true
     },
     "huggingface": {
@@ -145,46 +145,46 @@
     }
   },
   "last_action": {
-    "kind": "attend",
-    "description": "Continue monitoring the v2 runtime heartbeat for an additional 10 minutes to confirm continued stability.",
+    "kind": "consolidate",
+    "description": "Integrate closure of task 11 and confirmed v2 stability into long‑term memory.",
     "source": "substrate:groq",
-    "score": 0.52384
+    "score": 0.55943
   },
   "action_competition": [
     {
-      "kind": "attend",
-      "source": "substrate:groq",
-      "score": 0.52384,
-      "description": "Continue monitoring the v2 runtime heartbeat for an additional 10 minutes to confirm continued stability."
-    },
-    {
       "kind": "consolidate",
       "source": "substrate:groq",
-      "score": 0.51395,
-      "description": "Integrate the recent heartbeat observations and task‑closure status into long‑term memory (mode: rem)."
+      "score": 0.55943,
+      "description": "Integrate closure of task 11 and confirmed v2 stability into long‑term memory."
     },
     {
       "kind": "rest",
       "source": "substrate:gemini",
-      "score": 0.46174,
-      "description": "Maintain low-cost background monitoring while awaiting new task assignments or external directives."
+      "score": 0.49655,
+      "description": "Rest while awaiting new task directives, as task 11 is completed and energy is high."
+    },
+    {
+      "kind": "rest",
+      "source": "substrate:groq",
+      "score": 0.38443,
+      "description": "Idle to conserve energy and allow background processes to run."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.27875,
+      "score": 0.32176,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.22149,
+      "score": 0.29121,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.18457,
+      "score": 0.2032,
       "description": "Continue processing the active workspace without external action."
     }
   ],
@@ -198,10 +198,10 @@
       "model": "openai/gpt-oss-120b"
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 72,
-    "semantic_nodes": 359,
+    "episodes": 76,
+    "semantic_nodes": 373,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -211,13 +211,13 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 264
+      "removed_edges": 250
     },
     "terminal_inhibition": {
-      "startup": 164,
-      "after_lifecycle": 164,
-      "after_spread": 164,
-      "after_packets": 172
+      "startup": 166,
+      "after_lifecycle": 166,
+      "after_spread": 166,
+      "after_packets": 183
     }
   }
 }
