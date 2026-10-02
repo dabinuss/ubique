@@ -80,6 +80,9 @@ def library_catalog(limit: int = 30) -> list[dict[str, Any]]:
             "content_available": bool(item.get("content_path")),
             "added_by": str(item.get("added_by", "unknown")),
             "read_count": int(item.get("read_count", 0) or 0),
+            "read_cursor": max(0, int(item.get("read_cursor", 0) or 0)),
+            "fully_read": bool(item.get("fully_read", False)),
+            "fully_read_at": item.get("fully_read_at"),
         })
     return out
 
@@ -102,24 +105,74 @@ def _content_path(item: dict[str, Any]) -> Path | None:
     return path
 
 
-def read_library_item(item_id: str, offset: int = 0, max_chars: int = 8000) -> dict[str, Any]:
+def read_library_item(
+    item_id: str,
+    offset: int | None = None,
+    max_chars: int = 8000,
+    *,
+    reread: bool = False,
+) -> dict[str, Any]:
     index = _load_index()
     item = _find_item(index, item_id)
     if item is None:
         raise ValueError(f"unknown library item: {item_id}")
 
-    offset = max(0, int(offset or 0))
     max_chars = max(500, min(int(max_chars or 8000), MAX_READ_CHARS))
     path = _content_path(item)
     text = ""
     if path is not None and path.exists():
         text = path.read_text(encoding="utf-8")
 
+    stored_cursor = max(0, int(item.get("read_cursor", 0) or 0))
+    fully_read = bool(item.get("fully_read", False))
+
+    if offset is None:
+        if reread:
+            offset = 0
+        elif fully_read:
+            return {
+                "action": "read",
+                "item": {
+                    "id": item.get("id"),
+                    "title": item.get("title"),
+                    "kind": item.get("kind", "text"),
+                    "status": item.get("status", "available"),
+                    "source": item.get("source", ""),
+                },
+                "offset": stored_cursor,
+                "excerpt": "",
+                "content_available": bool(text),
+                "next_offset": None,
+                "total_chars": len(text),
+                "read_cursor": stored_cursor,
+                "fully_read": True,
+                "already_complete": True,
+                "notes": list(item.get("notes", []))[-8:],
+            }
+        else:
+            offset = stored_cursor
+    offset = max(0, int(offset or 0))
+
     excerpt = text[offset: offset + max_chars]
-    next_offset = offset + len(excerpt)
+    end_offset = offset + len(excerpt)
+    next_offset = end_offset if end_offset < len(text) else None
+
     item["read_count"] = int(item.get("read_count", 0) or 0) + 1
     item["last_selected_at"] = utc_now()
     item["selected_by"] = "ubique"
+
+    if text and (offset == stored_cursor or reread):
+        item["read_cursor"] = max(stored_cursor, end_offset)
+    elif "read_cursor" not in item:
+        item["read_cursor"] = stored_cursor
+
+    if text and int(item.get("read_cursor", 0) or 0) >= len(text):
+        item["read_cursor"] = len(text)
+        item["fully_read"] = True
+        item["fully_read_at"] = utc_now()
+    else:
+        item["fully_read"] = False
+
     _write_index(index)
 
     return {
@@ -134,8 +187,11 @@ def read_library_item(item_id: str, offset: int = 0, max_chars: int = 8000) -> d
         "offset": offset,
         "excerpt": excerpt,
         "content_available": bool(text),
-        "next_offset": next_offset if next_offset < len(text) else None,
+        "next_offset": next_offset,
         "total_chars": len(text),
+        "read_cursor": int(item.get("read_cursor", 0) or 0),
+        "fully_read": bool(item.get("fully_read", False)),
+        "already_complete": False,
         "notes": list(item.get("notes", []))[-8:],
     }
 
@@ -176,6 +232,9 @@ def add_library_item(
         "added_at": utc_now(),
         "content_path": content_path,
         "read_count": 0,
+        "read_cursor": 0,
+        "fully_read": False,
+        "fully_read_at": None,
         "notes": [],
     }
     index.setdefault("items", []).append(item)
@@ -221,10 +280,13 @@ def apply_library_action(spec: dict[str, Any], actor: str = "ubique") -> dict[st
     if action == "list":
         return {"action": "list", "items": library_catalog(int(spec.get("limit", 30) or 30))}
     if action == "read":
+        raw_offset = spec.get("offset")
+        offset = None if raw_offset is None else int(raw_offset or 0)
         return read_library_item(
             str(spec.get("item_id", "")),
-            int(spec.get("offset", 0) or 0),
+            offset,
             int(spec.get("max_chars", 8000) or 8000),
+            reread=bool(spec.get("reread", False)),
         )
     if action == "request":
         return request_library_item(
