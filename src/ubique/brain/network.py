@@ -195,7 +195,7 @@ class AssociativeNetwork:
             if node is None:
                 continue
             effective = _clamp(amount * (0.65 + 0.7 * node.excitability))
-            node.activation = _clamp(max(node.activation, effective))
+            node.activation = min(0.92, max(node.activation, effective))
             node.access_count += 1
             node.last_activated_at = now
             activated.append(node.id)
@@ -243,6 +243,7 @@ class AssociativeNetwork:
                 node.activation = _clamp(node.activation * decay + increments.get(node.id, 0.0))
                 if node.activation < floor:
                     node.activation = 0.0
+            self.homeostatic_normalize(target_mean=0.32, ceiling=0.94)
 
     def decay(self, activation_factor: float = 0.78, edge_factor: float = 0.9995) -> None:
         for node in self.nodes.values():
@@ -253,8 +254,15 @@ class AssociativeNetwork:
             if edge.coactivation_count == 0:
                 edge.weight = _clamp(edge.weight * edge_factor)
 
-    def hebbian_update(self, active_ids: Iterable[str], learning_rate: float = 0.08) -> None:
+    def hebbian_update(
+        self,
+        active_ids: Iterable[str],
+        learning_rate: float = 0.08,
+        max_nodes: int = 6,
+    ) -> None:
         ids = [node_id for node_id in dict.fromkeys(active_ids) if node_id in self.nodes]
+        ids.sort(key=lambda node_id: self.nodes[node_id].activation, reverse=True)
+        ids = ids[: max(2, int(max_nodes))]
         now = _utc_now()
         for i, left in enumerate(ids):
             for right in ids[i + 1:]:
@@ -280,6 +288,102 @@ class AssociativeNetwork:
                     edge.weight = _clamp(edge.weight + delta)
                     edge.coactivation_count += 1
                     edge.last_coactivated_at = now
+
+
+    def homeostatic_normalize(
+        self,
+        *,
+        target_mean: float = 0.28,
+        ceiling: float = 0.92,
+    ) -> None:
+        """Divisive normalization prevents a large assembly from saturating."""
+        active = [node for node in self.nodes.values() if node.activation > 0.0]
+        if not active:
+            return
+        mean_activation = sum(node.activation for node in active) / len(active)
+        scale = min(1.0, max(0.05, target_mean) / max(mean_activation, 1e-9))
+        for node in active:
+            node.activation = min(ceiling, _clamp(node.activation * scale))
+            if node.activation < 0.01:
+                node.activation = 0.0
+
+    def inhibit_labels(
+        self,
+        labels: Iterable[str],
+        *,
+        factor: float = 0.15,
+        neighbor_factor: float = 0.35,
+    ) -> int:
+        """Lower activation for a resolved representation and its immediate assembly."""
+        wanted = {_normalise_label(label) for label in labels if str(label).strip()}
+        seeds = [
+            node.id for node in self.nodes.values()
+            if node.label in wanted
+        ]
+        touched: set[str] = set()
+        for node_id in seeds:
+            node = self.nodes[node_id]
+            node.activation = _clamp(node.activation * factor)
+            touched.add(node_id)
+        for edge in self.edges.values():
+            if edge.source not in seeds:
+                continue
+            target = self.nodes.get(edge.target)
+            if target is None:
+                continue
+            target.activation = _clamp(target.activation * neighbor_factor)
+            touched.add(target.id)
+        return len(touched)
+
+    def prune(
+        self,
+        *,
+        max_schema_nodes: int = 48,
+        max_edges: int = 1200,
+        min_weight: float = 0.065,
+    ) -> dict[str, int]:
+        """Bound graph growth while preserving the strongest recurrent structure."""
+        removed_nodes = 0
+        schemas = [node for node in self.nodes.values() if node.kind == "schema"]
+        schemas.sort(
+            key=lambda node: (node.activation, node.access_count, node.last_activated_at or ""),
+            reverse=True,
+        )
+        for node in schemas[max(0, int(max_schema_nodes)):]:
+            self.nodes.pop(node.id, None)
+            removed_nodes += 1
+
+        valid = set(self.nodes)
+        self.edges = {
+            key: edge
+            for key, edge in self.edges.items()
+            if edge.source in valid and edge.target in valid and edge.weight >= min_weight
+        }
+
+        relation_bonus = {"coactivated": 0.04, "pattern_contains": 0.03, "proposed_association": 0.0}
+        ranked = sorted(
+            self.edges.items(),
+            key=lambda item: (
+                item[1].weight
+                + 0.015 * min(item[1].coactivation_count, 10)
+                + relation_bonus.get(item[1].relation, 0.0)
+            ),
+            reverse=True,
+        )
+        removed_edges = max(0, len(ranked) - max(100, int(max_edges)))
+        if removed_edges:
+            self.edges = dict(ranked[: max(100, int(max_edges))])
+
+        connected: set[str] = set()
+        for edge in self.edges.values():
+            connected.add(edge.source)
+            connected.add(edge.target)
+        for node_id, node in list(self.nodes.items()):
+            if node.kind == "schema" and node_id not in connected:
+                self.nodes.pop(node_id, None)
+                removed_nodes += 1
+
+        return {"removed_nodes": removed_nodes, "removed_edges": removed_edges}
 
     def top_active(self, limit: int = 12, minimum: float = 0.01) -> list[dict[str, Any]]:
         ranked = [
