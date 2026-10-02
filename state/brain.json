@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-02T04:20:31.320648+00:00",
-  "generation": 436,
+  "timestamp": "2026-10-02T04:20:52.676674+00:00",
+  "generation": 437,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1696,
-    "surprise": 0.137,
-    "uncertainty": 0.065,
-    "salience": 0.6838,
-    "exploration": 0.2147,
-    "plasticity": 0.4369,
-    "energy": 0.923,
-    "sleep_pressure": 0.0561
+    "novelty": 0.1627,
+    "surprise": 0.131,
+    "uncertainty": 0.0675,
+    "salience": 0.762,
+    "exploration": 0.2059,
+    "plasticity": 0.4432,
+    "energy": 0.976,
+    "sleep_pressure": 0.0292
   },
   "workspace": [
-    {
-      "id": "concept:3944b723abcbc913",
-      "kind": "concept",
-      "label": "heartbeat persists",
-      "activation": 0.94,
-      "salience": 0.68377,
-      "novelty": 0.16956500000000002,
-      "surprise": 0.136965,
-      "epistemic_status": "model_proposal",
-      "source": "semantic_network",
-      "ignition_score": 0.6794
-    },
     {
       "id": "concept:a944dbf6efaa0758",
       "kind": "concept",
       "label": "groq provider eligible",
-      "activation": 0.94,
-      "salience": 0.68377,
-      "novelty": 0.16956500000000002,
-      "surprise": 0.136965,
+      "activation": 0.9072,
+      "salience": 0.76199,
+      "novelty": 0.16274,
+      "surprise": 0.13105,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.6794
+      "ignition_score": 0.681
+    },
+    {
+      "id": "concept:3944b723abcbc913",
+      "kind": "concept",
+      "label": "heartbeat persists",
+      "activation": 0.9006,
+      "salience": 0.76199,
+      "novelty": 0.16274,
+      "surprise": 0.13105,
+      "epistemic_status": "model_proposal",
+      "source": "semantic_network",
+      "ignition_score": 0.6777
     },
     {
       "id": "concept:391b3209d712a26a",
       "kind": "concept",
       "label": "v2 runtime stability",
-      "activation": 0.94,
-      "salience": 0.68377,
-      "novelty": 0.16956500000000002,
-      "surprise": 0.136965,
+      "activation": 0.9006,
+      "salience": 0.76199,
+      "novelty": 0.16274,
+      "surprise": 0.13105,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.6794
+      "ignition_score": 0.6777
     },
     {
       "id": "world_model:ba0135ffc59e25af",
       "kind": "world_model",
       "label": "status external action succeeded",
-      "activation": 0.94,
-      "salience": 0.68377,
-      "novelty": 0.16956500000000002,
-      "surprise": 0.136965,
+      "activation": 0.899,
+      "salience": 0.76199,
+      "novelty": 0.16274,
+      "surprise": 0.13105,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.6794
+      "ignition_score": 0.6769
     },
     {
       "id": "concept:4aced2a354445e33",
       "kind": "concept",
       "label": "issue can be closed after persistence",
-      "activation": 0.94,
-      "salience": 0.68377,
-      "novelty": 0.16956500000000002,
-      "surprise": 0.136965,
+      "activation": 0.8507,
+      "salience": 0.76199,
+      "novelty": 0.16274,
+      "surprise": 0.13105,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.6794
+      "ignition_score": 0.6527
     },
     {
       "id": "question:29dbee3b999c2125",
       "kind": "question",
       "label": "what is the minimum duration required for the heartbeat to be deemed persistent according to project policy?",
-      "activation": 0.7996,
-      "salience": 0.68377,
-      "novelty": 0.16956500000000002,
-      "surprise": 0.136965,
+      "activation": 0.7323,
+      "salience": 0.76199,
+      "novelty": 0.16274,
+      "surprise": 0.13105,
       "epistemic_status": "model_question",
       "source": "semantic_network",
-      "ignition_score": 0.6092
+      "ignition_score": 0.5935
     },
     {
-      "id": "hypothesis:8b4b29a0a405f8b9",
-      "kind": "hypothesis",
-      "label": "if the heartbeat signal remains uninterrupted for at least 5 minutes, the v2 runtime can be considered stable and the issue may be closed.",
-      "activation": 0.7647,
-      "salience": 0.68377,
-      "novelty": 0.16956500000000002,
-      "surprise": 0.136965,
-      "epistemic_status": "model_hypothesis",
+      "id": "question:17fe9b25d8d4cbda",
+      "kind": "question",
+      "label": "are there any known transient failure patterns for the v2 heartbeat that we should monitor during the observation window?",
+      "activation": 0.6825,
+      "salience": 0.76199,
+      "novelty": 0.16274,
+      "surprise": 0.13105,
+      "epistemic_status": "model_question",
       "source": "semantic_network",
-      "ignition_score": 0.5918
+      "ignition_score": 0.5686
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 12,
+      "remaining_calls": 11,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 992,
+      "remaining_calls": 991,
       "eligible": true
     },
     "huggingface": {
@@ -146,39 +146,33 @@
   },
   "last_action": {
     "kind": "consolidate",
-    "description": "Consolidate current workspace stability state and recent closure records into long-term memory structures.",
+    "description": "Consolidate current workspace observations and maintain runtime stability following task closure.",
     "source": "substrate:gemini",
-    "score": 0.58015
+    "score": 0.58009
   },
   "action_competition": [
     {
       "kind": "consolidate",
       "source": "substrate:gemini",
-      "score": 0.58015,
-      "description": "Consolidate current workspace stability state and recent closure records into long-term memory structures."
-    },
-    {
-      "kind": "consolidate",
-      "source": "substrate:groq",
-      "score": 0.56609,
-      "description": "Integrate recent observations and policy clarification into the long‑term model."
+      "score": 0.58009,
+      "description": "Consolidate current workspace observations and maintain runtime stability following task closure."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.38014,
+      "score": 0.35717,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.32934,
+      "score": 0.34413,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.28734,
+      "score": 0.26739,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
@@ -194,8 +188,8 @@
   ],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 46,
-    "semantic_nodes": 232,
+    "episodes": 49,
+    "semantic_nodes": 251,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -208,10 +202,10 @@
       "removed_edges": 0
     },
     "terminal_inhibition": {
-      "startup": 75,
-      "after_lifecycle": 75,
-      "after_spread": 75,
-      "after_packets": 75
+      "startup": 82,
+      "after_lifecycle": 82,
+      "after_spread": 82,
+      "after_packets": 82
     }
   }
 }
