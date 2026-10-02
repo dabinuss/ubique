@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-02T04:19:40.041913+00:00",
-  "generation": 435,
+  "timestamp": "2026-10-02T04:20:31.320648+00:00",
+  "generation": 436,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1801,
-    "surprise": 0.1461,
-    "uncertainty": 0.08,
-    "salience": 0.5458,
-    "exploration": 0.2202,
-    "plasticity": 0.4314,
-    "energy": 0.87,
-    "sleep_pressure": 0.1404
+    "novelty": 0.1696,
+    "surprise": 0.137,
+    "uncertainty": 0.065,
+    "salience": 0.6838,
+    "exploration": 0.2147,
+    "plasticity": 0.4369,
+    "energy": 0.923,
+    "sleep_pressure": 0.0561
   },
   "workspace": [
-    {
-      "id": "concept:a944dbf6efaa0758",
-      "kind": "concept",
-      "label": "groq provider eligible",
-      "activation": 0.7494,
-      "salience": 0.54582,
-      "novelty": 0.180095,
-      "surprise": 0.146065,
-      "epistemic_status": "model_proposal",
-      "source": "semantic_network",
-      "ignition_score": 0.5521
-    },
     {
       "id": "concept:3944b723abcbc913",
       "kind": "concept",
       "label": "heartbeat persists",
-      "activation": 0.7288,
-      "salience": 0.54582,
-      "novelty": 0.180095,
-      "surprise": 0.146065,
+      "activation": 0.94,
+      "salience": 0.68377,
+      "novelty": 0.16956500000000002,
+      "surprise": 0.136965,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.5418
+      "ignition_score": 0.6794
     },
     {
-      "id": "world_model:ba0135ffc59e25af",
-      "kind": "world_model",
-      "label": "status external action succeeded",
-      "activation": 0.7238,
-      "salience": 0.54582,
-      "novelty": 0.180095,
-      "surprise": 0.146065,
+      "id": "concept:a944dbf6efaa0758",
+      "kind": "concept",
+      "label": "groq provider eligible",
+      "activation": 0.94,
+      "salience": 0.68377,
+      "novelty": 0.16956500000000002,
+      "surprise": 0.136965,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.5393
+      "ignition_score": 0.6794
     },
     {
       "id": "concept:391b3209d712a26a",
       "kind": "concept",
       "label": "v2 runtime stability",
-      "activation": 0.715,
-      "salience": 0.54582,
-      "novelty": 0.180095,
-      "surprise": 0.146065,
+      "activation": 0.94,
+      "salience": 0.68377,
+      "novelty": 0.16956500000000002,
+      "surprise": 0.136965,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.5349
+      "ignition_score": 0.6794
+    },
+    {
+      "id": "world_model:ba0135ffc59e25af",
+      "kind": "world_model",
+      "label": "status external action succeeded",
+      "activation": 0.94,
+      "salience": 0.68377,
+      "novelty": 0.16956500000000002,
+      "surprise": 0.136965,
+      "epistemic_status": "model_proposal",
+      "source": "semantic_network",
+      "ignition_score": 0.6794
     },
     {
       "id": "concept:4aced2a354445e33",
       "kind": "concept",
       "label": "issue can be closed after persistence",
-      "activation": 0.6951,
-      "salience": 0.54582,
-      "novelty": 0.180095,
-      "surprise": 0.146065,
+      "activation": 0.94,
+      "salience": 0.68377,
+      "novelty": 0.16956500000000002,
+      "surprise": 0.136965,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.5249
+      "ignition_score": 0.6794
     },
     {
-      "id": "episode:4796e8a58bb6d7",
-      "kind": "recalled_episode",
-      "label": "{\n  \"associations\": [\n    {\"label\": \"heartbeat persists\", \"kind\": \"concept\", \"strength\": 0.94},\n    {\"label\": \"v2 runtime stability\", \"kind\": \"concept\", \"strength\": 0.89},\n    {\"label\": \"issue can be closed after persistence\", \"kind\": \"concept\", \"strength\": 0.86},\n    {\"label\": \"groq provider eligible\", \"kind\": \"concept\", \"strength\": 0.91},\n    {\"label\": \"status external action succeeded\", \"kind\": \"world_model\", \"strength\": 0.96}\n  ],\n  \"hypotheses\": [\n    \"If the heartbeat signal remains uninte",
-      "activation": 0.5047,
-      "salience": 0.42,
-      "novelty": 0.3186,
-      "surprise": 0.3,
-      "epistemic_status": "model_proposal",
-      "source": "associative_recall",
-      "ignition_score": 0.4348
-    },
-    {
-      "id": "world_model:a24a6597f5888282",
-      "kind": "world_model",
-      "label": "task 11 closed",
-      "activation": 0.4982,
-      "salience": 0.54582,
-      "novelty": 0.180095,
-      "surprise": 0.146065,
-      "epistemic_status": "model_proposal",
+      "id": "question:29dbee3b999c2125",
+      "kind": "question",
+      "label": "what is the minimum duration required for the heartbeat to be deemed persistent according to project policy?",
+      "activation": 0.7996,
+      "salience": 0.68377,
+      "novelty": 0.16956500000000002,
+      "surprise": 0.136965,
+      "epistemic_status": "model_question",
       "source": "semantic_network",
-      "ignition_score": 0.4265
+      "ignition_score": 0.6092
+    },
+    {
+      "id": "hypothesis:8b4b29a0a405f8b9",
+      "kind": "hypothesis",
+      "label": "if the heartbeat signal remains uninterrupted for at least 5 minutes, the v2 runtime can be considered stable and the issue may be closed.",
+      "activation": 0.7647,
+      "salience": 0.68377,
+      "novelty": 0.16956500000000002,
+      "surprise": 0.136965,
+      "epistemic_status": "model_hypothesis",
+      "source": "semantic_network",
+      "ignition_score": 0.5918
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 13,
+      "remaining_calls": 12,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 993,
+      "remaining_calls": 992,
       "eligible": true
     },
     "huggingface": {
@@ -145,46 +145,40 @@
     }
   },
   "last_action": {
-    "kind": "library",
-    "description": "Read the offered FZG v1.0 theoretical framework to inspect optional project owner materials.",
+    "kind": "consolidate",
+    "description": "Consolidate current workspace stability state and recent closure records into long-term memory structures.",
     "source": "substrate:gemini",
-    "score": 0.57864
+    "score": 0.58015
   },
   "action_competition": [
     {
-      "kind": "library",
+      "kind": "consolidate",
       "source": "substrate:gemini",
-      "score": 0.57864,
-      "description": "Read the offered FZG v1.0 theoretical framework to inspect optional project owner materials."
+      "score": 0.58015,
+      "description": "Consolidate current workspace stability state and recent closure records into long-term memory structures."
     },
     {
       "kind": "consolidate",
       "source": "substrate:groq",
-      "score": 0.56128,
-      "description": "Integrate recent observations about heartbeat persistence and task closure into long‑term memory (REM mode)."
-    },
-    {
-      "kind": "library",
-      "source": "substrate:groq",
-      "score": 0.49338,
-      "description": "Read the offered theoretical framework FZG v1.0 to enrich understanding of runtime stability concepts."
+      "score": 0.56609,
+      "description": "Integrate recent observations and policy clarification into the long‑term model."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.3443,
+      "score": 0.38014,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.29251,
+      "score": 0.32934,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.26113,
+      "score": 0.28734,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
@@ -198,10 +192,10 @@
       "model": "openai/gpt-oss-120b"
     }
   ],
-  "consecutive_pulses": 2,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 43,
-    "semantic_nodes": 209,
+    "episodes": 46,
+    "semantic_nodes": 232,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -211,7 +205,7 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 156
+      "removed_edges": 0
     },
     "terminal_inhibition": {
       "startup": 75,
