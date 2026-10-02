@@ -142,6 +142,8 @@ class NeurocognitiveRuntime:
                 if isinstance(previous_state, dict)
                 else ""
             )
+            if previous_name in {"closed", "deactivated"}:
+                continue
             try:
                 status = self.github.issue_state(number)
             except Exception:
@@ -304,7 +306,7 @@ Issue body:
                     "architecture": "neurocognitive-v2",
                     "modulators": self.modulators.as_dict(),
                     "provider_eligibility": eligibility,
-            "external_issue_states": self.external_issue_states,
+                    "external_issue_states": self.external_issue_states,
                     "environment": environment,
                     "memory": {
                         "episodes": self.episodes.count(),
@@ -548,6 +550,7 @@ Issue body:
             "modulators": self.modulators.as_dict(),
             "workspace": self.workspace.snapshot(),
             "provider_eligibility": eligibility,
+            "external_issue_states": self.external_issue_states,
             "last_action": {
                 "kind": selected.kind, "description": selected.description,
                 "source": selected.source, "score": selected.score,
@@ -588,7 +591,7 @@ Issue body:
 
             self.network.decay(0.72, 0.998)
             self.network.homeostatic_normalize(target_mean=0.24, ceiling=0.88)
-            self.network.prune(max_schema_nodes=48, max_edges=1200)
+            startup_maintenance = self.network.prune(max_schema_nodes=48, max_edges=1200)
             tasks = self.github.list_tasks(self.config.max_tasks)
             percepts = [self._encode_issue(task, generation) for task in tasks]
             percepts.extend(self._observe_issue_lifecycle(tasks, generation))
@@ -677,7 +680,11 @@ Issue body:
                 evidence=result, episode_id=outcome["id"],
             )
             self.network.homeostatic_normalize(target_mean=0.24, ceiling=0.88)
-            maintenance = self.network.prune(max_schema_nodes=48, max_edges=1200)
+            final_maintenance = self.network.prune(max_schema_nodes=48, max_edges=1200)
+            maintenance = {
+                "startup": startup_maintenance,
+                "final": final_maintenance,
+            }
             self.network.save()
 
             previous = int(self.previous.get("consecutive_pulses", 0) or 0)
