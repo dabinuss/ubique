@@ -315,6 +315,69 @@ class NeurocognitiveRuntime:
                 break
         return selected
 
+
+    def _completed_library_items(self) -> set[str]:
+        """Combine current catalog progress with legacy successful read outcomes."""
+        completed = {
+            str(item.get("id", ""))
+            for item in library_catalog(50)
+            if isinstance(item, dict)
+            and item.get("fully_read")
+            and str(item.get("id", "")).strip()
+        }
+        for episode in self.episodes.recent(240):
+            if episode.get("kind") != "internal_action_outcome":
+                continue
+            try:
+                outcome = json.loads(str(episode.get("text", "")))
+            except (json.JSONDecodeError, TypeError, ValueError):
+                continue
+            if not isinstance(outcome, dict) or outcome.get("action") != "read":
+                continue
+            if not outcome.get("content_available") or outcome.get("next_offset") is not None:
+                continue
+            item = outcome.get("item", {})
+            if isinstance(item, dict) and str(item.get("id", "")).strip():
+                completed.add(str(item["id"]))
+        return completed
+
+    def _cognitive_library_catalog(self, limit: int = 20) -> list[dict[str, Any]]:
+        completed = self._completed_library_items()
+        catalog = library_catalog(limit)
+        for item in catalog:
+            item_id = str(item.get("id", ""))
+            if item_id in completed:
+                item["fully_read"] = True
+                item["remaining_unread"] = False
+        return catalog
+
+    def _filter_library_candidates(
+        self,
+        candidates: list[ActionCandidate],
+    ) -> list[ActionCandidate]:
+        """Habituate completed reads while preserving deliberate rereading."""
+        completed = self._completed_library_items()
+        filtered: list[ActionCandidate] = []
+        for candidate in candidates:
+            if candidate.kind != "library":
+                filtered.append(candidate)
+                continue
+            action = str(candidate.payload.get("action", "")).strip().lower()
+            item_id = str(candidate.payload.get("item_id", "")).strip()
+            if action != "read" or item_id not in completed:
+                filtered.append(candidate)
+                continue
+
+            reread = bool(candidate.payload.get("reread", False))
+            reason = str(candidate.payload.get("reason", "")).strip()
+            if not reread or not reason:
+                continue
+
+            candidate.novelty = min(candidate.novelty, 0.18)
+            candidate.information_gain = min(candidate.information_gain, 0.28)
+            filtered.append(candidate)
+        return filtered
+
     def _observe_issue_lifecycle(
         self,
         tasks: list[Task],
@@ -682,9 +745,10 @@ Issue body:
                 payload={"provider": provider, "model": packet.get("model", "")},
                 generation=generation,
             )
-            actions.extend(self.selector.from_model_actions(
+            packet_actions = self.selector.from_model_actions(
                 packet.get("actions", []), source=f"substrate:{provider}"
-            ))
+            )
+            actions.extend(self._filter_library_candidates(packet_actions))
         return actions
 
     def _act(
@@ -706,7 +770,7 @@ Issue body:
                 return True, json.dumps(result, ensure_ascii=False), provider
             if action.kind == "library":
                 result = apply_library_action(action.payload, actor="ubique")
-                if result.get("action") == "read":
+                if result.get("action") == "read" and result.get("excerpt"):
                     excerpt = str(result.get("excerpt", ""))
                     item = result.get("item", {}) if isinstance(result.get("item"), dict) else {}
                     concepts = extract_concepts(f"{item.get('title', '')} {excerpt}", 12)
@@ -848,7 +912,7 @@ Issue body:
                     recalled_episodes=recalled,
                     modulators=self.modulators.as_dict(),
                     self_model=self.self_model.recent(8),
-                    library_catalog=library_catalog(20),
+                    library_catalog=self._cognitive_library_catalog(20),
                     external_states=self.external_issue_states,
                 ))
                 if packets:
