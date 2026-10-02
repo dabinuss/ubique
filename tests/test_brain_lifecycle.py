@@ -145,3 +145,65 @@ def test_terminal_context_can_occupy_only_one_recall_slot(tmp_path):
     ]
     assert len(superseded) <= 1
     assert {"other-1", "other-2"}.issubset({item["id"] for item in result})
+
+
+def test_terminal_recall_matching_survives_missing_graph_edge(tmp_path):
+    runtime = NeurocognitiveRuntime.__new__(NeurocognitiveRuntime)
+    runtime.episodes = EpisodeStore(tmp_path / "episodes.jsonl")
+    runtime.network = AssociativeNetwork(tmp_path / "cortex.json")
+    runtime.external_issue_states = {
+        "11": {
+            "state": "closed",
+            "concepts": ["heartbeat", "persists", "smoke", "test"],
+        }
+    }
+
+    # Deliberately do not create a graph edge from terminal seeds to the
+    # model-authored compound concept. Pruning may legitimately remove it.
+    recalled = [{
+        "id": "stale",
+        "kind": "cognitive_packet",
+        "epistemic_status": "model_proposal",
+        "concepts": ["heartbeat persists", "v2 runtime stability"],
+        "recall_score": 0.9,
+        "text": "old model packet",
+    }]
+
+    result = runtime._contextualize_recall(recalled, limit=1)
+
+    assert result[0]["contextual_status"] == "superseded_terminal_context"
+    assert result[0]["terminal_graph_overlap"] == 0
+    assert result[0]["terminal_lexical_overlap"] >= 2
+    assert result[0]["recall_score"] < 0.2
+
+
+def test_terminal_inhibition_directly_suppresses_compound_model_nodes(tmp_path):
+    runtime = NeurocognitiveRuntime.__new__(NeurocognitiveRuntime)
+    runtime.episodes = EpisodeStore(tmp_path / "episodes.jsonl")
+    runtime.network = AssociativeNetwork(tmp_path / "cortex.json")
+    runtime.external_issue_states = {
+        "11": {
+            "state": "closed",
+            "concepts": ["heartbeat", "persists", "smoke", "test"],
+        }
+    }
+
+    stale = runtime.network.ensure_node(
+        "heartbeat persists",
+        kind="concept",
+        epistemic_status="model_proposal",
+    )
+    unrelated = runtime.network.ensure_node(
+        "library curiosity",
+        kind="concept",
+        epistemic_status="model_proposal",
+    )
+    runtime.network.activate_ids([stale.id, unrelated.id], amount=0.9)
+    stale_before = stale.activation
+    unrelated_before = unrelated.activation
+
+    touched = runtime._apply_terminal_inhibition()
+
+    assert touched >= 1
+    assert stale.activation < stale_before * 0.3
+    assert unrelated.activation == unrelated_before
