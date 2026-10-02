@@ -242,7 +242,7 @@ Return strict JSON only:
 }}
 
 Action payload conventions:
-- library: use an existing catalog item only with {{"action":"read","item_id":"..."}}; or request a title with {{"action":"request","title":"...","reason":"..."}}. Never invent library contents.
+- library: use an existing unread catalog item with {{"action":"read","item_id":"..."}}; or request a title with {{"action":"request","title":"...","reason":"..."}}. Catalog items marked fully_read have no unread remainder. Reread them only deliberately with {{"action":"read","item_id":"...","reread":true,"reason":"specific reason"}}. Never invent library contents or "remaining sections" when fully_read=true.
 - experiment: only propose a bounded type from provider_probe, memory_recall, memory_abstraction, hypothesis_ablation, state_consistency.
 - evolve: payload should contain a concise "reason"; code will be generated separately and safety-gated.
 - consolidate: payload may contain mode nrem or rem.
