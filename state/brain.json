@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-02T01:56:23.871973+00:00",
-  "generation": 429,
+  "timestamp": "2026-10-02T04:08:30.684877+00:00",
+  "generation": 430,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2799,
-    "surprise": 0.2879,
+    "novelty": 0.4094,
+    "surprise": 0.3446,
     "uncertainty": 0.415,
-    "salience": 0.7544,
-    "exploration": 0.4235,
-    "plasticity": 0.5331,
-    "energy": 0.098,
-    "sleep_pressure": 0.4046
+    "salience": 0.6026,
+    "exploration": 0.4575,
+    "plasticity": 0.5992,
+    "energy": 0.507,
+    "sleep_pressure": 0.2268
   },
   "workspace": [
+    {
+      "id": "episode:fd6ea76e949f95",
+      "kind": "external_issue_lifecycle",
+      "label": "External GitHub issue #11 is now closed. It is no longer an active task. Ubique v2 end-to-end heartbeat smoke test",
+      "activation": 0.95,
+      "salience": 0.88,
+      "novelty": 0.65,
+      "surprise": 0.45,
+      "epistemic_status": "observed_external_state",
+      "source": "github:lifecycle",
+      "ignition_score": 0.8335
+    },
     {
       "id": "concept:3944b723abcbc913",
       "kind": "concept",
       "label": "heartbeat persists",
-      "activation": 1.0,
-      "salience": 0.754445,
-      "novelty": 0.27991,
-      "surprise": 0.28789,
+      "activation": 0.94,
+      "salience": 0.79836,
+      "novelty": 0.409435,
+      "surprise": 0.344635,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.7595
-    },
-    {
-      "id": "concept:921d69d930092eb5",
-      "kind": "concept",
-      "label": "heartbeat",
-      "activation": 1.0,
-      "salience": 0.754445,
-      "novelty": 0.27991,
-      "surprise": 0.28789,
-      "epistemic_status": "external_input_index",
-      "source": "semantic_network",
-      "ignition_score": 0.7595
-    },
-    {
-      "id": "concept:10d0d9c7a5909812",
-      "kind": "concept",
-      "label": "test",
-      "activation": 1.0,
-      "salience": 0.754445,
-      "novelty": 0.27991,
-      "surprise": 0.28789,
-      "epistemic_status": "external_input_index",
-      "source": "semantic_network",
-      "ignition_score": 0.7595
-    },
-    {
-      "id": "concept:391b3209d712a26a",
-      "kind": "concept",
-      "label": "v2 runtime stability",
-      "activation": 1.0,
-      "salience": 0.754445,
-      "novelty": 0.27991,
-      "surprise": 0.28789,
-      "epistemic_status": "model_proposal",
-      "source": "semantic_network",
-      "ignition_score": 0.7595
-    },
-    {
-      "id": "concept:4aced2a354445e33",
-      "kind": "concept",
-      "label": "issue can be closed after persistence",
-      "activation": 1.0,
-      "salience": 0.754445,
-      "novelty": 0.27991,
-      "surprise": 0.28789,
-      "epistemic_status": "model_proposal",
-      "source": "semantic_network",
-      "ignition_score": 0.7595
+      "ignition_score": 0.7642
     },
     {
       "id": "world_model:ba0135ffc59e25af",
       "kind": "world_model",
       "label": "status external action succeeded",
-      "activation": 1.0,
-      "salience": 0.754445,
-      "novelty": 0.27991,
-      "surprise": 0.28789,
+      "activation": 0.6179,
+      "salience": 0.79836,
+      "novelty": 0.409435,
+      "surprise": 0.344635,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.7595
+      "ignition_score": 0.6031
     },
     {
       "id": "concept:a944dbf6efaa0758",
       "kind": "concept",
       "label": "groq provider eligible",
-      "activation": 1.0,
-      "salience": 0.754445,
-      "novelty": 0.27991,
-      "surprise": 0.28789,
+      "activation": 0.6174,
+      "salience": 0.79836,
+      "novelty": 0.409435,
+      "surprise": 0.344635,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.7595
+      "ignition_score": 0.6029
+    },
+    {
+      "id": "concept:391b3209d712a26a",
+      "kind": "concept",
+      "label": "v2 runtime stability",
+      "activation": 0.6173,
+      "salience": 0.79836,
+      "novelty": 0.409435,
+      "surprise": 0.344635,
+      "epistemic_status": "model_proposal",
+      "source": "semantic_network",
+      "ignition_score": 0.6028
+    },
+    {
+      "id": "concept:4aced2a354445e33",
+      "kind": "concept",
+      "label": "issue can be closed after persistence",
+      "activation": 0.617,
+      "salience": 0.79836,
+      "novelty": 0.409435,
+      "surprise": 0.344635,
+      "epistemic_status": "model_proposal",
+      "source": "semantic_network",
+      "ignition_score": 0.6027
+    },
+    {
+      "id": "question:29dbee3b999c2125",
+      "kind": "question",
+      "label": "what is the minimum duration required for the heartbeat to be deemed persistent according to project policy?",
+      "activation": 0.5947,
+      "salience": 0.79836,
+      "novelty": 0.409435,
+      "surprise": 0.344635,
+      "epistemic_status": "model_question",
+      "source": "semantic_network",
+      "ignition_score": 0.5915
     }
   ],
   "provider_eligibility": {
@@ -122,58 +122,49 @@
       "eligible": false
     }
   },
+  "external_issue_states": {
+    "11": {
+      "state": "closed",
+      "title": "Ubique v2 end-to-end heartbeat smoke test",
+      "updated_at": "2026-10-02T04:08:16Z",
+      "closed_at": "2026-10-01T22:42:26Z"
+    }
+  },
   "last_action": {
-    "kind": "attend",
-    "description": "Continue monitoring the global workspace for heartbeat persistence and v2 runtime stability updates.",
-    "source": "substrate:gemini",
-    "score": 0.5957
+    "kind": "rest",
+    "description": "Allow activation to decay without forcing cognition.",
+    "source": "homeostasis",
+    "score": 0.65382
   },
   "action_competition": [
     {
-      "kind": "attend",
-      "source": "substrate:gemini",
-      "score": 0.5957,
-      "description": "Continue monitoring the global workspace for heartbeat persistence and v2 runtime stability updates."
-    },
-    {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.55456,
+      "score": 0.65382,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.488,
+      "score": 0.53739,
       "description": "Replay and consolidate existing experience offline."
-    },
-    {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.4228,
-      "description": "Continue processing the active workspace without external action."
-    },
-    {
-      "kind": "rest",
-      "source": "substrate:groq",
-      "score": 0.41479,
-      "description": "Brief rest to allow internal consolidation before next observation cycle."
     }
   ],
-  "substrate_contributors": [
-    {
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite"
-    },
-    {
-      "provider": "groq",
-      "model": "openai/gpt-oss-120b"
-    }
-  ],
+  "substrate_contributors": [],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 23,
-    "semantic_nodes": 244,
-    "synapses": 2280
+    "episodes": 25,
+    "semantic_nodes": 154,
+    "synapses": 1200
+  },
+  "cortical_maintenance": {
+    "startup": {
+      "removed_nodes": 94,
+      "removed_edges": 704
+    },
+    "final": {
+      "removed_nodes": 0,
+      "removed_edges": 0
+    }
   }
 }
