@@ -145,6 +145,39 @@ class NeurocognitiveRuntime:
         return touched
 
 
+    def _terminal_seed_terms(self) -> set[str]:
+        """Stable lexical anchors for terminal contexts, independent of graph pruning."""
+        generic = {
+            "issue", "state", "status", "closed", "active", "task", "ubique",
+            "runtime", "external", "newly", "merged",
+        }
+        terms: set[str] = set()
+        for key, state in self.external_issue_states.items():
+            if not isinstance(state, dict):
+                continue
+            if str(state.get("state", "")) not in {"closed", "deactivated"}:
+                continue
+            try:
+                issue_number = int(key)
+            except (TypeError, ValueError):
+                continue
+            concepts = [
+                str(value).strip().lower()
+                for value in state.get("concepts", [])
+                if str(value).strip()
+            ]
+            if not concepts:
+                concepts = [
+                    str(value).strip().lower()
+                    for value in self._issue_concepts(issue_number)
+                    if str(value).strip()
+                ]
+            for concept in concepts:
+                for term in concept.replace("-", " ").replace("_", " ").split():
+                    if len(term) >= 4 and term not in generic:
+                        terms.add(term)
+        return terms
+
     def _terminal_context_labels(self) -> set[str]:
         labels: set[str] = set()
         for key, state in self.external_issue_states.items():
@@ -197,8 +230,29 @@ class NeurocognitiveRuntime:
                 for value in copy.get("concepts", [])
                 if str(value).strip()
             }
-            overlap = len(concepts & terminal_labels)
-            if overlap and (kind == "cognitive_packet" or status in model_statuses):
+            graph_overlap = len(concepts & terminal_labels)
+            seed_terms = self._terminal_seed_terms()
+            lexical_terms: set[str] = set()
+            strong_concept_match = False
+            for concept in concepts:
+                words = {
+                    value
+                    for value in concept.replace("-", " ").replace("_", " ").split()
+                    if len(value) >= 4
+                }
+                matched = words & seed_terms
+                lexical_terms.update(matched)
+                if len(matched) >= 2:
+                    strong_concept_match = True
+
+            lexical_overlap = len(lexical_terms)
+            overlap = graph_overlap + lexical_overlap
+            superseded = (
+                graph_overlap > 0
+                or strong_concept_match
+                or lexical_overlap >= 3
+            )
+            if superseded and (kind == "cognitive_packet" or status in model_statuses):
                 factor = 0.12 if overlap >= 2 else 0.35
                 copy["recall_score"] = round(
                     float(copy.get("recall_score", 0.0)) * factor,
@@ -206,6 +260,8 @@ class NeurocognitiveRuntime:
                 )
                 copy["contextual_status"] = "superseded_terminal_context"
                 copy["terminal_overlap"] = overlap
+                copy["terminal_graph_overlap"] = graph_overlap
+                copy["terminal_lexical_overlap"] = lexical_overlap
             adjusted.append(copy)
 
         adjusted.sort(
