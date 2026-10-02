@@ -159,6 +159,7 @@ def cognitive_prompt(
     modulators: dict[str, float],
     self_model: list[dict[str, Any]],
     library_catalog: list[dict[str, Any]],
+    external_states: dict[str, Any] | None = None,
 ) -> str:
     recall_view = [
         {
@@ -170,6 +171,17 @@ def cognitive_prompt(
         }
         for item in recalled_episodes[:6]
     ]
+    external_view = {}
+    for key, value in (external_states or {}).items():
+        if not isinstance(value, dict):
+            continue
+        external_view[str(key)] = {
+            "state": value.get("state"),
+            "title": value.get("title"),
+            "updated_at": value.get("updated_at"),
+            "closed_at": value.get("closed_at"),
+        }
+
     self_view = [
         {
             "epistemic_status": item.get("epistemic_status"),
@@ -190,6 +202,13 @@ Current global workspace:
 
 Associatively recalled episodes:
 {json.dumps(recall_view, ensure_ascii=False)[:7000]}
+
+Current external task lifecycle states:
+{json.dumps(external_view, ensure_ascii=False)[:4000]}
+
+Terminal states such as "closed" or "deactivated" are current observations and supersede
+older recalled/model-authored claims that the same task is still active or pending.
+Do not continue a terminal task merely because its older representations remain activated.
 
 Functional modulators:
 {json.dumps(modulators, ensure_ascii=False)}

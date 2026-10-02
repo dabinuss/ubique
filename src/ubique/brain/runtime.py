@@ -98,6 +98,52 @@ class NeurocognitiveRuntime:
         return episode
 
 
+
+    def _issue_concepts(self, issue_number: int) -> list[str]:
+        concepts: list[str] = []
+        for episode in self.episodes.recent(120):
+            payload = episode.get("payload", {})
+            if (
+                episode.get("kind") == "github_issue"
+                and isinstance(payload, dict)
+                and payload.get("issue_number") == issue_number
+            ):
+                concepts.extend(
+                    str(value)
+                    for value in episode.get("concepts", [])
+                    if str(value).strip()
+                )
+        return list(dict.fromkeys(concepts))[:32]
+
+    def _apply_terminal_inhibition(self) -> int:
+        """Re-apply extinction-like inhibition for terminal external contexts."""
+        touched = 0
+        for key, state in self.external_issue_states.items():
+            if not isinstance(state, dict):
+                continue
+            if str(state.get("state", "")) not in {"closed", "deactivated"}:
+                continue
+            try:
+                issue_number = int(key)
+            except (TypeError, ValueError):
+                continue
+            concepts = [
+                str(value)
+                for value in state.get("concepts", [])
+                if str(value).strip()
+            ]
+            if not concepts:
+                concepts = self._issue_concepts(issue_number)
+                if concepts:
+                    state["concepts"] = concepts
+            if concepts:
+                touched += self.network.inhibit_labels(
+                    concepts,
+                    factor=0.18,
+                    neighbor_factor=0.34,
+                )
+        return touched
+
     def _observe_issue_lifecycle(
         self,
         tasks: list[Task],
@@ -170,19 +216,7 @@ class NeurocognitiveRuntime:
             if previous_name == lifecycle:
                 continue
 
-            issue_concepts: list[str] = []
-            for episode in recent:
-                payload = episode.get("payload", {})
-                if (
-                    episode.get("kind") == "github_issue"
-                    and isinstance(payload, dict)
-                    and payload.get("issue_number") == number
-                ):
-                    issue_concepts.extend(
-                        str(value)
-                        for value in episode.get("concepts", [])
-                        if str(value).strip()
-                    )
+            issue_concepts = self._issue_concepts(number)
             inhibited = self.network.inhibit_labels(
                 issue_concepts,
                 factor=0.08,
@@ -226,6 +260,7 @@ class NeurocognitiveRuntime:
                 "title": title[:300],
                 "updated_at": status.get("updated_at"),
                 "closed_at": status.get("closed_at"),
+                "concepts": issue_concepts,
             }
             percepts.append(episode)
         return percepts
@@ -592,9 +627,11 @@ Issue body:
             self.network.decay(0.72, 0.998)
             self.network.homeostatic_normalize(target_mean=0.24, ceiling=0.88)
             startup_maintenance = self.network.prune(max_schema_nodes=48, max_edges=1200)
+            terminal_inhibition_start = self._apply_terminal_inhibition()
             tasks = self.github.list_tasks(self.config.max_tasks)
             percepts = [self._encode_issue(task, generation) for task in tasks]
             percepts.extend(self._observe_issue_lifecycle(tasks, generation))
+            terminal_inhibition_after_lifecycle = self._apply_terminal_inhibition()
             changed = self._encode_provider_change(eligibility, generation)
             if changed:
                 percepts.append(changed)
@@ -606,6 +643,7 @@ Issue body:
             self.network.spread(
                 steps=2, gain=0.48 + 0.18 * self.modulators.plasticity, decay=0.86
             )
+            terminal_inhibition_after_spread = self._apply_terminal_inhibition()
             active = [x["label"] for x in self.network.top_active(10, 0.03)]
             recalled = self.episodes.recall(
                 " ".join(active[:8]), concepts=active, limit=6, include_imagined=True
@@ -639,6 +677,7 @@ Issue body:
                     modulators=self.modulators.as_dict(),
                     self_model=self.self_model.recent(8),
                     library_catalog=library_catalog(20),
+                    external_states=self.external_issue_states,
                 ))
                 if packets:
                     self.modulators.uncertainty = clamp(mean(
@@ -646,11 +685,13 @@ Issue body:
                     ))
 
             basis = [str(x.get("id", "")) for x in percepts + recalled]
+            model_candidates = self._integrate_packets(packets, generation, basis)
+            terminal_inhibition_after_packets = self._apply_terminal_inhibition()
             candidates = self.selector.baseline_candidates(
                 self.modulators,
                 memory_count=self.episodes.count(),
                 workspace_activation=self.workspace.mean_activation(),
-            ) + self._integrate_packets(packets, generation, basis)
+            ) + model_candidates
             selected, ranked = self.selector.select(candidates, self.modulators)
             success, result, provider = self._act(
                 selected, generation, bool(preflight.get("development_allowed", False))
@@ -684,6 +725,12 @@ Issue body:
             maintenance = {
                 "startup": startup_maintenance,
                 "final": final_maintenance,
+                "terminal_inhibition": {
+                    "startup": terminal_inhibition_start,
+                    "after_lifecycle": terminal_inhibition_after_lifecycle,
+                    "after_spread": terminal_inhibition_after_spread,
+                    "after_packets": terminal_inhibition_after_packets,
+                },
             }
             self.network.save()
 
