@@ -80,3 +80,19 @@ def test_library_explicit_reread_is_possible_after_completion(tmp_path, monkeypa
     assert reread["offset"] == 0
     assert reread["excerpt"]
     assert reread["fully_read"] is True
+
+
+def test_mark_library_item_complete_migrates_legacy_progress(tmp_path, monkeypatch):
+    _redirect(tmp_path, monkeypatch)
+    item = library.add_library_item("Legacy book", "legacy content", actor="user")["item"]
+
+    changed = library.mark_library_item_complete(
+        item["id"],
+        completed_at="2026-10-02T00:00:00+00:00",
+    )
+
+    assert changed is True
+    catalog = library.library_catalog()
+    assert catalog[0]["fully_read"] is True
+    assert catalog[0]["read_cursor"] == len("legacy content")
+    assert catalog[0]["fully_read_at"] == "2026-10-02T00:00:00+00:00"
