@@ -43,5 +43,13 @@ def test_closed_issue_becomes_terminal_percept_and_inhibits_old_assembly(tmp_pat
     assert percepts[0]["kind"] == "external_issue_lifecycle"
     assert percepts[0]["payload"]["lifecycle"] == "closed"
     assert runtime.external_issue_states["11"]["state"] == "closed"
+    assert "heartbeat" in runtime.external_issue_states["11"]["concepts"]
     assert runtime.network.nodes[heartbeat.id].activation < 0.2
     assert runtime.network.nodes[stability.id].activation < before_neighbor
+
+    runtime.network.activate_ids([heartbeat.id, stability.id], amount=0.9)
+    reactivated = runtime.network.nodes[stability.id].activation
+    touched = runtime._apply_terminal_inhibition()
+    assert touched >= 2
+    assert runtime.network.nodes[heartbeat.id].activation < 0.3
+    assert runtime.network.nodes[stability.id].activation < reactivated
