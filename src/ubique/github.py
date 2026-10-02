@@ -50,6 +50,28 @@ class GitHubClient:
             ))
         return tasks
 
+    def issue_state(self, issue_number: int) -> dict:
+        """Return current public lifecycle state for one issue."""
+        if not self.enabled:
+            return {}
+        url = f"{self.base}/repos/{self.repository}/issues/{int(issue_number)}"
+        with httpx.Client(timeout=25) as client:
+            r = client.get(url, headers=self.headers)
+            r.raise_for_status()
+            item = r.json()
+        return {
+            "number": int(item.get("number", issue_number)),
+            "title": item.get("title", ""),
+            "state": item.get("state", ""),
+            "labels": [
+                str(label.get("name", ""))
+                for label in item.get("labels", [])
+                if isinstance(label, dict) and str(label.get("name", "")).strip()
+            ],
+            "updated_at": item.get("updated_at"),
+            "closed_at": item.get("closed_at"),
+        }
+
     def comment(self, issue_number: int, body: str) -> None:
         if not self.enabled:
             return
