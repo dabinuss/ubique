@@ -137,13 +137,24 @@ class NeurocognitiveRuntime:
                 if concepts:
                     state["concepts"] = concepts
             if concepts:
+                related = self._terminal_related_node_labels()
                 touched += self.network.inhibit_labels(
-                    concepts,
-                    factor=0.18,
-                    neighbor_factor=0.34,
+                    list(concepts) + list(related),
+                    factor=0.16,
+                    neighbor_factor=0.30,
                 )
         return touched
 
+
+    @staticmethod
+    def _lexical_stem(value: str) -> str:
+        word = str(value).strip().lower().strip(".,:;!?()[]{}'\"")
+        for suffix in ("ence", "ance", "ment", "ness", "tion", "ent", "ing", "ed", "es", "s"):
+            if len(word) >= 7 and word.endswith(suffix):
+                candidate = word[:-len(suffix)]
+                if len(candidate) >= 5:
+                    return candidate
+        return word
 
     def _terminal_seed_terms(self) -> set[str]:
         """Stable lexical anchors for terminal contexts, independent of graph pruning."""
@@ -174,9 +185,28 @@ class NeurocognitiveRuntime:
                 ]
             for concept in concepts:
                 for term in concept.replace("-", " ").replace("_", " ").split():
-                    if len(term) >= 4 and term not in generic:
-                        terms.add(term)
+                    stem = self._lexical_stem(term)
+                    if len(stem) >= 4 and stem not in generic:
+                        terms.add(stem)
         return terms
+
+    def _terminal_related_node_labels(self) -> set[str]:
+        """Find model nodes lexically tied to a terminal context."""
+        seed_terms = self._terminal_seed_terms()
+        if not seed_terms:
+            return set()
+        related: set[str] = set()
+        for node in self.network.nodes.values():
+            if not str(node.epistemic_status).startswith("model_"):
+                continue
+            words = {
+                self._lexical_stem(value)
+                for value in node.label.replace("-", " ").replace("_", " ").split()
+                if len(self._lexical_stem(value)) >= 4
+            }
+            if len(words & seed_terms) >= 2:
+                related.add(node.label)
+        return related
 
     def _terminal_context_labels(self) -> set[str]:
         labels: set[str] = set()
@@ -201,6 +231,11 @@ class NeurocognitiveRuntime:
                 for value in self.network.neighborhood_labels(concepts, limit=120)
                 if str(value).strip()
             )
+        labels.update(
+            str(value).strip().lower()
+            for value in self._terminal_related_node_labels()
+            if str(value).strip()
+        )
         return labels
 
     def _contextualize_recall(
@@ -211,7 +246,8 @@ class NeurocognitiveRuntime:
     ) -> list[dict[str, Any]]:
         """Downweight stale model-authored recall superseded by terminal observations."""
         terminal_labels = self._terminal_context_labels()
-        if not terminal_labels:
+        seed_terms = self._terminal_seed_terms()
+        if not terminal_labels and not seed_terms:
             return recalled[: max(0, limit)]
 
         adjusted: list[dict[str, Any]] = []
@@ -231,14 +267,13 @@ class NeurocognitiveRuntime:
                 if str(value).strip()
             }
             graph_overlap = len(concepts & terminal_labels)
-            seed_terms = self._terminal_seed_terms()
             lexical_terms: set[str] = set()
             strong_concept_match = False
             for concept in concepts:
                 words = {
-                    value
+                    self._lexical_stem(value)
                     for value in concept.replace("-", " ").replace("_", " ").split()
-                    if len(value) >= 4
+                    if len(self._lexical_stem(value)) >= 4
                 }
                 matched = words & seed_terms
                 lexical_terms.update(matched)
