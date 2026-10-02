@@ -42,7 +42,10 @@ class Consolidator:
                 str(value).strip().lower()
                 for value in episode.get("concepts", [])
                 if str(value).strip()
-            ][:12]
+                and len(str(value).strip()) <= 80
+                and len(str(value).strip().split()) <= 8
+                and not str(value).strip().endswith("?")
+            ][:8]
             if not concepts:
                 continue
             node_ids = self.network.activate_labels(
@@ -51,15 +54,23 @@ class Consolidator:
                 kind="concept",
                 epistemic_status="memory_index",
             )
-            self.network.hebbian_update(node_ids, learning_rate=learning_rate)
+            self.network.hebbian_update(
+                node_ids,
+                learning_rate=min(learning_rate, 0.05),
+                max_nodes=5,
+            )
             replayed_ids.append(str(episode.get("id", "")))
             for left, right in itertools.combinations(sorted(set(concepts)), 2):
                 pair_counts[(left, right)] += 1
 
         schema_nodes = 0
-        for (left, right), count in pair_counts.items():
-            if count < 2:
-                continue
+        schema_candidates = [
+            (pair, count)
+            for pair, count in pair_counts.items()
+            if count >= 3
+        ]
+        schema_candidates.sort(key=lambda item: item[1], reverse=True)
+        for (left, right), count in schema_candidates[:8]:
             schema = self.network.ensure_node(
                 f"{left} ↔ {right}",
                 kind="schema",
@@ -73,12 +84,15 @@ class Consolidator:
             self.network.connect(schema.id, right_node.id, relation="pattern_contains", weight=strength)
             schema_nodes += 1
 
-        self.network.decay(activation_factor=0.62, edge_factor=0.9985)
+        self.network.decay(activation_factor=0.62, edge_factor=0.996)
+        self.network.homeostatic_normalize(target_mean=0.24, ceiling=0.88)
+        pruning = self.network.prune(max_schema_nodes=48, max_edges=1200)
         self.network.save()
         return {
             "mode": "nrem",
             "replayed_episode_ids": replayed_ids,
             "schema_nodes_reinforced": schema_nodes,
+            "pruning": pruning,
         }
 
     def _append_simulation(self, record: dict[str, Any]) -> dict[str, Any]:
