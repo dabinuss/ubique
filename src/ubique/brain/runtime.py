@@ -144,6 +144,76 @@ class NeurocognitiveRuntime:
                 )
         return touched
 
+
+    def _terminal_context_labels(self) -> set[str]:
+        labels: set[str] = set()
+        for key, state in self.external_issue_states.items():
+            if not isinstance(state, dict):
+                continue
+            if str(state.get("state", "")) not in {"closed", "deactivated"}:
+                continue
+            try:
+                issue_number = int(key)
+            except (TypeError, ValueError):
+                continue
+            concepts = [
+                str(value)
+                for value in state.get("concepts", [])
+                if str(value).strip()
+            ]
+            if not concepts:
+                concepts = self._issue_concepts(issue_number)
+            labels.update(
+                str(value).strip().lower()
+                for value in self.network.neighborhood_labels(concepts, limit=120)
+                if str(value).strip()
+            )
+        return labels
+
+    def _contextualize_recall(
+        self,
+        recalled: list[dict[str, Any]],
+        *,
+        limit: int = 6,
+    ) -> list[dict[str, Any]]:
+        """Downweight stale model-authored recall superseded by terminal observations."""
+        terminal_labels = self._terminal_context_labels()
+        if not terminal_labels:
+            return recalled[: max(0, limit)]
+
+        adjusted: list[dict[str, Any]] = []
+        model_statuses = {
+            "model_proposal",
+            "model_hypothesis",
+            "model_interpretation",
+            "imagined",
+        }
+        for item in recalled:
+            copy = dict(item)
+            status = str(copy.get("epistemic_status", ""))
+            kind = str(copy.get("kind", ""))
+            concepts = {
+                str(value).strip().lower()
+                for value in copy.get("concepts", [])
+                if str(value).strip()
+            }
+            overlap = len(concepts & terminal_labels)
+            if overlap and (kind == "cognitive_packet" or status in model_statuses):
+                factor = 0.12 if overlap >= 2 else 0.35
+                copy["recall_score"] = round(
+                    float(copy.get("recall_score", 0.0)) * factor,
+                    4,
+                )
+                copy["contextual_status"] = "superseded_terminal_context"
+                copy["terminal_overlap"] = overlap
+            adjusted.append(copy)
+
+        adjusted.sort(
+            key=lambda item: float(item.get("recall_score", 0.0)),
+            reverse=True,
+        )
+        return adjusted[: max(0, limit)]
+
     def _observe_issue_lifecycle(
         self,
         tasks: list[Task],
@@ -646,8 +716,9 @@ Issue body:
             terminal_inhibition_after_spread = self._apply_terminal_inhibition()
             active = [x["label"] for x in self.network.top_active(10, 0.03)]
             recalled = self.episodes.recall(
-                " ".join(active[:8]), concepts=active, limit=6, include_imagined=True
+                " ".join(active[:8]), concepts=active, limit=18, include_imagined=True
             )
+            recalled = self._contextualize_recall(recalled, limit=6)
             novelty = mean([float(x.get("novelty", 0.3)) for x in percepts]) if percepts else 0.15
             surprise = mean([float(x.get("surprise", 0.2)) for x in percepts]) if percepts else 0.12
             salience = mean([float(x.get("salience", 0.2)) for x in percepts]) if percepts else max(
