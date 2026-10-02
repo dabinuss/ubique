@@ -370,9 +370,10 @@ class AssociativeNetwork:
             ),
             reverse=True,
         )
-        removed_edges = max(0, len(ranked) - max(100, int(max_edges)))
+        edge_cap = max(20, int(max_edges))
+        removed_edges = max(0, len(ranked) - edge_cap)
         if removed_edges:
-            self.edges = dict(ranked[: max(100, int(max_edges))])
+            self.edges = dict(ranked[:edge_cap])
 
         connected: set[str] = set()
         for edge in self.edges.values():
