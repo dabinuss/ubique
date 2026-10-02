@@ -53,3 +53,95 @@ def test_closed_issue_becomes_terminal_percept_and_inhibits_old_assembly(tmp_pat
     assert touched >= 2
     assert runtime.network.nodes[heartbeat.id].activation < 0.3
     assert runtime.network.nodes[stability.id].activation < reactivated
+
+
+def test_terminal_context_downweights_stale_model_recall(tmp_path):
+    runtime = NeurocognitiveRuntime.__new__(NeurocognitiveRuntime)
+    runtime.episodes = EpisodeStore(tmp_path / "episodes.jsonl")
+    runtime.network = AssociativeNetwork(tmp_path / "cortex.json")
+    runtime.external_issue_states = {
+        "11": {
+            "state": "closed",
+            "concepts": ["heartbeat", "smoke", "test"],
+        }
+    }
+
+    heartbeat = runtime.network.ensure_node("heartbeat")
+    stale = runtime.network.ensure_node("heartbeat persists")
+    runtime.network.connect(heartbeat.id, stale.id, weight=0.9)
+
+    recalled = [
+        {
+            "id": "stale",
+            "kind": "cognitive_packet",
+            "epistemic_status": "model_proposal",
+            "concepts": ["heartbeat persists"],
+            "recall_score": 0.9,
+            "text": "old model packet",
+        },
+        {
+            "id": "fresh",
+            "kind": "library_reading",
+            "epistemic_status": "external_source",
+            "concepts": ["memory", "learning"],
+            "recall_score": 0.5,
+            "text": "unrelated external evidence",
+        },
+    ]
+
+    result = runtime._contextualize_recall(recalled, limit=2)
+
+    assert result[0]["id"] == "fresh"
+    stale_result = next(item for item in result if item["id"] == "stale")
+    assert stale_result["contextual_status"] == "superseded_terminal_context"
+    assert stale_result["recall_score"] < 0.5
+
+
+def test_terminal_context_can_occupy_only_one_recall_slot(tmp_path):
+    runtime = NeurocognitiveRuntime.__new__(NeurocognitiveRuntime)
+    runtime.episodes = EpisodeStore(tmp_path / "episodes.jsonl")
+    runtime.network = AssociativeNetwork(tmp_path / "cortex.json")
+    runtime.external_issue_states = {
+        "11": {"state": "closed", "concepts": ["heartbeat"]}
+    }
+    heartbeat = runtime.network.ensure_node("heartbeat")
+    for label in ("heartbeat persists", "runtime stability", "smoke test"):
+        node = runtime.network.ensure_node(label)
+        runtime.network.connect(heartbeat.id, node.id, weight=0.9)
+
+    recalled = [
+        {
+            "id": f"stale-{index}",
+            "kind": "cognitive_packet",
+            "epistemic_status": "model_proposal",
+            "concepts": [label],
+            "recall_score": 0.95 - index * 0.01,
+            "text": label,
+        }
+        for index, label in enumerate(("heartbeat persists", "runtime stability", "smoke test"))
+    ] + [
+        {
+            "id": "other-1",
+            "kind": "library_reading",
+            "epistemic_status": "external_source",
+            "concepts": ["learning"],
+            "recall_score": 0.4,
+            "text": "learning",
+        },
+        {
+            "id": "other-2",
+            "kind": "internal_action_outcome",
+            "epistemic_status": "observed_action_outcome",
+            "concepts": ["rest"],
+            "recall_score": 0.35,
+            "text": "rest",
+        },
+    ]
+
+    result = runtime._contextualize_recall(recalled, limit=4)
+    superseded = [
+        item for item in result
+        if item.get("contextual_status") == "superseded_terminal_context"
+    ]
+    assert len(superseded) <= 1
+    assert {"other-1", "other-2"}.issubset({item["id"] for item in result})
