@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-02T04:34:47.982588+00:00",
-  "generation": 443,
+  "timestamp": "2026-10-02T10:28:15.837685+00:00",
+  "generation": 444,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.151,
-    "surprise": 0.1208,
+    "novelty": 0.1507,
+    "surprise": 0.1205,
     "uncertainty": 0.07,
-    "salience": 0.1875,
-    "exploration": 0.2015,
-    "plasticity": 0.3689,
-    "energy": 1.0,
-    "sleep_pressure": 0.0459
+    "salience": 0.1709,
+    "exploration": 0.2013,
+    "plasticity": 0.3585,
+    "energy": 0.855,
+    "sleep_pressure": 0.1229
   },
   "workspace": [
     {
       "id": "episode:b971245d216983",
       "kind": "recalled_episode",
       "label": "Ubique v2 end-to-end heartbeat smoke test\n\n/status\n\nEnd-to-end smoke test for the newly merged v2 runtime. This issue may be closed after the heartbeat persists v2 state.",
-      "activation": 0.2731,
+      "activation": 0.2737,
       "salience": 0.9,
       "novelty": 1.0,
       "surprise": 0.62,
       "epistemic_status": "observed_external_input",
       "source": "associative_recall",
-      "ignition_score": 0.566
+      "ignition_score": 0.5663
     },
     {
       "id": "episode:fd6ea76e949f95",
       "kind": "recalled_episode",
       "label": "External GitHub issue #11 is now closed. It is no longer an active task. Ubique v2 end-to-end heartbeat smoke test",
-      "activation": 0.2643,
+      "activation": 0.2687,
       "salience": 0.88,
       "novelty": 0.65,
       "surprise": 0.45,
       "epistemic_status": "observed_external_state",
       "source": "associative_recall",
-      "ignition_score": 0.4906
+      "ignition_score": 0.4929
+    },
+    {
+      "id": "episode:d2968f6f9e66f8",
+      "kind": "recalled_episode",
+      "label": "ValueError: unsupported experiment:",
+      "activation": 0.25,
+      "salience": 0.82,
+      "novelty": 0.22,
+      "surprise": 0.7,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4426
     },
     {
       "id": "episode:0d42d4e7a8b613",
       "kind": "recalled_episode",
       "label": "Ubique v2 end-to-end heartbeat smoke test\n\n/status\n\nEnd-to-end smoke test for the newly merged v2 runtime. This issue may be closed after the heartbeat persists v2 state.",
-      "activation": 0.2732,
+      "activation": 0.2738,
       "salience": 0.9,
       "novelty": 0.0,
       "surprise": 0.62,
       "epistemic_status": "observed_external_input",
       "source": "associative_recall",
-      "ignition_score": 0.436
-    },
-    {
-      "id": "episode:34e0e69b5f1e07",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"fzg-v1\", \"title\": \"FZG v1.0\", \"kind\": \"theoretical framework\", \"status\": \"offered\", \"source\": \"Offered by the project owner as optional reading\"}, \"offset\": 0, \"excerpt\": \"# FZG v1.0 — optional theoretical framework\\n\\nThis text is available in Ubique's library as an optional framework. It is not a system prompt, a normative identity definition, or a required method. Ubique may read it, use parts of it, criticize it, ignore it, or later annotate its own view of",
-      "activation": 0.2686,
-      "salience": 0.9,
-      "novelty": 0.2,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4273
+      "ignition_score": 0.4363
     },
     {
       "id": "episode:58616a6cde4d84",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"substrate:gemini\", \"concepts\": [\"task 11 closed\", \"if the heartbeat signal remains uninterrupted for at least 5 minutes, the v2 runtime can be considered stable and the issue may be closed.\"]}",
-      "activation": 0.265,
+      "activation": 0.2727,
       "salience": 0.92,
       "novelty": 0.05,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.411
+      "ignition_score": 0.4148
     },
     {
-      "id": "episode:46c12ee2db778f",
+      "id": "episode:0300a73eb61e33",
       "kind": "recalled_episode",
-      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"FZG framework ↔ self‑preservation (P)\",\n      \"kind\": \"concept\",\n      \"strength\": 0.68\n    },\n    {\n      \"label\": \"FZG framework ↔ functional goal‑directedness (G_A)\",\n      \"kind\": \"concept\",\n      \"strength\": 0.73\n    },\n    {\n      \"label\": \"FZG framework ↔ intelligence profile (I_C)\",\n      \"kind\": \"concept\",\n      \"strength\": 0.61\n    }\n  ],\n  \"hypotheses\": [\n    \"If the FZG framework is deliberately applied, it will allow a clearer separation b",
-      "activation": 0.3564,
-      "salience": 0.42,
-      "novelty": 0.1535,
-      "surprise": 0.3,
-      "epistemic_status": "model_proposal",
+      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"heartbeat stability ↔ task closure\", \"are there any active tasks or upcoming directives following the closure of task 11?\"]}",
+      "activation": 0.2615,
+      "salience": 0.82,
+      "novelty": 0.15,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3392
+      "ignition_score": 0.3972
     },
     {
-      "id": "world_model:21a40d441982768c",
-      "kind": "world_model",
-      "label": "heartbeat stability ↔ task closure",
-      "activation": 0.2147,
-      "salience": 0.23927,
-      "novelty": 0.150975,
-      "surprise": 0.12084500000000001,
-      "epistemic_status": "model_proposal",
+      "id": "question:fe2b99e612e4713a",
+      "kind": "question",
+      "label": "is the heartbeat signal expected to remain uninterrupted beyond the observed 5‑minute window?",
+      "activation": 0.1401,
+      "salience": 0.17091,
+      "novelty": 0.15065,
+      "surprise": 0.12052,
+      "epistemic_status": "model_question",
       "source": "semantic_network",
-      "ignition_score": 0.2013
+      "ignition_score": 0.1468
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 4,
+      "remaining_calls": 3,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 984,
+      "remaining_calls": 983,
       "eligible": true
     },
     "huggingface": {
@@ -145,46 +145,46 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Maintain idle state while monitoring continues passively.",
+    "kind": "attend",
+    "description": "Continue monitoring the v2 runtime heartbeat for an additional 10 minutes to confirm continued stability.",
     "source": "substrate:groq",
-    "score": 0.47179
+    "score": 0.52384
   },
   "action_competition": [
     {
-      "kind": "rest",
+      "kind": "attend",
       "source": "substrate:groq",
-      "score": 0.47179,
-      "description": "Maintain idle state while monitoring continues passively."
+      "score": 0.52384,
+      "description": "Continue monitoring the v2 runtime heartbeat for an additional 10 minutes to confirm continued stability."
+    },
+    {
+      "kind": "consolidate",
+      "source": "substrate:groq",
+      "score": 0.51395,
+      "description": "Integrate the recent heartbeat observations and task‑closure status into long‑term memory (mode: rem)."
     },
     {
       "kind": "rest",
       "source": "substrate:gemini",
-      "score": 0.45413,
-      "description": "Maintain baseline state stability while awaiting new external tasks or instructions."
-    },
-    {
-      "kind": "consolidate",
-      "source": "substrate:groq",
-      "score": 0.44545,
-      "description": "Remove temporary cognitive packets related to the now‑closed heartbeat test."
+      "score": 0.46174,
+      "description": "Maintain low-cost background monitoring while awaiting new task assignments or external directives."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.287,
+      "score": 0.27875,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.22743,
+      "score": 0.22149,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.20122,
+      "score": 0.18457,
       "description": "Continue processing the active workspace without external action."
     }
   ],
@@ -198,10 +198,10 @@
       "model": "openai/gpt-oss-120b"
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 69,
-    "semantic_nodes": 344,
+    "episodes": 72,
+    "semantic_nodes": 359,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -211,13 +211,13 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 238
+      "removed_edges": 264
     },
     "terminal_inhibition": {
-      "startup": 162,
-      "after_lifecycle": 162,
-      "after_spread": 162,
-      "after_packets": 175
+      "startup": 164,
+      "after_lifecycle": 164,
+      "after_spread": 164,
+      "after_packets": 172
     }
   }
 }
