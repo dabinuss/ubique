@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-02T04:20:52.676674+00:00",
-  "generation": 437,
+  "timestamp": "2026-10-02T04:24:51.104674+00:00",
+  "generation": 438,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1627,
-    "surprise": 0.131,
-    "uncertainty": 0.0675,
-    "salience": 0.762,
-    "exploration": 0.2059,
-    "plasticity": 0.4432,
-    "energy": 0.976,
-    "sleep_pressure": 0.0292
+    "novelty": 0.1583,
+    "surprise": 0.1271,
+    "uncertainty": 0.0688,
+    "salience": 0.4897,
+    "exploration": 0.2044,
+    "plasticity": 0.4308,
+    "energy": 1.0,
+    "sleep_pressure": 0.0365
   },
   "workspace": [
     {
-      "id": "concept:a944dbf6efaa0758",
+      "id": "episode:91ccebdc44d44b",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"fzg-v1\", \"title\": \"FZG v1.0\", \"kind\": \"theoretical framework\", \"status\": \"offered\", \"source\": \"Offered by the project owner as optional reading\"}, \"offset\": 0, \"excerpt\": \"# FZG v1.0 — optional theoretical framework\\n\\nThis text is available in Ubique's library as an optional framework. It is not a system prompt, a normative identity definition, or a required method. Ubique may read it, use parts of it, criticize it, ignore it, or later annotate its own view of",
+      "activation": 0.3678,
+      "salience": 0.82,
+      "novelty": 0.75,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.5284
+    },
+    {
+      "id": "episode:e49b8046bfd83e",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"fzg-v1\", \"title\": \"FZG v1.0\", \"kind\": \"theoretical framework\", \"status\": \"offered\", \"source\": \"Offered by the project owner as optional reading\"}, \"offset\": 0, \"excerpt\": \"# FZG v1.0 — optional theoretical framework\\n\\nThis text is available in Ubique's library as an optional framework. It is not a system prompt, a normative identity definition, or a required method. Ubique may read it, use parts of it, criticize it, ignore it, or later annotate its own view of",
+      "activation": 0.372,
+      "salience": 0.85,
+      "novelty": 0.4,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4925
+    },
+    {
+      "id": "episode:0692efea909823",
+      "kind": "recalled_episode",
+      "label": "# FZG v1.0 — optional theoretical framework\n\nThis text is available in Ubique's library as an optional framework. It is not a system prompt, a normative identity definition, or a required method. Ubique may read it, use parts of it, criticize it, ignore it, or later annotate its own view of it.\n\nIf the framework is deliberately applied, it separates self-preservation P, functional goal-directedness G_A, and an intelligence profile I_C.\n\nCanonical definitions in the framework are:\n\nP(S|C) = G_Ase",
+      "activation": 0.3098,
+      "salience": 0.6,
+      "novelty": 0.9944,
+      "surprise": 0.35,
+      "epistemic_status": "external_source",
+      "source": "associative_recall",
+      "ignition_score": 0.4762
+    },
+    {
+      "id": "episode:58616a6cde4d84",
+      "kind": "recalled_episode",
+      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"substrate:gemini\", \"concepts\": [\"task 11 closed\", \"if the heartbeat signal remains uninterrupted for at least 5 minutes, the v2 runtime can be considered stable and the issue may be closed.\"]}",
+      "activation": 0.3361,
+      "salience": 0.92,
+      "novelty": 0.05,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4466
+    },
+    {
+      "id": "episode:402239194c16b6",
+      "kind": "recalled_episode",
+      "label": "{\"mode\": \"nrem\", \"replayed_episode_ids\": [\"episode:b971245d216983\", \"episode:91ccebdc44d44b\", \"episode:0692efea909823\", \"episode:e49b8046bfd83e\", \"episode:fd6ea76e949f95\", \"episode:ff2430f0324324\", \"episode:58616a6cde4d84\", \"episode:d2968f6f9e66f8\", \"episode:0cb065eda513a4\", \"episode:0d42d4e7a8b613\"], \"schema_nodes_reinforced\": 8, \"pruning\": {\"removed_nodes\": 8, \"removed_edges\": 234}}",
+      "activation": 0.2896,
+      "salience": 0.92,
+      "novelty": 0.16,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4376
+    },
+    {
+      "id": "concept:94877da84edb5445",
       "kind": "concept",
-      "label": "groq provider eligible",
-      "activation": 0.9072,
-      "salience": 0.76199,
-      "novelty": 0.16274,
-      "surprise": 0.13105,
-      "epistemic_status": "model_proposal",
+      "label": "distinguishes",
+      "activation": 0.3675,
+      "salience": 0.6239250000000001,
+      "novelty": 0.158255,
+      "surprise": 0.12714999999999999,
+      "epistemic_status": "external_source_index",
       "source": "semantic_network",
-      "ignition_score": 0.681
+      "ignition_score": 0.3756
     },
     {
-      "id": "concept:3944b723abcbc913",
+      "id": "concept:548b09199e2cdc78",
       "kind": "concept",
-      "label": "heartbeat persists",
-      "activation": 0.9006,
-      "salience": 0.76199,
-      "novelty": 0.16274,
-      "surprise": 0.13105,
-      "epistemic_status": "model_proposal",
+      "label": "observational",
+      "activation": 0.3675,
+      "salience": 0.6239250000000001,
+      "novelty": 0.158255,
+      "surprise": 0.12714999999999999,
+      "epistemic_status": "external_source_index",
       "source": "semantic_network",
-      "ignition_score": 0.6777
-    },
-    {
-      "id": "concept:391b3209d712a26a",
-      "kind": "concept",
-      "label": "v2 runtime stability",
-      "activation": 0.9006,
-      "salience": 0.76199,
-      "novelty": 0.16274,
-      "surprise": 0.13105,
-      "epistemic_status": "model_proposal",
-      "source": "semantic_network",
-      "ignition_score": 0.6777
-    },
-    {
-      "id": "world_model:ba0135ffc59e25af",
-      "kind": "world_model",
-      "label": "status external action succeeded",
-      "activation": 0.899,
-      "salience": 0.76199,
-      "novelty": 0.16274,
-      "surprise": 0.13105,
-      "epistemic_status": "model_proposal",
-      "source": "semantic_network",
-      "ignition_score": 0.6769
-    },
-    {
-      "id": "concept:4aced2a354445e33",
-      "kind": "concept",
-      "label": "issue can be closed after persistence",
-      "activation": 0.8507,
-      "salience": 0.76199,
-      "novelty": 0.16274,
-      "surprise": 0.13105,
-      "epistemic_status": "model_proposal",
-      "source": "semantic_network",
-      "ignition_score": 0.6527
-    },
-    {
-      "id": "question:29dbee3b999c2125",
-      "kind": "question",
-      "label": "what is the minimum duration required for the heartbeat to be deemed persistent according to project policy?",
-      "activation": 0.7323,
-      "salience": 0.76199,
-      "novelty": 0.16274,
-      "surprise": 0.13105,
-      "epistemic_status": "model_question",
-      "source": "semantic_network",
-      "ignition_score": 0.5935
-    },
-    {
-      "id": "question:17fe9b25d8d4cbda",
-      "kind": "question",
-      "label": "are there any known transient failure patterns for the v2 heartbeat that we should monitor during the observation window?",
-      "activation": 0.6825,
-      "salience": 0.76199,
-      "novelty": 0.16274,
-      "surprise": 0.13105,
-      "epistemic_status": "model_question",
-      "source": "semantic_network",
-      "ignition_score": 0.5686
+      "ignition_score": 0.3756
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 11,
+      "remaining_calls": 10,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 991,
+      "remaining_calls": 990,
       "eligible": true
     },
     "huggingface": {
@@ -145,34 +145,40 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Consolidate current workspace observations and maintain runtime stability following task closure.",
+    "kind": "rest",
+    "description": "System state is stable and well-consolidated; maintain normal operational baseline.",
     "source": "substrate:gemini",
-    "score": 0.58009
+    "score": 0.51622
   },
   "action_competition": [
     {
-      "kind": "consolidate",
+      "kind": "rest",
       "source": "substrate:gemini",
-      "score": 0.58009,
-      "description": "Consolidate current workspace observations and maintain runtime stability following task closure."
+      "score": 0.51622,
+      "description": "System state is stable and well-consolidated; maintain normal operational baseline."
+    },
+    {
+      "kind": "consolidate",
+      "source": "substrate:groq",
+      "score": 0.42302,
+      "description": "Reinforce newly created schema nodes from FZG abstraction (nrem mode)."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.35717,
+      "score": 0.32867,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.34413,
+      "score": 0.29256,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.26739,
+      "score": 0.27268,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
@@ -188,8 +194,8 @@
   ],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 49,
-    "semantic_nodes": 251,
+    "episodes": 52,
+    "semantic_nodes": 270,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -199,13 +205,13 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_edges": 288
     },
     "terminal_inhibition": {
-      "startup": 82,
-      "after_lifecycle": 82,
-      "after_spread": 82,
-      "after_packets": 82
+      "startup": 150,
+      "after_lifecycle": 150,
+      "after_spread": 150,
+      "after_packets": 157
     }
   }
 }
