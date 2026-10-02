@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-02T16:21:43.926795+00:00",
-  "generation": 447,
+  "timestamp": "2026-10-02T16:22:58.351308+00:00",
+  "generation": 448,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1502,
+    "novelty": 0.1501,
     "surprise": 0.1201,
     "uncertainty": 0.07,
-    "salience": 0.2134,
+    "salience": 0.2176,
     "exploration": 0.2011,
-    "plasticity": 0.3717,
+    "plasticity": 0.3722,
     "energy": 1.0,
-    "sleep_pressure": 0.02
+    "sleep_pressure": 0.0176
   },
   "workspace": [
-    {
-      "id": "episode:fd6ea76e949f95",
-      "kind": "recalled_episode",
-      "label": "External GitHub issue #11 is now closed. It is no longer an active task. Ubique v2 end-to-end heartbeat smoke test",
-      "activation": 0.2818,
-      "salience": 0.88,
-      "novelty": 0.65,
-      "surprise": 0.45,
-      "epistemic_status": "observed_external_state",
-      "source": "associative_recall",
-      "ignition_score": 0.4994
-    },
-    {
-      "id": "episode:ac3de584da78f5",
-      "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"substrate:gemini\", \"concepts\": [\"no new external github issues will be opened concerning the v2 runtime within the next monitoring window.\", \"no active external tasks\"]}",
-      "activation": 0.3162,
-      "salience": 0.9,
-      "novelty": 0.2,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4511
-    },
     {
       "id": "episode:bc85af0b049e90",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"heartbeat stability ↔ task closure\", \"what operational profile or new directive will be issued given that all current external tasks are closed?\"]}",
-      "activation": 0.3018,
+      "activation": 0.2834,
       "salience": 0.92,
       "novelty": 0.15,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4424
+      "ignition_score": 0.4332
     },
     {
-      "id": "episode:0d42d4e7a8b613",
+      "id": "episode:ac3de584da78f5",
       "kind": "recalled_episode",
-      "label": "Ubique v2 end-to-end heartbeat smoke test\n\n/status\n\nEnd-to-end smoke test for the newly merged v2 runtime. This issue may be closed after the heartbeat persists v2 state.",
-      "activation": 0.2761,
+      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"substrate:gemini\", \"concepts\": [\"no new external github issues will be opened concerning the v2 runtime within the next monitoring window.\", \"no active external tasks\"]}",
+      "activation": 0.2649,
       "salience": 0.9,
-      "novelty": 0.0,
-      "surprise": 0.62,
-      "epistemic_status": "observed_external_input",
+      "novelty": 0.2,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4375
+      "ignition_score": 0.4255
+    },
+    {
+      "id": "episode:1c2051c23410fb",
+      "kind": "recalled_episode",
+      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"heartbeat stability ↔ task closure\",\n      \"kind\": \"concept\",\n      \"strength\": 0.78\n    },\n    {\n      \"label\": \"no active external tasks\",\n      \"kind\": \"world_model\",\n      \"strength\": 0.92\n    },\n    {\n      \"label\": \"operational profile after all tasks closed\",\n      \"kind\": \"question\",\n      \"strength\": 0.65\n    }\n  ],\n  \"hypotheses\": [\n    \"If the v2 heartbeat remains uninterrupted for an additional 5‑minute window, the v2 runtime can be classif",
+      "activation": 0.5258,
+      "salience": 0.42,
+      "novelty": 0.1502,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
+      "source": "associative_recall",
+      "ignition_score": 0.4234
     },
     {
       "id": "episode:58616a6cde4d84",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"substrate:gemini\", \"concepts\": [\"task 11 closed\", \"if the heartbeat signal remains uninterrupted for at least 5 minutes, the v2 runtime can be considered stable and the issue may be closed.\"]}",
-      "activation": 0.2949,
+      "activation": 0.2757,
       "salience": 0.92,
       "novelty": 0.05,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4259
+      "ignition_score": 0.4163
     },
     {
-      "id": "episode:d4fbe12fc5664e",
+      "id": "episode:d772a4d8bab976",
       "kind": "recalled_episode",
-      "label": "Counterfactual association to explore later: what changes if 'heartbeat stability ↔ task closure' and 'what operational profile or new directive will be issued given that all current external tasks are closed?' are related more strongly than current evidence establishes?",
-      "activation": 0.3021,
+      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"no active external tasks\", \"is the v2 runtime heartbeat currently uninterrupted?\"]}",
+      "activation": 0.2795,
+      "salience": 0.91,
+      "novelty": 0.05,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4158
+    },
+    {
+      "id": "episode:1bb9ac4895ec2e",
+      "kind": "recalled_episode",
+      "label": "Counterfactual association to explore later: what changes if 'no active external tasks' and 'is the v2 runtime heartbeat currently uninterrupted?' are related more strongly than current evidence establishes?",
+      "activation": 0.2839,
       "salience": 0.3,
       "novelty": 0.7,
       "surprise": 0.5,
       "epistemic_status": "imagined",
       "source": "associative_recall",
-      "ignition_score": 0.377
+      "ignition_score": 0.3679
     },
     {
-      "id": "concept:f95b01293facd43e",
-      "kind": "concept",
-      "label": "heartbeat stability ↔ task closure",
+      "id": "world_model:81179bb6222d8c75",
+      "kind": "world_model",
+      "label": "no active external tasks",
       "activation": 0.2254,
-      "salience": 0.21344,
-      "novelty": 0.150195,
-      "surprise": 0.12013,
+      "salience": 0.2176,
+      "novelty": 0.15013,
+      "surprise": 0.12006499999999999,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.2
+      "ignition_score": 0.201
     }
   ],
   "provider_eligibility": {
@@ -111,7 +111,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 977,
+      "remaining_calls": 975,
       "eligible": true
     },
     "huggingface": {
@@ -146,33 +146,39 @@
   },
   "last_action": {
     "kind": "consolidate",
-    "description": "Finalize internal state after task closure and record a post‑closure health report.",
+    "description": "Update internal directives to schedule periodic post‑closure health‑checks and allocate monitoring resources to internal profiling.",
     "source": "substrate:groq",
-    "score": 0.49451
+    "score": 0.51136
   },
   "action_competition": [
     {
       "kind": "consolidate",
       "source": "substrate:groq",
-      "score": 0.49451,
-      "description": "Finalize internal state after task closure and record a post‑closure health report."
+      "score": 0.51136,
+      "description": "Update internal directives to schedule periodic post‑closure health‑checks and allocate monitoring resources to internal profiling."
+    },
+    {
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.44928,
+      "description": "Reread the FZG v1.0 framework to refresh guidelines for internal performance profiling and health‑check design."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.27927,
+      "score": 0.27535,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.23352,
+      "score": 0.21716,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.19534,
+      "score": 0.19743,
       "description": "Continue processing the active workspace without external action."
     }
   ],
@@ -184,8 +190,8 @@
   ],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 83,
-    "semantic_nodes": 393,
+    "episodes": 86,
+    "semantic_nodes": 398,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -195,7 +201,7 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 124
+      "removed_edges": 132
     },
     "terminal_inhibition": {
       "startup": 173,
