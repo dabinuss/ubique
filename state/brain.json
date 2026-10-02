@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-02T16:22:58.351308+00:00",
-  "generation": 448,
+  "timestamp": "2026-10-02T20:49:46.041469+00:00",
+  "generation": 449,
   "architecture": "neurocognitive-v2",
   "modulators": {
     "novelty": 0.1501,
     "surprise": 0.1201,
     "uncertainty": 0.07,
-    "salience": 0.2176,
-    "exploration": 0.2011,
-    "plasticity": 0.3722,
+    "salience": 0.2203,
+    "exploration": 0.201,
+    "plasticity": 0.3725,
     "energy": 1.0,
-    "sleep_pressure": 0.0176
+    "sleep_pressure": 0.0168
   },
   "workspace": [
+    {
+      "id": "episode:546d5335b71137",
+      "kind": "recalled_episode",
+      "label": "{\n  \"associations\": [\n    {\"label\": \"heartbeat stability ↔ task closure\", \"kind\": \"concept\", \"strength\": 0.78},\n    {\"label\": \"no active external tasks\", \"kind\": \"world_model\", \"strength\": 0.92},\n    {\"label\": \"operational profile after all tasks closed\", \"kind\": \"question\", \"strength\": 0.65}\n  ],\n  \"hypotheses\": [\n    \"If the v2 heartbeat remains uninterrupted for the next 5‑minute window, the v2 runtime can be classified as stable and eligible for promotion to production.\",\n    \"With all exter",
+      "activation": 0.5468,
+      "salience": 0.42,
+      "novelty": 0.1501,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
+      "source": "associative_recall",
+      "ignition_score": 0.4339
+    },
     {
       "id": "episode:bc85af0b049e90",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"heartbeat stability ↔ task closure\", \"what operational profile or new directive will be issued given that all current external tasks are closed?\"]}",
-      "activation": 0.2834,
+      "activation": 0.2795,
       "salience": 0.92,
       "novelty": 0.15,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4332
+      "ignition_score": 0.4313
     },
     {
       "id": "episode:ac3de584da78f5",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"substrate:gemini\", \"concepts\": [\"no new external github issues will be opened concerning the v2 runtime within the next monitoring window.\", \"no active external tasks\"]}",
-      "activation": 0.2649,
+      "activation": 0.2654,
       "salience": 0.9,
       "novelty": 0.2,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4255
-    },
-    {
-      "id": "episode:1c2051c23410fb",
-      "kind": "recalled_episode",
-      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"heartbeat stability ↔ task closure\",\n      \"kind\": \"concept\",\n      \"strength\": 0.78\n    },\n    {\n      \"label\": \"no active external tasks\",\n      \"kind\": \"world_model\",\n      \"strength\": 0.92\n    },\n    {\n      \"label\": \"operational profile after all tasks closed\",\n      \"kind\": \"question\",\n      \"strength\": 0.65\n    }\n  ],\n  \"hypotheses\": [\n    \"If the v2 heartbeat remains uninterrupted for an additional 5‑minute window, the v2 runtime can be classif",
-      "activation": 0.5258,
-      "salience": 0.42,
-      "novelty": 0.1502,
-      "surprise": 0.3,
-      "epistemic_status": "model_proposal",
-      "source": "associative_recall",
-      "ignition_score": 0.4234
-    },
-    {
-      "id": "episode:58616a6cde4d84",
-      "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"substrate:gemini\", \"concepts\": [\"task 11 closed\", \"if the heartbeat signal remains uninterrupted for at least 5 minutes, the v2 runtime can be considered stable and the issue may be closed.\"]}",
-      "activation": 0.2757,
-      "salience": 0.92,
-      "novelty": 0.05,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4163
+      "ignition_score": 0.4257
     },
     {
       "id": "episode:d772a4d8bab976",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"no active external tasks\", \"is the v2 runtime heartbeat currently uninterrupted?\"]}",
-      "activation": 0.2795,
+      "activation": 0.2736,
       "salience": 0.91,
       "novelty": 0.05,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4158
+      "ignition_score": 0.4128
     },
     {
-      "id": "episode:1bb9ac4895ec2e",
+      "id": "episode:1c2051c23410fb",
       "kind": "recalled_episode",
-      "label": "Counterfactual association to explore later: what changes if 'no active external tasks' and 'is the v2 runtime heartbeat currently uninterrupted?' are related more strongly than current evidence establishes?",
-      "activation": 0.2839,
+      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"heartbeat stability ↔ task closure\",\n      \"kind\": \"concept\",\n      \"strength\": 0.78\n    },\n    {\n      \"label\": \"no active external tasks\",\n      \"kind\": \"world_model\",\n      \"strength\": 0.92\n    },\n    {\n      \"label\": \"operational profile after all tasks closed\",\n      \"kind\": \"question\",\n      \"strength\": 0.65\n    }\n  ],\n  \"hypotheses\": [\n    \"If the v2 heartbeat remains uninterrupted for an additional 5‑minute window, the v2 runtime can be classif",
+      "activation": 0.4756,
+      "salience": 0.42,
+      "novelty": 0.1502,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
+      "source": "associative_recall",
+      "ignition_score": 0.3983
+    },
+    {
+      "id": "episode:716eed0f16a75d",
+      "kind": "recalled_episode",
+      "label": "Counterfactual association to explore later: what changes if 'no active external tasks' and 'no active external tasks are present.' are related more strongly than current evidence establishes?",
+      "activation": 0.263,
       "salience": 0.3,
       "novelty": 0.7,
       "surprise": 0.5,
       "epistemic_status": "imagined",
       "source": "associative_recall",
-      "ignition_score": 0.3679
+      "ignition_score": 0.3575
     },
     {
       "id": "world_model:81179bb6222d8c75",
       "kind": "world_model",
       "label": "no active external tasks",
       "activation": 0.2254,
-      "salience": 0.2176,
-      "novelty": 0.15013,
+      "salience": 0.22033,
+      "novelty": 0.150065,
       "surprise": 0.12006499999999999,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.201
+      "ignition_score": 0.2017
     }
   ],
   "provider_eligibility": {
@@ -111,7 +111,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 975,
+      "remaining_calls": 974,
       "eligible": true
     },
     "huggingface": {
@@ -146,39 +146,27 @@
   },
   "last_action": {
     "kind": "consolidate",
-    "description": "Update internal directives to schedule periodic post‑closure health‑checks and allocate monitoring resources to internal profiling.",
-    "source": "substrate:groq",
-    "score": 0.51136
+    "description": "Replay and consolidate existing experience offline.",
+    "source": "homeostasis",
+    "score": 0.27484
   },
   "action_competition": [
     {
       "kind": "consolidate",
-      "source": "substrate:groq",
-      "score": 0.51136,
-      "description": "Update internal directives to schedule periodic post‑closure health‑checks and allocate monitoring resources to internal profiling."
-    },
-    {
-      "kind": "library",
-      "source": "substrate:groq",
-      "score": 0.44928,
-      "description": "Reread the FZG v1.0 framework to refresh guidelines for internal performance profiling and health‑check design."
-    },
-    {
-      "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.27535,
+      "score": 0.27484,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.21716,
+      "score": 0.21455,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.19743,
+      "score": 0.19915,
       "description": "Continue processing the active workspace without external action."
     }
   ],
@@ -190,8 +178,8 @@
   ],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 86,
-    "semantic_nodes": 398,
+    "episodes": 88,
+    "semantic_nodes": 421,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -201,7 +189,7 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 132
+      "removed_edges": 0
     },
     "terminal_inhibition": {
       "startup": 173,
