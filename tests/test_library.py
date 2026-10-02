@@ -43,3 +43,40 @@ def test_library_notes_persist_without_becoming_instructions(tmp_path, monkeypat
     library.add_library_note(item["id"], "This challenges my earlier view.")
     data = json.loads(library.INDEX_PATH.read_text(encoding="utf-8"))
     assert data["items"][0]["notes"][0]["text"].startswith("This challenges")
+
+
+def test_library_default_read_advances_cursor_and_stops_at_completion(tmp_path, monkeypatch):
+    _redirect(tmp_path, monkeypatch)
+    item = library.add_library_item("Cursor book", "x" * 900, actor="user")["item"]
+
+    first = library.read_library_item(item["id"], max_chars=500)
+    assert first["offset"] == 0
+    assert first["next_offset"] == 500
+    assert first["read_cursor"] == 500
+    assert first["fully_read"] is False
+
+    second = library.read_library_item(item["id"], max_chars=500)
+    assert second["offset"] == 500
+    assert second["next_offset"] is None
+    assert second["read_cursor"] == 900
+    assert second["fully_read"] is True
+
+    catalog = library.library_catalog()
+    assert catalog[0]["fully_read"] is True
+    assert catalog[0]["read_cursor"] == 900
+
+    third = library.read_library_item(item["id"])
+    assert third["already_complete"] is True
+    assert third["excerpt"] == ""
+
+
+def test_library_explicit_reread_is_possible_after_completion(tmp_path, monkeypatch):
+    _redirect(tmp_path, monkeypatch)
+    item = library.add_library_item("Reread book", "abcdef" * 100, actor="user")["item"]
+    completed = library.read_library_item(item["id"], max_chars=1000)
+    assert completed["fully_read"] is True
+
+    reread = library.read_library_item(item["id"], max_chars=500, reread=True)
+    assert reread["offset"] == 0
+    assert reread["excerpt"]
+    assert reread["fully_read"] is True
