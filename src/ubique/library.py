@@ -196,6 +196,35 @@ def read_library_item(
     }
 
 
+
+def mark_library_item_complete(item_id: str, *, completed_at: str | None = None) -> bool:
+    """Persist completion inferred from trusted historical read outcomes."""
+    index = _load_index()
+    item = _find_item(index, item_id)
+    if item is None:
+        return False
+    path = _content_path(item)
+    if path is None or not path.exists():
+        return False
+    try:
+        total_chars = len(path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError):
+        return False
+    if total_chars <= 0:
+        return False
+
+    changed = (
+        not bool(item.get("fully_read", False))
+        or int(item.get("read_cursor", 0) or 0) != total_chars
+    )
+    item["read_cursor"] = total_chars
+    item["fully_read"] = True
+    item["fully_read_at"] = completed_at or item.get("fully_read_at") or utc_now()
+    if changed:
+        _write_index(index)
+    return changed
+
+
 def add_library_item(
     title: str,
     text: str = "",

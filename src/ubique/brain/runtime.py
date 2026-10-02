@@ -11,7 +11,7 @@ from ..environment import observe_environment
 from ..evolution import run_evolution
 from ..experiments import run_experiment
 from ..github import GitHubClient
-from ..library import apply_library_action, library_catalog
+from ..library import apply_library_action, library_catalog, mark_library_item_complete
 from ..memory import recent_episodes
 from ..models import Task
 from ..planner import make_prompt, parse_task
@@ -325,6 +325,7 @@ class NeurocognitiveRuntime:
             and item.get("fully_read")
             and str(item.get("id", "")).strip()
         }
+        migrated: dict[str, str | None] = {}
         for episode in self.episodes.recent(240):
             if episode.get("kind") != "internal_action_outcome":
                 continue
@@ -338,7 +339,15 @@ class NeurocognitiveRuntime:
                 continue
             item = outcome.get("item", {})
             if isinstance(item, dict) and str(item.get("id", "")).strip():
-                completed.add(str(item["id"]))
+                item_id = str(item["id"])
+                completed.add(item_id)
+                migrated[item_id] = episode.get("timestamp")
+
+        for item_id, completed_at in migrated.items():
+            try:
+                mark_library_item_complete(item_id, completed_at=completed_at)
+            except Exception:
+                log.exception("Could not persist migrated library completion for %s", item_id)
         return completed
 
     def _cognitive_library_catalog(self, limit: int = 20) -> list[dict[str, Any]]:
