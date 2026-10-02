@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-02T04:09:19.813792+00:00",
+  "updated_at": "2026-10-02T04:13:42.228868+00:00",
   "nodes": [
     {
       "id": "concept:921d69d930092eb5",
@@ -138,7 +138,7 @@
       "id": "runtime_state:423b4a0b7d2066e3",
       "kind": "runtime_state",
       "label": "provider:gemini",
-      "activation": 0.014657431466668725,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 2,
@@ -149,7 +149,7 @@
       "id": "runtime_state:0a71e857be2cd9b7",
       "kind": "runtime_state",
       "label": "provider:groq",
-      "activation": 0.014657431466668725,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 2,
@@ -160,7 +160,7 @@
       "id": "runtime_state:1d939659a8519d8c",
       "kind": "runtime_state",
       "label": "provider:huggingface",
-      "activation": 0.014657431466668725,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 2,
@@ -171,18 +171,18 @@
       "id": "concept:3944b723abcbc913",
       "kind": "concept",
       "label": "heartbeat persists",
-      "activation": 0.42891,
+      "activation": 0.4346288,
       "excitability": 0.48,
       "threshold": 0.18,
-      "access_count": 13,
-      "last_activated_at": "2026-10-02T04:09:19.810559+00:00",
+      "access_count": 14,
+      "last_activated_at": "2026-10-02T04:13:42.224456+00:00",
       "epistemic_status": "model_proposal"
     },
     {
       "id": "concept:5875cb7f34264d12",
       "kind": "concept",
       "label": "v2 runtime",
-      "activation": 0.16296658007039788,
+      "activation": 0.07636963259527543,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 4,
@@ -193,7 +193,7 @@
       "id": "concept:80430a8046bb5e95",
       "kind": "concept",
       "label": "smoke test",
-      "activation": 0.16290417520038164,
+      "activation": 0.0763256344013871,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 4,
@@ -204,7 +204,7 @@
       "id": "concept:40ee36016862a881",
       "kind": "concept",
       "label": "provider:groq eligible",
-      "activation": 0.16275489112287392,
+      "activation": 0.07622183760565783,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 4,
@@ -215,7 +215,7 @@
       "id": "question:a38a8b68b2418bff",
       "kind": "question",
       "label": "issue closure criteria",
-      "activation": 0.07487280177803099,
+      "activation": 0.032045765776074216,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 2,
@@ -226,7 +226,7 @@
       "id": "hypothesis:fc373915ed88d28b",
       "kind": "hypothesis",
       "label": "if the v2 runtime continues to emit a successful heartbeat for the next 5 minutes, the system can be considered stable and the issue may be closed.",
-      "activation": 0.04003646925356519,
+      "activation": 0.012365542182789612,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -237,7 +237,7 @@
       "id": "hypothesis:bbf549af5d2dfd1c",
       "kind": "hypothesis",
       "label": "the groq provider will successfully handle any required calls for the heartbeat test, while gemini remains unavailable due to exhausted quota.",
-      "activation": 0.04003646925356519,
+      "activation": 0.012365542182789612,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -248,7 +248,7 @@
       "id": "question:afaddb643ea8cc86",
       "kind": "question",
       "label": "what is the minimum duration of a persistent heartbeat required to deem the v2 runtime stable?",
-      "activation": 0.07423000894974088,
+      "activation": 0.03168039070127208,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 2,
@@ -259,7 +259,7 @@
       "id": "question:8b96552a7b5a47a6",
       "kind": "question",
       "label": "are there any additional provider configurations needed before the smoke test can be considered complete?",
-      "activation": 0.04003646925356519,
+      "activation": 0.012365542182789612,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -270,7 +270,7 @@
       "id": "question:1a6b1a6c01d978d1",
       "kind": "question",
       "label": "should the issue be closed automatically after the heartbeat persists, or is a manual verification step required?",
-      "activation": 0.07423000894974088,
+      "activation": 0.03168039070127208,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 2,
@@ -281,7 +281,7 @@
       "id": "world_model:7c187228716894b2",
       "kind": "world_model",
       "label": "the v2 runtime has successfully executed an external status check at generation 422.",
-      "activation": 0.04003646925356519,
+      "activation": 0.012365542182789612,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -292,7 +292,7 @@
       "id": "world_model:96886b5d4c0745c7",
       "kind": "world_model",
       "label": "current heartbeat status is unknown; further observation is required to confirm persistence.",
-      "activation": 0.04003646925356519,
+      "activation": 0.012365542182789612,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -303,7 +303,7 @@
       "id": "hypothesis:fa4ef826620b9e7e",
       "kind": "hypothesis",
       "label": "if the v2 runtime continues to emit a successful heartbeat for at least five consecutive minutes, the system can be considered stable and the issue may be closed.",
-      "activation": 0.0548248432759741,
+      "activation": 0.016933034426693798,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -314,7 +314,7 @@
       "id": "hypothesis:8ffa000a657a3feb",
       "kind": "hypothesis",
       "label": "the groq provider will successfully service all heartbeat‑related calls, while the gemini provider remains unavailable due to exhausted quota.",
-      "activation": 0.0548248432759741,
+      "activation": 0.016933034426693798,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -325,7 +325,7 @@
       "id": "question:171b164fa2058d4e",
       "kind": "question",
       "label": "are any additional provider configurations or health checks needed before the smoke test can be considered complete?",
-      "activation": 0.05492736908627081,
+      "activation": 0.016964700236783575,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -336,7 +336,7 @@
       "id": "world_model:b0dd1c06d01bd4c6",
       "kind": "world_model",
       "label": "current evidence suggests the v2 runtime is emitting heartbeats, but persistence over the required interval has not yet been confirmed.",
-      "activation": 0.054722317465677385,
+      "activation": 0.01690136861660402,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -347,18 +347,18 @@
       "id": "concept:391b3209d712a26a",
       "kind": "concept",
       "label": "v2 runtime stability",
-      "activation": 0.414613,
+      "activation": 0.42891,
       "excitability": 0.48,
       "threshold": 0.18,
-      "access_count": 9,
-      "last_activated_at": "2026-10-02T04:09:19.810604+00:00",
+      "access_count": 11,
+      "last_activated_at": "2026-10-02T04:13:42.224507+00:00",
       "epistemic_status": "model_proposal"
     },
     {
       "id": "concept:4aced2a354445e33",
       "kind": "concept",
       "label": "issue can be closed after persistence",
-      "activation": 0.4060347999999999,
+      "activation": 0.2842803935932043,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 9,
@@ -369,11 +369,11 @@
       "id": "world_model:ba0135ffc59e25af",
       "kind": "world_model",
       "label": "status external action succeeded",
-      "activation": 0.4346288,
+      "activation": 0.44034759999999995,
       "excitability": 0.48,
       "threshold": 0.18,
-      "access_count": 9,
-      "last_activated_at": "2026-10-02T04:09:19.810713+00:00",
+      "access_count": 10,
+      "last_activated_at": "2026-10-02T04:13:42.224630+00:00",
       "epistemic_status": "model_proposal"
     },
     {
@@ -383,15 +383,15 @@
       "activation": 0.42033180000000003,
       "excitability": 0.48,
       "threshold": 0.18,
-      "access_count": 9,
-      "last_activated_at": "2026-10-02T04:09:19.810678+00:00",
+      "access_count": 11,
+      "last_activated_at": "2026-10-02T04:13:42.224593+00:00",
       "epistemic_status": "model_proposal"
     },
     {
       "id": "hypothesis:8b4b29a0a405f8b9",
       "kind": "hypothesis",
       "label": "if the heartbeat signal remains uninterrupted for at least 5 minutes, the v2 runtime can be considered stable and the issue may be closed.",
-      "activation": 0.28742195480045346,
+      "activation": 0.23864703972313564,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 8,
@@ -402,7 +402,7 @@
       "id": "hypothesis:49e466da47da44fd",
       "kind": "hypothesis",
       "label": "the recent successful execution of the 'status' external action indicates that the merged v2 runtime is now operational.",
-      "activation": 0.0548248432759741,
+      "activation": 0.016933034426693798,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -413,7 +413,7 @@
       "id": "question:29dbee3b999c2125",
       "kind": "question",
       "label": "what is the minimum duration required for the heartbeat to be deemed persistent according to project policy?",
-      "activation": 0.28793323328480747,
+      "activation": 0.24700423779614822,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 8,
@@ -424,7 +424,7 @@
       "id": "question:17fe9b25d8d4cbda",
       "kind": "question",
       "label": "are there any known transient failure patterns for the v2 heartbeat that we should monitor during the observation window?",
-      "activation": 0.28793323328480747,
+      "activation": 0.23914482921552377,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 8,
@@ -435,7 +435,7 @@
       "id": "world_model:226812e7b859150f",
       "kind": "world_model",
       "label": "the v2 runtime has entered a stable state as evidenced by a successful status check and no immediate heartbeat failures.",
-      "activation": 0.054722317465677385,
+      "activation": 0.01690136861660402,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -446,7 +446,7 @@
       "id": "hypothesis:3d2381dbbffbe27e",
       "kind": "hypothesis",
       "label": "the successful execution of the 'status' external action indicates that the merged v2 runtime is now operational.",
-      "activation": 0.2731350377002277,
+      "activation": 0.22100774940371382,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 6,
@@ -457,7 +457,7 @@
       "id": "world_model:a23af2cb020d3d6e",
       "kind": "world_model",
       "label": "the v2 runtime is entering a stable state as evidenced by a successful status check and no immediate heartbeat failures.",
-      "activation": 0.0736238323931928,
+      "activation": 0.02273923305651105,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -886,7 +886,7 @@
       "id": "concept:eceb23fd262eb452",
       "kind": "concept",
       "label": "issue closure criteria",
-      "activation": 0.09718278336457271,
+      "activation": 0.04878993069509646,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 2,
@@ -897,7 +897,7 @@
       "id": "concept:d2d5fdf95b09216a",
       "kind": "concept",
       "label": "if the v2 runtime continues to emit a successful heartbeat for the next 5 minutes, the system can be considered stable a",
-      "activation": 0.07549191953059603,
+      "activation": 0.03238666169139412,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 1,
@@ -908,7 +908,7 @@
       "id": "concept:3e6f2ae86ccc38f8",
       "kind": "concept",
       "label": "the groq provider will successfully handle any required calls for the heartbeat test, while gemini remains unavailable d",
-      "activation": 0.07549191953059603,
+      "activation": 0.03238666169139412,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 1,
@@ -919,7 +919,7 @@
       "id": "concept:d0906fa90c808930",
       "kind": "concept",
       "label": "what is the minimum duration of a persistent heartbeat required to deem the v2 runtime stable?",
-      "activation": 0.09718278336457271,
+      "activation": 0.04878993069509646,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 2,
@@ -930,7 +930,7 @@
       "id": "concept:a0bca4113af7c0c2",
       "kind": "concept",
       "label": "are there any additional provider configurations needed before the smoke test can be considered complete?",
-      "activation": 0.07549191953059603,
+      "activation": 0.03238666169139412,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 1,
@@ -941,7 +941,7 @@
       "id": "concept:d45e009e9d1bb97e",
       "kind": "concept",
       "label": "should the issue be closed automatically after the heartbeat persists, or is a manual verification step required?",
-      "activation": 0.09718278336457271,
+      "activation": 0.04878993069509646,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 2,
@@ -952,7 +952,7 @@
       "id": "concept:31add0f334948f29",
       "kind": "concept",
       "label": "the v2 runtime has successfully executed an external status check at generation 422.",
-      "activation": 0.07549191953059603,
+      "activation": 0.03238666169139412,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 1,
@@ -963,7 +963,7 @@
       "id": "concept:2cbfb25c49edaafd",
       "kind": "concept",
       "label": "current heartbeat status is unknown; further observation is required to confirm persistence.",
-      "activation": 0.07549191953059603,
+      "activation": 0.03238666169139412,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 1,
@@ -974,7 +974,7 @@
       "id": "concept:7445d4ee1f8c8b79",
       "kind": "concept",
       "label": "if the v2 runtime continues to emit a successful heartbeat for at least five consecutive minutes, the system can be cons",
-      "activation": 0.07549191953059603,
+      "activation": 0.03238666169139412,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 1,
@@ -985,7 +985,7 @@
       "id": "concept:0d083f41419dbcc9",
       "kind": "concept",
       "label": "the groq provider will successfully service all heartbeat‑related calls, while the gemini provider remains unavailable d",
-      "activation": 0.07549191953059603,
+      "activation": 0.03238666169139412,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 1,
@@ -996,7 +996,7 @@
       "id": "concept:69b965f193bdd01d",
       "kind": "concept",
       "label": "are any additional provider configurations or health checks needed before the smoke test can be considered complete?",
-      "activation": 0.07549191953059603,
+      "activation": 0.03238666169139412,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 1,
@@ -1007,7 +1007,7 @@
       "id": "concept:3085d3a49b2d0305",
       "kind": "concept",
       "label": "current evidence suggests the v2 runtime is emitting heartbeats, but persistence over the required interval has not yet",
-      "activation": 0.07549191953059603,
+      "activation": 0.03238666169139412,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 1,
@@ -1513,7 +1513,7 @@
       "id": "schema:089a225c9e84a573",
       "kind": "schema",
       "label": "heartbeat persists ↔ provider:groq eligible",
-      "activation": 0.12503000968188452,
+      "activation": 0.07224307029795918,
       "excitability": 0.45,
       "threshold": 0.18,
       "access_count": 0,
@@ -1524,7 +1524,7 @@
       "id": "schema:876e6a1841cd3f2f",
       "kind": "schema",
       "label": "heartbeat persists ↔ smoke test",
-      "activation": 0.1250458287110861,
+      "activation": 0.07224795611522852,
       "excitability": 0.45,
       "threshold": 0.18,
       "access_count": 0,
@@ -1535,7 +1535,7 @@
       "id": "schema:1e87b0f134484364",
       "kind": "schema",
       "label": "heartbeat persists ↔ v2 runtime",
-      "activation": 0.12505241923838495,
+      "activation": 0.07224999164545484,
       "excitability": 0.45,
       "threshold": 0.18,
       "access_count": 0,
@@ -1546,7 +1546,7 @@
       "id": "world_model:228d62f9dc6fcd22",
       "kind": "world_model",
       "label": "the v2 runtime is pending confirmation of stability; persistence of the heartbeat for the required window will allow the issue to be closed.",
-      "activation": 0.0736238323931928,
+      "activation": 0.02273923305651105,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -1557,7 +1557,7 @@
       "id": "world_model:8bce074a3e8b308f",
       "kind": "world_model",
       "label": "a continuous, uninterrupted heartbeat for the defined observation window implies runtime stability.",
-      "activation": 0.07620055859425742,
+      "activation": 0.023535072877724217,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -1568,7 +1568,7 @@
       "id": "world_model:7e174817d862e2da",
       "kind": "world_model",
       "label": "the v2 runtime is operational pending confirmation of a persistent heartbeat.",
-      "activation": 0.2173144,
+      "activation": 0.06711906494822399,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 2,
@@ -1579,7 +1579,7 @@
       "id": "hypothesis:f91f51a2c1ce085a",
       "kind": "hypothesis",
       "label": "if the heartbeat signal remains uninterrupted through the current observation window, the v2 runtime stability can be fully confirmed.",
-      "activation": 0.052429544919348224,
+      "activation": 0.016193229857973338,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -1590,7 +1590,7 @@
       "id": "hypothesis:a56aee5ee45e6fcc",
       "kind": "hypothesis",
       "label": "the successful execution of the 'status' action and the eligibility of the groq provider indicate that system integration is proceeding as expected.",
-      "activation": 0.052429544919348224,
+      "activation": 0.016193229857973338,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -1601,7 +1601,7 @@
       "id": "question:7b8f70af4534cef2",
       "kind": "question",
       "label": "what is the exact threshold required before closing the persistence issue?",
-      "activation": 0.054062111636293514,
+      "activation": 0.016697459451166234,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -1612,7 +1612,7 @@
       "id": "question:5820d1a58771b1b5",
       "kind": "question",
       "label": "are there any secondary telemetry indicators to verify alongside the heartbeat?",
-      "activation": 0.054062111636293514,
+      "activation": 0.016697459451166234,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -1623,7 +1623,7 @@
       "id": "world_model:6364b8eeee1f02d6",
       "kind": "world_model",
       "label": "the external status action has succeeded, aligning with ongoing heartbeat persistence observations.",
-      "activation": 0.050796978202402934,
+      "activation": 0.015689000264780432,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -1634,7 +1634,7 @@
       "id": "world_model:7e351d0a1c5f4931",
       "kind": "world_model",
       "label": "the 'status' external action executed successfully, indicating the v2 runtime is operational pending heartbeat confirmation.",
-      "activation": 0.04364426442391077,
+      "activation": 0.01347983483140523,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -1645,7 +1645,7 @@
       "id": "world_model:b67078dc7f6cc428",
       "kind": "world_model",
       "label": "heartbeat continuity has not yet been verified for the required observation window.",
-      "activation": 0.028958416211798562,
+      "activation": 0.0,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -1656,7 +1656,7 @@
       "id": "runtime_state:baa26b17addf1fc3",
       "kind": "runtime_state",
       "label": "issue:11",
-      "activation": 0.08984103779619834,
+      "activation": 0.027748029816978916,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 1,
@@ -1667,7 +1667,7 @@
       "id": "runtime_state:b74610dd8d363ec6",
       "kind": "runtime_state",
       "label": "external-task-ended",
-      "activation": 0.08984103779619834,
+      "activation": 0.027748029816978916,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 1,
@@ -1678,7 +1678,7 @@
       "id": "runtime_state:247beaa03cc47f86",
       "kind": "runtime_state",
       "label": "resolved",
-      "activation": 0.08984103779619834,
+      "activation": 0.027748029816978916,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 1,
@@ -1689,7 +1689,7 @@
       "id": "runtime_state:7d4cd9f442948e12",
       "kind": "runtime_state",
       "label": "closed",
-      "activation": 0.08984103779619834,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 1,
@@ -1700,7 +1700,7 @@
       "id": "hypothesis:677409602f834b1b",
       "kind": "hypothesis",
       "label": "the successful execution of the 'status' external action indicates that the merged v2 runtime is operational.",
-      "activation": 0.24018959999999998,
+      "activation": 0.07418422967961599,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
@@ -1711,20 +1711,260 @@
       "id": "world_model:4fb355de4f46a8a3",
       "kind": "world_model",
       "label": "the v2 runtime status action succeeded and groq provider remains eligible for execution.",
-      "activation": 0.2173144,
+      "activation": 0.06711906494822399,
       "excitability": 0.48,
       "threshold": 0.18,
       "access_count": 1,
       "last_activated_at": "2026-10-02T04:09:19.809643+00:00",
       "epistemic_status": "model_interpretation"
+    },
+    {
+      "id": "world_model:a24a6597f5888282",
+      "kind": "world_model",
+      "label": "task 11 closed",
+      "activation": 0.44034759999999995,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-02T04:13:42.222917+00:00",
+      "epistemic_status": "model_proposal"
+    },
+    {
+      "id": "world_model:bf0882e1907e34c9",
+      "kind": "world_model",
+      "label": "routine execution complete",
+      "activation": 0.40317539999999996,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-02T04:13:42.223055+00:00",
+      "epistemic_status": "model_proposal"
+    },
+    {
+      "id": "hypothesis:d563019591b547b9",
+      "kind": "hypothesis",
+      "label": "since task 11 ('ubique v2 end-to-end heartbeat smoke test') is closed, subsequent cognitive cycles should focus on new operational objectives rather than heartbeat persistence.",
+      "activation": 0.24018959999999998,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-02T04:13:42.223122+00:00",
+      "epistemic_status": "model_hypothesis"
+    },
+    {
+      "id": "hypothesis:84acc325c0a25e07",
+      "kind": "hypothesis",
+      "label": "with runtime stability verified and action histories stable, energy conservation via rest or evaluation of library materials is appropriate.",
+      "activation": 0.24018959999999998,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-02T04:13:42.223177+00:00",
+      "epistemic_status": "model_hypothesis"
+    },
+    {
+      "id": "question:95a9f3575fd8aae7",
+      "kind": "question",
+      "label": "what active tasks or priorities supersede the completed v2 heartbeat smoke test?",
+      "activation": 0.2630648,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-02T04:13:42.223227+00:00",
+      "epistemic_status": "model_question"
+    },
+    {
+      "id": "question:c5430a0b6f7921c8",
+      "kind": "question",
+      "label": "should optional theoretical frameworks such as fzg v1.0 be read during the current low-uncertainty window?",
+      "activation": 0.2630648,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-02T04:13:42.223282+00:00",
+      "epistemic_status": "model_question"
+    },
+    {
+      "id": "world_model:4494bc6df2120ba7",
+      "kind": "world_model",
+      "label": "task 11 is recorded as closed, superseding previous persistence monitoring assumptions.",
+      "activation": 0.2173144,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-02T04:13:42.223338+00:00",
+      "epistemic_status": "model_interpretation"
+    },
+    {
+      "id": "concept:2c47434e6cad2efb",
+      "kind": "concept",
+      "label": "issue closed after persistence",
+      "activation": 0.4374882,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-02T04:13:42.224547+00:00",
+      "epistemic_status": "model_proposal"
+    },
+    {
+      "id": "hypothesis:62d172ffbd0acaf6",
+      "kind": "hypothesis",
+      "label": "the successful completion and closure of the heartbeat smoke test indicates that the merged v2 runtime is stable and ready for production use.",
+      "activation": 0.24018959999999998,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-02T04:13:42.224679+00:00",
+      "epistemic_status": "model_hypothesis"
+    },
+    {
+      "id": "hypothesis:ee630bb188582f8e",
+      "kind": "hypothesis",
+      "label": "no further heartbeat persistence monitoring is required for the current release cycle.",
+      "activation": 0.24018959999999998,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-02T04:13:42.224730+00:00",
+      "epistemic_status": "model_hypothesis"
+    },
+    {
+      "id": "question:0357c5686e024033",
+      "kind": "question",
+      "label": "are there any post‑deployment health‑check procedures recommended for the v2 runtime beyond the completed heartbeat test?",
+      "activation": 0.2630648,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-02T04:13:42.224810+00:00",
+      "epistemic_status": "model_question"
+    },
+    {
+      "id": "world_model:db3bc8e6392ef40f",
+      "kind": "world_model",
+      "label": "the v2 runtime is operational, with a verified persistent heartbeat and the associated issue marked closed.",
+      "activation": 0.2173144,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-02T04:13:42.224863+00:00",
+      "epistemic_status": "model_interpretation"
     }
   ],
   "edges": [
     {
+      "source": "concept:391b3209d712a26a",
+      "target": "concept:a944dbf6efaa0758",
+      "relation": "coactivated",
+      "weight": 0.31567470861802494,
+      "plasticity": 0.65,
+      "coactivation_count": 11,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "concept:a944dbf6efaa0758",
+      "target": "concept:391b3209d712a26a",
+      "relation": "coactivated",
+      "weight": 0.31567470861802494,
+      "plasticity": 0.65,
+      "coactivation_count": 11,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "concept:3944b723abcbc913",
+      "target": "world_model:ba0135ffc59e25af",
+      "relation": "coactivated",
+      "weight": 0.31159282276679995,
+      "plasticity": 0.65,
+      "coactivation_count": 10,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "world_model:ba0135ffc59e25af",
+      "target": "concept:3944b723abcbc913",
+      "relation": "coactivated",
+      "weight": 0.31159282276679995,
+      "plasticity": 0.65,
+      "coactivation_count": 10,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "concept:3944b723abcbc913",
+      "target": "concept:a944dbf6efaa0758",
+      "relation": "coactivated",
+      "weight": 0.3096143061449,
+      "plasticity": 0.65,
+      "coactivation_count": 10,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "concept:a944dbf6efaa0758",
+      "target": "concept:3944b723abcbc913",
+      "relation": "coactivated",
+      "weight": 0.3096143061449,
+      "plasticity": 0.65,
+      "coactivation_count": 10,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "concept:3944b723abcbc913",
+      "target": "concept:391b3209d712a26a",
+      "relation": "coactivated",
+      "weight": 0.3093103682924999,
+      "plasticity": 0.65,
+      "coactivation_count": 10,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "concept:391b3209d712a26a",
+      "target": "concept:3944b723abcbc913",
+      "relation": "coactivated",
+      "weight": 0.3093103682924999,
+      "plasticity": 0.65,
+      "coactivation_count": 10,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "world_model:ba0135ffc59e25af",
+      "target": "concept:a944dbf6efaa0758",
+      "relation": "coactivated",
+      "weight": 0.3059170386437,
+      "plasticity": 0.65,
+      "coactivation_count": 10,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "concept:a944dbf6efaa0758",
+      "target": "world_model:ba0135ffc59e25af",
+      "relation": "coactivated",
+      "weight": 0.3059170386437,
+      "plasticity": 0.65,
+      "coactivation_count": 10,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "concept:391b3209d712a26a",
+      "target": "world_model:ba0135ffc59e25af",
+      "relation": "coactivated",
+      "weight": 0.30566932310289996,
+      "plasticity": 0.65,
+      "coactivation_count": 10,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "world_model:ba0135ffc59e25af",
+      "target": "concept:391b3209d712a26a",
+      "relation": "coactivated",
+      "weight": 0.30566932310289996,
+      "plasticity": 0.65,
+      "coactivation_count": 10,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
       "source": "schema:5315fe59ca865a08",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.4460991651065009,
+      "weight": 0.4447617598095116,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -1733,7 +1973,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:5315fe59ca865a08",
       "relation": "pattern_contains",
-      "weight": 0.4460991651065009,
+      "weight": 0.4447617598095116,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -1742,7 +1982,7 @@
       "source": "schema:5315fe59ca865a08",
       "target": "concept:10d0d9c7a5909812",
       "relation": "pattern_contains",
-      "weight": 0.4460991651065009,
+      "weight": 0.4447617598095116,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -1751,67 +1991,13 @@
       "source": "concept:10d0d9c7a5909812",
       "target": "schema:5315fe59ca865a08",
       "relation": "pattern_contains",
-      "weight": 0.4460991651065009,
+      "weight": 0.4447617598095116,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
     },
     {
       "source": "concept:3944b723abcbc913",
-      "target": "world_model:ba0135ffc59e25af",
-      "relation": "coactivated",
-      "weight": 0.29864968575999995,
-      "plasticity": 0.65,
-      "coactivation_count": 9,
-      "last_coactivated_at": "2026-10-02T04:09:19.810987+00:00"
-    },
-    {
-      "source": "world_model:ba0135ffc59e25af",
-      "target": "concept:3944b723abcbc913",
-      "relation": "coactivated",
-      "weight": 0.29864968575999995,
-      "plasticity": 0.65,
-      "coactivation_count": 9,
-      "last_coactivated_at": "2026-10-02T04:09:19.810987+00:00"
-    },
-    {
-      "source": "concept:3944b723abcbc913",
-      "target": "concept:a944dbf6efaa0758",
-      "relation": "coactivated",
-      "weight": 0.2972594935475,
-      "plasticity": 0.65,
-      "coactivation_count": 9,
-      "last_coactivated_at": "2026-10-02T04:09:19.810987+00:00"
-    },
-    {
-      "source": "concept:a944dbf6efaa0758",
-      "target": "concept:3944b723abcbc913",
-      "relation": "coactivated",
-      "weight": 0.2972594935475,
-      "plasticity": 0.65,
-      "coactivation_count": 9,
-      "last_coactivated_at": "2026-10-02T04:09:19.810987+00:00"
-    },
-    {
-      "source": "concept:3944b723abcbc913",
-      "target": "concept:391b3209d712a26a",
-      "relation": "coactivated",
-      "weight": 0.29670341666249994,
-      "plasticity": 0.65,
-      "coactivation_count": 9,
-      "last_coactivated_at": "2026-10-02T04:09:19.810987+00:00"
-    },
-    {
-      "source": "concept:391b3209d712a26a",
-      "target": "concept:3944b723abcbc913",
-      "relation": "coactivated",
-      "weight": 0.29670341666249994,
-      "plasticity": 0.65,
-      "coactivation_count": 9,
-      "last_coactivated_at": "2026-10-02T04:09:19.810987+00:00"
-    },
-    {
-      "source": "concept:3944b723abcbc913",
       "target": "concept:4aced2a354445e33",
       "relation": "coactivated",
       "weight": 0.29586930133499995,
@@ -1824,42 +2010,6 @@
       "target": "concept:3944b723abcbc913",
       "relation": "coactivated",
       "weight": 0.29586930133499995,
-      "plasticity": 0.65,
-      "coactivation_count": 9,
-      "last_coactivated_at": "2026-10-02T04:09:19.810987+00:00"
-    },
-    {
-      "source": "world_model:ba0135ffc59e25af",
-      "target": "concept:a944dbf6efaa0758",
-      "relation": "coactivated",
-      "weight": 0.29339966272265,
-      "plasticity": 0.65,
-      "coactivation_count": 9,
-      "last_coactivated_at": "2026-10-02T04:09:19.810987+00:00"
-    },
-    {
-      "source": "concept:a944dbf6efaa0758",
-      "target": "world_model:ba0135ffc59e25af",
-      "relation": "coactivated",
-      "weight": 0.29339966272265,
-      "plasticity": 0.65,
-      "coactivation_count": 9,
-      "last_coactivated_at": "2026-10-02T04:09:19.810987+00:00"
-    },
-    {
-      "source": "concept:391b3209d712a26a",
-      "target": "world_model:ba0135ffc59e25af",
-      "relation": "coactivated",
-      "weight": 0.29289649053039996,
-      "plasticity": 0.65,
-      "coactivation_count": 9,
-      "last_coactivated_at": "2026-10-02T04:09:19.810987+00:00"
-    },
-    {
-      "source": "world_model:ba0135ffc59e25af",
-      "target": "concept:391b3209d712a26a",
-      "relation": "coactivated",
-      "weight": 0.29289649053039996,
       "plasticity": 0.65,
       "coactivation_count": 9,
       "last_coactivated_at": "2026-10-02T04:09:19.810987+00:00"
@@ -1878,24 +2028,6 @@
       "target": "concept:4aced2a354445e33",
       "relation": "coactivated",
       "weight": 0.29214173224202494,
-      "plasticity": 0.65,
-      "coactivation_count": 9,
-      "last_coactivated_at": "2026-10-02T04:09:19.810987+00:00"
-    },
-    {
-      "source": "concept:391b3209d712a26a",
-      "target": "concept:a944dbf6efaa0758",
-      "relation": "coactivated",
-      "weight": 0.29169661837964994,
-      "plasticity": 0.65,
-      "coactivation_count": 9,
-      "last_coactivated_at": "2026-10-02T04:09:19.810987+00:00"
-    },
-    {
-      "source": "concept:a944dbf6efaa0758",
-      "target": "concept:391b3209d712a26a",
-      "relation": "coactivated",
-      "weight": 0.29169661837964994,
       "plasticity": 0.65,
       "coactivation_count": 9,
       "last_coactivated_at": "2026-10-02T04:09:19.810987+00:00"
@@ -2048,7 +2180,7 @@
       "source": "schema:19170f1869a0ab02",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2057,7 +2189,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:19170f1869a0ab02",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2066,7 +2198,7 @@
       "source": "schema:19170f1869a0ab02",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2075,7 +2207,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:19170f1869a0ab02",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2084,7 +2216,7 @@
       "source": "schema:f2dba6cec20596b5",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2093,7 +2225,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:f2dba6cec20596b5",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2102,7 +2234,7 @@
       "source": "schema:f2dba6cec20596b5",
       "target": "concept:ff6d7c8948492bd2",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2111,7 +2243,7 @@
       "source": "concept:ff6d7c8948492bd2",
       "target": "schema:f2dba6cec20596b5",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2120,7 +2252,7 @@
       "source": "schema:bec8ad156433b3c2",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2129,7 +2261,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:bec8ad156433b3c2",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2138,7 +2270,7 @@
       "source": "schema:bec8ad156433b3c2",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2147,7 +2279,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:bec8ad156433b3c2",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2156,7 +2288,7 @@
       "source": "schema:566883292a4da69e",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2165,7 +2297,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:566883292a4da69e",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2174,7 +2306,7 @@
       "source": "schema:566883292a4da69e",
       "target": "concept:73e960e12e02cf8e",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2183,7 +2315,7 @@
       "source": "concept:73e960e12e02cf8e",
       "target": "schema:566883292a4da69e",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2192,7 +2324,7 @@
       "source": "schema:b83f701ecfbfa82e",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2201,7 +2333,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:b83f701ecfbfa82e",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2210,7 +2342,7 @@
       "source": "schema:b83f701ecfbfa82e",
       "target": "concept:e30310125c31c71c",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2219,7 +2351,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "schema:b83f701ecfbfa82e",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2228,7 +2360,7 @@
       "source": "schema:d70711005034accc",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2237,7 +2369,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:d70711005034accc",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2246,7 +2378,7 @@
       "source": "schema:d70711005034accc",
       "target": "concept:b4d99022347ea416",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2255,7 +2387,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "schema:d70711005034accc",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2264,7 +2396,7 @@
       "source": "schema:7037476d3dd84307",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2273,7 +2405,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:7037476d3dd84307",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2282,7 +2414,7 @@
       "source": "schema:7037476d3dd84307",
       "target": "concept:7ebb2602e32acad4",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2291,7 +2423,7 @@
       "source": "concept:7ebb2602e32acad4",
       "target": "schema:7037476d3dd84307",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2300,7 +2432,7 @@
       "source": "schema:8f2a44738c7a349f",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2309,7 +2441,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:8f2a44738c7a349f",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2318,7 +2450,7 @@
       "source": "schema:8f2a44738c7a349f",
       "target": "concept:c0e5d7e81f52dc5e",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2327,7 +2459,7 @@
       "source": "concept:c0e5d7e81f52dc5e",
       "target": "schema:8f2a44738c7a349f",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2336,7 +2468,7 @@
       "source": "schema:18e8b612ea626d6a",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2345,7 +2477,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:18e8b612ea626d6a",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2354,7 +2486,7 @@
       "source": "schema:18e8b612ea626d6a",
       "target": "concept:eed935ffca07484a",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2363,7 +2495,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "schema:18e8b612ea626d6a",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2372,7 +2504,7 @@
       "source": "schema:0d502b6117f5096e",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2381,7 +2513,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:0d502b6117f5096e",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2390,7 +2522,7 @@
       "source": "schema:0d502b6117f5096e",
       "target": "concept:10d0d9c7a5909812",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2399,7 +2531,7 @@
       "source": "concept:10d0d9c7a5909812",
       "target": "schema:0d502b6117f5096e",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2408,7 +2540,7 @@
       "source": "schema:c253207c10d322d9",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2417,7 +2549,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:c253207c10d322d9",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2426,7 +2558,7 @@
       "source": "schema:c253207c10d322d9",
       "target": "concept:dea2069eb0e712e7",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2435,7 +2567,7 @@
       "source": "concept:dea2069eb0e712e7",
       "target": "schema:c253207c10d322d9",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2444,7 +2576,7 @@
       "source": "schema:b5be86eb64b1bafe",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2453,7 +2585,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:b5be86eb64b1bafe",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2462,7 +2594,7 @@
       "source": "schema:b5be86eb64b1bafe",
       "target": "concept:ff6d7c8948492bd2",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2471,7 +2603,7 @@
       "source": "concept:ff6d7c8948492bd2",
       "target": "schema:b5be86eb64b1bafe",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2480,7 +2612,7 @@
       "source": "schema:0f3aa750a6ed5ba3",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2489,7 +2621,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:0f3aa750a6ed5ba3",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2498,7 +2630,7 @@
       "source": "schema:0f3aa750a6ed5ba3",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2507,7 +2639,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:0f3aa750a6ed5ba3",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2516,7 +2648,7 @@
       "source": "schema:47de658959ec93e9",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2525,7 +2657,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:47de658959ec93e9",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2534,7 +2666,7 @@
       "source": "schema:47de658959ec93e9",
       "target": "concept:73e960e12e02cf8e",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2543,7 +2675,7 @@
       "source": "concept:73e960e12e02cf8e",
       "target": "schema:47de658959ec93e9",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2552,7 +2684,7 @@
       "source": "schema:d067d6a15f00c6e8",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2561,7 +2693,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:d067d6a15f00c6e8",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2570,7 +2702,7 @@
       "source": "schema:d067d6a15f00c6e8",
       "target": "concept:e30310125c31c71c",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2579,7 +2711,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "schema:d067d6a15f00c6e8",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2588,7 +2720,7 @@
       "source": "schema:b816a739213baa96",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2597,7 +2729,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:b816a739213baa96",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2606,7 +2738,7 @@
       "source": "schema:b816a739213baa96",
       "target": "concept:b4d99022347ea416",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2615,7 +2747,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "schema:b816a739213baa96",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2624,7 +2756,7 @@
       "source": "schema:2f94c9dadec912f3",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2633,7 +2765,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:2f94c9dadec912f3",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2642,7 +2774,7 @@
       "source": "schema:2f94c9dadec912f3",
       "target": "concept:7ebb2602e32acad4",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2651,7 +2783,7 @@
       "source": "concept:7ebb2602e32acad4",
       "target": "schema:2f94c9dadec912f3",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2660,7 +2792,7 @@
       "source": "schema:ab055e4d96f8ac05",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2669,7 +2801,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:ab055e4d96f8ac05",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2678,7 +2810,7 @@
       "source": "schema:ab055e4d96f8ac05",
       "target": "concept:c0e5d7e81f52dc5e",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2687,7 +2819,7 @@
       "source": "concept:c0e5d7e81f52dc5e",
       "target": "schema:ab055e4d96f8ac05",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2696,7 +2828,7 @@
       "source": "schema:9ed1bfc4ca98ae57",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2705,7 +2837,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:9ed1bfc4ca98ae57",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2714,7 +2846,7 @@
       "source": "schema:9ed1bfc4ca98ae57",
       "target": "concept:eed935ffca07484a",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2723,7 +2855,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "schema:9ed1bfc4ca98ae57",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2732,7 +2864,7 @@
       "source": "schema:b88bd9f9e010082d",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2741,7 +2873,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:b88bd9f9e010082d",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2750,7 +2882,7 @@
       "source": "schema:b88bd9f9e010082d",
       "target": "concept:dea2069eb0e712e7",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2759,7 +2891,7 @@
       "source": "concept:dea2069eb0e712e7",
       "target": "schema:b88bd9f9e010082d",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2768,7 +2900,7 @@
       "source": "schema:e88031da296e2525",
       "target": "concept:ff6d7c8948492bd2",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2777,7 +2909,7 @@
       "source": "concept:ff6d7c8948492bd2",
       "target": "schema:e88031da296e2525",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2786,7 +2918,7 @@
       "source": "schema:e88031da296e2525",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2795,7 +2927,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:e88031da296e2525",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2804,7 +2936,7 @@
       "source": "schema:67656ee8ff22c203",
       "target": "concept:ff6d7c8948492bd2",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2813,7 +2945,7 @@
       "source": "concept:ff6d7c8948492bd2",
       "target": "schema:67656ee8ff22c203",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2822,7 +2954,7 @@
       "source": "schema:67656ee8ff22c203",
       "target": "concept:e30310125c31c71c",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2831,7 +2963,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "schema:67656ee8ff22c203",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2840,7 +2972,7 @@
       "source": "schema:436bae7e8061d39c",
       "target": "concept:ff6d7c8948492bd2",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2849,7 +2981,7 @@
       "source": "concept:ff6d7c8948492bd2",
       "target": "schema:436bae7e8061d39c",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2858,7 +2990,7 @@
       "source": "schema:436bae7e8061d39c",
       "target": "concept:b4d99022347ea416",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2867,7 +2999,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "schema:436bae7e8061d39c",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2876,7 +3008,7 @@
       "source": "schema:50257f05b68ff46f",
       "target": "concept:ff6d7c8948492bd2",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2885,7 +3017,7 @@
       "source": "concept:ff6d7c8948492bd2",
       "target": "schema:50257f05b68ff46f",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2894,7 +3026,7 @@
       "source": "schema:50257f05b68ff46f",
       "target": "concept:eed935ffca07484a",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2903,7 +3035,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "schema:50257f05b68ff46f",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2912,7 +3044,7 @@
       "source": "schema:95c343aeebe13397",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2921,7 +3053,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:95c343aeebe13397",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2930,7 +3062,7 @@
       "source": "schema:95c343aeebe13397",
       "target": "concept:73e960e12e02cf8e",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2939,7 +3071,7 @@
       "source": "concept:73e960e12e02cf8e",
       "target": "schema:95c343aeebe13397",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2948,7 +3080,7 @@
       "source": "schema:ea79be0fb5d759cc",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2957,7 +3089,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:ea79be0fb5d759cc",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2966,7 +3098,7 @@
       "source": "schema:ea79be0fb5d759cc",
       "target": "concept:e30310125c31c71c",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2975,7 +3107,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "schema:ea79be0fb5d759cc",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2984,7 +3116,7 @@
       "source": "schema:acdbf4b9dc2dab44",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -2993,7 +3125,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:acdbf4b9dc2dab44",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3002,7 +3134,7 @@
       "source": "schema:acdbf4b9dc2dab44",
       "target": "concept:b4d99022347ea416",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3011,7 +3143,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "schema:acdbf4b9dc2dab44",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3020,7 +3152,7 @@
       "source": "schema:8b93676bfe67c5b6",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3029,7 +3161,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:8b93676bfe67c5b6",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3038,7 +3170,7 @@
       "source": "schema:8b93676bfe67c5b6",
       "target": "concept:7ebb2602e32acad4",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3047,7 +3179,7 @@
       "source": "concept:7ebb2602e32acad4",
       "target": "schema:8b93676bfe67c5b6",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3056,7 +3188,7 @@
       "source": "schema:efeda4d5ed52eb71",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3065,7 +3197,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:efeda4d5ed52eb71",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3074,7 +3206,7 @@
       "source": "schema:efeda4d5ed52eb71",
       "target": "concept:c0e5d7e81f52dc5e",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3083,7 +3215,7 @@
       "source": "concept:c0e5d7e81f52dc5e",
       "target": "schema:efeda4d5ed52eb71",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3092,7 +3224,7 @@
       "source": "schema:1afe205a6892ad74",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3101,7 +3233,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:1afe205a6892ad74",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3110,7 +3242,7 @@
       "source": "schema:1afe205a6892ad74",
       "target": "concept:eed935ffca07484a",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3119,7 +3251,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "schema:1afe205a6892ad74",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3128,7 +3260,7 @@
       "source": "schema:41ea0de4c217f4ac",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3137,7 +3269,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:41ea0de4c217f4ac",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3146,7 +3278,7 @@
       "source": "schema:41ea0de4c217f4ac",
       "target": "concept:10d0d9c7a5909812",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3155,7 +3287,7 @@
       "source": "concept:10d0d9c7a5909812",
       "target": "schema:41ea0de4c217f4ac",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3164,7 +3296,7 @@
       "source": "schema:7ac7255e44f292cc",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3173,7 +3305,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:7ac7255e44f292cc",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3182,7 +3314,7 @@
       "source": "schema:7ac7255e44f292cc",
       "target": "concept:dea2069eb0e712e7",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3191,7 +3323,7 @@
       "source": "concept:dea2069eb0e712e7",
       "target": "schema:7ac7255e44f292cc",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3200,7 +3332,7 @@
       "source": "schema:eef1b2e94f442a57",
       "target": "concept:73e960e12e02cf8e",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3209,7 +3341,7 @@
       "source": "concept:73e960e12e02cf8e",
       "target": "schema:eef1b2e94f442a57",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3218,7 +3350,7 @@
       "source": "schema:eef1b2e94f442a57",
       "target": "concept:e30310125c31c71c",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3227,7 +3359,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "schema:eef1b2e94f442a57",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3236,7 +3368,7 @@
       "source": "schema:1ce7ddb160a549a9",
       "target": "concept:73e960e12e02cf8e",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3245,7 +3377,7 @@
       "source": "concept:73e960e12e02cf8e",
       "target": "schema:1ce7ddb160a549a9",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3254,7 +3386,7 @@
       "source": "schema:1ce7ddb160a549a9",
       "target": "concept:b4d99022347ea416",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3263,7 +3395,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "schema:1ce7ddb160a549a9",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3272,7 +3404,7 @@
       "source": "schema:93ec6de25d382a85",
       "target": "concept:73e960e12e02cf8e",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3281,7 +3413,7 @@
       "source": "concept:73e960e12e02cf8e",
       "target": "schema:93ec6de25d382a85",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3290,7 +3422,7 @@
       "source": "schema:93ec6de25d382a85",
       "target": "concept:eed935ffca07484a",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3299,7 +3431,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "schema:93ec6de25d382a85",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3308,7 +3440,7 @@
       "source": "schema:176b16381102e29b",
       "target": "concept:e30310125c31c71c",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3317,7 +3449,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "schema:176b16381102e29b",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3326,7 +3458,7 @@
       "source": "schema:176b16381102e29b",
       "target": "concept:b4d99022347ea416",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3335,7 +3467,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "schema:176b16381102e29b",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3344,7 +3476,7 @@
       "source": "schema:58f90116b0d99499",
       "target": "concept:e30310125c31c71c",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3353,7 +3485,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "schema:58f90116b0d99499",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3362,7 +3494,7 @@
       "source": "schema:58f90116b0d99499",
       "target": "concept:7ebb2602e32acad4",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3371,7 +3503,7 @@
       "source": "concept:7ebb2602e32acad4",
       "target": "schema:58f90116b0d99499",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3380,7 +3512,7 @@
       "source": "schema:097eac009e7ece0b",
       "target": "concept:e30310125c31c71c",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3389,7 +3521,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "schema:097eac009e7ece0b",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3398,7 +3530,7 @@
       "source": "schema:097eac009e7ece0b",
       "target": "concept:c0e5d7e81f52dc5e",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3407,7 +3539,7 @@
       "source": "concept:c0e5d7e81f52dc5e",
       "target": "schema:097eac009e7ece0b",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3416,7 +3548,7 @@
       "source": "schema:82a83139296059e8",
       "target": "concept:e30310125c31c71c",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3425,7 +3557,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "schema:82a83139296059e8",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3434,7 +3566,7 @@
       "source": "schema:82a83139296059e8",
       "target": "concept:eed935ffca07484a",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3443,7 +3575,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "schema:82a83139296059e8",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3452,7 +3584,7 @@
       "source": "schema:59a83114b7584111",
       "target": "concept:e30310125c31c71c",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3461,7 +3593,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "schema:59a83114b7584111",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3470,7 +3602,7 @@
       "source": "schema:59a83114b7584111",
       "target": "concept:10d0d9c7a5909812",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3479,7 +3611,7 @@
       "source": "concept:10d0d9c7a5909812",
       "target": "schema:59a83114b7584111",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3488,7 +3620,7 @@
       "source": "schema:dacd34b7a81a6525",
       "target": "concept:e30310125c31c71c",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3497,7 +3629,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "schema:dacd34b7a81a6525",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3506,7 +3638,7 @@
       "source": "schema:dacd34b7a81a6525",
       "target": "concept:dea2069eb0e712e7",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3515,7 +3647,7 @@
       "source": "concept:dea2069eb0e712e7",
       "target": "schema:dacd34b7a81a6525",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3524,7 +3656,7 @@
       "source": "schema:8be7c10d36a951d7",
       "target": "concept:b4d99022347ea416",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3533,7 +3665,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "schema:8be7c10d36a951d7",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3542,7 +3674,7 @@
       "source": "schema:8be7c10d36a951d7",
       "target": "concept:eed935ffca07484a",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3551,7 +3683,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "schema:8be7c10d36a951d7",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3560,7 +3692,7 @@
       "source": "schema:078f4e1dc6bfe92b",
       "target": "concept:b4d99022347ea416",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3569,7 +3701,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "schema:078f4e1dc6bfe92b",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3578,7 +3710,7 @@
       "source": "schema:078f4e1dc6bfe92b",
       "target": "concept:10d0d9c7a5909812",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3587,7 +3719,7 @@
       "source": "concept:10d0d9c7a5909812",
       "target": "schema:078f4e1dc6bfe92b",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3596,7 +3728,7 @@
       "source": "schema:276ebfe76cfec700",
       "target": "concept:eed935ffca07484a",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3605,7 +3737,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "schema:276ebfe76cfec700",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3614,7 +3746,7 @@
       "source": "schema:276ebfe76cfec700",
       "target": "concept:10d0d9c7a5909812",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3623,7 +3755,7 @@
       "source": "concept:10d0d9c7a5909812",
       "target": "schema:276ebfe76cfec700",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3632,7 +3764,7 @@
       "source": "schema:089a225c9e84a573",
       "target": "concept:3944b723abcbc913",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3641,7 +3773,7 @@
       "source": "concept:3944b723abcbc913",
       "target": "schema:089a225c9e84a573",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3650,7 +3782,7 @@
       "source": "schema:089a225c9e84a573",
       "target": "concept:40ee36016862a881",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3659,7 +3791,7 @@
       "source": "concept:40ee36016862a881",
       "target": "schema:089a225c9e84a573",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3668,7 +3800,7 @@
       "source": "schema:876e6a1841cd3f2f",
       "target": "concept:3944b723abcbc913",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3677,7 +3809,7 @@
       "source": "concept:3944b723abcbc913",
       "target": "schema:876e6a1841cd3f2f",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3686,7 +3818,7 @@
       "source": "schema:876e6a1841cd3f2f",
       "target": "concept:80430a8046bb5e95",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3695,7 +3827,7 @@
       "source": "concept:80430a8046bb5e95",
       "target": "schema:876e6a1841cd3f2f",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3704,7 +3836,7 @@
       "source": "schema:1e87b0f134484364",
       "target": "concept:3944b723abcbc913",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3713,7 +3845,7 @@
       "source": "concept:3944b723abcbc913",
       "target": "schema:1e87b0f134484364",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3722,7 +3854,7 @@
       "source": "schema:1e87b0f134484364",
       "target": "concept:5875cb7f34264d12",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -3731,7 +3863,7 @@
       "source": "concept:5875cb7f34264d12",
       "target": "schema:1e87b0f134484364",
       "relation": "pattern_contains",
-      "weight": 0.35687933208520073,
+      "weight": 0.3558094078476093,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -10901,6 +11033,168 @@
       "last_coactivated_at": "2026-10-01T22:42:06.257637+00:00"
     },
     {
+      "source": "world_model:ba0135ffc59e25af",
+      "target": "concept:2c47434e6cad2efb",
+      "relation": "coactivated",
+      "weight": 0.13302828922395,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "concept:2c47434e6cad2efb",
+      "target": "world_model:ba0135ffc59e25af",
+      "relation": "coactivated",
+      "weight": 0.13302828922395,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "concept:2c47434e6cad2efb",
+      "target": "concept:3944b723abcbc913",
+      "relation": "coactivated",
+      "weight": 0.1328590906626,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "concept:3944b723abcbc913",
+      "target": "concept:2c47434e6cad2efb",
+      "relation": "coactivated",
+      "weight": 0.1328590906626,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "concept:2c47434e6cad2efb",
+      "target": "concept:391b3209d712a26a",
+      "relation": "coactivated",
+      "weight": 0.13268989210124998,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "concept:391b3209d712a26a",
+      "target": "concept:2c47434e6cad2efb",
+      "relation": "coactivated",
+      "weight": 0.13268989210124998,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "world_model:a24a6597f5888282",
+      "target": "concept:a944dbf6efaa0758",
+      "relation": "coactivated",
+      "weight": 0.13251737592105,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-02T04:13:42.223386+00:00"
+    },
+    {
+      "source": "concept:a944dbf6efaa0758",
+      "target": "world_model:a24a6597f5888282",
+      "relation": "coactivated",
+      "weight": 0.13251737592105,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-02T04:13:42.223386+00:00"
+    },
+    {
+      "source": "concept:2c47434e6cad2efb",
+      "target": "concept:a944dbf6efaa0758",
+      "relation": "coactivated",
+      "weight": 0.132436094259225,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "concept:a944dbf6efaa0758",
+      "target": "concept:2c47434e6cad2efb",
+      "relation": "coactivated",
+      "weight": 0.132436094259225,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-02T04:13:42.224911+00:00"
+    },
+    {
+      "source": "world_model:a24a6597f5888282",
+      "target": "concept:391b3209d712a26a",
+      "relation": "coactivated",
+      "weight": 0.13234707148675,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-02T04:13:42.223386+00:00"
+    },
+    {
+      "source": "concept:391b3209d712a26a",
+      "target": "world_model:a24a6597f5888282",
+      "relation": "coactivated",
+      "weight": 0.13234707148675,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-02T04:13:42.223386+00:00"
+    },
+    {
+      "source": "world_model:a24a6597f5888282",
+      "target": "world_model:bf0882e1907e34c9",
+      "relation": "coactivated",
+      "weight": 0.13200646261815,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-02T04:13:42.223386+00:00"
+    },
+    {
+      "source": "world_model:bf0882e1907e34c9",
+      "target": "world_model:a24a6597f5888282",
+      "relation": "coactivated",
+      "weight": 0.13200646261815,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-02T04:13:42.223386+00:00"
+    },
+    {
+      "source": "concept:a944dbf6efaa0758",
+      "target": "world_model:bf0882e1907e34c9",
+      "relation": "coactivated",
+      "weight": 0.131460714317325,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-02T04:13:42.223386+00:00"
+    },
+    {
+      "source": "world_model:bf0882e1907e34c9",
+      "target": "concept:a944dbf6efaa0758",
+      "relation": "coactivated",
+      "weight": 0.131460714317325,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-02T04:13:42.223386+00:00"
+    },
+    {
+      "source": "concept:391b3209d712a26a",
+      "target": "world_model:bf0882e1907e34c9",
+      "relation": "coactivated",
+      "weight": 0.131304786231375,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-02T04:13:42.223386+00:00"
+    },
+    {
+      "source": "world_model:bf0882e1907e34c9",
+      "target": "concept:391b3209d712a26a",
+      "relation": "coactivated",
+      "weight": 0.131304786231375,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-02T04:13:42.223386+00:00"
+    },
+    {
       "source": "concept:3944b723abcbc913",
       "target": "question:171b164fa2058d4e",
       "relation": "coactivated",
@@ -12357,168 +12651,6 @@
       "plasticity": 0.65,
       "coactivation_count": 1,
       "last_coactivated_at": "2026-10-01T22:53:31.959321+00:00"
-    },
-    {
-      "source": "hypothesis:3d2381dbbffbe27e",
-      "target": "world_model:7e174817d862e2da",
-      "relation": "coactivated",
-      "weight": 0.12852397,
-      "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:53:31.959321+00:00"
-    },
-    {
-      "source": "world_model:7e174817d862e2da",
-      "target": "hypothesis:3d2381dbbffbe27e",
-      "relation": "coactivated",
-      "weight": 0.12852397,
-      "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:53:31.959321+00:00"
-    },
-    {
-      "source": "question:29dbee3b999c2125",
-      "target": "world_model:7e174817d862e2da",
-      "relation": "coactivated",
-      "weight": 0.12852397,
-      "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:53:31.959321+00:00"
-    },
-    {
-      "source": "world_model:7e174817d862e2da",
-      "target": "question:29dbee3b999c2125",
-      "relation": "coactivated",
-      "weight": 0.12852397,
-      "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:53:31.959321+00:00"
-    },
-    {
-      "source": "question:17fe9b25d8d4cbda",
-      "target": "world_model:7e174817d862e2da",
-      "relation": "coactivated",
-      "weight": 0.12852397,
-      "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:53:31.959321+00:00"
-    },
-    {
-      "source": "world_model:7e174817d862e2da",
-      "target": "question:17fe9b25d8d4cbda",
-      "relation": "coactivated",
-      "weight": 0.12852397,
-      "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-01T22:53:31.959321+00:00"
-    },
-    {
-      "source": "concept:3944b723abcbc913",
-      "target": "world_model:6364b8eeee1f02d6",
-      "relation": "coactivated",
-      "weight": 0.12852397,
-      "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-02T01:56:23.837444+00:00"
-    },
-    {
-      "source": "world_model:6364b8eeee1f02d6",
-      "target": "concept:3944b723abcbc913",
-      "relation": "coactivated",
-      "weight": 0.12852397,
-      "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-02T01:56:23.837444+00:00"
-    },
-    {
-      "source": "concept:391b3209d712a26a",
-      "target": "world_model:6364b8eeee1f02d6",
-      "relation": "coactivated",
-      "weight": 0.12852397,
-      "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-02T01:56:23.837444+00:00"
-    },
-    {
-      "source": "world_model:6364b8eeee1f02d6",
-      "target": "concept:391b3209d712a26a",
-      "relation": "coactivated",
-      "weight": 0.12852397,
-      "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-02T01:56:23.837444+00:00"
-    },
-    {
-      "source": "concept:4aced2a354445e33",
-      "target": "world_model:6364b8eeee1f02d6",
-      "relation": "coactivated",
-      "weight": 0.12852397,
-      "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-02T01:56:23.837444+00:00"
-    },
-    {
-      "source": "world_model:6364b8eeee1f02d6",
-      "target": "concept:4aced2a354445e33",
-      "relation": "coactivated",
-      "weight": 0.12852397,
-      "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-02T01:56:23.837444+00:00"
-    },
-    {
-      "source": "world_model:ba0135ffc59e25af",
-      "target": "world_model:6364b8eeee1f02d6",
-      "relation": "coactivated",
-      "weight": 0.12852397,
-      "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-02T01:56:23.837444+00:00"
-    },
-    {
-      "source": "world_model:6364b8eeee1f02d6",
-      "target": "world_model:ba0135ffc59e25af",
-      "relation": "coactivated",
-      "weight": 0.12852397,
-      "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-02T01:56:23.837444+00:00"
-    },
-    {
-      "source": "concept:a944dbf6efaa0758",
-      "target": "world_model:6364b8eeee1f02d6",
-      "relation": "coactivated",
-      "weight": 0.12852397,
-      "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-02T01:56:23.837444+00:00"
-    },
-    {
-      "source": "world_model:6364b8eeee1f02d6",
-      "target": "concept:a944dbf6efaa0758",
-      "relation": "coactivated",
-      "weight": 0.12852397,
-      "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-02T01:56:23.837444+00:00"
-    },
-    {
-      "source": "concept:3944b723abcbc913",
-      "target": "world_model:7e351d0a1c5f4931",
-      "relation": "coactivated",
-      "weight": 0.12852397,
-      "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-02T01:56:23.839116+00:00"
-    },
-    {
-      "source": "world_model:7e351d0a1c5f4931",
-      "target": "concept:3944b723abcbc913",
-      "relation": "coactivated",
-      "weight": 0.12852397,
-      "plasticity": 0.65,
-      "coactivation_count": 1,
-      "last_coactivated_at": "2026-10-02T01:56:23.839116+00:00"
     }
   ]
 }

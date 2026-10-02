@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-02T04:09:19.828783+00:00",
-  "generation": 431,
+  "timestamp": "2026-10-02T04:13:42.248903+00:00",
+  "generation": 432,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.3186,
-    "surprise": 0.266,
-    "uncertainty": 0.4175,
-    "salience": 0.4891,
-    "exploration": 0.41,
-    "plasticity": 0.5234,
-    "energy": 0.8912,
-    "sleep_pressure": 0.1416
+    "novelty": 0.2596,
+    "surprise": 0.2149,
+    "uncertainty": 0.185,
+    "salience": 0.3836,
+    "exploration": 0.38,
+    "plasticity": 0.4687,
+    "energy": 1.0,
+    "sleep_pressure": 0.0976
   },
   "workspace": [
     {
-      "id": "concept:3944b723abcbc913",
-      "kind": "concept",
-      "label": "heartbeat persists",
-      "activation": 0.6981,
-      "salience": 0.6360250000000001,
-      "novelty": 0.31861,
-      "surprise": 0.26599,
+      "id": "episode:4796e8a58bb6d7",
+      "kind": "recalled_episode",
+      "label": "{\n  \"associations\": [\n    {\"label\": \"heartbeat persists\", \"kind\": \"concept\", \"strength\": 0.94},\n    {\"label\": \"v2 runtime stability\", \"kind\": \"concept\", \"strength\": 0.89},\n    {\"label\": \"issue can be closed after persistence\", \"kind\": \"concept\", \"strength\": 0.86},\n    {\"label\": \"groq provider eligible\", \"kind\": \"concept\", \"strength\": 0.91},\n    {\"label\": \"status external action succeeded\", \"kind\": \"world_model\", \"strength\": 0.96}\n  ],\n  \"hypotheses\": [\n    \"If the heartbeat signal remains uninte",
+      "activation": 0.5506,
+      "salience": 0.42,
+      "novelty": 0.3186,
+      "surprise": 0.3,
       "epistemic_status": "model_proposal",
-      "source": "semantic_network",
-      "ignition_score": 0.5814
+      "source": "associative_recall",
+      "ignition_score": 0.4577
+    },
+    {
+      "id": "episode:253315e270fe8f",
+      "kind": "recalled_episode",
+      "label": "{\n  \"associations\": [\n    {\"label\": \"heartbeat persists\", \"kind\": \"concept\", \"strength\": 0.94},\n    {\"label\": \"v2 runtime stability\", \"kind\": \"concept\", \"strength\": 0.89},\n    {\"label\": \"issue can be closed after persistence\", \"kind\": \"concept\", \"strength\": 0.86},\n    {\"label\": \"groq provider eligible\", \"kind\": \"concept\", \"strength\": 0.91},\n    {\"label\": \"status external action succeeded\", \"kind\": \"world_model\", \"strength\": 0.96}\n  ],\n  \"hypotheses\": [\n    \"If the heartbeat signal remains uninte",
+      "activation": 0.5315,
+      "salience": 0.42,
+      "novelty": 0.2799,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
+      "source": "associative_recall",
+      "ignition_score": 0.4431
     },
     {
       "id": "world_model:ba0135ffc59e25af",
       "kind": "world_model",
       "label": "status external action succeeded",
-      "activation": 0.5233,
-      "salience": 0.6360250000000001,
-      "novelty": 0.31861,
-      "surprise": 0.26599,
+      "activation": 0.5041,
+      "salience": 0.49434999999999996,
+      "novelty": 0.25959,
+      "surprise": 0.21490000000000004,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.494
+      "ignition_score": 0.4352
+    },
+    {
+      "id": "concept:3944b723abcbc913",
+      "kind": "concept",
+      "label": "heartbeat persists",
+      "activation": 0.504,
+      "salience": 0.49434999999999996,
+      "novelty": 0.25959,
+      "surprise": 0.21490000000000004,
+      "epistemic_status": "model_proposal",
+      "source": "semantic_network",
+      "ignition_score": 0.4351
+    },
+    {
+      "id": "episode:ddec387f423b39",
+      "kind": "recalled_episode",
+      "label": "{\n  \"associations\": [\n    {\"label\": \"heartbeat persists\", \"kind\": \"concept\", \"strength\": 0.94},\n    {\"label\": \"v2 runtime stability\", \"kind\": \"concept\", \"strength\": 0.89},\n    {\"label\": \"issue can be closed after persistence\", \"kind\": \"concept\", \"strength\": 0.86},\n    {\"label\": \"status external action succeeded\", \"kind\": \"world_model\", \"strength\": 0.96},\n    {\"label\": \"groq provider eligible\", \"kind\": \"concept\", \"strength\": 0.91}\n  ],\n  \"hypotheses\": [\n    \"If the heartbeat signal remains uninte",
+      "activation": 0.5368,
+      "salience": 0.42,
+      "novelty": 0.1769,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
+      "source": "associative_recall",
+      "ignition_score": 0.4324
     },
     {
       "id": "concept:a944dbf6efaa0758",
       "kind": "concept",
       "label": "groq provider eligible",
-      "activation": 0.5229,
-      "salience": 0.6360250000000001,
-      "novelty": 0.31861,
-      "surprise": 0.26599,
+      "activation": 0.4971,
+      "salience": 0.49434999999999996,
+      "novelty": 0.25959,
+      "surprise": 0.21490000000000004,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.4938
+      "ignition_score": 0.4317
     },
     {
-      "id": "concept:391b3209d712a26a",
-      "kind": "concept",
-      "label": "v2 runtime stability",
-      "activation": 0.5227,
-      "salience": 0.6360250000000001,
-      "novelty": 0.31861,
-      "surprise": 0.26599,
+      "id": "episode:e40888ae8f7688",
+      "kind": "recalled_episode",
+      "label": "{\n  \"associations\": [\n    {\"label\": \"heartbeat persists\", \"kind\": \"concept\", \"strength\": 0.94},\n    {\"label\": \"v2 runtime stability\", \"kind\": \"concept\", \"strength\": 0.89},\n    {\"label\": \"issue can be closed after persistence\", \"kind\": \"concept\", \"strength\": 0.86},\n    {\"label\": \"status external action succeeded\", \"kind\": \"world_model\", \"strength\": 0.96},\n    {\"label\": \"groq provider eligible\", \"kind\": \"concept\", \"strength\": 0.91}\n  ],\n  \"hypotheses\": [\n    \"If the heartbeat signal remains uninte",
+      "activation": 0.5393,
+      "salience": 0.42,
+      "novelty": 0.1614,
+      "surprise": 0.3,
       "epistemic_status": "model_proposal",
-      "source": "semantic_network",
-      "ignition_score": 0.4937
-    },
-    {
-      "id": "concept:4aced2a354445e33",
-      "kind": "concept",
-      "label": "issue can be closed after persistence",
-      "activation": 0.5224,
-      "salience": 0.6360250000000001,
-      "novelty": 0.31861,
-      "surprise": 0.26599,
-      "epistemic_status": "model_proposal",
-      "source": "semantic_network",
-      "ignition_score": 0.4935
-    },
-    {
-      "id": "question:29dbee3b999c2125",
-      "kind": "question",
-      "label": "what is the minimum duration required for the heartbeat to be deemed persistent according to project policy?",
-      "activation": 0.4964,
-      "salience": 0.6360250000000001,
-      "novelty": 0.31861,
-      "surprise": 0.26599,
-      "epistemic_status": "model_question",
-      "source": "semantic_network",
-      "ignition_score": 0.4805
-    },
-    {
-      "id": "question:17fe9b25d8d4cbda",
-      "kind": "question",
-      "label": "are there any known transient failure patterns for the v2 heartbeat that we should monitor during the observation window?",
-      "activation": 0.4964,
-      "salience": 0.6360250000000001,
-      "novelty": 0.31861,
-      "surprise": 0.26599,
-      "epistemic_status": "model_question",
-      "source": "semantic_network",
-      "ignition_score": 0.4805
+      "source": "associative_recall",
+      "ignition_score": 0.4316
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 18,
+      "remaining_calls": 17,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 998,
+      "remaining_calls": 997,
       "eligible": true
     },
     "huggingface": {
@@ -127,33 +127,59 @@
       "state": "closed",
       "title": "Ubique v2 end-to-end heartbeat smoke test",
       "updated_at": "2026-10-02T04:08:16Z",
-      "closed_at": "2026-10-01T22:42:26Z"
+      "closed_at": "2026-10-01T22:42:26Z",
+      "concepts": [
+        "heartbeat",
+        "persists",
+        "runtime",
+        "closed",
+        "merged",
+        "status",
+        "ubique",
+        "issue",
+        "newly",
+        "smoke",
+        "state",
+        "test"
+      ]
     }
   },
   "last_action": {
     "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
-    "source": "homeostasis",
-    "score": 0.47077
+    "description": "Rest to maintain energy levels following successful stabilization and task closure.",
+    "source": "substrate:gemini",
+    "score": 0.54089
   },
   "action_competition": [
     {
       "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.47077,
-      "description": "Allow activation to decay without forcing cognition."
+      "source": "substrate:gemini",
+      "score": 0.54089,
+      "description": "Rest to maintain energy levels following successful stabilization and task closure."
+    },
+    {
+      "kind": "rest",
+      "source": "substrate:groq",
+      "score": 0.46999,
+      "description": "Enter low‑activity state while awaiting new tasks or external prompts."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.43521,
+      "score": 0.37247,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.3839,
+      "score": 0.31148,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.30306,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
   "substrate_contributors": [
@@ -168,8 +194,8 @@
   ],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 28,
-    "semantic_nodes": 156,
+    "episodes": 31,
+    "semantic_nodes": 168,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -179,7 +205,13 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 102
+      "removed_edges": 218
+    },
+    "terminal_inhibition": {
+      "startup": 75,
+      "after_lifecycle": 75,
+      "after_spread": 75,
+      "after_packets": 75
     }
   }
 }
