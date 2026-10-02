@@ -212,7 +212,17 @@ class NeurocognitiveRuntime:
             key=lambda item: float(item.get("recall_score", 0.0)),
             reverse=True,
         )
-        return adjusted[: max(0, limit)]
+        selected: list[dict[str, Any]] = []
+        superseded_seen = 0
+        for item in adjusted:
+            if item.get("contextual_status") == "superseded_terminal_context":
+                if superseded_seen >= 1:
+                    continue
+                superseded_seen += 1
+            selected.append(item)
+            if len(selected) >= max(0, limit):
+                break
+        return selected
 
     def _observe_issue_lifecycle(
         self,
