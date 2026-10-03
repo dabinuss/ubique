@@ -1,90 +1,30 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T20:26:40.292877+00:00",
-  "generation": 470,
+  "timestamp": "2026-10-03T20:27:29.281403+00:00",
+  "generation": 471,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.4879,
-    "surprise": 0.3758,
+    "novelty": 0.3696,
+    "surprise": 0.2863,
     "uncertainty": 0.07,
-    "salience": 0.6498,
-    "exploration": 0.3704,
-    "plasticity": 0.5697,
-    "energy": 0.893,
-    "sleep_pressure": 0.0836
+    "salience": 0.3771,
+    "exploration": 0.3111,
+    "plasticity": 0.5234,
+    "energy": 1.0,
+    "sleep_pressure": 0.0665
   },
   "workspace": [
     {
-      "id": "episode:6e71188b382560",
-      "kind": "external_issue_lifecycle",
-      "label": "External GitHub issue #20 is now deactivated. It is no longer an active task. Ubique library sync — public-domain collection",
-      "activation": 0.95,
-      "salience": 0.88,
-      "novelty": 0.65,
-      "surprise": 0.45,
-      "epistemic_status": "observed_external_state",
-      "source": "github:lifecycle",
-      "ignition_score": 0.8335
-    },
-    {
-      "id": "episode:0c7c2bc439d0bb",
+      "id": "episode:80c56b581c264c",
       "kind": "recalled_episode",
-      "label": "External GitHub issue #19 is now deactivated. It is no longer an active task. Ubique library smoke test — public-domain book",
-      "activation": 0.413,
-      "salience": 0.88,
-      "novelty": 0.65,
-      "surprise": 0.45,
-      "epistemic_status": "observed_external_state",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 1200, \"excerpt\": \" IN COLLABORATION WITH\\n  HENRY ALSOP RILEY\\n\\n  THE FORM AND FUNCTIONS OF THE\\n  CENTRAL NERVOUS SYSTEM\\n\\n\\n\\n\\n  THE MASTER OF DESTINY\\n\\n  A BIOGRAPHY\\n  OF THE BRAIN\\n\\n  BY FREDERICK\\n  TILNEY, M.D.\\n\\n  WITH A FOREWORD\\n  BY AUSTEN FOX\\n  RIGGS, M.D.\\n\\n  [Il",
+      "activation": 0.4922,
+      "salience": 0.9,
+      "novelty": 0.4,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.565
-    },
-    {
-      "id": "runtime_state:b74610dd8d363ec6",
-      "kind": "runtime_state",
-      "label": "external-task-ended",
-      "activation": 0.5325,
-      "salience": 0.64977,
-      "novelty": 0.48789,
-      "surprise": 0.37583500000000003,
-      "epistemic_status": "observed_external_state",
-      "source": "semantic_network",
-      "ignition_score": 0.5372
-    },
-    {
-      "id": "runtime_state:247beaa03cc47f86",
-      "kind": "runtime_state",
-      "label": "resolved",
-      "activation": 0.5325,
-      "salience": 0.64977,
-      "novelty": 0.48789,
-      "surprise": 0.37583500000000003,
-      "epistemic_status": "observed_external_state",
-      "source": "semantic_network",
-      "ignition_score": 0.5372
-    },
-    {
-      "id": "runtime_state:0b7201e1b73e35e7",
-      "kind": "runtime_state",
-      "label": "deactivated",
-      "activation": 0.5325,
-      "salience": 0.64977,
-      "novelty": 0.48789,
-      "surprise": 0.37583500000000003,
-      "epistemic_status": "observed_external_state",
-      "source": "semantic_network",
-      "ignition_score": 0.5372
-    },
-    {
-      "id": "runtime_state:ebb12ab0ec890144",
-      "kind": "runtime_state",
-      "label": "issue:20",
-      "activation": 0.5325,
-      "salience": 0.64977,
-      "novelty": 0.48789,
-      "surprise": 0.37583500000000003,
-      "epistemic_status": "observed_external_state",
-      "source": "semantic_network",
-      "ignition_score": 0.5372
+      "ignition_score": 0.5651
     },
     {
       "id": "episode:59fd8f89549ccb",
@@ -97,6 +37,66 @@
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
       "ignition_score": 0.5317
+    },
+    {
+      "id": "episode:7d3114e62d25a6",
+      "kind": "recalled_episode",
+      "label": "Ubique library sync — public-domain collection\n\n/library\n{\"action\":\"sync\",\"limit\":30}",
+      "activation": 0.2717,
+      "salience": 0.9,
+      "novelty": 0.69,
+      "surprise": 0.62,
+      "epistemic_status": "observed_external_input",
+      "source": "associative_recall",
+      "ignition_score": 0.525
+    },
+    {
+      "id": "episode:25688bbc15f76c",
+      "kind": "recalled_episode",
+      "label": "IN COLLABORATION WITH\n  HENRY ALSOP RILEY\n\n  THE FORM AND FUNCTIONS OF THE\n  CENTRAL NERVOUS SYSTEM\n\n\n\n\n  THE MASTER OF DESTINY\n\n  A BIOGRAPHY\n  OF THE BRAIN\n\n  BY FREDERICK\n  TILNEY, M.D.\n\n  WITH A FOREWORD\n  BY AUSTEN FOX\n  RIGGS, M.D.\n\n  [Illustration]\n\n  DOUBLEDAY, DORAN & COMPANY, INC.\n  GARDEN CITY      MCMXXX      NEW YORK\n\n\n\n\n  [Illustration]\n\n  COPYRIGHT, 1929, 1930\n  BY FREDERICK TILNEY\n  ALL RIGHTS RESERVED\n  PRINTED IN THE UNITED STATES AT\n  THE COUNTRY LIFE PRESS\n  GARDEN CITY, N. Y",
+      "activation": 0.3733,
+      "salience": 0.6,
+      "novelty": 0.9867,
+      "surprise": 0.35,
+      "epistemic_status": "external_source",
+      "source": "associative_recall",
+      "ignition_score": 0.5069
+    },
+    {
+      "id": "episode:737402c2f1b852",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 3600, \"excerpt\": \"m. This has justice in it for, though his\\nindifference to criticism may be excused, the ignorance upon which\\nthis criticism is founded should be his first concern, for the man\\nof science is the teacher and ignorance is his very opportunity.\\nHeretofore, however, ",
+      "activation": 0.2802,
+      "salience": 0.82,
+      "novelty": 0.45,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4456
+    },
+    {
+      "id": "episode:1b426b3787f923",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 2400, \"excerpt\": \"s, as the elephant its\\ntrunk, as the camel its hump, or by a divine act of separate and\\nspecial creation? Those who maintain the quarrel over man’s origin are\\nnot those who have familiarized themselves with the history of the\\nworld and its creatures; they are no",
+      "activation": 0.2827,
+      "salience": 0.84,
+      "novelty": 0.33,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4362
+    },
+    {
+      "id": "concept:e14de43896fcd264",
+      "kind": "concept",
+      "label": "content_available",
+      "activation": 0.1738,
+      "salience": 0.4832,
+      "novelty": 0.369635,
+      "surprise": 0.28627,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.2901
     }
   ],
   "provider_eligibility": {
@@ -181,35 +181,35 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
+    "kind": "rest",
+    "description": "Allow activation to decay without forcing cognition.",
     "source": "homeostasis",
-    "score": 0.35047
+    "score": 0.29587
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.35047,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.34321,
+      "score": 0.29587,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.28183,
+      "score": 0.26,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.22787,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [],
-  "consecutive_pulses": 2,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 158,
+    "episodes": 159,
     "semantic_nodes": 713,
     "synapses": 1200
   },
@@ -223,7 +223,7 @@
       "removed_edges": 0
     },
     "terminal_inhibition": {
-      "startup": 341,
+      "startup": 480,
       "after_lifecycle": 480,
       "after_spread": 480,
       "after_packets": 480
