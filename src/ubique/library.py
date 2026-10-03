@@ -14,7 +14,7 @@ from .state import utc_now
 LIBRARY_DIR = MEMORY_DIR / "library"
 ITEMS_DIR = LIBRARY_DIR / "items"
 INDEX_PATH = LIBRARY_DIR / "index.json"
-VALID_ACTIONS = {"list", "read", "add", "request", "note"}
+VALID_ACTIONS = {"list", "read", "add", "request", "note", "sync"}
 MAX_STORED_TEXT_CHARS = 200_000
 MAX_READ_CHARS = 12_000
 MAX_REMOTE_TEXT_BYTES = 8_000_000
@@ -174,6 +174,64 @@ def _load_item_text(index: dict[str, Any], item: dict[str, Any]) -> str:
         item["cached_at"] = utc_now()
         _write_index(index)
     return text
+
+
+def sync_library_items(
+    item_ids: list[str] | None = None,
+    *,
+    limit: int = 30,
+) -> dict[str, Any]:
+    """Cache remote library items without marking them as read."""
+    index = _load_index()
+    wanted = {
+        str(value).strip()
+        for value in (item_ids or [])
+        if str(value).strip()
+    }
+    limit = max(0, min(int(limit or 30), 100))
+    results: list[dict[str, Any]] = []
+
+    for item in index.get("items", []):
+        if len(results) >= limit:
+            break
+        if not isinstance(item, dict):
+            continue
+        item_id = str(item.get("id", "")).strip()
+        if wanted and item_id not in wanted:
+            continue
+        if not item_id or not _remote_source_url(item):
+            continue
+
+        path = _content_path(item)
+        if path is not None and path.exists():
+            results.append({
+                "id": item_id,
+                "status": "already_cached",
+                "chars": len(path.read_text(encoding="utf-8")),
+            })
+            continue
+
+        try:
+            text = _load_item_text(index, item)
+            results.append({
+                "id": item_id,
+                "status": "cached" if text else "unavailable",
+                "chars": len(text),
+            })
+        except Exception as exc:
+            results.append({
+                "id": item_id,
+                "status": "failed",
+                "error": f"{type(exc).__name__}: {str(exc)[:300]}",
+            })
+
+    return {
+        "action": "sync",
+        "requested": sorted(wanted),
+        "items": results,
+        "cached": sum(1 for item in results if item["status"] in {"cached", "already_cached"}),
+        "failed": sum(1 for item in results if item["status"] == "failed"),
+    }
 
 
 def read_library_item(
@@ -376,6 +434,13 @@ def apply_library_action(spec: dict[str, Any], actor: str = "ubique") -> dict[st
         raise ValueError(f"unknown library action: {action}")
     if action == "list":
         return {"action": "list", "items": library_catalog(int(spec.get("limit", 30) or 30))}
+    if action == "sync":
+        raw_ids = spec.get("item_ids", [])
+        item_ids = raw_ids if isinstance(raw_ids, list) else []
+        return sync_library_items(
+            [str(value) for value in item_ids],
+            limit=int(spec.get("limit", 30) or 30),
+        )
     if action == "read":
         raw_offset = spec.get("offset")
         offset = None if raw_offset is None else int(raw_offset or 0)
