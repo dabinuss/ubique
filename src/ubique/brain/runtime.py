@@ -785,7 +785,17 @@ Issue body:
                 self.modulators.consolidate(0.65)
                 return True, json.dumps(result, ensure_ascii=False), provider
             if action.kind == "library":
-                result = apply_library_action(action.payload, actor="ubique")
+                library_spec = dict(action.payload)
+                if str(library_spec.get("action", "")).strip().lower() == "read":
+                    try:
+                        requested_chars = int(library_spec.get("max_chars", 0) or 0)
+                    except (TypeError, ValueError):
+                        requested_chars = 0
+                    # Autonomous reading should make meaningful progress through
+                    # long books instead of getting trapped in tiny inherited
+                    # chunks. Explicit external /library reads remain untouched.
+                    library_spec["max_chars"] = max(6000, requested_chars or 10000)
+                result = apply_library_action(library_spec, actor="ubique")
                 if result.get("action") == "read" and result.get("excerpt"):
                     excerpt = str(result.get("excerpt", ""))
                     item = result.get("item", {}) if isinstance(result.get("item"), dict) else {}
