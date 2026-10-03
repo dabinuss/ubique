@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-02T20:55:04.333880+00:00",
-  "generation": 450,
+  "timestamp": "2026-10-03T00:01:52.901362+00:00",
+  "generation": 451,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1501,
-    "surprise": 0.1201,
+    "novelty": 0.2726,
+    "surprise": 0.2356,
     "uncertainty": 0.07,
-    "salience": 0.1939,
-    "exploration": 0.201,
-    "plasticity": 0.3693,
+    "salience": 0.266,
+    "exploration": 0.267,
+    "plasticity": 0.4354,
     "energy": 1.0,
-    "sleep_pressure": 0.0166
+    "sleep_pressure": 0.0165
   },
   "workspace": [
     {
-      "id": "episode:b971245d216983",
-      "kind": "recalled_episode",
-      "label": "Ubique v2 end-to-end heartbeat smoke test\n\n/status\n\nEnd-to-end smoke test for the newly merged v2 runtime. This issue may be closed after the heartbeat persists v2 state.",
-      "activation": 0.2433,
-      "salience": 0.9,
-      "novelty": 1.0,
-      "surprise": 0.62,
-      "epistemic_status": "observed_external_input",
-      "source": "associative_recall",
-      "ignition_score": 0.5511
+      "id": "episode:5244f28bde3377",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
     },
     {
-      "id": "episode:bc85af0b049e90",
+      "id": "episode:9274deade5050c",
       "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"heartbeat stability ↔ task closure\", \"what operational profile or new directive will be issued given that all current external tasks are closed?\"]}",
-      "activation": 0.3613,
-      "salience": 0.92,
-      "novelty": 0.15,
+      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"no active external tasks\", \"no pending external tasks or directives exist as of 2026-10-02.\"]}",
+      "activation": 0.2817,
+      "salience": 0.95,
+      "novelty": 0.1,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4722
-    },
-    {
-      "id": "episode:338af772f8b3a3",
-      "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"no active external tasks\", \"no active external tasks are present.\"]}",
-      "activation": 0.333,
-      "salience": 0.94,
-      "novelty": 0.07,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4526
-    },
-    {
-      "id": "episode:0d42d4e7a8b613",
-      "kind": "recalled_episode",
-      "label": "Ubique v2 end-to-end heartbeat smoke test\n\n/status\n\nEnd-to-end smoke test for the newly merged v2 runtime. This issue may be closed after the heartbeat persists v2 state.",
-      "activation": 0.2433,
-      "salience": 0.9,
-      "novelty": 0.0,
-      "surprise": 0.62,
-      "epistemic_status": "observed_external_input",
-      "source": "associative_recall",
-      "ignition_score": 0.4211
-    },
-    {
-      "id": "episode:0300a73eb61e33",
-      "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"heartbeat stability ↔ task closure\", \"are there any active tasks or upcoming directives following the closure of task 11?\"]}",
-      "activation": 0.3042,
-      "salience": 0.82,
-      "novelty": 0.15,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4186
+      "ignition_score": 0.4333
     },
     {
       "id": "episode:d772a4d8bab976",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"no active external tasks\", \"is the v2 runtime heartbeat currently uninterrupted?\"]}",
-      "activation": 0.2599,
+      "activation": 0.2785,
       "salience": 0.91,
       "novelty": 0.05,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.406
+      "ignition_score": 0.4153
     },
     {
-      "id": "concept:5551ce784795cc70",
-      "kind": "concept",
-      "label": "directives",
-      "activation": 0.145,
-      "salience": 0.19394499999999998,
-      "novelty": 0.150065,
-      "surprise": 0.12006499999999999,
-      "epistemic_status": "memory_index",
+      "id": "episode:cbd028d3699ff3",
+      "kind": "recalled_episode",
+      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"heartbeat stability ↔ task closure\",\n      \"kind\": \"concept\",\n      \"strength\": 0.92\n    },\n    {\n      \"label\": \"no active external tasks\",\n      \"kind\": \"world_model\",\n      \"strength\": 0.95\n    },\n    {\n      \"label\": \"high system energy enables internal directives\",\n      \"kind\": \"self_model\",\n      \"strength\": 0.88\n    }\n  ],\n  \"hypotheses\": [\n    \"The v2 runtime heartbeat will continue uninterrupted for at least the next 30 minutes.\",\n    \"No new",
+      "activation": 0.4727,
+      "salience": 0.42,
+      "novelty": 0.1501,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
+      "source": "associative_recall",
+      "ignition_score": 0.3969
+    },
+    {
+      "id": "episode:99a1a0e8631aaf",
+      "kind": "recalled_episode",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3065,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "associative_recall",
+      "ignition_score": 0.3722
+    },
+    {
+      "id": "episode:0afbe867d943c0",
+      "kind": "recalled_episode",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 975}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3038,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "associative_recall",
+      "ignition_score": 0.3709
+    },
+    {
+      "id": "runtime_state:423b4a0b7d2066e3",
+      "kind": "runtime_state",
+      "label": "provider:gemini",
+      "activation": 0.4068,
+      "salience": 0.266035,
+      "novelty": 0.272565,
+      "surprise": 0.235565,
+      "epistemic_status": "observed_runtime_state",
       "source": "semantic_network",
-      "ignition_score": 0.1549
+      "ignition_score": 0.3336
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 0,
-      "eligible": false
+      "remaining_calls": 18,
+      "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 972,
+      "remaining_calls": 998,
       "eligible": true
     },
     "huggingface": {
@@ -146,43 +146,47 @@
   },
   "last_action": {
     "kind": "consolidate",
-    "description": "Integrate recent observations about heartbeat stability and task closure into internal state.",
+    "description": "Perform a REM‑mode consolidation of recent internal observations and self‑model updates.",
     "source": "substrate:groq",
-    "score": 0.55194
+    "score": 0.54631
   },
   "action_competition": [
     {
       "kind": "consolidate",
       "source": "substrate:groq",
-      "score": 0.55194,
-      "description": "Integrate recent observations about heartbeat stability and task closure into internal state."
+      "score": 0.54631,
+      "description": "Perform a REM‑mode consolidation of recent internal observations and self‑model updates."
     },
     {
       "kind": "library",
       "source": "substrate:groq",
-      "score": 0.3719,
-      "description": "Reread FZG v1.0 to refresh theoretical guidance for internal consolidation."
+      "score": 0.45011,
+      "description": "Reread the fully‑read FZG v1.0 framework to refresh theoretical guidance for internal consolidation."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.2714,
+      "score": 0.28509,
       "description": "Replay and consolidate existing experience offline."
-    },
-    {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.217,
-      "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.19059,
+      "score": 0.2342,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.21568,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
   "substrate_contributors": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite"
+    },
     {
       "provider": "groq",
       "model": "openai/gpt-oss-120b"
@@ -190,8 +194,8 @@
   ],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 91,
-    "semantic_nodes": 429,
+    "episodes": 96,
+    "semantic_nodes": 443,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -201,7 +205,7 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 150
+      "removed_edges": 300
     },
     "terminal_inhibition": {
       "startup": 178,
