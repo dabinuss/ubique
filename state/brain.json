@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T20:25:52.246687+00:00",
-  "generation": 469,
+  "timestamp": "2026-10-03T20:26:40.292877+00:00",
+  "generation": 470,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.4006,
-    "surprise": 0.3359,
+    "novelty": 0.4879,
+    "surprise": 0.3758,
     "uncertainty": 0.07,
-    "salience": 0.5258,
-    "exploration": 0.3319,
-    "plasticity": 0.5531,
-    "energy": 0.84,
-    "sleep_pressure": 0.2264
+    "salience": 0.6498,
+    "exploration": 0.3704,
+    "plasticity": 0.5697,
+    "energy": 0.893,
+    "sleep_pressure": 0.0836
   },
   "workspace": [
     {
-      "id": "episode:7d3114e62d25a6",
-      "kind": "github_issue",
-      "label": "Ubique library sync — public-domain collection\n\n/library\n{\"action\":\"sync\",\"limit\":30}",
+      "id": "episode:6e71188b382560",
+      "kind": "external_issue_lifecycle",
+      "label": "External GitHub issue #20 is now deactivated. It is no longer an active task. Ubique library sync — public-domain collection",
       "activation": 0.95,
-      "salience": 0.9,
-      "novelty": 0.69,
-      "surprise": 0.62,
-      "epistemic_status": "observed_external_input",
-      "source": "github:dabinuss",
-      "ignition_score": 0.8641
-    },
-    {
-      "id": "episode:59fd8f89549ccb",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 0, \"excerpt\": \"The Project Gutenberg eBook of The Expression of the Emotions in Man and Animals\\r\\n    \\r\\nThis eBook is for the use of anyone anywhere in the United States and\\r\\nmost other parts of the world at no cost and with almost no restrictions\\r\\nwhatsoever. You may copy ",
-      "activation": 0.3959,
       "salience": 0.88,
-      "novelty": 0.79,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5627
-    },
-    {
-      "id": "concept:45dedc0facfe17e7",
-      "kind": "concept",
-      "label": "limit",
-      "activation": 0.6656,
-      "salience": 0.525795,
-      "novelty": 0.400555,
-      "surprise": 0.33594999999999997,
-      "epistemic_status": "external_input_index",
-      "source": "semantic_network",
-      "ignition_score": 0.5566
-    },
-    {
-      "id": "concept:6c5fc273df2e6a46",
-      "kind": "concept",
-      "label": "sync",
-      "activation": 0.6656,
-      "salience": 0.525795,
-      "novelty": 0.400555,
-      "surprise": 0.33594999999999997,
-      "epistemic_status": "external_input_index",
-      "source": "semantic_network",
-      "ignition_score": 0.5566
-    },
-    {
-      "id": "episode:bcaf62814c19d1",
-      "kind": "recalled_episode",
-      "label": "Ubique library smoke test — public-domain book\n\n/library\n{\"action\":\"read\",\"item_id\":\"tilney-master-of-destiny\",\"max_chars\":1200}",
-      "activation": 0.2716,
-      "salience": 0.9,
-      "novelty": 0.8948,
-      "surprise": 0.62,
-      "epistemic_status": "observed_external_input",
-      "source": "associative_recall",
-      "ignition_score": 0.5515
-    },
-    {
-      "id": "episode:35742755d0784d",
-      "kind": "recalled_episode",
-      "label": "The Project Gutenberg eBook of The Expression of the Emotions in Man and Animals\r\n    \r\nThis eBook is for the use of anyone anywhere in the United States and\r\nmost other parts of the world at no cost and with almost no restrictions\r\nwhatsoever. You may copy it, give it away or re-use it under the terms\r\nof the Project Gutenberg License included with this eBook or online\r\nat www.gutenberg.org. If you are not located in the United States,\r\nyou will have to check the laws of the country where you a",
-      "activation": 0.3943,
-      "salience": 0.6,
-      "novelty": 0.9972,
-      "surprise": 0.35,
-      "epistemic_status": "external_source",
-      "source": "associative_recall",
-      "ignition_score": 0.5188
+      "novelty": 0.65,
+      "surprise": 0.45,
+      "epistemic_status": "observed_external_state",
+      "source": "github:lifecycle",
+      "ignition_score": 0.8335
     },
     {
       "id": "episode:0c7c2bc439d0bb",
       "kind": "recalled_episode",
       "label": "External GitHub issue #19 is now deactivated. It is no longer an active task. Ubique library smoke test — public-domain book",
-      "activation": 0.2536,
+      "activation": 0.413,
       "salience": 0.88,
       "novelty": 0.65,
       "surprise": 0.45,
       "epistemic_status": "observed_external_state",
       "source": "associative_recall",
-      "ignition_score": 0.4853
+      "ignition_score": 0.565
+    },
+    {
+      "id": "runtime_state:b74610dd8d363ec6",
+      "kind": "runtime_state",
+      "label": "external-task-ended",
+      "activation": 0.5325,
+      "salience": 0.64977,
+      "novelty": 0.48789,
+      "surprise": 0.37583500000000003,
+      "epistemic_status": "observed_external_state",
+      "source": "semantic_network",
+      "ignition_score": 0.5372
+    },
+    {
+      "id": "runtime_state:247beaa03cc47f86",
+      "kind": "runtime_state",
+      "label": "resolved",
+      "activation": 0.5325,
+      "salience": 0.64977,
+      "novelty": 0.48789,
+      "surprise": 0.37583500000000003,
+      "epistemic_status": "observed_external_state",
+      "source": "semantic_network",
+      "ignition_score": 0.5372
+    },
+    {
+      "id": "runtime_state:0b7201e1b73e35e7",
+      "kind": "runtime_state",
+      "label": "deactivated",
+      "activation": 0.5325,
+      "salience": 0.64977,
+      "novelty": 0.48789,
+      "surprise": 0.37583500000000003,
+      "epistemic_status": "observed_external_state",
+      "source": "semantic_network",
+      "ignition_score": 0.5372
+    },
+    {
+      "id": "runtime_state:ebb12ab0ec890144",
+      "kind": "runtime_state",
+      "label": "issue:20",
+      "activation": 0.5325,
+      "salience": 0.64977,
+      "novelty": 0.48789,
+      "surprise": 0.37583500000000003,
+      "epistemic_status": "observed_external_state",
+      "source": "semantic_network",
+      "ignition_score": 0.5372
+    },
+    {
+      "id": "episode:59fd8f89549ccb",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 0, \"excerpt\": \"The Project Gutenberg eBook of The Expression of the Emotions in Man and Animals\\r\\n    \\r\\nThis eBook is for the use of anyone anywhere in the United States and\\r\\nmost other parts of the world at no cost and with almost no restrictions\\r\\nwhatsoever. You may copy ",
+      "activation": 0.3339,
+      "salience": 0.88,
+      "novelty": 0.79,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.5317
     }
   ],
   "provider_eligibility": {
@@ -164,42 +164,53 @@
       ]
     },
     "20": {
-      "state": "active",
+      "state": "deactivated",
       "title": "Ubique library sync — public-domain collection",
-      "updated_at": "2026-10-03T20:25:41.794197+00:00"
+      "updated_at": "2026-10-03T20:25:51Z",
+      "closed_at": null,
+      "concepts": [
+        "collection",
+        "library",
+        "action",
+        "domain",
+        "public",
+        "ubique",
+        "limit",
+        "sync"
+      ]
     }
   },
   "last_action": {
-    "kind": "attend",
-    "description": "Continue processing the active workspace without external action.",
-    "source": "workspace",
-    "score": 0.31892
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
+    "source": "homeostasis",
+    "score": 0.35047
   },
   "action_competition": [
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.31892,
-      "description": "Continue processing the active workspace without external action."
-    },
-    {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.29903,
+      "score": 0.35047,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.25186,
+      "score": 0.34321,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.28183,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
   "substrate_contributors": [],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 156,
-    "semantic_nodes": 705,
+    "episodes": 158,
+    "semantic_nodes": 713,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -209,13 +220,13 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 24
+      "removed_edges": 0
     },
     "terminal_inhibition": {
-      "startup": 335,
-      "after_lifecycle": 341,
-      "after_spread": 341,
-      "after_packets": 341
+      "startup": 341,
+      "after_lifecycle": 480,
+      "after_spread": 480,
+      "after_packets": 480
     }
   }
 }
