@@ -586,6 +586,7 @@ Issue body:
                     "provider_eligibility": eligibility,
                     "external_issue_states": self.external_issue_states,
                     "environment": environment,
+                    "current_stances": self.self_model.current_stances(12),
                     "memory": {
                         "episodes": self.episodes.count(),
                         "semantic_nodes": len(self.network.nodes),
@@ -703,6 +704,7 @@ Issue body:
         packets: list[dict[str, Any]],
         generation: int,
         basis_ids: list[str],
+        grounded_sources: list[str],
     ) -> list[ActionCandidate]:
         actions: list[ActionCandidate] = []
         # Keep proposal fan-out bounded. A small active context is enough to
@@ -749,6 +751,28 @@ Issue body:
                 packet.get("self_model_updates", []),
                 generation=generation, provider=provider, basis_episode_ids=basis_ids,
             )
+            stance_records = self.self_model.consider_stances(
+                packet.get("stance_updates", []),
+                generation=generation,
+                provider=provider,
+                basis_episode_ids=basis_ids,
+                grounded_sources=grounded_sources,
+            )
+            for stance in stance_records:
+                if stance.get("kind") != "stance":
+                    continue
+                position = str(stance.get("position", "")).strip()
+                if not position:
+                    continue
+                node = self.network.ensure_node(
+                    position[:300],
+                    kind="self_stance",
+                    excitability=0.42,
+                    threshold=0.22,
+                    epistemic_status="self_position",
+                )
+                weight = float(stance.get("identity_weight", 0.0) or 0.0)
+                self.network.activate_ids([node.id], amount=0.16 + 0.24 * weight)
             self.episodes.append(
                 kind="cognitive_packet",
                 text=str(packet.get("raw_excerpt", "")),
@@ -859,6 +883,18 @@ Issue body:
             "substrate_contributors": [
                 {"provider": x.get("provider"), "model": x.get("model")} for x in packets
             ],
+            "current_stances": [
+                {
+                    "topic": stance.get("topic"),
+                    "position": stance.get("position"),
+                    "confidence": stance.get("confidence"),
+                    "identity_weight": stance.get("identity_weight"),
+                    "support_count": stance.get("support_count"),
+                    "grounded_sources": stance.get("grounded_sources"),
+                    "revisable": True,
+                }
+                for stance in self.self_model.current_stances(12)
+            ],
             "consecutive_pulses": consecutive,
             "memory": {
                 "episodes": self.episodes.count(),
@@ -937,7 +973,7 @@ Issue body:
                     workspace=self.workspace.prompt_view(),
                     recalled_episodes=recalled,
                     modulators=self.modulators.as_dict(),
-                    self_model=self.self_model.recent(8),
+                    self_model=self.self_model.context(8, 10),
                     library_catalog=self._cognitive_library_catalog(20),
                     external_states=self.external_issue_states,
                 ))
@@ -946,8 +982,27 @@ Issue body:
                         float(x.get("uncertainty", 0.5)) for x in packets
                     ))
 
-            basis = [str(x.get("id", "")) for x in percepts + recalled]
-            model_candidates = self._integrate_packets(packets, generation, basis)
+            basis_records = percepts + recalled
+            basis = [str(x.get("id", "")) for x in basis_records]
+            grounded_statuses = {
+                "external_source",
+                "observed_external_input",
+                "observed_external_state",
+                "observed_action_outcome",
+                "observed_history",
+            }
+            grounded_sources = list(dict.fromkeys(
+                f"{x.get('epistemic_status', '')}:{x.get('source', '')}"
+                for x in basis_records
+                if str(x.get("epistemic_status", "")) in grounded_statuses
+                and str(x.get("source", "")).strip()
+            ))[:16]
+            model_candidates = self._integrate_packets(
+                packets,
+                generation,
+                basis,
+                grounded_sources,
+            )
             terminal_inhibition_after_packets = self._apply_terminal_inhibition()
             candidates = self.selector.baseline_candidates(
                 self.modulators,
