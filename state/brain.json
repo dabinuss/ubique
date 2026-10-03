@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T18:39:02.350557+00:00",
-  "generation": 463,
+  "timestamp": "2026-10-03T20:20:30.190344+00:00",
+  "generation": 464,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1507,
-    "surprise": 0.1206,
+    "novelty": 0.4111,
+    "surprise": 0.2954,
     "uncertainty": 0.07,
-    "salience": 0.2488,
-    "exploration": 0.2014,
-    "plasticity": 0.3762,
-    "energy": 1.0,
-    "sleep_pressure": 0.0165
+    "salience": 0.4767,
+    "exploration": 0.3275,
+    "plasticity": 0.5393,
+    "energy": 0.92,
+    "sleep_pressure": 0.0755
   },
   "workspace": [
     {
-      "id": "episode:45eeb28dbf026c",
-      "kind": "recalled_episode",
-      "label": "{\n  \"associations\": [\n    {\"label\": \"memory_abstraction ↔ metric_definition\", \"kind\": \"concept\", \"strength\": 0.88},\n    {\"label\": \"p(s|c) metric candidates\", \"kind\": \"concept\", \"strength\": 0.85},\n    {\"label\": \"g_a(s|c) metric candidates\", \"kind\": \"concept\", \"strength\": 0.84},\n    {\"label\": \"intelligence_profile_components_instantiation\", \"kind\": \"concept\", \"strength\": 0.82},\n    {\"label\": \"FZG framework ↔ self‑preservation and goal‑directedness\", \"kind\": \"concept\", \"strength\": 0.80}\n  ],\n  \"hyp",
-      "activation": 0.5331,
-      "salience": 0.42,
-      "novelty": 0.151,
-      "surprise": 0.3,
-      "epistemic_status": "model_proposal",
-      "source": "associative_recall",
-      "ignition_score": 0.4272
-    },
-    {
-      "id": "episode:6d99f61430188d",
-      "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"memory_abstraction\", \"how should the intelligence profile components z, k, r, l be instantiated to support metric computation?\"]}",
-      "activation": 0.268,
-      "salience": 0.88,
-      "novelty": 0.15,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4155
-    },
-    {
-      "id": "episode:95da452f5dcf43",
-      "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"substrate:gemini\", \"concepts\": [\"memory_abstraction\", \"which metrics best capture p(s|c) and g_a(s|c) within the existing architecture?\"]}",
-      "activation": 0.2705,
+      "id": "episode:bcaf62814c19d1",
+      "kind": "github_issue",
+      "label": "Ubique library smoke test — public-domain book\n\n/library\n{\"action\":\"read\",\"item_id\":\"tilney-master-of-destiny\",\"max_chars\":1200}",
+      "activation": 0.95,
       "salience": 0.9,
-      "novelty": 0.1,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4153
+      "novelty": 0.8948,
+      "surprise": 0.62,
+      "epistemic_status": "observed_external_input",
+      "source": "github:dabinuss",
+      "ignition_score": 0.8907
     },
     {
-      "id": "episode:3e3dbcbadc9572",
-      "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"memory_abstraction ↔ metric_definition\", \"kl divergence between predicted state distribution and observed state distribution provides a robust estimate of p(s|c).\"]}",
-      "activation": 0.2525,
-      "salience": 0.78,
-      "novelty": 0.4,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4153
-    },
-    {
-      "id": "episode:2486ad86fd0c64",
-      "kind": "recalled_episode",
-      "label": "Counterfactual association to explore later: what changes if 'memory_abstraction ↔ metric_definition' and 'kl divergence between predicted state distribution and observed state distribution provides a robust estimate of p(s|c).' are related more strongly than current evidence establishes?",
-      "activation": 0.2757,
-      "salience": 0.3,
-      "novelty": 0.7,
-      "surprise": 0.5,
-      "epistemic_status": "imagined",
-      "source": "associative_recall",
-      "ignition_score": 0.3638
-    },
-    {
-      "id": "episode:7d406cdb4b5867",
-      "kind": "recalled_episode",
-      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"memory_abstraction ↔ metric_definition\",\n      \"kind\": \"concept\",\n      \"strength\": 0.88\n    },\n    {\n      \"label\": \"p(s|c) metric candidates\",\n      \"kind\": \"concept\",\n      \"strength\": 0.85\n    },\n    {\n      \"label\": \"g_a(s|c) metric candidates\",\n      \"kind\": \"concept\",\n      \"strength\": 0.84\n    },\n    {\n      \"label\": \"FZG framework ↔ self‑preservation and goal‑directedness\",\n      \"kind\": \"concept\",\n      \"strength\": 0.80\n    }\n  ],\n  \"hypothes",
-      "activation": 0.3732,
-      "salience": 0.42,
-      "novelty": 0.1516,
-      "surprise": 0.3,
-      "epistemic_status": "model_proposal",
-      "source": "associative_recall",
-      "ignition_score": 0.3473
-    },
-    {
-      "id": "concept:ef1b10046d763ae7",
+      "id": "concept:8b16ced79976e6a1",
       "kind": "concept",
-      "label": "memory_abstraction ↔ metric_definition",
-      "activation": 0.2193,
-      "salience": 0.24881,
-      "novelty": 0.15065,
-      "surprise": 0.12065,
-      "epistemic_status": "model_proposal",
+      "label": "action",
+      "activation": 0.94,
+      "salience": 0.47672000000000003,
+      "novelty": 0.41113500000000003,
+      "surprise": 0.29539,
+      "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.2059
+      "ignition_score": 0.6781
+    },
+    {
+      "id": "concept:c5af834c028b226a",
+      "kind": "concept",
+      "label": "max_chars",
+      "activation": 0.94,
+      "salience": 0.47672000000000003,
+      "novelty": 0.41113500000000003,
+      "surprise": 0.29539,
+      "epistemic_status": "external_input_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6781
+    },
+    {
+      "id": "concept:02f77488efc6c9cf",
+      "kind": "concept",
+      "label": "destiny",
+      "activation": 0.94,
+      "salience": 0.47672000000000003,
+      "novelty": 0.41113500000000003,
+      "surprise": 0.29539,
+      "epistemic_status": "external_input_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6781
+    },
+    {
+      "id": "concept:880c9bd312cf8508",
+      "kind": "concept",
+      "label": "item_id",
+      "activation": 0.94,
+      "salience": 0.47672000000000003,
+      "novelty": 0.41113500000000003,
+      "surprise": 0.29539,
+      "epistemic_status": "external_input_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6781
+    },
+    {
+      "id": "concept:c9b6dab517b9d127",
+      "kind": "concept",
+      "label": "library",
+      "activation": 0.94,
+      "salience": 0.47672000000000003,
+      "novelty": 0.41113500000000003,
+      "surprise": 0.29539,
+      "epistemic_status": "external_input_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6781
+    },
+    {
+      "id": "concept:40f024a500acd053",
+      "kind": "concept",
+      "label": "domain",
+      "activation": 0.94,
+      "salience": 0.47672000000000003,
+      "novelty": 0.41113500000000003,
+      "surprise": 0.29539,
+      "epistemic_status": "external_input_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6781
     }
   ],
   "provider_eligibility": {
@@ -111,7 +111,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 979,
+      "remaining_calls": 978,
       "eligible": true
     },
     "huggingface": {
@@ -142,44 +142,49 @@
         "state",
         "test"
       ]
+    },
+    "19": {
+      "state": "active",
+      "title": "Ubique library smoke test — public-domain book",
+      "updated_at": "2026-10-03T20:20:25.089979+00:00"
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Consolidate newly formed associations, hypotheses, and metric results into long‑term memory.",
+    "kind": "library",
+    "description": "Read the next 1200 characters of 'The Master of Destiny' to continue the library smoke test.",
     "source": "substrate:groq",
-    "score": 0.50094
+    "score": 0.60568
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "substrate:groq",
-      "score": 0.50094,
-      "description": "Consolidate newly formed associations, hypotheses, and metric results into long‑term memory."
-    },
-    {
       "kind": "library",
       "source": "substrate:groq",
-      "score": 0.44616,
-      "description": "Reread FZG v1.0 to extract guidance on mapping metric estimates to self‑preservation drives."
-    },
-    {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.27791,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.21959,
-      "description": "Allow activation to decay without forcing cognition."
+      "score": 0.60568,
+      "description": "Read the next 1200 characters of 'The Master of Destiny' to continue the library smoke test."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.20494,
+      "score": 0.32604,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.20517,
+      "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "consolidate",
+      "source": "substrate:groq",
+      "score": 0.1151,
+      "description": "Consolidate memory after the read to integrate new content into the workspace."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": -0.0408,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [
@@ -188,10 +193,10 @@
       "model": "openai/gpt-oss-120b"
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 137,
-    "semantic_nodes": 609,
+    "episodes": 142,
+    "semantic_nodes": 637,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -201,13 +206,13 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 156
+      "removed_edges": 108
     },
     "terminal_inhibition": {
       "startup": 180,
       "after_lifecycle": 180,
       "after_spread": 180,
-      "after_packets": 180
+      "after_packets": 189
     }
   }
 }
