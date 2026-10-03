@@ -1,30 +1,30 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T20:22:17.125444+00:00",
-  "generation": 466,
+  "timestamp": "2026-10-03T20:23:11.431806+00:00",
+  "generation": 467,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.3741,
-    "surprise": 0.2692,
+    "novelty": 0.2957,
+    "surprise": 0.217,
     "uncertainty": 0.07,
-    "salience": 0.5284,
-    "exploration": 0.3093,
-    "plasticity": 0.5275,
-    "energy": 0.79,
-    "sleep_pressure": 0.1735
+    "salience": 0.4702,
+    "exploration": 0.2714,
+    "plasticity": 0.4783,
+    "energy": 0.725,
+    "sleep_pressure": 0.2225
   },
   "workspace": [
     {
-      "id": "episode:a61d627c0838f9",
+      "id": "episode:1ba7a7aa24ce46",
       "kind": "recalled_episode",
-      "label": "s, as the elephant its\ntrunk, as the camel its hump, or by a divine act of separate and\nspecial creation? Those who maintain the quarrel over man’s origin are\nnot those who have familiarized themselves with the history of the\nworld and its creatures; they are not the astronomers, the geologists,\nthe biologists, the anthropologists or the archeologists. They are\nclearly those who prefer believing to thinking, the traditionalists,\ngood men mayhap but not necessarily wise. In the earlier days of\nsc",
-      "activation": 0.5607,
+      "label": "m. This has justice in it for, though his\nindifference to criticism may be excused, the ignorance upon which\nthis criticism is founded should be his first concern, for the man\nof science is the teacher and ignorance is his very opportunity.\nHeretofore, however, he has seen his opportunity too narrowly, for he\nhas been content to teach only the few embryo scientists apprenticed to\nhis own particular field. He has not, until very lately, realized that\nhis hard-won knowledge is far more needed and ",
+      "activation": 0.5638,
       "salience": 0.6,
       "novelty": 1.0,
       "surprise": 0.35,
       "epistemic_status": "external_source",
       "source": "associative_recall",
-      "ignition_score": 0.6024
+      "ignition_score": 0.6039
     },
     {
       "id": "episode:bcaf62814c19d1",
@@ -39,28 +39,28 @@
       "ignition_score": 0.5516
     },
     {
-      "id": "episode:1b426b3787f923",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 2400, \"excerpt\": \"s, as the elephant its\\ntrunk, as the camel its hump, or by a divine act of separate and\\nspecial creation? Those who maintain the quarrel over man’s origin are\\nnot those who have familiarized themselves with the history of the\\nworld and its creatures; they are no",
-      "activation": 0.439,
-      "salience": 0.84,
-      "novelty": 0.33,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5144
-    },
-    {
       "id": "episode:0c7c2bc439d0bb",
       "kind": "recalled_episode",
       "label": "External GitHub issue #19 is now deactivated. It is no longer an active task. Ubique library smoke test — public-domain book",
-      "activation": 0.2537,
+      "activation": 0.2536,
       "salience": 0.88,
       "novelty": 0.65,
       "surprise": 0.45,
       "epistemic_status": "observed_external_state",
       "source": "associative_recall",
-      "ignition_score": 0.4854
+      "ignition_score": 0.4853
+    },
+    {
+      "id": "episode:737402c2f1b852",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 3600, \"excerpt\": \"m. This has justice in it for, though his\\nindifference to criticism may be excused, the ignorance upon which\\nthis criticism is founded should be his first concern, for the man\\nof science is the teacher and ignorance is his very opportunity.\\nHeretofore, however, ",
+      "activation": 0.3382,
+      "salience": 0.82,
+      "novelty": 0.45,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4746
     },
     {
       "id": "episode:80c56b581c264c",
@@ -87,16 +87,16 @@
       "ignition_score": 0.4022
     },
     {
-      "id": "concept:be02310a6d314a90",
+      "id": "concept:11fb055d5824add3",
       "kind": "concept",
-      "label": "anthropologists",
+      "label": "indifference",
       "activation": 0.3621,
-      "salience": 0.52837,
-      "novelty": 0.37405499999999997,
-      "surprise": 0.269175,
+      "salience": 0.470195,
+      "novelty": 0.295665,
+      "surprise": 0.21698,
       "epistemic_status": "external_source_index",
       "source": "semantic_network",
-      "ignition_score": 0.3941
+      "ignition_score": 0.3631
     }
   ],
   "provider_eligibility": {
@@ -111,7 +111,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 976,
+      "remaining_calls": 975,
       "eligible": true
     },
     "huggingface": {
@@ -166,45 +166,45 @@
   },
   "last_action": {
     "kind": "library",
-    "description": "Read the next segment of *The Master of Destiny* to advance understanding of historical neuroscience.",
+    "description": "Begin reading Charles Darwin's \"The Expression of the Emotions in Man and Animals\" to explore complementary perspectives on emotion and ignorance.",
     "source": "substrate:groq",
-    "score": 0.42374
+    "score": 0.36805
   },
   "action_competition": [
     {
       "kind": "library",
       "source": "substrate:groq",
-      "score": 0.42374,
-      "description": "Read the next segment of *The Master of Destiny* to advance understanding of historical neuroscience."
-    },
-    {
-      "kind": "library",
-      "source": "substrate:groq",
-      "score": 0.40116,
-      "description": "Request Charles Darwin's *The Expression of the Emotions in Man and Animals* to broaden comparative perspective on brain and emotion."
-    },
-    {
-      "kind": "consolidate",
-      "source": "substrate:groq",
-      "score": 0.39489,
-      "description": "Perform a rapid consolidation (rem) of recent readings and associations."
+      "score": 0.36805,
+      "description": "Begin reading Charles Darwin's \"The Expression of the Emotions in Man and Animals\" to explore complementary perspectives on emotion and ignorance."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.32864,
+      "score": 0.35196,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "consolidate",
+      "source": "substrate:groq",
+      "score": 0.34672,
+      "description": "Perform rapid‑eye‑movement (REM) consolidation of the newly read excerpts to integrate them into long‑term memory."
+    },
+    {
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.31148,
+      "description": "Continue reading \"The Master of Destiny\" from the current cursor to deepen understanding of the author's argument about scientific outreach."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.30587,
+      "score": 0.2781,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.22613,
+      "score": 0.23629,
       "description": "Replay and consolidate existing experience offline."
     }
   ],
@@ -214,10 +214,10 @@
       "model": "openai/gpt-oss-120b"
     }
   ],
-  "consecutive_pulses": 3,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 149,
-    "semantic_nodes": 679,
+    "episodes": 152,
+    "semantic_nodes": 702,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -227,13 +227,13 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 84
+      "removed_edges": 96
     },
     "terminal_inhibition": {
-      "startup": 327,
-      "after_lifecycle": 327,
-      "after_spread": 327,
-      "after_packets": 347
+      "startup": 333,
+      "after_lifecycle": 333,
+      "after_spread": 333,
+      "after_packets": 341
     }
   }
 }
