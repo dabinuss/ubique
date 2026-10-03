@@ -705,7 +705,9 @@ Issue body:
         basis_ids: list[str],
     ) -> list[ActionCandidate]:
         actions: list[ActionCandidate] = []
-        context = [x["id"] for x in self.network.top_active(6, 0.08)]
+        # Keep proposal fan-out bounded. A small active context is enough to
+        # form associations without flooding the cortex with transient edges.
+        context = [x["id"] for x in self.network.top_active(3, 0.08)]
         for packet in packets:
             provider = str(packet.get("provider", "unknown"))
             created: list[str] = []
@@ -729,13 +731,18 @@ Issue body:
                 node = self.network.ensure_node(
                     label, kind=kind, excitability=0.48, epistemic_status=status
                 )
-                self.network.activate_ids([node.id], amount=amount)
+                # Familiar model-authored nodes habituate instead of receiving
+                # full-strength excitation forever. New ideas still ignite at
+                # full strength; repeated ones need fresh support to persist.
+                prior_access = max(0, int(node.access_count))
+                familiarity = max(0.22, 1.0 / (1.0 + 0.18 * prior_access))
+                self.network.activate_ids([node.id], amount=amount * familiarity)
                 created.append(node.id)
                 labels.append(label[:120])
                 for active in context:
                     self.network.connect(
                         active, node.id, relation="proposed_association",
-                        weight=0.16, plasticity=0.35
+                        weight=0.16 * familiarity, plasticity=0.35
                     )
             self.network.hebbian_update(created, learning_rate=0.035)
             self.self_model.record_interpretations(
@@ -937,7 +944,17 @@ Issue body:
                 memory_count=self.episodes.count(),
                 workspace_activation=self.workspace.mean_activation(),
             ) + model_candidates
-            selected, ranked = self.selector.select(candidates, self.modulators)
+            recent_actions = [
+                str(item.get("source", "")).split(":", 1)[1]
+                for item in self.episodes.recent(24)
+                if item.get("kind") == "internal_action_outcome"
+                and str(item.get("source", "")).startswith("action:")
+            ][-8:]
+            selected, ranked = self.selector.select(
+                candidates,
+                self.modulators,
+                recent_actions=recent_actions,
+            )
             success, result, provider = self._act(
                 selected, generation, bool(preflight.get("development_allowed", False))
             )
@@ -982,7 +999,7 @@ Issue body:
             previous = int(self.previous.get("consecutive_pulses", 0) or 0)
             should_continue = (
                 success
-                and selected.kind in {"attend", "library", "experiment", "evolve"}
+                and selected.kind in {"attend", "library", "experiment", "evolve", "consolidate"}
                 and self.modulators.energy > 0.26
                 and self.workspace.mean_activation() >= self.settings.activation_threshold
                 and previous < self.settings.max_immediate_pulses
