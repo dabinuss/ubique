@@ -185,14 +185,14 @@ class SelfModelStore:
         """Accumulate proposed self-positions and promote only stable ones.
 
         Promotion requires:
-        - support in at least three evidence-bearing generations,
-        - support spanning at least four generations,
+        - support in two evidence-bearing generations,
         - at least two distinct validated evidence episodes,
-        - confidence >= 0.60.
+        - confidence >= 0.55.
 
         Repeating a model opinion without new validated evidence does not add
         support. Evidence is supplied per stance by the runtime after checking
-        provenance and semantic relevance.
+        provenance and semantic relevance. The evidence may come from the same
+        source or book; diversity is useful but not mandatory.
 
         Mature stances remain explicitly revisable. A later revision must itself
         mature before it replaces the currently established position.
@@ -254,9 +254,7 @@ class SelfModelStore:
                 ))[:16]
                 previous_evidence = set(previous.get("evidence_episode_ids", []))
                 has_new_evidence = bool(set(evidence_now) - previous_evidence)
-                last_support = max(generations) if generations else -10_000
-                spaced = int(generation) - last_support >= 2
-                if has_new_evidence and spaced:
+                if has_new_evidence:
                     generations.add(int(generation))
                 support_count = len(generations)
             else:
@@ -267,10 +265,9 @@ class SelfModelStore:
 
             span = (max(generations) - min(generations)) if len(generations) >= 2 else 0
             mature = (
-                confidence >= 0.60
-                and len(generations) >= 3
-                and support_count >= 3
-                and span >= 4
+                confidence >= 0.55
+                and len(generations) >= 2
+                and support_count >= 2
                 and len(set(evidence)) >= 2
                 and bool(grounded)
             )
@@ -326,8 +323,7 @@ class SelfModelStore:
                 for value in record.get("evidence_episode_ids", [])
                 if str(value).strip()
             ]
-            span = (max(generations) - min(generations)) if len(generations) >= 2 else 0
-            if len(set(generations)) < 3 or span < 4 or len(set(evidence)) < 2:
+            if len(set(generations)) < 2 or len(set(evidence)) < 2:
                 continue
             key = str(record.get("topic_key", "")).strip()
             if not key:
