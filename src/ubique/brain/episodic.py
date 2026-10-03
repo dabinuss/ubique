@@ -213,6 +213,20 @@ class EpisodeStore:
             salience = clamp(episode.get("salience", 0.0))
             surprise = clamp(episode.get("surprise", 0.0))
             score = 0.68 * similarity + 0.14 * salience + 0.09 * surprise + 0.09 * recency
+
+            # Memory provenance affects recall strength. Observed outcomes and
+            # external sources can dominate when relevant; model proposals are
+            # useful but weaker, and imagined counterfactuals are deliberately
+            # faint unless no grounded alternative exists.
+            epistemic_status = str(episode.get("epistemic_status", "")).lower()
+            provenance_factor = {
+                "imagined": 0.38,
+                "model_proposal": 0.72,
+                "model_hypothesis": 0.72,
+                "model_interpretation": 0.78,
+            }.get(epistemic_status, 1.0)
+            score *= provenance_factor
+
             if query_tokens or query_concepts:
                 if similarity <= 0.0 and score < 0.18:
                     continue
