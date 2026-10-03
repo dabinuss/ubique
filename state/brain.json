@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T20:41:47.878070+00:00",
-  "generation": 476,
+  "timestamp": "2026-10-03T20:43:14.754302+00:00",
+  "generation": 477,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.4458,
-    "surprise": 0.4126,
+    "novelty": 0.5173,
+    "surprise": 0.4257,
     "uncertainty": 0.07,
-    "salience": 0.5182,
-    "exploration": 0.363,
-    "plasticity": 0.5869,
-    "energy": 0.84,
-    "sleep_pressure": 0.184
+    "salience": 0.6448,
+    "exploration": 0.3907,
+    "plasticity": 0.5874,
+    "energy": 0.893,
+    "sleep_pressure": 0.0701
   },
   "workspace": [
     {
-      "id": "episode:2e3ee840620ac8",
-      "kind": "github_issue",
-      "label": "Runtime smoke test after stance integration\n\n/status",
+      "id": "episode:4ea7563068711e",
+      "kind": "external_issue_lifecycle",
+      "label": "External GitHub issue #22 is now closed. It is no longer an active task. Runtime smoke test after stance integration",
       "activation": 0.95,
-      "salience": 0.9,
-      "novelty": 0.7143,
-      "surprise": 0.62,
-      "epistemic_status": "observed_external_input",
-      "source": "github:dabinuss",
-      "ignition_score": 0.8673
-    },
-    {
-      "id": "episode:1a38b7fc967d30",
-      "kind": "provider_state_change",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 974}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.95,
-      "salience": 0.4,
-      "novelty": 0.5,
+      "salience": 0.88,
+      "novelty": 0.65,
       "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "runtime",
-      "ignition_score": 0.694
+      "epistemic_status": "observed_external_state",
+      "source": "github:lifecycle",
+      "ignition_score": 0.8335
     },
     {
       "id": "episode:8f29a159cb95ba",
       "kind": "recalled_episode",
       "label": "External GitHub issue #21 is now closed. It is no longer an active task. Stance formation smoke test",
-      "activation": 0.473,
+      "activation": 0.4502,
       "salience": 0.88,
       "novelty": 0.65,
       "surprise": 0.45,
       "epistemic_status": "observed_external_state",
       "source": "associative_recall",
-      "ignition_score": 0.595
+      "ignition_score": 0.5836
     },
     {
       "id": "episode:6e71188b382560",
       "kind": "recalled_episode",
       "label": "External GitHub issue #20 is now deactivated. It is no longer an active task. Ubique library sync — public-domain collection",
-      "activation": 0.3969,
+      "activation": 0.3778,
       "salience": 0.88,
       "novelty": 0.65,
       "surprise": 0.45,
       "epistemic_status": "observed_external_state",
       "source": "associative_recall",
-      "ignition_score": 0.557
+      "ignition_score": 0.5474
     },
     {
-      "id": "runtime_state:423b4a0b7d2066e3",
-      "kind": "runtime_state",
-      "label": "provider:gemini",
-      "activation": 0.4068,
-      "salience": 0.518245,
-      "novelty": 0.4457875,
-      "surprise": 0.412605,
-      "epistemic_status": "observed_runtime_state",
-      "source": "semantic_network",
-      "ignition_score": 0.4404
+      "id": "episode:0c7c2bc439d0bb",
+      "kind": "recalled_episode",
+      "label": "External GitHub issue #19 is now deactivated. It is no longer an active task. Ubique library smoke test — public-domain book",
+      "activation": 0.3768,
+      "salience": 0.88,
+      "novelty": 0.65,
+      "surprise": 0.45,
+      "epistemic_status": "observed_external_state",
+      "source": "associative_recall",
+      "ignition_score": 0.5469
     },
     {
-      "id": "runtime_state:0a71e857be2cd9b7",
-      "kind": "runtime_state",
-      "label": "provider:groq",
-      "activation": 0.4068,
-      "salience": 0.518245,
-      "novelty": 0.4457875,
-      "surprise": 0.412605,
-      "epistemic_status": "observed_runtime_state",
-      "source": "semantic_network",
-      "ignition_score": 0.4404
+      "id": "episode:2e3ee840620ac8",
+      "kind": "recalled_episode",
+      "label": "Runtime smoke test after stance integration\n\n/status",
+      "activation": 0.2718,
+      "salience": 0.9,
+      "novelty": 0.7143,
+      "surprise": 0.62,
+      "epistemic_status": "observed_external_input",
+      "source": "associative_recall",
+      "ignition_score": 0.5282
     },
     {
-      "id": "runtime_state:1d939659a8519d8c",
+      "id": "episode:fd6ea76e949f95",
+      "kind": "recalled_episode",
+      "label": "External GitHub issue #11 is now closed. It is no longer an active task. Ubique v2 end-to-end heartbeat smoke test",
+      "activation": 0.3387,
+      "salience": 0.88,
+      "novelty": 0.65,
+      "surprise": 0.45,
+      "epistemic_status": "observed_external_state",
+      "source": "associative_recall",
+      "ignition_score": 0.5279
+    },
+    {
+      "id": "runtime_state:b74610dd8d363ec6",
       "kind": "runtime_state",
-      "label": "provider:huggingface",
-      "activation": 0.4068,
-      "salience": 0.518245,
-      "novelty": 0.4457875,
-      "surprise": 0.412605,
-      "epistemic_status": "observed_runtime_state",
+      "label": "external-task-ended",
+      "activation": 0.4888,
+      "salience": 0.64483,
+      "novelty": 0.5172699999999999,
+      "surprise": 0.42569,
+      "epistemic_status": "observed_external_state",
       "source": "semantic_network",
-      "ignition_score": 0.4404
+      "ignition_score": 0.5239
     }
   ],
   "provider_eligibility": {
@@ -111,7 +111,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 973,
+      "remaining_calls": 971,
       "eligible": true
     },
     "huggingface": {
@@ -200,47 +200,56 @@
       ]
     },
     "22": {
-      "state": "active",
+      "state": "closed",
       "title": "Runtime smoke test after stance integration",
-      "updated_at": "2026-10-03T20:41:43.515057+00:00"
+      "updated_at": "2026-10-03T20:42:18Z",
+      "closed_at": "2026-10-03T20:42:18Z",
+      "concepts": [
+        "integration",
+        "runtime",
+        "stance",
+        "status",
+        "smoke",
+        "test"
+      ]
     }
   },
   "last_action": {
-    "kind": "attend",
-    "description": "Check current status of active external task #22 to ensure it remains active before running the test.",
+    "kind": "consolidate",
+    "description": "Consolidate recent observations and stance reinforcement into long‑term memory.",
     "source": "substrate:groq",
-    "score": 0.42938
+    "score": 0.49652
   },
   "action_competition": [
     {
-      "kind": "attend",
+      "kind": "consolidate",
       "source": "substrate:groq",
-      "score": 0.42938,
-      "description": "Check current status of active external task #22 to ensure it remains active before running the test."
+      "score": 0.49652,
+      "description": "Consolidate recent observations and stance reinforcement into long‑term memory."
     },
     {
       "kind": "rest",
       "source": "substrate:groq",
-      "score": 0.35582,
-      "description": "Allow system to consolidate recent observations before proceeding with the experiment."
+      "score": 0.47401,
+      "description": "Allow a brief rest period to reduce sleep pressure and maintain energy balance."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.28584,
+      "score": 0.33675,
       "description": "Replay and consolidate existing experience offline."
-    },
-    {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.22477,
-      "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.2223,
+      "score": 0.33487,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.17973,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
   "substrate_contributors": [
@@ -249,11 +258,24 @@
       "model": "openai/gpt-oss-120b"
     }
   ],
-  "current_stances": [],
-  "consecutive_pulses": 1,
+  "current_stances": [
+    {
+      "topic": "runtime stability after stance integration",
+      "position": "Ubique currently expects the runtime to remain stable when using an eligible provider (groq).",
+      "confidence": 0.91,
+      "identity_weight": 0.54,
+      "support_count": 2,
+      "grounded_sources": [
+        "observed_external_input:github:dabinuss",
+        "observed_external_state:github:lifecycle"
+      ],
+      "revisable": true
+    }
+  ],
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 173,
-    "semantic_nodes": 736,
+    "episodes": 177,
+    "semantic_nodes": 745,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -263,13 +285,13 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 102
+      "removed_edges": 72
     },
     "terminal_inhibition": {
-      "startup": 654,
-      "after_lifecycle": 658,
-      "after_spread": 658,
-      "after_packets": 698
+      "startup": 670,
+      "after_lifecycle": 851,
+      "after_spread": 851,
+      "after_packets": 896
     }
   }
 }
