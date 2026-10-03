@@ -3,6 +3,7 @@ from __future__ import annotations
 from dataclasses import asdict
 import json
 import logging
+import re
 from statistics import mean
 from typing import Any
 
@@ -116,8 +117,8 @@ class NeurocognitiveRuntime:
         return list(dict.fromkeys(concepts))[:32]
 
     def _apply_terminal_inhibition(self) -> int:
-        """Re-apply extinction-like inhibition for terminal external contexts."""
-        touched = 0
+        """Apply extinction-like inhibition once to the union of terminal contexts."""
+        concepts: set[str] = set()
         for key, state in self.external_issue_states.items():
             if not isinstance(state, dict):
                 continue
@@ -127,23 +128,26 @@ class NeurocognitiveRuntime:
                 issue_number = int(key)
             except (TypeError, ValueError):
                 continue
-            concepts = [
+            values = [
                 str(value)
                 for value in state.get("concepts", [])
                 if str(value).strip()
             ]
-            if not concepts:
-                concepts = self._issue_concepts(issue_number)
-                if concepts:
-                    state["concepts"] = concepts
-            if concepts:
-                related = self._terminal_related_node_labels()
-                touched += self.network.inhibit_labels(
-                    list(concepts) + list(related),
-                    factor=0.16,
-                    neighbor_factor=0.30,
-                )
-        return touched
+            if not values:
+                values = self._issue_concepts(issue_number)
+                if values:
+                    state["concepts"] = values
+            concepts.update(values)
+
+        related = self._terminal_related_node_labels()
+        labels = list(concepts | related)
+        if not labels:
+            return 0
+        return self.network.inhibit_labels(
+            labels,
+            factor=0.22,
+            neighbor_factor=0.42,
+        )
 
 
     @staticmethod
@@ -282,12 +286,29 @@ class NeurocognitiveRuntime:
 
             lexical_overlap = len(lexical_terms)
             overlap = graph_overlap + lexical_overlap
+            payload = copy.get("payload", {})
+            issue_number = payload.get("issue_number") if isinstance(payload, dict) else None
+            issue_state = self.external_issue_states.get(str(issue_number), {})
+            terminal_issue_memory = (
+                kind == "github_issue"
+                and isinstance(issue_state, dict)
+                and str(issue_state.get("state", "")) in {"closed", "deactivated"}
+            )
             superseded = (
                 graph_overlap > 0
                 or strong_concept_match
                 or lexical_overlap >= 3
             )
-            if superseded and (kind == "cognitive_packet" or status in model_statuses):
+            if terminal_issue_memory:
+                copy["recall_score"] = round(
+                    float(copy.get("recall_score", 0.0)) * 0.08,
+                    4,
+                )
+                copy["contextual_status"] = "superseded_terminal_context"
+                copy["terminal_overlap"] = max(1, overlap)
+                copy["terminal_graph_overlap"] = graph_overlap
+                copy["terminal_lexical_overlap"] = lexical_overlap
+            elif superseded and (kind == "cognitive_packet" or status in model_statuses):
                 factor = 0.12 if overlap >= 2 else 0.35
                 copy["recall_score"] = round(
                     float(copy.get("recall_score", 0.0)) * factor,
@@ -701,32 +722,139 @@ Issue body:
 
     @staticmethod
     def _stance_grounding_sources(records: list[dict[str, Any]]) -> list[str]:
-        """Return evidence sources allowed to contribute to persistent identity.
+        """Evidence classes allowed to ground persistent philosophical stances."""
+        out: list[str] = []
+        for item in records:
+            if not isinstance(item, dict):
+                continue
+            status = str(item.get("epistemic_status", ""))
+            source = str(item.get("source", "")).strip()
+            allowed = (
+                status == "external_source"
+                or (status == "observed_action_outcome" and source == "action:experiment")
+            )
+            if allowed and source:
+                out.append(f"{status}:{source}")
+        return list(dict.fromkeys(out))[:16]
 
-        Raw external task text and task lifecycle observations are deliberately
-        excluded: they may guide work, but they are not evidence merely because
-        somebody said them. Library text and actual observed action outcomes can
-        ground a revisable stance.
-        """
-        grounded_statuses = {
-            "external_source",
-            "observed_action_outcome",
-            "observed_history",
+    @staticmethod
+    def _stance_terms(text: str) -> set[str]:
+        generic = {
+            "about", "after", "again", "against", "also", "because", "being",
+            "between", "could", "current", "currently", "from", "have", "likely",
+            "might", "more", "other", "present", "rather", "should", "their",
+            "there", "these", "this", "those", "through", "ubique", "view",
+            "while", "with", "would",
         }
-        return list(dict.fromkeys(
-            f"{item.get('epistemic_status', '')}:{item.get('source', '')}"
-            for item in records
-            if isinstance(item, dict)
-            and str(item.get("epistemic_status", "")) in grounded_statuses
-            and str(item.get("source", "")).strip()
-        ))[:16]
+        return {
+            token
+            for token in re.findall(r"[a-z0-9]+", str(text).lower())
+            if len(token) >= 4 and token not in generic
+        }
+
+    @classmethod
+    def _validate_stance_updates(
+        cls,
+        updates: list[dict[str, Any]],
+        evidence_records: list[dict[str, Any]],
+    ) -> list[dict[str, Any]]:
+        """Bind every stance to explicit, semantically relevant evidence episodes."""
+        by_id = {
+            str(item.get("id", "")): item
+            for item in evidence_records
+            if isinstance(item, dict) and str(item.get("id", "")).strip()
+        }
+        validated: list[dict[str, Any]] = []
+        for raw in updates:
+            if not isinstance(raw, dict):
+                continue
+            cited = [
+                str(value).strip()
+                for value in raw.get("evidence_ids", [])
+                if str(value).strip()
+            ][:8]
+            if not cited:
+                continue
+
+            topic_terms = cls._stance_terms(str(raw.get("topic", "")))
+            stance_terms = cls._stance_terms(
+                " ".join([
+                    str(raw.get("topic", "")),
+                    str(raw.get("position", "")),
+                    str(raw.get("reasoning", "")),
+                ])
+            )
+            accepted_ids: list[str] = []
+            accepted_sources: list[str] = []
+
+            for episode_id in cited:
+                item = by_id.get(episode_id)
+                if item is None:
+                    continue
+                source = str(item.get("source", "")).strip()
+                status = str(item.get("epistemic_status", ""))
+                eligible = (
+                    status == "external_source"
+                    or (status == "observed_action_outcome" and source == "action:experiment")
+                )
+                if not eligible:
+                    continue
+
+                payload = item.get("payload", {})
+                evidence_text = " ".join([
+                    str(item.get("text", "")),
+                    " ".join(str(value) for value in item.get("concepts", [])),
+                    json.dumps(payload, ensure_ascii=False) if isinstance(payload, dict) else "",
+                    source,
+                ])
+                evidence_terms = cls._stance_terms(evidence_text)
+                topic_overlap = topic_terms & evidence_terms
+                total_overlap = stance_terms & evidence_terms
+
+                # Require topical contact plus additional textual support. This
+                # blocks an unrelated book merely containing one incidental word.
+                if not topic_overlap or len(total_overlap) < 2:
+                    continue
+                accepted_ids.append(episode_id)
+                accepted_sources.append(f"{status}:{source}")
+
+            if not accepted_ids:
+                continue
+            value = dict(raw)
+            value["validated_evidence_ids"] = list(dict.fromkeys(accepted_ids))
+            value["validated_grounded_sources"] = list(dict.fromkeys(accepted_sources))
+            validated.append(value)
+        return validated
+
+    def _reconcile_stance_nodes(self) -> int:
+        """Remove cortex stance nodes that no longer meet identity requirements."""
+        valid = {
+            str(item.get("position", "")).strip()[:300]
+            for item in self.self_model.current_stances(50)
+            if str(item.get("position", "")).strip()
+        }
+        stale = {
+            node_id
+            for node_id, node in self.network.nodes.items()
+            if node.kind == "self_stance" and node.label not in valid
+        }
+        if not stale:
+            return 0
+        for node_id in stale:
+            self.network.nodes.pop(node_id, None)
+        self.network.edges = {
+            key: edge
+            for key, edge in self.network.edges.items()
+            if edge.source not in stale and edge.target not in stale
+        }
+        return len(stale)
 
     def _integrate_packets(
         self,
         packets: list[dict[str, Any]],
         generation: int,
         basis_ids: list[str],
-        grounded_sources: list[str],
+        evidence_records: list[dict[str, Any]],
     ) -> list[ActionCandidate]:
         actions: list[ActionCandidate] = []
         # Keep proposal fan-out bounded. A small active context is enough to
@@ -773,12 +901,15 @@ Issue body:
                 packet.get("self_model_updates", []),
                 generation=generation, provider=provider, basis_episode_ids=basis_ids,
             )
-            stance_records = self.self_model.consider_stances(
+            validated_stances = self._validate_stance_updates(
                 packet.get("stance_updates", []),
+                evidence_records,
+            )
+            stance_records = self.self_model.consider_stances(
+                validated_stances,
                 generation=generation,
                 provider=provider,
                 basis_episode_ids=basis_ids,
-                grounded_sources=grounded_sources,
             )
             for stance in stance_records:
                 if stance.get("kind") != "stance":
@@ -946,6 +1077,7 @@ Issue body:
             self.network.decay(0.72, 0.998)
             self.network.homeostatic_normalize(target_mean=0.24, ceiling=0.88)
             startup_maintenance = self.network.prune(max_schema_nodes=48, max_edges=1200)
+            stale_stance_nodes_removed = self._reconcile_stance_nodes()
             terminal_inhibition_start = self._apply_terminal_inhibition()
             tasks = self.github.list_tasks(self.config.max_tasks)
             percepts = [self._encode_issue(task, generation) for task in tasks]
@@ -1006,12 +1138,11 @@ Issue body:
 
             basis_records = percepts + recalled
             basis = [str(x.get("id", "")) for x in basis_records]
-            grounded_sources = self._stance_grounding_sources(basis_records)
             model_candidates = self._integrate_packets(
                 packets,
                 generation,
                 basis,
-                grounded_sources,
+                basis_records,
             )
             terminal_inhibition_after_packets = self._apply_terminal_inhibition()
             candidates = self.selector.baseline_candidates(
@@ -1061,6 +1192,7 @@ Issue body:
             final_maintenance = self.network.prune(max_schema_nodes=48, max_edges=1200)
             maintenance = {
                 "startup": startup_maintenance,
+                "stale_stance_nodes_removed": stale_stance_nodes_removed,
                 "final": final_maintenance,
                 "terminal_inhibition": {
                     "startup": terminal_inhibition_start,
