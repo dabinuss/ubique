@@ -1,67 +1,19 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T20:37:35.489295+00:00",
-  "generation": 474,
+  "timestamp": "2026-10-03T20:38:30.422719+00:00",
+  "generation": 475,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.4714,
-    "surprise": 0.4688,
+    "novelty": 0.3589,
+    "surprise": 0.3467,
     "uncertainty": 0.07,
-    "salience": 0.7494,
-    "exploration": 0.3833,
-    "plasticity": 0.6446,
-    "energy": 0.733,
-    "sleep_pressure": 0.1405
+    "salience": 0.4473,
+    "exploration": 0.3195,
+    "plasticity": 0.5488,
+    "energy": 1.0,
+    "sleep_pressure": 0.097
   },
   "workspace": [
-    {
-      "id": "episode:8f29a159cb95ba",
-      "kind": "external_issue_lifecycle",
-      "label": "External GitHub issue #21 is now closed. It is no longer an active task. Stance formation smoke test",
-      "activation": 0.95,
-      "salience": 0.88,
-      "novelty": 0.65,
-      "surprise": 0.45,
-      "epistemic_status": "observed_external_state",
-      "source": "github:lifecycle",
-      "ignition_score": 0.8335
-    },
-    {
-      "id": "runtime_state:b74610dd8d363ec6",
-      "kind": "runtime_state",
-      "label": "external-task-ended",
-      "activation": 0.5325,
-      "salience": 0.749415,
-      "novelty": 0.47137999999999997,
-      "surprise": 0.46885,
-      "epistemic_status": "observed_external_state",
-      "source": "semantic_network",
-      "ignition_score": 0.5711
-    },
-    {
-      "id": "runtime_state:247beaa03cc47f86",
-      "kind": "runtime_state",
-      "label": "resolved",
-      "activation": 0.5325,
-      "salience": 0.749415,
-      "novelty": 0.47137999999999997,
-      "surprise": 0.46885,
-      "epistemic_status": "observed_external_state",
-      "source": "semantic_network",
-      "ignition_score": 0.5711
-    },
-    {
-      "id": "runtime_state:6124c1573fb3757e",
-      "kind": "runtime_state",
-      "label": "issue:21",
-      "activation": 0.5325,
-      "salience": 0.749415,
-      "novelty": 0.47137999999999997,
-      "surprise": 0.46885,
-      "epistemic_status": "observed_external_state",
-      "source": "semantic_network",
-      "ignition_score": 0.5711
-    },
     {
       "id": "episode:6e71188b382560",
       "kind": "recalled_episode",
@@ -87,6 +39,18 @@
       "ignition_score": 0.5675
     },
     {
+      "id": "episode:8f29a159cb95ba",
+      "kind": "recalled_episode",
+      "label": "External GitHub issue #21 is now closed. It is no longer an active task. Stance formation smoke test",
+      "activation": 0.4088,
+      "salience": 0.88,
+      "novelty": 0.65,
+      "surprise": 0.45,
+      "epistemic_status": "observed_external_state",
+      "source": "associative_recall",
+      "ignition_score": 0.5629
+    },
+    {
       "id": "episode:59fd8f89549ccb",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 0, \"excerpt\": \"The Project Gutenberg eBook of The Expression of the Emotions in Man and Animals\\r\\n    \\r\\nThis eBook is for the use of anyone anywhere in the United States and\\r\\nmost other parts of the world at no cost and with almost no restrictions\\r\\nwhatsoever. You may copy ",
@@ -97,6 +61,42 @@
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
       "ignition_score": 0.5625
+    },
+    {
+      "id": "episode:fd6ea76e949f95",
+      "kind": "recalled_episode",
+      "label": "External GitHub issue #11 is now closed. It is no longer an active task. Ubique v2 end-to-end heartbeat smoke test",
+      "activation": 0.3258,
+      "salience": 0.88,
+      "novelty": 0.65,
+      "surprise": 0.45,
+      "epistemic_status": "observed_external_state",
+      "source": "associative_recall",
+      "ignition_score": 0.5214
+    },
+    {
+      "id": "episode:80c56b581c264c",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 1200, \"excerpt\": \" IN COLLABORATION WITH\\n  HENRY ALSOP RILEY\\n\\n  THE FORM AND FUNCTIONS OF THE\\n  CENTRAL NERVOUS SYSTEM\\n\\n\\n\\n\\n  THE MASTER OF DESTINY\\n\\n  A BIOGRAPHY\\n  OF THE BRAIN\\n\\n  BY FREDERICK\\n  TILNEY, M.D.\\n\\n  WITH A FOREWORD\\n  BY AUSTEN FOX\\n  RIGGS, M.D.\\n\\n  [Il",
+      "activation": 0.2886,
+      "salience": 0.9,
+      "novelty": 0.4,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4633
+    },
+    {
+      "id": "runtime_state:b74610dd8d363ec6",
+      "kind": "runtime_state",
+      "label": "external-task-ended",
+      "activation": 0.2552,
+      "salience": 0.57643,
+      "novelty": 0.35891,
+      "surprise": 0.34672,
+      "epistemic_status": "observed_external_state",
+      "source": "semantic_network",
+      "ignition_score": 0.36
     }
   ],
   "provider_eligibility": {
@@ -201,36 +201,36 @@
     }
   },
   "last_action": {
-    "kind": "attend",
-    "description": "Continue processing the active workspace without external action.",
-    "source": "workspace",
-    "score": 0.31512
+    "kind": "rest",
+    "description": "Allow activation to decay without forcing cognition.",
+    "source": "homeostasis",
+    "score": 0.36105
   },
   "action_competition": [
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.31512,
-      "description": "Continue processing the active workspace without external action."
-    },
-    {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.30484,
+      "score": 0.36105,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.25915,
+      "score": 0.31303,
       "description": "Replay and consolidate existing experience offline."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.16598,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
   "substrate_contributors": [],
   "current_stances": [],
-  "consecutive_pulses": 3,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 167,
+    "episodes": 168,
     "semantic_nodes": 725,
     "synapses": 1200
   },
@@ -244,7 +244,7 @@
       "removed_edges": 0
     },
     "terminal_inhibition": {
-      "startup": 476,
+      "startup": 654,
       "after_lifecycle": 654,
       "after_spread": 654,
       "after_packets": 654
