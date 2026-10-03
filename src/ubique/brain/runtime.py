@@ -985,9 +985,11 @@ Issue body:
             basis_records = percepts + recalled
             basis = [str(x.get("id", "")) for x in basis_records]
             grounded_statuses = {
+                # Personality should grow from material Ubique has actually
+                # encountered/acted on, not from arbitrary issue instructions
+                # or task lifecycle metadata. A GitHub issue can direct work,
+                # but merely saying something twice must not make it identity.
                 "external_source",
-                "observed_external_input",
-                "observed_external_state",
                 "observed_action_outcome",
                 "observed_history",
             }
