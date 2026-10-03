@@ -72,9 +72,55 @@ class SelfModelStore:
         value = {"timestamp": utc_now(), **record}
         with self.path.open("a", encoding="utf-8") as handle:
             handle.write(json.dumps(value, ensure_ascii=False) + "\n")
-        lines = self.path.read_text(encoding="utf-8").splitlines()
-        if len(lines) > self.limit:
-            self.path.write_text("\n".join(lines[-self.limit:]) + "\n", encoding="utf-8")
+
+        records = self._read_records()
+        if len(records) > self.limit:
+            # Routine action history must not erase established personality.
+            # Preserve the latest mature stance for every topic, then spend the
+            # remaining capacity on recent history/candidates.
+            latest_stances: dict[str, dict[str, Any]] = {}
+            for item in records:
+                if item.get("kind") != "stance":
+                    continue
+                key = str(item.get("topic_key", "")).strip()
+                if key:
+                    latest_stances[key] = item
+
+            anchors = list(latest_stances.values())[-min(80, self.limit // 3):]
+            anchor_markers = {
+                (
+                    item.get("timestamp"),
+                    item.get("kind"),
+                    item.get("topic_key"),
+                    item.get("position"),
+                )
+                for item in anchors
+            }
+            recent_slots = max(1, self.limit - len(anchors))
+            recent = records[-recent_slots:]
+            merged = anchors + recent
+
+            kept: list[dict[str, Any]] = []
+            seen: set[tuple[Any, Any, Any, Any]] = set()
+            for item in merged:
+                marker = (
+                    item.get("timestamp"),
+                    item.get("kind"),
+                    item.get("topic_key"),
+                    item.get("position"),
+                )
+                if marker in seen:
+                    continue
+                seen.add(marker)
+                kept.append(item)
+
+            # If an anchor also occurred in the recent window, retain one copy.
+            # Keep ordering stable enough for "latest record wins" semantics.
+            kept.sort(key=lambda item: str(item.get("timestamp", "")))
+            self.path.write_text(
+                "".join(json.dumps(item, ensure_ascii=False) + "\n" for item in kept[-self.limit:]),
+                encoding="utf-8",
+            )
         return value
 
     def record_outcome(
