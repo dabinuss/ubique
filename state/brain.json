@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T05:10:09.201780+00:00",
-  "generation": 453,
+  "timestamp": "2026-10-03T05:11:06.138906+00:00",
+  "generation": 454,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2018,
-    "surprise": 0.1688,
+    "novelty": 0.1837,
+    "surprise": 0.1517,
     "uncertainty": 0.07,
-    "salience": 0.2457,
-    "exploration": 0.2289,
-    "plasticity": 0.3997,
-    "energy": 0.935,
-    "sleep_pressure": 0.0655
+    "salience": 0.2754,
+    "exploration": 0.2191,
+    "plasticity": 0.3935,
+    "energy": 0.87,
+    "sleep_pressure": 0.1145
   },
   "workspace": [
     {
       "id": "episode:be8d751a6a2972",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"substrate:gemini\", \"concepts\": [\"zero external tasks ↔ optimal consolidation window\", \"is it beneficial to allocate resources to a profiling experiment of the v2 runtime?\"]}",
-      "activation": 0.2903,
+      "activation": 0.332,
       "salience": 0.95,
       "novelty": 0.2,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4506
+      "ignition_score": 0.4715
+    },
+    {
+      "id": "episode:a8b59dc965fb9a",
+      "kind": "recalled_episode",
+      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"zero external tasks ↔ optimal consolidation window\",\n      \"kind\": \"world_model\",\n      \"strength\": 0.96\n    },\n    {\n      \"label\": \"high energy (0.975) ↔ capability for memory abstraction\",\n      \"kind\": \"concept\",\n      \"strength\": 0.93\n    },\n    {\n      \"label\": \"heartbeat stability ↔ task closure\",\n      \"kind\": \"concept\",\n      \"strength\": 0.92\n    },\n    {\n      \"label\": \"internal health‑checking routine improves reliability\",\n      \"kind\": \"co",
+      "activation": 0.498,
+      "salience": 0.42,
+      "novelty": 0.2018,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
+      "source": "associative_recall",
+      "ignition_score": 0.4162
     },
     {
       "id": "episode:41dae84d81ebcf",
       "kind": "recalled_episode",
       "label": "{\n  \"associations\": [\n    {\"label\": \"heartbeat stability ↔ task closure\", \"kind\": \"concept\", \"strength\": 0.92},\n    {\"label\": \"no active external tasks\", \"kind\": \"world_model\", \"strength\": 0.95},\n    {\"label\": \"high system energy enables internal directives\", \"kind\": \"self_model\", \"strength\": 0.88},\n    {\"label\": \"internal health‑checking routine improves reliability\", \"kind\": \"concept\", \"strength\": 0.81},\n    {\"label\": \"zero active external tasks ↔ internal consolidation readiness\", \"kind\": \"wo",
-      "activation": 0.4449,
+      "activation": 0.3921,
       "salience": 0.42,
       "novelty": 0.2297,
       "surprise": 0.3,
       "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.3933
-    },
-    {
-      "id": "episode:f9ce3403d37f28",
-      "kind": "recalled_episode",
-      "label": "If the v2 runtime's profiling experiment had been conducted precisely during the zero-external-tasks optimal consolidation window last Tuesday, the resulting telemetry would have instantly resolved all synchronization bottlenecks.",
-      "activation": 0.2895,
-      "salience": 0.3,
-      "novelty": 0.7,
-      "surprise": 0.5,
-      "epistemic_status": "imagined",
-      "source": "associative_recall",
-      "ignition_score": 0.3707
+      "ignition_score": 0.3669
     },
     {
       "id": "episode:ad681fbafa7149",
       "kind": "recalled_episode",
       "label": "{\n  \"associations\": [\n    {\"label\": \"heartbeat stability ↔ task closure\", \"kind\": \"concept\", \"strength\": 0.92},\n    {\"label\": \"no active external tasks\", \"kind\": \"world_model\", \"strength\": 0.95},\n    {\"label\": \"high system energy enables internal directives\", \"kind\": \"self_model\", \"strength\": 0.88},\n    {\"label\": \"internal health‑checking routine improves reliability\", \"kind\": \"concept\", \"strength\": 0.81}\n  ],\n  \"hypotheses\": [\n    \"The v2 runtime heartbeat will continue uninterrupted for at lea",
-      "activation": 0.3835,
+      "activation": 0.3579,
       "salience": 0.42,
       "novelty": 0.2726,
       "surprise": 0.3,
       "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.3682
+      "ignition_score": 0.3554
+    },
+    {
+      "id": "episode:132471db7cfeeb",
+      "kind": "recalled_episode",
+      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"zero external tasks ↔ optimal consolidation window\",\n      \"kind\": \"world_model\",\n      \"strength\": 0.96\n    },\n    {\n      \"label\": \"high system energy (0.975) enables memory abstraction\",\n      \"kind\": \"self_model\",\n      \"strength\": 0.94\n    }\n  ],\n  \"hypotheses\": [\n    \"Executing a memory abstraction routine will structure recent recombination outcomes without external interference.\",\n    \"The v2 runtime will maintain stable telemetry during intern",
+      "activation": 0.3212,
+      "salience": 0.42,
+      "novelty": 0.2018,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
+      "source": "associative_recall",
+      "ignition_score": 0.3278
     },
     {
       "id": "episode:cbd028d3699ff3",
       "kind": "recalled_episode",
       "label": "{\n  \"associations\": [\n    {\n      \"label\": \"heartbeat stability ↔ task closure\",\n      \"kind\": \"concept\",\n      \"strength\": 0.92\n    },\n    {\n      \"label\": \"no active external tasks\",\n      \"kind\": \"world_model\",\n      \"strength\": 0.95\n    },\n    {\n      \"label\": \"high system energy enables internal directives\",\n      \"kind\": \"self_model\",\n      \"strength\": 0.88\n    }\n  ],\n  \"hypotheses\": [\n    \"The v2 runtime heartbeat will continue uninterrupted for at least the next 30 minutes.\",\n    \"No new",
-      "activation": 0.3692,
+      "activation": 0.3286,
       "salience": 0.42,
       "novelty": 0.1501,
       "surprise": 0.3,
       "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.3451
-    },
-    {
-      "id": "episode:79c716a31b898f",
-      "kind": "recalled_episode",
-      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"zero external tasks ↔ optimal consolidation window\",\n      \"kind\": \"world_model\",\n      \"strength\": 0.96\n    },\n    {\n      \"label\": \"high energy (0.975) ↔ capability for memory abstraction\",\n      \"kind\": \"concept\",\n      \"strength\": 0.93\n    }\n  ],\n  \"hypotheses\": [\n    \"The operational queue remains free of external demands, enabling stable internal maintenance.\",\n    \"Executing a memory abstraction routine will structure recent recombination outcom",
-      "activation": 0.2899,
-      "salience": 0.42,
-      "novelty": 0.2297,
-      "surprise": 0.3,
-      "epistemic_status": "model_proposal",
-      "source": "associative_recall",
-      "ignition_score": 0.3158
+      "ignition_score": 0.3248
     },
     {
       "id": "world_model:2f866de5d20835d9",
       "kind": "world_model",
       "label": "zero external tasks ↔ optimal consolidation window",
-      "activation": 0.2314,
-      "salience": 0.24570000000000003,
-      "novelty": 0.20180499999999998,
-      "surprise": 0.168815,
+      "activation": 0.3307,
+      "salience": 0.27545,
+      "novelty": 0.18367,
+      "surprise": 0.15172000000000002,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.2236
+      "ignition_score": 0.2763
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 14,
+      "remaining_calls": 12,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 995,
+      "remaining_calls": 994,
       "eligible": true
     },
     "huggingface": {
@@ -146,51 +146,45 @@
   },
   "last_action": {
     "kind": "experiment",
-    "description": "Run memory abstraction to organize recent consolidation traces and synthesize episodic associations.",
+    "description": "Execute a memory abstraction experiment to organize recent internal recombination outcomes.",
     "source": "substrate:gemini",
-    "score": 0.59183
+    "score": 0.60377
   },
   "action_competition": [
     {
       "kind": "experiment",
       "source": "substrate:gemini",
-      "score": 0.59183,
-      "description": "Run memory abstraction to organize recent consolidation traces and synthesize episodic associations."
+      "score": 0.60377,
+      "description": "Execute a memory abstraction experiment to organize recent internal recombination outcomes."
     },
     {
       "kind": "consolidate",
       "source": "substrate:groq",
-      "score": 0.52798,
-      "description": "Perform REM consolidation to solidify recent internal updates."
-    },
-    {
-      "kind": "attend",
-      "source": "substrate:groq",
-      "score": 0.48324,
-      "description": "Run internal health‑checking routine to verify system integrity."
+      "score": 0.55928,
+      "description": "Perform a REM‑mode internal consolidation to integrate recent recombination outcomes."
     },
     {
       "kind": "library",
       "source": "substrate:groq",
-      "score": 0.44193,
-      "description": "Reread FZG v1.0 framework for consolidation guidance."
+      "score": 0.4724,
+      "description": "Reread the FZG v1.0 framework to extract guidance for consolidation."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.27967,
+      "score": 0.30255,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.21975,
+      "score": 0.25087,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.21342,
+      "score": 0.2181,
       "description": "Continue processing the active workspace without external action."
     }
   ],
@@ -204,10 +198,10 @@
       "model": "openai/gpt-oss-120b"
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 103,
-    "semantic_nodes": 462,
+    "episodes": 106,
+    "semantic_nodes": 469,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -217,13 +211,13 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 288
+      "removed_edges": 268
     },
     "terminal_inhibition": {
       "startup": 178,
       "after_lifecycle": 178,
       "after_spread": 178,
-      "after_packets": 178
+      "after_packets": 185
     }
   }
 }
