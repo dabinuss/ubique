@@ -299,6 +299,10 @@ class NeurocognitiveRuntime:
                 or strong_concept_match
                 or lexical_overlap >= 3
             )
+            terminal_lifecycle_memory = (
+                kind == "external_issue_lifecycle"
+                and status == "observed_external_state"
+            )
             if terminal_issue_memory:
                 copy["recall_score"] = round(
                     float(copy.get("recall_score", 0.0)) * 0.08,
@@ -308,6 +312,15 @@ class NeurocognitiveRuntime:
                 copy["terminal_overlap"] = max(1, overlap)
                 copy["terminal_graph_overlap"] = graph_overlap
                 copy["terminal_lexical_overlap"] = lexical_overlap
+            elif terminal_lifecycle_memory:
+                # The closure/deactivation observation remains true, but after
+                # it has been encoded it should become background context rather
+                # than monopolize every later workspace.
+                copy["recall_score"] = round(
+                    float(copy.get("recall_score", 0.0)) * 0.28,
+                    4,
+                )
+                copy["contextual_status"] = "settled_terminal_context"
             elif superseded and (kind == "cognitive_packet" or status in model_statuses):
                 factor = 0.12 if overlap >= 2 else 0.35
                 copy["recall_score"] = round(
