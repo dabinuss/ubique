@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T20:36:46.250772+00:00",
-  "generation": 473,
+  "timestamp": "2026-10-03T20:37:35.489295+00:00",
+  "generation": 474,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.3752,
-    "surprise": 0.479,
+    "novelty": 0.4714,
+    "surprise": 0.4688,
     "uncertainty": 0.07,
-    "salience": 0.6791,
-    "exploration": 0.3516,
-    "plasticity": 0.5624,
-    "energy": 0.878,
-    "sleep_pressure": 0.0635
+    "salience": 0.7494,
+    "exploration": 0.3833,
+    "plasticity": 0.6446,
+    "energy": 0.733,
+    "sleep_pressure": 0.1405
   },
   "workspace": [
     {
-      "id": "episode:b101d6faf6700d",
-      "kind": "recalled_episode",
-      "label": "Stance formation smoke test\n\nReflect on what you have actually read so far about brain, mind, emotion, and human nature. Distinguish source claims from your own present view. You may remain uncertain or disagree; do not force a conclusion.",
-      "activation": 0.7043,
-      "salience": 0.9,
-      "novelty": 0.9629,
-      "surprise": 0.62,
-      "epistemic_status": "observed_external_input",
-      "source": "associative_recall",
-      "ignition_score": 0.7767
-    },
-    {
-      "id": "episode:79b27446ded1ae",
-      "kind": "github_issue",
-      "label": "Stance formation smoke test\n\nReflect on what you have actually read so far about brain, mind, emotion, and human nature. Distinguish source claims from your own present view. You may remain uncertain or disagree; do not force a conclusion.",
+      "id": "episode:8f29a159cb95ba",
+      "kind": "external_issue_lifecycle",
+      "label": "External GitHub issue #21 is now closed. It is no longer an active task. Stance formation smoke test",
       "activation": 0.95,
-      "salience": 0.9,
-      "novelty": 0.0,
-      "surprise": 0.62,
-      "epistemic_status": "observed_external_input",
-      "source": "github:dabinuss",
-      "ignition_score": 0.7744
+      "salience": 0.88,
+      "novelty": 0.65,
+      "surprise": 0.45,
+      "epistemic_status": "observed_external_state",
+      "source": "github:lifecycle",
+      "ignition_score": 0.8335
     },
     {
-      "id": "concept:4277d3259d4e4993",
-      "kind": "concept",
-      "label": "conclusion",
-      "activation": 0.94,
-      "salience": 0.679065,
-      "novelty": 0.37524500000000005,
-      "surprise": 0.47901499999999997,
-      "epistemic_status": "memory_index",
+      "id": "runtime_state:b74610dd8d363ec6",
+      "kind": "runtime_state",
+      "label": "external-task-ended",
+      "activation": 0.5325,
+      "salience": 0.749415,
+      "novelty": 0.47137999999999997,
+      "surprise": 0.46885,
+      "epistemic_status": "observed_external_state",
       "source": "semantic_network",
-      "ignition_score": 0.746
+      "ignition_score": 0.5711
     },
     {
-      "id": "concept:54476ce93ea4a148",
-      "kind": "concept",
-      "label": "distinguish",
-      "activation": 0.94,
-      "salience": 0.679065,
-      "novelty": 0.37524500000000005,
-      "surprise": 0.47901499999999997,
-      "epistemic_status": "external_input_index",
+      "id": "runtime_state:247beaa03cc47f86",
+      "kind": "runtime_state",
+      "label": "resolved",
+      "activation": 0.5325,
+      "salience": 0.749415,
+      "novelty": 0.47137999999999997,
+      "surprise": 0.46885,
+      "epistemic_status": "observed_external_state",
       "source": "semantic_network",
-      "ignition_score": 0.746
+      "ignition_score": 0.5711
     },
     {
-      "id": "concept:0570b840b0d58779",
-      "kind": "concept",
-      "label": "formation",
-      "activation": 0.94,
-      "salience": 0.679065,
-      "novelty": 0.37524500000000005,
-      "surprise": 0.47901499999999997,
-      "epistemic_status": "external_input_index",
+      "id": "runtime_state:6124c1573fb3757e",
+      "kind": "runtime_state",
+      "label": "issue:21",
+      "activation": 0.5325,
+      "salience": 0.749415,
+      "novelty": 0.47137999999999997,
+      "surprise": 0.46885,
+      "epistemic_status": "observed_external_state",
       "source": "semantic_network",
-      "ignition_score": 0.746
+      "ignition_score": 0.5711
     },
     {
-      "id": "concept:dd7cf0a1d49819b9",
-      "kind": "concept",
-      "label": "uncertain",
-      "activation": 0.94,
-      "salience": 0.679065,
-      "novelty": 0.37524500000000005,
-      "surprise": 0.47901499999999997,
-      "epistemic_status": "external_input_index",
-      "source": "semantic_network",
-      "ignition_score": 0.746
+      "id": "episode:6e71188b382560",
+      "kind": "recalled_episode",
+      "label": "External GitHub issue #20 is now deactivated. It is no longer an active task. Ubique library sync — public-domain collection",
+      "activation": 0.421,
+      "salience": 0.88,
+      "novelty": 0.65,
+      "surprise": 0.45,
+      "epistemic_status": "observed_external_state",
+      "source": "associative_recall",
+      "ignition_score": 0.569
     },
     {
-      "id": "concept:411f62e7fd037280",
-      "kind": "concept",
-      "label": "actually",
-      "activation": 0.94,
-      "salience": 0.679065,
-      "novelty": 0.37524500000000005,
-      "surprise": 0.47901499999999997,
-      "epistemic_status": "external_input_index",
-      "source": "semantic_network",
-      "ignition_score": 0.746
+      "id": "episode:0c7c2bc439d0bb",
+      "kind": "recalled_episode",
+      "label": "External GitHub issue #19 is now deactivated. It is no longer an active task. Ubique library smoke test — public-domain book",
+      "activation": 0.4179,
+      "salience": 0.88,
+      "novelty": 0.65,
+      "surprise": 0.45,
+      "epistemic_status": "observed_external_state",
+      "source": "associative_recall",
+      "ignition_score": 0.5675
+    },
+    {
+      "id": "episode:59fd8f89549ccb",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 0, \"excerpt\": \"The Project Gutenberg eBook of The Expression of the Emotions in Man and Animals\\r\\n    \\r\\nThis eBook is for the use of anyone anywhere in the United States and\\r\\nmost other parts of the world at no cost and with almost no restrictions\\r\\nwhatsoever. You may copy ",
+      "activation": 0.3955,
+      "salience": 0.88,
+      "novelty": 0.79,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.5625
     }
   ],
   "provider_eligibility": {
@@ -180,43 +180,58 @@
       ]
     },
     "21": {
-      "state": "active",
+      "state": "closed",
       "title": "Stance formation smoke test",
-      "updated_at": "2026-10-03T20:36:45.531670+00:00"
+      "updated_at": "2026-10-03T20:37:15Z",
+      "closed_at": "2026-10-03T20:37:14Z",
+      "concepts": [
+        "distinguish",
+        "conclusion",
+        "formation",
+        "uncertain",
+        "actually",
+        "disagree",
+        "emotion",
+        "present",
+        "reflect",
+        "claims",
+        "nature",
+        "remain"
+      ]
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
-    "source": "homeostasis",
-    "score": 0.36594
+    "kind": "attend",
+    "description": "Continue processing the active workspace without external action.",
+    "source": "workspace",
+    "score": 0.31512
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.36594,
-      "description": "Replay and consolidate existing experience offline."
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.31512,
+      "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.29714,
+      "score": 0.30484,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.25188,
-      "description": "Continue processing the active workspace without external action."
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.25915,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [],
   "current_stances": [],
-  "consecutive_pulses": 2,
+  "consecutive_pulses": 3,
   "memory": {
-    "episodes": 165,
-    "semantic_nodes": 724,
+    "episodes": 167,
+    "semantic_nodes": 725,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -230,9 +245,9 @@
     },
     "terminal_inhibition": {
       "startup": 476,
-      "after_lifecycle": 476,
-      "after_spread": 476,
-      "after_packets": 476
+      "after_lifecycle": 654,
+      "after_spread": 654,
+      "after_packets": 654
     }
   }
 }
