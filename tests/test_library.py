@@ -172,3 +172,66 @@ def test_remote_public_domain_book_is_readable_and_cached(tmp_path, monkeypatch)
     rel = saved["items"][0]["content_path"]
     assert rel
     assert (library.LIBRARY_DIR / rel).exists()
+
+
+def test_sync_caches_remote_book_without_advancing_read_state(tmp_path, monkeypatch):
+    _redirect(tmp_path, monkeypatch)
+    library.INDEX_PATH.parent.mkdir(parents=True, exist_ok=True)
+    library.INDEX_PATH.write_text(
+        json.dumps(
+            {
+                "version": 1,
+                "items": [
+                    {
+                        "id": "sync-book",
+                        "title": "Sync book",
+                        "author": "Example Author",
+                        "kind": "book",
+                        "status": "available",
+                        "source": "Project Gutenberg eBook test",
+                        "source_url": "https://www.gutenberg.org/ebooks/1.txt.utf-8",
+                        "license": "Public domain",
+                        "topics": ["mind"],
+                        "added_by": "test",
+                        "added_at": "2026-10-03T00:00:00+00:00",
+                        "content_path": "",
+                        "read_count": 0,
+                        "read_cursor": 0,
+                        "fully_read": False,
+                        "fully_read_at": None,
+                        "notes": [],
+                    }
+                ],
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    class Headers:
+        @staticmethod
+        def get_content_charset():
+            return "utf-8"
+
+    class Response:
+        headers = Headers()
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            return False
+
+        @staticmethod
+        def read(_limit):
+            return b"brain mind consciousness"
+
+    monkeypatch.setattr(library, "urlopen", lambda *_args, **_kwargs: Response())
+
+    result = library.apply_library_action({"action": "sync", "limit": 10})
+    assert result["cached"] == 1
+    saved = json.loads(library.INDEX_PATH.read_text(encoding="utf-8"))
+    item = saved["items"][0]
+    assert item["content_path"]
+    assert item["read_count"] == 0
+    assert item["read_cursor"] == 0
+    assert item["fully_read"] is False
