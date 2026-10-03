@@ -352,7 +352,7 @@ class NeurocognitiveRuntime:
 
     def _cognitive_library_catalog(self, limit: int = 20) -> list[dict[str, Any]]:
         completed = self._completed_library_items()
-        catalog = library_catalog(limit)
+        catalog = library_catalog(limit, include_completed=False)
         for item in catalog:
             item_id = str(item.get("id", ""))
             if item_id in completed:
