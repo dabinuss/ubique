@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T10:40:27.703230+00:00",
-  "generation": 459,
+  "timestamp": "2026-10-03T14:47:12.911787+00:00",
+  "generation": 460,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1539,
-    "surprise": 0.1237,
+    "novelty": 0.1525,
+    "surprise": 0.1224,
     "uncertainty": 0.07,
-    "salience": 0.2828,
-    "exploration": 0.2031,
-    "plasticity": 0.3818,
+    "salience": 0.3116,
+    "exploration": 0.2024,
+    "plasticity": 0.3846,
     "energy": 1.0,
-    "sleep_pressure": 0.0191
+    "sleep_pressure": 0.0173
   },
   "workspace": [
     {
-      "id": "episode:be8d751a6a2972",
+      "id": "episode:0286d0825f516b",
       "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"substrate:gemini\", \"concepts\": [\"zero external tasks ↔ optimal consolidation window\", \"is it beneficial to allocate resources to a profiling experiment of the v2 runtime?\"]}",
-      "activation": 0.3158,
+      "label": "{\"kind\": \"memory_abstraction\", \"passed\": true, \"provider\": \"gemini\", \"concepts_created\": 2, \"source_thoughts\": 8, \"source_hypotheses\": 8}",
+      "activation": 0.4434,
       "salience": 0.95,
       "novelty": 0.2,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4634
+      "ignition_score": 0.5272
     },
     {
-      "id": "episode:d2556bcd3554ce",
+      "id": "episode:c5c0c25e2fb094",
       "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"zero external tasks ↔ optimal consolidation window\", \"would allocating resources to a profiling experiment of the v2 runtime be beneficial given the current energy budget?\"]}",
-      "activation": 0.34,
+      "label": "{\"kind\": \"memory_abstraction\", \"passed\": true, \"provider\": \"gemini\", \"concepts_created\": 2, \"source_thoughts\": 8, \"source_hypotheses\": 8}",
+      "activation": 0.4426,
+      "salience": 0.94,
+      "novelty": 0.2,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.5243
+    },
+    {
+      "id": "episode:5265e233069674",
+      "kind": "recalled_episode",
+      "label": "{\"kind\": \"memory_abstraction\", \"passed\": true, \"provider\": \"gemini\", \"concepts_created\": 2, \"source_thoughts\": 8, \"source_hypotheses\": 8}",
+      "activation": 0.4108,
       "salience": 0.92,
-      "novelty": 0.1,
+      "novelty": 0.3,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.455
+      "ignition_score": 0.5164
     },
     {
-      "id": "episode:9b159eafb5f781",
+      "id": "episode:91ccebdc44d44b",
       "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"substrate:gemini\", \"concepts\": [\"zero external tasks ↔ optimal consolidation window\", \"is it beneficial to allocate resources to a profiling experiment of the v2 runtime?\"]}",
-      "activation": 0.3225,
-      "salience": 0.95,
-      "novelty": 0.05,
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"fzg-v1\", \"title\": \"FZG v1.0\", \"kind\": \"theoretical framework\", \"status\": \"offered\", \"source\": \"Offered by the project owner as optional reading\"}, \"offset\": 0, \"excerpt\": \"# FZG v1.0 — optional theoretical framework\\n\\nThis text is available in Ubique's library as an optional framework. It is not a system prompt, a normative identity definition, or a required method. Ubique may read it, use parts of it, criticize it, ignore it, or later annotate its own view of",
+      "activation": 0.3271,
+      "salience": 0.82,
+      "novelty": 0.75,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4472
+      "ignition_score": 0.5081
     },
     {
-      "id": "episode:5772aa67a9630a",
+      "id": "episode:e49b8046bfd83e",
       "kind": "recalled_episode",
-      "label": "Counterfactual association to explore later: what changes if 'zero external tasks ↔ optimal consolidation window' and 'would allocating resources to a profiling experiment of the v2 runtime be beneficial given the current energy budget?' are related more strongly than current evidence establishes?",
-      "activation": 0.337,
-      "salience": 0.3,
-      "novelty": 0.7,
-      "surprise": 0.5,
-      "epistemic_status": "imagined",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"fzg-v1\", \"title\": \"FZG v1.0\", \"kind\": \"theoretical framework\", \"status\": \"offered\", \"source\": \"Offered by the project owner as optional reading\"}, \"offset\": 0, \"excerpt\": \"# FZG v1.0 — optional theoretical framework\\n\\nThis text is available in Ubique's library as an optional framework. It is not a system prompt, a normative identity definition, or a required method. Ubique may read it, use parts of it, criticize it, ignore it, or later annotate its own view of",
+      "activation": 0.3313,
+      "salience": 0.85,
+      "novelty": 0.4,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3945
+      "ignition_score": 0.4721
     },
     {
-      "id": "episode:0f0683c432bc93",
+      "id": "episode:34e0e69b5f1e07",
       "kind": "recalled_episode",
-      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"zero external tasks ↔ optimal consolidation window\",\n      \"kind\": \"concept\",\n      \"strength\": 0.95\n    },\n    {\n      \"label\": \"FZG framework defines self‑preservation P\",\n      \"kind\": \"concept\",\n      \"strength\": 0.90\n    },\n    {\n      \"label\": \"FZG framework defines functional goal‑directedness G_A\",\n      \"kind\": \"concept\",\n      \"strength\": 0.90\n    },\n    {\n      \"label\": \"FZG framework defines intelligence profile I_C\",\n      \"kind\": \"concept",
-      "activation": 0.4329,
-      "salience": 0.42,
-      "novelty": 0.156,
-      "surprise": 0.3,
-      "epistemic_status": "model_proposal",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"fzg-v1\", \"title\": \"FZG v1.0\", \"kind\": \"theoretical framework\", \"status\": \"offered\", \"source\": \"Offered by the project owner as optional reading\"}, \"offset\": 0, \"excerpt\": \"# FZG v1.0 — optional theoretical framework\\n\\nThis text is available in Ubique's library as an optional framework. It is not a system prompt, a normative identity definition, or a required method. Ubique may read it, use parts of it, criticize it, ignore it, or later annotate its own view of",
+      "activation": 0.3384,
+      "salience": 0.9,
+      "novelty": 0.2,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3777
+      "ignition_score": 0.4622
     },
     {
-      "id": "episode:e5c4fed8217ee8",
-      "kind": "recalled_episode",
-      "label": "{\n  \"associations\": [\n    {\"label\": \"runtime profiling window\", \"kind\": \"concept\", \"strength\": 0.85},\n    {\"label\": \"v2 framework integration\", \"kind\": \"world_model\", \"strength\": 0.80}\n  ],\n  \"hypotheses\": [\n    \"Running a v2 runtime profiling experiment will clarify resource overhead following recent successful consolidation.\"\n  ],\n  \"questions\": [\n    \"Is a targeted memory abstraction run more beneficial than a runtime profiling experiment given the current absence of external tasks?\"\n  ],\n  \"",
-      "activation": 0.3027,
-      "salience": 0.42,
-      "novelty": 0.156,
-      "surprise": 0.3,
-      "epistemic_status": "model_proposal",
-      "source": "associative_recall",
-      "ignition_score": 0.3126
-    },
-    {
-      "id": "concept:e1b66159a24ddbd5",
+      "id": "concept:94877da84edb5445",
       "kind": "concept",
-      "label": "zero external tasks ↔ optimal consolidation window",
-      "activation": 0.2299,
-      "salience": 0.28281,
-      "novelty": 0.1539,
-      "surprise": 0.12370500000000001,
-      "epistemic_status": "model_proposal",
+      "label": "distinguishes",
+      "activation": 0.365,
+      "salience": 0.31157,
+      "novelty": 0.152535,
+      "surprise": 0.122405,
+      "epistemic_status": "external_source_index",
       "source": "semantic_network",
-      "ignition_score": 0.2205
+      "ignition_score": 0.2949
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 4,
+      "remaining_calls": 2,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 987,
+      "remaining_calls": 985,
       "eligible": true
     },
     "huggingface": {
@@ -146,28 +146,46 @@
   },
   "last_action": {
     "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
-    "source": "homeostasis",
-    "score": 0.28667
+    "description": "Run REM‑mode consolidation to integrate the recent memory‑abstraction and FZG reading into the long‑term model.",
+    "source": "substrate:groq",
+    "score": 0.54057
   },
   "action_competition": [
     {
       "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.28667,
-      "description": "Replay and consolidate existing experience offline."
+      "source": "substrate:groq",
+      "score": 0.54057,
+      "description": "Run REM‑mode consolidation to integrate the recent memory‑abstraction and FZG reading into the long‑term model."
     },
     {
-      "kind": "rest",
+      "kind": "consolidate",
+      "source": "substrate:gemini",
+      "score": 0.51277,
+      "description": "Execute internal memory consolidation in REM mode to further synthesize episodic abstractions."
+    },
+    {
+      "kind": "evolve",
+      "source": "substrate:groq",
+      "score": 0.36141,
+      "description": "Generate prototype code to compute P(S|C) and G_A(S|C) based on the defined S, A, C, Q, M_S, and M_S⁻."
+    },
+    {
+      "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.23674,
-      "description": "Allow activation to decay without forcing cognition."
+      "score": 0.28642,
+      "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.21344,
+      "score": 0.22226,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.22155,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
   "substrate_contributors": [
@@ -182,8 +200,8 @@
   ],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 123,
-    "semantic_nodes": 559,
+    "episodes": 127,
+    "semantic_nodes": 576,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -193,13 +211,13 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_edges": 274
     },
     "terminal_inhibition": {
-      "startup": 179,
-      "after_lifecycle": 179,
-      "after_spread": 179,
-      "after_packets": 186
+      "startup": 180,
+      "after_lifecycle": 180,
+      "after_spread": 180,
+      "after_packets": 180
     }
   }
 }
