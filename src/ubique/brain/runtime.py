@@ -699,6 +699,28 @@ Issue body:
             })
         self.workspace.compete(candidates)
 
+    @staticmethod
+    def _stance_grounding_sources(records: list[dict[str, Any]]) -> list[str]:
+        """Return evidence sources allowed to contribute to persistent identity.
+
+        Raw external task text and task lifecycle observations are deliberately
+        excluded: they may guide work, but they are not evidence merely because
+        somebody said them. Library text and actual observed action outcomes can
+        ground a revisable stance.
+        """
+        grounded_statuses = {
+            "external_source",
+            "observed_action_outcome",
+            "observed_history",
+        }
+        return list(dict.fromkeys(
+            f"{item.get('epistemic_status', '')}:{item.get('source', '')}"
+            for item in records
+            if isinstance(item, dict)
+            and str(item.get("epistemic_status", "")) in grounded_statuses
+            and str(item.get("source", "")).strip()
+        ))[:16]
+
     def _integrate_packets(
         self,
         packets: list[dict[str, Any]],
@@ -984,21 +1006,7 @@ Issue body:
 
             basis_records = percepts + recalled
             basis = [str(x.get("id", "")) for x in basis_records]
-            grounded_statuses = {
-                # Personality should grow from material Ubique has actually
-                # encountered/acted on, not from arbitrary issue instructions
-                # or task lifecycle metadata. A GitHub issue can direct work,
-                # but merely saying something twice must not make it identity.
-                "external_source",
-                "observed_action_outcome",
-                "observed_history",
-            }
-            grounded_sources = list(dict.fromkeys(
-                f"{x.get('epistemic_status', '')}:{x.get('source', '')}"
-                for x in basis_records
-                if str(x.get("epistemic_status", "")) in grounded_statuses
-                and str(x.get("source", "")).strip()
-            ))[:16]
+            grounded_sources = self._stance_grounding_sources(basis_records)
             model_candidates = self._integrate_packets(
                 packets,
                 generation,
