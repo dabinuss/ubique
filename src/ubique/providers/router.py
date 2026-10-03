@@ -24,6 +24,7 @@ class ProviderRouter:
             {
                 "successes": 0,
                 "failures": 0,
+                "consecutive_failures": 0,
                 "disabled_until": None,
                 "daily_date": None,
                 "daily_calls": 0,
@@ -63,15 +64,30 @@ class ProviderRouter:
     def _success(self, name: str) -> None:
         rec = self._record(name)
         rec["successes"] = int(rec.get("successes", 0)) + 1
+        rec["consecutive_failures"] = 0
         rec["disabled_until"] = None
         write_json("providers.json", self.ledger)
 
-    def _failure(self, name: str) -> None:
+    def _failure(self, name: str, error: Exception | None = None) -> None:
         rec = self._record(name)
         rec["failures"] = int(rec.get("failures", 0)) + 1
+        streak = int(rec.get("consecutive_failures", 0) or 0) + 1
+        rec["consecutive_failures"] = streak
+
         if name != "fallback":
+            message = str(error or "").lower()
+            if "http 401" in message or "http 403" in message or "api key" in message:
+                cooldown = timedelta(hours=6)
+            elif "http 429" in message or "rate limit" in message:
+                cooldown = timedelta(minutes=30)
+            else:
+                # Transient provider/network failures should not silence a
+                # cognitive substrate for most of the day. Back off quickly,
+                # then retry with an exponential cap.
+                minutes = min(60, 5 * (2 ** min(streak - 1, 4)))
+                cooldown = timedelta(minutes=minutes)
             rec["disabled_until"] = (
-                datetime.now(timezone.utc) + timedelta(hours=6)
+                datetime.now(timezone.utc) + cooldown
             ).isoformat()
         write_json("providers.json", self.ledger)
 
@@ -93,7 +109,7 @@ class ProviderRouter:
                 self._success(provider.name)
                 return result
             except Exception as exc:
-                self._failure(provider.name)
+                self._failure(provider.name, exc)
                 errors.append(f"{provider.name}: {exc}")
 
         raise ProviderError("No provider succeeded: " + "; ".join(errors))
@@ -174,6 +190,6 @@ class ProviderRouter:
             result = provider.generate(prompt)
             self._success(provider.name)
             return result
-        except Exception:
-            self._failure(provider.name)
+        except Exception as exc:
+            self._failure(provider.name, exc)
             raise
