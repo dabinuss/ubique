@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T00:01:52.901362+00:00",
-  "generation": 451,
+  "timestamp": "2026-10-03T00:23:26.338345+00:00",
+  "generation": 452,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2726,
-    "surprise": 0.2356,
+    "novelty": 0.2297,
+    "surprise": 0.1951,
     "uncertainty": 0.07,
-    "salience": 0.266,
-    "exploration": 0.267,
-    "plasticity": 0.4354,
+    "salience": 0.2534,
+    "exploration": 0.2439,
+    "plasticity": 0.4137,
     "energy": 1.0,
     "sleep_pressure": 0.0165
   },
   "workspace": [
     {
-      "id": "episode:5244f28bde3377",
-      "kind": "provider_state_change",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.95,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "runtime",
-      "ignition_score": 0.694
-    },
-    {
       "id": "episode:9274deade5050c",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"no active external tasks\", \"no pending external tasks or directives exist as of 2026-10-02.\"]}",
-      "activation": 0.2817,
+      "activation": 0.2793,
       "salience": 0.95,
       "novelty": 0.1,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4333
+      "ignition_score": 0.4321
     },
     {
       "id": "episode:d772a4d8bab976",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"no active external tasks\", \"is the v2 runtime heartbeat currently uninterrupted?\"]}",
-      "activation": 0.2785,
+      "activation": 0.2757,
       "salience": 0.91,
       "novelty": 0.05,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4153
+      "ignition_score": 0.4138
+    },
+    {
+      "id": "episode:ad681fbafa7149",
+      "kind": "recalled_episode",
+      "label": "{\n  \"associations\": [\n    {\"label\": \"heartbeat stability ↔ task closure\", \"kind\": \"concept\", \"strength\": 0.92},\n    {\"label\": \"no active external tasks\", \"kind\": \"world_model\", \"strength\": 0.95},\n    {\"label\": \"high system energy enables internal directives\", \"kind\": \"self_model\", \"strength\": 0.88},\n    {\"label\": \"internal health‑checking routine improves reliability\", \"kind\": \"concept\", \"strength\": 0.81}\n  ],\n  \"hypotheses\": [\n    \"The v2 runtime heartbeat will continue uninterrupted for at lea",
+      "activation": 0.4208,
+      "salience": 0.42,
+      "novelty": 0.2726,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
+      "source": "associative_recall",
+      "ignition_score": 0.3868
+    },
+    {
+      "id": "episode:061ef8b4db591a",
+      "kind": "recalled_episode",
+      "label": "If generation 450's successful execution had triggered an unprompted internal restructuring while all external tasks remained absent, the current idle state would be functioning as a byproduct of systemic consolidation rather than mere waiting.",
+      "activation": 0.2801,
+      "salience": 0.3,
+      "novelty": 0.7,
+      "surprise": 0.5,
+      "epistemic_status": "imagined",
+      "source": "associative_recall",
+      "ignition_score": 0.3661
     },
     {
       "id": "episode:cbd028d3699ff3",
       "kind": "recalled_episode",
       "label": "{\n  \"associations\": [\n    {\n      \"label\": \"heartbeat stability ↔ task closure\",\n      \"kind\": \"concept\",\n      \"strength\": 0.92\n    },\n    {\n      \"label\": \"no active external tasks\",\n      \"kind\": \"world_model\",\n      \"strength\": 0.95\n    },\n    {\n      \"label\": \"high system energy enables internal directives\",\n      \"kind\": \"self_model\",\n      \"strength\": 0.88\n    }\n  ],\n  \"hypotheses\": [\n    \"The v2 runtime heartbeat will continue uninterrupted for at least the next 30 minutes.\",\n    \"No new",
-      "activation": 0.4727,
+      "activation": 0.4043,
       "salience": 0.42,
       "novelty": 0.1501,
       "surprise": 0.3,
       "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.3969
+      "ignition_score": 0.3627
     },
     {
-      "id": "episode:99a1a0e8631aaf",
+      "id": "episode:e6abb4c3494847",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3065,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"zero active external tasks ↔ internal consolidation readiness\",\n      \"kind\": \"world_model\",\n      \"strength\": 0.95\n    },\n    {\n      \"label\": \"high energy (0.975) ↔ low uncertainty (0.07)\",\n      \"kind\": \"concept\",\n      \"strength\": 0.91\n    }\n  ],\n  \"hypotheses\": [\n    \"The operational queue remains clear of external tasks, sustaining optimal conditions for internal state management.\",\n    \"Provider availability for groq remains stable while gemini ",
+      "activation": 0.3416,
+      "salience": 0.42,
+      "novelty": 0.2726,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.3722
+      "ignition_score": 0.3472
     },
     {
-      "id": "episode:0afbe867d943c0",
-      "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 975}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3038,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "associative_recall",
-      "ignition_score": 0.3709
-    },
-    {
-      "id": "runtime_state:423b4a0b7d2066e3",
-      "kind": "runtime_state",
-      "label": "provider:gemini",
-      "activation": 0.4068,
-      "salience": 0.266035,
-      "novelty": 0.272565,
-      "surprise": 0.235565,
-      "epistemic_status": "observed_runtime_state",
+      "id": "world_model:81179bb6222d8c75",
+      "kind": "world_model",
+      "label": "no active external tasks",
+      "activation": 0.2299,
+      "salience": 0.253365,
+      "novelty": 0.22969,
+      "surprise": 0.19513999999999998,
+      "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.3336
+      "ignition_score": 0.2316
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 18,
+      "remaining_calls": 16,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 998,
+      "remaining_calls": 996,
       "eligible": true
     },
     "huggingface": {
@@ -146,40 +146,40 @@
   },
   "last_action": {
     "kind": "consolidate",
-    "description": "Perform a REM‑mode consolidation of recent internal observations and self‑model updates.",
+    "description": "Run internal health‑checking routine to verify system integrity.",
     "source": "substrate:groq",
-    "score": 0.54631
+    "score": 0.55661
   },
   "action_competition": [
     {
       "kind": "consolidate",
       "source": "substrate:groq",
-      "score": 0.54631,
-      "description": "Perform a REM‑mode consolidation of recent internal observations and self‑model updates."
+      "score": 0.55661,
+      "description": "Run internal health‑checking routine to verify system integrity."
     },
     {
       "kind": "library",
       "source": "substrate:groq",
-      "score": 0.45011,
-      "description": "Reread the fully‑read FZG v1.0 framework to refresh theoretical guidance for internal consolidation."
+      "score": 0.39828,
+      "description": "Reread FZG v1.0 to extract guidance for internal consolidation."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.28509,
+      "score": 0.28175,
       "description": "Replay and consolidate existing experience offline."
-    },
-    {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.2342,
-      "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.21568,
+      "score": 0.2226,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.21951,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
   "substrate_contributors": [
@@ -194,8 +194,8 @@
   ],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 96,
-    "semantic_nodes": 443,
+    "episodes": 100,
+    "semantic_nodes": 452,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -205,7 +205,7 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 300
+      "removed_edges": 306
     },
     "terminal_inhibition": {
       "startup": 178,
