@@ -177,19 +177,55 @@ class ActionSelector:
             score -= (0.28 - modulators.energy) * 1.8
         return score
 
+    @staticmethod
+    def _habituation_penalty(kind: str, recent_actions: Iterable[str]) -> float:
+        """Reduce the pull of an action that has just been selected repeatedly.
+
+        This is deliberately content-agnostic: the runtime should become less
+        responsive to any repeated action pattern, not to a hard-coded topic.
+        Rest is only weakly habituated because sustained low-energy states may
+        legitimately require repeated rest.
+        """
+        history = [str(value).strip().lower() for value in recent_actions if str(value).strip()][-8:]
+        if not history:
+            return 0.0
+
+        count = sum(1 for value in history if value == kind)
+        streak = 0
+        for value in reversed(history):
+            if value != kind:
+                break
+            streak += 1
+
+        if count == 0:
+            return 0.0
+
+        penalty = min(0.32, 0.03 * count + 0.04 * streak)
+        if kind == "rest":
+            penalty *= 0.3
+        elif kind in {"consolidate", "attend"}:
+            penalty *= 1.15
+        return min(0.36, penalty)
+
     def select(
         self,
         candidates: Iterable[ActionCandidate],
         modulators: ModulatorState,
+        recent_actions: Iterable[str] = (),
     ) -> tuple[ActionCandidate, list[ActionCandidate]]:
         ranked: list[ActionCandidate] = []
         metabolic_lock = modulators.energy < 0.15
+        history = list(recent_actions)
         for candidate in candidates:
             if candidate.kind not in ALLOWED_ACTIONS:
                 continue
             if metabolic_lock and candidate.kind not in {"rest", "consolidate"}:
                 continue
-            candidate.score = round(self._score(candidate, modulators), 5)
+            raw_score = self._score(candidate, modulators)
+            candidate.score = round(
+                raw_score - self._habituation_penalty(candidate.kind, history),
+                5,
+            )
             ranked.append(candidate)
         if not ranked:
             ranked = [ActionCandidate(kind="rest", description="No action candidates.")]
