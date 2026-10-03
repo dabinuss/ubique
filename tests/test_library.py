@@ -96,3 +96,79 @@ def test_mark_library_item_complete_migrates_legacy_progress(tmp_path, monkeypat
     assert catalog[0]["fully_read"] is True
     assert catalog[0]["read_cursor"] == len("legacy content")
     assert catalog[0]["fully_read_at"] == "2026-10-02T00:00:00+00:00"
+
+
+def test_catalog_can_hide_completed_books_from_spontaneous_attention(tmp_path, monkeypatch):
+    _redirect(tmp_path, monkeypatch)
+    item = library.add_library_item("Finished", "done", actor="user")["item"]
+    library.read_library_item(item["id"], max_chars=500)
+
+    assert library.library_catalog(include_completed=False) == []
+    assert library.library_catalog(include_completed=True)[0]["fully_read"] is True
+
+
+def test_remote_public_domain_book_is_readable_and_cached(tmp_path, monkeypatch):
+    _redirect(tmp_path, monkeypatch)
+    library.INDEX_PATH.parent.mkdir(parents=True, exist_ok=True)
+    library.INDEX_PATH.write_text(
+        json.dumps(
+            {
+                "version": 1,
+                "items": [
+                    {
+                        "id": "remote-book",
+                        "title": "Remote book",
+                        "author": "Example Author",
+                        "kind": "book",
+                        "status": "available",
+                        "source": "Project Gutenberg eBook test",
+                        "source_url": "https://www.gutenberg.org/cache/epub/1/pg1.txt",
+                        "license": "Public domain",
+                        "topics": ["mind"],
+                        "added_by": "test",
+                        "added_at": "2026-10-03T00:00:00+00:00",
+                        "content_path": "",
+                        "read_count": 0,
+                        "read_cursor": 0,
+                        "fully_read": False,
+                        "fully_read_at": None,
+                        "notes": [],
+                    }
+                ],
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    class Headers:
+        @staticmethod
+        def get_content_charset():
+            return "utf-8"
+
+    class Response:
+        headers = Headers()
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            return False
+
+        @staticmethod
+        def read(_limit):
+            return ("consciousness and brain " * 100).encode("utf-8")
+
+    monkeypatch.setattr(library, "urlopen", lambda *_args, **_kwargs: Response())
+
+    catalog = library.library_catalog()
+    assert catalog[0]["content_available"] is True
+    assert catalog[0]["source_url"].startswith("https://www.gutenberg.org/")
+
+    result = library.read_library_item("remote-book", max_chars=500)
+    assert result["excerpt"].startswith("consciousness and brain")
+    assert result["content_available"] is True
+
+    saved = json.loads(library.INDEX_PATH.read_text(encoding="utf-8"))
+    rel = saved["items"][0]["content_path"]
+    assert rel
+    assert (library.LIBRARY_DIR / rel).exists()
