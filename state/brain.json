@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T20:35:57.840316+00:00",
-  "generation": 472,
+  "timestamp": "2026-10-03T20:36:46.250772+00:00",
+  "generation": 473,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.5773,
-    "surprise": 0.4031,
+    "novelty": 0.3752,
+    "surprise": 0.479,
     "uncertainty": 0.07,
-    "salience": 0.5601,
-    "exploration": 0.4072,
-    "plasticity": 0.6368,
-    "energy": 0.84,
-    "sleep_pressure": 0.1535
+    "salience": 0.6791,
+    "exploration": 0.3516,
+    "plasticity": 0.5624,
+    "energy": 0.878,
+    "sleep_pressure": 0.0635
   },
   "workspace": [
     {
       "id": "episode:b101d6faf6700d",
-      "kind": "github_issue",
+      "kind": "recalled_episode",
       "label": "Stance formation smoke test\n\nReflect on what you have actually read so far about brain, mind, emotion, and human nature. Distinguish source claims from your own present view. You may remain uncertain or disagree; do not force a conclusion.",
-      "activation": 0.95,
+      "activation": 0.7043,
       "salience": 0.9,
       "novelty": 0.9629,
       "surprise": 0.62,
       "epistemic_status": "observed_external_input",
+      "source": "associative_recall",
+      "ignition_score": 0.7767
+    },
+    {
+      "id": "episode:79b27446ded1ae",
+      "kind": "github_issue",
+      "label": "Stance formation smoke test\n\nReflect on what you have actually read so far about brain, mind, emotion, and human nature. Distinguish source claims from your own present view. You may remain uncertain or disagree; do not force a conclusion.",
+      "activation": 0.95,
+      "salience": 0.9,
+      "novelty": 0.0,
+      "surprise": 0.62,
+      "epistemic_status": "observed_external_input",
       "source": "github:dabinuss",
-      "ignition_score": 0.8996
+      "ignition_score": 0.7744
     },
     {
       "id": "concept:4277d3259d4e4993",
       "kind": "concept",
       "label": "conclusion",
       "activation": 0.94,
-      "salience": 0.560115,
-      "novelty": 0.577255,
-      "surprise": 0.403095,
+      "salience": 0.679065,
+      "novelty": 0.37524500000000005,
+      "surprise": 0.47901499999999997,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7334
+      "ignition_score": 0.746
     },
     {
       "id": "concept:54476ce93ea4a148",
       "kind": "concept",
       "label": "distinguish",
       "activation": 0.94,
-      "salience": 0.560115,
-      "novelty": 0.577255,
-      "surprise": 0.403095,
+      "salience": 0.679065,
+      "novelty": 0.37524500000000005,
+      "surprise": 0.47901499999999997,
       "epistemic_status": "external_input_index",
       "source": "semantic_network",
-      "ignition_score": 0.7334
+      "ignition_score": 0.746
     },
     {
       "id": "concept:0570b840b0d58779",
       "kind": "concept",
       "label": "formation",
       "activation": 0.94,
-      "salience": 0.560115,
-      "novelty": 0.577255,
-      "surprise": 0.403095,
+      "salience": 0.679065,
+      "novelty": 0.37524500000000005,
+      "surprise": 0.47901499999999997,
       "epistemic_status": "external_input_index",
       "source": "semantic_network",
-      "ignition_score": 0.7334
+      "ignition_score": 0.746
     },
     {
       "id": "concept:dd7cf0a1d49819b9",
       "kind": "concept",
       "label": "uncertain",
       "activation": 0.94,
-      "salience": 0.560115,
-      "novelty": 0.577255,
-      "surprise": 0.403095,
+      "salience": 0.679065,
+      "novelty": 0.37524500000000005,
+      "surprise": 0.47901499999999997,
       "epistemic_status": "external_input_index",
       "source": "semantic_network",
-      "ignition_score": 0.7334
+      "ignition_score": 0.746
     },
     {
       "id": "concept:411f62e7fd037280",
       "kind": "concept",
       "label": "actually",
       "activation": 0.94,
-      "salience": 0.560115,
-      "novelty": 0.577255,
-      "surprise": 0.403095,
+      "salience": 0.679065,
+      "novelty": 0.37524500000000005,
+      "surprise": 0.47901499999999997,
       "epistemic_status": "external_input_index",
       "source": "semantic_network",
-      "ignition_score": 0.7334
-    },
-    {
-      "id": "concept:30df1a3e75b9e100",
-      "kind": "concept",
-      "label": "disagree",
-      "activation": 0.94,
-      "salience": 0.560115,
-      "novelty": 0.577255,
-      "surprise": 0.403095,
-      "epistemic_status": "external_input_index",
-      "source": "semantic_network",
-      "ignition_score": 0.7334
+      "ignition_score": 0.746
     }
   ],
   "provider_eligibility": {
@@ -182,40 +182,40 @@
     "21": {
       "state": "active",
       "title": "Stance formation smoke test",
-      "updated_at": "2026-10-03T20:35:57.077257+00:00"
+      "updated_at": "2026-10-03T20:36:45.531670+00:00"
     }
   },
   "last_action": {
-    "kind": "attend",
-    "description": "Continue processing the active workspace without external action.",
-    "source": "workspace",
-    "score": 0.34012
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
+    "source": "homeostasis",
+    "score": 0.36594
   },
   "action_competition": [
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.34012,
-      "description": "Continue processing the active workspace without external action."
-    },
-    {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.31821,
+      "score": 0.36594,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.1998,
+      "score": 0.29714,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.25188,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
   "substrate_contributors": [],
   "current_stances": [],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 162,
+    "episodes": 165,
     "semantic_nodes": 724,
     "synapses": 1200
   },
@@ -226,13 +226,13 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 30
+      "removed_edges": 0
     },
     "terminal_inhibition": {
-      "startup": 480,
-      "after_lifecycle": 480,
-      "after_spread": 480,
-      "after_packets": 480
+      "startup": 476,
+      "after_lifecycle": 476,
+      "after_spread": 476,
+      "after_packets": 476
     }
   }
 }
