@@ -1,54 +1,90 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T20:23:35.625047+00:00",
-  "generation": 468,
+  "timestamp": "2026-10-03T20:25:52.246687+00:00",
+  "generation": 469,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2447,
-    "surprise": 0.183,
+    "novelty": 0.4006,
+    "surprise": 0.3359,
     "uncertainty": 0.07,
-    "salience": 0.3243,
-    "exploration": 0.2468,
-    "plasticity": 0.4446,
-    "energy": 1.0,
-    "sleep_pressure": 0.1394
+    "salience": 0.5258,
+    "exploration": 0.3319,
+    "plasticity": 0.5531,
+    "energy": 0.84,
+    "sleep_pressure": 0.2264
   },
   "workspace": [
+    {
+      "id": "episode:7d3114e62d25a6",
+      "kind": "github_issue",
+      "label": "Ubique library sync — public-domain collection\n\n/library\n{\"action\":\"sync\",\"limit\":30}",
+      "activation": 0.95,
+      "salience": 0.9,
+      "novelty": 0.69,
+      "surprise": 0.62,
+      "epistemic_status": "observed_external_input",
+      "source": "github:dabinuss",
+      "ignition_score": 0.8641
+    },
     {
       "id": "episode:59fd8f89549ccb",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 0, \"excerpt\": \"The Project Gutenberg eBook of The Expression of the Emotions in Man and Animals\\r\\n    \\r\\nThis eBook is for the use of anyone anywhere in the United States and\\r\\nmost other parts of the world at no cost and with almost no restrictions\\r\\nwhatsoever. You may copy ",
-      "activation": 0.4338,
+      "activation": 0.3959,
       "salience": 0.88,
       "novelty": 0.79,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5816
+      "ignition_score": 0.5627
     },
     {
-      "id": "episode:35742755d0784d",
-      "kind": "recalled_episode",
-      "label": "The Project Gutenberg eBook of The Expression of the Emotions in Man and Animals\r\n    \r\nThis eBook is for the use of anyone anywhere in the United States and\r\nmost other parts of the world at no cost and with almost no restrictions\r\nwhatsoever. You may copy it, give it away or re-use it under the terms\r\nof the Project Gutenberg License included with this eBook or online\r\nat www.gutenberg.org. If you are not located in the United States,\r\nyou will have to check the laws of the country where you a",
-      "activation": 0.4854,
-      "salience": 0.6,
-      "novelty": 0.9972,
-      "surprise": 0.35,
-      "epistemic_status": "external_source",
-      "source": "associative_recall",
-      "ignition_score": 0.5643
+      "id": "concept:45dedc0facfe17e7",
+      "kind": "concept",
+      "label": "limit",
+      "activation": 0.6656,
+      "salience": 0.525795,
+      "novelty": 0.400555,
+      "surprise": 0.33594999999999997,
+      "epistemic_status": "external_input_index",
+      "source": "semantic_network",
+      "ignition_score": 0.5566
+    },
+    {
+      "id": "concept:6c5fc273df2e6a46",
+      "kind": "concept",
+      "label": "sync",
+      "activation": 0.6656,
+      "salience": 0.525795,
+      "novelty": 0.400555,
+      "surprise": 0.33594999999999997,
+      "epistemic_status": "external_input_index",
+      "source": "semantic_network",
+      "ignition_score": 0.5566
     },
     {
       "id": "episode:bcaf62814c19d1",
       "kind": "recalled_episode",
       "label": "Ubique library smoke test — public-domain book\n\n/library\n{\"action\":\"read\",\"item_id\":\"tilney-master-of-destiny\",\"max_chars\":1200}",
-      "activation": 0.2717,
+      "activation": 0.2716,
       "salience": 0.9,
       "novelty": 0.8948,
       "surprise": 0.62,
       "epistemic_status": "observed_external_input",
       "source": "associative_recall",
-      "ignition_score": 0.5516
+      "ignition_score": 0.5515
+    },
+    {
+      "id": "episode:35742755d0784d",
+      "kind": "recalled_episode",
+      "label": "The Project Gutenberg eBook of The Expression of the Emotions in Man and Animals\r\n    \r\nThis eBook is for the use of anyone anywhere in the United States and\r\nmost other parts of the world at no cost and with almost no restrictions\r\nwhatsoever. You may copy it, give it away or re-use it under the terms\r\nof the Project Gutenberg License included with this eBook or online\r\nat www.gutenberg.org. If you are not located in the United States,\r\nyou will have to check the laws of the country where you a",
+      "activation": 0.3943,
+      "salience": 0.6,
+      "novelty": 0.9972,
+      "surprise": 0.35,
+      "epistemic_status": "external_source",
+      "source": "associative_recall",
+      "ignition_score": 0.5188
     },
     {
       "id": "episode:0c7c2bc439d0bb",
@@ -61,42 +97,6 @@
       "epistemic_status": "observed_external_state",
       "source": "associative_recall",
       "ignition_score": 0.4853
-    },
-    {
-      "id": "episode:80c56b581c264c",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 1200, \"excerpt\": \" IN COLLABORATION WITH\\n  HENRY ALSOP RILEY\\n\\n  THE FORM AND FUNCTIONS OF THE\\n  CENTRAL NERVOUS SYSTEM\\n\\n\\n\\n\\n  THE MASTER OF DESTINY\\n\\n  A BIOGRAPHY\\n  OF THE BRAIN\\n\\n  BY FREDERICK\\n  TILNEY, M.D.\\n\\n  WITH A FOREWORD\\n  BY AUSTEN FOX\\n  RIGGS, M.D.\\n\\n  [Il",
-      "activation": 0.2474,
-      "salience": 0.9,
-      "novelty": 0.4,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4427
-    },
-    {
-      "id": "episode:a99a6b1a28926f",
-      "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"memory_abstraction ↔ metric_definition\", \"the expected utility of actions under the current policy approximates g_a(s|c).\"]}",
-      "activation": 0.2443,
-      "salience": 0.9,
-      "novelty": 0.1,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4022
-    },
-    {
-      "id": "concept:ef3025ce96d2fe0a",
-      "kind": "concept",
-      "label": "ignorance ↔ opportunity for teaching",
-      "activation": 0.331,
-      "salience": 0.42148,
-      "novelty": 0.244705,
-      "surprise": 0.18305,
-      "epistemic_status": "model_proposal",
-      "source": "semantic_network",
-      "ignition_score": 0.3246
     }
   ],
   "provider_eligibility": {
@@ -162,39 +162,44 @@
         "smoke",
         "1200"
       ]
+    },
+    "20": {
+      "state": "active",
+      "title": "Ubique library sync — public-domain collection",
+      "updated_at": "2026-10-03T20:25:41.794197+00:00"
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
-    "source": "homeostasis",
-    "score": 0.37624
+    "kind": "attend",
+    "description": "Continue processing the active workspace without external action.",
+    "source": "workspace",
+    "score": 0.31892
   },
   "action_competition": [
     {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.37624,
-      "description": "Allow activation to decay without forcing cognition."
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.31892,
+      "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.28311,
+      "score": 0.29903,
       "description": "Replay and consolidate existing experience offline."
     },
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.25781,
-      "description": "Continue processing the active workspace without external action."
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.25186,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
   "substrate_contributors": [],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 153,
-    "semantic_nodes": 702,
+    "episodes": 156,
+    "semantic_nodes": 705,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -204,13 +209,13 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_edges": 24
     },
     "terminal_inhibition": {
       "startup": 335,
-      "after_lifecycle": 335,
-      "after_spread": 335,
-      "after_packets": 335
+      "after_lifecycle": 341,
+      "after_spread": 341,
+      "after_packets": 341
     }
   }
 }
