@@ -121,3 +121,51 @@ def test_critical_low_energy_blocks_non_rest_actions_even_if_model_support_is_hi
     )
     assert selected.kind in {"rest", "consolidate"}
     assert all(item.kind in {"rest", "consolidate"} for item in ranked)
+
+
+def test_repeated_action_kind_loses_competition_through_habituation():
+    modulators = ModulatorState(
+        novelty=0.3,
+        surprise=0.2,
+        uncertainty=0.4,
+        salience=0.3,
+        exploration=0.4,
+        plasticity=0.4,
+        energy=0.9,
+        sleep_pressure=0.1,
+    )
+    selector = ActionSelector()
+    model = selector.from_model_actions(
+        [
+            {
+                "kind": "consolidate",
+                "description": "Consolidate the same material again",
+                "support": 0.9,
+                "utility": 0.8,
+                "information_gain": 0.5,
+                "novelty": 0.2,
+                "energy_cost": 0.05,
+                "payload": {"mode": "rem"},
+            },
+            {
+                "kind": "library",
+                "description": "Read a different source",
+                "support": 0.72,
+                "utility": 0.75,
+                "information_gain": 0.75,
+                "novelty": 0.7,
+                "energy_cost": 0.08,
+                "payload": {"action": "read", "item_id": "new-book"},
+            },
+        ],
+        source="substrate:test",
+    )
+    selected, ranked = selector.select(
+        model,
+        modulators,
+        recent_actions=["consolidate"] * 6,
+    )
+    assert selected.kind == "library"
+    consolidate = next(item for item in ranked if item.kind == "consolidate")
+    library_item = next(item for item in ranked if item.kind == "library")
+    assert consolidate.score < library_item.score
