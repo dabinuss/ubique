@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T20:20:30.190344+00:00",
-  "generation": 464,
+  "timestamp": "2026-10-03T20:21:22.814305+00:00",
+  "generation": 465,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.4111,
-    "surprise": 0.2954,
+    "novelty": 0.4947,
+    "surprise": 0.3495,
     "uncertainty": 0.07,
-    "salience": 0.4767,
-    "exploration": 0.3275,
-    "plasticity": 0.5393,
-    "energy": 0.92,
-    "sleep_pressure": 0.0755
+    "salience": 0.6179,
+    "exploration": 0.3676,
+    "plasticity": 0.6032,
+    "energy": 0.855,
+    "sleep_pressure": 0.1245
   },
   "workspace": [
     {
-      "id": "episode:bcaf62814c19d1",
-      "kind": "github_issue",
-      "label": "Ubique library smoke test — public-domain book\n\n/library\n{\"action\":\"read\",\"item_id\":\"tilney-master-of-destiny\",\"max_chars\":1200}",
+      "id": "episode:0c7c2bc439d0bb",
+      "kind": "external_issue_lifecycle",
+      "label": "External GitHub issue #19 is now deactivated. It is no longer an active task. Ubique library smoke test — public-domain book",
       "activation": 0.95,
+      "salience": 0.88,
+      "novelty": 0.65,
+      "surprise": 0.45,
+      "epistemic_status": "observed_external_state",
+      "source": "github:lifecycle",
+      "ignition_score": 0.8335
+    },
+    {
+      "id": "episode:bcaf62814c19d1",
+      "kind": "recalled_episode",
+      "label": "Ubique library smoke test — public-domain book\n\n/library\n{\"action\":\"read\",\"item_id\":\"tilney-master-of-destiny\",\"max_chars\":1200}",
+      "activation": 0.2718,
       "salience": 0.9,
       "novelty": 0.8948,
       "surprise": 0.62,
       "epistemic_status": "observed_external_input",
-      "source": "github:dabinuss",
-      "ignition_score": 0.8907
+      "source": "associative_recall",
+      "ignition_score": 0.5516
     },
     {
-      "id": "concept:8b16ced79976e6a1",
-      "kind": "concept",
-      "label": "action",
-      "activation": 0.94,
-      "salience": 0.47672000000000003,
-      "novelty": 0.41113500000000003,
-      "surprise": 0.29539,
-      "epistemic_status": "memory_index",
+      "id": "runtime_state:b74610dd8d363ec6",
+      "kind": "runtime_state",
+      "label": "external-task-ended",
+      "activation": 0.5325,
+      "salience": 0.617855,
+      "novelty": 0.494715,
+      "surprise": 0.34951,
+      "epistemic_status": "observed_external_state",
       "source": "semantic_network",
-      "ignition_score": 0.6781
+      "ignition_score": 0.527
     },
     {
-      "id": "concept:c5af834c028b226a",
-      "kind": "concept",
-      "label": "max_chars",
-      "activation": 0.94,
-      "salience": 0.47672000000000003,
-      "novelty": 0.41113500000000003,
-      "surprise": 0.29539,
-      "epistemic_status": "external_input_index",
+      "id": "runtime_state:247beaa03cc47f86",
+      "kind": "runtime_state",
+      "label": "resolved",
+      "activation": 0.5325,
+      "salience": 0.617855,
+      "novelty": 0.494715,
+      "surprise": 0.34951,
+      "epistemic_status": "observed_external_state",
       "source": "semantic_network",
-      "ignition_score": 0.6781
+      "ignition_score": 0.527
     },
     {
-      "id": "concept:02f77488efc6c9cf",
-      "kind": "concept",
-      "label": "destiny",
-      "activation": 0.94,
-      "salience": 0.47672000000000003,
-      "novelty": 0.41113500000000003,
-      "surprise": 0.29539,
-      "epistemic_status": "external_input_index",
+      "id": "runtime_state:865f3b9d9ee8a995",
+      "kind": "runtime_state",
+      "label": "issue:19",
+      "activation": 0.5325,
+      "salience": 0.617855,
+      "novelty": 0.494715,
+      "surprise": 0.34951,
+      "epistemic_status": "observed_external_state",
       "source": "semantic_network",
-      "ignition_score": 0.6781
+      "ignition_score": 0.527
     },
     {
-      "id": "concept:880c9bd312cf8508",
-      "kind": "concept",
-      "label": "item_id",
-      "activation": 0.94,
-      "salience": 0.47672000000000003,
-      "novelty": 0.41113500000000003,
-      "surprise": 0.29539,
-      "epistemic_status": "external_input_index",
+      "id": "runtime_state:0b7201e1b73e35e7",
+      "kind": "runtime_state",
+      "label": "deactivated",
+      "activation": 0.5325,
+      "salience": 0.617855,
+      "novelty": 0.494715,
+      "surprise": 0.34951,
+      "epistemic_status": "observed_external_state",
       "source": "semantic_network",
-      "ignition_score": 0.6781
+      "ignition_score": 0.527
     },
     {
-      "id": "concept:c9b6dab517b9d127",
-      "kind": "concept",
-      "label": "library",
-      "activation": 0.94,
-      "salience": 0.47672000000000003,
-      "novelty": 0.41113500000000003,
-      "surprise": 0.29539,
-      "epistemic_status": "external_input_index",
-      "source": "semantic_network",
-      "ignition_score": 0.6781
-    },
-    {
-      "id": "concept:40f024a500acd053",
-      "kind": "concept",
-      "label": "domain",
-      "activation": 0.94,
-      "salience": 0.47672000000000003,
-      "novelty": 0.41113500000000003,
-      "surprise": 0.29539,
-      "epistemic_status": "external_input_index",
-      "source": "semantic_network",
-      "ignition_score": 0.6781
+      "id": "episode:fd6ea76e949f95",
+      "kind": "recalled_episode",
+      "label": "External GitHub issue #11 is now closed. It is no longer an active task. Ubique v2 end-to-end heartbeat smoke test",
+      "activation": 0.326,
+      "salience": 0.88,
+      "novelty": 0.65,
+      "surprise": 0.45,
+      "epistemic_status": "observed_external_state",
+      "source": "associative_recall",
+      "ignition_score": 0.5215
     }
   ],
   "provider_eligibility": {
@@ -111,7 +111,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 978,
+      "remaining_calls": 977,
       "eligible": true
     },
     "huggingface": {
@@ -144,46 +144,61 @@
       ]
     },
     "19": {
-      "state": "active",
+      "state": "deactivated",
       "title": "Ubique library smoke test — public-domain book",
-      "updated_at": "2026-10-03T20:20:25.089979+00:00"
+      "updated_at": "2026-10-03T20:20:27Z",
+      "closed_at": null,
+      "concepts": [
+        "max_chars",
+        "destiny",
+        "item_id",
+        "library",
+        "action",
+        "domain",
+        "master",
+        "public",
+        "tilney",
+        "ubique",
+        "smoke",
+        "1200"
+      ]
     }
   },
   "last_action": {
     "kind": "library",
-    "description": "Read the next 1200 characters of 'The Master of Destiny' to continue the library smoke test.",
+    "description": "Read the next segment of \"The Master of Destiny\" to extend coverage of the foreword and early chapters.",
     "source": "substrate:groq",
-    "score": 0.60568
+    "score": 0.45587
   },
   "action_competition": [
     {
       "kind": "library",
       "source": "substrate:groq",
-      "score": 0.60568,
-      "description": "Read the next 1200 characters of 'The Master of Destiny' to continue the library smoke test."
+      "score": 0.45587,
+      "description": "Read the next segment of \"The Master of Destiny\" to extend coverage of the foreword and early chapters."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.32604,
+      "score": 0.35552,
       "description": "Continue processing the active workspace without external action."
-    },
-    {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.20517,
-      "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "consolidate",
       "source": "substrate:groq",
-      "score": 0.1151,
-      "description": "Consolidate memory after the read to integrate new content into the workspace."
+      "score": 0.32207,
+      "description": "Perform a rapid (rem) consolidation of the newly read material to integrate concepts of brain evolution into the long‑term memory store."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.29476,
+      "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": -0.0408,
+      "score": 0.18681,
       "description": "Replay and consolidate existing experience offline."
     }
   ],
@@ -193,10 +208,10 @@
       "model": "openai/gpt-oss-120b"
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 142,
-    "semantic_nodes": 637,
+    "episodes": 146,
+    "semantic_nodes": 659,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -206,13 +221,13 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 108
+      "removed_edges": 78
     },
     "terminal_inhibition": {
-      "startup": 180,
-      "after_lifecycle": 180,
-      "after_spread": 180,
-      "after_packets": 189
+      "startup": 179,
+      "after_lifecycle": 323,
+      "after_spread": 323,
+      "after_packets": 343
     }
   }
 }
