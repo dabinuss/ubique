@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T18:20:26.990666+00:00",
-  "generation": 462,
+  "timestamp": "2026-10-03T18:39:02.350557+00:00",
+  "generation": 463,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.151,
-    "surprise": 0.121,
+    "novelty": 0.1507,
+    "surprise": 0.1206,
     "uncertainty": 0.07,
-    "salience": 0.2647,
-    "exploration": 0.2016,
-    "plasticity": 0.3783,
+    "salience": 0.2488,
+    "exploration": 0.2014,
+    "plasticity": 0.3762,
     "energy": 1.0,
     "sleep_pressure": 0.0165
   },
   "workspace": [
     {
-      "id": "episode:0286d0825f516b",
+      "id": "episode:45eeb28dbf026c",
       "kind": "recalled_episode",
-      "label": "{\"kind\": \"memory_abstraction\", \"passed\": true, \"provider\": \"gemini\", \"concepts_created\": 2, \"source_thoughts\": 8, \"source_hypotheses\": 8}",
-      "activation": 0.2612,
-      "salience": 0.95,
-      "novelty": 0.2,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "{\n  \"associations\": [\n    {\"label\": \"memory_abstraction ↔ metric_definition\", \"kind\": \"concept\", \"strength\": 0.88},\n    {\"label\": \"p(s|c) metric candidates\", \"kind\": \"concept\", \"strength\": 0.85},\n    {\"label\": \"g_a(s|c) metric candidates\", \"kind\": \"concept\", \"strength\": 0.84},\n    {\"label\": \"intelligence_profile_components_instantiation\", \"kind\": \"concept\", \"strength\": 0.82},\n    {\"label\": \"FZG framework ↔ self‑preservation and goal‑directedness\", \"kind\": \"concept\", \"strength\": 0.80}\n  ],\n  \"hyp",
+      "activation": 0.5331,
+      "salience": 0.42,
+      "novelty": 0.151,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.4361
+      "ignition_score": 0.4272
     },
     {
       "id": "episode:6d99f61430188d",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"memory_abstraction\", \"how should the intelligence profile components z, k, r, l be instantiated to support metric computation?\"]}",
-      "activation": 0.2785,
+      "activation": 0.268,
       "salience": 0.88,
       "novelty": 0.15,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4208
+      "ignition_score": 0.4155
     },
     {
       "id": "episode:95da452f5dcf43",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"substrate:gemini\", \"concepts\": [\"memory_abstraction\", \"which metrics best capture p(s|c) and g_a(s|c) within the existing architecture?\"]}",
-      "activation": 0.281,
+      "activation": 0.2705,
       "salience": 0.9,
       "novelty": 0.1,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4205
+      "ignition_score": 0.4153
     },
     {
-      "id": "episode:78edff0a082c54",
+      "id": "episode:3e3dbcbadc9572",
       "kind": "recalled_episode",
-      "label": "Counterfactual association to explore later: what changes if 'memory_abstraction' and 'how should the intelligence profile components z, k, r, l be instantiated to support metric computation?' are related more strongly than current evidence establishes?",
-      "activation": 0.2621,
+      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"memory_abstraction ↔ metric_definition\", \"kl divergence between predicted state distribution and observed state distribution provides a robust estimate of p(s|c).\"]}",
+      "activation": 0.2525,
+      "salience": 0.78,
+      "novelty": 0.4,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4153
+    },
+    {
+      "id": "episode:2486ad86fd0c64",
+      "kind": "recalled_episode",
+      "label": "Counterfactual association to explore later: what changes if 'memory_abstraction ↔ metric_definition' and 'kl divergence between predicted state distribution and observed state distribution provides a robust estimate of p(s|c).' are related more strongly than current evidence establishes?",
+      "activation": 0.2757,
       "salience": 0.3,
       "novelty": 0.7,
       "surprise": 0.5,
       "epistemic_status": "imagined",
       "source": "associative_recall",
-      "ignition_score": 0.3571
-    },
-    {
-      "id": "episode:15077dd2de4c7a",
-      "kind": "recalled_episode",
-      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"memory_abstraction\",\n      \"kind\": \"concept\",\n      \"strength\": 0.92\n    },\n    {\n      \"label\": \"internal structural optimization\",\n      \"kind\": \"concept\",\n      \"strength\": 0.81\n    }\n  ],\n  \"hypotheses\": [\n    \"Recent consolidation cycles successfully abstract episodic traces into reusable concepts, maintaining low novelty and uncertainty.\",\n    \"With system energy at 0.975 and all external tasks closed, further internal restructuring or continuati",
-      "activation": 0.3685,
-      "salience": 0.42,
-      "novelty": 0.1516,
-      "surprise": 0.3,
-      "epistemic_status": "model_proposal",
-      "source": "associative_recall",
-      "ignition_score": 0.345
+      "ignition_score": 0.3638
     },
     {
       "id": "episode:7d406cdb4b5867",
       "kind": "recalled_episode",
       "label": "{\n  \"associations\": [\n    {\n      \"label\": \"memory_abstraction ↔ metric_definition\",\n      \"kind\": \"concept\",\n      \"strength\": 0.88\n    },\n    {\n      \"label\": \"p(s|c) metric candidates\",\n      \"kind\": \"concept\",\n      \"strength\": 0.85\n    },\n    {\n      \"label\": \"g_a(s|c) metric candidates\",\n      \"kind\": \"concept\",\n      \"strength\": 0.84\n    },\n    {\n      \"label\": \"FZG framework ↔ self‑preservation and goal‑directedness\",\n      \"kind\": \"concept\",\n      \"strength\": 0.80\n    }\n  ],\n  \"hypothes",
-      "activation": 0.3208,
+      "activation": 0.3732,
       "salience": 0.42,
       "novelty": 0.1516,
       "surprise": 0.3,
       "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.3211
+      "ignition_score": 0.3473
     },
     {
-      "id": "concept:fd73893bdbb24f83",
+      "id": "concept:ef1b10046d763ae7",
       "kind": "concept",
-      "label": "memory_abstraction",
-      "activation": 0.2286,
-      "salience": 0.26474,
-      "novelty": 0.15104,
-      "surprise": 0.12104,
-      "epistemic_status": "memory_index",
+      "label": "memory_abstraction ↔ metric_definition",
+      "activation": 0.2193,
+      "salience": 0.24881,
+      "novelty": 0.15065,
+      "surprise": 0.12065,
+      "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.2146
+      "ignition_score": 0.2059
     }
   ],
   "provider_eligibility": {
@@ -111,7 +111,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 981,
+      "remaining_calls": 979,
       "eligible": true
     },
     "huggingface": {
@@ -146,33 +146,39 @@
   },
   "last_action": {
     "kind": "consolidate",
-    "description": "Integrate results of the metric experiment into the memory abstraction store and update intelligence‑profile component mappings.",
+    "description": "Consolidate newly formed associations, hypotheses, and metric results into long‑term memory.",
     "source": "substrate:groq",
-    "score": 0.51592
+    "score": 0.50094
   },
   "action_competition": [
     {
       "kind": "consolidate",
       "source": "substrate:groq",
-      "score": 0.51592,
-      "description": "Integrate results of the metric experiment into the memory abstraction store and update intelligence‑profile component mappings."
+      "score": 0.50094,
+      "description": "Consolidate newly formed associations, hypotheses, and metric results into long‑term memory."
+    },
+    {
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.44616,
+      "description": "Reread FZG v1.0 to extract guidance on mapping metric estimates to self‑preservation drives."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.2799,
+      "score": 0.27791,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.22407,
+      "score": 0.21959,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.20753,
+      "score": 0.20494,
       "description": "Continue processing the active workspace without external action."
     }
   ],
@@ -184,8 +190,8 @@
   ],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 134,
-    "semantic_nodes": 602,
+    "episodes": 137,
+    "semantic_nodes": 609,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -195,7 +201,7 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 190
+      "removed_edges": 156
     },
     "terminal_inhibition": {
       "startup": 180,
