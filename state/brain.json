@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T21:28:12.882061+00:00",
-  "generation": 485,
+  "timestamp": "2026-10-03T21:48:59.238547+00:00",
+  "generation": 486,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.407,
-    "surprise": 0.3197,
+    "novelty": 0.4395,
+    "surprise": 0.3653,
     "uncertainty": 0.35,
-    "salience": 0.4153,
-    "exploration": 0.4289,
-    "plasticity": 0.5077,
-    "energy": 1.0,
-    "sleep_pressure": 0.0456
+    "salience": 0.4099,
+    "exploration": 0.4494,
+    "plasticity": 0.5567,
+    "energy": 0.935,
+    "sleep_pressure": 0.0946
   },
   "workspace": [
     {
-      "id": "episode:dcaa09344d86e4",
-      "kind": "recalled_episode",
-      "label": "External GitHub issue #24 is now closed. It is no longer an active task. Runtime verification after identity grounding",
-      "activation": 0.1721,
-      "salience": 0.88,
-      "novelty": 0.65,
+      "id": "episode:850aecd519efab",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 967}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
       "surprise": 0.45,
-      "epistemic_status": "observed_external_state",
-      "source": "associative_recall",
-      "ignition_score": 0.4446
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
     },
     {
-      "id": "episode:80c56b581c264c",
+      "id": "episode:b9fb8f19d2333a",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 1200, \"excerpt\": \" IN COLLABORATION WITH\\n  HENRY ALSOP RILEY\\n\\n  THE FORM AND FUNCTIONS OF THE\\n  CENTRAL NERVOUS SYSTEM\\n\\n\\n\\n\\n  THE MASTER OF DESTINY\\n\\n  A BIOGRAPHY\\n  OF THE BRAIN\\n\\n  BY FREDERICK\\n  TILNEY, M.D.\\n\\n  WITH A FOREWORD\\n  BY AUSTEN FOX\\n  RIGGS, M.D.\\n\\n  [Il",
-      "activation": 0.2454,
-      "salience": 0.9,
-      "novelty": 0.4,
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 6000, \"excerpt\": \"eelings—Devotion\\n\\nCHAP. IX.—REFLECTION—MEDITATION—ILL—TEMPER—SULKINESS DETERMINATION.\\nThe act of frowning—Reflection with an effort or with the perception of\\nsomething difficult or disagreeable—Abstracted\\nmeditation—Ill-temper—Moroseness—Obstinacy—Sulkiness ",
+      "activation": 0.3204,
+      "salience": 0.8,
+      "novelty": 0.6,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4417
+      "ignition_score": 0.4802
     },
     {
-      "id": "episode:31e6b86862b50f",
-      "kind": "recalled_episode",
-      "label": "Workspace processing continued without external action.",
-      "activation": 0.2718,
-      "salience": 0.88,
-      "novelty": 0.31,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4382
-    },
-    {
-      "id": "episode:8f29a159cb95ba",
-      "kind": "recalled_episode",
-      "label": "External GitHub issue #21 is now closed. It is no longer an active task. Stance formation smoke test",
-      "activation": 0.1332,
-      "salience": 0.88,
-      "novelty": 0.65,
-      "surprise": 0.45,
-      "epistemic_status": "observed_external_state",
-      "source": "associative_recall",
-      "ignition_score": 0.4251
-    },
-    {
-      "id": "episode:0953d0433160c0",
-      "kind": "recalled_episode",
-      "label": "External GitHub issue #23 is now deactivated. It is no longer an active task. Ubique library sync — expanded collection",
-      "activation": 0.1321,
-      "salience": 0.88,
-      "novelty": 0.65,
-      "surprise": 0.45,
-      "epistemic_status": "observed_external_state",
-      "source": "associative_recall",
-      "ignition_score": 0.4246
-    },
-    {
-      "id": "episode:28652298250d1e",
-      "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"no active external tasks remain; the system is in an idle but stable state.\", \"issue:21\"]}",
-      "activation": 0.2769,
-      "salience": 0.88,
-      "novelty": 0.05,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
+      "id": "runtime_state:423b4a0b7d2066e3",
+      "kind": "runtime_state",
+      "label": "provider:gemini",
+      "activation": 0.4068,
+      "salience": 0.409945,
+      "novelty": 0.43955,
+      "surprise": 0.365305,
+      "epistemic_status": "observed_runtime_state",
+      "source": "semantic_network",
       "ignition_score": 0.4069
     },
     {
-      "id": "runtime_state:b74610dd8d363ec6",
+      "id": "runtime_state:0a71e857be2cd9b7",
       "kind": "runtime_state",
-      "label": "external-task-ended",
-      "activation": 0.1645,
-      "salience": 0.415335,
-      "novelty": 0.40701,
-      "surprise": 0.31968,
-      "epistemic_status": "observed_external_state",
+      "label": "provider:groq",
+      "activation": 0.4068,
+      "salience": 0.409945,
+      "novelty": 0.43955,
+      "surprise": 0.365305,
+      "epistemic_status": "observed_runtime_state",
       "source": "semantic_network",
-      "ignition_score": 0.2774
+      "ignition_score": 0.4069
+    },
+    {
+      "id": "runtime_state:1d939659a8519d8c",
+      "kind": "runtime_state",
+      "label": "provider:huggingface",
+      "activation": 0.4068,
+      "salience": 0.409945,
+      "novelty": 0.43955,
+      "surprise": 0.365305,
+      "epistemic_status": "observed_runtime_state",
+      "source": "semantic_network",
+      "ignition_score": 0.4069
+    },
+    {
+      "id": "episode:1a38b7fc967d30",
+      "kind": "recalled_episode",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 974}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3629,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "associative_recall",
+      "ignition_score": 0.4004
+    },
+    {
+      "id": "episode:5244f28bde3377",
+      "kind": "recalled_episode",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3368,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "associative_recall",
+      "ignition_score": 0.3874
     }
   ],
   "provider_eligibility": {
@@ -109,10 +109,10 @@
     },
     "groq": {
       "configured": true,
-      "disabled": true,
+      "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 967,
-      "eligible": false
+      "remaining_calls": 966,
+      "eligible": true
     },
     "huggingface": {
       "configured": false,
@@ -243,37 +243,54 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
-    "source": "homeostasis",
-    "score": 0.28468
+    "kind": "library",
+    "description": "Read the next segment of Darwin's 'The Expression of the Emotions in Man and Animals' to continue building the emotion taxonomy.",
+    "source": "substrate:groq",
+    "score": 0.56589
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.28468,
-      "description": "Replay and consolidate existing experience offline."
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.56589,
+      "description": "Read the next segment of Darwin's 'The Expression of the Emotions in Man and Animals' to continue building the emotion taxonomy."
+    },
+    {
+      "kind": "rest",
+      "source": "substrate:groq",
+      "score": 0.40558,
+      "description": "Brief pause to allow consolidation of recent readings and update internal models."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.2589,
+      "score": 0.27436,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.2524,
+      "score": 0.23047,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.2182,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
-  "substrate_contributors": [],
+  "substrate_contributors": [
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    }
+  ],
   "current_stances": [],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 196,
-    "semantic_nodes": 804,
+    "episodes": 200,
+    "semantic_nodes": 811,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -284,13 +301,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_edges": 72
     },
     "terminal_inhibition": {
       "startup": 250,
       "after_lifecycle": 250,
       "after_spread": 250,
-      "after_packets": 250
+      "after_packets": 259
     }
   }
 }
