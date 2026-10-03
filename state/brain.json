@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T20:38:30.422719+00:00",
-  "generation": 475,
+  "timestamp": "2026-10-03T20:41:47.878070+00:00",
+  "generation": 476,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.3589,
-    "surprise": 0.3467,
+    "novelty": 0.4458,
+    "surprise": 0.4126,
     "uncertainty": 0.07,
-    "salience": 0.4473,
-    "exploration": 0.3195,
-    "plasticity": 0.5488,
-    "energy": 1.0,
-    "sleep_pressure": 0.097
+    "salience": 0.5182,
+    "exploration": 0.363,
+    "plasticity": 0.5869,
+    "energy": 0.84,
+    "sleep_pressure": 0.184
   },
   "workspace": [
     {
-      "id": "episode:6e71188b382560",
-      "kind": "recalled_episode",
-      "label": "External GitHub issue #20 is now deactivated. It is no longer an active task. Ubique library sync — public-domain collection",
-      "activation": 0.421,
-      "salience": 0.88,
-      "novelty": 0.65,
-      "surprise": 0.45,
-      "epistemic_status": "observed_external_state",
-      "source": "associative_recall",
-      "ignition_score": 0.569
+      "id": "episode:2e3ee840620ac8",
+      "kind": "github_issue",
+      "label": "Runtime smoke test after stance integration\n\n/status",
+      "activation": 0.95,
+      "salience": 0.9,
+      "novelty": 0.7143,
+      "surprise": 0.62,
+      "epistemic_status": "observed_external_input",
+      "source": "github:dabinuss",
+      "ignition_score": 0.8673
     },
     {
-      "id": "episode:0c7c2bc439d0bb",
-      "kind": "recalled_episode",
-      "label": "External GitHub issue #19 is now deactivated. It is no longer an active task. Ubique library smoke test — public-domain book",
-      "activation": 0.4179,
-      "salience": 0.88,
-      "novelty": 0.65,
+      "id": "episode:1a38b7fc967d30",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 974}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
       "surprise": 0.45,
-      "epistemic_status": "observed_external_state",
-      "source": "associative_recall",
-      "ignition_score": 0.5675
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
     },
     {
       "id": "episode:8f29a159cb95ba",
       "kind": "recalled_episode",
       "label": "External GitHub issue #21 is now closed. It is no longer an active task. Stance formation smoke test",
-      "activation": 0.4088,
+      "activation": 0.473,
       "salience": 0.88,
       "novelty": 0.65,
       "surprise": 0.45,
       "epistemic_status": "observed_external_state",
       "source": "associative_recall",
-      "ignition_score": 0.5629
+      "ignition_score": 0.595
     },
     {
-      "id": "episode:59fd8f89549ccb",
+      "id": "episode:6e71188b382560",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 0, \"excerpt\": \"The Project Gutenberg eBook of The Expression of the Emotions in Man and Animals\\r\\n    \\r\\nThis eBook is for the use of anyone anywhere in the United States and\\r\\nmost other parts of the world at no cost and with almost no restrictions\\r\\nwhatsoever. You may copy ",
-      "activation": 0.3955,
-      "salience": 0.88,
-      "novelty": 0.79,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5625
-    },
-    {
-      "id": "episode:fd6ea76e949f95",
-      "kind": "recalled_episode",
-      "label": "External GitHub issue #11 is now closed. It is no longer an active task. Ubique v2 end-to-end heartbeat smoke test",
-      "activation": 0.3258,
+      "label": "External GitHub issue #20 is now deactivated. It is no longer an active task. Ubique library sync — public-domain collection",
+      "activation": 0.3969,
       "salience": 0.88,
       "novelty": 0.65,
       "surprise": 0.45,
       "epistemic_status": "observed_external_state",
       "source": "associative_recall",
-      "ignition_score": 0.5214
+      "ignition_score": 0.557
     },
     {
-      "id": "episode:80c56b581c264c",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 1200, \"excerpt\": \" IN COLLABORATION WITH\\n  HENRY ALSOP RILEY\\n\\n  THE FORM AND FUNCTIONS OF THE\\n  CENTRAL NERVOUS SYSTEM\\n\\n\\n\\n\\n  THE MASTER OF DESTINY\\n\\n  A BIOGRAPHY\\n  OF THE BRAIN\\n\\n  BY FREDERICK\\n  TILNEY, M.D.\\n\\n  WITH A FOREWORD\\n  BY AUSTEN FOX\\n  RIGGS, M.D.\\n\\n  [Il",
-      "activation": 0.2886,
-      "salience": 0.9,
-      "novelty": 0.4,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4633
-    },
-    {
-      "id": "runtime_state:b74610dd8d363ec6",
+      "id": "runtime_state:423b4a0b7d2066e3",
       "kind": "runtime_state",
-      "label": "external-task-ended",
-      "activation": 0.2552,
-      "salience": 0.57643,
-      "novelty": 0.35891,
-      "surprise": 0.34672,
-      "epistemic_status": "observed_external_state",
+      "label": "provider:gemini",
+      "activation": 0.4068,
+      "salience": 0.518245,
+      "novelty": 0.4457875,
+      "surprise": 0.412605,
+      "epistemic_status": "observed_runtime_state",
       "source": "semantic_network",
-      "ignition_score": 0.36
+      "ignition_score": 0.4404
+    },
+    {
+      "id": "runtime_state:0a71e857be2cd9b7",
+      "kind": "runtime_state",
+      "label": "provider:groq",
+      "activation": 0.4068,
+      "salience": 0.518245,
+      "novelty": 0.4457875,
+      "surprise": 0.412605,
+      "epistemic_status": "observed_runtime_state",
+      "source": "semantic_network",
+      "ignition_score": 0.4404
+    },
+    {
+      "id": "runtime_state:1d939659a8519d8c",
+      "kind": "runtime_state",
+      "label": "provider:huggingface",
+      "activation": 0.4068,
+      "salience": 0.518245,
+      "novelty": 0.4457875,
+      "surprise": 0.412605,
+      "epistemic_status": "observed_runtime_state",
+      "source": "semantic_network",
+      "ignition_score": 0.4404
     }
   ],
   "provider_eligibility": {
@@ -109,10 +109,10 @@
     },
     "groq": {
       "configured": true,
-      "disabled": true,
+      "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 974,
-      "eligible": false
+      "remaining_calls": 973,
+      "eligible": true
     },
     "huggingface": {
       "configured": false,
@@ -198,40 +198,62 @@
         "nature",
         "remain"
       ]
+    },
+    "22": {
+      "state": "active",
+      "title": "Runtime smoke test after stance integration",
+      "updated_at": "2026-10-03T20:41:43.515057+00:00"
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
-    "source": "homeostasis",
-    "score": 0.36105
+    "kind": "attend",
+    "description": "Check current status of active external task #22 to ensure it remains active before running the test.",
+    "source": "substrate:groq",
+    "score": 0.42938
   },
   "action_competition": [
     {
+      "kind": "attend",
+      "source": "substrate:groq",
+      "score": 0.42938,
+      "description": "Check current status of active external task #22 to ensure it remains active before running the test."
+    },
+    {
       "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.36105,
-      "description": "Allow activation to decay without forcing cognition."
+      "source": "substrate:groq",
+      "score": 0.35582,
+      "description": "Allow system to consolidate recent observations before proceeding with the experiment."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.31303,
+      "score": 0.28584,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.16598,
+      "score": 0.22477,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.2223,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
-  "substrate_contributors": [],
+  "substrate_contributors": [
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    }
+  ],
   "current_stances": [],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 168,
-    "semantic_nodes": 725,
+    "episodes": 173,
+    "semantic_nodes": 736,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -241,13 +263,13 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_edges": 102
     },
     "terminal_inhibition": {
       "startup": 654,
-      "after_lifecycle": 654,
-      "after_spread": 654,
-      "after_packets": 654
+      "after_lifecycle": 658,
+      "after_spread": 658,
+      "after_packets": 698
     }
   }
 }
