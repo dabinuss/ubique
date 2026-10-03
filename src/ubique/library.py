@@ -76,6 +76,9 @@ def library_catalog(
 ) -> list[dict[str, Any]]:
     """Return metadata only. Library contents are never injected automatically."""
     index = _load_index()
+    limit = max(0, int(limit))
+    if limit == 0:
+        return []
     out: list[dict[str, Any]] = []
     for item in index.get("items", []):
         if not isinstance(item, dict):
@@ -99,7 +102,7 @@ def library_catalog(
             "fully_read": bool(item.get("fully_read", False)),
             "fully_read_at": item.get("fully_read_at"),
         })
-        if len(out) >= max(0, limit):
+        if len(out) >= limit:
             break
     return out
 
