@@ -4,6 +4,8 @@ import json
 import re
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
+from urllib.request import Request, urlopen
 
 from .memory import MEMORY_DIR
 from .state import utc_now
@@ -15,6 +17,9 @@ INDEX_PATH = LIBRARY_DIR / "index.json"
 VALID_ACTIONS = {"list", "read", "add", "request", "note"}
 MAX_STORED_TEXT_CHARS = 200_000
 MAX_READ_CHARS = 12_000
+MAX_REMOTE_TEXT_BYTES = 8_000_000
+REMOTE_TIMEOUT_SECONDS = 20
+ALLOWED_REMOTE_HOSTS = {"www.gutenberg.org", "gutenberg.org"}
 
 
 def _empty_index() -> dict[str, Any]:
@@ -64,26 +69,38 @@ def _find_item(index: dict[str, Any], item_id: str) -> dict[str, Any] | None:
     return None
 
 
-def library_catalog(limit: int = 30) -> list[dict[str, Any]]:
+def library_catalog(
+    limit: int = 30,
+    *,
+    include_completed: bool = True,
+) -> list[dict[str, Any]]:
     """Return metadata only. Library contents are never injected automatically."""
     index = _load_index()
     out: list[dict[str, Any]] = []
-    for item in index.get("items", [])[: max(0, limit)]:
+    for item in index.get("items", []):
         if not isinstance(item, dict):
+            continue
+        if not include_completed and bool(item.get("fully_read", False)):
             continue
         out.append({
             "id": str(item.get("id", "")),
             "title": str(item.get("title", "")),
+            "author": str(item.get("author", "")),
             "kind": str(item.get("kind", "text")),
             "status": str(item.get("status", "available")),
             "source": str(item.get("source", "")),
-            "content_available": bool(item.get("content_path")),
+            "source_url": str(item.get("source_url", "")),
+            "license": str(item.get("license", "")),
+            "topics": list(item.get("topics", []))[:8] if isinstance(item.get("topics"), list) else [],
+            "content_available": bool(item.get("content_path") or item.get("source_url")),
             "added_by": str(item.get("added_by", "unknown")),
             "read_count": int(item.get("read_count", 0) or 0),
             "read_cursor": max(0, int(item.get("read_cursor", 0) or 0)),
             "fully_read": bool(item.get("fully_read", False)),
             "fully_read_at": item.get("fully_read_at"),
         })
+        if len(out) >= max(0, limit):
+            break
     return out
 
 
@@ -105,6 +122,57 @@ def _content_path(item: dict[str, Any]) -> Path | None:
     return path
 
 
+def _remote_source_url(item: dict[str, Any]) -> str:
+    url = str(item.get("source_url", "")).strip()
+    if not url:
+        return ""
+    parsed = urlparse(url)
+    host = (parsed.hostname or "").lower()
+    if parsed.scheme != "https" or host not in ALLOWED_REMOTE_HOSTS:
+        return ""
+    return url
+
+
+def _load_item_text(index: dict[str, Any], item: dict[str, Any]) -> str:
+    """Load local text or fetch an allowlisted public-domain source once.
+
+    Remote books are cached into the persistent library on first explicit read,
+    so later reads do not depend on the network and the heartbeat can commit the
+    cached text with the rest of memory.
+    """
+    path = _content_path(item)
+    if path is not None and path.exists():
+        return path.read_text(encoding="utf-8")
+
+    source_url = _remote_source_url(item)
+    if not source_url:
+        return ""
+
+    request = Request(
+        source_url,
+        headers={"User-Agent": "Ubique/0.1 public-domain library reader"},
+    )
+    with urlopen(request, timeout=REMOTE_TIMEOUT_SECONDS) as response:
+        data = response.read(MAX_REMOTE_TEXT_BYTES + 1)
+        if len(data) > MAX_REMOTE_TEXT_BYTES:
+            raise ValueError(
+                f"remote library text exceeds {MAX_REMOTE_TEXT_BYTES} bytes"
+            )
+        charset = response.headers.get_content_charset() or "utf-8"
+
+    text = data.decode(charset, errors="replace")
+    item_id = str(item.get("id", "")).strip()
+    if text and item_id:
+        ITEMS_DIR.mkdir(parents=True, exist_ok=True)
+        cache_path = ITEMS_DIR / f"{_slug(item_id)}.txt"
+        cache_path.write_text(text, encoding="utf-8")
+        item["content_path"] = f"items/{cache_path.name}"
+        item["cached_from"] = source_url
+        item["cached_at"] = utc_now()
+        _write_index(index)
+    return text
+
+
 def read_library_item(
     item_id: str,
     offset: int | None = None,
@@ -118,10 +186,7 @@ def read_library_item(
         raise ValueError(f"unknown library item: {item_id}")
 
     max_chars = max(500, min(int(max_chars or 8000), MAX_READ_CHARS))
-    path = _content_path(item)
-    text = ""
-    if path is not None and path.exists():
-        text = path.read_text(encoding="utf-8")
+    text = _load_item_text(index, item)
 
     stored_cursor = max(0, int(item.get("read_cursor", 0) or 0))
     fully_read = bool(item.get("fully_read", False))
