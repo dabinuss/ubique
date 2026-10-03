@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T14:57:16.344352+00:00",
-  "generation": 461,
+  "timestamp": "2026-10-03T18:20:26.990666+00:00",
+  "generation": 462,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1516,
-    "surprise": 0.1216,
+    "novelty": 0.151,
+    "surprise": 0.121,
     "uncertainty": 0.07,
-    "salience": 0.2842,
-    "exploration": 0.2019,
-    "plasticity": 0.3809,
+    "salience": 0.2647,
+    "exploration": 0.2016,
+    "plasticity": 0.3783,
     "energy": 1.0,
-    "sleep_pressure": 0.0167
+    "sleep_pressure": 0.0165
   },
   "workspace": [
-    {
-      "id": "episode:5265e233069674",
-      "kind": "recalled_episode",
-      "label": "{\"kind\": \"memory_abstraction\", \"passed\": true, \"provider\": \"gemini\", \"concepts_created\": 2, \"source_thoughts\": 8, \"source_hypotheses\": 8}",
-      "activation": 0.3746,
-      "salience": 0.92,
-      "novelty": 0.3,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4983
-    },
     {
       "id": "episode:0286d0825f516b",
       "kind": "recalled_episode",
       "label": "{\"kind\": \"memory_abstraction\", \"passed\": true, \"provider\": \"gemini\", \"concepts_created\": 2, \"source_thoughts\": 8, \"source_hypotheses\": 8}",
-      "activation": 0.3789,
+      "activation": 0.2612,
       "salience": 0.95,
       "novelty": 0.2,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.495
+      "ignition_score": 0.4361
     },
     {
-      "id": "episode:c5c0c25e2fb094",
+      "id": "episode:6d99f61430188d",
       "kind": "recalled_episode",
-      "label": "{\"kind\": \"memory_abstraction\", \"passed\": true, \"provider\": \"gemini\", \"concepts_created\": 2, \"source_thoughts\": 8, \"source_hypotheses\": 8}",
-      "activation": 0.3781,
-      "salience": 0.94,
-      "novelty": 0.2,
+      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"memory_abstraction\", \"how should the intelligence profile components z, k, r, l be instantiated to support metric computation?\"]}",
+      "activation": 0.2785,
+      "salience": 0.88,
+      "novelty": 0.15,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.492
+      "ignition_score": 0.4208
     },
     {
       "id": "episode:95da452f5dcf43",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"substrate:gemini\", \"concepts\": [\"memory_abstraction\", \"which metrics best capture p(s|c) and g_a(s|c) within the existing architecture?\"]}",
-      "activation": 0.2864,
+      "activation": 0.281,
       "salience": 0.9,
       "novelty": 0.1,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4232
+      "ignition_score": 0.4205
     },
     {
-      "id": "episode:1f5115d9f8a953",
+      "id": "episode:78edff0a082c54",
       "kind": "recalled_episode",
-      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"memory_abstraction\",\n      \"kind\": \"concept\",\n      \"strength\": 0.95\n    },\n    {\n      \"label\": \"theoretical_framework_fzg\",\n      \"kind\": \"concept\",\n      \"strength\": 0.85\n    }\n  ],\n  \"hypotheses\": [\n    \"Recent memory abstractions have successfully consolidated episodic traces into reusable concepts.\",\n    \"With high energy and no active external tasks, internal structural optimization or further abstraction cycles can proceed efficiently.\"\n  ],\n  ",
-      "activation": 0.3101,
+      "label": "Counterfactual association to explore later: what changes if 'memory_abstraction' and 'how should the intelligence profile components z, k, r, l be instantiated to support metric computation?' are related more strongly than current evidence establishes?",
+      "activation": 0.2621,
+      "salience": 0.3,
+      "novelty": 0.7,
+      "surprise": 0.5,
+      "epistemic_status": "imagined",
+      "source": "associative_recall",
+      "ignition_score": 0.3571
+    },
+    {
+      "id": "episode:15077dd2de4c7a",
+      "kind": "recalled_episode",
+      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"memory_abstraction\",\n      \"kind\": \"concept\",\n      \"strength\": 0.92\n    },\n    {\n      \"label\": \"internal structural optimization\",\n      \"kind\": \"concept\",\n      \"strength\": 0.81\n    }\n  ],\n  \"hypotheses\": [\n    \"Recent consolidation cycles successfully abstract episodic traces into reusable concepts, maintaining low novelty and uncertainty.\",\n    \"With system energy at 0.975 and all external tasks closed, further internal restructuring or continuati",
+      "activation": 0.3685,
       "salience": 0.42,
-      "novelty": 0.1525,
+      "novelty": 0.1516,
       "surprise": 0.3,
       "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.3159
+      "ignition_score": 0.345
     },
     {
-      "id": "episode:6ada0111f85b19",
+      "id": "episode:7d406cdb4b5867",
       "kind": "recalled_episode",
-      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"memory_abstraction ↔ FZG framework concepts\",\n      \"kind\": \"concept\",\n      \"strength\": 0.82\n    },\n    {\n      \"label\": \"self‑preservation P linked to functional goal‑directedness G_A\",\n      \"kind\": \"concept\",\n      \"strength\": 0.74\n    },\n    {\n      \"label\": \"I_C profile components (Z, K, R, L) as dimensions of intelligence\",\n      \"kind\": \"concept\",\n      \"strength\": 0.78\n    }\n  ],\n  \"hypotheses\": [\n    \"Applying the FZG framework to Ubique's in",
-      "activation": 0.2876,
+      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"memory_abstraction ↔ metric_definition\",\n      \"kind\": \"concept\",\n      \"strength\": 0.88\n    },\n    {\n      \"label\": \"p(s|c) metric candidates\",\n      \"kind\": \"concept\",\n      \"strength\": 0.85\n    },\n    {\n      \"label\": \"g_a(s|c) metric candidates\",\n      \"kind\": \"concept\",\n      \"strength\": 0.84\n    },\n    {\n      \"label\": \"FZG framework ↔ self‑preservation and goal‑directedness\",\n      \"kind\": \"concept\",\n      \"strength\": 0.80\n    }\n  ],\n  \"hypothes",
+      "activation": 0.3208,
       "salience": 0.42,
-      "novelty": 0.1525,
+      "novelty": 0.1516,
       "surprise": 0.3,
       "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.3046
+      "ignition_score": 0.3211
     },
     {
       "id": "concept:fd73893bdbb24f83",
       "kind": "concept",
       "label": "memory_abstraction",
-      "activation": 0.2332,
-      "salience": 0.28415999999999997,
-      "novelty": 0.151625,
-      "surprise": 0.12156,
+      "activation": 0.2286,
+      "salience": 0.26474,
+      "novelty": 0.15104,
+      "surprise": 0.12104,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.2219
+      "ignition_score": 0.2146
     }
   ],
   "provider_eligibility": {
@@ -111,7 +111,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 983,
+      "remaining_calls": 981,
       "eligible": true
     },
     "huggingface": {
@@ -146,41 +146,37 @@
   },
   "last_action": {
     "kind": "consolidate",
-    "description": "Continue REM consolidation to further structure and integrate recent memory abstractions.",
-    "source": "substrate:gemini",
-    "score": 0.51884
+    "description": "Integrate results of the metric experiment into the memory abstraction store and update intelligence‑profile component mappings.",
+    "source": "substrate:groq",
+    "score": 0.51592
   },
   "action_competition": [
     {
       "kind": "consolidate",
-      "source": "substrate:gemini",
-      "score": 0.51884,
-      "description": "Continue REM consolidation to further structure and integrate recent memory abstractions."
+      "source": "substrate:groq",
+      "score": 0.51592,
+      "description": "Integrate results of the metric experiment into the memory abstraction store and update intelligence‑profile component mappings."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.28247,
+      "score": 0.2799,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.22327,
+      "score": 0.22407,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.21349,
+      "score": 0.20753,
       "description": "Continue processing the active workspace without external action."
     }
   ],
   "substrate_contributors": [
-    {
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite"
-    },
     {
       "provider": "groq",
       "model": "openai/gpt-oss-120b"
@@ -188,8 +184,8 @@
   ],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 131,
-    "semantic_nodes": 594,
+    "episodes": 134,
+    "semantic_nodes": 602,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -199,7 +195,7 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 286
+      "removed_edges": 190
     },
     "terminal_inhibition": {
       "startup": 180,
