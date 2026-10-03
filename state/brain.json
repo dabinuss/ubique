@@ -1,30 +1,30 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T21:00:55.760841+00:00",
-  "generation": 481,
+  "timestamp": "2026-10-03T21:01:43.368152+00:00",
+  "generation": 482,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.4323,
-    "surprise": 0.4039,
+    "novelty": 0.3335,
+    "surprise": 0.3045,
     "uncertainty": 0.35,
-    "salience": 0.5838,
-    "exploration": 0.4546,
-    "plasticity": 0.5898,
-    "energy": 0.855,
-    "sleep_pressure": 0.1937
+    "salience": 0.4688,
+    "exploration": 0.4001,
+    "plasticity": 0.4905,
+    "energy": 0.908,
+    "sleep_pressure": 0.0732
   },
   "workspace": [
     {
       "id": "episode:0953d0433160c0",
-      "kind": "external_issue_lifecycle",
+      "kind": "recalled_episode",
       "label": "External GitHub issue #23 is now deactivated. It is no longer an active task. Ubique library sync — expanded collection",
-      "activation": 0.95,
+      "activation": 0.4749,
       "salience": 0.88,
       "novelty": 0.65,
       "surprise": 0.45,
       "epistemic_status": "observed_external_state",
-      "source": "github:lifecycle",
-      "ignition_score": 0.8335
+      "source": "associative_recall",
+      "ignition_score": 0.596
     },
     {
       "id": "episode:6e71188b382560",
@@ -42,7 +42,7 @@
       "id": "episode:0c7c2bc439d0bb",
       "kind": "recalled_episode",
       "label": "External GitHub issue #19 is now deactivated. It is no longer an active task. Ubique library smoke test — public-domain book",
-      "activation": 0.4172,
+      "activation": 0.4171,
       "salience": 0.88,
       "novelty": 0.65,
       "surprise": 0.45,
@@ -75,28 +75,28 @@
       "ignition_score": 0.5405
     },
     {
+      "id": "episode:49603c7d2e0004",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 12000, \"excerpt\": \"he meaning or origin of the different\\nexpressions, takes a very different view of the subject to what I do.\\n\\nIn the above passage there is but a slight, if any, advance in the\\nphilosophy of the subject, beyond that reached by the painter Le Brun,\\nwho, in 16",
+      "activation": 0.3825,
+      "salience": 0.8,
+      "novelty": 0.4,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4852
+    },
+    {
       "id": "runtime_state:b74610dd8d363ec6",
       "kind": "runtime_state",
       "label": "external-task-ended",
-      "activation": 0.5325,
-      "salience": 0.5837950000000001,
-      "novelty": 0.43225,
-      "surprise": 0.40385000000000004,
+      "activation": 0.2552,
+      "salience": 0.46879000000000004,
+      "novelty": 0.333495,
+      "surprise": 0.304535,
       "epistemic_status": "observed_external_state",
       "source": "semantic_network",
-      "ignition_score": 0.5169
-    },
-    {
-      "id": "runtime_state:247beaa03cc47f86",
-      "kind": "runtime_state",
-      "label": "resolved",
-      "activation": 0.5325,
-      "salience": 0.5837950000000001,
-      "novelty": 0.43225,
-      "surprise": 0.40385000000000004,
-      "epistemic_status": "observed_external_state",
-      "source": "semantic_network",
-      "ignition_score": 0.5169
+      "ignition_score": 0.3247
     }
   ],
   "provider_eligibility": {
@@ -230,37 +230,37 @@
     }
   },
   "last_action": {
-    "kind": "attend",
-    "description": "Continue processing the active workspace without external action.",
-    "source": "workspace",
-    "score": 0.31574
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
+    "source": "homeostasis",
+    "score": 0.36017
   },
   "action_competition": [
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.31574,
-      "description": "Continue processing the active workspace without external action."
-    },
-    {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.3101,
+      "score": 0.36017,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.24741,
+      "score": 0.31843,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.1843,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
   "substrate_contributors": [],
   "current_stances": [],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 189,
-    "semantic_nodes": 795,
+    "episodes": 190,
+    "semantic_nodes": 799,
     "synapses": 1200
   },
   "cortical_maintenance": {
