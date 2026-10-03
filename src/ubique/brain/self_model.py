@@ -181,25 +181,24 @@ class SelfModelStore:
         generation: int,
         provider: str,
         basis_episode_ids: Iterable[str] = (),
-        grounded_sources: Iterable[str] = (),
     ) -> list[dict[str, Any]]:
         """Accumulate proposed self-positions and promote only stable ones.
 
         Promotion requires:
-        - support in at least two different generations,
-        - at least one grounded source or observed experience,
-        - confidence >= 0.55.
+        - support in at least three evidence-bearing generations,
+        - support spanning at least four generations,
+        - at least two distinct validated evidence episodes,
+        - confidence >= 0.60.
+
+        Repeating a model opinion without new validated evidence does not add
+        support. Evidence is supplied per stance by the runtime after checking
+        provenance and semantic relevance.
 
         Mature stances remain explicitly revisable. A later revision must itself
         mature before it replaces the currently established position.
         """
         records = self._read_records()
         basis = [str(value) for value in basis_episode_ids if str(value).strip()][:16]
-        grounded_now = sorted({
-            str(value).strip()[:240]
-            for value in grounded_sources
-            if str(value).strip()
-        })[:12]
         out: list[dict[str, Any]] = []
 
         for raw in updates:
@@ -215,6 +214,16 @@ class SelfModelStore:
                 continue
 
             confidence = _clamp(raw.get("confidence", 0.5))
+            evidence_now = list(dict.fromkeys(
+                str(value).strip()
+                for value in raw.get("validated_evidence_ids", [])
+                if str(value).strip()
+            ))[:12]
+            grounded_now = list(dict.fromkeys(
+                str(value).strip()[:240]
+                for value in raw.get("validated_grounded_sources", [])
+                if str(value).strip()
+            ))[:12]
             key = _topic_key(topic)
             related = [
                 record
@@ -237,26 +246,37 @@ class SelfModelStore:
                     for value in previous.get("support_generations", [])
                     if isinstance(value, int) or str(value).isdigit()
                 }
-                generations.add(int(generation))
-                support_count = max(
-                    int(previous.get("support_count", 1) or 1) + 1,
-                    len(generations),
-                )
-                grounded = sorted(set(previous.get("grounded_sources", [])) | set(grounded_now))[:16]
+                evidence = list(dict.fromkeys(
+                    list(previous.get("evidence_episode_ids", [])) + evidence_now
+                ))[:24]
+                grounded = list(dict.fromkeys(
+                    list(previous.get("grounded_sources", [])) + grounded_now
+                ))[:16]
+                previous_evidence = set(previous.get("evidence_episode_ids", []))
+                has_new_evidence = bool(set(evidence_now) - previous_evidence)
+                last_support = max(generations) if generations else -10_000
+                spaced = int(generation) - last_support >= 2
+                if has_new_evidence and spaced:
+                    generations.add(int(generation))
+                support_count = len(generations)
             else:
-                generations = {int(generation)}
-                support_count = 1
+                generations = {int(generation)} if evidence_now else set()
+                support_count = len(generations)
+                evidence = evidence_now
                 grounded = grounded_now
 
+            span = (max(generations) - min(generations)) if len(generations) >= 2 else 0
             mature = (
-                confidence >= 0.55
-                and len(generations) >= 2
-                and support_count >= 2
+                confidence >= 0.60
+                and len(generations) >= 3
+                and support_count >= 3
+                and span >= 4
+                and len(set(evidence)) >= 2
                 and bool(grounded)
             )
             kind = "stance" if mature else "stance_candidate"
             identity_weight = (
-                min(0.85, 0.22 + 0.1 * len(generations) + 0.06 * len(grounded))
+                min(0.85, 0.18 + 0.08 * len(generations) + 0.05 * len(set(evidence)))
                 if mature else 0.0
             )
             statement = (
@@ -279,6 +299,8 @@ class SelfModelStore:
                 "revisable": True,
                 "support_count": support_count,
                 "support_generations": sorted(generations)[-12:],
+                "support_span_generations": span,
+                "evidence_episode_ids": evidence,
                 "grounded_sources": grounded,
                 "basis_episode_ids": basis,
                 "provider": provider[:80],
@@ -293,6 +315,19 @@ class SelfModelStore:
         latest: dict[str, dict[str, Any]] = {}
         for record in self._read_records():
             if record.get("kind") != "stance":
+                continue
+            generations = [
+                int(value)
+                for value in record.get("support_generations", [])
+                if isinstance(value, int) or str(value).isdigit()
+            ]
+            evidence = [
+                str(value)
+                for value in record.get("evidence_episode_ids", [])
+                if str(value).strip()
+            ]
+            span = (max(generations) - min(generations)) if len(generations) >= 2 else 0
+            if len(set(generations)) < 3 or span < 4 or len(set(evidence)) < 2:
                 continue
             key = str(record.get("topic_key", "")).strip()
             if not key:
