@@ -67,3 +67,41 @@ def test_remote_eligibility_reports_exhausted_budget(monkeypatch):
     assert status["gemini"]["eligible"] is False
     assert status["gemini"]["remaining_calls"] == 0
     assert status["groq"]["eligible"] is True
+
+
+def test_transient_provider_failures_use_short_adaptive_cooldown(monkeypatch):
+    from datetime import datetime, timezone
+
+    monkeypatch.setattr(router_mod, "read_json", lambda name, default: {})
+    monkeypatch.setattr(router_mod, "write_json", lambda name, value: None)
+    r = router_mod.ProviderRouter([NamedGood("groq")])
+
+    before = datetime.now(timezone.utc)
+    r._failure("groq", ProviderError("temporary network timeout"))
+    first = r.ledger["groq"]
+    first_until = datetime.fromisoformat(first["disabled_until"])
+    assert first["consecutive_failures"] == 1
+    assert 4 * 60 <= (first_until - before).total_seconds() <= 6 * 60
+
+    r._failure("groq", ProviderError("temporary network timeout"))
+    second = r.ledger["groq"]
+    second_until = datetime.fromisoformat(second["disabled_until"])
+    assert second["consecutive_failures"] == 2
+    assert 9 * 60 <= (second_until - datetime.now(timezone.utc)).total_seconds() <= 11 * 60
+
+    r._success("groq")
+    assert r.ledger["groq"]["consecutive_failures"] == 0
+    assert r.ledger["groq"]["disabled_until"] is None
+
+
+def test_auth_failure_keeps_long_cooldown(monkeypatch):
+    from datetime import datetime, timezone
+
+    monkeypatch.setattr(router_mod, "read_json", lambda name, default: {})
+    monkeypatch.setattr(router_mod, "write_json", lambda name, value: None)
+    r = router_mod.ProviderRouter([NamedGood("groq")])
+
+    before = datetime.now(timezone.utc)
+    r._failure("groq", ProviderError("Groq HTTP 401: invalid API key"))
+    until = datetime.fromisoformat(r.ledger["groq"]["disabled_until"])
+    assert 5.9 * 3600 <= (until - before).total_seconds() <= 6.1 * 3600
