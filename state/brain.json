@@ -1,30 +1,42 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T20:23:11.431806+00:00",
-  "generation": 467,
+  "timestamp": "2026-10-03T20:23:35.625047+00:00",
+  "generation": 468,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2957,
-    "surprise": 0.217,
+    "novelty": 0.2447,
+    "surprise": 0.183,
     "uncertainty": 0.07,
-    "salience": 0.4702,
-    "exploration": 0.2714,
-    "plasticity": 0.4783,
-    "energy": 0.725,
-    "sleep_pressure": 0.2225
+    "salience": 0.3243,
+    "exploration": 0.2468,
+    "plasticity": 0.4446,
+    "energy": 1.0,
+    "sleep_pressure": 0.1394
   },
   "workspace": [
     {
-      "id": "episode:1ba7a7aa24ce46",
+      "id": "episode:59fd8f89549ccb",
       "kind": "recalled_episode",
-      "label": "m. This has justice in it for, though his\nindifference to criticism may be excused, the ignorance upon which\nthis criticism is founded should be his first concern, for the man\nof science is the teacher and ignorance is his very opportunity.\nHeretofore, however, he has seen his opportunity too narrowly, for he\nhas been content to teach only the few embryo scientists apprenticed to\nhis own particular field. He has not, until very lately, realized that\nhis hard-won knowledge is far more needed and ",
-      "activation": 0.5638,
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 0, \"excerpt\": \"The Project Gutenberg eBook of The Expression of the Emotions in Man and Animals\\r\\n    \\r\\nThis eBook is for the use of anyone anywhere in the United States and\\r\\nmost other parts of the world at no cost and with almost no restrictions\\r\\nwhatsoever. You may copy ",
+      "activation": 0.4338,
+      "salience": 0.88,
+      "novelty": 0.79,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.5816
+    },
+    {
+      "id": "episode:35742755d0784d",
+      "kind": "recalled_episode",
+      "label": "The Project Gutenberg eBook of The Expression of the Emotions in Man and Animals\r\n    \r\nThis eBook is for the use of anyone anywhere in the United States and\r\nmost other parts of the world at no cost and with almost no restrictions\r\nwhatsoever. You may copy it, give it away or re-use it under the terms\r\nof the Project Gutenberg License included with this eBook or online\r\nat www.gutenberg.org. If you are not located in the United States,\r\nyou will have to check the laws of the country where you a",
+      "activation": 0.4854,
       "salience": 0.6,
-      "novelty": 1.0,
+      "novelty": 0.9972,
       "surprise": 0.35,
       "epistemic_status": "external_source",
       "source": "associative_recall",
-      "ignition_score": 0.6039
+      "ignition_score": 0.5643
     },
     {
       "id": "episode:bcaf62814c19d1",
@@ -51,18 +63,6 @@
       "ignition_score": 0.4853
     },
     {
-      "id": "episode:737402c2f1b852",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 3600, \"excerpt\": \"m. This has justice in it for, though his\\nindifference to criticism may be excused, the ignorance upon which\\nthis criticism is founded should be his first concern, for the man\\nof science is the teacher and ignorance is his very opportunity.\\nHeretofore, however, ",
-      "activation": 0.3382,
-      "salience": 0.82,
-      "novelty": 0.45,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4746
-    },
-    {
       "id": "episode:80c56b581c264c",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 1200, \"excerpt\": \" IN COLLABORATION WITH\\n  HENRY ALSOP RILEY\\n\\n  THE FORM AND FUNCTIONS OF THE\\n  CENTRAL NERVOUS SYSTEM\\n\\n\\n\\n\\n  THE MASTER OF DESTINY\\n\\n  A BIOGRAPHY\\n  OF THE BRAIN\\n\\n  BY FREDERICK\\n  TILNEY, M.D.\\n\\n  WITH A FOREWORD\\n  BY AUSTEN FOX\\n  RIGGS, M.D.\\n\\n  [Il",
@@ -78,7 +78,7 @@
       "id": "episode:a99a6b1a28926f",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"memory_abstraction ↔ metric_definition\", \"the expected utility of actions under the current policy approximates g_a(s|c).\"]}",
-      "activation": 0.2444,
+      "activation": 0.2443,
       "salience": 0.9,
       "novelty": 0.1,
       "surprise": 0.35,
@@ -87,16 +87,16 @@
       "ignition_score": 0.4022
     },
     {
-      "id": "concept:11fb055d5824add3",
+      "id": "concept:ef3025ce96d2fe0a",
       "kind": "concept",
-      "label": "indifference",
-      "activation": 0.3621,
-      "salience": 0.470195,
-      "novelty": 0.295665,
-      "surprise": 0.21698,
-      "epistemic_status": "external_source_index",
+      "label": "ignorance ↔ opportunity for teaching",
+      "activation": 0.331,
+      "salience": 0.42148,
+      "novelty": 0.244705,
+      "surprise": 0.18305,
+      "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.3631
+      "ignition_score": 0.3246
     }
   ],
   "provider_eligibility": {
@@ -109,10 +109,10 @@
     },
     "groq": {
       "configured": true,
-      "disabled": false,
+      "disabled": true,
       "daily_limit": 1000,
-      "remaining_calls": 975,
-      "eligible": true
+      "remaining_calls": 974,
+      "eligible": false
     },
     "huggingface": {
       "configured": false,
@@ -165,58 +165,35 @@
     }
   },
   "last_action": {
-    "kind": "library",
-    "description": "Begin reading Charles Darwin's \"The Expression of the Emotions in Man and Animals\" to explore complementary perspectives on emotion and ignorance.",
-    "source": "substrate:groq",
-    "score": 0.36805
+    "kind": "rest",
+    "description": "Allow activation to decay without forcing cognition.",
+    "source": "homeostasis",
+    "score": 0.37624
   },
   "action_competition": [
     {
-      "kind": "library",
-      "source": "substrate:groq",
-      "score": 0.36805,
-      "description": "Begin reading Charles Darwin's \"The Expression of the Emotions in Man and Animals\" to explore complementary perspectives on emotion and ignorance."
-    },
-    {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.35196,
+      "score": 0.37624,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "consolidate",
-      "source": "substrate:groq",
-      "score": 0.34672,
-      "description": "Perform rapid‑eye‑movement (REM) consolidation of the newly read excerpts to integrate them into long‑term memory."
-    },
-    {
-      "kind": "library",
-      "source": "substrate:groq",
-      "score": 0.31148,
-      "description": "Continue reading \"The Master of Destiny\" from the current cursor to deepen understanding of the author's argument about scientific outreach."
+      "source": "homeostasis",
+      "score": 0.28311,
+      "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.2781,
+      "score": 0.25781,
       "description": "Continue processing the active workspace without external action."
-    },
-    {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.23629,
-      "description": "Replay and consolidate existing experience offline."
     }
   ],
-  "substrate_contributors": [
-    {
-      "provider": "groq",
-      "model": "openai/gpt-oss-120b"
-    }
-  ],
+  "substrate_contributors": [],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 152,
+    "episodes": 153,
     "semantic_nodes": 702,
     "synapses": 1200
   },
@@ -227,13 +204,13 @@
     },
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 96
+      "removed_edges": 0
     },
     "terminal_inhibition": {
-      "startup": 333,
-      "after_lifecycle": 333,
-      "after_spread": 333,
-      "after_packets": 341
+      "startup": 335,
+      "after_lifecycle": 335,
+      "after_spread": 335,
+      "after_packets": 335
     }
   }
 }
