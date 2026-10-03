@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T21:01:43.368152+00:00",
-  "generation": 482,
+  "timestamp": "2026-10-03T21:02:31.776965+00:00",
+  "generation": 483,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.3335,
-    "surprise": 0.3045,
+    "novelty": 0.489,
+    "surprise": 0.4149,
     "uncertainty": 0.35,
-    "salience": 0.4688,
-    "exploration": 0.4001,
-    "plasticity": 0.4905,
-    "energy": 0.908,
-    "sleep_pressure": 0.0732
+    "salience": 0.6197,
+    "exploration": 0.4766,
+    "plasticity": 0.6178,
+    "energy": 0.748,
+    "sleep_pressure": 0.1602
   },
   "workspace": [
     {
-      "id": "episode:0953d0433160c0",
-      "kind": "recalled_episode",
-      "label": "External GitHub issue #23 is now deactivated. It is no longer an active task. Ubique library sync — expanded collection",
-      "activation": 0.4749,
-      "salience": 0.88,
-      "novelty": 0.65,
-      "surprise": 0.45,
-      "epistemic_status": "observed_external_state",
-      "source": "associative_recall",
-      "ignition_score": 0.596
+      "id": "episode:77fdf9f838b363",
+      "kind": "github_issue",
+      "label": "Runtime verification after identity grounding\n\n/status",
+      "activation": 0.95,
+      "salience": 0.9,
+      "novelty": 0.7778,
+      "surprise": 0.62,
+      "epistemic_status": "observed_external_input",
+      "source": "github:dabinuss",
+      "ignition_score": 0.8755
     },
     {
-      "id": "episode:6e71188b382560",
+      "id": "episode:b9fb8f19d2333a",
       "kind": "recalled_episode",
-      "label": "External GitHub issue #20 is now deactivated. It is no longer an active task. Ubique library sync — public-domain collection",
-      "activation": 0.4203,
-      "salience": 0.88,
-      "novelty": 0.65,
-      "surprise": 0.45,
-      "epistemic_status": "observed_external_state",
-      "source": "associative_recall",
-      "ignition_score": 0.5687
-    },
-    {
-      "id": "episode:0c7c2bc439d0bb",
-      "kind": "recalled_episode",
-      "label": "External GitHub issue #19 is now deactivated. It is no longer an active task. Ubique library smoke test — public-domain book",
-      "activation": 0.4171,
-      "salience": 0.88,
-      "novelty": 0.65,
-      "surprise": 0.45,
-      "epistemic_status": "observed_external_state",
-      "source": "associative_recall",
-      "ignition_score": 0.5671
-    },
-    {
-      "id": "episode:8f29a159cb95ba",
-      "kind": "recalled_episode",
-      "label": "External GitHub issue #21 is now closed. It is no longer an active task. Stance formation smoke test",
-      "activation": 0.3663,
-      "salience": 0.88,
-      "novelty": 0.65,
-      "surprise": 0.45,
-      "epistemic_status": "observed_external_state",
-      "source": "associative_recall",
-      "ignition_score": 0.5417
-    },
-    {
-      "id": "episode:4ea7563068711e",
-      "kind": "recalled_episode",
-      "label": "External GitHub issue #22 is now closed. It is no longer an active task. Runtime smoke test after stance integration",
-      "activation": 0.364,
-      "salience": 0.88,
-      "novelty": 0.65,
-      "surprise": 0.45,
-      "epistemic_status": "observed_external_state",
-      "source": "associative_recall",
-      "ignition_score": 0.5405
-    },
-    {
-      "id": "episode:49603c7d2e0004",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 12000, \"excerpt\": \"he meaning or origin of the different\\nexpressions, takes a very different view of the subject to what I do.\\n\\nIn the above passage there is but a slight, if any, advance in the\\nphilosophy of the subject, beyond that reached by the painter Le Brun,\\nwho, in 16",
-      "activation": 0.3825,
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 6000, \"excerpt\": \"eelings—Devotion\\n\\nCHAP. IX.—REFLECTION—MEDITATION—ILL—TEMPER—SULKINESS DETERMINATION.\\nThe act of frowning—Reflection with an effort or with the perception of\\nsomething difficult or disagreeable—Abstracted\\nmeditation—Ill-temper—Moroseness—Obstinacy—Sulkiness ",
+      "activation": 0.4202,
       "salience": 0.8,
+      "novelty": 0.6,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.5301
+    },
+    {
+      "id": "episode:59fd8f89549ccb",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 0, \"excerpt\": \"The Project Gutenberg eBook of The Expression of the Emotions in Man and Animals\\r\\n    \\r\\nThis eBook is for the use of anyone anywhere in the United States and\\r\\nmost other parts of the world at no cost and with almost no restrictions\\r\\nwhatsoever. You may copy ",
+      "activation": 0.3083,
+      "salience": 0.88,
+      "novelty": 0.79,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.5189
+    },
+    {
+      "id": "episode:80c56b581c264c",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 1200, \"excerpt\": \" IN COLLABORATION WITH\\n  HENRY ALSOP RILEY\\n\\n  THE FORM AND FUNCTIONS OF THE\\n  CENTRAL NERVOUS SYSTEM\\n\\n\\n\\n\\n  THE MASTER OF DESTINY\\n\\n  A BIOGRAPHY\\n  OF THE BRAIN\\n\\n  BY FREDERICK\\n  TILNEY, M.D.\\n\\n  WITH A FOREWORD\\n  BY AUSTEN FOX\\n  RIGGS, M.D.\\n\\n  [Il",
+      "activation": 0.2903,
+      "salience": 0.9,
       "novelty": 0.4,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4852
+      "ignition_score": 0.4641
     },
     {
-      "id": "runtime_state:b74610dd8d363ec6",
-      "kind": "runtime_state",
-      "label": "external-task-ended",
-      "activation": 0.2552,
-      "salience": 0.46879000000000004,
-      "novelty": 0.333495,
-      "surprise": 0.304535,
-      "epistemic_status": "observed_external_state",
-      "source": "semantic_network",
-      "ignition_score": 0.3247
+      "id": "episode:5bee090a96d139",
+      "kind": "recalled_episode",
+      "label": "eelings—Devotion\n\nCHAP. IX.—REFLECTION—MEDITATION—ILL—TEMPER—SULKINESS DETERMINATION.\nThe act of frowning—Reflection with an effort or with the perception of\nsomething difficult or disagreeable—Abstracted\nmeditation—Ill-temper—Moroseness—Obstinacy—Sulkiness and\npouting—Decision or determination—The firm closure of the mouth\n\nCHAP. X.—HATRED AND ANGER.\nHatred—Rage, effects of on the system—Uncovering of the teeth—Rage in\nthe insane—Anger and indignation—As expressed by the various races of\nman—Sn",
+      "activation": 0.2948,
+      "salience": 0.6,
+      "novelty": 0.8634,
+      "surprise": 0.35,
+      "epistemic_status": "external_source",
+      "source": "associative_recall",
+      "ignition_score": 0.4516
+    },
+    {
+      "id": "episode:737402c2f1b852",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 3600, \"excerpt\": \"m. This has justice in it for, though his\\nindifference to criticism may be excused, the ignorance upon which\\nthis criticism is founded should be his first concern, for the man\\nof science is the teacher and ignorance is his very opportunity.\\nHeretofore, however, ",
+      "activation": 0.2791,
+      "salience": 0.82,
+      "novelty": 0.45,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4451
+    },
+    {
+      "id": "episode:1b426b3787f923",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 2400, \"excerpt\": \"s, as the elephant its\\ntrunk, as the camel its hump, or by a divine act of separate and\\nspecial creation? Those who maintain the quarrel over man’s origin are\\nnot those who have familiarized themselves with the history of the\\nworld and its creatures; they are no",
+      "activation": 0.2817,
+      "salience": 0.84,
+      "novelty": 0.33,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4357
     }
   ],
   "provider_eligibility": {
@@ -227,40 +227,45 @@
         "limit",
         "sync"
       ]
+    },
+    "24": {
+      "state": "active",
+      "title": "Runtime verification after identity grounding",
+      "updated_at": "2026-10-03T21:02:30.239389+00:00"
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
-    "source": "homeostasis",
-    "score": 0.36017
+    "kind": "attend",
+    "description": "Continue processing the active workspace without external action.",
+    "source": "workspace",
+    "score": 0.32847
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.36017,
-      "description": "Replay and consolidate existing experience offline."
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.32847,
+      "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.31843,
+      "score": 0.31568,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.1843,
-      "description": "Continue processing the active workspace without external action."
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.2636,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [],
   "current_stances": [],
-  "consecutive_pulses": 2,
+  "consecutive_pulses": 3,
   "memory": {
-    "episodes": 190,
-    "semantic_nodes": 799,
+    "episodes": 193,
+    "semantic_nodes": 802,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -271,13 +276,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_edges": 18
     },
     "terminal_inhibition": {
       "startup": 249,
-      "after_lifecycle": 249,
-      "after_spread": 249,
-      "after_packets": 249
+      "after_lifecycle": 252,
+      "after_spread": 252,
+      "after_packets": 252
     }
   }
 }
