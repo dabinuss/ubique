@@ -14,17 +14,26 @@ def _runtime(tmp_path):
 
 def test_legacy_complete_read_is_inferred_from_action_outcome(tmp_path, monkeypatch):
     runtime = _runtime(tmp_path)
-    monkeypatch.setattr(runtime_module, "library_catalog", lambda limit=20: [{
-        "id": "book",
-        "title": "Book",
-        "fully_read": False,
-    }])
+    progress = {"fully_read": False}
+
+    def fake_catalog(limit=20, include_completed=True):
+        if progress["fully_read"] and not include_completed:
+            return []
+        return [{
+            "id": "book",
+            "title": "Book",
+            "fully_read": progress["fully_read"],
+        }]
+
+    monkeypatch.setattr(runtime_module, "library_catalog", fake_catalog)
     migrated = []
-    monkeypatch.setattr(
-        runtime_module,
-        "mark_library_item_complete",
-        lambda item_id, completed_at=None: migrated.append((item_id, completed_at)) or True,
-    )
+
+    def mark_complete(item_id, completed_at=None):
+        progress["fully_read"] = True
+        migrated.append((item_id, completed_at))
+        return True
+
+    monkeypatch.setattr(runtime_module, "mark_library_item_complete", mark_complete)
     runtime.episodes.append(
         kind="internal_action_outcome",
         text=json.dumps({
@@ -40,12 +49,12 @@ def test_legacy_complete_read_is_inferred_from_action_outcome(tmp_path, monkeypa
 
     assert runtime._completed_library_items() == {"book"}
     assert migrated and migrated[0][0] == "book"
-    assert runtime._cognitive_library_catalog()[0]["fully_read"] is True
+    assert runtime._cognitive_library_catalog() == []
 
 
 def test_completed_read_proposal_requires_explicit_reread_reason(tmp_path, monkeypatch):
     runtime = _runtime(tmp_path)
-    monkeypatch.setattr(runtime_module, "library_catalog", lambda limit=20: [{
+    monkeypatch.setattr(runtime_module, "library_catalog", lambda limit=20, **kwargs: [{
         "id": "book",
         "title": "Book",
         "fully_read": True,
