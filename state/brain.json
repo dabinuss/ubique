@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-04T00:00:49.911032+00:00",
-  "generation": 487,
+  "timestamp": "2026-10-04T00:01:44.796398+00:00",
+  "generation": 488,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.4607,
-    "surprise": 0.3949,
-    "uncertainty": 0.335,
-    "salience": 0.4064,
-    "exploration": 0.4627,
-    "plasticity": 0.5709,
-    "energy": 0.87,
-    "sleep_pressure": 0.1436
+    "novelty": 0.352,
+    "surprise": 0.2987,
+    "uncertainty": 0.3375,
+    "salience": 0.3528,
+    "exploration": 0.4002,
+    "plasticity": 0.5008,
+    "energy": 0.805,
+    "sleep_pressure": 0.1926
   },
   "workspace": [
     {
-      "id": "episode:d0033f8129094c",
-      "kind": "provider_state_change",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.95,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "runtime",
-      "ignition_score": 0.694
-    },
-    {
-      "id": "episode:c797e508cb851e",
+      "id": "episode:59fd8f89549ccb",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 12000, \"excerpt\": \"he meaning or origin of the different\\nexpressions, takes a very different view of the subject to what I do.\\n\\nIn the above passage there is but a slight, if any, advance in the\\nphilosophy of the subject, beyond that reached by the painter Le Brun,\\nwho, in 16",
-      "activation": 0.3902,
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 0, \"excerpt\": \"The Project Gutenberg eBook of The Expression of the Emotions in Man and Animals\\r\\n    \\r\\nThis eBook is for the use of anyone anywhere in the United States and\\r\\nmost other parts of the world at no cost and with almost no restrictions\\r\\nwhatsoever. You may copy ",
+      "activation": 0.3057,
       "salience": 0.88,
-      "novelty": 0.65,
+      "novelty": 0.79,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5416
+      "ignition_score": 0.5176
     },
     {
-      "id": "episode:b69631c8e2550d",
+      "id": "episode:e30d575362c2d3",
       "kind": "recalled_episode",
-      "label": "he meaning or origin of the different\nexpressions, takes a very different view of the subject to what I do.\n\nIn the above passage there is but a slight, if any, advance in the\nphilosophy of the subject, beyond that reached by the painter Le Brun,\nwho, in 1667, in describing the expression of fright, says:—“Le sourcil\nqui est abaissé d’un côté et élevé de l’autre, fait voir que la partie\nélevée semble le vouloir joindre au cerveau pour le garantir du mal que\nl’âme aperçoit, et le côté qui est aba",
-      "activation": 0.3862,
+      "label": "in expression;” or are “a special provision” for this sole\nobject.[12] But the simple fact that the anthropoid apes possess the\nsame facial muscles as we do,[13] renders it very improbable that these\nmuscles in our case serve exclusively for expression; for no one, I\npresume, would be inclined to admit that monkeys have been endowed with\nspecial muscles solely for exhibiting their hideous grimaces. Distinct\nuses, independently of expression, can indeed be assigned with much\nprobability for almos",
+      "activation": 0.3563,
       "salience": 0.6,
-      "novelty": 0.9966,
+      "novelty": 0.8739,
       "surprise": 0.35,
       "epistemic_status": "external_source",
       "source": "associative_recall",
-      "ignition_score": 0.5147
+      "ignition_score": 0.4838
     },
     {
-      "id": "episode:49603c7d2e0004",
+      "id": "episode:e939fd2919ad7c",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 12000, \"excerpt\": \"he meaning or origin of the different\\nexpressions, takes a very different view of the subject to what I do.\\n\\nIn the above passage there is but a slight, if any, advance in the\\nphilosophy of the subject, beyond that reached by the painter Le Brun,\\nwho, in 16",
-      "activation": 0.3773,
-      "salience": 0.8,
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 22000, \"excerpt\": \"in expression;” or are “a special provision” for this sole\\nobject.[12] But the simple fact that the anthropoid apes possess the\\nsame facial muscles as we do,[13] renders it very improbable that these\\nmuscles in our case serve exclusively for expression; for n",
+      "activation": 0.3125,
+      "salience": 0.9,
       "novelty": 0.4,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4827
+      "ignition_score": 0.4752
     },
     {
-      "id": "runtime_state:423b4a0b7d2066e3",
-      "kind": "runtime_state",
-      "label": "provider:gemini",
-      "activation": 0.4068,
-      "salience": 0.406435,
-      "novelty": 0.460675,
-      "surprise": 0.394945,
-      "epistemic_status": "observed_runtime_state",
-      "source": "semantic_network",
-      "ignition_score": 0.4123
+      "id": "episode:35742755d0784d",
+      "kind": "recalled_episode",
+      "label": "The Project Gutenberg eBook of The Expression of the Emotions in Man and Animals\r\n    \r\nThis eBook is for the use of anyone anywhere in the United States and\r\nmost other parts of the world at no cost and with almost no restrictions\r\nwhatsoever. You may copy it, give it away or re-use it under the terms\r\nof the Project Gutenberg License included with this eBook or online\r\nat www.gutenberg.org. If you are not located in the United States,\r\nyou will have to check the laws of the country where you a",
+      "activation": 0.2673,
+      "salience": 0.6,
+      "novelty": 0.9972,
+      "surprise": 0.35,
+      "epistemic_status": "external_source",
+      "source": "associative_recall",
+      "ignition_score": 0.4553
     },
     {
-      "id": "runtime_state:0a71e857be2cd9b7",
-      "kind": "runtime_state",
-      "label": "provider:groq",
-      "activation": 0.4068,
-      "salience": 0.406435,
-      "novelty": 0.460675,
-      "surprise": 0.394945,
-      "epistemic_status": "observed_runtime_state",
-      "source": "semantic_network",
-      "ignition_score": 0.4123
+      "id": "episode:b9fb8f19d2333a",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 6000, \"excerpt\": \"eelings—Devotion\\n\\nCHAP. IX.—REFLECTION—MEDITATION—ILL—TEMPER—SULKINESS DETERMINATION.\\nThe act of frowning—Reflection with an effort or with the perception of\\nsomething difficult or disagreeable—Abstracted\\nmeditation—Ill-temper—Moroseness—Obstinacy—Sulkiness ",
+      "activation": 0.2497,
+      "salience": 0.8,
+      "novelty": 0.6,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4449
     },
     {
-      "id": "runtime_state:1d939659a8519d8c",
-      "kind": "runtime_state",
-      "label": "provider:huggingface",
-      "activation": 0.4068,
-      "salience": 0.406435,
-      "novelty": 0.460675,
-      "surprise": 0.394945,
-      "epistemic_status": "observed_runtime_state",
+      "id": "episode:5bee090a96d139",
+      "kind": "recalled_episode",
+      "label": "eelings—Devotion\n\nCHAP. IX.—REFLECTION—MEDITATION—ILL—TEMPER—SULKINESS DETERMINATION.\nThe act of frowning—Reflection with an effort or with the perception of\nsomething difficult or disagreeable—Abstracted\nmeditation—Ill-temper—Moroseness—Obstinacy—Sulkiness and\npouting—Decision or determination—The firm closure of the mouth\n\nCHAP. X.—HATRED AND ANGER.\nHatred—Rage, effects of on the system—Uncovering of the teeth—Rage in\nthe insane—Anger and indignation—As expressed by the various races of\nman—Sn",
+      "activation": 0.2657,
+      "salience": 0.6,
+      "novelty": 0.8634,
+      "surprise": 0.35,
+      "epistemic_status": "external_source",
+      "source": "associative_recall",
+      "ignition_score": 0.4371
+    },
+    {
+      "id": "concept:321dadb21d954cbd",
+      "kind": "concept",
+      "label": "facial_expression",
+      "activation": 0.2532,
+      "salience": 0.35278,
+      "novelty": 0.351955,
+      "surprise": 0.298685,
+      "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.4123
+      "ignition_score": 0.2964
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 19,
+      "remaining_calls": 18,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 999,
+      "remaining_calls": 998,
       "eligible": true
     },
     "huggingface": {
@@ -244,46 +244,40 @@
   },
   "last_action": {
     "kind": "library",
-    "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' from the current read cursor offset.",
+    "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' to examine further sections on facial muscle utility.",
     "source": "substrate:gemini",
-    "score": 0.5411
+    "score": 0.4539
   },
   "action_competition": [
     {
       "kind": "library",
       "source": "substrate:gemini",
-      "score": 0.5411,
-      "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' from the current read cursor offset."
+      "score": 0.4539,
+      "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' to examine further sections on facial muscle utility."
     },
     {
       "kind": "library",
       "source": "substrate:groq",
-      "score": 0.51497,
-      "description": "Read the next 6 000 characters of Darwin's \"The Expression of the Emotions in Man and Animals\" to gather more data on facial expression taxonomy."
+      "score": 0.35613,
+      "description": "Read the next unread segment of Darwin's \"The Expression of the Emotions in Man and Animals\" to gather more evidence on facial expression and muscle function."
     },
     {
       "kind": "rest",
-      "source": "substrate:groq",
-      "score": 0.37745,
-      "description": "Allow a brief rest to consolidate recent observations and reduce cognitive load."
+      "source": "homeostasis",
+      "score": 0.29897,
+      "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.28452,
+      "score": 0.29337,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.27576,
+      "score": 0.23532,
       "description": "Continue processing the active workspace without external action."
-    },
-    {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.26089,
-      "description": "Allow activation to decay without forcing cognition."
     }
   ],
   "substrate_contributors": [
@@ -297,10 +291,10 @@
     }
   ],
   "current_stances": [],
-  "consecutive_pulses": 2,
+  "consecutive_pulses": 3,
   "memory": {
-    "episodes": 205,
-    "semantic_nodes": 836,
+    "episodes": 209,
+    "semantic_nodes": 854,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -311,13 +305,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 168
+      "removed_edges": 98
     },
     "terminal_inhibition": {
       "startup": 252,
       "after_lifecycle": 252,
       "after_spread": 252,
-      "after_packets": 255
+      "after_packets": 259
     }
   }
 }
