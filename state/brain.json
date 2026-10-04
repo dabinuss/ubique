@@ -1,24 +1,24 @@
 {
   "version": 2,
-  "timestamp": "2026-10-04T17:15:48.671054+00:00",
-  "generation": 509,
+  "timestamp": "2026-10-04T17:16:41.128941+00:00",
+  "generation": 510,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1719,
-    "surprise": 0.1406,
+    "novelty": 0.1642,
+    "surprise": 0.1334,
     "uncertainty": 0.21,
-    "salience": 0.2664,
-    "exploration": 0.2618,
-    "plasticity": 0.3853,
-    "energy": 0.843,
-    "sleep_pressure": 0.1441
+    "salience": 0.2119,
+    "exploration": 0.2577,
+    "plasticity": 0.3781,
+    "energy": 0.896,
+    "sleep_pressure": 0.0573
   },
   "workspace": [
     {
       "id": "episode:b09c07dc2bab3d",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"huxley-mans-place-nature\", \"title\": \"Evidence as to Man's Place in Nature\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #2931\"}, \"offset\": 10000, \"excerpt\": \"-seems to have died out, at least in its primitive form and\\nsignification. Indeed, there is evidence that not only in Battell's\\ntime, but up to a very recent date, it was used in a totally different\\nsense from that in which he employs it.\\n\\nFor example, the second chapter ",
-      "activation": 0.4732,
+      "activation": 0.4731,
       "salience": 0.89,
       "novelty": 0.4,
       "surprise": 0.35,
@@ -42,13 +42,13 @@
       "id": "episode:0c5cee934d0760",
       "kind": "recalled_episode",
       "label": "-seems to have died out, at least in its primitive form and\nsignification. Indeed, there is evidence that not only in Battell's\ntime, but up to a very recent date, it was used in a totally different\nsense from that in which he employs it.\n\nFor example, the second chapter of Purchas' work, which I have just\nquoted, contains \"A Description and Historicall Declaration of the\nGolden Kingdom of Guinea, etc. etc. Translated from the Dutch, and\ncompared also with the Latin,\" wherein it is stated (p. 98",
-      "activation": 0.2947,
+      "activation": 0.2946,
       "salience": 0.6,
       "novelty": 0.955,
       "surprise": 0.35,
       "epistemic_status": "external_source",
       "source": "associative_recall",
-      "ignition_score": 0.4635
+      "ignition_score": 0.4634
     },
     {
       "id": "episode:737402c2f1b852",
@@ -90,13 +90,13 @@
       "id": "concept:e14de43896fcd264",
       "kind": "concept",
       "label": "content_available",
-      "activation": 0.2308,
-      "salience": 0.26642,
-      "novelty": 0.171905,
-      "surprise": 0.14060499999999998,
+      "activation": 0.1106,
+      "salience": 0.21187000000000003,
+      "novelty": 0.164235,
+      "surprise": 0.13339,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.2212
+      "ignition_score": 0.1456
     }
   ],
   "provider_eligibility": {
@@ -243,29 +243,29 @@
     }
   },
   "last_action": {
-    "kind": "attend",
-    "description": "Continue processing the active workspace without external action.",
-    "source": "workspace",
-    "score": 0.23399
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
+    "source": "homeostasis",
+    "score": 0.29835
   },
   "action_competition": [
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.23399,
-      "description": "Continue processing the active workspace without external action."
-    },
-    {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.22564,
+      "score": 0.29835,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.22169,
+      "score": 0.28123,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.13781,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
   "substrate_contributors": [],
@@ -282,9 +282,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 3,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 279,
+    "episodes": 280,
     "semantic_nodes": 1174,
     "synapses": 1200
   },
