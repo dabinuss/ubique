@@ -50,6 +50,7 @@ def test_packet_parses_revisable_stance_updates():
         "reasoning": "The active source and prior experience point in the same direction.",
         "confidence": 0.68,
         "relation": "reinforce",
+        "evidence_ids": [],
     }]
 
 
