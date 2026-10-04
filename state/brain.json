@@ -1,23 +1,23 @@
 {
   "version": 2,
-  "timestamp": "2026-10-03T21:48:59.238547+00:00",
-  "generation": 486,
+  "timestamp": "2026-10-04T00:00:49.911032+00:00",
+  "generation": 487,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.4395,
-    "surprise": 0.3653,
-    "uncertainty": 0.35,
-    "salience": 0.4099,
-    "exploration": 0.4494,
-    "plasticity": 0.5567,
-    "energy": 0.935,
-    "sleep_pressure": 0.0946
+    "novelty": 0.4607,
+    "surprise": 0.3949,
+    "uncertainty": 0.335,
+    "salience": 0.4064,
+    "exploration": 0.4627,
+    "plasticity": 0.5709,
+    "energy": 0.87,
+    "sleep_pressure": 0.1436
   },
   "workspace": [
     {
-      "id": "episode:850aecd519efab",
+      "id": "episode:d0033f8129094c",
       "kind": "provider_state_change",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 967}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
       "activation": 0.95,
       "salience": 0.4,
       "novelty": 0.5,
@@ -27,76 +27,76 @@
       "ignition_score": 0.694
     },
     {
-      "id": "episode:b9fb8f19d2333a",
+      "id": "episode:c797e508cb851e",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 6000, \"excerpt\": \"eelings—Devotion\\n\\nCHAP. IX.—REFLECTION—MEDITATION—ILL—TEMPER—SULKINESS DETERMINATION.\\nThe act of frowning—Reflection with an effort or with the perception of\\nsomething difficult or disagreeable—Abstracted\\nmeditation—Ill-temper—Moroseness—Obstinacy—Sulkiness ",
-      "activation": 0.3204,
-      "salience": 0.8,
-      "novelty": 0.6,
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 12000, \"excerpt\": \"he meaning or origin of the different\\nexpressions, takes a very different view of the subject to what I do.\\n\\nIn the above passage there is but a slight, if any, advance in the\\nphilosophy of the subject, beyond that reached by the painter Le Brun,\\nwho, in 16",
+      "activation": 0.3902,
+      "salience": 0.88,
+      "novelty": 0.65,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4802
+      "ignition_score": 0.5416
+    },
+    {
+      "id": "episode:b69631c8e2550d",
+      "kind": "recalled_episode",
+      "label": "he meaning or origin of the different\nexpressions, takes a very different view of the subject to what I do.\n\nIn the above passage there is but a slight, if any, advance in the\nphilosophy of the subject, beyond that reached by the painter Le Brun,\nwho, in 1667, in describing the expression of fright, says:—“Le sourcil\nqui est abaissé d’un côté et élevé de l’autre, fait voir que la partie\nélevée semble le vouloir joindre au cerveau pour le garantir du mal que\nl’âme aperçoit, et le côté qui est aba",
+      "activation": 0.3862,
+      "salience": 0.6,
+      "novelty": 0.9966,
+      "surprise": 0.35,
+      "epistemic_status": "external_source",
+      "source": "associative_recall",
+      "ignition_score": 0.5147
+    },
+    {
+      "id": "episode:49603c7d2e0004",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 12000, \"excerpt\": \"he meaning or origin of the different\\nexpressions, takes a very different view of the subject to what I do.\\n\\nIn the above passage there is but a slight, if any, advance in the\\nphilosophy of the subject, beyond that reached by the painter Le Brun,\\nwho, in 16",
+      "activation": 0.3773,
+      "salience": 0.8,
+      "novelty": 0.4,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4827
     },
     {
       "id": "runtime_state:423b4a0b7d2066e3",
       "kind": "runtime_state",
       "label": "provider:gemini",
       "activation": 0.4068,
-      "salience": 0.409945,
-      "novelty": 0.43955,
-      "surprise": 0.365305,
+      "salience": 0.406435,
+      "novelty": 0.460675,
+      "surprise": 0.394945,
       "epistemic_status": "observed_runtime_state",
       "source": "semantic_network",
-      "ignition_score": 0.4069
+      "ignition_score": 0.4123
     },
     {
       "id": "runtime_state:0a71e857be2cd9b7",
       "kind": "runtime_state",
       "label": "provider:groq",
       "activation": 0.4068,
-      "salience": 0.409945,
-      "novelty": 0.43955,
-      "surprise": 0.365305,
+      "salience": 0.406435,
+      "novelty": 0.460675,
+      "surprise": 0.394945,
       "epistemic_status": "observed_runtime_state",
       "source": "semantic_network",
-      "ignition_score": 0.4069
+      "ignition_score": 0.4123
     },
     {
       "id": "runtime_state:1d939659a8519d8c",
       "kind": "runtime_state",
       "label": "provider:huggingface",
       "activation": 0.4068,
-      "salience": 0.409945,
-      "novelty": 0.43955,
-      "surprise": 0.365305,
+      "salience": 0.406435,
+      "novelty": 0.460675,
+      "surprise": 0.394945,
       "epistemic_status": "observed_runtime_state",
       "source": "semantic_network",
-      "ignition_score": 0.4069
-    },
-    {
-      "id": "episode:1a38b7fc967d30",
-      "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 974}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3629,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "associative_recall",
-      "ignition_score": 0.4004
-    },
-    {
-      "id": "episode:5244f28bde3377",
-      "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3368,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "associative_recall",
-      "ignition_score": 0.3874
+      "ignition_score": 0.4123
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 0,
-      "eligible": false
+      "remaining_calls": 19,
+      "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 966,
+      "remaining_calls": 999,
       "eligible": true
     },
     "huggingface": {
@@ -244,53 +244,63 @@
   },
   "last_action": {
     "kind": "library",
-    "description": "Read the next segment of Darwin's 'The Expression of the Emotions in Man and Animals' to continue building the emotion taxonomy.",
-    "source": "substrate:groq",
-    "score": 0.56589
+    "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' from the current read cursor offset.",
+    "source": "substrate:gemini",
+    "score": 0.5411
   },
   "action_competition": [
     {
       "kind": "library",
+      "source": "substrate:gemini",
+      "score": 0.5411,
+      "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' from the current read cursor offset."
+    },
+    {
+      "kind": "library",
       "source": "substrate:groq",
-      "score": 0.56589,
-      "description": "Read the next segment of Darwin's 'The Expression of the Emotions in Man and Animals' to continue building the emotion taxonomy."
+      "score": 0.51497,
+      "description": "Read the next 6 000 characters of Darwin's \"The Expression of the Emotions in Man and Animals\" to gather more data on facial expression taxonomy."
     },
     {
       "kind": "rest",
       "source": "substrate:groq",
-      "score": 0.40558,
-      "description": "Brief pause to allow consolidation of recent readings and update internal models."
+      "score": 0.37745,
+      "description": "Allow a brief rest to consolidate recent observations and reduce cognitive load."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.28452,
+      "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.27436,
+      "score": 0.27576,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.23047,
+      "score": 0.26089,
       "description": "Allow activation to decay without forcing cognition."
-    },
-    {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.2182,
-      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite"
+    },
     {
       "provider": "groq",
       "model": "openai/gpt-oss-120b"
     }
   ],
   "current_stances": [],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 200,
-    "semantic_nodes": 811,
+    "episodes": 205,
+    "semantic_nodes": 836,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -301,13 +311,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 72
+      "removed_edges": 168
     },
     "terminal_inhibition": {
-      "startup": 250,
-      "after_lifecycle": 250,
-      "after_spread": 250,
-      "after_packets": 259
+      "startup": 252,
+      "after_lifecycle": 252,
+      "after_spread": 252,
+      "after_packets": 255
     }
   }
 }
