@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-04T15:53:42.710398+00:00",
-  "generation": 504,
+  "timestamp": "2026-10-04T17:00:06.752401+00:00",
+  "generation": 505,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1502,
-    "surprise": 0.1202,
+    "novelty": 0.2726,
+    "surprise": 0.2356,
     "uncertainty": 0.2,
-    "salience": 0.2733,
-    "exploration": 0.2466,
-    "plasticity": 0.386,
-    "energy": 1.0,
-    "sleep_pressure": 0.1465
+    "salience": 0.3176,
+    "exploration": 0.3125,
+    "plasticity": 0.452,
+    "energy": 0.935,
+    "sleep_pressure": 0.1955
   },
   "workspace": [
     {
-      "id": "episode:9d2551c1345337",
-      "kind": "recalled_episode",
-      "label": "The Project Gutenberg eBook of Evidence as to Man's Place in Nature\n    \nThis eBook is for the use of anyone anywhere in the United States and\nmost other parts of the world at no cost and with almost no restrictions\nwhatsoever. You may copy it, give it away or re-use it under the terms\nof the Project Gutenberg License included with this eBook or online\nat www.gutenberg.org. If you are not located in the United States,\nyou will have to check the laws of the country where you are located\nbefore us",
-      "activation": 0.4339,
-      "salience": 0.6,
-      "novelty": 0.9483,
-      "surprise": 0.35,
-      "epistemic_status": "external_source",
-      "source": "associative_recall",
-      "ignition_score": 0.5322
+      "id": "episode:3f5249e4981168",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 2}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 983}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
     },
     {
       "id": "episode:ac0cb57d7ddee7",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"huxley-mans-place-nature\", \"title\": \"Evidence as to Man's Place in Nature\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #2931\"}, \"offset\": 0, \"excerpt\": \"The Project Gutenberg eBook of Evidence as to Man's Place in Nature\\n    \\nThis eBook is for the use of anyone anywhere in the United States and\\nmost other parts of the world at no cost and with almost no restrictions\\nwhatsoever. You may copy it, give it away or re-use it under ",
-      "activation": 0.3593,
+      "activation": 0.3283,
       "salience": 0.85,
       "novelty": 0.75,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5317
+      "ignition_score": 0.5161
     },
     {
-      "id": "episode:80c56b581c264c",
+      "id": "episode:9d2551c1345337",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 1200, \"excerpt\": \" IN COLLABORATION WITH\\n  HENRY ALSOP RILEY\\n\\n  THE FORM AND FUNCTIONS OF THE\\n  CENTRAL NERVOUS SYSTEM\\n\\n\\n\\n\\n  THE MASTER OF DESTINY\\n\\n  A BIOGRAPHY\\n  OF THE BRAIN\\n\\n  BY FREDERICK\\n  TILNEY, M.D.\\n\\n  WITH A FOREWORD\\n  BY AUSTEN FOX\\n  RIGGS, M.D.\\n\\n  [Il",
-      "activation": 0.2425,
-      "salience": 0.9,
-      "novelty": 0.4,
+      "label": "The Project Gutenberg eBook of Evidence as to Man's Place in Nature\n    \nThis eBook is for the use of anyone anywhere in the United States and\nmost other parts of the world at no cost and with almost no restrictions\nwhatsoever. You may copy it, give it away or re-use it under the terms\nof the Project Gutenberg License included with this eBook or online\nat www.gutenberg.org. If you are not located in the United States,\nyou will have to check the laws of the country where you are located\nbefore us",
+      "activation": 0.39,
+      "salience": 0.6,
+      "novelty": 0.9483,
       "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "epistemic_status": "external_source",
       "source": "associative_recall",
-      "ignition_score": 0.4402
+      "ignition_score": 0.5103
     },
     {
-      "id": "episode:7d3cd3fbe30c57",
+      "id": "episode:d0033f8129094c",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 32000, \"excerpt\": \"ws are raised in surprise.\\n\\n(6.) When in good spirits do the eyes sparkle, with the skin a little\\nwrinkled round and under them, and with the mouth a little drawn back\\nat the corners?\\n\\n(7.) When a man sneers or snarls at another, is the corner of the upper",
-      "activation": 0.2381,
-      "salience": 0.85,
-      "novelty": 0.35,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3384,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.419
+      "ignition_score": 0.3882
     },
     {
-      "id": "episode:395def8b7f7051",
+      "id": "episode:850aecd519efab",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 62000, \"excerpt\": \"o exist a\\nprofound antagonism between the same movements, as directed by the will\\nand by a reflex stimulant, in the force with which they are performed\\nand in the facility with which they are excited. As Claude Bernard\\nasserts, “L’influence du cerveau tend d",
-      "activation": 0.249,
-      "salience": 0.88,
-      "novelty": 0.25,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 967}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3362,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.419
+      "ignition_score": 0.3871
     },
     {
-      "id": "episode:deac9d90ba34fa",
+      "id": "episode:1a38b7fc967d30",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 92000, \"excerpt\": \" power of intercommunication is certainly of high service to many\\nanimals, there is no _à priori_ improbability in the supposition, that\\ngestures manifestly of an opposite nature to those by which certain\\nfeelings are already expressed, should at first have b",
-      "activation": 0.2359,
-      "salience": 0.85,
-      "novelty": 0.2,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 974}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3352,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.3985
+      "ignition_score": 0.3866
     },
     {
-      "id": "concept:e736b9953ac2d3a1",
-      "kind": "concept",
-      "label": "study_of_man_and_nature",
-      "activation": 0.3807,
-      "salience": 0.35567499999999996,
-      "novelty": 0.150195,
-      "surprise": 0.120195,
-      "epistemic_status": "model_proposal",
+      "id": "runtime_state:423b4a0b7d2066e3",
+      "kind": "runtime_state",
+      "label": "provider:gemini",
+      "activation": 0.4068,
+      "salience": 0.31764499999999996,
+      "novelty": 0.27263,
+      "surprise": 0.23563,
+      "epistemic_status": "observed_runtime_state",
       "source": "semantic_network",
-      "ignition_score": 0.3132
+      "ignition_score": 0.3465
     }
   ],
   "provider_eligibility": {
@@ -104,15 +104,15 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 2,
+      "remaining_calls": 1,
       "eligible": true
     },
     "groq": {
       "configured": true,
-      "disabled": true,
+      "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 983,
-      "eligible": false
+      "remaining_calls": 982,
+      "eligible": true
     },
     "huggingface": {
       "configured": false,
@@ -243,41 +243,57 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
-    "source": "homeostasis",
-    "score": 0.36249
+    "kind": "library",
+    "description": "Continue reading Thomas Henry Huxley's 'Evidence as to Man's Place in Nature' to advance comparative anatomical inquiry.",
+    "source": "substrate:gemini",
+    "score": 0.44493
   },
   "action_competition": [
     {
+      "kind": "library",
+      "source": "substrate:gemini",
+      "score": 0.44493,
+      "description": "Continue reading Thomas Henry Huxley's 'Evidence as to Man's Place in Nature' to advance comparative anatomical inquiry."
+    },
+    {
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.40597,
+      "description": "Read Charles Darwin’s *The Expression of the Emotions in Man and Animals* to deepen understanding of the link between evolutionary biology and emotional/reverential experience."
+    },
+    {
       "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.36249,
-      "description": "Allow activation to decay without forcing cognition."
+      "source": "substrate:groq",
+      "score": 0.36666,
+      "description": "Brief pause to allow consolidation of recent readings and stance adjustments."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.352,
+      "score": 0.30843,
       "description": "Replay and consolidate existing experience offline."
-    },
-    {
-      "kind": "library",
-      "source": "substrate:gemini",
-      "score": 0.30316,
-      "description": "Continue reading Thomas Henry Huxley's 'Evidence as to Man's Place in Nature' to further examine comparative anatomical observations."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.2467,
+      "score": 0.26687,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.22646,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
   "substrate_contributors": [
     {
       "provider": "gemini",
       "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
     }
   ],
   "current_stances": [
@@ -293,10 +309,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 266,
-    "semantic_nodes": 1119,
+    "episodes": 271,
+    "semantic_nodes": 1142,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -307,13 +323,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 50
+      "removed_edges": 138
     },
     "terminal_inhibition": {
-      "startup": 256,
-      "after_lifecycle": 256,
-      "after_spread": 256,
-      "after_packets": 264
+      "startup": 257,
+      "after_lifecycle": 257,
+      "after_spread": 257,
+      "after_packets": 266
     }
   }
 }
