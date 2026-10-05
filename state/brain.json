@@ -1,78 +1,54 @@
 {
   "version": 2,
-  "timestamp": "2026-10-05T09:12:43.580908+00:00",
-  "generation": 530,
+  "timestamp": "2026-10-05T09:14:06.759682+00:00",
+  "generation": 531,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1761,
-    "surprise": 0.1446,
-    "uncertainty": 0.22,
-    "salience": 0.2632,
-    "exploration": 0.2675,
-    "plasticity": 0.3872,
-    "energy": 0.87,
-    "sleep_pressure": 0.1853
+    "novelty": 0.167,
+    "surprise": 0.136,
+    "uncertainty": 0.21,
+    "salience": 0.3034,
+    "exploration": 0.2626,
+    "plasticity": 0.3904,
+    "energy": 0.923,
+    "sleep_pressure": 0.0705
   },
   "workspace": [
     {
-      "id": "episode:d5e0fbdeed6581",
+      "id": "episode:d362742d8552ea",
       "kind": "recalled_episode",
-      "label": "ses, is\ndetermined by special circumstances; thus as soon as a horse breaks\ninto a gallop, at full speed, he always lowers his tail, so that as\nlittle resistance as possible may be offered to the air.\n\nWhen a dog is on the point of springing on his antagonist, he utters a\nsavage growl; the ears are pressed closely backwards, and the upper lip\n(fig. 14) is retracted out of the way of his teeth, especially of his\ncanines. These movements may be observed with dogs and puppies in their\nplay. But if ",
-      "activation": 0.3922,
-      "salience": 0.6,
-      "novelty": 0.8972,
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"aerodynamics-of-animal-locomotion\", \"title\": \"Aerodynamics of Animal Locomotion\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain quantitative data on drag effects of tail positioning in galloping mammals.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-05T09:12:43.536597+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false, \"fully_read_at\": null, \"notes\": []}}",
+      "activation": 0.2479,
+      "salience": 0.78,
+      "novelty": 0.64,
       "surprise": 0.35,
-      "epistemic_status": "external_source",
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5047
+      "ignition_score": 0.4441
+    },
+    {
+      "id": "episode:20d528d1153207",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 172000, \"excerpt\": \" one case as in the other, beneficial\\nvariations, supposing the characters in question to vary, would\\ncommonly have been preserved through the survival of the fittest.\\n\\n_The Drawing back and pressure of the Ears to the Head_.—The ears\\nthrough their movemen",
+      "activation": 0.2384,
+      "salience": 0.88,
+      "novelty": 0.4,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4332
     },
     {
       "id": "episode:ec4c0e9eb2c0d3",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 182000, \"excerpt\": \"ses, is\\ndetermined by special circumstances; thus as soon as a horse breaks\\ninto a gallop, at full speed, he always lowers his tail, so that as\\nlittle resistance as possible may be offered to the air.\\n\\nWhen a dog is on the point of springing on his antagon",
-      "activation": 0.3579,
+      "activation": 0.2438,
       "salience": 0.84,
       "novelty": 0.25,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4634
-    },
-    {
-      "id": "episode:2c9147fc44a634",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 122000, \"excerpt\": \" except by the aid of accessories which tell the tale; and\\npoets use such vague and fanciful expressions as “green-eyed jealousy.”\\nSpenser describes suspicion as “Foul, ill-favoured, and grim, under his\\neyebrows looking still askance,” &c.; Shakespeare speak",
-      "activation": 0.2537,
-      "salience": 0.78,
-      "novelty": 0.55,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4353
-    },
-    {
-      "id": "episode:7180c8d720e92f",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 162000, \"excerpt\": \" involuntary muscles, as in the period of the peristaltic movements\\nof the intestines, and in the contraction of the bladder. Nor must we\\noverlook the part which variation and natural selection may have\\nplayed; for the males which succeeded in making themsel",
-      "activation": 0.2471,
-      "salience": 0.85,
-      "novelty": 0.3,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.417
-    },
-    {
-      "id": "episode:4847b066f7f239",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 152000, \"excerpt\": \"pes. I have seen it erected on the hairy Ant-eater;\\nand on the Agouti, one of the Rodents. A female Bat,[412] which reared\\nher young under confinement, when any one looked into the cage “erected\\nthe fur on her back, and bit viciously at intruding fingers.”\\n",
-      "activation": 0.2465,
-      "salience": 0.85,
-      "novelty": 0.3,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4167
+      "ignition_score": 0.4064
     },
     {
       "id": "episode:937664558f2a13",
@@ -87,16 +63,40 @@
       "ignition_score": 0.4011
     },
     {
-      "id": "concept:7235172660ef028f",
+      "id": "episode:5d1c635adcc6cf",
+      "kind": "recalled_episode",
+      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"antithesis_principle_vocalizations\", \"to what degree do learned social contexts versus innate physiological mechanisms account for the similarity between anger and joy vocalizations in dogs?\"]}",
+      "activation": 0.2372,
+      "salience": 0.8,
+      "novelty": 0.2,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.3866
+    },
+    {
+      "id": "episode:5cfdaaab81225f",
+      "kind": "recalled_episode",
+      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"tail lowering reduces aerodynamic drag during gallop\",\n      \"kind\": \"concept\",\n      \"strength\": 0.71\n    },\n    {\n      \"label\": \"ear flattening and lip retraction protect oral structures in aggressive dogs\",\n      \"kind\": \"concept\",\n      \"strength\": 0.68\n    }\n  ],\n  \"hypotheses\": [\n    \"When a horse lowers its tail at full gallop, the reduced frontal area lowers aerodynamic drag, allowing higher speed or lower energy expenditure.\",\n    \"Dogs flatt",
+      "activation": 0.2868,
+      "salience": 0.42,
+      "novelty": 0.1761,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
+      "source": "associative_recall",
+      "ignition_score": 0.3073
+    },
+    {
+      "id": "concept:a36ad3ec260d224d",
       "kind": "concept",
-      "label": "functional protection in aggression",
+      "label": "protective aggression posture",
       "activation": 0.378,
-      "salience": 0.26321,
-      "novelty": 0.176065,
-      "surprise": 0.14456999999999998,
+      "salience": 0.30338,
+      "novelty": 0.166965,
+      "surprise": 0.13599,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.295
+      "ignition_score": 0.3029
     }
   ],
   "provider_eligibility": {
@@ -104,15 +104,15 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 10,
+      "remaining_calls": 8,
       "eligible": true
     },
     "groq": {
       "configured": true,
-      "disabled": false,
+      "disabled": true,
       "daily_limit": 1000,
-      "remaining_calls": 990,
-      "eligible": true
+      "remaining_calls": 988,
+      "eligible": false
     },
     "huggingface": {
       "configured": false,
@@ -243,40 +243,46 @@
     }
   },
   "last_action": {
-    "kind": "library",
-    "description": "Request a modern scientific work on the aerodynamics of animal locomotion to test the tail‑lowering hypothesis.",
+    "kind": "consolidate",
+    "description": "Consolidate recent memory of Darwin excerpts and model‑proposal concepts into long‑term storage.",
     "source": "substrate:groq",
-    "score": 0.39485
+    "score": 0.44813
   },
   "action_competition": [
     {
-      "kind": "library",
+      "kind": "consolidate",
       "source": "substrate:groq",
-      "score": 0.39485,
-      "description": "Request a modern scientific work on the aerodynamics of animal locomotion to test the tail‑lowering hypothesis."
-    },
-    {
-      "kind": "library",
-      "source": "substrate:gemini",
-      "score": 0.38247,
-      "description": "Read further in Darwin's 'The Expression of the Emotions in Man and Animals' to examine subsequent chapters on special expressions."
+      "score": 0.44813,
+      "description": "Consolidate recent memory of Darwin excerpts and model‑proposal concepts into long‑term storage."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.33294,
+      "score": 0.35721,
       "description": "Replay and consolidate existing experience offline."
+    },
+    {
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.33573,
+      "description": "Request the document \"Aerodynamics of Animal Locomotion\" to obtain quantitative data on drag effects of tail positioning in galloping mammals."
+    },
+    {
+      "kind": "library",
+      "source": "substrate:gemini",
+      "score": 0.31834,
+      "description": "Read further in Darwin's 'The Expression of the Emotions in Man and Animals' to examine additional comparative evidence on protective postures."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.25337,
+      "score": 0.2927,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.23488,
+      "score": 0.23919,
       "description": "Continue processing the active workspace without external action."
     }
   ],
@@ -303,10 +309,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 2,
+  "consecutive_pulses": 3,
   "memory": {
-    "episodes": 342,
-    "semantic_nodes": 1416,
+    "episodes": 346,
+    "semantic_nodes": 1423,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -314,10 +320,10 @@
       "removed_nodes": 0,
       "removed_edges": 0
     },
-    "stale_stance_nodes_removed": 0,
+    "stale_stance_nodes_removed": 2,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 128
+      "removed_edges": 154
     },
     "terminal_inhibition": {
       "startup": 260,
