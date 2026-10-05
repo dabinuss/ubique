@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-05T09:14:59.991453+00:00",
-  "generation": 532,
+  "timestamp": "2026-10-05T14:58:45.885482+00:00",
+  "generation": 533,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.161,
-    "surprise": 0.1304,
+    "novelty": 0.2797,
+    "surprise": 0.2423,
     "uncertainty": 0.21,
-    "salience": 0.2116,
-    "exploration": 0.2559,
-    "plasticity": 0.3796,
-    "energy": 1.0,
-    "sleep_pressure": 0.0594
+    "salience": 0.2775,
+    "exploration": 0.3198,
+    "plasticity": 0.4501,
+    "energy": 0.935,
+    "sleep_pressure": 0.1084
   },
   "workspace": [
     {
-      "id": "episode:d362742d8552ea",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"aerodynamics-of-animal-locomotion\", \"title\": \"Aerodynamics of Animal Locomotion\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain quantitative data on drag effects of tail positioning in galloping mammals.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-05T09:12:43.536597+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false, \"fully_read_at\": null, \"notes\": []}}",
-      "activation": 0.2487,
-      "salience": 0.78,
-      "novelty": 0.64,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4446
+      "id": "episode:e2ca83c31abd72",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 7}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 988}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
     },
     {
-      "id": "episode:ec4c0e9eb2c0d3",
+      "id": "episode:5d688f0bd92806",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 182000, \"excerpt\": \"ses, is\\ndetermined by special circumstances; thus as soon as a horse breaks\\ninto a gallop, at full speed, he always lowers his tail, so that as\\nlittle resistance as possible may be offered to the air.\\n\\nWhen a dog is on the point of springing on his antagon",
-      "activation": 0.2431,
-      "salience": 0.84,
-      "novelty": 0.25,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 15}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 995}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3051,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.406
+      "ignition_score": 0.3715
     },
     {
-      "id": "episode:937664558f2a13",
+      "id": "episode:965b88d42e2cc8",
       "kind": "recalled_episode",
-      "label": "Quiet state selected; activation decayed.",
-      "activation": 0.2451,
-      "salience": 0.92,
-      "novelty": 0.05,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3037,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4011
+      "ignition_score": 0.3709
     },
     {
-      "id": "episode:7b029aebb57424",
+      "id": "episode:c0a5eab6845579",
       "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"substrate:gemini\", \"concepts\": [\"evolutionary adaptation of protective anatomical postures\", \"do ear‑flattening and lip‑retraction in canids measurably decrease the risk of ear or dental injury during fights?\"]}",
-      "activation": 0.2725,
-      "salience": 0.81,
-      "novelty": 0.0,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 974}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3007,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.3807
+      "ignition_score": 0.3694
     },
     {
-      "id": "episode:a04ebd20991b63",
+      "id": "episode:796ecbf85d6527",
       "kind": "recalled_episode",
-      "label": "```json\n{\n  \"associations\": [\n    {\n      \"label\": \"aerodynamic efficiency in animal locomotion\",\n      \"kind\": \"concept\",\n      \"strength\": 0.76\n    },\n    {\n      \"label\": \"evolutionary adaptation of protective anatomical postures\",\n      \"kind\": \"concept\",\n      \"strength\": 0.82\n    }\n  ],\n  \"hypotheses\": [\n    \"Tail lowering in galloping quadrupeds and ear/lip adjustments in canids represent evolved morphological adaptations that minimize physical resistance and protect vulnerable structures",
-      "activation": 0.3369,
-      "salience": 0.42,
-      "novelty": 0.167,
-      "surprise": 0.3,
-      "epistemic_status": "model_proposal",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 979}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.2976,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.3312
+      "ignition_score": 0.3678
     },
     {
-      "id": "episode:5cfdaaab81225f",
+      "id": "episode:3f5249e4981168",
       "kind": "recalled_episode",
-      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"tail lowering reduces aerodynamic drag during gallop\",\n      \"kind\": \"concept\",\n      \"strength\": 0.71\n    },\n    {\n      \"label\": \"ear flattening and lip retraction protect oral structures in aggressive dogs\",\n      \"kind\": \"concept\",\n      \"strength\": 0.68\n    }\n  ],\n  \"hypotheses\": [\n    \"When a horse lowers its tail at full gallop, the reduced frontal area lowers aerodynamic drag, allowing higher speed or lower energy expenditure.\",\n    \"Dogs flatt",
-      "activation": 0.243,
-      "salience": 0.42,
-      "novelty": 0.1761,
-      "surprise": 0.3,
-      "epistemic_status": "model_proposal",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 2}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 983}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.2959,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.2854
+      "ignition_score": 0.3669
     },
     {
-      "id": "concept:485940e5170dc8d2",
-      "kind": "concept",
-      "label": "evolutionary adaptation of protective anatomical postures",
-      "activation": 0.2101,
-      "salience": 0.270745,
-      "novelty": 0.16105,
-      "surprise": 0.13040000000000002,
-      "epistemic_status": "model_proposal",
+      "id": "runtime_state:423b4a0b7d2066e3",
+      "kind": "runtime_state",
+      "label": "provider:gemini",
+      "activation": 0.4068,
+      "salience": 0.27754,
+      "novelty": 0.27965,
+      "surprise": 0.24226,
+      "epistemic_status": "observed_runtime_state",
       "source": "semantic_network",
-      "ignition_score": 0.2093
+      "ignition_score": 0.3382
     }
   ],
   "provider_eligibility": {
@@ -104,15 +104,15 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 7,
+      "remaining_calls": 6,
       "eligible": true
     },
     "groq": {
       "configured": true,
-      "disabled": true,
+      "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 988,
-      "eligible": false
+      "remaining_calls": 987,
+      "eligible": true
     },
     "huggingface": {
       "configured": false,
@@ -243,35 +243,57 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
-    "source": "homeostasis",
-    "score": 0.24997
+    "kind": "library",
+    "description": "Read the next segment of Darwin's *The Expression of the Emotions in Man and Animals* to gather evidence for the protective‑adaptation stance on innate animal expressions.",
+    "source": "substrate:groq",
+    "score": 0.49386
   },
   "action_competition": [
     {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.24997,
-      "description": "Allow activation to decay without forcing cognition."
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.49386,
+      "description": "Read the next segment of Darwin's *The Expression of the Emotions in Man and Animals* to gather evidence for the protective‑adaptation stance on innate animal expressions."
     },
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.23048,
-      "description": "Continue processing the active workspace without external action."
+      "kind": "library",
+      "source": "substrate:gemini",
+      "score": 0.45847,
+      "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' to further ground evolutionary expression stances."
+    },
+    {
+      "kind": "rest",
+      "source": "substrate:groq",
+      "score": 0.29473,
+      "description": "Brief rest to maintain low sleep pressure and conserve energy before next API call."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.22997,
+      "score": 0.27423,
       "description": "Replay and consolidate existing experience offline."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.25927,
+      "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.19134,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
   "substrate_contributors": [
     {
       "provider": "gemini",
       "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
     }
   ],
   "current_stances": [
@@ -287,10 +309,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 348,
-    "semantic_nodes": 1430,
+    "episodes": 353,
+    "semantic_nodes": 1444,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -301,13 +323,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 72
+      "removed_edges": 144
     },
     "terminal_inhibition": {
       "startup": 260,
       "after_lifecycle": 260,
       "after_spread": 260,
-      "after_packets": 260
+      "after_packets": 269
     }
   }
 }
