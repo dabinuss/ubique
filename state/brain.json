@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-06T00:18:28.943548+00:00",
-  "generation": 540,
+  "timestamp": "2026-10-06T00:19:27.333707+00:00",
+  "generation": 541,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2789,
-    "surprise": 0.2415,
-    "uncertainty": 0.17,
-    "salience": 0.3382,
-    "exploration": 0.3054,
-    "plasticity": 0.447,
-    "energy": 0.793,
-    "sleep_pressure": 0.0857
+    "novelty": 0.2338,
+    "surprise": 0.199,
+    "uncertainty": 0.16,
+    "salience": 0.3266,
+    "exploration": 0.2811,
+    "plasticity": 0.4306,
+    "energy": 0.728,
+    "sleep_pressure": 0.1347
   },
   "workspace": [
     {
-      "id": "episode:3832b55bb0f6c1",
-      "kind": "provider_state_change",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.95,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "runtime",
-      "ignition_score": 0.694
+      "id": "episode:59fd8f89549ccb",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 0, \"excerpt\": \"The Project Gutenberg eBook of The Expression of the Emotions in Man and Animals\\r\\n    \\r\\nThis eBook is for the use of anyone anywhere in the United States and\\r\\nmost other parts of the world at no cost and with almost no restrictions\\r\\nwhatsoever. You may copy ",
+      "activation": 0.4284,
+      "salience": 0.88,
+      "novelty": 0.79,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.5789
+    },
+    {
+      "id": "episode:b9fb8f19d2333a",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 6000, \"excerpt\": \"eelings—Devotion\\n\\nCHAP. IX.—REFLECTION—MEDITATION—ILL—TEMPER—SULKINESS DETERMINATION.\\nThe act of frowning—Reflection with an effort or with the perception of\\nsomething difficult or disagreeable—Abstracted\\nmeditation—Ill-temper—Moroseness—Obstinacy—Sulkiness ",
+      "activation": 0.2764,
+      "salience": 0.8,
+      "novelty": 0.6,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4582
     },
     {
       "id": "episode:de538d713cf23f",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 232000, \"excerpt\": \" keep\\nthe mouth widely open, so that a full volume of sound may be poured\\nforth. The action of these opposed muscles, above and below, tends to\\ngive to the mouth an oblong, almost squarish outline, as may be seen in\\nthe accompanying photographs. An excellen",
-      "activation": 0.3309,
+      "activation": 0.3043,
       "salience": 0.89,
       "novelty": 0.25,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4624
+      "ignition_score": 0.4491
     },
     {
-      "id": "episode:e2ca83c31abd72",
+      "id": "episode:b6dbe1e39d1f5f",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 7}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 988}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3473,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 202000, \"excerpt\": \"\\nhis neck became almost perpendicular; and this he did from habit, for\\nthe machine lay on a slope below, and could not have been seen with\\nmore distinctness through the raising of the head; nor if any sound had\\nproceeded from it, could the sound have been m",
+      "activation": 0.2757,
+      "salience": 0.85,
+      "novelty": 0.35,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3926
+      "ignition_score": 0.4378
     },
     {
-      "id": "episode:5d688f0bd92806",
+      "id": "episode:d4901bdab21dca",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 15}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 995}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3335,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 222000, \"excerpt\": \"ther through reversion or\\npersistence, of voluntarily moving their scalps.[520]\\n\\n_Astonishment, Terror_—A living fresh-water turtle was placed at my\\nrequest in the same compartment in the Zoological Gardens with many\\nmonkeys; and they showed unbounded asto",
+      "activation": 0.2814,
+      "salience": 0.89,
+      "novelty": 0.25,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3858
+      "ignition_score": 0.4377
     },
     {
-      "id": "episode:965b88d42e2cc8",
+      "id": "episode:deac9d90ba34fa",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3324,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 92000, \"excerpt\": \" power of intercommunication is certainly of high service to many\\nanimals, there is no _à priori_ improbability in the supposition, that\\ngestures manifestly of an opposite nature to those by which certain\\nfeelings are already expressed, should at first have b",
+      "activation": 0.2897,
+      "salience": 0.85,
+      "novelty": 0.2,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3852
+      "ignition_score": 0.4254
     },
     {
-      "id": "episode:c0a5eab6845579",
-      "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 974}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3301,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "associative_recall",
-      "ignition_score": 0.3841
-    },
-    {
-      "id": "runtime_state:423b4a0b7d2066e3",
-      "kind": "runtime_state",
-      "label": "provider:gemini",
-      "activation": 0.4068,
-      "salience": 0.33825,
-      "novelty": 0.27887,
-      "surprise": 0.24148000000000003,
-      "epistemic_status": "observed_runtime_state",
+      "id": "concept:e14de43896fcd264",
+      "kind": "concept",
+      "label": "content_available",
+      "activation": 0.3051,
+      "salience": 0.326615,
+      "novelty": 0.233785,
+      "surprise": 0.198975,
+      "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.3532
+      "ignition_score": 0.2885
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 19,
+      "remaining_calls": 18,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 999,
+      "remaining_calls": 998,
       "eligible": true
     },
     "huggingface": {
@@ -243,41 +243,41 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
-    "source": "homeostasis",
-    "score": 0.3519
+    "kind": "library",
+    "description": "Continue reading Darwin's The Expression of the Emotions in Man and Animals to further examine antithesis and specific emotional expressions.",
+    "source": "substrate:gemini",
+    "score": 0.46221
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.3519,
-      "description": "Replay and consolidate existing experience offline."
+      "kind": "library",
+      "source": "substrate:gemini",
+      "score": 0.46221,
+      "description": "Continue reading Darwin's The Expression of the Emotions in Man and Animals to further examine antithesis and specific emotional expressions."
+    },
+    {
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.42252,
+      "description": "Continue reading the next section of Darwin's 'The Expression of the Emotions in Man and Animals' to gather more data on antithesis gestures and comparative primate expressions."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.34794,
+      "score": 0.31104,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.26529,
+      "score": 0.24894,
       "description": "Continue processing the active workspace without external action."
     },
     {
-      "kind": "library",
-      "source": "substrate:gemini",
-      "score": 0.2317,
-      "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' to further examine comparative expressive behaviors."
-    },
-    {
-      "kind": "library",
-      "source": "substrate:groq",
-      "score": 0.23042,
-      "description": "Read the next segment of Darwin's \"The Expression of the Emotions in Man and Animals\" to gather more data on involuntary facial expressions."
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.21438,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [
@@ -303,10 +303,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 376,
-    "semantic_nodes": 1547,
+    "episodes": 380,
+    "semantic_nodes": 1564,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -314,16 +314,16 @@
       "removed_nodes": 0,
       "removed_edges": 0
     },
-    "stale_stance_nodes_removed": 1,
+    "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_edges": 128
     },
     "terminal_inhibition": {
-      "startup": 261,
-      "after_lifecycle": 261,
-      "after_spread": 261,
-      "after_packets": 269
+      "startup": 262,
+      "after_lifecycle": 262,
+      "after_spread": 262,
+      "after_packets": 270
     }
   }
 }
