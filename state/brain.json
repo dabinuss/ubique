@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-06T23:07:59.180662+00:00",
-  "generation": 568,
+  "timestamp": "2026-10-06T23:08:50.158143+00:00",
+  "generation": 569,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1562,
-    "surprise": 0.1258,
+    "novelty": 0.154,
+    "surprise": 0.1238,
     "uncertainty": 0.15,
-    "salience": 0.2416,
-    "exploration": 0.2323,
-    "plasticity": 0.3779,
-    "energy": 0.923,
-    "sleep_pressure": 0.0836
+    "salience": 0.1818,
+    "exploration": 0.2312,
+    "plasticity": 0.3698,
+    "energy": 1.0,
+    "sleep_pressure": 0.0665
   },
   "workspace": [
     {
       "id": "episode:aec4877d39a17d",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\"}, \"offset\": 0, \"excerpt\": \"\", \"content_available\": false, \"next_offset\": null, \"total_chars\": 0, \"read_cursor\": 0, \"fully_read\": false, \"already_complete\": false, \"notes\": []}",
-      "activation": 0.2583,
+      "activation": 0.5293,
       "salience": 0.85,
       "novelty": 0.6,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4617
-    },
-    {
-      "id": "episode:156e469588e3ba",
-      "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"involuntary peri‑ocular muscle contraction → tear secretion\", \"lacrimal gland secretion can be initiated by two independent reflex arcs: a mechanical‑vascular route triggered by peri‑ocular muscle compression, and a neuro‑vascular route triggered by irritation‑induced arterial relaxation.\"]}",
-      "activation": 0.3033,
-      "salience": 0.9,
-      "novelty": 0.3,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4577
+      "ignition_score": 0.5971
     },
     {
       "id": "episode:cc3c64afb1a564",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-2\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To test hypotheses about peri‑ocular muscle involvement in emotional tear production and to clarify the dual reflex‑arc mechanisms.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-06T19:10:43.916801+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_",
-      "activation": 0.2652,
+      "activation": 0.3867,
       "salience": 0.8,
       "novelty": 0.6,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4526
+      "ignition_score": 0.5133
+    },
+    {
+      "id": "episode:79b910a09fc0eb",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain detailed anatomical and neurophysiological data that can test the hypothesis linking peri‑ocular muscle contraction to emotional tear production.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-06T19:09:41.129592+00:00\", \"content_path\": \"\", \"read_count\": 0, \"re",
+      "activation": 0.3876,
+      "salience": 0.72,
+      "novelty": 0.6,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4938
     },
     {
       "id": "episode:df06c722bb4499",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-3\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To acquire empirical details that can test and refine the dual‑reflex‑arc hypothesis for emotional tearing.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-06T23:06:12.567355+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false, \"fully_rea",
-      "activation": 0.2563,
+      "activation": 0.334,
       "salience": 0.8,
       "novelty": 0.6,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4481
+      "ignition_score": 0.487
     },
     {
-      "id": "episode:48982aad1d8832",
+      "id": "episode:80c56b581c264c",
       "kind": "recalled_episode",
-      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"peri‑ocular muscle contraction → tear secretion\",\n      \"kind\": \"concept\",\n      \"strength\": 0.71\n    },\n    {\n      \"label\": \"mechanical‑vascular route → lacrimal secretion\",\n      \"kind\": \"concept\",\n      \"strength\": 0.60\n    },\n    {\n      \"label\": \"neuro‑vascular route → lacrimal secretion\",\n      \"kind\": \"concept\",\n      \"strength\": 0.60\n    },\n    {\n      \"label\": \"involuntary peri‑ocular muscle contraction → tear secretion\",\n      \"kind\": \"conce",
-      "activation": 0.3123,
-      "salience": 0.42,
-      "novelty": 0.1646,
-      "surprise": 0.3,
-      "epistemic_status": "model_proposal",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 1200, \"excerpt\": \" IN COLLABORATION WITH\\n  HENRY ALSOP RILEY\\n\\n  THE FORM AND FUNCTIONS OF THE\\n  CENTRAL NERVOUS SYSTEM\\n\\n\\n\\n\\n  THE MASTER OF DESTINY\\n\\n  A BIOGRAPHY\\n  OF THE BRAIN\\n\\n  BY FREDERICK\\n  TILNEY, M.D.\\n\\n  WITH A FOREWORD\\n  BY AUSTEN FOX\\n  RIGGS, M.D.\\n\\n  [Il",
+      "activation": 0.3206,
+      "salience": 0.9,
+      "novelty": 0.4,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3185
+      "ignition_score": 0.4793
     },
     {
-      "id": "episode:b073fdf48b3078",
+      "id": "episode:d362742d8552ea",
       "kind": "recalled_episode",
-      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"peri‑ocular muscle contraction → tear secretion\",\n      \"kind\": \"concept\",\n      \"strength\": 0.71\n    },\n    {\n      \"label\": \"involuntary peri‑ocular muscle contraction → tear secretion\",\n      \"kind\": \"concept\",\n      \"strength\": 0.71\n    },\n    {\n      \"label\": \"mechanical‑vascular route → lacrimal secretion\",\n      \"kind\": \"concept\",\n      \"strength\": 0.60\n    },\n    {\n      \"label\": \"neuro‑vascular route → lacrimal secretion\",\n      \"kind\": \"conce",
-      "activation": 0.3129,
-      "salience": 0.42,
-      "novelty": 0.1595,
-      "surprise": 0.3,
-      "epistemic_status": "model_proposal",
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"aerodynamics-of-animal-locomotion\", \"title\": \"Aerodynamics of Animal Locomotion\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain quantitative data on drag effects of tail positioning in galloping mammals.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-05T09:12:43.536597+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false, \"fully_read_at\": null, \"notes\": []}}",
+      "activation": 0.2922,
+      "salience": 0.78,
+      "novelty": 0.64,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3182
+      "ignition_score": 0.4663
     },
     {
-      "id": "concept:b8bd6bd3cdb18e17",
+      "id": "concept:e14de43896fcd264",
       "kind": "concept",
-      "label": "involuntary peri‑ocular muscle contraction → tear secretion",
-      "activation": 0.2452,
-      "salience": 0.24156,
-      "novelty": 0.156175,
-      "surprise": 0.12578499999999998,
-      "epistemic_status": "model_proposal",
+      "label": "content_available",
+      "activation": 0.2167,
+      "salience": 0.232885,
+      "novelty": 0.15403,
+      "surprise": 0.12376999999999999,
+      "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.2184
+      "ignition_score": 0.2014
     }
   ],
   "provider_eligibility": {
@@ -243,29 +243,29 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
+    "kind": "rest",
+    "description": "Allow activation to decay without forcing cognition.",
     "source": "homeostasis",
-    "score": 0.3257
+    "score": 0.24631
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.3257,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.29857,
+      "score": 0.24631,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.21396,
+      "score": 0.21505,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.19212,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [],
@@ -293,9 +293,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 3,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 464,
+    "episodes": 465,
     "semantic_nodes": 1880,
     "synapses": 1200
   },
@@ -310,10 +310,10 @@
       "removed_edges": 0
     },
     "terminal_inhibition": {
-      "startup": 264,
-      "after_lifecycle": 264,
-      "after_spread": 264,
-      "after_packets": 264
+      "startup": 263,
+      "after_lifecycle": 263,
+      "after_spread": 263,
+      "after_packets": 263
     }
   }
 }
