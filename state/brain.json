@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-06T09:07:14.370247+00:00",
-  "generation": 552,
+  "timestamp": "2026-10-06T09:08:13.145509+00:00",
+  "generation": 553,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2951,
-    "surprise": 0.2568,
+    "novelty": 0.2443,
+    "surprise": 0.2089,
     "uncertainty": 0.135,
-    "salience": 0.3317,
-    "exploration": 0.3002,
-    "plasticity": 0.4538,
-    "energy": 0.807,
-    "sleep_pressure": 0.0483
+    "salience": 0.2907,
+    "exploration": 0.2745,
+    "plasticity": 0.4314,
+    "energy": 0.742,
+    "sleep_pressure": 0.0973
   },
   "workspace": [
     {
-      "id": "episode:97651e674e32b6",
-      "kind": "provider_state_change",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 10}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 987}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.95,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "runtime",
-      "ignition_score": 0.694
+      "id": "episode:156e469588e3ba",
+      "kind": "recalled_episode",
+      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"involuntary peri‑ocular muscle contraction → tear secretion\", \"lacrimal gland secretion can be initiated by two independent reflex arcs: a mechanical‑vascular route triggered by peri‑ocular muscle compression, and a neuro‑vascular route triggered by irritation‑induced arterial relaxation.\"]}",
+      "activation": 0.2629,
+      "salience": 0.9,
+      "novelty": 0.3,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4375
     },
     {
-      "id": "episode:3f022fb66113a8",
+      "id": "episode:e804aafc70fa89",
       "kind": "recalled_episode",
-      "label": "in its natural state, of a young man who was a good\nactor. In fig. 2 he is shown simulating grief, but the two eyebrows, as\nbefore remarked, are not equally acted on. That the expression is true,\nmay be inferred from the fact that out of fifteen persons, to whom the\noriginal photograph was shown, without any clue to what was intended\nbeing given them, fourteen immediately answered, “despairing sorrow,”\n“suffering endurance,” “melancholy,” and so forth. The history of fig.\n5 is rather curious: I ",
-      "activation": 0.3882,
-      "salience": 0.6,
-      "novelty": 0.897,
+      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"substrate:gemini\", \"concepts\": [\"expressive physiology and facial mimicry\", \"provider:gemini\"]}",
+      "activation": 0.2634,
+      "salience": 0.88,
+      "novelty": 0.3,
       "surprise": 0.35,
-      "epistemic_status": "external_source",
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5027
+      "ignition_score": 0.4327
+    },
+    {
+      "id": "episode:966af2e9c5fa69",
+      "kind": "recalled_episode",
+      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"dual_reflex_model\", \"to what extent are facial muscular habits capable of permanently altering autonomic secretory thresholds in adulthood?\"]}",
+      "activation": 0.2475,
+      "salience": 0.9,
+      "novelty": 0.2,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4168
+    },
+    {
+      "id": "episode:5002e46bcac2a8",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 272000, \"excerpt\": \" still to act, thus betraying, though there were no other outward\\nsigns, the pathetic thoughts which were passing through the person’s\\nmind.\\n\\nAs a further illustration of the view here advanced, I may remark that\\nif, during an early period of life, when ha",
+      "activation": 0.2416,
+      "salience": 0.85,
+      "novelty": 0.3,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4143
     },
     {
       "id": "episode:634907a7e79a6f",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 282000, \"excerpt\": \"in its natural state, of a young man who was a good\\nactor. In fig. 2 he is shown simulating grief, but the two eyebrows, as\\nbefore remarked, are not equally acted on. That the expression is true,\\nmay be inferred from the fact that out of fifteen persons, to ",
-      "activation": 0.3554,
+      "activation": 0.2425,
       "salience": 0.85,
       "novelty": 0.25,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4647
+      "ignition_score": 0.4082
     },
     {
-      "id": "episode:28bccadd42e998",
+      "id": "episode:1c4f77a98d00ff",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 15}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 991}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3578,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"grief_expression_recognition\",\n      \"kind\": \"concept\",\n      \"strength\": 0.82\n    },\n    {\n      \"label\": \"eyebrow_asymmetry_in_emotion\",\n      \"kind\": \"concept\",\n      \"strength\": 0.68\n    }\n  ],\n  \"hypotheses\": [\n    \"Asymmetric activation of the eyebrows enhances observers' perception of grief, acting as a salient visual cue that is evolutionarily conserved across human populations.\"\n  ],\n  \"questions\": [\n    \"How does the degree of eyebrow asymmet",
+      "activation": 0.2435,
+      "salience": 0.42,
+      "novelty": 0.2951,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.3979
+      "ignition_score": 0.3011
     },
     {
-      "id": "episode:3832b55bb0f6c1",
-      "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.348,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "associative_recall",
-      "ignition_score": 0.393
-    },
-    {
-      "id": "episode:e2ca83c31abd72",
-      "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 7}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 988}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3373,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "associative_recall",
-      "ignition_score": 0.3876
-    },
-    {
-      "id": "runtime_state:423b4a0b7d2066e3",
-      "kind": "runtime_state",
-      "label": "provider:gemini",
-      "activation": 0.4068,
-      "salience": 0.331685,
-      "novelty": 0.29512,
-      "surprise": 0.25682,
-      "epistemic_status": "observed_runtime_state",
+      "id": "world_model:317b54dccffb601a",
+      "kind": "world_model",
+      "label": "expressive physiology and facial mimicry",
+      "activation": 0.2147,
+      "salience": 0.29074999999999995,
+      "novelty": 0.24431499999999998,
+      "surprise": 0.20892,
+      "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.3555
+      "ignition_score": 0.2369
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 8,
+      "remaining_calls": 7,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 985,
+      "remaining_calls": 984,
       "eligible": true
     },
     "huggingface": {
@@ -243,47 +243,47 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Integrate newly recalled evidence into the global workspace and update internal models.",
-    "source": "substrate:groq",
-    "score": 0.48508
+    "kind": "library",
+    "description": "Continue reading William James's Psychology: Briefer Course to further explore the physiological basis of habit and emotion.",
+    "source": "substrate:gemini",
+    "score": 0.51619
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "substrate:groq",
-      "score": 0.48508,
-      "description": "Integrate newly recalled evidence into the global workspace and update internal models."
-    },
-    {
       "kind": "library",
       "source": "substrate:gemini",
-      "score": 0.4582,
-      "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' to examine further evidence on expressive movements."
+      "score": 0.51619,
+      "description": "Continue reading William James's Psychology: Briefer Course to further explore the physiological basis of habit and emotion."
     },
     {
       "kind": "library",
       "source": "substrate:groq",
-      "score": 0.39868,
-      "description": "Continue reading Darwin's \"The Expression of the Emotions in Man and Animals\" to gather more empirical examples of facial expression perception."
+      "score": 0.43897,
+      "description": "Read additional passages from Darwin's \"The Expression of the Emotions\" to gather more quantitative data on facial habit formation and tear secretion."
+    },
+    {
+      "kind": "consolidate",
+      "source": "substrate:groq",
+      "score": 0.31405,
+      "description": "Consolidate the updated dual‑reflex and habit‑modulation model into long‑term memory (rem)."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.32822,
+      "score": 0.30943,
       "description": "Allow activation to decay without forcing cognition."
-    },
-    {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.27415,
-      "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.22721,
+      "score": 0.20141,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.16085,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [
@@ -320,10 +320,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 418,
-    "semantic_nodes": 1690,
+    "episodes": 422,
+    "semantic_nodes": 1709,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -331,16 +331,16 @@
       "removed_nodes": 0,
       "removed_edges": 0
     },
-    "stale_stance_nodes_removed": 0,
+    "stale_stance_nodes_removed": 1,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 116
+      "removed_edges": 134
     },
     "terminal_inhibition": {
       "startup": 263,
       "after_lifecycle": 263,
       "after_spread": 263,
-      "after_packets": 263
+      "after_packets": 271
     }
   }
 }
