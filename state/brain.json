@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-06T20:38:13.978830+00:00",
-  "generation": 565,
+  "timestamp": "2026-10-06T23:06:12.618972+00:00",
+  "generation": 566,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1724,
-    "surprise": 0.1411,
+    "novelty": 0.1646,
+    "surprise": 0.1337,
     "uncertainty": 0.15,
-    "salience": 0.2522,
-    "exploration": 0.2411,
-    "plasticity": 0.3947,
-    "energy": 1.0,
-    "sleep_pressure": 0.1282
+    "salience": 0.2164,
+    "exploration": 0.2368,
+    "plasticity": 0.3735,
+    "energy": 0.935,
+    "sleep_pressure": 0.1772
   },
   "workspace": [
-    {
-      "id": "episode:cc3c64afb1a564",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-2\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To test hypotheses about peri‑ocular muscle involvement in emotional tear production and to clarify the dual reflex‑arc mechanisms.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-06T19:10:43.916801+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_",
-      "activation": 0.2568,
-      "salience": 0.8,
-      "novelty": 0.6,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4484
-    },
     {
       "id": "episode:156e469588e3ba",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"involuntary peri‑ocular muscle contraction → tear secretion\", \"lacrimal gland secretion can be initiated by two independent reflex arcs: a mechanical‑vascular route triggered by peri‑ocular muscle compression, and a neuro‑vascular route triggered by irritation‑induced arterial relaxation.\"]}",
-      "activation": 0.2807,
+      "activation": 0.3435,
       "salience": 0.9,
       "novelty": 0.3,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4463
+      "ignition_score": 0.4778
+    },
+    {
+      "id": "episode:cc3c64afb1a564",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-2\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To test hypotheses about peri‑ocular muscle involvement in emotional tear production and to clarify the dual reflex‑arc mechanisms.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-06T19:10:43.916801+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_",
+      "activation": 0.2643,
+      "salience": 0.8,
+      "novelty": 0.6,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4521
     },
     {
       "id": "episode:79b910a09fc0eb",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain detailed anatomical and neurophysiological data that can test the hypothesis linking peri‑ocular muscle contraction to emotional tear production.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-06T19:09:41.129592+00:00\", \"content_path\": \"\", \"read_count\": 0, \"re",
-      "activation": 0.2489,
+      "activation": 0.248,
       "salience": 0.72,
       "novelty": 0.6,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4244
+      "ignition_score": 0.424
     },
     {
-      "id": "episode:9c3be3e16b2fa9",
+      "id": "episode:b43943de747981",
       "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"gemini provider ineligible\", \"the gemini provider is currently unavailable (eligible false, remaining_calls 0); the groq provider remains fully available (eligible true, remaining_calls 978).\"]}",
-      "activation": 0.2476,
-      "salience": 0.92,
-      "novelty": 0.2,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "{\n  \"associations\": [\n    {\"label\": \"peri‑ocular muscle contraction → tear secretion\", \"kind\": \"concept\", \"strength\": 0.71},\n    {\"label\": \"mechanical‑vascular route → lacrimal secretion\", \"kind\": \"concept\", \"strength\": 0.60},\n    {\"label\": \"neuro‑vascular route → lacrimal secretion\", \"kind\": \"concept\", \"strength\": 0.60},\n    {\"label\": \"eyebrow obliquity ↔ sorrow\", \"kind\": \"concept\", \"strength\": 0.78},\n    {\"label\": \"animal distress displays similar muscular patterns to human sorrow\", \"kind\": \"w",
+      "activation": 0.3808,
+      "salience": 0.42,
+      "novelty": 0.1724,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.4218
+      "ignition_score": 0.3538
     },
     {
       "id": "episode:1556d76a171620",
       "kind": "recalled_episode",
       "label": "{\n  \"associations\": [\n    {\n      \"label\": \"eyebrow obliquity ↔ sorrow\",\n      \"kind\": \"concept\",\n      \"strength\": 0.78\n    },\n    {\n      \"label\": \"peri‑ocular muscle contraction → tear secretion\",\n      \"kind\": \"concept\",\n      \"strength\": 0.71\n    },\n    {\n      \"label\": \"animal distress displays similar muscular patterns to human sorrow\",\n      \"kind\": \"world_model\",\n      \"strength\": 0.64\n    },\n    {\n      \"label\": \"mechanical‑vascular route → lacrimal secretion\",\n      \"kind\": \"concept\",",
-      "activation": 0.3971,
+      "activation": 0.3408,
       "salience": 0.42,
       "novelty": 0.1845,
       "surprise": 0.3,
       "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.3635
+      "ignition_score": 0.3354
     },
     {
       "id": "episode:d1c9b7ea30a6a5",
       "kind": "recalled_episode",
       "label": "{\n  \"associations\": [\n    {\n      \"label\": \"eyebrow obliquity ↔ sorrow\",\n      \"kind\": \"concept\",\n      \"strength\": 0.78\n    },\n    {\n      \"label\": \"peri‑ocular muscle contraction → tear secretion\",\n      \"kind\": \"concept\",\n      \"strength\": 0.71\n    },\n    {\n      \"label\": \"animal distress displays similar muscular patterns to human sorrow\",\n      \"kind\": \"world_model\",\n      \"strength\": 0.64\n    }\n  ],\n  \"hypotheses\": [\n    \"Emotional crying in humans is initiated by a stereotyped cascade of ",
-      "activation": 0.284,
+      "activation": 0.2498,
       "salience": 0.42,
       "novelty": 0.203,
       "surprise": 0.3,
       "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.3094
+      "ignition_score": 0.2923
     },
     {
-      "id": "concept:70f6412433387dfd",
+      "id": "concept:65b97f0848c26486",
       "kind": "concept",
-      "label": "mechanical‑vascular route → lacrimal secretion",
-      "activation": 0.3045,
-      "salience": 0.32699,
-      "novelty": 0.172425,
-      "surprise": 0.141125,
+      "label": "eyebrow obliquity ↔ sorrow",
+      "activation": 0.15,
+      "salience": 0.21642999999999998,
+      "novelty": 0.16456,
+      "surprise": 0.133715,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.2733
+      "ignition_score": 0.1665
     }
   ],
   "provider_eligibility": {
@@ -111,7 +111,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 972,
+      "remaining_calls": 971,
       "eligible": true
     },
     "huggingface": {
@@ -243,35 +243,41 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
-    "source": "homeostasis",
-    "score": 0.36981
+    "kind": "library",
+    "description": "Request and read the article \"Physiology of Lacrimal Secretion and Emotional Crying\" (second version) to obtain detailed data on the dual reflex‑arc mechanisms.",
+    "source": "substrate:groq",
+    "score": 0.39017
   },
   "action_competition": [
     {
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.39017,
+      "description": "Request and read the article \"Physiology of Lacrimal Secretion and Emotional Crying\" (second version) to obtain detailed data on the dual reflex‑arc mechanisms."
+    },
+    {
       "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.36981,
-      "description": "Allow activation to decay without forcing cognition."
+      "source": "substrate:groq",
+      "score": 0.30185,
+      "description": "Brief rest to consolidate recent updates and allow low‑energy processing."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.3009,
+      "score": 0.24839,
       "description": "Replay and consolidate existing experience offline."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.22023,
+      "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.23515,
+      "score": 0.2109,
       "description": "Continue processing the active workspace without external action."
-    },
-    {
-      "kind": "library",
-      "source": "substrate:groq",
-      "score": 0.20602,
-      "description": "Read the pending article \"Physiology of Lacrimal Secretion and Emotional Crying\" to obtain detailed anatomical and neurophysiological data for testing the dual‑reflex hypothesis."
     }
   ],
   "substrate_contributors": [
@@ -304,10 +310,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 459,
-    "semantic_nodes": 1863,
+    "episodes": 461,
+    "semantic_nodes": 1869,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -318,7 +324,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 90
+      "removed_edges": 84
     },
     "terminal_inhibition": {
       "startup": 264,
