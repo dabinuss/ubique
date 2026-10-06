@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-06T15:57:15.200992+00:00",
-  "generation": 560,
+  "timestamp": "2026-10-06T19:07:42.548507+00:00",
+  "generation": 561,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1546,
-    "surprise": 0.1244,
+    "novelty": 0.2755,
+    "surprise": 0.2384,
     "uncertainty": 0.14,
-    "salience": 0.3128,
-    "exploration": 0.228,
-    "plasticity": 0.3821,
-    "energy": 0.8497,
-    "sleep_pressure": 0.1318
+    "salience": 0.3433,
+    "exploration": 0.2931,
+    "plasticity": 0.446,
+    "energy": 0.9027,
+    "sleep_pressure": 0.0534
   },
   "workspace": [
     {
-      "id": "episode:8f8e11a81c97ad",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"james-psychology-briefer-course\", \"title\": \"Psychology: Briefer Course\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #55262\"}, \"offset\": 60000, \"excerpt\": \" says, \\\"is not the multiple of a weak\\none, or a compound of many weak ones, but rather something entirely new,\\nand as it were incomparable, so that to seek a measurable difference\\nbetween strong and weak sonorous, luminous, or thermic sensations would\\nseem at first sight as",
-      "activation": 0.4792,
-      "salience": 0.92,
-      "novelty": 0.35,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5571
+      "id": "episode:2f09a036298b4c",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 978}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
     },
     {
-      "id": "episode:8d9ccb303c6dcc",
+      "id": "episode:97651e674e32b6",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"james-psychology-briefer-course\", \"title\": \"Psychology: Briefer Course\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #55262\"}, \"offset\": 50000, \"excerpt\": \"rates, will be\\n     felt either more or less intensely, or not felt at all. Of what\\n     sort now is the alteration in the circumstances upon which this\\n     alteration in the feeling may depend? On considering the matter\\n     closely we see that it is everywhere of one and ",
-      "activation": 0.3614,
-      "salience": 0.88,
-      "novelty": 0.35,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 10}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 987}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3464,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4882
+      "ignition_score": 0.3922
     },
     {
-      "id": "episode:fac1b0d7aa2bd9",
+      "id": "episode:28bccadd42e998",
       "kind": "recalled_episode",
-      "label": "says, \"is not the multiple of a weak\none, or a compound of many weak ones, but rather something entirely new,\nand as it were incomparable, so that to seek a measurable difference\nbetween strong and weak sonorous, luminous, or thermic sensations would\nseem at first sight as senseless as to try to compute mathematically the\ndifference between salt and sour, or between headache and toothache. It\nis clear that if in the stronger sensation of light the weaker sensation\nis not _contained_, it is unpsy",
-      "activation": 0.3242,
-      "salience": 0.6,
-      "novelty": 0.8901,
-      "surprise": 0.35,
-      "epistemic_status": "external_source",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 15}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 991}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3435,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4698
+      "ignition_score": 0.3908
     },
     {
-      "id": "episode:bd2d15807dd53c",
+      "id": "episode:3832b55bb0f6c1",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"james-psychology-briefer-course\", \"title\": \"Psychology: Briefer Course\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #55262\"}, \"offset\": 20000, \"excerpt\": \"chology considered as a natural\\nscience. On any ulterior theory of matter, mind, and knowledge, the\\nfacts and laws of Psychology thus understood will have their value. If\\ncritics find that this natural-science point of view cuts things too\\narbitrarily short, they must not bl",
-      "activation": 0.2729,
-      "salience": 0.88,
-      "novelty": 0.35,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3366,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4439
+      "ignition_score": 0.3873
     },
     {
-      "id": "episode:f4d62555c7995f",
+      "id": "episode:e2ca83c31abd72",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"james-psychology-briefer-course\", \"title\": \"Psychology: Briefer Course\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #55262\"}, \"offset\": 40000, \"excerpt\": \"only in the extreme simplicity of\\nits object or content. Its object, being a simple quality, is sensibly\\n_homogeneous_; and its function is that of mere _acquaintance_ with this\\nhomogeneous seeming fact. Perception's function, on the other hand, is\\nthat of knowing something ",
-      "activation": 0.2958,
-      "salience": 0.88,
-      "novelty": 0.25,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 7}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 988}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3287,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4424
+      "ignition_score": 0.3833
     },
     {
-      "id": "episode:332ce0a7881007",
+      "id": "episode:5d688f0bd92806",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"james-psychology-briefer-course\", \"title\": \"Psychology: Briefer Course\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #55262\"}, \"offset\": 30000, \"excerpt\": \"f them; and\\n    3) The fibres which carry them out.\\n\\nFunctionally, we have sensation, central reflection, and motion, to\\ncorrespond to these anatomical divisions. In Psychology we may divide\\nour work according to a similar scheme, and treat successively of three\\nfundamenta",
-      "activation": 0.2688,
-      "salience": 0.85,
-      "novelty": 0.3,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 15}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 995}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3205,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4279
+      "ignition_score": 0.3792
     },
     {
-      "id": "concept:e14de43896fcd264",
-      "kind": "concept",
-      "label": "content_available",
-      "activation": 0.2984,
-      "salience": 0.312765,
-      "novelty": 0.154615,
-      "surprise": 0.12435500000000001,
-      "epistemic_status": "memory_index",
+      "id": "runtime_state:423b4a0b7d2066e3",
+      "kind": "runtime_state",
+      "label": "provider:gemini",
+      "activation": 0.4068,
+      "salience": 0.34332,
+      "novelty": 0.27549,
+      "surprise": 0.23836000000000002,
+      "epistemic_status": "observed_runtime_state",
       "source": "semantic_network",
-      "ignition_score": 0.2624
+      "ignition_score": 0.3536
     }
   ],
   "provider_eligibility": {
@@ -109,10 +109,10 @@
     },
     "groq": {
       "configured": true,
-      "disabled": true,
+      "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 978,
-      "eligible": false
+      "remaining_calls": 976,
+      "eligible": true
     },
     "huggingface": {
       "configured": false,
@@ -243,41 +243,47 @@
     }
   },
   "last_action": {
-    "kind": "library",
-    "description": "Continue reading William James's Psychology: Briefer Course to further explore sensory perception and psychological methods.",
-    "source": "substrate:gemini",
-    "score": 0.41399
+    "kind": "consolidate",
+    "description": "Consolidate recent observations about provider eligibility into the long‑term memory model.",
+    "source": "substrate:groq",
+    "score": 0.54925
   },
   "action_competition": [
     {
-      "kind": "library",
-      "source": "substrate:gemini",
-      "score": 0.41399,
-      "description": "Continue reading William James's Psychology: Briefer Course to further explore sensory perception and psychological methods."
+      "kind": "consolidate",
+      "source": "substrate:groq",
+      "score": 0.54925,
+      "description": "Consolidate recent observations about provider eligibility into the long‑term memory model."
     },
     {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.26062,
-      "description": "Allow activation to decay without forcing cognition."
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.39199,
+      "description": "Read Darwin's \"The Expression of the Emotions in Man and Animals\" to gather empirical and historical evidence for the stance on evolutionary origins of expression."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.23584,
+      "score": 0.31062,
       "description": "Replay and consolidate existing experience offline."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.29091,
+      "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.23077,
+      "score": 0.26206,
       "description": "Continue processing the active workspace without external action."
     }
   ],
   "substrate_contributors": [
     {
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite"
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
     }
   ],
   "current_stances": [
@@ -304,10 +310,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 446,
-    "semantic_nodes": 1833,
+    "episodes": 450,
+    "semantic_nodes": 1839,
     "synapses": 1200
   },
   "cortical_maintenance": {
