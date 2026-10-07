@@ -1,42 +1,66 @@
 {
   "version": 2,
-  "timestamp": "2026-10-07T12:05:25.319922+00:00",
-  "generation": 577,
+  "timestamp": "2026-10-07T12:06:20.453246+00:00",
+  "generation": 578,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2078,
-    "surprise": 0.1746,
+    "novelty": 0.1876,
+    "surprise": 0.1555,
     "uncertainty": 0.19,
-    "salience": 0.1811,
-    "exploration": 0.2742,
-    "plasticity": 0.3936,
-    "energy": 0.935,
-    "sleep_pressure": 0.1165
+    "salience": 0.2473,
+    "exploration": 0.2632,
+    "plasticity": 0.3916,
+    "energy": 0.87,
+    "sleep_pressure": 0.1655
   },
   "workspace": [
+    {
+      "id": "episode:957d127c44d4e4",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-4\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\"}, \"offset\": 0, \"excerpt\": \"\", \"content_available\": false, \"next_offset\": null, \"total_chars\": 0, \"read_cursor\": 0, \"fully_read\": false, \"already_complete\": false, \"notes\": []}",
+      "activation": 0.2533,
+      "salience": 0.85,
+      "novelty": 0.7,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4722
+    },
     {
       "id": "episode:cfc369a8cd202e",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-4\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Acquire empirical evidence on peri‑ocular muscle activity and parasympathetic pathways during emotional tear production.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-07T02:27:23.992426+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": fals",
-      "activation": 0.2292,
+      "activation": 0.2546,
       "salience": 0.82,
       "novelty": 0.7,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4526
+      "ignition_score": 0.4653
     },
     {
-      "id": "episode:9c3be3e16b2fa9",
+      "id": "episode:6414407166750f",
       "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"gemini provider ineligible\", \"the gemini provider is currently unavailable (eligible false, remaining_calls 0); the groq provider remains fully available (eligible true, remaining_calls 978).\"]}",
-      "activation": 0.2511,
-      "salience": 0.92,
-      "novelty": 0.2,
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\"}, \"offset\": 0, \"excerpt\": \"\", \"content_available\": false, \"next_offset\": null, \"total_chars\": 0, \"read_cursor\": 0, \"fully_read\": false, \"already_complete\": false, \"notes\": []}",
+      "activation": 0.2353,
+      "salience": 0.85,
+      "novelty": 0.7,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4236
+      "ignition_score": 0.4632
+    },
+    {
+      "id": "episode:aec4877d39a17d",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\"}, \"offset\": 0, \"excerpt\": \"\", \"content_available\": false, \"next_offset\": null, \"total_chars\": 0, \"read_cursor\": 0, \"fully_read\": false, \"already_complete\": false, \"notes\": []}",
+      "activation": 0.2341,
+      "salience": 0.85,
+      "novelty": 0.6,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4496
     },
     {
       "id": "episode:b1360353827a83",
@@ -51,52 +75,28 @@
       "ignition_score": 0.3987
     },
     {
-      "id": "episode:b42aea395d80a8",
+      "id": "episode:7068adc7a0d189",
       "kind": "recalled_episode",
-      "label": "Quiet state selected; activation decayed.",
-      "activation": 0.2283,
-      "salience": 0.8,
-      "novelty": 0.1,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.3692
-    },
-    {
-      "id": "episode:3e8d1004c9f093",
-      "kind": "recalled_episode",
-      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"provider_resource_management ↔ provider:gemini\",\n      \"kind\": \"concept\",\n      \"strength\": 0.78\n    },\n    {\n      \"label\": \"provider_resource_management ↔ provider:groq\",\n      \"kind\": \"concept\",\n      \"strength\": 0.73\n    },\n    {\n      \"label\": \"daily_limit_exhaustion → need_fallback\",\n      \"kind\": \"world_model\",\n      \"strength\": 0.65\n    }\n  ],\n  \"hypotheses\": [\n    \"If Gemini's daily limit is reached, automatically routing requests to Groq will",
-      "activation": 0.3088,
+      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"tear_secretion_mechanism ↔ parasympathetic_pathways\",\n      \"kind\": \"concept\",\n      \"strength\": 0.78\n    },\n    {\n      \"label\": \"emotional_crying ↔ peri‑ocular_muscle_contraction\",\n      \"kind\": \"concept\",\n      \"strength\": 0.74\n    },\n    {\n      \"label\": \"lacrimal_gland_activation ↔ facial_nerve_branch\",\n      \"kind\": \"concept\",\n      \"strength\": 0.65\n    }\n  ],\n  \"hypotheses\": [\n    \"Emotional crying is initiated by cortical appraisal that trigger",
+      "activation": 0.266,
       "salience": 0.42,
-      "novelty": 0.239,
+      "novelty": 0.2078,
       "surprise": 0.3,
       "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.3265
+      "ignition_score": 0.301
     },
     {
-      "id": "episode:6e20aa32df5a29",
-      "kind": "recalled_episode",
-      "label": "```json\n{\n  \"associations\": [\n    {\"label\": \"provider resource management\", \"kind\": \"concept\", \"strength\": 0.85},\n    {\"label\": \"runtime stability\", \"kind\": \"concept\", \"strength\": 0.75}\n  ],\n  \"hypotheses\": [\n    \"Provider remaining call counts fluctuate across runtime generations without destabilizing execution eligibility.\"\n  ],\n  \"questions\": [\n    \"How do provider limits impact ongoing action scheduling and error recovery?\"\n  ],\n  \"self_model_updates\": [\n    {\n      \"statement\": \"Ubique moni",
-      "activation": 0.2628,
-      "salience": 0.42,
-      "novelty": 0.239,
-      "surprise": 0.3,
-      "epistemic_status": "model_proposal",
-      "source": "associative_recall",
-      "ignition_score": 0.3035
-    },
-    {
-      "id": "concept:29b0c09f5a62ab09",
+      "id": "concept:1c92bca0dfd59426",
       "kind": "concept",
-      "label": "provider_resource_management ↔ provider:gemini",
-      "activation": 0.204,
-      "salience": 0.18112,
-      "novelty": 0.20784999999999998,
-      "surprise": 0.17459999999999998,
+      "label": "provider_resource_management ↔ groq_provider_active",
+      "activation": 0.3702,
+      "salience": 0.247285,
+      "novelty": 0.18757000000000001,
+      "surprise": 0.15549000000000002,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.1953
+      "ignition_score": 0.29
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 12,
+      "remaining_calls": 11,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 993,
+      "remaining_calls": 992,
       "eligible": true
     },
     "huggingface": {
@@ -244,40 +244,40 @@
   },
   "last_action": {
     "kind": "library",
-    "description": "Read the requested article to gather empirical evidence on lacrimal physiology during emotional crying.",
+    "description": "Request the full text of \"Physiology of Lacrimal Secretion and Emotional Crying\" to obtain empirical evidence on neural and mechanical components of emotional tear production.",
     "source": "substrate:groq",
-    "score": 0.50984
+    "score": 0.44594
   },
   "action_competition": [
     {
       "kind": "library",
       "source": "substrate:groq",
-      "score": 0.50984,
-      "description": "Read the requested article to gather empirical evidence on lacrimal physiology during emotional crying."
+      "score": 0.44594,
+      "description": "Request the full text of \"Physiology of Lacrimal Secretion and Emotional Crying\" to obtain empirical evidence on neural and mechanical components of emotional tear production."
     },
     {
-      "kind": "rest",
+      "kind": "library",
       "source": "substrate:gemini",
-      "score": 0.3889,
-      "description": "Rest to maintain energy and stable runtime equilibrium following provider state verification."
+      "score": 0.39451,
+      "description": "Read Darwin's 'The Expression of the Emotions in Man and Animals' to examine historical and observational accounts of weeping and peri-ocular muscle movements."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.29595,
+      "score": 0.32312,
       "description": "Replay and consolidate existing experience offline."
-    },
-    {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.21502,
-      "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.16001,
+      "score": 0.23315,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.22682,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
   "substrate_contributors": [
@@ -314,10 +314,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 490,
-    "semantic_nodes": 1958,
+    "episodes": 493,
+    "semantic_nodes": 1963,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -328,7 +328,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 122
+      "removed_edges": 114
     },
     "terminal_inhibition": {
       "startup": 264,
