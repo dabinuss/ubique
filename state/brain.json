@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-07T12:06:20.453246+00:00",
-  "generation": 578,
+  "timestamp": "2026-10-07T12:07:13.428294+00:00",
+  "generation": 579,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1876,
-    "surprise": 0.1555,
+    "novelty": 0.1744,
+    "surprise": 0.1431,
     "uncertainty": 0.19,
-    "salience": 0.2473,
-    "exploration": 0.2632,
-    "plasticity": 0.3916,
-    "energy": 0.87,
-    "sleep_pressure": 0.1655
+    "salience": 0.2866,
+    "exploration": 0.2562,
+    "plasticity": 0.3898,
+    "energy": 0.805,
+    "sleep_pressure": 0.2145
   },
   "workspace": [
+    {
+      "id": "episode:fbe9d4aae5dae9",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-5\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need concrete data on peri‑ocular muscle activity, parasympathetic outflow, and tear volume composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-07T12:06:20.404748+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_rea",
+      "activation": 0.269,
+      "salience": 0.85,
+      "novelty": 0.75,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4865
+    },
     {
       "id": "episode:957d127c44d4e4",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-4\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\"}, \"offset\": 0, \"excerpt\": \"\", \"content_available\": false, \"next_offset\": null, \"total_chars\": 0, \"read_cursor\": 0, \"fully_read\": false, \"already_complete\": false, \"notes\": []}",
-      "activation": 0.2533,
+      "activation": 0.253,
       "salience": 0.85,
       "novelty": 0.7,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4722
+      "ignition_score": 0.472
     },
     {
       "id": "episode:cfc369a8cd202e",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-4\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Acquire empirical evidence on peri‑ocular muscle activity and parasympathetic pathways during emotional tear production.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-07T02:27:23.992426+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": fals",
-      "activation": 0.2546,
+      "activation": 0.2542,
       "salience": 0.82,
       "novelty": 0.7,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4653
+      "ignition_score": 0.4651
     },
     {
-      "id": "episode:6414407166750f",
+      "id": "episode:085aaacb001bcb",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\"}, \"offset\": 0, \"excerpt\": \"\", \"content_available\": false, \"next_offset\": null, \"total_chars\": 0, \"read_cursor\": 0, \"fully_read\": false, \"already_complete\": false, \"notes\": []}",
-      "activation": 0.2353,
-      "salience": 0.85,
-      "novelty": 0.7,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"tear_secretion_mechanism ↔ parasympathetic_pathways\",\n      \"kind\": \"concept\",\n      \"strength\": 0.78\n    },\n    {\n      \"label\": \"emotional_crying ↔ peri‑ocular_muscle_contraction\",\n      \"kind\": \"concept\",\n      \"strength\": 0.74\n    },\n    {\n      \"label\": \"lacrimal_gland_activation ↔ facial_nerve_branch\",\n      \"kind\": \"concept\",\n      \"strength\": 0.65\n    }\n  ],\n  \"hypotheses\": [\n    \"Emotional crying is initiated by cortical appraisal that trigger",
+      "activation": 0.2665,
+      "salience": 0.42,
+      "novelty": 0.1876,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.4632
-    },
-    {
-      "id": "episode:aec4877d39a17d",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\"}, \"offset\": 0, \"excerpt\": \"\", \"content_available\": false, \"next_offset\": null, \"total_chars\": 0, \"read_cursor\": 0, \"fully_read\": false, \"already_complete\": false, \"notes\": []}",
-      "activation": 0.2341,
-      "salience": 0.85,
-      "novelty": 0.6,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4496
-    },
-    {
-      "id": "episode:b1360353827a83",
-      "kind": "recalled_episode",
-      "label": "Quiet state selected; activation decayed.",
-      "activation": 0.2343,
-      "salience": 0.88,
-      "novelty": 0.15,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.3987
+      "ignition_score": 0.2986
     },
     {
       "id": "episode:7068adc7a0d189",
       "kind": "recalled_episode",
       "label": "{\n  \"associations\": [\n    {\n      \"label\": \"tear_secretion_mechanism ↔ parasympathetic_pathways\",\n      \"kind\": \"concept\",\n      \"strength\": 0.78\n    },\n    {\n      \"label\": \"emotional_crying ↔ peri‑ocular_muscle_contraction\",\n      \"kind\": \"concept\",\n      \"strength\": 0.74\n    },\n    {\n      \"label\": \"lacrimal_gland_activation ↔ facial_nerve_branch\",\n      \"kind\": \"concept\",\n      \"strength\": 0.65\n    }\n  ],\n  \"hypotheses\": [\n    \"Emotional crying is initiated by cortical appraisal that trigger",
-      "activation": 0.266,
+      "activation": 0.2589,
       "salience": 0.42,
       "novelty": 0.2078,
       "surprise": 0.3,
       "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.301
+      "ignition_score": 0.2975
     },
     {
-      "id": "concept:1c92bca0dfd59426",
+      "id": "episode:871cd5db54e960",
+      "kind": "recalled_episode",
+      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"lacrimal_secretion ↔ facial_nerve_pathways\",\n      \"kind\": \"concept\",\n      \"strength\": 0.81\n    },\n    {\n      \"label\": \"peri_ocular_muscles ↔ mechanical_tear_drainage\",\n      \"kind\": \"concept\",\n      \"strength\": 0.77\n    }\n  ],\n  \"hypotheses\": [\n    \"Parasympathetic activation of the lacrimal gland coordinates with orbicularis oculi contraction to regulate both production and drainage during emotional episodes.\"\n  ],\n  \"questions\": [\n    \"What specif",
+      "activation": 0.2639,
+      "salience": 0.42,
+      "novelty": 0.1876,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
+      "source": "associative_recall",
+      "ignition_score": 0.2973
+    },
+    {
+      "id": "concept:629f3deda494d6eb",
       "kind": "concept",
-      "label": "provider_resource_management ↔ groq_provider_active",
-      "activation": 0.3702,
-      "salience": 0.247285,
-      "novelty": 0.18757000000000001,
-      "surprise": 0.15549000000000002,
+      "label": "lacrimal_secretion ↔ facial_nerve_pathways",
+      "activation": 0.3597,
+      "salience": 0.28664,
+      "novelty": 0.17443999999999998,
+      "surprise": 0.143075,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.29
+      "ignition_score": 0.2914
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 11,
+      "remaining_calls": 10,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 992,
+      "remaining_calls": 991,
       "eligible": true
     },
     "huggingface": {
@@ -244,39 +244,39 @@
   },
   "last_action": {
     "kind": "library",
-    "description": "Request the full text of \"Physiology of Lacrimal Secretion and Emotional Crying\" to obtain empirical evidence on neural and mechanical components of emotional tear production.",
-    "source": "substrate:groq",
-    "score": 0.44594
+    "description": "Read sections of Darwin's 'The Expression of the Emotions in Man and Animals' to examine historical observations on emotional crying and peri-ocular muscle activity.",
+    "source": "substrate:gemini",
+    "score": 0.39188
   },
   "action_competition": [
     {
       "kind": "library",
-      "source": "substrate:groq",
-      "score": 0.44594,
-      "description": "Request the full text of \"Physiology of Lacrimal Secretion and Emotional Crying\" to obtain empirical evidence on neural and mechanical components of emotional tear production."
+      "source": "substrate:gemini",
+      "score": 0.39188,
+      "description": "Read sections of Darwin's 'The Expression of the Emotions in Man and Animals' to examine historical observations on emotional crying and peri-ocular muscle activity."
     },
     {
       "kind": "library",
-      "source": "substrate:gemini",
-      "score": 0.39451,
-      "description": "Read Darwin's 'The Expression of the Emotions in Man and Animals' to examine historical and observational accounts of weeping and peri-ocular muscle movements."
+      "source": "substrate:groq",
+      "score": 0.38501,
+      "description": "Request access to the article providing empirical data on peri‑ocular muscle activity, parasympathetic outflow, and tear composition during emotional crying."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.32312,
+      "score": 0.34737,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.23315,
+      "score": 0.26803,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.22682,
+      "score": 0.23345,
       "description": "Continue processing the active workspace without external action."
     }
   ],
@@ -314,10 +314,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 2,
+  "consecutive_pulses": 3,
   "memory": {
-    "episodes": 493,
-    "semantic_nodes": 1963,
+    "episodes": 497,
+    "semantic_nodes": 1974,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -328,7 +328,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 114
+      "removed_edges": 122
     },
     "terminal_inhibition": {
       "startup": 264,
