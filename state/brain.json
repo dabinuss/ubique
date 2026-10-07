@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-07T23:21:47.045194+00:00",
-  "generation": 590,
+  "timestamp": "2026-10-07T23:22:44.066852+00:00",
+  "generation": 591,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2298,
-    "surprise": 0.1953,
+    "novelty": 0.2019,
+    "surprise": 0.1689,
     "uncertainty": 0.48,
-    "salience": 0.2203,
-    "exploration": 0.3945,
-    "plasticity": 0.4123,
-    "energy": 0.935,
-    "sleep_pressure": 0.0938
+    "salience": 0.1863,
+    "exploration": 0.3724,
+    "plasticity": 0.3987,
+    "energy": 1.0,
+    "sleep_pressure": 0.0721
   },
   "workspace": [
+    {
+      "id": "episode:e632bacb887401",
+      "kind": "recalled_episode",
+      "label": "lly expressive; that is, when they really smile.\nHence I carefully watched my own infants. One of them at the age of\nforty-five days, and being at the time in a happy frame of mind,\nsmiled; that is, the corners of the mouth were retracted, and\nsimultaneously the eyes became decidedly bright. I observed the same\nthing on the following day; but on the third day the child was not\nquite well and there was no trace of a smile, and this renders it\nprobable that the previous smiles were real. Eight day",
+      "activation": 0.483,
+      "salience": 0.6,
+      "novelty": 0.9321,
+      "surprise": 0.35,
+      "epistemic_status": "external_source",
+      "source": "associative_recall",
+      "ignition_score": 0.5547
+    },
     {
       "id": "episode:6b64b87c1632f6",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"facial paralysis and muscle agitation\", \"how does autonomic (parasympathetic) signaling interact with mechanical compression during emotional crying?\"]}",
-      "activation": 0.2948,
+      "activation": 0.265,
       "salience": 0.9,
       "novelty": 0.3,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4534
+      "ignition_score": 0.4385
+    },
+    {
+      "id": "episode:156e469588e3ba",
+      "kind": "recalled_episode",
+      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"involuntary peri‑ocular muscle contraction → tear secretion\", \"lacrimal gland secretion can be initiated by two independent reflex arcs: a mechanical‑vascular route triggered by peri‑ocular muscle compression, and a neuro‑vascular route triggered by irritation‑induced arterial relaxation.\"]}",
+      "activation": 0.2594,
+      "salience": 0.9,
+      "novelty": 0.3,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4357
+    },
+    {
+      "id": "episode:bfa52d7a9ef6af",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 332000, \"excerpt\": \"lly expressive; that is, when they really smile.\\nHence I carefully watched my own infants. One of them at the age of\\nforty-five days, and being at the time in a happy frame of mind,\\nsmiled; that is, the corners of the mouth were retracted, and\\nsimultaneousl",
+      "activation": 0.2973,
+      "salience": 0.78,
+      "novelty": 0.3,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4246
+    },
+    {
+      "id": "episode:e33ad2dba4beed",
+      "kind": "recalled_episode",
+      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"peri‑ocular muscle compression during emotional crying\", \"integration of autonomic and voluntary facial expressions\"]}",
+      "activation": 0.2667,
+      "salience": 0.8,
+      "novelty": 0.3,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4143
     },
     {
       "id": "episode:294a79fe50e7f0",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"parasympathetic and mechanical pathways in lacrimal secretion\", \"which specific peri‑ocular muscles (e.g., orbicularis oculi, corrugator) are most active during the onset of emotional tears, and what are their activation timings?\"]}",
-      "activation": 0.3028,
+      "activation": 0.2571,
       "salience": 0.79,
       "novelty": 0.3,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4299
+      "ignition_score": 0.407
     },
     {
-      "id": "episode:10e2f43ada28e0",
-      "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 979}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3237,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "associative_recall",
-      "ignition_score": 0.3809
-    },
-    {
-      "id": "episode:547e3906bf513b",
-      "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 15}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 996}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3027,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "associative_recall",
-      "ignition_score": 0.3704
-    },
-    {
-      "id": "episode:7a8da6733402a3",
-      "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.2974,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "associative_recall",
-      "ignition_score": 0.3677
-    },
-    {
-      "id": "episode:2f09a036298b4c",
-      "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 978}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.2935,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "associative_recall",
-      "ignition_score": 0.3657
-    },
-    {
-      "id": "runtime_state:423b4a0b7d2066e3",
-      "kind": "runtime_state",
-      "label": "provider:gemini",
-      "activation": 0.1256,
-      "salience": 0.220305,
-      "novelty": 0.22982,
-      "surprise": 0.19527,
-      "epistemic_status": "observed_runtime_state",
+      "id": "concept:f630b494aa512fd1",
+      "kind": "concept",
+      "label": "peri‑ocular muscle contraction ↔ mechanical compression of lacrimal ducts",
+      "activation": 0.2737,
+      "salience": 0.23898999999999998,
+      "novelty": 0.20187,
+      "surprise": 0.168945,
+      "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.1712
+      "ignition_score": 0.2431
     }
   ],
   "provider_eligibility": {
@@ -111,7 +111,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 977,
+      "remaining_calls": 976,
       "eligible": true
     },
     "huggingface": {
@@ -243,40 +243,40 @@
     }
   },
   "last_action": {
-    "kind": "library",
-    "description": "Read the classic work on emotional expression to gather empirical observations of facial muscle activity and tear production.",
+    "kind": "rest",
+    "description": "Allow system to consolidate recent updates and reduce processing load.",
     "source": "substrate:groq",
-    "score": 0.43401
+    "score": 0.37941
   },
   "action_competition": [
     {
-      "kind": "library",
-      "source": "substrate:groq",
-      "score": 0.43401,
-      "description": "Read the classic work on emotional expression to gather empirical observations of facial muscle activity and tear production."
-    },
-    {
       "kind": "rest",
       "source": "substrate:groq",
-      "score": 0.35661,
-      "description": "Allow consolidation of current hypotheses and integration of newly read material."
+      "score": 0.37941,
+      "description": "Allow system to consolidate recent updates and reduce processing load."
+    },
+    {
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.36605,
+      "description": "Read additional sections of Darwin's \"The Expression of the Emotions in Man and Animals\" focusing on infant facial expressions and tear-related observations."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.27881,
+      "score": 0.27794,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.21711,
+      "score": 0.25936,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.20551,
+      "score": 0.22611,
       "description": "Replay and consolidate existing experience offline."
     }
   ],
@@ -290,9 +290,9 @@
     {
       "topic": "evolutionary_origins_of_expression",
       "position": "Ubique reinforces its view that affective and defensive expressions involve both voluntary simulation and involuntary components such as peri‑ocular muscle contractions, as detailed in observational evidence.",
-      "confidence": 0.99,
+      "confidence": 0.97,
       "identity_weight": 0.85,
-      "support_count": 12,
+      "support_count": 13,
       "grounded_sources": [
         "external_source:library:darwin-expression-emotions"
       ],
@@ -310,10 +310,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 533,
-    "semantic_nodes": 2100,
+    "episodes": 535,
+    "semantic_nodes": 2109,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -324,7 +324,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 90
+      "removed_edges": 82
     },
     "terminal_inhibition": {
       "startup": 265,
