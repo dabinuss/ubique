@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-07T21:38:30.633634+00:00",
-  "generation": 589,
+  "timestamp": "2026-10-07T23:21:47.045194+00:00",
+  "generation": 590,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2728,
-    "surprise": 0.2358,
-    "uncertainty": 0.5,
-    "salience": 0.2713,
-    "exploration": 0.3652,
-    "plasticity": 0.4564,
-    "energy": 1.0,
-    "sleep_pressure": 0.0448
+    "novelty": 0.2298,
+    "surprise": 0.1953,
+    "uncertainty": 0.48,
+    "salience": 0.2203,
+    "exploration": 0.3945,
+    "plasticity": 0.4123,
+    "energy": 0.935,
+    "sleep_pressure": 0.0938
   },
   "workspace": [
-    {
-      "id": "episode:10e2f43ada28e0",
-      "kind": "provider_state_change",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 979}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.95,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "runtime",
-      "ignition_score": 0.694
-    },
     {
       "id": "episode:6b64b87c1632f6",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"facial paralysis and muscle agitation\", \"how does autonomic (parasympathetic) signaling interact with mechanical compression during emotional crying?\"]}",
-      "activation": 0.2973,
+      "activation": 0.2948,
       "salience": 0.9,
       "novelty": 0.3,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4546
+      "ignition_score": 0.4534
     },
     {
       "id": "episode:294a79fe50e7f0",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"parasympathetic and mechanical pathways in lacrimal secretion\", \"which specific peri‑ocular muscles (e.g., orbicularis oculi, corrugator) are most active during the onset of emotional tears, and what are their activation timings?\"]}",
-      "activation": 0.3056,
+      "activation": 0.3028,
       "salience": 0.79,
       "novelty": 0.3,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4313
+      "ignition_score": 0.4299
     },
     {
-      "id": "episode:e33ad2dba4beed",
+      "id": "episode:10e2f43ada28e0",
       "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"peri‑ocular muscle compression during emotional crying\", \"integration of autonomic and voluntary facial expressions\"]}",
-      "activation": 0.2955,
-      "salience": 0.8,
-      "novelty": 0.3,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 979}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3237,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4287
+      "ignition_score": 0.3809
     },
     {
       "id": "episode:547e3906bf513b",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 15}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 996}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3045,
+      "activation": 0.3027,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.3712
+      "ignition_score": 0.3704
     },
     {
       "id": "episode:7a8da6733402a3",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.2989,
+      "activation": 0.2974,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.3684
+      "ignition_score": 0.3677
+    },
+    {
+      "id": "episode:2f09a036298b4c",
+      "kind": "recalled_episode",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 978}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.2935,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "associative_recall",
+      "ignition_score": 0.3657
     },
     {
       "id": "runtime_state:423b4a0b7d2066e3",
       "kind": "runtime_state",
       "label": "provider:gemini",
-      "activation": 0.4068,
-      "salience": 0.346245,
-      "novelty": 0.272825,
-      "surprise": 0.235825,
+      "activation": 0.1256,
+      "salience": 0.220305,
+      "novelty": 0.22982,
+      "surprise": 0.19527,
       "epistemic_status": "observed_runtime_state",
       "source": "semantic_network",
-      "ignition_score": 0.3537
+      "ignition_score": 0.1712
     }
   ],
   "provider_eligibility": {
@@ -111,7 +111,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 978,
+      "remaining_calls": 977,
       "eligible": true
     },
     "huggingface": {
@@ -243,28 +243,40 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
-    "source": "homeostasis",
-    "score": 0.34702
+    "kind": "library",
+    "description": "Read the classic work on emotional expression to gather empirical observations of facial muscle activity and tear production.",
+    "source": "substrate:groq",
+    "score": 0.43401
   },
   "action_competition": [
     {
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.43401,
+      "description": "Read the classic work on emotional expression to gather empirical observations of facial muscle activity and tear production."
+    },
+    {
       "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.34702,
-      "description": "Allow activation to decay without forcing cognition."
+      "source": "substrate:groq",
+      "score": 0.35661,
+      "description": "Allow consolidation of current hypotheses and integration of newly read material."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.31653,
+      "score": 0.27881,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.21711,
+      "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.18722,
+      "score": 0.20551,
       "description": "Replay and consolidate existing experience offline."
     }
   ],
@@ -298,10 +310,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 530,
-    "semantic_nodes": 2086,
+    "episodes": 533,
+    "semantic_nodes": 2100,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -312,7 +324,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_edges": 90
     },
     "terminal_inhibition": {
       "startup": 265,
