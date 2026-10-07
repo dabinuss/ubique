@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-07T09:10:23.232730+00:00",
-  "generation": 576,
+  "timestamp": "2026-10-07T12:05:25.319922+00:00",
+  "generation": 577,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.239,
-    "surprise": 0.204,
+    "novelty": 0.2078,
+    "surprise": 0.1746,
     "uncertainty": 0.19,
-    "salience": 0.1688,
-    "exploration": 0.2857,
-    "plasticity": 0.4171,
-    "energy": 1.0,
-    "sleep_pressure": 0.0675
+    "salience": 0.1811,
+    "exploration": 0.2742,
+    "plasticity": 0.3936,
+    "energy": 0.935,
+    "sleep_pressure": 0.1165
   },
   "workspace": [
     {
-      "id": "episode:547e3906bf513b",
+      "id": "episode:cfc369a8cd202e",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 15}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 996}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3238,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-4\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Acquire empirical evidence on peri‑ocular muscle activity and parasympathetic pathways during emotional tear production.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-07T02:27:23.992426+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": fals",
+      "activation": 0.2292,
+      "salience": 0.82,
+      "novelty": 0.7,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3809
+      "ignition_score": 0.4526
     },
     {
-      "id": "episode:7a8da6733402a3",
+      "id": "episode:9c3be3e16b2fa9",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3154,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"gemini provider ineligible\", \"the gemini provider is currently unavailable (eligible false, remaining_calls 0); the groq provider remains fully available (eligible true, remaining_calls 978).\"]}",
+      "activation": 0.2511,
+      "salience": 0.92,
+      "novelty": 0.2,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3767
+      "ignition_score": 0.4236
     },
     {
-      "id": "episode:2f09a036298b4c",
+      "id": "episode:b1360353827a83",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 978}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3093,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "Quiet state selected; activation decayed.",
+      "activation": 0.2343,
+      "salience": 0.88,
+      "novelty": 0.15,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3737
+      "ignition_score": 0.3987
     },
     {
-      "id": "episode:97651e674e32b6",
+      "id": "episode:b42aea395d80a8",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 10}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 987}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.2996,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "Quiet state selected; activation decayed.",
+      "activation": 0.2283,
+      "salience": 0.8,
+      "novelty": 0.1,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3688
+      "ignition_score": 0.3692
     },
     {
-      "id": "episode:28bccadd42e998",
+      "id": "episode:3e8d1004c9f093",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 15}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 991}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.2977,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"provider_resource_management ↔ provider:gemini\",\n      \"kind\": \"concept\",\n      \"strength\": 0.78\n    },\n    {\n      \"label\": \"provider_resource_management ↔ provider:groq\",\n      \"kind\": \"concept\",\n      \"strength\": 0.73\n    },\n    {\n      \"label\": \"daily_limit_exhaustion → need_fallback\",\n      \"kind\": \"world_model\",\n      \"strength\": 0.65\n    }\n  ],\n  \"hypotheses\": [\n    \"If Gemini's daily limit is reached, automatically routing requests to Groq will",
+      "activation": 0.3088,
+      "salience": 0.42,
+      "novelty": 0.239,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.3679
+      "ignition_score": 0.3265
     },
     {
-      "id": "episode:3832b55bb0f6c1",
+      "id": "episode:6e20aa32df5a29",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.2931,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "```json\n{\n  \"associations\": [\n    {\"label\": \"provider resource management\", \"kind\": \"concept\", \"strength\": 0.85},\n    {\"label\": \"runtime stability\", \"kind\": \"concept\", \"strength\": 0.75}\n  ],\n  \"hypotheses\": [\n    \"Provider remaining call counts fluctuate across runtime generations without destabilizing execution eligibility.\"\n  ],\n  \"questions\": [\n    \"How do provider limits impact ongoing action scheduling and error recovery?\"\n  ],\n  \"self_model_updates\": [\n    {\n      \"statement\": \"Ubique moni",
+      "activation": 0.2628,
+      "salience": 0.42,
+      "novelty": 0.239,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.3655
+      "ignition_score": 0.3035
     },
     {
-      "id": "concept:09cb55b73c87f494",
+      "id": "concept:29b0c09f5a62ab09",
       "kind": "concept",
-      "label": "provider resource management",
-      "activation": 0.2101,
-      "salience": 0.216275,
-      "novelty": 0.23904999999999998,
-      "surprise": 0.20398,
+      "label": "provider_resource_management ↔ provider:gemini",
+      "activation": 0.204,
+      "salience": 0.18112,
+      "novelty": 0.20784999999999998,
+      "surprise": 0.17459999999999998,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.2147
+      "ignition_score": 0.1953
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 13,
+      "remaining_calls": 12,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 994,
+      "remaining_calls": 993,
       "eligible": true
     },
     "huggingface": {
@@ -243,40 +243,40 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Rest to maintain energy and stable runtime equilibrium following provider state monitoring.",
-    "source": "substrate:gemini",
-    "score": 0.38378
+    "kind": "library",
+    "description": "Read the requested article to gather empirical evidence on lacrimal physiology during emotional crying.",
+    "source": "substrate:groq",
+    "score": 0.50984
   },
   "action_competition": [
     {
-      "kind": "rest",
-      "source": "substrate:gemini",
-      "score": 0.38378,
-      "description": "Rest to maintain energy and stable runtime equilibrium following provider state monitoring."
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.50984,
+      "description": "Read the requested article to gather empirical evidence on lacrimal physiology during emotional crying."
     },
     {
       "kind": "rest",
-      "source": "substrate:groq",
-      "score": 0.27287,
-      "description": "Brief idle period to allow internal consolidation of recent observations."
+      "source": "substrate:gemini",
+      "score": 0.3889,
+      "description": "Rest to maintain energy and stable runtime equilibrium following provider state verification."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.27277,
+      "score": 0.29595,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.22988,
+      "score": 0.21502,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.17594,
+      "score": 0.16001,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
@@ -314,10 +314,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 487,
-    "semantic_nodes": 1946,
+    "episodes": 490,
+    "semantic_nodes": 1958,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -328,7 +328,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 132
+      "removed_edges": 122
     },
     "terminal_inhibition": {
       "startup": 264,
