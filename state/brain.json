@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-07T05:49:20.977638+00:00",
-  "generation": 575,
+  "timestamp": "2026-10-07T09:10:23.232730+00:00",
+  "generation": 576,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.287,
-    "surprise": 0.2492,
-    "uncertainty": 0.175,
-    "salience": 0.2196,
-    "exploration": 0.3133,
-    "plasticity": 0.4551,
+    "novelty": 0.239,
+    "surprise": 0.204,
+    "uncertainty": 0.19,
+    "salience": 0.1688,
+    "exploration": 0.2857,
+    "plasticity": 0.4171,
     "energy": 1.0,
-    "sleep_pressure": 0.0854
+    "sleep_pressure": 0.0675
   },
   "workspace": [
     {
       "id": "episode:547e3906bf513b",
-      "kind": "provider_state_change",
+      "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 15}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 996}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.95,
+      "activation": 0.3238,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
-      "source": "runtime",
-      "ignition_score": 0.694
+      "source": "associative_recall",
+      "ignition_score": 0.3809
     },
     {
       "id": "episode:7a8da6733402a3",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.319,
+      "activation": 0.3154,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.3785
+      "ignition_score": 0.3767
     },
     {
       "id": "episode:2f09a036298b4c",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 978}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3122,
+      "activation": 0.3093,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.3751
+      "ignition_score": 0.3737
     },
     {
       "id": "episode:97651e674e32b6",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 10}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 987}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3015,
+      "activation": 0.2996,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.3698
+      "ignition_score": 0.3688
     },
     {
       "id": "episode:28bccadd42e998",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 15}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 991}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.2994,
+      "activation": 0.2977,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.3687
+      "ignition_score": 0.3679
     },
     {
-      "id": "runtime_state:423b4a0b7d2066e3",
-      "kind": "runtime_state",
-      "label": "provider:gemini",
-      "activation": 0.4068,
-      "salience": 0.28241499999999997,
-      "novelty": 0.286995,
-      "surprise": 0.24921500000000002,
+      "id": "episode:3832b55bb0f6c1",
+      "kind": "recalled_episode",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.2931,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
-      "source": "semantic_network",
-      "ignition_score": 0.3412
+      "source": "associative_recall",
+      "ignition_score": 0.3655
     },
     {
-      "id": "runtime_state:0a71e857be2cd9b7",
-      "kind": "runtime_state",
-      "label": "provider:groq",
-      "activation": 0.4068,
-      "salience": 0.28241499999999997,
-      "novelty": 0.286995,
-      "surprise": 0.24921500000000002,
-      "epistemic_status": "observed_runtime_state",
+      "id": "concept:09cb55b73c87f494",
+      "kind": "concept",
+      "label": "provider resource management",
+      "activation": 0.2101,
+      "salience": 0.216275,
+      "novelty": 0.23904999999999998,
+      "surprise": 0.20398,
+      "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.3412
+      "ignition_score": 0.2147
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 14,
+      "remaining_calls": 13,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 995,
+      "remaining_calls": 994,
       "eligible": true
     },
     "huggingface": {
@@ -244,45 +244,39 @@
   },
   "last_action": {
     "kind": "rest",
-    "description": "Maintain stable operational cadence while runtime providers remain active and eligible.",
+    "description": "Rest to maintain energy and stable runtime equilibrium following provider state monitoring.",
     "source": "substrate:gemini",
-    "score": 0.48629
+    "score": 0.38378
   },
   "action_competition": [
     {
       "kind": "rest",
       "source": "substrate:gemini",
-      "score": 0.48629,
-      "description": "Maintain stable operational cadence while runtime providers remain active and eligible."
-    },
-    {
-      "kind": "library",
-      "source": "substrate:groq",
-      "score": 0.42465,
-      "description": "Read Darwin's \"The Expression of the Emotions in Man and Animals\" to gather historical and empirical evidence on tear secretion mechanisms and emotional crying."
+      "score": 0.38378,
+      "description": "Rest to maintain energy and stable runtime equilibrium following provider state monitoring."
     },
     {
       "kind": "rest",
       "source": "substrate:groq",
-      "score": 0.35202,
-      "description": "Allow low‑energy consolidation of current hypotheses and associations."
+      "score": 0.27287,
+      "description": "Brief idle period to allow internal consolidation of recent observations."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.29399,
+      "score": 0.27277,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.25697,
+      "score": 0.22988,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.2004,
+      "score": 0.17594,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
@@ -322,8 +316,8 @@
   ],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 484,
-    "semantic_nodes": 1934,
+    "episodes": 487,
+    "semantic_nodes": 1946,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -331,10 +325,10 @@
       "removed_nodes": 0,
       "removed_edges": 0
     },
-    "stale_stance_nodes_removed": 1,
+    "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 116
+      "removed_edges": 132
     },
     "terminal_inhibition": {
       "startup": 264,
