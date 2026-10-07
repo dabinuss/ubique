@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-06T23:08:50.158143+00:00",
-  "generation": 569,
+  "timestamp": "2026-10-07T00:06:16.812291+00:00",
+  "generation": 570,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.154,
-    "surprise": 0.1238,
+    "novelty": 0.2751,
+    "surprise": 0.238,
     "uncertainty": 0.15,
-    "salience": 0.1818,
-    "exploration": 0.2312,
-    "plasticity": 0.3698,
-    "energy": 1.0,
-    "sleep_pressure": 0.0665
+    "salience": 0.2582,
+    "exploration": 0.2964,
+    "plasticity": 0.4445,
+    "energy": 0.935,
+    "sleep_pressure": 0.1155
   },
   "workspace": [
+    {
+      "id": "episode:7a8da6733402a3",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
+    },
     {
       "id": "episode:aec4877d39a17d",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\"}, \"offset\": 0, \"excerpt\": \"\", \"content_available\": false, \"next_offset\": null, \"total_chars\": 0, \"read_cursor\": 0, \"fully_read\": false, \"already_complete\": false, \"notes\": []}",
-      "activation": 0.5293,
+      "activation": 0.4608,
       "salience": 0.85,
       "novelty": 0.6,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5971
+      "ignition_score": 0.5629
     },
     {
-      "id": "episode:cc3c64afb1a564",
+      "id": "episode:2f09a036298b4c",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-2\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To test hypotheses about peri‑ocular muscle involvement in emotional tear production and to clarify the dual reflex‑arc mechanisms.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-06T19:10:43.916801+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_",
-      "activation": 0.3867,
-      "salience": 0.8,
-      "novelty": 0.6,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 978}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3535,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.5133
+      "ignition_score": 0.3957
     },
     {
-      "id": "episode:79b910a09fc0eb",
+      "id": "episode:97651e674e32b6",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain detailed anatomical and neurophysiological data that can test the hypothesis linking peri‑ocular muscle contraction to emotional tear production.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-06T19:09:41.129592+00:00\", \"content_path\": \"\", \"read_count\": 0, \"re",
-      "activation": 0.3876,
-      "salience": 0.72,
-      "novelty": 0.6,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 10}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 987}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3405,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4938
+      "ignition_score": 0.3892
     },
     {
-      "id": "episode:df06c722bb4499",
+      "id": "episode:28bccadd42e998",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-3\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To acquire empirical details that can test and refine the dual‑reflex‑arc hypothesis for emotional tearing.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-06T23:06:12.567355+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false, \"fully_rea",
-      "activation": 0.334,
-      "salience": 0.8,
-      "novelty": 0.6,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 15}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 991}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3381,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.487
+      "ignition_score": 0.3881
     },
     {
-      "id": "episode:80c56b581c264c",
+      "id": "episode:3832b55bb0f6c1",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 1200, \"excerpt\": \" IN COLLABORATION WITH\\n  HENRY ALSOP RILEY\\n\\n  THE FORM AND FUNCTIONS OF THE\\n  CENTRAL NERVOUS SYSTEM\\n\\n\\n\\n\\n  THE MASTER OF DESTINY\\n\\n  A BIOGRAPHY\\n  OF THE BRAIN\\n\\n  BY FREDERICK\\n  TILNEY, M.D.\\n\\n  WITH A FOREWORD\\n  BY AUSTEN FOX\\n  RIGGS, M.D.\\n\\n  [Il",
-      "activation": 0.3206,
-      "salience": 0.9,
-      "novelty": 0.4,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3321,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4793
+      "ignition_score": 0.3851
     },
     {
-      "id": "episode:d362742d8552ea",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"aerodynamics-of-animal-locomotion\", \"title\": \"Aerodynamics of Animal Locomotion\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain quantitative data on drag effects of tail positioning in galloping mammals.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-05T09:12:43.536597+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false, \"fully_read_at\": null, \"notes\": []}}",
-      "activation": 0.2922,
-      "salience": 0.78,
-      "novelty": 0.64,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4663
-    },
-    {
-      "id": "concept:e14de43896fcd264",
-      "kind": "concept",
-      "label": "content_available",
-      "activation": 0.2167,
-      "salience": 0.232885,
-      "novelty": 0.15403,
-      "surprise": 0.12376999999999999,
-      "epistemic_status": "memory_index",
+      "id": "runtime_state:423b4a0b7d2066e3",
+      "kind": "runtime_state",
+      "label": "provider:gemini",
+      "activation": 0.4068,
+      "salience": 0.25817,
+      "novelty": 0.2751,
+      "surprise": 0.23797000000000001,
+      "epistemic_status": "observed_runtime_state",
       "source": "semantic_network",
-      "ignition_score": 0.2014
+      "ignition_score": 0.3323
     }
   ],
   "provider_eligibility": {
@@ -104,15 +104,15 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 0,
-      "eligible": false
+      "remaining_calls": 19,
+      "eligible": true
     },
     "groq": {
       "configured": true,
-      "disabled": true,
+      "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 969,
-      "eligible": false
+      "remaining_calls": 999,
+      "eligible": true
     },
     "huggingface": {
       "configured": false,
@@ -243,32 +243,53 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
-    "source": "homeostasis",
-    "score": 0.24631
+    "kind": "library",
+    "description": "Read the requested article on lacrimal physiology to gather empirical data for refining the tear secretion mechanism stance.",
+    "source": "substrate:groq",
+    "score": 0.43628
   },
   "action_competition": [
     {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.24631,
-      "description": "Allow activation to decay without forcing cognition."
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.43628,
+      "description": "Read the requested article on lacrimal physiology to gather empirical data for refining the tear secretion mechanism stance."
     },
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.21505,
-      "description": "Continue processing the active workspace without external action."
+      "kind": "rest",
+      "source": "substrate:gemini",
+      "score": 0.42496,
+      "description": "Rest the cognitive substrate as energy is high and no immediate active reading tasks require processing."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.19212,
+      "score": 0.27112,
       "description": "Replay and consolidate existing experience offline."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.24632,
+      "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.19344,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
-  "substrate_contributors": [],
+  "substrate_contributors": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    }
+  ],
   "current_stances": [
     {
       "topic": "evolutionary_origins_of_expression",
@@ -293,10 +314,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 465,
-    "semantic_nodes": 1880,
+    "episodes": 469,
+    "semantic_nodes": 1894,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -307,7 +328,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_edges": 134
     },
     "terminal_inhibition": {
       "startup": 263,
