@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T07:58:35.879705+00:00",
-  "generation": 620,
+  "timestamp": "2026-10-08T07:59:32.032329+00:00",
+  "generation": 621,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2726,
-    "surprise": 0.2356,
+    "novelty": 0.2297,
+    "surprise": 0.1951,
     "uncertainty": 0.28,
-    "salience": 0.1895,
-    "exploration": 0.3405,
-    "plasticity": 0.4327,
-    "energy": 0.935,
-    "sleep_pressure": 0.0817
+    "salience": 0.2298,
+    "exploration": 0.3174,
+    "plasticity": 0.4136,
+    "energy": 0.87,
+    "sleep_pressure": 0.1307
   },
   "workspace": [
     {
-      "id": "episode:463d5a2f89fcb8",
-      "kind": "provider_state_change",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 978}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.95,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "runtime",
-      "ignition_score": 0.694
+      "id": "episode:1983876890c318",
+      "kind": "recalled_episode",
+      "label": "The Project Gutenberg eBook of The Psychology of the Emotions\n    \nThis eBook is for the use of anyone anywhere in the United States and\nmost other parts of the world at no cost and with almost no restrictions\nwhatsoever. You may copy it, give it away or re-use it under the terms\nof the Project Gutenberg License included with this eBook or online\nat www.gutenberg.org. If you are not located in the United States,\nyou will have to check the laws of the country where you are located\nbefore using th",
+      "activation": 0.4828,
+      "salience": 0.6,
+      "novelty": 0.9198,
+      "surprise": 0.35,
+      "epistemic_status": "external_source",
+      "source": "associative_recall",
+      "ignition_score": 0.553
     },
     {
-      "id": "episode:5cc0a7e69905b7",
+      "id": "episode:d0eb2efa516a79",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 392000, \"excerpt\": \" Europeans; for though their chests\\nwere expanded and shoulders squared, their arms remained rigidly\\nsuspended, with the elbows turned inwards and the hands alternately\\nclenched and opened. Their shoulders were often raised high, and then\\nagain lowered. The",
-      "activation": 0.4234,
-      "salience": 0.85,
-      "novelty": 0.4,
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"ribot-psychology-emotions\", \"title\": \"The Psychology of the Emotions\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #67585\"}, \"offset\": 0, \"excerpt\": \"The Project Gutenberg eBook of The Psychology of the Emotions\\n    \\nThis eBook is for the use of anyone anywhere in the United States and\\nmost other parts of the world at no cost and with almost no restrictions\\nwhatsoever. You may copy it, give it away or re-use it under the terms\\",
+      "activation": 0.3256,
+      "salience": 0.81,
+      "novelty": 0.55,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5182
+      "ignition_score": 0.4788
     },
     {
-      "id": "episode:252e3ebe5a55e9",
+      "id": "episode:eefbeb3f27a5cd",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.351,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 382000, \"excerpt\": \" fierce delirium of\\nmeningitis; but the movements of the iris under the influence of the\\ndifferent emotions is a very obscure subject.[1008]\\n\\nShakspeare sums up the chief characteristics of rage as follows:—\\n\\n“In peace there’s nothing so becomes a man,\\nA",
+      "activation": 0.2618,
+      "salience": 0.88,
+      "novelty": 0.3,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3945
+      "ignition_score": 0.4319
     },
     {
-      "id": "episode:10e2f43ada28e0",
+      "id": "episode:9718bcb0faa246",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 979}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.346,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 362000, \"excerpt\": \"to follow from the mind being\\nwholly absorbed.[906] The active condition of the muscles of the eyes\\nis that of convergence; and Professor Donders remarks, as bearing on\\ntheir divergence during a period of complete abstraction, that when one\\neye becomes blin",
+      "activation": 0.2573,
+      "salience": 0.85,
+      "novelty": 0.3,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.392
+      "ignition_score": 0.4221
     },
     {
-      "id": "episode:547e3906bf513b",
+      "id": "episode:5ba56ab1c1aa23",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 15}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 996}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3302,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 322000, \"excerpt\": \"ling at the corners of the mouth and at the outer corners of the\\neyes. This is a well-recognized fact. Constant tremulous agitation of\\nthe inferior palpebral and great zygomatic muscles is pathognomic of\\nthe earlier stages of general paralysis. The countenan",
+      "activation": 0.2428,
+      "salience": 0.88,
+      "novelty": 0.25,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3841
+      "ignition_score": 0.4159
     },
     {
-      "id": "episode:7a8da6733402a3",
+      "id": "episode:d3ca8a2b875bab",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.326,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "Quiet state selected; activation decayed.",
+      "activation": 0.2527,
+      "salience": 0.95,
+      "novelty": 0.0,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.382
+      "ignition_score": 0.4058
     },
     {
-      "id": "runtime_state:423b4a0b7d2066e3",
-      "kind": "runtime_state",
-      "label": "provider:gemini",
-      "activation": 0.4068,
-      "salience": 0.189465,
-      "novelty": 0.272565,
-      "surprise": 0.235565,
-      "epistemic_status": "observed_runtime_state",
+      "id": "world_model:33df70974acceb14",
+      "kind": "world_model",
+      "label": "provider:gemini eligibility ↔ available computational resources",
+      "activation": 0.3047,
+      "salience": 0.22982000000000002,
+      "novelty": 0.22969,
+      "surprise": 0.19513999999999998,
+      "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.3145
+      "ignition_score": 0.2631
     }
   ],
   "provider_eligibility": {
@@ -111,7 +111,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 977,
+      "remaining_calls": 976,
       "eligible": true
     },
     "huggingface": {
@@ -264,39 +264,39 @@
   },
   "last_action": {
     "kind": "library",
-    "description": "Read Ribot's *The Psychology of the Emotions* to gather additional historical observations of emotional expression.",
+    "description": "Continue reading Darwin's \"The Expression of the Emotions in Man and Animals\" to gather more detailed observations of facial gestures across emotions.",
     "source": "substrate:groq",
-    "score": 0.53744
+    "score": 0.49266
   },
   "action_competition": [
     {
       "kind": "library",
       "source": "substrate:groq",
-      "score": 0.53744,
-      "description": "Read Ribot's *The Psychology of the Emotions* to gather additional historical observations of emotional expression."
+      "score": 0.49266,
+      "description": "Continue reading Darwin's \"The Expression of the Emotions in Man and Animals\" to gather more detailed observations of facial gestures across emotions."
     },
     {
       "kind": "rest",
       "source": "substrate:groq",
-      "score": 0.38447,
-      "description": "Brief rest to consolidate recent observations and reduce cognitive load."
-    },
-    {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.21654,
-      "description": "Continue processing the active workspace without external action."
+      "score": 0.44525,
+      "description": "Allow consolidation of recent observations and reduce activation decay."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.1738,
+      "score": 0.23388,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.21185,
+      "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.15417,
+      "score": 0.2118,
       "description": "Replay and consolidate existing experience offline."
     }
   ],
@@ -330,10 +330,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 618,
-    "semantic_nodes": 2425,
+    "episodes": 621,
+    "semantic_nodes": 2438,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -347,10 +347,10 @@
       "removed_edges": 84
     },
     "terminal_inhibition": {
-      "startup": 337,
-      "after_lifecycle": 337,
-      "after_spread": 337,
-      "after_packets": 342
+      "startup": 339,
+      "after_lifecycle": 339,
+      "after_spread": 339,
+      "after_packets": 339
     }
   }
 }
