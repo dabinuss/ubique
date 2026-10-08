@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T12:11:27.079170+00:00",
-  "generation": 665,
+  "timestamp": "2026-10-08T12:12:14.893728+00:00",
+  "generation": 666,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2796,
-    "surprise": 0.2422,
+    "novelty": 0.2342,
+    "surprise": 0.1994,
     "uncertainty": 0.28,
-    "salience": 0.2402,
-    "exploration": 0.3443,
-    "plasticity": 0.4444,
-    "energy": 0.79,
-    "sleep_pressure": 0.1707
+    "salience": 0.1809,
+    "exploration": 0.3199,
+    "plasticity": 0.4169,
+    "energy": 1.0,
+    "sleep_pressure": 0.1129
   },
   "workspace": [
     {
-      "id": "episode:d3365fa438af0a",
-      "kind": "provider_state_change",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 957}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.95,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "runtime",
-      "ignition_score": 0.694
-    },
-    {
-      "id": "episode:3dbfed9297cd9c",
+      "id": "episode:c718ff092c1c26",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 959}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6557,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 452000, \"excerpt\": \"earance, as I find\\nrecorded in my notes, in very young children when they were only\\nmoderately surprised.\\n\\nThere is still another and highly effective cause, leading to the mouth\\nbeing opened, when we are astonished, and more especially when we are\\nsudden",
+      "activation": 0.3657,
+      "salience": 0.9,
+      "novelty": 0.6,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5468
+      "ignition_score": 0.5279
     },
     {
-      "id": "episode:2ec098fc05fca1",
+      "id": "episode:0946d71c91b5db",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 960}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6545,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "earance, as I find\nrecorded in my notes, in very young children when they were only\nmoderately surprised.\n\nThere is still another and highly effective cause, leading to the mouth\nbeing opened, when we are astonished, and more especially when we are\nsuddenly startled. We can draw a full and deep inspiration much more\neasily through the widely open mouth than through the nostrils. Now\nwhen we start at any sudden sound or sight, almost all the muscles of\nthe body are involuntarily and momentarily t",
+      "activation": 0.4345,
+      "salience": 0.6,
+      "novelty": 0.8261,
+      "surprise": 0.35,
+      "epistemic_status": "external_source",
       "source": "associative_recall",
-      "ignition_score": 0.5463
+      "ignition_score": 0.5166
     },
     {
-      "id": "episode:29415814c30ad0",
+      "id": "episode:b819d13c56e2e1",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 963}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6535,
-      "salience": 0.4,
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 352000, \"excerpt\": \"rtheless, it is clear that the Australians, Malays,\\nHindoos, and Kafirs of South Africa frown, when they are puzzled.\\nDobritzhoffer remarks that the Guaranies of South America on like\\noccasions knit their brows.[904]\\n\\nFrom these considerations, we may conc",
+      "activation": 0.2711,
+      "salience": 0.85,
       "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5457
+      "ignition_score": 0.455
     },
     {
-      "id": "episode:9536a2934bd2f0",
+      "id": "episode:576632368f6640",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 967}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6523,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "—Terror—Erection of the hair—Contraction of the\nplatysma muscle—Dilatation of the pupils—Horror—Conclusion.\n\nAttention, if sudden and close, graduates into surprise; and this into\nastonishment; and this into stupefied amazement. The latter frame of\nmind is closely akin to terror. Attention is shown by the eyebrows\nbeing slightly raised; and as this state increases into surprise, they\nare raised to a much greater extent, with the eyes and mouth widely\nopen. The raising of the eyebrows is necessar",
+      "activation": 0.2658,
+      "salience": 0.6,
+      "novelty": 0.8844,
+      "surprise": 0.35,
+      "epistemic_status": "external_source",
       "source": "associative_recall",
-      "ignition_score": 0.5452
+      "ignition_score": 0.4399
     },
     {
-      "id": "episode:36faa65089c213",
+      "id": "episode:25b122dad6fb90",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 972}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6506,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "these respects, exactly\nthe reverse. In Plate VI. we may imagine one of the figures on the left\nside to have just said, “What do you mean by insulting me?” and one of\nthe figures on the right side to answer, “I really could not help it.”\nThe helpless man unconsciously contracts the muscles of his forehead\nwhich are antagonistic to those that cause a frown, and thus raises his\neyebrows; at the same time he relaxes the muscles about the mouth, so\nthat the lower jaw drops. The antithesis is complet",
+      "activation": 0.2656,
+      "salience": 0.6,
+      "novelty": 0.8377,
+      "surprise": 0.35,
+      "epistemic_status": "external_source",
       "source": "associative_recall",
-      "ignition_score": 0.5443
+      "ignition_score": 0.4337
     },
     {
-      "id": "runtime_state:423b4a0b7d2066e3",
-      "kind": "runtime_state",
-      "label": "provider:gemini",
-      "activation": 0.4068,
-      "salience": 0.24023,
-      "novelty": 0.279585,
-      "surprise": 0.242195,
-      "epistemic_status": "observed_runtime_state",
+      "id": "episode:9c3be3e16b2fa9",
+      "kind": "recalled_episode",
+      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"gemini provider ineligible\", \"the gemini provider is currently unavailable (eligible false, remaining_calls 0); the groq provider remains fully available (eligible true, remaining_calls 978).\"]}",
+      "activation": 0.2598,
+      "salience": 0.92,
+      "novelty": 0.2,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4279
+    },
+    {
+      "id": "concept:121ff34a938313c5",
+      "kind": "concept",
+      "label": "gemini provider configured but ineligible (0 calls left)",
+      "activation": 0.2222,
+      "salience": 0.2339,
+      "novelty": 0.23424,
+      "surprise": 0.19943,
+      "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.3289
+      "ignition_score": 0.224
     }
   ],
   "provider_eligibility": {
@@ -109,10 +109,10 @@
     },
     "groq": {
       "configured": true,
-      "disabled": false,
+      "disabled": true,
       "daily_limit": 1000,
-      "remaining_calls": 956,
-      "eligible": true
+      "remaining_calls": 955,
+      "eligible": false
     },
     "huggingface": {
       "configured": false,
@@ -263,49 +263,32 @@
     }
   },
   "last_action": {
-    "kind": "library",
-    "description": "Read Darwin's \"The Expression of the Emotions in Man and Animals\" to gather empirical evidence on facial gestures associated with contempt and disgust.",
-    "source": "substrate:groq",
-    "score": 0.61027
+    "kind": "rest",
+    "description": "Allow activation to decay without forcing cognition.",
+    "source": "homeostasis",
+    "score": 0.30207
   },
   "action_competition": [
     {
-      "kind": "library",
-      "source": "substrate:groq",
-      "score": 0.61027,
-      "description": "Read Darwin's \"The Expression of the Emotions in Man and Animals\" to gather empirical evidence on facial gestures associated with contempt and disgust."
-    },
-    {
-      "kind": "rest",
-      "source": "substrate:groq",
-      "score": 0.38344,
-      "description": "Allow consolidation of recent observations and updates."
-    },
-    {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.23958,
+      "score": 0.30207,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.23279,
+      "score": 0.28472,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.15622,
+      "score": 0.17757,
       "description": "Continue processing the active workspace without external action."
     }
   ],
-  "substrate_contributors": [
-    {
-      "provider": "groq",
-      "model": "openai/gpt-oss-120b"
-    }
-  ],
+  "substrate_contributors": [],
   "current_stances": [
     {
       "topic": "evolutionary_origins_of_expression",
@@ -343,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 2,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 693,
+    "episodes": 694,
     "semantic_nodes": 2580,
     "synapses": 1200
   },
@@ -357,7 +340,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 72
+      "removed_edges": 0
     },
     "terminal_inhibition": {
       "startup": 342,
