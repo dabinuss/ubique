@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T15:35:15.565708+00:00",
-  "generation": 696,
+  "timestamp": "2026-10-08T15:36:16.408442+00:00",
+  "generation": 697,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2337,
-    "surprise": 0.1989,
+    "novelty": 0.2044,
+    "surprise": 0.1713,
     "uncertainty": 0.28,
-    "salience": 0.5945,
-    "exploration": 0.3196,
-    "plasticity": 0.4565,
-    "energy": 0.908,
-    "sleep_pressure": 0.0509
+    "salience": 0.4644,
+    "exploration": 0.3038,
+    "plasticity": 0.4533,
+    "energy": 1.0,
+    "sleep_pressure": 0.0486
   },
   "workspace": [
     {
-      "id": "concept:d39f7fb1d10bc9e8",
-      "kind": "concept",
-      "label": "reading_request",
-      "activation": 0.8171,
-      "salience": 0.5944750000000001,
-      "novelty": 0.233655,
-      "surprise": 0.19890999999999998,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.6114
-    },
-    {
-      "id": "concept:db6c7eee7c83a8d1",
-      "kind": "concept",
-      "label": "fully_read_at",
-      "activation": 0.8171,
-      "salience": 0.5944750000000001,
-      "novelty": 0.233655,
-      "surprise": 0.19890999999999998,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.6114
-    },
-    {
-      "id": "concept:b11da62837100975",
-      "kind": "concept",
-      "label": "content_path",
-      "activation": 0.8171,
-      "salience": 0.5944750000000001,
-      "novelty": 0.233655,
-      "surprise": 0.19890999999999998,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.6114
-    },
-    {
-      "id": "concept:b067159d02fcae9c",
-      "kind": "concept",
-      "label": "parasympathetic",
-      "activation": 0.8147,
-      "salience": 0.5944750000000001,
-      "novelty": 0.233655,
-      "surprise": 0.19890999999999998,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.6102
-    },
-    {
-      "id": "episode:193520061bea26",
+      "id": "episode:4c3a81c4f4a07c",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-7\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need empirical measurements of peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T01:22:33.881788+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully",
-      "activation": 0.3726,
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-9\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need quantitative data on peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T01:24:22.962943+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read",
+      "activation": 0.4894,
       "salience": 0.88,
-      "novelty": 0.78,
+      "novelty": 0.8,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5497
-    },
-    {
-      "id": "concept:dff8fc3345095000",
-      "kind": "concept",
-      "label": "measurements",
-      "activation": 0.6936,
-      "salience": 0.5944750000000001,
-      "novelty": 0.233655,
-      "surprise": 0.19890999999999998,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.5497
+      "ignition_score": 0.6107
     },
     {
       "id": "episode:ec233dc0d12779",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"concurrent-facial-emg-and-lacrimal-secretion-dynamics-in-human-e\", \"title\": \"Concurrent facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Needed quantitative data on EMG onset, parasympathetic outflow timing, and tear volume/composition to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T06:45:39.708495+00:00\", \"content_path\": \"\", \"read_count\"",
-      "activation": 0.3938,
+      "activation": 0.5323,
       "salience": 0.78,
       "novelty": 0.7,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5249
+      "ignition_score": 0.5942
+    },
+    {
+      "id": "episode:cf5f38e5023c6e",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"emotional-crying-physiology-neurobiology-and-function\", \"title\": \"Emotional crying: physiology, neurobiology, and function\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need quantitative data on peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T06:44:38.751617+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_rea",
+      "activation": 0.4801,
+      "salience": 0.72,
+      "novelty": 0.77,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.5622
+    },
+    {
+      "id": "episode:0aa186dc65d3e9",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"primate-facial-expressions-and-the-evolution-of-emotion\", \"title\": \"Primate Facial Expressions and the Evolution of Emotion\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To evaluate whether lip protrusion, nose‑up, and spitting appear in non‑human primates during contempt‑like contexts, extending the universality hypothesis.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T09:43:15.076976+00:00\", \"content_path\": \"\", \"read_count\": 0",
+      "activation": 0.3666,
+      "salience": 0.78,
+      "novelty": 0.73,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.5152
+    },
+    {
+      "id": "concept:d39f7fb1d10bc9e8",
+      "kind": "concept",
+      "label": "reading_request",
+      "activation": 0.5901,
+      "salience": 0.5929599999999999,
+      "novelty": 0.204405,
+      "surprise": 0.17128500000000002,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.4904
+    },
+    {
+      "id": "concept:db6c7eee7c83a8d1",
+      "kind": "concept",
+      "label": "fully_read_at",
+      "activation": 0.5901,
+      "salience": 0.5929599999999999,
+      "novelty": 0.204405,
+      "surprise": 0.17128500000000002,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.4904
+    },
+    {
+      "id": "concept:b11da62837100975",
+      "kind": "concept",
+      "label": "content_path",
+      "activation": 0.5827,
+      "salience": 0.5929599999999999,
+      "novelty": 0.204405,
+      "surprise": 0.17128500000000002,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.4867
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
+    "kind": "rest",
+    "description": "Allow activation to decay without forcing cognition.",
     "source": "homeostasis",
-    "score": 0.30872
+    "score": 0.26968
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.30872,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.27944,
+      "score": 0.26968,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.19502,
+      "score": 0.22972,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.19893,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [],
@@ -326,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 2,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 734,
+    "episodes": 735,
     "semantic_nodes": 2607,
     "synapses": 1200
   },
@@ -343,10 +343,10 @@
       "removed_edges": 0
     },
     "terminal_inhibition": {
-      "startup": 342,
-      "after_lifecycle": 342,
-      "after_spread": 342,
-      "after_packets": 342
+      "startup": 337,
+      "after_lifecycle": 337,
+      "after_spread": 337,
+      "after_packets": 337
     }
   }
 }
