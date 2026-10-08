@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T08:29:52.968015+00:00",
-  "generation": 627,
+  "timestamp": "2026-10-08T08:30:53.741749+00:00",
+  "generation": 628,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.3004,
-    "surprise": 0.2618,
+    "novelty": 0.2478,
+    "surprise": 0.2122,
     "uncertainty": 0.28,
-    "salience": 0.3323,
-    "exploration": 0.3555,
-    "plasticity": 0.4704,
-    "energy": 0.713,
-    "sleep_pressure": 0.1979
+    "salience": 0.3483,
+    "exploration": 0.3271,
+    "plasticity": 0.442,
+    "energy": 0.648,
+    "sleep_pressure": 0.2469
   },
   "workspace": [
     {
-      "id": "episode:36faa65089c213",
-      "kind": "provider_state_change",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 972}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.95,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "runtime",
-      "ignition_score": 0.694
+      "id": "episode:0e8dbd68919210",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"ribot-psychology-emotions\", \"title\": \"The Psychology of the Emotions\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #67585\"}, \"offset\": 20000, \"excerpt\": \"endencies in relation\\n     to pleasure and pain—Facts in support of this—Negative\\n     tendency; disgust—Its biological value as a protective\\n     instinct.\\n\\n                              CHAPTER II.\\n\\n FEAR                                                              207\\n\\",
+      "activation": 0.5107,
+      "salience": 0.78,
+      "novelty": 0.55,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.5639
     },
     {
-      "id": "episode:da7b29ec3d7e7f",
+      "id": "episode:d6734337865dc3",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 412000, \"excerpt\": \"ally to take. Mr. Scott has\\nalso seen the same expression on the faces of high-caste natives who\\nhave approached close to some defiling object. Mr. Bridges says that\\nthe Fuegians “express contempt by shooting out the lips and hissing\\nthrough them, and by tu",
-      "activation": 0.4299,
+      "label": "endencies in relation\n     to pleasure and pain—Facts in support of this—Negative\n     tendency; disgust—Its biological value as a protective\n     instinct.\n\n                              CHAPTER II.\n\n FEAR                                                              207\n\n     Fear the conservative instinct under its defensive\n     form—Physiology—Psychology—First stage: Instinctive\n     fear—Hypothesis of heredity—Second stage: Fear founded on\n     experience—Pathology—Morbid or pathological fe",
+      "activation": 0.4843,
+      "salience": 0.6,
+      "novelty": 0.8407,
+      "surprise": 0.35,
+      "epistemic_status": "external_source",
+      "source": "associative_recall",
+      "ignition_score": 0.5434
+    },
+    {
+      "id": "episode:b4153461ec8445",
+      "kind": "recalled_episode",
+      "label": "1\n\n     In all affective manifestations there are two elements:\n     the motor states or impulses, which are primary; the\n     agreeable or painful states, which are\n     secondary—Unconscious (organic or protoplasmic)\n     sensibility; micro-organisms—Chemical interpretation;\n     psychological interpretation—Are there pure states of\n     feeling?—Affirmative facts—The period of needs, the\n     instinct of conservation-The period of primitive\n     emotions—How they may be determined; the geneti",
+      "activation": 0.2694,
+      "salience": 0.6,
+      "novelty": 0.8643,
+      "surprise": 0.35,
+      "epistemic_status": "external_source",
+      "source": "associative_recall",
+      "ignition_score": 0.4391
+    },
+    {
+      "id": "episode:eefbeb3f27a5cd",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 382000, \"excerpt\": \" fierce delirium of\\nmeningitis; but the movements of the iris under the influence of the\\ndifferent emotions is a very obscure subject.[1008]\\n\\nShakspeare sums up the chief characteristics of rage as follows:—\\n\\n“In peace there’s nothing so becomes a man,\\nA",
+      "activation": 0.2609,
       "salience": 0.88,
+      "novelty": 0.3,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4315
+    },
+    {
+      "id": "episode:d633d0fa16c269",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"ribot-psychology-emotions\", \"title\": \"The Psychology of the Emotions\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #67585\"}, \"offset\": 10000, \"excerpt\": \"                 1\\n\\n     In all affective manifestations there are two elements:\\n     the motor states or impulses, which are primary; the\\n     agreeable or painful states, which are\\n     secondary—Unconscious (organic or protoplasmic)\\n     sensibility; micro-organisms—Chemi",
+      "activation": 0.2721,
+      "salience": 0.78,
       "novelty": 0.42,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5315
+      "ignition_score": 0.4276
     },
     {
-      "id": "episode:26275843b24ca4",
+      "id": "episode:d3ca8a2b875bab",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 975}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3614,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "Quiet state selected; activation decayed.",
+      "activation": 0.2518,
+      "salience": 0.95,
+      "novelty": 0.0,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3997
+      "ignition_score": 0.4054
     },
     {
-      "id": "episode:463d5a2f89fcb8",
-      "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 978}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.361,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "associative_recall",
-      "ignition_score": 0.3995
-    },
-    {
-      "id": "episode:252e3ebe5a55e9",
-      "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3503,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "associative_recall",
-      "ignition_score": 0.3942
-    },
-    {
-      "id": "episode:10e2f43ada28e0",
-      "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 979}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3453,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "associative_recall",
-      "ignition_score": 0.3916
-    },
-    {
-      "id": "runtime_state:423b4a0b7d2066e3",
-      "kind": "runtime_state",
-      "label": "provider:gemini",
-      "activation": 0.4068,
-      "salience": 0.33227,
-      "novelty": 0.300385,
-      "surprise": 0.26176,
-      "epistemic_status": "observed_runtime_state",
+      "id": "concept:fe77cba241d7bce8",
+      "kind": "concept",
+      "label": "spitting ↔ contempt expression",
+      "activation": 0.378,
+      "salience": 0.348295,
+      "novelty": 0.24776,
+      "surprise": 0.21216999999999997,
+      "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.3569
+      "ignition_score": 0.3337
     }
   ],
   "provider_eligibility": {
@@ -111,7 +111,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 971,
+      "remaining_calls": 970,
       "eligible": true
     },
     "huggingface": {
@@ -264,33 +264,39 @@
   },
   "last_action": {
     "kind": "library",
-    "description": "Read further material on emotional expression to gather additional evidence about disgust and contempt gestures.",
+    "description": "Continue reading \"The Expression of the Emotions in Man and Animals\" to locate sections on disgust and contempt for additional facial‑gesture evidence.",
     "source": "substrate:groq",
-    "score": 0.41867
+    "score": 0.36257
   },
   "action_competition": [
     {
       "kind": "library",
       "source": "substrate:groq",
-      "score": 0.41867,
-      "description": "Read further material on emotional expression to gather additional evidence about disgust and contempt gestures."
-    },
-    {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.32679,
-      "description": "Replay and consolidate existing experience offline."
+      "score": 0.36257,
+      "description": "Continue reading \"The Expression of the Emotions in Man and Animals\" to locate sections on disgust and contempt for additional facial‑gesture evidence."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.31094,
+      "score": 0.36174,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.34659,
+      "description": "Replay and consolidate existing experience offline."
+    },
+    {
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.33304,
+      "description": "Continue reading \"The Psychology of the Emotions\" to extract further passages on disgust as a protective instinct and its associated motor expressions."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.20651,
+      "score": 0.24183,
       "description": "Continue processing the active workspace without external action."
     }
   ],
@@ -303,12 +309,13 @@
   "current_stances": [
     {
       "topic": "evolutionary_origins_of_expression",
-      "position": "Ubique reinforces its view that specific physical gestures—such as firm mouth closure, lip protrusion, nose‑up movement, and spitting—reflect evolutionary adaptations linked to physical preparation, exertion, and social signaling during contempt and disgust.",
-      "confidence": 0.96,
-      "identity_weight": 0.57,
-      "support_count": 3,
+      "position": "Ubique reinforces its view that specific physical gestures—such as firm mouth closure, lip protrusion, upward nose movement, and spitting—reflect evolutionary adaptations linked to physical preparation, exertion, and social signaling during contempt and disgust.",
+      "confidence": 0.97,
+      "identity_weight": 0.7,
+      "support_count": 4,
       "grounded_sources": [
-        "external_source:library:darwin-expression-emotions"
+        "external_source:library:darwin-expression-emotions",
+        "external_source:library:ribot-psychology-emotions"
       ],
       "revisable": true
     },
@@ -322,12 +329,24 @@
         "external_source:library:darwin-expression-emotions"
       ],
       "revisable": true
+    },
+    {
+      "topic": "disgust_contempt_expression_universal",
+      "position": "Ubique adopts a provisional view that spitting, lip protrusion, and upward nose movement constitute a near‑universal motor signature of contempt and disgust in humans, but acknowledges limited cross‑cultural and comparative evidence.",
+      "confidence": 0.78,
+      "identity_weight": 0.44,
+      "support_count": 2,
+      "grounded_sources": [
+        "external_source:library:darwin-expression-emotions",
+        "external_source:library:ribot-psychology-emotions"
+      ],
+      "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 635,
-    "semantic_nodes": 2486,
+    "episodes": 638,
+    "semantic_nodes": 2497,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -338,13 +357,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 72
+      "removed_edges": 88
     },
     "terminal_inhibition": {
       "startup": 339,
       "after_lifecycle": 339,
       "after_spread": 339,
-      "after_packets": 339
+      "after_packets": 343
     }
   }
 }
