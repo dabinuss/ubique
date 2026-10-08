@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T08:16:24.308318+00:00",
-  "generation": 626,
+  "timestamp": "2026-10-08T08:29:52.968015+00:00",
+  "generation": 627,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1929,
-    "surprise": 0.1604,
+    "novelty": 0.3004,
+    "surprise": 0.2618,
     "uncertainty": 0.28,
-    "salience": 0.2958,
-    "exploration": 0.2976,
-    "plasticity": 0.402,
-    "energy": 0.778,
-    "sleep_pressure": 0.1489
+    "salience": 0.3323,
+    "exploration": 0.3555,
+    "plasticity": 0.4704,
+    "energy": 0.713,
+    "sleep_pressure": 0.1979
   },
   "workspace": [
+    {
+      "id": "episode:36faa65089c213",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 972}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
+    },
     {
       "id": "episode:da7b29ec3d7e7f",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 412000, \"excerpt\": \"ally to take. Mr. Scott has\\nalso seen the same expression on the faces of high-caste natives who\\nhave approached close to some defiling object. Mr. Bridges says that\\nthe Fuegians “express contempt by shooting out the lips and hissing\\nthrough them, and by tu",
-      "activation": 0.4733,
+      "activation": 0.4299,
       "salience": 0.88,
       "novelty": 0.42,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5533
+      "ignition_score": 0.5315
     },
     {
-      "id": "episode:b39116fd137608",
+      "id": "episode:26275843b24ca4",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 402000, \"excerpt\": \"ure and refers to something revolting,\\nprimarily in relation to the sense of taste, as actually perceived or\\nvividly imagined; and secondarily to anything which causes a similar\\nfeeling, through the sense of smell, touch, and even of eyesight.\\nNevertheless,",
-      "activation": 0.356,
-      "salience": 0.85,
-      "novelty": 0.55,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.504
-    },
-    {
-      "id": "episode:b819d13c56e2e1",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 352000, \"excerpt\": \"rtheless, it is clear that the Australians, Malays,\\nHindoos, and Kafirs of South Africa frown, when they are puzzled.\\nDobritzhoffer remarks that the Guaranies of South America on like\\noccasions knit their brows.[904]\\n\\nFrom these considerations, we may conc",
-      "activation": 0.2997,
-      "salience": 0.85,
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 975}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3614,
+      "salience": 0.4,
       "novelty": 0.5,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4693
+      "ignition_score": 0.3997
     },
     {
-      "id": "episode:ef3f6b04a129f2",
+      "id": "episode:463d5a2f89fcb8",
       "kind": "recalled_episode",
-      "label": "ally to take. Mr. Scott has\nalso seen the same expression on the faces of high-caste natives who\nhave approached close to some defiling object. Mr. Bridges says that\nthe Fuegians “express contempt by shooting out the lips and hissing\nthrough them, and by turning up the nose.” The tendency either to snort\nthrough the nose, or to make a noise expressed by _ugh_ or _ach_, is\nnoticed by several of my correspondents.\n\nSpitting seems an almost universal sign of contempt or disgust; and\nspitting obviou",
-      "activation": 0.2951,
-      "salience": 0.6,
-      "novelty": 0.8941,
-      "surprise": 0.35,
-      "epistemic_status": "external_source",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 978}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.361,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4558
+      "ignition_score": 0.3995
     },
     {
-      "id": "episode:168942d31d7846",
+      "id": "episode:252e3ebe5a55e9",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 372000, \"excerpt\": \"sion or determination_.—The firm closure of the mouth tends to\\ngive an expression of determination or decision to the countenance. No\\ndetermined man probably ever had an habitually gaping mouth. Hence,\\nalso, a small and weak lower jaw, which seems to indicat",
-      "activation": 0.3037,
-      "salience": 0.88,
-      "novelty": 0.3,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3503,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4528
+      "ignition_score": 0.3942
     },
     {
-      "id": "episode:5ba56ab1c1aa23",
+      "id": "episode:10e2f43ada28e0",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 322000, \"excerpt\": \"ling at the corners of the mouth and at the outer corners of the\\neyes. This is a well-recognized fact. Constant tremulous agitation of\\nthe inferior palpebral and great zygomatic muscles is pathognomic of\\nthe earlier stages of general paralysis. The countenan",
-      "activation": 0.3114,
-      "salience": 0.88,
-      "novelty": 0.25,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 979}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3453,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4502
+      "ignition_score": 0.3916
     },
     {
-      "id": "concept:e14de43896fcd264",
-      "kind": "concept",
-      "label": "content_available",
-      "activation": 0.277,
-      "salience": 0.295785,
-      "novelty": 0.1929,
-      "surprise": 0.16043000000000002,
-      "epistemic_status": "memory_index",
+      "id": "runtime_state:423b4a0b7d2066e3",
+      "kind": "runtime_state",
+      "label": "provider:gemini",
+      "activation": 0.4068,
+      "salience": 0.33227,
+      "novelty": 0.300385,
+      "surprise": 0.26176,
+      "epistemic_status": "observed_runtime_state",
       "source": "semantic_network",
-      "ignition_score": 0.2568
+      "ignition_score": 0.3569
     }
   ],
   "provider_eligibility": {
@@ -109,10 +109,10 @@
     },
     "groq": {
       "configured": true,
-      "disabled": true,
+      "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 972,
-      "eligible": false
+      "remaining_calls": 971,
+      "eligible": true
     },
     "huggingface": {
       "configured": false,
@@ -263,32 +263,43 @@
     }
   },
   "last_action": {
-    "kind": "attend",
-    "description": "Continue processing the active workspace without external action.",
-    "source": "workspace",
-    "score": 0.256
+    "kind": "library",
+    "description": "Read further material on emotional expression to gather additional evidence about disgust and contempt gestures.",
+    "source": "substrate:groq",
+    "score": 0.41867
   },
   "action_competition": [
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.256,
-      "description": "Continue processing the active workspace without external action."
-    },
-    {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.24937,
-      "description": "Allow activation to decay without forcing cognition."
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.41867,
+      "description": "Read further material on emotional expression to gather additional evidence about disgust and contempt gestures."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.20385,
+      "score": 0.32679,
       "description": "Replay and consolidate existing experience offline."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.31094,
+      "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.20651,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
-  "substrate_contributors": [],
+  "substrate_contributors": [
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    }
+  ],
   "current_stances": [
     {
       "topic": "evolutionary_origins_of_expression",
@@ -313,10 +324,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 631,
-    "semantic_nodes": 2472,
+    "episodes": 635,
+    "semantic_nodes": 2486,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -327,7 +338,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_edges": 72
     },
     "terminal_inhibition": {
       "startup": 339,
