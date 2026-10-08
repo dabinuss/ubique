@@ -1,36 +1,36 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T09:00:22.834114+00:00",
-  "generation": 633,
+  "timestamp": "2026-10-08T09:01:14.390338+00:00",
+  "generation": 634,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1613,
-    "surprise": 0.1307,
+    "novelty": 0.1573,
+    "surprise": 0.127,
     "uncertainty": 0.31,
-    "salience": 0.1723,
-    "exploration": 0.2911,
-    "plasticity": 0.372,
+    "salience": 0.15,
+    "exploration": 0.289,
+    "plasticity": 0.3655,
     "energy": 1.0,
-    "sleep_pressure": 0.031
+    "sleep_pressure": 0.0375
   },
   "workspace": [
     {
       "id": "episode:da7b29ec3d7e7f",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 412000, \"excerpt\": \"ally to take. Mr. Scott has\\nalso seen the same expression on the faces of high-caste natives who\\nhave approached close to some defiling object. Mr. Bridges says that\\nthe Fuegians “express contempt by shooting out the lips and hissing\\nthrough them, and by tu",
-      "activation": 0.472,
+      "activation": 0.4719,
       "salience": 0.88,
       "novelty": 0.42,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5526
+      "ignition_score": 0.5525
     },
     {
       "id": "episode:95f0ee67465cf2",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 312000, \"excerpt\": \"t possibly be associated, as Dr. Browne remarks, with\\nany distinct ideas: they simply feel pleasure, and express it by\\nlaughter or smiles. With imbeciles rather higher in the scale, personal\\nvanity seems to be the commonest cause of laughter, and next to thi",
-      "activation": 0.3057,
+      "activation": 0.3056,
       "salience": 0.88,
       "novelty": 0.45,
       "surprise": 0.35,
@@ -90,13 +90,13 @@
       "id": "concept:e14de43896fcd264",
       "kind": "concept",
       "label": "content_available",
-      "activation": 0.086,
-      "salience": 0.172255,
-      "novelty": 0.16131,
-      "surprise": 0.13066,
+      "activation": 0.2261,
+      "salience": 0.19113000000000002,
+      "novelty": 0.157345,
+      "surprise": 0.126955,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.1227
+      "ignition_score": 0.1965
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
+    "kind": "rest",
+    "description": "Allow activation to decay without forcing cognition.",
     "source": "homeostasis",
-    "score": 0.22815
+    "score": 0.202
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.22815,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.19533,
+      "score": 0.202,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.19267,
+      "score": 0.19711,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.17351,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [],
@@ -326,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 646,
+    "episodes": 647,
     "semantic_nodes": 2515,
     "synapses": 1200
   },
