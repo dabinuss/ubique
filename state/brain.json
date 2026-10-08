@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T09:28:51.849376+00:00",
-  "generation": 637,
+  "timestamp": "2026-10-08T09:42:18.922035+00:00",
+  "generation": 638,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2745,
-    "surprise": 0.2374,
+    "novelty": 0.2309,
+    "surprise": 0.1963,
     "uncertainty": 0.31,
-    "salience": 0.1452,
-    "exploration": 0.3521,
-    "plasticity": 0.4333,
-    "energy": 1.0,
-    "sleep_pressure": 0.0663
+    "salience": 0.1743,
+    "exploration": 0.3286,
+    "plasticity": 0.406,
+    "energy": 0.935,
+    "sleep_pressure": 0.1153
   },
   "workspace": [
     {
       "id": "episode:9536a2934bd2f0",
-      "kind": "provider_state_change",
+      "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 967}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.95,
+      "activation": 0.3455,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
-      "source": "runtime",
-      "ignition_score": 0.694
+      "source": "associative_recall",
+      "ignition_score": 0.3917
     },
     {
       "id": "episode:36faa65089c213",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 972}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6553,
+      "activation": 0.3438,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.5466
+      "ignition_score": 0.3909
     },
     {
       "id": "episode:26275843b24ca4",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 975}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6548,
+      "activation": 0.3433,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.5464
+      "ignition_score": 0.3906
     },
     {
       "id": "episode:463d5a2f89fcb8",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 978}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6543,
+      "activation": 0.3428,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.5462
+      "ignition_score": 0.3904
     },
     {
       "id": "episode:252e3ebe5a55e9",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.644,
+      "activation": 0.3326,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.541
+      "ignition_score": 0.3853
     },
     {
       "id": "episode:10e2f43ada28e0",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 979}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6393,
+      "activation": 0.3279,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.5386
+      "ignition_score": 0.383
     },
     {
-      "id": "runtime_state:423b4a0b7d2066e3",
-      "kind": "runtime_state",
-      "label": "provider:gemini",
-      "activation": 0.2752,
-      "salience": 0.18602,
-      "novelty": 0.274515,
-      "surprise": 0.237385,
-      "epistemic_status": "observed_runtime_state",
+      "id": "concept:86c8dbbbc8e9e95e",
+      "kind": "concept",
+      "label": "gemini provider is currently ineligible (no remaining calls)",
+      "activation": 0.2284,
+      "salience": 0.17432,
+      "novelty": 0.23092500000000002,
+      "surprise": 0.19630999999999998,
+      "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.2483
+      "ignition_score": 0.2114
     }
   ],
   "provider_eligibility": {
@@ -111,7 +111,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 966,
+      "remaining_calls": 965,
       "eligible": true
     },
     "huggingface": {
@@ -263,34 +263,40 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow consolidation of recent actions and integration of updated provider state.",
+    "kind": "library",
+    "description": "Read additional sections of Darwin's \"The Expression of the Emotions in Man and Animals\" to gather evidence on disgust expression universality.",
     "source": "substrate:groq",
-    "score": 0.42683
+    "score": 0.47474
   },
   "action_competition": [
     {
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.47474,
+      "description": "Read additional sections of Darwin's \"The Expression of the Emotions in Man and Animals\" to gather evidence on disgust expression universality."
+    },
+    {
       "kind": "rest",
       "source": "substrate:groq",
-      "score": 0.42683,
-      "description": "Allow consolidation of recent actions and integration of updated provider state."
+      "score": 0.34655,
+      "description": "Rest to consolidate recent processing."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.24187,
+      "score": 0.23279,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.22888,
+      "score": 0.20577,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.15677,
+      "score": 0.16763,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
@@ -337,10 +343,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 652,
-    "semantic_nodes": 2522,
+    "episodes": 655,
+    "semantic_nodes": 2529,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -351,13 +357,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 72
+      "removed_edges": 50
     },
     "terminal_inhibition": {
-      "startup": 340,
-      "after_lifecycle": 340,
-      "after_spread": 340,
-      "after_packets": 344
+      "startup": 341,
+      "after_lifecycle": 341,
+      "after_spread": 341,
+      "after_packets": 341
     }
   }
 }
