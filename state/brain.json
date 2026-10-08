@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T16:32:55.025627+00:00",
-  "generation": 704,
+  "timestamp": "2026-10-08T16:33:47.169503+00:00",
+  "generation": 705,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2044,
-    "surprise": 0.1713,
+    "novelty": 0.1854,
+    "surprise": 0.1533,
     "uncertainty": 0.28,
-    "salience": 0.1468,
-    "exploration": 0.3038,
-    "plasticity": 0.3864,
-    "energy": 0.855,
-    "sleep_pressure": 0.111
+    "salience": 0.0795,
+    "exploration": 0.2935,
+    "plasticity": 0.3685,
+    "energy": 1.0,
+    "sleep_pressure": 0.0813
   },
   "workspace": [
     {
-      "id": "episode:4c3a81c4f4a07c",
+      "id": "episode:c718ff092c1c26",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-9\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need quantitative data on peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T01:24:22.962943+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read",
-      "activation": 0.4961,
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 452000, \"excerpt\": \"earance, as I find\\nrecorded in my notes, in very young children when they were only\\nmoderately surprised.\\n\\nThere is still another and highly effective cause, leading to the mouth\\nbeing opened, when we are astonished, and more especially when we are\\nsudden",
+      "activation": 0.24,
+      "salience": 0.9,
+      "novelty": 0.6,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.465
+    },
+    {
+      "id": "episode:da7b29ec3d7e7f",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 412000, \"excerpt\": \"ally to take. Mr. Scott has\\nalso seen the same expression on the faces of high-caste natives who\\nhave approached close to some defiling object. Mr. Bridges says that\\nthe Fuegians “express contempt by shooting out the lips and hissing\\nthrough them, and by tu",
+      "activation": 0.2314,
       "salience": 0.88,
-      "novelty": 0.8,
+      "novelty": 0.42,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.614
+      "ignition_score": 0.4323
     },
     {
-      "id": "episode:ec233dc0d12779",
+      "id": "episode:ea6bc52eb54a6d",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"concurrent-facial-emg-and-lacrimal-secretion-dynamics-in-human-e\", \"title\": \"Concurrent facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Needed quantitative data on EMG onset, parasympathetic outflow timing, and tear volume/composition to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T06:45:39.708495+00:00\", \"content_path\": \"\", \"read_count\"",
-      "activation": 0.4834,
-      "salience": 0.78,
-      "novelty": 0.7,
+      "label": "Quiet state selected; activation decayed.",
+      "activation": 0.2429,
+      "salience": 0.95,
+      "novelty": 0.1,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5697
+      "ignition_score": 0.4139
     },
     {
-      "id": "episode:cf5f38e5023c6e",
+      "id": "episode:401e7d3b32eeeb",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"emotional-crying-physiology-neurobiology-and-function\", \"title\": \"Emotional crying: physiology, neurobiology, and function\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need quantitative data on peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T06:44:38.751617+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_rea",
-      "activation": 0.4376,
-      "salience": 0.72,
-      "novelty": 0.77,
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 462000, \"excerpt\": \" the eyes and mouth are\\nwidely opened, and the eyebrows raised. The frightened man at first\\nstands like a statue motionless and breathless, or crouches down as if\\ninstinctively to escape observation.\\n\\nThe heart beats quickly and violently, so that it palpi",
+      "activation": 0.2295,
+      "salience": 0.8,
+      "novelty": 0.4,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5409
+      "ignition_score": 0.4088
     },
     {
-      "id": "episode:0aa186dc65d3e9",
+      "id": "episode:d3ca8a2b875bab",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"primate-facial-expressions-and-the-evolution-of-emotion\", \"title\": \"Primate Facial Expressions and the Evolution of Emotion\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To evaluate whether lip protrusion, nose‑up, and spitting appear in non‑human primates during contempt‑like contexts, extending the universality hypothesis.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T09:43:15.076976+00:00\", \"content_path\": \"\", \"read_count\": 0",
-      "activation": 0.3305,
-      "salience": 0.78,
-      "novelty": 0.73,
+      "label": "Quiet state selected; activation decayed.",
+      "activation": 0.2396,
+      "salience": 0.95,
+      "novelty": 0.0,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4971
+      "ignition_score": 0.3993
     },
     {
-      "id": "episode:d362742d8552ea",
+      "id": "episode:9e06f094bd53a5",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"aerodynamics-of-animal-locomotion\", \"title\": \"Aerodynamics of Animal Locomotion\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain quantitative data on drag effects of tail positioning in galloping mammals.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-05T09:12:43.536597+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false, \"fully_read_at\": null, \"notes\": []}}",
-      "activation": 0.3272,
-      "salience": 0.78,
-      "novelty": 0.64,
+      "label": "Quiet state selected; activation decayed.",
+      "activation": 0.2431,
+      "salience": 0.9,
+      "novelty": 0.05,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4838
-    },
-    {
-      "id": "episode:4eca80120e81b2",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"neurophysiology-of-lacrimal-secretion-in-emotional-crying\", \"title\": \"Neurophysiology of Lacrimal Secretion in Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need quantitative data on autonomic and mechanical pathways to test hypotheses about timing of muscle activation and tear flow.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T06:13:44.864656+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"full",
-      "activation": 0.3506,
-      "salience": 0.7,
-      "novelty": 0.55,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4638
+      "ignition_score": 0.3951
     },
     {
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.0401,
-      "salience": 0.14683000000000002,
-      "novelty": 0.204405,
-      "surprise": 0.17128500000000002,
+      "activation": 0.0192,
+      "salience": 0.10214000000000002,
+      "novelty": 0.18536,
+      "surprise": 0.153345,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.1039
+      "ignition_score": 0.0776
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "attend",
-    "description": "Continue processing the active workspace without external action.",
-    "source": "workspace",
-    "score": 0.19106
+    "kind": "rest",
+    "description": "Allow activation to decay without forcing cognition.",
+    "source": "homeostasis",
+    "score": 0.25019
   },
   "action_competition": [
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.19106,
-      "description": "Continue processing the active workspace without external action."
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.25019,
+      "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.18116,
+      "score": 0.24309,
       "description": "Replay and consolidate existing experience offline."
     },
     {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.16611,
-      "description": "Allow activation to decay without forcing cognition."
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.08993,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
   "substrate_contributors": [],
@@ -326,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 743,
+    "episodes": 744,
     "semantic_nodes": 2606,
     "synapses": 1200
   },
