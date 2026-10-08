@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T14:05:12.126698+00:00",
-  "generation": 680,
+  "timestamp": "2026-10-08T14:18:41.287188+00:00",
+  "generation": 681,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2971,
-    "surprise": 0.2587,
+    "novelty": 0.2456,
+    "surprise": 0.2102,
     "uncertainty": 0.28,
-    "salience": 0.1701,
-    "exploration": 0.3537,
-    "plasticity": 0.4512,
-    "energy": 1.0,
-    "sleep_pressure": 0.0434
+    "salience": 0.1857,
+    "exploration": 0.326,
+    "plasticity": 0.4164,
+    "energy": 0.935,
+    "sleep_pressure": 0.0924
   },
   "workspace": [
     {
       "id": "episode:0bf70d37606a1e",
-      "kind": "provider_state_change",
+      "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 953}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.95,
+      "activation": 0.3212,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
-      "source": "runtime",
-      "ignition_score": 0.694
-    },
-    {
-      "id": "episode:c718ff092c1c26",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 452000, \"excerpt\": \"earance, as I find\\nrecorded in my notes, in very young children when they were only\\nmoderately surprised.\\n\\nThere is still another and highly effective cause, leading to the mouth\\nbeing opened, when we are astonished, and more especially when we are\\nsudden",
-      "activation": 0.4298,
-      "salience": 0.9,
-      "novelty": 0.6,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5599
+      "ignition_score": 0.3796
     },
     {
       "id": "episode:c7f4db03b03377",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 954}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3611,
+      "activation": 0.3203,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.3995
+      "ignition_score": 0.3791
     },
     {
       "id": "episode:88301b5843c19a",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 955}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3598,
+      "activation": 0.3191,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.3989
+      "ignition_score": 0.3785
     },
     {
       "id": "episode:d3365fa438af0a",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 957}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3585,
+      "activation": 0.3178,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.3982
+      "ignition_score": 0.3779
     },
     {
       "id": "episode:3dbfed9297cd9c",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 959}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3573,
+      "activation": 0.3166,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.3977
+      "ignition_score": 0.3773
     },
     {
-      "id": "runtime_state:423b4a0b7d2066e3",
-      "kind": "runtime_state",
-      "label": "provider:gemini",
-      "activation": 0.4068,
-      "salience": 0.21702499999999997,
-      "novelty": 0.29707,
-      "surprise": 0.258705,
-      "epistemic_status": "observed_runtime_state",
+      "id": "episode:695fd03b76f4cf",
+      "kind": "recalled_episode",
+      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"mouth opening ↔ surprise\",\n      \"kind\": \"concept\",\n      \"strength\": 0.78\n    },\n    {\n      \"label\": \"mouth opening ↔ physical preparation for exertion\",\n      \"kind\": \"concept\",\n      \"strength\": 0.85\n    }\n  ],\n  \"hypotheses\": [\n    \"Mouth opening during surprise primarily serves a respiratory preparation function rather than a communicative signal.\",\n    \"The motor pattern of mouth opening in surprise is distinct from that observed in disgust or c",
+      "activation": 0.3683,
+      "salience": 0.42,
+      "novelty": 0.2971,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
+      "source": "associative_recall",
+      "ignition_score": 0.3638
+    },
+    {
+      "id": "concept:2d784c09f2669095",
+      "kind": "concept",
+      "label": "mouth opening ↔ physical preparation for exertion",
+      "activation": 0.2147,
+      "salience": 0.18571,
+      "novelty": 0.24561499999999997,
+      "surprise": 0.21015499999999998,
+      "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.3273
+      "ignition_score": 0.2109
     }
   ],
   "provider_eligibility": {
@@ -111,7 +111,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 952,
+      "remaining_calls": 951,
       "eligible": true
     },
     "huggingface": {
@@ -263,34 +263,34 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow consolidation of recent observations and stance reinforcement.",
+    "kind": "library",
+    "description": "Read additional sections of Darwin's \"The Expression of the Emotions in Man and Animals\" to gather comparative evidence on facial gestures across emotions, including surprise.",
     "source": "substrate:groq",
-    "score": 0.39861
+    "score": 0.50465
   },
   "action_competition": [
     {
-      "kind": "rest",
+      "kind": "library",
       "source": "substrate:groq",
-      "score": 0.39861,
-      "description": "Allow consolidation of recent observations and stance reinforcement."
+      "score": 0.50465,
+      "description": "Read additional sections of Darwin's \"The Expression of the Emotions in Man and Animals\" to gather comparative evidence on facial gestures across emotions, including surprise."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.23055,
+      "score": 0.22531,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.19318,
+      "score": 0.20542,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.16945,
+      "score": 0.1568,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
@@ -337,10 +337,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 712,
-    "semantic_nodes": 2589,
+    "episodes": 715,
+    "semantic_nodes": 2595,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -351,7 +351,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 72
+      "removed_edges": 60
     },
     "terminal_inhibition": {
       "startup": 342,
