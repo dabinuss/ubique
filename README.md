@@ -42,7 +42,7 @@ It is:
        v
     outcome -> learning -> persistence
 
-A scheduled heartbeat preserves continuity. A cognitive pulse only continues immediately when residual activation is strong enough. Quietness is a valid state.
+A scheduled heartbeat preserves continuity. A cognitive pulse continues immediately when residual activation is strong enough. Quietness is a valid state; a quiet pulse schedules a slower follow-up heartbeat through GitHub Actions, rather than relying on the best-effort cron schedule alone.
 
 ## Episodic memory
 
@@ -104,7 +104,7 @@ The runtime does not inject a fixed answer to the question “What am I?”. The
 
 memory/library remains an external information environment.
 
-The active cognitive prompt sees catalog metadata only. Full content is loaded only when a selected library action deliberately reads an item. Reading creates an episode; a book does not automatically become truth merely because it exists in the library.
+The active cognitive prompt sees a compact inventory, including outstanding reading wishes, but no book contents. Full content is loaded only when a selected library action deliberately reads an available item. Wishes for unavailable texts are kept once per title; unsuccessful read attempts do not advance the reading counter or cursor. Reading creates an episode; a book does not automatically become truth merely because it exists in the library.
 
 FZG remains an optional library item rather than a governing doctrine.
 
@@ -118,7 +118,7 @@ The new src/ubique/brain package is part of the evolvable cognitive surface.
 
 ## Heartbeat and pulse
 
-GitHub Actions still wakes Ubique every 15 minutes.
+GitHub Actions schedules Ubique every 15 minutes as a backup. A successful quiet pulse also dispatches its next heartbeat after approximately 13 minutes, while active pulses may follow sooner. The independent watchdog remains a recovery path for interruptions.
 
 The heartbeat advances runtime generation, performs deterministic recovery, observes provider/runtime state, processes labelled GitHub issues, updates activation and modulators, and persists memory and state.
 
