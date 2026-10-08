@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T07:30:17.101502+00:00",
-  "generation": 616,
+  "timestamp": "2026-10-08T07:31:05.571230+00:00",
+  "generation": 617,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1503,
-    "surprise": 0.1202,
+    "novelty": 0.1502,
+    "surprise": 0.1201,
     "uncertainty": 0.28,
-    "salience": 0.1265,
-    "exploration": 0.2747,
-    "plasticity": 0.3613,
+    "salience": 0.0993,
+    "exploration": 0.2746,
+    "plasticity": 0.3516,
     "energy": 1.0,
-    "sleep_pressure": 0.0269
+    "sleep_pressure": 0.0352
   },
   "workspace": [
     {
@@ -42,13 +42,13 @@
       "id": "episode:07e232a9abafb9",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-5\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\"}, \"offset\": 0, \"excerpt\": \"\", \"content_available\": false, \"next_offset\": null, \"total_chars\": 0, \"read_cursor\": 0, \"fully_read\": false, \"already_complete\": false, \"notes\": []}",
-      "activation": 0.3025,
+      "activation": 0.3024,
       "salience": 0.85,
       "novelty": 0.75,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5033
+      "ignition_score": 0.5032
     },
     {
       "id": "episode:eefbeb3f27a5cd",
@@ -78,7 +78,7 @@
       "id": "episode:9718bcb0faa246",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 362000, \"excerpt\": \"to follow from the mind being\\nwholly absorbed.[906] The active condition of the muscles of the eyes\\nis that of convergence; and Professor Donders remarks, as bearing on\\ntheir divergence during a period of complete abstraction, that when one\\neye becomes blin",
-      "activation": 0.3005,
+      "activation": 0.3004,
       "salience": 0.85,
       "novelty": 0.3,
       "surprise": 0.35,
@@ -90,13 +90,13 @@
       "id": "concept:e14de43896fcd264",
       "kind": "concept",
       "label": "content_available",
-      "activation": 0.0598,
-      "salience": 0.12649,
-      "novelty": 0.150325,
-      "surprise": 0.120195,
+      "activation": 0.1265,
+      "salience": 0.1265,
+      "novelty": 0.150195,
+      "surprise": 0.12013,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.0955
+      "ignition_score": 0.1288
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
+    "kind": "rest",
+    "description": "Allow activation to decay without forcing cognition.",
     "source": "homeostasis",
-    "score": 0.2162
+    "score": 0.18596
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.2162,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.17886,
+      "score": 0.18596,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.17473,
+      "score": 0.1751,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.128,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [],
@@ -313,9 +313,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 611,
+    "episodes": 612,
     "semantic_nodes": 2409,
     "synapses": 1200
   },
