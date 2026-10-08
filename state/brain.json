@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T22:48:52.961009+00:00",
-  "generation": 772,
+  "timestamp": "2026-10-08T23:02:18.712020+00:00",
+  "generation": 773,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1649,
-    "surprise": 0.1341,
+    "novelty": 0.2822,
+    "surprise": 0.2447,
     "uncertainty": 0.28,
-    "salience": 0.8149,
-    "exploration": 0.2826,
-    "plasticity": 0.4508,
-    "energy": 0.816,
-    "sleep_pressure": 0.0559
+    "salience": 0.5242,
+    "exploration": 0.3457,
+    "plasticity": 0.5104,
+    "energy": 1.0,
+    "sleep_pressure": 0.0513
   },
   "workspace": [
     {
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.8572,
-      "salience": 0.814885,
-      "novelty": 0.16494999999999999,
-      "surprise": 0.13410499999999997,
+      "activation": 0.94,
+      "salience": 0.669685,
+      "novelty": 0.282185,
+      "surprise": 0.24466500000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6699
+      "ignition_score": 0.7035
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
-      "activation": 0.8572,
-      "salience": 0.814885,
-      "novelty": 0.16494999999999999,
-      "surprise": 0.13410499999999997,
+      "activation": 0.94,
+      "salience": 0.669685,
+      "novelty": 0.282185,
+      "surprise": 0.24466500000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6699
+      "ignition_score": 0.7035
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
-      "activation": 0.8572,
-      "salience": 0.814885,
-      "novelty": 0.16494999999999999,
-      "surprise": 0.13410499999999997,
+      "activation": 0.94,
+      "salience": 0.669685,
+      "novelty": 0.282185,
+      "surprise": 0.24466500000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6699
+      "ignition_score": 0.7035
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
-      "activation": 0.8572,
-      "salience": 0.814885,
-      "novelty": 0.16494999999999999,
-      "surprise": 0.13410499999999997,
+      "activation": 0.94,
+      "salience": 0.669685,
+      "novelty": 0.282185,
+      "surprise": 0.24466500000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6699
+      "ignition_score": 0.7035
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
-      "activation": 0.8572,
-      "salience": 0.814885,
-      "novelty": 0.16494999999999999,
-      "surprise": 0.13410499999999997,
+      "activation": 0.94,
+      "salience": 0.669685,
+      "novelty": 0.282185,
+      "surprise": 0.24466500000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6699
+      "ignition_score": 0.7035
     },
     {
-      "id": "concept:5cca6a702d78b833",
-      "kind": "concept",
-      "label": "already_requested",
-      "activation": 0.844,
-      "salience": 0.814885,
-      "novelty": 0.16494999999999999,
-      "surprise": 0.13410499999999997,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.6633
+      "id": "episode:d1ab58c0ee96f9",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 927}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
     },
     {
       "id": "episode:52a63fc05b00e5",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"simultaneous-facial-emg-and-lacrimal-secretion-dynamics-in-human\", \"title\": \"Simultaneous facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain quantitative timing data for EMG onset, parasympathetic outflow, and tear volume/composition needed to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T18:15:45.739979+00:00\", \"content_path\": \"\",",
-      "activation": 0.4104,
+      "activation": 0.4083,
       "salience": 0.85,
       "novelty": 0.7,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5507
+      "ignition_score": 0.5496
     }
   ],
   "provider_eligibility": {
@@ -109,10 +109,10 @@
     },
     "groq": {
       "configured": true,
-      "disabled": true,
+      "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 927,
-      "eligible": false
+      "remaining_calls": 926,
+      "eligible": true
     },
     "huggingface": {
       "configured": false,
@@ -263,32 +263,37 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
+    "kind": "rest",
+    "description": "Allow activation to decay without forcing cognition.",
     "source": "homeostasis",
-    "score": 0.34212
+    "score": 0.28316
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.34212,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.33673,
+      "score": 0.28316,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.20284,
+      "score": 0.27406,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.21748,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
-  "substrate_contributors": [],
+  "substrate_contributors": [
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    }
+  ],
   "current_stances": [
     {
       "topic": "evolutionary_origins_of_expression",
@@ -328,8 +333,8 @@
   ],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 829,
-    "semantic_nodes": 2634,
+    "episodes": 832,
+    "semantic_nodes": 2646,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -339,8 +344,8 @@
     },
     "stale_stance_nodes_removed": 0,
     "final": {
-      "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_nodes": 1,
+      "removed_edges": 108
     },
     "terminal_inhibition": {
       "startup": 297,
