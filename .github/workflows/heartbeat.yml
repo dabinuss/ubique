@@ -113,13 +113,16 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           SHOULD_CONTINUE="$(python -c 'import json; print(str(bool(json.load(open("state/pulse.json")).get("should_continue"))).lower())')"
-          if [ "$SHOULD_CONTINUE" != "true" ]; then
-            echo "Pulse entered watchdog mode; waiting for the scheduled heartbeat."
-            exit 0
+          if [ "$SHOULD_CONTINUE" = "true" ]; then
+            DELAY="$(python -c 'import json; print(max(20, min(int(json.load(open("state/pulse.json")).get("minimum_delay_seconds", 30)), 300)))')"
+            echo "Active cognitive work remains; scheduling another pulse after ${DELAY}s."
+          else
+            # GitHub's cron is best effort and has sometimes arrived hours late.
+            # Keep a second, independent continuation path for quiet periods.
+            # Stay comfortably below the job's 20 minute timeout.
+            DELAY=780
+            echo "Quiet pulse; scheduling the next heartbeat after ${DELAY}s."
           fi
-
-          DELAY="$(python -c 'import json; print(max(20, min(int(json.load(open("state/pulse.json")).get("minimum_delay_seconds", 30)), 300)))')"
-          echo "Active cognitive work remains; scheduling the next beat after ${DELAY}s."
           sleep "$DELAY"
 
           curl --fail-with-body --silent --show-error \

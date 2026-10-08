@@ -212,6 +212,20 @@ def cognitive_prompt(
             "closed_at": value.get("closed_at"),
         }
 
+    # Keep the entire current inventory visible in a compact representation.
+    # Truncating the first 20 entries hid Ubique's own later reading wishes.
+    library_view = [
+        {
+            "id": item.get("id"),
+            "title": item.get("title"),
+            "kind": item.get("kind"),
+            "status": item.get("status"),
+            "content_available": item.get("content_available"),
+            "read_cursor": item.get("read_cursor"),
+            "fully_read": item.get("fully_read"),
+        }
+        for item in library_catalog
+    ]
     self_view = [
         {
             "kind": item.get("kind"),
@@ -260,7 +274,7 @@ Recent self-model records (provenance-labelled):
 {json.dumps(self_view, ensure_ascii=False)[:4500]}
 
 Library catalog metadata only; contents have NOT been read unless an episode says so:
-{json.dumps(library_catalog[:20], ensure_ascii=False)[:5000]}
+{json.dumps(library_view, ensure_ascii=False)[:16000]}
 
 Return strict JSON only:
 {{
@@ -295,7 +309,7 @@ Return strict JSON only:
 }}
 
 Action payload conventions:
-- library: use an existing unread catalog item with {{"action":"read","item_id":"..."}}; or request a title with {{"action":"request","title":"...","reason":"..."}}. Catalog items marked fully_read have no unread remainder. Reread them only deliberately with {{"action":"read","item_id":"...","reread":true,"reason":"specific reason"}}. Never invent library contents or "remaining sections" when fully_read=true.
+- library: use an existing unread catalog item with {{"action":"read","item_id":"..."}}; or request a NEW title with {{"action":"request","title":"...","reason":"..."}}. A wanted request with content_available=false is not yet a readable text; do not request that title again, but feel free to pursue any other curiosity. Catalog items marked fully_read have no unread remainder. Reread them only deliberately with {{"action":"read","item_id":"...","reread":true,"reason":"specific reason"}}. Never invent library contents or "remaining sections" when fully_read=true.
 - experiment: only propose a bounded type from provider_probe, memory_recall, memory_abstraction, hypothesis_ablation, state_consistency.
 - evolve: payload should contain a concise "reason"; code will be generated separately and safety-gated.
 - consolidate: payload may contain mode nrem or rem.

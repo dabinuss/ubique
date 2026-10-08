@@ -50,6 +50,11 @@ def _slug(text: str) -> str:
     return (value or "item")[:64]
 
 
+def _normalized_title(title: str) -> str:
+    """Compare reading wishes by meaningfully normalized title, not slug suffix."""
+    return re.sub(r"[\W_]+", " ", str(title).casefold(), flags=re.UNICODE).strip()
+
+
 def _unique_id(index: dict[str, Any], title: str) -> str:
     existing = {str(item.get("id", "")) for item in index.get("items", []) if isinstance(item, dict)}
     base = _slug(title)
@@ -252,6 +257,29 @@ def read_library_item(
     stored_cursor = max(0, int(item.get("read_cursor", 0) or 0))
     fully_read = bool(item.get("fully_read", False))
 
+    # A wish without an actual text is not a reading experience. Preserve
+    # the existing progress and counter instead of recording a phantom read.
+    if not text:
+        return {
+            "action": "read",
+            "item": {
+                "id": item.get("id"),
+                "title": item.get("title"),
+                "kind": item.get("kind", "text"),
+                "status": item.get("status", "available"),
+                "source": item.get("source", ""),
+            },
+            "offset": stored_cursor if offset is None else max(0, int(offset)),
+            "excerpt": "",
+            "content_available": False,
+            "next_offset": None,
+            "total_chars": 0,
+            "read_cursor": stored_cursor,
+            "fully_read": fully_read,
+            "already_complete": False,
+            "notes": list(item.get("notes", []))[-8:],
+        }
+
     if offset is None:
         if reread:
             offset = 0
@@ -398,6 +426,19 @@ def add_library_item(
 
 
 def request_library_item(title: str, source: str = "", reason: str = "", actor: str = "ubique") -> dict[str, Any]:
+    # Repeated interest must not create a new book every cycle. This is only
+    # idempotency of an already-open wish, not a restriction on what may be read.
+    normalized = _normalized_title(title)
+    if normalized:
+        for item in _load_index().get("items", []):
+            if (
+                isinstance(item, dict)
+                and item.get("kind") == "reading_request"
+                and item.get("status") == "wanted"
+                and _normalized_title(str(item.get("title", ""))) == normalized
+            ):
+                return {"action": "request", "item": item, "already_requested": True}
+
     result = add_library_item(
         title=title,
         text="",
@@ -408,6 +449,7 @@ def request_library_item(title: str, source: str = "", reason: str = "", actor: 
         status="wanted",
     )
     result["action"] = "request"
+    result["already_requested"] = False
     return result
 
 
