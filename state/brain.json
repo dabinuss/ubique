@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T21:02:52.841264+00:00",
-  "generation": 752,
+  "timestamp": "2026-10-08T21:16:22.366770+00:00",
+  "generation": 753,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1647,
-    "surprise": 0.1338,
+    "novelty": 0.2821,
+    "surprise": 0.2445,
     "uncertainty": 0.28,
-    "salience": 0.5533,
-    "exploration": 0.2824,
-    "plasticity": 0.4471,
+    "salience": 0.4996,
+    "exploration": 0.3456,
+    "plasticity": 0.4678,
     "energy": 1.0,
-    "sleep_pressure": 0.0481
+    "sleep_pressure": 0.0266
   },
   "workspace": [
+    {
+      "id": "episode:fb02f643c76561",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 932}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
+    },
     {
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.7583,
-      "salience": 0.7064299999999999,
-      "novelty": 0.16469,
-      "surprise": 0.133845,
+      "activation": 0.8173,
+      "salience": 0.499645,
+      "novelty": 0.282055,
+      "surprise": 0.24447000000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.5932
+      "ignition_score": 0.5996
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
-      "activation": 0.7583,
-      "salience": 0.7064299999999999,
-      "novelty": 0.16469,
-      "surprise": 0.133845,
+      "activation": 0.8173,
+      "salience": 0.499645,
+      "novelty": 0.282055,
+      "surprise": 0.24447000000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.5932
+      "ignition_score": 0.5996
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
-      "activation": 0.7582,
-      "salience": 0.7064299999999999,
-      "novelty": 0.16469,
-      "surprise": 0.133845,
+      "activation": 0.8173,
+      "salience": 0.499645,
+      "novelty": 0.282055,
+      "surprise": 0.24447000000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.5932
+      "ignition_score": 0.5996
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
-      "activation": 0.752,
-      "salience": 0.7064299999999999,
-      "novelty": 0.16469,
-      "surprise": 0.133845,
+      "activation": 0.8173,
+      "salience": 0.499645,
+      "novelty": 0.282055,
+      "surprise": 0.24447000000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.5901
-    },
-    {
-      "id": "episode:52a63fc05b00e5",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"simultaneous-facial-emg-and-lacrimal-secretion-dynamics-in-human\", \"title\": \"Simultaneous facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain quantitative timing data for EMG onset, parasympathetic outflow, and tear volume/composition needed to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T18:15:45.739979+00:00\", \"content_path\": \"\",",
-      "activation": 0.4553,
-      "salience": 0.85,
-      "novelty": 0.7,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5732
+      "ignition_score": 0.5996
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
-      "activation": 0.7091,
-      "salience": 0.7064299999999999,
-      "novelty": 0.16469,
-      "surprise": 0.133845,
+      "activation": 0.8173,
+      "salience": 0.499645,
+      "novelty": 0.282055,
+      "surprise": 0.24447000000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.5686
+      "ignition_score": 0.5996
     },
     {
-      "id": "episode:193520061bea26",
+      "id": "episode:52a63fc05b00e5",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-7\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need empirical measurements of peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T01:22:33.881788+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully",
-      "activation": 0.4072,
-      "salience": 0.88,
-      "novelty": 0.78,
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"simultaneous-facial-emg-and-lacrimal-secretion-dynamics-in-human\", \"title\": \"Simultaneous facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain quantitative timing data for EMG onset, parasympathetic outflow, and tear volume/composition needed to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T18:15:45.739979+00:00\", \"content_path\": \"\",",
+      "activation": 0.4111,
+      "salience": 0.85,
+      "novelty": 0.7,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.567
+      "ignition_score": 0.5511
     }
   ],
   "provider_eligibility": {
@@ -109,10 +109,10 @@
     },
     "groq": {
       "configured": true,
-      "disabled": true,
+      "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 932,
-      "eligible": false
+      "remaining_calls": 931,
+      "eligible": true
     },
     "huggingface": {
       "configured": false,
@@ -263,32 +263,43 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
     "source": "homeostasis",
-    "score": 0.26897
+    "score": 0.26613
   },
   "action_competition": [
     {
-      "kind": "rest",
+      "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.26897,
-      "description": "Allow activation to decay without forcing cognition."
+      "score": 0.26613,
+      "description": "Replay and consolidate existing experience offline."
+    },
+    {
+      "kind": "rest",
+      "source": "substrate:groq",
+      "score": 0.2571,
+      "description": "Allow brief low‑energy consolidation of current activations before new information arrives."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.25437,
+      "score": 0.23332,
       "description": "Continue processing the active workspace without external action."
     },
     {
-      "kind": "consolidate",
+      "kind": "rest",
       "source": "homeostasis",
-      "score": 0.21061,
-      "description": "Replay and consolidate existing experience offline."
+      "score": 0.18382,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
-  "substrate_contributors": [],
+  "substrate_contributors": [
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    }
+  ],
   "current_stances": [
     {
       "topic": "evolutionary_origins_of_expression",
@@ -326,10 +337,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 804,
-    "semantic_nodes": 2618,
+    "episodes": 807,
+    "semantic_nodes": 2625,
     "synapses": 1200
   },
   "cortical_maintenance": {
