@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T06:46:36.737664+00:00",
-  "generation": 609,
+  "timestamp": "2026-10-08T07:00:06.488072+00:00",
+  "generation": 610,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1571,
-    "surprise": 0.1248,
-    "uncertainty": 0.28,
-    "salience": 0.25,
-    "exploration": 0.2709,
-    "plasticity": 0.3849,
-    "energy": 1.0,
-    "sleep_pressure": 0.1365
+    "novelty": 0.1546,
+    "surprise": 0.1231,
+    "uncertainty": 0.29,
+    "salience": 0.236,
+    "exploration": 0.2767,
+    "plasticity": 0.3703,
+    "energy": 0.935,
+    "sleep_pressure": 0.1855
   },
   "workspace": [
     {
       "id": "episode:4c3a81c4f4a07c",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-9\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need quantitative data on peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T01:24:22.962943+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read",
-      "activation": 0.2872,
+      "activation": 0.2886,
       "salience": 0.88,
       "novelty": 0.8,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5096
+      "ignition_score": 0.5103
     },
     {
       "id": "episode:ec233dc0d12779",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"concurrent-facial-emg-and-lacrimal-secretion-dynamics-in-human-e\", \"title\": \"Concurrent facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Needed quantitative data on EMG onset, parasympathetic outflow timing, and tear volume/composition to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T06:45:39.708495+00:00\", \"content_path\": \"\", \"read_count\"",
-      "activation": 0.2704,
+      "activation": 0.272,
       "salience": 0.78,
       "novelty": 0.7,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4632
+      "ignition_score": 0.464
     },
     {
       "id": "episode:cf5f38e5023c6e",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"emotional-crying-physiology-neurobiology-and-function\", \"title\": \"Emotional crying: physiology, neurobiology, and function\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need quantitative data on peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T06:44:38.751617+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_rea",
-      "activation": 0.2641,
+      "activation": 0.2658,
       "salience": 0.72,
       "novelty": 0.77,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4541
-    },
-    {
-      "id": "episode:6b64b87c1632f6",
-      "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"facial paralysis and muscle agitation\", \"how does autonomic (parasympathetic) signaling interact with mechanical compression during emotional crying?\"]}",
-      "activation": 0.2694,
-      "salience": 0.9,
-      "novelty": 0.3,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4407
+      "ignition_score": 0.455
     },
     {
       "id": "episode:294a79fe50e7f0",
       "kind": "recalled_episode",
       "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"parasympathetic and mechanical pathways in lacrimal secretion\", \"which specific peri‑ocular muscles (e.g., orbicularis oculi, corrugator) are most active during the onset of emotional tears, and what are their activation timings?\"]}",
-      "activation": 0.2818,
+      "activation": 0.2891,
       "salience": 0.79,
       "novelty": 0.3,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4194
+      "ignition_score": 0.423
+    },
+    {
+      "id": "episode:f7215bb9114f1a",
+      "kind": "recalled_episode",
+      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"parasympathetic signaling → lacrimal gland activation\",\n      \"kind\": \"concept\",\n      \"strength\": 0.85\n    },\n    {\n      \"label\": \"orbicularis oculi contraction → mechanical compression of lacrimal ducts\",\n      \"kind\": \"concept\",\n      \"strength\": 0.78\n    },\n    {\n      \"label\": \"peri‑ocular EMG onset ↔ tear flow onset\",\n      \"kind\": \"concept\",\n      \"strength\": 0.65\n    },\n    {\n      \"label\": \"emotional arousal → increased tear volume & altered ",
+      "activation": 0.3008,
+      "salience": 0.42,
+      "novelty": 0.1571,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
+      "source": "associative_recall",
+      "ignition_score": 0.3118
     },
     {
       "id": "episode:db4acaface6b5c",
       "kind": "recalled_episode",
       "label": "{\n  \"associations\": [\n    {\n      \"label\": \"parasympathetic signaling → lacrimal gland activation\",\n      \"kind\": \"concept\",\n      \"strength\": 0.85\n    },\n    {\n      \"label\": \"orbicularis oculi contraction → mechanical compression of lacrimal ducts\",\n      \"kind\": \"concept\",\n      \"strength\": 0.78\n    },\n    {\n      \"label\": \"peri‑ocular EMG onset ↔ tear flow onset\",\n      \"kind\": \"world_model\",\n      \"strength\": 0.65\n    },\n    {\n      \"label\": \"emotional arousal → increased tear volume & alte",
-      "activation": 0.2953,
+      "activation": 0.2935,
       "salience": 0.42,
       "novelty": 0.1609,
       "surprise": 0.3,
       "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.3096
+      "ignition_score": 0.3087
     },
     {
-      "id": "concept:9d3afe6ac301b4d1",
+      "id": "concept:d5cc83571b6a89f2",
       "kind": "concept",
-      "label": "parasympathetic outflow and mechanical muscle compression during crying",
-      "activation": 0.378,
-      "salience": 0.3247,
-      "novelty": 0.157085,
-      "surprise": 0.12481,
+      "label": "parasympathetic signaling and mechanical compression in lacrimal secretion",
+      "activation": 0.2101,
+      "salience": 0.236035,
+      "novelty": 0.154615,
+      "surprise": 0.12312,
       "epistemic_status": "model_proposal",
       "source": "semantic_network",
-      "ignition_score": 0.3056
+      "ignition_score": 0.1989
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 2,
+      "remaining_calls": 1,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 982,
+      "remaining_calls": 981,
       "eligible": true
     },
     "huggingface": {
@@ -263,35 +263,41 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Rest to maintain optimal energy state while maintaining current conceptual workspace.",
+    "kind": "library",
+    "description": "Read available sections of Darwin's 'The Expression of the Emotions in Man and Animals' to examine recorded observations of peri-ocular muscle action.",
     "source": "substrate:gemini",
-    "score": 0.51529
+    "score": 0.44645
   },
   "action_competition": [
     {
-      "kind": "rest",
+      "kind": "library",
       "source": "substrate:gemini",
-      "score": 0.51529,
-      "description": "Rest to maintain optimal energy state while maintaining current conceptual workspace."
+      "score": 0.44645,
+      "description": "Read available sections of Darwin's 'The Expression of the Emotions in Man and Animals' to examine recorded observations of peri-ocular muscle action."
+    },
+    {
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.43036,
+      "description": "Request a peer‑reviewed article that provides quantitative data on facial EMG, parasympathetic outflow, and tear dynamics during emotional crying."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.3385,
+      "score": 0.29454,
       "description": "Replay and consolidate existing experience offline."
-    },
-    {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.30833,
-      "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.25388,
+      "score": 0.23557,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.21863,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
   "substrate_contributors": [
@@ -328,10 +334,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 598,
-    "semantic_nodes": 2379,
+    "episodes": 602,
+    "semantic_nodes": 2388,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -342,7 +348,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 150
+      "removed_edges": 174
     },
     "terminal_inhibition": {
       "startup": 337,
