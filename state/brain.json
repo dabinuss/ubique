@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T18:45:23.126984+00:00",
-  "generation": 724,
+  "timestamp": "2026-10-08T18:46:19.121419+00:00",
+  "generation": 725,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1654,
-    "surprise": 0.1345,
+    "novelty": 0.16,
+    "surprise": 0.1294,
     "uncertainty": 0.28,
-    "salience": 0.2255,
-    "exploration": 0.2828,
-    "plasticity": 0.3803,
+    "salience": 0.1499,
+    "exploration": 0.2799,
+    "plasticity": 0.367,
     "energy": 1.0,
-    "sleep_pressure": 0.0271
+    "sleep_pressure": 0.0353
   },
   "workspace": [
     {
@@ -66,7 +66,7 @@
       "id": "episode:0aa186dc65d3e9",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"primate-facial-expressions-and-the-evolution-of-emotion\", \"title\": \"Primate Facial Expressions and the Evolution of Emotion\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To evaluate whether lip protrusion, nose‑up, and spitting appear in non‑human primates during contempt‑like contexts, extending the universality hypothesis.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T09:43:15.076976+00:00\", \"content_path\": \"\", \"read_count\": 0",
-      "activation": 0.3558,
+      "activation": 0.3557,
       "salience": 0.78,
       "novelty": 0.73,
       "surprise": 0.35,
@@ -90,13 +90,13 @@
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.0399,
-      "salience": 0.22547500000000004,
-      "novelty": 0.165405,
-      "surprise": 0.134495,
+      "activation": 0.1269,
+      "salience": 0.19099000000000002,
+      "novelty": 0.16000999999999999,
+      "surprise": 0.129425,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.114
+      "ignition_score": 0.1475
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
+    "kind": "rest",
+    "description": "Allow activation to decay without forcing cognition.",
     "source": "homeostasis",
-    "score": 0.22895
+    "score": 0.19113
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.22895,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.17972,
+      "score": 0.19113,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.17053,
+      "score": 0.16225,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.13622,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [],
@@ -326,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 770,
+    "episodes": 771,
     "semantic_nodes": 2612,
     "synapses": 1200
   },
