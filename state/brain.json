@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T23:33:21.611249+00:00",
-  "generation": 780,
+  "timestamp": "2026-10-08T23:34:16.414635+00:00",
+  "generation": 781,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1564,
-    "surprise": 0.1261,
+    "novelty": 0.1542,
+    "surprise": 0.124,
     "uncertainty": 0.28,
-    "salience": 0.8171,
-    "exploration": 0.278,
-    "plasticity": 0.4588,
-    "energy": 0.763,
-    "sleep_pressure": 0.142
+    "salience": 0.8332,
+    "exploration": 0.2767,
+    "plasticity": 0.4479,
+    "energy": 0.816,
+    "sleep_pressure": 0.0566
   },
   "workspace": [
     {
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.9348,
-      "salience": 0.8170850000000001,
-      "novelty": 0.156435,
-      "surprise": 0.12611,
+      "activation": 0.8631,
+      "salience": 0.8331999999999999,
+      "novelty": 0.15416000000000002,
+      "surprise": 0.12396499999999999,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7071
+      "ignition_score": 0.6748
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
-      "activation": 0.9348,
-      "salience": 0.8170850000000001,
-      "novelty": 0.156435,
-      "surprise": 0.12611,
+      "activation": 0.8631,
+      "salience": 0.8331999999999999,
+      "novelty": 0.15416000000000002,
+      "surprise": 0.12396499999999999,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7071
+      "ignition_score": 0.6748
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
-      "activation": 0.9348,
-      "salience": 0.8170850000000001,
-      "novelty": 0.156435,
-      "surprise": 0.12611,
+      "activation": 0.8631,
+      "salience": 0.8331999999999999,
+      "novelty": 0.15416000000000002,
+      "surprise": 0.12396499999999999,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7071
+      "ignition_score": 0.6748
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
-      "activation": 0.9241,
-      "salience": 0.8170850000000001,
-      "novelty": 0.156435,
-      "surprise": 0.12611,
+      "activation": 0.8631,
+      "salience": 0.8331999999999999,
+      "novelty": 0.15416000000000002,
+      "surprise": 0.12396499999999999,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7018
+      "ignition_score": 0.6748
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
-      "activation": 0.8828,
-      "salience": 0.8170850000000001,
-      "novelty": 0.156435,
-      "surprise": 0.12611,
+      "activation": 0.8631,
+      "salience": 0.8331999999999999,
+      "novelty": 0.15416000000000002,
+      "surprise": 0.12396499999999999,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6811
+      "ignition_score": 0.6748
+    },
+    {
+      "id": "concept:5cca6a702d78b833",
+      "kind": "concept",
+      "label": "already_requested",
+      "activation": 0.8522,
+      "salience": 0.8331999999999999,
+      "novelty": 0.15416000000000002,
+      "surprise": 0.12396499999999999,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6693
     },
     {
       "id": "episode:52a63fc05b00e5",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"simultaneous-facial-emg-and-lacrimal-secretion-dynamics-in-human\", \"title\": \"Simultaneous facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain quantitative timing data for EMG onset, parasympathetic outflow, and tear volume/composition needed to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T18:15:45.739979+00:00\", \"content_path\": \"\",",
-      "activation": 0.4442,
+      "activation": 0.4092,
       "salience": 0.85,
       "novelty": 0.7,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5676
-    },
-    {
-      "id": "episode:193520061bea26",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-7\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need empirical measurements of peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T01:22:33.881788+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully",
-      "activation": 0.3966,
-      "salience": 0.88,
-      "novelty": 0.78,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5617
+      "ignition_score": 0.5501
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "attend",
-    "description": "Continue processing the active workspace without external action.",
-    "source": "workspace",
-    "score": 0.28314
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
+    "source": "homeostasis",
+    "score": 0.34463
   },
   "action_competition": [
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.28314,
-      "description": "Continue processing the active workspace without external action."
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.34463,
+      "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.27344,
+      "score": 0.33844,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.22871,
-      "description": "Replay and consolidate existing experience offline."
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.20539,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
   "substrate_contributors": [],
@@ -326,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 3,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 839,
+    "episodes": 840,
     "semantic_nodes": 2646,
     "synapses": 1200
   },
