@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T07:14:28.528723+00:00",
-  "generation": 612,
+  "timestamp": "2026-10-08T07:15:18.581498+00:00",
+  "generation": 613,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.152,
-    "surprise": 0.1213,
+    "novelty": 0.1513,
+    "surprise": 0.1208,
     "uncertainty": 0.28,
-    "salience": 0.2066,
-    "exploration": 0.2754,
-    "plasticity": 0.3716,
-    "energy": 1.0,
-    "sleep_pressure": 0.0498
+    "salience": 0.2276,
+    "exploration": 0.2751,
+    "plasticity": 0.3673,
+    "energy": 0.855,
+    "sleep_pressure": 0.1268
   },
   "workspace": [
     {
-      "id": "episode:193520061bea26",
+      "id": "episode:5cc0a7e69905b7",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-7\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need empirical measurements of peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T01:22:33.881788+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully",
-      "activation": 0.2698,
-      "salience": 0.88,
-      "novelty": 0.78,
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 392000, \"excerpt\": \" Europeans; for though their chests\\nwere expanded and shoulders squared, their arms remained rigidly\\nsuspended, with the elbows turned inwards and the hands alternately\\nclenched and opened. Their shoulders were often raised high, and then\\nagain lowered. The",
+      "activation": 0.466,
+      "salience": 0.85,
+      "novelty": 0.4,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4983
+      "ignition_score": 0.5395
     },
     {
-      "id": "episode:ec233dc0d12779",
+      "id": "episode:a2a2c41fbc8ab1",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"concurrent-facial-emg-and-lacrimal-secretion-dynamics-in-human-e\", \"title\": \"Concurrent facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Needed quantitative data on EMG onset, parasympathetic outflow timing, and tear volume/composition to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T06:45:39.708495+00:00\", \"content_path\": \"\", \"read_count\"",
-      "activation": 0.2563,
-      "salience": 0.78,
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-5\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\"}, \"offset\": 0, \"excerpt\": \"\", \"content_available\": false, \"next_offset\": null, \"total_chars\": 0, \"read_cursor\": 0, \"fully_read\": false, \"already_complete\": false, \"notes\": []}",
+      "activation": 0.3173,
+      "salience": 0.9,
       "novelty": 0.7,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4561
+      "ignition_score": 0.5167
     },
     {
-      "id": "episode:6b64b87c1632f6",
+      "id": "episode:07e232a9abafb9",
       "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"facial paralysis and muscle agitation\", \"how does autonomic (parasympathetic) signaling interact with mechanical compression during emotional crying?\"]}",
-      "activation": 0.2638,
-      "salience": 0.9,
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-5\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\"}, \"offset\": 0, \"excerpt\": \"\", \"content_available\": false, \"next_offset\": null, \"total_chars\": 0, \"read_cursor\": 0, \"fully_read\": false, \"already_complete\": false, \"notes\": []}",
+      "activation": 0.3129,
+      "salience": 0.85,
+      "novelty": 0.75,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.5085
+    },
+    {
+      "id": "episode:2d10c520088936",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\"}, \"offset\": 0, \"excerpt\": \"\", \"content_available\": false, \"next_offset\": null, \"total_chars\": 0, \"read_cursor\": 0, \"fully_read\": false, \"already_complete\": false, \"notes\": []}",
+      "activation": 0.3103,
+      "salience": 0.85,
+      "novelty": 0.7,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.5007
+    },
+    {
+      "id": "episode:957d127c44d4e4",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-4\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\"}, \"offset\": 0, \"excerpt\": \"\", \"content_available\": false, \"next_offset\": null, \"total_chars\": 0, \"read_cursor\": 0, \"fully_read\": false, \"already_complete\": false, \"notes\": []}",
+      "activation": 0.3057,
+      "salience": 0.85,
+      "novelty": 0.7,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4984
+    },
+    {
+      "id": "episode:eefbeb3f27a5cd",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 382000, \"excerpt\": \" fierce delirium of\\nmeningitis; but the movements of the iris under the influence of the\\ndifferent emotions is a very obscure subject.[1008]\\n\\nShakspeare sums up the chief characteristics of rage as follows:—\\n\\n“In peace there’s nothing so becomes a man,\\nA",
+      "activation": 0.3061,
+      "salience": 0.88,
       "novelty": 0.3,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4379
+      "ignition_score": 0.454
     },
     {
-      "id": "episode:294a79fe50e7f0",
-      "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"parasympathetic and mechanical pathways in lacrimal secretion\", \"which specific peri‑ocular muscles (e.g., orbicularis oculi, corrugator) are most active during the onset of emotional tears, and what are their activation timings?\"]}",
-      "activation": 0.266,
-      "salience": 0.79,
-      "novelty": 0.3,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4115
-    },
-    {
-      "id": "episode:d3ca8a2b875bab",
-      "kind": "recalled_episode",
-      "label": "Quiet state selected; activation decayed.",
-      "activation": 0.2585,
-      "salience": 0.95,
-      "novelty": 0.0,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4088
-    },
-    {
-      "id": "episode:76e9e56315f92a",
-      "kind": "recalled_episode",
-      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"autonomic and mechanical pathways in emotional expression\",\n      \"kind\": \"concept\",\n      \"strength\": 0.88\n    },\n    {\n      \"label\": \"facial muscle engagement and physiological state linkage\",\n      \"kind\": \"world_model\",\n      \"strength\": 0.82\n    }\n  ],\n  \"hypotheses\": [\n    \"Physical gestures like mouth closure and posture changes during intense emotions serve both defensive preparation and expressive signaling roles.\",\n    \"Autonomic activation ",
-      "activation": 0.3064,
-      "salience": 0.42,
-      "novelty": 0.153,
-      "surprise": 0.3,
-      "epistemic_status": "model_proposal",
-      "source": "associative_recall",
-      "ignition_score": 0.3141
-    },
-    {
-      "id": "concept:42a23720b3ef9503",
+      "id": "concept:e14de43896fcd264",
       "kind": "concept",
-      "label": "autonomic and mechanical pathways in emotional expression",
-      "activation": 0.2193,
-      "salience": 0.20656,
-      "novelty": 0.15195,
-      "surprise": 0.12129999999999999,
-      "epistemic_status": "model_proposal",
+      "label": "content_available",
+      "activation": 0.2665,
+      "salience": 0.22756500000000002,
+      "novelty": 0.1513,
+      "surprise": 0.12084500000000001,
+      "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.1956
+      "ignition_score": 0.2243
     }
   ],
   "provider_eligibility": {
@@ -109,10 +109,10 @@
     },
     "groq": {
       "configured": true,
-      "disabled": false,
+      "disabled": true,
       "daily_limit": 1000,
-      "remaining_calls": 979,
-      "eligible": true
+      "remaining_calls": 978,
+      "eligible": false
     },
     "huggingface": {
       "configured": false,
@@ -263,37 +263,32 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
-    "source": "homeostasis",
-    "score": 0.31962
+    "kind": "attend",
+    "description": "Continue processing the active workspace without external action.",
+    "source": "workspace",
+    "score": 0.23382
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.31962,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.22656,
+      "score": 0.23382,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.21711,
+      "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.20415,
+      "score": 0.20002,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
-  "substrate_contributors": [
-    {
-      "provider": "groq",
-      "model": "openai/gpt-oss-120b"
-    }
-  ],
+  "substrate_contributors": [],
   "current_stances": [
     {
       "topic": "evolutionary_origins_of_expression",
@@ -318,9 +313,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 607,
+    "episodes": 608,
     "semantic_nodes": 2409,
     "synapses": 1200
   },
@@ -329,7 +324,7 @@
       "removed_nodes": 0,
       "removed_edges": 0
     },
-    "stale_stance_nodes_removed": 1,
+    "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
       "removed_edges": 0
