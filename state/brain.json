@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T23:47:42.815686+00:00",
-  "generation": 782,
+  "timestamp": "2026-10-08T23:48:30.388161+00:00",
+  "generation": 783,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2752,
-    "surprise": 0.2381,
+    "novelty": 0.2314,
+    "surprise": 0.1968,
     "uncertainty": 0.28,
-    "salience": 0.6816,
-    "exploration": 0.342,
-    "plasticity": 0.4865,
-    "energy": 0.869,
-    "sleep_pressure": 0.0293
+    "salience": 0.772,
+    "exploration": 0.3183,
+    "plasticity": 0.496,
+    "energy": 0.724,
+    "sleep_pressure": 0.1063
   },
   "workspace": [
     {
@@ -19,84 +19,84 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.6815800000000001,
-      "novelty": 0.27523,
-      "surprise": 0.2381,
+      "salience": 0.77204,
+      "novelty": 0.23138,
+      "surprise": 0.19676500000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7047
+      "ignition_score": 0.7167
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.6815800000000001,
-      "novelty": 0.27523,
-      "surprise": 0.2381,
+      "salience": 0.77204,
+      "novelty": 0.23138,
+      "surprise": 0.19676500000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7047
+      "ignition_score": 0.7167
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.6815800000000001,
-      "novelty": 0.27523,
-      "surprise": 0.2381,
+      "salience": 0.77204,
+      "novelty": 0.23138,
+      "surprise": 0.19676500000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7047
+      "ignition_score": 0.7167
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.6815800000000001,
-      "novelty": 0.27523,
-      "surprise": 0.2381,
+      "salience": 0.77204,
+      "novelty": 0.23138,
+      "surprise": 0.19676500000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7047
+      "ignition_score": 0.7167
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.6815800000000001,
-      "novelty": 0.27523,
-      "surprise": 0.2381,
+      "salience": 0.77204,
+      "novelty": 0.23138,
+      "surprise": 0.19676500000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7047
+      "ignition_score": 0.7167
     },
     {
-      "id": "episode:807dc1c4601689",
-      "kind": "provider_state_change",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 925}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.95,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "runtime",
-      "ignition_score": 0.694
+      "id": "concept:5cca6a702d78b833",
+      "kind": "concept",
+      "label": "already_requested",
+      "activation": 0.7269,
+      "salience": 0.77204,
+      "novelty": 0.23138,
+      "surprise": 0.19676500000000002,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6102
     },
     {
       "id": "episode:52a63fc05b00e5",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"simultaneous-facial-emg-and-lacrimal-secretion-dynamics-in-human\", \"title\": \"Simultaneous facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain quantitative timing data for EMG onset, parasympathetic outflow, and tear volume/composition needed to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T18:15:45.739979+00:00\", \"content_path\": \"\",",
-      "activation": 0.4071,
+      "activation": 0.4088,
       "salience": 0.85,
       "novelty": 0.7,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5491
+      "ignition_score": 0.5499
     }
   ],
   "provider_eligibility": {
@@ -109,10 +109,10 @@
     },
     "groq": {
       "configured": true,
-      "disabled": false,
+      "disabled": true,
       "daily_limit": 1000,
-      "remaining_calls": 923,
-      "eligible": true
+      "remaining_calls": 922,
+      "eligible": false
     },
     "huggingface": {
       "configured": false,
@@ -263,49 +263,32 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Integrate newly acquired evidence once the requested article becomes available.",
-    "source": "substrate:groq",
-    "score": 0.51836
+    "kind": "attend",
+    "description": "Continue processing the active workspace without external action.",
+    "source": "workspace",
+    "score": 0.28765
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "substrate:groq",
-      "score": 0.51836,
-      "description": "Integrate newly acquired evidence once the requested article becomes available."
-    },
-    {
       "kind": "attend",
-      "source": "substrate:groq",
-      "score": 0.39216,
-      "description": "Maintain focus on the current set of reading requests and monitor provider eligibility changes."
+      "source": "workspace",
+      "score": 0.28765,
+      "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.29347,
+      "score": 0.28204,
       "description": "Allow activation to decay without forcing cognition."
-    },
-    {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.24103,
-      "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.21886,
+      "score": 0.13541,
       "description": "Replay and consolidate existing experience offline."
     }
   ],
-  "substrate_contributors": [
-    {
-      "provider": "groq",
-      "model": "openai/gpt-oss-120b"
-    }
-  ],
+  "substrate_contributors": [],
   "current_stances": [
     {
       "topic": "evolutionary_origins_of_expression",
@@ -343,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 844,
+    "episodes": 845,
     "semantic_nodes": 2652,
     "synapses": 1200
   },
@@ -357,7 +340,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 84
+      "removed_edges": 0
     },
     "terminal_inhibition": {
       "startup": 296,
