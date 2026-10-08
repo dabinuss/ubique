@@ -242,6 +242,10 @@ class NeurocognitiveRuntime:
         )
         return labels
 
+    @staticmethod
+    def _library_title_key(title: str) -> str:
+        return re.sub(r"[\W_]+", " ", str(title).casefold(), flags=re.UNICODE).strip()
+
     def _contextualize_recall(
         self,
         recalled: list[dict[str, Any]],
@@ -251,9 +255,6 @@ class NeurocognitiveRuntime:
         """Downweight stale model-authored recall superseded by terminal observations."""
         terminal_labels = self._terminal_context_labels()
         seed_terms = self._terminal_seed_terms()
-        if not terminal_labels and not seed_terms:
-            return recalled[: max(0, limit)]
-
         adjusted: list[dict[str, Any]] = []
         model_statuses = {
             "model_proposal",
@@ -339,7 +340,24 @@ class NeurocognitiveRuntime:
         )
         selected: list[dict[str, Any]] = []
         superseded_seen = 0
+        seen_reading_wishes: set[str] = set()
         for item in adjusted:
+            # Historical duplicate requests are still genuine past events,
+            # but six copies of one unfulfilled wish must not fill the entire
+            # conscious workspace. Keep the strongest memory of each title.
+            if item.get("kind") == "internal_action_outcome":
+                try:
+                    outcome = json.loads(str(item.get("text", "")))
+                except (TypeError, ValueError, json.JSONDecodeError):
+                    outcome = {}
+                if isinstance(outcome, dict) and outcome.get("action") == "request":
+                    book = outcome.get("item", {})
+                    title = str(book.get("title", "")) if isinstance(book, dict) else ""
+                    key = self._library_title_key(title)
+                    if key:
+                        if key in seen_reading_wishes:
+                            continue
+                        seen_reading_wishes.add(key)
             if item.get("contextual_status") == "superseded_terminal_context":
                 if superseded_seen >= 1:
                     continue
@@ -384,15 +402,25 @@ class NeurocognitiveRuntime:
                 log.exception("Could not persist migrated library completion for %s", item_id)
         return completed
 
-    def _cognitive_library_catalog(self, limit: int = 20) -> list[dict[str, Any]]:
+    def _cognitive_library_catalog(self, limit: int = 80) -> list[dict[str, Any]]:
         completed = self._completed_library_items()
-        catalog = library_catalog(limit, include_completed=False)
+        # Include open wishes even when they occur after dozens of books.
+        # Collapse historical duplicates only in attention, not the archive.
+        catalog = library_catalog(max(100, limit), include_completed=False)
+        selected: list[dict[str, Any]] = []
+        seen_wishes: set[str] = set()
         for item in catalog:
+            if item.get("kind") == "reading_request":
+                key = self._library_title_key(str(item.get("title", "")))
+                if key in seen_wishes:
+                    continue
+                seen_wishes.add(key)
             item_id = str(item.get("id", ""))
             if item_id in completed:
                 item["fully_read"] = True
                 item["remaining_unread"] = False
-        return catalog
+            selected.append(item)
+        return selected[:max(0, limit)]
 
     def _filter_library_candidates(
         self,
@@ -400,6 +428,13 @@ class NeurocognitiveRuntime:
     ) -> list[ActionCandidate]:
         """Habituate completed reads while preserving deliberate rereading."""
         completed = self._completed_library_items()
+        catalog = library_catalog(200)
+        by_id = {str(item.get("id", "")): item for item in catalog}
+        open_wishes = {
+            self._library_title_key(str(item.get("title", "")))
+            for item in catalog
+            if item.get("kind") == "reading_request" and item.get("status") == "wanted"
+        }
         filtered: list[ActionCandidate] = []
         for candidate in candidates:
             if candidate.kind != "library":
@@ -407,17 +442,21 @@ class NeurocognitiveRuntime:
                 continue
             action = str(candidate.payload.get("action", "")).strip().lower()
             item_id = str(candidate.payload.get("item_id", "")).strip()
-            if action != "read" or item_id not in completed:
-                filtered.append(candidate)
-                continue
-
-            reread = bool(candidate.payload.get("reread", False))
-            reason = str(candidate.payload.get("reason", "")).strip()
-            if not reread or not reason:
-                continue
-
-            candidate.novelty = min(candidate.novelty, 0.18)
-            candidate.information_gain = min(candidate.information_gain, 0.28)
+            if action == "request":
+                key = self._library_title_key(str(candidate.payload.get("title", "")))
+                if key and key in open_wishes:
+                    continue
+            if action == "read":
+                item = by_id.get(item_id, {})
+                if item.get("content_available") is False:
+                    continue
+                if item_id in completed:
+                    reread = bool(candidate.payload.get("reread", False))
+                    reason = str(candidate.payload.get("reason", "")).strip()
+                    if not reread or not reason:
+                        continue
+                    candidate.novelty = min(candidate.novelty, 0.18)
+                    candidate.information_gain = min(candidate.information_gain, 0.28)
             filtered.append(candidate)
         return filtered
 
@@ -986,6 +1025,8 @@ Issue body:
                     # chunks. Explicit external /library reads remain untouched.
                     library_spec["max_chars"] = max(6000, requested_chars or 10000)
                 result = apply_library_action(library_spec, actor="ubique")
+                if result.get("action") == "read" and not result.get("content_available", False):
+                    return False, json.dumps(result, ensure_ascii=False), provider
                 if result.get("action") == "read" and result.get("excerpt"):
                     excerpt = str(result.get("excerpt", ""))
                     item = result.get("item", {}) if isinstance(result.get("item"), dict) else {}
@@ -1141,7 +1182,7 @@ Issue body:
                     recalled_episodes=recalled,
                     modulators=self.modulators.as_dict(),
                     self_model=self.self_model.context(8, 10),
-                    library_catalog=self._cognitive_library_catalog(20),
+                    library_catalog=self._cognitive_library_catalog(100),
                     external_states=self.external_issue_states,
                 ))
                 if packets:
