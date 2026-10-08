@@ -1,30 +1,30 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T11:55:27.841559+00:00",
-  "generation": 661,
+  "timestamp": "2026-10-08T11:56:19.066432+00:00",
+  "generation": 662,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1898,
-    "surprise": 0.1576,
+    "novelty": 0.1759,
+    "surprise": 0.1444,
     "uncertainty": 0.28,
-    "salience": 0.2075,
-    "exploration": 0.296,
-    "plasticity": 0.387,
-    "energy": 0.855,
-    "sleep_pressure": 0.1022
+    "salience": 0.3531,
+    "exploration": 0.2884,
+    "plasticity": 0.4005,
+    "energy": 0.908,
+    "sleep_pressure": 0.0439
   },
   "workspace": [
     {
       "id": "episode:4c3a81c4f4a07c",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-9\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need quantitative data on peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T01:24:22.962943+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read",
-      "activation": 0.5015,
+      "activation": 0.4937,
       "salience": 0.88,
       "novelty": 0.8,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.6168
+      "ignition_score": 0.6129
     },
     {
       "id": "episode:ec233dc0d12779",
@@ -54,13 +54,25 @@
       "id": "episode:0aa186dc65d3e9",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"primate-facial-expressions-and-the-evolution-of-emotion\", \"title\": \"Primate Facial Expressions and the Evolution of Emotion\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To evaluate whether lip protrusion, nose‑up, and spitting appear in non‑human primates during contempt‑like contexts, extending the universality hypothesis.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T09:43:15.076976+00:00\", \"content_path\": \"\", \"read_count\": 0",
-      "activation": 0.3661,
+      "activation": 0.3725,
       "salience": 0.78,
       "novelty": 0.73,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.515
+      "ignition_score": 0.5181
+    },
+    {
+      "id": "episode:4eca80120e81b2",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"neurophysiology-of-lacrimal-secretion-in-emotional-crying\", \"title\": \"Neurophysiology of Lacrimal Secretion in Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need quantitative data on autonomic and mechanical pathways to test hypotheses about timing of muscle activation and tear flow.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T06:13:44.864656+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"full",
+      "activation": 0.3959,
+      "salience": 0.7,
+      "novelty": 0.55,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4864
     },
     {
       "id": "episode:d362742d8552ea",
@@ -75,28 +87,16 @@
       "ignition_score": 0.4844
     },
     {
-      "id": "episode:4eca80120e81b2",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"neurophysiology-of-lacrimal-secretion-in-emotional-crying\", \"title\": \"Neurophysiology of Lacrimal Secretion in Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need quantitative data on autonomic and mechanical pathways to test hypotheses about timing of muscle activation and tear flow.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T06:13:44.864656+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"full",
-      "activation": 0.3889,
-      "salience": 0.7,
-      "novelty": 0.55,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4829
-    },
-    {
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.39,
-      "salience": 0.20754499999999998,
-      "novelty": 0.18984499999999999,
-      "surprise": 0.15757,
+      "activation": 0.6236,
+      "salience": 0.353135,
+      "novelty": 0.17587,
+      "surprise": 0.14444,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.2905
+      "ignition_score": 0.4403
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "attend",
-    "description": "Continue processing the active workspace without external action.",
-    "source": "workspace",
-    "score": 0.20547
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
+    "source": "homeostasis",
+    "score": 0.26976
   },
   "action_competition": [
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.20547,
-      "description": "Continue processing the active workspace without external action."
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.26976,
+      "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.17627,
+      "score": 0.25487,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.13879,
-      "description": "Replay and consolidate existing experience offline."
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.1559,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
   "substrate_contributors": [],
@@ -326,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 2,
+  "consecutive_pulses": 3,
   "memory": {
-    "episodes": 686,
+    "episodes": 687,
     "semantic_nodes": 2569,
     "synapses": 1200
   },
