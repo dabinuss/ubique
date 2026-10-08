@@ -156,3 +156,22 @@ def test_unavailable_book_returns_failed_action_not_success(tmp_path, monkeypatc
     success, result, provider = runtime._act(candidate, generation=1, development_allowed=True)
     assert not success
     assert json.loads(result)["content_available"] is False
+
+
+def test_substrate_prompt_sees_catalog_beyond_twenty_entries():
+    from ubique.brain.substrate import cognitive_prompt
+
+    books = [
+        {"id": f"book-{i}", "title": f"Interesting book {i}", "kind": "book",
+         "content_available": True, "status": "available"}
+        for i in range(25)
+    ]
+    books.append({"id": "wish", "title": "Tear physiology", "kind": "reading_request",
+                  "content_available": False, "status": "wanted"})
+    prompt = cognitive_prompt(
+        workspace="", recalled_episodes=[], modulators={},
+        self_model=[], library_catalog=books,
+    )
+    assert '"id": "book-24"' in prompt
+    assert '"id": "wish"' in prompt
+    assert "do not request that title again" in prompt
