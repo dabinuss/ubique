@@ -1,90 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T16:47:10.634527+00:00",
-  "generation": 706,
+  "timestamp": "2026-10-08T17:00:39.564177+00:00",
+  "generation": 707,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.173,
-    "surprise": 0.1416,
+    "novelty": 0.2874,
+    "surprise": 0.2495,
     "uncertainty": 0.28,
-    "salience": 0.0797,
-    "exploration": 0.2869,
-    "plasticity": 0.3663,
+    "salience": 0.1918,
+    "exploration": 0.3485,
+    "plasticity": 0.4334,
     "energy": 1.0,
-    "sleep_pressure": 0.0372
+    "sleep_pressure": 0.0231
   },
   "workspace": [
     {
-      "id": "episode:c718ff092c1c26",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 452000, \"excerpt\": \"earance, as I find\\nrecorded in my notes, in very young children when they were only\\nmoderately surprised.\\n\\nThere is still another and highly effective cause, leading to the mouth\\nbeing opened, when we are astonished, and more especially when we are\\nsudden",
-      "activation": 0.2396,
-      "salience": 0.9,
-      "novelty": 0.6,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4648
+      "id": "episode:24421b7adb656b",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 945}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
     },
     {
-      "id": "episode:da7b29ec3d7e7f",
+      "id": "episode:4c3a81c4f4a07c",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 412000, \"excerpt\": \"ally to take. Mr. Scott has\\nalso seen the same expression on the faces of high-caste natives who\\nhave approached close to some defiling object. Mr. Bridges says that\\nthe Fuegians “express contempt by shooting out the lips and hissing\\nthrough them, and by tu",
-      "activation": 0.2311,
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-9\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need quantitative data on peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T01:24:22.962943+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read",
+      "activation": 0.4384,
       "salience": 0.88,
-      "novelty": 0.42,
+      "novelty": 0.8,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4321
+      "ignition_score": 0.5852
     },
     {
-      "id": "episode:ea6bc52eb54a6d",
+      "id": "episode:ec233dc0d12779",
       "kind": "recalled_episode",
-      "label": "Quiet state selected; activation decayed.",
-      "activation": 0.2426,
-      "salience": 0.95,
-      "novelty": 0.1,
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"concurrent-facial-emg-and-lacrimal-secretion-dynamics-in-human-e\", \"title\": \"Concurrent facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Needed quantitative data on EMG onset, parasympathetic outflow timing, and tear volume/composition to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T06:45:39.708495+00:00\", \"content_path\": \"\", \"read_count\"",
+      "activation": 0.4275,
+      "salience": 0.78,
+      "novelty": 0.7,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4138
+      "ignition_score": 0.5418
     },
     {
-      "id": "episode:401e7d3b32eeeb",
+      "id": "episode:cf5f38e5023c6e",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 462000, \"excerpt\": \" the eyes and mouth are\\nwidely opened, and the eyebrows raised. The frightened man at first\\nstands like a statue motionless and breathless, or crouches down as if\\ninstinctively to escape observation.\\n\\nThe heart beats quickly and violently, so that it palpi",
-      "activation": 0.2291,
-      "salience": 0.8,
-      "novelty": 0.4,
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"emotional-crying-physiology-neurobiology-and-function\", \"title\": \"Emotional crying: physiology, neurobiology, and function\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need quantitative data on peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T06:44:38.751617+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_rea",
+      "activation": 0.4215,
+      "salience": 0.72,
+      "novelty": 0.77,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4085
+      "ignition_score": 0.5329
     },
     {
-      "id": "episode:d3ca8a2b875bab",
+      "id": "episode:25caf8a6227f92",
       "kind": "recalled_episode",
-      "label": "Quiet state selected; activation decayed.",
-      "activation": 0.2393,
-      "salience": 0.95,
-      "novelty": 0.0,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 946}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3606,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.3991
+      "ignition_score": 0.3993
     },
     {
-      "id": "episode:9e06f094bd53a5",
+      "id": "episode:4287a60b56c7ae",
       "kind": "recalled_episode",
-      "label": "Quiet state selected; activation decayed.",
-      "activation": 0.2427,
-      "salience": 0.9,
-      "novelty": 0.05,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 948}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3593,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.3948
+      "ignition_score": 0.3987
+    },
+    {
+      "id": "runtime_state:423b4a0b7d2066e3",
+      "kind": "runtime_state",
+      "label": "provider:gemini",
+      "activation": 0.4068,
+      "salience": 0.19180499999999998,
+      "novelty": 0.28745,
+      "surprise": 0.24954,
+      "epistemic_status": "observed_runtime_state",
+      "source": "semantic_network",
+      "ignition_score": 0.3187
     }
   ],
   "provider_eligibility": {
@@ -97,10 +109,10 @@
     },
     "groq": {
       "configured": true,
-      "disabled": true,
+      "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 945,
-      "eligible": false
+      "remaining_calls": 943,
+      "eligible": true
     },
     "huggingface": {
       "configured": false,
@@ -252,31 +264,42 @@
   },
   "last_action": {
     "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
-    "source": "homeostasis",
-    "score": 0.22269
+    "description": "Integrate newly acquired reading material into Ubique's knowledge base and update relevant world‑model entries.",
+    "source": "substrate:groq",
+    "score": 0.29098
   },
   "action_competition": [
     {
       "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.22269,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.17597,
-      "description": "Allow activation to decay without forcing cognition."
+      "source": "substrate:groq",
+      "score": 0.29098,
+      "description": "Integrate newly acquired reading material into Ubique's knowledge base and update relevant world‑model entries."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.1312,
+      "score": 0.22103,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.17543,
+      "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.14513,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
-  "substrate_contributors": [],
+  "substrate_contributors": [
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    }
+  ],
   "current_stances": [
     {
       "topic": "evolutionary_origins_of_expression",
@@ -314,10 +337,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 745,
-    "semantic_nodes": 2606,
+    "episodes": 749,
+    "semantic_nodes": 2609,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -327,8 +350,8 @@
     },
     "stale_stance_nodes_removed": 0,
     "final": {
-      "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_nodes": 4,
+      "removed_edges": 78
     },
     "terminal_inhibition": {
       "startup": 336,

@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "updated_at": "2026-10-08T16:47:10.590651+00:00",
+  "updated_at": "2026-10-08T17:00:39.494952+00:00",
   "nodes": [
     {
       "id": "concept:921d69d930092eb5",
       "kind": "concept",
       "label": "heartbeat",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 104,
@@ -17,7 +17,7 @@
       "id": "concept:e30310125c31c71c",
       "kind": "concept",
       "label": "persists",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 59,
@@ -28,7 +28,7 @@
       "id": "concept:b4d99022347ea416",
       "kind": "concept",
       "label": "runtime",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 152,
@@ -39,7 +39,7 @@
       "id": "concept:b39ea7408bbea9e9",
       "kind": "concept",
       "label": "closed",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 92,
@@ -50,7 +50,7 @@
       "id": "concept:9304141749a0520d",
       "kind": "concept",
       "label": "merged",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 59,
@@ -61,7 +61,7 @@
       "id": "concept:eed935ffca07484a",
       "kind": "concept",
       "label": "status",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 152,
@@ -72,7 +72,7 @@
       "id": "concept:dea2069eb0e712e7",
       "kind": "concept",
       "label": "ubique",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 112,
@@ -83,7 +83,7 @@
       "id": "concept:ff6d7c8948492bd2",
       "kind": "concept",
       "label": "issue",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 59,
@@ -105,7 +105,7 @@
       "id": "concept:7ebb2602e32acad4",
       "kind": "concept",
       "label": "smoke",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 52,
@@ -127,7 +127,7 @@
       "id": "concept:10d0d9c7a5909812",
       "kind": "concept",
       "label": "test",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 52,
@@ -138,33 +138,33 @@
       "id": "runtime_state:423b4a0b7d2066e3",
       "kind": "runtime_state",
       "label": "provider:gemini",
-      "activation": 0.0,
+      "activation": 0.23593240000000001,
       "excitability": 0.5,
       "threshold": 0.18,
-      "access_count": 34,
-      "last_activated_at": "2026-10-08T16:18:18.893473+00:00",
+      "access_count": 35,
+      "last_activated_at": "2026-10-08T17:00:33.294408+00:00",
       "epistemic_status": "observed_runtime_state"
     },
     {
       "id": "runtime_state:0a71e857be2cd9b7",
       "kind": "runtime_state",
       "label": "provider:groq",
-      "activation": 0.0,
+      "activation": 0.23593240000000001,
       "excitability": 0.5,
       "threshold": 0.18,
-      "access_count": 34,
-      "last_activated_at": "2026-10-08T16:18:18.893473+00:00",
+      "access_count": 35,
+      "last_activated_at": "2026-10-08T17:00:33.294408+00:00",
       "epistemic_status": "observed_runtime_state"
     },
     {
       "id": "runtime_state:1d939659a8519d8c",
       "kind": "runtime_state",
       "label": "provider:huggingface",
-      "activation": 0.0,
+      "activation": 0.23593240000000001,
       "excitability": 0.5,
       "threshold": 0.18,
-      "access_count": 34,
-      "last_activated_at": "2026-10-08T16:18:18.893473+00:00",
+      "access_count": 35,
+      "last_activated_at": "2026-10-08T17:00:33.294408+00:00",
       "epistemic_status": "observed_runtime_state"
     },
     {
@@ -864,7 +864,7 @@
       "id": "concept:8b16ced79976e6a1",
       "kind": "concept",
       "label": "action",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 102,
@@ -1414,50 +1414,6 @@
       "id": "schema:176b16381102e29b",
       "kind": "schema",
       "label": "persists ↔ runtime",
-      "activation": 0.0,
-      "excitability": 0.45,
-      "threshold": 0.18,
-      "access_count": 0,
-      "last_activated_at": null,
-      "epistemic_status": "consolidated_pattern"
-    },
-    {
-      "id": "schema:58f90116b0d99499",
-      "kind": "schema",
-      "label": "persists ↔ smoke",
-      "activation": 0.0,
-      "excitability": 0.45,
-      "threshold": 0.18,
-      "access_count": 0,
-      "last_activated_at": null,
-      "epistemic_status": "consolidated_pattern"
-    },
-    {
-      "id": "schema:097eac009e7ece0b",
-      "kind": "schema",
-      "label": "persists ↔ state",
-      "activation": 0.0,
-      "excitability": 0.45,
-      "threshold": 0.18,
-      "access_count": 0,
-      "last_activated_at": null,
-      "epistemic_status": "consolidated_pattern"
-    },
-    {
-      "id": "schema:82a83139296059e8",
-      "kind": "schema",
-      "label": "persists ↔ status",
-      "activation": 0.0,
-      "excitability": 0.45,
-      "threshold": 0.18,
-      "access_count": 0,
-      "last_activated_at": null,
-      "epistemic_status": "consolidated_pattern"
-    },
-    {
-      "id": "schema:59a83114b7584111",
-      "kind": "schema",
-      "label": "persists ↔ test",
       "activation": 0.0,
       "excitability": 0.45,
       "threshold": 0.18,
@@ -2305,7 +2261,7 @@
       "id": "concept:0b2fd97c7655df1f",
       "kind": "concept",
       "label": "issue:11",
-      "activation": 0.23826056213540744,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 30,
@@ -2316,7 +2272,7 @@
       "id": "concept:2d8c3f64681d9afa",
       "kind": "concept",
       "label": "external-task-ended",
-      "activation": 0.23826056213540744,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 43,
@@ -2327,7 +2283,7 @@
       "id": "concept:ec731dc2702dd67c",
       "kind": "concept",
       "label": "resolved",
-      "activation": 0.23826056213540744,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 43,
@@ -4417,7 +4373,7 @@
       "id": "concept:543655dbce595a4e",
       "kind": "concept",
       "label": "operational",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 33,
@@ -4428,7 +4384,7 @@
       "id": "concept:4277d3259d4e4993",
       "kind": "concept",
       "label": "conclusion",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 51,
@@ -4439,7 +4395,7 @@
       "id": "concept:6f3906da24ca56fb",
       "kind": "concept",
       "label": "directive",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 33,
@@ -5605,7 +5561,7 @@
       "id": "concept:3676cba44f159ed1",
       "kind": "concept",
       "label": "cognitive",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 34,
@@ -6639,7 +6595,7 @@
       "id": "concept:c5af834c028b226a",
       "kind": "concept",
       "label": "max_chars",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 49,
@@ -6650,7 +6606,7 @@
       "id": "concept:02f77488efc6c9cf",
       "kind": "concept",
       "label": "destiny",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 49,
@@ -6661,7 +6617,7 @@
       "id": "concept:880c9bd312cf8508",
       "kind": "concept",
       "label": "item_id",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 49,
@@ -6672,7 +6628,7 @@
       "id": "concept:c9b6dab517b9d127",
       "kind": "concept",
       "label": "library",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 102,
@@ -6683,7 +6639,7 @@
       "id": "concept:40f024a500acd053",
       "kind": "concept",
       "label": "domain",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 98,
@@ -6694,7 +6650,7 @@
       "id": "concept:0f50089ba6762040",
       "kind": "concept",
       "label": "master",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 49,
@@ -6705,7 +6661,7 @@
       "id": "concept:f2d44b8ac655a7ad",
       "kind": "concept",
       "label": "public",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 98,
@@ -7662,7 +7618,7 @@
       "id": "concept:0fc468dc240a979e",
       "kind": "concept",
       "label": "collection",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 52,
@@ -7673,7 +7629,7 @@
       "id": "concept:45dedc0facfe17e7",
       "kind": "concept",
       "label": "limit",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 52,
@@ -7684,7 +7640,7 @@
       "id": "concept:6c5fc273df2e6a46",
       "kind": "concept",
       "label": "sync",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 52,
@@ -7706,7 +7662,7 @@
       "id": "concept:7c8c34c1074b16bf",
       "kind": "concept",
       "label": "issue:19",
-      "activation": 0.23826056213540744,
+      "activation": 0.07358843290903305,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 6,
@@ -7717,7 +7673,7 @@
       "id": "concept:020779dea60b906b",
       "kind": "concept",
       "label": "deactivated",
-      "activation": 0.23826056213540744,
+      "activation": 0.07358843290903305,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 10,
@@ -7783,7 +7739,7 @@
       "id": "concept:54476ce93ea4a148",
       "kind": "concept",
       "label": "distinguish",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 50,
@@ -7794,7 +7750,7 @@
       "id": "concept:0570b840b0d58779",
       "kind": "concept",
       "label": "formation",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 50,
@@ -7805,7 +7761,7 @@
       "id": "concept:dd7cf0a1d49819b9",
       "kind": "concept",
       "label": "uncertain",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 50,
@@ -7816,7 +7772,7 @@
       "id": "concept:411f62e7fd037280",
       "kind": "concept",
       "label": "actually",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 50,
@@ -7827,7 +7783,7 @@
       "id": "concept:30df1a3e75b9e100",
       "kind": "concept",
       "label": "disagree",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 50,
@@ -7838,7 +7794,7 @@
       "id": "concept:934215b9d703d602",
       "kind": "concept",
       "label": "emotion",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 51,
@@ -7849,7 +7805,7 @@
       "id": "concept:40236e898f4514d3",
       "kind": "concept",
       "label": "present",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 50,
@@ -7915,7 +7871,7 @@
       "id": "concept:4a3f0c3bfc82b1cf",
       "kind": "concept",
       "label": "integration",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 47,
@@ -7926,7 +7882,7 @@
       "id": "concept:d2faf81549dcdbb6",
       "kind": "concept",
       "label": "stance",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 47,
@@ -8729,7 +8685,7 @@
       "id": "concept:737f6b76c31223ea",
       "kind": "concept",
       "label": "verification",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 46,
@@ -8740,7 +8696,7 @@
       "id": "concept:45c19c5472e739d6",
       "kind": "concept",
       "label": "grounding",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 46,
@@ -8751,7 +8707,7 @@
       "id": "concept:8153c4e65bb853c8",
       "kind": "concept",
       "label": "identity",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 46,
@@ -15945,7 +15901,7 @@
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.23826056213540744,
+      "activation": 0.07358843290903305,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 45,
@@ -15956,7 +15912,7 @@
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
-      "activation": 0.23826056213540744,
+      "activation": 0.07358843290903305,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 43,
@@ -15978,7 +15934,7 @@
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
-      "activation": 0.23826056213540744,
+      "activation": 0.07358843290903305,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 43,
@@ -15989,7 +15945,7 @@
       "id": "concept:c79fe950fbe2655c",
       "kind": "concept",
       "label": "quantitative",
-      "activation": 0.23826056213540744,
+      "activation": 0.07358843290903305,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 34,
@@ -16011,7 +15967,7 @@
       "id": "concept:170319b00881e6c2",
       "kind": "concept",
       "label": "read_cursor",
-      "activation": 0.23826056213540744,
+      "activation": 0.07358843290903305,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 38,
@@ -21808,7 +21764,7 @@
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
-      "activation": 0.23826056213540744,
+      "activation": 0.07358843290903305,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 34,
@@ -21819,7 +21775,7 @@
       "id": "concept:a2f5149e62455013",
       "kind": "concept",
       "label": "composition",
-      "activation": 0.23826056213540744,
+      "activation": 0.07358843290903305,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 30,
@@ -23799,7 +23755,7 @@
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
-      "activation": 0.23826056213540744,
+      "activation": 0.07358843290903305,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 30,
@@ -24151,7 +24107,7 @@
       "id": "concept:8c0a47d3266f1cb7",
       "kind": "concept",
       "label": "continuity",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 32,
@@ -24162,7 +24118,7 @@
       "id": "concept:acf675887b618357",
       "kind": "concept",
       "label": "executes",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 32,
@@ -24173,7 +24129,7 @@
       "id": "concept:0e0b1daa1aba5ebe",
       "kind": "concept",
       "label": "question",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 32,
@@ -24184,7 +24140,7 @@
       "id": "concept:a26a65552a89806c",
       "kind": "concept",
       "label": "repaired",
-      "activation": 0.24055152907901714,
+      "activation": 0.0,
       "excitability": 0.5,
       "threshold": 0.18,
       "access_count": 32,
@@ -26043,11 +25999,11 @@
       "id": "concept:20bd6b75754b490a",
       "kind": "concept",
       "label": "peri‑ocular emg onset ↔ tear flow onset",
-      "activation": 0.0,
+      "activation": 0.3077489830508474,
       "excitability": 0.48,
       "threshold": 0.18,
-      "access_count": 1,
-      "last_activated_at": "2026-10-08T06:46:36.561285+00:00",
+      "access_count": 2,
+      "last_activated_at": "2026-10-08T17:00:37.235813+00:00",
       "epistemic_status": "model_proposal"
     },
     {
@@ -28667,6 +28623,83 @@
       "access_count": 1,
       "last_activated_at": "2026-10-08T15:34:17.374626+00:00",
       "epistemic_status": "model_interpretation"
+    },
+    {
+      "id": "concept:d7f78160cc1eda85",
+      "kind": "concept",
+      "label": "parasympathetic outflow ↔ lacrimal gland activation",
+      "activation": 0.3831596,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-08T17:00:37.235758+00:00",
+      "epistemic_status": "model_proposal"
+    },
+    {
+      "id": "concept:78c0794c7c300590",
+      "kind": "concept",
+      "label": "emotional crying → tear composition changes (protein, electrolytes)",
+      "activation": 0.3459874,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-08T17:00:37.235846+00:00",
+      "epistemic_status": "model_proposal"
+    },
+    {
+      "id": "hypothesis:926c876afae483ae",
+      "kind": "hypothesis",
+      "label": "during spontaneous emotional crying, parasympathetic activity to the lacrimal gland rises ~200 ms before measurable tear flow begins.",
+      "activation": 0.24018959999999998,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-08T17:00:37.235882+00:00",
+      "epistemic_status": "model_hypothesis"
+    },
+    {
+      "id": "hypothesis:e5f29a298bd8f9cf",
+      "kind": "hypothesis",
+      "label": "the onset of peri‑ocular emg activity (orbicularis oculi) temporally coincides with the first detectable increase in tear volume, suggesting a coordinated motor‑autonomic trigger.",
+      "activation": 0.24018959999999998,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-08T17:00:37.235922+00:00",
+      "epistemic_status": "model_hypothesis"
+    },
+    {
+      "id": "question:0d83bcc13be8cc4a",
+      "kind": "question",
+      "label": "what is the precise latency between the rise in parasympathetic nerve activity (e.g., measured via heart‑rate variability or direct neural recording) and the start of lacrimal secretion in humans?",
+      "activation": 0.2630648,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-08T17:00:37.235964+00:00",
+      "epistemic_status": "model_question"
+    },
+    {
+      "id": "question:6f01b336eabbb0ad",
+      "kind": "question",
+      "label": "how does the protein and electrolyte composition of tears differ between basal secretion and tears produced during intense emotional crying?",
+      "activation": 0.2630648,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-08T17:00:37.235995+00:00",
+      "epistemic_status": "model_question"
+    },
+    {
+      "id": "world_model:79129acf65ec4969",
+      "kind": "world_model",
+      "label": "the gemini provider is currently ineligible for api calls (remaining_calls = 0), while the groq provider remains eligible with ample remaining calls.",
+      "activation": 0.2173144,
+      "excitability": 0.48,
+      "threshold": 0.18,
+      "access_count": 1,
+      "last_activated_at": "2026-10-08T17:00:37.236025+00:00",
+      "epistemic_status": "model_interpretation"
     }
   ],
   "edges": [
@@ -29733,24 +29766,6 @@
       "last_coactivated_at": "2026-10-08T16:47:10.516124+00:00"
     },
     {
-      "source": "concept:e14de43896fcd264",
-      "target": "concept:b086a78222d9fce3",
-      "relation": "coactivated",
-      "weight": 0.8174704099999998,
-      "plasticity": 0.65,
-      "coactivation_count": 41,
-      "last_coactivated_at": "2026-10-08T13:50:45.324079+00:00"
-    },
-    {
-      "source": "concept:b086a78222d9fce3",
-      "target": "concept:e14de43896fcd264",
-      "relation": "coactivated",
-      "weight": 0.8174704099999998,
-      "plasticity": 0.65,
-      "coactivation_count": 41,
-      "last_coactivated_at": "2026-10-08T13:50:45.324079+00:00"
-    },
-    {
       "source": "concept:2d8c3f64681d9afa",
       "target": "concept:ec731dc2702dd67c",
       "relation": "coactivated",
@@ -29767,6 +29782,24 @@
       "plasticity": 0.65,
       "coactivation_count": 43,
       "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
+    },
+    {
+      "source": "concept:e14de43896fcd264",
+      "target": "concept:b086a78222d9fce3",
+      "relation": "coactivated",
+      "weight": 0.8174704099999998,
+      "plasticity": 0.65,
+      "coactivation_count": 41,
+      "last_coactivated_at": "2026-10-08T13:50:45.324079+00:00"
+    },
+    {
+      "source": "concept:b086a78222d9fce3",
+      "target": "concept:e14de43896fcd264",
+      "relation": "coactivated",
+      "weight": 0.8174704099999998,
+      "plasticity": 0.65,
+      "coactivation_count": 41,
+      "last_coactivated_at": "2026-10-08T13:50:45.324079+00:00"
     },
     {
       "source": "concept:d39f7fb1d10bc9e8",
@@ -30435,10 +30468,46 @@
       "last_coactivated_at": "2026-10-08T10:45:43.077107+00:00"
     },
     {
+      "source": "concept:2d8c3f64681d9afa",
+      "target": "concept:020779dea60b906b",
+      "relation": "coactivated",
+      "weight": 0.29224479999999986,
+      "plasticity": 0.65,
+      "coactivation_count": 10,
+      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
+    },
+    {
+      "source": "concept:020779dea60b906b",
+      "target": "concept:2d8c3f64681d9afa",
+      "relation": "coactivated",
+      "weight": 0.29224479999999986,
+      "plasticity": 0.65,
+      "coactivation_count": 10,
+      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
+    },
+    {
+      "source": "concept:ec731dc2702dd67c",
+      "target": "concept:020779dea60b906b",
+      "relation": "coactivated",
+      "weight": 0.29224479999999986,
+      "plasticity": 0.65,
+      "coactivation_count": 10,
+      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
+    },
+    {
+      "source": "concept:020779dea60b906b",
+      "target": "concept:ec731dc2702dd67c",
+      "relation": "coactivated",
+      "weight": 0.29224479999999986,
+      "plasticity": 0.65,
+      "coactivation_count": 10,
+      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
+    },
+    {
       "source": "schema:8be7c10d36a951d7",
       "target": "concept:b4d99022347ea416",
       "relation": "pattern_contains",
-      "weight": 0.4482,
+      "weight": 0.44685629639999996,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -30447,7 +30516,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "schema:8be7c10d36a951d7",
       "relation": "pattern_contains",
-      "weight": 0.4482,
+      "weight": 0.44685629639999996,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -30456,7 +30525,7 @@
       "source": "schema:8be7c10d36a951d7",
       "target": "concept:eed935ffca07484a",
       "relation": "pattern_contains",
-      "weight": 0.4482,
+      "weight": 0.44685629639999996,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -30465,7 +30534,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "schema:8be7c10d36a951d7",
       "relation": "pattern_contains",
-      "weight": 0.4482,
+      "weight": 0.44685629639999996,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -30847,42 +30916,6 @@
       "plasticity": 0.65,
       "coactivation_count": 5,
       "last_coactivated_at": "2026-10-03T20:41:43.514934+00:00"
-    },
-    {
-      "source": "concept:2d8c3f64681d9afa",
-      "target": "concept:020779dea60b906b",
-      "relation": "coactivated",
-      "weight": 0.29224479999999986,
-      "plasticity": 0.65,
-      "coactivation_count": 10,
-      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
-    },
-    {
-      "source": "concept:020779dea60b906b",
-      "target": "concept:2d8c3f64681d9afa",
-      "relation": "coactivated",
-      "weight": 0.29224479999999986,
-      "plasticity": 0.65,
-      "coactivation_count": 10,
-      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
-    },
-    {
-      "source": "concept:ec731dc2702dd67c",
-      "target": "concept:020779dea60b906b",
-      "relation": "coactivated",
-      "weight": 0.29224479999999986,
-      "plasticity": 0.65,
-      "coactivation_count": 10,
-      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
-    },
-    {
-      "source": "concept:020779dea60b906b",
-      "target": "concept:ec731dc2702dd67c",
-      "relation": "coactivated",
-      "weight": 0.29224479999999986,
-      "plasticity": 0.65,
-      "coactivation_count": 10,
-      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
     },
     {
       "source": "concept:e14de43896fcd264",
@@ -33045,6 +33078,60 @@
       "last_coactivated_at": "2026-10-02T20:49:46.000624+00:00"
     },
     {
+      "source": "concept:7c8c34c1074b16bf",
+      "target": "concept:2d8c3f64681d9afa",
+      "relation": "coactivated",
+      "weight": 0.17167343999999995,
+      "plasticity": 0.65,
+      "coactivation_count": 3,
+      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
+    },
+    {
+      "source": "concept:2d8c3f64681d9afa",
+      "target": "concept:7c8c34c1074b16bf",
+      "relation": "coactivated",
+      "weight": 0.17167343999999995,
+      "plasticity": 0.65,
+      "coactivation_count": 3,
+      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
+    },
+    {
+      "source": "concept:7c8c34c1074b16bf",
+      "target": "concept:ec731dc2702dd67c",
+      "relation": "coactivated",
+      "weight": 0.17167343999999995,
+      "plasticity": 0.65,
+      "coactivation_count": 3,
+      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
+    },
+    {
+      "source": "concept:ec731dc2702dd67c",
+      "target": "concept:7c8c34c1074b16bf",
+      "relation": "coactivated",
+      "weight": 0.17167343999999995,
+      "plasticity": 0.65,
+      "coactivation_count": 3,
+      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
+    },
+    {
+      "source": "concept:7c8c34c1074b16bf",
+      "target": "concept:020779dea60b906b",
+      "relation": "coactivated",
+      "weight": 0.17167343999999995,
+      "plasticity": 0.65,
+      "coactivation_count": 3,
+      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
+    },
+    {
+      "source": "concept:020779dea60b906b",
+      "target": "concept:7c8c34c1074b16bf",
+      "relation": "coactivated",
+      "weight": 0.17167343999999995,
+      "plasticity": 0.65,
+      "coactivation_count": 3,
+      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
+    },
+    {
       "source": "concept:6ae9e0c33d0387d9",
       "target": "concept:e3c15faa7de79690",
       "relation": "coactivated",
@@ -34719,42 +34806,6 @@
       "last_coactivated_at": "2026-10-06T06:50:34.030579+00:00"
     },
     {
-      "source": "schema:5315fe59ca865a08",
-      "target": "concept:921d69d930092eb5",
-      "relation": "pattern_contains",
-      "weight": 0.1891457478270698,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "concept:921d69d930092eb5",
-      "target": "schema:5315fe59ca865a08",
-      "relation": "pattern_contains",
-      "weight": 0.1891457478270698,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "schema:5315fe59ca865a08",
-      "target": "concept:10d0d9c7a5909812",
-      "relation": "pattern_contains",
-      "weight": 0.1891457478270698,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "concept:10d0d9c7a5909812",
-      "target": "schema:5315fe59ca865a08",
-      "relation": "pattern_contains",
-      "weight": 0.1891457478270698,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
       "source": "concept:a193933ea5f17433",
       "target": "concept:6ae9e0c33d0387d9",
       "relation": "coactivated",
@@ -35347,6 +35398,42 @@
       "plasticity": 0.65,
       "coactivation_count": 2,
       "last_coactivated_at": "2026-10-01T22:39:16.118926+00:00"
+    },
+    {
+      "source": "schema:5315fe59ca865a08",
+      "target": "concept:921d69d930092eb5",
+      "relation": "pattern_contains",
+      "weight": 0.18857868887508425,
+      "plasticity": 0.5,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:921d69d930092eb5",
+      "target": "schema:5315fe59ca865a08",
+      "relation": "pattern_contains",
+      "weight": 0.18857868887508425,
+      "plasticity": 0.5,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "schema:5315fe59ca865a08",
+      "target": "concept:10d0d9c7a5909812",
+      "relation": "pattern_contains",
+      "weight": 0.18857868887508425,
+      "plasticity": 0.5,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
+    },
+    {
+      "source": "concept:10d0d9c7a5909812",
+      "target": "schema:5315fe59ca865a08",
+      "relation": "pattern_contains",
+      "weight": 0.18857868887508425,
+      "plasticity": 0.5,
+      "coactivation_count": 0,
+      "last_coactivated_at": null
     },
     {
       "source": "question:afaddb643ea8cc86",
@@ -37815,60 +37902,6 @@
       "last_coactivated_at": "2026-10-01T22:42:06.255777+00:00"
     },
     {
-      "source": "concept:7c8c34c1074b16bf",
-      "target": "concept:2d8c3f64681d9afa",
-      "relation": "coactivated",
-      "weight": 0.17167343999999995,
-      "plasticity": 0.65,
-      "coactivation_count": 3,
-      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
-    },
-    {
-      "source": "concept:2d8c3f64681d9afa",
-      "target": "concept:7c8c34c1074b16bf",
-      "relation": "coactivated",
-      "weight": 0.17167343999999995,
-      "plasticity": 0.65,
-      "coactivation_count": 3,
-      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
-    },
-    {
-      "source": "concept:7c8c34c1074b16bf",
-      "target": "concept:ec731dc2702dd67c",
-      "relation": "coactivated",
-      "weight": 0.17167343999999995,
-      "plasticity": 0.65,
-      "coactivation_count": 3,
-      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
-    },
-    {
-      "source": "concept:ec731dc2702dd67c",
-      "target": "concept:7c8c34c1074b16bf",
-      "relation": "coactivated",
-      "weight": 0.17167343999999995,
-      "plasticity": 0.65,
-      "coactivation_count": 3,
-      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
-    },
-    {
-      "source": "concept:7c8c34c1074b16bf",
-      "target": "concept:020779dea60b906b",
-      "relation": "coactivated",
-      "weight": 0.17167343999999995,
-      "plasticity": 0.65,
-      "coactivation_count": 3,
-      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
-    },
-    {
-      "source": "concept:020779dea60b906b",
-      "target": "concept:7c8c34c1074b16bf",
-      "relation": "coactivated",
-      "weight": 0.17167343999999995,
-      "plasticity": 0.65,
-      "coactivation_count": 3,
-      "last_coactivated_at": "2026-10-08T16:47:10.516345+00:00"
-    },
-    {
       "source": "concept:a5f6ce217fd9598c",
       "target": "concept:0c9a19878ae89000",
       "relation": "coactivated",
@@ -38047,12 +38080,156 @@
       "plasticity": 0.65,
       "coactivation_count": 1,
       "last_coactivated_at": "2026-10-08T15:35:15.450026+00:00"
+    },
+    {
+      "source": "concept:d7f78160cc1eda85",
+      "target": "concept:78c0794c7c300590",
+      "relation": "coactivated",
+      "weight": 0.12896531200565,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-08T17:00:37.236050+00:00"
+    },
+    {
+      "source": "concept:78c0794c7c300590",
+      "target": "concept:d7f78160cc1eda85",
+      "relation": "coactivated",
+      "weight": 0.12896531200565,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-08T17:00:37.236050+00:00"
+    },
+    {
+      "source": "concept:d7f78160cc1eda85",
+      "target": "concept:20bd6b75754b490a",
+      "relation": "coactivated",
+      "weight": 0.12797446858605932,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-08T17:00:37.236050+00:00"
+    },
+    {
+      "source": "concept:20bd6b75754b490a",
+      "target": "concept:d7f78160cc1eda85",
+      "relation": "coactivated",
+      "weight": 0.12797446858605932,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-08T17:00:37.236050+00:00"
+    },
+    {
+      "source": "concept:78c0794c7c300590",
+      "target": "concept:20bd6b75754b490a",
+      "relation": "coactivated",
+      "weight": 0.12720082611129238,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-08T17:00:37.236050+00:00"
+    },
+    {
+      "source": "concept:20bd6b75754b490a",
+      "target": "concept:78c0794c7c300590",
+      "relation": "coactivated",
+      "weight": 0.12720082611129238,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-08T17:00:37.236050+00:00"
+    },
+    {
+      "source": "concept:d7f78160cc1eda85",
+      "target": "question:0d83bcc13be8cc4a",
+      "relation": "coactivated",
+      "weight": 0.1268166008638,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-08T17:00:37.236050+00:00"
+    },
+    {
+      "source": "question:0d83bcc13be8cc4a",
+      "target": "concept:d7f78160cc1eda85",
+      "relation": "coactivated",
+      "weight": 0.1268166008638,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-08T17:00:37.236050+00:00"
+    },
+    {
+      "source": "concept:d7f78160cc1eda85",
+      "target": "question:6f01b336eabbb0ad",
+      "relation": "coactivated",
+      "weight": 0.1268166008638,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-08T17:00:37.236050+00:00"
+    },
+    {
+      "source": "question:6f01b336eabbb0ad",
+      "target": "concept:d7f78160cc1eda85",
+      "relation": "coactivated",
+      "weight": 0.1268166008638,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-08T17:00:37.236050+00:00"
+    },
+    {
+      "source": "concept:d7f78160cc1eda85",
+      "target": "hypothesis:926c876afae483ae",
+      "relation": "coactivated",
+      "weight": 0.1262238529626,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-08T17:00:37.236050+00:00"
+    },
+    {
+      "source": "hypothesis:926c876afae483ae",
+      "target": "concept:d7f78160cc1eda85",
+      "relation": "coactivated",
+      "weight": 0.1262238529626,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-08T17:00:37.236050+00:00"
+    },
+    {
+      "source": "concept:78c0794c7c300590",
+      "target": "question:0d83bcc13be8cc4a",
+      "relation": "coactivated",
+      "weight": 0.1261552888397,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-08T17:00:37.236050+00:00"
+    },
+    {
+      "source": "question:0d83bcc13be8cc4a",
+      "target": "concept:78c0794c7c300590",
+      "relation": "coactivated",
+      "weight": 0.1261552888397,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-08T17:00:37.236050+00:00"
+    },
+    {
+      "source": "concept:78c0794c7c300590",
+      "target": "question:6f01b336eabbb0ad",
+      "relation": "coactivated",
+      "weight": 0.1261552888397,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-08T17:00:37.236050+00:00"
+    },
+    {
+      "source": "question:6f01b336eabbb0ad",
+      "target": "concept:78c0794c7c300590",
+      "relation": "coactivated",
+      "weight": 0.1261552888397,
+      "plasticity": 0.65,
+      "coactivation_count": 1,
+      "last_coactivated_at": "2026-10-08T17:00:37.236050+00:00"
     },
     {
       "source": "schema:19170f1869a0ab02",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38061,7 +38238,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:19170f1869a0ab02",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38070,7 +38247,7 @@
       "source": "schema:19170f1869a0ab02",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38079,7 +38256,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:19170f1869a0ab02",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38088,7 +38265,7 @@
       "source": "schema:f2dba6cec20596b5",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38097,7 +38274,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:f2dba6cec20596b5",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38106,7 +38283,7 @@
       "source": "schema:f2dba6cec20596b5",
       "target": "concept:ff6d7c8948492bd2",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38115,7 +38292,7 @@
       "source": "concept:ff6d7c8948492bd2",
       "target": "schema:f2dba6cec20596b5",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38124,7 +38301,7 @@
       "source": "schema:bec8ad156433b3c2",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38133,7 +38310,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:bec8ad156433b3c2",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38142,7 +38319,7 @@
       "source": "schema:bec8ad156433b3c2",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38151,7 +38328,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:bec8ad156433b3c2",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38160,7 +38337,7 @@
       "source": "schema:566883292a4da69e",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38169,7 +38346,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:566883292a4da69e",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38178,7 +38355,7 @@
       "source": "schema:566883292a4da69e",
       "target": "concept:73e960e12e02cf8e",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38187,7 +38364,7 @@
       "source": "concept:73e960e12e02cf8e",
       "target": "schema:566883292a4da69e",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38196,7 +38373,7 @@
       "source": "schema:b83f701ecfbfa82e",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38205,7 +38382,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:b83f701ecfbfa82e",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38214,7 +38391,7 @@
       "source": "schema:b83f701ecfbfa82e",
       "target": "concept:e30310125c31c71c",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38223,7 +38400,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "schema:b83f701ecfbfa82e",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38232,7 +38409,7 @@
       "source": "schema:d70711005034accc",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38241,7 +38418,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:d70711005034accc",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38250,7 +38427,7 @@
       "source": "schema:d70711005034accc",
       "target": "concept:b4d99022347ea416",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38259,7 +38436,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "schema:d70711005034accc",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38268,7 +38445,7 @@
       "source": "schema:7037476d3dd84307",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38277,7 +38454,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:7037476d3dd84307",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38286,7 +38463,7 @@
       "source": "schema:7037476d3dd84307",
       "target": "concept:7ebb2602e32acad4",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38295,7 +38472,7 @@
       "source": "concept:7ebb2602e32acad4",
       "target": "schema:7037476d3dd84307",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38304,7 +38481,7 @@
       "source": "schema:8f2a44738c7a349f",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38313,7 +38490,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:8f2a44738c7a349f",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38322,7 +38499,7 @@
       "source": "schema:8f2a44738c7a349f",
       "target": "concept:c0e5d7e81f52dc5e",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38331,7 +38508,7 @@
       "source": "concept:c0e5d7e81f52dc5e",
       "target": "schema:8f2a44738c7a349f",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38340,7 +38517,7 @@
       "source": "schema:18e8b612ea626d6a",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38349,7 +38526,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:18e8b612ea626d6a",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38358,7 +38535,7 @@
       "source": "schema:18e8b612ea626d6a",
       "target": "concept:eed935ffca07484a",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38367,7 +38544,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "schema:18e8b612ea626d6a",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38376,7 +38553,7 @@
       "source": "schema:0d502b6117f5096e",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38385,7 +38562,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:0d502b6117f5096e",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38394,7 +38571,7 @@
       "source": "schema:0d502b6117f5096e",
       "target": "concept:10d0d9c7a5909812",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38403,7 +38580,7 @@
       "source": "concept:10d0d9c7a5909812",
       "target": "schema:0d502b6117f5096e",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38412,7 +38589,7 @@
       "source": "schema:c253207c10d322d9",
       "target": "concept:b39ea7408bbea9e9",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38421,7 +38598,7 @@
       "source": "concept:b39ea7408bbea9e9",
       "target": "schema:c253207c10d322d9",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38430,7 +38607,7 @@
       "source": "schema:c253207c10d322d9",
       "target": "concept:dea2069eb0e712e7",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38439,7 +38616,7 @@
       "source": "concept:dea2069eb0e712e7",
       "target": "schema:c253207c10d322d9",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38448,7 +38625,7 @@
       "source": "schema:b5be86eb64b1bafe",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38457,7 +38634,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:b5be86eb64b1bafe",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38466,7 +38643,7 @@
       "source": "schema:b5be86eb64b1bafe",
       "target": "concept:ff6d7c8948492bd2",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38475,7 +38652,7 @@
       "source": "concept:ff6d7c8948492bd2",
       "target": "schema:b5be86eb64b1bafe",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38484,7 +38661,7 @@
       "source": "schema:0f3aa750a6ed5ba3",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38493,7 +38670,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:0f3aa750a6ed5ba3",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38502,7 +38679,7 @@
       "source": "schema:0f3aa750a6ed5ba3",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38511,7 +38688,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:0f3aa750a6ed5ba3",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38520,7 +38697,7 @@
       "source": "schema:47de658959ec93e9",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38529,7 +38706,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:47de658959ec93e9",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38538,7 +38715,7 @@
       "source": "schema:47de658959ec93e9",
       "target": "concept:73e960e12e02cf8e",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38547,7 +38724,7 @@
       "source": "concept:73e960e12e02cf8e",
       "target": "schema:47de658959ec93e9",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38556,7 +38733,7 @@
       "source": "schema:d067d6a15f00c6e8",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38565,7 +38742,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:d067d6a15f00c6e8",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38574,7 +38751,7 @@
       "source": "schema:d067d6a15f00c6e8",
       "target": "concept:e30310125c31c71c",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38583,7 +38760,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "schema:d067d6a15f00c6e8",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38592,7 +38769,7 @@
       "source": "schema:b816a739213baa96",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38601,7 +38778,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:b816a739213baa96",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38610,7 +38787,7 @@
       "source": "schema:b816a739213baa96",
       "target": "concept:b4d99022347ea416",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38619,7 +38796,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "schema:b816a739213baa96",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38628,7 +38805,7 @@
       "source": "schema:2f94c9dadec912f3",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38637,7 +38814,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:2f94c9dadec912f3",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38646,7 +38823,7 @@
       "source": "schema:2f94c9dadec912f3",
       "target": "concept:7ebb2602e32acad4",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38655,7 +38832,7 @@
       "source": "concept:7ebb2602e32acad4",
       "target": "schema:2f94c9dadec912f3",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38664,7 +38841,7 @@
       "source": "schema:ab055e4d96f8ac05",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38673,7 +38850,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:ab055e4d96f8ac05",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38682,7 +38859,7 @@
       "source": "schema:ab055e4d96f8ac05",
       "target": "concept:c0e5d7e81f52dc5e",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38691,7 +38868,7 @@
       "source": "concept:c0e5d7e81f52dc5e",
       "target": "schema:ab055e4d96f8ac05",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38700,7 +38877,7 @@
       "source": "schema:9ed1bfc4ca98ae57",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38709,7 +38886,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:9ed1bfc4ca98ae57",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38718,7 +38895,7 @@
       "source": "schema:9ed1bfc4ca98ae57",
       "target": "concept:eed935ffca07484a",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38727,7 +38904,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "schema:9ed1bfc4ca98ae57",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38736,7 +38913,7 @@
       "source": "schema:b88bd9f9e010082d",
       "target": "concept:921d69d930092eb5",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38745,7 +38922,7 @@
       "source": "concept:921d69d930092eb5",
       "target": "schema:b88bd9f9e010082d",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38754,7 +38931,7 @@
       "source": "schema:b88bd9f9e010082d",
       "target": "concept:dea2069eb0e712e7",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38763,7 +38940,7 @@
       "source": "concept:dea2069eb0e712e7",
       "target": "schema:b88bd9f9e010082d",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38772,7 +38949,7 @@
       "source": "schema:e88031da296e2525",
       "target": "concept:ff6d7c8948492bd2",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38781,7 +38958,7 @@
       "source": "concept:ff6d7c8948492bd2",
       "target": "schema:e88031da296e2525",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38790,7 +38967,7 @@
       "source": "schema:e88031da296e2525",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38799,7 +38976,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:e88031da296e2525",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38808,7 +38985,7 @@
       "source": "schema:67656ee8ff22c203",
       "target": "concept:ff6d7c8948492bd2",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38817,7 +38994,7 @@
       "source": "concept:ff6d7c8948492bd2",
       "target": "schema:67656ee8ff22c203",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38826,7 +39003,7 @@
       "source": "schema:67656ee8ff22c203",
       "target": "concept:e30310125c31c71c",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38835,7 +39012,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "schema:67656ee8ff22c203",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38844,7 +39021,7 @@
       "source": "schema:436bae7e8061d39c",
       "target": "concept:ff6d7c8948492bd2",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38853,7 +39030,7 @@
       "source": "concept:ff6d7c8948492bd2",
       "target": "schema:436bae7e8061d39c",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38862,7 +39039,7 @@
       "source": "schema:436bae7e8061d39c",
       "target": "concept:b4d99022347ea416",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38871,7 +39048,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "schema:436bae7e8061d39c",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38880,7 +39057,7 @@
       "source": "schema:50257f05b68ff46f",
       "target": "concept:ff6d7c8948492bd2",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38889,7 +39066,7 @@
       "source": "concept:ff6d7c8948492bd2",
       "target": "schema:50257f05b68ff46f",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38898,7 +39075,7 @@
       "source": "schema:50257f05b68ff46f",
       "target": "concept:eed935ffca07484a",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38907,7 +39084,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "schema:50257f05b68ff46f",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38916,7 +39093,7 @@
       "source": "schema:95c343aeebe13397",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38925,7 +39102,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:95c343aeebe13397",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38934,7 +39111,7 @@
       "source": "schema:95c343aeebe13397",
       "target": "concept:73e960e12e02cf8e",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38943,7 +39120,7 @@
       "source": "concept:73e960e12e02cf8e",
       "target": "schema:95c343aeebe13397",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38952,7 +39129,7 @@
       "source": "schema:ea79be0fb5d759cc",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38961,7 +39138,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:ea79be0fb5d759cc",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38970,7 +39147,7 @@
       "source": "schema:ea79be0fb5d759cc",
       "target": "concept:e30310125c31c71c",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38979,7 +39156,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "schema:ea79be0fb5d759cc",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38988,7 +39165,7 @@
       "source": "schema:acdbf4b9dc2dab44",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -38997,7 +39174,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:acdbf4b9dc2dab44",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39006,7 +39183,7 @@
       "source": "schema:acdbf4b9dc2dab44",
       "target": "concept:b4d99022347ea416",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39015,7 +39192,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "schema:acdbf4b9dc2dab44",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39024,7 +39201,7 @@
       "source": "schema:8b93676bfe67c5b6",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39033,7 +39210,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:8b93676bfe67c5b6",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39042,7 +39219,7 @@
       "source": "schema:8b93676bfe67c5b6",
       "target": "concept:7ebb2602e32acad4",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39051,7 +39228,7 @@
       "source": "concept:7ebb2602e32acad4",
       "target": "schema:8b93676bfe67c5b6",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39060,7 +39237,7 @@
       "source": "schema:efeda4d5ed52eb71",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39069,7 +39246,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:efeda4d5ed52eb71",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39078,7 +39255,7 @@
       "source": "schema:efeda4d5ed52eb71",
       "target": "concept:c0e5d7e81f52dc5e",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39087,7 +39264,7 @@
       "source": "concept:c0e5d7e81f52dc5e",
       "target": "schema:efeda4d5ed52eb71",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39096,7 +39273,7 @@
       "source": "schema:1afe205a6892ad74",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39105,7 +39282,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:1afe205a6892ad74",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39114,7 +39291,7 @@
       "source": "schema:1afe205a6892ad74",
       "target": "concept:eed935ffca07484a",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39123,7 +39300,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "schema:1afe205a6892ad74",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39132,7 +39309,7 @@
       "source": "schema:41ea0de4c217f4ac",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39141,7 +39318,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:41ea0de4c217f4ac",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39150,7 +39327,7 @@
       "source": "schema:41ea0de4c217f4ac",
       "target": "concept:10d0d9c7a5909812",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39159,7 +39336,7 @@
       "source": "concept:10d0d9c7a5909812",
       "target": "schema:41ea0de4c217f4ac",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39168,7 +39345,7 @@
       "source": "schema:7ac7255e44f292cc",
       "target": "concept:9304141749a0520d",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39177,7 +39354,7 @@
       "source": "concept:9304141749a0520d",
       "target": "schema:7ac7255e44f292cc",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39186,7 +39363,7 @@
       "source": "schema:7ac7255e44f292cc",
       "target": "concept:dea2069eb0e712e7",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39195,7 +39372,7 @@
       "source": "concept:dea2069eb0e712e7",
       "target": "schema:7ac7255e44f292cc",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39204,7 +39381,7 @@
       "source": "schema:eef1b2e94f442a57",
       "target": "concept:73e960e12e02cf8e",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39213,7 +39390,7 @@
       "source": "concept:73e960e12e02cf8e",
       "target": "schema:eef1b2e94f442a57",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39222,7 +39399,7 @@
       "source": "schema:eef1b2e94f442a57",
       "target": "concept:e30310125c31c71c",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39231,7 +39408,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "schema:eef1b2e94f442a57",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39240,7 +39417,7 @@
       "source": "schema:1ce7ddb160a549a9",
       "target": "concept:73e960e12e02cf8e",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39249,7 +39426,7 @@
       "source": "concept:73e960e12e02cf8e",
       "target": "schema:1ce7ddb160a549a9",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39258,7 +39435,7 @@
       "source": "schema:1ce7ddb160a549a9",
       "target": "concept:b4d99022347ea416",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39267,7 +39444,7 @@
       "source": "concept:b4d99022347ea416",
       "target": "schema:1ce7ddb160a549a9",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39276,7 +39453,7 @@
       "source": "schema:93ec6de25d382a85",
       "target": "concept:73e960e12e02cf8e",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39285,7 +39462,7 @@
       "source": "concept:73e960e12e02cf8e",
       "target": "schema:93ec6de25d382a85",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39294,7 +39471,7 @@
       "source": "schema:93ec6de25d382a85",
       "target": "concept:eed935ffca07484a",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39303,7 +39480,7 @@
       "source": "concept:eed935ffca07484a",
       "target": "schema:93ec6de25d382a85",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39312,7 +39489,7 @@
       "source": "schema:176b16381102e29b",
       "target": "concept:e30310125c31c71c",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
@@ -39321,151 +39498,7 @@
       "source": "concept:e30310125c31c71c",
       "target": "schema:176b16381102e29b",
       "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "schema:176b16381102e29b",
-      "target": "concept:b4d99022347ea416",
-      "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "concept:b4d99022347ea416",
-      "target": "schema:176b16381102e29b",
-      "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "schema:58f90116b0d99499",
-      "target": "concept:e30310125c31c71c",
-      "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "concept:e30310125c31c71c",
-      "target": "schema:58f90116b0d99499",
-      "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "schema:58f90116b0d99499",
-      "target": "concept:7ebb2602e32acad4",
-      "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "concept:7ebb2602e32acad4",
-      "target": "schema:58f90116b0d99499",
-      "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "schema:097eac009e7ece0b",
-      "target": "concept:e30310125c31c71c",
-      "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "concept:e30310125c31c71c",
-      "target": "schema:097eac009e7ece0b",
-      "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "schema:097eac009e7ece0b",
-      "target": "concept:c0e5d7e81f52dc5e",
-      "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "concept:c0e5d7e81f52dc5e",
-      "target": "schema:097eac009e7ece0b",
-      "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "schema:82a83139296059e8",
-      "target": "concept:e30310125c31c71c",
-      "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "concept:e30310125c31c71c",
-      "target": "schema:82a83139296059e8",
-      "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "schema:82a83139296059e8",
-      "target": "concept:eed935ffca07484a",
-      "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "concept:eed935ffca07484a",
-      "target": "schema:82a83139296059e8",
-      "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "schema:59a83114b7584111",
-      "target": "concept:e30310125c31c71c",
-      "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
-      "plasticity": 0.5,
-      "coactivation_count": 0,
-      "last_coactivated_at": null
-    },
-    {
-      "source": "concept:e30310125c31c71c",
-      "target": "schema:59a83114b7584111",
-      "relation": "pattern_contains",
-      "weight": 0.15131659826165583,
+      "weight": 0.15086295110006737,
       "plasticity": 0.5,
       "coactivation_count": 0,
       "last_coactivated_at": null
