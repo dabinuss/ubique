@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T02:45:25.209879+00:00",
-  "generation": 596,
+  "timestamp": "2026-10-08T02:46:21.277100+00:00",
+  "generation": 597,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1779,
-    "surprise": 0.1463,
+    "novelty": 0.1681,
+    "surprise": 0.1371,
     "uncertainty": 0.435,
-    "salience": 0.3238,
-    "exploration": 0.3446,
-    "plasticity": 0.3979,
-    "energy": 0.793,
-    "sleep_pressure": 0.097
+    "salience": 0.3024,
+    "exploration": 0.3385,
+    "plasticity": 0.3885,
+    "energy": 0.728,
+    "sleep_pressure": 0.146
   },
   "workspace": [
-    {
-      "id": "episode:193520061bea26",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-7\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need empirical measurements of peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T01:22:33.881788+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully",
-      "activation": 0.2945,
-      "salience": 0.88,
-      "novelty": 0.78,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5106
-    },
     {
       "id": "episode:4c3a81c4f4a07c",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-9\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need quantitative data on peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T01:24:22.962943+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read",
-      "activation": 0.2853,
+      "activation": 0.5152,
       "salience": 0.88,
       "novelty": 0.8,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5087
+      "ignition_score": 0.6236
     },
     {
-      "id": "episode:6b64b87c1632f6",
+      "id": "episode:193520061bea26",
       "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"facial paralysis and muscle agitation\", \"how does autonomic (parasympathetic) signaling interact with mechanical compression during emotional crying?\"]}",
-      "activation": 0.2879,
-      "salience": 0.9,
-      "novelty": 0.3,
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-7\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need empirical measurements of peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T01:22:33.881788+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully",
+      "activation": 0.5151,
+      "salience": 0.88,
+      "novelty": 0.78,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4499
+      "ignition_score": 0.621
     },
     {
-      "id": "episode:294a79fe50e7f0",
+      "id": "episode:6a2611c29eb7fb",
       "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"parasympathetic and mechanical pathways in lacrimal secretion\", \"which specific peri‑ocular muscles (e.g., orbicularis oculi, corrugator) are most active during the onset of emotional tears, and what are their activation timings?\"]}",
-      "activation": 0.3018,
-      "salience": 0.79,
-      "novelty": 0.3,
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-8\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need quantitative data to resolve the temporal cascade of muscle activation and tear secretion during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T01:23:29.677102+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false",
+      "activation": 0.4974,
+      "salience": 0.85,
+      "novelty": 0.8,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4294
+      "ignition_score": 0.6072
     },
     {
-      "id": "episode:e33ad2dba4beed",
+      "id": "episode:3e63cb835add1a",
       "kind": "recalled_episode",
-      "label": "{\"mode\": \"rem\", \"created\": 1, \"source\": \"deterministic_recombination\", \"concepts\": [\"peri‑ocular muscle compression during emotional crying\", \"integration of autonomic and voluntary facial expressions\"]}",
-      "activation": 0.2713,
-      "salience": 0.8,
-      "novelty": 0.3,
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-6\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Obtain concrete data on muscle activation timing, autonomic signaling, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-07T18:54:56.882646+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": f",
+      "activation": 0.4388,
+      "salience": 0.81,
+      "novelty": 0.73,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4166
+      "ignition_score": 0.5588
     },
     {
-      "id": "episode:e684d8c145243e",
+      "id": "episode:fbe9d4aae5dae9",
       "kind": "recalled_episode",
-      "label": "```json\n{\n  \"associations\": [\n    {\n      \"label\": \"orbicularis oculi EMG timing → autonomic reflex integration\",\n      \"kind\": \"concept\",\n      \"strength\": 0.72\n    },\n    {\n      \"label\": \"lacrimal secretion volume → mechanical duct compression dynamics\",\n      \"kind\": \"concept\",\n      \"strength\": 0.68\n    }\n  ],\n  \"hypotheses\": [\n    \"Simultaneous peri-ocular electromyography and lacrimal output tracking can resolve whether motor contraction precedes or follows parasympathetic fluid surges.\",",
-      "activation": 0.2954,
-      "salience": 0.42,
-      "novelty": 0.1929,
-      "surprise": 0.3,
-      "epistemic_status": "model_proposal",
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-5\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need concrete data on peri‑ocular muscle activity, parasympathetic outflow, and tear volume composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-07T12:06:20.404748+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_rea",
+      "activation": 0.4063,
+      "salience": 0.85,
+      "novelty": 0.75,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3138
+      "ignition_score": 0.5552
     },
     {
-      "id": "concept:e12246ce308023cb",
+      "id": "episode:cfc369a8cd202e",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-4\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Acquire empirical evidence on peri‑ocular muscle activity and parasympathetic pathways during emotional tear production.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-07T02:27:23.992426+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": fals",
+      "activation": 0.3545,
+      "salience": 0.82,
+      "novelty": 0.7,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.5152
+    },
+    {
+      "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
-      "label": "orbicularis oculi emg timing → autonomic reflex integration",
-      "activation": 0.336,
-      "salience": 0.323845,
-      "novelty": 0.177885,
-      "surprise": 0.14626,
-      "epistemic_status": "model_proposal",
+      "label": "reading_request",
+      "activation": 0.2627,
+      "salience": 0.302415,
+      "novelty": 0.168135,
+      "surprise": 0.13709500000000002,
+      "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.2896
+      "ignition_score": 0.2453
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 15,
+      "remaining_calls": 14,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 995,
+      "remaining_calls": 994,
       "eligible": true
     },
     "huggingface": {
@@ -243,47 +243,41 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
-    "source": "homeostasis",
-    "score": 0.40625
+    "kind": "library",
+    "description": "Request access to peer‑reviewed articles that report quantitative measurements of peri‑ocular EMG, parasympathetic activity, and tear volume/composition during emotional crying.",
+    "source": "substrate:groq",
+    "score": 0.47408
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.40625,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.35892,
-      "description": "Allow activation to decay without forcing cognition."
-    },
-    {
       "kind": "library",
       "source": "substrate:groq",
-      "score": 0.3259,
-      "description": "Request reading of \"Physiology of Lacrimal Secretion and Emotional Crying\" (item 7) to obtain quantitative EMG, autonomic outflow, and tear‑volume/composition data."
+      "score": 0.47408,
+      "description": "Request access to peer‑reviewed articles that report quantitative measurements of peri‑ocular EMG, parasympathetic activity, and tear volume/composition during emotional crying."
     },
     {
       "kind": "library",
       "source": "substrate:gemini",
-      "score": 0.29419,
-      "description": "Request empirical literature on the physiological mechanics and timing of emotional lacrimation."
+      "score": 0.46739,
+      "description": "Request a specific empirical text or database entry focusing on the physiological measurements of lacrimal secretion and peri-ocular EMG timing."
     },
     {
-      "kind": "library",
-      "source": "substrate:groq",
-      "score": 0.29145,
-      "description": "Request reading of \"Physiology of Lacrimal Secretion and Emotional Crying\" (item 9) for additional quantitative data."
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.30333,
+      "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.28331,
+      "score": 0.28243,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.26088,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [
@@ -320,10 +314,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 552,
-    "semantic_nodes": 2170,
+    "episodes": 555,
+    "semantic_nodes": 2186,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -334,13 +328,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_edges": 156
     },
     "terminal_inhibition": {
-      "startup": 265,
-      "after_lifecycle": 265,
-      "after_spread": 265,
-      "after_packets": 265
+      "startup": 263,
+      "after_lifecycle": 263,
+      "after_spread": 263,
+      "after_packets": 263
     }
   }
 }
