@@ -1,102 +1,90 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T16:33:47.169503+00:00",
-  "generation": 705,
+  "timestamp": "2026-10-08T16:47:10.634527+00:00",
+  "generation": 706,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1854,
-    "surprise": 0.1533,
+    "novelty": 0.173,
+    "surprise": 0.1416,
     "uncertainty": 0.28,
-    "salience": 0.0795,
-    "exploration": 0.2935,
-    "plasticity": 0.3685,
+    "salience": 0.0797,
+    "exploration": 0.2869,
+    "plasticity": 0.3663,
     "energy": 1.0,
-    "sleep_pressure": 0.0813
+    "sleep_pressure": 0.0372
   },
   "workspace": [
     {
       "id": "episode:c718ff092c1c26",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 452000, \"excerpt\": \"earance, as I find\\nrecorded in my notes, in very young children when they were only\\nmoderately surprised.\\n\\nThere is still another and highly effective cause, leading to the mouth\\nbeing opened, when we are astonished, and more especially when we are\\nsudden",
-      "activation": 0.24,
+      "activation": 0.2396,
       "salience": 0.9,
       "novelty": 0.6,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.465
+      "ignition_score": 0.4648
     },
     {
       "id": "episode:da7b29ec3d7e7f",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 412000, \"excerpt\": \"ally to take. Mr. Scott has\\nalso seen the same expression on the faces of high-caste natives who\\nhave approached close to some defiling object. Mr. Bridges says that\\nthe Fuegians “express contempt by shooting out the lips and hissing\\nthrough them, and by tu",
-      "activation": 0.2314,
+      "activation": 0.2311,
       "salience": 0.88,
       "novelty": 0.42,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4323
+      "ignition_score": 0.4321
     },
     {
       "id": "episode:ea6bc52eb54a6d",
       "kind": "recalled_episode",
       "label": "Quiet state selected; activation decayed.",
-      "activation": 0.2429,
+      "activation": 0.2426,
       "salience": 0.95,
       "novelty": 0.1,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4139
+      "ignition_score": 0.4138
     },
     {
       "id": "episode:401e7d3b32eeeb",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 462000, \"excerpt\": \" the eyes and mouth are\\nwidely opened, and the eyebrows raised. The frightened man at first\\nstands like a statue motionless and breathless, or crouches down as if\\ninstinctively to escape observation.\\n\\nThe heart beats quickly and violently, so that it palpi",
-      "activation": 0.2295,
+      "activation": 0.2291,
       "salience": 0.8,
       "novelty": 0.4,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4088
+      "ignition_score": 0.4085
     },
     {
       "id": "episode:d3ca8a2b875bab",
       "kind": "recalled_episode",
       "label": "Quiet state selected; activation decayed.",
-      "activation": 0.2396,
+      "activation": 0.2393,
       "salience": 0.95,
       "novelty": 0.0,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3993
+      "ignition_score": 0.3991
     },
     {
       "id": "episode:9e06f094bd53a5",
       "kind": "recalled_episode",
       "label": "Quiet state selected; activation decayed.",
-      "activation": 0.2431,
+      "activation": 0.2427,
       "salience": 0.9,
       "novelty": 0.05,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3951
-    },
-    {
-      "id": "concept:d39f7fb1d10bc9e8",
-      "kind": "concept",
-      "label": "reading_request",
-      "activation": 0.0192,
-      "salience": 0.10214000000000002,
-      "novelty": 0.18536,
-      "surprise": 0.153345,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.0776
+      "ignition_score": 0.3948
     }
   ],
   "provider_eligibility": {
@@ -263,28 +251,28 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
     "source": "homeostasis",
-    "score": 0.25019
+    "score": 0.22269
   },
   "action_competition": [
     {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.25019,
-      "description": "Allow activation to decay without forcing cognition."
-    },
-    {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.24309,
+      "score": 0.22269,
       "description": "Replay and consolidate existing experience offline."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.17597,
+      "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.08993,
+      "score": 0.1312,
       "description": "Continue processing the active workspace without external action."
     }
   ],
@@ -328,7 +316,7 @@
   ],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 744,
+    "episodes": 745,
     "semantic_nodes": 2606,
     "synapses": 1200
   },
