@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T09:15:29.028804+00:00",
-  "generation": 636,
+  "timestamp": "2026-10-08T09:28:51.849376+00:00",
+  "generation": 637,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1531,
-    "surprise": 0.1229,
+    "novelty": 0.2745,
+    "surprise": 0.2374,
     "uncertainty": 0.31,
-    "salience": 0.0708,
-    "exploration": 0.2867,
-    "plasticity": 0.3479,
+    "salience": 0.1452,
+    "exploration": 0.3521,
+    "plasticity": 0.4333,
     "energy": 1.0,
-    "sleep_pressure": 0.0832
+    "sleep_pressure": 0.0663
   },
   "workspace": [
     {
-      "id": "episode:a2a2c41fbc8ab1",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-5\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\"}, \"offset\": 0, \"excerpt\": \"\", \"content_available\": false, \"next_offset\": null, \"total_chars\": 0, \"read_cursor\": 0, \"fully_read\": false, \"already_complete\": false, \"notes\": []}",
-      "activation": 0.3129,
-      "salience": 0.9,
-      "novelty": 0.7,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5145
+      "id": "episode:9536a2934bd2f0",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 967}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
     },
     {
-      "id": "episode:07e232a9abafb9",
+      "id": "episode:36faa65089c213",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-5\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\"}, \"offset\": 0, \"excerpt\": \"\", \"content_available\": false, \"next_offset\": null, \"total_chars\": 0, \"read_cursor\": 0, \"fully_read\": false, \"already_complete\": false, \"notes\": []}",
-      "activation": 0.3083,
-      "salience": 0.85,
-      "novelty": 0.75,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 972}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.6553,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.5062
+      "ignition_score": 0.5466
     },
     {
-      "id": "episode:2d10c520088936",
+      "id": "episode:26275843b24ca4",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\"}, \"offset\": 0, \"excerpt\": \"\", \"content_available\": false, \"next_offset\": null, \"total_chars\": 0, \"read_cursor\": 0, \"fully_read\": false, \"already_complete\": false, \"notes\": []}",
-      "activation": 0.3059,
-      "salience": 0.85,
-      "novelty": 0.7,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 975}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.6548,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4985
+      "ignition_score": 0.5464
     },
     {
-      "id": "episode:da7b29ec3d7e7f",
+      "id": "episode:463d5a2f89fcb8",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 412000, \"excerpt\": \"ally to take. Mr. Scott has\\nalso seen the same expression on the faces of high-caste natives who\\nhave approached close to some defiling object. Mr. Bridges says that\\nthe Fuegians “express contempt by shooting out the lips and hissing\\nthrough them, and by tu",
-      "activation": 0.3085,
-      "salience": 0.88,
-      "novelty": 0.42,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 978}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.6543,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4708
+      "ignition_score": 0.5462
     },
     {
-      "id": "episode:eefbeb3f27a5cd",
+      "id": "episode:252e3ebe5a55e9",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 382000, \"excerpt\": \" fierce delirium of\\nmeningitis; but the movements of the iris under the influence of the\\ndifferent emotions is a very obscure subject.[1008]\\n\\nShakspeare sums up the chief characteristics of rage as follows:—\\n\\n“In peace there’s nothing so becomes a man,\\nA",
-      "activation": 0.3055,
-      "salience": 0.88,
-      "novelty": 0.3,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.644,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4537
+      "ignition_score": 0.541
     },
     {
-      "id": "episode:168942d31d7846",
+      "id": "episode:10e2f43ada28e0",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 372000, \"excerpt\": \"sion or determination_.—The firm closure of the mouth tends to\\ngive an expression of determination or decision to the countenance. No\\ndetermined man probably ever had an habitually gaping mouth. Hence,\\nalso, a small and weak lower jaw, which seems to indicat",
-      "activation": 0.3055,
-      "salience": 0.88,
-      "novelty": 0.3,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 979}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.6393,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4537
+      "ignition_score": 0.5386
     },
     {
-      "id": "concept:e14de43896fcd264",
-      "kind": "concept",
-      "label": "content_available",
-      "activation": 0.0335,
-      "salience": 0.09096,
-      "novelty": 0.153055,
-      "surprise": 0.12292499999999999,
-      "epistemic_status": "memory_index",
+      "id": "runtime_state:423b4a0b7d2066e3",
+      "kind": "runtime_state",
+      "label": "provider:gemini",
+      "activation": 0.2752,
+      "salience": 0.18602,
+      "novelty": 0.274515,
+      "surprise": 0.237385,
+      "epistemic_status": "observed_runtime_state",
       "source": "semantic_network",
-      "ignition_score": 0.0741
+      "ignition_score": 0.2483
     }
   ],
   "provider_eligibility": {
@@ -109,10 +109,10 @@
     },
     "groq": {
       "configured": true,
-      "disabled": true,
+      "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 967,
-      "eligible": false
+      "remaining_calls": 966,
+      "eligible": true
     },
     "huggingface": {
       "configured": false,
@@ -264,31 +264,42 @@
   },
   "last_action": {
     "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
-    "source": "homeostasis",
-    "score": 0.2523
+    "description": "Allow consolidation of recent actions and integration of updated provider state.",
+    "source": "substrate:groq",
+    "score": 0.42683
   },
   "action_competition": [
     {
       "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.2523,
-      "description": "Allow activation to decay without forcing cognition."
+      "source": "substrate:groq",
+      "score": 0.42683,
+      "description": "Allow consolidation of recent actions and integration of updated provider state."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.24314,
+      "score": 0.24187,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.12385,
+      "score": 0.22888,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.15677,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
-  "substrate_contributors": [],
+  "substrate_contributors": [
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    }
+  ],
   "current_stances": [
     {
       "topic": "evolutionary_origins_of_expression",
@@ -328,8 +339,8 @@
   ],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 649,
-    "semantic_nodes": 2515,
+    "episodes": 652,
+    "semantic_nodes": 2522,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -340,13 +351,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_edges": 72
     },
     "terminal_inhibition": {
       "startup": 340,
       "after_lifecycle": 340,
       "after_spread": 340,
-      "after_packets": 340
+      "after_packets": 344
     }
   }
 }
