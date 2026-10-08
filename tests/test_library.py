@@ -235,3 +235,38 @@ def test_sync_caches_remote_book_without_advancing_read_state(tmp_path, monkeypa
     assert item["read_count"] == 0
     assert item["read_cursor"] == 0
     assert item["fully_read"] is False
+
+
+def test_repeat_reading_wish_is_idempotent_across_case_and_punctuation(tmp_path, monkeypatch):
+    _redirect(tmp_path, monkeypatch)
+    first = library.request_library_item(
+        "Physiology of emotional crying",
+        reason="Investigate emotional expression.",
+    )
+    repeated = library.request_library_item(
+        "PHYSIOLOGY--OF--EMOTIONAL CRYING",
+        reason="Investigate tear physiology in detail.",
+    )
+
+    assert first["already_requested"] is False
+    assert repeated["already_requested"] is True
+    assert repeated["item"]["id"] == first["item"]["id"]
+    saved = json.loads(library.INDEX_PATH.read_text(encoding="utf-8"))
+    assert len(saved["items"]) == 1
+    assert saved["items"][0]["read_count"] == 0
+
+
+def test_missing_book_does_not_count_as_reading(tmp_path, monkeypatch):
+    _redirect(tmp_path, monkeypatch)
+    item = library.request_library_item("Unfulfilled research wish")["item"]
+    for _ in range(3):
+        result = library.read_library_item(item["id"])
+        assert result["content_available"] is False
+        assert result["excerpt"] == ""
+        assert result["already_complete"] is False
+        assert result["read_cursor"] == 0
+
+    stored = json.loads(library.INDEX_PATH.read_text(encoding="utf-8"))["items"][0]
+    assert stored["read_count"] == 0
+    assert stored["read_cursor"] == 0
+    assert stored["fully_read"] is False
