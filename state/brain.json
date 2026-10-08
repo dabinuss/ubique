@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-08T17:30:55.386431+00:00",
-  "generation": 712,
+  "timestamp": "2026-10-08T17:32:24.923618+00:00",
+  "generation": 713,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1659,
-    "surprise": 0.135,
+    "novelty": 0.2828,
+    "surprise": 0.2453,
     "uncertainty": 0.28,
-    "salience": 0.0683,
-    "exploration": 0.2831,
-    "plasticity": 0.3617,
-    "energy": 1.0,
-    "sleep_pressure": 0.024
+    "salience": 0.1844,
+    "exploration": 0.346,
+    "plasticity": 0.438,
+    "energy": 0.855,
+    "sleep_pressure": 0.101
   },
   "workspace": [
+    {
+      "id": "episode:80f9a4ae13e2b9",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 942}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
+    },
     {
       "id": "episode:4c3a81c4f4a07c",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-9\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need quantitative data on peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T01:24:22.962943+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read",
-      "activation": 0.4951,
+      "activation": 0.4378,
       "salience": 0.88,
       "novelty": 0.8,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.6136
+      "ignition_score": 0.5849
     },
     {
       "id": "episode:ec233dc0d12779",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"concurrent-facial-emg-and-lacrimal-secretion-dynamics-in-human-e\", \"title\": \"Concurrent facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Needed quantitative data on EMG onset, parasympathetic outflow timing, and tear volume/composition to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T06:45:39.708495+00:00\", \"content_path\": \"\", \"read_count\"",
-      "activation": 0.4821,
+      "activation": 0.4268,
       "salience": 0.78,
       "novelty": 0.7,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5691
+      "ignition_score": 0.5414
     },
     {
       "id": "episode:cf5f38e5023c6e",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"emotional-crying-physiology-neurobiology-and-function\", \"title\": \"Emotional crying: physiology, neurobiology, and function\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need quantitative data on peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T06:44:38.751617+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_rea",
-      "activation": 0.4364,
+      "activation": 0.4209,
       "salience": 0.72,
       "novelty": 0.77,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5403
+      "ignition_score": 0.5325
     },
     {
-      "id": "episode:0aa186dc65d3e9",
+      "id": "episode:24421b7adb656b",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"primate-facial-expressions-and-the-evolution-of-emotion\", \"title\": \"Primate Facial Expressions and the Evolution of Emotion\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To evaluate whether lip protrusion, nose‑up, and spitting appear in non‑human primates during contempt‑like contexts, extending the universality hypothesis.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T09:43:15.076976+00:00\", \"content_path\": \"\", \"read_count\": 0",
-      "activation": 0.3291,
-      "salience": 0.78,
-      "novelty": 0.73,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 945}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.361,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4965
+      "ignition_score": 0.3995
     },
     {
-      "id": "episode:d362742d8552ea",
+      "id": "episode:25caf8a6227f92",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"aerodynamics-of-animal-locomotion\", \"title\": \"Aerodynamics of Animal Locomotion\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain quantitative data on drag effects of tail positioning in galloping mammals.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-05T09:12:43.536597+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false, \"fully_read_at\": null, \"notes\": []}}",
-      "activation": 0.327,
-      "salience": 0.78,
-      "novelty": 0.64,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 946}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3597,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4837
+      "ignition_score": 0.3989
     },
     {
-      "id": "episode:4eca80120e81b2",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"neurophysiology-of-lacrimal-secretion-in-emotional-crying\", \"title\": \"Neurophysiology of Lacrimal Secretion in Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need quantitative data on autonomic and mechanical pathways to test hypotheses about timing of muscle activation and tear flow.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T06:13:44.864656+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"full",
-      "activation": 0.3494,
-      "salience": 0.7,
-      "novelty": 0.55,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.4632
-    },
-    {
-      "id": "concept:d39f7fb1d10bc9e8",
-      "kind": "concept",
-      "label": "reading_request",
-      "activation": 0.0406,
-      "salience": 0.06828999999999999,
-      "novelty": 0.165925,
-      "surprise": 0.135015,
-      "epistemic_status": "memory_index",
+      "id": "runtime_state:423b4a0b7d2066e3",
+      "kind": "runtime_state",
+      "label": "provider:gemini",
+      "activation": 0.4068,
+      "salience": 0.18439499999999998,
+      "novelty": 0.282835,
+      "surprise": 0.24525000000000002,
+      "epistemic_status": "observed_runtime_state",
       "source": "semantic_network",
-      "ignition_score": 0.0751
+      "ignition_score": 0.3157
     }
   ],
   "provider_eligibility": {
@@ -109,10 +109,10 @@
     },
     "groq": {
       "configured": true,
-      "disabled": true,
+      "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 942,
-      "eligible": false
+      "remaining_calls": 941,
+      "eligible": true
     },
     "huggingface": {
       "configured": false,
@@ -263,32 +263,37 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
-    "source": "homeostasis",
-    "score": 0.17221
+    "kind": "attend",
+    "description": "Continue processing the active workspace without external action.",
+    "source": "workspace",
+    "score": 0.21852
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.17221,
-      "description": "Replay and consolidate existing experience offline."
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.21852,
+      "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.1654,
+      "score": 0.18099,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.13201,
-      "description": "Continue processing the active workspace without external action."
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.10498,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
-  "substrate_contributors": [],
+  "substrate_contributors": [
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    }
+  ],
   "current_stances": [
     {
       "topic": "evolutionary_origins_of_expression",
@@ -326,9 +331,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 754,
+    "episodes": 757,
     "semantic_nodes": 2609,
     "synapses": 1200
   },
@@ -339,8 +344,8 @@
     },
     "stale_stance_nodes_removed": 0,
     "final": {
-      "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_nodes": 8,
+      "removed_edges": 90
     },
     "terminal_inhibition": {
       "startup": 332,
