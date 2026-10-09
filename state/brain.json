@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-09T06:55:35.042492+00:00",
-  "generation": 868,
+  "timestamp": "2026-10-09T07:08:52.731511+00:00",
+  "generation": 869,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1723,
-    "surprise": 0.1411,
+    "novelty": 0.1645,
+    "surprise": 0.1337,
     "uncertainty": 0.5,
-    "salience": 0.6744,
-    "exploration": 0.3635,
-    "plasticity": 0.4758,
-    "energy": 1.0,
-    "sleep_pressure": 0.0912
+    "salience": 0.7674,
+    "exploration": 0.3593,
+    "plasticity": 0.4561,
+    "energy": 0.855,
+    "sleep_pressure": 0.1682
   },
   "workspace": [
     {
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.9309,
-      "salience": 0.868175,
-      "novelty": 0.172295,
-      "surprise": 0.14106000000000002,
+      "activation": 0.94,
+      "salience": 0.76736,
+      "novelty": 0.164495,
+      "surprise": 0.133715,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7218
+      "ignition_score": 0.6993
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
-      "activation": 0.9309,
-      "salience": 0.868175,
-      "novelty": 0.172295,
-      "surprise": 0.14106000000000002,
+      "activation": 0.94,
+      "salience": 0.76736,
+      "novelty": 0.164495,
+      "surprise": 0.133715,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7218
+      "ignition_score": 0.6993
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
-      "activation": 0.9309,
-      "salience": 0.868175,
-      "novelty": 0.172295,
-      "surprise": 0.14106000000000002,
+      "activation": 0.94,
+      "salience": 0.76736,
+      "novelty": 0.164495,
+      "surprise": 0.133715,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7218
+      "ignition_score": 0.6993
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
-      "activation": 0.9309,
-      "salience": 0.868175,
-      "novelty": 0.172295,
-      "surprise": 0.14106000000000002,
+      "activation": 0.94,
+      "salience": 0.76736,
+      "novelty": 0.164495,
+      "surprise": 0.133715,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7218
+      "ignition_score": 0.6993
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
-      "activation": 0.9309,
-      "salience": 0.868175,
-      "novelty": 0.172295,
-      "surprise": 0.14106000000000002,
+      "activation": 0.94,
+      "salience": 0.76736,
+      "novelty": 0.164495,
+      "surprise": 0.133715,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7218
+      "ignition_score": 0.6993
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
-      "activation": 0.9309,
-      "salience": 0.868175,
-      "novelty": 0.172295,
-      "surprise": 0.14106000000000002,
+      "activation": 0.8632,
+      "salience": 0.76736,
+      "novelty": 0.164495,
+      "surprise": 0.133715,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7218
+      "ignition_score": 0.6609
     },
     {
       "id": "episode:52a63fc05b00e5",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"simultaneous-facial-emg-and-lacrimal-secretion-dynamics-in-human\", \"title\": \"Simultaneous facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain quantitative timing data for EMG onset, parasympathetic outflow, and tear volume/composition needed to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T18:15:45.739979+00:00\", \"content_path\": \"\",",
-      "activation": 0.3994,
+      "activation": 0.3991,
       "salience": 0.85,
       "novelty": 0.7,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5452
+      "ignition_score": 0.5451
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
-    "source": "homeostasis",
-    "score": 0.35008
+    "kind": "attend",
+    "description": "Continue processing the active workspace without external action.",
+    "source": "workspace",
+    "score": 0.31484
   },
   "action_competition": [
     {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.35008,
-      "description": "Allow activation to decay without forcing cognition."
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.31484,
+      "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.32191,
+      "score": 0.28499,
       "description": "Replay and consolidate existing experience offline."
     },
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.25677,
-      "description": "Continue processing the active workspace without external action."
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.22695,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
   "substrate_contributors": [],
@@ -326,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 981,
+    "episodes": 982,
     "semantic_nodes": 2857,
     "synapses": 1200
   },
