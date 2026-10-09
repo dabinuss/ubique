@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-09T01:16:34.304825+00:00",
-  "generation": 797,
+  "timestamp": "2026-10-09T01:17:26.787184+00:00",
+  "generation": 798,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2065,
-    "surprise": 0.1733,
+    "novelty": 0.1867,
+    "surprise": 0.1546,
     "uncertainty": 0.22,
-    "salience": 0.6548,
-    "exploration": 0.2945,
-    "plasticity": 0.4638,
-    "energy": 0.935,
-    "sleep_pressure": 0.1362
+    "salience": 0.7546,
+    "exploration": 0.2733,
+    "plasticity": 0.4672,
+    "energy": 0.87,
+    "sleep_pressure": 0.1852
   },
   "workspace": [
     {
@@ -19,72 +19,72 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.6548449999999999,
-      "novelty": 0.20654999999999998,
-      "surprise": 0.1733,
+      "salience": 0.7546200000000001,
+      "novelty": 0.186725,
+      "surprise": 0.154645,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6814
+      "ignition_score": 0.7015
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.6548449999999999,
-      "novelty": 0.20654999999999998,
-      "surprise": 0.1733,
+      "salience": 0.7546200000000001,
+      "novelty": 0.186725,
+      "surprise": 0.154645,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6814
+      "ignition_score": 0.7015
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.6548449999999999,
-      "novelty": 0.20654999999999998,
-      "surprise": 0.1733,
+      "salience": 0.7546200000000001,
+      "novelty": 0.186725,
+      "surprise": 0.154645,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6814
+      "ignition_score": 0.7015
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.6548449999999999,
-      "novelty": 0.20654999999999998,
-      "surprise": 0.1733,
+      "salience": 0.7546200000000001,
+      "novelty": 0.186725,
+      "surprise": 0.154645,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6814
+      "ignition_score": 0.7015
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.6548449999999999,
-      "novelty": 0.20654999999999998,
-      "surprise": 0.1733,
+      "salience": 0.7546200000000001,
+      "novelty": 0.186725,
+      "surprise": 0.154645,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6814
+      "ignition_score": 0.7015
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
-      "activation": 0.6778,
-      "salience": 0.6548449999999999,
-      "novelty": 0.20654999999999998,
-      "surprise": 0.1733,
+      "activation": 0.94,
+      "salience": 0.7546200000000001,
+      "novelty": 0.186725,
+      "surprise": 0.154645,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.5503
+      "ignition_score": 0.7015
     },
     {
       "id": "episode:52a63fc05b00e5",
@@ -104,7 +104,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 7,
+      "remaining_calls": 6,
       "eligible": true
     },
     "groq": {
@@ -264,33 +264,33 @@
   },
   "last_action": {
     "kind": "library",
-    "description": "Continue reading from available catalog items, specifically focusing on an unread book like ribot-psychology-emotions.",
+    "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' using the existing read cursor.",
     "source": "substrate:gemini",
-    "score": 0.55191
+    "score": 0.48927
   },
   "action_competition": [
     {
       "kind": "library",
       "source": "substrate:gemini",
-      "score": 0.55191,
-      "description": "Continue reading from available catalog items, specifically focusing on an unread book like ribot-psychology-emotions."
+      "score": 0.48927,
+      "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' using the existing read cursor."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.35198,
+      "score": 0.37145,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.32741,
+      "score": 0.35782,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.18952,
+      "score": 0.25224,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
@@ -337,10 +337,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 884,
-    "semantic_nodes": 2757,
+    "episodes": 887,
+    "semantic_nodes": 2765,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -351,7 +351,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 50
+      "removed_edges": 66
     },
     "terminal_inhibition": {
       "startup": 303,
