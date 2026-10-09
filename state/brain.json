@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-09T15:10:28.189238+00:00",
-  "generation": 960,
+  "timestamp": "2026-10-09T15:11:22.691247+00:00",
+  "generation": 961,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2822,
-    "surprise": 0.2447,
+    "novelty": 0.2359,
+    "surprise": 0.2011,
     "uncertainty": 0.55,
-    "salience": 0.6703,
-    "exploration": 0.4402,
-    "plasticity": 0.5105,
-    "energy": 0.79,
-    "sleep_pressure": 0.1671
+    "salience": 0.5917,
+    "exploration": 0.4153,
+    "plasticity": 0.4975,
+    "energy": 1.0,
+    "sleep_pressure": 0.111
   },
   "workspace": [
-    {
-      "id": "episode:27de353b207fb1",
-      "kind": "provider_state_change",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 960}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.95,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "runtime",
-      "ignition_score": 0.694
-    },
     {
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.8852,
-      "salience": 0.67027,
-      "novelty": 0.282185,
-      "surprise": 0.24466500000000002,
+      "activation": 0.94,
+      "salience": 0.7646949999999999,
+      "novelty": 0.23593,
+      "surprise": 0.20105499999999998,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6762
+      "ignition_score": 0.716
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
-      "activation": 0.8852,
-      "salience": 0.67027,
-      "novelty": 0.282185,
-      "surprise": 0.24466500000000002,
+      "activation": 0.94,
+      "salience": 0.7646949999999999,
+      "novelty": 0.23593,
+      "surprise": 0.20105499999999998,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6762
+      "ignition_score": 0.716
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
-      "activation": 0.8852,
-      "salience": 0.67027,
-      "novelty": 0.282185,
-      "surprise": 0.24466500000000002,
+      "activation": 0.94,
+      "salience": 0.7646949999999999,
+      "novelty": 0.23593,
+      "surprise": 0.20105499999999998,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6762
+      "ignition_score": 0.716
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
-      "activation": 0.8852,
-      "salience": 0.67027,
-      "novelty": 0.282185,
-      "surprise": 0.24466500000000002,
+      "activation": 0.94,
+      "salience": 0.7646949999999999,
+      "novelty": 0.23593,
+      "surprise": 0.20105499999999998,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6762
+      "ignition_score": 0.716
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
-      "activation": 0.8852,
-      "salience": 0.67027,
-      "novelty": 0.282185,
-      "surprise": 0.24466500000000002,
+      "activation": 0.94,
+      "salience": 0.7646949999999999,
+      "novelty": 0.23593,
+      "surprise": 0.20105499999999998,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6762
+      "ignition_score": 0.716
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
-      "activation": 0.8852,
-      "salience": 0.67027,
-      "novelty": 0.282185,
-      "surprise": 0.24466500000000002,
+      "activation": 0.94,
+      "salience": 0.7646949999999999,
+      "novelty": 0.23593,
+      "surprise": 0.20105499999999998,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6762
+      "ignition_score": 0.716
+    },
+    {
+      "id": "episode:74b0ffec29f337",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"quantitative-analysis-of-facial-emg-and-lacrimal-secretion-dynam\", \"title\": \"Quantitative analysis of facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain empirical timing measurements needed to evaluate hypotheses about parasympathetic coordination and tear production.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-09T08:26:32.998229+00:00\", \"content_path\": \"\",",
+      "activation": 0.4132,
+      "salience": 0.84,
+      "novelty": 0.73,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.5535
     }
   ],
   "provider_eligibility": {
@@ -109,10 +109,10 @@
     },
     "groq": {
       "configured": true,
-      "disabled": false,
+      "disabled": true,
       "daily_limit": 1000,
-      "remaining_calls": 959,
-      "eligible": true
+      "remaining_calls": 958,
+      "eligible": false
     },
     "huggingface": {
       "configured": false,
@@ -263,55 +263,32 @@
     }
   },
   "last_action": {
-    "kind": "library",
-    "description": "Request a recent review article that synthesizes neurophysiological data on emotional crying.",
-    "source": "substrate:groq",
-    "score": 0.60744
+    "kind": "rest",
+    "description": "Allow activation to decay without forcing cognition.",
+    "source": "homeostasis",
+    "score": 0.33774
   },
   "action_competition": [
     {
-      "kind": "library",
-      "source": "substrate:groq",
-      "score": 0.60744,
-      "description": "Request a recent review article that synthesizes neurophysiological data on emotional crying."
-    },
-    {
-      "kind": "library",
-      "source": "substrate:groq",
-      "score": 0.51738,
-      "description": "Read a classic source that may contain relevant background on emotional crying and tear physiology."
-    },
-    {
-      "kind": "consolidate",
-      "source": "substrate:groq",
-      "score": 0.39381,
-      "description": "Integrate newly read material and pending requests into the working model of parasympathetic coordination."
-    },
-    {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.297,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.29377,
+      "score": 0.33774,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.24275,
+      "score": 0.33468,
       "description": "Continue processing the active workspace without external action."
-    }
-  ],
-  "substrate_contributors": [
+    },
     {
-      "provider": "groq",
-      "model": "openai/gpt-oss-120b"
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.32648,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
+  "substrate_contributors": [],
   "current_stances": [
     {
       "topic": "evolutionary_origins_of_expression",
@@ -349,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 3,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 1096,
+    "episodes": 1097,
     "semantic_nodes": 2930,
     "synapses": 1200
   },
@@ -363,7 +340,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 78
+      "removed_edges": 0
     },
     "terminal_inhibition": {
       "startup": 311,
