@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-09T00:04:34.021936+00:00",
-  "generation": 787,
+  "timestamp": "2026-10-09T00:05:26.386790+00:00",
+  "generation": 788,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2163,
-    "surprise": 0.1825,
+    "novelty": 0.1931,
+    "surprise": 0.1606,
     "uncertainty": 0.28,
-    "salience": 0.7715,
-    "exploration": 0.3102,
-    "plasticity": 0.487,
-    "energy": 0.725,
-    "sleep_pressure": 0.2538
+    "salience": 0.8305,
+    "exploration": 0.2977,
+    "plasticity": 0.4823,
+    "energy": 0.66,
+    "sleep_pressure": 0.3028
   },
   "workspace": [
     {
@@ -19,72 +19,72 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.771455,
-      "novelty": 0.2163,
-      "surprise": 0.182465,
+      "salience": 0.830475,
+      "novelty": 0.193095,
+      "surprise": 0.160625,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7129
+      "ignition_score": 0.722
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.771455,
-      "novelty": 0.2163,
-      "surprise": 0.182465,
+      "salience": 0.830475,
+      "novelty": 0.193095,
+      "surprise": 0.160625,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7129
+      "ignition_score": 0.722
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.771455,
-      "novelty": 0.2163,
-      "surprise": 0.182465,
+      "salience": 0.830475,
+      "novelty": 0.193095,
+      "surprise": 0.160625,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7129
+      "ignition_score": 0.722
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.771455,
-      "novelty": 0.2163,
-      "surprise": 0.182465,
+      "salience": 0.830475,
+      "novelty": 0.193095,
+      "surprise": 0.160625,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7129
+      "ignition_score": 0.722
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.771455,
-      "novelty": 0.2163,
-      "surprise": 0.182465,
+      "salience": 0.830475,
+      "novelty": 0.193095,
+      "surprise": 0.160625,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7129
+      "ignition_score": 0.722
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
-      "activation": 0.8019,
-      "salience": 0.771455,
-      "novelty": 0.2163,
-      "surprise": 0.182465,
+      "activation": 0.94,
+      "salience": 0.830475,
+      "novelty": 0.193095,
+      "surprise": 0.160625,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6438
+      "ignition_score": 0.722
     },
     {
       "id": "episode:52a63fc05b00e5",
@@ -104,7 +104,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 17,
+      "remaining_calls": 16,
       "eligible": true
     },
     "groq": {
@@ -264,33 +264,33 @@
   },
   "last_action": {
     "kind": "library",
-    "description": "Read available book content on emotional expression to examine foundational behavioral and physiological descriptions.",
+    "description": "Read available text from Darwin's 'The Expression of the Emotions in Man and Animals' to examine evolutionary perspectives on emotional expressions.",
     "source": "substrate:gemini",
-    "score": 0.57439
+    "score": 0.53889
   },
   "action_competition": [
     {
       "kind": "library",
       "source": "substrate:gemini",
-      "score": 0.57439,
-      "description": "Read available book content on emotional expression to examine foundational behavioral and physiological descriptions."
-    },
-    {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.3399,
-      "description": "Allow activation to decay without forcing cognition."
+      "score": 0.53889,
+      "description": "Read available text from Darwin's 'The Expression of the Emotions in Man and Animals' to examine evolutionary perspectives on emotional expressions."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.32579,
+      "score": 0.38648,
       "description": "Replay and consolidate existing experience offline."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.37596,
+      "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.28464,
+      "score": 0.29433,
       "description": "Continue processing the active workspace without external action."
     }
   ],
@@ -337,10 +337,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 3,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 855,
-    "semantic_nodes": 2672,
+    "episodes": 858,
+    "semantic_nodes": 2680,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -351,7 +351,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 66
+      "removed_edges": 72
     },
     "terminal_inhibition": {
       "startup": 296,
