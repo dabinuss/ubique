@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-09T00:35:13.710871+00:00",
-  "generation": 793,
+  "timestamp": "2026-10-09T00:48:40.238683+00:00",
+  "generation": 794,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1768,
-    "surprise": 0.1453,
-    "uncertainty": 0.28,
-    "salience": 0.6876,
-    "exploration": 0.289,
-    "plasticity": 0.4823,
-    "energy": 0.9015,
-    "sleep_pressure": 0.1391
+    "novelty": 0.1674,
+    "surprise": 0.1364,
+    "uncertainty": 0.25,
+    "salience": 0.7759,
+    "exploration": 0.2839,
+    "plasticity": 0.4591,
+    "energy": 0.8365,
+    "sleep_pressure": 0.1881
   },
   "workspace": [
     {
@@ -19,84 +19,84 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.89359,
-      "novelty": 0.176845,
-      "surprise": 0.145285,
+      "salience": 0.77594,
+      "novelty": 0.16742,
+      "surprise": 0.136445,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7338
+      "ignition_score": 0.7021
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.89359,
-      "novelty": 0.176845,
-      "surprise": 0.145285,
+      "salience": 0.77594,
+      "novelty": 0.16742,
+      "surprise": 0.136445,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7338
+      "ignition_score": 0.7021
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.89359,
-      "novelty": 0.176845,
-      "surprise": 0.145285,
+      "salience": 0.77594,
+      "novelty": 0.16742,
+      "surprise": 0.136445,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7338
+      "ignition_score": 0.7021
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.89359,
-      "novelty": 0.176845,
-      "surprise": 0.145285,
+      "salience": 0.77594,
+      "novelty": 0.16742,
+      "surprise": 0.136445,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7338
+      "ignition_score": 0.7021
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.89359,
-      "novelty": 0.176845,
-      "surprise": 0.145285,
+      "salience": 0.77594,
+      "novelty": 0.16742,
+      "surprise": 0.136445,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7338
+      "ignition_score": 0.7021
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
-      "activation": 0.94,
-      "salience": 0.89359,
-      "novelty": 0.176845,
-      "surprise": 0.145285,
+      "activation": 0.8757,
+      "salience": 0.77594,
+      "novelty": 0.16742,
+      "surprise": 0.136445,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7338
+      "ignition_score": 0.67
     },
     {
       "id": "episode:52a63fc05b00e5",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"simultaneous-facial-emg-and-lacrimal-secretion-dynamics-in-human\", \"title\": \"Simultaneous facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain quantitative timing data for EMG onset, parasympathetic outflow, and tear volume/composition needed to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T18:15:45.739979+00:00\", \"content_path\": \"\",",
-      "activation": 0.4077,
+      "activation": 0.4073,
       "salience": 0.85,
       "novelty": 0.7,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5494
+      "ignition_score": 0.5492
     }
   ],
   "provider_eligibility": {
@@ -104,7 +104,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 11,
+      "remaining_calls": 10,
       "eligible": true
     },
     "groq": {
@@ -263,35 +263,35 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
-    "source": "homeostasis",
-    "score": 0.45873
+    "kind": "library",
+    "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' to examine physiological and expressive dynamics.",
+    "source": "substrate:gemini",
+    "score": 0.49148
   },
   "action_competition": [
     {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.45873,
-      "description": "Allow activation to decay without forcing cognition."
-    },
-    {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.42662,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
       "kind": "library",
       "source": "substrate:gemini",
-      "score": 0.42566,
-      "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals'"
+      "score": 0.49148,
+      "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' to examine physiological and expressive dynamics."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.37314,
+      "score": 0.37805,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.36451,
+      "description": "Replay and consolidate existing experience offline."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.27465,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
   "substrate_contributors": [
@@ -337,10 +337,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 872,
-    "semantic_nodes": 2724,
+    "episodes": 875,
+    "semantic_nodes": 2730,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -351,13 +351,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 36
+      "removed_edges": 50
     },
     "terminal_inhibition": {
       "startup": 300,
       "after_lifecycle": 300,
       "after_spread": 300,
-      "after_packets": 300
+      "after_packets": 308
     }
   }
 }
