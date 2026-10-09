@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-09T00:20:34.667459+00:00",
-  "generation": 791,
+  "timestamp": "2026-10-09T00:21:28.224403+00:00",
+  "generation": 792,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2136,
-    "surprise": 0.1799,
+    "novelty": 0.1913,
+    "surprise": 0.1589,
     "uncertainty": 0.28,
-    "salience": 0.8301,
-    "exploration": 0.3087,
-    "plasticity": 0.4942,
-    "energy": 0.583,
-    "sleep_pressure": 0.1728
+    "salience": 0.8686,
+    "exploration": 0.2968,
+    "plasticity": 0.487,
+    "energy": 0.518,
+    "sleep_pressure": 0.2218
   },
   "workspace": [
     {
@@ -19,60 +19,72 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.830085,
-      "novelty": 0.21356999999999998,
-      "surprise": 0.17992999999999998,
+      "salience": 0.8685649999999999,
+      "novelty": 0.19134,
+      "surprise": 0.158935,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7269
+      "ignition_score": 0.7311
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.830085,
-      "novelty": 0.21356999999999998,
-      "surprise": 0.17992999999999998,
+      "salience": 0.8685649999999999,
+      "novelty": 0.19134,
+      "surprise": 0.158935,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7269
+      "ignition_score": 0.7311
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.830085,
-      "novelty": 0.21356999999999998,
-      "surprise": 0.17992999999999998,
+      "salience": 0.8685649999999999,
+      "novelty": 0.19134,
+      "surprise": 0.158935,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7269
+      "ignition_score": 0.7311
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.830085,
-      "novelty": 0.21356999999999998,
-      "surprise": 0.17992999999999998,
+      "salience": 0.8685649999999999,
+      "novelty": 0.19134,
+      "surprise": 0.158935,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7269
+      "ignition_score": 0.7311
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.830085,
-      "novelty": 0.21356999999999998,
-      "surprise": 0.17992999999999998,
+      "salience": 0.8685649999999999,
+      "novelty": 0.19134,
+      "surprise": 0.158935,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7269
+      "ignition_score": 0.7311
+    },
+    {
+      "id": "concept:5cca6a702d78b833",
+      "kind": "concept",
+      "label": "already_requested",
+      "activation": 0.772,
+      "salience": 0.8685649999999999,
+      "novelty": 0.19134,
+      "surprise": 0.158935,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6471
     },
     {
       "id": "episode:52a63fc05b00e5",
@@ -85,18 +97,6 @@
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
       "ignition_score": 0.5489
-    },
-    {
-      "id": "episode:193520061bea26",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-7\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need empirical measurements of peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T01:22:33.881788+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully",
-      "activation": 0.364,
-      "salience": 0.88,
-      "novelty": 0.78,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5454
     }
   ],
   "provider_eligibility": {
@@ -104,7 +104,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 13,
+      "remaining_calls": 12,
       "eligible": true
     },
     "groq": {
@@ -264,33 +264,33 @@
   },
   "last_action": {
     "kind": "library",
-    "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' to examine behavioral and physiological expressions of emotion.",
+    "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' from the current read cursor.",
     "source": "substrate:gemini",
-    "score": 0.57154
+    "score": 0.51076
   },
   "action_competition": [
     {
       "kind": "library",
       "source": "substrate:gemini",
-      "score": 0.57154,
-      "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' to examine behavioral and physiological expressions of emotion."
+      "score": 0.51076,
+      "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' from the current read cursor."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.38773,
+      "score": 0.41783,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.33439,
+      "score": 0.40415,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.32827,
+      "score": 0.3695,
       "description": "Continue processing the active workspace without external action."
     }
   ],
@@ -337,10 +337,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 3,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 867,
-    "semantic_nodes": 2711,
+    "episodes": 870,
+    "semantic_nodes": 2720,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -351,12 +351,12 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 70
+      "removed_edges": 50
     },
     "terminal_inhibition": {
-      "startup": 298,
-      "after_lifecycle": 298,
-      "after_spread": 298,
+      "startup": 299,
+      "after_lifecycle": 299,
+      "after_spread": 299,
       "after_packets": 307
     }
   }
