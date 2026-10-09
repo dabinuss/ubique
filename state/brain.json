@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-09T00:05:26.386790+00:00",
-  "generation": 788,
+  "timestamp": "2026-10-09T00:18:49.626915+00:00",
+  "generation": 789,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1931,
-    "surprise": 0.1606,
+    "novelty": 0.3005,
+    "surprise": 0.2619,
     "uncertainty": 0.28,
-    "salience": 0.8305,
-    "exploration": 0.2977,
-    "plasticity": 0.4823,
-    "energy": 0.66,
-    "sleep_pressure": 0.3028
+    "salience": 0.6798,
+    "exploration": 0.3556,
+    "plasticity": 0.5226,
+    "energy": 0.595,
+    "sleep_pressure": 0.3518
   },
   "workspace": [
     {
@@ -19,84 +19,84 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.830475,
-      "novelty": 0.193095,
-      "surprise": 0.160625,
+      "salience": 0.679825,
+      "novelty": 0.300515,
+      "surprise": 0.26189,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.722
+      "ignition_score": 0.7105
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.830475,
-      "novelty": 0.193095,
-      "surprise": 0.160625,
+      "salience": 0.679825,
+      "novelty": 0.300515,
+      "surprise": 0.26189,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.722
+      "ignition_score": 0.7105
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.830475,
-      "novelty": 0.193095,
-      "surprise": 0.160625,
+      "salience": 0.679825,
+      "novelty": 0.300515,
+      "surprise": 0.26189,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.722
+      "ignition_score": 0.7105
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.830475,
-      "novelty": 0.193095,
-      "surprise": 0.160625,
+      "salience": 0.679825,
+      "novelty": 0.300515,
+      "surprise": 0.26189,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.722
+      "ignition_score": 0.7105
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.830475,
-      "novelty": 0.193095,
-      "surprise": 0.160625,
+      "salience": 0.679825,
+      "novelty": 0.300515,
+      "surprise": 0.26189,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.722
+      "ignition_score": 0.7105
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
       "activation": 0.94,
-      "salience": 0.830475,
-      "novelty": 0.193095,
-      "surprise": 0.160625,
+      "salience": 0.679825,
+      "novelty": 0.300515,
+      "surprise": 0.26189,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.722
+      "ignition_score": 0.7105
     },
     {
-      "id": "episode:52a63fc05b00e5",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"simultaneous-facial-emg-and-lacrimal-secretion-dynamics-in-human\", \"title\": \"Simultaneous facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain quantitative timing data for EMG onset, parasympathetic outflow, and tear volume/composition needed to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T18:15:45.739979+00:00\", \"content_path\": \"\",",
-      "activation": 0.4084,
-      "salience": 0.85,
-      "novelty": 0.7,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5497
+      "id": "episode:5218dc593980f7",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 16}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 16,
+      "remaining_calls": 15,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": true,
       "daily_limit": 1000,
-      "remaining_calls": 1000,
+      "remaining_calls": 999,
       "eligible": false
     },
     "huggingface": {
@@ -264,33 +264,33 @@
   },
   "last_action": {
     "kind": "library",
-    "description": "Read available text from Darwin's 'The Expression of the Emotions in Man and Animals' to examine evolutionary perspectives on emotional expressions.",
+    "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' to examine empirical accounts of emotional expression.",
     "source": "substrate:gemini",
-    "score": 0.53889
+    "score": 0.45161
   },
   "action_competition": [
     {
       "kind": "library",
       "source": "substrate:gemini",
-      "score": 0.53889,
-      "description": "Read available text from Darwin's 'The Expression of the Emotions in Man and Animals' to examine evolutionary perspectives on emotional expressions."
+      "score": 0.45161,
+      "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' to examine empirical accounts of emotional expression."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.38648,
+      "score": 0.39295,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.37596,
+      "score": 0.38649,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.29433,
+      "score": 0.31585,
       "description": "Continue processing the active workspace without external action."
     }
   ],
@@ -337,10 +337,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 858,
-    "semantic_nodes": 2680,
+    "episodes": 862,
+    "semantic_nodes": 2690,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -351,13 +351,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 72
+      "removed_edges": 50
     },
     "terminal_inhibition": {
       "startup": 296,
       "after_lifecycle": 296,
       "after_spread": 296,
-      "after_packets": 296
+      "after_packets": 304
     }
   }
 }
