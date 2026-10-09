@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-09T01:03:10.946731+00:00",
-  "generation": 796,
+  "timestamp": "2026-10-09T01:16:34.304825+00:00",
+  "generation": 797,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.237,
-    "surprise": 0.202,
-    "uncertainty": 0.25,
-    "salience": 0.5013,
-    "exploration": 0.3108,
-    "plasticity": 0.4802,
-    "energy": 1.0,
-    "sleep_pressure": 0.0872
+    "novelty": 0.2065,
+    "surprise": 0.1733,
+    "uncertainty": 0.22,
+    "salience": 0.6548,
+    "exploration": 0.2945,
+    "plasticity": 0.4638,
+    "energy": 0.935,
+    "sleep_pressure": 0.1362
   },
   "workspace": [
     {
-      "id": "concept:b067159d02fcae9c",
+      "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
-      "label": "parasympathetic",
-      "activation": 0.9183,
-      "salience": 0.64478,
-      "novelty": 0.23697,
-      "surprise": 0.20203,
+      "label": "reading_request",
+      "activation": 0.94,
+      "salience": 0.6548449999999999,
+      "novelty": 0.20654999999999998,
+      "surprise": 0.1733,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6754
-    },
-    {
-      "id": "concept:dff8fc3345095000",
-      "kind": "concept",
-      "label": "measurements",
-      "activation": 0.8694,
-      "salience": 0.64478,
-      "novelty": 0.23697,
-      "surprise": 0.20203,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.6509
-    },
-    {
-      "id": "concept:b11da62837100975",
-      "kind": "concept",
-      "label": "content_path",
-      "activation": 0.853,
-      "salience": 0.64478,
-      "novelty": 0.23697,
-      "surprise": 0.20203,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.6427
+      "ignition_score": 0.6814
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
-      "activation": 0.842,
-      "salience": 0.64478,
-      "novelty": 0.23697,
-      "surprise": 0.20203,
+      "activation": 0.94,
+      "salience": 0.6548449999999999,
+      "novelty": 0.20654999999999998,
+      "surprise": 0.1733,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6372
+      "ignition_score": 0.6814
     },
     {
-      "id": "concept:d39f7fb1d10bc9e8",
+      "id": "concept:b11da62837100975",
       "kind": "concept",
-      "label": "reading_request",
-      "activation": 0.8055,
-      "salience": 0.64478,
-      "novelty": 0.23697,
-      "surprise": 0.20203,
+      "label": "content_path",
+      "activation": 0.94,
+      "salience": 0.6548449999999999,
+      "novelty": 0.20654999999999998,
+      "surprise": 0.1733,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.619
+      "ignition_score": 0.6814
+    },
+    {
+      "id": "concept:b067159d02fcae9c",
+      "kind": "concept",
+      "label": "parasympathetic",
+      "activation": 0.94,
+      "salience": 0.6548449999999999,
+      "novelty": 0.20654999999999998,
+      "surprise": 0.1733,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6814
+    },
+    {
+      "id": "concept:dff8fc3345095000",
+      "kind": "concept",
+      "label": "measurements",
+      "activation": 0.94,
+      "salience": 0.6548449999999999,
+      "novelty": 0.20654999999999998,
+      "surprise": 0.1733,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6814
+    },
+    {
+      "id": "concept:5cca6a702d78b833",
+      "kind": "concept",
+      "label": "already_requested",
+      "activation": 0.6778,
+      "salience": 0.6548449999999999,
+      "novelty": 0.20654999999999998,
+      "surprise": 0.1733,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.5503
     },
     {
       "id": "episode:52a63fc05b00e5",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"simultaneous-facial-emg-and-lacrimal-secretion-dynamics-in-human\", \"title\": \"Simultaneous facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain quantitative timing data for EMG onset, parasympathetic outflow, and tear volume/composition needed to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T18:15:45.739979+00:00\", \"content_path\": \"\",",
-      "activation": 0.407,
+      "activation": 0.4067,
       "salience": 0.85,
       "novelty": 0.7,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.549
-    },
-    {
-      "id": "episode:193520061bea26",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-7\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need empirical measurements of peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T01:22:33.881788+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully",
-      "activation": 0.365,
-      "salience": 0.88,
-      "novelty": 0.78,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5459
+      "ignition_score": 0.5489
     }
   ],
   "provider_eligibility": {
@@ -104,7 +104,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 8,
+      "remaining_calls": 7,
       "eligible": true
     },
     "groq": {
@@ -263,34 +263,34 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Rest to maintain optimal energy and allow cognitive state consolidation given recent repetitive request cycles.",
+    "kind": "library",
+    "description": "Continue reading from available catalog items, specifically focusing on an unread book like ribot-psychology-emotions.",
     "source": "substrate:gemini",
-    "score": 0.51743
+    "score": 0.55191
   },
   "action_competition": [
     {
-      "kind": "rest",
+      "kind": "library",
       "source": "substrate:gemini",
-      "score": 0.51743,
-      "description": "Rest to maintain optimal energy and allow cognitive state consolidation given recent repetitive request cycles."
+      "score": 0.55191,
+      "description": "Continue reading from available catalog items, specifically focusing on an unread book like ribot-psychology-emotions."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.3548,
+      "score": 0.35198,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.34022,
+      "score": 0.32741,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.22624,
+      "score": 0.18952,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
@@ -337,10 +337,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 881,
-    "semantic_nodes": 2747,
+    "episodes": 884,
+    "semantic_nodes": 2757,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -351,7 +351,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 52
+      "removed_edges": 50
     },
     "terminal_inhibition": {
       "startup": 303,
