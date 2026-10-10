@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-10T01:11:10.910676+00:00",
-  "generation": 1072,
+  "timestamp": "2026-10-10T01:12:08.045360+00:00",
+  "generation": 1073,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2143,
-    "surprise": 0.1806,
-    "uncertainty": 0.45,
-    "salience": 0.7494,
-    "exploration": 0.3931,
-    "plasticity": 0.4826,
-    "energy": 0.805,
-    "sleep_pressure": 0.2
+    "novelty": 0.1918,
+    "surprise": 0.1594,
+    "uncertainty": 0.5,
+    "salience": 0.8161,
+    "exploration": 0.3565,
+    "plasticity": 0.4635,
+    "energy": 0.858,
+    "sleep_pressure": 0.0752
   },
   "workspace": [
     {
@@ -19,72 +19,72 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.74942,
-      "novelty": 0.214285,
-      "surprise": 0.180645,
+      "salience": 0.8161099999999999,
+      "novelty": 0.191795,
+      "surprise": 0.15939,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7069
+      "ignition_score": 0.7181
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.74942,
-      "novelty": 0.214285,
-      "surprise": 0.180645,
+      "salience": 0.8161099999999999,
+      "novelty": 0.191795,
+      "surprise": 0.15939,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7069
+      "ignition_score": 0.7181
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.74942,
-      "novelty": 0.214285,
-      "surprise": 0.180645,
+      "salience": 0.8161099999999999,
+      "novelty": 0.191795,
+      "surprise": 0.15939,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7069
+      "ignition_score": 0.7181
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.74942,
-      "novelty": 0.214285,
-      "surprise": 0.180645,
+      "salience": 0.8161099999999999,
+      "novelty": 0.191795,
+      "surprise": 0.15939,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7069
+      "ignition_score": 0.7181
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.74942,
-      "novelty": 0.214285,
-      "surprise": 0.180645,
+      "salience": 0.8161099999999999,
+      "novelty": 0.191795,
+      "surprise": 0.15939,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7069
+      "ignition_score": 0.7181
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
       "activation": 0.94,
-      "salience": 0.74942,
-      "novelty": 0.214285,
-      "surprise": 0.180645,
+      "salience": 0.8161099999999999,
+      "novelty": 0.191795,
+      "surprise": 0.15939,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7069
+      "ignition_score": 0.7181
     },
     {
       "id": "episode:74b0ffec29f337",
@@ -104,7 +104,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 10,
+      "remaining_calls": 9,
       "eligible": true
     },
     "groq": {
@@ -263,34 +263,28 @@
     }
   },
   "last_action": {
-    "kind": "library",
-    "description": "Read Darwin's 'The Expression of the Emotions in Man and Animals' to examine foundational evidence on emotional crying and physiological expression.",
-    "source": "substrate:gemini",
-    "score": 0.53451
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
+    "source": "homeostasis",
+    "score": 0.4066
   },
   "action_competition": [
     {
-      "kind": "library",
-      "source": "substrate:gemini",
-      "score": 0.53451,
-      "description": "Read Darwin's 'The Expression of the Emotions in Man and Animals' to examine foundational evidence on emotional crying and physiological expression."
-    },
-    {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.38017,
+      "score": 0.4066,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.34659,
+      "score": 0.39735,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.28501,
+      "score": 0.32211,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
@@ -337,10 +331,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 3,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 1250,
-    "semantic_nodes": 3074,
+    "episodes": 1252,
+    "semantic_nodes": 3077,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -351,7 +345,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 72
+      "removed_edges": 0
     },
     "terminal_inhibition": {
       "startup": 314,
