@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-10T01:44:45.625702+00:00",
-  "generation": 1081,
+  "timestamp": "2026-10-10T01:58:11.618200+00:00",
+  "generation": 1082,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.185,
-    "surprise": 0.153,
+    "novelty": 0.1727,
+    "surprise": 0.1414,
     "uncertainty": 0.5,
-    "salience": 0.8842,
-    "exploration": 0.3703,
-    "plasticity": 0.4856,
-    "energy": 0.376,
-    "sleep_pressure": 0.3063
+    "salience": 0.6893,
+    "exploration": 0.3638,
+    "plasticity": 0.4814,
+    "energy": 0.7713,
+    "sleep_pressure": 0.1808
   },
   "workspace": [
     {
@@ -19,84 +19,84 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.884165,
-      "novelty": 0.18497,
-      "surprise": 0.152955,
+      "salience": 0.9037299999999999,
+      "novelty": 0.17275,
+      "surprise": 0.14145,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7334
+      "ignition_score": 0.7354
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.884165,
-      "novelty": 0.18497,
-      "surprise": 0.152955,
+      "salience": 0.9037299999999999,
+      "novelty": 0.17275,
+      "surprise": 0.14145,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7334
+      "ignition_score": 0.7354
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.884165,
-      "novelty": 0.18497,
-      "surprise": 0.152955,
+      "salience": 0.9037299999999999,
+      "novelty": 0.17275,
+      "surprise": 0.14145,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7334
+      "ignition_score": 0.7354
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.884165,
-      "novelty": 0.18497,
-      "surprise": 0.152955,
+      "salience": 0.9037299999999999,
+      "novelty": 0.17275,
+      "surprise": 0.14145,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7334
+      "ignition_score": 0.7354
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.884165,
-      "novelty": 0.18497,
-      "surprise": 0.152955,
+      "salience": 0.9037299999999999,
+      "novelty": 0.17275,
+      "surprise": 0.14145,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7334
+      "ignition_score": 0.7354
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
       "activation": 0.94,
-      "salience": 0.884165,
-      "novelty": 0.18497,
-      "surprise": 0.152955,
+      "salience": 0.9037299999999999,
+      "novelty": 0.17275,
+      "surprise": 0.14145,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7334
+      "ignition_score": 0.7354
     },
     {
       "id": "concept:170319b00881e6c2",
       "kind": "concept",
       "label": "read_cursor",
-      "activation": 0.7459,
-      "salience": 0.884165,
-      "novelty": 0.18497,
-      "surprise": 0.152955,
+      "activation": 0.6973,
+      "salience": 0.9037299999999999,
+      "novelty": 0.17275,
+      "surprise": 0.14145,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6364
+      "ignition_score": 0.614
     }
   ],
   "provider_eligibility": {
@@ -104,8 +104,8 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 1,
-      "eligible": true
+      "remaining_calls": 0,
+      "eligible": false
     },
     "groq": {
       "configured": true,
@@ -263,34 +263,34 @@
     }
   },
   "last_action": {
-    "kind": "library",
-    "description": "Read further in Ribot's Psychology of the Emotions to explore established historical and theoretical perspectives on emotional expressions.",
-    "source": "substrate:gemini",
-    "score": 0.55458
+    "kind": "rest",
+    "description": "Allow activation to decay without forcing cognition.",
+    "source": "homeostasis",
+    "score": 0.52648
   },
   "action_competition": [
     {
-      "kind": "library",
-      "source": "substrate:gemini",
-      "score": 0.55458,
-      "description": "Read further in Ribot's Psychology of the Emotions to explore established historical and theoretical perspectives on emotional expressions."
-    },
-    {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.49229,
+      "score": 0.52648,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.41849,
+      "score": 0.4749,
       "description": "Replay and consolidate existing experience offline."
+    },
+    {
+      "kind": "library",
+      "source": "substrate:gemini",
+      "score": 0.47476,
+      "description": "Continue reading available catalog items such as Ribot's 'The Psychology of the Emotions' or Darwin's 'The Expression of the Emotions in Man and Animals'."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.36567,
+      "score": 0.41315,
       "description": "Continue processing the active workspace without external action."
     }
   ],
@@ -339,8 +339,8 @@
   ],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 1275,
-    "semantic_nodes": 3140,
+    "episodes": 1277,
+    "semantic_nodes": 3145,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -351,13 +351,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 50
+      "removed_edges": 66
     },
     "terminal_inhibition": {
-      "startup": 321,
-      "after_lifecycle": 321,
-      "after_spread": 321,
-      "after_packets": 329
+      "startup": 322,
+      "after_lifecycle": 322,
+      "after_spread": 322,
+      "after_packets": 331
     }
   }
 }
