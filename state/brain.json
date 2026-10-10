@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-10T21:07:25.583031+00:00",
-  "generation": 1302,
+  "timestamp": "2026-10-10T21:08:19.811655+00:00",
+  "generation": 1303,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2045,
-    "surprise": 0.1714,
+    "novelty": 0.1854,
+    "surprise": 0.1534,
     "uncertainty": 0.55,
-    "salience": 0.778,
-    "exploration": 0.3983,
-    "plasticity": 0.4649,
-    "energy": 0.908,
-    "sleep_pressure": 0.0648
+    "salience": 0.8347,
+    "exploration": 0.3881,
+    "plasticity": 0.4785,
+    "energy": 0.763,
+    "sleep_pressure": 0.1418
   },
   "workspace": [
     {
@@ -19,84 +19,84 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.777955,
-      "novelty": 0.20447,
-      "surprise": 0.17135,
+      "salience": 0.8347,
+      "novelty": 0.18542499999999998,
+      "surprise": 0.15341,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7116
+      "ignition_score": 0.7212
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.777955,
-      "novelty": 0.20447,
-      "surprise": 0.17135,
+      "salience": 0.8347,
+      "novelty": 0.18542499999999998,
+      "surprise": 0.15341,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7116
+      "ignition_score": 0.7212
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.777955,
-      "novelty": 0.20447,
-      "surprise": 0.17135,
+      "salience": 0.8347,
+      "novelty": 0.18542499999999998,
+      "surprise": 0.15341,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7116
+      "ignition_score": 0.7212
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.777955,
-      "novelty": 0.20447,
-      "surprise": 0.17135,
+      "salience": 0.8347,
+      "novelty": 0.18542499999999998,
+      "surprise": 0.15341,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7116
+      "ignition_score": 0.7212
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.777955,
-      "novelty": 0.20447,
-      "surprise": 0.17135,
+      "salience": 0.8347,
+      "novelty": 0.18542499999999998,
+      "surprise": 0.15341,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7116
+      "ignition_score": 0.7212
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
       "activation": 0.94,
-      "salience": 0.777955,
-      "novelty": 0.20447,
-      "surprise": 0.17135,
+      "salience": 0.8347,
+      "novelty": 0.18542499999999998,
+      "surprise": 0.15341,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7116
+      "ignition_score": 0.7212
     },
     {
-      "id": "concept:170319b00881e6c2",
-      "kind": "concept",
-      "label": "read_cursor",
-      "activation": 0.7061,
-      "salience": 0.777955,
-      "novelty": 0.20447,
-      "surprise": 0.17135,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.5947
+      "id": "episode:52a63fc05b00e5",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"simultaneous-facial-emg-and-lacrimal-secretion-dynamics-in-human\", \"title\": \"Simultaneous facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain quantitative timing data for EMG onset, parasympathetic outflow, and tear volume/composition needed to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T18:15:45.739979+00:00\", \"content_path\": \"\",",
+      "activation": 0.5022,
+      "salience": 0.85,
+      "novelty": 0.7,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.5966
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
-    "source": "homeostasis",
-    "score": 0.35834
+    "kind": "attend",
+    "description": "Continue processing the active workspace without external action.",
+    "source": "workspace",
+    "score": 0.3432
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.35834,
-      "description": "Replay and consolidate existing experience offline."
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.3432,
+      "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.3026,
+      "score": 0.27417,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.25385,
-      "description": "Continue processing the active workspace without external action."
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.24571,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [],
@@ -326,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 2,
+  "consecutive_pulses": 3,
   "memory": {
-    "episodes": 1552,
+    "episodes": 1553,
     "semantic_nodes": 3316,
     "synapses": 1200
   },
