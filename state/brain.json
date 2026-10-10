@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-10T01:28:31.640873+00:00",
-  "generation": 1077,
+  "timestamp": "2026-10-10T01:42:02.568936+00:00",
+  "generation": 1078,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1575,
-    "surprise": 0.127,
+    "novelty": 0.2774,
+    "surprise": 0.24,
     "uncertainty": 0.32,
-    "salience": 0.9179,
-    "exploration": 0.303,
-    "plasticity": 0.4596,
-    "energy": 0.716,
-    "sleep_pressure": 0.0823
+    "salience": 0.7366,
+    "exploration": 0.3571,
+    "plasticity": 0.5176,
+    "energy": 0.651,
+    "sleep_pressure": 0.1313
   },
   "workspace": [
     {
@@ -19,84 +19,84 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.9179,
-      "novelty": 0.157475,
-      "surprise": 0.12702,
+      "salience": 0.736635,
+      "novelty": 0.277375,
+      "surprise": 0.24004999999999999,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7352
+      "ignition_score": 0.719
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.9179,
-      "novelty": 0.157475,
-      "surprise": 0.12702,
+      "salience": 0.736635,
+      "novelty": 0.277375,
+      "surprise": 0.24004999999999999,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7352
+      "ignition_score": 0.719
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.9179,
-      "novelty": 0.157475,
-      "surprise": 0.12702,
+      "salience": 0.736635,
+      "novelty": 0.277375,
+      "surprise": 0.24004999999999999,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7352
+      "ignition_score": 0.719
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.9179,
-      "novelty": 0.157475,
-      "surprise": 0.12702,
+      "salience": 0.736635,
+      "novelty": 0.277375,
+      "surprise": 0.24004999999999999,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7352
+      "ignition_score": 0.719
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.9179,
-      "novelty": 0.157475,
-      "surprise": 0.12702,
+      "salience": 0.736635,
+      "novelty": 0.277375,
+      "surprise": 0.24004999999999999,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7352
+      "ignition_score": 0.719
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
       "activation": 0.94,
-      "salience": 0.9179,
-      "novelty": 0.157475,
-      "surprise": 0.12702,
+      "salience": 0.736635,
+      "novelty": 0.277375,
+      "surprise": 0.24004999999999999,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7352
+      "ignition_score": 0.719
     },
     {
-      "id": "concept:170319b00881e6c2",
-      "kind": "concept",
-      "label": "read_cursor",
-      "activation": 0.6371,
-      "salience": 0.9179,
-      "novelty": 0.157475,
-      "surprise": 0.12702,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.5837
+      "id": "episode:19cb438bf3063b",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 5}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 996}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
     }
   ],
   "provider_eligibility": {
@@ -104,14 +104,14 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 5,
+      "remaining_calls": 4,
       "eligible": true
     },
     "groq": {
       "configured": true,
       "disabled": true,
       "daily_limit": 1000,
-      "remaining_calls": 996,
+      "remaining_calls": 995,
       "eligible": false
     },
     "huggingface": {
@@ -263,35 +263,35 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
-    "source": "homeostasis",
-    "score": 0.42483
+    "kind": "library",
+    "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' from the existing read cursor.",
+    "source": "substrate:gemini",
+    "score": 0.49308
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.42483,
-      "description": "Replay and consolidate existing experience offline."
+      "kind": "library",
+      "source": "substrate:gemini",
+      "score": 0.49308,
+      "description": "Continue reading Darwin's 'The Expression of the Emotions in Man and Animals' from the existing read cursor."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.41992,
+      "score": 0.40091,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.39985,
+      "score": 0.34287,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
-      "kind": "library",
-      "source": "substrate:gemini",
-      "score": 0.39318,
-      "description": "Read the next portion of Darwin's 'The Expression of the Emotions in Man and Animals' to investigate behavioral and physiological expressions."
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.27575,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [
@@ -337,10 +337,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 1263,
-    "semantic_nodes": 3114,
+    "episodes": 1267,
+    "semantic_nodes": 3125,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -351,13 +351,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_edges": 66
     },
     "terminal_inhibition": {
       "startup": 316,
       "after_lifecycle": 316,
       "after_spread": 316,
-      "after_packets": 316
+      "after_packets": 325
     }
   }
 }
