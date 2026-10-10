@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-10T00:26:07.668356+00:00",
-  "generation": 1064,
+  "timestamp": "2026-10-10T00:27:07.228916+00:00",
+  "generation": 1065,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2532,
-    "surprise": 0.2173,
+    "novelty": 0.2171,
+    "surprise": 0.1832,
     "uncertainty": 0.55,
-    "salience": 0.6494,
-    "exploration": 0.4246,
-    "plasticity": 0.4904,
-    "energy": 0.855,
-    "sleep_pressure": 0.1673
+    "salience": 0.7511,
+    "exploration": 0.4051,
+    "plasticity": 0.4845,
+    "energy": 0.71,
+    "sleep_pressure": 0.2443
   },
   "workspace": [
     {
@@ -19,72 +19,72 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.649385,
-      "novelty": 0.25322,
-      "surprise": 0.21730500000000003,
+      "salience": 0.7511099999999999,
+      "novelty": 0.21708,
+      "surprise": 0.183245,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6913
+      "ignition_score": 0.708
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.649385,
-      "novelty": 0.25322,
-      "surprise": 0.21730500000000003,
+      "salience": 0.7511099999999999,
+      "novelty": 0.21708,
+      "surprise": 0.183245,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6913
+      "ignition_score": 0.708
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.649385,
-      "novelty": 0.25322,
-      "surprise": 0.21730500000000003,
+      "salience": 0.7511099999999999,
+      "novelty": 0.21708,
+      "surprise": 0.183245,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6913
+      "ignition_score": 0.708
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.649385,
-      "novelty": 0.25322,
-      "surprise": 0.21730500000000003,
+      "salience": 0.7511099999999999,
+      "novelty": 0.21708,
+      "surprise": 0.183245,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6913
+      "ignition_score": 0.708
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.649385,
-      "novelty": 0.25322,
-      "surprise": 0.21730500000000003,
+      "salience": 0.7511099999999999,
+      "novelty": 0.21708,
+      "surprise": 0.183245,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6913
+      "ignition_score": 0.708
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
       "activation": 0.94,
-      "salience": 0.649385,
-      "novelty": 0.25322,
-      "surprise": 0.21730500000000003,
+      "salience": 0.7511099999999999,
+      "novelty": 0.21708,
+      "surprise": 0.183245,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6913
+      "ignition_score": 0.708
     },
     {
       "id": "episode:74b0ffec29f337",
@@ -104,7 +104,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 18,
+      "remaining_calls": 17,
       "eligible": true
     },
     "groq": {
@@ -264,34 +264,34 @@
   },
   "last_action": {
     "kind": "attend",
-    "description": "Examine current activation patterns regarding parasympathetic coordination and measurement needs.",
+    "description": "Focus workspace on ongoing quantitative parasympathetic coordination concepts and activation dynamics.",
     "source": "substrate:gemini",
-    "score": 0.5023
+    "score": 0.45739
   },
   "action_competition": [
     {
       "kind": "attend",
       "source": "substrate:gemini",
-      "score": 0.5023,
-      "description": "Examine current activation patterns regarding parasympathetic coordination and measurement needs."
-    },
-    {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.31348,
-      "description": "Continue processing the active workspace without external action."
+      "score": 0.45739,
+      "description": "Focus workspace on ongoing quantitative parasympathetic coordination concepts and activation dynamics."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.31126,
+      "score": 0.35554,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.20662,
+      "score": 0.30325,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.24845,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
   "substrate_contributors": [
@@ -337,10 +337,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 1228,
-    "semantic_nodes": 3015,
+    "episodes": 1230,
+    "semantic_nodes": 3019,
     "synapses": 1200
   },
   "cortical_maintenance": {
