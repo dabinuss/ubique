@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-10T01:27:32.077388+00:00",
-  "generation": 1076,
+  "timestamp": "2026-10-10T01:28:31.640873+00:00",
+  "generation": 1077,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1615,
-    "surprise": 0.1308,
-    "uncertainty": 0.35,
-    "salience": 0.906,
-    "exploration": 0.3297,
-    "plasticity": 0.4751,
-    "energy": 0.663,
-    "sleep_pressure": 0.2222
+    "novelty": 0.1575,
+    "surprise": 0.127,
+    "uncertainty": 0.32,
+    "salience": 0.9179,
+    "exploration": 0.303,
+    "plasticity": 0.4596,
+    "energy": 0.716,
+    "sleep_pressure": 0.0823
   },
   "workspace": [
     {
@@ -19,84 +19,84 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.9060050000000001,
-      "novelty": 0.16150499999999998,
-      "surprise": 0.13079000000000002,
+      "salience": 0.9179,
+      "novelty": 0.157475,
+      "surprise": 0.12702,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7332
+      "ignition_score": 0.7352
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.9060050000000001,
-      "novelty": 0.16150499999999998,
-      "surprise": 0.13079000000000002,
+      "salience": 0.9179,
+      "novelty": 0.157475,
+      "surprise": 0.12702,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7332
+      "ignition_score": 0.7352
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.9060050000000001,
-      "novelty": 0.16150499999999998,
-      "surprise": 0.13079000000000002,
+      "salience": 0.9179,
+      "novelty": 0.157475,
+      "surprise": 0.12702,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7332
+      "ignition_score": 0.7352
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.9060050000000001,
-      "novelty": 0.16150499999999998,
-      "surprise": 0.13079000000000002,
+      "salience": 0.9179,
+      "novelty": 0.157475,
+      "surprise": 0.12702,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7332
+      "ignition_score": 0.7352
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.9060050000000001,
-      "novelty": 0.16150499999999998,
-      "surprise": 0.13079000000000002,
+      "salience": 0.9179,
+      "novelty": 0.157475,
+      "surprise": 0.12702,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7332
+      "ignition_score": 0.7352
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
       "activation": 0.94,
-      "salience": 0.9060050000000001,
-      "novelty": 0.16150499999999998,
-      "surprise": 0.13079000000000002,
+      "salience": 0.9179,
+      "novelty": 0.157475,
+      "surprise": 0.12702,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7332
+      "ignition_score": 0.7352
     },
     {
       "id": "concept:170319b00881e6c2",
       "kind": "concept",
       "label": "read_cursor",
-      "activation": 0.6365,
-      "salience": 0.9060050000000001,
-      "novelty": 0.16150499999999998,
-      "surprise": 0.13079000000000002,
+      "activation": 0.6371,
+      "salience": 0.9179,
+      "novelty": 0.157475,
+      "surprise": 0.12702,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.5814
+      "ignition_score": 0.5837
     }
   ],
   "provider_eligibility": {
@@ -104,7 +104,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 6,
+      "remaining_calls": 5,
       "eligible": true
     },
     "groq": {
@@ -263,35 +263,35 @@
     }
   },
   "last_action": {
-    "kind": "library",
-    "description": "Continue reading Darwin's treatise on emotional expression to gather substantive data on expressive movements.",
-    "source": "substrate:gemini",
-    "score": 0.45355
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
+    "source": "homeostasis",
+    "score": 0.42483
   },
   "action_competition": [
     {
-      "kind": "library",
-      "source": "substrate:gemini",
-      "score": 0.45355,
-      "description": "Continue reading Darwin's treatise on emotional expression to gather substantive data on expressive movements."
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.42483,
+      "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.4246,
+      "score": 0.41992,
       "description": "Continue processing the active workspace without external action."
-    },
-    {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.40611,
-      "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.35963,
+      "score": 0.39985,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "library",
+      "source": "substrate:gemini",
+      "score": 0.39318,
+      "description": "Read the next portion of Darwin's 'The Expression of the Emotions in Man and Animals' to investigate behavioral and physiological expressions."
     }
   ],
   "substrate_contributors": [
@@ -337,10 +337,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 3,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 1261,
-    "semantic_nodes": 3107,
+    "episodes": 1263,
+    "semantic_nodes": 3114,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -351,13 +351,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 50
+      "removed_edges": 0
     },
     "terminal_inhibition": {
-      "startup": 315,
-      "after_lifecycle": 315,
-      "after_spread": 315,
-      "after_packets": 323
+      "startup": 316,
+      "after_lifecycle": 316,
+      "after_spread": 316,
+      "after_packets": 316
     }
   }
 }
