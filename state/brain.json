@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-10T02:11:36.658759+00:00",
-  "generation": 1083,
+  "timestamp": "2026-10-10T02:12:31.908960+00:00",
+  "generation": 1084,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1648,
-    "surprise": 0.1339,
+    "novelty": 0.2821,
+    "surprise": 0.2445,
     "uncertainty": 0.5,
-    "salience": 0.777,
-    "exploration": 0.3594,
-    "plasticity": 0.4462,
-    "energy": 0.8243,
-    "sleep_pressure": 0.0691
+    "salience": 0.6451,
+    "exploration": 0.4226,
+    "plasticity": 0.5066,
+    "energy": 0.7593,
+    "sleep_pressure": 0.1181
   },
   "workspace": [
     {
@@ -19,84 +19,84 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.777045,
-      "novelty": 0.16475499999999998,
-      "surprise": 0.13391,
+      "salience": 0.64505,
+      "novelty": 0.28212,
+      "surprise": 0.244535,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7017
+      "ignition_score": 0.6973
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.777045,
-      "novelty": 0.16475499999999998,
-      "surprise": 0.13391,
+      "salience": 0.64505,
+      "novelty": 0.28212,
+      "surprise": 0.244535,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7017
+      "ignition_score": 0.6973
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.777045,
-      "novelty": 0.16475499999999998,
-      "surprise": 0.13391,
+      "salience": 0.64505,
+      "novelty": 0.28212,
+      "surprise": 0.244535,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7017
+      "ignition_score": 0.6973
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.777045,
-      "novelty": 0.16475499999999998,
-      "surprise": 0.13391,
+      "salience": 0.64505,
+      "novelty": 0.28212,
+      "surprise": 0.244535,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7017
+      "ignition_score": 0.6973
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.777045,
-      "novelty": 0.16475499999999998,
-      "surprise": 0.13391,
+      "salience": 0.64505,
+      "novelty": 0.28212,
+      "surprise": 0.244535,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7017
+      "ignition_score": 0.6973
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
       "activation": 0.94,
-      "salience": 0.777045,
-      "novelty": 0.16475499999999998,
-      "surprise": 0.13391,
+      "salience": 0.64505,
+      "novelty": 0.28212,
+      "surprise": 0.244535,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7017
+      "ignition_score": 0.6973
     },
     {
-      "id": "episode:74b0ffec29f337",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"quantitative-analysis-of-facial-emg-and-lacrimal-secretion-dynam\", \"title\": \"Quantitative analysis of facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain empirical timing measurements needed to evaluate hypotheses about parasympathetic coordination and tear production.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-09T08:26:32.998229+00:00\", \"content_path\": \"\",",
-      "activation": 0.4414,
-      "salience": 0.84,
-      "novelty": 0.73,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5676
+      "id": "episode:4b3d5600ca6b5e",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 995}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
     }
   ],
   "provider_eligibility": {
@@ -109,10 +109,10 @@
     },
     "groq": {
       "configured": true,
-      "disabled": true,
+      "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 995,
-      "eligible": false
+      "remaining_calls": 994,
+      "eligible": true
     },
     "huggingface": {
       "configured": false,
@@ -263,32 +263,49 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
-    "source": "homeostasis",
-    "score": 0.39708
+    "kind": "library",
+    "description": "Read a relevant, available book to obtain background on autonomic mechanisms of emotional crying.",
+    "source": "substrate:groq",
+    "score": 0.48853
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.39708,
-      "description": "Replay and consolidate existing experience offline."
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.48853,
+      "description": "Read a relevant, available book to obtain background on autonomic mechanisms of emotional crying."
+    },
+    {
+      "kind": "rest",
+      "source": "substrate:groq",
+      "score": 0.42863,
+      "description": "Allow low‑energy consolidation after initiating the library read."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.38481,
+      "score": 0.37895,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.33199,
+      "score": 0.2871,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.2644,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
-  "substrate_contributors": [],
+  "substrate_contributors": [
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    }
+  ],
   "current_stances": [
     {
       "topic": "evolutionary_origins_of_expression",
@@ -326,10 +343,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 1278,
-    "semantic_nodes": 3146,
+    "episodes": 1282,
+    "semantic_nodes": 3158,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -340,7 +357,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_edges": 96
     },
     "terminal_inhibition": {
       "startup": 323,
