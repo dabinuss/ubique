@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-10T12:30:34.881597+00:00",
-  "generation": 1201,
+  "timestamp": "2026-10-10T12:43:58.869632+00:00",
+  "generation": 1202,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1863,
-    "surprise": 0.1543,
+    "novelty": 0.1736,
+    "surprise": 0.1423,
     "uncertainty": 0.52,
-    "salience": 0.6523,
-    "exploration": 0.378,
-    "plasticity": 0.4799,
+    "salience": 0.7398,
+    "exploration": 0.3712,
+    "plasticity": 0.4458,
     "energy": 1.0,
-    "sleep_pressure": 0.0975
+    "sleep_pressure": 0.0424
   },
   "workspace": [
     {
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.94,
-      "salience": 0.840745,
-      "novelty": 0.18627,
-      "surprise": 0.15425499999999998,
+      "activation": 0.9024,
+      "salience": 0.739835,
+      "novelty": 0.173595,
+      "surprise": 0.142295,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7229
+      "ignition_score": 0.6758
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
-      "activation": 0.94,
-      "salience": 0.840745,
-      "novelty": 0.18627,
-      "surprise": 0.15425499999999998,
+      "activation": 0.9024,
+      "salience": 0.739835,
+      "novelty": 0.173595,
+      "surprise": 0.142295,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7229
+      "ignition_score": 0.6758
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
-      "activation": 0.94,
-      "salience": 0.840745,
-      "novelty": 0.18627,
-      "surprise": 0.15425499999999998,
+      "activation": 0.9024,
+      "salience": 0.739835,
+      "novelty": 0.173595,
+      "surprise": 0.142295,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7229
+      "ignition_score": 0.6758
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
-      "activation": 0.94,
-      "salience": 0.840745,
-      "novelty": 0.18627,
-      "surprise": 0.15425499999999998,
+      "activation": 0.9024,
+      "salience": 0.739835,
+      "novelty": 0.173595,
+      "surprise": 0.142295,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7229
+      "ignition_score": 0.6758
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
-      "activation": 0.94,
-      "salience": 0.840745,
-      "novelty": 0.18627,
-      "surprise": 0.15425499999999998,
+      "activation": 0.9024,
+      "salience": 0.739835,
+      "novelty": 0.173595,
+      "surprise": 0.142295,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7229
+      "ignition_score": 0.6758
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
-      "activation": 0.94,
-      "salience": 0.840745,
-      "novelty": 0.18627,
-      "surprise": 0.15425499999999998,
+      "activation": 0.9024,
+      "salience": 0.739835,
+      "novelty": 0.173595,
+      "surprise": 0.142295,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7229
+      "ignition_score": 0.6758
     },
     {
-      "id": "concept:170319b00881e6c2",
-      "kind": "concept",
-      "label": "read_cursor",
-      "activation": 0.7083,
-      "salience": 0.840745,
-      "novelty": 0.18627,
-      "surprise": 0.15425499999999998,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.6071
+      "id": "episode:e08b98755cb36c",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"direct-measurements-of-parasympathetic-latency-in-human-emotiona\", \"title\": \"Direct measurements of parasympathetic latency in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain empirical EMG‑to‑tear latency data needed to test current hypotheses about autonomic coordination.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-10T09:15:23.171814+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"f",
+      "activation": 0.4597,
+      "salience": 0.82,
+      "novelty": 0.84,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.586
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
     "source": "homeostasis",
-    "score": 0.34521
+    "score": 0.31977
   },
   "action_competition": [
     {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.34521,
-      "description": "Allow activation to decay without forcing cognition."
-    },
-    {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.32438,
+      "score": 0.31977,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.25869,
+      "score": 0.27876,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.22678,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
   "substrate_contributors": [],
@@ -326,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 1425,
+    "episodes": 1426,
     "semantic_nodes": 3238,
     "synapses": 1200
   },
