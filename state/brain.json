@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-11T01:44:33.957836+00:00",
-  "generation": 1345,
+  "timestamp": "2026-10-11T01:45:31.050015+00:00",
+  "generation": 1346,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2532,
-    "surprise": 0.2174,
+    "novelty": 0.2171,
+    "surprise": 0.1833,
     "uncertainty": 0.57,
-    "salience": 0.5621,
-    "exploration": 0.4316,
-    "plasticity": 0.4773,
-    "energy": 0.935,
-    "sleep_pressure": 0.0975
+    "salience": 0.5412,
+    "exploration": 0.4121,
+    "plasticity": 0.476,
+    "energy": 1.0,
+    "sleep_pressure": 0.0741
   },
   "workspace": [
     {
@@ -19,72 +19,72 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.56209,
-      "novelty": 0.25322,
-      "surprise": 0.21737,
+      "salience": 0.694365,
+      "novelty": 0.21708,
+      "surprise": 0.18331000000000003,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6695
+      "ignition_score": 0.6938
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.56209,
-      "novelty": 0.25322,
-      "surprise": 0.21737,
+      "salience": 0.694365,
+      "novelty": 0.21708,
+      "surprise": 0.18331000000000003,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6695
+      "ignition_score": 0.6938
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.56209,
-      "novelty": 0.25322,
-      "surprise": 0.21737,
+      "salience": 0.694365,
+      "novelty": 0.21708,
+      "surprise": 0.18331000000000003,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6695
+      "ignition_score": 0.6938
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.56209,
-      "novelty": 0.25322,
-      "surprise": 0.21737,
+      "salience": 0.694365,
+      "novelty": 0.21708,
+      "surprise": 0.18331000000000003,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6695
+      "ignition_score": 0.6938
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.56209,
-      "novelty": 0.25322,
-      "surprise": 0.21737,
+      "salience": 0.694365,
+      "novelty": 0.21708,
+      "surprise": 0.18331000000000003,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6695
+      "ignition_score": 0.6938
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
       "activation": 0.94,
-      "salience": 0.56209,
-      "novelty": 0.25322,
-      "surprise": 0.21737,
+      "salience": 0.694365,
+      "novelty": 0.21708,
+      "surprise": 0.18331000000000003,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6695
+      "ignition_score": 0.6938
     },
     {
       "id": "episode:e08b98755cb36c",
@@ -104,7 +104,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 9,
+      "remaining_calls": 8,
       "eligible": true
     },
     "groq": {
@@ -263,34 +263,34 @@
     }
   },
   "last_action": {
-    "kind": "library",
-    "description": "Read available sections of Darwin's 'The Expression of the Emotions in Man and Animals' to examine early comparative and observational data on tear secretion and emotional expression.",
+    "kind": "rest",
+    "description": "Rest to maintain stability while monitoring workspace parameters and evaluating available empirical literature options.",
     "source": "substrate:gemini",
-    "score": 0.62929
+    "score": 0.49475
   },
   "action_competition": [
     {
-      "kind": "library",
+      "kind": "rest",
       "source": "substrate:gemini",
-      "score": 0.62929,
-      "description": "Read available sections of Darwin's 'The Expression of the Emotions in Man and Animals' to examine early comparative and observational data on tear secretion and emotional expression."
+      "score": 0.49475,
+      "description": "Rest to maintain stability while monitoring workspace parameters and evaluating available empirical literature options."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.40078,
+      "score": 0.4239,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.35632,
+      "score": 0.39076,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.13207,
+      "score": 0.21125,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
@@ -337,10 +337,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 1619,
-    "semantic_nodes": 3390,
+    "episodes": 1621,
+    "semantic_nodes": 3394,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -351,13 +351,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 64
+      "removed_edges": 44
     },
     "terminal_inhibition": {
       "startup": 323,
       "after_lifecycle": 323,
       "after_spread": 323,
-      "after_packets": 323
+      "after_packets": 331
     }
   }
 }
