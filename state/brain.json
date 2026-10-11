@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-11T21:30:08.072533+00:00",
-  "generation": 1555,
+  "timestamp": "2026-10-11T21:31:05.803060+00:00",
+  "generation": 1556,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2636,
-    "surprise": 0.2271,
+    "novelty": 0.2238,
+    "surprise": 0.1896,
     "uncertainty": 0.58,
-    "salience": 0.4534,
-    "exploration": 0.4407,
-    "plasticity": 0.4671,
-    "energy": 0.855,
-    "sleep_pressure": 0.1168
+    "salience": 0.6237,
+    "exploration": 0.4193,
+    "plasticity": 0.4554,
+    "energy": 0.908,
+    "sleep_pressure": 0.0486
   },
   "workspace": [
-    {
-      "id": "episode:52a63fc05b00e5",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"simultaneous-facial-emg-and-lacrimal-secretion-dynamics-in-human\", \"title\": \"Simultaneous facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain quantitative timing data for EMG onset, parasympathetic outflow, and tear volume/composition needed to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T18:15:45.739979+00:00\", \"content_path\": \"\",",
-      "activation": 0.5002,
-      "salience": 0.85,
-      "novelty": 0.7,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5956
-    },
-    {
-      "id": "episode:404bd875eb2927",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"temporal-dynamics-of-facial-emg-and-lacrimal-secretion-during-hu\", \"title\": \"Temporal dynamics of facial EMG and lacrimal secretion during human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Needed quantitative timing data for EMG onset, parasympathetic outflow, and tear volume/composition to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T19:29:54.283448+00:00\", \"content_path\": \"\", \"read_",
-      "activation": 0.4964,
-      "salience": 0.82,
-      "novelty": 0.71,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5875
-    },
     {
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.8242,
-      "salience": 0.453375,
-      "novelty": 0.26362,
-      "surprise": 0.22712,
+      "activation": 0.94,
+      "salience": 0.62371,
+      "novelty": 0.22384,
+      "surprise": 0.18961499999999998,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.587
+      "ignition_score": 0.6778
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
-      "activation": 0.8242,
-      "salience": 0.453375,
-      "novelty": 0.26362,
-      "surprise": 0.22712,
+      "activation": 0.94,
+      "salience": 0.62371,
+      "novelty": 0.22384,
+      "surprise": 0.18961499999999998,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.587
+      "ignition_score": 0.6778
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
-      "activation": 0.8242,
-      "salience": 0.453375,
-      "novelty": 0.26362,
-      "surprise": 0.22712,
+      "activation": 0.94,
+      "salience": 0.62371,
+      "novelty": 0.22384,
+      "surprise": 0.18961499999999998,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.587
+      "ignition_score": 0.6778
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
-      "activation": 0.8242,
-      "salience": 0.453375,
-      "novelty": 0.26362,
-      "surprise": 0.22712,
+      "activation": 0.94,
+      "salience": 0.62371,
+      "novelty": 0.22384,
+      "surprise": 0.18961499999999998,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.587
+      "ignition_score": 0.6778
     },
     {
-      "id": "episode:74b0ffec29f337",
+      "id": "concept:dff8fc3345095000",
+      "kind": "concept",
+      "label": "measurements",
+      "activation": 0.94,
+      "salience": 0.62371,
+      "novelty": 0.22384,
+      "surprise": 0.18961499999999998,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6778
+    },
+    {
+      "id": "concept:5cca6a702d78b833",
+      "kind": "concept",
+      "label": "already_requested",
+      "activation": 0.94,
+      "salience": 0.62371,
+      "novelty": 0.22384,
+      "surprise": 0.18961499999999998,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6778
+    },
+    {
+      "id": "episode:e08b98755cb36c",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"quantitative-analysis-of-facial-emg-and-lacrimal-secretion-dynam\", \"title\": \"Quantitative analysis of facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain empirical timing measurements needed to evaluate hypotheses about parasympathetic coordination and tear production.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-09T08:26:32.998229+00:00\", \"content_path\": \"\",",
-      "activation": 0.4638,
-      "salience": 0.84,
-      "novelty": 0.73,
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"direct-measurements-of-parasympathetic-latency-in-human-emotiona\", \"title\": \"Direct measurements of parasympathetic latency in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain empirical EMG‑to‑tear latency data needed to test current hypotheses about autonomic coordination.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-10T09:15:23.171814+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"f",
+      "activation": 0.4271,
+      "salience": 0.82,
+      "novelty": 0.84,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5788
+      "ignition_score": 0.5697
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "attend",
-    "description": "Continue processing the active workspace without external action.",
-    "source": "workspace",
-    "score": 0.33757
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
+    "source": "homeostasis",
+    "score": 0.32456
   },
   "action_competition": [
     {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.32456,
+      "description": "Replay and consolidate existing experience offline."
+    },
+    {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.33757,
+      "score": 0.29507,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.20447,
+      "score": 0.27102,
       "description": "Allow activation to decay without forcing cognition."
-    },
-    {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.1917,
-      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [],
@@ -326,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 2,
+  "consecutive_pulses": 3,
   "memory": {
-    "episodes": 1896,
+    "episodes": 1897,
     "semantic_nodes": 3590,
     "synapses": 1200
   },
