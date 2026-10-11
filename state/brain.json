@@ -1,31 +1,19 @@
 {
   "version": 2,
-  "timestamp": "2026-10-11T17:56:54.606562+00:00",
-  "generation": 1515,
+  "timestamp": "2026-10-11T17:57:52.199128+00:00",
+  "generation": 1516,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2895,
-    "surprise": 0.2515,
+    "novelty": 0.2407,
+    "surprise": 0.2055,
     "uncertainty": 0.58,
-    "salience": 0.1883,
-    "exploration": 0.4546,
-    "plasticity": 0.4424,
-    "energy": 0.855,
-    "sleep_pressure": 0.1225
+    "salience": 0.1906,
+    "exploration": 0.4283,
+    "plasticity": 0.4114,
+    "energy": 0.908,
+    "sleep_pressure": 0.0504
   },
   "workspace": [
-    {
-      "id": "episode:472de7d460c18c",
-      "kind": "provider_state_change",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 955}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.95,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "runtime",
-      "ignition_score": 0.694
-    },
     {
       "id": "episode:193520061bea26",
       "kind": "recalled_episode",
@@ -66,7 +54,7 @@
       "id": "episode:1bdf23c86de766",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"human-autonomic-response-timing-in-emotional-crying\", \"title\": \"Human autonomic response timing in emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need a comprehensive overview of latency measurements across studies to inform parasympathetic coordination hypothesis\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-11T02:25:59.267000+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false, \"full",
-      "activation": 0.3933,
+      "activation": 0.3932,
       "salience": 0.82,
       "novelty": 0.64,
       "surprise": 0.35,
@@ -97,6 +85,18 @@
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
       "ignition_score": 0.4514
+    },
+    {
+      "id": "runtime_state:423b4a0b7d2066e3",
+      "kind": "runtime_state",
+      "label": "provider:gemini",
+      "activation": 0.195,
+      "salience": 0.190645,
+      "novelty": 0.24067499999999997,
+      "surprise": 0.20547500000000002,
+      "epistemic_status": "observed_runtime_state",
+      "source": "semantic_network",
+      "ignition_score": 0.2011
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "attend",
-    "description": "Continue processing the active workspace without external action.",
-    "source": "workspace",
-    "score": 0.2047
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
+    "source": "homeostasis",
+    "score": 0.27527
   },
   "action_competition": [
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.2047,
-      "description": "Continue processing the active workspace without external action."
-    },
-    {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.19744,
+      "score": 0.27527,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.19309,
+      "score": 0.26623,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.14478,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
   "substrate_contributors": [],
@@ -326,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 1844,
+    "episodes": 1845,
     "semantic_nodes": 3558,
     "synapses": 1200
   },
