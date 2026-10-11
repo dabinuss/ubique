@@ -1,102 +1,90 @@
 {
   "version": 2,
-  "timestamp": "2026-10-11T17:30:04.990769+00:00",
-  "generation": 1513,
+  "timestamp": "2026-10-11T17:43:33.876570+00:00",
+  "generation": 1514,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1901,
-    "surprise": 0.1578,
+    "novelty": 0.1761,
+    "surprise": 0.1446,
     "uncertainty": 0.58,
-    "salience": 0.0712,
-    "exploration": 0.4011,
-    "plasticity": 0.3698,
+    "salience": 0.0743,
+    "exploration": 0.3935,
+    "plasticity": 0.3671,
     "energy": 1.0,
-    "sleep_pressure": 0.1071
+    "sleep_pressure": 0.0455
   },
   "workspace": [
     {
       "id": "episode:7b64ecfc12898c",
       "kind": "recalled_episode",
       "label": "Workspace processing continued without external action.",
-      "activation": 0.2271,
+      "activation": 0.2268,
       "salience": 0.85,
       "novelty": 0.62,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4486
+      "ignition_score": 0.4485
     },
     {
       "id": "episode:a66b78d5d4ff70",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"ribot-psychology-emotions\", \"title\": \"The Psychology of the Emotions\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #67585\"}, \"offset\": 80000, \"excerpt\": \"o establish this\\nseparation legitimately, and the task which we now put aside in its\\ngeneral form will come before us later on in the case of each\\nparticular emotion.\\n\\n                                PART I.\\n\\n                          GENERAL PSYCHOLOGY.\\n\\n\\n\\n\\n          ",
-      "activation": 0.2274,
+      "activation": 0.2272,
       "salience": 0.91,
       "novelty": 0.45,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4417
+      "ignition_score": 0.4416
     },
     {
       "id": "episode:0dcd7463932087",
       "kind": "recalled_episode",
       "label": "{\"action\": \"read\", \"item\": {\"id\": \"darwin-expression-emotions\", \"title\": \"The Expression of the Emotions in Man and Animals\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #1227\"}, \"offset\": 662000, \"excerpt\": \"2) 621-9288. Email contact links and up\\nto date contact information can be found at the Foundation’s website\\nand official page at www.gutenberg.org/contact\\n\\nSection 4. Information about Donations to the Project Gutenberg\\nLiterary Archive Foundation\\n\\nProj",
-      "activation": 0.2254,
+      "activation": 0.2251,
       "salience": 0.85,
       "novelty": 0.45,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4257
+      "ignition_score": 0.4255
     },
     {
       "id": "episode:7d34bba8ca5c22",
       "kind": "recalled_episode",
       "label": "Quiet state selected; activation decayed.",
-      "activation": 0.2315,
+      "activation": 0.2313,
       "salience": 0.95,
       "novelty": 0.23,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4251
+      "ignition_score": 0.425
     },
     {
       "id": "episode:75453bb2d66936",
       "kind": "recalled_episode",
       "label": "Quiet state selected; activation decayed.",
-      "activation": 0.2325,
+      "activation": 0.2323,
       "salience": 0.95,
       "novelty": 0.1,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4088
+      "ignition_score": 0.4087
     },
     {
       "id": "episode:fe239cc177fc26",
       "kind": "recalled_episode",
       "label": "Quiet state selected; activation decayed.",
-      "activation": 0.2262,
+      "activation": 0.2259,
       "salience": 0.91,
       "novelty": 0.15,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4021
-    },
-    {
-      "id": "runtime_state:423b4a0b7d2066e3",
-      "kind": "runtime_state",
-      "label": "provider:gemini",
-      "activation": 0.0289,
-      "salience": 0.09195,
-      "novelty": 0.190105,
-      "surprise": 0.15783,
-      "epistemic_status": "observed_runtime_state",
-      "source": "semantic_network",
-      "ignition_score": 0.0811
+      "ignition_score": 0.402
     }
   ],
   "provider_eligibility": {
@@ -263,28 +251,28 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
     "source": "homeostasis",
-    "score": 0.27491
+    "score": 0.24638
   },
   "action_competition": [
     {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.27491,
-      "description": "Allow activation to decay without forcing cognition."
-    },
-    {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.27418,
+      "score": 0.24638,
       "description": "Replay and consolidate existing experience offline."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.19731,
+      "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.10632,
+      "score": 0.1482,
       "description": "Continue processing the active workspace without external action."
     }
   ],
@@ -328,7 +316,7 @@
   ],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 1841,
+    "episodes": 1842,
     "semantic_nodes": 3558,
     "synapses": 1200
   },
