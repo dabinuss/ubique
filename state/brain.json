@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-11T00:08:26.079854+00:00",
-  "generation": 1336,
+  "timestamp": "2026-10-11T00:09:20.500815+00:00",
+  "generation": 1337,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2338,
-    "surprise": 0.199,
+    "novelty": 0.2045,
+    "surprise": 0.1714,
     "uncertainty": 0.52,
-    "salience": 0.7026,
-    "exploration": 0.4141,
-    "plasticity": 0.487,
-    "energy": 0.87,
-    "sleep_pressure": 0.1903
+    "salience": 0.7857,
+    "exploration": 0.3878,
+    "plasticity": 0.4823,
+    "energy": 0.805,
+    "sleep_pressure": 0.2393
   },
   "workspace": [
     {
@@ -19,72 +19,72 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.70262,
-      "novelty": 0.233785,
-      "surprise": 0.19904,
+      "salience": 0.78569,
+      "novelty": 0.20447,
+      "surprise": 0.17135,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6999
+      "ignition_score": 0.7136
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.70262,
-      "novelty": 0.233785,
-      "surprise": 0.19904,
+      "salience": 0.78569,
+      "novelty": 0.20447,
+      "surprise": 0.17135,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6999
+      "ignition_score": 0.7136
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.70262,
-      "novelty": 0.233785,
-      "surprise": 0.19904,
+      "salience": 0.78569,
+      "novelty": 0.20447,
+      "surprise": 0.17135,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6999
+      "ignition_score": 0.7136
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.70262,
-      "novelty": 0.233785,
-      "surprise": 0.19904,
+      "salience": 0.78569,
+      "novelty": 0.20447,
+      "surprise": 0.17135,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6999
+      "ignition_score": 0.7136
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.70262,
-      "novelty": 0.233785,
-      "surprise": 0.19904,
+      "salience": 0.78569,
+      "novelty": 0.20447,
+      "surprise": 0.17135,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6999
+      "ignition_score": 0.7136
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
       "activation": 0.94,
-      "salience": 0.70262,
-      "novelty": 0.233785,
-      "surprise": 0.19904,
+      "salience": 0.78569,
+      "novelty": 0.20447,
+      "surprise": 0.17135,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6999
+      "ignition_score": 0.7136
     },
     {
       "id": "episode:e08b98755cb36c",
@@ -104,7 +104,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 18,
+      "remaining_calls": 17,
       "eligible": true
     },
     "groq": {
@@ -264,33 +264,33 @@
   },
   "last_action": {
     "kind": "library",
-    "description": "Request a specific empirical study on autonomic latency and tear secretion dynamics to further test physiological coordination hypotheses.",
+    "description": "Read available book content relevant to emotional expression and physiology.",
     "source": "substrate:gemini",
-    "score": 0.57355
+    "score": 0.50949
   },
   "action_competition": [
     {
       "kind": "library",
       "source": "substrate:gemini",
-      "score": 0.57355,
-      "description": "Request a specific empirical study on autonomic latency and tear secretion dynamics to further test physiological coordination hypotheses."
+      "score": 0.50949,
+      "description": "Read available book content relevant to emotional expression and physiology."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.33689,
+      "score": 0.3649,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.31693,
+      "score": 0.32924,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.26528,
+      "score": 0.31408,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
@@ -337,10 +337,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 2,
+  "consecutive_pulses": 3,
   "memory": {
-    "episodes": 1596,
-    "semantic_nodes": 3339,
+    "episodes": 1599,
+    "semantic_nodes": 3347,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -351,7 +351,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 50
+      "removed_edges": 66
     },
     "terminal_inhibition": {
       "startup": 323,
