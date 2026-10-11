@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-11T02:42:25.182395+00:00",
-  "generation": 1353,
+  "timestamp": "2026-10-11T02:43:25.044485+00:00",
+  "generation": 1354,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1752,
-    "surprise": 0.1437,
+    "novelty": 0.1664,
+    "surprise": 0.1354,
     "uncertainty": 0.57,
-    "salience": 0.7373,
-    "exploration": 0.3895,
-    "plasticity": 0.4578,
-    "energy": 0.935,
-    "sleep_pressure": 0.1776
+    "salience": 0.6248,
+    "exploration": 0.3848,
+    "plasticity": 0.4633,
+    "energy": 1.0,
+    "sleep_pressure": 0.1164
   },
   "workspace": [
     {
@@ -19,72 +19,72 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.737265,
-      "novelty": 0.175155,
-      "surprise": 0.143725,
+      "salience": 0.8082449999999999,
+      "novelty": 0.16638,
+      "surprise": 0.135405,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6943
+      "ignition_score": 0.7099
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.737265,
-      "novelty": 0.175155,
-      "surprise": 0.143725,
+      "salience": 0.8082449999999999,
+      "novelty": 0.16638,
+      "surprise": 0.135405,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6943
+      "ignition_score": 0.7099
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.737265,
-      "novelty": 0.175155,
-      "surprise": 0.143725,
+      "salience": 0.8082449999999999,
+      "novelty": 0.16638,
+      "surprise": 0.135405,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6943
+      "ignition_score": 0.7099
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.737265,
-      "novelty": 0.175155,
-      "surprise": 0.143725,
+      "salience": 0.8082449999999999,
+      "novelty": 0.16638,
+      "surprise": 0.135405,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6943
+      "ignition_score": 0.7099
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.737265,
-      "novelty": 0.175155,
-      "surprise": 0.143725,
+      "salience": 0.8082449999999999,
+      "novelty": 0.16638,
+      "surprise": 0.135405,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6943
+      "ignition_score": 0.7099
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
       "activation": 0.94,
-      "salience": 0.737265,
-      "novelty": 0.175155,
-      "surprise": 0.143725,
+      "salience": 0.8082449999999999,
+      "novelty": 0.16638,
+      "surprise": 0.135405,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6943
+      "ignition_score": 0.7099
     },
     {
       "id": "episode:e08b98755cb36c",
@@ -104,8 +104,8 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 1,
-      "eligible": true
+      "remaining_calls": 0,
+      "eligible": false
     },
     "groq": {
       "configured": true,
@@ -263,34 +263,34 @@
     }
   },
   "last_action": {
-    "kind": "library",
-    "description": "Read available text on human emotional crying and autonomic timing from Darwin's work.",
+    "kind": "rest",
+    "description": "Rest to maintain optimal energy levels while autonomic coordination hypotheses are evaluated.",
     "source": "substrate:gemini",
-    "score": 0.54502
+    "score": 0.54137
   },
   "action_competition": [
     {
-      "kind": "library",
+      "kind": "rest",
       "source": "substrate:gemini",
-      "score": 0.54502,
-      "description": "Read available text on human emotional crying and autonomic timing from Darwin's work."
+      "score": 0.54137,
+      "description": "Rest to maintain optimal energy levels while autonomic coordination hypotheses are evaluated."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.4268,
+      "score": 0.44088,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.40185,
+      "score": 0.43007,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.21266,
+      "score": 0.26451,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
@@ -337,10 +337,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 1640,
-    "semantic_nodes": 3443,
+    "episodes": 1642,
+    "semantic_nodes": 3445,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -351,13 +351,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 44
+      "removed_edges": 66
     },
     "terminal_inhibition": {
-      "startup": 324,
-      "after_lifecycle": 324,
-      "after_spread": 324,
-      "after_packets": 332
+      "startup": 325,
+      "after_lifecycle": 325,
+      "after_spread": 325,
+      "after_packets": 325
     }
   }
 }
