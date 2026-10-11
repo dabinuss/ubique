@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-11T20:44:19.370152+00:00",
-  "generation": 1546,
+  "timestamp": "2026-10-11T20:45:16.646395+00:00",
+  "generation": 1547,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1662,
-    "surprise": 0.1354,
+    "novelty": 0.1605,
+    "surprise": 0.13,
     "uncertainty": 0.58,
-    "salience": 0.4379,
-    "exploration": 0.3883,
-    "plasticity": 0.4077,
-    "energy": 0.855,
-    "sleep_pressure": 0.1194
+    "salience": 0.3062,
+    "exploration": 0.3852,
+    "plasticity": 0.3877,
+    "energy": 0.908,
+    "sleep_pressure": 0.0494
   },
   "workspace": [
     {
@@ -42,13 +42,13 @@
       "id": "episode:404bd875eb2927",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"temporal-dynamics-of-facial-emg-and-lacrimal-secretion-during-hu\", \"title\": \"Temporal dynamics of facial EMG and lacrimal secretion during human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Needed quantitative timing data for EMG onset, parasympathetic outflow, and tear volume/composition to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T19:29:54.283448+00:00\", \"content_path\": \"\", \"read_",
-      "activation": 0.449,
+      "activation": 0.4489,
       "salience": 0.82,
       "novelty": 0.71,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5638
+      "ignition_score": 0.5637
     },
     {
       "id": "episode:74b0ffec29f337",
@@ -66,7 +66,7 @@
       "id": "episode:ec233dc0d12779",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"concurrent-facial-emg-and-lacrimal-secretion-dynamics-in-human-e\", \"title\": \"Concurrent facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Needed quantitative data on EMG onset, parasympathetic outflow timing, and tear volume/composition to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T06:45:39.708495+00:00\", \"content_path\": \"\", \"read_count\"",
-      "activation": 0.4409,
+      "activation": 0.4408,
       "salience": 0.78,
       "novelty": 0.7,
       "surprise": 0.35,
@@ -90,13 +90,13 @@
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.1288,
-      "salience": 0.43794000000000005,
-      "novelty": 0.16624999999999998,
-      "surprise": 0.135405,
+      "activation": 0.0617,
+      "salience": 0.30623,
+      "novelty": 0.16053,
+      "surprise": 0.13001000000000001,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.2117
+      "ignition_score": 0.1439
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "attend",
-    "description": "Continue processing the active workspace without external action.",
-    "source": "workspace",
-    "score": 0.23616
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
+    "source": "homeostasis",
+    "score": 0.28472
   },
   "action_competition": [
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.23616,
-      "description": "Continue processing the active workspace without external action."
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.28472,
+      "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.23453,
+      "score": 0.28418,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.18669,
-      "description": "Replay and consolidate existing experience offline."
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.12298,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
   "substrate_contributors": [],
@@ -326,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 2,
+  "consecutive_pulses": 3,
   "memory": {
-    "episodes": 1883,
+    "episodes": 1884,
     "semantic_nodes": 3579,
     "synapses": 1200
   },
