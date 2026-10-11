@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-11T00:09:20.500815+00:00",
-  "generation": 1337,
+  "timestamp": "2026-10-11T00:10:16.099450+00:00",
+  "generation": 1338,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2045,
-    "surprise": 0.1714,
+    "novelty": 0.1854,
+    "surprise": 0.1534,
     "uncertainty": 0.52,
-    "salience": 0.7857,
-    "exploration": 0.3878,
-    "plasticity": 0.4823,
-    "energy": 0.805,
-    "sleep_pressure": 0.2393
+    "salience": 0.6449,
+    "exploration": 0.3776,
+    "plasticity": 0.4792,
+    "energy": 1.0,
+    "sleep_pressure": 0.1479
   },
   "workspace": [
     {
@@ -19,72 +19,72 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.78569,
-      "novelty": 0.20447,
-      "surprise": 0.17135,
+      "salience": 0.8397049999999999,
+      "novelty": 0.18542499999999998,
+      "surprise": 0.15341,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7136
+      "ignition_score": 0.7224
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.78569,
-      "novelty": 0.20447,
-      "surprise": 0.17135,
+      "salience": 0.8397049999999999,
+      "novelty": 0.18542499999999998,
+      "surprise": 0.15341,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7136
+      "ignition_score": 0.7224
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.78569,
-      "novelty": 0.20447,
-      "surprise": 0.17135,
+      "salience": 0.8397049999999999,
+      "novelty": 0.18542499999999998,
+      "surprise": 0.15341,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7136
+      "ignition_score": 0.7224
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.78569,
-      "novelty": 0.20447,
-      "surprise": 0.17135,
+      "salience": 0.8397049999999999,
+      "novelty": 0.18542499999999998,
+      "surprise": 0.15341,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7136
+      "ignition_score": 0.7224
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.78569,
-      "novelty": 0.20447,
-      "surprise": 0.17135,
+      "salience": 0.8397049999999999,
+      "novelty": 0.18542499999999998,
+      "surprise": 0.15341,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7136
+      "ignition_score": 0.7224
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
       "activation": 0.94,
-      "salience": 0.78569,
-      "novelty": 0.20447,
-      "surprise": 0.17135,
+      "salience": 0.8397049999999999,
+      "novelty": 0.18542499999999998,
+      "surprise": 0.15341,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7136
+      "ignition_score": 0.7224
     },
     {
       "id": "episode:e08b98755cb36c",
@@ -104,7 +104,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 17,
+      "remaining_calls": 16,
       "eligible": true
     },
     "groq": {
@@ -263,34 +263,34 @@
     }
   },
   "last_action": {
-    "kind": "library",
-    "description": "Read available book content relevant to emotional expression and physiology.",
+    "kind": "rest",
+    "description": "Rest to maintain homeostatic energy balance while current physiological hypotheses await empirical data acquisition.",
     "source": "substrate:gemini",
-    "score": 0.50949
+    "score": 0.60049
   },
   "action_competition": [
     {
-      "kind": "library",
+      "kind": "rest",
       "source": "substrate:gemini",
-      "score": 0.50949,
-      "description": "Read available book content relevant to emotional expression and physiology."
+      "score": 0.60049,
+      "description": "Rest to maintain homeostatic energy balance while current physiological hypotheses await empirical data acquisition."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.3649,
+      "score": 0.39066,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.32924,
+      "score": 0.37214,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.31408,
+      "score": 0.3515,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
@@ -337,10 +337,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 3,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 1599,
-    "semantic_nodes": 3347,
+    "episodes": 1601,
+    "semantic_nodes": 3353,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -351,7 +351,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 66
+      "removed_edges": 72
     },
     "terminal_inhibition": {
       "startup": 323,
