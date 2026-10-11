@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-11T10:52:10.496295+00:00",
-  "generation": 1436,
+  "timestamp": "2026-10-11T10:53:11.575625+00:00",
+  "generation": 1437,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1649,
-    "surprise": 0.134,
+    "novelty": 0.2822,
+    "surprise": 0.2446,
     "uncertainty": 0.58,
-    "salience": 0.6557,
-    "exploration": 0.3875,
-    "plasticity": 0.4396,
-    "energy": 0.855,
-    "sleep_pressure": 0.1662
+    "salience": 0.5662,
+    "exploration": 0.4507,
+    "plasticity": 0.4759,
+    "energy": 0.908,
+    "sleep_pressure": 0.0644
   },
   "workspace": [
+    {
+      "id": "episode:fc23458245d208",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 973}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
+    },
     {
       "id": "episode:e08b98755cb36c",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"direct-measurements-of-parasympathetic-latency-in-human-emotiona\", \"title\": \"Direct measurements of parasympathetic latency in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain empirical EMG‑to‑tear latency data needed to test current hypotheses about autonomic coordination.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-10T09:15:23.171814+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"f",
-      "activation": 0.4345,
+      "activation": 0.4263,
       "salience": 0.82,
       "novelty": 0.84,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5735
-    },
-    {
-      "id": "episode:1bdf23c86de766",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"human-autonomic-response-timing-in-emotional-crying\", \"title\": \"Human autonomic response timing in emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need a comprehensive overview of latency measurements across studies to inform parasympathetic coordination hypothesis\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-11T02:25:59.267000+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false, \"full",
-      "activation": 0.4534,
-      "salience": 0.82,
-      "novelty": 0.64,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5569
-    },
-    {
-      "id": "episode:e2189d92b65108",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"direct-measurement-of-emg-to-tear-latency-in-human-emotional-cry\", \"title\": \"Direct measurement of EMG‑to‑tear latency in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Needed to obtain empirical latency data for evaluating parasympathetic coordination hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-10T20:09:04.705311+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false,",
-      "activation": 0.4344,
-      "salience": 0.78,
-      "novelty": 0.7,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5452
-    },
-    {
-      "id": "episode:c19c7f2f936c3c",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"latency-of-autonomic-responses-in-human-emotional-crying-a-meta-\", \"title\": \"Latency of autonomic responses in human emotional crying: a meta‑analysis\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain aggregated EMG‑to‑tear latency values needed for testing the parasympathetic coordination hypothesis.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-11T09:38:46.956028+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0",
-      "activation": 0.4459,
-      "salience": 0.74,
-      "novelty": 0.68,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5384
-    },
-    {
-      "id": "episode:62da33b77f02c0",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"parasympathetic-latency-in-human-emotional-crying-emg-and-tear-d\", \"title\": \"Parasympathetic latency in human emotional crying: EMG and tear dynamics\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Needed to obtain quantitative timing data for testing the hypothesized 0.5–2 s EMG‑to‑tear latency.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-09T17:56:53.565445+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read",
-      "activation": 0.4562,
-      "salience": 0.72,
-      "novelty": 0.64,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5333
-    },
-    {
-      "id": "episode:f92f8776909e10",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"quantitative-measurement-of-emg-to-tear-latency-in-human-emotion\", \"title\": \"Quantitative measurement of EMG‑to‑tear latency in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Obtain empirical latency data needed to test the parasympathetic coordination hypothesis.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-11T00:07:29.912500+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false,",
-      "activation": 0.4311,
-      "salience": 0.73,
-      "novelty": 0.69,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5298
+      "ignition_score": 0.5694
     },
     {
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.6056,
-      "salience": 0.6556500000000001,
-      "novelty": 0.16494999999999999,
-      "surprise": 0.13404,
+      "activation": 0.6999,
+      "salience": 0.566205,
+      "novelty": 0.282185,
+      "surprise": 0.2446,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.5042
+      "ignition_score": 0.5575
+    },
+    {
+      "id": "concept:db6c7eee7c83a8d1",
+      "kind": "concept",
+      "label": "fully_read_at",
+      "activation": 0.6999,
+      "salience": 0.566205,
+      "novelty": 0.282185,
+      "surprise": 0.2446,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.5575
+    },
+    {
+      "id": "concept:b11da62837100975",
+      "kind": "concept",
+      "label": "content_path",
+      "activation": 0.6999,
+      "salience": 0.566205,
+      "novelty": 0.282185,
+      "surprise": 0.2446,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.5575
+    },
+    {
+      "id": "concept:b067159d02fcae9c",
+      "kind": "concept",
+      "label": "parasympathetic",
+      "activation": 0.6999,
+      "salience": 0.566205,
+      "novelty": 0.282185,
+      "surprise": 0.2446,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.5575
+    },
+    {
+      "id": "concept:dff8fc3345095000",
+      "kind": "concept",
+      "label": "measurements",
+      "activation": 0.6999,
+      "salience": 0.566205,
+      "novelty": 0.282185,
+      "surprise": 0.2446,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.5575
     }
   ],
   "provider_eligibility": {
@@ -111,7 +111,7 @@
       "configured": true,
       "disabled": true,
       "daily_limit": 1000,
-      "remaining_calls": 973,
+      "remaining_calls": 971,
       "eligible": false
     },
     "huggingface": {
@@ -263,32 +263,43 @@
     }
   },
   "last_action": {
-    "kind": "attend",
-    "description": "Continue processing the active workspace without external action.",
-    "source": "workspace",
-    "score": 0.28843
+    "kind": "consolidate",
+    "description": "Integrate newly retrieved latency data with existing autonomic coordination models.",
+    "source": "substrate:groq",
+    "score": 0.44956
   },
   "action_competition": [
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.28843,
-      "description": "Continue processing the active workspace without external action."
+      "kind": "consolidate",
+      "source": "substrate:groq",
+      "score": 0.44956,
+      "description": "Integrate newly retrieved latency data with existing autonomic coordination models."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.27498,
+      "score": 0.33721,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.25059,
+      "score": 0.29989,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.2166,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
-  "substrate_contributors": [],
+  "substrate_contributors": [
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    }
+  ],
   "current_stances": [
     {
       "topic": "evolutionary_origins_of_expression",
@@ -326,10 +337,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 1745,
-    "semantic_nodes": 3515,
+    "episodes": 1749,
+    "semantic_nodes": 3524,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -340,7 +351,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_edges": 90
     },
     "terminal_inhibition": {
       "startup": 325,
