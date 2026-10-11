@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-11T20:45:16.646395+00:00",
-  "generation": 1547,
+  "timestamp": "2026-10-11T20:46:06.342389+00:00",
+  "generation": 1548,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1605,
-    "surprise": 0.13,
+    "novelty": 0.1568,
+    "surprise": 0.1265,
     "uncertainty": 0.58,
-    "salience": 0.3062,
-    "exploration": 0.3852,
-    "plasticity": 0.3877,
-    "energy": 0.908,
-    "sleep_pressure": 0.0494
+    "salience": 0.1913,
+    "exploration": 0.3832,
+    "plasticity": 0.3731,
+    "energy": 1.0,
+    "sleep_pressure": 0.0477
   },
   "workspace": [
     {
@@ -78,25 +78,25 @@
       "id": "episode:f92f8776909e10",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"quantitative-measurement-of-emg-to-tear-latency-in-human-emotion\", \"title\": \"Quantitative measurement of EMG‑to‑tear latency in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Obtain empirical latency data needed to test the parasympathetic coordination hypothesis.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-11T00:07:29.912500+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false,",
-      "activation": 0.4206,
+      "activation": 0.4205,
       "salience": 0.73,
       "novelty": 0.69,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5245
+      "ignition_score": 0.5244
     },
     {
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.0617,
-      "salience": 0.30623,
-      "novelty": 0.16053,
-      "surprise": 0.13001000000000001,
+      "activation": 0.129,
+      "salience": 0.24418,
+      "novelty": 0.156825,
+      "surprise": 0.1265,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.1439
+      "ignition_score": 0.1611
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
+    "kind": "rest",
+    "description": "Allow activation to decay without forcing cognition.",
     "source": "homeostasis",
-    "score": 0.28472
+    "score": 0.24446
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.28472,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.28418,
+      "score": 0.24446,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.12298,
+      "score": 0.18953,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.16984,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [],
@@ -326,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 3,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 1884,
+    "episodes": 1885,
     "semantic_nodes": 3579,
     "synapses": 1200
   },
