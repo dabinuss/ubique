@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-11T02:27:55.818744+00:00",
-  "generation": 1351,
+  "timestamp": "2026-10-11T02:28:54.029694+00:00",
+  "generation": 1352,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2095,
-    "surprise": 0.1762,
+    "novelty": 0.1887,
+    "surprise": 0.1565,
     "uncertainty": 0.57,
-    "salience": 0.747,
-    "exploration": 0.4081,
-    "plasticity": 0.4794,
-    "energy": 0.805,
-    "sleep_pressure": 0.2013
+    "salience": 0.6281,
+    "exploration": 0.3968,
+    "plasticity": 0.4774,
+    "energy": 1.0,
+    "sleep_pressure": 0.1286
   },
   "workspace": [
     {
@@ -19,72 +19,72 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.74695,
-      "novelty": 0.20954,
-      "surprise": 0.17615999999999998,
+      "salience": 0.81455,
+      "novelty": 0.18867499999999998,
+      "surprise": 0.15653,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7051
+      "ignition_score": 0.7169
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.74695,
-      "novelty": 0.20954,
-      "surprise": 0.17615999999999998,
+      "salience": 0.81455,
+      "novelty": 0.18867499999999998,
+      "surprise": 0.15653,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7051
+      "ignition_score": 0.7169
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.74695,
-      "novelty": 0.20954,
-      "surprise": 0.17615999999999998,
+      "salience": 0.81455,
+      "novelty": 0.18867499999999998,
+      "surprise": 0.15653,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7051
+      "ignition_score": 0.7169
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.74695,
-      "novelty": 0.20954,
-      "surprise": 0.17615999999999998,
+      "salience": 0.81455,
+      "novelty": 0.18867499999999998,
+      "surprise": 0.15653,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7051
+      "ignition_score": 0.7169
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.74695,
-      "novelty": 0.20954,
-      "surprise": 0.17615999999999998,
+      "salience": 0.81455,
+      "novelty": 0.18867499999999998,
+      "surprise": 0.15653,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7051
+      "ignition_score": 0.7169
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
       "activation": 0.94,
-      "salience": 0.74695,
-      "novelty": 0.20954,
-      "surprise": 0.17615999999999998,
+      "salience": 0.81455,
+      "novelty": 0.18867499999999998,
+      "surprise": 0.15653,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7051
+      "ignition_score": 0.7169
     },
     {
       "id": "episode:e08b98755cb36c",
@@ -104,7 +104,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 3,
+      "remaining_calls": 2,
       "eligible": true
     },
     "groq": {
@@ -263,34 +263,34 @@
     }
   },
   "last_action": {
-    "kind": "library",
-    "description": "Read 'The Psychology of the Emotions' to examine broader theoretical accounts of emotional expression and physiological accompaniment.",
+    "kind": "rest",
+    "description": "Rest to stabilize cognitive workspace and integrate recent memory traces.",
     "source": "substrate:gemini",
-    "score": 0.48857
+    "score": 0.58253
   },
   "action_competition": [
     {
-      "kind": "library",
+      "kind": "rest",
       "source": "substrate:gemini",
-      "score": 0.48857,
-      "description": "Read 'The Psychology of the Emotions' to examine broader theoretical accounts of emotional expression and physiological accompaniment."
-    },
-    {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.43398,
-      "description": "Continue processing the active workspace without external action."
+      "score": 0.58253,
+      "description": "Rest to stabilize cognitive workspace and integrate recent memory traces."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.41883,
+      "score": 0.44615,
       "description": "Replay and consolidate existing experience offline."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.44513,
+      "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.268,
+      "score": 0.31599,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
@@ -337,10 +337,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 3,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 1635,
-    "semantic_nodes": 3429,
+    "episodes": 1637,
+    "semantic_nodes": 3433,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -351,7 +351,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 60
+      "removed_edges": 44
     },
     "terminal_inhibition": {
       "startup": 324,
