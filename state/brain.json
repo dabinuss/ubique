@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-10T23:53:55.995046+00:00",
-  "generation": 1334,
+  "timestamp": "2026-10-11T00:07:30.102245+00:00",
+  "generation": 1335,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1599,
-    "surprise": 0.1294,
+    "novelty": 0.2789,
+    "surprise": 0.2416,
     "uncertainty": 0.55,
-    "salience": 0.669,
-    "exploration": 0.3744,
-    "plasticity": 0.4675,
-    "energy": 1.0,
-    "sleep_pressure": 0.0923
+    "salience": 0.5748,
+    "exploration": 0.4384,
+    "plasticity": 0.4943,
+    "energy": 0.935,
+    "sleep_pressure": 0.1413
   },
   "workspace": [
+    {
+      "id": "episode:7d1b07395ec268",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
+    },
     {
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.8601,
-      "salience": 0.8613999999999999,
-      "novelty": 0.159945,
-      "surprise": 0.129425,
+      "activation": 0.8223,
+      "salience": 0.57485,
+      "novelty": 0.278935,
+      "surprise": 0.24161,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6817
+      "ignition_score": 0.6201
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
-      "activation": 0.8601,
-      "salience": 0.8613999999999999,
-      "novelty": 0.159945,
-      "surprise": 0.129425,
+      "activation": 0.8223,
+      "salience": 0.57485,
+      "novelty": 0.278935,
+      "surprise": 0.24161,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6817
+      "ignition_score": 0.6201
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
-      "activation": 0.8601,
-      "salience": 0.8613999999999999,
-      "novelty": 0.159945,
-      "surprise": 0.129425,
+      "activation": 0.8223,
+      "salience": 0.57485,
+      "novelty": 0.278935,
+      "surprise": 0.24161,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6817
+      "ignition_score": 0.6201
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
-      "activation": 0.8601,
-      "salience": 0.8613999999999999,
-      "novelty": 0.159945,
-      "surprise": 0.129425,
+      "activation": 0.8223,
+      "salience": 0.57485,
+      "novelty": 0.278935,
+      "surprise": 0.24161,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6817
+      "ignition_score": 0.6201
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
-      "activation": 0.8601,
-      "salience": 0.8613999999999999,
-      "novelty": 0.159945,
-      "surprise": 0.129425,
+      "activation": 0.8223,
+      "salience": 0.57485,
+      "novelty": 0.278935,
+      "surprise": 0.24161,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6817
+      "ignition_score": 0.6201
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
-      "activation": 0.8601,
-      "salience": 0.8613999999999999,
-      "novelty": 0.159945,
-      "surprise": 0.129425,
+      "activation": 0.8223,
+      "salience": 0.57485,
+      "novelty": 0.278935,
+      "surprise": 0.24161,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6817
-    },
-    {
-      "id": "episode:e08b98755cb36c",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"direct-measurements-of-parasympathetic-latency-in-human-emotiona\", \"title\": \"Direct measurements of parasympathetic latency in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain empirical EMG‑to‑tear latency data needed to test current hypotheses about autonomic coordination.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-10T09:15:23.171814+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"f",
-      "activation": 0.4448,
-      "salience": 0.82,
-      "novelty": 0.84,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5786
+      "ignition_score": 0.6201
     }
   ],
   "provider_eligibility": {
@@ -104,15 +104,15 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 0,
-      "eligible": false
+      "remaining_calls": 19,
+      "eligible": true
     },
     "groq": {
       "configured": true,
-      "disabled": true,
+      "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 937,
-      "eligible": false
+      "remaining_calls": 999,
+      "eligible": true
     },
     "huggingface": {
       "configured": false,
@@ -263,32 +263,59 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
-    "source": "homeostasis",
-    "score": 0.37865
+    "kind": "library",
+    "description": "Request a new peer‑reviewed article that reports direct measurements of EMG‑to‑tear latency in human emotional crying.",
+    "source": "substrate:groq",
+    "score": 0.62424
   },
   "action_competition": [
     {
+      "kind": "library",
+      "source": "substrate:groq",
+      "score": 0.62424,
+      "description": "Request a new peer‑reviewed article that reports direct measurements of EMG‑to‑tear latency in human emotional crying."
+    },
+    {
       "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.37865,
-      "description": "Allow activation to decay without forcing cognition."
+      "source": "substrate:gemini",
+      "score": 0.53753,
+      "description": "Rest to stabilize activation and maintain energy levels after recent runtime operations."
+    },
+    {
+      "kind": "consolidate",
+      "source": "substrate:groq",
+      "score": 0.43686,
+      "description": "Integrate recent reading requests and internal focus into a coherent working memory state."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.36273,
+      "score": 0.30408,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.25916,
+      "score": 0.29998,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.20162,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
-  "substrate_contributors": [],
+  "substrate_contributors": [
+    {
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
+    }
+  ],
   "current_stances": [
     {
       "topic": "evolutionary_origins_of_expression",
@@ -326,10 +353,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 1590,
-    "semantic_nodes": 3323,
+    "episodes": 1594,
+    "semantic_nodes": 3334,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -340,7 +367,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 0
+      "removed_edges": 138
     },
     "terminal_inhibition": {
       "startup": 323,
