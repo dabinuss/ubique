@@ -1,19 +1,67 @@
 {
   "version": 2,
-  "timestamp": "2026-10-11T15:29:30.458775+00:00",
-  "generation": 1491,
+  "timestamp": "2026-10-11T15:30:24.493616+00:00",
+  "generation": 1492,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1654,
-    "surprise": 0.1345,
+    "novelty": 0.16,
+    "surprise": 0.1294,
     "uncertainty": 0.58,
-    "salience": 0.6348,
-    "exploration": 0.3878,
-    "plasticity": 0.4294,
-    "energy": 1.0,
-    "sleep_pressure": 0.0396
+    "salience": 0.6773,
+    "exploration": 0.3849,
+    "plasticity": 0.44,
+    "energy": 0.855,
+    "sleep_pressure": 0.1166
   },
   "workspace": [
+    {
+      "id": "concept:d39f7fb1d10bc9e8",
+      "kind": "concept",
+      "label": "reading_request",
+      "activation": 0.7562,
+      "salience": 0.67729,
+      "novelty": 0.16000999999999999,
+      "surprise": 0.129425,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.5838
+    },
+    {
+      "id": "concept:db6c7eee7c83a8d1",
+      "kind": "concept",
+      "label": "fully_read_at",
+      "activation": 0.7562,
+      "salience": 0.67729,
+      "novelty": 0.16000999999999999,
+      "surprise": 0.129425,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.5838
+    },
+    {
+      "id": "concept:b11da62837100975",
+      "kind": "concept",
+      "label": "content_path",
+      "activation": 0.7562,
+      "salience": 0.67729,
+      "novelty": 0.16000999999999999,
+      "surprise": 0.129425,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.5838
+    },
+    {
+      "id": "concept:b067159d02fcae9c",
+      "kind": "concept",
+      "label": "parasympathetic",
+      "activation": 0.7562,
+      "salience": 0.67729,
+      "novelty": 0.16000999999999999,
+      "surprise": 0.129425,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.5838
+    },
     {
       "id": "episode:e08b98755cb36c",
       "kind": "recalled_episode",
@@ -27,76 +75,28 @@
       "ignition_score": 0.5717
     },
     {
-      "id": "concept:d39f7fb1d10bc9e8",
-      "kind": "concept",
-      "label": "reading_request",
-      "activation": 0.7292,
-      "salience": 0.634755,
-      "novelty": 0.165405,
-      "surprise": 0.134495,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.5609
+      "id": "episode:1bdf23c86de766",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"human-autonomic-response-timing-in-emotional-crying\", \"title\": \"Human autonomic response timing in emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need a comprehensive overview of latency measurements across studies to inform parasympathetic coordination hypothesis\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-11T02:25:59.267000+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false, \"full",
+      "activation": 0.4476,
+      "salience": 0.82,
+      "novelty": 0.64,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.554
     },
     {
-      "id": "concept:db6c7eee7c83a8d1",
-      "kind": "concept",
-      "label": "fully_read_at",
-      "activation": 0.7292,
-      "salience": 0.634755,
-      "novelty": 0.165405,
-      "surprise": 0.134495,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.5609
-    },
-    {
-      "id": "concept:b11da62837100975",
-      "kind": "concept",
-      "label": "content_path",
-      "activation": 0.7292,
-      "salience": 0.634755,
-      "novelty": 0.165405,
-      "surprise": 0.134495,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.5609
-    },
-    {
-      "id": "concept:b067159d02fcae9c",
-      "kind": "concept",
-      "label": "parasympathetic",
-      "activation": 0.7292,
-      "salience": 0.634755,
-      "novelty": 0.165405,
-      "surprise": 0.134495,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.5609
-    },
-    {
-      "id": "concept:dff8fc3345095000",
-      "kind": "concept",
-      "label": "measurements",
-      "activation": 0.7292,
-      "salience": 0.634755,
-      "novelty": 0.165405,
-      "surprise": 0.134495,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.5609
-    },
-    {
-      "id": "concept:5cca6a702d78b833",
-      "kind": "concept",
-      "label": "already_requested",
-      "activation": 0.7292,
-      "salience": 0.634755,
-      "novelty": 0.165405,
-      "surprise": 0.134495,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.5609
+      "id": "episode:e2189d92b65108",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"request\", \"item\": {\"id\": \"direct-measurement-of-emg-to-tear-latency-in-human-emotional-cry\", \"title\": \"Direct measurement of EMG‑to‑tear latency in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Needed to obtain empirical latency data for evaluating parasympathetic coordination hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-10T20:09:04.705311+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false,",
+      "activation": 0.4297,
+      "salience": 0.78,
+      "novelty": 0.7,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.5429
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
-    "source": "homeostasis",
-    "score": 0.30685
+    "kind": "attend",
+    "description": "Continue processing the active workspace without external action.",
+    "source": "workspace",
+    "score": 0.3332
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.30685,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.29268,
+      "score": 0.3332,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.22776,
+      "score": 0.24196,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.21418,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [],
@@ -326,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 1814,
+    "episodes": 1815,
     "semantic_nodes": 3551,
     "synapses": 1200
   },
