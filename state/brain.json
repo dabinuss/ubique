@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-11T23:45:36.658494+00:00",
-  "generation": 1579,
+  "timestamp": "2026-10-11T23:46:32.022379+00:00",
+  "generation": 1580,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1662,
-    "surprise": 0.1353,
+    "novelty": 0.1605,
+    "surprise": 0.1299,
     "uncertainty": 0.58,
-    "salience": 0.6095,
-    "exploration": 0.3882,
-    "plasticity": 0.4334,
-    "energy": 0.855,
-    "sleep_pressure": 0.1666
+    "salience": 0.6442,
+    "exploration": 0.3852,
+    "plasticity": 0.4282,
+    "energy": 0.908,
+    "sleep_pressure": 0.0645
   },
   "workspace": [
     {
@@ -63,40 +63,40 @@
       "ignition_score": 0.5535
     },
     {
-      "id": "episode:62da33b77f02c0",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"parasympathetic-latency-in-human-emotional-crying-emg-and-tear-d\", \"title\": \"Parasympathetic latency in human emotional crying: EMG and tear dynamics\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Needed to obtain quantitative timing data for testing the hypothesized 0.5–2 s EMG‑to‑tear latency.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-09T17:56:53.565445+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read",
-      "activation": 0.4876,
-      "salience": 0.72,
-      "novelty": 0.64,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.549
-    },
-    {
-      "id": "episode:c19c7f2f936c3c",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"latency-of-autonomic-responses-in-human-emotional-crying-a-meta-\", \"title\": \"Latency of autonomic responses in human emotional crying: a meta‑analysis\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain aggregated EMG‑to‑tear latency values needed for testing the parasympathetic coordination hypothesis.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-11T09:38:46.956028+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0",
-      "activation": 0.456,
-      "salience": 0.74,
-      "novelty": 0.68,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.5434
-    },
-    {
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.6571,
-      "salience": 0.6094550000000001,
-      "novelty": 0.166185,
-      "surprise": 0.13527499999999998,
+      "activation": 0.7085,
+      "salience": 0.64415,
+      "novelty": 0.16053,
+      "surprise": 0.129945,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.5188
+      "ignition_score": 0.5517
+    },
+    {
+      "id": "concept:db6c7eee7c83a8d1",
+      "kind": "concept",
+      "label": "fully_read_at",
+      "activation": 0.7085,
+      "salience": 0.64415,
+      "novelty": 0.16053,
+      "surprise": 0.129945,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.5517
+    },
+    {
+      "id": "concept:b11da62837100975",
+      "kind": "concept",
+      "label": "content_path",
+      "activation": 0.7085,
+      "salience": 0.64415,
+      "novelty": 0.16053,
+      "surprise": 0.129945,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.5517
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "attend",
-    "description": "Continue processing the active workspace without external action.",
-    "source": "workspace",
-    "score": 0.27942
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
+    "source": "homeostasis",
+    "score": 0.34163
   },
   "action_competition": [
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.27942,
-      "description": "Continue processing the active workspace without external action."
-    },
-    {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.26963,
+      "score": 0.34163,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.24219,
+      "score": 0.31605,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.20762,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
   "substrate_contributors": [],
@@ -326,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 1925,
+    "episodes": 1926,
     "semantic_nodes": 3598,
     "synapses": 1200
   },
