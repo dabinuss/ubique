@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-11T09:06:24.560710+00:00",
-  "generation": 1416,
+  "timestamp": "2026-10-11T09:07:19.279022+00:00",
+  "generation": 1417,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2334,
-    "surprise": 0.1986,
+    "novelty": 0.2042,
+    "surprise": 0.1711,
     "uncertainty": 0.58,
-    "salience": 0.6901,
-    "exploration": 0.4244,
-    "plasticity": 0.4849,
-    "energy": 0.855,
-    "sleep_pressure": 0.1666
+    "salience": 0.7776,
+    "exploration": 0.4087,
+    "plasticity": 0.4647,
+    "energy": 0.908,
+    "sleep_pressure": 0.0645
   },
   "workspace": [
     {
@@ -19,72 +19,72 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.69014,
-      "novelty": 0.233395,
-      "surprise": 0.19865,
+      "salience": 0.7775650000000001,
+      "novelty": 0.20421,
+      "surprise": 0.17109000000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6967
+      "ignition_score": 0.7115
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.69014,
-      "novelty": 0.233395,
-      "surprise": 0.19865,
+      "salience": 0.7775650000000001,
+      "novelty": 0.20421,
+      "surprise": 0.17109000000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6967
+      "ignition_score": 0.7115
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.69014,
-      "novelty": 0.233395,
-      "surprise": 0.19865,
+      "salience": 0.7775650000000001,
+      "novelty": 0.20421,
+      "surprise": 0.17109000000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6967
+      "ignition_score": 0.7115
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.69014,
-      "novelty": 0.233395,
-      "surprise": 0.19865,
+      "salience": 0.7775650000000001,
+      "novelty": 0.20421,
+      "surprise": 0.17109000000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6967
+      "ignition_score": 0.7115
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.69014,
-      "novelty": 0.233395,
-      "surprise": 0.19865,
+      "salience": 0.7775650000000001,
+      "novelty": 0.20421,
+      "surprise": 0.17109000000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6967
+      "ignition_score": 0.7115
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
       "activation": 0.94,
-      "salience": 0.69014,
-      "novelty": 0.233395,
-      "surprise": 0.19865,
+      "salience": 0.7775650000000001,
+      "novelty": 0.20421,
+      "surprise": 0.17109000000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6967
+      "ignition_score": 0.7115
     },
     {
       "id": "episode:e08b98755cb36c",
@@ -109,10 +109,10 @@
     },
     "groq": {
       "configured": true,
-      "disabled": false,
+      "disabled": true,
       "daily_limit": 1000,
-      "remaining_calls": 977,
-      "eligible": true
+      "remaining_calls": 976,
+      "eligible": false
     },
     "huggingface": {
       "configured": false,
@@ -263,49 +263,32 @@
     }
   },
   "last_action": {
-    "kind": "attend",
-    "description": "Focus attention on locating and acquiring empirical studies of EMG‑to‑tear latency in human emotional crying.",
-    "source": "substrate:groq",
-    "score": 0.54803
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
+    "source": "homeostasis",
+    "score": 0.35946
   },
   "action_competition": [
     {
-      "kind": "attend",
-      "source": "substrate:groq",
-      "score": 0.54803,
-      "description": "Focus attention on locating and acquiring empirical studies of EMG‑to‑tear latency in human emotional crying."
-    },
-    {
-      "kind": "rest",
-      "source": "substrate:groq",
-      "score": 0.40062,
-      "description": "Brief rest to consolidate current activations before further search."
-    },
-    {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.32473,
-      "description": "Continue processing the active workspace without external action."
-    },
-    {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.28211,
+      "score": 0.35946,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.22047,
+      "score": 0.30664,
       "description": "Allow activation to decay without forcing cognition."
-    }
-  ],
-  "substrate_contributors": [
+    },
     {
-      "provider": "groq",
-      "model": "openai/gpt-oss-120b"
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.2577,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
+  "substrate_contributors": [],
   "current_stances": [
     {
       "topic": "evolutionary_origins_of_expression",
@@ -343,10 +326,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 1722,
-    "semantic_nodes": 3506,
+    "episodes": 1723,
+    "semantic_nodes": 3510,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -357,7 +340,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 90
+      "removed_edges": 0
     },
     "terminal_inhibition": {
       "startup": 325,
