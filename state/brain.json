@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-11T07:07:59.996734+00:00",
-  "generation": 1396,
+  "timestamp": "2026-10-11T07:08:52.615778+00:00",
+  "generation": 1397,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1749,
-    "surprise": 0.1435,
+    "novelty": 0.1662,
+    "surprise": 0.1353,
     "uncertainty": 0.58,
-    "salience": 0.0925,
-    "exploration": 0.3929,
-    "plasticity": 0.361,
-    "energy": 0.855,
-    "sleep_pressure": 0.1133
+    "salience": 0.0633,
+    "exploration": 0.3882,
+    "plasticity": 0.3542,
+    "energy": 1.0,
+    "sleep_pressure": 0.0826
   },
   "workspace": [
     {
@@ -90,13 +90,13 @@
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.1269,
-      "salience": 0.092515,
-      "novelty": 0.174895,
-      "surprise": 0.143465,
+      "activation": 0.0608,
+      "salience": 0.081405,
+      "novelty": 0.166185,
+      "surprise": 0.13527499999999998,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.1265
+      "ignition_score": 0.0886
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "attend",
-    "description": "Continue processing the active workspace without external action.",
-    "source": "workspace",
-    "score": 0.19362
+    "kind": "rest",
+    "description": "Allow activation to decay without forcing cognition.",
+    "source": "homeostasis",
+    "score": 0.25583
   },
   "action_competition": [
     {
-      "kind": "attend",
-      "source": "workspace",
-      "score": 0.19362,
-      "description": "Continue processing the active workspace without external action."
-    },
-    {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.18284,
+      "score": 0.25583,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.14348,
+      "score": 0.22136,
       "description": "Replay and consolidate existing experience offline."
+    },
+    {
+      "kind": "attend",
+      "source": "workspace",
+      "score": 0.10742,
+      "description": "Continue processing the active workspace without external action."
     }
   ],
   "substrate_contributors": [],
@@ -326,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 1693,
+    "episodes": 1694,
     "semantic_nodes": 3465,
     "synapses": 1200
   },
