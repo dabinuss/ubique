@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-11T14:29:55.336362+00:00",
-  "generation": 1481,
+  "timestamp": "2026-10-11T14:43:22.156328+00:00",
+  "generation": 1482,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2358,
-    "surprise": 0.2009,
+    "novelty": 0.2058,
+    "surprise": 0.1726,
     "uncertainty": 0.58,
-    "salience": 0.3253,
-    "exploration": 0.4257,
-    "plasticity": 0.4455,
+    "salience": 0.2325,
+    "exploration": 0.4095,
+    "plasticity": 0.4,
     "energy": 1.0,
-    "sleep_pressure": 0.0858
+    "sleep_pressure": 0.0387
   },
   "workspace": [
     {
-      "id": "episode:193520061bea26",
+      "id": "episode:206d54884ad9b3",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-7\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need empirical measurements of peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T01:22:33.881788+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully",
-      "activation": 0.4029,
-      "salience": 0.88,
-      "novelty": 0.78,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 963}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.6566,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.5649
+      "ignition_score": 0.5473
     },
     {
-      "id": "episode:74b0ffec29f337",
+      "id": "episode:ef5f15adf95ce3",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"quantitative-analysis-of-facial-emg-and-lacrimal-secretion-dynam\", \"title\": \"Quantitative analysis of facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain empirical timing measurements needed to evaluate hypotheses about parasympathetic coordination and tear production.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-09T08:26:32.998229+00:00\", \"content_path\": \"\",",
-      "activation": 0.404,
-      "salience": 0.84,
-      "novelty": 0.73,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 964}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.6557,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.5489
+      "ignition_score": 0.5468
     },
     {
-      "id": "episode:1288ca51aae230",
+      "id": "episode:1429b6dcfaad3f",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"neural-control-of-tear-production-during-emotional-crying\", \"title\": \"Neural control of tear production during emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Needed quantitative latency measurements between facial EMG onset and lacrimal secretion to evaluate parasympathetic coordination hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-09T10:06:32.180486+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cur",
-      "activation": 0.4031,
-      "salience": 0.82,
-      "novelty": 0.74,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 967}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.6543,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.5448
+      "ignition_score": 0.5462
     },
     {
-      "id": "episode:1bdf23c86de766",
+      "id": "episode:4846eb05dc7b21",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"human-autonomic-response-timing-in-emotional-crying\", \"title\": \"Human autonomic response timing in emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need a comprehensive overview of latency measurements across studies to inform parasympathetic coordination hypothesis\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-11T02:25:59.267000+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false, \"full",
-      "activation": 0.3972,
-      "salience": 0.82,
-      "novelty": 0.64,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 968}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.6534,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.5288
+      "ignition_score": 0.5457
     },
     {
-      "id": "episode:f92f8776909e10",
+      "id": "episode:a4557753605d66",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"quantitative-measurement-of-emg-to-tear-latency-in-human-emotion\", \"title\": \"Quantitative measurement of EMG‑to‑tear latency in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Obtain empirical latency data needed to test the parasympathetic coordination hypothesis.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-11T00:07:29.912500+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false,",
-      "activation": 0.4118,
-      "salience": 0.73,
-      "novelty": 0.69,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 969}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.6525,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.5201
+      "ignition_score": 0.5453
     },
     {
-      "id": "episode:f458cc166f5100",
+      "id": "episode:3265b4a968b7b2",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"request\", \"item\": {\"id\": \"meta-analysis-of-autonomic-latency-in-human-emotional-crying\", \"title\": \"Meta‑analysis of autonomic latency in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain aggregated EMG‑to‑tear latency measurements needed to evaluate current hypotheses about parasympathetic coordination.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-10T19:07:12.792039+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0,",
-      "activation": 0.3975,
-      "salience": 0.62,
-      "novelty": 0.44,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 971}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.6513,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.453
+      "ignition_score": 0.5446
     },
     {
       "id": "runtime_state:423b4a0b7d2066e3",
       "kind": "runtime_state",
       "label": "provider:gemini",
-      "activation": 0.195,
-      "salience": 0.41834,
-      "novelty": 0.23579999999999998,
-      "surprise": 0.20085999999999998,
+      "activation": 0.0602,
+      "salience": 0.232515,
+      "novelty": 0.20577,
+      "surprise": 0.172585,
       "epistemic_status": "observed_runtime_state",
       "source": "semantic_network",
-      "ignition_score": 0.2568
+      "ignition_score": 0.1357
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
     "source": "homeostasis",
-    "score": 0.30162
+    "score": 0.25923
   },
   "action_competition": [
     {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.30162,
-      "description": "Allow activation to decay without forcing cognition."
-    },
-    {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.30131,
+      "score": 0.25923,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.1614,
+      "score": 0.20335,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.18225,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
   "substrate_contributors": [],
@@ -326,9 +326,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 1802,
+    "episodes": 1803,
     "semantic_nodes": 3542,
     "synapses": 1200
   },
