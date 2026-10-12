@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-12T01:22:13.928604+00:00",
-  "generation": 1601,
+  "timestamp": "2026-10-12T01:35:48.888021+00:00",
+  "generation": 1602,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.211,
-    "surprise": 0.1775,
+    "novelty": 0.3121,
+    "surprise": 0.2729,
     "uncertainty": 0.25,
-    "salience": 0.3338,
-    "exploration": 0.2969,
-    "plasticity": 0.433,
-    "energy": 1.0,
-    "sleep_pressure": 0.1169
+    "salience": 0.357,
+    "exploration": 0.3513,
+    "plasticity": 0.481,
+    "energy": 0.935,
+    "sleep_pressure": 0.1659
   },
   "workspace": [
     {
-      "id": "episode:c6176b97eeac43",
-      "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 64800, \"excerpt\": \"s of air-breathing, which replaced the old method of\\ngetting oxygen out of the water. One of the most important changes,\\nhowever, was the addition of the new sense of hearing. The amphibians,\\nliving partly on land, were now able to receive useful information by\\",
-      "activation": 0.368,
-      "salience": 0.92,
-      "novelty": 0.3,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
-      "source": "associative_recall",
-      "ignition_score": 0.495
+      "id": "episode:056dd16bd25648",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 996}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
     },
     {
-      "id": "episode:b4e585006038c0",
+      "id": "episode:33754c29ada9d1",
       "kind": "recalled_episode",
-      "label": "s of air-breathing, which replaced the old method of\ngetting oxygen out of the water. One of the most important changes,\nhowever, was the addition of the new sense of hearing. The amphibians,\nliving partly on land, were now able to receive useful information by\nmeans of air waves. The advent of this new sense was destined to have\nmomentous effects upon the further development of the brain. Each of\nthe several sense departments is well represented in the frog. The\nsense of smell is highly organiz",
-      "activation": 0.3561,
-      "salience": 0.6,
-      "novelty": 0.9025,
-      "surprise": 0.35,
-      "epistemic_status": "external_source",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 3}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 997}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.35,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4874
+      "ignition_score": 0.394
     },
     {
-      "id": "episode:3d05b1a1d57633",
+      "id": "episode:51132c2df45193",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 24800, \"excerpt\": \" which, by contracting,\\nregulate the flow of water through the animal. But such muscle action\\nas this is extremely important because if the water in the sponge\\ncontains an abundance of food particles, muscular contraction prevents\\ntoo rapid outflow. This slowin",
-      "activation": 0.3116,
-      "salience": 0.9,
-      "novelty": 0.4,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 7}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 999}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3495,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4748
+      "ignition_score": 0.3937
     },
     {
-      "id": "episode:28e36265a09c52",
+      "id": "episode:9432c9fc3ac337",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 34800, \"excerpt\": \"ff the only\\nchannel for food. This embarrassment actually overtook many insects\\nlike the mosquito. Here the brain became large. The tube connecting\\nthe mouth and the stomach was thus reduced to a fine calibre, and\\nthe animal was forced to depend upon the highly",
-      "activation": 0.3075,
-      "salience": 0.88,
-      "novelty": 0.45,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3476,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4743
+      "ignition_score": 0.3928
     },
     {
-      "id": "episode:334574c3fd3429",
+      "id": "episode:7c9880bf7b7b06",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"ribot-psychology-emotions\", \"title\": \"The Psychology of the Emotions\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #67585\"}, \"offset\": 150000, \"excerpt\": \"stinguishes,\\nin his analysis of the elements of the Beautiful, the direct factor,\\n_i.e._ sensation, and the indirect or associative factor, that is to\\nsay, the associated ideas evoked. These two coexistent factors are\\nonly separable by psychological analysis, and the position",
-      "activation": 0.2936,
-      "salience": 0.95,
-      "novelty": 0.2,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 940}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3463,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.4523
+      "ignition_score": 0.3921
     },
     {
-      "id": "episode:4ef1b86e57666f",
+      "id": "episode:31976815ac1268",
       "kind": "recalled_episode",
-      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 54800, \"excerpt\": \"mation concerning what contraction is occurring in the\\nmuscles, how the bones are being moved, what postures the different\\nparts are assuming, and how the body as a whole is being balanced.\\n\\nThird, contact sense makes known what is going on immediately outside\\",
-      "activation": 0.2881,
-      "salience": 0.9,
-      "novelty": 0.3,
-      "surprise": 0.35,
-      "epistemic_status": "observed_action_outcome",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 941}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.3455,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.45
+      "ignition_score": 0.3917
     },
     {
-      "id": "concept:e14de43896fcd264",
-      "kind": "concept",
-      "label": "content_available",
-      "activation": 0.4789,
-      "salience": 0.43184,
-      "novelty": 0.211035,
-      "surprise": 0.177525,
-      "epistemic_status": "memory_index",
+      "id": "runtime_state:423b4a0b7d2066e3",
+      "kind": "runtime_state",
+      "label": "provider:gemini",
+      "activation": 0.4068,
+      "salience": 0.35697,
+      "novelty": 0.31215,
+      "surprise": 0.272875,
+      "epistemic_status": "observed_runtime_state",
       "source": "semantic_network",
-      "ignition_score": 0.3961
+      "ignition_score": 0.366
     }
   ],
   "provider_eligibility": {
@@ -109,10 +109,10 @@
     },
     "groq": {
       "configured": true,
-      "disabled": true,
+      "disabled": false,
       "daily_limit": 1000,
-      "remaining_calls": 996,
-      "eligible": false
+      "remaining_calls": 995,
+      "eligible": true
     },
     "huggingface": {
       "configured": false,
@@ -263,41 +263,41 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
-    "source": "homeostasis",
-    "score": 0.36118
+    "kind": "library",
+    "description": "Request reading on API rate limiting strategies to improve provider management.",
+    "source": "substrate:groq",
+    "score": 0.38404
   },
   "action_competition": [
     {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.36118,
-      "description": "Allow activation to decay without forcing cognition."
-    },
-    {
       "kind": "library",
-      "source": "substrate:gemini",
-      "score": 0.35524,
-      "description": "Continue reading Frederick Tilney's 'The Master of Destiny: A Biography of the Brain' to follow subsequent chapters on brain evolution."
+      "source": "substrate:groq",
+      "score": 0.38404,
+      "description": "Request reading on API rate limiting strategies to improve provider management."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.31162,
+      "score": 0.30708,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.28404,
+      "score": 0.29104,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.22839,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
   "substrate_contributors": [
     {
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite"
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b"
     }
   ],
   "current_stances": [
@@ -348,10 +348,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 1984,
-    "semantic_nodes": 3792,
+    "episodes": 1987,
+    "semantic_nodes": 3800,
     "synapses": 1200
   },
   "cortical_maintenance": {
