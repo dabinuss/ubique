@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-12T02:24:03.809822+00:00",
-  "generation": 1613,
+  "timestamp": "2026-10-12T02:37:31.726003+00:00",
+  "generation": 1614,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1793,
-    "surprise": 0.1476,
+    "novelty": 0.2915,
+    "surprise": 0.2534,
     "uncertainty": 0.25,
-    "salience": 0.6206,
-    "exploration": 0.2798,
-    "plasticity": 0.4695,
+    "salience": 0.5434,
+    "exploration": 0.3402,
+    "plasticity": 0.4775,
     "energy": 1.0,
-    "sleep_pressure": 0.0889
+    "sleep_pressure": 0.0396
   },
   "workspace": [
+    {
+      "id": "episode:4165cc413a3e7e",
+      "kind": "provider_state_change",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 992}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.95,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "runtime",
+      "ignition_score": 0.694
+    },
     {
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.7985599999999999,
-      "novelty": 0.179315,
-      "surprise": 0.147625,
+      "salience": 0.54339,
+      "novelty": 0.291545,
+      "surprise": 0.25344,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7107
+      "ignition_score": 0.6742
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.7985599999999999,
-      "novelty": 0.179315,
-      "surprise": 0.147625,
+      "salience": 0.54339,
+      "novelty": 0.291545,
+      "surprise": 0.25344,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7107
+      "ignition_score": 0.6742
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.7985599999999999,
-      "novelty": 0.179315,
-      "surprise": 0.147625,
+      "salience": 0.54339,
+      "novelty": 0.291545,
+      "surprise": 0.25344,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7107
+      "ignition_score": 0.6742
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.7985599999999999,
-      "novelty": 0.179315,
-      "surprise": 0.147625,
+      "salience": 0.54339,
+      "novelty": 0.291545,
+      "surprise": 0.25344,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7107
+      "ignition_score": 0.6742
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.7985599999999999,
-      "novelty": 0.179315,
-      "surprise": 0.147625,
+      "salience": 0.54339,
+      "novelty": 0.291545,
+      "surprise": 0.25344,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7107
+      "ignition_score": 0.6742
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
       "activation": 0.94,
-      "salience": 0.7985599999999999,
-      "novelty": 0.179315,
-      "surprise": 0.147625,
+      "salience": 0.54339,
+      "novelty": 0.291545,
+      "surprise": 0.25344,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7107
-    },
-    {
-      "id": "concept:170319b00881e6c2",
-      "kind": "concept",
-      "label": "read_cursor",
-      "activation": 0.6761,
-      "salience": 0.7985599999999999,
-      "novelty": 0.179315,
-      "surprise": 0.147625,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.5787
+      "ignition_score": 0.6742
     }
   ],
   "provider_eligibility": {
@@ -111,7 +111,7 @@
       "configured": true,
       "disabled": true,
       "daily_limit": 1000,
-      "remaining_calls": 992,
+      "remaining_calls": 991,
       "eligible": false
     },
     "huggingface": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
     "source": "homeostasis",
-    "score": 0.32176
+    "score": 0.24989
   },
   "action_competition": [
     {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.32176,
-      "description": "Allow activation to decay without forcing cognition."
-    },
-    {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.29967,
+      "score": 0.24989,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.23564,
+      "score": 0.2466,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.19009,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
   "substrate_contributors": [],
@@ -337,9 +337,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 2000,
+    "episodes": 2002,
     "semantic_nodes": 3806,
     "synapses": 1200
   },
