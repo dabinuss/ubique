@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-12T18:54:12.360186+00:00",
-  "generation": 1767,
+  "timestamp": "2026-10-12T18:55:15.326520+00:00",
+  "generation": 1768,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1525,
-    "surprise": 0.1224,
+    "novelty": 0.1516,
+    "surprise": 0.1216,
     "uncertainty": 0.25,
-    "salience": 0.1028,
-    "exploration": 0.2654,
-    "plasticity": 0.3595,
+    "salience": 0.0874,
+    "exploration": 0.2649,
+    "plasticity": 0.3501,
     "energy": 1.0,
-    "sleep_pressure": 0.022
+    "sleep_pressure": 0.0325
   },
   "workspace": [
     {
@@ -90,13 +90,13 @@
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.0399,
-      "salience": 0.10282,
-      "novelty": 0.152535,
-      "surprise": 0.122405,
+      "activation": 0.1269,
+      "salience": 0.111235,
+      "novelty": 0.151625,
+      "surprise": 0.12156,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.0802
+      "ignition_score": 0.1256
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
+    "kind": "rest",
+    "description": "Allow activation to decay without forcing cognition.",
     "source": "homeostasis",
-    "score": 0.17212
+    "score": 0.17453
   },
   "action_competition": [
     {
-      "kind": "consolidate",
+      "kind": "rest",
       "source": "homeostasis",
-      "score": 0.17212,
-      "description": "Replay and consolidate existing experience offline."
+      "score": 0.17453,
+      "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.16823,
+      "score": 0.1705,
       "description": "Continue processing the active workspace without external action."
     },
     {
-      "kind": "rest",
+      "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.15583,
-      "description": "Allow activation to decay without forcing cognition."
+      "score": 0.08851,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [],
@@ -337,9 +337,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 2168,
+    "episodes": 2169,
     "semantic_nodes": 3806,
     "synapses": 1200
   },
