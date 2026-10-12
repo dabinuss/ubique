@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-12T07:09:21.216143+00:00",
-  "generation": 1662,
+  "timestamp": "2026-10-12T07:22:53.899583+00:00",
+  "generation": 1663,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1539,
-    "surprise": 0.1237,
+    "novelty": 0.1525,
+    "surprise": 0.1224,
     "uncertainty": 0.25,
-    "salience": 0.137,
-    "exploration": 0.2661,
-    "plasticity": 0.361,
+    "salience": 0.103,
+    "exploration": 0.2654,
+    "plasticity": 0.3596,
     "energy": 1.0,
-    "sleep_pressure": 0.0338
+    "sleep_pressure": 0.022
   },
   "workspace": [
     {
@@ -54,13 +54,13 @@
       "id": "episode:74b0ffec29f337",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"quantitative-analysis-of-facial-emg-and-lacrimal-secretion-dynam\", \"title\": \"Quantitative analysis of facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain empirical timing measurements needed to evaluate hypotheses about parasympathetic coordination and tear production.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-09T08:26:32.998229+00:00\", \"content_path\": \"\",",
-      "activation": 0.4121,
+      "activation": 0.412,
       "salience": 0.84,
       "novelty": 0.73,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.553
+      "ignition_score": 0.5529
     },
     {
       "id": "episode:ec233dc0d12779",
@@ -78,25 +78,25 @@
       "id": "episode:f92f8776909e10",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"quantitative-measurement-of-emg-to-tear-latency-in-human-emotion\", \"title\": \"Quantitative measurement of EMG‑to‑tear latency in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Obtain empirical latency data needed to test the parasympathetic coordination hypothesis.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-11T00:07:29.912500+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read\": false,",
-      "activation": 0.4123,
+      "activation": 0.4121,
       "salience": 0.73,
       "novelty": 0.69,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5203
+      "ignition_score": 0.5202
     },
     {
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.1291,
-      "salience": 0.17447000000000001,
-      "novelty": 0.1539,
-      "surprise": 0.12370500000000001,
+      "activation": 0.0399,
+      "salience": 0.103015,
+      "novelty": 0.152535,
+      "surprise": 0.122405,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.143
+      "ignition_score": 0.0802
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
     "source": "homeostasis",
-    "score": 0.18239
+    "score": 0.17215
   },
   "action_competition": [
     {
-      "kind": "rest",
+      "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.18239,
-      "description": "Allow activation to decay without forcing cognition."
+      "score": 0.17215,
+      "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.15091,
+      "score": 0.16837,
       "description": "Continue processing the active workspace without external action."
     },
     {
-      "kind": "consolidate",
+      "kind": "rest",
       "source": "homeostasis",
-      "score": 0.13152,
-      "description": "Replay and consolidate existing experience offline."
+      "score": 0.15564,
+      "description": "Allow activation to decay without forcing cognition."
     }
   ],
   "substrate_contributors": [],
@@ -337,9 +337,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 2054,
+    "episodes": 2055,
     "semantic_nodes": 3806,
     "synapses": 1200
   },
