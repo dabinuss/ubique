@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-12T01:52:13.684921+00:00",
-  "generation": 1606,
+  "timestamp": "2026-10-12T01:53:16.180716+00:00",
+  "generation": 1607,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.3014,
-    "surprise": 0.2628,
+    "novelty": 0.2484,
+    "surprise": 0.2128,
     "uncertainty": 0.25,
-    "salience": 0.3434,
-    "exploration": 0.3456,
-    "plasticity": 0.4582,
-    "energy": 1.0,
-    "sleep_pressure": 0.0424
+    "salience": 0.3344,
+    "exploration": 0.317,
+    "plasticity": 0.4403,
+    "energy": 0.855,
+    "sleep_pressure": 0.1194
   },
   "workspace": [
     {
-      "id": "episode:39e17393f076a1",
-      "kind": "provider_state_change",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 994}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.95,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "runtime",
-      "ignition_score": 0.694
-    },
-    {
-      "id": "episode:056dd16bd25648",
+      "id": "episode:c6176b97eeac43",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 996}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3644,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 64800, \"excerpt\": \"s of air-breathing, which replaced the old method of\\ngetting oxygen out of the water. One of the most important changes,\\nhowever, was the addition of the new sense of hearing. The amphibians,\\nliving partly on land, were now able to receive useful information by\\",
+      "activation": 0.4764,
+      "salience": 0.92,
+      "novelty": 0.3,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4012
+      "ignition_score": 0.5492
     },
     {
-      "id": "episode:33754c29ada9d1",
+      "id": "episode:b8f39726d38054",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 3}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 997}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.364,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 44800, \"excerpt\": \"udes of time and change, the long upward march toward humanity\\nheld its place. Ultimately it became the dominant feature in creation.\\nThe advent of man introduced a new era. It remains to be seen whither\\nthe forces moving in this Age of Man will take us. They ma",
+      "activation": 0.3337,
+      "salience": 0.9,
+      "novelty": 0.35,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.401
+      "ignition_score": 0.4793
     },
     {
-      "id": "episode:51132c2df45193",
+      "id": "episode:3d05b1a1d57633",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 7}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 999}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3635,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 24800, \"excerpt\": \" which, by contracting,\\nregulate the flow of water through the animal. But such muscle action\\nas this is extremely important because if the water in the sponge\\ncontains an abundance of food particles, muscular contraction prevents\\ntoo rapid outflow. This slowin",
+      "activation": 0.2854,
+      "salience": 0.9,
+      "novelty": 0.4,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.4007
+      "ignition_score": 0.4617
     },
     {
-      "id": "episode:9432c9fc3ac337",
+      "id": "episode:4ef1b86e57666f",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3616,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"tilney-master-of-destiny\", \"title\": \"The Master of Destiny: A Biography of the Brain\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #78733\"}, \"offset\": 54800, \"excerpt\": \"mation concerning what contraction is occurring in the\\nmuscles, how the bones are being moved, what postures the different\\nparts are assuming, and how the body as a whole is being balanced.\\n\\nThird, contact sense makes known what is going on immediately outside\\",
+      "activation": 0.3094,
+      "salience": 0.9,
+      "novelty": 0.3,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3998
+      "ignition_score": 0.4607
     },
     {
-      "id": "episode:7c9880bf7b7b06",
+      "id": "episode:334574c3fd3429",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 940}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.3603,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"ribot-psychology-emotions\", \"title\": \"The Psychology of the Emotions\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #67585\"}, \"offset\": 150000, \"excerpt\": \"stinguishes,\\nin his analysis of the elements of the Beautiful, the direct factor,\\n_i.e._ sensation, and the indirect or associative factor, that is to\\nsay, the associated ideas evoked. These two coexistent factors are\\nonly separable by psychological analysis, and the position",
+      "activation": 0.2914,
+      "salience": 0.95,
+      "novelty": 0.2,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.3992
+      "ignition_score": 0.4512
     },
     {
-      "id": "runtime_state:423b4a0b7d2066e3",
-      "kind": "runtime_state",
-      "label": "provider:gemini",
-      "activation": 0.4068,
-      "salience": 0.343385,
-      "novelty": 0.301425,
-      "surprise": 0.26280000000000003,
-      "epistemic_status": "observed_runtime_state",
+      "id": "episode:8eb736b86d5750",
+      "kind": "recalled_episode",
+      "label": "{\"action\": \"read\", \"item\": {\"id\": \"ribot-psychology-emotions\", \"title\": \"The Psychology of the Emotions\", \"kind\": \"book\", \"status\": \"available\", \"source\": \"Project Gutenberg eBook #67585\"}, \"offset\": 190000, \"excerpt\": \"\\nnature they are, in fact, emotions, and we shall come to them\\nagain later on.\\n\\nThe subject of this chapter is quite different. It is the\\nmuch-discussed, still unsolved, and perhaps insoluble problem of\\nneutral states, states of indifference, free from any accompaniment,\\ne",
+      "activation": 0.285,
+      "salience": 0.9,
+      "novelty": 0.2,
+      "surprise": 0.35,
+      "epistemic_status": "observed_action_outcome",
+      "source": "associative_recall",
+      "ignition_score": 0.4355
+    },
+    {
+      "id": "concept:e14de43896fcd264",
+      "kind": "concept",
+      "label": "content_available",
+      "activation": 0.3178,
+      "salience": 0.33443999999999996,
+      "novelty": 0.24841,
+      "surprise": 0.21282,
+      "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.36
+      "ignition_score": 0.3003
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
-    "source": "homeostasis",
-    "score": 0.26378
+    "kind": "attend",
+    "description": "Continue processing the active workspace without external action.",
+    "source": "workspace",
+    "score": 0.23556
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.26378,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.25197,
+      "score": 0.23556,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.21287,
+      "score": 0.22325,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.1954,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [],
@@ -337,9 +337,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 1992,
+    "episodes": 1993,
     "semantic_nodes": 3804,
     "synapses": 1200
   },
