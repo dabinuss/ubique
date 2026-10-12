@@ -1,36 +1,36 @@
 {
   "version": 2,
-  "timestamp": "2026-10-12T16:13:01.046201+00:00",
-  "generation": 1743,
+  "timestamp": "2026-10-12T16:26:31.982270+00:00",
+  "generation": 1744,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1592,
-    "surprise": 0.1287,
+    "novelty": 0.156,
+    "surprise": 0.1257,
     "uncertainty": 0.25,
-    "salience": 0.283,
-    "exploration": 0.269,
-    "plasticity": 0.392,
+    "salience": 0.1981,
+    "exploration": 0.2672,
+    "plasticity": 0.3726,
     "energy": 1.0,
-    "sleep_pressure": 0.0413
+    "sleep_pressure": 0.0244
   },
   "workspace": [
     {
       "id": "episode:4c3a81c4f4a07c",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"physiology-of-lacrimal-secretion-and-emotional-crying-9\", \"title\": \"Physiology of Lacrimal Secretion and Emotional Crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Need quantitative data on peri‑ocular EMG timing, parasympathetic outflow, and tear volume/composition during emotional crying.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T01:24:22.962943+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cursor\": 0, \"fully_read",
-      "activation": 0.4549,
+      "activation": 0.4548,
       "salience": 0.88,
       "novelty": 0.8,
       "surprise": 0.35,
       "epistemic_status": "observed_action_outcome",
       "source": "associative_recall",
-      "ignition_score": 0.5935
+      "ignition_score": 0.5934
     },
     {
       "id": "episode:52a63fc05b00e5",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"simultaneous-facial-emg-and-lacrimal-secretion-dynamics-in-human\", \"title\": \"Simultaneous facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain quantitative timing data for EMG onset, parasympathetic outflow, and tear volume/composition needed to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T18:15:45.739979+00:00\", \"content_path\": \"\",",
-      "activation": 0.448,
+      "activation": 0.4479,
       "salience": 0.85,
       "novelty": 0.7,
       "surprise": 0.35,
@@ -54,7 +54,7 @@
       "id": "episode:74b0ffec29f337",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"quantitative-analysis-of-facial-emg-and-lacrimal-secretion-dynam\", \"title\": \"Quantitative analysis of facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"To obtain empirical timing measurements needed to evaluate hypotheses about parasympathetic coordination and tear production.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-09T08:26:32.998229+00:00\", \"content_path\": \"\",",
-      "activation": 0.4095,
+      "activation": 0.4094,
       "salience": 0.84,
       "novelty": 0.73,
       "surprise": 0.35,
@@ -78,7 +78,7 @@
       "id": "episode:ec233dc0d12779",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"concurrent-facial-emg-and-lacrimal-secretion-dynamics-in-human-e\", \"title\": \"Concurrent facial EMG and lacrimal secretion dynamics in human emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Needed quantitative data on EMG onset, parasympathetic outflow timing, and tear volume/composition to test current hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-08T06:45:39.708495+00:00\", \"content_path\": \"\", \"read_count\"",
-      "activation": 0.4368,
+      "activation": 0.4367,
       "salience": 0.78,
       "novelty": 0.7,
       "surprise": 0.35,
@@ -90,13 +90,13 @@
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.1305,
-      "salience": 0.36086,
-      "novelty": 0.15923,
-      "surprise": 0.12871,
+      "activation": 0.0403,
+      "salience": 0.198055,
+      "novelty": 0.15598,
+      "surprise": 0.12565500000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.1916
+      "ignition_score": 0.105
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
     "source": "homeostasis",
-    "score": 0.20754
+    "score": 0.22079
   },
   "action_competition": [
     {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.22079,
+      "description": "Replay and consolidate existing experience offline."
+    },
+    {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.20754,
+      "score": 0.1687,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.19424,
+      "score": 0.15605,
       "description": "Continue processing the active workspace without external action."
-    },
-    {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.15875,
-      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [],
@@ -337,9 +337,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 2142,
+    "episodes": 2143,
     "semantic_nodes": 3806,
     "synapses": 1200
   },
