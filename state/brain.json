@@ -1,60 +1,48 @@
 {
   "version": 2,
-  "timestamp": "2026-10-12T03:22:35.054230+00:00",
-  "generation": 1622,
+  "timestamp": "2026-10-12T03:36:04.101290+00:00",
+  "generation": 1623,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.2342,
-    "surprise": 0.1994,
+    "novelty": 0.2047,
+    "surprise": 0.1716,
     "uncertainty": 0.25,
-    "salience": 0.2435,
-    "exploration": 0.3093,
-    "plasticity": 0.4288,
+    "salience": 0.1793,
+    "exploration": 0.2935,
+    "plasticity": 0.3932,
     "energy": 1.0,
-    "sleep_pressure": 0.0858
+    "sleep_pressure": 0.0387
   },
   "workspace": [
     {
       "id": "episode:ad0bf728b7733c",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 991}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.657,
+      "activation": 0.6566,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.5475
+      "ignition_score": 0.5473
     },
     {
       "id": "episode:4165cc413a3e7e",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 992}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6557,
+      "activation": 0.6553,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.5468
+      "ignition_score": 0.5466
     },
     {
       "id": "episode:5beaf10c4f6fab",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 993}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6548,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
-      "source": "associative_recall",
-      "ignition_score": 0.5464
-    },
-    {
-      "id": "episode:39e17393f076a1",
-      "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 994}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6543,
+      "activation": 0.6544,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
@@ -63,22 +51,22 @@
       "ignition_score": 0.5462
     },
     {
-      "id": "episode:056dd16bd25648",
+      "id": "episode:39e17393f076a1",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 996}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6538,
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 994}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.6539,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.5459
+      "ignition_score": 0.546
     },
     {
-      "id": "episode:33754c29ada9d1",
+      "id": "episode:056dd16bd25648",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 3}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 997}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6534,
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 996}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.6535,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
@@ -87,16 +75,28 @@
       "ignition_score": 0.5457
     },
     {
+      "id": "episode:33754c29ada9d1",
+      "kind": "recalled_episode",
+      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 3}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 997}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
+      "activation": 0.653,
+      "salience": 0.4,
+      "novelty": 0.5,
+      "surprise": 0.45,
+      "epistemic_status": "observed_runtime_state",
+      "source": "associative_recall",
+      "ignition_score": 0.5455
+    },
+    {
       "id": "runtime_state:423b4a0b7d2066e3",
       "kind": "runtime_state",
       "label": "provider:gemini",
-      "activation": 0.195,
-      "salience": 0.31310499999999997,
-      "novelty": 0.23417500000000002,
-      "surprise": 0.19936500000000001,
+      "activation": 0.0602,
+      "salience": 0.179345,
+      "novelty": 0.20473,
+      "surprise": 0.17160999999999998,
       "epistemic_status": "observed_runtime_state",
       "source": "semantic_network",
-      "ignition_score": 0.2301
+      "ignition_score": 0.1221
     }
   ],
   "provider_eligibility": {
@@ -263,28 +263,28 @@
     }
   },
   "last_action": {
-    "kind": "rest",
-    "description": "Allow activation to decay without forcing cognition.",
+    "kind": "consolidate",
+    "description": "Replay and consolidate existing experience offline.",
     "source": "homeostasis",
-    "score": 0.26101
+    "score": 0.23601
   },
   "action_competition": [
     {
-      "kind": "rest",
-      "source": "homeostasis",
-      "score": 0.26101,
-      "description": "Allow activation to decay without forcing cognition."
-    },
-    {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.23732,
+      "score": 0.23601,
       "description": "Replay and consolidate existing experience offline."
+    },
+    {
+      "kind": "rest",
+      "source": "homeostasis",
+      "score": 0.16771,
+      "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.12252,
+      "score": 0.13339,
       "description": "Continue processing the active workspace without external action."
     }
   ],
@@ -337,9 +337,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 0,
+  "consecutive_pulses": 1,
   "memory": {
-    "episodes": 2011,
+    "episodes": 2012,
     "semantic_nodes": 3806,
     "synapses": 1200
   },
