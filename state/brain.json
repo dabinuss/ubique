@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-12T23:33:22.610084+00:00",
-  "generation": 1809,
+  "timestamp": "2026-10-12T23:34:25.939577+00:00",
+  "generation": 1810,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.156,
-    "surprise": 0.1257,
+    "novelty": 0.1539,
+    "surprise": 0.1237,
     "uncertainty": 0.25,
-    "salience": 0.1984,
-    "exploration": 0.2673,
-    "plasticity": 0.3727,
+    "salience": 0.1367,
+    "exploration": 0.2661,
+    "plasticity": 0.3609,
     "energy": 1.0,
-    "sleep_pressure": 0.0244
+    "sleep_pressure": 0.0338
   },
   "workspace": [
     {
@@ -66,7 +66,7 @@
       "id": "episode:1288ca51aae230",
       "kind": "recalled_episode",
       "label": "{\"action\": \"request\", \"item\": {\"id\": \"neural-control-of-tear-production-during-emotional-crying\", \"title\": \"Neural control of tear production during emotional crying\", \"kind\": \"reading_request\", \"status\": \"wanted\", \"source\": \"\", \"reason\": \"Needed quantitative latency measurements between facial EMG onset and lacrimal secretion to evaluate parasympathetic coordination hypotheses.\", \"added_by\": \"ubique\", \"added_at\": \"2026-10-09T10:06:32.180486+00:00\", \"content_path\": \"\", \"read_count\": 0, \"read_cur",
-      "activation": 0.4072,
+      "activation": 0.4071,
       "salience": 0.82,
       "novelty": 0.74,
       "surprise": 0.35,
@@ -90,13 +90,13 @@
       "id": "concept:d39f7fb1d10bc9e8",
       "kind": "concept",
       "label": "reading_request",
-      "activation": 0.0403,
-      "salience": 0.19844500000000004,
-      "novelty": 0.156045,
-      "surprise": 0.12572,
+      "activation": 0.1291,
+      "salience": 0.174145,
+      "novelty": 0.1539,
+      "surprise": 0.12370500000000001,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.1051
+      "ignition_score": 0.1429
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
+    "kind": "rest",
+    "description": "Allow activation to decay without forcing cognition.",
     "source": "homeostasis",
-    "score": 0.22081
+    "score": 0.18265
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.22081,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.16885,
+      "score": 0.18265,
       "description": "Allow activation to decay without forcing cognition."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.1561,
+      "score": 0.1507,
       "description": "Continue processing the active workspace without external action."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.13148,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [],
@@ -337,9 +337,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 2214,
+    "episodes": 2215,
     "semantic_nodes": 3806,
     "synapses": 1200
   },
