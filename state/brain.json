@@ -1,19 +1,67 @@
 {
   "version": 2,
-  "timestamp": "2026-10-12T05:39:01.437874+00:00",
-  "generation": 1646,
+  "timestamp": "2026-10-12T05:39:55.372500+00:00",
+  "generation": 1647,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1839,
-    "surprise": 0.152,
+    "novelty": 0.172,
+    "surprise": 0.1408,
     "uncertainty": 0.25,
-    "salience": 0.6276,
-    "exploration": 0.2823,
-    "plasticity": 0.4372,
-    "energy": 1.0,
-    "sleep_pressure": 0.038
+    "salience": 0.6817,
+    "exploration": 0.2759,
+    "plasticity": 0.4477,
+    "energy": 0.855,
+    "sleep_pressure": 0.115
   },
   "workspace": [
+    {
+      "id": "concept:d39f7fb1d10bc9e8",
+      "kind": "concept",
+      "label": "reading_request",
+      "activation": 0.7822,
+      "salience": 0.68171,
+      "novelty": 0.172035,
+      "surprise": 0.14079999999999998,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6008
+    },
+    {
+      "id": "concept:db6c7eee7c83a8d1",
+      "kind": "concept",
+      "label": "fully_read_at",
+      "activation": 0.7822,
+      "salience": 0.68171,
+      "novelty": 0.172035,
+      "surprise": 0.14079999999999998,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6008
+    },
+    {
+      "id": "concept:b11da62837100975",
+      "kind": "concept",
+      "label": "content_path",
+      "activation": 0.7822,
+      "salience": 0.68171,
+      "novelty": 0.172035,
+      "surprise": 0.14079999999999998,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6008
+    },
+    {
+      "id": "concept:b067159d02fcae9c",
+      "kind": "concept",
+      "label": "parasympathetic",
+      "activation": 0.7822,
+      "salience": 0.68171,
+      "novelty": 0.172035,
+      "surprise": 0.14079999999999998,
+      "epistemic_status": "memory_index",
+      "source": "semantic_network",
+      "ignition_score": 0.6008
+    },
     {
       "id": "episode:e08b98755cb36c",
       "kind": "recalled_episode",
@@ -27,76 +75,28 @@
       "ignition_score": 0.5675
     },
     {
-      "id": "concept:d39f7fb1d10bc9e8",
-      "kind": "concept",
-      "label": "reading_request",
-      "activation": 0.7246,
-      "salience": 0.6275550000000001,
-      "novelty": 0.18392999999999998,
-      "surprise": 0.15198,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.5613
-    },
-    {
-      "id": "concept:db6c7eee7c83a8d1",
-      "kind": "concept",
-      "label": "fully_read_at",
-      "activation": 0.7246,
-      "salience": 0.6275550000000001,
-      "novelty": 0.18392999999999998,
-      "surprise": 0.15198,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.5613
-    },
-    {
-      "id": "concept:b11da62837100975",
-      "kind": "concept",
-      "label": "content_path",
-      "activation": 0.7246,
-      "salience": 0.6275550000000001,
-      "novelty": 0.18392999999999998,
-      "surprise": 0.15198,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.5613
-    },
-    {
-      "id": "concept:b067159d02fcae9c",
-      "kind": "concept",
-      "label": "parasympathetic",
-      "activation": 0.7246,
-      "salience": 0.6275550000000001,
-      "novelty": 0.18392999999999998,
-      "surprise": 0.15198,
-      "epistemic_status": "memory_index",
-      "source": "semantic_network",
-      "ignition_score": 0.5613
-    },
-    {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
-      "activation": 0.7246,
-      "salience": 0.6275550000000001,
-      "novelty": 0.18392999999999998,
-      "surprise": 0.15198,
+      "activation": 0.6913,
+      "salience": 0.68171,
+      "novelty": 0.172035,
+      "surprise": 0.14079999999999998,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.5613
+      "ignition_score": 0.5553
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
-      "activation": 0.7246,
-      "salience": 0.6275550000000001,
-      "novelty": 0.18392999999999998,
-      "surprise": 0.15198,
+      "activation": 0.6908,
+      "salience": 0.68171,
+      "novelty": 0.172035,
+      "surprise": 0.14079999999999998,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.5613
+      "ignition_score": 0.5551
     }
   ],
   "provider_eligibility": {
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
-    "source": "homeostasis",
-    "score": 0.28816
+    "kind": "attend",
+    "description": "Continue processing the active workspace without external action.",
+    "source": "workspace",
+    "score": 0.28231
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.28816,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.23654,
+      "score": 0.28231,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.21004,
+      "score": 0.2177,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.19786,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [],
@@ -337,9 +337,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 2037,
+    "episodes": 2038,
     "semantic_nodes": 3806,
     "synapses": 1200
   },
