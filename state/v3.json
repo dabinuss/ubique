@@ -1,8 +1,8 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-13T09:47:51.017713+00:00",
-  "generation": 1911,
+  "timestamp": "2026-10-13T09:49:15.803659+00:00",
+  "generation": 1912,
   "focus": "A Treatise of Human Nature",
   "last_action": "read",
   "last_action_success": true,
@@ -11,23 +11,31 @@
   "last_provider_generation": 1910,
   "last_search_generation": 1909,
   "cortex": {
-    "nodes": 3965,
-    "synapses": 1324,
-    "active": 117,
+    "nodes": 3967,
+    "synapses": 1366,
+    "active": 118,
     "archived_synapses": 0
   },
   "memory": {
-    "episodes": 2360,
-    "claims": 2,
+    "episodes": 2361,
+    "claims": 3,
     "stances": 0,
-    "interests": 2
+    "interests": 3
   },
   "journal": {
-    "events": 22,
+    "events": 29,
     "snapshot_events": 0
   },
   "migration": "v3_snapshot_and_deltas",
   "workspace": [
+    {
+      "node_id": "concept:6907de2e8144a57274c7",
+      "label": "treatise",
+      "activation": 0.9957277715839999,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.7654848632420286
+    },
     {
       "node_id": "concept:73e960e12e02cf8e",
       "label": "newly",
@@ -45,40 +53,32 @@
       "score": 0.748813559322034
     },
     {
-      "node_id": "concept:e9f14591b2b4cabcc6ba",
-      "label": "A Treatise of Human Nature",
-      "activation": 0.6647308999999999,
-      "novelty": 0.9174311926605504,
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 0.9957277715839999,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.7232252400183486
+      "score": 0.746592000545714
     },
     {
-      "node_id": "concept:6907de2e8144a57274c7",
-      "label": "treatise",
-      "activation": 0.76,
-      "novelty": 0.9569377990430623,
+      "node_id": "concept:e9f14591b2b4cabcc6ba",
+      "label": "A Treatise of Human Nature",
+      "activation": 0.6541767743671999,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.6535732057416268
+      "score": 0.67350730710101
     },
     {
       "node_id": "concept:244210e48437b6556980",
       "label": "project",
-      "activation": 0.76,
+      "activation": 0.77998535072,
       "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.6535732057416268
+      "score": 0.6639655881160269
     },
     {
-      "node_id": "concept:0c8b526fafb89fe4b3bd",
-      "label": "gutenberg",
-      "activation": 0.76,
-      "novelty": 0.9569377990430623,
-      "conflict": 0,
-      "score": 0.6535732057416268
-    },
-    {
-      "node_id": "concept:f69f0580a78ff1aa841c",
-      "label": "ebook",
+      "node_id": "concept:10e86c6514d40f2a3e86",
+      "label": "judge",
       "activation": 0.76,
       "novelty": 0.9569377990430623,
       "conflict": 0,
@@ -91,8 +91,8 @@
       "successes": 0
     },
     "read": {
-      "attempts": 2,
-      "successes": 2
+      "attempts": 3,
+      "successes": 3
     }
   },
   "active_stances": 4
