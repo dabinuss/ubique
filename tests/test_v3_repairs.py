@@ -28,8 +28,9 @@ def test_large_legacy_journal_repacks_losslessly(tmp_path, monkeypatch):
     files = list((root / "events").glob("*.jsonl"))
     with path.open("w", encoding="utf-8") as target:
         for file in files:
-            target.write(file.read_text(encoding="utf-8"))
-            file.unlink()
+            if file != path:
+                target.write(file.read_text(encoding="utf-8"))
+                file.unlink()
     reopened = Journal(root)
     after = reopened.events(verify=True)
     assert [e["hash"] for e in after] == [e["hash"] for e in before]
