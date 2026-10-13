@@ -1,29 +1,29 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-13T14:36:35.253005+00:00",
-  "generation": 1983,
-  "focus": "A Treatise Concerning the Principles of Human Knowledge",
+  "timestamp": "2026-10-13T14:38:15.507541+00:00",
+  "generation": 1984,
+  "focus": "The Story of the Mind",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 1978,
+  "last_provider": "groq",
+  "last_provider_generation": 1984,
   "last_search_generation": 1909,
   "cortex": {
-    "nodes": 4339,
-    "synapses": 5153,
+    "nodes": 4351,
+    "synapses": 5213,
     "active": 120,
     "archived_synapses": 0
   },
   "memory": {
-    "episodes": 2432,
-    "claims": 34,
+    "episodes": 2437,
+    "claims": 35,
     "stances": 0,
     "interests": 21
   },
   "journal": {
-    "events": 464,
+    "events": 475,
     "snapshot_events": 423
   },
   "migration": "v3_snapshot_and_deltas",
@@ -61,14 +61,6 @@
       "score": 0.7677064220183487
     },
     {
-      "node_id": "concept:c478361e6869af259706",
-      "label": "story",
-      "activation": 1.0,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.7677064220183487
-    },
-    {
       "node_id": "concept:bc16f5825a9dafc8c245",
       "label": "will",
       "activation": 1.0,
@@ -83,6 +75,14 @@
       "novelty": 0.8810572687224669,
       "conflict": 0,
       "score": 0.7578854625550662
+    },
+    {
+      "node_id": "concept:d08ec62e4abb4e31",
+      "label": "heartbeats",
+      "activation": 1.0,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.7578854625550662
     }
   ],
   "skills": {
@@ -91,8 +91,8 @@
       "successes": 0
     },
     "read": {
-      "attempts": 34,
-      "successes": 34
+      "attempts": 35,
+      "successes": 35
     },
     "explore": {
       "attempts": 17,
