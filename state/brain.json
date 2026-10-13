@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-13T02:27:03.608389+00:00",
-  "generation": 1832,
+  "timestamp": "2026-10-13T02:28:04.958402+00:00",
+  "generation": 1833,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1844,
-    "surprise": 0.1524,
+    "novelty": 0.1724,
+    "surprise": 0.1411,
     "uncertainty": 0.25,
-    "salience": 0.8557,
-    "exploration": 0.2825,
-    "plasticity": 0.481,
-    "energy": 0.793,
-    "sleep_pressure": 0.1344
+    "salience": 0.8852,
+    "exploration": 0.276,
+    "plasticity": 0.4784,
+    "energy": 0.648,
+    "sleep_pressure": 0.2114
   },
   "workspace": [
     {
@@ -19,72 +19,72 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.855695,
-      "novelty": 0.184385,
-      "surprise": 0.152435,
+      "salience": 0.885205,
+      "novelty": 0.17236,
+      "surprise": 0.14106000000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7262
+      "ignition_score": 0.7306
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.855695,
-      "novelty": 0.184385,
-      "surprise": 0.152435,
+      "salience": 0.885205,
+      "novelty": 0.17236,
+      "surprise": 0.14106000000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7262
+      "ignition_score": 0.7306
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.855695,
-      "novelty": 0.184385,
-      "surprise": 0.152435,
+      "salience": 0.885205,
+      "novelty": 0.17236,
+      "surprise": 0.14106000000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7262
+      "ignition_score": 0.7306
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.855695,
-      "novelty": 0.184385,
-      "surprise": 0.152435,
+      "salience": 0.885205,
+      "novelty": 0.17236,
+      "surprise": 0.14106000000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7262
+      "ignition_score": 0.7306
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.855695,
-      "novelty": 0.184385,
-      "surprise": 0.152435,
+      "salience": 0.885205,
+      "novelty": 0.17236,
+      "surprise": 0.14106000000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7262
+      "ignition_score": 0.7306
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
       "activation": 0.94,
-      "salience": 0.855695,
-      "novelty": 0.184385,
-      "surprise": 0.152435,
+      "salience": 0.885205,
+      "novelty": 0.17236,
+      "surprise": 0.14106000000000002,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.7262
+      "ignition_score": 0.7306
     },
     {
       "id": "episode:8a0be498280457",
@@ -263,43 +263,32 @@
     }
   },
   "last_action": {
-    "kind": "library",
-    "description": "Continue reading The Psychology of the Emotions to examine emotional physiology and affective dynamics.",
-    "source": "substrate:gemini",
-    "score": 0.49421
+    "kind": "attend",
+    "description": "Continue processing the active workspace without external action.",
+    "source": "workspace",
+    "score": 0.40277
   },
   "action_competition": [
     {
-      "kind": "library",
-      "source": "substrate:gemini",
-      "score": 0.49421,
-      "description": "Continue reading The Psychology of the Emotions to examine emotional physiology and affective dynamics."
-    },
-    {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.39866,
+      "score": 0.40277,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.31143,
+      "score": 0.38054,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.291,
+      "score": 0.32575,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
-  "substrate_contributors": [
-    {
-      "provider": "gemini",
-      "model": "gemini-3.5-flash-lite"
-    }
-  ],
+  "substrate_contributors": [],
   "current_stances": [
     {
       "topic": "evolutionary_origins_of_expression",
@@ -348,9 +337,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 2271,
+    "episodes": 2272,
     "semantic_nodes": 3935,
     "synapses": 1200
   },
@@ -362,13 +351,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 72
+      "removed_edges": 0
     },
     "terminal_inhibition": {
-      "startup": 349,
-      "after_lifecycle": 349,
-      "after_spread": 349,
-      "after_packets": 358
+      "startup": 350,
+      "after_lifecycle": 350,
+      "after_spread": 350,
+      "after_packets": 350
     }
   }
 }
