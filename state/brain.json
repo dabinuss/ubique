@@ -1,102 +1,102 @@
 {
   "version": 2,
-  "timestamp": "2026-10-13T00:03:26.143704+00:00",
-  "generation": 1814,
+  "timestamp": "2026-10-13T00:16:57.734941+00:00",
+  "generation": 1815,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.325,
-    "surprise": 0.285,
+    "novelty": 0.2638,
+    "surprise": 0.2273,
     "uncertainty": 0.25,
-    "salience": 0.1895,
-    "exploration": 0.3582,
-    "plasticity": 0.4714,
+    "salience": 0.1351,
+    "exploration": 0.3253,
+    "plasticity": 0.425,
     "energy": 1.0,
-    "sleep_pressure": 0.0618
+    "sleep_pressure": 0.0546
   },
   "workspace": [
     {
       "id": "episode:b46abdd00ea47a",
-      "kind": "provider_state_change",
+      "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 20}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": true, \"eligible\": false, \"remaining_calls\": 1000}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.95,
+      "activation": 0.4241,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
-      "source": "runtime",
-      "ignition_score": 0.694
+      "source": "associative_recall",
+      "ignition_score": 0.431
     },
     {
       "id": "episode:226eece6d6a69e",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 973}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6566,
+      "activation": 0.4236,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.5473
+      "ignition_score": 0.4308
     },
     {
       "id": "episode:e6cfcfdbd79819",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 974}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6548,
+      "activation": 0.4218,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.5464
+      "ignition_score": 0.4299
     },
     {
       "id": "episode:c97a093d4a461f",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 975}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6527,
+      "activation": 0.4197,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.5454
+      "ignition_score": 0.4289
     },
     {
       "id": "episode:4e8d6052f79f4d",
       "kind": "recalled_episode",
       "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 976}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6506,
+      "activation": 0.4177,
       "salience": 0.4,
       "novelty": 0.5,
       "surprise": 0.45,
       "epistemic_status": "observed_runtime_state",
       "source": "associative_recall",
-      "ignition_score": 0.5443
+      "ignition_score": 0.4279
     },
     {
-      "id": "episode:dec33b40e85726",
+      "id": "episode:c45d5a191b7b5d",
       "kind": "recalled_episode",
-      "label": "Provider eligibility changed: {\"gemini\": {\"configured\": true, \"daily_limit\": 20, \"disabled\": false, \"eligible\": false, \"remaining_calls\": 0}, \"groq\": {\"configured\": true, \"daily_limit\": 1000, \"disabled\": false, \"eligible\": true, \"remaining_calls\": 977}, \"huggingface\": {\"configured\": false, \"daily_limit\": null, \"disabled\": false, \"eligible\": false, \"remaining_calls\": null}}",
-      "activation": 0.6487,
-      "salience": 0.4,
-      "novelty": 0.5,
-      "surprise": 0.45,
-      "epistemic_status": "observed_runtime_state",
+      "label": "{\n  \"associations\": [\n    {\n      \"label\": \"provider:gemini\",\n      \"kind\": \"concept\",\n      \"strength\": 0.85\n    },\n    {\n      \"label\": \"provider:groq\",\n      \"kind\": \"concept\",\n      \"strength\": 0.80\n    }\n  ],\n  \"hypotheses\": [\n    \"Provider availability and call limits dynamically rotate based on operational constraints and rate limits.\"\n  ],\n  \"questions\": [\n    \"How can runtime workflows optimize provider failover when daily call limits are exhausted?\"\n  ],\n  \"self_model_updates\": [\n    {",
+      "activation": 0.4452,
+      "salience": 0.42,
+      "novelty": 0.325,
+      "surprise": 0.3,
+      "epistemic_status": "model_proposal",
       "source": "associative_recall",
-      "ignition_score": 0.5433
+      "ignition_score": 0.4058
     },
     {
-      "id": "runtime_state:423b4a0b7d2066e3",
-      "kind": "runtime_state",
+      "id": "concept:3cbadb6cce079823",
+      "kind": "concept",
       "label": "provider:gemini",
-      "activation": 0.4068,
-      "salience": 0.242635,
-      "novelty": 0.324955,
-      "surprise": 0.284965,
-      "epistemic_status": "observed_runtime_state",
+      "activation": 0.1414,
+      "salience": 0.172665,
+      "novelty": 0.26375000000000004,
+      "surprise": 0.22725,
+      "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.3405
+      "ignition_score": 0.1754
     }
   ],
   "provider_eligibility": {
@@ -104,7 +104,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 19,
+      "remaining_calls": 18,
       "eligible": true
     },
     "groq": {
@@ -264,33 +264,33 @@
   },
   "last_action": {
     "kind": "rest",
-    "description": "Rest the cognitive substrate to maintain energy levels and stabilize runtime state.",
+    "description": "Rest the cognitive substrate to stabilize runtime state and maintain energy levels following routine provider state updates.",
     "source": "substrate:gemini",
-    "score": 0.47413
+    "score": 0.44726
   },
   "action_competition": [
     {
       "kind": "rest",
       "source": "substrate:gemini",
-      "score": 0.47413,
-      "description": "Rest the cognitive substrate to maintain energy levels and stabilize runtime state."
+      "score": 0.44726,
+      "description": "Rest the cognitive substrate to stabilize runtime state and maintain energy levels following routine provider state updates."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.24157,
+      "score": 0.20364,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.21034,
+      "score": 0.19485,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.16056,
+      "score": 0.16075,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
@@ -350,8 +350,8 @@
   ],
   "consecutive_pulses": 0,
   "memory": {
-    "episodes": 2222,
-    "semantic_nodes": 3809,
+    "episodes": 2224,
+    "semantic_nodes": 3812,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -362,13 +362,13 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 50
+      "removed_edges": 44
     },
     "terminal_inhibition": {
       "startup": 334,
       "after_lifecycle": 334,
       "after_spread": 334,
-      "after_packets": 334
+      "after_packets": 340
     }
   }
 }
