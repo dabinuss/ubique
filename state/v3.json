@@ -1,18 +1,18 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-13T12:06:38.858975+00:00",
-  "generation": 1948,
+  "timestamp": "2026-10-13T12:08:04.924066+00:00",
+  "generation": 1949,
   "focus": "The Republic of Plato",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 1944,
   "last_search_generation": 1909,
   "cortex": {
-    "nodes": 4146,
-    "synapses": 3144,
+    "nodes": 4169,
+    "synapses": 3394,
     "active": 120,
     "archived_synapses": 0
   },
@@ -23,8 +23,8 @@
     "interests": 16
   },
   "journal": {
-    "events": 252,
-    "snapshot_events": 173
+    "events": 257,
+    "snapshot_events": 257
   },
   "migration": "v3_snapshot_and_deltas",
   "workspace": [
@@ -69,20 +69,20 @@
       "score": 0.7677064220183487
     },
     {
-      "node_id": "concept:f44e85c4b8ea2addc796",
-      "label": "analysis",
-      "activation": 0.9855954581783795,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.7602160602711059
-    },
-    {
       "node_id": "concept:bc16f5825a9dafc8c245",
       "label": "will",
-      "activation": 0.9852413524964991,
+      "activation": 1.0,
       "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7600319253165282
+      "score": 0.7677064220183487
+    },
+    {
+      "node_id": "concept:30bc67a73501de3d723a",
+      "label": "unconscious",
+      "activation": 1.0,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.7677064220183487
     }
   ],
   "skills": {
@@ -99,8 +99,8 @@
       "successes": 10
     },
     "consolidate": {
-      "attempts": 7,
-      "successes": 7
+      "attempts": 8,
+      "successes": 8
     },
     "connect": {
       "attempts": 2,
