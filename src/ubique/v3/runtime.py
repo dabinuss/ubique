@@ -175,14 +175,14 @@ class UbiqueV3:
         return candidates[:MAX_CANDIDATES]
 
     def _research(self,topic:str,generation:int)->Result:
-        from .research import wikipedia
+        from .research import discover
         if not topic:return Result("search",False,"No topic available")
         previous=read_json("v3.json",{})
         last=int(previous.get("last_search_generation",-100) or -100)
         if generation-last<20:
             return Result("search",True,"Waiting before next external source request")
         try:
-            results=wikipedia(topic)
+            results=discover(topic)
         except Exception as exc:
             return Result("search",False,type(exc).__name__+": "+str(exc)[:200])
         seen=[]
