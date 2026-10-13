@@ -127,6 +127,9 @@ class Cortex:
         cid=concept_id(label)
         node=self.nodes.get(cid)
         if node is None:
+            node=next((n for n in self.nodes.values()
+                       if n.label.casefold()==label.casefold() and n.kind==kind),None)
+        if node is None:
             node=Node(cid,label,kind,epistemic_status=epistemic_status)
             self.nodes[cid]=node
             self._record("node_upsert", node)
