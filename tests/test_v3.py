@@ -181,3 +181,27 @@ def test_v3_offline_cycle_persists_neural_learning(tmp_path,monkeypatch):
     assert writes["v3.json"]["cortex"]["synapses"]>=old_edges
     assert writes["pulse.json"]["generation"]==321
     assert Journal(tmp_path/"v3").events(verify=True)
+
+
+def test_failed_source_does_not_exhaust_entire_v3_cycle(tmp_path,monkeypatch):
+    from ubique.v3.runtime import UbiqueV3
+    from ubique.v3.actions import Candidate, Result
+    from ubique.config import Config
+    monkeypatch.setattr("ubique.v3.runtime.start_cycle",lambda:{"generation":500})
+    monkeypatch.setattr("ubique.v3.runtime.finish_cycle",lambda *a:None)
+    status={}
+    monkeypatch.setattr("ubique.v3.runtime.write_json",
+                        lambda name,value:status.__setitem__(name,value))
+    monkeypatch.setattr("ubique.v3.runtime.read_json",
+                        lambda name,default:status.get(name,default))
+    instance=UbiqueV3(Config.from_env(),storage_root=tmp_path/"v3",enable_remote=False)
+    monkeypatch.setattr(instance,"_candidates",lambda *a:[
+        Candidate("search","remote research",{"topic":"research"},.9),
+        Candidate("consolidate","local replay",{"mode":"nrem"},.6)])
+    monkeypatch.setattr(instance,"_research",
+                        lambda *a:Result("search",False,"HTTP 403"))
+    assert instance.run()==0
+    assert status["v3.json"]["last_action"]=="consolidate"
+    failures=[x["data"] for x in Journal(tmp_path/"v3").events()
+              if x["kind"]=="action_outcome" and not x["data"].get("success",True)]
+    assert any(x["kind"]=="search" for x in failures)
