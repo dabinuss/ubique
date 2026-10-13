@@ -75,16 +75,21 @@ def build_registry()->Registry:
               concepts=terms(str(spec.get("title",""))+" "+excerpt,16),
               payload={"item_id":spec["item_id"],"offset":record["offset"],
                        "next_offset":record["next_offset"]})["id"]
-        # Store an exact excerpt as source testimony, never an invented conclusion.
-        ctx["world"].claim(excerpt[:850],status="SOURCE_CLAIM",
-           source_refs=[eid],confidence=.3,generation=ctx["generation"])
+        # Semantic learning extracts attributable sentences and cross-book comparisons;
+        # the raw excerpt remains an episode, not a confirmed scientific claim.
+        insights=ctx["semantics"].observe({
+            "id":eid,"text":excerpt,"epistemic_status":"source_passage",
+            "source":"library:"+str(spec["item_id"]),
+            "payload":{"title":spec.get("title","")}},
+            generation=ctx["generation"])
         active=ctx["cortex"].activate(
            terms(str(spec.get("title",""))+" "+excerpt,13),strength=.76)
         ctx["cortex"].learn(active,reward=.13,source_event=eid)
         ctx["curiosity"].notice(str(spec.get("title","")),novelty=.65,progress=.55,
                source=eid,generation=ctx["generation"])
         return Result("read",True,"Read "+str(len(excerpt))+" source characters",
-               [eid],payload={"title":spec.get("title"),"next_offset":record["next_offset"]})
+               [eid],payload={"title":spec.get("title"),"next_offset":record["next_offset"],
+                              "insights":len(insights)})
 
     def consolidate(spec,ctx):
         mode=str(spec.get("mode","nrem"))
