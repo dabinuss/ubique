@@ -1,29 +1,29 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-13T11:30:32.677481+00:00",
-  "generation": 1940,
+  "timestamp": "2026-10-13T11:44:02.627409+00:00",
+  "generation": 1941,
   "focus": "Mental Evolution in Man: Origin of Human Faculty",
-  "last_action": "consolidate",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Read 8000 source characters",
   "last_provider": null,
   "last_provider_generation": 1938,
   "last_search_generation": 1909,
   "cortex": {
-    "nodes": 4107,
-    "synapses": 2860,
+    "nodes": 4111,
+    "synapses": 2872,
     "active": 120,
     "archived_synapses": 0
   },
   "memory": {
-    "episodes": 2389,
-    "claims": 15,
+    "episodes": 2390,
+    "claims": 16,
     "stances": 0,
     "interests": 13
   },
   "journal": {
-    "events": 200,
+    "events": 207,
     "snapshot_events": 173
   },
   "migration": "v3_snapshot_and_deltas",
@@ -61,28 +61,28 @@
       "score": 0.7677064220183487
     },
     {
-      "node_id": "concept:d2d5fdf95b09216a",
-      "label": "if the v2 runtime continues to emit a successful heartbeat for the next 5 minutes, the system can be considered stable a",
-      "activation": 1.0,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.7677064220183487
-    },
-    {
-      "node_id": "concept:3e6f2ae86ccc38f8",
-      "label": "the groq provider will successfully handle any required calls for the heartbeat test, while gemini remains unavailable d",
-      "activation": 1.0,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.7677064220183487
-    },
-    {
       "node_id": "concept:c478361e6869af259706",
       "label": "story",
       "activation": 1.0,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.7677064220183487
+    },
+    {
+      "node_id": "concept:fe6a728bb04a891f",
+      "label": "continuous",
+      "activation": 1.0,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.7578854625550662
+    },
+    {
+      "node_id": "concept:d08ec62e4abb4e31",
+      "label": "heartbeats",
+      "activation": 1.0,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.7578854625550662
     }
   ],
   "skills": {
@@ -91,8 +91,8 @@
       "successes": 0
     },
     "read": {
-      "attempts": 15,
-      "successes": 15
+      "attempts": 16,
+      "successes": 16
     },
     "explore": {
       "attempts": 8,
