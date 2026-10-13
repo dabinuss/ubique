@@ -259,9 +259,12 @@ class UbiqueV3:
             self.cortex.step()
             candidates=self._candidates(generation,focus,recall,model)
             # Exploration can broaden knowledge, not repeat identical wishes.
-            if focus and not reading_candidates(self.curiosity):
-                candidates.append(Candidate("search","Acquire general knowledge about "+focus,
-                          {"topic":focus},.62))
+            if focus and (generation%23==0 or not reading_candidates(self.curiosity)):
+                # Periodically seek knowledge beyond the initial book collection.
+                last_search=int(read_json("v3.json",{}).get("last_search_generation",-100) or -100)
+                if generation-last_search>=20:
+                    candidates.append(Candidate("search","Acquire new general knowledge about "+focus,
+                              {"topic":focus},.76))
             chosen=select(candidates,self.curiosity,self.history)
             result=self._act(chosen,generation=generation,focus=focus)
             self.history.append(chosen.kind)
