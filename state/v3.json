@@ -1,29 +1,29 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-13T10:29:24.356206+00:00",
-  "generation": 1923,
-  "focus": "The Story of the Mind",
-  "last_action": "consolidate",
+  "timestamp": "2026-10-13T10:42:48.126339+00:00",
+  "generation": 1924,
+  "focus": "The Mind and the Brain",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Read 8000 source characters",
   "last_provider": null,
   "last_provider_generation": 1921,
   "last_search_generation": 1909,
   "cortex": {
-    "nodes": 4035,
-    "synapses": 2155,
+    "nodes": 4037,
+    "synapses": 2169,
     "active": 120,
     "archived_synapses": 0
   },
   "memory": {
-    "episodes": 2373,
-    "claims": 7,
+    "episodes": 2374,
+    "claims": 8,
     "stances": 0,
-    "interests": 6
+    "interests": 7
   },
   "journal": {
-    "events": 96,
+    "events": 103,
     "snapshot_events": 87
   },
   "migration": "v3_snapshot_and_deltas",
@@ -53,22 +53,6 @@
       "score": 0.7783732057416268
     },
     {
-      "node_id": "concept:c478361e6869af259706",
-      "label": "story",
-      "activation": 1.0,
-      "novelty": 0.9569377990430623,
-      "conflict": 0,
-      "score": 0.7783732057416268
-    },
-    {
-      "node_id": "concept:1c48f6310f1c849b4ac3",
-      "label": "mind",
-      "activation": 1.0,
-      "novelty": 0.9569377990430623,
-      "conflict": 0,
-      "score": 0.7783732057416268
-    },
-    {
       "node_id": "concept:d2b58d4103c3e310",
       "label": "verify",
       "activation": 1.0,
@@ -83,6 +67,22 @@
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.7677064220183487
+    },
+    {
+      "node_id": "concept:3e6f2ae86ccc38f8",
+      "label": "the groq provider will successfully handle any required calls for the heartbeat test, while gemini remains unavailable d",
+      "activation": 1.0,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.7677064220183487
+    },
+    {
+      "node_id": "concept:6907de2e8144a57274c7",
+      "label": "treatise",
+      "activation": 1.0,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.7677064220183487
     }
   ],
   "skills": {
@@ -91,8 +91,8 @@
       "successes": 0
     },
     "read": {
-      "attempts": 7,
-      "successes": 7
+      "attempts": 8,
+      "successes": 8
     },
     "explore": {
       "attempts": 3,
