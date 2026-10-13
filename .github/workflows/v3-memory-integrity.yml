@@ -1,0 +1,56 @@
+name: Ubique V3 Memory Integrity
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/v3-memory-integrity.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: python -m pip install -e .
+      - name: Verify historical event continuity and lossless compression
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from ubique.state import ROOT
+          from ubique.v3.storage import Journal, read_json
+          from ubique.v3.migration import bootstrap
+          root = ROOT / "memory" / "v3"
+          previous = read_json(root / "manifest.json", {})
+          before = previous.get("events", 0)
+          monthly = list((root / "events").glob("????-??.jsonl"))
+          print("Before:", before, "monolithic files:", len(monthly))
+          journal = Journal(root)
+          events = journal.events(verify=True)
+          assert len(events) == before, ("Event count changed", len(events), before)
+          if monthly:
+              assert not list((root / "events").glob("????-??.jsonl"))
+              assert list((root / "events").glob("*.jsonl.gz"))
+          graph, report = bootstrap(journal)
+          assert journal.load_snapshot() is not None
+          assert journal.snapshot_path.is_file()
+          assert len(graph.nodes) > 100 and len(graph.edges) > 100
+          assert int(journal.manifest["events"]) == before
+          assert all(journal.verify_migration().values())
+          print("Verified events:", len(events))
+          print("Reconstructed nodes:", len(graph.nodes))
+          print("Reconstructed synapses:", len(graph.edges))
+          print("Compressed event files:", len(list((root / "events").glob("*.jsonl.gz"))))
+          print("Snapshot size:", journal.snapshot_path.stat().st_size)
+          print("All checks passed; workflow does not push or change persistent repository state.")
+          PY
