@@ -1,0 +1,95 @@
+{
+  "version": 3,
+  "architecture": "neurocognitive-v3",
+  "timestamp": "2026-10-13T09:32:53.063154+00:00",
+  "generation": 1909,
+  "focus": "notwithstanding",
+  "last_action": "search",
+  "last_action_success": false,
+  "last_action_detail": "HTTPStatusError: Client error '403 Forbidden' for url 'https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=notwithstanding&gsrlimit=3&prop=extracts%7Cinfo&exintro=1&explaintext=1&inprop=url&form",
+  "last_provider": null,
+  "last_provider_generation": -100,
+  "last_search_generation": 1909,
+  "cortex": {
+    "nodes": 3936,
+    "synapses": 1200,
+    "active": 62,
+    "archived_synapses": 0
+  },
+  "memory": {
+    "episodes": 2354,
+    "claims": 0,
+    "stances": 0,
+    "interests": 1
+  },
+  "journal": {
+    "events": 4,
+    "snapshot_events": 0
+  },
+  "migration": "v2_import",
+  "workspace": [
+    {
+      "node_id": "concept:7f2e3f629e4df5c9",
+      "label": "constraints",
+      "activation": 0.08375374550545686,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.26396011092814364
+    },
+    {
+      "node_id": "concept:0aaa9af1ffc2c54f",
+      "label": "hypothesized",
+      "activation": 0.09699648428814542,
+      "novelty": 0.6493506493506493,
+      "conflict": 0,
+      "score": 0.22576284715451095
+    },
+    {
+      "node_id": "concept:5cca6a702d78b833",
+      "label": "already_requested",
+      "activation": 0.2729643796234763,
+      "novelty": 0.1863932898415657,
+      "conflict": 0,
+      "score": 0.19226766566143041
+    },
+    {
+      "node_id": "concept:7c8c34c1074b16bf",
+      "label": "issue:19",
+      "activation": 0.26789058601232707,
+      "novelty": 0.07710100231303008,
+      "conflict": 0,
+      "score": 0.1601203753509282
+    },
+    {
+      "node_id": "concept:020779dea60b906b",
+      "label": "deactivated",
+      "activation": 0.26789058601232707,
+      "novelty": 0.07604562737642585,
+      "conflict": 0,
+      "score": 0.15983542411804508
+    },
+    {
+      "node_id": "concept:0b2fd97c7655df1f",
+      "label": "issue:11",
+      "activation": 0.26789058601232707,
+      "novelty": 0.0578368999421631,
+      "conflict": 0,
+      "score": 0.1549190677107941
+    },
+    {
+      "node_id": "concept:8c0a47d3266f1cb7",
+      "label": "continuity",
+      "activation": 0.2704664570316764,
+      "novelty": 0.05105948429920858,
+      "conflict": 0,
+      "score": 0.15442861841725802
+    }
+  ],
+  "skills": {
+    "search": {
+      "attempts": 1,
+      "successes": 0
+    }
+  },
+  "active_stances": 4
+}
