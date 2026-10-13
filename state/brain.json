@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-13T03:12:35.784626+00:00",
-  "generation": 1840,
+  "timestamp": "2026-10-13T03:13:32.427582+00:00",
+  "generation": 1841,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.173,
-    "surprise": 0.1416,
+    "novelty": 0.1649,
+    "surprise": 0.134,
     "uncertainty": 0.25,
-    "salience": 0.7527,
-    "exploration": 0.2764,
-    "plasticity": 0.4471,
-    "energy": 1.0,
-    "sleep_pressure": 0.0391
+    "salience": 0.8183,
+    "exploration": 0.272,
+    "plasticity": 0.464,
+    "energy": 0.855,
+    "sleep_pressure": 0.1161
   },
   "workspace": [
     {
@@ -19,72 +19,72 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.75267,
-      "novelty": 0.17301,
-      "surprise": 0.141645,
+      "salience": 0.818255,
+      "novelty": 0.16494999999999999,
+      "surprise": 0.13404,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6977
+      "ignition_score": 0.7121
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.75267,
-      "novelty": 0.17301,
-      "surprise": 0.141645,
+      "salience": 0.818255,
+      "novelty": 0.16494999999999999,
+      "surprise": 0.13404,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6977
+      "ignition_score": 0.7121
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.75267,
-      "novelty": 0.17301,
-      "surprise": 0.141645,
+      "salience": 0.818255,
+      "novelty": 0.16494999999999999,
+      "surprise": 0.13404,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6977
+      "ignition_score": 0.7121
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.75267,
-      "novelty": 0.17301,
-      "surprise": 0.141645,
+      "salience": 0.818255,
+      "novelty": 0.16494999999999999,
+      "surprise": 0.13404,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6977
+      "ignition_score": 0.7121
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.75267,
-      "novelty": 0.17301,
-      "surprise": 0.141645,
+      "salience": 0.818255,
+      "novelty": 0.16494999999999999,
+      "surprise": 0.13404,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6977
+      "ignition_score": 0.7121
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
       "activation": 0.94,
-      "salience": 0.75267,
-      "novelty": 0.17301,
-      "surprise": 0.141645,
+      "salience": 0.818255,
+      "novelty": 0.16494999999999999,
+      "surprise": 0.13404,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6977
+      "ignition_score": 0.7121
     },
     {
       "id": "episode:8a0be498280457",
@@ -263,29 +263,29 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Replay and consolidate existing experience offline.",
-    "source": "homeostasis",
-    "score": 0.30393
+    "kind": "attend",
+    "description": "Continue processing the active workspace without external action.",
+    "source": "workspace",
+    "score": 0.28453
   },
   "action_competition": [
     {
-      "kind": "consolidate",
-      "source": "homeostasis",
-      "score": 0.30393,
-      "description": "Replay and consolidate existing experience offline."
-    },
-    {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.27095,
+      "score": 0.28453,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.21673,
+      "score": 0.22761,
       "description": "Allow activation to decay without forcing cognition."
+    },
+    {
+      "kind": "consolidate",
+      "source": "homeostasis",
+      "score": 0.21433,
+      "description": "Replay and consolidate existing experience offline."
     }
   ],
   "substrate_contributors": [],
@@ -337,9 +337,9 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 2,
   "memory": {
-    "episodes": 2280,
+    "episodes": 2281,
     "semantic_nodes": 3935,
     "synapses": 1200
   },
