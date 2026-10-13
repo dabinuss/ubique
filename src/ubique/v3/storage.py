@@ -65,6 +65,7 @@ class Journal:
         self._cached_events: list[dict] | None = None
         self._pending_repack = False
         self._prepare_segments()
+        self._prepare_snapshot_format()
 
     def _files(self) -> list[Path]:
         return sorted(p for p in (self.root / "events").glob("*")
@@ -96,6 +97,25 @@ class Journal:
                 legacy.unlink()
                 continue
             self._repack(legacy, marker)
+
+    def _prepare_snapshot_format(self) -> None:
+        """Compress an existing 5MB v3 snapshot without changing its offset."""
+        if self.snapshot_path.exists() or not self.legacy_snapshot_path.exists():
+            return
+        old = read_json(self.legacy_snapshot_path, None)
+        if not isinstance(old, dict):
+            raise ValueError("Legacy snapshot cannot be decoded")
+        expected = self.manifest.get("snapshot_sha256")
+        if expected and digest(canonical(old)) != expected:
+            raise ValueError("Legacy snapshot checksum mismatch")
+        tmp = self.snapshot_path.with_name(self.snapshot_path.name + ".tmp")
+        with gzip.open(tmp, "wt", encoding="utf-8", compresslevel=6) as stream:
+            json.dump(old, stream, ensure_ascii=False, separators=(",", ":"))
+        with gzip.open(tmp, "rt", encoding="utf-8") as stream:
+            if digest(canonical(json.load(stream))) != digest(canonical(old)):
+                raise ValueError("Legacy snapshot compression verification failed")
+        os.replace(tmp, self.snapshot_path)
+        self.legacy_snapshot_path.unlink()
 
     def _verify_repack(self, source: Path, archives: list[Path]) -> bool:
         original = hashlib.sha256()
