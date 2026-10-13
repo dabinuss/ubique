@@ -1,94 +1,98 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-13T09:32:53.063154+00:00",
-  "generation": 1909,
-  "focus": "notwithstanding",
-  "last_action": "search",
-  "last_action_success": false,
-  "last_action_detail": "HTTPStatusError: Client error '403 Forbidden' for url 'https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=notwithstanding&gsrlimit=3&prop=extracts%7Cinfo&exintro=1&explaintext=1&inprop=url&form",
-  "last_provider": null,
-  "last_provider_generation": -100,
+  "timestamp": "2026-10-13T09:46:25.678599+00:00",
+  "generation": 1910,
+  "focus": "A Treatise of Human Nature",
+  "last_action": "read",
+  "last_action_success": true,
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": "groq",
+  "last_provider_generation": 1910,
   "last_search_generation": 1909,
   "cortex": {
-    "nodes": 3936,
-    "synapses": 1200,
-    "active": 62,
+    "nodes": 3954,
+    "synapses": 1278,
+    "active": 103,
     "archived_synapses": 0
   },
   "memory": {
-    "episodes": 2354,
-    "claims": 0,
+    "episodes": 2359,
+    "claims": 1,
     "stances": 0,
-    "interests": 1
+    "interests": 2
   },
   "journal": {
-    "events": 4,
+    "events": 15,
     "snapshot_events": 0
   },
-  "migration": "v2_import",
+  "migration": "v3_snapshot_and_deltas",
   "workspace": [
     {
-      "node_id": "concept:7f2e3f629e4df5c9",
-      "label": "constraints",
-      "activation": 0.08375374550545686,
-      "novelty": 0.8163265306122448,
+      "node_id": "concept:b39ea7408bbea9e9",
+      "label": "closed",
+      "activation": 1.0,
+      "novelty": 0.026863666890530557,
       "conflict": 0,
-      "score": 0.26396011092814364
+      "score": 0.5272531900604432
     },
     {
-      "node_id": "concept:0aaa9af1ffc2c54f",
-      "label": "hypothesized",
-      "activation": 0.09699648428814542,
-      "novelty": 0.6493506493506493,
+      "node_id": "concept:921d69d930092eb5",
+      "label": "heartbeat",
+      "activation": 1.0,
+      "novelty": 0.02501876407305479,
       "conflict": 0,
-      "score": 0.22576284715451095
+      "score": 0.5267550662997248
     },
     {
-      "node_id": "concept:5cca6a702d78b833",
-      "label": "already_requested",
-      "activation": 0.2729643796234763,
-      "novelty": 0.1863932898415657,
+      "node_id": "concept:b4d99022347ea416",
+      "label": "runtime",
+      "activation": 1.0,
+      "novelty": 0.01687051876845213,
       "conflict": 0,
-      "score": 0.19226766566143041
+      "score": 0.5245550400674821
     },
     {
-      "node_id": "concept:7c8c34c1074b16bf",
-      "label": "issue:19",
-      "activation": 0.26789058601232707,
-      "novelty": 0.07710100231303008,
+      "node_id": "concept:eed935ffca07484a",
+      "label": "status",
+      "activation": 1.0,
+      "novelty": 0.01687051876845213,
       "conflict": 0,
-      "score": 0.1601203753509282
+      "score": 0.5245550400674821
     },
     {
-      "node_id": "concept:020779dea60b906b",
-      "label": "deactivated",
-      "activation": 0.26789058601232707,
-      "novelty": 0.07604562737642585,
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
+      "activation": 0.9378349383701521,
+      "novelty": 0.025075225677031097,
       "conflict": 0,
-      "score": 0.15983542411804508
+      "score": 0.4944444788852775
     },
     {
-      "node_id": "concept:0b2fd97c7655df1f",
-      "label": "issue:11",
-      "activation": 0.26789058601232707,
-      "novelty": 0.0578368999421631,
+      "node_id": "concept:c9b6dab517b9d127",
+      "label": "library",
+      "activation": 0.9378349383701521,
+      "novelty": 0.025075225677031097,
       "conflict": 0,
-      "score": 0.1549190677107941
+      "score": 0.4944444788852775
     },
     {
-      "node_id": "concept:8c0a47d3266f1cb7",
-      "label": "continuity",
-      "activation": 0.2704664570316764,
-      "novelty": 0.05105948429920858,
+      "node_id": "concept:87f50769209815aa",
+      "label": "notwithstanding",
+      "activation": 0.574,
+      "novelty": 0.4807692307692307,
       "conflict": 0,
-      "score": 0.15442861841725802
+      "score": 0.45522269230769224
     }
   ],
   "skills": {
     "search": {
       "attempts": 1,
       "successes": 0
+    },
+    "read": {
+      "attempts": 1,
+      "successes": 1
     }
   },
   "active_stances": 4
