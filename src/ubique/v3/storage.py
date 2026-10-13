@@ -95,8 +95,6 @@ class Journal:
                     and self._verify_repack(legacy, archives)):
                 legacy.unlink()
                 continue
-            if legacy.stat().st_size < SEGMENT_LIMIT:
-                continue
             self._repack(legacy, marker)
 
     def _verify_repack(self, source: Path, archives: list[Path]) -> bool:
@@ -168,6 +166,8 @@ class Journal:
             except ValueError:
                 continue
         number = max(numbered) if numbered else 0
+        if (directory / f"{prefix}-{number:06d}.jsonl.gz").exists():
+            number += 1
         path = directory / f"{prefix}-{number:06d}.jsonl"
         if path.exists() and path.stat().st_size >= SEGMENT_LIMIT:
             self._compress_segment(path)
