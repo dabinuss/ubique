@@ -1,40 +1,72 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-13T09:52:07.354167+00:00",
-  "generation": 1914,
-  "focus": "The Story of the Mind",
-  "last_action": "consolidate",
+  "timestamp": "2026-10-13T10:05:33.228656+00:00",
+  "generation": 1915,
+  "focus": "Human Nature and Conduct",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Read 8000 source characters",
   "last_provider": null,
   "last_provider_generation": 1910,
   "last_search_generation": 1909,
   "cortex": {
-    "nodes": 3986,
-    "synapses": 1646,
+    "nodes": 3990,
+    "synapses": 1664,
     "active": 120,
     "archived_synapses": 0
   },
   "memory": {
-    "episodes": 2361,
-    "claims": 3,
+    "episodes": 2362,
+    "claims": 4,
     "stances": 0,
-    "interests": 3
+    "interests": 4
   },
   "journal": {
-    "events": 38,
+    "events": 45,
     "snapshot_events": 0
   },
   "migration": "v3_snapshot_and_deltas",
   "workspace": [
     {
-      "node_id": "concept:c478361e6869af259706",
-      "label": "story",
-      "activation": 0.9910947626601534,
+      "node_id": "schema:8be7c10d36a951d7",
+      "label": "runtime ↔ status",
+      "activation": 1.0,
+      "novelty": 1.0,
+      "conflict": 0,
+      "score": 0.79
+    },
+    {
+      "node_id": "concept:d7b8b27e7c29c49a",
+      "label": "probe",
+      "activation": 1.0,
       "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7737424823249066
+      "score": 0.7783732057416268
+    },
+    {
+      "node_id": "concept:d66b0c4a8fd1c9c0",
+      "label": "groq",
+      "activation": 1.0,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.7783732057416268
+    },
+    {
+      "node_id": "concept:c478361e6869af259706",
+      "label": "story",
+      "activation": 1.0,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.7783732057416268
+    },
+    {
+      "node_id": "concept:d2b58d4103c3e310",
+      "label": "verify",
+      "activation": 1.0,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.7677064220183487
     },
     {
       "node_id": "concept:6907de2e8144a57274c7",
@@ -51,38 +83,6 @@
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.7677064220183487
-    },
-    {
-      "node_id": "schema:8be7c10d36a951d7",
-      "label": "runtime ↔ status",
-      "activation": 0.9484514265713526,
-      "novelty": 1.0,
-      "conflict": 0,
-      "score": 0.7631947418171035
-    },
-    {
-      "node_id": "concept:73e960e12e02cf8e",
-      "label": "newly",
-      "activation": 1.0,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.748813559322034
-    },
-    {
-      "node_id": "concept:c0e5d7e81f52dc5e",
-      "label": "state",
-      "activation": 1.0,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.748813559322034
-    },
-    {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.748813559322034
     }
   ],
   "skills": {
@@ -91,8 +91,8 @@
       "successes": 0
     },
     "read": {
-      "attempts": 3,
-      "successes": 3
+      "attempts": 4,
+      "successes": 4
     },
     "explore": {
       "attempts": 1,
