@@ -143,3 +143,41 @@ def test_local_action_selection_does_not_require_model(tmp_path):
                    Candidate("consolidate","replay",{"mode":"nrem"},score=.6)],
                   cur,["rest"]*4)
     assert action.kind=="consolidate"
+
+
+def test_legacy_cortex_migration_preserves_history_and_synapses(tmp_path):
+    journal=Journal(tmp_path/"migration")
+    graph,report=bootstrap(journal)
+    assert len(graph.nodes)>0
+    assert len(graph.edges)>0
+    assert journal.verify_migration()
+    assert all(journal.verify_migration().values())
+    restored,second_report=bootstrap(Journal(tmp_path/"migration"))
+    assert len(restored.edges)==len(graph.edges)
+    assert second_report["loaded_from"]=="v3_snapshot_and_deltas"
+
+
+def test_v3_offline_cycle_persists_neural_learning(tmp_path,monkeypatch):
+    from ubique.config import Config
+    from ubique.v3.runtime import UbiqueV3
+    from ubique import state as legacy_state
+    monkeypatch.setattr("ubique.v3.runtime.start_cycle",
+                        lambda: {"generation":321})
+    monkeypatch.setattr("ubique.v3.runtime.finish_cycle",lambda *args:None)
+    writes={}
+    monkeypatch.setattr("ubique.v3.runtime.write_json",
+                        lambda path,value:writes.__setitem__(path,value))
+    monkeypatch.setattr("ubique.v3.runtime.read_json",
+                        lambda path,default:writes.get(path,default))
+    monkeypatch.setattr("ubique.v3.actions.apply_library_action",
+                        lambda spec,actor="ubique":{
+                            "action":"read","item":{"id":spec.get("item_id"),"title":"test"},
+                            "content_available":True,"excerpt":"general cognition and nervous system relationships",
+                            "offset":0,"next_offset":500})
+    bot=UbiqueV3(Config.from_env(),storage_root=tmp_path/"v3",enable_remote=False)
+    old_edges=len(bot.cortex.edges)
+    assert bot.run()==0
+    assert writes["v3.json"]["architecture"]=="neurocognitive-v3"
+    assert writes["v3.json"]["cortex"]["synapses"]>=old_edges
+    assert writes["pulse.json"]["generation"]==321
+    assert Journal(tmp_path/"v3").events(verify=True)
