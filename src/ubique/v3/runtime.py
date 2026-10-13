@@ -24,6 +24,7 @@ from .planner import Planner
 from .self_model import SelfContinuity
 from .library import KnowledgeLibrary
 from .evolution import Evolution
+from .semantics import SemanticLearner
 
 log=logging.getLogger("ubique.v3")
 MAX_CANDIDATES=20
@@ -37,6 +38,8 @@ class UbiqueV3:
         self.hippocampus=Hippocampus(self.journal)
         self.world=WorldModel(self.journal)
         self.curiosity=Curiosity(self.journal)
+        self.semantics=SemanticLearner(self.journal,self.hippocampus,
+                                        self.world,self.cortex)
         self.consolidator=Consolidator(self.journal,self.hippocampus,
                                        self.cortex,self.world)
         self.registry=build_registry()
@@ -72,7 +75,11 @@ class UbiqueV3:
         if books and (not focus or
             (len(focus.split())==1 and self.curiosity.score(focus)<.5)):
             focus=self.curiosity.select(books,generation=generation)
-        return focus,old
+        # Prefer genuine passages, not solely old issue/diagnostic chatter.
+        passages=[e for e in reversed(self.hippocampus.all_episodes())
+                  if e.get("epistemic_status")=="source_passage"][:3]
+        recalled=list({e.get("id",str(i)):e for i,e in enumerate(passages+old)}.values())
+        return focus,recalled[:10]
 
     def _provider_packet(self,generation:int,focus:str,recall:list[dict])->dict:
         if self.providers is None or not self.providers.available():
@@ -88,6 +95,7 @@ class UbiqueV3:
         prompt=make_prompt(focus=focus,associations=associations,
             interests=list(self.curiosity.interests.values())[-12:],
             episodes=recall,known_stances=stances)
+        self._packet_recall=recall[:6]
         return self.providers.think(prompt)
 
     def _handle_model(self,packet:dict,generation:int)->list[Candidate]:
@@ -119,11 +127,24 @@ class UbiqueV3:
                    .3*float(spec.get("utility",.5)))
             candidates.append(Candidate(kind,str(spec.get("description",""))[:600],
                                         payload,score,source="model"))
-        # Do not confuse model-proposed stances with observed evidence.
-        evidence=set(ep.get("id") for ep in self.hippocampus.recall(
-            " ".join(all_concepts),limit=12))
+        # Only episodes actually provided as evidence to this contributor qualify.
+        actual={str(ep.get("id")):ep for ep in getattr(self,"_packet_recall",[])
+                if ep.get("id") and ep.get("epistemic_status") in
+                {"source_passage","observed","observed_action_outcome"}}
+        evidence=set(actual)
+        for proposal in packet.get("world_model_updates",[])[:5]:
+            if not isinstance(proposal,dict):continue
+            statement=str(proposal.get("statement","")).strip()
+            ids=[x for x in proposal.get("evidence_ids",[])
+                 if x in evidence]
+            if statement:
+                self.world.claim(statement,
+                    status="INFERRED" if ids else "HYPOTHESIS",
+                    source_refs=ids,confidence=min(.45,float(proposal.get("confidence",.4)))
+                    if ids else .15,generation=generation)
         for stance in packet.get("stance_updates",[])[:3]:
-            ids=[e for e in stance.get("evidence_ids",[]) if e in evidence]
+            ids=list(dict.fromkeys(e for e in stance.get("evidence_ids",[])
+                                    if e in evidence))
             if ids:
                 self.world.stance(str(stance["topic"]),str(stance["position"]),
                     evidence_ids=ids,relation=str(stance.get("relation","new")),
@@ -171,8 +192,7 @@ class UbiqueV3:
                     generation=generation,salience=.65,
                     concepts=terms(item["title"]+" "+item["text"],18),
                     payload={"title":item["title"],"license":item["attribution"]})
-            self.world.claim(item["text"][:750],status="SOURCE_CLAIM",
-                             source_refs=[ep["id"]],confidence=.3,generation=generation)
+            self.semantics.observe(ep,generation=generation)
             active=self.cortex.activate(terms(item["title"]+" "+item["text"],12),
                                         strength=.65)
             self.cortex.learn(active,reward=.1,source_event=ep["id"])
@@ -185,7 +205,8 @@ class UbiqueV3:
     def _act(self,chosen:Candidate,*,generation:int,focus:str)->Result:
         ctx={"generation":generation,"hippocampus":self.hippocampus,
              "cortex":self.cortex,"curiosity":self.curiosity,
-             "world":self.world,"consolidator":self.consolidator}
+             "world":self.world,"consolidator":self.consolidator,
+             "semantics":self.semantics}
         if chosen.kind=="rest":
             self.cortex.step(decay=.6)
             return Result("rest",True,"Local activation decayed")
@@ -241,8 +262,11 @@ class UbiqueV3:
                 "memory":{"episodes":self.hippocampus.count(),
                           "claims":len(self.world.claims),
                           "stances":len(self.world.stances),
-                          "interests":len(self.curiosity.interests)},
+                          "interests":len(self.curiosity.interests),
+                          "insights":len(self.semantics.comparisons)},
                 "journal":{"events":self.journal.manifest["events"],
+                           "segments":len(self.journal._files()),
+                           "compressed_snapshot":self.journal.snapshot_path.is_file(),
                            "snapshot_events":self.journal.manifest["snapshot_events"]},
                 "migration":self.migration.get("loaded_from"),
                 "workspace":self.workspace.snapshot(),
