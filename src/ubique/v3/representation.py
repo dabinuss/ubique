@@ -144,7 +144,9 @@ class Cortex:
             e=Synapse(a,b,relation,clamp(weight,-1,1),source_event=event_id)
             previous=self.edges.get(e.id)
             if previous:
-                previous.archived=False
+                if previous.archived:
+                    previous.archived=False
+                    self._record("synapse_upsert",previous)
                 e=previous
             else:
                 self.edges[e.id]=e
@@ -173,12 +175,17 @@ class Cortex:
         if not active:
             return []
         incoming=defaultdict(float)
+        incoming_counts=defaultdict(int)
         for edge in self.edges.values():
             if edge.archived or edge.source not in active:
                 continue
             incoming[edge.target]+=active[edge.source]*edge.weight*0.36
+            incoming_counts[edge.target]+=1
         for nid,node in self.nodes.items():
-            value=decay*node.activation + incoming.get(nid,0)
+            # Normalise high-degree hubs: otherwise a growing graph saturates
+            # every active unit at 1.0 and stops distinguishing new inputs.
+            normaliser=1.0 + max(0, incoming_counts.get(nid,0)-3)*0.36
+            value=decay*node.activation + incoming.get(nid,0)/normaliser
             # sparse competition/homeostatic inhibition
             value=max(0.0,value-inhibition*max(0.0,len(active)/active_budget-0.5))
             node.activation=clamp(value)
@@ -233,7 +240,9 @@ class Cortex:
         """Archive unused weak edges, never irreversibly remove them."""
         for e in self.edges.values():
             age=self.tick-e.last_active
-            if age>400 and abs(e.weight)<0.10 and e.stability<0.2:
+            if (age>160 and e.coactivation_count<=2 and
+                    abs(e.weight)<0.25 and e.stability<0.20 and
+                    e.relation not in {"evidence_for","contradicts"}):
                 if not e.archived:
                     e.archived=True;self._record("synapse_upsert",e)
         # no global deletion cap
@@ -251,7 +260,7 @@ class Cortex:
         hits=defaultdict(float)
         for e in self.edges.values():
             if e.source in ids:
-                hits[e.target]+=abs(e.weight)*(0.5 if e.archived else 1)
+                hits[e.target]+=max(0,e.weight)*(0.5 if e.archived else 1)
         for node in self.nodes.values():
             if node.id in ids:hits[node.id]+=1.0
         ranked=sorted(hits.items(),key=lambda x:x[1],reverse=True)[:limit]
