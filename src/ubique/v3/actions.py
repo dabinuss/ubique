@@ -99,14 +99,14 @@ def build_registry()->Registry:
     def connect(spec,ctx):
         cues=spec.get("cues") or []
         matches=ctx["cortex"].recall(cues)
-        if len(matches)<2:return Result("connect",True,"Only one association recalled")
+        if len(matches)<2:return Result("connect",False,"Insufficient evidence for a new connection")
         left,right=matches[0],matches[1]
         ctx["cortex"].connect(left["id"],right["id"],relation="analogous_to",weight=.09)
         return Result("connect",True,"Formed tentative analogy",payload={"analogy":[left,right]})
     def reflect(spec,ctx):
         cues=spec.get("cues") or []
         associations=ctx["cortex"].recall(cues,limit=12)
-        if not associations:return Result("explore",True,"No associations activated")
+        if not associations:return Result("explore",False,"No meaningful associations activated")
         active=ctx["cortex"].activate([a["label"] for a in associations[:7]],strength=.5)
         update=ctx["cortex"].learn(active,reward=0,rate=.01)
         return Result("explore",True,"Recombined existing memories",
