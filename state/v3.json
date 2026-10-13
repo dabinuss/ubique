@@ -1,29 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-13T21:50:40.828148+00:00",
-  "generation": 2073,
-  "focus": "An Introduction to Psychology",
-  "last_action": "consolidate",
+  "timestamp": "2026-10-13T22:04:15.320185+00:00",
+  "generation": 2074,
+  "focus": "Psychology of the Unconscious",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 2069,
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": "groq",
+  "last_provider_generation": 2074,
   "last_search_generation": 1909,
   "cortex": {
-    "nodes": 4845,
-    "synapses": 10084,
+    "nodes": 4850,
+    "synapses": 10104,
     "active": 120,
-    "archived_synapses": 0
+    "archived_synapses": 540
   },
   "memory": {
-    "episodes": 2523,
+    "episodes": 2527,
     "claims": 61,
     "stances": 0,
-    "interests": 25
+    "interests": 25,
+    "insights": 0
   },
   "journal": {
-    "events": 998,
+    "events": 1006,
+    "segments": 16,
+    "compressed_snapshot": true,
     "snapshot_events": 998
   },
   "migration": "v3_snapshot_and_deltas",
@@ -95,8 +98,8 @@
       "successes": 61
     },
     "explore": {
-      "attempts": 37,
-      "successes": 37
+      "attempts": 38,
+      "successes": 38
     },
     "consolidate": {
       "attempts": 40,
