@@ -19,6 +19,11 @@ from .world_model import WorldModel
 from .consolidation import Consolidator
 from .actions import Candidate, Result, build_registry, reading_candidates, select
 from .providers import ThinkingProviders, make_prompt
+from .workspace import Workspace
+from .planner import Planner
+from .self_model import SelfContinuity
+from .library import KnowledgeLibrary
+from .evolution import Evolution
 
 log=logging.getLogger("ubique.v3")
 MAX_CANDIDATES=20
@@ -35,6 +40,11 @@ class UbiqueV3:
         self.consolidator=Consolidator(self.journal,self.hippocampus,
                                        self.cortex,self.world)
         self.registry=build_registry()
+        self.workspace=Workspace(7)
+        self.planner=Planner(self.journal)
+        self.identity=SelfContinuity(self.journal)
+        self.library=KnowledgeLibrary(self.curiosity)
+        self.evolution=Evolution(self.journal,config)
         self.providers=ThinkingProviders(config) if enable_remote else None
         self.github=GitHubClient(config.github_token,config.github_repository)
         self.last_packet=None
@@ -53,6 +63,9 @@ class UbiqueV3:
         for item in self.curiosity.interests.values():
             candidates.append(item["topic"])
         # Adopt topics learned from actual sources, avoiding fixed philosophy goals.
+        workspace=self.workspace.compete(self.cortex,interest={
+            key:float(data.get("interest",0)) for key,data in self.curiosity.interests.items()})
+        candidates.extend([item.label for item in workspace])
         focus=self.curiosity.select(candidates,generation=generation)
         return focus,old
 
@@ -65,7 +78,7 @@ class UbiqueV3:
         last=int(prev.get("last_provider_generation",-100) or -100)
         if generation-last<6 and generation%17!=0:
             return {"provider":None,"actions":[],"questions":[],"associations":[]}
-        stances=read_json("brain.json",{}).get("current_stances",[])
+        stances=self.identity.stances(self.world.stances)
         associations=self.cortex.recall([focus],limit=10)
         prompt=make_prompt(focus=focus,associations=associations,
             interests=list(self.curiosity.interests.values())[-12:],
@@ -176,10 +189,9 @@ class UbiqueV3:
         if chosen.kind in {"evolve","edit_code"}:
             if not self.providers or not self.providers.available():
                 return Result(chosen.kind,False,"Remote code contributor deferred")
-            from ..brain.runtime import NeurocognitiveRuntime
-            ok,text,provider=NeurocognitiveRuntime(self.config)._evolve(
-                chosen.reason,generation)
-            return Result(chosen.kind,ok,text,provider=provider)
+            outcome=self.evolution.attempt(chosen.reason,generation=generation)
+            return Result(chosen.kind,outcome["success"],outcome["result"],
+                          provider=outcome["provider"])
         if chosen.kind=="experiment":
             kind=str(chosen.payload.get("experiment_type",""))
             from ..experiments import SAFE_EXPERIMENTS,run_experiment
@@ -189,6 +201,9 @@ class UbiqueV3:
                  self.providers.router,str(chosen.payload.get("hypothesis","")))
             return Result("experiment",bool(outcome.get("passed")),str(outcome)[:800],
                           provider=str(outcome.get("provider","deterministic")))
+        if chosen.kind=="library" and chosen.payload.get("action")=="request":
+            if not self.library.can_request(str(chosen.payload.get("title",""))):
+                return Result("library",True,"Equivalent reading wish already exists")
         return self.registry.execute(chosen,ctx)
 
     def _persist(self,generation:int,result:Result,chosen:Candidate,
@@ -224,7 +239,10 @@ class UbiqueV3:
                           "interests":len(self.curiosity.interests)},
                 "journal":{"events":self.journal.manifest["events"],
                            "snapshot_events":self.journal.manifest["snapshot_events"]},
-                "migration":self.migration.get("loaded_from")}
+                "migration":self.migration.get("loaded_from"),
+                "workspace":self.workspace.snapshot(),
+                "skills":self.identity.skills(),
+                "active_stances":len(self.identity.stances(self.world.stances))}
         write_json("v3.json",status)
         active=result.success and chosen.kind not in {"rest","consolidate"}
         write_json("pulse.json",{"timestamp":utc_now(),"generation":generation,
@@ -265,9 +283,13 @@ class UbiqueV3:
                 if generation-last_search>=20:
                     candidates.append(Candidate("search","Acquire new general knowledge about "+focus,
                               {"topic":focus},.76))
+            candidates=self.planner.rank(candidates,last=self.history)
             chosen=select(candidates,self.curiosity,self.history)
             result=self._act(chosen,generation=generation,focus=focus)
             self.history.append(chosen.kind)
+            self.planner.record(chosen.kind,result.success)
+            self.identity.experience(chosen.kind,outcome=result.success,
+                                      generation=generation,reason=chosen.reason)
             event=self.journal.append("action_outcome",{
                 "kind":chosen.kind,"success":result.success,
                 "provider":result.provider,"reason":chosen.reason,
