@@ -1,19 +1,19 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-13T09:50:44.661556+00:00",
-  "generation": 1913,
+  "timestamp": "2026-10-13T09:52:07.354167+00:00",
+  "generation": 1914,
   "focus": "The Story of the Mind",
-  "last_action": "explore",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 1910,
   "last_search_generation": 1909,
   "cortex": {
-    "nodes": 3968,
-    "synapses": 1366,
-    "active": 111,
+    "nodes": 3986,
+    "synapses": 1646,
+    "active": 120,
     "archived_synapses": 0
   },
   "memory": {
@@ -23,11 +23,19 @@
     "interests": 3
   },
   "journal": {
-    "events": 33,
+    "events": 38,
     "snapshot_events": 0
   },
   "migration": "v3_snapshot_and_deltas",
   "workspace": [
+    {
+      "node_id": "concept:c478361e6869af259706",
+      "label": "story",
+      "activation": 0.9910947626601534,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.7737424823249066
+    },
     {
       "node_id": "concept:6907de2e8144a57274c7",
       "label": "treatise",
@@ -35,6 +43,22 @@
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.7677064220183487
+    },
+    {
+      "node_id": "concept:244210e48437b6556980",
+      "label": "project",
+      "activation": 1.0,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.7677064220183487
+    },
+    {
+      "node_id": "schema:8be7c10d36a951d7",
+      "label": "runtime ↔ status",
+      "activation": 0.9484514265713526,
+      "novelty": 1.0,
+      "conflict": 0,
+      "score": 0.7631947418171035
     },
     {
       "node_id": "concept:73e960e12e02cf8e",
@@ -59,30 +83,6 @@
       "novelty": 0.8474576271186441,
       "conflict": 0,
       "score": 0.748813559322034
-    },
-    {
-      "node_id": "schema:8be7c10d36a951d7",
-      "label": "runtime ↔ status",
-      "activation": 0.7996919836236008,
-      "novelty": 1.0,
-      "conflict": 0,
-      "score": 0.6858398314842724
-    },
-    {
-      "node_id": "concept:10e86c6514d40f2a3e86",
-      "label": "judge",
-      "activation": 0.7993307088568187,
-      "novelty": 0.9569377990430623,
-      "conflict": 0,
-      "score": 0.6740251743471726
-    },
-    {
-      "node_id": "concept:244210e48437b6556980",
-      "label": "project",
-      "activation": 0.8058082575847428,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.666726715962415
     }
   ],
   "skills": {
@@ -95,6 +95,10 @@
       "successes": 3
     },
     "explore": {
+      "attempts": 1,
+      "successes": 1
+    },
+    "consolidate": {
       "attempts": 1,
       "successes": 1
     }
