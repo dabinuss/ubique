@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "timestamp": "2026-10-13T00:45:05.786501+00:00",
-  "generation": 1818,
+  "timestamp": "2026-10-13T00:46:01.706324+00:00",
+  "generation": 1819,
   "architecture": "neurocognitive-v2",
   "modulators": {
-    "novelty": 0.1813,
-    "surprise": 0.1494,
+    "novelty": 0.1703,
+    "surprise": 0.1391,
     "uncertainty": 0.25,
-    "salience": 0.5097,
-    "exploration": 0.2808,
-    "plasticity": 0.4218,
+    "salience": 0.5186,
+    "exploration": 0.2749,
+    "plasticity": 0.4434,
     "energy": 1.0,
-    "sleep_pressure": 0.0228
+    "sleep_pressure": 0.0329
   },
   "workspace": [
     {
@@ -19,72 +19,72 @@
       "kind": "concept",
       "label": "reading_request",
       "activation": 0.94,
-      "salience": 0.5097,
-      "novelty": 0.18126499999999998,
-      "surprise": 0.149445,
+      "salience": 0.6603049999999999,
+      "novelty": 0.170345,
+      "surprise": 0.13911,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6389
+      "ignition_score": 0.6739
     },
     {
       "id": "concept:db6c7eee7c83a8d1",
       "kind": "concept",
       "label": "fully_read_at",
       "activation": 0.94,
-      "salience": 0.5097,
-      "novelty": 0.18126499999999998,
-      "surprise": 0.149445,
+      "salience": 0.6603049999999999,
+      "novelty": 0.170345,
+      "surprise": 0.13911,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6389
+      "ignition_score": 0.6739
     },
     {
       "id": "concept:b11da62837100975",
       "kind": "concept",
       "label": "content_path",
       "activation": 0.94,
-      "salience": 0.5097,
-      "novelty": 0.18126499999999998,
-      "surprise": 0.149445,
+      "salience": 0.6603049999999999,
+      "novelty": 0.170345,
+      "surprise": 0.13911,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6389
+      "ignition_score": 0.6739
     },
     {
       "id": "concept:b067159d02fcae9c",
       "kind": "concept",
       "label": "parasympathetic",
       "activation": 0.94,
-      "salience": 0.5097,
-      "novelty": 0.18126499999999998,
-      "surprise": 0.149445,
+      "salience": 0.6603049999999999,
+      "novelty": 0.170345,
+      "surprise": 0.13911,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6389
+      "ignition_score": 0.6739
     },
     {
       "id": "concept:dff8fc3345095000",
       "kind": "concept",
       "label": "measurements",
       "activation": 0.94,
-      "salience": 0.5097,
-      "novelty": 0.18126499999999998,
-      "surprise": 0.149445,
+      "salience": 0.6603049999999999,
+      "novelty": 0.170345,
+      "surprise": 0.13911,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6389
+      "ignition_score": 0.6739
     },
     {
       "id": "concept:5cca6a702d78b833",
       "kind": "concept",
       "label": "already_requested",
       "activation": 0.94,
-      "salience": 0.5097,
-      "novelty": 0.18126499999999998,
-      "surprise": 0.149445,
+      "salience": 0.6603049999999999,
+      "novelty": 0.170345,
+      "surprise": 0.13911,
       "epistemic_status": "memory_index",
       "source": "semantic_network",
-      "ignition_score": 0.6389
+      "ignition_score": 0.6739
     },
     {
       "id": "episode:e08b98755cb36c",
@@ -104,7 +104,7 @@
       "configured": true,
       "disabled": false,
       "daily_limit": 20,
-      "remaining_calls": 14,
+      "remaining_calls": 13,
       "eligible": true
     },
     "groq": {
@@ -263,34 +263,34 @@
     }
   },
   "last_action": {
-    "kind": "consolidate",
-    "description": "Consolidate internal memory representations during low novelty and established working state.",
+    "kind": "rest",
+    "description": "Rest to maintain optimal energy and low sleep pressure while active task states and recent consolidations stabilize.",
     "source": "substrate:gemini",
-    "score": 0.47277
+    "score": 0.48451
   },
   "action_competition": [
     {
-      "kind": "consolidate",
+      "kind": "rest",
       "source": "substrate:gemini",
-      "score": 0.47277,
-      "description": "Consolidate internal memory representations during low novelty and established working state."
+      "score": 0.48451,
+      "description": "Rest to maintain optimal energy and low sleep pressure while active task states and recent consolidations stabilize."
     },
     {
       "kind": "attend",
       "source": "workspace",
-      "score": 0.28565,
+      "score": 0.31812,
       "description": "Continue processing the active workspace without external action."
     },
     {
       "kind": "consolidate",
       "source": "homeostasis",
-      "score": 0.25748,
+      "score": 0.18995,
       "description": "Replay and consolidate existing experience offline."
     },
     {
       "kind": "rest",
       "source": "homeostasis",
-      "score": 0.15238,
+      "score": 0.18861,
       "description": "Allow activation to decay without forcing cognition."
     }
   ],
@@ -348,10 +348,10 @@
       "revisable": true
     }
   ],
-  "consecutive_pulses": 1,
+  "consecutive_pulses": 0,
   "memory": {
-    "episodes": 2231,
-    "semantic_nodes": 3824,
+    "episodes": 2233,
+    "semantic_nodes": 3827,
     "synapses": 1200
   },
   "cortical_maintenance": {
@@ -362,7 +362,7 @@
     "stale_stance_nodes_removed": 0,
     "final": {
       "removed_nodes": 0,
-      "removed_edges": 50
+      "removed_edges": 44
     },
     "terminal_inhibition": {
       "startup": 335,
