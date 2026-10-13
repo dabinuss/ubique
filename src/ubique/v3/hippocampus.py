@@ -35,8 +35,8 @@ class Hippocampus:
 
     def all_episodes(self) -> list[dict]:
         old=list(self.legacy())
-        new=[event["data"] for event in self.journal.events()
-             if event.get("kind")=="episode"]
+        new=[{**event["data"], "id": event["id"], "timestamp": event["timestamp"]}
+             for event in self.journal.events() if event.get("kind")=="episode"]
         return old+new
 
     def encode(self, text: str, *, source: str, kind="experience",

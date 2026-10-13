@@ -132,9 +132,12 @@ class CognitiveSubstrateManager:
                 else:
                     continue
                 if statement:
+                    evidence = value.get("evidence_ids", []) if isinstance(value, dict) else []
                     out.append({
                         "statement": statement[:3000],
                         "confidence": confidence,
+                        "evidence_ids": [str(x)[:120] for x in evidence[:8]
+                                         if str(x).strip()] if isinstance(evidence, list) else [],
                     })
             return out
 

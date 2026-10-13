@@ -46,7 +46,11 @@ def make_prompt(*,focus:str,associations:list[dict],interests:list[dict],
             "Follow the currently interesting subject, including nonphilosophical subjects. "
             "Suggest connections, questions and genuine learnable actions, without inventing observations. "
             "For book reading use existing item ids supplied by Ubique. "
-            "Return JSON containing associations, questions, hypotheses, stance_updates "
-            "and actions. Actions should be read/library, experiment, evolve, connect, explore "
+            "Return JSON containing associations, questions, hypotheses, world_model_updates, "
+            "stance_updates and actions. When forming a new interpretation or revisable stance, "
+            "cite exact evidence_ids that appear in the episode context and explain uncertainty. "
+            "Never cite a model proposal or a question as independent evidence. "
+            "When useful compare two distinct books and challenge existing assumptions. "
+            "Actions should be read/library, experiment, evolve, connect, explore "
             "or consolidate; do not require self-optimization. Label hypotheses as uncertain. "
             "Context: "+json.dumps(context,ensure_ascii=False)[:18000])
