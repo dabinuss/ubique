@@ -143,3 +143,41 @@ def test_model_claims_do_not_require_unverified_self_stances(tmp_path):
     packet["stance_updates"][0]["evidence_ids"]=["invented:episode"]
     agent._handle_model(packet, 4)
     assert not agent.world.stances
+
+
+def test_old_uncompressed_snapshot_is_converted_without_offset_change(tmp_path):
+    import ubique.v3.storage as storage
+    from ubique.v3.representation import Cortex
+    root=tmp_path/"v3"
+    journal=Journal(root)
+    graph=Cortex()
+    graph.activate(["remember", "truth"])
+    old={"schema_version":3,"generation":17,"events":3,"graph":graph.as_dict()}
+    storage.write_atomic(root/"cortex_snapshot.json",old)
+    journal.manifest["snapshot_events"]=3
+    journal.manifest["snapshot_sha256"]=storage.digest(storage.canonical(old))
+    storage.write_atomic(root/"manifest.json",journal.manifest)
+    reopened=Journal(root)
+    assert reopened.snapshot_path.exists()
+    assert not reopened.legacy_snapshot_path.exists()
+    assert reopened.manifest["snapshot_events"]==3
+    assert reopened.load_snapshot()==old
+
+
+def test_repeated_noop_actions_are_failures(tmp_path):
+    from ubique.v3.actions import build_registry, Candidate
+    cortex=Cortex()
+    registry=build_registry()
+    result=registry.execute(Candidate("connect","nothing",{"cues":["unknown"]}),
+        {"cortex":cortex})
+    assert not result.success
+
+
+def test_multi_source_research_fallback(monkeypatch):
+    import ubique.v3.research as research
+    monkeypatch.setattr(research,"wikipedia",lambda topic:[])
+    fake=[{"title":"Memory and cognition","text":"The mind learns from sources",
+           "url":"https://openalex.org/W123","source":"OpenAlex",
+           "attribution":"research metadata"}]
+    monkeypatch.setattr(research,"openalex",lambda topic:fake)
+    assert research.discover("mind")==fake
