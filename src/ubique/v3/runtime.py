@@ -66,7 +66,12 @@ class UbiqueV3:
         workspace=self.workspace.compete(self.cortex,interest={
             key:float(data.get("interest",0)) for key,data in self.curiosity.interests.items()})
         candidates.extend([item.label for item in workspace])
+        books=[x.payload["title"] for x in reading_candidates(self.curiosity)]
         focus=self.curiosity.select(candidates,generation=generation)
+        # A stray token extracted from boilerplate must not eclipse real books.
+        if books and (not focus or
+            (len(focus.split())==1 and self.curiosity.score(focus)<.5)):
+            focus=self.curiosity.select(books,generation=generation)
         return focus,old
 
     def _provider_packet(self,generation:int,focus:str,recall:list[dict])->dict:
@@ -286,6 +291,20 @@ class UbiqueV3:
             candidates=self.planner.rank(candidates,last=self.history)
             chosen=select(candidates,self.curiosity,self.history)
             result=self._act(chosen,generation=generation,focus=focus)
+            if not result.success and chosen.kind in {"search","read"}:
+                # Preserve the failed attempt as experience, but never waste
+                # the entire learning cycle on a blocked external source.
+                self.journal.append("action_outcome",{
+                    "kind":chosen.kind,"success":False,"reason":chosen.reason,
+                    "effect":result.effect,"provider":result.provider},
+                    generation=generation)
+                others=[x for x in candidates if x is not chosen and
+                        (x.kind!="read" or x.payload.get("item_id")!=chosen.payload.get("item_id"))]
+                for alternative in others[:5]:
+                    attempt=self._act(alternative,generation=generation,focus=focus)
+                    if attempt.success:
+                        chosen,result=alternative,attempt
+                        break
             self.history.append(chosen.kind)
             self.planner.record(chosen.kind,result.success)
             self.identity.experience(chosen.kind,outcome=result.success,

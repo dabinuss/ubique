@@ -17,6 +17,8 @@ def wikipedia(topic:str,*,language="en") -> list[dict]:
             "exintro":1,"explaintext":1,"inprop":"url","format":"json"}
     with httpx.Client(timeout=12,headers={"User-Agent":USER_AGENT}) as client:
         response=client.get(url,params=params)
+        if response.status_code in {403,404,429}:
+            return []  # Source denied; local reading continues instead.
         response.raise_for_status()
         payload=response.json()
     pages=(payload.get("query") or {}).get("pages",{})

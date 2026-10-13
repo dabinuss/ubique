@@ -56,8 +56,8 @@ def reading_candidates(curiosity:Curiosity)->list[Candidate]:
         interest=curiosity.score(topic)
         repeats=int(x.get("read_count",0))
         result.append(Candidate("read","Continue actual source text: "+topic,
-           {"item_id":x.get("id"),"title":topic},score=.45+interest*.40
-           -.04*min(5,repeats),source="library"))
+           {"item_id":x.get("id"),"title":topic},score=.67+interest*.35
+           -.025*min(7,repeats),source="library"))
     return sorted(result,key=lambda x:x.score,reverse=True)[:6]
 
 def build_registry()->Registry:
