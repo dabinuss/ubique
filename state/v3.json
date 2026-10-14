@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-14T19:12:36.849139+00:00",
-  "generation": 2320,
+  "timestamp": "2026-10-14T19:14:10.955321+00:00",
+  "generation": 2321,
   "focus": "The Story of the Mind",
-  "last_action": "explore",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 2318,
   "last_search_generation": 2277,
   "cortex": {
-    "nodes": 6074,
-    "synapses": 22889,
+    "nodes": 6079,
+    "synapses": 22967,
     "active": 120,
-    "archived_synapses": 10123
+    "archived_synapses": 10193
   },
   "memory": {
     "episodes": 2648,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 2679,
+    "events": 2684,
     "segments": 79,
     "compressed_snapshot": true,
     "snapshot_events": 2679
@@ -35,60 +35,60 @@
   "evidence_reviews": 2,
   "workspace": [
     {
-      "node_id": "concept:ad936fcbed631fa67e05",
-      "label": "group",
-      "activation": 0.660114140288,
-      "novelty": 0.8810572687224669,
+      "node_id": "concept:6120d7ff00ac60e0b8f9",
+      "label": "those",
+      "activation": 0.6696699567710407,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.9211448155048261
-    },
-    {
-      "node_id": "concept:1f6f699c758927baadc8",
-      "label": "dreams",
-      "activation": 0.6624511196512639,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.9132881415406913
-    },
-    {
-      "node_id": "concept:d888a3e4ea95d4043e8c",
-      "label": "indeed",
-      "activation": 0.660114140288,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.9120729122717939
-    },
-    {
-      "node_id": "concept:90c0d99050e146cffec1",
-      "label": "formed",
-      "activation": 0.660114140288,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.9120729122717939
+      "score": 0.8744352740726653
     },
     {
       "node_id": "concept:16367aacb67a4a017c8d",
       "label": "second",
-      "activation": 0.7006839354683061,
-      "novelty": 0.7604562737642586,
+      "activation": 0.6456663498337054,
+      "novelty": 0.7352941176470589,
       "conflict": 0,
-      "score": 0.909678840359869
-    },
-    {
-      "node_id": "concept:6120d7ff00ac60e0b8f9",
-      "label": "those",
-      "activation": 0.7125472118914801,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.9026953686889079
+      "score": 0.8742759136782328
     },
     {
       "node_id": "concept:63bd7065ef1e165a0425",
       "label": "life",
-      "activation": 0.708397705872104,
-      "novelty": 0.7117437722419929,
+      "activation": 0.6608741748064136,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.9005376255588322
+      "score": 0.8698614674510592
+    },
+    {
+      "node_id": "concept:ad936fcbed631fa67e05",
+      "label": "group",
+      "activation": 0.5728140176589837,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.8666768485047054
+    },
+    {
+      "node_id": "concept:1f6f699c758927baadc8",
+      "label": "dreams",
+      "activation": 0.5769126911795703,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.8604027626786828
+    },
+    {
+      "node_id": "concept:d888a3e4ea95d4043e8c",
+      "label": "indeed",
+      "activation": 0.5728140176589837,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.8582714524479778
+    },
+    {
+      "node_id": "concept:90c0d99050e146cffec1",
+      "label": "formed",
+      "activation": 0.5728140176589837,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.8582714524479778
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 100
     },
     "consolidate": {
-      "attempts": 114,
-      "successes": 114
+      "attempts": 115,
+      "successes": 115
     },
     "connect": {
       "attempts": 79,
