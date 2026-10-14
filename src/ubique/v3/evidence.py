@@ -59,7 +59,7 @@ def assess(statement: str, cited_episodes: list[dict]) -> EvidenceAssessment:
         passage_tokens = informative_tokens(passage)
         # Use an actual nearby claim span rather than combining unrelated
         # words and negations from a whole multi-paragraph chapter.
-        spans = re.split(r"(?<=[.!?])\\s+", passage)
+        spans = re.split(r"(?<=[.!?])\s+", passage)
         closest = max(spans, key=lambda x:len(claim & informative_tokens(x)),
                       default=passage)
         local_hits = len(claim & informative_tokens(closest))
@@ -68,8 +68,8 @@ def assess(statement: str, cited_episodes: list[dict]) -> EvidenceAssessment:
         best = max(best,coverage)
         common = max(common,hits)
         independent.add(str(episode.get("source") or episode.get("id")))
-        assertion_neg = bool(set(re.findall(r"\\b[\\w]+\\b",statement.casefold())) & DENIALS)
-        local_neg = bool(set(re.findall(r"\\b[\\w]+\\b",closest.casefold())) & DENIALS)
+        assertion_neg = bool(set(re.findall(r"\b[\w]+\b",statement.casefold())) & DENIALS)
+        local_neg = bool(set(re.findall(r"\b[\w]+\b",closest.casefold())) & DENIALS)
         if local_hits >= 3 and (local_hits/max(1,len(claim))) >= .65 and assertion_neg != local_neg:
             contradictions += 1
     if contradictions:
