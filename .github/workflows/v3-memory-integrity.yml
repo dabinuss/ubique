@@ -62,6 +62,7 @@ jobs:
           from ubique.v3.storage import Journal
           from ubique.v3.runtime import UbiqueV3
           from ubique.v3.evidence import assess, is_system_topic
+          from ubique.v3.hippocampus import terms
 
           journal = Journal(ROOT / "memory" / "v3")
           before = int(journal.manifest["events"])
@@ -79,6 +80,20 @@ jobs:
           sources = [ep for ep in episodes if ep.get("epistemic_status") == "source_passage"]
           assert sources and brain.world.claims
           assert any(not is_system_topic(s) for s in items), items
+          # A real book-grounded workspace should not return to legacy CI chatter.
+          recent_books = [ep for ep in reversed(episodes)
+                          if ep.get("epistemic_status") == "source_passage"
+                          and str(ep.get("source", "")).startswith("library:")][:4]
+          grounding = set()
+          for ep in recent_books:
+              grounding.update(terms(str(ep.get("text", ""))[:3500], 60))
+              grounding.update(terms(str(ep.get("payload", {}).get("title", "")), 12))
+          supported = sum(1 for n in brain.cortex.nodes.values()
+                          if n.activation >= .03 and n.label.casefold() in grounding)
+          selected = sum(1 for title in items if title.casefold() in grounding)
+          if supported >= 2:
+              assert selected >= 2, (items, supported, selected)
+          print("Source-grounded workspace:", selected, "of", len(items))
           unrelated = assess("Unicorns are constructed from strawberry plastic", sources[:1])
           assert unrelated.verdict == "unrelated"
           print("Indexed events:", before)
