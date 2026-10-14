@@ -170,3 +170,22 @@ def test_reading_sessions_continue_then_rotate(monkeypatch,tmp_path):
     scored=agent._candidates(15,"uncertainty",[],[])
     values={a.payload.get("title"):a.score for a in scored if a.kind=="read"}
     assert values["book b"]>values["book a"]
+
+
+def test_reading_grounded_workspace_outranks_generic_old_issue_vocabulary():
+    brain=Cortex()
+    labels=["uninterrupted","expanded","lightweight","successful",
+            "memory","attention","psychology","evolution"]
+    brain.activate(labels,strength=.85)
+    brain.tick=1
+    workspace=Workspace(capacity=4)
+    selected=[i.label for i in workspace.compete(
+        brain,grounding={"memory","attention","psychology","evolution"})]
+    assert set(selected)=={"memory","attention","psychology","evolution"}
+
+
+def test_technical_memories_remain_retrievable_after_grounded_competition():
+    brain=Cortex()
+    brain.activate(["runtime","attention","knowledge","memory"],strength=1)
+    Workspace().compete(brain,grounding={"attention","knowledge","memory"})
+    assert any(n.label=="runtime" for n in brain.nodes.values())
