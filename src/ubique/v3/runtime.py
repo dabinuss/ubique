@@ -180,6 +180,23 @@ class UbiqueV3:
     def _candidates(self,generation:int,focus:str,recall:list[dict],
                     model:list[Candidate])->list[Candidate]:
         candidates=reading_candidates(self.curiosity)
+        # Sustain one line of reading long enough to connect consecutive
+        # chapters, then give the other books room again.
+        read_history=[e.get("data",{}) for e in self.journal.events()
+                      if e["kind"]=="action_outcome"
+                      and e.get("data",{}).get("kind")=="read"
+                      and e.get("data",{}).get("success")][-8:]
+        if read_history:
+            last_title=str(read_history[-1].get("payload",{}).get("title",""))
+            last_streak=0
+            for item in reversed(read_history):
+                if item.get("payload",{}).get("title")==last_title:
+                    last_streak+=1
+                else:
+                    break
+            for candidate in candidates:
+                if candidate.payload.get("title")==last_title:
+                    candidate.score+=(.21 if last_streak<4 else -.22)
         candidates+=model
         active=self.cortex.recall([focus])
         if active:
