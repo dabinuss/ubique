@@ -1,30 +1,30 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-14T07:44:40.262594+00:00",
-  "generation": 2187,
+  "timestamp": "2026-10-14T07:46:12.133874+00:00",
+  "generation": 2188,
   "focus": "Analysis of Mind [1919]",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 2182,
+  "last_provider": "gemini",
+  "last_provider_generation": 2188,
   "last_search_generation": 2185,
   "cortex": {
-    "nodes": 5502,
-    "synapses": 16941,
+    "nodes": 5509,
+    "synapses": 16981,
     "active": 120,
-    "archived_synapses": 5001
+    "archived_synapses": 5155
   },
   "memory": {
-    "episodes": 2584,
-    "claims": 164,
-    "stances": 10,
+    "episodes": 2586,
+    "claims": 168,
+    "stances": 11,
     "interests": 33,
-    "insights": 71
+    "insights": 73
   },
   "journal": {
-    "events": 1788,
+    "events": 1802,
     "segments": 44,
     "compressed_snapshot": true,
     "snapshot_events": 1746
@@ -74,10 +74,10 @@
     {
       "node_id": "concept:7f2e3f629e4df5c9",
       "label": "constraints",
-      "activation": 0.9994586331865163,
+      "activation": 0.9994601968600021,
       "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.7401266525222946
+      "score": 0.7401274656325072
     },
     {
       "node_id": "concept:c0e5d7e81f52dc5e",
@@ -94,8 +94,8 @@
       "successes": 5
     },
     "read": {
-      "attempts": 84,
-      "successes": 84
+      "attempts": 85,
+      "successes": 85
     },
     "explore": {
       "attempts": 65,
@@ -110,5 +110,5 @@
       "successes": 50
     }
   },
-  "active_stances": 13
+  "active_stances": 14
 }
