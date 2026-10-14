@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-14T13:31:06.445793+00:00",
-  "generation": 2256,
+  "timestamp": "2026-10-14T13:44:33.975933+00:00",
+  "generation": 2257,
   "focus": "A treatise concerning the principles of human knowledge, 1734",
   "last_action": "consolidate",
   "last_action_success": true,
   "last_action_detail": "nrem consolidation",
-  "last_provider": "groq",
+  "last_provider": null,
   "last_provider_generation": 2256,
   "last_search_generation": 2254,
   "cortex": {
-    "nodes": 5849,
-    "synapses": 20529,
+    "nodes": 5853,
+    "synapses": 20671,
     "active": 120,
-    "archived_synapses": 7659
+    "archived_synapses": 7861
   },
   "memory": {
     "episodes": 2622,
@@ -24,7 +24,7 @@
     "insights": 113
   },
   "journal": {
-    "events": 2265,
+    "events": 2270,
     "segments": 62,
     "compressed_snapshot": true,
     "snapshot_events": 2265
@@ -74,10 +74,10 @@
     {
       "node_id": "concept:7f2e3f629e4df5c9",
       "label": "constraints",
-      "activation": 0.9987669520446427,
+      "activation": 0.996893018323666,
       "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.7397669783285203
+      "score": 0.7387925327936125
     },
     {
       "node_id": "concept:c0e5d7e81f52dc5e",
@@ -102,8 +102,8 @@
       "successes": 84
     },
     "consolidate": {
-      "attempts": 95,
-      "successes": 95
+      "attempts": 96,
+      "successes": 96
     },
     "connect": {
       "attempts": 64,
