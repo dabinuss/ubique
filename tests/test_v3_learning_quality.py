@@ -189,3 +189,19 @@ def test_technical_memories_remain_retrievable_after_grounded_competition():
     brain.activate(["runtime","attention","knowledge","memory"],strength=1)
     Workspace().compete(brain,grounding={"attention","knowledge","memory"})
     assert any(n.label=="runtime" for n in brain.nodes.values())
+
+
+def test_real_book_source_is_primed_before_focus_selection(tmp_path):
+    brain=UbiqueV3(Config.from_env(),storage_root=tmp_path/"v3",enable_remote=False)
+    reading=brain.hippocampus.encode(
+        "Biological evolution changes the relationships among organisms. "
+        "Memory and attention influence human learning and perception.",
+        source="library:brain-and-mind",
+        epistemic_status="source_passage",
+        payload={"title":"Human Brain and Biological Evolution"})
+    labels=set(["human","brain","biological","evolution","memory","attention"])
+    focus, episodes=brain._recent_focus(1000)
+    activated={n.label for n in brain.cortex.nodes.values()
+               if n.activation>=.45 and n.label in labels}
+    assert len(activated)>=3,activated
+    assert any(x.label in activated for x in brain.workspace.items)
