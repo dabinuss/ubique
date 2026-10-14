@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-14T19:50:58.694523+00:00",
-  "generation": 2329,
+  "timestamp": "2026-10-14T19:52:33.778412+00:00",
+  "generation": 2330,
   "focus": "The Physical Basis of Mind",
-  "last_action": "connect",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 2329,
   "last_search_generation": 2323,
   "cortex": {
-    "nodes": 6112,
-    "synapses": 23193,
+    "nodes": 6124,
+    "synapses": 23325,
     "active": 120,
-    "archived_synapses": 10335
+    "archived_synapses": 10259
   },
   "memory": {
     "episodes": 2654,
@@ -26,10 +26,10 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 2757,
+    "events": 2762,
     "segments": 81,
     "compressed_snapshot": true,
-    "snapshot_events": 2679
+    "snapshot_events": 2762
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2,
@@ -37,58 +37,58 @@
     {
       "node_id": "concept:b5fb12918197ed9ceed1",
       "label": "aised",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.7009001661547303,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
+      "score": 0.9423535489555259
     },
     {
       "node_id": "concept:237ab3365842e475721a",
       "label": "desert",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.7009001661547303,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
+      "score": 0.9423535489555259
     },
     {
       "node_id": "concept:1f58b1e965af65127ac8",
       "label": "cars",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.6649430960107303,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
+      "score": 0.9236558724806458
     },
     {
       "node_id": "concept:91ed2ef15eee7102873d",
       "label": "jungle",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.6649430960107303,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
+      "score": 0.9236558724806458
     },
     {
       "node_id": "concept:9ecfb3a042a271f4389e",
       "label": "happen",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.6649430960107303,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
+      "score": 0.9236558724806458
     },
     {
       "node_id": "concept:04e84b3a86c2a0163fba",
       "label": "miracle",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.6649430960107303,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
+      "score": 0.9236558724806458
     },
     {
       "node_id": "concept:7e1ddfc85ae45a953302",
       "label": "things",
-      "activation": 0.76,
-      "novelty": 0.8810572687224669,
+      "activation": 0.6649430960107303,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.9730854625550662
+      "score": 0.9145839692476136
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 101
     },
     "consolidate": {
-      "attempts": 116,
-      "successes": 116
+      "attempts": 117,
+      "successes": 117
     },
     "connect": {
       "attempts": 81,
