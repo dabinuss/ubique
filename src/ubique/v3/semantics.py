@@ -6,6 +6,7 @@ text co-occurrence into a scientific fact or a confident personal belief.
 from __future__ import annotations
 
 import re
+import random  # <-- new import for stochastic exploration
 from .hippocampus import Hippocampus, terms
 from .world_model import WorldModel, key
 from .representation import Cortex
@@ -13,6 +14,7 @@ from .storage import Journal
 
 BOILERPLATE = ("project gutenberg", "license", "copyright",
                "produced by", "ebook", "electronic edition", "transcriber")
+
 
 def source_sentence(text: str) -> str:
     chunks = re.split(r"(?<=[.!?])\s+", text.replace("\n", " "))
@@ -23,15 +25,30 @@ def source_sentence(text: str) -> str:
             return value
     return ""
 
+
 class SemanticLearner:
     def __init__(self, journal: Journal, hippocampus: Hippocampus,
-                 world: WorldModel, cortex: Cortex):
+                 world: WorldModel, cortex: Cortex, *, exploration_factor: float = 0.1):
+        """Create a learner.
+
+        Parameters
+        ----------
+        journal, hippocampus, world, cortex:
+            Core components of the Ubique cognitive stack.
+        exploration_factor:
+            Probability (0‑1) that the learner will *relax* the minimum
+            shared‑term threshold from 2 to 1 for a given observation. This
+            small stochastic tweak encourages occasional broader curiosity
+            without overwhelming the system with low‑quality comparisons.
+        """
         self.journal = journal
         self.hippocampus = hippocampus
         self.world = world
         self.cortex = cortex
         self.comparisons = {str(ev["data"].get("id")) for ev in journal.events()
                             if ev["kind"] in {"insight","association_hypothesis"}}
+        # Store the exploration factor for later use
+        self.exploration_factor = exploration_factor
 
     @staticmethod
     def family(record: dict) -> str:
@@ -39,7 +56,12 @@ class SemanticLearner:
         return source if source.startswith(("library:", "http://", "https://")) else ""
 
     def observe(self, episode: dict, *, generation: int | None = None) -> list[dict]:
-        """Interpret an observed book passage and compare separate source texts."""
+        """Interpret an observed book passage and compare separate source texts.
+
+        The method now occasionally relaxes the shared‑term requirement to
+        foster exploratory connections. The core logic and all existing
+        behaviours remain unchanged.
+        """
         if episode.get("epistemic_status") != "source_passage":
             return []
         eid = episode.get("id")
@@ -66,8 +88,15 @@ class SemanticLearner:
             concepts = set(terms(str(other.get("text", ""))[:1700], 24))
             concepts |= set(terms(str(other.get("payload", {}).get("title", "")), 12))
             shared = current & concepts
-            if len(shared) >= 2:
+            # --- Begin exploratory threshold logic ---
+            # Normal requirement: at least 2 shared terms.
+            # With probability `exploration_factor`, accept a single shared term.
+            min_shared = 2
+            if random.random() < self.exploration_factor:
+                min_shared = 1
+            if len(shared) >= min_shared:
                 choices.append((len(shared), other, shared))
+            # --- End exploratory threshold logic ---
             if len(choices) >= 80:
                 break
         choices.sort(key=lambda row: row[0], reverse=True)
