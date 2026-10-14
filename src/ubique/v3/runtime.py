@@ -68,7 +68,8 @@ class UbiqueV3:
                 if len(str(c))>=4 and not is_system_topic(c):
                     candidates.append(str(c))
         for item in self.curiosity.interests.values():
-            candidates.append(item["topic"])
+            if not is_system_topic(item["topic"]):
+                candidates.append(item["topic"])
         # Adopt topics learned from actual sources, avoiding fixed philosophy goals.
         workspace=self.workspace.compete(self.cortex,interest={
             key:float(data.get("interest",0)) for key,data in self.curiosity.interests.items()})
@@ -287,7 +288,13 @@ class UbiqueV3:
                           "claims":len(self.world.claims),
                           "stances":len(self.world.stances),
                           "interests":len(self.curiosity.interests),
-                          "insights":len(self.semantics.comparisons)},
+                          "associative_comparisons":len(self.semantics.comparisons),
+                          "screened_interpretations":sum(1 for e in self.journal.events()
+                              if e["kind"]=="evidence_review" and
+                              e["data"].get("assessment",{}).get("verdict")
+                              in {"plausible","directly_supported"}),
+                          "historical_insight_labels":sum(1 for e in self.journal.events()
+                              if e["kind"]=="insight")},
                 "journal":{"events":self.journal.manifest["events"],
                            "segments":len(self.journal._files()),
                            "compressed_snapshot":self.journal.snapshot_path.is_file(),
@@ -343,15 +350,18 @@ class UbiqueV3:
             failures=sum(1 for kind in ("search","connect","experiment","read")
                          if self.planner.quality[kind][1]>=3
                          and self.planner.quality[kind][0]/self.planner.quality[kind][1]<.85)
-            if failures and self.providers and self.providers.available():
+            if self.providers and self.providers.available() and (failures or
+                  (len(self.semantics.comparisons)>=12 and generation%79==0)):
                 recent_changes=[e for e in self.journal.events()
                                 if e["kind"]=="change_intent"][-1:]
                 last_change=int(recent_changes[-1]["generation"] or 0) if recent_changes else -1000
                 if generation-last_change>=72:
+                    reason=("Investigate recurring failures in the v3 learning and action cycle."
+                            if failures else "Examine what the recent cross-source learning has revealed.")
                     candidates.append(Candidate("evolve",
-                        "Investigate recurrent failures in the v3 learning and action cycle. "
-                        "Propose one small reversible change to improve understanding or autonomy.",
-                        {"cause":"observed_recurring_failures"},.78,
+                        reason+" Propose one small reversible change to improve the curiosity, "
+                        "reasoning or experiential learning process.",
+                        {"cause":"observed_learning"},.84,
                         source="autonomous_observation"))
             candidates=self.planner.rank(candidates,last=self.history)
             chosen=select(candidates,self.curiosity,self.history)
