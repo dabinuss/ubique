@@ -148,3 +148,25 @@ def test_infrastructure_filter_keeps_nontechnical_phrase():
     assert is_system_topic("runtime ↔ status")
     assert not is_system_topic("the continuous emergence of life")
     assert not is_system_topic("human psychological constraints")
+
+
+def test_reading_sessions_continue_then_rotate(monkeypatch,tmp_path):
+    from ubique.v3.actions import Candidate
+    import ubique.v3.runtime as runtime
+    def books(_):
+        return [Candidate("read","a",{"title":"book a","item_id":"a"},.65),
+                Candidate("read","b",{"title":"book b","item_id":"b"},.65)]
+    monkeypatch.setattr(runtime,"reading_candidates",books)
+    agent=UbiqueV3(Config.from_env(),storage_root=tmp_path/"v3",enable_remote=False)
+    for n in range(1):
+        agent.journal.append("action_outcome",{"kind":"read","success":True,
+                                           "payload":{"title":"book a"}},generation=n)
+    scored=agent._candidates(10,"uncertainty",[],[])
+    values={a.payload.get("title"):a.score for a in scored if a.kind=="read"}
+    assert values["book a"]>values["book b"]
+    for n in range(1,4):
+        agent.journal.append("action_outcome",{"kind":"read","success":True,
+                                           "payload":{"title":"book a"}},generation=n)
+    scored=agent._candidates(15,"uncertainty",[],[])
+    values={a.payload.get("title"):a.score for a in scored if a.kind=="read"}
+    assert values["book b"]>values["book a"]
