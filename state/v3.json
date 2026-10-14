@@ -1,30 +1,30 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-14T14:01:17.375634+00:00",
-  "generation": 2260,
+  "timestamp": "2026-10-14T14:02:56.714979+00:00",
+  "generation": 2261,
   "focus": "A Treatise Concerning the Principles of Human Knowledge",
-  "last_action": "connect",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": null,
-  "last_provider_generation": 2256,
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": "groq",
+  "last_provider_generation": 2261,
   "last_search_generation": 2254,
   "cortex": {
-    "nodes": 5853,
-    "synapses": 20671,
+    "nodes": 5857,
+    "synapses": 20708,
     "active": 120,
-    "archived_synapses": 7955
+    "archived_synapses": 7968
   },
   "memory": {
-    "episodes": 2622,
-    "claims": 224,
-    "stances": 18,
+    "episodes": 2623,
+    "claims": 226,
+    "stances": 19,
     "interests": 41,
-    "insights": 113
+    "insights": 115
   },
   "journal": {
-    "events": 2282,
+    "events": 2295,
     "segments": 63,
     "compressed_snapshot": true,
     "snapshot_events": 2265
@@ -74,10 +74,10 @@
     {
       "node_id": "concept:7f2e3f629e4df5c9",
       "label": "constraints",
-      "activation": 0.9980479325506124,
+      "activation": 0.9988034223385609,
       "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.7393930881916245
+      "score": 0.7397859428813578
     },
     {
       "node_id": "concept:c0e5d7e81f52dc5e",
@@ -94,8 +94,8 @@
       "successes": 8
     },
     "read": {
-      "attempts": 96,
-      "successes": 96
+      "attempts": 97,
+      "successes": 97
     },
     "explore": {
       "attempts": 85,
@@ -110,5 +110,5 @@
       "successes": 66
     }
   },
-  "active_stances": 21
+  "active_stances": 22
 }
