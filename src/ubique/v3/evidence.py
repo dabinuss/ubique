@@ -13,7 +13,9 @@ DENIALS = {"not", "never", "no", "without", "none", "cannot", "kein", "keine",
            "nicht", "niemals", "weder", "false", "incorrect", "impossible"}
 SOURCE_STATUSES = {"source_passage", "observed", "observed_action_outcome"}
 SYSTEM_MARKERS = ("runtime", "heartbeat", "provider", "github", "groq", "gemini",
-                  "issue:", "api key", "token", "rate limit", "deployment", "telemetry")
+                  "issue:", "issue closure", "smoke test", "preflight",
+                  "workflow", "pytest", "autonomous cycle",
+                  "api key", "token", "rate limit", "deployment", "telemetry")
 
 def informative_tokens(text: str) -> set[str]:
     noisy = {"source", "passage", "study", "people", "human", "different", "distinct",
