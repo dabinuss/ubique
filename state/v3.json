@@ -1,30 +1,30 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-14T03:26:37.416358+00:00",
-  "generation": 2136,
+  "timestamp": "2026-10-14T03:28:11.266865+00:00",
+  "generation": 2137,
   "focus": "The World as Will and Idea, Volume 1",
-  "last_action": "read",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 2131,
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": "gemini",
+  "last_provider_generation": 2137,
   "last_search_generation": 2116,
   "cortex": {
-    "nodes": 5231,
-    "synapses": 14089,
+    "nodes": 5233,
+    "synapses": 14091,
     "active": 120,
-    "archived_synapses": 2933
+    "archived_synapses": 2949
   },
   "memory": {
-    "episodes": 2557,
+    "episodes": 2559,
     "claims": 117,
-    "stances": 3,
+    "stances": 4,
     "interests": 28,
     "insights": 38
   },
   "journal": {
-    "events": 1426,
+    "events": 1433,
     "segments": 31,
     "compressed_snapshot": true,
     "snapshot_events": 1417
@@ -74,10 +74,10 @@
     {
       "node_id": "concept:7f2e3f629e4df5c9",
       "label": "constraints",
-      "activation": 0.9999041176470589,
+      "activation": 0.9998254941176472,
       "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.7403583044417767
+      "score": 0.7403174202064826
     },
     {
       "node_id": "concept:c0e5d7e81f52dc5e",
@@ -98,8 +98,8 @@
       "successes": 75
     },
     "explore": {
-      "attempts": 52,
-      "successes": 52
+      "attempts": 53,
+      "successes": 53
     },
     "consolidate": {
       "attempts": 59,
@@ -110,5 +110,5 @@
       "successes": 39
     }
   },
-  "active_stances": 6
+  "active_stances": 7
 }
