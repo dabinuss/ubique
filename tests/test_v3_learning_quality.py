@@ -101,7 +101,8 @@ def test_v3_evolution_generates_source_grounded_reversible_proposal(tmp_path,mon
                 "changes":[{"path":"src/ubique/v3/workspace.py","content":"def think():\n    return 2\n"}]}))
     monkeypatch.setattr(evolution,"NeurocognitiveRuntime",Brain)
     monkeypatch.setattr(evolution,"EVOLVABLE",("src/ubique/v3/workspace.py",))
-    monkeypatch.setattr(evolution,"run_evolution",lambda *a,**k:SimpleNamespace(
+    from ubique.evolution import EvolutionOutcome
+    monkeypatch.setattr(evolution,"run_evolution",lambda *a,**k:EvolutionOutcome(
         accepted=True,title="Try new associations",summary="test",branch="test",pr_url="url",
         commit_sha="abcd",reason=None,baseline_score=None,candidate_score=None))
     journal=Journal(tmp_path/"memory"/"v3")
