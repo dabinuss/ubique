@@ -25,6 +25,7 @@ from .self_model import SelfContinuity
 from .library import KnowledgeLibrary
 from .evolution import Evolution
 from .semantics import SemanticLearner
+from .evidence import assess, is_system_topic
 
 log=logging.getLogger("ubique.v3")
 MAX_CANDIDATES=20
@@ -61,14 +62,19 @@ class UbiqueV3:
              if e.get("concepts") or e.get("text")]
         candidates=[]
         for e in old:
+            if is_system_topic(str(e.get("source",""))+" "+str(e.get("text",""))[:250]):
+                continue
             for c in e.get("concepts",[])[:5]:
-                if len(str(c))>=4:candidates.append(str(c))
+                if len(str(c))>=4 and not is_system_topic(c):
+                    candidates.append(str(c))
         for item in self.curiosity.interests.values():
-            candidates.append(item["topic"])
+            if not is_system_topic(item["topic"]):
+                candidates.append(item["topic"])
         # Adopt topics learned from actual sources, avoiding fixed philosophy goals.
         workspace=self.workspace.compete(self.cortex,interest={
             key:float(data.get("interest",0)) for key,data in self.curiosity.interests.items()})
-        candidates.extend([item.label for item in workspace])
+        candidates.extend([item.label for item in workspace
+                           if not is_system_topic(item.label)])
         books=[x.payload["title"] for x in reading_candidates(self.curiosity)]
         focus=self.curiosity.select(candidates,generation=generation)
         # A stray token extracted from boilerplate must not eclipse real books.
@@ -135,26 +141,62 @@ class UbiqueV3:
         for proposal in packet.get("world_model_updates",[])[:5]:
             if not isinstance(proposal,dict):continue
             statement=str(proposal.get("statement","")).strip()
-            ids=[x for x in proposal.get("evidence_ids",[])
-                 if x in evidence]
+            ids=list(dict.fromkeys(x for x in proposal.get("evidence_ids",[])
+                                    if x in evidence))
+            assessment=assess(statement,[actual[x] for x in ids])
+            self.journal.append("evidence_review",{
+                "statement":statement[:1200],"evidence_ids":ids,
+                "assessment":assessment.as_dict(),"provider":packet.get("provider")},
+                generation=generation)
             if statement:
+                accepted=assessment.verdict in {"plausible","directly_supported"}
                 self.world.claim(statement,
-                    status="INFERRED" if ids else "HYPOTHESIS",
-                    source_refs=ids,confidence=min(.45,float(proposal.get("confidence",.4)))
-                    if ids else .15,generation=generation)
+                    status="INFERRED" if accepted else "HYPOTHESIS",
+                    source_refs=ids,confidence=min(.38,float(proposal.get("confidence",.4)))
+                    if accepted else .12,generation=generation)
         for stance in packet.get("stance_updates",[])[:3]:
             ids=list(dict.fromkeys(e for e in stance.get("evidence_ids",[])
                                     if e in evidence))
-            if ids:
-                self.world.stance(str(stance["topic"]),str(stance["position"]),
+            if not ids:
+                continue
+            position=str(stance.get("position",""))
+            assessment=assess(position,[actual[e] for e in ids])
+            self.journal.append("evidence_review",{
+                "statement":position[:1200],"evidence_ids":ids,
+                "assessment":assessment.as_dict(),"stance_topic":stance.get("topic"),
+                "provider":packet.get("provider")},generation=generation)
+            if assessment.verdict in {"plausible","directly_supported"}:
+                self.world.stance(str(stance["topic"]),position,
                     evidence_ids=ids,relation=str(stance.get("relation","new")),
-                    uncertainty=1-float(stance.get("confidence",.5)),
+                    uncertainty=max(.6,1-float(stance.get("confidence",.5))),
                     generation=generation)
+            else:
+                # An imaginative interpretation is welcome; an unsupported
+                # interpretation must not be silently installed as identity.
+                self.world.claim("Proposed view: "+position,status="HYPOTHESIS",
+                                 source_refs=ids,confidence=.12,generation=generation)
         return candidates
 
     def _candidates(self,generation:int,focus:str,recall:list[dict],
                     model:list[Candidate])->list[Candidate]:
         candidates=reading_candidates(self.curiosity)
+        # Sustain one line of reading long enough to connect consecutive
+        # chapters, then give the other books room again.
+        read_history=[e.get("data",{}) for e in self.journal.events()
+                      if e["kind"]=="action_outcome"
+                      and e.get("data",{}).get("kind")=="read"
+                      and e.get("data",{}).get("success")][-8:]
+        if read_history:
+            last_title=str(read_history[-1].get("payload",{}).get("title",""))
+            last_streak=0
+            for item in reversed(read_history):
+                if item.get("payload",{}).get("title")==last_title:
+                    last_streak+=1
+                else:
+                    break
+            for candidate in candidates:
+                if candidate.payload.get("title")==last_title:
+                    candidate.score+=(.21 if last_streak<4 else -.22)
         candidates+=model
         active=self.cortex.recall([focus])
         if active:
@@ -263,12 +305,20 @@ class UbiqueV3:
                           "claims":len(self.world.claims),
                           "stances":len(self.world.stances),
                           "interests":len(self.curiosity.interests),
-                          "insights":len(self.semantics.comparisons)},
+                          "associative_comparisons":len(self.semantics.comparisons),
+                          "screened_interpretations":sum(1 for e in self.journal.events()
+                              if e["kind"]=="evidence_review" and
+                              e["data"].get("assessment",{}).get("verdict")
+                              in {"plausible","directly_supported"}),
+                          "historical_insight_labels":sum(1 for e in self.journal.events()
+                              if e["kind"]=="insight")},
                 "journal":{"events":self.journal.manifest["events"],
                            "segments":len(self.journal._files()),
                            "compressed_snapshot":self.journal.snapshot_path.is_file(),
                            "snapshot_events":self.journal.manifest["snapshot_events"]},
                 "migration":self.migration.get("loaded_from"),
+                "evidence_reviews":sum(1 for e in self.journal.events()
+                                      if e["kind"]=="evidence_review"),
                 "workspace":self.workspace.snapshot(),
                 "skills":self.identity.skills(),
                 "active_stances":len(self.identity.stances(self.world.stances))}
@@ -312,6 +362,24 @@ class UbiqueV3:
                 if generation-last_search>=20:
                     candidates.append(Candidate("search","Acquire new general knowledge about "+focus,
                               {"topic":focus},.76))
+            # Code changes are a legitimate action when observed failures recur.
+            # They compete with reading and thought rather than being mandatory.
+            failures=sum(1 for kind in ("search","connect","experiment","read")
+                         if self.planner.quality[kind][1]>=3
+                         and self.planner.quality[kind][0]/self.planner.quality[kind][1]<.85)
+            if self.providers and self.providers.available() and (failures or
+                  (len(self.semantics.comparisons)>=12 and generation%79==0)):
+                recent_changes=[e for e in self.journal.events()
+                                if e["kind"]=="change_intent"][-1:]
+                last_change=int(recent_changes[-1]["generation"] or 0) if recent_changes else -1000
+                if generation-last_change>=72:
+                    reason=("Investigate recurring failures in the v3 learning and action cycle."
+                            if failures else "Examine what the recent cross-source learning has revealed.")
+                    candidates.append(Candidate("evolve",
+                        reason+" Propose one small reversible change to improve the curiosity, "
+                        "reasoning or experiential learning process.",
+                        {"cause":"observed_learning"},.84,
+                        source="autonomous_observation"))
             candidates=self.planner.rank(candidates,last=self.history)
             chosen=select(candidates,self.curiosity,self.history)
             result=self._act(chosen,generation=generation,focus=focus)

@@ -104,7 +104,8 @@ def test_independent_books_produce_sourced_tentative_insight(tmp_path):
     comparisons = [x for x in insights if x.get("kind")=="cross_source_comparison"]
     assert comparisons and comparisons[0]["uncertainty"] > 0.5
     assert set(comparisons[0]["evidence_ids"]) == {a["id"], b["id"]}
-    assert any(x["status"] == "INFERRED" for x in world.claims.values())
+    assert any(x["status"] == "HYPOTHESIS" for x in world.claims.values())
+    assert any(e["kind"]=="association_hypothesis" for e in journal.events())
     assert not world.stances  # comparisons alone are not fabricated opinions
 
 
@@ -137,8 +138,9 @@ def test_model_claims_do_not_require_unverified_self_stances(tmp_path):
                                "confidence":0.4,"relation":"new",
                                "evidence_ids":[actual["id"]]}]}
     agent._handle_model(packet, 3)
-    assert len(agent.world.stances)==1
-    assert next(iter(agent.world.claims.values()))["confidence"]<=0.45
+    assert not agent.world.stances  # a cited but irrelevant passage cannot establish identity
+    assert next(iter(agent.world.claims.values()))["status"]=="HYPOTHESIS"
+    assert next(iter(agent.world.claims.values()))["confidence"]<=0.15
     agent.world.stances.clear()
     packet["stance_updates"][0]["evidence_ids"]=["invented:episode"]
     agent._handle_model(packet, 4)

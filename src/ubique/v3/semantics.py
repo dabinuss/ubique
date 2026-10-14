@@ -31,7 +31,7 @@ class SemanticLearner:
         self.world = world
         self.cortex = cortex
         self.comparisons = {str(ev["data"].get("id")) for ev in journal.events()
-                            if ev["kind"] == "insight"}
+                            if ev["kind"] in {"insight","association_hypothesis"}}
 
     @staticmethod
     def family(record: dict) -> str:
@@ -89,10 +89,13 @@ class SemanticLearner:
                               ". Their interpretations may agree or disagree; "
                               "this is an invitation to investigate, not proof."),
                 "uncertainty": 0.75}
-            self.journal.append("insight", comparison, generation=generation)
+            # Word overlap is useful for asking a question, not a confirmed
+            # insight or evidence for the authors agreeing on the same claim.
+            comparison["epistemic_status"] = "unverified_association"
+            self.journal.append("association_hypothesis", comparison, generation=generation)
             self.comparisons.add(fingerprint)
-            link = self.world.claim(comparison["statement"], status="INFERRED",
-                                    source_refs=pair, confidence=0.25,
+            link = self.world.claim(comparison["statement"], status="HYPOTHESIS",
+                                    source_refs=pair, confidence=0.12,
                                     generation=generation)
             comparison["claim_id"] = link["id"]
             result.append(comparison)

@@ -66,10 +66,31 @@ class Journal:
         self._pending_repack = False
         self._prepare_segments()
         self._prepare_snapshot_format()
+        self._segment_counts: dict[str, dict] = {}
+        self._update_segment_index()
 
     def _files(self) -> list[Path]:
         return sorted(p for p in (self.root / "events").glob("*")
                       if p.name.endswith((".jsonl", ".jsonl.gz")))
+
+    def _update_segment_index(self) -> None:
+        """Remember shard line counts; unchanged gzip archives need no reread."""
+        old=self.manifest.get("segment_counts",{})
+        counts={}
+        changed=False
+        for path in self._files():
+            size=path.stat().st_size
+            cached=old.get(path.name,{}) if isinstance(old,dict) else {}
+            if cached.get("bytes")==size and "events" in cached:
+                count=int(cached["events"])
+            else:
+                count=sum(bool(line.strip()) for line in self._read_lines(path))
+                changed=True
+            counts[path.name]={"bytes":size,"events":count}
+        self._segment_counts=counts
+        if changed or len(counts)!=len(old):
+            self.manifest["segment_counts"]=counts
+            write_atomic(self.manifest_path,self.manifest)
 
     @staticmethod
     def _read_lines(path: Path) -> Iterator[str]:
@@ -215,6 +236,11 @@ class Journal:
                     break
         os.replace(temp, target)
         path.unlink()
+        if hasattr(self,"_segment_counts"):
+            item=self._segment_counts.pop(path.name,None)
+            if item:
+                self._segment_counts[target.name]={"bytes":target.stat().st_size,
+                                                  "events":item["events"]}
 
     def append(self, kind: str, data: dict, *, generation: int | None = None,
                identity: str | None = None) -> dict:
@@ -235,12 +261,33 @@ class Journal:
         self.manifest["last_hash"] = serial["hash"]
         self.manifest["last_event_id"] = serial["id"]
         self.manifest["events"] = int(self.manifest["events"]) + 1
+        item=self._segment_counts.get(path.name,{"events":0})
+        self._segment_counts[path.name]={"events":int(item["events"])+1,
+                                         "bytes":path.stat().st_size}
+        self.manifest["segment_counts"]=self._segment_counts
         write_atomic(self.manifest_path, self.manifest)
         if self._cached_events is not None:
             self._cached_events.append(serial)
         return serial
 
     def events(self, *, after: int = 0, verify: bool = False) -> list[dict]:
+        # Snapshot replay needs only the last few events. Avoid expanding
+        # 100s of old gzip segments just to apply a small graph delta.
+        if after > 0 and self._cached_events is None and not verify:
+            records=[]
+            before=0
+            for path in self._files():
+                count=int(self._segment_counts.get(path.name,{}).get("events",0))
+                if before+count<=after:
+                    before+=count
+                    continue
+                for line in self._read_lines(path):
+                    if not line.strip():
+                        continue
+                    if before>=after:
+                        records.append(json.loads(line))
+                    before+=1
+            return records
         if self._cached_events is None or verify:
             records = []
             previous = "genesis"
