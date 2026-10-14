@@ -54,3 +54,39 @@ jobs:
           print("Snapshot size:", journal.snapshot_path.stat().st_size)
           print("All checks passed; workflow does not push or change persistent repository state.")
           PY
+      - name: Verify live v3 cognition and indexed snapshot replay
+        run: |
+          python - <<'PY'
+          from ubique.state import ROOT
+          from ubique.config import Config
+          from ubique.v3.storage import Journal
+          from ubique.v3.runtime import UbiqueV3
+          from ubique.v3.evidence import assess, is_system_topic
+
+          journal = Journal(ROOT / "memory" / "v3")
+          before = int(journal.manifest["events"])
+          index = journal.manifest["segment_counts"]
+          assert sum(item["events"] for item in index.values()) == before
+          tail = journal.events(after=int(journal.manifest["snapshot_events"]))
+          assert journal._cached_events is None
+          assert len(tail) == before - journal.manifest["snapshot_events"]
+          brain = UbiqueV3(Config.from_env(), enable_remote=False)
+          assert len(brain.cortex.nodes) > 2000
+          assert len(brain.cortex.edges) > 1200
+          focus, recall = brain._recent_focus(int(brain.cortex.tick) + 1)
+          items = brain.workspace.focus_labels()
+          episodes = brain.hippocampus.all_episodes()
+          sources = [ep for ep in episodes if ep.get("epistemic_status") == "source_passage"]
+          assert sources and brain.world.claims
+          assert any(not is_system_topic(s) for s in items), items
+          unrelated = assess("Unicorns are constructed from strawberry plastic", sources[:1])
+          assert unrelated.verdict == "unrelated"
+          print("Indexed events:", before)
+          print("Snapshot replay delta:", len(tail))
+          print("Synapses:", len(brain.cortex.edges))
+          print("Books/source episodes:", len(sources))
+          print("Top workspace:", items)
+          print("Current curiosity focus:", focus)
+          print("Current recorded stances:", len(brain.world.stances))
+          print("Live corpus v3 smoke passed; nothing pushed.")
+          PY
