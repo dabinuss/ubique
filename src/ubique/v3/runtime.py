@@ -70,9 +70,18 @@ class UbiqueV3:
         for item in self.curiosity.interests.values():
             if not is_system_topic(item["topic"]):
                 candidates.append(item["topic"])
-        # Adopt topics learned from actual sources, avoiding fixed philosophy goals.
+        # Bias scarce conscious attention towards actual recent reading,
+        # without deleting unrelated or older memories from the cortex.
+        recent_sources=[e for e in reversed(self.hippocampus.all_episodes())
+                        if e.get("epistemic_status")=="source_passage"
+                        and str(e.get("source","")).startswith("library:")][:4]
+        source_terms=set()
+        for episode in recent_sources:
+            source_terms.update(terms(str(episode.get("text",""))[:3500],60))
+            source_terms.update(terms(str(episode.get("payload",{}).get("title","")),12))
         workspace=self.workspace.compete(self.cortex,interest={
-            key:float(data.get("interest",0)) for key,data in self.curiosity.interests.items()})
+            key:float(data.get("interest",0)) for key,data in self.curiosity.interests.items()},
+            grounding=source_terms)
         candidates.extend([item.label for item in workspace
                            if not is_system_topic(item.label)])
         books=[x.payload["title"] for x in reading_candidates(self.curiosity)]
@@ -82,8 +91,7 @@ class UbiqueV3:
             (len(focus.split())==1 and self.curiosity.score(focus)<.5)):
             focus=self.curiosity.select(books,generation=generation)
         # Prefer genuine passages, not solely old issue/diagnostic chatter.
-        passages=[e for e in reversed(self.hippocampus.all_episodes())
-                  if e.get("epistemic_status")=="source_passage"][:3]
+        passages=recent_sources[:3]
         recalled=list({e.get("id",str(i)):e for i,e in enumerate(passages+old)}.values())
         return focus,recalled[:10]
 
