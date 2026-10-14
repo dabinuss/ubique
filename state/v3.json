@@ -1,9 +1,9 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-14T21:02:42.114944+00:00",
-  "generation": 2344,
-  "focus": "The Mind and the Brain",
+  "timestamp": "2026-10-14T21:04:23.735934+00:00",
+  "generation": 2345,
+  "focus": "The Physical Basis of Mind",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
@@ -11,22 +11,22 @@
   "last_provider_generation": 2341,
   "last_search_generation": 2323,
   "cortex": {
-    "nodes": 6167,
-    "synapses": 23767,
+    "nodes": 6174,
+    "synapses": 23801,
     "active": 120,
-    "archived_synapses": 10965
+    "archived_synapses": 10963
   },
   "memory": {
-    "episodes": 2658,
-    "claims": 302,
+    "episodes": 2659,
+    "claims": 305,
     "stances": 26,
     "interests": 42,
-    "associative_comparisons": 162,
+    "associative_comparisons": 164,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 2863,
+    "events": 2874,
     "segments": 85,
     "compressed_snapshot": true,
     "snapshot_events": 2844
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 9,
   "workspace": [
+    {
+      "node_id": "concept:721048dc35951006",
+      "label": "observations",
+      "activation": 1.0,
+      "novelty": 0.49140049140049136,
+      "conflict": 0,
+      "score": 0.9926781326781327
+    },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
@@ -43,52 +51,44 @@
       "score": 0.9898076923076924
     },
     {
-      "node_id": "concept:1c48f6310f1c849b4ac3",
-      "label": "mind",
-      "activation": 0.8952290656804283,
-      "novelty": 0.2638522427440633,
+      "node_id": "concept:75b34b1a83b85d924331",
+      "label": "calmly",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8767592196947198
+      "score": 0.9829064220183488
     },
     {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
-      "activation": 1.0,
-      "novelty": 0.024307243558580455,
+      "node_id": "concept:2180ad87bed97605bccf",
+      "label": "discussions",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8665629557608168
+      "score": 0.9829064220183488
     },
     {
-      "node_id": "concept:99341d56cc28805370b9",
-      "label": "taken",
-      "activation": 0.5069826938258117,
-      "novelty": 0.7117437722419929,
+      "node_id": "concept:18c76b5a4a409a0aff42",
+      "label": "selfish",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7958018192947602
+      "score": 0.9829064220183488
     },
     {
-      "node_id": "concept:e6f07d43b5c21db0fbb9",
-      "label": "begin",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "node_id": "concept:f1a583b3f5beb4d29b97",
+      "label": "pleasure",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.9829064220183488
     },
     {
-      "node_id": "concept:cd1bb3012bcfaa0c50e9",
-      "label": "know",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "node_id": "concept:fe9b83762f8ca4f9ea35",
+      "label": "unavowedly",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.777729411764706
-    },
-    {
-      "node_id": "concept:659ec816213ba0ce19a8",
-      "label": "heated",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.9829064220183488
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 10
     },
     "read": {
-      "attempts": 115,
-      "successes": 115
+      "attempts": 116,
+      "successes": 116
     },
     "explore": {
       "attempts": 105,
