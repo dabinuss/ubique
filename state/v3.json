@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-14T21:22:51.694603+00:00",
-  "generation": 2349,
-  "focus": "Introduction to psychology",
-  "last_action": "read",
+  "timestamp": "2026-10-14T21:24:30.611767+00:00",
+  "generation": 2350,
+  "focus": "Hilgard's Introduction to Psychology",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 2346,
   "last_search_generation": 2346,
   "cortex": {
-    "nodes": 6210,
-    "synapses": 24096,
+    "nodes": 6221,
+    "synapses": 24214,
     "active": 120,
-    "archived_synapses": 11070
+    "archived_synapses": 11148
   },
   "memory": {
     "episodes": 2667,
@@ -26,14 +26,30 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 2923,
-    "segments": 86,
+    "events": 2928,
+    "segments": 87,
     "compressed_snapshot": true,
-    "snapshot_events": 2844
+    "snapshot_events": 2928
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 9,
   "workspace": [
+    {
+      "node_id": "concept:eb110b1ecff69e3b",
+      "label": "successful",
+      "activation": 1.0,
+      "novelty": 0.7117437722419929,
+      "conflict": 0,
+      "score": 1.0521708185053382
+    },
+    {
+      "node_id": "concept:24ea913efda289dc1b17",
+      "label": "most",
+      "activation": 1.0,
+      "novelty": 0.49140049140049136,
+      "conflict": 0,
+      "score": 0.9926781326781327
+    },
     {
       "node_id": "concept:721048dc35951006",
       "label": "observations",
@@ -43,52 +59,36 @@
       "score": 0.9898076923076924
     },
     {
-      "node_id": "concept:d9298a10d1b0735837dc",
-      "label": "other",
-      "activation": 0.9446873281850868,
-      "novelty": 0.47058823529411764,
+      "node_id": "concept:cab2644828bcc1f22061",
+      "label": "like",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.9582962341856569
+      "score": 0.9829064220183488
     },
     {
-      "node_id": "concept:e843271beb2691cf8a6b",
-      "label": "deducible",
-      "activation": 0.5990530976732338,
-      "novelty": 0.8163265306122448,
+      "node_id": "concept:9368a7d21e018f64ae33",
+      "label": "notice",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8719157740553878
+      "score": 0.9829064220183488
     },
     {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
-      "activation": 1.0,
-      "novelty": 0.024307243558580455,
+      "node_id": "concept:3ba8d02b16fd2a01c1a8",
+      "label": "seven",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8665629557608168
+      "score": 0.9829064220183488
     },
     {
-      "node_id": "concept:8eb84dd4dcf6d17d96e2",
-      "label": "phenomena",
-      "activation": 0.6102465100288275,
-      "novelty": 0.7352941176470589,
+      "node_id": "concept:ef86c662b89b5fc3460b",
+      "label": "senseless",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8558575969796962
-    },
-    {
-      "node_id": "concept:85574fa07dae32132675",
-      "label": "being",
-      "activation": 0.6365900443347453,
-      "novelty": 0.6309148264984227,
-      "conflict": 0,
-      "score": 0.8413738262086417
-    },
-    {
-      "node_id": "concept:ee8250fb76e094b34b47",
-      "label": "evidence",
-      "activation": 0.6335404848801839,
-      "novelty": 0.5390835579514824,
-      "conflict": 0,
-      "score": 0.814993612784596
+      "score": 0.9829064220183488
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 106
     },
     "consolidate": {
-      "attempts": 121,
-      "successes": 121
+      "attempts": 122,
+      "successes": 122
     },
     "connect": {
       "attempts": 84,
