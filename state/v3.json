@@ -1,30 +1,30 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-14T05:56:59.082391+00:00",
-  "generation": 2164,
+  "timestamp": "2026-10-14T05:58:32.085280+00:00",
+  "generation": 2165,
   "focus": "The Republic of Plato",
-  "last_action": "connect",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": null,
-  "last_provider_generation": 2159,
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": "gemini",
+  "last_provider_generation": 2165,
   "last_search_generation": 2162,
   "cortex": {
-    "nodes": 5385,
-    "synapses": 15816,
+    "nodes": 5391,
+    "synapses": 15853,
     "active": 120,
-    "archived_synapses": 4200
+    "archived_synapses": 4201
   },
   "memory": {
-    "episodes": 2572,
-    "claims": 141,
-    "stances": 7,
+    "episodes": 2575,
+    "claims": 144,
+    "stances": 8,
     "interests": 31,
-    "insights": 58
+    "insights": 60
   },
   "journal": {
-    "events": 1630,
+    "events": 1645,
     "segments": 38,
     "compressed_snapshot": true,
     "snapshot_events": 1580
@@ -74,10 +74,10 @@
     {
       "node_id": "concept:7f2e3f629e4df5c9",
       "label": "constraints",
-      "activation": 0.9998487449841884,
+      "activation": 0.9997800885340933,
       "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.7403295106570841
+      "score": 0.7402938093030347
     },
     {
       "node_id": "concept:c0e5d7e81f52dc5e",
@@ -94,8 +94,8 @@
       "successes": 4
     },
     "read": {
-      "attempts": 79,
-      "successes": 79
+      "attempts": 80,
+      "successes": 80
     },
     "explore": {
       "attempts": 59,
@@ -110,5 +110,5 @@
       "successes": 45
     }
   },
-  "active_stances": 10
+  "active_stances": 11
 }
