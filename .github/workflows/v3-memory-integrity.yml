@@ -91,7 +91,9 @@ jobs:
           supported = sum(1 for n in brain.cortex.nodes.values()
                           if n.activation >= .03 and n.label.casefold() in grounding)
           selected = sum(1 for title in items if title.casefold() in grounding)
-          if supported >= 2:
+          if supported >= 5:
+              assert selected >= 5, (items, supported, selected)
+          elif supported >= 2:
               assert selected >= 2, (items, supported, selected)
           print("Source-grounded workspace:", selected, "of", len(items))
           unrelated = assess("Unicorns are constructed from strawberry plastic", sources[:1])
