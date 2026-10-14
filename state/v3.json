@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-14T19:04:38.077562+00:00",
-  "generation": 2315,
-  "focus": "Evidence as to Man's Place in Nature",
-  "last_action": "evolve",
+  "timestamp": "2026-10-14T19:06:12.550625+00:00",
+  "generation": 2316,
+  "focus": "Psychology: Briefer Course",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "{\"accepted\": true, \"title\": \"Introduce lightweight exploratory overlap threshold in SemanticLearner\", \"summary\": \"Add a small probabilistic relaxation of the term‑overlap requirement when forming cross‑source comparisons. This encourages occasional broader curiosity without compromising the existing precision, and can be toggled via a configurable `exploration_factor`. The change is minimal, rever",
+  "last_action_detail": "Read 8000 source characters",
   "last_provider": null,
   "last_provider_generation": 2312,
   "last_search_generation": 2277,
   "cortex": {
-    "nodes": 6048,
-    "synapses": 22761,
+    "nodes": 6057,
+    "synapses": 22805,
     "active": 120,
-    "archived_synapses": 9855
+    "archived_synapses": 9857
   },
   "memory": {
-    "episodes": 2642,
-    "claims": 264,
+    "episodes": 2643,
+    "claims": 267,
     "stances": 26,
     "interests": 42,
-    "associative_comparisons": 136,
+    "associative_comparisons": 138,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 2631,
+    "events": 2642,
     "segments": 78,
     "compressed_snapshot": true,
     "snapshot_events": 2598
@@ -45,10 +45,10 @@
     {
       "node_id": "concept:8fad434ca5007153",
       "label": "intelligence",
-      "activation": 0.802917503322211,
+      "activation": 0.8028944383124483,
       "novelty": 0.56657223796034,
       "conflict": 0,
-      "score": 0.9104916059768415
+      "score": 0.9104796121717649
     },
     {
       "node_id": "concept:f2d44b8ac655a7ad",
@@ -69,26 +69,26 @@
     {
       "node_id": "concept:6d4cd66a62bfdfa5",
       "label": "expanded",
-      "activation": 0.9668141762948231,
+      "activation": 0.9667884039735196,
       "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.2633604951583231
-    },
-    {
-      "node_id": "concept:2952957b3437c884",
-      "label": "lightweight",
-      "activation": 1.0,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.2611163498098859
+      "score": 0.2633556705797751
     },
     {
       "node_id": "concept:eceb23fd262eb452",
       "label": "issue closure criteria",
-      "activation": 0.975172135870247,
+      "activation": 0.9751976872185415,
       "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.2590876569057764
+      "score": 0.2590924401181771
+    },
+    {
+      "node_id": "concept:eb110b1ecff69e3b",
+      "label": "successful",
+      "activation": 1.0,
+      "novelty": 0.7352941176470589,
+      "conflict": 0,
+      "score": 0.2586705882352941
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 9
     },
     "read": {
-      "attempts": 105,
-      "successes": 105
+      "attempts": 106,
+      "successes": 106
     },
     "explore": {
       "attempts": 99,
