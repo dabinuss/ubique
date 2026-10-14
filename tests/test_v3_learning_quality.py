@@ -125,3 +125,26 @@ def test_reading_candidate_prefers_progressing_real_book(monkeypatch,tmp_path):
     monkeypatch.setattr(actions,"library_catalog",lambda n:rows)
     selected=actions.reading_candidates(Curiosity(Journal(tmp_path)))
     assert selected[0].payload["item_id"]=="b"
+
+
+def test_negation_in_unrelated_sentence_does_not_invert_evidence():
+    passage=("Memory and attention contribute to learning in human psychology. "
+             "A separate debate has not reached an agreement about weather patterns.")
+    result=assess("Memory and attention contribute to learning",[_source(passage)])
+    assert result.verdict in {"plausible","directly_supported"}
+    assert not result.explicit_negation_conflict
+
+
+def test_explicitly_inverted_claim_is_not_accepted():
+    passage="Memory and attention contribute to learning in human psychology."
+    result=assess("Memory and attention do not contribute to learning",[_source(passage)])
+    assert result.verdict=="contested"
+    assert result.explicit_negation_conflict
+
+
+def test_infrastructure_filter_keeps_nontechnical_phrase():
+    from ubique.v3.evidence import is_system_topic
+    assert is_system_topic("continuous")
+    assert is_system_topic("runtime ↔ status")
+    assert not is_system_topic("the continuous emergence of life")
+    assert not is_system_topic("human psychological constraints")
