@@ -55,9 +55,12 @@ def reading_candidates(curiosity:Curiosity)->list[Candidate]:
         topic=str(x.get("title",""))
         interest=curiosity.score(topic)
         repeats=int(x.get("read_count",0))
+        # A book with an established reading history remains attractive so
+        # reading progresses beyond opening chapters, without monopolising focus.
+        depth=.16 if 2<=repeats<=90 else (.09 if repeats==1 else 0)
         result.append(Candidate("read","Continue actual source text: "+topic,
-           {"item_id":x.get("id"),"title":topic},score=.67+interest*.35
-           -.025*min(7,repeats),source="library"))
+           {"item_id":x.get("id"),"title":topic},
+           score=.60+interest*.25+depth-.004*min(90,repeats),source="library"))
     return sorted(result,key=lambda x:x.score,reverse=True)[:6]
 
 def build_registry()->Registry:
@@ -85,8 +88,14 @@ def build_registry()->Registry:
         active=ctx["cortex"].activate(
            terms(str(spec.get("title",""))+" "+excerpt,13),strength=.76)
         ctx["cortex"].learn(active,reward=.13,source_event=eid)
-        ctx["curiosity"].notice(str(spec.get("title","")),novelty=.65,progress=.55,
-               source=eid,generation=ctx["generation"])
+        # Advancement and meaningful comparisons, not a fixed .55, determine
+        # progress; an ordinary source read is still a real learning event.
+        new_comparisons=sum(1 for insight in insights
+                            if insight.get("kind")=="cross_source_comparison")
+        progress=min(.9,.20+.16*min(3,new_comparisons)
+                     +(.1 if record["next_offset"] is None else 0))
+        ctx["curiosity"].notice(str(spec.get("title","")),novelty=.4,
+               progress=progress,source=eid,generation=ctx["generation"])
         return Result("read",True,"Read "+str(len(excerpt))+" source characters",
                [eid],payload={"title":spec.get("title"),"next_offset":record["next_offset"],
                               "insights":len(insights)})
