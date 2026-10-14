@@ -18,8 +18,11 @@ class Workspace:
         self.capacity=max(3,min(12,int(capacity)))
         self.items:list[WorkspaceItem]=[]
 
-    def compete(self,cortex:Cortex,*,interest=None)->list[WorkspaceItem]:
+    def compete(self,cortex:Cortex,*,interest=None,grounding=None)->list[WorkspaceItem]:
         interest=interest or {}
+        grounding={str(x).casefold() for x in (grounding or [])}
+        active_grounded=sum(1 for n in cortex.nodes.values()
+                             if n.activation>=.03 and n.label.casefold() in grounding)
         ranked=[]
         for n in cortex.nodes.values():
             if n.activation<.03:continue
@@ -28,9 +31,16 @@ class Workspace:
             salience=float(interest.get(n.label,0))
             score=.52*n.activation+.27*novelty+.21*salience-.02*min(5,age)
             if n.id.startswith(("schema:","issue:")) or is_system_topic(n.label):
-                # Preserve autobiographical technical memories but let topics
-                # of life, science, history etc. compete for attention.
+                # The old technical memory is intact, but not the central focus.
                 score*=.12 if salience<.6 else .65
+            elif active_grounded>=2:
+                # Memories from recently *read source passages* gain priority
+                # over generic high-activation words from old issue chatter.
+                # This is a competition, not irreversible suppression.
+                if n.label.casefold() in grounding:
+                    score+=.34
+                elif salience<.35:
+                    score*=.36
             ranked.append(WorkspaceItem(n.id,n.label,n.activation,novelty,0,score))
         ranked.sort(key=lambda x:x.score,reverse=True)
         self.items=ranked[:self.capacity]
