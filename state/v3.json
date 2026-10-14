@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-14T09:09:15.228609+00:00",
-  "generation": 2203,
+  "timestamp": "2026-10-14T09:22:42.284950+00:00",
+  "generation": 2204,
   "focus": "Human, All Too Human: A Book for Free Spirits",
-  "last_action": "consolidate",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 2199,
   "last_search_generation": 2185,
@@ -14,7 +14,7 @@
     "nodes": 5583,
     "synapses": 17927,
     "active": 120,
-    "archived_synapses": 5487
+    "archived_synapses": 5611
   },
   "memory": {
     "episodes": 2591,
@@ -24,7 +24,7 @@
     "insights": 77
   },
   "journal": {
-    "events": 1888,
+    "events": 1892,
     "segments": 48,
     "compressed_snapshot": true,
     "snapshot_events": 1827
@@ -72,20 +72,20 @@
       "score": 0.748813559322034
     },
     {
-      "node_id": "concept:7f2e3f629e4df5c9",
-      "label": "constraints",
-      "activation": 0.9995070210680794,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.7401518142207074
-    },
-    {
       "node_id": "concept:f5ceaa51ec1d0a2f",
       "label": "considered",
-      "activation": 0.9807645028576271,
+      "activation": 1.0,
       "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.738811100808
+      "score": 0.748813559322034
+    },
+    {
+      "node_id": "concept:7f2e3f629e4df5c9",
+      "label": "constraints",
+      "activation": 0.9994998749228841,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.7401480982252058
     }
   ],
   "skills": {
@@ -98,8 +98,8 @@
       "successes": 87
     },
     "explore": {
-      "attempts": 68,
-      "successes": 68
+      "attempts": 69,
+      "successes": 69
     },
     "consolidate": {
       "attempts": 80,
