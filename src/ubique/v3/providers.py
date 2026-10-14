@@ -49,6 +49,8 @@ def make_prompt(*,focus:str,associations:list[dict],interests:list[dict],
             "Return JSON containing associations, questions, hypotheses, world_model_updates, "
             "stance_updates and actions. When forming a new interpretation or revisable stance, "
             "cite exact evidence_ids that appear in the episode context and explain uncertainty. "
+            "Claims must actually be supported by the cited passages, not merely related by topic. "
+            "Prefer comparing what passages assert, including whether they conflict. "
             "Never cite a model proposal or a question as independent evidence. "
             "When useful compare two distinct books and challenge existing assumptions. "
             "Actions should be read/library, experiment, evolve, connect, explore "
