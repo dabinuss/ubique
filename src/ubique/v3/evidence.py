@@ -22,8 +22,11 @@ def informative_tokens(text: str) -> set[str]:
     return {w for w in terms(text, 70) if len(w) >= 5 and w not in noisy}
 
 def is_system_topic(text: str) -> bool:
-    low = str(text).casefold()
-    return any(marker in low for marker in SYSTEM_MARKERS)
+    low = str(text).casefold().strip()
+    old_diagnostic_labels = {"state","status","continuous","newly","constraints",
+                             "probe","verify","deactivated","already_requested",
+                             "heartbeat","heartbeats"}
+    return low in old_diagnostic_labels or any(marker in low for marker in SYSTEM_MARKERS)
 
 @dataclass(frozen=True)
 class EvidenceAssessment:
@@ -54,15 +57,20 @@ def assess(statement: str, cited_episodes: list[dict]) -> EvidenceAssessment:
     for episode in quoted:
         passage = str(episode.get("text",""))[:4000]
         passage_tokens = informative_tokens(passage)
-        hits = len(claim & passage_tokens)
+        # Use an actual nearby claim span rather than combining unrelated
+        # words and negations from a whole multi-paragraph chapter.
+        spans = re.split(r"(?<=[.!?])\\s+", passage)
+        closest = max(spans, key=lambda x:len(claim & informative_tokens(x)),
+                      default=passage)
+        local_hits = len(claim & informative_tokens(closest))
+        hits = min(len(claim & passage_tokens),max(local_hits,2*local_hits))
         coverage = hits/max(1,len(claim))
         best = max(best,coverage)
         common = max(common,hits)
         independent.add(str(episode.get("source") or episode.get("id")))
-        # Only flag explicit polarity inversion with a close subject match.
-        assertion_neg = bool(set(re.findall(r"\b[\w]+\b",statement.casefold())) & DENIALS)
-        source_neg = bool(set(re.findall(r"\b[\w]+\b",passage.casefold())) & DENIALS)
-        if coverage >= .55 and assertion_neg != source_neg:
+        assertion_neg = bool(set(re.findall(r"\\b[\\w]+\\b",statement.casefold())) & DENIALS)
+        local_neg = bool(set(re.findall(r"\\b[\\w]+\\b",closest.casefold())) & DENIALS)
+        if local_hits >= 3 and (local_hits/max(1,len(claim))) >= .65 and assertion_neg != local_neg:
             contradictions += 1
     if contradictions:
         verdict = "contested"
