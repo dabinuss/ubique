@@ -1,30 +1,30 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-14T02:53:26.636448+00:00",
-  "generation": 2130,
+  "timestamp": "2026-10-14T02:54:54.640859+00:00",
+  "generation": 2131,
   "focus": "An Introduction to Psychology",
-  "last_action": "explore",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 2125,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "gemini",
+  "last_provider_generation": 2131,
   "last_search_generation": 2116,
   "cortex": {
-    "nodes": 5187,
-    "synapses": 13700,
+    "nodes": 5197,
+    "synapses": 13830,
     "active": 120,
     "archived_synapses": 2712
   },
   "memory": {
-    "episodes": 2554,
-    "claims": 111,
-    "stances": 2,
+    "episodes": 2555,
+    "claims": 112,
+    "stances": 3,
     "interests": 28,
     "insights": 35
   },
   "journal": {
-    "events": 1385,
+    "events": 1393,
     "segments": 30,
     "compressed_snapshot": true,
     "snapshot_events": 1327
@@ -74,10 +74,10 @@
     {
       "node_id": "concept:7f2e3f629e4df5c9",
       "label": "constraints",
-      "activation": 0.9981205132063324,
+      "activation": 0.9983629384762513,
       "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.739430830132599
+      "score": 0.7395568912729569
     },
     {
       "node_id": "concept:c0e5d7e81f52dc5e",
@@ -102,13 +102,13 @@
       "successes": 52
     },
     "consolidate": {
-      "attempts": 57,
-      "successes": 57
+      "attempts": 58,
+      "successes": 58
     },
     "connect": {
       "attempts": 37,
       "successes": 37
     }
   },
-  "active_stances": 5
+  "active_stances": 6
 }
