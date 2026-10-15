@@ -1,13 +1,13 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T22:04:11.465277+00:00",
-  "generation": 2669,
-  "focus": "The Physical Basis of Mind",
+  "timestamp": "2026-10-15T22:05:39.183416+00:00",
+  "generation": 2670,
+  "focus": "A Treatise Concerning the Principles of Human Knowledge",
   "last_action": "connect",
   "last_action_success": true,
   "last_action_detail": "Formed tentative analogy",
-  "last_provider": "groq",
+  "last_provider": null,
   "last_provider_generation": 2669,
   "last_search_generation": 2668,
   "cortex": {
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 5465,
+    "events": 5469,
     "segments": 174,
     "compressed_snapshot": true,
     "snapshot_events": 5429
@@ -37,26 +37,10 @@
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.9597874547874122,
+      "activation": 0.9455064281029448,
       "novelty": 0.3407155025553663,
       "conflict": 0,
-      "score": 0.9310826621794033
-    },
-    {
-      "node_id": "concept:c8b80d05b4da58fb4330",
-      "label": "ctual",
-      "activation": 0.6662615857226323,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.9152695838978027
-    },
-    {
-      "node_id": "concept:f3f65655623796ebaa9b",
-      "label": "outruns",
-      "activation": 0.6662615857226323,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.9152695838978027
+      "score": 0.9236565283034803
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -67,20 +51,20 @@
       "score": 0.9107518796992482
     },
     {
-      "node_id": "concept:e4cd302972b0cf4e227d",
-      "label": "objects",
-      "activation": 0.6662615857226323,
-      "novelty": 0.7604562737642586,
+      "node_id": "concept:c8b80d05b4da58fb4330",
+      "label": "ctual",
+      "activation": 0.6240842020143124,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8917792184921187
+      "score": 0.8849319483127487
     },
     {
-      "node_id": "concept:65296bb530fd3d84a419",
-      "label": "sensations",
-      "activation": 0.6918339471204216,
-      "novelty": 0.6688963210702341,
+      "node_id": "concept:f3f65655623796ebaa9b",
+      "label": "outruns",
+      "activation": 0.6240842020143124,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8803556591915824
+      "score": 0.8849319483127487
     },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
@@ -89,6 +73,22 @@
       "novelty": 0.049031625398381955,
       "conflict": 0,
       "score": 0.8732385388575632
+    },
+    {
+      "node_id": "concept:54476ce93ea4a148",
+      "label": "distinguish",
+      "activation": 1.0,
+      "novelty": 0.04860267314702309,
+      "conflict": 0,
+      "score": 0.8731227217496962
+    },
+    {
+      "node_id": "concept:411f62e7fd037280",
+      "label": "actually",
+      "activation": 1.0,
+      "novelty": 0.04807692307692307,
+      "conflict": 0,
+      "score": 0.8729807692307692
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 197
     },
     "connect": {
-      "attempts": 148,
-      "successes": 148
+      "attempts": 149,
+      "successes": 149
     },
     "evolve": {
       "attempts": 5,
