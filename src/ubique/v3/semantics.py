@@ -1,12 +1,14 @@
-"""Evidence-first local semantic learning from independently sourced passages.
+'''Evidence-first local semantic learning from independently sourced passages.
 
 This subsystem forms *retrievable, revisable* comparisons. It never converts
 text co-occurrence into a scientific fact or a confident personal belief.
-"""
+'''
 from __future__ import annotations
 
 import re
 import random  # <-- new import for stochastic exploration
+from typing import Set
+
 from .hippocampus import Hippocampus, terms
 from .world_model import WorldModel, key
 from .representation import Cortex
@@ -49,6 +51,26 @@ class SemanticLearner:
                             if ev["kind"] in {"insight","association_hypothesis"}}
         # Store the exploration factor for later use
         self.exploration_factor = exploration_factor
+        # Cache of all terms seen in prior episodes – used for deterministic novelty check
+        self._seen_terms: Set[str] = self._build_seen_terms_cache()
+
+    def _build_seen_terms_cache(self) -> Set[str]:
+        """Collect every term that has appeared in earlier episodes.
+
+        The cache is built once at construction time; it is inexpensive and
+        provides a quick way to test whether a term is *novel* with respect to
+        the learner's experience so far. Because the learner only adds new
+        comparisons after observation, the cache does not need to be updated
+        during a single run – the change is reversible by simply removing this
+        method and the associated attribute.
+        """
+        seen: Set[str] = set()
+        for ev in self.hippocampus.all_episodes():
+            txt = str(ev.get("text", ""))
+            seen.update(terms(txt, 24))
+            title = str(ev.get("payload", {}).get("title", ""))
+            seen.update(terms(title, 12))
+        return seen
 
     @staticmethod
     def family(record: dict) -> str:
@@ -59,8 +81,11 @@ class SemanticLearner:
         """Interpret an observed book passage and compare separate source texts.
 
         The method now occasionally relaxes the shared‑term requirement to
-        foster exploratory connections. The core logic and all existing
-        behaviours remain unchanged.
+        foster exploratory connections. Additionally, if at least one of the
+        shared terms has never been seen before, the learner will also accept
+        the comparison even when only a single term overlaps. This deterministic
+        novelty boost works alongside the existing stochastic `exploration_factor`
+        and preserves all original behaviours.
         """
         if episode.get("epistemic_status") != "source_passage":
             return []
@@ -94,6 +119,11 @@ class SemanticLearner:
             min_shared = 2
             if random.random() < self.exploration_factor:
                 min_shared = 1
+            # Deterministic novelty boost: if any shared term is novel, also allow 1.
+            if len(shared) == 1:
+                term = next(iter(shared))
+                if term not in self._seen_terms:
+                    min_shared = 1
             if len(shared) >= min_shared:
                 choices.append((len(shared), other, shared))
             # --- End exploratory threshold logic ---
