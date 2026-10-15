@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T14:15:07.078161+00:00",
-  "generation": 2572,
+  "timestamp": "2026-10-15T14:28:48.576155+00:00",
+  "generation": 2573,
   "focus": "A Treatise of Human Nature",
-  "last_action": "consolidate",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 2567,
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": "groq",
+  "last_provider_generation": 2573,
   "last_search_generation": 2553,
   "cortex": {
-    "nodes": 7073,
-    "synapses": 32338,
+    "nodes": 7076,
+    "synapses": 32344,
     "active": 120,
     "archived_synapses": 17518
   },
   "memory": {
     "episodes": 2801,
-    "claims": 581,
+    "claims": 582,
     "stances": 26,
     "interests": 52,
     "associative_comparisons": 362,
@@ -26,21 +26,21 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 4685,
+    "events": 4691,
     "segments": 147,
     "compressed_snapshot": true,
     "snapshot_events": 4676
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 67,
+  "evidence_reviews": 68,
   "workspace": [
     {
       "node_id": "concept:d887db09649dab0d8395",
       "label": "parts",
-      "activation": 0.9736831683151015,
+      "activation": 0.9737449269438359,
       "novelty": 0.6309148264984227,
       "conflict": 0,
-      "score": 1.016662250678427
+      "score": 1.0166943651653688
     },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
@@ -67,28 +67,28 @@
       "score": 0.9596309963099632
     },
     {
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.20533880903490764,
+      "conflict": 0,
+      "score": 0.9154414784394251
+    },
+    {
       "node_id": "concept:2a9810cb71316c9a03e5",
       "label": "tent",
-      "activation": 0.696571210432,
-      "novelty": 0.8810572687224669,
+      "activation": 0.6395670913548016,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.9401024919797061
+      "score": 0.9013884468265307
     },
     {
       "node_id": "concept:4e2b5722651bde0038ba",
       "label": "takes",
-      "activation": 0.660614140288,
-      "novelty": 0.8810572687224669,
+      "activation": 0.5754900582922707,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.9214048155048262
-    },
-    {
-      "node_id": "concept:a55751cecd11bad874ef",
-      "label": "essential",
-      "activation": 0.660614140288,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9214048155048262
+      "score": 0.8680683896340147
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 188
     },
     "explore": {
-      "attempts": 149,
-      "successes": 149
+      "attempts": 150,
+      "successes": 150
     },
     "consolidate": {
       "attempts": 173,
