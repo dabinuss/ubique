@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-14T23:52:27.975482+00:00",
-  "generation": 2383,
+  "timestamp": "2026-10-15T00:06:01.278448+00:00",
+  "generation": 2384,
   "focus": "A Treatise of Human Nature",
-  "last_action": "consolidate",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 2380,
   "last_search_generation": 2369,
@@ -14,7 +14,7 @@
     "nodes": 6374,
     "synapses": 25429,
     "active": 120,
-    "archived_synapses": 12137
+    "archived_synapses": 12259
   },
   "memory": {
     "episodes": 2685,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 3193,
-    "segments": 95,
+    "events": 3197,
+    "segments": 96,
     "compressed_snapshot": true,
     "snapshot_events": 3177
   },
@@ -35,60 +35,60 @@
   "evidence_reviews": 21,
   "workspace": [
     {
+      "node_id": "concept:24ea913efda289dc1b17",
+      "label": "most",
+      "activation": 1.0,
+      "novelty": 0.4338394793926248,
+      "conflict": 0,
+      "score": 0.9771366594360087
+    },
+    {
+      "node_id": "concept:12ed8d14a55fdb4701ee",
+      "label": "anyone",
+      "activation": 1.0,
+      "novelty": 0.4175365344467641,
+      "conflict": 0,
+      "score": 0.9727348643006264
+    },
+    {
+      "node_id": "concept:7308d385d05396e9",
+      "label": "representations",
+      "activation": 1.0,
+      "novelty": 0.29940119760479045,
+      "conflict": 0,
+      "score": 0.9408383233532935
+    },
+    {
       "node_id": "concept:021a0149f3125b44752c",
       "label": "dreamt",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.6960712104319999,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
+      "score": 0.9398424919797062
     },
     {
       "node_id": "concept:e7b6fe4a776cea9587f9",
       "label": "regularly",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.6960712104319999,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
+      "score": 0.9398424919797062
     },
     {
       "node_id": "concept:10910087de24bfcabe85",
       "label": "children",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.660114140288,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
+      "score": 0.9211448155048261
     },
     {
       "node_id": "concept:d14a58bae804a2b80b5b",
       "label": "fine",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.660114140288,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:f146172c0036ebcaa60e",
-      "label": "meals",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:5e23d5356b6462d0b236",
-      "label": "mountains",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:da43f06caa04c6fd627b",
-      "label": "tobacco",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
+      "score": 0.9211448155048261
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 128
     },
     "explore": {
-      "attempts": 111,
-      "successes": 111
+      "attempts": 112,
+      "successes": 112
     },
     "consolidate": {
       "attempts": 129,
