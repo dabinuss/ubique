@@ -1,71 +1,39 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T02:07:12.348683+00:00",
-  "generation": 2408,
+  "timestamp": "2026-10-15T02:08:51.937204+00:00",
+  "generation": 2409,
   "focus": "The Varieties of Religious Experience: A Study in Human Nature",
-  "last_action": "explore",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 2403,
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": "gemini",
+  "last_provider_generation": 2409,
   "last_search_generation": 2369,
   "cortex": {
-    "nodes": 6497,
-    "synapses": 26425,
+    "nodes": 6504,
+    "synapses": 26475,
     "active": 120,
-    "archived_synapses": 13297
+    "archived_synapses": 13339
   },
   "memory": {
-    "episodes": 2698,
-    "claims": 382,
+    "episodes": 2700,
+    "claims": 386,
     "stances": 26,
     "interests": 44,
-    "associative_comparisons": 216,
+    "associative_comparisons": 218,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 3373,
+    "events": 3387,
     "segments": 103,
     "compressed_snapshot": true,
     "snapshot_events": 3349
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 26,
+  "evidence_reviews": 27,
   "workspace": [
-    {
-      "node_id": "concept:023531ab5310570521b6",
-      "label": "nomena",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:00c25d6301a77f95f741",
-      "label": "modes",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:ab8e18ef4ebebeddc0b3",
-      "label": "production",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:af193190b8d3cd14103e",
-      "label": "leave",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
     {
       "node_id": "concept:24ea913efda289dc1b17",
       "label": "most",
@@ -75,20 +43,52 @@
       "score": 0.9771366594360087
     },
     {
-      "node_id": "concept:6db7d803e74f1ffa7d8f",
-      "label": "before",
-      "activation": 0.76,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9730854625550662
-    },
-    {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
       "novelty": 0.35714285714285715,
       "conflict": 0,
       "score": 0.9564285714285714
+    },
+    {
+      "node_id": "concept:023531ab5310570521b6",
+      "label": "nomena",
+      "activation": 0.696571210432,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9401024919797061
+    },
+    {
+      "node_id": "concept:00c25d6301a77f95f741",
+      "label": "modes",
+      "activation": 0.696571210432,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9401024919797061
+    },
+    {
+      "node_id": "concept:ab8e18ef4ebebeddc0b3",
+      "label": "production",
+      "activation": 0.696571210432,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9401024919797061
+    },
+    {
+      "node_id": "concept:af193190b8d3cd14103e",
+      "label": "leave",
+      "activation": 0.660614140288,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9214048155048262
+    },
+    {
+      "node_id": "concept:6db7d803e74f1ffa7d8f",
+      "label": "before",
+      "activation": 0.660614140288,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.912332912271794
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 12
     },
     "read": {
-      "attempts": 136,
-      "successes": 136
+      "attempts": 137,
+      "successes": 137
     },
     "explore": {
       "attempts": 117,
