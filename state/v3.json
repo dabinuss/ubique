@@ -1,33 +1,33 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T20:36:45.019254+00:00",
-  "generation": 2652,
+  "timestamp": "2026-10-15T20:50:22.480358+00:00",
+  "generation": 2653,
   "focus": "Psychology: Briefer Course",
-  "last_action": "consolidate",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": "groq",
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": null,
   "last_provider_generation": 2652,
   "last_search_generation": 2645,
   "cortex": {
-    "nodes": 7365,
-    "synapses": 35173,
+    "nodes": 7373,
+    "synapses": 35217,
     "active": 120,
-    "archived_synapses": 19547
+    "archived_synapses": 19571
   },
   "memory": {
-    "episodes": 2844,
-    "claims": 672,
+    "episodes": 2845,
+    "claims": 675,
     "stances": 26,
     "interests": 56,
-    "associative_comparisons": 432,
+    "associative_comparisons": 434,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 5314,
-    "segments": 169,
+    "events": 5325,
+    "segments": 170,
     "compressed_snapshot": true,
     "snapshot_events": 5265
   },
@@ -59,14 +59,6 @@
       "score": 0.9107518796992482
     },
     {
-      "node_id": "concept:339c348aa9be6f549d6e",
-      "label": "stinguished",
-      "activation": 0.606572710407336,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.8758259726771209
-    },
-    {
       "node_id": "concept:54476ce93ea4a148",
       "label": "distinguish",
       "activation": 1.0,
@@ -75,20 +67,28 @@
       "score": 0.8731227217496962
     },
     {
-      "node_id": "concept:d9298a10d1b0735837dc",
-      "label": "other",
-      "activation": 0.801847083930904,
-      "novelty": 0.38167938931297707,
-      "conflict": 0,
-      "score": 0.860013918758574
-    },
-    {
       "node_id": "concept:923b4b90ea64343e4a1c",
       "label": "states",
-      "activation": 0.7516327000091036,
+      "activation": 0.7389761175230025,
       "novelty": 0.47058823529411764,
       "conflict": 0,
-      "score": 0.8579078275341459
+      "score": 0.8513264046413731
+    },
+    {
+      "node_id": "concept:339c348aa9be6f549d6e",
+      "label": "stinguished",
+      "activation": 0.5555919963311611,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.8415062632890542
+    },
+    {
+      "node_id": "concept:d9298a10d1b0735837dc",
+      "label": "other",
+      "activation": 0.7474083243395225,
+      "novelty": 0.37523452157598497,
+      "conflict": 0,
+      "score": 0.8299656494820677
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 23
     },
     "read": {
-      "attempts": 211,
-      "successes": 211
+      "attempts": 212,
+      "successes": 212
     },
     "explore": {
       "attempts": 165,
