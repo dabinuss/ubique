@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T03:09:21.996760+00:00",
-  "generation": 2425,
+  "timestamp": "2026-10-15T03:23:01.439203+00:00",
+  "generation": 2426,
   "focus": "The Nicomachean Ethics of Aristotle",
-  "last_action": "consolidate",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 2420,
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": "gemini",
+  "last_provider_generation": 2426,
   "last_search_generation": 2415,
   "cortex": {
-    "nodes": 6569,
-    "synapses": 27135,
+    "nodes": 6571,
+    "synapses": 27137,
     "active": 120,
-    "archived_synapses": 13885
+    "archived_synapses": 14041
   },
   "memory": {
-    "episodes": 2708,
-    "claims": 403,
+    "episodes": 2710,
+    "claims": 404,
     "stances": 26,
     "interests": 47,
     "associative_comparisons": 232,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 3508,
-    "segments": 107,
+    "events": 3516,
+    "segments": 108,
     "compressed_snapshot": true,
     "snapshot_events": 3441
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 30,
+  "evidence_reviews": 31,
   "workspace": [
     {
       "node_id": "concept:24ea913efda289dc1b17",
@@ -59,36 +59,36 @@
       "score": 0.8731514856307843
     },
     {
-      "node_id": "concept:ffa0160df318a81cff6b",
-      "label": "tinctly",
-      "activation": 0.5286813026459155,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.8275127025727265
-    },
-    {
-      "node_id": "concept:7da6d82851b2b4e2cbda",
-      "label": "enunciated",
-      "activation": 0.5286813026459155,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.8275127025727265
-    },
-    {
-      "node_id": "concept:a9bbc0222075becade10",
-      "label": "though",
-      "activation": 0.5550512297620191,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.820797457981588
-    },
-    {
       "node_id": "concept:d3df996dfbad496437ed",
       "label": "teaching",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.7917984251968504
+    },
+    {
+      "node_id": "concept:93a80394715c57d83b03",
+      "label": "endure",
+      "activation": 0.46,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.7917984251968504
+    },
+    {
+      "node_id": "concept:f59c0081df305093f441",
+      "label": "kant",
+      "activation": 0.46,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.7917984251968504
+    },
+    {
+      "node_id": "concept:986a1b7135f4986150aa",
+      "label": "primary",
+      "activation": 0.46,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.7917984251968504
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 141
     },
     "explore": {
-      "attempts": 120,
-      "successes": 120
+      "attempts": 121,
+      "successes": 121
     },
     "consolidate": {
       "attempts": 139,
