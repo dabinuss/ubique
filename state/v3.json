@@ -1,39 +1,79 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T09:14:08.712877+00:00",
-  "generation": 2504,
+  "timestamp": "2026-10-15T09:15:51.235528+00:00",
+  "generation": 2505,
   "focus": "The Nature of Man: Studies in Optimistic Philosophy",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 2499,
+  "last_provider": "groq",
+  "last_provider_generation": 2505,
   "last_search_generation": 2484,
   "cortex": {
-    "nodes": 6862,
-    "synapses": 30010,
+    "nodes": 6872,
+    "synapses": 30070,
     "active": 120,
-    "archived_synapses": 15926
+    "archived_synapses": 15946
   },
   "memory": {
-    "episodes": 2759,
-    "claims": 494,
+    "episodes": 2760,
+    "claims": 499,
     "stances": 26,
     "interests": 49,
-    "associative_comparisons": 302,
+    "associative_comparisons": 304,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 4129,
+    "events": 4144,
     "segments": 129,
     "compressed_snapshot": true,
     "snapshot_events": 4073
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 43,
+  "evidence_reviews": 45,
   "workspace": [
+    {
+      "node_id": "concept:352b84777d8dd96ac9c0",
+      "label": "cases",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.9829064220183488
+    },
+    {
+      "node_id": "concept:fe099a0620ce9759b542",
+      "label": "regard",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.9829064220183488
+    },
+    {
+      "node_id": "concept:44ed5af6d587a0517332",
+      "label": "unmetaphysical",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.9829064220183488
+    },
+    {
+      "node_id": "concept:665c08c04775bf4e1d9e",
+      "label": "disposition",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.9829064220183488
+    },
+    {
+      "node_id": "concept:bd42f9875b2c2a608bba",
+      "label": "mankind",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.9829064220183488
+    },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
@@ -43,52 +83,12 @@
       "score": 0.9771366594360087
     },
     {
-      "node_id": "concept:721048dc35951006",
-      "label": "observations",
-      "activation": 1.0,
-      "novelty": 0.4098360655737705,
+      "node_id": "concept:f5dbf9fe930c4f499bc6",
+      "label": "historical",
+      "activation": 0.76,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9706557377049181
-    },
-    {
-      "node_id": "concept:244210e48437b6556980",
-      "label": "project",
-      "activation": 1.0,
-      "novelty": 0.351493848857645,
-      "conflict": 0,
-      "score": 0.9549033391915642
-    },
-    {
-      "node_id": "concept:699270e9adcc05861208",
-      "label": "unjust",
-      "activation": 0.6390781427178426,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.9011341935353121
-    },
-    {
-      "node_id": "concept:933306c90373b6f29666",
-      "label": "tage",
-      "activation": 0.6327045089976244,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8978199040007986
-    },
-    {
-      "node_id": "concept:5fb6a47e368e12e5d8b1",
-      "label": "over",
-      "activation": 0.6390781427178426,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.8927287974785842
-    },
-    {
-      "node_id": "concept:10d0d9c7a5909812",
-      "label": "test",
-      "activation": 1.0,
-      "novelty": 0.04839099927413501,
-      "conflict": 0,
-      "score": 0.8730655698040164
+      "score": 0.9730854625550662
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 16
     },
     "read": {
-      "attempts": 167,
-      "successes": 167
+      "attempts": 168,
+      "successes": 168
     },
     "explore": {
       "attempts": 136,
