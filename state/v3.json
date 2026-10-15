@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T13:13:42.316962+00:00",
-  "generation": 2556,
-  "focus": "Jung for Beginners",
-  "last_action": "read",
+  "timestamp": "2026-10-15T13:15:15.972778+00:00",
+  "generation": 2557,
+  "focus": "A General Introduction to Psychoanalysis.",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": null,
   "last_provider_generation": 2556,
   "last_search_generation": 2553,
   "cortex": {
-    "nodes": 7031,
+    "nodes": 7032,
     "synapses": 31883,
     "active": 120,
-    "archived_synapses": 17299
+    "archived_synapses": 17301
   },
   "memory": {
     "episodes": 2796,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 4578,
+    "events": 4582,
     "segments": 143,
     "compressed_snapshot": true,
     "snapshot_events": 4511
@@ -43,6 +43,38 @@
       "score": 1.0021052631578948
     },
     {
+      "node_id": "concept:ee4da74a5167ba44c26b",
+      "label": "rtheless",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.9829064220183488
+    },
+    {
+      "node_id": "concept:09cbad3beca70ddbcc89",
+      "label": "analyze",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.9829064220183488
+    },
+    {
+      "node_id": "concept:419a636ccc2aa55c7347",
+      "label": "reveal",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.9829064220183488
+    },
+    {
+      "node_id": "concept:75519932722f6e16485a",
+      "label": "substitute",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.9829064220183488
+    },
+    {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
       "activation": 1.0,
@@ -51,44 +83,12 @@
       "score": 0.9748936170212767
     },
     {
-      "node_id": "concept:5a2a957b269e8f0f",
-      "label": "external",
-      "activation": 1.0,
-      "novelty": 0.29542097488921715,
+      "node_id": "concept:da15caaee9de1b0dc60a",
+      "label": "individual",
+      "activation": 0.76,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9397636632200888
-    },
-    {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.20725388601036274,
-      "conflict": 0,
-      "score": 0.915958549222798
-    },
-    {
-      "node_id": "concept:8c0a47d3266f1cb7",
-      "label": "continuity",
-      "activation": 1.0,
-      "novelty": 0.05025125628140704,
-      "conflict": 0,
-      "score": 0.87356783919598
-    },
-    {
-      "node_id": "concept:e4dcb24f654139700938",
-      "label": "belonging",
-      "activation": 0.5887952247728642,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.8665816801471955
-    },
-    {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
-      "activation": 1.0,
-      "novelty": 0.024070285232880007,
-      "conflict": 0,
-      "score": 0.8664989770128777
+      "score": 0.9730854625550662
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 183
     },
     "explore": {
-      "attempts": 146,
-      "successes": 146
+      "attempts": 147,
+      "successes": 147
     },
     "consolidate": {
       "attempts": 169,
