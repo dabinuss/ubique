@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T12:36:55.504920+00:00",
-  "generation": 2548,
+  "timestamp": "2026-10-15T12:38:35.648650+00:00",
+  "generation": 2549,
   "focus": "The World as Will and Idea, Volume 1",
-  "last_action": "connect",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 2545,
   "last_search_generation": 2530,
   "cortex": {
-    "nodes": 6995,
-    "synapses": 31536,
+    "nodes": 6998,
+    "synapses": 31622,
     "active": 120,
-    "archived_synapses": 17012
+    "archived_synapses": 16926
   },
   "memory": {
     "episodes": 2782,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 4487,
+    "events": 4492,
     "segments": 141,
     "compressed_snapshot": true,
     "snapshot_events": 4428
@@ -53,10 +53,10 @@
     {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
-      "activation": 0.9860412797837768,
-      "novelty": 0.3076923076923077,
+      "activation": 0.9781798317879464,
+      "novelty": 0.30349013657056145,
       "conflict": 0,
-      "score": 0.9358183885644871
+      "score": 0.9305958494037838
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -65,14 +65,6 @@
       "novelty": 0.2111932418162619,
       "conflict": 0,
       "score": 0.9170221752903907
-    },
-    {
-      "node_id": "concept:be385d45dcaf7b6484f2",
-      "label": "cite",
-      "activation": 0.6249533032595472,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.8853838809602708
     },
     {
       "node_id": "concept:8c0a47d3266f1cb7",
@@ -89,6 +81,14 @@
       "novelty": 0.049031625398381955,
       "conflict": 0,
       "score": 0.8732385388575632
+    },
+    {
+      "node_id": "concept:be385d45dcaf7b6484f2",
+      "label": "cite",
+      "activation": 0.5896836476023098,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.8592339219500515
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 144
     },
     "consolidate": {
-      "attempts": 167,
-      "successes": 167
+      "attempts": 168,
+      "successes": 168
     },
     "connect": {
       "attempts": 125,
