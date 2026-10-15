@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T09:20:47.020256+00:00",
-  "generation": 2508,
-  "focus": "Mental evolution in man: Origin of human faculty.",
-  "last_action": "consolidate",
+  "timestamp": "2026-10-15T09:34:20.997125+00:00",
+  "generation": 2509,
+  "focus": "A treatise concerning the principles of human knowledge, 1734",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 2505,
   "last_search_generation": 2507,
@@ -14,7 +14,7 @@
     "nodes": 6879,
     "synapses": 30198,
     "active": 120,
-    "archived_synapses": 16000
+    "archived_synapses": 16102
   },
   "memory": {
     "episodes": 2763,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 4176,
+    "events": 4180,
     "segments": 130,
     "compressed_snapshot": true,
     "snapshot_events": 4171
@@ -51,14 +51,6 @@
       "score": 0.9706557377049181
     },
     {
-      "node_id": "concept:2104e56ef446302ca000",
-      "label": "exception",
-      "activation": 0.6625128478220066,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.9049148441327497
-    },
-    {
       "node_id": "concept:10d0d9c7a5909812",
       "label": "test",
       "activation": 1.0,
@@ -67,28 +59,36 @@
       "score": 0.8730655698040164
     },
     {
+      "node_id": "concept:2104e56ef446302ca000",
+      "label": "exception",
+      "activation": 0.6147083743412353,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.8722467798542928
+    },
+    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
-      "activation": 0.8980044557358411,
-      "novelty": 0.23584905660377356,
+      "activation": 0.8438104983275415,
+      "novelty": 0.23337222870478413,
       "conflict": 0,
-      "score": 0.8706415622656563
+      "score": 0.8417919608806135
+    },
+    {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 0.9089783288233003,
+      "novelty": 0.04946821667078902,
+      "conflict": 0,
+      "score": 0.8260251494892292
     },
     {
       "node_id": "concept:cc648bcb8052552cc8d8",
       "label": "incited",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:0f471c347284f2de40bd",
-      "label": "surprised",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8080135593220339
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 168
     },
     "explore": {
-      "attempts": 136,
-      "successes": 136
+      "attempts": 137,
+      "successes": 137
     },
     "consolidate": {
       "attempts": 158,
