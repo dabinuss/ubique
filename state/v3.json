@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T02:51:26.839162+00:00",
-  "generation": 2421,
-  "focus": "The origin of human reason, being an examination of recent hypotheses concerning it.",
-  "last_action": "explore",
+  "timestamp": "2026-10-15T02:52:50.923911+00:00",
+  "generation": 2422,
+  "focus": "Mental evolution in man: Origin of human faculty.",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 2420,
   "last_search_generation": 2415,
   "cortex": {
-    "nodes": 6545,
-    "synapses": 26835,
+    "nodes": 6560,
+    "synapses": 27009,
     "active": 120,
-    "archived_synapses": 13807
+    "archived_synapses": 13823
   },
   "memory": {
     "episodes": 2708,
@@ -26,46 +26,14 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 3490,
-    "segments": 106,
+    "events": 3495,
+    "segments": 107,
     "compressed_snapshot": true,
     "snapshot_events": 3441
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 30,
   "workspace": [
-    {
-      "node_id": "concept:ffa0160df318a81cff6b",
-      "label": "tinctly",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:7da6d82851b2b4e2cbda",
-      "label": "enunciated",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:69d0044d65bc72753132",
-      "label": "rendered",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:0dd1b6d5c52eec73e28b",
-      "label": "permanent",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
     {
       "node_id": "concept:24ea913efda289dc1b17",
       "label": "most",
@@ -75,20 +43,52 @@
       "score": 0.9771366594360087
     },
     {
-      "node_id": "concept:a9bbc0222075becade10",
-      "label": "though",
-      "activation": 0.76,
-      "novelty": 0.8163265306122448,
+      "node_id": "concept:ffa0160df318a81cff6b",
+      "label": "tinctly",
+      "activation": 0.695571210432,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9556081632653062
+      "score": 0.9395824919797062
     },
     {
-      "node_id": "concept:b380f83366d51d52",
-      "label": "service",
-      "activation": 0.76,
-      "novelty": 0.7352941176470589,
+      "node_id": "concept:7da6d82851b2b4e2cbda",
+      "label": "enunciated",
+      "activation": 0.695571210432,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9337294117647059
+      "score": 0.9395824919797062
+    },
+    {
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.2577319587628866,
+      "conflict": 0,
+      "score": 0.9295876288659795
+    },
+    {
+      "node_id": "concept:69d0044d65bc72753132",
+      "label": "rendered",
+      "activation": 0.659614140288,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9208848155048261
+    },
+    {
+      "node_id": "concept:0dd1b6d5c52eec73e28b",
+      "label": "permanent",
+      "activation": 0.659614140288,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9208848155048261
+    },
+    {
+      "node_id": "concept:a9bbc0222075becade10",
+      "label": "though",
+      "activation": 0.6999878608405903,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.9165921128339574
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 120
     },
     "consolidate": {
-      "attempts": 137,
-      "successes": 137
+      "attempts": 138,
+      "successes": 138
     },
     "connect": {
       "attempts": 98,
