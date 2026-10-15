@@ -1,46 +1,46 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T19:19:55.647933+00:00",
-  "generation": 2634,
-  "focus": "A General Introduction to Psychoanalysis.",
-  "last_action": "explore",
+  "timestamp": "2026-10-15T19:21:38.721048+00:00",
+  "generation": 2635,
+  "focus": "Psychology: Briefer Course",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 2630,
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": "groq",
+  "last_provider_generation": 2635,
   "last_search_generation": 2622,
   "cortex": {
-    "nodes": 7288,
-    "synapses": 34473,
+    "nodes": 7295,
+    "synapses": 34533,
     "active": 120,
-    "archived_synapses": 19425
+    "archived_synapses": 19443
   },
   "memory": {
-    "episodes": 2836,
-    "claims": 642,
+    "episodes": 2837,
+    "claims": 647,
     "stances": 26,
     "interests": 54,
-    "associative_comparisons": 416,
+    "associative_comparisons": 418,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 5165,
+    "events": 5180,
     "segments": 165,
     "compressed_snapshot": true,
-    "snapshot_events": 5094
+    "snapshot_events": 5180
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 78,
+  "evidence_reviews": 80,
   "workspace": [
     {
       "node_id": "concept:3f8b4464a99de3dc8c5c",
       "label": "religious",
-      "activation": 0.959758404668106,
+      "activation": 0.9861110811383763,
       "novelty": 0.4024144869215292,
       "conflict": 0,
-      "score": 0.947726281896228
+      "score": 0.9614296736607686
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -49,22 +49,6 @@
       "novelty": 0.19120458891013387,
       "conflict": 0,
       "score": 0.9116252390057362
-    },
-    {
-      "node_id": "concept:c52c4fb88926f84bcbc3",
-      "label": "flute",
-      "activation": 0.635787746852969,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8994231876855778
-    },
-    {
-      "node_id": "concept:cdb59355f3ba293977fc",
-      "label": "player",
-      "activation": 0.635787746852969,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8994231876855778
     },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
@@ -78,17 +62,33 @@
       "node_id": "concept:8b16ced79976e6a1",
       "label": "action",
       "activation": 1.0,
-      "novelty": 0.023889154323936932,
+      "novelty": 0.023863500775563776,
       "conflict": 0,
-      "score": 0.866450071667463
+      "score": 0.8664431452094024
     },
     {
-      "node_id": "concept:0b27c158feb36ab18a10",
-      "label": "kind",
-      "activation": 0.5724811154309993,
-      "novelty": 0.7604562737642586,
+      "node_id": "concept:c52c4fb88926f84bcbc3",
+      "label": "flute",
+      "activation": 0.5784023438171143,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8430133739404695
+      "score": 0.8611773820502056
+    },
+    {
+      "node_id": "concept:cdb59355f3ba293977fc",
+      "label": "player",
+      "activation": 0.5784023438171143,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.8611773820502056
+    },
+    {
+      "node_id": "concept:87409b1c5a34910b1e75",
+      "label": "excellence",
+      "activation": 0.46,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.8080135593220339
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 22
     },
     "read": {
-      "attempts": 206,
-      "successes": 206
+      "attempts": 207,
+      "successes": 207
     },
     "explore": {
       "attempts": 162,
