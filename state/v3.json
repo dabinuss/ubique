@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T09:57:46.829559+00:00",
-  "generation": 2516,
+  "timestamp": "2026-10-15T09:59:22.354137+00:00",
+  "generation": 2517,
   "focus": "Six Metaphysical Meditations",
-  "last_action": "connect",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 2516,
   "last_search_generation": 2507,
   "cortex": {
-    "nodes": 6913,
-    "synapses": 30471,
+    "nodes": 6916,
+    "synapses": 30567,
     "active": 120,
-    "archived_synapses": 16321
+    "archived_synapses": 16237
   },
   "memory": {
     "episodes": 2766,
@@ -26,46 +26,14 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 4240,
-    "segments": 132,
+    "events": 4245,
+    "segments": 133,
     "compressed_snapshot": true,
     "snapshot_events": 4171
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 50,
   "workspace": [
-    {
-      "node_id": "concept:83ea6ed88c723e70ff3a",
-      "label": "supplements",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:069023b01b3f034694e6",
-      "label": "imperfect",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:b9abdfa5387bf94176ea",
-      "label": "sufficient",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:93c4abe27cf169610253",
-      "label": "direction",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
@@ -75,20 +43,52 @@
       "score": 0.9771366594360087
     },
     {
-      "node_id": "concept:188bca4ebc7d0151c9e4",
-      "label": "instincts",
-      "activation": 0.76,
+      "node_id": "concept:83ea6ed88c723e70ff3a",
+      "label": "supplements",
+      "activation": 0.695571210432,
       "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9730854625550662
+      "score": 0.9395824919797062
+    },
+    {
+      "node_id": "concept:069023b01b3f034694e6",
+      "label": "imperfect",
+      "activation": 0.695571210432,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9395824919797062
+    },
+    {
+      "node_id": "concept:188bca4ebc7d0151c9e4",
+      "label": "instincts",
+      "activation": 0.695571210432,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.930510588746674
+    },
+    {
+      "node_id": "concept:b9abdfa5387bf94176ea",
+      "label": "sufficient",
+      "activation": 0.659614140288,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9208848155048261
     },
     {
       "node_id": "concept:925a391b4af38b32a6a0",
       "label": "variations",
-      "activation": 0.76,
-      "novelty": 0.8474576271186441,
+      "activation": 0.659614140288,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.964013559322034
+      "score": 0.9034075162150661
+    },
+    {
+      "node_id": "concept:0895a532e404a5c9ea96",
+      "label": "give",
+      "activation": 0.659614140288,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.8955977781466105
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 138
     },
     "consolidate": {
-      "attempts": 159,
-      "successes": 159
+      "attempts": 160,
+      "successes": 160
     },
     "connect": {
       "attempts": 118,
