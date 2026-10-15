@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T14:30:24.877376+00:00",
-  "generation": 2574,
+  "timestamp": "2026-10-15T14:32:01.308256+00:00",
+  "generation": 2575,
   "focus": "Evidence as to Man's Place in Nature",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 2573,
   "last_search_generation": 2553,
   "cortex": {
-    "nodes": 7080,
-    "synapses": 32378,
+    "nodes": 7084,
+    "synapses": 32430,
     "active": 120,
-    "archived_synapses": 17630
+    "archived_synapses": 17626
   },
   "memory": {
     "episodes": 2802,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 4702,
+    "events": 4707,
     "segments": 148,
     "compressed_snapshot": true,
     "snapshot_events": 4676
@@ -37,10 +37,42 @@
     {
       "node_id": "concept:d887db09649dab0d8395",
       "label": "parts",
-      "activation": 0.9717955690193978,
+      "activation": 0.9711970955213588,
       "novelty": 0.6309148264984227,
       "conflict": 0,
-      "score": 1.0156806990446612
+      "score": 1.015369492825681
+    },
+    {
+      "node_id": "concept:46ea3406568b33c2942c",
+      "label": "lowing",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.9829064220183488
+    },
+    {
+      "node_id": "concept:622a494d3ea8c7ba2fed",
+      "label": "spring",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.9829064220183488
+    },
+    {
+      "node_id": "concept:e83664255c6963e962bb",
+      "label": "summer",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.9829064220183488
+    },
+    {
+      "node_id": "concept:7cec37b0827918b43067",
+      "label": "chrysalis",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.9829064220183488
     },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
@@ -51,44 +83,12 @@
       "score": 0.9748936170212767
     },
     {
-      "node_id": "concept:12ed8d14a55fdb4701ee",
-      "label": "anyone",
-      "activation": 1.0,
-      "novelty": 0.4024144869215292,
+      "node_id": "concept:1d9283d848ea941ace1f",
+      "label": "later",
+      "activation": 0.76,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.968651911468813
-    },
-    {
-      "node_id": "concept:24ea913efda289dc1b17",
-      "label": "most",
-      "activation": 1.0,
-      "novelty": 0.36900369003690037,
-      "conflict": 0,
-      "score": 0.9596309963099632
-    },
-    {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 0.9998505856586097,
-      "novelty": 0.20533880903490764,
-      "conflict": 0,
-      "score": 0.9153637829819021
-    },
-    {
-      "node_id": "concept:2a9810cb71316c9a03e5",
-      "label": "tent",
-      "activation": 0.5858421701082347,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.8650460917215883
-    },
-    {
-      "node_id": "concept:00e13ed7af55b27622f1",
-      "label": "work",
-      "activation": 0.5858421701082347,
-      "novelty": 0.6688963210702341,
-      "conflict": 0,
-      "score": 0.8252399351452453
+      "score": 0.9730854625550662
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 150
     },
     "consolidate": {
-      "attempts": 173,
-      "successes": 173
+      "attempts": 174,
+      "successes": 174
     },
     "connect": {
       "attempts": 129,
