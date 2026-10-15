@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T19:21:38.721048+00:00",
-  "generation": 2635,
+  "timestamp": "2026-10-15T19:23:13.284283+00:00",
+  "generation": 2636,
   "focus": "Psychology: Briefer Course",
-  "last_action": "read",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": null,
   "last_provider_generation": 2635,
   "last_search_generation": 2622,
   "cortex": {
-    "nodes": 7295,
+    "nodes": 7296,
     "synapses": 34533,
     "active": 120,
-    "archived_synapses": 19443
+    "archived_synapses": 19563
   },
   "memory": {
     "episodes": 2837,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 5180,
+    "events": 5184,
     "segments": 165,
     "compressed_snapshot": true,
     "snapshot_events": 5180
@@ -35,60 +35,60 @@
   "evidence_reviews": 80,
   "workspace": [
     {
+      "node_id": "concept:d07561c1df8bc350ca1e",
+      "label": "civilized",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.9829064220183488
+    },
+    {
+      "node_id": "concept:766c1d13a3e06c4dfcfc",
+      "label": "among",
+      "activation": 0.76,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9730854625550662
+    },
+    {
+      "node_id": "concept:646964943fd2271187db",
+      "label": "sort",
+      "activation": 0.76,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9730854625550662
+    },
+    {
+      "node_id": "concept:d9298a10d1b0735837dc",
+      "label": "other",
+      "activation": 1.0,
+      "novelty": 0.4175365344467641,
+      "conflict": 0,
+      "score": 0.9727348643006264
+    },
+    {
       "node_id": "concept:3f8b4464a99de3dc8c5c",
       "label": "religious",
-      "activation": 0.9861110811383763,
+      "activation": 1.0,
       "novelty": 0.4024144869215292,
       "conflict": 0,
-      "score": 0.9614296736607686
+      "score": 0.968651911468813
     },
     {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.19120458891013387,
-      "conflict": 0,
-      "score": 0.9116252390057362
-    },
-    {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 1.0,
-      "novelty": 0.049031625398381955,
-      "conflict": 0,
-      "score": 0.8732385388575632
-    },
-    {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
-      "activation": 1.0,
-      "novelty": 0.023863500775563776,
-      "conflict": 0,
-      "score": 0.8664431452094024
-    },
-    {
-      "node_id": "concept:c52c4fb88926f84bcbc3",
-      "label": "flute",
-      "activation": 0.5784023438171143,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.8611773820502056
-    },
-    {
-      "node_id": "concept:cdb59355f3ba293977fc",
-      "label": "player",
-      "activation": 0.5784023438171143,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.8611773820502056
-    },
-    {
-      "node_id": "concept:87409b1c5a34910b1e75",
-      "label": "excellence",
-      "activation": 0.46,
+      "node_id": "concept:7309d9f34f5872a79f59",
+      "label": "strongly",
+      "activation": 0.76,
       "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.964013559322034
+    },
+    {
+      "node_id": "concept:05970e30555fc7bf6388",
+      "label": "felt",
+      "activation": 0.76,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.964013559322034
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 188
     },
     "connect": {
-      "attempts": 141,
-      "successes": 141
+      "attempts": 142,
+      "successes": 142
     },
     "evolve": {
       "attempts": 5,
