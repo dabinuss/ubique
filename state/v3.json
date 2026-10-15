@@ -1,33 +1,33 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T22:05:39.183416+00:00",
-  "generation": 2670,
+  "timestamp": "2026-10-15T22:07:18.722499+00:00",
+  "generation": 2671,
   "focus": "A Treatise Concerning the Principles of Human Knowledge",
-  "last_action": "connect",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "last_action_detail": "Read 8000 source characters",
   "last_provider": null,
   "last_provider_generation": 2669,
   "last_search_generation": 2668,
   "cortex": {
-    "nodes": 7417,
-    "synapses": 35548,
+    "nodes": 7421,
+    "synapses": 35594,
     "active": 120,
-    "archived_synapses": 19894
+    "archived_synapses": 19916
   },
   "memory": {
-    "episodes": 2860,
-    "claims": 693,
+    "episodes": 2861,
+    "claims": 696,
     "stances": 26,
     "interests": 56,
-    "associative_comparisons": 450,
+    "associative_comparisons": 452,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 5469,
-    "segments": 174,
+    "events": 5480,
+    "segments": 175,
     "compressed_snapshot": true,
     "snapshot_events": 5429
   },
@@ -37,10 +37,10 @@
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.9455064281029448,
+      "activation": 0.936041235680878,
       "novelty": 0.3407155025553663,
       "conflict": 0,
-      "score": 0.9236565283034803
+      "score": 0.9187346282440056
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -49,22 +49,6 @@
       "novelty": 0.18796992481203006,
       "conflict": 0,
       "score": 0.9107518796992482
-    },
-    {
-      "node_id": "concept:c8b80d05b4da58fb4330",
-      "label": "ctual",
-      "activation": 0.6240842020143124,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.8849319483127487
-    },
-    {
-      "node_id": "concept:f3f65655623796ebaa9b",
-      "label": "outruns",
-      "activation": 0.6240842020143124,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.8849319483127487
     },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
@@ -89,6 +73,22 @@
       "novelty": 0.04807692307692307,
       "conflict": 0,
       "score": 0.8729807692307692
+    },
+    {
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
+      "activation": 1.0,
+      "novelty": 0.02371072910491998,
+      "conflict": 0,
+      "score": 0.8664018968583285
+    },
+    {
+      "node_id": "concept:c8b80d05b4da58fb4330",
+      "label": "ctual",
+      "activation": 0.5892658221983287,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.8590166527399814
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 24
     },
     "read": {
-      "attempts": 217,
-      "successes": 217
+      "attempts": 218,
+      "successes": 218
     },
     "explore": {
       "attempts": 168,
