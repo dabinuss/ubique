@@ -1,33 +1,33 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T00:22:44.776805+00:00",
-  "generation": 2387,
-  "focus": "A Treatise of Human Nature",
-  "last_action": "evolve",
-  "last_action_success": false,
-  "last_action_detail": "{\"accepted\": false, \"title\": \"Introduce stochastic threshold relaxation for exploratory cross-source association\", \"summary\": \"To investigate recurring bottlenecks in the v3 learning and action cycle—specifically the rigidity of matching source text comparisons—this change introduces a controlled stochastic 'exploration_factor' to the SemanticLearner. By occasionally permitting a minimum shared-te",
+  "timestamp": "2026-10-15T00:36:16.281902+00:00",
+  "generation": 2388,
+  "focus": "Introduction to psychology",
+  "last_action": "read",
+  "last_action_success": true,
+  "last_action_detail": "Read 8000 source characters",
   "last_provider": null,
   "last_provider_generation": 2386,
   "last_search_generation": 2369,
   "cortex": {
-    "nodes": 6378,
-    "synapses": 25503,
+    "nodes": 6382,
+    "synapses": 25536,
     "active": 120,
-    "archived_synapses": 12179
+    "archived_synapses": 12248
   },
   "memory": {
-    "episodes": 2686,
-    "claims": 357,
+    "episodes": 2687,
+    "claims": 360,
     "stances": 26,
     "interests": 44,
-    "associative_comparisons": 200,
+    "associative_comparisons": 202,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 3217,
-    "segments": 96,
+    "events": 3228,
+    "segments": 97,
     "compressed_snapshot": true,
     "snapshot_events": 3177
   },
@@ -67,28 +67,28 @@
       "score": 0.8665557848731336
     },
     {
-      "node_id": "concept:021a0149f3125b44752c",
-      "label": "dreamt",
-      "activation": 0.5253694004657304,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.8257905134390302
-    },
-    {
-      "node_id": "concept:e7b6fe4a776cea9587f9",
-      "label": "regularly",
-      "activation": 0.5253694004657304,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.8257905134390302
-    },
-    {
       "node_id": "concept:a6b46dd0d1ae5e86cbc8",
       "label": "some",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.7917984251968504
+    },
+    {
+      "node_id": "concept:1cc8e284c5d8728ae20c",
+      "label": "uncommon",
+      "activation": 0.46,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.7917984251968504
+    },
+    {
+      "node_id": "concept:69e1b1f7ae9d01694066",
+      "label": "complicated",
+      "activation": 0.46,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.7917984251968504
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 12
     },
     "read": {
-      "attempts": 128,
-      "successes": 128
+      "attempts": 129,
+      "successes": 129
     },
     "explore": {
       "attempts": 113,
