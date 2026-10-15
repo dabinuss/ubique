@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T19:03:13.812441+00:00",
-  "generation": 2631,
+  "timestamp": "2026-10-15T19:04:46.078954+00:00",
+  "generation": 2632,
   "focus": "The Republic of Plato",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 2630,
   "last_search_generation": 2622,
   "cortex": {
-    "nodes": 7285,
-    "synapses": 34385,
+    "nodes": 7288,
+    "synapses": 34473,
     "active": 120,
-    "archived_synapses": 19135
+    "archived_synapses": 19079
   },
   "memory": {
     "episodes": 2836,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 5152,
+    "events": 5157,
     "segments": 164,
     "compressed_snapshot": true,
     "snapshot_events": 5094
@@ -35,52 +35,52 @@
   "evidence_reviews": 78,
   "workspace": [
     {
-      "node_id": "concept:06192dc118de037c",
-      "label": "necessary",
-      "activation": 0.696571210432,
+      "node_id": "concept:c52c4fb88926f84bcbc3",
+      "label": "flute",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.9829064220183488
+    },
+    {
+      "node_id": "concept:cdb59355f3ba293977fc",
+      "label": "player",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.9829064220183488
+    },
+    {
+      "node_id": "concept:0b27c158feb36ab18a10",
+      "label": "kind",
+      "activation": 0.76,
       "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.9226251926899462
+      "score": 0.9556081632653062
     },
     {
-      "node_id": "concept:94f2fe083e1bab131444",
-      "label": "profitable",
-      "activation": 0.660614140288,
-      "novelty": 0.8810572687224669,
+      "node_id": "concept:8ed42f97cfcba562d725",
+      "label": "generally",
+      "activation": 0.76,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.9214048155048262
+      "score": 0.9405231939163499
     },
     {
-      "node_id": "concept:3ea6f83a9ed6c3f1fe71",
-      "label": "remembers",
-      "activation": 0.660614140288,
-      "novelty": 0.8810572687224669,
+      "node_id": "concept:a908043ed469f361cd51",
+      "label": "course",
+      "activation": 0.76,
+      "novelty": 0.7352941176470589,
       "conflict": 0,
-      "score": 0.9214048155048262
+      "score": 0.9337294117647059
     },
     {
-      "node_id": "concept:006f92f1bdf8ced9c574",
-      "label": "whatsoever",
-      "activation": 0.660614140288,
-      "novelty": 0.8810572687224669,
+      "node_id": "concept:3f8b4464a99de3dc8c5c",
+      "label": "religious",
+      "activation": 0.8985828844727511,
+      "novelty": 0.4024144869215292,
       "conflict": 0,
-      "score": 0.9214048155048262
-    },
-    {
-      "node_id": "concept:7613b29a01b6967ea30a",
-      "label": "unavoidable",
-      "activation": 0.696571210432,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.9148154546214904
-    },
-    {
-      "node_id": "concept:745c9326c6e9f07755f0",
-      "label": "besides",
-      "activation": 0.660614140288,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.912332912271794
+      "score": 0.9159150113946435
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -105,8 +105,8 @@
       "successes": 160
     },
     "consolidate": {
-      "attempts": 187,
-      "successes": 187
+      "attempts": 188,
+      "successes": 188
     },
     "connect": {
       "attempts": 141,
