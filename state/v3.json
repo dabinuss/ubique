@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T08:42:22.025026+00:00",
-  "generation": 2499,
+  "timestamp": "2026-10-15T08:55:56.743864+00:00",
+  "generation": 2500,
   "focus": "Human, All Too Human: A Book for Free Spirits",
-  "last_action": "consolidate",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": "groq",
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": null,
   "last_provider_generation": 2499,
   "last_search_generation": 2484,
   "cortex": {
     "nodes": 6846,
     "synapses": 29874,
     "active": 120,
-    "archived_synapses": 15544
+    "archived_synapses": 15710
   },
   "memory": {
     "episodes": 2757,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 4094,
+    "events": 4098,
     "segments": 128,
     "compressed_snapshot": true,
     "snapshot_events": 4073
@@ -59,36 +59,36 @@
       "score": 0.9549033391915642
     },
     {
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
+      "activation": 1.0,
+      "novelty": 0.024122542515981185,
+      "conflict": 0,
+      "score": 0.8665130864793149
+    },
+    {
       "node_id": "concept:0040953a08da7b8f09eb",
       "label": "heard",
-      "activation": 0.6380018657265867,
-      "novelty": 0.8474576271186441,
+      "activation": 0.5815383455218681,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.9005745294998591
+      "score": 0.8628081029366776
     },
     {
       "node_id": "concept:d23be8d1141403ea5dd4",
       "label": "profit",
-      "activation": 0.6380018657265867,
-      "novelty": 0.8474576271186441,
+      "activation": 0.5815383455218681,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.9005745294998591
-    },
-    {
-      "node_id": "concept:2bcb43cbc8f6b7ef6633",
-      "label": "view",
-      "activation": 0.6747818709648664,
-      "novelty": 0.6688963210702341,
-      "conflict": 0,
-      "score": 0.8714885795906937
+      "score": 0.8628081029366776
     },
     {
       "node_id": "concept:d536216e446a3d3168f1",
       "label": "contraction",
-      "activation": 0.625816493915357,
+      "activation": 0.5921269156516554,
       "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.8707477707523354
+      "score": 0.8532291900552107
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 165
     },
     "explore": {
-      "attempts": 134,
-      "successes": 134
+      "attempts": 135,
+      "successes": 135
     },
     "consolidate": {
       "attempts": 156,
