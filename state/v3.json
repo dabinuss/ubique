@@ -1,55 +1,39 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T21:45:40.754613+00:00",
-  "generation": 2665,
+  "timestamp": "2026-10-15T21:47:12.025463+00:00",
+  "generation": 2666,
   "focus": "The Physical Basis of Mind",
-  "last_action": "explore",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action_detail": "Read 8000 source characters",
   "last_provider": null,
   "last_provider_generation": 2664,
   "last_search_generation": 2645,
   "cortex": {
-    "nodes": 7408,
-    "synapses": 35493,
+    "nodes": 7412,
+    "synapses": 35536,
     "active": 120,
-    "archived_synapses": 19765
+    "archived_synapses": 19786
   },
   "memory": {
-    "episodes": 2853,
-    "claims": 690,
+    "episodes": 2854,
+    "claims": 693,
     "stances": 26,
     "interests": 56,
-    "associative_comparisons": 442,
+    "associative_comparisons": 444,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 5418,
+    "events": 5429,
     "segments": 173,
     "compressed_snapshot": true,
-    "snapshot_events": 5345
+    "snapshot_events": 5429
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 91,
   "workspace": [
-    {
-      "node_id": "concept:f2cbe06ad8dc61e36d81",
-      "label": "dependance",
-      "activation": 0.659114140288,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9206248155048262
-    },
-    {
-      "node_id": "concept:12ac05147efdd0b67f56",
-      "label": "having",
-      "activation": 0.659114140288,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.8880625468661099
-    },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
@@ -75,20 +59,36 @@
       "score": 0.8729807692307692
     },
     {
-      "node_id": "concept:5de94d691ae3039a3f5d",
-      "label": "thing",
-      "activation": 0.693435892288,
-      "novelty": 0.6134969325153374,
+      "node_id": "concept:f2cbe06ad8dc61e36d81",
+      "label": "dependance",
+      "activation": 0.5722615357743392,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.866230835768901
+      "score": 0.8663895579246903
     },
     {
-      "node_id": "concept:a6b46dd0d1ae5e86cbc8",
-      "label": "some",
-      "activation": 0.659114140288,
-      "novelty": 0.6493506493506493,
+      "node_id": "concept:d9298a10d1b0735837dc",
+      "label": "other",
+      "activation": 0.8124410049182125,
+      "novelty": 0.34602076124567477,
       "conflict": 0,
-      "score": 0.8580640282744354
+      "score": 0.8558949280938026
+    },
+    {
+      "node_id": "concept:12ac05147efdd0b67f56",
+      "label": "having",
+      "activation": 0.5722615357743392,
+      "novelty": 0.7352941176470589,
+      "conflict": 0,
+      "score": 0.8361054103673624
+    },
+    {
+      "node_id": "concept:5de94d691ae3039a3f5d",
+      "label": "thing",
+      "activation": 0.632149147034671,
+      "novelty": 0.5970149253731344,
+      "conflict": 0,
+      "score": 0.8299115863087752
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 23
     },
     "read": {
-      "attempts": 216,
-      "successes": 216
+      "attempts": 217,
+      "successes": 217
     },
     "explore": {
       "attempts": 168,
