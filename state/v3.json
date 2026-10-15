@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T07:25:26.575792+00:00",
-  "generation": 2481,
+  "timestamp": "2026-10-15T07:27:01.431447+00:00",
+  "generation": 2482,
   "focus": "Psychology of the Unconscious",
-  "last_action": "explore",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 2477,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "gemini",
+  "last_provider_generation": 2482,
   "last_search_generation": 2461,
   "cortex": {
-    "nodes": 6781,
-    "synapses": 29137,
+    "nodes": 6782,
+    "synapses": 29191,
     "active": 120,
-    "archived_synapses": 15275
+    "archived_synapses": 15315
   },
   "memory": {
     "episodes": 2744,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 3949,
+    "events": 3954,
     "segments": 123,
     "compressed_snapshot": true,
     "snapshot_events": 3904
@@ -53,42 +53,42 @@
     {
       "node_id": "concept:31e289f536683cb9ce6c",
       "label": "laugh",
-      "activation": 0.6400297982361636,
-      "novelty": 0.8474576271186441,
+      "activation": 0.5879093955769286,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.9016290544048391
-    },
-    {
-      "node_id": "concept:fdd0b4595d9e2287b65a",
-      "label": "occasions",
-      "activation": 0.6329624800155846,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8979540489301381
+      "score": 0.8661210489653091
     },
     {
       "node_id": "concept:4028a42ef06a4844d8e3",
       "label": "bergson",
-      "activation": 0.6474764868779881,
+      "activation": 0.5980333194608778,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.8635757513165068
+    },
+    {
+      "node_id": "concept:fdd0b4595d9e2287b65a",
+      "label": "occasions",
+      "activation": 0.5770837350198834,
       "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.89709593644186
+      "score": 0.8604917054756456
     },
     {
       "node_id": "concept:44d425af1945e76862d5",
       "label": "bodily",
-      "activation": 0.5777234643653328,
-      "novelty": 0.8474576271186441,
+      "activation": 0.5068715224706888,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.869229760792007
+      "score": 0.8239813549500643
     },
     {
       "node_id": "concept:7edb360f06acaef2cc80",
       "label": "call",
-      "activation": 0.5777234643653328,
-      "novelty": 0.8474576271186441,
+      "activation": 0.5068715224706888,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.869229760792007
+      "score": 0.8239813549500643
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 132
     },
     "consolidate": {
-      "attempts": 151,
-      "successes": 151
+      "attempts": 152,
+      "successes": 152
     },
     "connect": {
       "attempts": 111,
