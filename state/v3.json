@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T16:18:17.644256+00:00",
-  "generation": 2596,
+  "timestamp": "2026-10-15T16:19:47.422309+00:00",
+  "generation": 2597,
   "focus": "An Introduction to Psychology",
-  "last_action": "explore",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": "groq",
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": null,
   "last_provider_generation": 2596,
   "last_search_generation": 2576,
   "cortex": {
-    "nodes": 7157,
-    "synapses": 33145,
+    "nodes": 7160,
+    "synapses": 33189,
     "active": 120,
-    "archived_synapses": 18137
+    "archived_synapses": 18181
   },
   "memory": {
-    "episodes": 2819,
-    "claims": 611,
+    "episodes": 2820,
+    "claims": 614,
     "stances": 26,
     "interests": 54,
-    "associative_comparisons": 382,
+    "associative_comparisons": 384,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 4874,
+    "events": 4885,
     "segments": 154,
     "compressed_snapshot": true,
     "snapshot_events": 4842
@@ -43,38 +43,6 @@
       "score": 1.058529411764706
     },
     {
-      "node_id": "concept:5d7318303179149862e7",
-      "label": "losing",
-      "activation": 0.6978969104581838,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9407918559933217
-    },
-    {
-      "node_id": "concept:86f9eedabbb5febd20ea",
-      "label": "tter",
-      "activation": 0.6944157271780139,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9389816406876335
-    },
-    {
-      "node_id": "concept:ad5aabc97d88f6e56dea",
-      "label": "exists",
-      "activation": 0.6619398403141838,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9220941795184419
-    },
-    {
-      "node_id": "concept:2270e73a86e507f7a99d",
-      "label": "contra",
-      "activation": 0.6619398403141838,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9220941795184419
-    },
-    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -83,12 +51,44 @@
       "score": 0.913946053946054
     },
     {
-      "node_id": "concept:b991a49b1b0aa2cc5850",
-      "label": "sight",
-      "activation": 0.6926591100047111,
-      "novelty": 0.7604562737642586,
+      "node_id": "concept:5d7318303179149862e7",
+      "label": "losing",
+      "activation": 0.6388452613529849,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.9055059311187996
+      "score": 0.9010130952255861
+    },
+    {
+      "node_id": "concept:86f9eedabbb5febd20ea",
+      "label": "tter",
+      "activation": 0.6314930600223082,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.8971899505336343
+    },
+    {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.049031625398381955,
+      "conflict": 0,
+      "score": 0.8732385388575632
+    },
+    {
+      "node_id": "concept:411f62e7fd037280",
+      "label": "actually",
+      "activation": 1.0,
+      "novelty": 0.0481811611659841,
+      "conflict": 0,
+      "score": 0.8730089135148158
+    },
+    {
+      "node_id": "concept:ec731dc2702dd67c",
+      "label": "resolved",
+      "activation": 1.0,
+      "novelty": 0.03320604349991699,
+      "conflict": 0,
+      "score": 0.8689656317449777
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 20
     },
     "read": {
-      "attempts": 195,
-      "successes": 195
+      "attempts": 196,
+      "successes": 196
     },
     "explore": {
       "attempts": 155,
