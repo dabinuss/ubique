@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T18:26:10.612023+00:00",
-  "generation": 2623,
-  "focus": "Psychoanalysis and Psychedelic Psychotherapy – A New Modern Synthesis?",
+  "timestamp": "2026-10-15T18:28:08.934114+00:00",
+  "generation": 2624,
+  "focus": "Jung for Beginners",
   "last_action": "explore",
   "last_action_success": true,
   "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 2618,
+  "last_provider": "groq",
+  "last_provider_generation": 2624,
   "last_search_generation": 2622,
   "cortex": {
-    "nodes": 7250,
-    "synapses": 34061,
+    "nodes": 7254,
+    "synapses": 34073,
     "active": 120,
-    "archived_synapses": 18777
+    "archived_synapses": 18979
   },
   "memory": {
     "episodes": 2833,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 5098,
+    "events": 5102,
     "segments": 162,
     "compressed_snapshot": true,
     "snapshot_events": 5094
@@ -51,20 +51,12 @@
       "score": 0.9727348643006264
     },
     {
-      "node_id": "concept:9303b20c347838b03eae",
-      "label": "clature",
-      "activation": 0.6940712104319999,
-      "novelty": 0.8810572687224669,
+      "node_id": "concept:3dbd9cd5e1fb3e4f7854",
+      "label": "faculty",
+      "activation": 0.8729094536548686,
+      "novelty": 0.4608294930875576,
       "conflict": 0,
-      "score": 0.9388024919797062
-    },
-    {
-      "node_id": "concept:cbae973f3f0bc8203746",
-      "label": "highly",
-      "activation": 0.658114140288,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9201048155048261
+      "score": 0.9183368790341722
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -75,20 +67,28 @@
       "score": 0.9125291828793776
     },
     {
-      "node_id": "concept:3dbd9cd5e1fb3e4f7854",
-      "label": "faculty",
-      "activation": 0.8277440550359276,
-      "novelty": 0.4608294930875576,
+      "node_id": "concept:9303b20c347838b03eae",
+      "label": "clature",
+      "activation": 0.6350468527815117,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8948508717523229
+      "score": 0.89903792276842
     },
     {
-      "node_id": "concept:4137b01e139589b7a1d3",
-      "label": "must",
-      "activation": 0.7069809690509619,
-      "novelty": 0.6688963210702341,
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.049031625398381955,
       "conflict": 0,
-      "score": 0.8882321105954634
+      "score": 0.8732385388575632
+    },
+    {
+      "node_id": "concept:cbae973f3f0bc8203746",
+      "label": "highly",
+      "activation": 0.5694814307157939,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.8649439032942468
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 203
     },
     "explore": {
-      "attempts": 159,
-      "successes": 159
+      "attempts": 160,
+      "successes": 160
     },
     "consolidate": {
       "attempts": 185,
