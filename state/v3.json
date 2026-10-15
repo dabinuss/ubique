@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T00:21:04.463346+00:00",
-  "generation": 2386,
+  "timestamp": "2026-10-15T00:22:44.776805+00:00",
+  "generation": 2387,
   "focus": "A Treatise of Human Nature",
-  "last_action": "explore",
-  "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": "gemini",
+  "last_action": "evolve",
+  "last_action_success": false,
+  "last_action_detail": "{\"accepted\": false, \"title\": \"Introduce stochastic threshold relaxation for exploratory cross-source association\", \"summary\": \"To investigate recurring bottlenecks in the v3 learning and action cycle—specifically the rigidity of matching source text comparisons—this change introduces a controlled stochastic 'exploration_factor' to the SemanticLearner. By occasionally permitting a minimum shared-te",
+  "last_provider": null,
   "last_provider_generation": 2386,
   "last_search_generation": 2369,
   "cortex": {
     "nodes": 6378,
     "synapses": 25503,
     "active": 120,
-    "archived_synapses": 12163
+    "archived_synapses": 12179
   },
   "memory": {
     "episodes": 2686,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 3211,
+    "events": 3217,
     "segments": 96,
     "compressed_snapshot": true,
     "snapshot_events": 3177
@@ -69,26 +69,26 @@
     {
       "node_id": "concept:021a0149f3125b44752c",
       "label": "dreamt",
-      "activation": 0.581680072259931,
-      "novelty": 0.8163265306122448,
+      "activation": 0.5253694004657304,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.8628818008404704
+      "score": 0.8257905134390302
     },
     {
       "node_id": "concept:e7b6fe4a776cea9587f9",
       "label": "regularly",
-      "activation": 0.581680072259931,
-      "novelty": 0.8163265306122448,
+      "activation": 0.5253694004657304,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.8628818008404704
+      "score": 0.8257905134390302
     },
     {
       "node_id": "concept:a6b46dd0d1ae5e86cbc8",
       "label": "some",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -113,7 +113,7 @@
       "successes": 92
     },
     "evolve": {
-      "attempts": 1,
+      "attempts": 2,
       "successes": 1
     },
     "experiment": {
