@@ -1,38 +1,38 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T06:11:03.687528+00:00",
-  "generation": 2464,
+  "timestamp": "2026-10-15T06:24:43.033666+00:00",
+  "generation": 2465,
   "focus": "The Analysis of Mind",
-  "last_action": "consolidate",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 2460,
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": "gemini",
+  "last_provider_generation": 2465,
   "last_search_generation": 2461,
   "cortex": {
-    "nodes": 6722,
-    "synapses": 28636,
+    "nodes": 6734,
+    "synapses": 28692,
     "active": 120,
-    "archived_synapses": 14828
+    "archived_synapses": 14830
   },
   "memory": {
-    "episodes": 2736,
-    "claims": 452,
+    "episodes": 2739,
+    "claims": 456,
     "stances": 26,
     "interests": 49,
-    "associative_comparisons": 268,
+    "associative_comparisons": 270,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 3828,
+    "events": 3843,
     "segments": 118,
     "compressed_snapshot": true,
     "snapshot_events": 3814
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 38,
+  "evidence_reviews": 39,
   "workspace": [
     {
       "node_id": "concept:923b4b90ea64343e4a1c",
@@ -62,33 +62,33 @@
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
-      "novelty": 0.34602076124567477,
+      "novelty": 0.3407155025553663,
       "conflict": 0,
-      "score": 0.9534256055363322
+      "score": 0.9519931856899491
     },
     {
-      "node_id": "concept:38c8632dfc3b9f597420",
-      "label": "forced",
-      "activation": 0.5804171181363329,
-      "novelty": 0.8163265306122448,
+      "node_id": "concept:1c48f6310f1c849b4ac3",
+      "label": "mind",
+      "activation": 0.8479865550975707,
+      "novelty": 0.20533880903490764,
       "conflict": 0,
-      "score": 0.8622250646961993
+      "score": 0.8363944870901618
     },
     {
-      "node_id": "concept:3a10f9da6ac75efd398e",
-      "label": "beleive",
-      "activation": 0.5804171181363329,
+      "node_id": "concept:12681deafadfa535f0ad",
+      "label": "follows",
+      "activation": 0.46,
       "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8622250646961993
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:977e2017e07a931fa1de",
       "label": "ingly",
-      "activation": 0.5714115893369909,
-      "novelty": 0.8163265306122448,
+      "activation": 0.46,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.8575421897205415
+      "score": 0.7917984251968504
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 15
     },
     "read": {
-      "attempts": 153,
-      "successes": 153
+      "attempts": 154,
+      "successes": 154
     },
     "explore": {
       "attempts": 128,
