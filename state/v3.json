@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T10:51:14.599948+00:00",
-  "generation": 2527,
-  "focus": "Governing the World: The History of an Idea, 1815 to the Present",
-  "last_action": "explore",
+  "timestamp": "2026-10-15T10:52:58.180652+00:00",
+  "generation": 2528,
+  "focus": "The Physical Basis of Mind",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 2522,
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": "groq",
+  "last_provider_generation": 2528,
   "last_search_generation": 2507,
   "cortex": {
-    "nodes": 6944,
-    "synapses": 30846,
+    "nodes": 6949,
+    "synapses": 30866,
     "active": 120,
-    "archived_synapses": 16504
+    "archived_synapses": 16546
   },
   "memory": {
     "episodes": 2769,
-    "claims": 520,
+    "claims": 522,
     "stances": 26,
     "interests": 49,
     "associative_comparisons": 322,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 4308,
+    "events": 4316,
     "segments": 135,
     "compressed_snapshot": true,
     "snapshot_events": 4253
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 50,
+  "evidence_reviews": 52,
   "workspace": [
     {
       "node_id": "concept:d9298a10d1b0735837dc",
@@ -43,22 +43,6 @@
       "score": 0.9771366594360087
     },
     {
-      "node_id": "concept:54b759dba2ded0937372",
-      "label": "specific",
-      "activation": 0.6401213118892692,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.9016766415044539
-    },
-    {
-      "node_id": "concept:908aec4512d80ff4fefb",
-      "label": "down",
-      "activation": 0.6331291414208139,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8980407128608572
-    },
-    {
       "node_id": "concept:8153c4e65bb853c8",
       "label": "identity",
       "activation": 1.0,
@@ -67,28 +51,44 @@
       "score": 0.8733267522211254
     },
     {
+      "node_id": "concept:54b759dba2ded0937372",
+      "label": "specific",
+      "activation": 0.5876898029109052,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.8660068607789768
+    },
+    {
+      "node_id": "concept:908aec4512d80ff4fefb",
+      "label": "down",
+      "activation": 0.5770436486050132,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.860470860539913
+    },
+    {
       "node_id": "concept:381cfb6e1e428419d5d6",
       "label": "energy",
-      "activation": 0.6401213118892692,
-      "novelty": 0.7352941176470589,
+      "activation": 0.5876898029109052,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.871392493947126
+      "score": 0.8377695160190088
+    },
+    {
+      "node_id": "concept:6da0633528deaa0144e7",
+      "label": "previous",
+      "activation": 0.6278007053871941,
+      "novelty": 0.6309148264984227,
+      "conflict": 0,
+      "score": 0.8368033699559151
     },
     {
       "node_id": "concept:a01376ad363673424749",
       "label": "nerves",
-      "activation": 0.5778149780184385,
-      "novelty": 0.8474576271186441,
+      "activation": 0.5066440447311942,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.869277347891622
-    },
-    {
-      "node_id": "concept:c79ec4c003b223f0efcc",
-      "label": "recalled",
-      "activation": 0.5778149780184385,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.869277347891622
+      "score": 0.8238630665255271
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 162
     },
     "connect": {
-      "attempts": 120,
-      "successes": 120
+      "attempts": 121,
+      "successes": 121
     },
     "evolve": {
       "attempts": 3,
