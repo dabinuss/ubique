@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T20:16:53.475652+00:00",
-  "generation": 2647,
-  "focus": "Hume's 'A Treatise of Human Nature'",
-  "last_action": "explore",
+  "timestamp": "2026-10-15T20:18:33.731696+00:00",
+  "generation": 2648,
+  "focus": "Hume's Skepticism in the Treatise of Human Nature.",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": "groq",
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": null,
   "last_provider_generation": 2647,
   "last_search_generation": 2645,
   "cortex": {
-    "nodes": 7340,
-    "synapses": 34932,
+    "nodes": 7344,
+    "synapses": 34972,
     "active": 120,
-    "archived_synapses": 19564
+    "archived_synapses": 19594
   },
   "memory": {
-    "episodes": 2843,
-    "claims": 665,
+    "episodes": 2844,
+    "claims": 668,
     "stances": 26,
     "interests": 56,
-    "associative_comparisons": 430,
+    "associative_comparisons": 432,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 5277,
+    "events": 5288,
     "segments": 168,
     "compressed_snapshot": true,
     "snapshot_events": 5265
@@ -59,22 +59,6 @@
       "score": 0.9534256055363322
     },
     {
-      "node_id": "concept:923b4b90ea64343e4a1c",
-      "label": "states",
-      "activation": 0.8890845348072419,
-      "novelty": 0.4807692307692307,
-      "conflict": 0,
-      "score": 0.9321316504074582
-    },
-    {
-      "node_id": "concept:403b8dc9df0dc3ced2f5",
-      "label": "frequent",
-      "activation": 0.6679044379730072,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.9161238670679976
-    },
-    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -83,12 +67,28 @@
       "score": 0.9111848341232227
     },
     {
-      "node_id": "concept:6da6a14b76fa130ead12",
-      "label": "amongst",
-      "activation": 0.6012217162627347,
-      "novelty": 0.8474576271186441,
+      "node_id": "concept:923b4b90ea64343e4a1c",
+      "label": "states",
+      "activation": 0.840532338698921,
+      "novelty": 0.47058823529411764,
       "conflict": 0,
-      "score": 0.8814488517786561
+      "score": 0.9041356396528508
+    },
+    {
+      "node_id": "concept:403b8dc9df0dc3ced2f5",
+      "label": "frequent",
+      "activation": 0.6298624348361845,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.8879366293801221
+    },
+    {
+      "node_id": "concept:2331eb33ce2c3766148e",
+      "label": "philosophy",
+      "activation": 0.8417514570599245,
+      "novelty": 0.351493848857645,
+      "conflict": 0,
+      "score": 0.872614096862725
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 23
     },
     "read": {
-      "attempts": 210,
-      "successes": 210
+      "attempts": 211,
+      "successes": 211
     },
     "explore": {
       "attempts": 165,
