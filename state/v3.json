@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T22:25:52.604660+00:00",
-  "generation": 2675,
-  "focus": "A Treatise Concerning the Principles of Human Knowledge",
-  "last_action": "evolve",
+  "timestamp": "2026-10-15T22:27:33.463741+00:00",
+  "generation": 2676,
+  "focus": "An Introduction to Psychology",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "{\"accepted\": true, \"title\": \"Introduce deterministic novelty‑driven relaxation of shared‑term threshold in SemanticLearner\", \"summary\": \"Adds a lightweight term‑frequency cache and uses it to allow comparisons when at least one shared term is novel (has not appeared in earlier episodes). This deterministic curiosity boost works alongside the existing stochastic `exploration_factor`, encouraging th",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 2675,
   "last_search_generation": 2668,
   "cortex": {
-    "nodes": 7427,
-    "synapses": 35634,
+    "nodes": 7430,
+    "synapses": 35664,
     "active": 120,
-    "archived_synapses": 20000
+    "archived_synapses": 19762
   },
   "memory": {
     "episodes": 2862,
@@ -26,30 +26,14 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 5506,
+    "events": 5511,
     "segments": 176,
     "compressed_snapshot": true,
-    "snapshot_events": 5429
+    "snapshot_events": 5511
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 91,
   "workspace": [
-    {
-      "node_id": "concept:a4b64ad329a8b29e2008",
-      "label": "refer",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:7117fff2d0fd294462b3",
-      "label": "known",
-      "activation": 0.76,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.964013559322034
-    },
     {
       "node_id": "concept:24ea913efda289dc1b17",
       "label": "most",
@@ -67,12 +51,12 @@
       "score": 0.9519931856899491
     },
     {
-      "node_id": "concept:8bec8757f662f0f3cab9",
-      "label": "forms",
-      "activation": 0.76,
-      "novelty": 0.7874015748031495,
+      "node_id": "concept:a4b64ad329a8b29e2008",
+      "label": "refer",
+      "activation": 0.693571210432,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9477984251968503
+      "score": 0.9385424919797061
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -83,12 +67,28 @@
       "score": 0.9103261882572229
     },
     {
-      "node_id": "concept:9f79769e7400e02ccb65",
-      "label": "striking",
-      "activation": 0.76,
-      "novelty": 0.5970149253731344,
+      "node_id": "concept:7117fff2d0fd294462b3",
+      "label": "known",
+      "activation": 0.657614140288,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8963940298507462
+      "score": 0.9023675162150662
+    },
+    {
+      "node_id": "concept:8bec8757f662f0f3cab9",
+      "label": "forms",
+      "activation": 0.657614140288,
+      "novelty": 0.7604562737642586,
+      "conflict": 0,
+      "score": 0.8872825468661099
+    },
+    {
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
+      "activation": 1.0,
+      "novelty": 0.023609963404556726,
+      "conflict": 0,
+      "score": 0.8663746901192304
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 169
     },
     "consolidate": {
-      "attempts": 198,
-      "successes": 198
+      "attempts": 199,
+      "successes": 199
     },
     "connect": {
       "attempts": 149,
