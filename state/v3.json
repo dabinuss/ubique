@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T21:13:41.691383+00:00",
-  "generation": 2660,
+  "timestamp": "2026-10-15T21:15:15.926179+00:00",
+  "generation": 2661,
   "focus": "A Treatise of Human Nature",
-  "last_action": "connect",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 2658,
   "last_search_generation": 2645,
@@ -14,7 +14,7 @@
     "nodes": 7391,
     "synapses": 35345,
     "active": 120,
-    "archived_synapses": 19763
+    "archived_synapses": 19665
   },
   "memory": {
     "episodes": 2851,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 5376,
-    "segments": 171,
+    "events": 5381,
+    "segments": 172,
     "compressed_snapshot": true,
     "snapshot_events": 5345
   },
@@ -49,22 +49,6 @@
       "novelty": 0.2770083102493075,
       "conflict": 0,
       "score": 0.9347922437673131
-    },
-    {
-      "node_id": "concept:21feae6bc4428b5c0ad8",
-      "label": "indulge",
-      "activation": 0.6352563541386923,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.899146863474154
-    },
-    {
-      "node_id": "concept:b229003f1ecb0c224a42",
-      "label": "divided",
-      "activation": 0.6352563541386923,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.8907414674174261
     },
     {
       "node_id": "concept:54476ce93ea4a148",
@@ -89,6 +73,22 @@
       "novelty": 0.026511134676564158,
       "conflict": 0,
       "score": 0.8671580063626723
+    },
+    {
+      "node_id": "concept:21feae6bc4428b5c0ad8",
+      "label": "indulge",
+      "activation": 0.5805601912597222,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.8622994627203617
+    },
+    {
+      "node_id": "concept:b229003f1ecb0c224a42",
+      "label": "divided",
+      "activation": 0.5805601912597222,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.8544897246519061
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 167
     },
     "consolidate": {
-      "attempts": 194,
-      "successes": 194
+      "attempts": 195,
+      "successes": 195
     },
     "connect": {
       "attempts": 147,
