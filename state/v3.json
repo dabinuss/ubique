@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T05:37:32.064717+00:00",
-  "generation": 2458,
+  "timestamp": "2026-10-15T05:39:03.331023+00:00",
+  "generation": 2459,
   "focus": "An Introduction to Psychology",
-  "last_action": "explore",
-  "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action": "evolve",
+  "last_action_success": false,
+  "last_action_detail": "{\"accepted\": false, \"title\": \"Introduce stochastic curiosity into cross-source semantic comparisons\", \"summary\": \"To address recurring local learning stagnation and improve exploratory capability, this change introduces a small stochastic relaxation (`exploration_factor`) to the minimum shared-term threshold in `SemanticLearner.observe`. Occasionally allowing a single shared term instead of a stri",
   "last_provider": null,
   "last_provider_generation": 2454,
   "last_search_generation": 2438,
@@ -14,7 +14,7 @@
     "nodes": 6700,
     "synapses": 28375,
     "active": 120,
-    "archived_synapses": 14723
+    "archived_synapses": 14743
   },
   "memory": {
     "episodes": 2731,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 3769,
+    "events": 3775,
     "segments": 116,
     "compressed_snapshot": true,
     "snapshot_events": 3715
@@ -51,14 +51,6 @@
       "score": 0.9844239631336407
     },
     {
-      "node_id": "concept:0c4d01e81bb3d1fd0dc4",
-      "label": "reasoning",
-      "activation": 0.697571210432,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9406224919797062
-    },
-    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -67,28 +59,36 @@
       "score": 0.9280100755667506
     },
     {
-      "node_id": "concept:a9fd078562420a276b69",
-      "label": "universal",
-      "activation": 0.661614140288,
-      "novelty": 0.8810572687224669,
+      "node_id": "concept:24ea913efda289dc1b17",
+      "label": "most",
+      "activation": 0.9241614436669173,
+      "novelty": 0.39525691699604737,
       "conflict": 0,
-      "score": 0.9219248155048261
+      "score": 0.9272833182957299
     },
     {
-      "node_id": "concept:5e8818d1dd1914902733",
-      "label": "beyond",
-      "activation": 0.661614140288,
-      "novelty": 0.8810572687224669,
+      "node_id": "concept:0c4d01e81bb3d1fd0dc4",
+      "label": "reasoning",
+      "activation": 0.6405052233506275,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.9219248155048261
+      "score": 0.9018762754643603
     },
     {
-      "node_id": "concept:3075e3f026045c8cfa23",
-      "label": "proceeds",
-      "activation": 0.661614140288,
-      "novelty": 0.8810572687224669,
+      "node_id": "concept:ff6d7c8948492bd2",
+      "label": "issue",
+      "activation": 1.0,
+      "novelty": 0.047664442326024785,
       "conflict": 0,
-      "score": 0.9219248155048261
+      "score": 0.8728693994280268
+    },
+    {
+      "node_id": "concept:a6763175e1e10637",
+      "label": "application",
+      "activation": 0.6405052233506275,
+      "novelty": 0.7352941176470589,
+      "conflict": 0,
+      "score": 0.8715921279070322
     }
   ],
   "skills": {
@@ -113,7 +113,7 @@
       "successes": 106
     },
     "evolve": {
-      "attempts": 2,
+      "attempts": 3,
       "successes": 1
     },
     "experiment": {
