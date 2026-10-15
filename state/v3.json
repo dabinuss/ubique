@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T20:13:33.687408+00:00",
-  "generation": 2645,
-  "focus": "A Treatise of Human Nature",
-  "last_action": "search",
+  "timestamp": "2026-10-15T20:15:10.296771+00:00",
+  "generation": 2646,
+  "focus": "Hume's Skepticism in the Treatise of Human Nature.",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Acquired 3 attributable external articles",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 2641,
   "last_search_generation": 2645,
   "cortex": {
-    "nodes": 7336,
+    "nodes": 7337,
     "synapses": 34926,
     "active": 120,
-    "archived_synapses": 19400
+    "archived_synapses": 19544
   },
   "memory": {
     "episodes": 2843,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 5265,
-    "segments": 167,
+    "events": 5269,
+    "segments": 168,
     "compressed_snapshot": true,
     "snapshot_events": 5265
   },
@@ -43,52 +43,52 @@
       "score": 1.0256441717791411
     },
     {
+      "node_id": "concept:d9298a10d1b0735837dc",
+      "label": "other",
+      "activation": 1.0,
+      "novelty": 0.4175365344467641,
+      "conflict": 0,
+      "score": 0.9727348643006264
+    },
+    {
       "node_id": "concept:923b4b90ea64343e4a1c",
       "label": "states",
-      "activation": 1.0,
-      "novelty": 0.5025125628140703,
+      "activation": 0.9417631062230767,
+      "novelty": 0.49140049140049136,
       "conflict": 0,
-      "score": 0.9956783919597991
+      "score": 0.9623949479141327
+    },
+    {
+      "node_id": "concept:24ea913efda289dc1b17",
+      "label": "most",
+      "activation": 1.0,
+      "novelty": 0.34602076124567477,
+      "conflict": 0,
+      "score": 0.9534256055363322
     },
     {
       "node_id": "concept:403b8dc9df0dc3ced2f5",
       "label": "frequent",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.7106265056236392,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
+      "score": 0.9474112454793586
     },
     {
       "node_id": "concept:6da6a14b76fa130ead12",
       "label": "amongst",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.6746694354796392,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
+      "score": 0.9287135690044785
     },
     {
       "node_id": "concept:f893be9b54729993e747",
       "label": "huber",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.6746694354796392,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:0d248e82c62c93868783",
-      "label": "male",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:b9ff6bf20e4c06505ffc",
-      "label": "ants",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
+      "score": 0.9287135690044785
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 210
     },
     "explore": {
-      "attempts": 163,
-      "successes": 163
+      "attempts": 164,
+      "successes": 164
     },
     "consolidate": {
       "attempts": 191,
