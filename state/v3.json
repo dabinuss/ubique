@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-15T03:29:21.590188+00:00",
-  "generation": 2430,
+  "timestamp": "2026-10-15T03:42:57.199310+00:00",
+  "generation": 2431,
   "focus": "The Nicomachean Ethics of Aristotle",
-  "last_action": "consolidate",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 2426,
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": "gemini",
+  "last_provider_generation": 2431,
   "last_search_generation": 2415,
   "cortex": {
     "nodes": 6593,
-    "synapses": 27360,
+    "synapses": 27362,
     "active": 120,
-    "archived_synapses": 14102
+    "archived_synapses": 14126
   },
   "memory": {
-    "episodes": 2713,
-    "claims": 413,
+    "episodes": 2714,
+    "claims": 415,
     "stances": 26,
     "interests": 47,
     "associative_comparisons": 238,
@@ -26,54 +26,14 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 3554,
+    "events": 3563,
     "segments": 109,
     "compressed_snapshot": true,
     "snapshot_events": 3527
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 31,
+  "evidence_reviews": 33,
   "workspace": [
-    {
-      "node_id": "concept:e06e309b66b35433fd31",
-      "label": "myself",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:7f9a1900f108de552a70",
-      "label": "rtaker",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:f6fed051b36ebd607c19",
-      "label": "inward",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:fb4eec2e64f95eca4d18",
-      "label": "motions",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:fc7f81681c5aa7c7b911",
-      "label": "suggestions",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
     {
       "node_id": "concept:24ea913efda289dc1b17",
       "label": "most",
@@ -83,12 +43,52 @@
       "score": 0.9771366594360087
     },
     {
-      "node_id": "concept:8b616aa60af2d3584e4a",
-      "label": "possession",
-      "activation": 0.76,
+      "node_id": "concept:e06e309b66b35433fd31",
+      "label": "myself",
+      "activation": 0.697571210432,
       "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9730854625550662
+      "score": 0.9406224919797062
+    },
+    {
+      "node_id": "concept:7f9a1900f108de552a70",
+      "label": "rtaker",
+      "activation": 0.691640147315464,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9375383391591074
+    },
+    {
+      "node_id": "concept:8b616aa60af2d3584e4a",
+      "label": "possession",
+      "activation": 0.697571210432,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.931550588746674
+    },
+    {
+      "node_id": "concept:f6fed051b36ebd607c19",
+      "label": "inward",
+      "activation": 0.661614140288,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9219248155048261
+    },
+    {
+      "node_id": "concept:fb4eec2e64f95eca4d18",
+      "label": "motions",
+      "activation": 0.661614140288,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9219248155048261
+    },
+    {
+      "node_id": "concept:fc7f81681c5aa7c7b911",
+      "label": "suggestions",
+      "activation": 0.661614140288,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9219248155048261
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 144
     },
     "explore": {
-      "attempts": 121,
-      "successes": 121
+      "attempts": 122,
+      "successes": 122
     },
     "consolidate": {
       "attempts": 140,
