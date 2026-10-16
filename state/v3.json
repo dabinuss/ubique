@@ -1,35 +1,35 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T00:53:12.872427+00:00",
-  "generation": 2707,
+  "timestamp": "2026-10-16T00:54:52.039473+00:00",
+  "generation": 2708,
   "focus": "The Republic of Plato",
-  "last_action": "connect",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "last_action_detail": "Read 8000 source characters",
   "last_provider": null,
   "last_provider_generation": 2703,
   "last_search_generation": 2691,
   "cortex": {
-    "nodes": 7520,
-    "synapses": 36391,
+    "nodes": 7524,
+    "synapses": 36437,
     "active": 120,
     "archived_synapses": 20655
   },
   "memory": {
-    "episodes": 2878,
-    "claims": 743,
+    "episodes": 2879,
+    "claims": 746,
     "stances": 26,
     "interests": 59,
-    "associative_comparisons": 478,
+    "associative_comparisons": 480,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 5760,
+    "events": 5771,
     "segments": 186,
     "compressed_snapshot": true,
-    "snapshot_events": 5682
+    "snapshot_events": 5771
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 106,
@@ -59,22 +59,6 @@
       "score": 0.9304041720990874
     },
     {
-      "node_id": "concept:00fd2615de994cb3841b",
-      "label": "certainly",
-      "activation": 0.6950712104319999,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.9140354546214904
-    },
-    {
-      "node_id": "concept:b4c9e14061c2fd453b36",
-      "label": "again",
-      "activation": 0.6950712104319999,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.9140354546214904
-    },
-    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -83,12 +67,28 @@
       "score": 0.9094958753437214
     },
     {
+      "node_id": "concept:00fd2615de994cb3841b",
+      "label": "certainly",
+      "activation": 0.6335433745294228,
+      "novelty": 0.7604562737642586,
+      "conflict": 0,
+      "score": 0.8747657486716498
+    },
+    {
+      "node_id": "concept:b4c9e14061c2fd453b36",
+      "label": "again",
+      "activation": 0.6335433745294228,
+      "novelty": 0.7604562737642586,
+      "conflict": 0,
+      "score": 0.8747657486716498
+    },
+    {
       "node_id": "concept:b308a7f43bba8e7a366b",
       "label": "degree",
-      "activation": 0.7077245802879999,
-      "novelty": 0.7352941176470589,
+      "activation": 0.658728456735824,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.9065461935144659
+      "score": 0.8747096160079666
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 25
     },
     "read": {
-      "attempts": 228,
-      "successes": 228
+      "attempts": 229,
+      "successes": 229
     },
     "explore": {
       "attempts": 176,
