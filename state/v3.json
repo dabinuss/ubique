@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T04:14:58.929190+00:00",
-  "generation": 2750,
+  "timestamp": "2026-10-16T04:16:34.835342+00:00",
+  "generation": 2751,
   "focus": "Mental Evolution in Man: Origin of Human Faculty",
-  "last_action": "connect",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 2749,
   "last_search_generation": 2737,
   "cortex": {
     "nodes": 7633,
-    "synapses": 37540,
+    "synapses": 37566,
     "active": 120,
-    "archived_synapses": 21216
+    "archived_synapses": 21100
   },
   "memory": {
     "episodes": 2909,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6116,
+    "events": 6121,
     "segments": 198,
     "compressed_snapshot": true,
     "snapshot_events": 6112
@@ -34,14 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 117,
   "workspace": [
-    {
-      "node_id": "concept:d1ec49df3bf4c283a28f",
-      "label": "importance",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
     {
       "node_id": "concept:721048dc35951006",
       "label": "observations",
@@ -51,44 +43,52 @@
       "score": 0.9630534351145039
     },
     {
-      "node_id": "concept:a2fe32bf059ecd937a9e",
-      "label": "apperception",
-      "activation": 0.76,
-      "novelty": 0.7117437722419929,
+      "node_id": "concept:d1ec49df3bf4c283a28f",
+      "label": "importance",
+      "activation": 0.659114140288,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9273708185053382
+      "score": 0.9206248155048262
     },
     {
       "node_id": "concept:ca52e7d1c18961a8c5b3",
       "label": "united",
-      "activation": 0.8639717781175318,
+      "activation": 0.8712693417447244,
       "novelty": 0.4098360655737705,
       "conflict": 0,
-      "score": 0.8999210623260347
+      "score": 0.9037157954121748
+    },
+    {
+      "node_id": "concept:a2fe32bf059ecd937a9e",
+      "label": "apperception",
+      "activation": 0.6717751592590588,
+      "novelty": 0.6896551724137931,
+      "conflict": 0,
+      "score": 0.8755299793664348
+    },
+    {
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
+      "activation": 1.0,
+      "novelty": 0.023485204321277597,
+      "conflict": 0,
+      "score": 0.8663410051667451
+    },
+    {
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 0.9313145744151808,
+      "novelty": 0.11933174224343678,
+      "conflict": 0,
+      "score": 0.856503149101622
     },
     {
       "node_id": "concept:abd4c41da35254768c32",
       "label": "processes",
-      "activation": 0.76,
-      "novelty": 0.56657223796034,
-      "conflict": 0,
-      "score": 0.8881745042492919
-    },
-    {
-      "node_id": "concept:87765da6ccf0668238c1",
-      "label": "great",
-      "activation": 0.76,
+      "activation": 0.6927308091751552,
       "novelty": 0.5524861878453039,
       "conflict": 0,
-      "score": 0.8843712707182321
-    },
-    {
-      "node_id": "concept:13d6db0292e90d12cd81",
-      "label": "feelings",
-      "activation": 0.76,
-      "novelty": 0.5390835579514824,
-      "conflict": 0,
-      "score": 0.8807525606469002
+      "score": 0.8493912914893129
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 184
     },
     "consolidate": {
-      "attempts": 215,
-      "successes": 215
+      "attempts": 216,
+      "successes": 216
     },
     "connect": {
       "attempts": 164,
