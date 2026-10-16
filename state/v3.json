@@ -1,46 +1,70 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T16:17:35.508408+00:00",
-  "generation": 2906,
+  "timestamp": "2026-10-16T16:19:13.100585+00:00",
+  "generation": 2907,
   "focus": "Meditations",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 2902,
+  "last_provider": "groq",
+  "last_provider_generation": 2907,
   "last_search_generation": 2898,
   "cortex": {
-    "nodes": 8095,
-    "synapses": 42088,
+    "nodes": 8102,
+    "synapses": 42139,
     "active": 120,
-    "archived_synapses": 23818
+    "archived_synapses": 23839
   },
   "memory": {
-    "episodes": 3000,
-    "claims": 970,
+    "episodes": 3001,
+    "claims": 974,
     "stances": 26,
     "interests": 71,
-    "associative_comparisons": 648,
+    "associative_comparisons": 650,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7338,
+    "events": 7351,
     "segments": 246,
     "compressed_snapshot": true,
     "snapshot_events": 7286
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 156,
+  "evidence_reviews": 157,
   "workspace": [
+    {
+      "node_id": "concept:2331eb33ce2c3766148e",
+      "label": "philosophy",
+      "activation": 1.0,
+      "novelty": 0.32102728731942215,
+      "conflict": 0,
+      "score": 0.9466773675762441
+    },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.9975971828045196,
+      "activation": 0.9966172372226311,
       "novelty": 0.27359781121751026,
       "conflict": 0,
-      "score": 0.932621944087078
+      "score": 0.932112372384496
+    },
+    {
+      "node_id": "concept:96f6549c6b97a641e4d1",
+      "label": "constant",
+      "activation": 0.76,
+      "novelty": 0.6896551724137931,
+      "conflict": 0,
+      "score": 0.9214068965517241
+    },
+    {
+      "node_id": "concept:71536ec7b375136da0ab",
+      "label": "goodness",
+      "activation": 0.76,
+      "novelty": 0.6896551724137931,
+      "conflict": 0,
+      "score": 0.9214068965517241
     },
     {
       "node_id": "concept:5a2a957b269e8f0f",
@@ -51,44 +75,20 @@
       "score": 0.9099075785582256
     },
     {
+      "node_id": "concept:dc2fc19d8fce376c4764",
+      "label": "think",
+      "activation": 0.76,
+      "novelty": 0.6134969325153374,
+      "conflict": 0,
+      "score": 0.9008441717791411
+    },
+    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
       "novelty": 0.14892032762472077,
       "conflict": 0,
       "score": 0.9002084884586747
-    },
-    {
-      "node_id": "concept:4fbb0d397b7b240f4fad",
-      "label": "unrecognizable",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:81b06df4303e6581efec",
-      "label": "purpose",
-      "activation": 0.5264685348750523,
-      "novelty": 0.6493506493506493,
-      "conflict": 0,
-      "score": 0.7890883134597025
-    },
-    {
-      "node_id": "concept:1ee1eab952ba188a2e6a",
-      "label": "employing",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
-    },
-    {
-      "node_id": "concept:171f0cbf9f587cab4ba2",
-      "label": "interruptions",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 33
     },
     "read": {
-      "attempts": 289,
-      "successes": 289
+      "attempts": 290,
+      "successes": 290
     },
     "explore": {
       "attempts": 217,
