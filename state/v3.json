@@ -1,38 +1,38 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T06:54:17.790134+00:00",
-  "generation": 2782,
+  "timestamp": "2026-10-16T06:55:58.989161+00:00",
+  "generation": 2783,
   "focus": "The Story of the Mind",
-  "last_action": "explore",
+  "last_action": "search",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 2777,
-  "last_search_generation": 2737,
+  "last_action_detail": "Acquired 3 attributable external articles",
+  "last_provider": "gemini",
+  "last_provider_generation": 2783,
+  "last_search_generation": 2783,
   "cortex": {
-    "nodes": 7709,
-    "synapses": 38319,
+    "nodes": 7714,
+    "synapses": 38385,
     "active": 120,
-    "archived_synapses": 21669
+    "archived_synapses": 21741
   },
   "memory": {
-    "episodes": 2926,
-    "claims": 821,
+    "episodes": 2931,
+    "claims": 827,
     "stances": 26,
-    "interests": 62,
-    "associative_comparisons": 538,
+    "interests": 65,
+    "associative_comparisons": 544,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6339,
+    "events": 6366,
     "segments": 208,
     "compressed_snapshot": true,
-    "snapshot_events": 6276
+    "snapshot_events": 6366
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 121,
+  "evidence_reviews": 122,
   "workspace": [
     {
       "node_id": "concept:dc0fff9075b9bd9450c1",
@@ -59,22 +59,6 @@
       "score": 0.9192755214050494
     },
     {
-      "node_id": "concept:52cb0d6bdd35222e877d",
-      "label": "mung",
-      "activation": 0.6620308477989449,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.9130696001774854
-    },
-    {
-      "node_id": "concept:c279f3bc680f92279471",
-      "label": "natur",
-      "activation": 0.6620308477989449,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.9130696001774854
-    },
-    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -83,18 +67,34 @@
       "score": 0.9060750853242321
     },
     {
-      "node_id": "concept:8e5efdde68f006304185",
-      "label": "whom",
-      "activation": 0.596921306589184,
-      "novelty": 0.8474576271186441,
+      "node_id": "concept:52cb0d6bdd35222e877d",
+      "label": "mung",
+      "activation": 0.6207501838813656,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8792126387484096
+      "score": 0.8831982588836162
+    },
+    {
+      "node_id": "concept:c279f3bc680f92279471",
+      "label": "natur",
+      "activation": 0.6207501838813656,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.8831982588836162
+    },
+    {
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 0.9217884436349458,
+      "novelty": 0.11043622308117063,
+      "conflict": 0,
+      "score": 0.849147770922088
     }
   ],
   "skills": {
     "search": {
-      "attempts": 28,
-      "successes": 27
+      "attempts": 29,
+      "successes": 28
     },
     "read": {
       "attempts": 252,
