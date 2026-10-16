@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T19:26:37.404793+00:00",
-  "generation": 2948,
+  "timestamp": "2026-10-16T19:28:15.742053+00:00",
+  "generation": 2949,
   "focus": "The Physical Basis of Mind",
-  "last_action": "connect",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 2947,
   "last_search_generation": 2944,
   "cortex": {
-    "nodes": 8209,
-    "synapses": 43140,
+    "nodes": 8211,
+    "synapses": 43180,
     "active": 120,
-    "archived_synapses": 24294
+    "archived_synapses": 24240
   },
   "memory": {
     "episodes": 3022,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7678,
+    "events": 7683,
     "segments": 260,
     "compressed_snapshot": true,
     "snapshot_events": 7648
@@ -43,20 +43,20 @@
       "score": 1.0055525606469002
     },
     {
-      "node_id": "concept:d887db09649dab0d8395",
-      "label": "parts",
-      "activation": 1.0,
-      "novelty": 0.4608294930875576,
-      "conflict": 0,
-      "score": 0.9844239631336407
-    },
-    {
       "node_id": "concept:040b0e3f05e74417",
       "label": "experiment",
       "activation": 1.0,
       "novelty": 0.4175365344467641,
       "conflict": 0,
       "score": 0.9727348643006264
+    },
+    {
+      "node_id": "concept:d887db09649dab0d8395",
+      "label": "parts",
+      "activation": 0.9069909917792922,
+      "novelty": 0.4514672686230249,
+      "conflict": 0,
+      "score": 0.9335314782534487
     },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
@@ -67,20 +67,20 @@
       "score": 0.9320961281708946
     },
     {
-      "node_id": "concept:92a5dc04bd6f9fb8f29f",
-      "label": "common",
-      "activation": 0.76,
-      "novelty": 0.6309148264984227,
-      "conflict": 0,
-      "score": 0.9055470031545743
-    },
-    {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
       "novelty": 0.16680567139282734,
       "conflict": 0,
       "score": 0.9050375312760635
+    },
+    {
+      "node_id": "concept:92a5dc04bd6f9fb8f29f",
+      "label": "common",
+      "activation": 0.7231000499734693,
+      "novelty": 0.6134969325153374,
+      "conflict": 0,
+      "score": 0.8816561977653452
     },
     {
       "node_id": "concept:54476ce93ea4a148",
@@ -105,8 +105,8 @@
       "successes": 225
     },
     "consolidate": {
-      "attempts": 263,
-      "successes": 263
+      "attempts": 264,
+      "successes": 264
     },
     "connect": {
       "attempts": 203,
