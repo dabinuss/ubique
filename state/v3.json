@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T13:47:06.095875+00:00",
-  "generation": 2873,
-  "focus": "The Physical Basis of Mind",
-  "last_action": "read",
+  "timestamp": "2026-10-16T13:48:39.011991+00:00",
+  "generation": 2874,
+  "focus": "Six Metaphysical Meditations",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 2873,
   "last_search_generation": 2852,
   "cortex": {
-    "nodes": 8004,
-    "synapses": 41037,
+    "nodes": 8006,
+    "synapses": 41103,
     "active": 120,
-    "archived_synapses": 23173
+    "archived_synapses": 23157
   },
   "memory": {
     "episodes": 2974,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7057,
-    "segments": 235,
+    "events": 7062,
+    "segments": 236,
     "compressed_snapshot": true,
     "snapshot_events": 7029
   },
@@ -43,12 +43,36 @@
       "score": 0.9818961625282168
     },
     {
+      "node_id": "concept:a94e7bcfcbed3c846d49",
+      "label": "records",
+      "activation": 0.76,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9730854625550662
+    },
+    {
+      "node_id": "concept:3d96a458120e68868ccc",
+      "label": "recorded",
+      "activation": 0.76,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.964013559322034
+    },
+    {
       "node_id": "concept:12ed8d14a55fdb4701ee",
       "label": "anyone",
       "activation": 1.0,
       "novelty": 0.38167938931297707,
       "conflict": 0,
       "score": 0.9630534351145039
+    },
+    {
+      "node_id": "concept:721048dc35951006",
+      "label": "observations",
+      "activation": 1.0,
+      "novelty": 0.36900369003690037,
+      "conflict": 0,
+      "score": 0.9596309963099632
     },
     {
       "node_id": "concept:244210e48437b6556980",
@@ -65,30 +89,6 @@
       "novelty": 0.30349013657056145,
       "conflict": 0,
       "score": 0.9419423368740516
-    },
-    {
-      "node_id": "concept:d9298a10d1b0735837dc",
-      "label": "other",
-      "activation": 1.0,
-      "novelty": 0.27359781121751026,
-      "conflict": 0,
-      "score": 0.9338714090287279
-    },
-    {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.1530221882172915,
-      "conflict": 0,
-      "score": 0.9013159908186688
-    },
-    {
-      "node_id": "concept:6d1d3998f083af920aa4",
-      "label": "clusion",
-      "activation": 0.6535335387017412,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.9002456033902115
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 210
     },
     "consolidate": {
-      "attempts": 245,
-      "successes": 245
+      "attempts": 246,
+      "successes": 246
     },
     "connect": {
       "attempts": 188,
