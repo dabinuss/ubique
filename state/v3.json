@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T05:08:18.549926+00:00",
-  "generation": 2761,
+  "timestamp": "2026-10-16T05:21:57.617247+00:00",
+  "generation": 2762,
   "focus": "Psychology of the Unconscious",
-  "last_action": "consolidate",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 2760,
   "last_search_generation": 2737,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6199,
+    "events": 6203,
     "segments": 202,
     "compressed_snapshot": true,
     "snapshot_events": 6194
@@ -34,14 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 119,
   "workspace": [
-    {
-      "node_id": "concept:251fecd592e56e6c4a95",
-      "label": "point",
-      "activation": 0.76,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9730854625550662
-    },
     {
       "node_id": "concept:721048dc35951006",
       "label": "observations",
@@ -53,10 +45,10 @@
     {
       "node_id": "concept:3f8b4464a99de3dc8c5c",
       "label": "religious",
-      "activation": 0.9814169549551348,
+      "activation": 1.0,
       "novelty": 0.38167938931297707,
       "conflict": 0,
-      "score": 0.9533902516911739
+      "score": 0.9630534351145039
     },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
@@ -67,20 +59,28 @@
       "score": 0.9506040268456377
     },
     {
+      "node_id": "concept:251fecd592e56e6c4a95",
+      "label": "point",
+      "activation": 0.6594378731131211,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.911721253340857
+    },
+    {
       "node_id": "concept:a9491f4c1bf7b0cffbad",
       "label": "subject",
-      "activation": 0.76,
-      "novelty": 0.7874015748031495,
+      "activation": 0.6594378731131211,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.9477984251968503
+      "score": 0.8882308879351728
     },
     {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
-      "activation": 0.977344862110344,
-      "novelty": 0.115606936416185,
+      "activation": 0.9764728918044493,
+      "novelty": 0.11500862564692352,
       "conflict": 0,
-      "score": 0.879433201129749
+      "score": 0.878818232662983
     },
     {
       "node_id": "concept:411f62e7fd037280",
@@ -101,8 +101,8 @@
       "successes": 246
     },
     "explore": {
-      "attempts": 185,
-      "successes": 185
+      "attempts": 186,
+      "successes": 186
     },
     "consolidate": {
       "attempts": 219,
