@@ -1,46 +1,46 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T14:07:08.365244+00:00",
-  "generation": 2878,
-  "focus": "Descartes' Meditations : Practical Metaphysics: The Father of Rationalism in the Tradition of Spiritual Exercises",
+  "timestamp": "2026-10-16T14:08:51.802020+00:00",
+  "generation": 2879,
+  "focus": "Metaphysical Disputations",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 2873,
+  "last_provider": "groq",
+  "last_provider_generation": 2879,
   "last_search_generation": 2875,
   "cortex": {
-    "nodes": 8029,
-    "synapses": 41285,
+    "nodes": 8037,
+    "synapses": 41325,
     "active": 120,
-    "archived_synapses": 23233
+    "archived_synapses": 23261
   },
   "memory": {
-    "episodes": 2978,
-    "claims": 939,
+    "episodes": 2982,
+    "claims": 944,
     "stances": 26,
     "interests": 71,
-    "associative_comparisons": 626,
+    "associative_comparisons": 628,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7105,
+    "events": 7123,
     "segments": 237,
     "compressed_snapshot": true,
-    "snapshot_events": 7029
+    "snapshot_events": 7123
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 144,
+  "evidence_reviews": 146,
   "workspace": [
     {
-      "node_id": "concept:48d492d08e9d314c034c",
-      "label": "studies",
+      "node_id": "concept:d887db09649dab0d8395",
+      "label": "parts",
       "activation": 1.0,
-      "novelty": 0.4424778761061947,
+      "novelty": 0.4807692307692307,
       "conflict": 0,
-      "score": 0.9794690265486727
+      "score": 0.9898076923076924
     },
     {
       "node_id": "concept:12ed8d14a55fdb4701ee",
@@ -59,6 +59,14 @@
       "score": 0.9596309963099632
     },
     {
+      "node_id": "concept:c5006763e9daf0e4e765",
+      "label": "explained",
+      "activation": 0.76,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.9477984251968503
+    },
+    {
       "node_id": "concept:244210e48437b6556980",
       "label": "project",
       "activation": 1.0,
@@ -75,20 +83,12 @@
       "score": 0.9419423368740516
     },
     {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.1530221882172915,
+      "node_id": "concept:88c7f08d0be5407e361c",
+      "label": "above",
+      "activation": 0.76,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.9013159908186688
-    },
-    {
-      "node_id": "concept:d9298a10d1b0735837dc",
-      "label": "other",
-      "activation": 0.8763448717126312,
-      "novelty": 0.27359781121751026,
-      "conflict": 0,
-      "score": 0.869570742319296
+      "score": 0.9273708185053382
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 32
     },
     "read": {
-      "attempts": 281,
-      "successes": 281
+      "attempts": 282,
+      "successes": 282
     },
     "explore": {
       "attempts": 212,
