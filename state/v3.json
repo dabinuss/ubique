@@ -1,13 +1,13 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T03:17:57.686846+00:00",
-  "generation": 2737,
-  "focus": "An Introduction to Psychology",
-  "last_action": "search",
+  "timestamp": "2026-10-16T03:19:24.989328+00:00",
+  "generation": 2738,
+  "focus": "Introduction to psychology",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Acquired 3 attributable external articles",
-  "last_provider": "gemini",
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": null,
   "last_provider_generation": 2737,
   "last_search_generation": 2737,
   "cortex": {
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6024,
+    "events": 6028,
     "segments": 194,
     "compressed_snapshot": true,
     "snapshot_events": 6024
@@ -54,41 +54,41 @@
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
       "activation": 1.0,
-      "novelty": 0.3407155025553663,
+      "novelty": 0.33557046979865773,
       "conflict": 0,
-      "score": 0.9519931856899491
-    },
-    {
-      "node_id": "concept:3a0a081a4313c1badd66",
-      "label": "numberless",
-      "activation": 0.76,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.9337294117647059
+      "score": 0.9506040268456377
     },
     {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
-      "novelty": 0.24360535931790497,
+      "novelty": 0.24096385542168672,
       "conflict": 0,
-      "score": 0.9257734470158343
+      "score": 0.9250602409638555
+    },
+    {
+      "node_id": "concept:3a0a081a4313c1badd66",
+      "label": "numberless",
+      "activation": 0.659114140288,
+      "novelty": 0.7117437722419929,
+      "conflict": 0,
+      "score": 0.8749101714550982
     },
     {
       "node_id": "concept:3e7b7535e4d28acfa96a",
       "label": "properly",
-      "activation": 0.76,
-      "novelty": 0.5970149253731344,
+      "activation": 0.6871286939116734,
+      "novelty": 0.5813953488372093,
       "conflict": 0,
-      "score": 0.8963940298507462
+      "score": 0.8542836650201167
     },
     {
       "node_id": "concept:fb46c79b7eb7af175f49",
       "label": "said",
-      "activation": 0.76,
-      "novelty": 0.5970149253731344,
+      "activation": 0.659114140288,
+      "novelty": 0.5813953488372093,
       "conflict": 0,
-      "score": 0.8963940298507462
+      "score": 0.8397160971358066
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 238
     },
     "explore": {
-      "attempts": 181,
-      "successes": 181
+      "attempts": 182,
+      "successes": 182
     },
     "consolidate": {
       "attempts": 213,
