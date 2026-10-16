@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T03:39:24.108791+00:00",
-  "generation": 2743,
+  "timestamp": "2026-10-16T03:40:58.641484+00:00",
+  "generation": 2744,
   "focus": "The Varieties of Religious Experience: A Study in Human Nature",
-  "last_action": "connect",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": "gemini",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 2743,
   "last_search_generation": 2737,
   "cortex": {
-    "nodes": 7605,
-    "synapses": 37283,
+    "nodes": 7617,
+    "synapses": 37435,
     "active": 120,
-    "archived_synapses": 20897
+    "archived_synapses": 20859
   },
   "memory": {
     "episodes": 2904,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6060,
+    "events": 6065,
     "segments": 196,
     "compressed_snapshot": true,
     "snapshot_events": 6024
@@ -59,20 +59,12 @@
       "score": 0.9236792452830189
     },
     {
-      "node_id": "concept:e2ba41af03120f143f51",
-      "label": "relations",
-      "activation": 0.6364004177896927,
-      "novelty": 0.7874015748031495,
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 0.9555417390537518,
+      "novelty": 0.12062726176115804,
       "conflict": 0,
-      "score": 0.8835266424474906
-    },
-    {
-      "node_id": "concept:6b5a3ded016ab7826989",
-      "label": "since",
-      "activation": 0.6167879337597866,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.8811378888203951
+      "score": 0.8694510649834637
     },
     {
       "node_id": "concept:8b16ced79976e6a1",
@@ -83,12 +75,20 @@
       "score": 0.8663410051667451
     },
     {
-      "node_id": "concept:f1fc3326d9fc752b3f71",
-      "label": "according",
-      "activation": 0.5865482211353331,
+      "node_id": "concept:e2ba41af03120f143f51",
+      "label": "relations",
+      "activation": 0.5811081097467583,
+      "novelty": 0.7604562737642586,
+      "conflict": 0,
+      "score": 0.8474994109846643
+    },
+    {
+      "node_id": "concept:6b5a3ded016ab7826989",
+      "label": "since",
+      "activation": 0.5561670845419746,
       "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.8576035001872235
+      "score": 0.8418053091586772
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 183
     },
     "consolidate": {
-      "attempts": 214,
-      "successes": 214
+      "attempts": 215,
+      "successes": 215
     },
     "connect": {
       "attempts": 163,
