@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T12:51:30.752368+00:00",
-  "generation": 2861,
-  "focus": "Six Metaphysical Meditations",
-  "last_action": "connect",
+  "timestamp": "2026-10-16T12:53:17.340185+00:00",
+  "generation": 2862,
+  "focus": "4: Human, All Too Human: A Book for Free Spirits",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": null,
-  "last_provider_generation": 2856,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 2862,
   "last_search_generation": 2852,
   "cortex": {
-    "nodes": 7958,
-    "synapses": 40643,
+    "nodes": 7965,
+    "synapses": 40715,
     "active": 120,
-    "archived_synapses": 23183
+    "archived_synapses": 23069
   },
   "memory": {
     "episodes": 2970,
-    "claims": 919,
+    "claims": 921,
     "stances": 26,
     "interests": 68,
     "associative_comparisons": 610,
@@ -26,45 +26,29 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6970,
+    "events": 6979,
     "segments": 232,
     "compressed_snapshot": true,
     "snapshot_events": 6942
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 140,
+  "evidence_reviews": 142,
   "workspace": [
     {
       "node_id": "concept:9ba846ece2bbc04439ab",
       "label": "ecies",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.7330313199999999,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
+      "score": 0.9590617489550661
     },
     {
-      "node_id": "concept:63cc98599f0a945b45bd",
-      "label": "serum",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "node_id": "concept:d9298a10d1b0735837dc",
+      "label": "other",
+      "activation": 1.0,
+      "novelty": 0.27359781121751026,
       "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:d37d96b42ad43384915e",
-      "label": "rabbit",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:f39592393ef0859cb196",
-      "label": "after",
-      "activation": 0.76,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.964013559322034
+      "score": 0.9338714090287279
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
@@ -75,20 +59,36 @@
       "score": 0.9338714090287279
     },
     {
-      "node_id": "concept:d9298a10d1b0735837dc",
-      "label": "other",
-      "activation": 0.9969778679096096,
-      "novelty": 0.27359781121751026,
+      "node_id": "concept:63cc98599f0a945b45bd",
+      "label": "serum",
+      "activation": 0.68442088,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9322999003417249
+      "score": 0.9337843201550662
     },
     {
-      "node_id": "concept:3e8e40c0af5f5ea5a948",
-      "label": "blood",
-      "activation": 0.76,
-      "novelty": 0.6493506493506493,
+      "node_id": "concept:d37d96b42ad43384915e",
+      "label": "rabbit",
+      "activation": 0.68442088,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9105246753246754
+      "score": 0.9337843201550662
+    },
+    {
+      "node_id": "concept:f39592393ef0859cb196",
+      "label": "after",
+      "activation": 0.68442088,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.9163070208653061
+    },
+    {
+      "node_id": "concept:54476ce93ea4a148",
+      "label": "distinguish",
+      "activation": 1.0,
+      "novelty": 0.04860267314702309,
+      "conflict": 0,
+      "score": 0.8731227217496962
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 207
     },
     "consolidate": {
-      "attempts": 242,
-      "successes": 242
+      "attempts": 243,
+      "successes": 243
     },
     "connect": {
       "attempts": 186,
