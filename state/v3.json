@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T18:10:46.299533+00:00",
-  "generation": 2931,
+  "timestamp": "2026-10-16T18:24:31.170179+00:00",
+  "generation": 2932,
   "focus": "Psychology: Briefer Course",
-  "last_action": "consolidate",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 2930,
   "last_search_generation": 2921,
@@ -26,10 +26,10 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7541,
+    "events": 7545,
     "segments": 254,
     "compressed_snapshot": true,
-    "snapshot_events": 7462
+    "snapshot_events": 7545
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 164,
@@ -37,26 +37,18 @@
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.9913200415606437,
+      "activation": 0.9957594056281962,
       "novelty": 0.26702269692923897,
       "conflict": 0,
-      "score": 0.9275825497824293
-    },
-    {
-      "node_id": "concept:a167ddeb1c00e9f9be54",
-      "label": "frequently",
-      "activation": 0.668267510144,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9253845678299462
+      "score": 0.9298910190975567
     },
     {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
-      "novelty": 0.1774622892635315,
+      "novelty": 0.1733102253032929,
       "conflict": 0,
-      "score": 0.9079148181011536
+      "score": 0.9067937608318892
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -67,28 +59,36 @@
       "score": 0.8859490629505047
     },
     {
-      "node_id": "concept:aef450dc78eac12fcad7",
-      "label": "leads",
-      "activation": 0.7182324129064973,
-      "novelty": 0.6134969325153374,
+      "node_id": "concept:a167ddeb1c00e9f9be54",
+      "label": "frequently",
+      "activation": 0.5941312867318673,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8791250264905197
+      "score": 0.877761828422605
     },
     {
       "node_id": "concept:8b16ced79976e6a1",
       "label": "action",
       "activation": 1.0,
-      "novelty": 0.023215322112594316,
+      "novelty": 0.02319109461966605,
       "conflict": 0,
-      "score": 0.8662681369704006
+      "score": 0.8662615955473099
     },
     {
-      "node_id": "concept:bbfcd4160a1e8674dac6",
-      "label": "case",
-      "activation": 0.668267510144,
-      "novelty": 0.56657223796034,
+      "node_id": "concept:aef450dc78eac12fcad7",
+      "label": "leads",
+      "activation": 0.6860620387349152,
+      "novelty": 0.5970149253731344,
       "conflict": 0,
-      "score": 0.8404736095241718
+      "score": 0.8579462899929022
+    },
+    {
+      "node_id": "concept:8a1a3f36a3784737f4ec",
+      "label": "repressed",
+      "activation": 0.46,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.8170854625550661
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 260
     },
     "connect": {
-      "attempts": 199,
-      "successes": 199
+      "attempts": 200,
+      "successes": 200
     },
     "evolve": {
       "attempts": 9,
