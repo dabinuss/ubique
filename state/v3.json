@@ -1,13 +1,13 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T15:03:04.511600+00:00",
-  "generation": 2890,
+  "timestamp": "2026-10-16T15:04:49.596678+00:00",
+  "generation": 2891,
   "focus": "An Introduction to Psychology",
-  "last_action": "explore",
+  "last_action": "evolve",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": "groq",
+  "last_action_detail": "{\"accepted\": true, \"title\": \"Add fallback comparison search to ensure at least one exploratory link per source passage\", \"summary\": \"When the learner fails to find any cross‑source comparison under the normal (≥2 shared terms) or stochastic (exploration_factor) thresholds, it now performs a deterministic fallback pass that accepts a single shared term. This small reversible addition improves the s",
+  "last_provider": null,
   "last_provider_generation": 2890,
   "last_search_generation": 2875,
   "cortex": {
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7205,
+    "events": 7211,
     "segments": 241,
     "compressed_snapshot": true,
     "snapshot_events": 7205
@@ -43,28 +43,20 @@
       "score": 0.9794690265486727
     },
     {
-      "node_id": "concept:e776a070909341e9f27f",
-      "label": "glance",
-      "activation": 0.76,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.9477984251968503
-    },
-    {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 1.0,
+      "activation": 0.9912406111367594,
       "novelty": 0.27359781121751026,
       "conflict": 0,
-      "score": 0.9338714090287279
+      "score": 0.9293165268198427
     },
     {
       "node_id": "concept:40b30b4e8f0d137056ac",
       "label": "material",
-      "activation": 0.76,
-      "novelty": 0.7352941176470589,
+      "activation": 0.7103116079624711,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.9337294117647059
+      "score": 0.901532854645823
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -75,12 +67,12 @@
       "score": 0.9013159908186688
     },
     {
-      "node_id": "concept:3e8e40c0af5f5ea5a948",
-      "label": "blood",
-      "activation": 0.76,
-      "novelty": 0.5141388174807199,
+      "node_id": "concept:e776a070909341e9f27f",
+      "label": "glance",
+      "activation": 0.657614140288,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.8740174807197945
+      "score": 0.8872825468661099
     },
     {
       "node_id": "concept:54476ce93ea4a148",
@@ -89,6 +81,14 @@
       "novelty": 0.04860267314702309,
       "conflict": 0,
       "score": 0.8731227217496962
+    },
+    {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 0.8723997421366134,
+      "novelty": 0.2607561929595828,
+      "conflict": 0,
+      "score": 0.8640520380101264
     }
   ],
   "skills": {
@@ -113,8 +113,8 @@
       "successes": 190
     },
     "evolve": {
-      "attempts": 8,
-      "successes": 2
+      "attempts": 9,
+      "successes": 3
     },
     "experiment": {
       "attempts": 2,
