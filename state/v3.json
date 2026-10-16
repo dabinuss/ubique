@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T21:10:01.236653+00:00",
-  "generation": 2967,
+  "timestamp": "2026-10-16T21:11:41.883919+00:00",
+  "generation": 2968,
   "focus": "A Treatise Concerning the Principles of Human Knowledge",
-  "last_action": "search",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Acquired 3 attributable external articles",
+  "last_action_detail": "Read 8000 source characters",
   "last_provider": null,
   "last_provider_generation": 2964,
   "last_search_generation": 2967,
   "cortex": {
-    "nodes": 8240,
-    "synapses": 43537,
+    "nodes": 8245,
+    "synapses": 43572,
     "active": 120,
-    "archived_synapses": 24573
+    "archived_synapses": 24572
   },
   "memory": {
-    "episodes": 3030,
-    "claims": 1035,
+    "episodes": 3031,
+    "claims": 1037,
     "stances": 26,
     "interests": 71,
-    "associative_comparisons": 702,
+    "associative_comparisons": 704,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7827,
+    "events": 7838,
     "segments": 266,
     "compressed_snapshot": true,
     "snapshot_events": 7827
@@ -67,20 +67,12 @@
       "score": 0.9043714050944947
     },
     {
-      "node_id": "concept:d70afca615203838da3d",
-      "label": "reading",
-      "activation": 0.656614140288,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.9018475162150661
-    },
-    {
       "node_id": "concept:c847bcd57c312119",
       "label": "selected",
-      "activation": 0.9553819346737515,
+      "activation": 0.9558777007472157,
       "novelty": 0.14792899408284024,
       "conflict": 0,
-      "score": 0.8767394344327177
+      "score": 0.876997232790919
     },
     {
       "node_id": "concept:c9b6dab517b9d127",
@@ -89,6 +81,14 @@
       "novelty": 0.024603272235207287,
       "conflict": 0,
       "score": 0.866642883503506
+    },
+    {
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
+      "activation": 1.0,
+      "novelty": 0.0229278917803508,
+      "conflict": 0,
+      "score": 0.8661905307806947
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 36
     },
     "read": {
-      "attempts": 307,
-      "successes": 307
+      "attempts": 308,
+      "successes": 308
     },
     "explore": {
       "attempts": 228,
