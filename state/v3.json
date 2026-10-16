@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T19:57:15.615667+00:00",
-  "generation": 2952,
+  "timestamp": "2026-10-16T19:58:48.983191+00:00",
+  "generation": 2953,
   "focus": "The Mind and the Brain",
-  "last_action": "connect",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": null,
-  "last_provider_generation": 2947,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 2953,
   "last_search_generation": 2944,
   "cortex": {
-    "nodes": 8213,
-    "synapses": 43216,
+    "nodes": 8218,
+    "synapses": 43258,
     "active": 120,
-    "archived_synapses": 24282
+    "archived_synapses": 24164
   },
   "memory": {
     "episodes": 3023,
-    "claims": 1019,
+    "claims": 1022,
     "stances": 26,
     "interests": 71,
     "associative_comparisons": 688,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7703,
+    "events": 7714,
     "segments": 261,
     "compressed_snapshot": true,
     "snapshot_events": 7648
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 169,
+  "evidence_reviews": 172,
   "workspace": [
     {
       "node_id": "concept:94877da84edb5445",
@@ -59,14 +59,6 @@
       "score": 0.9320961281708946
     },
     {
-      "node_id": "concept:35379d9c009e290d702b",
-      "label": "remember",
-      "activation": 0.679877630112,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.9139445309235461
-    },
-    {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
@@ -75,20 +67,28 @@
       "score": 0.904701986754967
     },
     {
-      "node_id": "concept:553f3e2340aa69a85e93",
-      "label": "brought",
-      "activation": 0.658114140288,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.8875425468661098
-    },
-    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
-      "activation": 0.9917016026416988,
+      "activation": 1.0,
       "novelty": 0.09528346831824679,
       "conflict": 0,
-      "score": 0.88141136981961
+      "score": 0.8857265364459266
+    },
+    {
+      "node_id": "concept:54476ce93ea4a148",
+      "label": "distinguish",
+      "activation": 1.0,
+      "novelty": 0.04860267314702309,
+      "conflict": 0,
+      "score": 0.8731227217496962
+    },
+    {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.048285852245292124,
+      "conflict": 0,
+      "score": 0.8730371801062289
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 225
     },
     "consolidate": {
-      "attempts": 265,
-      "successes": 265
+      "attempts": 266,
+      "successes": 266
     },
     "connect": {
       "attempts": 204,
