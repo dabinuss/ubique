@@ -1,47 +1,39 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T01:33:39.420554+00:00",
-  "generation": 2717,
+  "timestamp": "2026-10-16T01:35:19.198930+00:00",
+  "generation": 2718,
   "focus": "Psychology: Briefer course.",
-  "last_action": "explore",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action_detail": "Read 8000 source characters",
   "last_provider": null,
   "last_provider_generation": 2715,
   "last_search_generation": 2714,
   "cortex": {
-    "nodes": 7541,
-    "synapses": 36648,
+    "nodes": 7548,
+    "synapses": 36684,
     "active": 120,
     "archived_synapses": 20752
   },
   "memory": {
-    "episodes": 2886,
-    "claims": 760,
+    "episodes": 2887,
+    "claims": 761,
     "stances": 26,
     "interests": 62,
-    "associative_comparisons": 490,
+    "associative_comparisons": 492,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 5851,
-    "segments": 188,
+    "events": 5862,
+    "segments": 189,
     "compressed_snapshot": true,
     "snapshot_events": 5851
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 110,
   "workspace": [
-    {
-      "node_id": "concept:3fc9b689459d738f8c88",
-      "label": "something",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
     {
       "node_id": "concept:ca52e7d1c18961a8c5b3",
       "label": "united",
@@ -51,28 +43,12 @@
       "score": 0.9794690265486727
     },
     {
-      "node_id": "concept:277a16655cf64a96",
-      "label": "five",
-      "activation": 0.76,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9730854625550662
-    },
-    {
       "node_id": "concept:12ed8d14a55fdb4701ee",
       "label": "anyone",
       "activation": 1.0,
       "novelty": 0.4024144869215292,
       "conflict": 0,
       "score": 0.968651911468813
-    },
-    {
-      "node_id": "concept:df41164e151227b31ca2",
-      "label": "sixty",
-      "activation": 0.76,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.964013559322034
     },
     {
       "node_id": "concept:e2d5a675d4eab169",
@@ -89,6 +65,30 @@
       "novelty": 0.34602076124567477,
       "conflict": 0,
       "score": 0.9534256055363322
+    },
+    {
+      "node_id": "concept:3fc9b689459d738f8c88",
+      "label": "something",
+      "activation": 0.694571210432,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9390624919797061
+    },
+    {
+      "node_id": "concept:5a2a957b269e8f0f",
+      "label": "external",
+      "activation": 1.0,
+      "novelty": 0.2607561929595828,
+      "conflict": 0,
+      "score": 0.9304041720990874
+    },
+    {
+      "node_id": "concept:277a16655cf64a96",
+      "label": "five",
+      "activation": 0.658614140288,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.9112929122717939
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 26
     },
     "read": {
-      "attempts": 231,
-      "successes": 231
+      "attempts": 232,
+      "successes": 232
     },
     "explore": {
       "attempts": 179,
