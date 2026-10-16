@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T10:55:42.929268+00:00",
-  "generation": 2834,
+  "timestamp": "2026-10-16T10:57:21.379707+00:00",
+  "generation": 2835,
   "focus": "The Republic of Plato",
-  "last_action": "explore",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 2834,
   "last_search_generation": 2829,
   "cortex": {
     "nodes": 7881,
-    "synapses": 39917,
+    "synapses": 39943,
     "active": 120,
-    "archived_synapses": 22873
+    "archived_synapses": 22729
   },
   "memory": {
     "episodes": 2958,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6762,
+    "events": 6767,
     "segments": 224,
     "compressed_snapshot": true,
     "snapshot_events": 6696
@@ -45,10 +45,10 @@
     {
       "node_id": "concept:81df63580cc9ff1550c9",
       "label": "place",
-      "activation": 0.9043940406435934,
+      "activation": 0.9048663169177893,
       "novelty": 0.56657223796034,
       "conflict": 0,
-      "score": 0.9632594053839605
+      "score": 0.9635049890465424
     },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
@@ -61,10 +61,10 @@
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.9987473996366475,
+      "activation": 0.9971928235501205,
       "novelty": 0.29542097488921715,
       "conflict": 0,
-      "score": 0.9391123110311455
+      "score": 0.9383039314661514
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -85,10 +85,10 @@
     {
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
-      "activation": 0.7437796128261103,
-      "novelty": 0.3629764065335753,
+      "activation": 0.7346847731114176,
+      "novelty": 0.35714285714285715,
       "conflict": 0,
-      "score": 0.8247690284336427
+      "score": 0.8184646534465085
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 202
     },
     "consolidate": {
-      "attempts": 236,
-      "successes": 236
+      "attempts": 237,
+      "successes": 237
     },
     "connect": {
       "attempts": 180,
