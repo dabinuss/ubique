@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T20:37:49.693721+00:00",
-  "generation": 2962,
+  "timestamp": "2026-10-16T20:51:42.342059+00:00",
+  "generation": 2963,
   "focus": "The World as Will and Idea, Volume 1",
-  "last_action": "consolidate",
-  "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action": "evolve",
+  "last_action_success": false,
+  "last_action_detail": "{\"accepted\": false, \"title\": \"Add curiosity probe when no cross‑source comparison is found\", \"summary\": \"When the SemanticLearner cannot locate any overlapping terms (even after stochastic relaxation and deterministic fallback), it now emits a lightweight `curiosity_probe` event. This prevents silent failures in the learning‑action cycle, giving Ubique an explicit signal to seek new material or br",
   "last_provider": null,
   "last_provider_generation": 2958,
   "last_search_generation": 2944,
@@ -14,7 +14,7 @@
     "nodes": 8229,
     "synapses": 43465,
     "active": 120,
-    "archived_synapses": 24363
+    "archived_synapses": 24481
   },
   "memory": {
     "episodes": 3026,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7773,
+    "events": 7779,
     "segments": 264,
     "compressed_snapshot": true,
     "snapshot_events": 7729
@@ -69,10 +69,10 @@
     {
       "node_id": "concept:c847bcd57c312119",
       "label": "selected",
-      "activation": 0.9531149398659531,
+      "activation": 0.9550187650048209,
       "novelty": 0.14792899408284024,
       "conflict": 0,
-      "score": 0.8755605971326625
+      "score": 0.8765505862048737
     },
     {
       "node_id": "concept:c9b6dab517b9d127",
@@ -86,9 +86,9 @@
       "node_id": "concept:8b16ced79976e6a1",
       "label": "action",
       "activation": 1.0,
-      "novelty": 0.02299908003679853,
+      "novelty": 0.022975301550832855,
       "conflict": 0,
-      "score": 0.8662097516099356
+      "score": 0.866203331418725
     }
   ],
   "skills": {
@@ -113,7 +113,7 @@
       "successes": 206
     },
     "evolve": {
-      "attempts": 9,
+      "attempts": 10,
       "successes": 3
     },
     "experiment": {
