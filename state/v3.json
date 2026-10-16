@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T20:15:41.585573+00:00",
-  "generation": 2956,
+  "timestamp": "2026-10-16T20:17:20.917128+00:00",
+  "generation": 2957,
   "focus": "The Varieties of Religious Experience: A Study in Human Nature",
-  "last_action": "explore",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 2953,
   "last_search_generation": 2944,
@@ -14,7 +14,7 @@
     "nodes": 8219,
     "synapses": 43290,
     "active": 120,
-    "archived_synapses": 24310
+    "archived_synapses": 24336
   },
   "memory": {
     "episodes": 3024,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7733,
+    "events": 7737,
     "segments": 262,
     "compressed_snapshot": true,
     "snapshot_events": 7729
@@ -51,14 +51,6 @@
       "score": 0.9727348643006264
     },
     {
-      "node_id": "concept:32dc16c83e73afa9",
-      "label": "association",
-      "activation": 0.76,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.9477984251968503
-    },
-    {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
       "activation": 1.0,
@@ -67,12 +59,12 @@
       "score": 0.9320961281708946
     },
     {
-      "node_id": "concept:a9491f4c1bf7b0cffbad",
-      "label": "subject",
-      "activation": 0.76,
-      "novelty": 0.5970149253731344,
+      "node_id": "concept:32dc16c83e73afa9",
+      "label": "association",
+      "activation": 0.6940712104319999,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.8963940298507462
+      "score": 0.9062402233409899
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -89,6 +81,14 @@
       "novelty": 0.048285852245292124,
       "conflict": 0,
       "score": 0.8730371801062289
+    },
+    {
+      "node_id": "concept:a9491f4c1bf7b0cffbad",
+      "label": "subject",
+      "activation": 0.678657741962469,
+      "novelty": 0.5813953488372093,
+      "conflict": 0,
+      "score": 0.8498787700065304
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 266
     },
     "connect": {
-      "attempts": 204,
-      "successes": 204
+      "attempts": 205,
+      "successes": 205
     },
     "evolve": {
       "attempts": 9,
