@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T03:57:53.432451+00:00",
-  "generation": 2747,
-  "focus": "The Varieties of Religious Experience: A Study in Human Nature",
-  "last_action": "evolve",
-  "last_action_success": false,
-  "last_action_detail": "{\"accepted\": false, \"title\": \"Introduce stochastic and novel-term exploration into SemanticLearner\", \"summary\": \"Investigates recurring learning bottlenecks by allowing SemanticLearner to occasionally relax its shared-term threshold (via a small exploration factor and a deterministic novelty boost on unseen terms). This encourages broader curiosity and experiential cross-source linking without com",
+  "timestamp": "2026-10-16T04:11:30.400795+00:00",
+  "generation": 2748,
+  "focus": "Mental Evolution in Man: Origin of Human Faculty",
+  "last_action": "explore",
+  "last_action_success": true,
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 2743,
   "last_search_generation": 2737,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6093,
+    "events": 6097,
     "segments": 197,
     "compressed_snapshot": true,
     "snapshot_events": 6024
@@ -35,60 +35,60 @@
   "evidence_reviews": 116,
   "workspace": [
     {
-      "node_id": "concept:39d02b42938b2b75d027",
-      "label": "cell",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:1ad28851419203b81019",
-      "label": "organite",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
       "node_id": "concept:ca52e7d1c18961a8c5b3",
       "label": "united",
-      "activation": 1.0,
-      "novelty": 0.4255319148936171,
+      "activation": 0.9495111421294458,
+      "novelty": 0.4175365344467641,
       "conflict": 0,
-      "score": 0.9748936170212767
+      "score": 0.9464806582079381
     },
     {
-      "node_id": "concept:d13dae0e56798384a013",
-      "label": "organism",
-      "activation": 0.76,
-      "novelty": 0.8163265306122448,
+      "node_id": "concept:39d02b42938b2b75d027",
+      "label": "cell",
+      "activation": 0.708224580288,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9556081632653062
+      "score": 0.9461622443048261
     },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 1.0,
+      "activation": 0.9814465122634254,
       "novelty": 0.33557046979865773,
       "conflict": 0,
-      "score": 0.9506040268456377
+      "score": 0.9409562132226188
+    },
+    {
+      "node_id": "concept:1ad28851419203b81019",
+      "label": "organite",
+      "activation": 0.672267510144,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9274645678299462
     },
     {
       "node_id": "concept:afed2f77cefe58d821f0",
       "label": "isolated",
-      "activation": 0.76,
-      "novelty": 0.7874015748031495,
+      "activation": 0.7184502299735326,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.9477984251968503
+      "score": 0.9189173135025868
     },
     {
-      "node_id": "concept:94f106e0117354cedb9e",
-      "label": "either",
-      "activation": 0.76,
-      "novelty": 0.5524861878453039,
+      "node_id": "concept:d13dae0e56798384a013",
+      "label": "organism",
+      "activation": 0.672267510144,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.8843712707182321
+      "score": 0.9021775304717303
+    },
+    {
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
+      "activation": 1.0,
+      "novelty": 0.023485204321277597,
+      "conflict": 0,
+      "score": 0.8663410051667451
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 241
     },
     "explore": {
-      "attempts": 183,
-      "successes": 183
+      "attempts": 184,
+      "successes": 184
     },
     "consolidate": {
       "attempts": 215,
