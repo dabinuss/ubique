@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T23:23:16.453759+00:00",
-  "generation": 2997,
+  "timestamp": "2026-10-16T23:25:05.051254+00:00",
+  "generation": 2998,
   "focus": "The Riddle of the Universe",
-  "last_action": "connect",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": null,
-  "last_provider_generation": 2992,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 2998,
   "last_search_generation": 2990,
   "cortex": {
-    "nodes": 8321,
-    "synapses": 44288,
+    "nodes": 8326,
+    "synapses": 44376,
     "active": 120,
-    "archived_synapses": 25272
+    "archived_synapses": 25252
   },
   "memory": {
     "episodes": 3050,
-    "claims": 1077,
+    "claims": 1080,
     "stances": 26,
     "interests": 74,
     "associative_comparisons": 728,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 8069,
+    "events": 8080,
     "segments": 276,
     "compressed_snapshot": true,
-    "snapshot_events": 7991
+    "snapshot_events": 8080
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 183,
+  "evidence_reviews": 186,
   "workspace": [
     {
       "node_id": "concept:d9298a10d1b0735837dc",
@@ -54,41 +54,41 @@
       "node_id": "concept:8653fc9ecf9bed78a03f",
       "label": "attains",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8080135593220339
     },
     {
       "node_id": "concept:15bcbadff2792ccb7f21",
       "label": "speedily",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8080135593220339
     },
     {
       "node_id": "concept:c2e10c20bf46daf0ba03",
       "label": "peace",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8080135593220339
     },
     {
       "node_id": "concept:d78e3c38d98d17d7355e",
       "label": "learned",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.7713708185053381
     },
     {
-      "node_id": "concept:e0f895872d65b2528fee",
-      "label": "knowledge",
-      "activation": 0.7084283503929787,
-      "novelty": 0.23337222870478413,
+      "node_id": "concept:d1905cf90af29a5ac3f9",
+      "label": "take",
+      "activation": 0.46,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.7713932439546407
+      "score": 0.7654068965517242
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 235
     },
     "consolidate": {
-      "attempts": 275,
-      "successes": 275
+      "attempts": 276,
+      "successes": 276
     },
     "connect": {
       "attempts": 212,
