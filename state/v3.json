@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T19:23:16.269440+00:00",
-  "generation": 2946,
-  "focus": "The mind and the brain : neuroplasticity and the power of mental force",
+  "timestamp": "2026-10-16T19:25:00.885943+00:00",
+  "generation": 2947,
+  "focus": "The Physical Basis of Mind",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 2941,
+  "last_provider": "groq",
+  "last_provider_generation": 2947,
   "last_search_generation": 2944,
   "cortex": {
-    "nodes": 8203,
-    "synapses": 43102,
+    "nodes": 8208,
+    "synapses": 43140,
     "active": 120,
-    "archived_synapses": 24160
+    "archived_synapses": 24184
   },
   "memory": {
-    "episodes": 3021,
-    "claims": 1013,
+    "episodes": 3022,
+    "claims": 1016,
     "stances": 26,
     "interests": 71,
-    "associative_comparisons": 684,
+    "associative_comparisons": 686,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7663,
+    "events": 7674,
     "segments": 259,
     "compressed_snapshot": true,
     "snapshot_events": 7648
@@ -35,12 +35,44 @@
   "evidence_reviews": 169,
   "workspace": [
     {
+      "node_id": "concept:040b0e3f05e74417",
+      "label": "experiment",
+      "activation": 1.0,
+      "novelty": 0.4175365344467641,
+      "conflict": 0,
+      "score": 0.9727348643006264
+    },
+    {
+      "node_id": "concept:fcc54d5b1690d1319cdd",
+      "label": "reflex",
+      "activation": 0.76,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.9477984251968503
+    },
+    {
+      "node_id": "concept:347a5faf2ae6ce14e420",
+      "label": "voluntary",
+      "activation": 0.76,
+      "novelty": 0.6493506493506493,
+      "conflict": 0,
+      "score": 0.9105246753246754
+    },
+    {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
       "novelty": 0.16680567139282734,
       "conflict": 0,
       "score": 0.9050375312760635
+    },
+    {
+      "node_id": "concept:3eeb7e96e59ce40f9cb1",
+      "label": "order",
+      "activation": 0.76,
+      "novelty": 0.5390835579514824,
+      "conflict": 0,
+      "score": 0.8807525606469002
     },
     {
       "node_id": "concept:54476ce93ea4a148",
@@ -51,44 +83,12 @@
       "score": 0.8731227217496962
     },
     {
-      "node_id": "concept:e272deecde720ffc773d",
-      "label": "cold",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "node_id": "concept:6084535fcddc8d3afae0",
+      "label": "movements",
+      "activation": 0.76,
+      "novelty": 0.47058823529411764,
       "conflict": 0,
-      "score": 0.777729411764706
-    },
-    {
-      "node_id": "concept:18204974997e94d405c1",
-      "label": "suddenly",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:9f1277d878f36577f1a8",
-      "label": "touching",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:a70a59b3981af385be12",
-      "label": "metallic",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:531f43f8e3ddd6a512a3",
-      "label": "conducts",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.8622588235294117
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 35
     },
     "read": {
-      "attempts": 301,
-      "successes": 301
+      "attempts": 302,
+      "successes": 302
     },
     "explore": {
       "attempts": 225,
