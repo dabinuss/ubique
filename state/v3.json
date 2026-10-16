@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T01:38:36.015872+00:00",
-  "generation": 2720,
-  "focus": "Educational psychology: Briefer course.",
-  "last_action": "consolidate",
+  "timestamp": "2026-10-16T01:52:14.974030+00:00",
+  "generation": 2721,
+  "focus": "The Mind and the Brain",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": "gemini",
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": null,
   "last_provider_generation": 2720,
   "last_search_generation": 2714,
   "cortex": {
     "nodes": 7559,
     "synapses": 36759,
     "active": 120,
-    "archived_synapses": 20715
+    "archived_synapses": 20757
   },
   "memory": {
     "episodes": 2890,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 5884,
-    "segments": 189,
+    "events": 5888,
+    "segments": 190,
     "compressed_snapshot": true,
     "snapshot_events": 5851
   },
@@ -35,52 +35,12 @@
   "evidence_reviews": 111,
   "workspace": [
     {
-      "node_id": "concept:8d4c765ab6fce83d03c8",
-      "label": "irculation",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:c9fd53f3265ef99703dc",
-      "label": "harvey",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:d2f4252debef3af071e8",
-      "label": "vitalism",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:05111fe50741a80946c3",
-      "label": "teleological",
-      "activation": 0.76,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9730854625550662
-    },
-    {
-      "node_id": "concept:3e8e40c0af5f5ea5a948",
-      "label": "blood",
-      "activation": 0.76,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9730854625550662
-    },
-    {
       "node_id": "concept:12ed8d14a55fdb4701ee",
       "label": "anyone",
       "activation": 1.0,
-      "novelty": 0.4024144869215292,
+      "novelty": 0.39525691699604737,
       "conflict": 0,
-      "score": 0.968651911468813
+      "score": 0.966719367588933
     },
     {
       "node_id": "concept:3f8b4464a99de3dc8c5c",
@@ -89,6 +49,46 @@
       "novelty": 0.39525691699604737,
       "conflict": 0,
       "score": 0.966719367588933
+    },
+    {
+      "node_id": "concept:e2d5a675d4eab169",
+      "label": "continue",
+      "activation": 1.0,
+      "novelty": 0.3629764065335753,
+      "conflict": 0,
+      "score": 0.9580036297640655
+    },
+    {
+      "node_id": "concept:24ea913efda289dc1b17",
+      "label": "most",
+      "activation": 1.0,
+      "novelty": 0.34602076124567477,
+      "conflict": 0,
+      "score": 0.9534256055363322
+    },
+    {
+      "node_id": "concept:c9fd53f3265ef99703dc",
+      "label": "harvey",
+      "activation": 0.694571210432,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9390624919797061
+    },
+    {
+      "node_id": "concept:d2f4252debef3af071e8",
+      "label": "vitalism",
+      "activation": 0.694571210432,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9390624919797061
+    },
+    {
+      "node_id": "concept:8d4c765ab6fce83d03c8",
+      "label": "irculation",
+      "activation": 0.6912263666976745,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9373231732378569
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 208
     },
     "connect": {
-      "attempts": 157,
-      "successes": 157
+      "attempts": 158,
+      "successes": 158
     },
     "evolve": {
       "attempts": 6,
