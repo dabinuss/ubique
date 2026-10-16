@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T07:00:43.092063+00:00",
-  "generation": 2786,
-  "focus": "Stories in the mind",
-  "last_action": "read",
+  "timestamp": "2026-10-16T07:02:19.080977+00:00",
+  "generation": 2787,
+  "focus": "The story of the mind /",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 2783,
   "last_search_generation": 2783,
   "cortex": {
-    "nodes": 7723,
-    "synapses": 38441,
+    "nodes": 7727,
+    "synapses": 38495,
     "active": 120,
-    "archived_synapses": 21883
+    "archived_synapses": 21865
   },
   "memory": {
     "episodes": 2933,
@@ -26,14 +26,30 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6392,
-    "segments": 209,
+    "events": 6397,
+    "segments": 210,
     "compressed_snapshot": true,
     "snapshot_events": 6366
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 122,
   "workspace": [
+    {
+      "node_id": "concept:4f5a4d411826517c968a",
+      "label": "cæcum",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.9829064220183488
+    },
+    {
+      "node_id": "concept:ebf1eee550e1decd319d",
+      "label": "monkeys",
+      "activation": 0.76,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9730854625550662
+    },
     {
       "node_id": "concept:dc0fff9075b9bd9450c1",
       "label": "anywhere",
@@ -46,49 +62,33 @@
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
       "activation": 1.0,
-      "novelty": 0.33557046979865773,
+      "novelty": 0.32573289902280134,
       "conflict": 0,
-      "score": 0.9506040268456377
+      "score": 0.9479478827361565
     },
     {
-      "node_id": "concept:5a2a957b269e8f0f",
-      "label": "external",
-      "activation": 1.0,
-      "novelty": 0.21953896816684962,
-      "conflict": 0,
-      "score": 0.9192755214050494
-    },
-    {
-      "node_id": "concept:6db7d803e74f1ffa7d8f",
-      "label": "before",
+      "node_id": "concept:eb233c738048666fed9b",
+      "label": "resemblance",
       "activation": 0.76,
-      "novelty": 0.6493506493506493,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.9105246753246754
+      "score": 0.9214068965517241
     },
     {
-      "node_id": "concept:d05aa2a15fb3c40efeeb",
-      "label": "make",
+      "node_id": "concept:2bfbbaa7ab3e0dcc8b56",
+      "label": "vermiform",
       "activation": 0.76,
-      "novelty": 0.5141388174807199,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.8740174807197945
+      "score": 0.9214068965517241
     },
     {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 1.0,
-      "novelty": 0.048285852245292124,
-      "conflict": 0,
-      "score": 0.8730371801062289
-    },
-    {
-      "node_id": "concept:f86b1f62a8554232b940",
-      "label": "should",
+      "node_id": "concept:c70bceed231686f9c043",
+      "label": "appendage",
       "activation": 0.76,
-      "novelty": 0.36900369003690037,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.8348309963099632
+      "score": 0.9214068965517241
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 192
     },
     "consolidate": {
-      "attempts": 224,
-      "successes": 224
+      "attempts": 225,
+      "successes": 225
     },
     "connect": {
       "attempts": 170,
