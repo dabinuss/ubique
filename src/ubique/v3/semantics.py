@@ -129,6 +129,26 @@ class SemanticLearner:
             # --- End exploratory threshold logic ---
             if len(choices) >= 80:
                 break
+        # --- Begin fallback search logic ---
+        # If no candidates were found under the normal or stochastic rules,
+        # perform a deterministic pass that accepts a single shared term.
+        # This guarantees that a source passage can still generate a hypothesis
+        # rather than silently failing, improving the curiosity loop.
+        if not choices:
+            for other in reversed(earlier):
+                if other.get("id") == eid or other.get("epistemic_status") != "source_passage":
+                    continue
+                family = self.family(other)
+                if not family or family == self.family(episode):
+                    continue
+                concepts = set(terms(str(other.get("text", ""))[:1700], 24))
+                concepts |= set(terms(str(other.get("payload", {}).get("title", "")), 12))
+                shared = current & concepts
+                if len(shared) >= 1:
+                    choices.append((len(shared), other, shared))
+                if len(choices) >= 80:
+                    break
+        # --- End fallback search logic ---
         choices.sort(key=lambda row: row[0], reverse=True)
         for _, other, shared in choices[:2]:
             pair = sorted([eid, other["id"]])
