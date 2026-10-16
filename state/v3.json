@@ -1,39 +1,47 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T17:28:39.432822+00:00",
-  "generation": 2920,
+  "timestamp": "2026-10-16T17:30:20.154479+00:00",
+  "generation": 2921,
   "focus": "The Republic of Plato",
-  "last_action": "connect",
+  "last_action": "search",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "last_action_detail": "Acquired 3 attributable external articles",
   "last_provider": null,
   "last_provider_generation": 2919,
-  "last_search_generation": 2898,
+  "last_search_generation": 2921,
   "cortex": {
     "nodes": 8136,
     "synapses": 42442,
     "active": 120,
-    "archived_synapses": 23602
+    "archived_synapses": 23640
   },
   "memory": {
-    "episodes": 3005,
+    "episodes": 3008,
     "claims": 986,
     "stances": 26,
     "interests": 71,
-    "associative_comparisons": 658,
+    "associative_comparisons": 664,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7437,
+    "events": 7462,
     "segments": 251,
     "compressed_snapshot": true,
-    "snapshot_events": 7367
+    "snapshot_events": 7462
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 158,
   "workspace": [
+    {
+      "node_id": "concept:d9298a10d1b0735837dc",
+      "label": "other",
+      "activation": 1.0,
+      "novelty": 0.26702269692923897,
+      "conflict": 0,
+      "score": 0.9320961281708946
+    },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
       "label": "experience",
@@ -41,30 +49,6 @@
       "novelty": 0.2577319587628866,
       "conflict": 0,
       "score": 0.9295876288659795
-    },
-    {
-      "node_id": "concept:d9298a10d1b0735837dc",
-      "label": "other",
-      "activation": 0.9887335118390423,
-      "novelty": 0.26702269692923897,
-      "conflict": 0,
-      "score": 0.9262375543271966
-    },
-    {
-      "node_id": "concept:acef2c15bcd349db900d",
-      "label": "quality",
-      "activation": 0.7090639855058823,
-      "novelty": 0.6896551724137931,
-      "conflict": 0,
-      "score": 0.894920169014783
-    },
-    {
-      "node_id": "concept:ec805d17ad4f6cf298cd",
-      "label": "accordance",
-      "activation": 0.656614140288,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.88676254686611
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -83,18 +67,34 @@
       "score": 0.8730371801062289
     },
     {
+      "node_id": "concept:acef2c15bcd349db900d",
+      "label": "quality",
+      "activation": 0.6656033168768083,
+      "novelty": 0.6688963210702341,
+      "conflict": 0,
+      "score": 0.8667157314649037
+    },
+    {
       "node_id": "concept:8b16ced79976e6a1",
       "label": "action",
       "activation": 1.0,
       "novelty": 0.023215322112594316,
       "conflict": 0,
       "score": 0.8662681369704006
+    },
+    {
+      "node_id": "concept:ec805d17ad4f6cf298cd",
+      "label": "accordance",
+      "activation": 0.5688150693524593,
+      "novelty": 0.7352941176470589,
+      "conflict": 0,
+      "score": 0.8343132478279848
     }
   ],
   "skills": {
     "search": {
-      "attempts": 34,
-      "successes": 33
+      "attempts": 35,
+      "successes": 34
     },
     "read": {
       "attempts": 294,
