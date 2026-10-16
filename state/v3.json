@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T18:30:57.968519+00:00",
-  "generation": 2936,
+  "timestamp": "2026-10-16T18:44:25.776743+00:00",
+  "generation": 2937,
   "focus": "The Riddle of the Universe",
-  "last_action": "consolidate",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": "groq",
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": null,
   "last_provider_generation": 2936,
   "last_search_generation": 2921,
   "cortex": {
-    "nodes": 8174,
-    "synapses": 42847,
+    "nodes": 8179,
+    "synapses": 42890,
     "active": 120,
-    "archived_synapses": 24081
+    "archived_synapses": 24078
   },
   "memory": {
-    "episodes": 3015,
-    "claims": 1006,
+    "episodes": 3016,
+    "claims": 1009,
     "stances": 26,
     "interests": 71,
-    "associative_comparisons": 672,
+    "associative_comparisons": 674,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7579,
+    "events": 7590,
     "segments": 256,
     "compressed_snapshot": true,
     "snapshot_events": 7545
@@ -35,60 +35,60 @@
   "evidence_reviews": 169,
   "workspace": [
     {
-      "node_id": "concept:cab80b3079898c6679be",
-      "label": "presented",
-      "activation": 0.76,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9730854625550662
-    },
-    {
       "node_id": "concept:96044d9734b6044127de",
       "label": "plant",
-      "activation": 0.76,
-      "novelty": 0.7874015748031495,
+      "activation": 0.73153132,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.9477984251968503
+      "score": 0.92571948031635
     },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 1.0,
+      "activation": 0.9844200589757272,
       "novelty": 0.26702269692923897,
       "conflict": 0,
-      "score": 0.9320961281708946
+      "score": 0.9239945588382728
+    },
+    {
+      "node_id": "concept:cab80b3079898c6679be",
+      "label": "presented",
+      "activation": 0.6829208800000001,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.923932416922034
     },
     {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
-      "novelty": 0.1680672268907563,
+      "novelty": 0.16680567139282734,
       "conflict": 0,
-      "score": 0.9053781512605041
-    },
-    {
-      "node_id": "concept:2740e59ffb8c5eff0e0f",
-      "label": "several",
-      "activation": 0.76,
-      "novelty": 0.5970149253731344,
-      "conflict": 0,
-      "score": 0.8963940298507462
+      "score": 0.9050375312760635
     },
     {
       "node_id": "concept:1559d6aa3c36f76671d9",
       "label": "species",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:936fbcc6eed01b4b5e62",
       "label": "differences",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
+    },
+    {
+      "node_id": "concept:c9a8dc336964db7fd6c7",
+      "label": "them",
+      "activation": 0.7606095486712963,
+      "novelty": 0.2840909090909091,
+      "conflict": 0,
+      "score": 0.8122215107636196
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 34
     },
     "read": {
-      "attempts": 298,
-      "successes": 298
+      "attempts": 299,
+      "successes": 299
     },
     "explore": {
       "attempts": 223,
