@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T09:41:04.438312+00:00",
-  "generation": 2818,
+  "timestamp": "2026-10-16T09:42:47.381145+00:00",
+  "generation": 2819,
   "focus": "The World as Will and Idea, Volume 1",
-  "last_action": "read",
-  "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action": "evolve",
+  "last_action_success": false,
+  "last_action_detail": "{\"accepted\": false, \"title\": \"Prioritize novel overlapping terms in cross‑source comparisons\", \"summary\": \"Adds a deterministic sorting step that places previously unseen terms before familiar ones when selecting the shared terms for a comparison. This modest change nudges the learner toward more novel connections, enhancing curiosity without altering existing stochastic exploration logic or overa",
   "last_provider": null,
   "last_provider_generation": 2817,
   "last_search_generation": 2806,
   "cortex": {
-    "nodes": 7842,
+    "nodes": 7843,
     "synapses": 39583,
     "active": 120,
     "archived_synapses": 22807
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6638,
-    "segments": 219,
+    "events": 6644,
+    "segments": 220,
     "compressed_snapshot": true,
     "snapshot_events": 6611
   },
@@ -35,60 +35,60 @@
   "evidence_reviews": 130,
   "workspace": [
     {
-      "node_id": "concept:dfd34a31322c29f8",
-      "label": "concepts",
-      "activation": 0.9137974963609701,
-      "novelty": 0.5141388174807199,
+      "node_id": "concept:040b0e3f05e74417",
+      "label": "experiment",
+      "activation": 1.0,
+      "novelty": 0.4514672686230249,
       "conflict": 0,
-      "score": 0.953992178827499
+      "score": 0.9818961625282168
     },
     {
-      "node_id": "concept:009c3c2892353a86fae0",
-      "label": "sence",
-      "activation": 0.706224580288,
+      "node_id": "concept:5d5766cf2d7870161420",
+      "label": "whole",
+      "activation": 0.76,
       "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9451222443048262
+      "score": 0.9730854625550662
     },
     {
-      "node_id": "concept:d15690f08a575024650b",
-      "label": "direct",
-      "activation": 0.706224580288,
-      "novelty": 0.8163265306122448,
+      "node_id": "concept:81df63580cc9ff1550c9",
+      "label": "place",
+      "activation": 0.893397383516094,
+      "novelty": 0.56657223796034,
       "conflict": 0,
-      "score": 0.9276449450150661
+      "score": 0.9575411436776606
+    },
+    {
+      "node_id": "concept:dfd34a31322c29f8",
+      "label": "concepts",
+      "activation": 0.915786400240568,
+      "novelty": 0.5141388174807199,
+      "conflict": 0,
+      "score": 0.9550264088448899
+    },
+    {
+      "node_id": "concept:febb9f32c94e238e5f36",
+      "label": "making",
+      "activation": 0.76,
+      "novelty": 0.7352941176470589,
+      "conflict": 0,
+      "score": 0.9337294117647059
+    },
+    {
+      "node_id": "concept:d9298a10d1b0735837dc",
+      "label": "other",
+      "activation": 0.9864782750174138,
+      "novelty": 0.29542097488921715,
+      "conflict": 0,
+      "score": 0.9327323662291438
     },
     {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
-      "novelty": 0.21321961620469085,
+      "novelty": 0.2111932418162619,
       "conflict": 0,
-      "score": 0.9175692963752666
-    },
-    {
-      "node_id": "concept:22fefa8cf4bda9184634",
-      "label": "influence",
-      "activation": 0.670267510144,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.8807099237802181
-    },
-    {
-      "node_id": "concept:0570b840b0d58779",
-      "label": "formation",
-      "activation": 1.0,
-      "novelty": 0.04807692307692307,
-      "conflict": 0,
-      "score": 0.8729807692307692
-    },
-    {
-      "node_id": "concept:562a77a7ae22fe1bb055",
-      "label": "conditions",
-      "activation": 0.6741378950368841,
-      "novelty": 0.56657223796034,
-      "conflict": 0,
-      "score": 0.8435262096684717
+      "score": 0.9170221752903907
     }
   ],
   "skills": {
@@ -113,7 +113,7 @@
       "successes": 176
     },
     "evolve": {
-      "attempts": 7,
+      "attempts": 8,
       "successes": 2
     },
     "experiment": {
