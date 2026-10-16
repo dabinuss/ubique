@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T16:39:32.891426+00:00",
-  "generation": 2912,
+  "timestamp": "2026-10-16T16:53:19.356108+00:00",
+  "generation": 2913,
   "focus": "Meditations",
-  "last_action": "consolidate",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 2907,
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": "groq",
+  "last_provider_generation": 2913,
   "last_search_generation": 2898,
   "cortex": {
-    "nodes": 8113,
-    "synapses": 42236,
+    "nodes": 8118,
+    "synapses": 42256,
     "active": 120,
-    "archived_synapses": 23600
+    "archived_synapses": 23598
   },
   "memory": {
     "episodes": 3002,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7380,
+    "events": 7384,
     "segments": 248,
     "compressed_snapshot": true,
     "snapshot_events": 7367
@@ -69,26 +69,26 @@
     {
       "node_id": "concept:3dbd9cd5e1fb3e4f7854",
       "label": "faculty",
-      "activation": 0.8183299947411047,
+      "activation": 0.8344407642804477,
       "novelty": 0.38167938931297707,
       "conflict": 0,
-      "score": 0.8685850323798783
+      "score": 0.8769626325403366
     },
     {
-      "node_id": "concept:2101348579746d02ed47",
-      "label": "stones",
-      "activation": 0.5703683019822291,
-      "novelty": 0.8163265306122448,
+      "node_id": "concept:f3c7807d475073ba009b",
+      "label": "numbers",
+      "activation": 0.46,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8569996802960653
+      "score": 0.8080135593220339
     },
     {
-      "node_id": "concept:2e1d76579d44d7cfe5f3",
-      "label": "although",
-      "activation": 0.5999510881198085,
-      "novelty": 0.6493506493506493,
+      "node_id": "concept:9736ae5e9896f6ea5fcf",
+      "label": "carrying",
+      "activation": 0.46,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8272992411469757
+      "score": 0.8080135593220339
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 291
     },
     "explore": {
-      "attempts": 218,
-      "successes": 218
+      "attempts": 219,
+      "successes": 219
     },
     "consolidate": {
       "attempts": 255,
