@@ -1,35 +1,35 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T13:27:05.176039+00:00",
-  "generation": 2868,
+  "timestamp": "2026-10-16T13:28:38.262921+00:00",
+  "generation": 2869,
   "focus": "Evidence as to Man's Place in Nature",
-  "last_action": "connect",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": "groq",
+  "last_action_detail": "Read 5516 source characters",
+  "last_provider": null,
   "last_provider_generation": 2868,
   "last_search_generation": 2852,
   "cortex": {
-    "nodes": 7989,
-    "synapses": 40864,
+    "nodes": 7996,
+    "synapses": 40902,
     "active": 120,
-    "archived_synapses": 23104
+    "archived_synapses": 23124
   },
   "memory": {
-    "episodes": 2972,
-    "claims": 924,
+    "episodes": 2973,
+    "claims": 925,
     "stances": 26,
     "interests": 68,
-    "associative_comparisons": 614,
+    "associative_comparisons": 616,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7018,
+    "events": 7029,
     "segments": 234,
     "compressed_snapshot": true,
-    "snapshot_events": 6942
+    "snapshot_events": 7029
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 142,
@@ -37,26 +37,10 @@
     {
       "node_id": "concept:48d492d08e9d314c034c",
       "label": "studies",
-      "activation": 0.961463655504007,
+      "activation": 1.0,
       "novelty": 0.4514672686230249,
       "conflict": 0,
-      "score": 0.9618572633903004
-    },
-    {
-      "node_id": "concept:86d3c6deca06c8977711",
-      "label": "softness",
-      "activation": 0.694571210432,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9390624919797061
-    },
-    {
-      "node_id": "concept:25d304dd0e4198ba2fe9",
-      "label": "hardness",
-      "activation": 0.694571210432,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9390624919797061
+      "score": 0.9818961625282168
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
@@ -69,10 +53,10 @@
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.9708431273610523,
+      "activation": 0.9746905165895716,
       "novelty": 0.27359781121751026,
       "conflict": 0,
-      "score": 0.9187098352564751
+      "score": 0.920710477655305
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -81,6 +65,22 @@
       "novelty": 0.15408320493066255,
       "conflict": 0,
       "score": 0.9016024653312789
+    },
+    {
+      "node_id": "concept:86d3c6deca06c8977711",
+      "label": "softness",
+      "activation": 0.6317559546398198,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.8973266557347404
+    },
+    {
+      "node_id": "concept:25d304dd0e4198ba2fe9",
+      "label": "hardness",
+      "activation": 0.6317559546398198,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.8973266557347404
     },
     {
       "node_id": "concept:54476ce93ea4a148",
@@ -97,8 +97,8 @@
       "successes": 31
     },
     "read": {
-      "attempts": 278,
-      "successes": 278
+      "attempts": 279,
+      "successes": 279
     },
     "explore": {
       "attempts": 209,
