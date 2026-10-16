@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T22:05:48.717633+00:00",
-  "generation": 2979,
+  "timestamp": "2026-10-16T22:07:30.353877+00:00",
+  "generation": 2980,
   "focus": "The Nicomachean Ethics of Aristotle",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 2975,
   "last_search_generation": 2967,
   "cortex": {
-    "nodes": 8276,
-    "synapses": 43861,
+    "nodes": 8280,
+    "synapses": 43915,
     "active": 120,
-    "archived_synapses": 24887
+    "archived_synapses": 24813
   },
   "memory": {
     "episodes": 3038,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7924,
+    "events": 7929,
     "segments": 270,
     "compressed_snapshot": true,
     "snapshot_events": 7908
@@ -34,6 +34,22 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 178,
   "workspace": [
+    {
+      "node_id": "concept:e2d5a675d4eab169",
+      "label": "continue",
+      "activation": 1.0,
+      "novelty": 0.28776978417266186,
+      "conflict": 0,
+      "score": 0.9376978417266189
+    },
+    {
+      "node_id": "concept:d9298a10d1b0735837dc",
+      "label": "other",
+      "activation": 1.0,
+      "novelty": 0.26702269692923897,
+      "conflict": 0,
+      "score": 0.9320961281708946
+    },
     {
       "node_id": "concept:f59729641e18423b",
       "label": "characteristics",
@@ -51,22 +67,6 @@
       "score": 0.9287898089171975
     },
     {
-      "node_id": "concept:d9298a10d1b0735837dc",
-      "label": "other",
-      "activation": 0.9929069983214714,
-      "novelty": 0.26702269692923897,
-      "conflict": 0,
-      "score": 0.9284077672980597
-    },
-    {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.13956734124214934,
-      "conflict": 0,
-      "score": 0.8976831821353803
-    },
-    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -75,20 +75,20 @@
       "score": 0.8855077940481815
     },
     {
-      "node_id": "concept:f23ea8839517a78c",
-      "label": "active",
-      "activation": 0.7085639855058823,
-      "novelty": 0.6134969325153374,
+      "node_id": "concept:dc2e3999e6b3e23f3327",
+      "label": "figures",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8740974442422
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:a5cdfe9c3dce114364d2",
-      "label": "materialism",
+      "node_id": "concept:d74ff0ee8da3b9806b18",
+      "label": "pass",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 230
     },
     "consolidate": {
-      "attempts": 271,
-      "successes": 271
+      "attempts": 272,
+      "successes": 272
     },
     "connect": {
       "attempts": 209,
