@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T11:49:38.049659+00:00",
-  "generation": 2845,
-  "focus": "Christianity and Western Thought: A History of Philosophers. Ideas and Movements. Volume 1, From the Ancient World to the Age of Englightenment. By Colin Brown.",
-  "last_action": "read",
+  "timestamp": "2026-10-16T11:51:13.960122+00:00",
+  "generation": 2846,
+  "focus": "The Hellenistic World and the Coming of Rome Volume 1",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": null,
   "last_provider_generation": 2845,
   "last_search_generation": 2829,
   "cortex": {
-    "nodes": 7910,
+    "nodes": 7911,
     "synapses": 40226,
     "active": 120,
-    "archived_synapses": 22824
+    "archived_synapses": 22922
   },
   "memory": {
     "episodes": 2962,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6839,
+    "events": 6843,
     "segments": 228,
     "compressed_snapshot": true,
     "snapshot_events": 6778
@@ -35,20 +35,52 @@
   "evidence_reviews": 136,
   "workspace": [
     {
-      "node_id": "concept:2331eb33ce2c3766148e",
-      "label": "philosophy",
-      "activation": 1.0,
-      "novelty": 0.33557046979865773,
+      "node_id": "concept:6c22355401b817d0bcf7",
+      "label": "everal",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.9506040268456377
+      "score": 0.9829064220183488
+    },
+    {
+      "node_id": "concept:dc813ae4a000981e94c2",
+      "label": "eaten",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.9829064220183488
+    },
+    {
+      "node_id": "concept:2691c3debca036520490",
+      "label": "creatures",
+      "activation": 0.76,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9730854625550662
+    },
+    {
+      "node_id": "concept:81df63580cc9ff1550c9",
+      "label": "place",
+      "activation": 0.9058176580787787,
+      "novelty": 0.56657223796034,
+      "conflict": 0,
+      "score": 0.9639996864502567
+    },
+    {
+      "node_id": "concept:77db124549491bba1a4a",
+      "label": "beasts",
+      "activation": 0.76,
+      "novelty": 0.7352941176470589,
+      "conflict": 0,
+      "score": 0.9337294117647059
     },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.9782358806439713,
-      "novelty": 0.2915451895043732,
+      "activation": 0.961835234723023,
+      "novelty": 0.2840909090909091,
       "conflict": 0,
-      "score": 0.9273998591010459
+      "score": 0.9168588675105176
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -57,38 +89,6 @@
       "novelty": 0.1584786053882726,
       "conflict": 0,
       "score": 0.9027892234548336
-    },
-    {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.10520778537611784,
-      "conflict": 0,
-      "score": 0.8884061020515519
-    },
-    {
-      "node_id": "concept:0fa91dfefe67d79e1f84",
-      "label": "chiefly",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
-    },
-    {
-      "node_id": "concept:1c74ff27b4e3021c5d3c",
-      "label": "repression",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
-    },
-    {
-      "node_id": "concept:397d7847b96deb2d82e2",
-      "label": "condensation",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 271
     },
     "explore": {
-      "attempts": 204,
-      "successes": 204
+      "attempts": 205,
+      "successes": 205
     },
     "consolidate": {
       "attempts": 239,
