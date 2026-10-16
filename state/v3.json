@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T09:27:23.158200+00:00",
-  "generation": 2817,
+  "timestamp": "2026-10-16T09:41:04.438312+00:00",
+  "generation": 2818,
   "focus": "The World as Will and Idea, Volume 1",
-  "last_action": "consolidate",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": "groq",
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": null,
   "last_provider_generation": 2817,
   "last_search_generation": 2806,
   "cortex": {
-    "nodes": 7839,
-    "synapses": 39546,
+    "nodes": 7842,
+    "synapses": 39583,
     "active": 120,
-    "archived_synapses": 22746
+    "archived_synapses": 22807
   },
   "memory": {
-    "episodes": 2947,
-    "claims": 873,
+    "episodes": 2948,
+    "claims": 875,
     "stances": 26,
     "interests": 67,
-    "associative_comparisons": 572,
+    "associative_comparisons": 574,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6627,
+    "events": 6638,
     "segments": 219,
     "compressed_snapshot": true,
     "snapshot_events": 6611
@@ -35,52 +35,44 @@
   "evidence_reviews": 130,
   "workspace": [
     {
+      "node_id": "concept:dfd34a31322c29f8",
+      "label": "concepts",
+      "activation": 0.9137974963609701,
+      "novelty": 0.5141388174807199,
+      "conflict": 0,
+      "score": 0.953992178827499
+    },
+    {
       "node_id": "concept:009c3c2892353a86fae0",
       "label": "sence",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.706224580288,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
+      "score": 0.9451222443048262
     },
     {
       "node_id": "concept:d15690f08a575024650b",
       "label": "direct",
-      "activation": 0.76,
-      "novelty": 0.8474576271186441,
+      "activation": 0.706224580288,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.964013559322034
-    },
-    {
-      "node_id": "concept:dfd34a31322c29f8",
-      "label": "concepts",
-      "activation": 0.9143258670973403,
-      "novelty": 0.5263157894736842,
-      "conflict": 0,
-      "score": 0.9575547140485117
-    },
-    {
-      "node_id": "concept:22fefa8cf4bda9184634",
-      "label": "influence",
-      "activation": 0.76,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.9337294117647059
+      "score": 0.9276449450150661
     },
     {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
-      "novelty": 0.21528525296017226,
+      "novelty": 0.21321961620469085,
       "conflict": 0,
-      "score": 0.9181270182992465
+      "score": 0.9175692963752666
     },
     {
-      "node_id": "concept:562a77a7ae22fe1bb055",
-      "label": "conditions",
-      "activation": 0.76,
-      "novelty": 0.5813953488372093,
+      "node_id": "concept:22fefa8cf4bda9184634",
+      "label": "influence",
+      "activation": 0.670267510144,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.8921767441860466
+      "score": 0.8807099237802181
     },
     {
       "node_id": "concept:0570b840b0d58779",
@@ -89,6 +81,14 @@
       "novelty": 0.04807692307692307,
       "conflict": 0,
       "score": 0.8729807692307692
+    },
+    {
+      "node_id": "concept:562a77a7ae22fe1bb055",
+      "label": "conditions",
+      "activation": 0.6741378950368841,
+      "novelty": 0.56657223796034,
+      "conflict": 0,
+      "score": 0.8435262096684717
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 29
     },
     "read": {
-      "attempts": 263,
-      "successes": 263
+      "attempts": 264,
+      "successes": 264
     },
     "explore": {
       "attempts": 198,
