@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T21:50:47.491093+00:00",
-  "generation": 2977,
-  "focus": "Berkeley's A Treatise Concerning the Principles of Human Knowledge",
-  "last_action": "read",
+  "timestamp": "2026-10-16T21:52:19.208924+00:00",
+  "generation": 2978,
+  "focus": "The Nicomachean Ethics of Aristotle",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 2975,
   "last_search_generation": 2967,
   "cortex": {
-    "nodes": 8261,
-    "synapses": 43763,
+    "nodes": 8272,
+    "synapses": 43829,
     "active": 120,
-    "archived_synapses": 24681
+    "archived_synapses": 24871
   },
   "memory": {
     "episodes": 3037,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7908,
+    "events": 7913,
     "segments": 269,
     "compressed_snapshot": true,
     "snapshot_events": 7908
@@ -34,14 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 178,
   "workspace": [
-    {
-      "node_id": "concept:040b0e3f05e74417",
-      "label": "experiment",
-      "activation": 1.0,
-      "novelty": 0.4175365344467641,
-      "conflict": 0,
-      "score": 0.9727348643006264
-    },
     {
       "node_id": "concept:f59729641e18423b",
       "label": "characteristics",
@@ -61,10 +53,18 @@
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.970538191658611,
+      "activation": 0.9598941321145003,
       "novelty": 0.26702269692923897,
       "conflict": 0,
-      "score": 0.9167759878333723
+      "score": 0.9112410768704347
+    },
+    {
+      "node_id": "concept:f23ea8839517a78c",
+      "label": "active",
+      "activation": 0.76,
+      "novelty": 0.6309148264984227,
+      "conflict": 0,
+      "score": 0.9055470031545743
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -83,12 +83,12 @@
       "score": 0.8855077940481815
     },
     {
-      "node_id": "concept:dd9121d0930388e5e6ce",
-      "label": "beneficence",
+      "node_id": "concept:a5cdfe9c3dce114364d2",
+      "label": "materialism",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 230
     },
     "consolidate": {
-      "attempts": 270,
-      "successes": 270
+      "attempts": 271,
+      "successes": 271
     },
     "connect": {
       "attempts": 209,
