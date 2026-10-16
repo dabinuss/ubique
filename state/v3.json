@@ -1,47 +1,39 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T13:06:49.125075+00:00",
-  "generation": 2863,
-  "focus": "The story of the mind,",
-  "last_action": "explore",
+  "timestamp": "2026-10-16T13:08:29.458489+00:00",
+  "generation": 2864,
+  "focus": "Psychology : briefer course /",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action_detail": "Read 8000 source characters",
   "last_provider": null,
   "last_provider_generation": 2862,
   "last_search_generation": 2852,
   "cortex": {
-    "nodes": 7965,
-    "synapses": 40715,
+    "nodes": 7973,
+    "synapses": 40758,
     "active": 120,
-    "archived_synapses": 23109
+    "archived_synapses": 23106
   },
   "memory": {
-    "episodes": 2970,
-    "claims": 921,
+    "episodes": 2971,
+    "claims": 923,
     "stances": 26,
     "interests": 68,
-    "associative_comparisons": 610,
+    "associative_comparisons": 612,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6983,
-    "segments": 232,
+    "events": 6994,
+    "segments": 233,
     "compressed_snapshot": true,
     "snapshot_events": 6942
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 142,
   "workspace": [
-    {
-      "node_id": "concept:9ba846ece2bbc04439ab",
-      "label": "ecies",
-      "activation": 0.7050482681594366,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.935438658764941
-    },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
@@ -59,28 +51,12 @@
       "score": 0.9338714090287279
     },
     {
-      "node_id": "concept:63cc98599f0a945b45bd",
-      "label": "serum",
-      "activation": 0.6165772673594365,
-      "novelty": 0.8474576271186441,
+      "node_id": "concept:9ba846ece2bbc04439ab",
+      "label": "ecies",
+      "activation": 0.6801964714203919,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.889433738348941
-    },
-    {
-      "node_id": "concept:d37d96b42ad43384915e",
-      "label": "rabbit",
-      "activation": 0.6165772673594365,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.889433738348941
-    },
-    {
-      "node_id": "concept:f39592393ef0859cb196",
-      "label": "after",
-      "activation": 0.6165772673594365,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.8732186042237573
+      "score": 0.9141103284039098
     },
     {
       "node_id": "concept:54476ce93ea4a148",
@@ -89,6 +65,30 @@
       "novelty": 0.04860267314702309,
       "conflict": 0,
       "score": 0.8731227217496962
+    },
+    {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.048285852245292124,
+      "conflict": 0,
+      "score": 0.8730371801062289
+    },
+    {
+      "node_id": "concept:40f024a500acd053",
+      "label": "domain",
+      "activation": 1.0,
+      "novelty": 0.025103552152629598,
+      "conflict": 0,
+      "score": 0.8667779590812101
+    },
+    {
+      "node_id": "concept:63cc98599f0a945b45bd",
+      "label": "serum",
+      "activation": 0.5590398107643919,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.85110886486279
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 31
     },
     "read": {
-      "attempts": 276,
-      "successes": 276
+      "attempts": 277,
+      "successes": 277
     },
     "explore": {
       "attempts": 208,
