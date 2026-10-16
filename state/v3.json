@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T12:46:42.437527+00:00",
-  "generation": 2858,
+  "timestamp": "2026-10-16T12:48:13.186458+00:00",
+  "generation": 2859,
   "focus": "Psychology: Briefer Course",
-  "last_action": "explore",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 2856,
   "last_search_generation": 2852,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6951,
+    "events": 6955,
     "segments": 231,
     "compressed_snapshot": true,
     "snapshot_events": 6942
@@ -53,34 +53,18 @@
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.9932589116669882,
+      "activation": 0.9954894067096561,
       "novelty": 0.27359781121751026,
       "conflict": 0,
-      "score": 0.9303660430955618
-    },
-    {
-      "node_id": "concept:38a81e87e79631e602bf",
-      "label": "person",
-      "activation": 0.668328062033385,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.89285378617371
-    },
-    {
-      "node_id": "concept:ae448ac86c4e8e4dec64",
-      "label": "another",
-      "activation": 0.658114140288,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.8875425468661098
+      "score": 0.931525900517749
     },
     {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
-      "activation": 0.9817434069153151,
+      "activation": 0.9876685604943446,
       "novelty": 0.10373443983402489,
       "conflict": 0,
-      "score": 0.8785148703511507
+      "score": 0.8815959502122459
     },
     {
       "node_id": "concept:411f62e7fd037280",
@@ -89,6 +73,22 @@
       "novelty": 0.046860356138706656,
       "conflict": 0,
       "score": 0.8726522961574508
+    },
+    {
+      "node_id": "concept:40f024a500acd053",
+      "label": "domain",
+      "activation": 1.0,
+      "novelty": 0.025103552152629598,
+      "conflict": 0,
+      "score": 0.8667779590812101
+    },
+    {
+      "node_id": "concept:38a81e87e79631e602bf",
+      "label": "person",
+      "activation": 0.5883043627442551,
+      "novelty": 0.7352941176470589,
+      "conflict": 0,
+      "score": 0.8444476803917187
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 242
     },
     "connect": {
-      "attempts": 184,
-      "successes": 184
+      "attempts": 185,
+      "successes": 185
     },
     "evolve": {
       "attempts": 8,
