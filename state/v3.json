@@ -1,39 +1,47 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T08:44:00.031799+00:00",
-  "generation": 2805,
+  "timestamp": "2026-10-16T08:45:40.044354+00:00",
+  "generation": 2806,
   "focus": "The Mind and the Brain",
-  "last_action": "read",
+  "last_action": "search",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "Acquired 3 attributable external articles",
+  "last_provider": null,
   "last_provider_generation": 2805,
-  "last_search_generation": 2783,
+  "last_search_generation": 2806,
   "cortex": {
-    "nodes": 7785,
-    "synapses": 39058,
+    "nodes": 7802,
+    "synapses": 39178,
     "active": 120,
-    "archived_synapses": 22336
+    "archived_synapses": 22432
   },
   "memory": {
-    "episodes": 2941,
-    "claims": 853,
+    "episodes": 2944,
+    "claims": 862,
     "stances": 26,
-    "interests": 65,
-    "associative_comparisons": 560,
+    "interests": 67,
+    "associative_comparisons": 566,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6530,
-    "segments": 215,
+    "events": 6555,
+    "segments": 216,
     "compressed_snapshot": true,
     "snapshot_events": 6530
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 128,
   "workspace": [
+    {
+      "node_id": "concept:15bd52797d7d181ee7f5",
+      "label": "ought",
+      "activation": 0.76,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9730854625550662
+    },
     {
       "node_id": "concept:ca52e7d1c18961a8c5b3",
       "label": "united",
@@ -67,14 +75,6 @@
       "score": 0.9564285714285714
     },
     {
-      "node_id": "concept:3f49dbbfe051cb20cc03",
-      "label": "space",
-      "activation": 0.7263530950670586,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.9465171687569045
-    },
-    {
       "node_id": "concept:0c8b526fafb89fe4b3bd",
       "label": "gutenberg",
       "activation": 1.0,
@@ -93,8 +93,8 @@
   ],
   "skills": {
     "search": {
-      "attempts": 29,
-      "successes": 28
+      "attempts": 30,
+      "successes": 29
     },
     "read": {
       "attempts": 260,
