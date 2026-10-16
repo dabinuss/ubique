@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T18:29:14.093720+00:00",
-  "generation": 2935,
+  "timestamp": "2026-10-16T18:30:57.968519+00:00",
+  "generation": 2936,
   "focus": "The Riddle of the Universe",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 2930,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 2936,
   "last_search_generation": 2921,
   "cortex": {
-    "nodes": 8162,
-    "synapses": 42755,
+    "nodes": 8174,
+    "synapses": 42847,
     "active": 120,
-    "archived_synapses": 24125
+    "archived_synapses": 24081
   },
   "memory": {
     "episodes": 3015,
-    "claims": 1001,
+    "claims": 1006,
     "stances": 26,
     "interests": 71,
     "associative_comparisons": 672,
@@ -26,14 +26,30 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7564,
-    "segments": 255,
+    "events": 7579,
+    "segments": 256,
     "compressed_snapshot": true,
     "snapshot_events": 7545
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 164,
+  "evidence_reviews": 169,
   "workspace": [
+    {
+      "node_id": "concept:cab80b3079898c6679be",
+      "label": "presented",
+      "activation": 0.76,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9730854625550662
+    },
+    {
+      "node_id": "concept:96044d9734b6044127de",
+      "label": "plant",
+      "activation": 0.76,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.9477984251968503
+    },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
@@ -46,49 +62,33 @@
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
-      "novelty": 0.1693480101608806,
+      "novelty": 0.1680672268907563,
       "conflict": 0,
-      "score": 0.9057239627434379
+      "score": 0.9053781512605041
     },
     {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.09610764055742432,
+      "node_id": "concept:2740e59ffb8c5eff0e0f",
+      "label": "several",
+      "activation": 0.76,
+      "novelty": 0.5970149253731344,
       "conflict": 0,
-      "score": 0.8859490629505047
+      "score": 0.8963940298507462
     },
     {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
-      "activation": 1.0,
-      "novelty": 0.02319109461966605,
-      "conflict": 0,
-      "score": 0.8662615955473099
-    },
-    {
-      "node_id": "concept:aef450dc78eac12fcad7",
-      "label": "leads",
-      "activation": 0.6150385031361609,
-      "novelty": 0.5524861878453039,
-      "conflict": 0,
-      "score": 0.8089912923490358
-    },
-    {
-      "node_id": "concept:8a1a3f36a3784737f4ec",
-      "label": "repressed",
+      "node_id": "concept:1559d6aa3c36f76671d9",
+      "label": "species",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:392b4c486143606c0296",
-      "label": "seeking",
+      "node_id": "concept:936fbcc6eed01b4b5e62",
+      "label": "differences",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 223
     },
     "consolidate": {
-      "attempts": 260,
-      "successes": 260
+      "attempts": 261,
+      "successes": 261
     },
     "connect": {
       "attempts": 200,
