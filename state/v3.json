@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T01:13:33.949446+00:00",
-  "generation": 2712,
+  "timestamp": "2026-10-16T01:15:10.924265+00:00",
+  "generation": 2713,
   "focus": "Psychology: Briefer Course",
-  "last_action": "explore",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 2709,
   "last_search_generation": 2691,
   "cortex": {
     "nodes": 7531,
-    "synapses": 36498,
+    "synapses": 36536,
     "active": 120,
-    "archived_synapses": 20756
+    "archived_synapses": 20674
   },
   "memory": {
     "episodes": 2880,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 5799,
+    "events": 5804,
     "segments": 187,
     "compressed_snapshot": true,
     "snapshot_events": 5771
@@ -67,28 +67,28 @@
       "score": 0.9519931856899491
     },
     {
-      "node_id": "concept:504dbd7ea99e812ff1ef",
-      "label": "paths",
-      "activation": 0.6950712104319999,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9393224919797061
-    },
-    {
-      "node_id": "concept:42e7f615e55876ddcfee",
-      "label": "invigoration",
-      "activation": 0.6950712104319999,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9393224919797061
-    },
-    {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
       "novelty": 0.2607561929595828,
       "conflict": 0,
       "score": 0.9304041720990874
+    },
+    {
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.18181818181818182,
+      "conflict": 0,
+      "score": 0.9090909090909092
+    },
+    {
+      "node_id": "concept:504dbd7ea99e812ff1ef",
+      "label": "paths",
+      "activation": 0.635899171382236,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.8994811284407966
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 177
     },
     "consolidate": {
-      "attempts": 206,
-      "successes": 206
+      "attempts": 207,
+      "successes": 207
     },
     "connect": {
       "attempts": 157,
