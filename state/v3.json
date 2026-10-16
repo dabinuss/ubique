@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T11:14:14.529377+00:00",
-  "generation": 2838,
+  "timestamp": "2026-10-16T11:15:49.376258+00:00",
+  "generation": 2839,
   "focus": "Meditations",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 2834,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 2839,
   "last_search_generation": 2829,
   "cortex": {
-    "nodes": 7895,
-    "synapses": 40054,
+    "nodes": 7899,
+    "synapses": 40072,
     "active": 120,
-    "archived_synapses": 22922
+    "archived_synapses": 22804
   },
   "memory": {
     "episodes": 2961,
-    "claims": 898,
+    "claims": 899,
     "stances": 26,
     "interests": 68,
     "associative_comparisons": 592,
@@ -26,21 +26,29 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6800,
-    "segments": 225,
+    "events": 6807,
+    "segments": 226,
     "compressed_snapshot": true,
     "snapshot_events": 6778
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 135,
+  "evidence_reviews": 136,
   "workspace": [
     {
-      "node_id": "concept:0f58b78bc54e0c3e5556",
-      "label": "sphere",
+      "node_id": "concept:9879397b188b1dd02a23",
+      "label": "turned",
       "activation": 0.76,
       "novelty": 0.8474576271186441,
       "conflict": 0,
       "score": 0.964013559322034
+    },
+    {
+      "node_id": "concept:c093955cebfac85b136d",
+      "label": "shows",
+      "activation": 0.76,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.9556081632653062
     },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
@@ -59,28 +67,20 @@
       "score": 0.9397636632200888
     },
     {
+      "node_id": "concept:828408e40d4fe651488b",
+      "label": "interest",
+      "activation": 0.76,
+      "novelty": 0.6896551724137931,
+      "conflict": 0,
+      "score": 0.9214068965517241
+    },
+    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
       "novelty": 0.1584786053882726,
       "conflict": 0,
       "score": 0.9027892234548336
-    },
-    {
-      "node_id": "concept:feb0dc97f1c6537c",
-      "label": "alternately",
-      "activation": 0.76,
-      "novelty": 0.6134969325153374,
-      "conflict": 0,
-      "score": 0.9008441717791411
-    },
-    {
-      "node_id": "concept:6f6465f9dd0685853e76",
-      "label": "enough",
-      "activation": 0.76,
-      "novelty": 0.5813953488372093,
-      "conflict": 0,
-      "score": 0.8921767441860466
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -105,8 +105,8 @@
       "successes": 202
     },
     "consolidate": {
-      "attempts": 237,
-      "successes": 237
+      "attempts": 238,
+      "successes": 238
     },
     "connect": {
       "attempts": 180,
