@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T00:11:35.730813+00:00",
-  "generation": 2696,
-  "focus": "Human, All too Human. A Book for Free Spirits",
-  "last_action": "read",
+  "timestamp": "2026-10-16T00:13:05.033460+00:00",
+  "generation": 2697,
+  "focus": "4: Human, All Too Human: A Book for Free Spirits",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 2692,
   "last_search_generation": 2691,
   "cortex": {
-    "nodes": 7494,
+    "nodes": 7495,
     "synapses": 36212,
     "active": 120,
     "archived_synapses": 20152
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 5682,
-    "segments": 182,
+    "events": 5686,
+    "segments": 183,
     "compressed_snapshot": true,
     "snapshot_events": 5682
   },
@@ -35,12 +35,52 @@
   "evidence_reviews": 103,
   "workspace": [
     {
-      "node_id": "concept:f5ceaa51ec1d0a2f",
-      "label": "considered",
-      "activation": 0.7303809062124696,
-      "novelty": 0.5970149253731344,
+      "node_id": "concept:5b729e0f619797fd6110",
+      "label": "given",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8809921010812305
+      "score": 0.9829064220183488
+    },
+    {
+      "node_id": "concept:88c7f08d0be5407e361c",
+      "label": "above",
+      "activation": 0.76,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9730854625550662
+    },
+    {
+      "node_id": "concept:ea4b35e8f83279eab1e6",
+      "label": "complex",
+      "activation": 0.76,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9730854625550662
+    },
+    {
+      "node_id": "concept:3f8fee624f43b2a9d685",
+      "label": "mixed",
+      "activation": 0.76,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.964013559322034
+    },
+    {
+      "node_id": "concept:d9298a10d1b0735837dc",
+      "label": "other",
+      "activation": 1.0,
+      "novelty": 0.3407155025553663,
+      "conflict": 0,
+      "score": 0.9519931856899491
+    },
+    {
+      "node_id": "concept:dba36bffa5cab0f922d0",
+      "label": "words",
+      "activation": 0.76,
+      "novelty": 0.5524861878453039,
+      "conflict": 0,
+      "score": 0.8843712707182321
     },
     {
       "node_id": "concept:10d0d9c7a5909812",
@@ -49,46 +89,6 @@
       "novelty": 0.04839099927413501,
       "conflict": 0,
       "score": 0.8730655698040164
-    },
-    {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 1.0,
-      "novelty": 0.048285852245292124,
-      "conflict": 0,
-      "score": 0.8730371801062289
-    },
-    {
-      "node_id": "concept:411f62e7fd037280",
-      "label": "actually",
-      "activation": 1.0,
-      "novelty": 0.04807692307692307,
-      "conflict": 0,
-      "score": 0.8729807692307692
-    },
-    {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
-      "activation": 1.0,
-      "novelty": 0.02358490566037736,
-      "conflict": 0,
-      "score": 0.866367924528302
-    },
-    {
-      "node_id": "concept:d9325e0936a5cb483a42",
-      "label": "raised",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:95be0d831e68d112ba60",
-      "label": "estion",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 225
     },
     "explore": {
-      "attempts": 173,
-      "successes": 173
+      "attempts": 174,
+      "successes": 174
     },
     "consolidate": {
       "attempts": 203,
