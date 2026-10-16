@@ -1,33 +1,33 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T21:13:23.348299+00:00",
-  "generation": 2969,
-  "focus": "A Treatise Concerning the Principles of Human Knowledge",
-  "last_action": "consolidate",
+  "timestamp": "2026-10-16T21:27:07.126309+00:00",
+  "generation": 2970,
+  "focus": "Meditations",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 2964,
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": "groq",
+  "last_provider_generation": 2970,
   "last_search_generation": 2967,
   "cortex": {
-    "nodes": 8248,
-    "synapses": 43612,
+    "nodes": 8250,
+    "synapses": 43652,
     "active": 120,
-    "archived_synapses": 24454
+    "archived_synapses": 24480
   },
   "memory": {
-    "episodes": 3031,
-    "claims": 1037,
+    "episodes": 3032,
+    "claims": 1040,
     "stances": 26,
     "interests": 71,
-    "associative_comparisons": 704,
+    "associative_comparisons": 706,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7843,
-    "segments": 266,
+    "events": 7854,
+    "segments": 267,
     "compressed_snapshot": true,
     "snapshot_events": 7827
   },
@@ -43,28 +43,12 @@
       "score": 0.9727348643006264
     },
     {
-      "node_id": "concept:af193190b8d3cd14103e",
-      "label": "leave",
-      "activation": 0.76,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.9556081632653062
-    },
-    {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
       "activation": 1.0,
       "novelty": 0.26702269692923897,
       "conflict": 0,
       "score": 0.9320961281708946
-    },
-    {
-      "node_id": "concept:80526c7c993eb2998813",
-      "label": "distinctly",
-      "activation": 0.76,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.9273708185053382
     },
     {
       "node_id": "concept:5a2a957b269e8f0f",
@@ -83,12 +67,28 @@
       "score": 0.8979213483146067
     },
     {
+      "node_id": "concept:80526c7c993eb2998813",
+      "label": "distinctly",
+      "activation": 0.6829208800000001,
+      "novelty": 0.6896551724137931,
+      "conflict": 0,
+      "score": 0.8813257541517243
+    },
+    {
       "node_id": "concept:c847bcd57c312119",
       "label": "selected",
-      "activation": 0.9552842289274562,
+      "activation": 0.9567975820352534,
       "novelty": 0.14792899408284024,
       "conflict": 0,
-      "score": 0.8766886274446442
+      "score": 0.8774755710606987
+    },
+    {
+      "node_id": "concept:c9b6dab517b9d127",
+      "label": "library",
+      "activation": 1.0,
+      "novelty": 0.024603272235207287,
+      "conflict": 0,
+      "score": 0.866642883503506
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 36
     },
     "read": {
-      "attempts": 308,
-      "successes": 308
+      "attempts": 309,
+      "successes": 309
     },
     "explore": {
       "attempts": 228,
