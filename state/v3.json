@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T14:08:51.802020+00:00",
-  "generation": 2879,
-  "focus": "Metaphysical Disputations",
-  "last_action": "read",
+  "timestamp": "2026-10-16T14:10:30.537244+00:00",
+  "generation": 2880,
+  "focus": "Descartes' Meditations : Practical Metaphysics: The Father of Rationalism in the Tradition of Spiritual Exercises",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 2879,
   "last_search_generation": 2875,
   "cortex": {
-    "nodes": 8037,
-    "synapses": 41325,
+    "nodes": 8038,
+    "synapses": 41431,
     "active": 120,
-    "archived_synapses": 23261
+    "archived_synapses": 23299
   },
   "memory": {
     "episodes": 2982,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7123,
-    "segments": 237,
+    "events": 7128,
+    "segments": 238,
     "compressed_snapshot": true,
     "snapshot_events": 7123
   },
@@ -59,14 +59,6 @@
       "score": 0.9596309963099632
     },
     {
-      "node_id": "concept:c5006763e9daf0e4e765",
-      "label": "explained",
-      "activation": 0.76,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.9477984251968503
-    },
-    {
       "node_id": "concept:244210e48437b6556980",
       "label": "project",
       "activation": 1.0,
@@ -83,12 +75,20 @@
       "score": 0.9419423368740516
     },
     {
-      "node_id": "concept:88c7f08d0be5407e361c",
-      "label": "above",
+      "node_id": "concept:b74f83c9353b55cd27a6",
+      "label": "argument",
       "activation": 0.76,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.9273708185053382
+      "score": 0.9214068965517241
+    },
+    {
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.1530221882172915,
+      "conflict": 0,
+      "score": 0.9013159908186688
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 212
     },
     "consolidate": {
-      "attempts": 246,
-      "successes": 246
+      "attempts": 247,
+      "successes": 247
     },
     "connect": {
       "attempts": 188,
