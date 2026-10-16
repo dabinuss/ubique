@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T21:27:07.126309+00:00",
-  "generation": 2970,
-  "focus": "Meditations",
-  "last_action": "read",
+  "timestamp": "2026-10-16T21:28:45.307410+00:00",
+  "generation": 2971,
+  "focus": "The Nicomachean Ethics of Aristotle",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 2970,
   "last_search_generation": 2967,
   "cortex": {
-    "nodes": 8250,
-    "synapses": 43652,
+    "nodes": 8256,
+    "synapses": 43710,
     "active": 120,
-    "archived_synapses": 24480
+    "archived_synapses": 24388
   },
   "memory": {
     "episodes": 3032,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7854,
+    "events": 7859,
     "segments": 267,
     "compressed_snapshot": true,
     "snapshot_events": 7827
@@ -43,6 +43,14 @@
       "score": 0.9727348643006264
     },
     {
+      "node_id": "concept:5f989a8e7bd59411991d",
+      "label": "grounds",
+      "activation": 0.76,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.964013559322034
+    },
+    {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
       "activation": 1.0,
@@ -51,12 +59,20 @@
       "score": 0.9320961281708946
     },
     {
-      "node_id": "concept:5a2a957b269e8f0f",
-      "label": "external",
+      "node_id": "concept:f59729641e18423b",
+      "label": "characteristics",
       "activation": 1.0,
-      "novelty": 0.16433853738701726,
+      "novelty": 0.2638522427440633,
       "conflict": 0,
-      "score": 0.9043714050944947
+      "score": 0.9312401055408972
+    },
+    {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 1.0,
+      "novelty": 0.25477707006369427,
+      "conflict": 0,
+      "score": 0.9287898089171975
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -67,28 +83,12 @@
       "score": 0.8979213483146067
     },
     {
-      "node_id": "concept:80526c7c993eb2998813",
-      "label": "distinctly",
-      "activation": 0.6829208800000001,
-      "novelty": 0.6896551724137931,
-      "conflict": 0,
-      "score": 0.8813257541517243
-    },
-    {
       "node_id": "concept:c847bcd57c312119",
       "label": "selected",
-      "activation": 0.9567975820352534,
+      "activation": 0.9580385315836472,
       "novelty": 0.14792899408284024,
       "conflict": 0,
-      "score": 0.8774755710606987
-    },
-    {
-      "node_id": "concept:c9b6dab517b9d127",
-      "label": "library",
-      "activation": 1.0,
-      "novelty": 0.024603272235207287,
-      "conflict": 0,
-      "score": 0.866642883503506
+      "score": 0.8781208648258634
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 228
     },
     "consolidate": {
-      "attempts": 269,
-      "successes": 269
+      "attempts": 270,
+      "successes": 270
     },
     "connect": {
       "attempts": 207,
