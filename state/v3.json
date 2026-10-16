@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T19:43:39.816917+00:00",
-  "generation": 2951,
-  "focus": "The Physical Basis of Mind",
-  "last_action": "consolidate",
+  "timestamp": "2026-10-16T19:57:15.615667+00:00",
+  "generation": 2952,
+  "focus": "The Mind and the Brain",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 2947,
   "last_search_generation": 2944,
@@ -14,7 +14,7 @@
     "nodes": 8213,
     "synapses": 43216,
     "active": 120,
-    "archived_synapses": 24180
+    "archived_synapses": 24282
   },
   "memory": {
     "episodes": 3023,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7699,
-    "segments": 260,
+    "events": 7703,
+    "segments": 261,
     "compressed_snapshot": true,
     "snapshot_events": 7648
   },
@@ -51,22 +51,6 @@
       "score": 0.9727348643006264
     },
     {
-      "node_id": "concept:35379d9c009e290d702b",
-      "label": "remember",
-      "activation": 0.76,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.964013559322034
-    },
-    {
-      "node_id": "concept:553f3e2340aa69a85e93",
-      "label": "brought",
-      "activation": 0.76,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.9477984251968503
-    },
-    {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
       "activation": 1.0,
@@ -75,20 +59,36 @@
       "score": 0.9320961281708946
     },
     {
+      "node_id": "concept:35379d9c009e290d702b",
+      "label": "remember",
+      "activation": 0.679877630112,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.9139445309235461
+    },
+    {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
-      "novelty": 0.16680567139282734,
+      "novelty": 0.16556291390728478,
       "conflict": 0,
-      "score": 0.9050375312760635
+      "score": 0.904701986754967
+    },
+    {
+      "node_id": "concept:553f3e2340aa69a85e93",
+      "label": "brought",
+      "activation": 0.658114140288,
+      "novelty": 0.7604562737642586,
+      "conflict": 0,
+      "score": 0.8875425468661098
     },
     {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
-      "activation": 0.978917315991555,
+      "activation": 0.9917016026416988,
       "novelty": 0.09528346831824679,
       "conflict": 0,
-      "score": 0.8747635407615353
+      "score": 0.88141136981961
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 265
     },
     "connect": {
-      "attempts": 203,
-      "successes": 203
+      "attempts": 204,
+      "successes": 204
     },
     "evolve": {
       "attempts": 9,
