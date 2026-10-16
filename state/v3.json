@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T13:31:46.795747+00:00",
-  "generation": 2871,
+  "timestamp": "2026-10-16T13:45:25.184106+00:00",
+  "generation": 2872,
   "focus": "The Physical Basis of Mind",
-  "last_action": "consolidate",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 2868,
   "last_search_generation": 2852,
@@ -14,7 +14,7 @@
     "nodes": 8002,
     "synapses": 40996,
     "active": 120,
-    "archived_synapses": 23064
+    "archived_synapses": 23172
   },
   "memory": {
     "episodes": 2973,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7038,
+    "events": 7042,
     "segments": 235,
     "compressed_snapshot": true,
     "snapshot_events": 7029
@@ -51,22 +51,6 @@
       "score": 0.9630534351145039
     },
     {
-      "node_id": "concept:6d1d3998f083af920aa4",
-      "label": "clusion",
-      "activation": 0.720377950144,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.952481996629946
-    },
-    {
-      "node_id": "concept:f86e4b17a89f8d27fad4",
-      "label": "limitation",
-      "activation": 0.720377950144,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.952481996629946
-    },
-    {
       "node_id": "concept:244210e48437b6556980",
       "label": "project",
       "activation": 1.0,
@@ -89,6 +73,22 @@
       "novelty": 0.27359781121751026,
       "conflict": 0,
       "score": 0.9338714090287279
+    },
+    {
+      "node_id": "concept:6d1d3998f083af920aa4",
+      "label": "clusion",
+      "activation": 0.6850695184317561,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.9250497089065473
+    },
+    {
+      "node_id": "concept:f86e4b17a89f8d27fad4",
+      "label": "limitation",
+      "activation": 0.6850695184317561,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.9250497089065473
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 279
     },
     "explore": {
-      "attempts": 209,
-      "successes": 209
+      "attempts": 210,
+      "successes": 210
     },
     "consolidate": {
       "attempts": 245,
