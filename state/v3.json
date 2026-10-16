@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T03:56:01.668893+00:00",
-  "generation": 2746,
+  "timestamp": "2026-10-16T03:57:53.432451+00:00",
+  "generation": 2747,
   "focus": "The Varieties of Religious Experience: A Study in Human Nature",
-  "last_action": "read",
-  "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action": "evolve",
+  "last_action_success": false,
+  "last_action_detail": "{\"accepted\": false, \"title\": \"Introduce stochastic and novel-term exploration into SemanticLearner\", \"summary\": \"Investigates recurring learning bottlenecks by allowing SemanticLearner to occasionally relax its shared-term threshold (via a small exploration factor and a deterministic novelty boost on unseen terms). This encourages broader curiosity and experiential cross-source linking without com",
   "last_provider": null,
   "last_provider_generation": 2743,
   "last_search_generation": 2737,
   "cortex": {
-    "nodes": 7628,
+    "nodes": 7629,
     "synapses": 37514,
     "active": 120,
-    "archived_synapses": 21008
+    "archived_synapses": 21172
   },
   "memory": {
     "episodes": 2906,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6087,
+    "events": 6093,
     "segments": 197,
     "compressed_snapshot": true,
     "snapshot_events": 6024
@@ -35,40 +35,32 @@
   "evidence_reviews": 116,
   "workspace": [
     {
-      "node_id": "concept:94877da84edb5445",
-      "label": "distinguishes",
-      "activation": 1.0,
-      "novelty": 0.56657223796034,
-      "conflict": 0,
-      "score": 1.012974504249292
-    },
-    {
-      "node_id": "concept:353bd0a6320ea55755cd",
-      "label": "reorganization",
+      "node_id": "concept:39d02b42938b2b75d027",
+      "label": "cell",
       "activation": 0.76,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.9829064220183488
     },
     {
-      "node_id": "concept:83e3b78f14e08cc5e0bf",
-      "label": "technical",
+      "node_id": "concept:1ad28851419203b81019",
+      "label": "organite",
       "activation": 0.76,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.9730854625550662
+      "score": 0.9829064220183488
     },
     {
-      "node_id": "concept:4231a97ecfd74fdbdde4",
-      "label": "essay",
-      "activation": 0.76,
-      "novelty": 0.8474576271186441,
+      "node_id": "concept:ca52e7d1c18961a8c5b3",
+      "label": "united",
+      "activation": 1.0,
+      "novelty": 0.4255319148936171,
       "conflict": 0,
-      "score": 0.964013559322034
+      "score": 0.9748936170212767
     },
     {
-      "node_id": "concept:56ee5b508706bf2de917",
-      "label": "shall",
+      "node_id": "concept:d13dae0e56798384a013",
+      "label": "organism",
       "activation": 0.76,
       "novelty": 0.8163265306122448,
       "conflict": 0,
@@ -83,12 +75,20 @@
       "score": 0.9506040268456377
     },
     {
-      "node_id": "concept:d8ba69fe512e2d701d01",
-      "label": "becomes",
+      "node_id": "concept:afed2f77cefe58d821f0",
+      "label": "isolated",
       "activation": 0.76,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.9337294117647059
+      "score": 0.9477984251968503
+    },
+    {
+      "node_id": "concept:94f106e0117354cedb9e",
+      "label": "either",
+      "activation": 0.76,
+      "novelty": 0.5524861878453039,
+      "conflict": 0,
+      "score": 0.8843712707182321
     }
   ],
   "skills": {
@@ -113,7 +113,7 @@
       "successes": 163
     },
     "evolve": {
-      "attempts": 6,
+      "attempts": 7,
       "successes": 2
     },
     "experiment": {
