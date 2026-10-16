@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T06:00:41.920780+00:00",
-  "generation": 2771,
-  "focus": "Dream Psychology: Psychoanalysis for Beginners",
-  "last_action": "explore",
+  "timestamp": "2026-10-16T06:02:22.465024+00:00",
+  "generation": 2772,
+  "focus": "Psychology: Briefer course.",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": "gemini",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 2771,
   "last_search_generation": 2737,
   "cortex": {
     "nodes": 7691,
-    "synapses": 38132,
+    "synapses": 38136,
     "active": 120,
-    "archived_synapses": 21488
+    "archived_synapses": 21278
   },
   "memory": {
     "episodes": 2921,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6267,
+    "events": 6272,
     "segments": 205,
     "compressed_snapshot": true,
     "snapshot_events": 6194
@@ -43,22 +43,6 @@
       "score": 1.0169767441860467
     },
     {
-      "node_id": "concept:ed4561f685f133532832",
-      "label": "reach",
-      "activation": 0.672267510144,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.918392664596914
-    },
-    {
-      "node_id": "concept:24ea913efda289dc1b17",
-      "label": "most",
-      "activation": 0.9313117721563963,
-      "novelty": 0.32573289902280134,
-      "conflict": 0,
-      "score": 0.9122300042574825
-    },
-    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -67,28 +51,44 @@
       "score": 0.9067937608318892
     },
     {
-      "node_id": "concept:766c1d13a3e06c4dfcfc",
-      "label": "among",
-      "activation": 0.694030999968,
-      "novelty": 0.7352941176470589,
+      "node_id": "concept:24ea913efda289dc1b17",
+      "label": "most",
+      "activation": 0.8695485312811908,
+      "novelty": 0.32102728731942215,
       "conflict": 0,
-      "score": 0.8994255317480659
+      "score": 0.8788426038424633
     },
     {
-      "node_id": "concept:42ea40f608ce244fb08c",
-      "label": "themselves",
-      "activation": 0.720877950144,
-      "novelty": 0.6309148264984227,
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.048285852245292124,
       "conflict": 0,
-      "score": 0.8852035372294542
+      "score": 0.8730371801062289
     },
     {
-      "node_id": "concept:1b001706a418bdfca353",
-      "label": "hand",
-      "activation": 0.7198656011193507,
-      "novelty": 0.6134969325153374,
+      "node_id": "concept:0570b840b0d58779",
+      "label": "formation",
+      "activation": 1.0,
+      "novelty": 0.04807692307692307,
       "conflict": 0,
-      "score": 0.8799742843612035
+      "score": 0.8729807692307692
+    },
+    {
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 0.9636056712526213,
+      "novelty": 0.11383039271485486,
+      "conflict": 0,
+      "score": 0.8718091550843738
+    },
+    {
+      "node_id": "concept:ed4561f685f133532832",
+      "label": "reach",
+      "activation": 0.5930354997197416,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.8687866231195718
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 188
     },
     "consolidate": {
-      "attempts": 221,
-      "successes": 221
+      "attempts": 222,
+      "successes": 222
     },
     "connect": {
       "attempts": 168,
