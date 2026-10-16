@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T15:40:27.156327+00:00",
-  "generation": 2898,
+  "timestamp": "2026-10-16T15:41:59.835279+00:00",
+  "generation": 2899,
   "focus": "Psychology of the Unconscious",
-  "last_action": "search",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Acquired 3 attributable external articles",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 2896,
   "last_search_generation": 2898,
@@ -26,30 +26,14 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7286,
-    "segments": 243,
+    "events": 7290,
+    "segments": 244,
     "compressed_snapshot": true,
     "snapshot_events": 7286
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 154,
   "workspace": [
-    {
-      "node_id": "concept:c44d8605913ba4addb9f",
-      "label": "going",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:0886b051075687c18a9a",
-      "label": "passage",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
     {
       "node_id": "concept:040b0e3f05e74417",
       "label": "experiment",
@@ -59,36 +43,52 @@
       "score": 0.9771366594360087
     },
     {
-      "node_id": "concept:b3a2bd470cb2c4f99e24",
-      "label": "quoted",
-      "activation": 0.76,
-      "novelty": 0.7604562737642586,
+      "node_id": "concept:c44d8605913ba4addb9f",
+      "label": "going",
+      "activation": 0.68442088,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9405231939163499
+      "score": 0.9337843201550662
     },
     {
-      "node_id": "concept:3eeb7e96e59ce40f9cb1",
-      "label": "order",
-      "activation": 0.76,
-      "novelty": 0.7117437722419929,
+      "node_id": "concept:0886b051075687c18a9a",
+      "label": "passage",
+      "activation": 0.68442088,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9273708185053382
+      "score": 0.9337843201550662
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
       "label": "experience",
-      "activation": 0.9728854181541536,
+      "activation": 1.0,
       "novelty": 0.2577319587628866,
       "conflict": 0,
-      "score": 0.9154880463061392
+      "score": 0.9295876288659795
     },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.9475892199155068,
+      "activation": 0.9769926921127474,
       "novelty": 0.27359781121751026,
       "conflict": 0,
-      "score": 0.9066178033847914
+      "score": 0.9219076089273566
+    },
+    {
+      "node_id": "concept:3eeb7e96e59ce40f9cb1",
+      "label": "order",
+      "activation": 0.7322456019513902,
+      "novelty": 0.6896551724137931,
+      "conflict": 0,
+      "score": 0.906974609566447
+    },
+    {
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.14992503748125938,
+      "conflict": 0,
+      "score": 0.9004797601199401
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 287
     },
     "explore": {
-      "attempts": 215,
-      "successes": 215
+      "attempts": 216,
+      "successes": 216
     },
     "consolidate": {
       "attempts": 251,
