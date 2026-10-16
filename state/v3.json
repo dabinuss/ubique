@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T09:25:39.146228+00:00",
-  "generation": 2816,
+  "timestamp": "2026-10-16T09:27:23.158200+00:00",
+  "generation": 2817,
   "focus": "The World as Will and Idea, Volume 1",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 2811,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 2817,
   "last_search_generation": 2806,
   "cortex": {
-    "nodes": 7831,
-    "synapses": 39394,
+    "nodes": 7839,
+    "synapses": 39546,
     "active": 120,
-    "archived_synapses": 22790
+    "archived_synapses": 22746
   },
   "memory": {
     "episodes": 2947,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6622,
+    "events": 6627,
     "segments": 219,
     "compressed_snapshot": true,
     "snapshot_events": 6611
@@ -35,60 +35,60 @@
   "evidence_reviews": 130,
   "workspace": [
     {
-      "node_id": "concept:dfd34a31322c29f8",
-      "label": "concepts",
-      "activation": 0.9542641508794346,
-      "novelty": 0.5390835579514824,
+      "node_id": "concept:009c3c2892353a86fae0",
+      "label": "sence",
+      "activation": 0.76,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.9817699191042064
+      "score": 0.9829064220183488
     },
     {
-      "node_id": "concept:79f076abdd19a752db72",
-      "label": "kept",
-      "activation": 0.721377950144,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9530019966299461
-    },
-    {
-      "node_id": "concept:85dc74c5b56443925ea5",
-      "label": "inconvenient",
-      "activation": 0.721377950144,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9530019966299461
-    },
-    {
-      "node_id": "concept:093e7d5fdbaacfa92448",
-      "label": "contact",
-      "activation": 0.721377950144,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9530019966299461
-    },
-    {
-      "node_id": "concept:d9298a10d1b0735837dc",
-      "label": "other",
-      "activation": 1.0,
-      "novelty": 0.29542097488921715,
-      "conflict": 0,
-      "score": 0.9397636632200888
-    },
-    {
-      "node_id": "concept:0694aacb66d62e742a92",
-      "label": "facts",
-      "activation": 0.68542088,
+      "node_id": "concept:d15690f08a575024650b",
+      "label": "direct",
+      "activation": 0.76,
       "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.9252324169220341
+      "score": 0.964013559322034
     },
     {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.16556291390728478,
+      "node_id": "concept:dfd34a31322c29f8",
+      "label": "concepts",
+      "activation": 0.9143258670973403,
+      "novelty": 0.5263157894736842,
       "conflict": 0,
-      "score": 0.904701986754967
+      "score": 0.9575547140485117
+    },
+    {
+      "node_id": "concept:22fefa8cf4bda9184634",
+      "label": "influence",
+      "activation": 0.76,
+      "novelty": 0.7352941176470589,
+      "conflict": 0,
+      "score": 0.9337294117647059
+    },
+    {
+      "node_id": "concept:5a2a957b269e8f0f",
+      "label": "external",
+      "activation": 1.0,
+      "novelty": 0.21528525296017226,
+      "conflict": 0,
+      "score": 0.9181270182992465
+    },
+    {
+      "node_id": "concept:562a77a7ae22fe1bb055",
+      "label": "conditions",
+      "activation": 0.76,
+      "novelty": 0.5813953488372093,
+      "conflict": 0,
+      "score": 0.8921767441860466
+    },
+    {
+      "node_id": "concept:0570b840b0d58779",
+      "label": "formation",
+      "activation": 1.0,
+      "novelty": 0.04807692307692307,
+      "conflict": 0,
+      "score": 0.8729807692307692
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 198
     },
     "consolidate": {
-      "attempts": 232,
-      "successes": 232
+      "attempts": 233,
+      "successes": 233
     },
     "connect": {
       "attempts": 176,
