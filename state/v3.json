@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T08:53:35.886195+00:00",
-  "generation": 2811,
+  "timestamp": "2026-10-16T08:55:03.183371+00:00",
+  "generation": 2812,
   "focus": "Human Nature and Conduct",
-  "last_action": "connect",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 2811,
   "last_search_generation": 2806,
   "cortex": {
-    "nodes": 7808,
-    "synapses": 39205,
+    "nodes": 7814,
+    "synapses": 39247,
     "active": 120,
-    "archived_synapses": 22643
+    "archived_synapses": 22543
   },
   "memory": {
     "episodes": 2945,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 6586,
+    "events": 6591,
     "segments": 217,
     "compressed_snapshot": true,
     "snapshot_events": 6530
@@ -37,18 +37,10 @@
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.9701422950797749,
+      "activation": 0.9914751721491586,
       "novelty": 0.29542097488921715,
       "conflict": 0,
-      "score": 0.9242376566615715
-    },
-    {
-      "node_id": "concept:5a44d30bf9acf3b889b7",
-      "label": "opposing",
-      "activation": 0.6870610558083594,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.9176799122856532
+      "score": 0.9353307527376511
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -57,6 +49,14 @@
       "novelty": 0.16556291390728478,
       "conflict": 0,
       "score": 0.904701986754967
+    },
+    {
+      "node_id": "concept:5a44d30bf9acf3b889b7",
+      "label": "opposing",
+      "activation": 0.6240810458230092,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.8771205690248152
     },
     {
       "node_id": "concept:411f62e7fd037280",
@@ -75,20 +75,20 @@
       "score": 0.8663276306538552
     },
     {
-      "node_id": "concept:57523f642f63eabb2a4f",
-      "label": "matter",
-      "activation": 0.6903844923434928,
-      "novelty": 0.56657223796034,
-      "conflict": 0,
-      "score": 0.8519744402679081
-    },
-    {
       "node_id": "concept:2d0fe5ec8bf181535a0f",
       "label": "singular",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
+    },
+    {
+      "node_id": "concept:57523f642f63eabb2a4f",
+      "label": "matter",
+      "activation": 0.6299294036290601,
+      "novelty": 0.5524861878453039,
+      "conflict": 0,
+      "score": 0.8167345606053433
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 198
     },
     "consolidate": {
-      "attempts": 230,
-      "successes": 230
+      "attempts": 231,
+      "successes": 231
     },
     "connect": {
       "attempts": 175,
