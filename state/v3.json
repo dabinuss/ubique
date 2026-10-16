@@ -1,33 +1,33 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-16T14:59:41.844270+00:00",
-  "generation": 2888,
+  "timestamp": "2026-10-16T15:01:20.318862+00:00",
+  "generation": 2889,
   "focus": "The Physical Basis of Mind",
-  "last_action": "explore",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action_detail": "Read 8000 source characters",
   "last_provider": null,
   "last_provider_generation": 2885,
   "last_search_generation": 2875,
   "cortex": {
-    "nodes": 8058,
-    "synapses": 41675,
+    "nodes": 8063,
+    "synapses": 41707,
     "active": 120,
     "archived_synapses": 23561
   },
   "memory": {
-    "episodes": 2984,
-    "claims": 952,
+    "episodes": 2985,
+    "claims": 954,
     "stances": 26,
     "interests": 71,
-    "associative_comparisons": 632,
+    "associative_comparisons": 634,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 7180,
-    "segments": 240,
+    "events": 7191,
+    "segments": 241,
     "compressed_snapshot": true,
     "snapshot_events": 7123
   },
@@ -43,14 +43,6 @@
       "score": 0.9898076923076924
     },
     {
-      "node_id": "concept:0ca0c5ea4a249dfcba50",
-      "label": "eager",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
       "node_id": "concept:040b0e3f05e74417",
       "label": "experiment",
       "activation": 1.0,
@@ -59,36 +51,44 @@
       "score": 0.9794690265486727
     },
     {
-      "node_id": "concept:f23ea8839517a78c",
-      "label": "active",
-      "activation": 0.76,
+      "node_id": "concept:0ca0c5ea4a249dfcba50",
+      "label": "eager",
+      "activation": 0.720377950144,
       "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9730854625550662
+      "score": 0.952481996629946
     },
     {
-      "node_id": "concept:3321675705932e37c55c",
-      "label": "inert",
-      "activation": 0.76,
-      "novelty": 0.8474576271186441,
+      "node_id": "concept:d9298a10d1b0735837dc",
+      "label": "other",
+      "activation": 1.0,
+      "novelty": 0.27359781121751026,
       "conflict": 0,
-      "score": 0.964013559322034
+      "score": 0.9338714090287279
     },
     {
       "node_id": "concept:6a8da52e920664ef15b3",
       "label": "learn",
-      "activation": 0.76,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.9556081632653062
-    },
-    {
-      "node_id": "concept:acef2c15bcd349db900d",
-      "label": "quality",
-      "activation": 0.76,
+      "activation": 0.720377950144,
       "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.9477984251968503
+      "score": 0.9271949592717303
+    },
+    {
+      "node_id": "concept:f23ea8839517a78c",
+      "label": "active",
+      "activation": 0.68442088,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.924712416922034
+    },
+    {
+      "node_id": "concept:3321675705932e37c55c",
+      "label": "inert",
+      "activation": 0.68442088,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.9163070208653061
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 32
     },
     "read": {
-      "attempts": 284,
-      "successes": 284
+      "attempts": 285,
+      "successes": 285
     },
     "explore": {
       "attempts": 214,
