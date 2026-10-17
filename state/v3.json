@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T05:47:09.843256+00:00",
-  "generation": 3077,
+  "timestamp": "2026-10-17T05:48:46.546586+00:00",
+  "generation": 3078,
   "focus": "Six Metaphysical Meditations",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "gemini",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 3077,
   "last_search_generation": 3059,
   "cortex": {
-    "nodes": 8533,
-    "synapses": 46474,
+    "nodes": 8538,
+    "synapses": 46538,
     "active": 120,
-    "archived_synapses": 27402
+    "archived_synapses": 27366
   },
   "memory": {
     "episodes": 3101,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 8707,
+    "events": 8712,
     "segments": 301,
     "compressed_snapshot": true,
     "snapshot_events": 8655
@@ -34,14 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 203,
   "workspace": [
-    {
-      "node_id": "concept:2331eb33ce2c3766148e",
-      "label": "philosophy",
-      "activation": 1.0,
-      "novelty": 0.29940119760479045,
-      "conflict": 0,
-      "score": 0.9408383233532935
-    },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
@@ -85,10 +77,18 @@
     {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
-      "activation": 0.9462382555674408,
+      "activation": 0.9364938274111726,
       "novelty": 0.08741258741258742,
       "conflict": 0,
-      "score": 0.8556452914964678
+      "score": 0.8505781888552084
+    },
+    {
+      "node_id": "concept:a908043ed469f361cd51",
+      "label": "course",
+      "activation": 0.76,
+      "novelty": 0.39525691699604737,
+      "conflict": 0,
+      "score": 0.8419193675889329
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 249
     },
     "consolidate": {
-      "attempts": 295,
-      "successes": 295
+      "attempts": 296,
+      "successes": 296
     },
     "connect": {
       "attempts": 229,
