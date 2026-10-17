@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T04:34:32.991594+00:00",
-  "generation": 3062,
+  "timestamp": "2026-10-17T04:36:11.757325+00:00",
+  "generation": 3063,
   "focus": "The Riddle of the Universe",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3060,
   "last_search_generation": 3059,
   "cortex": {
-    "nodes": 8496,
-    "synapses": 46076,
+    "nodes": 8498,
+    "synapses": 46126,
     "active": 120,
-    "archived_synapses": 27034
+    "archived_synapses": 27010
   },
   "memory": {
     "episodes": 3092,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 8598,
+    "events": 8603,
     "segments": 296,
     "compressed_snapshot": true,
     "snapshot_events": 8575
@@ -43,12 +43,20 @@
       "score": 0.9771366594360087
     },
     {
-      "node_id": "concept:040b0e3f05e74417",
-      "label": "experiment",
-      "activation": 1.0,
-      "novelty": 0.4175365344467641,
+      "node_id": "concept:c3b47d27748e4052",
+      "label": "against",
+      "activation": 0.76,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.9727348643006264
+      "score": 0.964013559322034
+    },
+    {
+      "node_id": "concept:f106376011688eda079c",
+      "label": "within",
+      "activation": 0.76,
+      "novelty": 0.7352941176470589,
+      "conflict": 0,
+      "score": 0.9337294117647059
     },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
@@ -62,17 +70,17 @@
       "node_id": "concept:bc16f5825a9dafc8c245",
       "label": "will",
       "activation": 1.0,
-      "novelty": 0.1596169193934557,
+      "novelty": 0.15735641227380018,
       "conflict": 0,
-      "score": 0.9030965682362331
+      "score": 0.9024862313139261
     },
     {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.1313197636244255,
+      "novelty": 0.12978585334198572,
       "conflict": 0,
-      "score": 0.895456336178595
+      "score": 0.8950421804023363
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -81,14 +89,6 @@
       "novelty": 0.08775778850372971,
       "conflict": 0,
       "score": 0.8836946028960071
-    },
-    {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 1.0,
-      "novelty": 0.047664442326024785,
-      "conflict": 0,
-      "score": 0.8728693994280268
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 246
     },
     "consolidate": {
-      "attempts": 291,
-      "successes": 291
+      "attempts": 292,
+      "successes": 292
     },
     "connect": {
       "attempts": 226,
