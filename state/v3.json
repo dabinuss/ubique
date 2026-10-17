@@ -1,35 +1,35 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T15:28:48.159008+00:00",
-  "generation": 3196,
+  "timestamp": "2026-10-17T15:30:22.415465+00:00",
+  "generation": 3197,
   "focus": "Human, All Too Human: A Book for Free Spirits",
-  "last_action": "explore",
+  "last_action": "search",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": "groq",
+  "last_action_detail": "Acquired 3 attributable external articles",
+  "last_provider": null,
   "last_provider_generation": 3196,
-  "last_search_generation": 3174,
+  "last_search_generation": 3197,
   "cortex": {
     "nodes": 8748,
     "synapses": 48912,
     "active": 120,
-    "archived_synapses": 28278
+    "archived_synapses": 28220
   },
   "memory": {
-    "episodes": 3161,
+    "episodes": 3164,
     "claims": 1277,
     "stances": 26,
     "interests": 74,
-    "associative_comparisons": 894,
+    "associative_comparisons": 900,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 9626,
+    "events": 9651,
     "segments": 341,
     "compressed_snapshot": true,
-    "snapshot_events": 9567
+    "snapshot_events": 9651
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 231,
@@ -67,6 +67,14 @@
       "score": 0.891377106333527
     },
     {
+      "node_id": "concept:d9298a10d1b0735837dc",
+      "label": "other",
+      "activation": 0.9312247029785956,
+      "novelty": 0.18331805682859761,
+      "conflict": 0,
+      "score": 0.8737327208925911
+    },
+    {
       "node_id": "concept:0570b840b0d58779",
       "label": "formation",
       "activation": 1.0,
@@ -81,20 +89,12 @@
       "novelty": 0.047359696897939854,
       "conflict": 0,
       "score": 0.8727871181624438
-    },
-    {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 1.0,
-      "novelty": 0.047058823529411764,
-      "conflict": 0,
-      "score": 0.8727058823529412
     }
   ],
   "skills": {
     "search": {
-      "attempts": 46,
-      "successes": 45
+      "attempts": 47,
+      "successes": 46
     },
     "read": {
       "attempts": 376,
