@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T10:55:42.514093+00:00",
-  "generation": 3140,
+  "timestamp": "2026-10-17T11:09:21.149077+00:00",
+  "generation": 3141,
   "focus": "Psychology: Briefer Course",
-  "last_action": "consolidate",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": "groq",
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": null,
   "last_provider_generation": 3140,
   "last_search_generation": 3128,
   "cortex": {
     "nodes": 8647,
     "synapses": 47797,
     "active": 120,
-    "archived_synapses": 27941
+    "archived_synapses": 28043
   },
   "memory": {
     "episodes": 3139,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 9215,
+    "events": 9219,
     "segments": 322,
     "compressed_snapshot": true,
     "snapshot_events": 9215
@@ -51,20 +51,20 @@
       "score": 0.9376978417266189
     },
     {
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
+      "activation": 1.0,
+      "novelty": 0.2607561929595828,
+      "conflict": 0,
+      "score": 0.9304041720990874
+    },
+    {
       "node_id": "concept:486ea46224d1bb4fb680",
       "label": "world",
       "activation": 1.0,
       "novelty": 0.21528525296017226,
       "conflict": 0,
       "score": 0.9181270182992465
-    },
-    {
-      "node_id": "concept:172e09329d10f852",
-      "label": "continued",
-      "activation": 1.0,
-      "novelty": 0.20533880903490764,
-      "conflict": 0,
-      "score": 0.9154414784394251
     },
     {
       "node_id": "concept:e0f895872d65b2528fee",
@@ -75,12 +75,12 @@
       "score": 0.9154414784394251
     },
     {
-      "node_id": "concept:64b218956223eb12d13e",
-      "label": "principles",
-      "activation": 0.9593215898362771,
-      "novelty": 0.2607561929595828,
+      "node_id": "concept:172e09329d10f852",
+      "label": "continued",
+      "activation": 1.0,
+      "novelty": 0.2034587995930824,
       "conflict": 0,
-      "score": 0.9092513988139515
+      "score": 0.9149338758901322
     },
     {
       "node_id": "concept:bc16f5825a9dafc8c245",
@@ -101,8 +101,8 @@
       "successes": 360
     },
     "explore": {
-      "attempts": 259,
-      "successes": 259
+      "attempts": 260,
+      "successes": 260
     },
     "consolidate": {
       "attempts": 312,
