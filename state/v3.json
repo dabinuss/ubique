@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T11:15:50.883455+00:00",
-  "generation": 3145,
-  "focus": "Towards a Psychology of the Emotions",
-  "last_action": "read",
+  "timestamp": "2026-10-17T11:17:33.441336+00:00",
+  "generation": 3146,
+  "focus": "The Story of the Mind",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 3145,
   "last_search_generation": 3128,
   "cortex": {
-    "nodes": 8666,
-    "synapses": 47888,
+    "nodes": 8669,
+    "synapses": 47972,
     "active": 120,
-    "archived_synapses": 28102
+    "archived_synapses": 28030
   },
   "memory": {
     "episodes": 3141,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 9249,
+    "events": 9254,
     "segments": 324,
     "compressed_snapshot": true,
     "snapshot_events": 9215
@@ -35,20 +35,12 @@
   "evidence_reviews": 222,
   "workspace": [
     {
-      "node_id": "concept:2331eb33ce2c3766148e",
-      "label": "philosophy",
+      "node_id": "concept:e2d5a675d4eab169",
+      "label": "continue",
       "activation": 1.0,
-      "novelty": 0.2840909090909091,
+      "novelty": 0.25477707006369427,
       "conflict": 0,
-      "score": 0.9367045454545455
-    },
-    {
-      "node_id": "concept:64b218956223eb12d13e",
-      "label": "principles",
-      "activation": 1.0,
-      "novelty": 0.2607561929595828,
-      "conflict": 0,
-      "score": 0.9304041720990874
+      "score": 0.9287898089171975
     },
     {
       "node_id": "concept:486ea46224d1bb4fb680",
@@ -57,14 +49,6 @@
       "novelty": 0.21528525296017226,
       "conflict": 0,
       "score": 0.9181270182992465
-    },
-    {
-      "node_id": "concept:e0f895872d65b2528fee",
-      "label": "knowledge",
-      "activation": 1.0,
-      "novelty": 0.20533880903490764,
-      "conflict": 0,
-      "score": 0.9154414784394251
     },
     {
       "node_id": "concept:172e09329d10f852",
@@ -77,18 +61,34 @@
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.982640734711817,
-      "novelty": 0.19627085377821393,
+      "activation": 1.0,
+      "novelty": 0.19286403085824494,
       "conflict": 0,
-      "score": 0.9039663125702626
+      "score": 0.9120732883317262
     },
     {
-      "node_id": "concept:0bf474896363505e5ea5",
-      "label": "digest",
+      "node_id": "concept:819efd4c44e5fb5b3983",
+      "label": "amniotes",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:592976972d713e77cf7c",
+      "label": "firstly",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:260b27ca3018bc10add7",
+      "label": "entire",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 261
     },
     "consolidate": {
-      "attempts": 312,
-      "successes": 312
+      "attempts": 313,
+      "successes": 313
     },
     "connect": {
       "attempts": 244,
