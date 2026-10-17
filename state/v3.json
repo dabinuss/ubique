@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T08:05:57.143770+00:00",
-  "generation": 3103,
+  "timestamp": "2026-10-17T08:07:37.512750+00:00",
+  "generation": 3104,
   "focus": "A Treatise Concerning the Principles of Human Knowledge",
-  "last_action": "connect",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "last_action_detail": "Read 8000 source characters",
   "last_provider": null,
   "last_provider_generation": 3100,
   "last_search_generation": 3082,
   "cortex": {
-    "nodes": 8573,
-    "synapses": 47067,
+    "nodes": 8575,
+    "synapses": 47099,
     "active": 120,
-    "archived_synapses": 27589
+    "archived_synapses": 27587
   },
   "memory": {
-    "episodes": 3116,
-    "claims": 1192,
+    "episodes": 3117,
+    "claims": 1194,
     "stances": 26,
     "interests": 74,
-    "associative_comparisons": 816,
+    "associative_comparisons": 818,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 8905,
+    "events": 8916,
     "segments": 310,
     "compressed_snapshot": true,
     "snapshot_events": 8841
@@ -59,14 +59,6 @@
       "score": 0.9164853556485357
     },
     {
-      "node_id": "concept:53e5e7c5a884893739c4",
-      "label": "experience",
-      "activation": 0.901041147393489,
-      "novelty": 0.23837902264600713,
-      "conflict": 0,
-      "score": 0.8729037327590363
-    },
-    {
       "node_id": "concept:8b16ced79976e6a1",
       "label": "action",
       "activation": 1.0,
@@ -75,20 +67,28 @@
       "score": 0.8661210609839038
     },
     {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 0.8827606025956922,
+      "novelty": 0.23837902264600713,
+      "conflict": 0,
+      "score": 0.8633978494641819
+    },
+    {
       "node_id": "concept:aa839878ed1d0f8f",
       "label": "following",
-      "activation": 0.704861324193599,
-      "novelty": 0.49140049140049136,
+      "activation": 0.6818870197321185,
+      "novelty": 0.4807692307692307,
       "conflict": 0,
-      "score": 0.8392060212588042
+      "score": 0.8243889425683939
     },
     {
       "node_id": "concept:6e8be681ae455e3c",
       "label": "experiences",
-      "activation": 0.6522374184991437,
-      "novelty": 0.5813953488372093,
+      "activation": 0.6257741048105263,
+      "novelty": 0.56657223796034,
       "conflict": 0,
-      "score": 0.8361402018056012
+      "score": 0.8183770387507656
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 41
     },
     "read": {
-      "attempts": 349,
-      "successes": 349
+      "attempts": 350,
+      "successes": 350
     },
     "explore": {
       "attempts": 253,
