@@ -13,16 +13,17 @@
     "disabled_until": null
   },
   "fallback": {
-    "successes": 15,
+    "successes": 16,
     "failures": 0,
-    "disabled_until": null
+    "disabled_until": null,
+    "consecutive_failures": 0
   },
   "groq": {
-    "successes": 727,
-    "failures": 208,
-    "disabled_until": null,
+    "successes": 728,
+    "failures": 209,
+    "disabled_until": "2026-10-17T14:30:11.188309+00:00",
     "daily_date": "2026-10-17",
-    "daily_calls": 13,
-    "consecutive_failures": 0
+    "daily_calls": 15,
+    "consecutive_failures": 1
   }
 }
