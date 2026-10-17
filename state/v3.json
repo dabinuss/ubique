@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T07:19:45.645732+00:00",
-  "generation": 3097,
+  "timestamp": "2026-10-17T07:21:24.611553+00:00",
+  "generation": 3098,
   "focus": "The Analysis of Mind",
-  "last_action": "connect",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3094,
   "last_search_generation": 3082,
   "cortex": {
-    "nodes": 8566,
-    "synapses": 46874,
+    "nodes": 8570,
+    "synapses": 46918,
     "active": 120,
-    "archived_synapses": 27476
+    "archived_synapses": 27436
   },
   "memory": {
     "episodes": 3113,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 8867,
-    "segments": 307,
+    "events": 8872,
+    "segments": 308,
     "compressed_snapshot": true,
     "snapshot_events": 8841
   },
@@ -35,28 +35,12 @@
   "evidence_reviews": 208,
   "workspace": [
     {
-      "node_id": "concept:a053822a632afbff",
-      "label": "constructed",
-      "activation": 0.76,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9730854625550662
-    },
-    {
       "node_id": "concept:7308d385d05396e9",
       "label": "representations",
       "activation": 1.0,
       "novelty": 0.2638522427440633,
       "conflict": 0,
       "score": 0.9312401055408972
-    },
-    {
-      "node_id": "concept:d887db09649dab0d8395",
-      "label": "parts",
-      "activation": 0.9365948232106867,
-      "novelty": 0.36900369003690037,
-      "conflict": 0,
-      "score": 0.9266603043795203
     },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
@@ -75,20 +59,36 @@
       "score": 0.9170221752903907
     },
     {
+      "node_id": "concept:a053822a632afbff",
+      "label": "constructed",
+      "activation": 0.6658640578371413,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.9150628693973475
+    },
+    {
+      "node_id": "concept:d887db09649dab0d8395",
+      "label": "parts",
+      "activation": 0.8525236527131518,
+      "novelty": 0.3629764065335753,
+      "conflict": 0,
+      "score": 0.8813159291749044
+    },
+    {
       "node_id": "concept:68b4636e980e55ad",
       "label": "consciousness",
-      "activation": 0.9282565604872217,
+      "activation": 0.9154251208249631,
       "novelty": 0.15408320493066255,
       "conflict": 0,
-      "score": 0.8642958767846343
+      "score": 0.8576235281602598
     },
     {
       "node_id": "concept:bc16f5825a9dafc8c245",
       "label": "will",
-      "activation": 0.9163057964103748,
+      "activation": 0.91233334788387,
       "novelty": 0.14316392269148176,
       "conflict": 0,
-      "score": 0.8551332732600949
+      "score": 0.8530676000263124
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 252
     },
     "consolidate": {
-      "attempts": 300,
-      "successes": 300
+      "attempts": 301,
+      "successes": 301
     },
     "connect": {
       "attempts": 234,
