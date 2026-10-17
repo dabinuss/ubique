@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T20:49:03.163676+00:00",
-  "generation": 3259,
+  "timestamp": "2026-10-17T20:50:34.672747+00:00",
+  "generation": 3260,
   "focus": "Mental Evolution in Man: Origin of Human Faculty",
-  "last_action": "read",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": null,
   "last_provider_generation": 3259,
   "last_search_generation": 3243,
   "cortex": {
-    "nodes": 8893,
+    "nodes": 8894,
     "synapses": 50492,
     "active": 120,
     "archived_synapses": 28094
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 10132,
+    "events": 10136,
     "segments": 362,
     "compressed_snapshot": true,
     "snapshot_events": 10108
@@ -43,12 +43,28 @@
       "score": 0.9094958753437214
     },
     {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.10989010989010989,
+      "node_id": "concept:4c3200fefd8b69413376",
+      "label": "tendency",
+      "activation": 0.76,
+      "novelty": 0.5970149253731344,
       "conflict": 0,
-      "score": 0.8896703296703297
+      "score": 0.8963940298507462
+    },
+    {
+      "node_id": "concept:d17bd922ea9dd14143a1",
+      "label": "sacrifice",
+      "activation": 0.76,
+      "novelty": 0.5813953488372093,
+      "conflict": 0,
+      "score": 0.8921767441860466
+    },
+    {
+      "node_id": "concept:9f2e6d33a3717ee82635",
+      "label": "head",
+      "activation": 0.76,
+      "novelty": 0.5141388174807199,
+      "conflict": 0,
+      "score": 0.8740174807197945
     },
     {
       "node_id": "concept:8153c4e65bb853c8",
@@ -59,36 +75,20 @@
       "score": 0.873094083414161
     },
     {
-      "node_id": "concept:68b4636e980e55ad",
-      "label": "consciousness",
-      "activation": 0.8606392027111487,
-      "novelty": 0.13449899125756556,
+      "node_id": "concept:9f5043b3051d3b903539",
+      "label": "seeley",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8238471130493401
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:0d14750e48b5ee01d705",
-      "label": "resembles",
+      "node_id": "concept:293f1d2ee206a7cbebe6",
+      "label": "submission",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:103a360f285151bfda3f",
-      "label": "heap",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:ffae79a72d6f4a87ec35",
-      "label": "conditioned",
-      "activation": 0.46,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 394
     },
     "explore": {
-      "attempts": 282,
-      "successes": 282
+      "attempts": 283,
+      "successes": 283
     },
     "consolidate": {
       "attempts": 342,
