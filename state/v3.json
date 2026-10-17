@@ -1,33 +1,33 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T06:56:13.905710+00:00",
-  "generation": 3090,
+  "timestamp": "2026-10-17T06:57:51.541952+00:00",
+  "generation": 3091,
   "focus": "The Mind and the Brain",
-  "last_action": "explore",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action_detail": "Read 8000 source characters",
   "last_provider": null,
   "last_provider_generation": 3089,
   "last_search_generation": 3082,
   "cortex": {
-    "nodes": 8550,
-    "synapses": 46738,
+    "nodes": 8554,
+    "synapses": 46775,
     "active": 120,
-    "archived_synapses": 27362
+    "archived_synapses": 27361
   },
   "memory": {
-    "episodes": 3108,
-    "claims": 1179,
+    "episodes": 3109,
+    "claims": 1182,
     "stances": 26,
     "interests": 74,
-    "associative_comparisons": 808,
+    "associative_comparisons": 810,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 8813,
-    "segments": 305,
+    "events": 8824,
+    "segments": 306,
     "compressed_snapshot": true,
     "snapshot_events": 8756
   },
@@ -43,6 +43,14 @@
       "score": 0.9347922437673131
     },
     {
+      "node_id": "concept:d887db09649dab0d8395",
+      "label": "parts",
+      "activation": 0.8734899059894262,
+      "novelty": 0.38167938931297707,
+      "conflict": 0,
+      "score": 0.8972681862290055
+    },
+    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -51,44 +59,36 @@
       "score": 0.8944387755102041
     },
     {
-      "node_id": "concept:d887db09649dab0d8395",
-      "label": "parts",
-      "activation": 0.8584977403393383,
-      "novelty": 0.38167938931297707,
+      "node_id": "concept:3dbd9cd5e1fb3e4f7854",
+      "label": "faculty",
+      "activation": 0.8072522646412107,
+      "novelty": 0.34602076124567477,
       "conflict": 0,
-      "score": 0.8894722600909599
+      "score": 0.8531967831497618
     },
     {
       "node_id": "concept:bc16f5825a9dafc8c245",
       "label": "will",
-      "activation": 0.9255064304806695,
-      "novelty": 0.14503263234227703,
+      "activation": 0.9099657398574772,
+      "novelty": 0.1440922190201729,
       "conflict": 0,
-      "score": 0.8604221545823629
-    },
-    {
-      "node_id": "concept:3dbd9cd5e1fb3e4f7854",
-      "label": "faculty",
-      "activation": 0.8119626357543382,
-      "novelty": 0.34602076124567477,
-      "conflict": 0,
-      "score": 0.8556461761285881
+      "score": 0.8520870838613348
     },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.8153396962869225,
+      "activation": 0.790834445492041,
       "novelty": 0.23094688221709006,
       "conflict": 0,
-      "score": 0.826332300267814
+      "score": 0.8135895698544757
     },
     {
       "node_id": "concept:f22706f595bdc3273eb0",
       "label": "effecting",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.7917984251968504
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 41
     },
     "read": {
-      "attempts": 345,
-      "successes": 345
+      "attempts": 346,
+      "successes": 346
     },
     "explore": {
       "attempts": 251,
