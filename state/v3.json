@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T17:20:30.044005+00:00",
-  "generation": 3220,
+  "timestamp": "2026-10-17T17:21:59.742235+00:00",
+  "generation": 3221,
   "focus": "The Story of the Mind",
-  "last_action": "search",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Acquired 3 attributable external articles",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3219,
   "last_search_generation": 3220,
   "cortex": {
     "nodes": 8810,
-    "synapses": 49552,
+    "synapses": 49594,
     "active": 120,
-    "archived_synapses": 28200
+    "archived_synapses": 28096
   },
   "memory": {
     "episodes": 3174,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 9845,
+    "events": 9850,
     "segments": 349,
     "compressed_snapshot": true,
     "snapshot_events": 9845
@@ -75,20 +75,20 @@
       "score": 0.8809627329192546
     },
     {
-      "node_id": "concept:96f6549c6b97a641e4d1",
-      "label": "constant",
-      "activation": 0.7263340873189102,
-      "novelty": 0.5813953488372093,
-      "conflict": 0,
-      "score": 0.8746704695918799
-    },
-    {
       "node_id": "concept:8153c4e65bb853c8",
       "label": "identity",
       "activation": 1.0,
       "novelty": 0.04849660523763336,
       "conflict": 0,
       "score": 0.873094083414161
+    },
+    {
+      "node_id": "concept:96f6549c6b97a641e4d1",
+      "label": "constant",
+      "activation": 0.6997293327912291,
+      "novelty": 0.56657223796034,
+      "conflict": 0,
+      "score": 0.856833757300731
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 275
     },
     "consolidate": {
-      "attempts": 331,
-      "successes": 331
+      "attempts": 332,
+      "successes": 332
     },
     "connect": {
       "attempts": 260,
