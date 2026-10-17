@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T14:51:13.499385+00:00",
-  "generation": 3188,
-  "focus": "The World as Will and Idea, Volume 1",
-  "last_action": "read",
+  "timestamp": "2026-10-17T14:52:53.953273+00:00",
+  "generation": 3189,
+  "focus": "The Republic of Plato",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3185,
   "last_search_generation": 3174,
   "cortex": {
     "nodes": 8739,
-    "synapses": 48755,
+    "synapses": 48781,
     "active": 120,
-    "archived_synapses": 28255
+    "archived_synapses": 28161
   },
   "memory": {
     "episodes": 3159,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 9578,
+    "events": 9583,
     "segments": 338,
     "compressed_snapshot": true,
     "snapshot_events": 9567
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 231,
   "workspace": [
+    {
+      "node_id": "concept:ee0874170b7f6f32b8c2",
+      "label": "anything",
+      "activation": 0.76,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9730854625550662
+    },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
@@ -46,9 +54,9 @@
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.2577319587628866,
+      "novelty": 0.25477707006369427,
       "conflict": 0,
-      "score": 0.9295876288659795
+      "score": 0.9287898089171975
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
@@ -67,28 +75,20 @@
       "score": 0.8915420560747664
     },
     {
-      "node_id": "concept:4d61946e735f96c2bb63",
-      "label": "reducible",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "node_id": "concept:0e4a8753470e0c08a28b",
+      "label": "qualities",
+      "activation": 0.76,
+      "novelty": 0.49140049140049136,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8678781326781326
     },
     {
-      "node_id": "concept:dd31b11b657056595b8e",
-      "label": "engrams",
+      "node_id": "concept:48185414c722a5aadbd6",
+      "label": "appearances",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:c2c04ed21e6734ab965c",
-      "label": "stimuli",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 269
     },
     "consolidate": {
-      "attempts": 323,
-      "successes": 323
+      "attempts": 324,
+      "successes": 324
     },
     "connect": {
       "attempts": 253,
