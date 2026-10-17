@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T20:19:55.585044+00:00",
-  "generation": 3256,
+  "timestamp": "2026-10-17T20:33:36.251034+00:00",
+  "generation": 3257,
   "focus": "A Treatise Concerning the Principles of Human Knowledge",
-  "last_action": "consolidate",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 3248,
   "last_search_generation": 3243,
@@ -14,7 +14,7 @@
     "nodes": 8883,
     "synapses": 50396,
     "active": 120,
-    "archived_synapses": 28074
+    "archived_synapses": 28102
   },
   "memory": {
     "episodes": 3191,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 10108,
+    "events": 10112,
     "segments": 361,
     "compressed_snapshot": true,
     "snapshot_events": 10108
@@ -43,20 +43,12 @@
       "score": 0.9094958753437214
     },
     {
-      "node_id": "concept:d9298a10d1b0735837dc",
-      "label": "other",
-      "activation": 1.0,
-      "novelty": 0.17605633802816903,
-      "conflict": 0,
-      "score": 0.9075352112676056
-    },
-    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.11043622308117063,
+      "novelty": 0.10989010989010989,
       "conflict": 0,
-      "score": 0.889817780231916
+      "score": 0.8896703296703297
     },
     {
       "node_id": "concept:8153c4e65bb853c8",
@@ -67,28 +59,36 @@
       "score": 0.873094083414161
     },
     {
-      "node_id": "concept:32dc16c83e73afa9",
-      "label": "association",
-      "activation": 0.76,
-      "novelty": 0.47058823529411764,
+      "node_id": "concept:d9298a10d1b0735837dc",
+      "label": "other",
+      "activation": 0.9188257915522655,
+      "novelty": 0.17467248908296945,
       "conflict": 0,
-      "score": 0.8622588235294117
+      "score": 0.8649509836595799
     },
     {
       "node_id": "concept:0d14750e48b5ee01d705",
       "label": "resembles",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:103a360f285151bfda3f",
       "label": "heap",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:68b4636e980e55ad",
+      "label": "consciousness",
+      "activation": 0.8578450523523236,
+      "novelty": 0.13449899125756556,
+      "conflict": 0,
+      "score": 0.8223941548627509
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 341
     },
     "connect": {
-      "attempts": 267,
-      "successes": 267
+      "attempts": 268,
+      "successes": 268
     },
     "evolve": {
       "attempts": 14,
