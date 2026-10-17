@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T01:46:41.423650+00:00",
-  "generation": 3026,
+  "timestamp": "2026-10-17T01:48:20.626829+00:00",
+  "generation": 3027,
   "focus": "An Introduction to Psychology",
-  "last_action": "explore",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": "gemini",
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": null,
   "last_provider_generation": 3026,
   "last_search_generation": 3013,
   "cortex": {
     "nodes": 8393,
     "synapses": 45090,
     "active": 120,
-    "archived_synapses": 25960
+    "archived_synapses": 25998
   },
   "memory": {
     "episodes": 3068,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 8303,
+    "events": 8307,
     "segments": 285,
     "compressed_snapshot": true,
     "snapshot_events": 8244
@@ -59,36 +59,36 @@
       "score": 0.8730371801062289
     },
     {
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 0.9367740590886996,
+      "novelty": 0.09136592051164916,
+      "conflict": 0,
+      "score": 0.851791309264269
+    },
+    {
       "node_id": "concept:2e57a032cdd10dec9769",
       "label": "practical",
-      "activation": 0.5941451746464229,
-      "novelty": 0.8163265306122448,
+      "activation": 0.5279253073399185,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.869363654081446
+      "score": 0.8271195850136079
     },
     {
       "node_id": "concept:82523faea1b0f2da676a",
       "label": "mean",
-      "activation": 0.5941451746464229,
-      "novelty": 0.7874015748031495,
+      "activation": 0.5279253073399185,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.8615539160129904
+      "score": 0.8198443537331075
     },
     {
       "node_id": "concept:5e5df1bbcffe1cf02285",
       "label": "purposes",
-      "activation": 0.5941451746464229,
-      "novelty": 0.7874015748031495,
+      "activation": 0.5279253073399185,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.8615539160129904
-    },
-    {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 0.9539621488688207,
-      "novelty": 0.09136592051164916,
-      "conflict": 0,
-      "score": 0.8607291159499322
+      "score": 0.8198443537331075
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 283
     },
     "connect": {
-      "attempts": 218,
-      "successes": 218
+      "attempts": 219,
+      "successes": 219
     },
     "evolve": {
       "attempts": 10,
