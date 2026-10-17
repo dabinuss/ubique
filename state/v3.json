@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T01:51:39.103662+00:00",
-  "generation": 3029,
-  "focus": "An Introduction to Psychology",
-  "last_action": "read",
+  "timestamp": "2026-10-17T01:53:19.717100+00:00",
+  "generation": 3030,
+  "focus": "The story of the mind /",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3026,
   "last_search_generation": 3013,
   "cortex": {
-    "nodes": 8396,
-    "synapses": 45123,
+    "nodes": 8399,
+    "synapses": 45207,
     "active": 120,
-    "archived_synapses": 25997
+    "archived_synapses": 26003
   },
   "memory": {
     "episodes": 3069,
@@ -26,14 +26,22 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 8322,
-    "segments": 285,
+    "events": 8327,
+    "segments": 286,
     "compressed_snapshot": true,
-    "snapshot_events": 8244
+    "snapshot_events": 8327
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 193,
   "workspace": [
+    {
+      "node_id": "concept:dcb576426a17b7df1390",
+      "label": "effect",
+      "activation": 0.76,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.9477984251968503
+    },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
@@ -41,6 +49,14 @@
       "novelty": 0.2518891687657431,
       "conflict": 0,
       "score": 0.9280100755667506
+    },
+    {
+      "node_id": "concept:6850ca355247469531b9",
+      "label": "chemical",
+      "activation": 0.76,
+      "novelty": 0.6688963210702341,
+      "conflict": 0,
+      "score": 0.9158020066889632
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -51,6 +67,14 @@
       "score": 0.8960962566844921
     },
     {
+      "node_id": "concept:ea4b35e8f83279eab1e6",
+      "label": "complex",
+      "activation": 0.76,
+      "novelty": 0.5813953488372093,
+      "conflict": 0,
+      "score": 0.8921767441860466
+    },
+    {
       "node_id": "concept:54476ce93ea4a148",
       "label": "distinguish",
       "activation": 1.0,
@@ -59,36 +83,12 @@
       "score": 0.8730371801062289
     },
     {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 0.9060731470967736,
-      "novelty": 0.09136592051164916,
+      "node_id": "concept:d33b08158a0a0976",
+      "label": "hypothesis",
+      "activation": 0.76,
+      "novelty": 0.3883495145631068,
       "conflict": 0,
-      "score": 0.8358268350284677
-    },
-    {
-      "node_id": "concept:73eb6a30af3374b39942",
-      "label": "folkways",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:90221e9a0f042282ead9",
-      "label": "established",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
-    },
-    {
-      "node_id": "concept:f1b4db36f908e557e232",
-      "label": "attributes",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.8400543689320388
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 241
     },
     "consolidate": {
-      "attempts": 283,
-      "successes": 283
+      "attempts": 284,
+      "successes": 284
     },
     "connect": {
       "attempts": 219,
