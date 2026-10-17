@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T15:30:22.415465+00:00",
-  "generation": 3197,
-  "focus": "Human, All Too Human: A Book for Free Spirits",
-  "last_action": "search",
+  "timestamp": "2026-10-17T15:32:03.144840+00:00",
+  "generation": 3198,
+  "focus": "The Republic of Plato",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Acquired 3 attributable external articles",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3196,
   "last_search_generation": 3197,
   "cortex": {
     "nodes": 8748,
-    "synapses": 48912,
+    "synapses": 48962,
     "active": 120,
-    "archived_synapses": 28220
+    "archived_synapses": 28102
   },
   "memory": {
     "episodes": 3164,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 9651,
+    "events": 9656,
     "segments": 341,
     "compressed_snapshot": true,
     "snapshot_events": 9651
@@ -59,20 +59,20 @@
       "score": 0.9175692963752666
     },
     {
+      "node_id": "concept:d9298a10d1b0735837dc",
+      "label": "other",
+      "activation": 1.0,
+      "novelty": 0.18181818181818182,
+      "conflict": 0,
+      "score": 0.9090909090909092
+    },
+    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
       "novelty": 0.11621150493898895,
       "conflict": 0,
       "score": 0.891377106333527
-    },
-    {
-      "node_id": "concept:d9298a10d1b0735837dc",
-      "label": "other",
-      "activation": 0.9312247029785956,
-      "novelty": 0.18331805682859761,
-      "conflict": 0,
-      "score": 0.8737327208925911
     },
     {
       "node_id": "concept:0570b840b0d58779",
@@ -105,8 +105,8 @@
       "successes": 271
     },
     "consolidate": {
-      "attempts": 325,
-      "successes": 325
+      "attempts": 326,
+      "successes": 326
     },
     "connect": {
       "attempts": 255,
