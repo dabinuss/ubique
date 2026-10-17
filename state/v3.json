@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T02:23:57.915888+00:00",
-  "generation": 3034,
+  "timestamp": "2026-10-17T02:25:39.216960+00:00",
+  "generation": 3035,
   "focus": "Psychology of the Unconscious",
-  "last_action": "connect",
-  "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "last_action": "evolve",
+  "last_action_success": false,
+  "last_action_detail": "{\"accepted\": false, \"title\": \"Enhance Cross-Source Semantic Curiosity and Experiential Learning\", \"summary\": \"Investigated recurring failures in the learning and action cycle where strict term-overlap thresholds caused sparse cross-source comparisons. Added a reversible stochastic exploration factor and deterministic novelty check to gracefully lower comparison barriers, improving the system's cur",
   "last_provider": null,
   "last_provider_generation": 3032,
   "last_search_generation": 3013,
@@ -14,7 +14,7 @@
     "nodes": 8425,
     "synapses": 45409,
     "active": 120,
-    "archived_synapses": 26075
+    "archived_synapses": 26229
   },
   "memory": {
     "episodes": 3071,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 8360,
+    "events": 8366,
     "segments": 287,
     "compressed_snapshot": true,
     "snapshot_events": 8327
@@ -37,42 +37,34 @@
     {
       "node_id": "concept:913f2664aecf816ab065",
       "label": "unable",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.7330313199999999,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
+      "score": 0.9590617489550661
     },
     {
       "node_id": "concept:0afa5bb5d5f1787945e5",
       "label": "sleep",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.7330313199999999,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
+      "score": 0.9590617489550661
     },
     {
       "node_id": "concept:6de2f53e03e93dffb34a",
       "label": "worry",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.68442088,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
+      "score": 0.9337843201550662
     },
     {
       "node_id": "concept:14272bd361c9990628ca",
       "label": "darkness",
-      "activation": 0.76,
-      "novelty": 0.9174311926605504,
+      "activation": 0.68442088,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9829064220183488
-    },
-    {
-      "node_id": "concept:3a419467866c1174426c",
-      "label": "familiar",
-      "activation": 0.76,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.964013559322034
+      "score": 0.9337843201550662
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
@@ -85,10 +77,18 @@
     {
       "node_id": "concept:9879397b188b1dd02a23",
       "label": "turned",
-      "activation": 0.76,
-      "novelty": 0.6493506493506493,
+      "activation": 0.68442088,
+      "novelty": 0.6309148264984227,
       "conflict": 0,
-      "score": 0.9105246753246754
+      "score": 0.8662458607545742
+    },
+    {
+      "node_id": "concept:3a419467866c1174426c",
+      "label": "familiar",
+      "activation": 0.5871999999999999,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.8657521632653062
     }
   ],
   "skills": {
@@ -113,7 +113,7 @@
       "successes": 220
     },
     "evolve": {
-      "attempts": 10,
+      "attempts": 11,
       "successes": 3
     },
     "experiment": {
