@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T16:06:00.849607+00:00",
-  "generation": 3204,
-  "focus": "Meditations",
-  "last_action": "read",
+  "timestamp": "2026-10-17T16:07:42.088259+00:00",
+  "generation": 3205,
+  "focus": "The Nature of Man: Studies in Optimistic Philosophy",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3202,
   "last_search_generation": 3197,
   "cortex": {
-    "nodes": 8761,
-    "synapses": 49142,
+    "nodes": 8768,
+    "synapses": 49198,
     "active": 120,
-    "archived_synapses": 28128
+    "archived_synapses": 28078
   },
   "memory": {
     "episodes": 3166,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 9701,
-    "segments": 343,
+    "events": 9706,
+    "segments": 344,
     "compressed_snapshot": true,
     "snapshot_events": 9651
   },
@@ -43,6 +43,14 @@
       "score": 0.9818961625282168
     },
     {
+      "node_id": "concept:ca52e7d1c18961a8c5b3",
+      "label": "united",
+      "activation": 1.0,
+      "novelty": 0.37523452157598497,
+      "conflict": 0,
+      "score": 0.961313320825516
+    },
+    {
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
@@ -53,18 +61,26 @@
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.9902915457429728,
+      "activation": 0.9844154520356821,
       "novelty": 0.18034265103697025,
       "conflict": 0,
-      "score": 0.9036441195663278
+      "score": 0.9005885508385367
     },
     {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.11621150493898895,
+      "node_id": "concept:c3b47d27748e4052",
+      "label": "against",
+      "activation": 0.76,
+      "novelty": 0.5524861878453039,
       "conflict": 0,
-      "score": 0.891377106333527
+      "score": 0.8843712707182321
+    },
+    {
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.07818608287724786,
+      "conflict": 0,
+      "score": 0.8811102423768569
     },
     {
       "node_id": "concept:0570b840b0d58779",
@@ -73,22 +89,6 @@
       "novelty": 0.04786979415988511,
       "conflict": 0,
       "score": 0.872924844423169
-    },
-    {
-      "node_id": "concept:ff6d7c8948492bd2",
-      "label": "issue",
-      "activation": 1.0,
-      "novelty": 0.047359696897939854,
-      "conflict": 0,
-      "score": 0.8727871181624438
-    },
-    {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 1.0,
-      "novelty": 0.047058823529411764,
-      "conflict": 0,
-      "score": 0.8727058823529412
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 272
     },
     "consolidate": {
-      "attempts": 327,
-      "successes": 327
+      "attempts": 328,
+      "successes": 328
     },
     "connect": {
       "attempts": 257,
