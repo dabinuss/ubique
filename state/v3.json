@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T09:18:34.886154+00:00",
-  "generation": 3118,
-  "focus": "Mental Evolution in Man: Origin of Human Faculty",
-  "last_action": "read",
+  "timestamp": "2026-10-17T09:20:21.914881+00:00",
+  "generation": 3119,
+  "focus": "The Republic of Plato",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 3117,
   "last_search_generation": 3105,
   "cortex": {
-    "nodes": 8607,
+    "nodes": 8609,
     "synapses": 47368,
     "active": 120,
-    "archived_synapses": 27708
+    "archived_synapses": 27750
   },
   "memory": {
     "episodes": 3126,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 9038,
+    "events": 9042,
     "segments": 315,
     "compressed_snapshot": true,
     "snapshot_events": 9027
@@ -34,14 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 214,
   "workspace": [
-    {
-      "node_id": "concept:923b4b90ea64343e4a1c",
-      "label": "states",
-      "activation": 1.0,
-      "novelty": 0.4338394793926248,
-      "conflict": 0,
-      "score": 0.9771366594360087
-    },
     {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
@@ -51,44 +43,52 @@
       "score": 0.8938557993730407
     },
     {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.08442380751371888,
-      "conflict": 0,
-      "score": 0.8827944280287041
-    },
-    {
-      "node_id": "concept:24ea913efda289dc1b17",
-      "label": "most",
-      "activation": 0.9242811408042505,
-      "novelty": 0.20533880903490764,
-      "conflict": 0,
-      "score": 0.8760676716576354
-    },
-    {
-      "node_id": "concept:68b4636e980e55ad",
-      "label": "consciousness",
-      "activation": 0.9496234862039262,
-      "novelty": 0.1519756838905775,
-      "conflict": 0,
-      "score": 0.8748376474764976
-    },
-    {
-      "node_id": "concept:0fc468dc240a979e",
-      "label": "collection",
-      "activation": 1.0,
-      "novelty": 0.047359696897939854,
-      "conflict": 0,
-      "score": 0.8727871181624438
-    },
-    {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
       "activation": 1.0,
       "novelty": 0.047058823529411764,
       "conflict": 0,
       "score": 0.8727058823529412
+    },
+    {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 0.9030495773206667,
+      "novelty": 0.2092050209205021,
+      "conflict": 0,
+      "score": 0.8660711358552824
+    },
+    {
+      "node_id": "concept:24ea913efda289dc1b17",
+      "label": "most",
+      "activation": 0.8624652196036047,
+      "novelty": 0.2034587995930824,
+      "conflict": 0,
+      "score": 0.8434157900840067
+    },
+    {
+      "node_id": "concept:0ed85105aeb6f45bc47e",
+      "label": "passu",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:4b14215230011e10ca8c",
+      "label": "percepts",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:bc16f5825a9dafc8c245",
+      "label": "will",
+      "activation": 0.8692959837481117,
+      "novelty": 0.1422475106685633,
+      "conflict": 0,
+      "score": 0.8304407394295301
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 354
     },
     "explore": {
-      "attempts": 255,
-      "successes": 255
+      "attempts": 256,
+      "successes": 256
     },
     "consolidate": {
       "attempts": 306,
