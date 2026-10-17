@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T15:23:42.879644+00:00",
-  "generation": 3193,
-  "focus": "The Nicomachean Ethics of Aristotle",
-  "last_action": "read",
+  "timestamp": "2026-10-17T15:25:23.509495+00:00",
+  "generation": 3194,
+  "focus": "Human, All Too Human: A Book for Free Spirits",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 3191,
   "last_search_generation": 3174,
   "cortex": {
-    "nodes": 8742,
+    "nodes": 8743,
     "synapses": 48884,
     "active": 120,
-    "archived_synapses": 28266
+    "archived_synapses": 28286
   },
   "memory": {
     "episodes": 3160,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 9607,
+    "events": 9611,
     "segments": 340,
     "compressed_snapshot": true,
     "snapshot_events": 9567
@@ -59,6 +59,14 @@
       "score": 0.9175692963752666
     },
     {
+      "node_id": "concept:c3b47d27748e4052",
+      "label": "against",
+      "activation": 0.76,
+      "novelty": 0.5970149253731344,
+      "conflict": 0,
+      "score": 0.8963940298507462
+    },
+    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -67,28 +75,20 @@
       "score": 0.891377106333527
     },
     {
-      "node_id": "concept:48185414c722a5aadbd6",
-      "label": "appearances",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "node_id": "concept:ff6d7c8948492bd2",
+      "label": "issue",
+      "activation": 1.0,
+      "novelty": 0.047359696897939854,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.8727871181624438
     },
     {
-      "node_id": "concept:ee0874170b7f6f32b8c2",
-      "label": "anything",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.047058823529411764,
       "conflict": 0,
-      "score": 0.78452319391635
-    },
-    {
-      "node_id": "concept:dd31b11b657056595b8e",
-      "label": "engrams",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.8727058823529412
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 325
     },
     "connect": {
-      "attempts": 254,
-      "successes": 254
+      "attempts": 255,
+      "successes": 255
     },
     "evolve": {
       "attempts": 13,
