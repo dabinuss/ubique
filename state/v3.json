@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T19:46:11.010582+00:00",
-  "generation": 3250,
+  "timestamp": "2026-10-17T19:59:48.725790+00:00",
+  "generation": 3251,
   "focus": "The Analysis of Mind",
-  "last_action": "consolidate",
-  "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action": "evolve",
+  "last_action_success": false,
+  "last_action_detail": "{\"accepted\": false, \"title\": \"Introduce novelty‑aware ranking for cross‑source comparisons\", \"summary\": \"Adds a small deterministic boost that prefers comparisons containing terms never seen before. This encourages the learner to explore genuinely new connections without increasing noise, improving the curiosity loop while keeping all existing behaviours reversible.\", \"branch\": null, \"pr_url\": nul",
   "last_provider": null,
   "last_provider_generation": 3248,
   "last_search_generation": 3243,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 10067,
+    "events": 10073,
     "segments": 359,
     "compressed_snapshot": true,
     "snapshot_events": 10025
@@ -113,7 +113,7 @@
       "successes": 266
     },
     "evolve": {
-      "attempts": 13,
+      "attempts": 14,
       "successes": 3
     },
     "experiment": {
