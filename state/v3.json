@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T21:49:43.663043+00:00",
-  "generation": 3274,
+  "timestamp": "2026-10-17T21:51:26.862884+00:00",
+  "generation": 3275,
   "focus": "Human, All Too Human: A Book for Free Spirits",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3270,
   "last_search_generation": 3266,
   "cortex": {
-    "nodes": 8917,
-    "synapses": 50759,
+    "nodes": 8918,
+    "synapses": 50799,
     "active": 120,
-    "archived_synapses": 28303
+    "archived_synapses": 28253
   },
   "memory": {
     "episodes": 3199,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 10247,
+    "events": 10252,
     "segments": 367,
     "compressed_snapshot": true,
     "snapshot_events": 10195
@@ -43,12 +43,28 @@
       "score": 0.9988174807197945
     },
     {
+      "node_id": "concept:923b4b90ea64343e4a1c",
+      "label": "states",
+      "activation": 1.0,
+      "novelty": 0.4338394793926248,
+      "conflict": 0,
+      "score": 0.9771366594360087
+    },
+    {
+      "node_id": "concept:dfd34a31322c29f8",
+      "label": "concepts",
+      "activation": 1.0,
+      "novelty": 0.4255319148936171,
+      "conflict": 0,
+      "score": 0.9748936170212767
+    },
+    {
       "node_id": "concept:24ea913efda289dc1b17",
       "label": "most",
-      "activation": 0.9924361826436926,
+      "activation": 0.9866884053868362,
       "novelty": 0.17605633802816903,
       "conflict": 0,
-      "score": 0.9036020262423259
+      "score": 0.9006131820687604
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -59,36 +75,20 @@
       "score": 0.8895243302351012
     },
     {
-      "node_id": "concept:52dabec3560592b39f94",
-      "label": "prove",
-      "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "node_id": "concept:54476ce93ea4a148",
+      "label": "distinguish",
+      "activation": 1.0,
+      "novelty": 0.04807692307692307,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.8729807692307692
     },
     {
-      "node_id": "concept:a5eb9b11984bdbc41973",
-      "label": "comprehend",
+      "node_id": "concept:c099142bc3186ded7278",
+      "label": "results",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7996081632653061
-    },
-    {
-      "node_id": "concept:896c6d0e51a18d7b6f5e",
-      "label": "organs",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
-    },
-    {
-      "node_id": "concept:05fb617ad543807c0c3f",
-      "label": "speech",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 286
     },
     "consolidate": {
-      "attempts": 345,
-      "successes": 345
+      "attempts": 346,
+      "successes": 346
     },
     "connect": {
       "attempts": 271,
