@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T06:25:38.581499+00:00",
-  "generation": 3086,
+  "timestamp": "2026-10-17T06:27:16.942700+00:00",
+  "generation": 3087,
   "focus": "The Varieties of Religious Experience: A Study in Human Nature",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3083,
   "last_search_generation": 3082,
@@ -14,7 +14,7 @@
     "nodes": 8550,
     "synapses": 46700,
     "active": 120,
-    "archived_synapses": 27360
+    "archived_synapses": 27266
   },
   "memory": {
     "episodes": 3108,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 8791,
+    "events": 8796,
     "segments": 304,
     "compressed_snapshot": true,
     "snapshot_events": 8756
@@ -35,36 +35,12 @@
   "evidence_reviews": 205,
   "workspace": [
     {
-      "node_id": "concept:03ffb3ed717f966f",
-      "label": "remain",
-      "activation": 0.76,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.964013559322034
-    },
-    {
       "node_id": "concept:ae0a9ad3227c5420c07d",
       "label": "idea",
       "activation": 1.0,
       "novelty": 0.2770083102493075,
       "conflict": 0,
       "score": 0.9347922437673131
-    },
-    {
-      "node_id": "concept:d9298a10d1b0735837dc",
-      "label": "other",
-      "activation": 1.0,
-      "novelty": 0.23094688221709006,
-      "conflict": 0,
-      "score": 0.9223556581986143
-    },
-    {
-      "node_id": "concept:1abe5f34c25e621d",
-      "label": "characteristic",
-      "activation": 1.0,
-      "novelty": 0.17064846416382254,
-      "conflict": 0,
-      "score": 0.9060750853242321
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -75,20 +51,44 @@
       "score": 0.8946375881975626
     },
     {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.08673026886383348,
+      "node_id": "concept:bc16f5825a9dafc8c245",
+      "label": "will",
+      "activation": 0.9873261611404703,
+      "novelty": 0.14792899408284024,
       "conflict": 0,
-      "score": 0.8834171725932352
+      "score": 0.8933504321954115
     },
     {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 1.0,
-      "novelty": 0.047058823529411764,
+      "node_id": "concept:d9298a10d1b0735837dc",
+      "label": "other",
+      "activation": 0.9192974000302767,
+      "novelty": 0.23094688221709006,
       "conflict": 0,
-      "score": 0.8727058823529412
+      "score": 0.8803903062143583
+    },
+    {
+      "node_id": "concept:3dbd9cd5e1fb3e4f7854",
+      "label": "faculty",
+      "activation": 0.8391245127039606,
+      "novelty": 0.351493848857645,
+      "conflict": 0,
+      "score": 0.8712480857976237
+    },
+    {
+      "node_id": "concept:d887db09649dab0d8395",
+      "label": "parts",
+      "activation": 0.7822527340433904,
+      "novelty": 0.38167938931297707,
+      "conflict": 0,
+      "score": 0.8498248568170668
+    },
+    {
+      "node_id": "concept:a1843caf89969c47",
+      "label": "understanding",
+      "activation": 0.76,
+      "novelty": 0.4175365344467641,
+      "conflict": 0,
+      "score": 0.8479348643006264
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 250
     },
     "consolidate": {
-      "attempts": 297,
-      "successes": 297
+      "attempts": 298,
+      "successes": 298
     },
     "connect": {
       "attempts": 231,
