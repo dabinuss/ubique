@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T18:14:46.449961+00:00",
-  "generation": 3231,
+  "timestamp": "2026-10-17T18:16:30.062246+00:00",
+  "generation": 3232,
   "focus": "A Treatise of Human Nature",
-  "last_action": "explore",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3230,
   "last_search_generation": 3220,
   "cortex": {
     "nodes": 8837,
-    "synapses": 49882,
+    "synapses": 49886,
     "active": 120,
-    "archived_synapses": 28202
+    "archived_synapses": 28084
   },
   "memory": {
     "episodes": 3181,
@@ -26,10 +26,10 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 9921,
-    "segments": 352,
+    "events": 9926,
+    "segments": 353,
     "compressed_snapshot": true,
-    "snapshot_events": 9845
+    "snapshot_events": 9926
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 247,
@@ -51,44 +51,44 @@
       "score": 0.9083005366726298
     },
     {
-      "node_id": "concept:ddd32c5ed076f854",
-      "label": "illustration",
-      "activation": 0.76,
-      "novelty": 0.5524861878453039,
-      "conflict": 0,
-      "score": 0.8843712707182321
-    },
-    {
       "node_id": "concept:2054c3ced7473dba19a2",
       "label": "numbered",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:98e558ad19448eb76556",
       "label": "henle",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:2577c0f557b2e4b591e9",
       "label": "projects",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:535fbb2f8adef9a7e085",
       "label": "hemispheres",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
+    },
+    {
+      "node_id": "concept:9aa72e4fb1ff63e1792b",
+      "label": "cerebellum",
+      "activation": 0.46,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.8170854625550661
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 278
     },
     "consolidate": {
-      "attempts": 334,
-      "successes": 334
+      "attempts": 335,
+      "successes": 335
     },
     "connect": {
       "attempts": 262,
