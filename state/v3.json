@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T01:45:08.622013+00:00",
-  "generation": 3025,
+  "timestamp": "2026-10-17T01:46:41.423650+00:00",
+  "generation": 3026,
   "focus": "An Introduction to Psychology",
-  "last_action": "connect",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": null,
-  "last_provider_generation": 3021,
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": "gemini",
+  "last_provider_generation": 3026,
   "last_search_generation": 3013,
   "cortex": {
     "nodes": 8393,
     "synapses": 45090,
     "active": 120,
-    "archived_synapses": 25812
+    "archived_synapses": 25960
   },
   "memory": {
-    "episodes": 3066,
-    "claims": 1114,
+    "episodes": 3068,
+    "claims": 1115,
     "stances": 26,
     "interests": 74,
     "associative_comparisons": 752,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 8295,
-    "segments": 284,
+    "events": 8303,
+    "segments": 285,
     "compressed_snapshot": true,
     "snapshot_events": 8244
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 192,
+  "evidence_reviews": 193,
   "workspace": [
     {
       "node_id": "concept:d9298a10d1b0735837dc",
@@ -41,30 +41,6 @@
       "novelty": 0.2518891687657431,
       "conflict": 0,
       "score": 0.9280100755667506
-    },
-    {
-      "node_id": "concept:2e57a032cdd10dec9769",
-      "label": "practical",
-      "activation": 0.6708736521052638,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.9176678584167712
-    },
-    {
-      "node_id": "concept:82523faea1b0f2da676a",
-      "label": "mean",
-      "activation": 0.6708736521052638,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.9092624623600434
-    },
-    {
-      "node_id": "concept:5e5df1bbcffe1cf02285",
-      "label": "purposes",
-      "activation": 0.6708736521052638,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.9092624623600434
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -83,12 +59,36 @@
       "score": 0.8730371801062289
     },
     {
+      "node_id": "concept:2e57a032cdd10dec9769",
+      "label": "practical",
+      "activation": 0.5941451746464229,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.869363654081446
+    },
+    {
+      "node_id": "concept:82523faea1b0f2da676a",
+      "label": "mean",
+      "activation": 0.5941451746464229,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.8615539160129904
+    },
+    {
+      "node_id": "concept:5e5df1bbcffe1cf02285",
+      "label": "purposes",
+      "activation": 0.5941451746464229,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.8615539160129904
+    },
+    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
-      "activation": 0.9723285439007259,
+      "activation": 0.9539621488688207,
       "novelty": 0.09136592051164916,
       "conflict": 0,
-      "score": 0.8702796413665228
+      "score": 0.8607291159499322
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 326
     },
     "explore": {
-      "attempts": 239,
-      "successes": 239
+      "attempts": 240,
+      "successes": 240
     },
     "consolidate": {
       "attempts": 283,
