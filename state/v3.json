@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T01:13:04.419445+00:00",
-  "generation": 3020,
+  "timestamp": "2026-10-17T01:14:35.530511+00:00",
+  "generation": 3021,
   "focus": "Human Nature and Conduct",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 3015,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "gemini",
+  "last_provider_generation": 3021,
   "last_search_generation": 3013,
   "cortex": {
-    "nodes": 8376,
-    "synapses": 44945,
+    "nodes": 8381,
+    "synapses": 44997,
     "active": 120,
-    "archived_synapses": 25763
+    "archived_synapses": 25735
   },
   "memory": {
-    "episodes": 3062,
-    "claims": 1107,
+    "episodes": 3064,
+    "claims": 1108,
     "stances": 26,
     "interests": 74,
     "associative_comparisons": 748,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 8255,
+    "events": 8264,
     "segments": 283,
     "compressed_snapshot": true,
     "snapshot_events": 8244
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 191,
+  "evidence_reviews": 192,
   "workspace": [
     {
       "node_id": "concept:24ea913efda289dc1b17",
@@ -46,17 +46,25 @@
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
       "activation": 1.0,
-      "novelty": 0.2638522427440633,
+      "novelty": 0.2577319587628866,
       "conflict": 0,
-      "score": 0.9312401055408972
+      "score": 0.9295876288659795
     },
     {
-      "node_id": "concept:1abe5f34c25e621d",
-      "label": "characteristic",
-      "activation": 1.0,
-      "novelty": 0.1719690455717971,
+      "node_id": "concept:feb9e6fc25c22727ab63",
+      "label": "tactile",
+      "activation": 0.76,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.9064316423043852
+      "score": 0.9273708185053382
+    },
+    {
+      "node_id": "concept:5a2a0ed9aa3ab7d82b53",
+      "label": "heat",
+      "activation": 0.76,
+      "novelty": 0.6688963210702341,
+      "conflict": 0,
+      "score": 0.9158020066889632
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -67,28 +75,20 @@
       "score": 0.8965358592692829
     },
     {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 1.0,
-      "novelty": 0.048285852245292124,
+      "node_id": "concept:0e4a8753470e0c08a28b",
+      "label": "qualities",
+      "activation": 0.76,
+      "novelty": 0.56657223796034,
       "conflict": 0,
-      "score": 0.8730371801062289
+      "score": 0.8881745042492919
     },
     {
-      "node_id": "concept:763cdc62a869262b6ff4",
-      "label": "surface",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "node_id": "concept:bb8c8605c55dcc2d650e",
+      "label": "also",
+      "activation": 0.76,
+      "novelty": 0.5263157894736842,
       "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:24fdadbf19765c82ac3b",
-      "label": "incapable",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.8773052631578948
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 239
     },
     "consolidate": {
-      "attempts": 281,
-      "successes": 281
+      "attempts": 282,
+      "successes": 282
     },
     "connect": {
       "attempts": 217,
