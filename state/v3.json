@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T15:06:40.369487+00:00",
-  "generation": 3190,
+  "timestamp": "2026-10-17T15:08:18.171580+00:00",
+  "generation": 3191,
   "focus": "The Republic of Plato",
-  "last_action": "explore",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 3185,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 3191,
   "last_search_generation": 3174,
   "cortex": {
-    "nodes": 8739,
-    "synapses": 48781,
+    "nodes": 8741,
+    "synapses": 48853,
     "active": 120,
-    "archived_synapses": 28173
+    "archived_synapses": 28121
   },
   "memory": {
     "episodes": 3159,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 9587,
+    "events": 9592,
     "segments": 339,
     "compressed_snapshot": true,
     "snapshot_events": 9567
@@ -67,28 +67,28 @@
       "score": 0.891377106333527
     },
     {
-      "node_id": "concept:ee0874170b7f6f32b8c2",
-      "label": "anything",
-      "activation": 0.5857,
+      "node_id": "concept:48185414c722a5aadbd6",
+      "label": "appearances",
+      "activation": 0.46,
       "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8733775593220339
+      "score": 0.8080135593220339
+    },
+    {
+      "node_id": "concept:ee0874170b7f6f32b8c2",
+      "label": "anything",
+      "activation": 0.46,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:0e4a8753470e0c08a28b",
       "label": "qualities",
-      "activation": 0.6924445015244898,
-      "novelty": 0.4807692307692307,
+      "activation": 0.6342813796245355,
+      "novelty": 0.47058823529411764,
       "conflict": 0,
-      "score": 0.829878833100427
-    },
-    {
-      "node_id": "concept:48185414c722a5aadbd6",
-      "label": "appearances",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.7968851409341702
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 270
     },
     "consolidate": {
-      "attempts": 324,
-      "successes": 324
+      "attempts": 325,
+      "successes": 325
     },
     "connect": {
       "attempts": 253,
