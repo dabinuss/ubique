@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T12:26:51.831295+00:00",
-  "generation": 3159,
-  "focus": "A Treatise of Human Nature",
-  "last_action": "read",
+  "timestamp": "2026-10-17T12:28:30.554504+00:00",
+  "generation": 3160,
+  "focus": "Six Metaphysical Meditations",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3157,
   "last_search_generation": 3151,
   "cortex": {
     "nodes": 8699,
-    "synapses": 48263,
+    "synapses": 48289,
     "active": 120,
-    "archived_synapses": 28127
+    "archived_synapses": 28043
   },
   "memory": {
     "episodes": 3148,
@@ -26,22 +26,14 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 9366,
-    "segments": 328,
+    "events": 9371,
+    "segments": 329,
     "compressed_snapshot": true,
     "snapshot_events": 9307
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 226,
   "workspace": [
-    {
-      "node_id": "concept:e2d5a675d4eab169",
-      "label": "continue",
-      "activation": 1.0,
-      "novelty": 0.2518891687657431,
-      "conflict": 0,
-      "score": 0.9280100755667506
-    },
     {
       "node_id": "concept:24ea913efda289dc1b17",
       "label": "most",
@@ -57,6 +49,14 @@
       "novelty": 0.16556291390728478,
       "conflict": 0,
       "score": 0.904701986754967
+    },
+    {
+      "node_id": "concept:bc16f5825a9dafc8c245",
+      "label": "will",
+      "activation": 1.0,
+      "novelty": 0.13783597518952448,
+      "conflict": 0,
+      "score": 0.8972157133011716
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -75,20 +75,20 @@
       "score": 0.8661023844502205
     },
     {
-      "node_id": "concept:60c411b2baec2ab58d44",
-      "label": "treatment",
+      "node_id": "concept:a749cea249ac24b0db79",
+      "label": "betwixt",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:a11ae06469c63740d7b0",
-      "label": "half",
+      "node_id": "concept:681c32e2978d9d87e3a4",
+      "label": "scruple",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 263
     },
     "consolidate": {
-      "attempts": 316,
-      "successes": 316
+      "attempts": 317,
+      "successes": 317
     },
     "connect": {
       "attempts": 247,
