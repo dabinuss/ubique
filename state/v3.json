@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-17T19:10:44.416378+00:00",
-  "generation": 3243,
+  "timestamp": "2026-10-17T19:12:25.349056+00:00",
+  "generation": 3244,
   "focus": "A Treatise Concerning the Principles of Human Knowledge",
-  "last_action": "search",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Acquired 3 attributable external articles",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3236,
   "last_search_generation": 3243,
   "cortex": {
-    "nodes": 8858,
-    "synapses": 50123,
+    "nodes": 8863,
+    "synapses": 50181,
     "active": 120,
-    "archived_synapses": 28233
+    "archived_synapses": 28179
   },
   "memory": {
     "episodes": 3188,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 10025,
-    "segments": 356,
+    "events": 10030,
+    "segments": 357,
     "compressed_snapshot": true,
     "snapshot_events": 10025
   },
@@ -38,17 +38,17 @@
       "node_id": "concept:02aab799561baeb9",
       "label": "concerning",
       "activation": 1.0,
-      "novelty": 0.2638522427440633,
+      "novelty": 0.25477707006369427,
       "conflict": 0,
-      "score": 0.9312401055408972
+      "score": 0.9287898089171975
     },
     {
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
-      "activation": 0.997106909664741,
-      "novelty": 0.23837902264600713,
+      "activation": 1.0,
+      "novelty": 0.23094688221709006,
       "conflict": 0,
-      "score": 0.9228579291400874
+      "score": 0.9223556581986143
     },
     {
       "node_id": "concept:172e09329d10f852",
@@ -86,9 +86,9 @@
       "node_id": "concept:8da91408dd1a5a7ebef0",
       "label": "adds",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 280
     },
     "consolidate": {
-      "attempts": 337,
-      "successes": 337
+      "attempts": 338,
+      "successes": 338
     },
     "connect": {
       "attempts": 264,
