@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T11:02:52.916360+00:00",
-  "generation": 3432,
-  "focus": "Meditations",
-  "last_action": "read",
+  "timestamp": "2026-10-18T11:04:36.559624+00:00",
+  "generation": 3433,
+  "focus": "The Republic of Plato",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3429,
   "last_search_generation": 3427,
@@ -14,7 +14,7 @@
     "nodes": 9195,
     "synapses": 54083,
     "active": 120,
-    "archived_synapses": 30163
+    "archived_synapses": 30107
   },
   "memory": {
     "episodes": 3296,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 11481,
-    "segments": 420,
+    "events": 11486,
+    "segments": 421,
     "compressed_snapshot": true,
     "snapshot_events": 11409
   },
@@ -41,14 +41,6 @@
       "novelty": 0.3629764065335753,
       "conflict": 0,
       "score": 0.9580036297640655
-    },
-    {
-      "node_id": "concept:02aab799561baeb9",
-      "label": "concerning",
-      "activation": 1.0,
-      "novelty": 0.22172949002217296,
-      "conflict": 0,
-      "score": 0.9198669623059867
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -75,16 +67,24 @@
       "score": 0.8727328460268804
     },
     {
-      "node_id": "concept:1ff912774d31395ae678",
-      "label": "léman",
+      "node_id": "concept:0b27c158feb36ab18a10",
+      "label": "kind",
+      "activation": 0.76,
+      "novelty": 0.4514672686230249,
+      "conflict": 0,
+      "score": 0.8570961625282167
+    },
+    {
+      "node_id": "concept:8e260bd854566e0d924d",
+      "label": "troubled",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:5f76448660df35903d28",
-      "label": "jamais",
+      "node_id": "concept:e9d5ee06e92ed647f558",
+      "label": "awakened",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
@@ -105,8 +105,8 @@
       "successes": 314
     },
     "consolidate": {
-      "attempts": 386,
-      "successes": 386
+      "attempts": 387,
+      "successes": 387
     },
     "connect": {
       "attempts": 304,
