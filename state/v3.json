@@ -1,9 +1,9 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T23:02:49.223927+00:00",
-  "generation": 3577,
-  "focus": "A Treatise Concerning the Principles of Human Knowledge",
+  "timestamp": "2026-10-18T23:04:35.547949+00:00",
+  "generation": 3578,
+  "focus": "Meditations",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
@@ -11,22 +11,22 @@
   "last_provider_generation": 3572,
   "last_search_generation": 3565,
   "cortex": {
-    "nodes": 9447,
-    "synapses": 56953,
+    "nodes": 9452,
+    "synapses": 56981,
     "active": 120,
-    "archived_synapses": 31589
+    "archived_synapses": 31597
   },
   "memory": {
-    "episodes": 3366,
-    "claims": 1636,
+    "episodes": 3367,
+    "claims": 1638,
     "stances": 26,
     "interests": 74,
-    "associative_comparisons": 1212,
+    "associative_comparisons": 1214,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 12573,
+    "events": 12584,
     "segments": 469,
     "compressed_snapshot": true,
     "snapshot_events": 12509
@@ -51,6 +51,14 @@
       "score": 0.9419423368740516
     },
     {
+      "node_id": "concept:02aab799561baeb9",
+      "label": "concerning",
+      "activation": 1.0,
+      "novelty": 0.20533880903490764,
+      "conflict": 0,
+      "score": 0.9154414784394251
+    },
+    {
       "node_id": "concept:53e5e7c5a884893739c4",
       "label": "experience",
       "activation": 1.0,
@@ -62,9 +70,9 @@
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
       "activation": 1.0,
-      "novelty": 0.14598540145985403,
+      "novelty": 0.14503263234227703,
       "conflict": 0,
-      "score": 0.8994160583941606
+      "score": 0.8991588107324149
     },
     {
       "node_id": "concept:24ea913efda289dc1b17",
@@ -81,14 +89,6 @@
       "novelty": 0.13956734124214934,
       "conflict": 0,
       "score": 0.8976831821353803
-    },
-    {
-      "node_id": "concept:d9298a10d1b0735837dc",
-      "label": "other",
-      "activation": 1.0,
-      "novelty": 0.132890365448505,
-      "conflict": 0,
-      "score": 0.8958803986710964
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 62
     },
     "read": {
-      "attempts": 484,
-      "successes": 484
+      "attempts": 485,
+      "successes": 485
     },
     "explore": {
       "attempts": 342,
