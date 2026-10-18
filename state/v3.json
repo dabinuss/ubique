@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T12:52:58.150706+00:00",
-  "generation": 3454,
+  "timestamp": "2026-10-18T12:54:44.082768+00:00",
+  "generation": 3455,
   "focus": "A Treatise of Human Nature",
-  "last_action": "read",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 3451,
   "last_search_generation": 3450,
   "cortex": {
-    "nodes": 9238,
+    "nodes": 9239,
     "synapses": 54535,
     "active": 120,
-    "archived_synapses": 30307
+    "archived_synapses": 30327
   },
   "memory": {
     "episodes": 3309,
@@ -26,10 +26,10 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 11650,
+    "events": 11654,
     "segments": 428,
     "compressed_snapshot": true,
-    "snapshot_events": 11571
+    "snapshot_events": 11654
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 289,
@@ -59,36 +59,36 @@
       "score": 0.887
     },
     {
+      "node_id": "concept:dae3aa50e841b988",
+      "label": "attention",
+      "activation": 0.76,
+      "novelty": 0.5263157894736842,
+      "conflict": 0,
+      "score": 0.8773052631578948
+    },
+    {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.8912680622301601,
+      "activation": 0.8957191606869512,
       "novelty": 0.1440922190201729,
       "conflict": 0,
-      "score": 0.8423642914951299
+      "score": 0.8446788626926613
     },
     {
-      "node_id": "concept:b838d9497a90f5ff6e33",
-      "label": "copious",
+      "node_id": "concept:588f98bd492a5d969985",
+      "label": "extinct",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:fe81e5a782f25df1738f",
-      "label": "sanguineous",
+      "node_id": "concept:22d19eff52348144d5b1",
+      "label": "representatives",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:562a77a7ae22fe1bb055",
-      "label": "conditions",
-      "activation": 0.7063670023999999,
-      "novelty": 0.39525691699604737,
-      "conflict": 0,
-      "score": 0.8140302088369329
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 392
     },
     "connect": {
-      "attempts": 309,
-      "successes": 309
+      "attempts": 310,
+      "successes": 310
     },
     "evolve": {
       "attempts": 16,
