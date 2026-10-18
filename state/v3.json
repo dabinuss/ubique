@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T02:16:44.911474+00:00",
-  "generation": 3326,
+  "timestamp": "2026-10-18T02:18:26.079537+00:00",
+  "generation": 3327,
   "focus": "The Physical Basis of Mind",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 3321,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "gemini",
+  "last_provider_generation": 3327,
   "last_search_generation": 3312,
   "cortex": {
-    "nodes": 9001,
-    "synapses": 51891,
+    "nodes": 9004,
+    "synapses": 51905,
     "active": 120,
-    "archived_synapses": 28801
+    "archived_synapses": 28753
   },
   "memory": {
-    "episodes": 3224,
-    "claims": 1403,
+    "episodes": 3225,
+    "claims": 1404,
     "stances": 26,
     "interests": 74,
     "associative_comparisons": 1004,
@@ -26,22 +26,14 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 10635,
-    "segments": 384,
+    "events": 10643,
+    "segments": 385,
     "compressed_snapshot": true,
     "snapshot_events": 10624
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 262,
+  "evidence_reviews": 263,
   "workspace": [
-    {
-      "node_id": "concept:2331eb33ce2c3766148e",
-      "label": "philosophy",
-      "activation": 1.0,
-      "novelty": 0.2638522427440633,
-      "conflict": 0,
-      "score": 0.9312401055408972
-    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -62,9 +54,9 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.07304601899196494,
+      "novelty": 0.0728066982162359,
       "conflict": 0,
-      "score": 0.8797224251278306
+      "score": 0.8796578085183837
     },
     {
       "node_id": "concept:4277d3259d4e4993",
@@ -75,20 +67,28 @@
       "score": 0.8727328460268804
     },
     {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
-      "activation": 1.0,
-      "novelty": 0.022464337863641468,
+      "node_id": "concept:18fefc248539fc8d4f59",
+      "label": "plasticity",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8660653712231832
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:1db147fa22abae8a70c9",
-      "label": "rival",
+      "node_id": "concept:19c27788c1f49fa8b9dc",
+      "label": "warped",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:c59403eb557ab0accd3b",
+      "label": "docility",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 295
     },
     "consolidate": {
-      "attempts": 359,
-      "successes": 359
+      "attempts": 360,
+      "successes": 360
     },
     "connect": {
       "attempts": 282,
