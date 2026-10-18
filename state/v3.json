@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T05:50:40.143450+00:00",
-  "generation": 3368,
+  "timestamp": "2026-10-18T05:52:22.719226+00:00",
+  "generation": 3369,
   "focus": "The Master of Destiny: A Biography of the Brain",
-  "last_action": "read",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 3366,
   "last_search_generation": 3358,
   "cortex": {
-    "nodes": 9074,
-    "synapses": 52765,
+    "nodes": 9075,
+    "synapses": 52766,
     "active": 120,
-    "archived_synapses": 29445
+    "archived_synapses": 29490
   },
   "memory": {
     "episodes": 3252,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 10970,
-    "segments": 398,
+    "events": 10974,
+    "segments": 399,
     "compressed_snapshot": true,
     "snapshot_events": 10898
   },
@@ -53,14 +53,30 @@
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
-      "activation": 0.9737643997158595,
-      "novelty": 0.1774622892635315,
+      "activation": 0.9514875965304812,
+      "novelty": 0.17605633802816903,
       "conflict": 0,
-      "score": 0.8942723059534006
+      "score": 0.8823087614634559
     },
     {
-      "node_id": "concept:10e80ecbecb05740b6ad",
-      "label": "teasing",
+      "node_id": "concept:625c43638dd5f52318c4",
+      "label": "parturition",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:fbb634221207d14a27e0",
+      "label": "bashful",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:55c02a05bc3bc77f01be",
+      "label": "allusion",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
@@ -69,22 +85,6 @@
     {
       "node_id": "concept:0392a279f0c745e9fa01",
       "label": "immoral",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:3d486fe5bc88e9b66c18",
-      "label": "experienced",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:fc26a9df87021d7d66e5",
-      "label": "superiority",
       "activation": 0.46,
       "novelty": 0.8474576271186441,
       "conflict": 0,
@@ -109,8 +109,8 @@
       "successes": 370
     },
     "connect": {
-      "attempts": 290,
-      "successes": 290
+      "attempts": 291,
+      "successes": 291
     },
     "evolve": {
       "attempts": 15,
