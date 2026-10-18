@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T16:19:47.229108+00:00",
-  "generation": 3497,
-  "focus": "A Treatise Concerning the Principles of Human Knowledge",
-  "last_action": "connect",
+  "timestamp": "2026-10-18T16:21:33.406499+00:00",
+  "generation": 3498,
+  "focus": "Meditations",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 3497,
   "last_search_generation": 3496,
   "cortex": {
     "nodes": 9318,
     "synapses": 55289,
     "active": 120,
-    "archived_synapses": 30819
+    "archived_synapses": 30681
   },
   "memory": {
     "episodes": 3330,
@@ -26,10 +26,10 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 11980,
+    "events": 11985,
     "segments": 442,
     "compressed_snapshot": true,
-    "snapshot_events": 11903
+    "snapshot_events": 11985
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 300,
@@ -51,20 +51,20 @@
       "score": 0.9236792452830189
     },
     {
-      "node_id": "concept:d9298a10d1b0735837dc",
-      "label": "other",
+      "node_id": "concept:24ea913efda289dc1b17",
+      "label": "most",
       "activation": 1.0,
       "novelty": 0.1440922190201729,
       "conflict": 0,
       "score": 0.8989048991354467
     },
     {
-      "node_id": "concept:24ea913efda289dc1b17",
-      "label": "most",
-      "activation": 0.995961360283268,
+      "node_id": "concept:d9298a10d1b0735837dc",
+      "label": "other",
+      "activation": 1.0,
       "novelty": 0.1440922190201729,
       "conflict": 0,
-      "score": 0.8968048064827461
+      "score": 0.8989048991354467
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -78,9 +78,9 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.06291286568103177,
+      "novelty": 0.06273525721455459,
       "conflict": 0,
-      "score": 0.8769864737338786
+      "score": 0.8769385194479298
     },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
@@ -105,8 +105,8 @@
       "successes": 326
     },
     "consolidate": {
-      "attempts": 403,
-      "successes": 403
+      "attempts": 404,
+      "successes": 404
     },
     "connect": {
       "attempts": 319,
