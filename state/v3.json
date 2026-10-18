@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T17:14:50.375002+00:00",
-  "generation": 3508,
+  "timestamp": "2026-10-18T17:16:34.665551+00:00",
+  "generation": 3509,
   "focus": "Human, All Too Human: A Book for Free Spirits",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 3508,
   "last_search_generation": 3496,
   "cortex": {
-    "nodes": 9323,
-    "synapses": 55451,
+    "nodes": 9326,
+    "synapses": 55485,
     "active": 120,
-    "archived_synapses": 30831
+    "archived_synapses": 30815
   },
   "memory": {
     "episodes": 3334,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 12057,
+    "events": 12062,
     "segments": 446,
     "compressed_snapshot": true,
     "snapshot_events": 11985
@@ -34,14 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 301,
   "workspace": [
-    {
-      "node_id": "concept:0faa92735bebe4dd",
-      "label": "constituting",
-      "activation": 0.76,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.9730854625550662
-    },
     {
       "node_id": "concept:02aab799561baeb9",
       "label": "concerning",
@@ -83,12 +75,20 @@
       "score": 0.8767027528611198
     },
     {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 1.0,
-      "novelty": 0.046959380136182206,
+      "node_id": "concept:74611c1d6455b534323a",
+      "label": "deep",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8726790326367693
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:645dfcb4d1d2d7f1fa00",
+      "label": "serious",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 328
     },
     "consolidate": {
-      "attempts": 406,
-      "successes": 406
+      "attempts": 407,
+      "successes": 407
     },
     "connect": {
       "attempts": 321,
