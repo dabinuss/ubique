@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T01:10:47.507699+00:00",
-  "generation": 3315,
+  "timestamp": "2026-10-18T01:12:28.721652+00:00",
+  "generation": 3316,
   "focus": "An Introduction to Psychology",
-  "last_action": "connect",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": "gemini",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 3315,
   "last_search_generation": 3312,
   "cortex": {
     "nodes": 8989,
-    "synapses": 51704,
+    "synapses": 51764,
     "active": 120,
-    "archived_synapses": 28702
+    "archived_synapses": 28648
   },
   "memory": {
     "episodes": 3221,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 10565,
+    "events": 10570,
     "segments": 381,
     "compressed_snapshot": true,
     "snapshot_events": 10542
@@ -53,10 +53,10 @@
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.9756243930349379,
+      "activation": 0.9751067975206396,
       "novelty": 0.1607717041800643,
       "conflict": 0,
-      "score": 0.8907330445067851
+      "score": 0.89046389483935
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -86,9 +86,9 @@
       "node_id": "concept:f30409c51a78ed6906df",
       "label": "reflection",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 293
     },
     "consolidate": {
-      "attempts": 356,
-      "successes": 356
+      "attempts": 357,
+      "successes": 357
     },
     "connect": {
       "attempts": 280,
