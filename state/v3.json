@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T09:28:56.457200+00:00",
-  "generation": 3412,
+  "timestamp": "2026-10-18T09:30:37.360424+00:00",
+  "generation": 3413,
   "focus": "Psychology of the Unconscious",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 3412,
   "last_search_generation": 3404,
   "cortex": {
-    "nodes": 9159,
-    "synapses": 53700,
+    "nodes": 9161,
+    "synapses": 53714,
     "active": 120,
-    "archived_synapses": 29968
+    "archived_synapses": 29870
   },
   "memory": {
     "episodes": 3279,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 11316,
-    "segments": 413,
+    "events": 11321,
+    "segments": 414,
     "compressed_snapshot": true,
     "snapshot_events": 11249
   },
@@ -35,12 +35,20 @@
   "evidence_reviews": 279,
   "workspace": [
     {
-      "node_id": "concept:e2d5a675d4eab169",
-      "label": "continue",
-      "activation": 1.0,
-      "novelty": 0.22172949002217296,
+      "node_id": "concept:11fb055d5824add3",
+      "label": "indifference",
+      "activation": 0.76,
+      "novelty": 0.6134969325153374,
       "conflict": 0,
-      "score": 0.9198669623059867
+      "score": 0.9008441717791411
+    },
+    {
+      "node_id": "concept:d9298a10d1b0735837dc",
+      "label": "other",
+      "activation": 1.0,
+      "novelty": 0.14992503748125938,
+      "conflict": 0,
+      "score": 0.9004797601199401
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -51,14 +59,6 @@
       "score": 0.8877492291880782
     },
     {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.06668889629876626,
-      "conflict": 0,
-      "score": 0.878006002000667
-    },
-    {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
       "activation": 1.0,
@@ -67,28 +67,28 @@
       "score": 0.8727058823529412
     },
     {
-      "node_id": "concept:09f4681e0a1e48022a2f",
-      "label": "omary",
+      "node_id": "concept:dfec22473777f0ddaea9",
+      "label": "genuine",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:11f67cfd32c5b449469a",
-      "label": "dealing",
+      "node_id": "concept:d7575fde02a7eb5467d1",
+      "label": "pagan",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:9ac92847d41cfe9aacd6",
-      "label": "faculties",
+      "node_id": "concept:9e92c72421097b26273a",
+      "label": "flexions",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 310
     },
     "consolidate": {
-      "attempts": 381,
-      "successes": 381
+      "attempts": 382,
+      "successes": 382
     },
     "connect": {
       "attempts": 300,
