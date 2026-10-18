@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T12:54:44.082768+00:00",
-  "generation": 3455,
+  "timestamp": "2026-10-18T12:56:24.787708+00:00",
+  "generation": 3456,
   "focus": "A Treatise of Human Nature",
-  "last_action": "connect",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3451,
   "last_search_generation": 3450,
@@ -14,7 +14,7 @@
     "nodes": 9239,
     "synapses": 54535,
     "active": 120,
-    "archived_synapses": 30327
+    "archived_synapses": 30225
   },
   "memory": {
     "episodes": 3309,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 11654,
+    "events": 11659,
     "segments": 428,
     "compressed_snapshot": true,
     "snapshot_events": 11654
@@ -51,6 +51,14 @@
       "score": 0.9016024653312789
     },
     {
+      "node_id": "concept:d9298a10d1b0735837dc",
+      "label": "other",
+      "activation": 1.0,
+      "novelty": 0.1440922190201729,
+      "conflict": 0,
+      "score": 0.8989048991354467
+    },
+    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -59,36 +67,28 @@
       "score": 0.887
     },
     {
-      "node_id": "concept:dae3aa50e841b988",
-      "label": "attention",
-      "activation": 0.76,
-      "novelty": 0.5263157894736842,
-      "conflict": 0,
-      "score": 0.8773052631578948
-    },
-    {
-      "node_id": "concept:d9298a10d1b0735837dc",
-      "label": "other",
-      "activation": 0.8957191606869512,
-      "novelty": 0.1440922190201729,
-      "conflict": 0,
-      "score": 0.8446788626926613
-    },
-    {
       "node_id": "concept:588f98bd492a5d969985",
       "label": "extinct",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:22d19eff52348144d5b1",
       "label": "representatives",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
+    },
+    {
+      "node_id": "concept:d66f956a1204d1b3c926",
+      "label": "gulfs",
+      "activation": 0.46,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.8170854625550661
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 318
     },
     "consolidate": {
-      "attempts": 392,
-      "successes": 392
+      "attempts": 393,
+      "successes": 393
     },
     "connect": {
       "attempts": 310,
