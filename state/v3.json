@@ -1,33 +1,33 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T17:12:55.561573+00:00",
-  "generation": 3507,
+  "timestamp": "2026-10-18T17:14:50.375002+00:00",
+  "generation": 3508,
   "focus": "Human, All Too Human: A Book for Free Spirits",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 3502,
+  "last_provider": "groq",
+  "last_provider_generation": 3508,
   "last_search_generation": 3496,
   "cortex": {
-    "nodes": 9321,
-    "synapses": 55419,
+    "nodes": 9323,
+    "synapses": 55451,
     "active": 120,
-    "archived_synapses": 30805
+    "archived_synapses": 30831
   },
   "memory": {
-    "episodes": 3333,
-    "claims": 1575,
+    "episodes": 3334,
+    "claims": 1578,
     "stances": 26,
     "interests": 74,
-    "associative_comparisons": 1154,
+    "associative_comparisons": 1156,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 12046,
-    "segments": 445,
+    "events": 12057,
+    "segments": 446,
     "compressed_snapshot": true,
     "snapshot_events": 11985
   },
@@ -35,12 +35,12 @@
   "evidence_reviews": 301,
   "workspace": [
     {
-      "node_id": "concept:3f8b4464a99de3dc8c5c",
-      "label": "religious",
-      "activation": 1.0,
-      "novelty": 0.23584905660377356,
+      "node_id": "concept:0faa92735bebe4dd",
+      "label": "constituting",
+      "activation": 0.76,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.9236792452830189
+      "score": 0.9730854625550662
     },
     {
       "node_id": "concept:02aab799561baeb9",
@@ -57,6 +57,14 @@
       "novelty": 0.1440922190201729,
       "conflict": 0,
       "score": 0.8989048991354467
+    },
+    {
+      "node_id": "concept:5a2a957b269e8f0f",
+      "label": "external",
+      "activation": 1.0,
+      "novelty": 0.13054830287206265,
+      "conflict": 0,
+      "score": 0.8952480417754569
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -81,14 +89,6 @@
       "novelty": 0.046959380136182206,
       "conflict": 0,
       "score": 0.8726790326367693
-    },
-    {
-      "node_id": "concept:f78fcae67d4aa99819ff",
-      "label": "explanation",
-      "activation": 0.46,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 59
     },
     "read": {
-      "attempts": 464,
-      "successes": 464
+      "attempts": 465,
+      "successes": 465
     },
     "explore": {
       "attempts": 329,
