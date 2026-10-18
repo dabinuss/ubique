@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T16:00:52.424952+00:00",
-  "generation": 3493,
+  "timestamp": "2026-10-18T16:14:36.176387+00:00",
+  "generation": 3494,
   "focus": "A Treatise Concerning the Principles of Human Knowledge",
-  "last_action": "consolidate",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 3491,
   "last_search_generation": 3473,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 11936,
+    "events": 11940,
     "segments": 441,
     "compressed_snapshot": true,
     "snapshot_events": 11903
@@ -43,20 +43,20 @@
       "score": 0.9898076923076924
     },
     {
-      "node_id": "concept:3f8b4464a99de3dc8c5c",
-      "label": "religious",
-      "activation": 1.0,
-      "novelty": 0.24096385542168672,
-      "conflict": 0,
-      "score": 0.9250602409638555
-    },
-    {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
       "activation": 1.0,
       "novelty": 0.24096385542168672,
       "conflict": 0,
       "score": 0.9250602409638555
+    },
+    {
+      "node_id": "concept:3f8b4464a99de3dc8c5c",
+      "label": "religious",
+      "activation": 1.0,
+      "novelty": 0.23837902264600713,
+      "conflict": 0,
+      "score": 0.924362336114422
     },
     {
       "node_id": "concept:e0f895872d65b2528fee",
@@ -78,17 +78,17 @@
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.09737098344693282,
+      "novelty": 0.09694619486185167,
       "conflict": 0,
-      "score": 0.8862901655306719
+      "score": 0.8861754726127
     },
     {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.06381620931716656,
+      "novelty": 0.06363347120585428,
       "conflict": 0,
-      "score": 0.8772303765156351
+      "score": 0.8771810372255806
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 460
     },
     "explore": {
-      "attempts": 326,
-      "successes": 325
+      "attempts": 327,
+      "successes": 326
     },
     "consolidate": {
       "attempts": 403,
