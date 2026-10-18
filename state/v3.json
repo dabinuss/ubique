@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T20:53:13.426170+00:00",
-  "generation": 3551,
-  "focus": "An Introduction to Psychology",
-  "last_action": "read",
+  "timestamp": "2026-10-18T20:54:51.328154+00:00",
+  "generation": 3552,
+  "focus": "Human Nature and Conduct",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3544,
   "last_search_generation": 3542,
   "cortex": {
-    "nodes": 9391,
-    "synapses": 56273,
+    "nodes": 9394,
+    "synapses": 56347,
     "active": 120,
-    "archived_synapses": 31397
+    "archived_synapses": 31361
   },
   "memory": {
     "episodes": 3356,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 12390,
+    "events": 12395,
     "segments": 460,
     "compressed_snapshot": true,
     "snapshot_events": 12329
@@ -49,6 +49,14 @@
       "novelty": 0.132890365448505,
       "conflict": 0,
       "score": 0.8958803986710964
+    },
+    {
+      "node_id": "concept:5a2a957b269e8f0f",
+      "label": "external",
+      "activation": 1.0,
+      "novelty": 0.12468827930174564,
+      "conflict": 0,
+      "score": 0.8936658354114713
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -75,20 +83,12 @@
       "score": 0.8726790326367693
     },
     {
-      "node_id": "concept:27a0113e9ce8bfd5ba29",
-      "label": "fortune",
+      "node_id": "concept:91c620b89a486a69e64c",
+      "label": "growing",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:cea23dd4b87e8b00d19f",
-      "label": "expected",
-      "activation": 0.46,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 336
     },
     "consolidate": {
-      "attempts": 417,
-      "successes": 417
+      "attempts": 418,
+      "successes": 418
     },
     "connect": {
       "attempts": 330,
