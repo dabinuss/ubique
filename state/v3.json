@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T08:32:26.367941+00:00",
-  "generation": 3400,
+  "timestamp": "2026-10-18T08:34:13.982782+00:00",
+  "generation": 3401,
   "focus": "Human Nature and Conduct",
-  "last_action": "connect",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": "groq",
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": null,
   "last_provider_generation": 3400,
   "last_search_generation": 3381,
   "cortex": {
-    "nodes": 9128,
-    "synapses": 53360,
+    "nodes": 9134,
+    "synapses": 53400,
     "active": 120,
     "archived_synapses": 29924
   },
   "memory": {
-    "episodes": 3272,
-    "claims": 1475,
+    "episodes": 3273,
+    "claims": 1478,
     "stances": 26,
     "interests": 74,
-    "associative_comparisons": 1064,
+    "associative_comparisons": 1066,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 11204,
+    "events": 11215,
     "segments": 409,
     "compressed_snapshot": true,
     "snapshot_events": 11152
@@ -45,10 +45,10 @@
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.9900293475227082,
+      "activation": 1.0,
       "novelty": 0.14992503748125938,
       "conflict": 0,
-      "score": 0.8952950208317483
+      "score": 0.9004797601199401
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -62,9 +62,9 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.06770480704129993,
+      "novelty": 0.06749915626054674,
       "conflict": 0,
-      "score": 0.878280297901151
+      "score": 0.8782247721903476
     },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
@@ -78,17 +78,17 @@
       "node_id": "concept:4d3a22069f1fd2fa3c99",
       "label": "assured",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8080135593220339
     },
     {
       "node_id": "concept:722cac41a5d2f99a23eb",
       "label": "demonstrates",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 54
     },
     "read": {
-      "attempts": 434,
-      "successes": 434
+      "attempts": 435,
+      "successes": 435
     },
     "explore": {
       "attempts": 309,
