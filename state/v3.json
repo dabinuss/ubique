@@ -1,33 +1,33 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T07:59:55.863645+00:00",
-  "generation": 3395,
+  "timestamp": "2026-10-18T08:13:42.053957+00:00",
+  "generation": 3396,
   "focus": "Human Nature and Conduct",
-  "last_action": "evolve",
-  "last_action_success": false,
-  "last_action_detail": "{\"accepted\": false, \"title\": \"Enhance experiential curiosity and fallback comparison resilience in SemanticLearner\", \"summary\": \"Investigates recurring learning bottlenecks in the v3 observation cycle where overly strict concept-overlap thresholds cause source passages to miss valuable connections. Introduces a stochastic exploration factor combined with a deterministic novelty check and a fallbac",
-  "last_provider": "gemini",
+  "last_action": "read",
+  "last_action_success": true,
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": null,
   "last_provider_generation": 3395,
   "last_search_generation": 3381,
   "cortex": {
-    "nodes": 9117,
-    "synapses": 53244,
+    "nodes": 9120,
+    "synapses": 53278,
     "active": 120,
-    "archived_synapses": 29804
+    "archived_synapses": 29898
   },
   "memory": {
-    "episodes": 3267,
-    "claims": 1469,
+    "episodes": 3268,
+    "claims": 1472,
     "stances": 26,
     "interests": 74,
-    "associative_comparisons": 1060,
+    "associative_comparisons": 1062,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 11164,
-    "segments": 407,
+    "events": 11175,
+    "segments": 408,
     "compressed_snapshot": true,
     "snapshot_events": 11152
   },
@@ -53,42 +53,42 @@
     {
       "node_id": "concept:1b019de065f14805",
       "label": "demonstration",
-      "activation": 0.6284781920563829,
-      "novelty": 0.5970149253731344,
+      "activation": 0.613812655898939,
+      "novelty": 0.5813953488372093,
       "conflict": 0,
-      "score": 0.8280026897200654
+      "score": 0.8161593252534949
     },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.8489565945705142,
-      "novelty": 0.1509433962264151,
+      "activation": 0.8349050059115819,
+      "novelty": 0.14992503748125938,
       "conflict": 0,
-      "score": 0.8222121461577996
+      "score": 0.8146303631939626
     },
     {
       "node_id": "concept:efe5d9ec82c31b1b2cd1",
       "label": "seldom",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.7352941176470589,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.777729411764706
     },
     {
       "node_id": "concept:9c6d86c4393319c271d4",
       "label": "tuition",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.7713708185053381
     },
     {
       "node_id": "concept:7cd58cdd64a3dcfcd4a5",
       "label": "strike",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.7713708185053381
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 54
     },
     "read": {
-      "attempts": 432,
-      "successes": 432
+      "attempts": 433,
+      "successes": 433
     },
     "explore": {
       "attempts": 309,
