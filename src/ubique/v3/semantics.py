@@ -149,7 +149,18 @@ class SemanticLearner:
                 if len(choices) >= 80:
                     break
         # --- End fallback search logic ---
-        choices.sort(key=lambda row: row[0], reverse=True)
+        # --- Begin novelty‑aware sorting ---
+        def _novelty_score(shared_set: set[str]) -> int:
+            """Count how many shared terms have never been seen before.
+
+            A higher score pushes the candidate higher in the ranking, encouraging
+            the learner to explore genuinely new connections.
+            """
+            return sum(1 for term in shared_set if term not in self._seen_terms)
+
+        # Sort primarily by number of shared terms, secondarily by novelty score.
+        choices.sort(key=lambda row: (row[0], _novelty_score(row[2])), reverse=True)
+        # --- End novelty‑aware sorting ---
         for _, other, shared in choices[:2]:
             pair = sorted([eid, other["id"]])
             fingerprint = "comparison:" + key("|".join(pair))
