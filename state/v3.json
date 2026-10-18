@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T10:08:18.546191+00:00",
-  "generation": 3421,
+  "timestamp": "2026-10-18T10:10:03.439928+00:00",
+  "generation": 3422,
   "focus": "Meditations",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3417,
   "last_search_generation": 3404,
   "cortex": {
-    "nodes": 9167,
-    "synapses": 53826,
+    "nodes": 9168,
+    "synapses": 53840,
     "active": 120,
-    "archived_synapses": 29968
+    "archived_synapses": 30052
   },
   "memory": {
     "episodes": 3282,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 11375,
+    "events": 11380,
     "segments": 417,
     "compressed_snapshot": true,
     "snapshot_events": 11329
@@ -35,12 +35,20 @@
   "evidence_reviews": 279,
   "workspace": [
     {
+      "node_id": "concept:dfd34a31322c29f8",
+      "label": "concepts",
+      "activation": 1.0,
+      "novelty": 0.3629764065335753,
+      "conflict": 0,
+      "score": 0.9580036297640655
+    },
+    {
       "node_id": "concept:02aab799561baeb9",
       "label": "concerning",
-      "activation": 1.0,
+      "activation": 0.9970396245997271,
       "novelty": 0.22396416573348266,
       "conflict": 0,
-      "score": 0.9204703247480404
+      "score": 0.9189309295398984
     },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
@@ -81,14 +89,6 @@
       "novelty": 0.047058823529411764,
       "conflict": 0,
       "score": 0.8727058823529412
-    },
-    {
-      "node_id": "concept:f264807bb7c032836c22",
-      "label": "tise",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 312
     },
     "consolidate": {
-      "attempts": 383,
-      "successes": 383
+      "attempts": 384,
+      "successes": 384
     },
     "connect": {
       "attempts": 302,
