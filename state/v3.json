@@ -1,33 +1,33 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T03:24:40.352440+00:00",
-  "generation": 3338,
+  "timestamp": "2026-10-18T03:38:22.738698+00:00",
+  "generation": 3339,
   "focus": "Psychology of the Unconscious",
-  "last_action": "consolidate",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": "gemini",
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": null,
   "last_provider_generation": 3338,
   "last_search_generation": 3335,
   "cortex": {
-    "nodes": 9028,
-    "synapses": 52148,
+    "nodes": 9032,
+    "synapses": 52180,
     "active": 120,
-    "archived_synapses": 28772
+    "archived_synapses": 28852
   },
   "memory": {
-    "episodes": 3231,
-    "claims": 1414,
+    "episodes": 3232,
+    "claims": 1416,
     "stances": 26,
     "interests": 74,
-    "associative_comparisons": 1016,
+    "associative_comparisons": 1018,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 10734,
-    "segments": 388,
+    "events": 10745,
+    "segments": 389,
     "compressed_snapshot": true,
     "snapshot_events": 10711
   },
@@ -41,14 +41,6 @@
       "novelty": 0.3883495145631068,
       "conflict": 0,
       "score": 0.9648543689320388
-    },
-    {
-      "node_id": "concept:44c0c2aad8407a30",
-      "label": "correspondence",
-      "activation": 0.76,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.9337294117647059
     },
     {
       "node_id": "concept:e2d5a675d4eab169",
@@ -67,28 +59,36 @@
       "score": 0.9034083601286174
     },
     {
+      "node_id": "concept:44c0c2aad8407a30",
+      "label": "correspondence",
+      "activation": 0.6819208800000001,
+      "novelty": 0.7117437722419929,
+      "conflict": 0,
+      "score": 0.8867696761053381
+    },
+    {
       "node_id": "concept:539fd60e947202b13dc5",
       "label": "scholars",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:50c0048948599a72692f",
       "label": "heathen",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:b7744263995462d2bdc7",
       "label": "classics",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 52
     },
     "read": {
-      "attempts": 416,
-      "successes": 416
+      "attempts": 417,
+      "successes": 417
     },
     "explore": {
       "attempts": 297,
