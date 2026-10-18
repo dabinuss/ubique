@@ -1,13 +1,13 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T08:54:46.191669+00:00",
-  "generation": 3406,
+  "timestamp": "2026-10-18T08:56:20.426962+00:00",
+  "generation": 3407,
   "focus": "The Varieties of Religious Experience: A Study in Human Nature",
-  "last_action": "read",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": null,
   "last_provider_generation": 3406,
   "last_search_generation": 3404,
   "cortex": {
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 11268,
+    "events": 11272,
     "segments": 411,
     "compressed_snapshot": true,
     "snapshot_events": 11249
@@ -41,14 +41,6 @@
       "novelty": 0.22624434389140272,
       "conflict": 0,
       "score": 0.9210859728506788
-    },
-    {
-      "node_id": "concept:d9298a10d1b0735837dc",
-      "label": "other",
-      "activation": 1.0,
-      "novelty": 0.14992503748125938,
-      "conflict": 0,
-      "score": 0.9004797601199401
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -75,16 +67,24 @@
       "score": 0.8727058823529412
     },
     {
-      "node_id": "concept:117c8934978247d21c26",
-      "label": "overburdened",
+      "node_id": "concept:e60854b862f4123fe502",
+      "label": "structures",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:730375e4de9f5e78524f",
-      "label": "elaborate",
+      "node_id": "concept:af3a1bb312bf8430055d",
+      "label": "organization",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:438b5e575a59cd42e234",
+      "label": "arrangement",
       "activation": 0.46,
       "novelty": 0.8163265306122448,
       "conflict": 0,
@@ -109,8 +109,8 @@
       "successes": 379
     },
     "connect": {
-      "attempts": 298,
-      "successes": 298
+      "attempts": 299,
+      "successes": 299
     },
     "evolve": {
       "attempts": 16,
