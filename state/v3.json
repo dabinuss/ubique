@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T13:10:12.934648+00:00",
-  "generation": 3457,
+  "timestamp": "2026-10-18T13:11:53.873620+00:00",
+  "generation": 3458,
   "focus": "A Treatise of Human Nature",
-  "last_action": "explore",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 3457,
   "last_search_generation": 3450,
   "cortex": {
     "nodes": 9241,
     "synapses": 54537,
     "active": 120,
-    "archived_synapses": 30225
+    "archived_synapses": 30167
   },
   "memory": {
     "episodes": 3309,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 11667,
+    "events": 11672,
     "segments": 429,
     "compressed_snapshot": true,
     "snapshot_events": 11654
@@ -70,25 +70,25 @@
       "node_id": "concept:588f98bd492a5d969985",
       "label": "extinct",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8080135593220339
     },
     {
       "node_id": "concept:22d19eff52348144d5b1",
       "label": "representatives",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:d66f956a1204d1b3c926",
       "label": "gulfs",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 319
     },
     "consolidate": {
-      "attempts": 393,
-      "successes": 393
+      "attempts": 394,
+      "successes": 394
     },
     "connect": {
       "attempts": 310,
