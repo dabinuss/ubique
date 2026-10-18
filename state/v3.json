@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T00:35:00.099194+00:00",
-  "generation": 3308,
+  "timestamp": "2026-10-18T00:36:42.796160+00:00",
+  "generation": 3309,
   "focus": "The Physical Basis of Mind",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3307,
   "last_search_generation": 3289,
   "cortex": {
-    "nodes": 8983,
-    "synapses": 51584,
+    "nodes": 8987,
+    "synapses": 51684,
     "active": 120,
-    "archived_synapses": 28768
+    "archived_synapses": 28692
   },
   "memory": {
     "episodes": 3215,
@@ -26,14 +26,30 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 10503,
-    "segments": 378,
+    "events": 10508,
+    "segments": 379,
     "compressed_snapshot": true,
     "snapshot_events": 10449
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 261,
   "workspace": [
+    {
+      "node_id": "concept:f1537d8de0bbe107268e",
+      "label": "goes",
+      "activation": 0.76,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9730854625550662
+    },
+    {
+      "node_id": "concept:2331eb33ce2c3766148e",
+      "label": "philosophy",
+      "activation": 1.0,
+      "novelty": 0.27359781121751026,
+      "conflict": 0,
+      "score": 0.9338714090287279
+    },
     {
       "node_id": "concept:24ea913efda289dc1b17",
       "label": "most",
@@ -59,32 +75,16 @@
       "score": 0.8801869158878506
     },
     {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
       "activation": 1.0,
-      "novelty": 0.047058823529411764,
+      "novelty": 0.022464337863641468,
       "conflict": 0,
-      "score": 0.8727058823529412
+      "score": 0.8660653712231832
     },
     {
-      "node_id": "concept:a1cb100f57e971cacf26",
-      "label": "edge",
-      "activation": 0.46,
-      "novelty": 0.9569377990430623,
-      "conflict": 0,
-      "score": 0.837573205741627
-    },
-    {
-      "node_id": "concept:6b17b8fcc411a533c822",
-      "label": "corpus",
-      "activation": 0.46,
-      "novelty": 0.9569377990430623,
-      "conflict": 0,
-      "score": 0.837573205741627
-    },
-    {
-      "node_id": "concept:b5c3cd3882ec6559361c",
-      "label": "callosum",
+      "node_id": "concept:c0f580d8306c490988dc",
+      "label": "manipulation",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
@@ -105,8 +105,8 @@
       "successes": 292
     },
     "consolidate": {
-      "attempts": 354,
-      "successes": 354
+      "attempts": 355,
+      "successes": 355
     },
     "connect": {
       "attempts": 278,
