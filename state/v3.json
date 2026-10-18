@@ -1,100 +1,100 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T18:07:24.368966+00:00",
-  "generation": 3518,
+  "timestamp": "2026-10-18T18:09:13.529762+00:00",
+  "generation": 3519,
   "focus": "Human, All Too Human: A Book for Free Spirits",
-  "last_action": "read",
+  "last_action": "search",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 3514,
-  "last_search_generation": 3496,
+  "last_action_detail": "Acquired 3 attributable external articles",
+  "last_provider": "groq",
+  "last_provider_generation": 3519,
+  "last_search_generation": 3519,
   "cortex": {
-    "nodes": 9339,
+    "nodes": 9342,
     "synapses": 55705,
     "active": 120,
-    "archived_synapses": 30959
+    "archived_synapses": 31047
   },
   "memory": {
-    "episodes": 3341,
-    "claims": 1593,
+    "episodes": 3344,
+    "claims": 1594,
     "stances": 26,
     "interests": 74,
-    "associative_comparisons": 1162,
+    "associative_comparisons": 1168,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 12137,
+    "events": 12164,
     "segments": 449,
     "compressed_snapshot": true,
-    "snapshot_events": 12066
+    "snapshot_events": 12164
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 307,
+  "evidence_reviews": 308,
   "workspace": [
-    {
-      "node_id": "concept:5a2a957b269e8f0f",
-      "label": "external",
-      "activation": 1.0,
-      "novelty": 0.12978585334198572,
-      "conflict": 0,
-      "score": 0.8950421804023363
-    },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.9783922820565941,
+      "activation": 1.0,
       "novelty": 0.1440922190201729,
       "conflict": 0,
-      "score": 0.8876688858048758
+      "score": 0.8989048991354467
     },
     {
-      "node_id": "concept:c3b47d27748e4052",
-      "label": "against",
+      "node_id": "concept:20a0dfc1eaf920aa",
+      "label": "difficulties",
       "activation": 0.76,
-      "novelty": 0.4807692307692307,
+      "novelty": 0.5970149253731344,
       "conflict": 0,
-      "score": 0.8650076923076924
+      "score": 0.8963940298507462
     },
     {
-      "node_id": "concept:f496ed001ccd704902cf",
-      "label": "opriety",
+      "node_id": "concept:6fb778f0a581be7560d1",
+      "label": "punishment",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:3debfefcee41f06cd0bd",
+      "label": "justly",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:857ca9b1f8c23f0c3622",
+      "label": "inflicted",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:9c3c0698e4fcfc816615",
+      "label": "dangers",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:bf5e570a678d7b46cc72",
-      "label": "expedient",
+      "node_id": "concept:4293d6ce81ffe68f088e",
+      "label": "inclines",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:58d54e7c7553ce1fd758",
-      "label": "fear",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:d37a24b801c6e2e33824",
-      "label": "stand",
-      "activation": 0.46,
-      "novelty": 0.5524861878453039,
-      "conflict": 0,
-      "score": 0.7283712707182322
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
     "search": {
-      "attempts": 60,
-      "successes": 59
+      "attempts": 61,
+      "successes": 60
     },
     "read": {
       "attempts": 468,
