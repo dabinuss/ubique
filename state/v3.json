@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T23:42:12.792545+00:00",
-  "generation": 3586,
+  "timestamp": "2026-10-18T23:43:58.991436+00:00",
+  "generation": 3587,
   "focus": "The Republic of Plato",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3583,
   "last_search_generation": 3565,
   "cortex": {
-    "nodes": 9474,
-    "synapses": 57197,
+    "nodes": 9479,
+    "synapses": 57253,
     "active": 120,
-    "archived_synapses": 31705
+    "archived_synapses": 31631
   },
   "memory": {
     "episodes": 3373,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 12638,
+    "events": 12643,
     "segments": 472,
     "compressed_snapshot": true,
     "snapshot_events": 12589
@@ -51,28 +51,20 @@
       "score": 0.8991588107324149
     },
     {
-      "node_id": "concept:d9298a10d1b0735837dc",
-      "label": "other",
-      "activation": 1.0,
-      "novelty": 0.1313197636244255,
-      "conflict": 0,
-      "score": 0.895456336178595
-    },
-    {
-      "node_id": "concept:5a2a957b269e8f0f",
-      "label": "external",
-      "activation": 1.0,
-      "novelty": 0.11997600479904018,
-      "conflict": 0,
-      "score": 0.8923935212957408
-    },
-    {
       "node_id": "concept:68b4636e980e55ad",
       "label": "consciousness",
       "activation": 1.0,
       "novelty": 0.10621348911311737,
       "conflict": 0,
       "score": 0.8886776420605418
+    },
+    {
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.060350030175015085,
+      "conflict": 0,
+      "score": 0.8762945081472542
     },
     {
       "node_id": "concept:411f62e7fd037280",
@@ -83,8 +75,16 @@
       "score": 0.8725202875028983
     },
     {
-      "node_id": "concept:8a0add669e2746f0aef3",
-      "label": "officers",
+      "node_id": "concept:d9298a10d1b0735837dc",
+      "label": "other",
+      "activation": 0.9293342231673974,
+      "novelty": 0.1313197636244255,
+      "conflict": 0,
+      "score": 0.8587101322256416
+    },
+    {
+      "node_id": "concept:a36a2ce1800626b7cf47",
+      "label": "renew",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
@@ -105,8 +105,8 @@
       "successes": 343
     },
     "consolidate": {
-      "attempts": 426,
-      "successes": 426
+      "attempts": 427,
+      "successes": 427
     },
     "connect": {
       "attempts": 338,
