@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T12:56:24.787708+00:00",
-  "generation": 3456,
+  "timestamp": "2026-10-18T13:10:12.934648+00:00",
+  "generation": 3457,
   "focus": "A Treatise of Human Nature",
-  "last_action": "consolidate",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 3451,
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": "groq",
+  "last_provider_generation": 3457,
   "last_search_generation": 3450,
   "cortex": {
-    "nodes": 9239,
-    "synapses": 54535,
+    "nodes": 9241,
+    "synapses": 54537,
     "active": 120,
     "archived_synapses": 30225
   },
   "memory": {
     "episodes": 3309,
-    "claims": 1527,
+    "claims": 1529,
     "stances": 26,
     "interests": 74,
     "associative_comparisons": 1114,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 11659,
-    "segments": 428,
+    "events": 11667,
+    "segments": 429,
     "compressed_snapshot": true,
     "snapshot_events": 11654
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 289,
+  "evidence_reviews": 291,
   "workspace": [
     {
       "node_id": "concept:24ea913efda289dc1b17",
@@ -70,25 +70,25 @@
       "node_id": "concept:588f98bd492a5d969985",
       "label": "extinct",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:22d19eff52348144d5b1",
       "label": "representatives",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8080135593220339
     },
     {
       "node_id": "concept:d66f956a1204d1b3c926",
       "label": "gulfs",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8080135593220339
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 450
     },
     "explore": {
-      "attempts": 319,
-      "successes": 318
+      "attempts": 320,
+      "successes": 319
     },
     "consolidate": {
       "attempts": 393,
