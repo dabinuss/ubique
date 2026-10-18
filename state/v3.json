@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T10:10:03.439928+00:00",
-  "generation": 3422,
+  "timestamp": "2026-10-18T10:23:55.367430+00:00",
+  "generation": 3423,
   "focus": "Meditations",
-  "last_action": "consolidate",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 3417,
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": "groq",
+  "last_provider_generation": 3423,
   "last_search_generation": 3404,
   "cortex": {
-    "nodes": 9168,
-    "synapses": 53840,
+    "nodes": 9171,
+    "synapses": 53846,
     "active": 120,
     "archived_synapses": 30052
   },
   "memory": {
-    "episodes": 3282,
-    "claims": 1496,
+    "episodes": 3286,
+    "claims": 1500,
     "stances": 26,
     "interests": 74,
     "associative_comparisons": 1084,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 11380,
+    "events": 11396,
     "segments": 417,
     "compressed_snapshot": true,
     "snapshot_events": 11329
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 279,
+  "evidence_reviews": 283,
   "workspace": [
     {
       "node_id": "concept:dfd34a31322c29f8",
@@ -45,10 +45,10 @@
     {
       "node_id": "concept:02aab799561baeb9",
       "label": "concerning",
-      "activation": 0.9970396245997271,
+      "activation": 1.0,
       "novelty": 0.22396416573348266,
       "conflict": 0,
-      "score": 0.9189309295398984
+      "score": 0.9204703247480404
     },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
@@ -62,9 +62,9 @@
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.10277492291880781,
+      "novelty": 0.10230179028132992,
       "conflict": 0,
-      "score": 0.8877492291880782
+      "score": 0.887621483375959
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -101,8 +101,8 @@
       "successes": 441
     },
     "explore": {
-      "attempts": 313,
-      "successes": 312
+      "attempts": 314,
+      "successes": 313
     },
     "consolidate": {
       "attempts": 384,
