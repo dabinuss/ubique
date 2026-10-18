@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T00:50:20.066843+00:00",
-  "generation": 3310,
+  "timestamp": "2026-10-18T00:52:03.564324+00:00",
+  "generation": 3311,
   "focus": "The Physical Basis of Mind",
-  "last_action": "explore",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3307,
   "last_search_generation": 3289,
@@ -14,7 +14,7 @@
     "nodes": 8987,
     "synapses": 51684,
     "active": 120,
-    "archived_synapses": 28738
+    "archived_synapses": 28664
   },
   "memory": {
     "episodes": 3215,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 10512,
+    "events": 10517,
     "segments": 379,
     "compressed_snapshot": true,
     "snapshot_events": 10449
@@ -59,14 +59,6 @@
       "score": 0.9037246963562753
     },
     {
-      "node_id": "concept:f1537d8de0bbe107268e",
-      "label": "goes",
-      "activation": 0.6201570701439999,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8912952357969139
-    },
-    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -86,9 +78,17 @@
       "node_id": "concept:c0f580d8306c490988dc",
       "label": "manipulation",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
+    },
+    {
+      "node_id": "concept:b97919a18cec1a8ff58c",
+      "label": "capricious",
+      "activation": 0.46,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.8080135593220339
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 293
     },
     "consolidate": {
-      "attempts": 355,
-      "successes": 355
+      "attempts": 356,
+      "successes": 356
     },
     "connect": {
       "attempts": 278,
