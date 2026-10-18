@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T03:46:50.551313+00:00",
-  "generation": 3344,
+  "timestamp": "2026-10-18T03:48:22.682683+00:00",
+  "generation": 3345,
   "focus": "Meditations",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "gemini",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 3344,
   "last_search_generation": 3335,
   "cortex": {
-    "nodes": 9033,
-    "synapses": 52203,
+    "nodes": 9036,
+    "synapses": 52243,
     "active": 120,
-    "archived_synapses": 28887
+    "archived_synapses": 28813
   },
   "memory": {
     "episodes": 3235,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 10774,
-    "segments": 390,
+    "events": 10779,
+    "segments": 391,
     "compressed_snapshot": true,
     "snapshot_events": 10711
   },
@@ -43,6 +43,14 @@
       "score": 0.9648543689320388
     },
     {
+      "node_id": "concept:135052a6e6b94319",
+      "label": "satisfactory",
+      "activation": 0.76,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.9556081632653062
+    },
+    {
       "node_id": "concept:e2d5a675d4eab169",
       "label": "continue",
       "activation": 1.0,
@@ -53,18 +61,18 @@
     {
       "node_id": "concept:1abe5f34c25e621d",
       "label": "characteristic",
-      "activation": 0.9992925652427125,
+      "activation": 1.0,
       "novelty": 0.14598540145985403,
       "conflict": 0,
-      "score": 0.8990481923203713
+      "score": 0.8994160583941606
     },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
-      "activation": 0.989758424851485,
+      "activation": 0.9908037359720789,
       "novelty": 0.1607717041800643,
       "conflict": 0,
-      "score": 0.8980827410513896
+      "score": 0.8986263028340984
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -75,20 +83,12 @@
       "score": 0.8790947666195192
     },
     {
-      "node_id": "concept:d6957019457bc8ff25f5",
-      "label": "sequences",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
+      "activation": 1.0,
+      "novelty": 0.022464337863641468,
       "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:f7270c25ce02da400d21",
-      "label": "sought",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.8660653712231832
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 298
     },
     "consolidate": {
-      "attempts": 363,
-      "successes": 363
+      "attempts": 364,
+      "successes": 364
     },
     "connect": {
       "attempts": 286,
