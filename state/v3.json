@@ -1,14 +1,14 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T20:03:21.587638+00:00",
-  "generation": 3543,
+  "timestamp": "2026-10-18T20:17:13.572409+00:00",
+  "generation": 3544,
   "focus": "A Treatise of Human Nature",
-  "last_action": "consolidate",
-  "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 3535,
+  "last_action": "evolve",
+  "last_action_success": false,
+  "last_action_detail": "No external code-generation provider available",
+  "last_provider": "groq",
+  "last_provider_generation": 3544,
   "last_search_generation": 3542,
   "cortex": {
     "nodes": 9376,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 12334,
-    "segments": 457,
+    "events": 12340,
+    "segments": 458,
     "compressed_snapshot": true,
     "snapshot_events": 12329
   },
@@ -54,41 +54,41 @@
       "node_id": "concept:168cb8c4ed3da104077a",
       "label": "goltz",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.7917984251968504
     },
     {
       "node_id": "concept:23bcd2d83d4c0f270640",
       "label": "dogs",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.7917984251968504
     },
     {
       "node_id": "concept:cd21d9c2ea0b508979a6",
       "label": "shorn",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.78452319391635
     },
     {
       "node_id": "concept:9f79fd6cdc880e3914ac",
       "label": "pigeon",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.78452319391635
     },
     {
       "node_id": "concept:125058724ada049e53bd",
       "label": "pays",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.78452319391635
     }
   ],
   "skills": {
@@ -113,7 +113,7 @@
       "successes": 328
     },
     "evolve": {
-      "attempts": 17,
+      "attempts": 18,
       "successes": 4
     },
     "experiment": {
