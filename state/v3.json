@@ -1,8 +1,8 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T14:22:10.672575+00:00",
-  "generation": 3471,
+  "timestamp": "2026-10-18T14:23:54.232174+00:00",
+  "generation": 3472,
   "focus": "The Mind and the Brain",
   "last_action": "read",
   "last_action_success": true,
@@ -11,29 +11,37 @@
   "last_provider_generation": 3468,
   "last_search_generation": 3450,
   "cortex": {
-    "nodes": 9265,
-    "synapses": 54777,
+    "nodes": 9268,
+    "synapses": 54806,
     "active": 120,
-    "archived_synapses": 30579
+    "archived_synapses": 30602
   },
   "memory": {
-    "episodes": 3313,
-    "claims": 1545,
+    "episodes": 3314,
+    "claims": 1548,
     "stances": 26,
     "interests": 74,
-    "associative_comparisons": 1122,
+    "associative_comparisons": 1124,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 11767,
-    "segments": 433,
+    "events": 11778,
+    "segments": 434,
     "compressed_snapshot": true,
     "snapshot_events": 11736
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 296,
   "workspace": [
+    {
+      "node_id": "concept:718d95e8436b0ecd",
+      "label": "uninterrupted",
+      "activation": 1.0,
+      "novelty": 0.6896551724137931,
+      "conflict": 0,
+      "score": 1.0462068965517242
+    },
     {
       "node_id": "concept:48d492d08e9d314c034c",
       "label": "studies",
@@ -43,12 +51,20 @@
       "score": 0.9492561983471075
     },
     {
+      "node_id": "concept:e2d5a675d4eab169",
+      "label": "continue",
+      "activation": 1.0,
+      "novelty": 0.21321961620469085,
+      "conflict": 0,
+      "score": 0.9175692963752666
+    },
+    {
       "node_id": "concept:6907de2e8144a57274c7",
       "label": "treatise",
       "activation": 1.0,
-      "novelty": 0.15625,
+      "novelty": 0.15515903801396433,
       "conflict": 0,
-      "score": 0.9021875000000001
+      "score": 0.9018929402637703
     },
     {
       "node_id": "concept:24ea913efda289dc1b17",
@@ -73,22 +89,6 @@
       "novelty": 0.1440922190201729,
       "conflict": 0,
       "score": 0.8989048991354467
-    },
-    {
-      "node_id": "concept:4277d3259d4e4993",
-      "label": "conclusion",
-      "activation": 1.0,
-      "novelty": 0.047058823529411764,
-      "conflict": 0,
-      "score": 0.8727058823529412
-    },
-    {
-      "node_id": "concept:a3ca38ef0e8554b39ce6",
-      "label": "baby",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 57
     },
     "read": {
-      "attempts": 454,
-      "successes": 454
+      "attempts": 455,
+      "successes": 455
     },
     "explore": {
       "attempts": 322,
