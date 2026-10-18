@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T20:34:10.055923+00:00",
-  "generation": 3547,
+  "timestamp": "2026-10-18T20:35:56.802766+00:00",
+  "generation": 3548,
   "focus": "An Introduction to Psychology",
-  "last_action": "read",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 3544,
   "last_search_generation": 3542,
   "cortex": {
-    "nodes": 9382,
+    "nodes": 9383,
     "synapses": 56187,
     "active": 120,
     "archived_synapses": 31317
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 12366,
+    "events": 12370,
     "segments": 459,
     "compressed_snapshot": true,
     "snapshot_events": 12329
@@ -34,6 +34,22 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 310,
   "workspace": [
+    {
+      "node_id": "concept:242ae55465095300",
+      "label": "neighbouring",
+      "activation": 0.76,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.9730854625550662
+    },
+    {
+      "node_id": "concept:02aab799561baeb9",
+      "label": "concerning",
+      "activation": 1.0,
+      "novelty": 0.20725388601036274,
+      "conflict": 0,
+      "score": 0.915958549222798
+    },
     {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
@@ -46,49 +62,33 @@
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.09289363678588018,
+      "novelty": 0.09212344541685859,
       "conflict": 0,
-      "score": 0.8850812819321876
+      "score": 0.8848733302625518
     },
     {
-      "node_id": "concept:37f092e33b0f6a43cdf3",
-      "label": "portions",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.06101281269066504,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8764734594264796
     },
     {
-      "node_id": "concept:e1f79758cc42e6fe6037",
-      "label": "removed",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.046959380136182206,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8726790326367693
     },
     {
-      "node_id": "concept:9f429383114723198b39",
-      "label": "destroying",
+      "node_id": "concept:27a0113e9ce8bfd5ba29",
+      "label": "fortune",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:b713020758fb1bd4a198",
-      "label": "cerebral",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:260b27ca3018bc10add7",
-      "label": "entire",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 416
     },
     "connect": {
-      "attempts": 329,
-      "successes": 329
+      "attempts": 330,
+      "successes": 330
     },
     "evolve": {
       "attempts": 18,
