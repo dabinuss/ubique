@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T10:47:35.275290+00:00",
-  "generation": 3430,
+  "timestamp": "2026-10-18T10:49:14.703532+00:00",
+  "generation": 3431,
   "focus": "The Republic of Plato",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3429,
   "last_search_generation": 3427,
   "cortex": {
-    "nodes": 9188,
-    "synapses": 53970,
+    "nodes": 9192,
+    "synapses": 54042,
     "active": 120,
-    "archived_synapses": 30200
+    "archived_synapses": 30166
   },
   "memory": {
     "episodes": 3295,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 11465,
+    "events": 11470,
     "segments": 420,
     "compressed_snapshot": true,
     "snapshot_events": 11409
@@ -51,14 +51,6 @@
       "score": 0.9198669623059867
     },
     {
-      "node_id": "concept:d9298a10d1b0735837dc",
-      "label": "other",
-      "activation": 1.0,
-      "novelty": 0.14992503748125938,
-      "conflict": 0,
-      "score": 0.9004797601199401
-    },
-    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -75,20 +67,28 @@
       "score": 0.8778985747431223
     },
     {
-      "node_id": "concept:0fc468dc240a979e",
-      "label": "collection",
-      "activation": 1.0,
-      "novelty": 0.047359696897939854,
-      "conflict": 0,
-      "score": 0.8727871181624438
-    },
-    {
       "node_id": "concept:4277d3259d4e4993",
       "label": "conclusion",
       "activation": 1.0,
       "novelty": 0.04715868898844613,
       "conflict": 0,
       "score": 0.8727328460268804
+    },
+    {
+      "node_id": "concept:1ff912774d31395ae678",
+      "label": "léman",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:5f76448660df35903d28",
+      "label": "jamais",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 314
     },
     "consolidate": {
-      "attempts": 385,
-      "successes": 385
+      "attempts": 386,
+      "successes": 386
     },
     "connect": {
       "attempts": 304,
