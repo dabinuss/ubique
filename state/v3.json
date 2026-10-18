@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-18T20:51:29.160634+00:00",
-  "generation": 3550,
+  "timestamp": "2026-10-18T20:53:13.426170+00:00",
+  "generation": 3551,
   "focus": "An Introduction to Psychology",
-  "last_action": "explore",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action_detail": "Read 8000 source characters",
   "last_provider": null,
   "last_provider_generation": 3544,
   "last_search_generation": 3542,
   "cortex": {
-    "nodes": 9389,
-    "synapses": 56237,
+    "nodes": 9391,
+    "synapses": 56273,
     "active": 120,
-    "archived_synapses": 31333
+    "archived_synapses": 31397
   },
   "memory": {
-    "episodes": 3355,
-    "claims": 1616,
+    "episodes": 3356,
+    "claims": 1619,
     "stances": 26,
     "interests": 74,
-    "associative_comparisons": 1190,
+    "associative_comparisons": 1192,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 12379,
+    "events": 12390,
     "segments": 460,
     "compressed_snapshot": true,
     "snapshot_events": 12329
@@ -54,17 +54,9 @@
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.09136592051164916,
+      "novelty": 0.09099181073703366,
       "conflict": 0,
-      "score": 0.8846687985381454
-    },
-    {
-      "node_id": "concept:242ae55465095300",
-      "label": "neighbouring",
-      "activation": 0.6178960016000001,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.8817140840973063
+      "score": 0.8845677888989991
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -86,9 +78,17 @@
       "node_id": "concept:27a0113e9ce8bfd5ba29",
       "label": "fortune",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8080135593220339
+    },
+    {
+      "node_id": "concept:cea23dd4b87e8b00d19f",
+      "label": "expected",
+      "activation": 0.46,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 61
     },
     "read": {
-      "attempts": 476,
-      "successes": 476
+      "attempts": 477,
+      "successes": 477
     },
     "explore": {
       "attempts": 337,
