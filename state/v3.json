@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T05:42:44.672169+00:00",
-  "generation": 3655,
+  "timestamp": "2026-10-19T05:44:28.947676+00:00",
+  "generation": 3656,
   "focus": "Psychology of the Unconscious",
   "last_action": "explore",
   "last_action_success": true,
   "last_action_detail": "Recombined existing memories",
-  "last_provider": "gemini",
+  "last_provider": null,
   "last_provider_generation": 3655,
   "last_search_generation": 3634,
   "cortex": {
     "nodes": 9599,
     "synapses": 58429,
     "active": 120,
-    "archived_synapses": 32273
+    "archived_synapses": 32313
   },
   "memory": {
     "episodes": 3417,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 13157,
+    "events": 13161,
     "segments": 495,
     "compressed_snapshot": true,
     "snapshot_events": 13100
@@ -59,36 +59,36 @@
       "score": 0.8728970623358014
     },
     {
-      "node_id": "concept:079ff386a3effa08",
-      "label": "internal",
-      "activation": 0.6565279252726215,
-      "novelty": 0.49140049140049136,
-      "conflict": 0,
-      "score": 0.8140726538198959
-    },
-    {
       "node_id": "concept:d1d3d85c7ec15bf039a8",
       "label": "sensibility",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:3f414f7269e7660ce766",
       "label": "lesions",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
+    },
+    {
+      "node_id": "concept:079ff386a3effa08",
+      "label": "internal",
+      "activation": 0.6152433338438329,
+      "novelty": 0.4807692307692307,
+      "conflict": 0,
+      "score": 0.7897342259064855
     },
     {
       "node_id": "concept:8b21dd5073ed7b68afea",
       "label": "secondly",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.7352941176470589,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.777729411764706
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 504
     },
     "explore": {
-      "attempts": 358,
-      "successes": 357
+      "attempts": 359,
+      "successes": 358
     },
     "consolidate": {
       "attempts": 446,
