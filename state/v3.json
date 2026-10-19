@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T00:22:04.116808+00:00",
-  "generation": 3595,
-  "focus": "The Nicomachean Ethics of Aristotle",
-  "last_action": "read",
+  "timestamp": "2026-10-19T00:23:56.675105+00:00",
+  "generation": 3596,
+  "focus": "The Psychology of the Emotions",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 3590,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "gemini",
+  "last_provider_generation": 3596,
   "last_search_generation": 3588,
   "cortex": {
-    "nodes": 9488,
-    "synapses": 57325,
+    "nodes": 9492,
+    "synapses": 57327,
     "active": 120,
-    "archived_synapses": 31725
+    "archived_synapses": 31629
   },
   "memory": {
-    "episodes": 3378,
-    "claims": 1649,
+    "episodes": 3380,
+    "claims": 1650,
     "stances": 26,
     "interests": 74,
     "associative_comparisons": 1228,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 12711,
+    "events": 12720,
     "segments": 475,
     "compressed_snapshot": true,
     "snapshot_events": 12679
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 312,
+  "evidence_reviews": 313,
   "workspace": [
     {
       "node_id": "concept:e0f895872d65b2528fee",
@@ -43,20 +43,20 @@
       "score": 0.8991588107324149
     },
     {
+      "node_id": "concept:24ea913efda289dc1b17",
+      "label": "most",
+      "activation": 1.0,
+      "novelty": 0.1404494382022472,
+      "conflict": 0,
+      "score": 0.8979213483146067
+    },
+    {
       "node_id": "concept:d9298a10d1b0735837dc",
       "label": "other",
       "activation": 1.0,
       "novelty": 0.1313197636244255,
       "conflict": 0,
       "score": 0.895456336178595
-    },
-    {
-      "node_id": "concept:68b4636e980e55ad",
-      "label": "consciousness",
-      "activation": 1.0,
-      "novelty": 0.10621348911311737,
-      "conflict": 0,
-      "score": 0.8886776420605418
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -75,20 +75,20 @@
       "score": 0.8761628255013469
     },
     {
-      "node_id": "concept:411f62e7fd037280",
-      "label": "actually",
-      "activation": 1.0,
-      "novelty": 0.04637143519591932,
-      "conflict": 0,
-      "score": 0.8725202875028983
-    },
-    {
       "node_id": "concept:f2d44b8ac655a7ad",
       "label": "public",
       "activation": 1.0,
       "novelty": 0.025046963055729496,
       "conflict": 0,
       "score": 0.866762680025047
+    },
+    {
+      "node_id": "concept:994bef0057cdabccdd42",
+      "label": "pasture",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 345
     },
     "consolidate": {
-      "attempts": 428,
-      "successes": 428
+      "attempts": 429,
+      "successes": 429
     },
     "connect": {
       "attempts": 340,
