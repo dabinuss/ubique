@@ -21,8 +21,8 @@ META_TERMS = {
     "transcriber", "proofreading", "distributed", "redistribute",
     "anyone", "anywhere", "www", "http", "https",
 }
-START = re.compile(r"\\*{3}\\s*START OF (?:THE|THIS) PROJECT GUTENBERG EBOOK[^\\n]*\\*{3}", re.I)
-END = re.compile(r"\\*{3}\\s*END OF (?:THE|THIS) PROJECT GUTENBERG EBOOK", re.I)
+START = re.compile(r"\*{3}\s*START OF (?:THE|THIS) PROJECT GUTENBERG EBOOK[^\n]*\*{3}", re.I)
+END = re.compile(r"\*{3}\s*END OF (?:THE|THIS) PROJECT GUTENBERG EBOOK", re.I)
 
 def clean_source(text: str) -> str:
     """Preserve author text while excluding obvious Gutenberg headers/licenses.
@@ -51,7 +51,7 @@ def clean_source(text: str) -> str:
                              "title:", "author:", "credits:", "updated:")):
             continue
         lines.append(line)
-    return "\\n".join(lines)
+    return "\n".join(lines)
 
 def content_terms(text: str, limit: int = 24) -> list[str]:
     from .hippocampus import terms
@@ -62,7 +62,7 @@ def content_terms(text: str, limit: int = 24) -> list[str]:
 
 def meaningful_sentences(text: str, limit: int = 10) -> list[str]:
     clean = clean_source(text)
-    chunks = re.split(r"(?<=[.!?])\\s+", " ".join(clean.split()))
+    chunks = re.split(r"(?<=[.!?])\s+", " ".join(clean.split()))
     choices = []
     for chunk in chunks:
         sentence = chunk.strip()
