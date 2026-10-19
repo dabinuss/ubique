@@ -1,38 +1,38 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T08:16:06.659750+00:00",
-  "generation": 3688,
+  "timestamp": "2026-10-19T08:30:07.566549+00:00",
+  "generation": 3689,
   "focus": "The Republic of Plato",
-  "last_action": "consolidate",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 3684,
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": "gemini",
+  "last_provider_generation": 3689,
   "last_search_generation": 3680,
   "cortex": {
-    "nodes": 9656,
-    "synapses": 58947,
+    "nodes": 9662,
+    "synapses": 58989,
     "active": 120,
-    "archived_synapses": 32361
+    "archived_synapses": 32401
   },
   "memory": {
-    "episodes": 3436,
-    "claims": 1723,
+    "episodes": 3439,
+    "claims": 1725,
     "stances": 26,
     "interests": 74,
-    "associative_comparisons": 1298,
+    "associative_comparisons": 1300,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 13411,
-    "segments": 506,
+    "events": 13426,
+    "segments": 507,
     "compressed_snapshot": true,
     "snapshot_events": 13361
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 329,
+  "evidence_reviews": 330,
   "workspace": [
     {
       "node_id": "concept:24ea913efda289dc1b17",
@@ -54,41 +54,41 @@
       "node_id": "concept:c3bc45ac352fe43ff8f0",
       "label": "share",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:1888101dae1d8fc2c564",
       "label": "absence",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:0fcd568a5cb9bdb4677b",
-      "label": "control",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:185a8a975263c428b149",
-      "label": "plainly",
       "activation": 0.46,
       "novelty": 0.8810572687224669,
       "conflict": 0,
       "score": 0.8170854625550661
     },
     {
+      "node_id": "concept:0fcd568a5cb9bdb4677b",
+      "label": "control",
+      "activation": 0.46,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.8170854625550661
+    },
+    {
+      "node_id": "concept:185a8a975263c428b149",
+      "label": "plainly",
+      "activation": 0.46,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.8080135593220339
+    },
+    {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.8465633035219664,
-      "novelty": 0.04776689754000478,
+      "activation": 0.8522611201138764,
+      "novelty": 0.047664442326024785,
       "conflict": 0,
-      "score": 0.7931099801672239
+      "score": 0.7960451818872425
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 67
     },
     "read": {
-      "attempts": 512,
-      "successes": 512
+      "attempts": 513,
+      "successes": 513
     },
     "explore": {
       "attempts": 365,
