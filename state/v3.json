@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T10:34:15.020048+00:00",
-  "generation": 3712,
+  "timestamp": "2026-10-19T10:36:06.918531+00:00",
+  "generation": 3713,
   "focus": "The Story of the Mind",
-  "last_action": "explore",
+  "last_action": "evolve",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": "groq",
+  "last_action_detail": "{\"accepted\": true, \"title\": \"Add curiosity boost for never‑tried action kinds\", \"summary\": \"The planner now gives a small positive bias to candidate actions whose kind has never been observed before. This encourages exploratory behavior and aligns with Ubique’s goal of continual curiosity and experiential learning, while keeping the existing reliability and repetition penalties intact.\", \"branch\":",
+  "last_provider": null,
   "last_provider_generation": 3712,
   "last_search_generation": 3703,
   "cortex": {
     "nodes": 9686,
     "synapses": 59407,
     "active": 120,
-    "archived_synapses": 32299
+    "archived_synapses": 32333
   },
   "memory": {
     "episodes": 3448,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 13590,
+    "events": 13596,
     "segments": 515,
     "compressed_snapshot": true,
     "snapshot_events": 13533
@@ -54,41 +54,41 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.05651313930488838,
+      "novelty": 0.056369785794813984,
       "conflict": 0,
-      "score": 0.8752585476123198
+      "score": 0.8752198421645998
     },
     {
       "node_id": "concept:73aa51a90915dd9fc6b4",
       "label": "cteristics",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:28d9e7bbbf81137ec80d",
       "label": "relationship",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.78452319391635
     },
     {
       "node_id": "concept:e0b919fec08134919b81",
       "label": "regarded",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.7654068965517242
     },
     {
       "node_id": "concept:38a9c1e721584da284b9",
       "label": "line",
       "activation": 0.46,
-      "novelty": 0.6309148264984227,
+      "novelty": 0.6134969325153374,
       "conflict": 0,
-      "score": 0.7495470031545741
+      "score": 0.7448441717791412
     }
   ],
   "skills": {
@@ -113,8 +113,8 @@
       "successes": 365
     },
     "evolve": {
-      "attempts": 18,
-      "successes": 4
+      "attempts": 19,
+      "successes": 5
     },
     "experiment": {
       "attempts": 2,
