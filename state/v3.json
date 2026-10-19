@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T13:34:52.325381+00:00",
-  "generation": 3746,
-  "focus": "An Introduction to Psychology",
-  "last_action": "read",
+  "timestamp": "2026-10-19T13:36:57.737067+00:00",
+  "generation": 3747,
+  "focus": "The Psychology of the Emotions",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 3746,
   "last_search_generation": 3726,
   "cortex": {
-    "nodes": 9759,
-    "synapses": 59999,
+    "nodes": 9760,
+    "synapses": 60003,
     "active": 120,
-    "archived_synapses": 32575
+    "archived_synapses": 32525
   },
   "memory": {
     "episodes": 3466,
@@ -26,30 +26,14 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 13843,
-    "segments": 527,
+    "events": 13848,
+    "segments": 528,
     "compressed_snapshot": true,
     "snapshot_events": 13792
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 345,
   "workspace": [
-    {
-      "node_id": "concept:721048dc35951006",
-      "label": "observations",
-      "activation": 1.0,
-      "novelty": 0.2577319587628866,
-      "conflict": 0,
-      "score": 0.9295876288659795
-    },
-    {
-      "node_id": "concept:02aab799561baeb9",
-      "label": "concerning",
-      "activation": 1.0,
-      "novelty": 0.19627085377821393,
-      "conflict": 0,
-      "score": 0.9129931305201178
-    },
     {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
@@ -75,20 +59,36 @@
       "score": 0.8726790326367693
     },
     {
-      "node_id": "concept:efb694b46ac52324894e",
-      "label": "emphatic",
+      "node_id": "concept:8bd0c8c86654d762b3ef",
+      "label": "joins",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:4b8d8a784eb61b7c6b43",
-      "label": "denial",
+      "node_id": "concept:03dd65bf2241cb43fca6",
+      "label": "supplement",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:94e36fd68ab5470de4d2",
+      "label": "resultants",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:2ec3bb17df1c8ce6c917",
+      "label": "regularity",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 375
     },
     "consolidate": {
-      "attempts": 471,
-      "successes": 471
+      "attempts": 472,
+      "successes": 472
     },
     "connect": {
       "attempts": 373,
