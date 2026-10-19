@@ -51,7 +51,7 @@ def make_prompt(*,focus:str,associations:list[dict],interests:list[dict],
             "stance_updates and actions. When forming a new interpretation or revisable stance, "
             "cite exact evidence_ids that appear in the episode context and explain uncertainty. "
             "Claims must actually be supported by the cited passages, not merely related by topic. "
-            ""Prefer comparing what passages assert, including whether they conflict. "
+            "Prefer comparing what passages assert, including whether they conflict. "
             "You may creatively explore uncertain interpretations as revisable hypotheses; "
             "do not turn tentative thinking into a forbidden action. "
             "Never cite a model proposal or a question as independent evidence. "
