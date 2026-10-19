@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T14:31:06.325542+00:00",
-  "generation": 3757,
+  "timestamp": "2026-10-19T14:32:56.050561+00:00",
+  "generation": 3758,
   "focus": "Meditations",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 3757,
   "last_search_generation": 3749,
   "cortex": {
-    "nodes": 9775,
-    "synapses": 60145,
+    "nodes": 9783,
+    "synapses": 60227,
     "active": 120,
-    "archived_synapses": 32567
+    "archived_synapses": 32513
   },
   "memory": {
     "episodes": 3472,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 13936,
+    "events": 13941,
     "segments": 532,
     "compressed_snapshot": true,
     "snapshot_events": 13884
@@ -78,17 +78,17 @@
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
       "activation": 1.0,
-      "novelty": 0.046959380136182206,
+      "novelty": 0.04676174888940847,
       "conflict": 0,
-      "score": 0.8726790326367693
+      "score": 0.8726256722001404
     },
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.943311201878769,
-      "novelty": 0.04608294930875576,
+      "activation": 0.9466116511237624,
+      "novelty": 0.045987583352494824,
       "conflict": 0,
-      "score": 0.8429642212903239
+      "score": 0.8446547060895302
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 377
     },
     "consolidate": {
-      "attempts": 474,
-      "successes": 474
+      "attempts": 475,
+      "successes": 475
     },
     "connect": {
       "attempts": 375,
