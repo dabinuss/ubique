@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T15:23:08.918411+00:00",
-  "generation": 3766,
+  "timestamp": "2026-10-19T15:26:16.926241+00:00",
+  "generation": 3767,
   "focus": "Psychology of the Unconscious",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3763,
   "last_search_generation": 3749,
   "cortex": {
-    "nodes": 9799,
-    "synapses": 60391,
+    "nodes": 9801,
+    "synapses": 60425,
     "active": 120,
-    "archived_synapses": 32693
+    "archived_synapses": 32661
   },
   "memory": {
     "episodes": 3474,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 13993,
+    "events": 13998,
     "segments": 536,
     "compressed_snapshot": true,
     "snapshot_events": 13964
@@ -34,14 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 349,
   "workspace": [
-    {
-      "node_id": "concept:923b4b90ea64343e4a1c",
-      "label": "states",
-      "activation": 1.0,
-      "novelty": 0.3629764065335753,
-      "conflict": 0,
-      "score": 0.9580036297640655
-    },
     {
       "node_id": "concept:3853eb486f0ccd5b3023",
       "label": "varieties",
@@ -51,20 +43,12 @@
       "score": 0.9236792452830189
     },
     {
-      "node_id": "concept:64b218956223eb12d13e",
-      "label": "principles",
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
       "activation": 1.0,
-      "novelty": 0.18484288354898337,
+      "novelty": 0.13614703880190607,
       "conflict": 0,
-      "score": 0.9099075785582256
-    },
-    {
-      "node_id": "concept:5a2a957b269e8f0f",
-      "label": "external",
-      "activation": 1.0,
-      "novelty": 0.1,
-      "conflict": 0,
-      "score": 0.887
+      "score": 0.8967597004765147
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -83,12 +67,28 @@
       "score": 0.8745200322667384
     },
     {
-      "node_id": "concept:1c48f6310f1c849b4ac3",
-      "label": "mind",
-      "activation": 0.8597345865165806,
-      "novelty": 0.04579803068468056,
+      "node_id": "concept:8153c4e65bb853c8",
+      "label": "identity",
+      "activation": 1.0,
+      "novelty": 0.04839099927413501,
       "conflict": 0,
-      "score": 0.7994274532734857
+      "score": 0.8730655698040164
+    },
+    {
+      "node_id": "concept:19818c00e27a53819a4c",
+      "label": "mosaic",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:a54e5638bbc34d80ddd3",
+      "label": "painting",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 379
     },
     "consolidate": {
-      "attempts": 477,
-      "successes": 477
+      "attempts": 478,
+      "successes": 478
     },
     "connect": {
       "attempts": 377,
