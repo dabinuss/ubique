@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T01:53:41.163047+00:00",
-  "generation": 3613,
+  "timestamp": "2026-10-19T01:55:17.080339+00:00",
+  "generation": 3614,
   "focus": "The Story of the Mind",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3610,
   "last_search_generation": 3611,
   "cortex": {
-    "nodes": 9528,
-    "synapses": 57634,
+    "nodes": 9529,
+    "synapses": 57692,
     "active": 120,
-    "archived_synapses": 31684
+    "archived_synapses": 31704
   },
   "memory": {
     "episodes": 3391,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 12852,
+    "events": 12857,
     "segments": 481,
     "compressed_snapshot": true,
     "snapshot_events": 12841
@@ -43,6 +43,14 @@
       "score": 0.895456336178595
     },
     {
+      "node_id": "concept:5a2a957b269e8f0f",
+      "label": "external",
+      "activation": 1.0,
+      "novelty": 0.11743981209630064,
+      "conflict": 0,
+      "score": 0.8917087492660012
+    },
+    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -51,44 +59,36 @@
       "score": 0.8760762131586781
     },
     {
-      "node_id": "concept:9557070a43b1b8de33dd",
-      "label": "sexuality",
+      "node_id": "concept:989de95711b0ec89a571",
+      "label": "ignorabimus",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:42b1b3aafb7d7f736682",
-      "label": "severely",
+      "node_id": "concept:cbed6f45ba147b410399",
+      "label": "contributed",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:b5bdafe95dec0c53112c",
-      "label": "youth",
+      "node_id": "concept:d41d08ea321187c07c46",
+      "label": "refutation",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:3fc414de196c5d497677",
-      "label": "surprising",
+      "node_id": "concept:5f505ecea5a7c6d23e06",
+      "label": "transcendental",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.777729411764706
-    },
-    {
-      "node_id": "concept:5c5ece90b211b3075d6c",
-      "label": "denounced",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 348
     },
     "consolidate": {
-      "attempts": 433,
-      "successes": 433
+      "attempts": 434,
+      "successes": 434
     },
     "connect": {
       "attempts": 344,
