@@ -6,6 +6,7 @@ from ..providers.huggingface import HuggingFaceProvider
 from ..providers.router import ProviderRouter
 from ..brain.substrate import CognitiveSubstrateManager
 from ..config import Config
+from .text_quality import clean_source
 
 class ThinkingProviders:
     def __init__(self,config:Config):
@@ -39,7 +40,7 @@ def make_prompt(*,focus:str,associations:list[dict],interests:list[dict],
     context={"focus":focus,"associations":associations[:10],
              "interests":interests[:12],
              "episodes":[{"id":e.get("id"),"source":e.get("source"),
-                          "text":str(e.get("text",""))[:800]} for e in episodes[:6]],
+                          "text":clean_source(str(e.get("text","")))[:1200]} for e in episodes[:6]],
              "stances":known_stances[:8]}
     return ("You are a temporary language and reasoning contributor to Ubique 3. "
             "Ubique's persistent self and learning are in its own neural and semantic memory. "
@@ -50,7 +51,9 @@ def make_prompt(*,focus:str,associations:list[dict],interests:list[dict],
             "stance_updates and actions. When forming a new interpretation or revisable stance, "
             "cite exact evidence_ids that appear in the episode context and explain uncertainty. "
             "Claims must actually be supported by the cited passages, not merely related by topic. "
-            "Prefer comparing what passages assert, including whether they conflict. "
+            ""Prefer comparing what passages assert, including whether they conflict. "
+            "You may creatively explore uncertain interpretations as revisable hypotheses; "
+            "do not turn tentative thinking into a forbidden action. "
             "Never cite a model proposal or a question as independent evidence. "
             "When useful compare two distinct books and challenge existing assumptions. "
             "Actions should be read/library, experiment, evolve, connect, explore "
