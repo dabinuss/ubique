@@ -57,8 +57,8 @@ class UbiqueV3:
         self.last_packet=None
         self.since_snapshot=int(self.journal.manifest.get("events",0)
                                 -self.journal.manifest.get("snapshot_events",0))
-        self.history=[e.get("data",{}).get("kind","") for e in
-                      self.journal.events() if e.get("kind")=="action_outcome"][-30:]
+        self.history=[e.get("data",{}).get("kind","")
+                      for e in self.journal.recent("action_outcome",limit=30)]
 
     def _recent_focus(self,generation:int)->tuple[str,list[dict]]:
         old=[e for e in self.hippocampus.replay(10,generation)
@@ -203,9 +203,9 @@ class UbiqueV3:
         candidates=reading_candidates(self.curiosity)
         # Sustain one line of reading long enough to connect consecutive
         # chapters, then give the other books room again.
-        read_history=[e.get("data",{}) for e in self.journal.events()
-                      if e["kind"]=="action_outcome"
-                      and e.get("data",{}).get("kind")=="read"
+        read_history=[e.get("data",{}) for e in self.journal.recent(
+                      "action_outcome",limit=80)
+                      if e.get("data",{}).get("kind")=="read"
                       and e.get("data",{}).get("success")][-8:]
         if read_history:
             last_title=str(read_history[-1].get("payload",{}).get("title",""))
@@ -416,8 +416,7 @@ class UbiqueV3:
                          and self.planner.quality[kind][0]/self.planner.quality[kind][1]<.85)
             if self.providers and self.providers.available() and (failures or
                   (len(self.semantics.comparisons)>=12 and generation%79==0)):
-                recent_changes=[e for e in self.journal.events()
-                                if e["kind"]=="change_intent"][-1:]
+                recent_changes=self.journal.recent("change_intent",limit=1)
                 last_change=int(recent_changes[-1]["generation"] or 0) if recent_changes else -1000
                 if generation-last_change>=72:
                     reason=("Investigate recurring failures in the v3 learning and action cycle."
