@@ -1,10 +1,27 @@
-# Ubique v2 — Neurocognitive Autonomous System
+# Ubique — autonomous neurocognitive system (v3)
 
 Ubique is a GitHub-native autonomous system with persistent memory, associative cognition, multi-provider reasoning and self-modification.
 
-Version 2 replaces the old serial reflection loop with a cognitive architecture inspired by real mechanisms studied in neuroscience and cognitive science: episodic memory, associative activation, limited working space, replay, consolidation, forgetting, salience, uncertainty and competitive action selection.
+The v3 runtime builds on version 2, replacing the old serial reflection loop with a cognitive architecture inspired by real mechanisms studied in neuroscience and cognitive science: episodic memory, associative activation, limited working space, replay, consolidation, forgetting, salience, uncertainty and competitive action selection.
 
 Ubique does not contain a hard-coded answer to what it is, what it should want or what consciousness is. The architecture provides mechanisms; conclusions remain open.
+
+## Current v3 open cognition (October 2026)
+
+V3 reads real source passages, filters publishing headers from attention (without
+deleting the original evidence), connects distinct authors' claims to open and
+revisable questions, and runs local experiments even when all LLM providers
+are offline. Reversible self-evolution can now address ordinary Python modules,
+tests and Markdown documentation beyond four predefined targets. Only the
+credential/recovery kernel, runtime continuity records, and workflows stay
+protected from accidental self-destruction. Compilation and runtime import are
+hard gates; full regression tests provide advisory feedback plus an independent
+scheduled CI signal. Nightly tests and memory integrity checks do not dictate
+what Ubique ought to think.
+
+The historical event log remains append-only and verifiable. Bounded recent
+lookups avoid reading all compressed shards merely to inspect the latest actions.
+This software does not assert that associations are conscious experiences.
 
 ## Core runtime
 

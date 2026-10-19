@@ -2,10 +2,15 @@ name: Ubique V3 Memory Integrity
 
 on:
   workflow_dispatch:
+  # Read-only independent checks of the accumulated memory and cognitive focus.
+  schedule:
+    - cron: "37 4 * * *"
   push:
     branches: [main]
     paths:
       - ".github/workflows/v3-memory-integrity.yml"
+      - "src/ubique/v3/**"
+      - "tests/test_v3*.py"
 
 permissions:
   contents: read
@@ -62,7 +67,7 @@ jobs:
           from ubique.v3.storage import Journal
           from ubique.v3.runtime import UbiqueV3
           from ubique.v3.evidence import assess, is_system_topic
-          from ubique.v3.hippocampus import terms
+          from ubique.v3.text_quality import content_terms, META_TERMS
 
           journal = Journal(ROOT / "memory" / "v3")
           before = int(journal.manifest["events"])
@@ -86,8 +91,8 @@ jobs:
                           and str(ep.get("source", "")).startswith("library:")][:4]
           grounding = set()
           for ep in recent_books:
-              grounding.update(terms(str(ep.get("text", ""))[:3500], 60))
-              grounding.update(terms(str(ep.get("payload", {}).get("title", "")), 12))
+              grounding.update(content_terms(str(ep.get("text", ""))[:3500], 60))
+              grounding.update(content_terms(str(ep.get("payload", {}).get("title", "")), 12))
           supported = sum(1 for n in brain.cortex.nodes.values()
                           if n.activation >= .03 and n.label.casefold() in grounding)
           selected = sum(1 for title in items if title.casefold() in grounding)
@@ -95,6 +100,7 @@ jobs:
               assert selected >= 5, (items, supported, selected)
           elif supported >= 2:
               assert selected >= 2, (items, supported, selected)
+          assert not (set(label.casefold() for label in items) & META_TERMS), items
           print("Source-grounded workspace:", selected, "of", len(items))
           unrelated = assess("Unicorns are constructed from strawberry plastic", sources[:1])
           assert unrelated.verdict == "unrelated"

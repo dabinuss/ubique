@@ -6,6 +6,7 @@ from typing import Any,Callable
 from ..library import apply_library_action,library_catalog
 from ..experiments import run_experiment, SAFE_EXPERIMENTS
 from .hippocampus import terms
+from .text_quality import content_terms, clean_source
 from .representation import Cortex
 from .curiosity import Curiosity
 from .storage import Journal
@@ -75,8 +76,8 @@ def build_registry()->Registry:
         eid=ctx["hippocampus"].encode(excerpt,source="library:"+str(spec["item_id"]),
               kind="reading",epistemic_status="source_passage",
               generation=ctx["generation"],salience=.75,
-              concepts=terms(str(spec.get("title",""))+" "+excerpt,16),
-              payload={"item_id":spec["item_id"],"offset":record["offset"],
+              concepts=content_terms(str(spec.get("title",""))+" "+excerpt,16),
+              payload={"item_id":spec["item_id"],"title":spec.get("title",""),"offset":record["offset"],
                        "next_offset":record["next_offset"]})["id"]
         # Semantic learning extracts attributable sentences and cross-book comparisons;
         # the raw excerpt remains an episode, not a confirmed scientific claim.
@@ -86,7 +87,7 @@ def build_registry()->Registry:
             "payload":{"title":spec.get("title","")}},
             generation=ctx["generation"])
         active=ctx["cortex"].activate(
-           terms(str(spec.get("title",""))+" "+excerpt,13),strength=.76)
+           content_terms(str(spec.get("title",""))+" "+excerpt,13),strength=.76)
         ctx["cortex"].learn(active,reward=.13,source_event=eid)
         # Advancement and meaningful comparisons, not a fixed .55, determine
         # progress; an ordinary source read is still a real learning event.

@@ -18,6 +18,9 @@ on:
       - ".github/workflows/tests.yml"
       - ".github/workflows/heartbeat.yml"
   workflow_dispatch:
+  # Independent daily verification, including code written by Ubique itself.
+  schedule:
+    - cron: "17 4 * * *"
 
 permissions:
   contents: read

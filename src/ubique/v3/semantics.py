@@ -10,6 +10,7 @@ import random  # <-- new import for stochastic exploration
 from typing import Set
 
 from .hippocampus import Hippocampus, terms
+from .text_quality import clean_source, content_terms, meaningful_sentences
 from .world_model import WorldModel, key
 from .representation import Cortex
 from .storage import Journal
@@ -19,7 +20,7 @@ BOILERPLATE = ("project gutenberg", "license", "copyright",
 
 
 def source_sentence(text: str) -> str:
-    chunks = re.split(r"(?<=[.!?])\s+", text.replace("\n", " "))
+    chunks = meaningful_sentences(text, limit=8)
     for sentence in chunks:
         value = " ".join(sentence.split())
         if (65 <= len(value) <= 330 and len(terms(value)) >= 6
@@ -100,8 +101,8 @@ class SemanticLearner:
                 source_refs=[eid], confidence=0.28, generation=generation)
             result.append({"type": "quotation", "claim": claim["id"], "evidence_ids": [eid]})
 
-        current = set(terms(str(episode.get("text", ""))[:1700], 24))
-        current |= set(terms(str(episode.get("payload", {}).get("title", "")), 12))
+        current = set(content_terms(str(episode.get("text", ""))[:1700], 24))
+        current |= set(content_terms(str(episode.get("payload", {}).get("title", "")), 12))
         earlier = self.hippocampus.all_episodes()
         choices: list[tuple[int, dict, set[str]]] = []
         for other in reversed(earlier):
@@ -110,8 +111,8 @@ class SemanticLearner:
             family = self.family(other)
             if not family or family == self.family(episode):
                 continue
-            concepts = set(terms(str(other.get("text", ""))[:1700], 24))
-            concepts |= set(terms(str(other.get("payload", {}).get("title", "")), 12))
+            concepts = set(content_terms(str(other.get("text", ""))[:1700], 24))
+            concepts |= set(content_terms(str(other.get("payload", {}).get("title", "")), 12))
             shared = current & concepts
             # --- Begin exploratory threshold logic ---
             # Normal requirement: at least 2 shared terms.
@@ -142,7 +143,7 @@ class SemanticLearner:
                 if not family or family == self.family(episode):
                     continue
                 concepts = set(terms(str(other.get("text", ""))[:1700], 24))
-                concepts |= set(terms(str(other.get("payload", {}).get("title", "")), 12))
+                concepts |= set(content_terms(str(other.get("payload", {}).get("title", "")), 12))
                 shared = current & concepts
                 if len(shared) >= 1:
                     choices.append((len(shared), other, shared))
@@ -189,6 +190,14 @@ class SemanticLearner:
                                     generation=generation)
             comparison["claim_id"] = link["id"]
             result.append(comparison)
+            # Keep actual author sentences next to a lexical comparison.
+            # The agent may investigate them freely without assuming agreement.
+            first = source_sentence(str(episode.get("text", "")))
+            second = source_sentence(str(other.get("text", "")))
+            comparison["passages"] = [first, second]
+            comparison["question"] = (
+                "What is the relationship between these two source passages "
+                "about " + ", ".join(shared[:3]) + "?")
             left = self.cortex.ensure(shared[0])
             right = self.cortex.ensure(shared[-1])
             self.cortex.connect(left.id, right.id, relation="compared_in_sources",

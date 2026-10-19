@@ -310,6 +310,33 @@ class Journal:
             self._cached_events = records
         return self._cached_events[max(0, int(after)):]
 
+
+    def recent(self, kind: str | None = None, *, limit: int = 30) -> list[dict]:
+        """Read just recent events, without inflating the historical journal.
+
+        The complete hash chain remains available via events(verify=True).
+        This query is deliberately not an integrity check.
+        """
+        limit = max(0, int(limit))
+        if not limit:
+            return []
+        if self._cached_events is not None:
+            selected = (event for event in reversed(self._cached_events)
+                        if kind is None or event.get("kind") == kind)
+            from itertools import islice
+            return list(reversed(list(islice(selected, limit))))
+        selected = []
+        for path in reversed(self._files()):
+            for line in reversed(list(self._read_lines(path))):
+                if not line.strip():
+                    continue
+                event = json.loads(line)
+                if kind is None or event.get("kind") == kind:
+                    selected.append(event)
+                    if len(selected) == limit:
+                        return list(reversed(selected))
+        return list(reversed(selected))
+
     def snapshot(self, graph: dict) -> None:
         payload = {"schema_version": SCHEMA, "generation": graph.get("generation", 0),
                    "events": self.manifest["events"], "graph": graph}

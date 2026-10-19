@@ -19,12 +19,15 @@ from .world_model import WorldModel
 from .consolidation import Consolidator
 from .actions import Candidate, Result, build_registry, reading_candidates, select
 from .providers import ThinkingProviders, make_prompt
+from .text_quality import content_terms, clean_source
 from .workspace import Workspace
 from .planner import Planner
 from .self_model import SelfContinuity
 from .library import KnowledgeLibrary
 from .evolution import Evolution
 from .semantics import SemanticLearner
+from .inquiry import enquire
+from .experimentation import run_local_experiment
 from .evidence import assess, is_system_topic
 
 log=logging.getLogger("ubique.v3")
@@ -54,8 +57,8 @@ class UbiqueV3:
         self.last_packet=None
         self.since_snapshot=int(self.journal.manifest.get("events",0)
                                 -self.journal.manifest.get("snapshot_events",0))
-        self.history=[e.get("data",{}).get("kind","") for e in
-                      self.journal.events() if e.get("kind")=="action_outcome"][-30:]
+        self.history=[e.get("data",{}).get("kind","")
+                      for e in self.journal.recent("action_outcome",limit=30)]
 
     def _recent_focus(self,generation:int)->tuple[str,list[dict]]:
         old=[e for e in self.hippocampus.replay(10,generation)
@@ -77,15 +80,15 @@ class UbiqueV3:
                         and str(e.get("source","")).startswith("library:")][:4]
         source_terms=set()
         for episode in recent_sources:
-            source_terms.update(terms(str(episode.get("text",""))[:3500],60))
-            source_terms.update(terms(str(episode.get("payload",{}).get("title","")),12))
+            source_terms.update(content_terms(str(episode.get("text",""))[:3500],60))
+            source_terms.update(content_terms(str(episode.get("payload",{}).get("title","")),12))
         # Contextual cortical reactivation: genuine current book passages
         # need to become active *before* competing with residual old issue nodes.
         # Limited to a few cues to preserve free association and memory variety.
         book_cues=[]
         for episode in recent_sources[:2]:
-            book_cues+=terms(str(episode.get("payload",{}).get("title","")),8)
-            book_cues+=terms(str(episode.get("text",""))[:1800],14)
+            book_cues+=content_terms(str(episode.get("payload",{}).get("title","")),8)
+            book_cues+=content_terms(str(episode.get("text",""))[:1800],14)
         cues=[c for c in dict.fromkeys(book_cues) if not is_system_topic(c)][:18]
         if cues:
             self.cortex.activate(cues,strength=.46)
@@ -200,9 +203,9 @@ class UbiqueV3:
         candidates=reading_candidates(self.curiosity)
         # Sustain one line of reading long enough to connect consecutive
         # chapters, then give the other books room again.
-        read_history=[e.get("data",{}) for e in self.journal.events()
-                      if e["kind"]=="action_outcome"
-                      and e.get("data",{}).get("kind")=="read"
+        read_history=[e.get("data",{}) for e in self.journal.recent(
+                      "action_outcome",limit=80)
+                      if e.get("data",{}).get("kind")=="read"
                       and e.get("data",{}).get("success")][-8:]
         if read_history:
             last_title=str(read_history[-1].get("payload",{}).get("title",""))
@@ -216,6 +219,17 @@ class UbiqueV3:
                 if candidate.payload.get("title")==last_title:
                     candidate.score+=(.21 if last_streak<4 else -.22)
         candidates+=model
+        # Autonomous experiments and questions compete naturally with reading.
+        # They work offline and do not need a predetermined philosophical answer.
+        if generation % 11 == 0 or "experiment" not in self.history[-40:]:
+            candidates.append(Candidate("experiment",
+                "Investigate an uncertain association using local memory",
+                {"experiment_type":"association_probe","hypothesis":focus},
+                .73, source="curiosity"))
+        if generation % 13 == 0 or "question" not in self.history[-40:]:
+            candidates.append(Candidate("question",
+                "Compare distinct books and leave an open question",
+                {"topic":focus}, .69, source="curiosity"))
         active=self.cortex.recall([focus])
         if active:
             candidates.append(Candidate("explore","Follow associative paths from "+focus,
@@ -275,18 +289,33 @@ class UbiqueV3:
         if chosen.kind in {"evolve","edit_code"}:
             if not self.providers or not self.providers.available():
                 return Result(chosen.kind,False,"Remote code contributor deferred")
-            outcome=self.evolution.attempt(chosen.reason,generation=generation)
+            outcome=self.evolution.attempt(chosen.reason,generation=generation,
+                                           target=str(chosen.payload.get("target","")))
             return Result(chosen.kind,outcome["success"],outcome["result"],
                           provider=outcome["provider"])
+        if chosen.kind=="question":
+            inquiry=enquire(self.hippocampus,self.journal,self.world,
+                            generation=generation)
+            if inquiry:
+                return Result("question",True,inquiry["question"],
+                              inquiry["source_ids"],payload=inquiry)
+            return Result("question",False,"No new source pair to compare")
         if chosen.kind=="experiment":
             kind=str(chosen.payload.get("experiment_type",""))
             from ..experiments import SAFE_EXPERIMENTS,run_experiment
-            if kind not in SAFE_EXPERIMENTS or self.providers is None:
-                return Result("experiment",False,"Unsupported or offline experiment")
-            outcome=run_experiment(kind,str(chosen.payload.get("target","")),
-                 self.providers.router,str(chosen.payload.get("hypothesis","")))
-            return Result("experiment",bool(outcome.get("passed")),str(outcome)[:800],
-                          provider=str(outcome.get("provider","deterministic")))
+            # External providers are optional; local experiments are first-class.
+            if (chosen.payload.get("remote") and kind in SAFE_EXPERIMENTS
+                    and self.providers and self.providers.available()):
+                outcome=run_experiment(kind,str(chosen.payload.get("target","")),
+                     self.providers.router,str(chosen.payload.get("hypothesis","")))
+                return Result("experiment",bool(outcome.get("passed")),str(outcome)[:800],
+                              provider=str(outcome.get("provider","remote")),
+                              payload=outcome)
+            outcome=run_local_experiment(chosen.payload,ctx)
+            return Result("experiment",bool(outcome["performed"]),
+                          str(outcome.get("status","inconclusive")),
+                          outcome.get("evidence_ids",[]),provider="local",
+                          payload=outcome)
         if chosen.kind=="library" and chosen.payload.get("action")=="request":
             if not self.library.can_request(str(chosen.payload.get("title",""))):
                 return Result("library",True,"Equivalent reading wish already exists")
@@ -341,7 +370,7 @@ class UbiqueV3:
                 "skills":self.identity.skills(),
                 "active_stances":len(self.identity.stances(self.world.stances))}
         write_json("v3.json",status)
-        active=result.success and chosen.kind not in {"rest","consolidate"}
+        active=result.success and chosen.kind not in {"rest","consolidate","question"}
         write_json("pulse.json",{"timestamp":utc_now(),"generation":generation,
               "mode":"active" if active else "quiet","should_continue":active,
               "minimum_delay_seconds":60,
@@ -387,8 +416,7 @@ class UbiqueV3:
                          and self.planner.quality[kind][0]/self.planner.quality[kind][1]<.85)
             if self.providers and self.providers.available() and (failures or
                   (len(self.semantics.comparisons)>=12 and generation%79==0)):
-                recent_changes=[e for e in self.journal.events()
-                                if e["kind"]=="change_intent"][-1:]
+                recent_changes=self.journal.recent("change_intent",limit=1)
                 last_change=int(recent_changes[-1]["generation"] or 0) if recent_changes else -1000
                 if generation-last_change>=72:
                     reason=("Investigate recurring failures in the v3 learning and action cycle."

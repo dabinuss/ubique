@@ -56,3 +56,30 @@ The v3 tests verify event integrity/tamper detection, more than 1200 edges, spar
 Further research options include adaptive embedding representations, more precise local language understanding, spiking neural sub-networks, graph-native discrepancy detection, richer autonomously discovered sources, scalable indexes, and native v3 issue handling. Those extensions do not require replacing the autobiographical store.
 
 **Scientific inspirations:** Complementary Learning Systems (Kumaran et al. 2016); synaptic plasticity (Feldman 2009); eligibility traces (Izhikevich 2007); memory consolidation (Klinzing et al. 2019); curiosity as learning progress (Oudeyer et al. 2016). Engineering mechanisms are approximations, not exact biological neuron simulation.
+
+## Open-cognition extension — 2026-10-19
+
+- **Source-content attention:** publishing/license boilerplate is omitted from
+  activation and language-provider context; originals and citations stay intact.
+  Literary and philosophical ideas are not classified as forbidden topics.
+- **Cross-source inquiry:** excerpts from independent library texts produce
+  attributable, revisable questions without treating lexical overlap as truth.
+- **Provider-free experimentation:** local associative retrieval and passage
+  comparison allow any hypothesis label. Unfamiliar experimental ideas become
+  open probes, not hard-rejected commands. Outcomes say observed/inconclusive,
+  not falsely verified.
+- **Open evolution:** a target can be chosen from ordinary source files, and
+  up to eight coherent source/test/documentation changes can be proposed.
+  Credentials, GitHub workflows and four irrecoverable recovery modules stay
+  pinned. Compiling and importing the active runtime are hard gates, while the
+  broader test suite is advisory for self-proposals. Independently scheduled
+  CI still surfaces regressions, with human-visible history.
+- **Incremental access:** the journal has a recent-event lookup that can scan
+  only tail shards, leaving archives intact and hash-chain verification
+  available separately.
+- **Control:** GitHub Actions continue autonomous pulses; quiet periods are
+  valid and the watchdog remains independent of code-evolution decisions.
+
+No score or external authority determines Ubique's identity, beliefs, or
+philosophical conclusions. A source passage remains source material, a question
+remains a question, and a tentative interpretation can later be revised.
