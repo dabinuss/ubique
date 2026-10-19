@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T08:48:55.501364+00:00",
-  "generation": 3693,
-  "focus": "Human, All Too Human: A Book for Free Spirits",
-  "last_action": "read",
+  "timestamp": "2026-10-19T08:50:28.618411+00:00",
+  "generation": 3694,
+  "focus": "Psychology: Briefer Course",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 3689,
   "last_search_generation": 3680,
   "cortex": {
-    "nodes": 9666,
+    "nodes": 9668,
     "synapses": 59023,
     "active": 120,
     "archived_synapses": 32399
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 13450,
-    "segments": 508,
+    "events": 13454,
+    "segments": 509,
     "compressed_snapshot": true,
     "snapshot_events": 13450
   },
@@ -43,6 +43,14 @@
       "score": 0.9580036297640655
     },
     {
+      "node_id": "concept:3f8b4464a99de3dc8c5c",
+      "label": "religious",
+      "activation": 1.0,
+      "novelty": 0.2111932418162619,
+      "conflict": 0,
+      "score": 0.9170221752903907
+    },
+    {
       "node_id": "concept:24ea913efda289dc1b17",
       "label": "most",
       "activation": 1.0,
@@ -51,44 +59,36 @@
       "score": 0.8958803986710964
     },
     {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.05738880918220947,
+      "node_id": "concept:9311567dae0941a8d5c6",
+      "label": "allegations",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8754949784791966
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:9449fac368cc8da2a570",
+      "label": "avenging",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     },
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.9172253979027802,
+      "activation": 0.9304189478738368,
       "novelty": 0.04756242568370987,
       "conflict": 0,
-      "score": 0.8297990618440474
+      "score": 0.8366597078289968
     },
     {
-      "node_id": "concept:90d448c0f5a044259253",
-      "label": "borrowing",
+      "node_id": "concept:d82abda92dd16a323dba",
+      "label": "colorless",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:6b45d21704c9a8eb8c6c",
-      "label": "paying",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:c5fc2700317a19855c32",
-      "label": "compared",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 514
     },
     "explore": {
-      "attempts": 366,
-      "successes": 365
+      "attempts": 367,
+      "successes": 366
     },
     "consolidate": {
       "attempts": 456,
