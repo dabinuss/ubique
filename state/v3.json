@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T11:54:06.203454+00:00",
-  "generation": 3730,
+  "timestamp": "2026-10-19T12:07:57.646277+00:00",
+  "generation": 3731,
   "focus": "The Mind and the Brain",
-  "last_action": "consolidate",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 3729,
   "last_search_generation": 3726,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 13737,
+    "events": 13741,
     "segments": 522,
     "compressed_snapshot": true,
     "snapshot_events": 13712
@@ -35,20 +35,20 @@
   "evidence_reviews": 340,
   "workspace": [
     {
-      "node_id": "concept:721048dc35951006",
-      "label": "observations",
-      "activation": 1.0,
-      "novelty": 0.2702702702702703,
-      "conflict": 0,
-      "score": 0.932972972972973
-    },
-    {
       "node_id": "concept:02aab799561baeb9",
       "label": "concerning",
       "activation": 1.0,
       "novelty": 0.19627085377821393,
       "conflict": 0,
       "score": 0.9129931305201178
+    },
+    {
+      "node_id": "concept:721048dc35951006",
+      "label": "observations",
+      "activation": 0.9493078218481747,
+      "novelty": 0.26702269692923897,
+      "conflict": 0,
+      "score": 0.9057361955319454
     },
     {
       "node_id": "concept:24ea913efda289dc1b17",
@@ -62,33 +62,33 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.055524708495280406,
+      "novelty": 0.055386319579063974,
       "conflict": 0,
-      "score": 0.8749916712937258
+      "score": 0.8749543062863474
     },
     {
       "node_id": "concept:f5afc7a74d8e77551053",
       "label": "illustrated",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:548ee33853d0e51e547c",
       "label": "acedonia",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:b2c01c8a8a0d9a99f145",
       "label": "germany",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 522
     },
     "explore": {
-      "attempts": 373,
-      "successes": 372
+      "attempts": 374,
+      "successes": 373
     },
     "consolidate": {
       "attempts": 467,
