@@ -1,38 +1,38 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T14:17:19.685151+00:00",
-  "generation": 3756,
+  "timestamp": "2026-10-19T14:31:06.325542+00:00",
+  "generation": 3757,
   "focus": "Meditations",
-  "last_action": "consolidate",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 3752,
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": "groq",
+  "last_provider_generation": 3757,
   "last_search_generation": 3749,
   "cortex": {
-    "nodes": 9768,
-    "synapses": 60085,
+    "nodes": 9775,
+    "synapses": 60145,
     "active": 120,
-    "archived_synapses": 32541
+    "archived_synapses": 32567
   },
   "memory": {
-    "episodes": 3471,
-    "claims": 1777,
+    "episodes": 3472,
+    "claims": 1782,
     "stances": 26,
     "interests": 74,
-    "associative_comparisons": 1348,
+    "associative_comparisons": 1350,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 13921,
-    "segments": 531,
+    "events": 13936,
+    "segments": 532,
     "compressed_snapshot": true,
     "snapshot_events": 13884
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 345,
+  "evidence_reviews": 347,
   "workspace": [
     {
       "node_id": "concept:923b4b90ea64343e4a1c",
@@ -46,9 +46,9 @@
       "node_id": "concept:3853eb486f0ccd5b3023",
       "label": "varieties",
       "activation": 1.0,
-      "novelty": 0.23837902264600713,
+      "novelty": 0.23584905660377356,
       "conflict": 0,
-      "score": 0.924362336114422
+      "score": 0.9236792452830189
     },
     {
       "node_id": "concept:64b218956223eb12d13e",
@@ -62,17 +62,17 @@
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
-      "novelty": 0.10090817356205853,
+      "novelty": 0.10045203415369161,
       "conflict": 0,
-      "score": 0.8872452068617558
+      "score": 0.8871220492214968
     },
     {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.07736943907156674,
+      "novelty": 0.07710100231303008,
       "conflict": 0,
-      "score": 0.880889748549323
+      "score": 0.8808172706245181
     },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
@@ -85,10 +85,10 @@
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.9362374832873137,
-      "novelty": 0.046178711613945975,
+      "activation": 0.943311201878769,
+      "novelty": 0.04608294930875576,
       "conflict": 0,
-      "score": 0.8393117434451686
+      "score": 0.8429642212903239
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 70
     },
     "read": {
-      "attempts": 528,
-      "successes": 528
+      "attempts": 529,
+      "successes": 529
     },
     "explore": {
       "attempts": 379,
