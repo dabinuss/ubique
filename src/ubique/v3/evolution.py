@@ -12,6 +12,7 @@ from ..brain.runtime import NeurocognitiveRuntime
 from ..config import Config
 from ..evolution import run_evolution
 from ..state import ROOT
+from ..evolution import _safe_path
 from .storage import Journal
 
 EVOLVABLE = (
@@ -21,13 +22,31 @@ EVOLVABLE = (
     "src/ubique/v3/semantics.py",
 )
 
+def evolving_modules() -> list[str]:
+    """Every ordinary cognitive Python module may evolve, not just four."""
+
+    candidates=list(EVOLVABLE)
+    for path in sorted((ROOT/"src"/"ubique").rglob("*.py")):
+        relative=path.relative_to(ROOT).as_posix()
+        try:
+            _safe_path(relative)
+        except ValueError:
+            continue
+        if relative not in candidates:
+            candidates.append(relative)
+    return [p for p in candidates if (ROOT/p).is_file()]
+
+
 class Evolution:
     def __init__(self, journal: Journal, config: Config):
         self.journal=journal
         self.config=config
 
-    def attempt(self, reason: str, *, generation: int):
-        target=EVOLVABLE[generation % len(EVOLVABLE)]
+    def attempt(self, reason: str, *, generation: int, target: str = ""):
+        candidates=evolving_modules()
+        if not candidates:
+            return {"success":False,"provider":"none","result":"No evolvable module available"}
+        target=target if target in candidates else candidates[generation % len(candidates)]
         existing=(ROOT/target).read_text(encoding="utf-8")
         intent={"reason":reason[:1200],"generation":generation,
                 "target":target,"reversible":True,"provenance":"agent_action"}
@@ -41,8 +60,8 @@ class Evolution:
                 "its own long-term continuity; do not optimize benchmark scores. "
                 "Give a complete JSON object with 'title', 'summary', and "
                 "'changes': [{'path': the provided file, 'content': the COMPLETE "
-                "updated Python source text}]. Use one small reasoned improvement "
-                "only; preserve all existing functions and the cognitive journal. "
+                "updated Python source text}]. Suggest one or several coherent source changes when justified "
+                "without erasing memories or journal continuity. "
                 "A test suite and reversible PR validate any code change. "
                 "Reason: "+reason[:1100]+"\n"
                 "Existing file: "+target+"\n"+existing[:14500]
