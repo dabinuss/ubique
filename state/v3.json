@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T20:22:36.837750+00:00",
-  "generation": 3825,
+  "timestamp": "2026-10-19T20:36:22.614602+00:00",
+  "generation": 3826,
   "focus": "Six Metaphysical Meditations",
-  "last_action": "consolidate",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": "groq",
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": null,
   "last_provider_generation": 3825,
   "last_search_generation": 3818,
   "cortex": {
     "nodes": 9930,
     "synapses": 61806,
     "active": 120,
-    "archived_synapses": 32750
+    "archived_synapses": 32844
   },
   "memory": {
     "episodes": 3501,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 14434,
-    "segments": 559,
+    "events": 14438,
+    "segments": 560,
     "compressed_snapshot": true,
     "snapshot_events": 14388
   },
@@ -54,41 +54,41 @@
       "node_id": "concept:fb93e8d7c9f898cb5c75",
       "label": "erect",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.7352941176470589,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.777729411764706
     },
     {
       "node_id": "concept:ecc62dd3e8533b5714f0",
       "label": "numerous",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:9b0deefe51ab7eaa",
-      "label": "standing",
       "activation": 0.46,
       "novelty": 0.6896551724137931,
       "conflict": 0,
       "score": 0.7654068965517242
     },
     {
-      "node_id": "concept:96adb92452863058fa16",
-      "label": "properties",
+      "node_id": "concept:9b0deefe51ab7eaa",
+      "label": "standing",
       "activation": 0.46,
       "novelty": 0.6688963210702341,
       "conflict": 0,
       "score": 0.7598020066889632
     },
     {
-      "node_id": "concept:3b6320a6867d256d2b00",
-      "label": "aspects",
+      "node_id": "concept:96adb92452863058fa16",
+      "label": "properties",
       "activation": 0.46,
       "novelty": 0.6493506493506493,
       "conflict": 0,
       "score": 0.7545246753246754
+    },
+    {
+      "node_id": "concept:3b6320a6867d256d2b00",
+      "label": "aspects",
+      "activation": 0.46,
+      "novelty": 0.6309148264984227,
+      "conflict": 0,
+      "score": 0.7495470031545741
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 545
     },
     "explore": {
-      "attempts": 395,
-      "successes": 393
+      "attempts": 396,
+      "successes": 394
     },
     "consolidate": {
       "attempts": 493,
