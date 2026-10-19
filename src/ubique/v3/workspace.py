@@ -3,6 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from .representation import Cortex
 from .evidence import is_system_topic
+from .text_quality import META_TERMS
 
 @dataclass
 class WorkspaceItem:
@@ -30,7 +31,11 @@ class Workspace:
             novelty=1.0/(1.0+n.use_count*.045)
             salience=float(interest.get(n.label,0))
             score=.52*n.activation+.27*novelty+.21*salience-.02*min(5,age)
-            if n.id.startswith(("schema:","issue:")) or is_system_topic(n.label):
+            if n.label.casefold() in META_TERMS:
+                # Publishing metadata is still retrievable, but cannot drown
+                # out the book's ideas when competing for attention.
+                score *= .06 if salience < .8 else .55
+            elif n.id.startswith(("schema:","issue:")) or is_system_topic(n.label):
                 # The old technical memory is intact, but not the central focus.
                 score*=.12 if salience<.6 else .65
             elif active_grounded>=2:
