@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T06:43:16.164681+00:00",
-  "generation": 3669,
+  "timestamp": "2026-10-19T06:45:02.162784+00:00",
+  "generation": 3670,
   "focus": "Meditations",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3667,
   "last_search_generation": 3657,
   "cortex": {
-    "nodes": 9619,
-    "synapses": 58632,
+    "nodes": 9624,
+    "synapses": 58690,
     "active": 120,
-    "archived_synapses": 32370
+    "archived_synapses": 32280
   },
   "memory": {
     "episodes": 3427,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 13274,
+    "events": 13279,
     "segments": 500,
     "compressed_snapshot": true,
     "snapshot_events": 13274
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 327,
   "workspace": [
+    {
+      "node_id": "concept:dfd34a31322c29f8",
+      "label": "concepts",
+      "activation": 1.0,
+      "novelty": 0.34602076124567477,
+      "conflict": 0,
+      "score": 0.9534256055363322
+    },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
@@ -59,6 +67,14 @@
       "score": 0.9071615720524018
     },
     {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.1422475106685633,
+      "conflict": 0,
+      "score": 0.8984068278805122
+    },
+    {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
@@ -73,22 +89,6 @@
       "novelty": 0.08347245409015025,
       "conflict": 0,
       "score": 0.8825375626043406
-    },
-    {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.05738880918220947,
-      "conflict": 0,
-      "score": 0.8754949784791966
-    },
-    {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 1.0,
-      "novelty": 0.046959380136182206,
-      "conflict": 0,
-      "score": 0.8726790326367693
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 360
     },
     "consolidate": {
-      "attempts": 449,
-      "successes": 449
+      "attempts": 450,
+      "successes": 450
     },
     "connect": {
       "attempts": 356,
