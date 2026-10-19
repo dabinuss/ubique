@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T22:55:05.077784+00:00",
-  "generation": 3849,
+  "timestamp": "2026-10-19T22:56:43.010423+00:00",
+  "generation": 3850,
   "focus": "The Varieties of Religious Experience: A Study in Human Nature",
-  "last_action": "read",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "observed_associations",
   "last_provider": null,
   "last_provider_generation": 3848,
   "last_search_generation": 3841,
   "cortex": {
-    "nodes": 9969,
+    "nodes": 9971,
     "synapses": 62280,
     "active": 120,
-    "archived_synapses": 32888
+    "archived_synapses": 32908
   },
   "memory": {
     "episodes": 3510,
@@ -26,46 +26,14 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 14616,
-    "segments": 569,
+    "events": 14621,
+    "segments": 570,
     "compressed_snapshot": true,
     "snapshot_events": 14554
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 369,
   "workspace": [
-    {
-      "node_id": "concept:ca52e7d1c18961a8c5b3",
-      "label": "united",
-      "activation": 1.0,
-      "novelty": 0.37523452157598497,
-      "conflict": 0,
-      "score": 0.961313320825516
-    },
-    {
-      "node_id": "concept:923b4b90ea64343e4a1c",
-      "label": "states",
-      "activation": 1.0,
-      "novelty": 0.3629764065335753,
-      "conflict": 0,
-      "score": 0.9580036297640655
-    },
-    {
-      "node_id": "concept:7308d385d05396e9",
-      "label": "representations",
-      "activation": 1.0,
-      "novelty": 0.20533880903490764,
-      "conflict": 0,
-      "score": 0.9154414784394251
-    },
-    {
-      "node_id": "concept:02aab799561baeb9",
-      "label": "concerning",
-      "activation": 1.0,
-      "novelty": 0.18331805682859761,
-      "conflict": 0,
-      "score": 0.9094958753437214
-    },
     {
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
@@ -89,6 +57,38 @@
       "novelty": 0.04756242568370987,
       "conflict": 0,
       "score": 0.8728418549346018
+    },
+    {
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
+      "activation": 1.0,
+      "novelty": 0.021424745581146227,
+      "conflict": 0,
+      "score": 0.8657846813069094
+    },
+    {
+      "node_id": "concept:b982a09b35429d8f8755",
+      "label": "oxygen",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:e7f90b0310363d697e83",
+      "label": "hydrogen",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:10a9bef2fd8a81da2e6c",
+      "label": "resultant",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 6
     },
     "experiment": {
-      "attempts": 3,
-      "successes": 1
+      "attempts": 4,
+      "successes": 2
     },
     "question": {
       "attempts": 2,
