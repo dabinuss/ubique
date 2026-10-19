@@ -106,3 +106,16 @@ def test_code_evolution_does_not_forbid_legitimate_introspection_or_docs():
         {"path": "docs/autonomous-notes.md", "content": "Open hypotheses and results."}]}
     accepted = validate_proposal(json.dumps(proposal))
     assert len(accepted["changes"]) == 2
+
+
+def test_recent_event_lookup_does_not_hydrate_full_journal(tmp_path):
+    root = tmp_path / "v3"
+    writer = Journal(root)
+    for n in range(40):
+        writer.append("thought" if n % 3 else "question", {"n": n})
+    reader = Journal(root)
+    assert reader._cached_events is None
+    last = reader.recent("question", limit=3)
+    assert [event["data"]["n"] for event in last] == [33, 36, 39]
+    assert reader._cached_events is None
+    assert len(reader.events(verify=True)) == 40
