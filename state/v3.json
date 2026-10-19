@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T10:01:26.895333+00:00",
-  "generation": 3707,
-  "focus": "The Riddle of the Universe",
-  "last_action": "read",
+  "timestamp": "2026-10-19T10:03:11.201830+00:00",
+  "generation": 3708,
+  "focus": "The Story of the Mind",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3706,
   "last_search_generation": 3703,
   "cortex": {
-    "nodes": 9681,
-    "synapses": 59283,
+    "nodes": 9682,
+    "synapses": 59307,
     "active": 120,
-    "archived_synapses": 32379
+    "archived_synapses": 32253
   },
   "memory": {
     "episodes": 3447,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 13557,
+    "events": 13562,
     "segments": 513,
     "compressed_snapshot": true,
     "snapshot_events": 13533
@@ -34,14 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 332,
   "workspace": [
-    {
-      "node_id": "concept:923b4b90ea64343e4a1c",
-      "label": "states",
-      "activation": 1.0,
-      "novelty": 0.3629764065335753,
-      "conflict": 0,
-      "score": 0.9580036297640655
-    },
     {
       "node_id": "concept:3f8b4464a99de3dc8c5c",
       "label": "religious",
@@ -59,36 +51,44 @@
       "score": 0.9067937608318892
     },
     {
-      "node_id": "concept:1c48f6310f1c849b4ac3",
-      "label": "mind",
-      "activation": 0.9692557402976755,
-      "novelty": 0.04746084480303749,
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.08016032064128256,
       "conflict": 0,
-      "score": 0.8568274130516114
+      "score": 0.8816432865731463
     },
     {
-      "node_id": "concept:0e9b99efef2f80fb90cb",
-      "label": "deeply",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "node_id": "concept:1c48f6310f1c849b4ac3",
+      "label": "mind",
+      "activation": 0.9646889833022304,
+      "novelty": 0.04746084480303749,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.85445269941398
+    },
+    {
+      "node_id": "concept:5709ff28b655e82531c0",
+      "label": "machines",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:dc7448c3929901db26d7",
+      "label": "automata",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:d34a569ab7aaa54dacd7",
       "label": "family",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:384c1d6227e25bbe0a5a",
-      "label": "seated",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.78452319391635
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 368
     },
     "consolidate": {
-      "attempts": 460,
-      "successes": 460
+      "attempts": 461,
+      "successes": 461
     },
     "connect": {
       "attempts": 364,
