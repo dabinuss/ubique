@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T13:56:23.910854+00:00",
-  "generation": 3751,
+  "timestamp": "2026-10-19T13:58:11.462482+00:00",
+  "generation": 3752,
   "focus": "The Analysis of Mind",
-  "last_action": "explore",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 3746,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 3752,
   "last_search_generation": 3749,
   "cortex": {
-    "nodes": 9762,
-    "synapses": 60041,
+    "nodes": 9764,
+    "synapses": 60047,
     "active": 120,
-    "archived_synapses": 32627
+    "archived_synapses": 32621
   },
   "memory": {
     "episodes": 3470,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 13892,
-    "segments": 529,
+    "events": 13897,
+    "segments": 530,
     "compressed_snapshot": true,
     "snapshot_events": 13884
   },
@@ -54,9 +54,9 @@
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
-      "novelty": 0.10373443983402489,
+      "novelty": 0.10325245224574083,
       "conflict": 0,
-      "score": 0.8880082987551867
+      "score": 0.8878781621063501
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -75,20 +75,20 @@
       "score": 0.8726790326367693
     },
     {
+      "node_id": "concept:1c48f6310f1c849b4ac3",
+      "label": "mind",
+      "activation": 0.8890245828142566,
+      "novelty": 0.04627487274409996,
+      "conflict": 0,
+      "score": 0.8147869987043204
+    },
+    {
       "node_id": "concept:242f44833b1415cbbb94",
       "label": "sciousness",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:ceb1e2514a1f1b453097",
-      "label": "usually",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 376
     },
     "consolidate": {
-      "attempts": 472,
-      "successes": 472
+      "attempts": 473,
+      "successes": 473
     },
     "connect": {
       "attempts": 374,
