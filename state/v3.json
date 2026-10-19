@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T23:54:00.971727+00:00",
-  "generation": 3862,
-  "focus": "The World as Will and Idea, Volume 1",
-  "last_action": "read",
+  "timestamp": "2026-10-19T23:55:49.262990+00:00",
+  "generation": 3863,
+  "focus": "Psychology of the Unconscious",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 3858,
   "last_search_generation": 3841,
@@ -14,7 +14,7 @@
     "nodes": 9987,
     "synapses": 62511,
     "active": 120,
-    "archived_synapses": 32937
+    "archived_synapses": 32969
   },
   "memory": {
     "episodes": 3513,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 14698,
-    "segments": 574,
+    "events": 14702,
+    "segments": 575,
     "compressed_snapshot": true,
     "snapshot_events": 14636
   },
@@ -67,6 +67,14 @@
       "score": 0.8950421804023363
     },
     {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.12399256044637323,
+      "conflict": 0,
+      "score": 0.8934779913205209
+    },
+    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -81,14 +89,6 @@
       "novelty": 0.047058823529411764,
       "conflict": 0,
       "score": 0.8727058823529412
-    },
-    {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
-      "activation": 1.0,
-      "novelty": 0.021383513311237036,
-      "conflict": 0,
-      "score": 0.8657735485940341
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 554
     },
     "explore": {
-      "attempts": 401,
-      "successes": 399
+      "attempts": 402,
+      "successes": 400
     },
     "consolidate": {
       "attempts": 502,
