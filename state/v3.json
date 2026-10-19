@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T10:16:47.007472+00:00",
-  "generation": 3709,
+  "timestamp": "2026-10-19T10:18:36.984723+00:00",
+  "generation": 3710,
   "focus": "The Story of the Mind",
-  "last_action": "connect",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3706,
   "last_search_generation": 3703,
   "cortex": {
     "nodes": 9682,
-    "synapses": 59307,
+    "synapses": 59371,
     "active": 120,
-    "archived_synapses": 32253
+    "archived_synapses": 32263
   },
   "memory": {
     "episodes": 3447,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 13566,
+    "events": 13571,
     "segments": 514,
     "compressed_snapshot": true,
     "snapshot_events": 13533
@@ -54,41 +54,41 @@
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.07987220447284345,
+      "novelty": 0.07958615200955034,
       "conflict": 0,
-      "score": 0.8815654952076677
+      "score": 0.8814882610425787
     },
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.9634076564579946,
+      "activation": 0.9623569684457215,
       "novelty": 0.047359696897939854,
       "conflict": 0,
-      "score": 0.853759099520601
+      "score": 0.853212741754219
     },
     {
       "node_id": "concept:5709ff28b655e82531c0",
       "label": "machines",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:dc7448c3929901db26d7",
-      "label": "automata",
       "activation": 0.46,
       "novelty": 0.8810572687224669,
       "conflict": 0,
       "score": 0.8170854625550661
     },
     {
+      "node_id": "concept:dc7448c3929901db26d7",
+      "label": "automata",
+      "activation": 0.46,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.8080135593220339
+    },
+    {
       "node_id": "concept:d34a569ab7aaa54dacd7",
       "label": "family",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.7713708185053381
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 368
     },
     "consolidate": {
-      "attempts": 461,
-      "successes": 461
+      "attempts": 462,
+      "successes": 462
     },
     "connect": {
       "attempts": 365,
