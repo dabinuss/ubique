@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-19T09:45:48.899825+00:00",
-  "generation": 3705,
+  "timestamp": "2026-10-19T09:47:40.472285+00:00",
+  "generation": 3706,
   "focus": "The Riddle of the Universe",
-  "last_action": "explore",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 3701,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 3706,
   "last_search_generation": 3703,
   "cortex": {
     "nodes": 9680,
-    "synapses": 59225,
+    "synapses": 59239,
     "active": 120,
-    "archived_synapses": 32431
+    "archived_synapses": 32361
   },
   "memory": {
     "episodes": 3446,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 13541,
-    "segments": 512,
+    "events": 13546,
+    "segments": 513,
     "compressed_snapshot": true,
     "snapshot_events": 13533
   },
@@ -61,34 +61,34 @@
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.9816166827898084,
+      "activation": 0.9748249561457792,
       "novelty": 0.04756242568370987,
       "conflict": 0,
-      "score": 0.863282529985302
+      "score": 0.8597508321304068
     },
     {
       "node_id": "concept:0e9b99efef2f80fb90cb",
       "label": "deeply",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:d34a569ab7aaa54dacd7",
       "label": "family",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:384c1d6227e25bbe0a5a",
       "label": "seated",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 368
     },
     "consolidate": {
-      "attempts": 459,
-      "successes": 459
+      "attempts": 460,
+      "successes": 460
     },
     "connect": {
       "attempts": 364,
