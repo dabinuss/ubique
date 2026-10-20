@@ -1,14 +1,14 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-20T22:10:55.325274+00:00",
-  "generation": 4102,
-  "focus": "Mental Evolution in Man: Origin of Human Faculty",
-  "last_action": "read",
+  "timestamp": "2026-10-20T22:12:59.628653+00:00",
+  "generation": 4103,
+  "focus": "The Physical Basis of Mind",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 4097,
+  "last_action_detail": "observed_associations",
+  "last_provider": "groq",
+  "last_provider_generation": 4103,
   "last_search_generation": 4094,
   "cortex": {
     "nodes": 10263,
@@ -18,7 +18,7 @@
   },
   "memory": {
     "episodes": 3651,
-    "claims": 2112,
+    "claims": 2113,
     "stances": 26,
     "interests": 82,
     "associative_comparisons": 1590,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 16558,
-    "segments": 663,
+    "events": 16565,
+    "segments": 664,
     "compressed_snapshot": true,
     "snapshot_events": 16558
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 453,
+  "evidence_reviews": 454,
   "workspace": [
     {
       "node_id": "concept:48d492d08e9d314c034c",
@@ -49,6 +49,14 @@
       "novelty": 0.20725388601036274,
       "conflict": 0,
       "score": 0.915958549222798
+    },
+    {
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
+      "activation": 1.0,
+      "novelty": 0.1584786053882726,
+      "conflict": 0,
+      "score": 0.9027892234548336
     },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
@@ -81,14 +89,6 @@
       "novelty": 0.10934937124111536,
       "conflict": 0,
       "score": 0.8895243302351012
-    },
-    {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.0423908435777872,
-      "conflict": 0,
-      "score": 0.8714455277660025
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 8
     },
     "experiment": {
-      "attempts": 24,
-      "successes": 22
+      "attempts": 25,
+      "successes": 23
     },
     "question": {
       "attempts": 18,
