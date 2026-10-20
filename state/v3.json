@@ -1,14 +1,14 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-20T12:38:39.677551+00:00",
-  "generation": 4006,
+  "timestamp": "2026-10-20T12:40:40.790866+00:00",
+  "generation": 4007,
   "focus": "A Treatise of Human Nature",
   "last_action": "connect",
   "last_action_success": true,
   "last_action_detail": "Formed tentative analogy",
-  "last_provider": null,
-  "last_provider_generation": 4001,
+  "last_provider": "groq",
+  "last_provider_generation": 4007,
   "last_search_generation": 4002,
   "cortex": {
     "nodes": 10150,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 15805,
+    "events": 15809,
     "segments": 629,
     "compressed_snapshot": true,
     "snapshot_events": 15780
@@ -54,9 +54,9 @@
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.1693480101608806,
+      "novelty": 0.1680672268907563,
       "conflict": 0,
-      "score": 0.9057239627434379
+      "score": 0.9053781512605041
     },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
@@ -70,9 +70,9 @@
       "node_id": "concept:02aab799561baeb9",
       "label": "concerning",
       "activation": 1.0,
-      "novelty": 0.1607717041800643,
+      "novelty": 0.1596169193934557,
       "conflict": 0,
-      "score": 0.9034083601286174
+      "score": 0.9030965682362331
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
@@ -86,9 +86,9 @@
       "node_id": "concept:6907de2e8144a57274c7",
       "label": "treatise",
       "activation": 1.0,
-      "novelty": 0.11933174224343678,
+      "novelty": 0.11869436201780414,
       "conflict": 0,
-      "score": 0.8922195704057281
+      "score": 0.8920474777448071
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 534
     },
     "connect": {
-      "attempts": 422,
-      "successes": 422
+      "attempts": 423,
+      "successes": 423
     },
     "evolve": {
       "attempts": 22,
