@@ -1,18 +1,18 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-20T00:15:09.375296+00:00",
-  "generation": 3867,
-  "focus": "Psychology of the Unconscious",
-  "last_action": "read",
+  "timestamp": "2026-10-20T00:16:58.479553+00:00",
+  "generation": 3868,
+  "focus": "Human Nature and Conduct",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3866,
   "last_search_generation": 3864,
   "cortex": {
-    "nodes": 9994,
-    "synapses": 62573,
+    "nodes": 9996,
+    "synapses": 62613,
     "active": 120,
     "archived_synapses": 33041
   },
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 14755,
+    "events": 14760,
     "segments": 577,
     "compressed_snapshot": true,
     "snapshot_events": 14727
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 373,
   "workspace": [
+    {
+      "node_id": "concept:923b4b90ea64343e4a1c",
+      "label": "states",
+      "activation": 1.0,
+      "novelty": 0.351493848857645,
+      "conflict": 0,
+      "score": 0.9549033391915642
+    },
     {
       "node_id": "concept:3853eb486f0ccd5b3023",
       "label": "varieties",
@@ -46,9 +54,9 @@
       "node_id": "concept:3f8b4464a99de3dc8c5c",
       "label": "religious",
       "activation": 1.0,
-      "novelty": 0.1719690455717971,
+      "novelty": 0.1693480101608806,
       "conflict": 0,
-      "score": 0.9064316423043852
+      "score": 0.9057239627434379
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
@@ -69,10 +77,10 @@
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
-      "activation": 0.9876475860464202,
+      "activation": 0.9861499655516667,
       "novelty": 0.12128562765312309,
       "conflict": 0,
-      "score": 0.8863238642104818
+      "score": 0.8855451015532099
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -81,14 +89,6 @@
       "novelty": 0.0511770726714432,
       "conflict": 0,
       "score": 0.8738178096212896
-    },
-    {
-      "node_id": "concept:4277d3259d4e4993",
-      "label": "conclusion",
-      "activation": 1.0,
-      "novelty": 0.047058823529411764,
-      "conflict": 0,
-      "score": 0.8727058823529412
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 400
     },
     "consolidate": {
-      "attempts": 503,
-      "successes": 503
+      "attempts": 504,
+      "successes": 504
     },
     "connect": {
       "attempts": 395,
