@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-20T10:44:11.229161+00:00",
-  "generation": 3983,
-  "focus": "A Treatise Concerning the Principles of Human Knowledge",
-  "last_action": "read",
+  "timestamp": "2026-10-20T10:45:54.208028+00:00",
+  "generation": 3984,
+  "focus": "A Treatise of Human Nature",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 3978,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 3984,
   "last_search_generation": 3979,
   "cortex": {
     "nodes": 10117,
-    "synapses": 64080,
+    "synapses": 64108,
     "active": 120,
-    "archived_synapses": 34456
+    "archived_synapses": 34400
   },
   "memory": {
     "episodes": 3585,
-    "claims": 1997,
+    "claims": 2000,
     "stances": 26,
     "interests": 82,
     "associative_comparisons": 1510,
@@ -26,14 +26,22 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 15633,
+    "events": 15644,
     "segments": 621,
     "compressed_snapshot": true,
     "snapshot_events": 15608
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 406,
+  "evidence_reviews": 409,
   "workspace": [
+    {
+      "node_id": "concept:85ca6d6d291c070dbcb2",
+      "label": "conduct",
+      "activation": 1.0,
+      "novelty": 0.24096385542168672,
+      "conflict": 0,
+      "score": 0.9250602409638555
+    },
     {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
@@ -51,44 +59,36 @@
       "score": 0.8821220811142976
     },
     {
-      "node_id": "concept:7111684708cd2f68a436",
-      "label": "dismissed",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.04666355576294914,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.8725991600559964
     },
     {
-      "node_id": "concept:5b16732bc04ea106a93d",
-      "label": "reminded",
-      "activation": 0.46,
-      "novelty": 0.6896551724137931,
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
+      "activation": 1.0,
+      "novelty": 0.021159542953872196,
       "conflict": 0,
-      "score": 0.7654068965517242
+      "score": 0.8657130765975456
     },
     {
-      "node_id": "concept:e98841308f569acde044",
-      "label": "vulture",
+      "node_id": "concept:d11567c7a8f7fa62eadb",
+      "label": "conduced",
       "activation": 0.46,
-      "novelty": 0.6896551724137931,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7654068965517242
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:517d44570506499f793c",
-      "label": "kinship",
+      "node_id": "concept:95bf4f5dab6d2b8c1876",
+      "label": "fearfulness",
       "activation": 0.46,
-      "novelty": 0.6896551724137931,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7654068965517242
-    },
-    {
-      "node_id": "concept:aac0a0f664a6a15e2670",
-      "label": "commonly",
-      "activation": 0.46,
-      "novelty": 0.6134969325153374,
-      "conflict": 0,
-      "score": 0.7448441717791412
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 419
     },
     "consolidate": {
-      "attempts": 529,
-      "successes": 529
+      "attempts": 530,
+      "successes": 530
     },
     "connect": {
       "attempts": 417,
