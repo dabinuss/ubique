@@ -1,18 +1,18 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-20T14:23:13.880391+00:00",
-  "generation": 4023,
-  "focus": "The Riddle of the Universe",
-  "last_action": "read",
+  "timestamp": "2026-10-20T14:25:16.831809+00:00",
+  "generation": 4024,
+  "focus": "Psychology of the Unconscious",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 4018,
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": "groq",
+  "last_provider_generation": 4024,
   "last_search_generation": 4002,
   "cortex": {
-    "nodes": 10165,
-    "synapses": 64758,
+    "nodes": 10172,
+    "synapses": 64778,
     "active": 120,
     "archived_synapses": 34842
   },
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 15933,
+    "events": 15937,
     "segments": 635,
     "compressed_snapshot": true,
     "snapshot_events": 15866
@@ -43,36 +43,12 @@
       "score": 0.9519931856899491
     },
     {
-      "node_id": "concept:64b218956223eb12d13e",
-      "label": "principles",
-      "activation": 1.0,
-      "novelty": 0.16433853738701726,
-      "conflict": 0,
-      "score": 0.9043714050944947
-    },
-    {
-      "node_id": "concept:02aab799561baeb9",
-      "label": "concerning",
-      "activation": 1.0,
-      "novelty": 0.15625,
-      "conflict": 0,
-      "score": 0.9021875000000001
-    },
-    {
       "node_id": "concept:53e5e7c5a884893739c4",
       "label": "experience",
       "activation": 1.0,
       "novelty": 0.13783597518952448,
       "conflict": 0,
       "score": 0.8972157133011716
-    },
-    {
-      "node_id": "concept:e0f895872d65b2528fee",
-      "label": "knowledge",
-      "activation": 1.0,
-      "novelty": 0.11325028312570781,
-      "conflict": 0,
-      "score": 0.8905775764439412
     },
     {
       "node_id": "concept:6907de2e8144a57274c7",
@@ -89,6 +65,30 @@
       "novelty": 0.06939625260235947,
       "conflict": 0,
       "score": 0.878736988202637
+    },
+    {
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.04460303300624443,
+      "conflict": 0,
+      "score": 0.872042818911686
+    },
+    {
+      "node_id": "concept:dff8fc3345095000",
+      "label": "measurements",
+      "activation": 1.0,
+      "novelty": 0.036961744594344856,
+      "conflict": 0,
+      "score": 0.8699796710404732
+    },
+    {
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
+      "activation": 1.0,
+      "novelty": 0.02109927207511341,
+      "conflict": 0,
+      "score": 0.8656968034602808
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 588
     },
     "explore": {
-      "attempts": 428,
-      "successes": 426
+      "attempts": 429,
+      "successes": 427
     },
     "consolidate": {
       "attempts": 538,
