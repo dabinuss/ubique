@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-20T23:05:32.461684+00:00",
-  "generation": 4112,
+  "timestamp": "2026-10-20T23:07:22.783980+00:00",
+  "generation": 4113,
   "focus": "Mental Evolution in Man: Origin of Human Faculty",
-  "last_action": "explore",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 4109,
   "last_search_generation": 4094,
   "cortex": {
-    "nodes": 10275,
-    "synapses": 66113,
+    "nodes": 10278,
+    "synapses": 66231,
     "active": 120,
-    "archived_synapses": 34961
+    "archived_synapses": 34869
   },
   "memory": {
     "episodes": 3653,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 16625,
+    "events": 16630,
     "segments": 667,
     "compressed_snapshot": true,
     "snapshot_events": 16558
@@ -35,12 +35,20 @@
   "evidence_reviews": 457,
   "workspace": [
     {
+      "node_id": "concept:923b4b90ea64343e4a1c",
+      "label": "states",
+      "activation": 0.9525579184403807,
+      "novelty": 0.32102728731942215,
+      "conflict": 0,
+      "score": 0.922007485165242
+    },
+    {
       "node_id": "concept:3853eb486f0ccd5b3023",
       "label": "varieties",
       "activation": 1.0,
-      "novelty": 0.17467248908296945,
+      "novelty": 0.1733102253032929,
       "conflict": 0,
-      "score": 0.9071615720524018
+      "score": 0.9067937608318892
     },
     {
       "node_id": "concept:64b218956223eb12d13e",
@@ -54,17 +62,17 @@
       "node_id": "concept:3f8b4464a99de3dc8c5c",
       "label": "religious",
       "activation": 1.0,
-      "novelty": 0.14598540145985403,
+      "novelty": 0.14503263234227703,
       "conflict": 0,
-      "score": 0.8994160583941606
+      "score": 0.8991588107324149
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
       "label": "experience",
       "activation": 1.0,
-      "novelty": 0.12978585334198572,
+      "novelty": 0.12903225806451613,
       "conflict": 0,
-      "score": 0.8950421804023363
+      "score": 0.8948387096774193
     },
     {
       "node_id": "concept:24ea913efda289dc1b17",
@@ -81,14 +89,6 @@
       "novelty": 0.10934937124111536,
       "conflict": 0,
       "score": 0.8895243302351012
-    },
-    {
-      "node_id": "concept:6907de2e8144a57274c7",
-      "label": "treatise",
-      "activation": 1.0,
-      "novelty": 0.10183299389002036,
-      "conflict": 0,
-      "score": 0.8874949083503056
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 441
     },
     "consolidate": {
-      "attempts": 558,
-      "successes": 558
+      "attempts": 559,
+      "successes": 559
     },
     "connect": {
       "attempts": 443,
