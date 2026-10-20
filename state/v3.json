@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-20T09:34:28.364952+00:00",
-  "generation": 3971,
-  "focus": "A Treatise of Human Nature",
-  "last_action": "experiment",
+  "timestamp": "2026-10-20T09:36:15.154198+00:00",
+  "generation": 3972,
+  "focus": "A Treatise Concerning the Principles of Human Knowledge",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "observed_associations",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3967,
   "last_search_generation": 3956,
@@ -14,7 +14,7 @@
     "nodes": 10102,
     "synapses": 63843,
     "active": 120,
-    "archived_synapses": 34455
+    "archived_synapses": 34319
   },
   "memory": {
     "episodes": 3579,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 15531,
-    "segments": 616,
+    "events": 15536,
+    "segments": 617,
     "compressed_snapshot": true,
     "snapshot_events": 15518
   },
@@ -54,41 +54,41 @@
       "node_id": "concept:bf418607aebe39986000",
       "label": "galvanic",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.7352941176470589,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.777729411764706
     },
     {
       "node_id": "concept:106fd9a818d29fb29bc1",
       "label": "stronger",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
-    },
-    {
-      "node_id": "concept:3b32b37c9a45d3d42029",
-      "label": "matteuci",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
-    },
-    {
-      "node_id": "concept:08996f19af92547a1dc9",
-      "label": "greater",
       "activation": 0.46,
       "novelty": 0.7117437722419929,
       "conflict": 0,
       "score": 0.7713708185053381
     },
     {
+      "node_id": "concept:3b32b37c9a45d3d42029",
+      "label": "matteuci",
+      "activation": 0.46,
+      "novelty": 0.7117437722419929,
+      "conflict": 0,
+      "score": 0.7713708185053381
+    },
+    {
+      "node_id": "concept:08996f19af92547a1dc9",
+      "label": "greater",
+      "activation": 0.46,
+      "novelty": 0.6896551724137931,
+      "conflict": 0,
+      "score": 0.7654068965517242
+    },
+    {
       "node_id": "concept:a4c3ed04a95a3da14a9d",
       "label": "done",
       "activation": 0.46,
-      "novelty": 0.6493506493506493,
+      "novelty": 0.6309148264984227,
       "conflict": 0,
-      "score": 0.7545246753246754
+      "score": 0.7495470031545741
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 417
     },
     "consolidate": {
-      "attempts": 526,
-      "successes": 526
+      "attempts": 527,
+      "successes": 527
     },
     "connect": {
       "attempts": 416,
