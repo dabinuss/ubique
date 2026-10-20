@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-20T07:24:42.395295+00:00",
-  "generation": 3946,
-  "focus": "The Story of the Mind",
-  "last_action": "read",
+  "timestamp": "2026-10-20T07:26:28.029650+00:00",
+  "generation": 3947,
+  "focus": "The Master of Destiny: A Biography of the Brain",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 3944,
   "last_search_generation": 3933,
   "cortex": {
-    "nodes": 10068,
+    "nodes": 10070,
     "synapses": 63578,
     "active": 120,
-    "archived_synapses": 34000
+    "archived_synapses": 34044
   },
   "memory": {
     "episodes": 3567,
@@ -26,30 +26,14 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 15347,
-    "segments": 607,
+    "events": 15351,
+    "segments": 608,
     "compressed_snapshot": true,
     "snapshot_events": 15332
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 393,
   "workspace": [
-    {
-      "node_id": "concept:3853eb486f0ccd5b3023",
-      "label": "varieties",
-      "activation": 1.0,
-      "novelty": 0.18331805682859761,
-      "conflict": 0,
-      "score": 0.9094958753437214
-    },
-    {
-      "node_id": "concept:3f8b4464a99de3dc8c5c",
-      "label": "religious",
-      "activation": 1.0,
-      "novelty": 0.1519756838905775,
-      "conflict": 0,
-      "score": 0.901033434650456
-    },
     {
       "node_id": "concept:e2d5a675d4eab169",
       "label": "continue",
@@ -83,12 +67,28 @@
       "score": 0.8859490629505047
     },
     {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
       "activation": 1.0,
-      "novelty": 0.04776689754000478,
+      "novelty": 0.021260763261401087,
       "conflict": 0,
-      "score": 0.8728970623358014
+      "score": 0.8657404060805782
+    },
+    {
+      "node_id": "concept:6288f2083cc9acc5b05e",
+      "label": "biographies",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:50c9c4aeb40b5b206b6d",
+      "label": "actor",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 572
     },
     "explore": {
-      "attempts": 415,
-      "successes": 413
+      "attempts": 416,
+      "successes": 414
     },
     "consolidate": {
       "attempts": 521,
