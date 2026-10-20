@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-20T17:58:39.971680+00:00",
-  "generation": 4058,
-  "focus": "The Republic of Plato",
-  "last_action": "read",
+  "timestamp": "2026-10-20T18:00:21.981983+00:00",
+  "generation": 4059,
+  "focus": "Mental Evolution in Man: Origin of Human Faculty",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "observed_associations",
+  "last_provider": null,
   "last_provider_generation": 4058,
   "last_search_generation": 4048,
   "cortex": {
     "nodes": 10218,
     "synapses": 65409,
     "active": 120,
-    "archived_synapses": 34965
+    "archived_synapses": 35049
   },
   "memory": {
     "episodes": 3625,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 16213,
+    "events": 16218,
     "segments": 648,
     "compressed_snapshot": true,
     "snapshot_events": 16213
@@ -49,6 +49,14 @@
       "novelty": 0.14992503748125938,
       "conflict": 0,
       "score": 0.9004797601199401
+    },
+    {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 1.0,
+      "novelty": 0.136986301369863,
+      "conflict": 0,
+      "score": 0.8969863013698631
     },
     {
       "node_id": "concept:6907de2e8144a57274c7",
@@ -75,20 +83,12 @@
       "score": 0.8718058592041977
     },
     {
-      "node_id": "concept:2d50bffb8fc04161e1ff",
-      "label": "stepped",
+      "node_id": "concept:73d11780ccd1d54eddb0",
+      "label": "rceptions",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7996081632653061
-    },
-    {
-      "node_id": "concept:b3fb58eece1dac1d22e8",
-      "label": "usness",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 8
     },
     "experiment": {
-      "attempts": 20,
-      "successes": 18
+      "attempts": 21,
+      "successes": 19
     },
     "question": {
       "attempts": 15,
