@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-20T11:07:05.816514+00:00",
-  "generation": 3989,
-  "focus": "A Treatise of Human Nature",
-  "last_action": "connect",
+  "timestamp": "2026-10-20T11:08:48.209994+00:00",
+  "generation": 3990,
+  "focus": "Human, All Too Human: A Book for Free Spirits",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": null,
-  "last_provider_generation": 3984,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 3990,
   "last_search_generation": 3979,
   "cortex": {
-    "nodes": 10121,
-    "synapses": 64152,
+    "nodes": 10123,
+    "synapses": 64216,
     "active": 120,
-    "archived_synapses": 34552
+    "archived_synapses": 34520
   },
   "memory": {
-    "episodes": 3586,
-    "claims": 2003,
+    "episodes": 3590,
+    "claims": 2005,
     "stances": 26,
     "interests": 82,
     "associative_comparisons": 1512,
@@ -26,29 +26,29 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 15671,
+    "events": 15684,
     "segments": 623,
     "compressed_snapshot": true,
     "snapshot_events": 15608
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 409,
+  "evidence_reviews": 411,
   "workspace": [
+    {
+      "node_id": "concept:85ca6d6d291c070dbcb2",
+      "label": "conduct",
+      "activation": 0.9924425180889596,
+      "novelty": 0.22624434389140272,
+      "conflict": 0,
+      "score": 0.9171560822569378
+    },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
       "activation": 1.0,
-      "novelty": 0.17467248908296945,
+      "novelty": 0.1733102253032929,
       "conflict": 0,
-      "score": 0.9071615720524018
-    },
-    {
-      "node_id": "concept:85ca6d6d291c070dbcb2",
-      "label": "conduct",
-      "activation": 0.961908101863626,
-      "novelty": 0.22857142857142856,
-      "conflict": 0,
-      "score": 0.9019064986833714
+      "score": 0.9067937608318892
     },
     {
       "node_id": "concept:5a2a957b269e8f0f",
@@ -70,9 +70,9 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.04608294930875576,
+      "novelty": 0.045987583352494824,
       "conflict": 0,
-      "score": 0.8724423963133641
+      "score": 0.8724166475051736
     },
     {
       "node_id": "concept:8b16ced79976e6a1",
@@ -86,9 +86,9 @@
       "node_id": "concept:bc64f64fb479ef52a788",
       "label": "reversed",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 421
     },
     "consolidate": {
-      "attempts": 530,
-      "successes": 530
+      "attempts": 531,
+      "successes": 531
     },
     "connect": {
       "attempts": 419,
