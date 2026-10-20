@@ -1,47 +1,39 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-20T08:17:03.367939+00:00",
-  "generation": 3955,
-  "focus": "The Master of Destiny: A Biography of the Brain",
-  "last_action": "read",
+  "timestamp": "2026-10-20T08:18:59.511049+00:00",
+  "generation": 3956,
+  "focus": "A Treatise of Human Nature",
+  "last_action": "search",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 3950,
-  "last_search_generation": 3933,
+  "last_action_detail": "Acquired 3 attributable external articles",
+  "last_provider": "gemini",
+  "last_provider_generation": 3956,
+  "last_search_generation": 3956,
   "cortex": {
-    "nodes": 10082,
-    "synapses": 63655,
+    "nodes": 10086,
+    "synapses": 63657,
     "active": 120,
-    "archived_synapses": 34173
+    "archived_synapses": 34273
   },
   "memory": {
-    "episodes": 3570,
-    "claims": 1972,
+    "episodes": 3575,
+    "claims": 1974,
     "stances": 26,
     "interests": 82,
-    "associative_comparisons": 1488,
+    "associative_comparisons": 1494,
     "screened_interpretations": 0,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 15407,
+    "events": 15436,
     "segments": 611,
     "compressed_snapshot": true,
-    "snapshot_events": 15332
+    "snapshot_events": 15436
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 395,
+  "evidence_reviews": 396,
   "workspace": [
-    {
-      "node_id": "concept:e2d5a675d4eab169",
-      "label": "continue",
-      "activation": 1.0,
-      "novelty": 0.14992503748125938,
-      "conflict": 0,
-      "score": 0.9004797601199401
-    },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
       "label": "experience",
@@ -83,8 +75,16 @@
       "score": 0.8657349192863213
     },
     {
-      "node_id": "concept:a8e0fe140ed8c623c205",
-      "label": "honour",
+      "node_id": "concept:04fae5fa8943d9c64bd5",
+      "label": "explosions",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:28f7dfbacd716a8e38ec",
+      "label": "maternal",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
@@ -93,8 +93,8 @@
   ],
   "skills": {
     "search": {
-      "attempts": 79,
-      "successes": 78
+      "attempts": 80,
+      "successes": 79
     },
     "read": {
       "attempts": 574,
