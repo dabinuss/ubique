@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-20T22:34:10.039054+00:00",
-  "generation": 4108,
+  "timestamp": "2026-10-20T22:48:02.851979+00:00",
+  "generation": 4109,
   "focus": "Mental Evolution in Man: Origin of Human Faculty",
-  "last_action": "evolve",
-  "last_action_success": false,
-  "last_action_detail": "{\"accepted\": false, \"title\": \"Rejected evolution\", \"summary\": \"\", \"branch\": null, \"pr_url\": null, \"commit_sha\": null, \"reason\": \"proposal rejected: Expecting ',' delimiter: line 7 column 7803 (char 8305)\", \"baseline_score\": null, \"candidate_score\": null}",
-  "last_provider": null,
-  "last_provider_generation": 4103,
+  "last_action": "consolidate",
+  "last_action_success": true,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 4109,
   "last_search_generation": 4094,
   "cortex": {
-    "nodes": 10266,
-    "synapses": 66059,
+    "nodes": 10271,
+    "synapses": 66079,
     "active": 120,
-    "archived_synapses": 35017
+    "archived_synapses": 34963
   },
   "memory": {
     "episodes": 3652,
-    "claims": 2116,
+    "claims": 2119,
     "stances": 26,
     "interests": 82,
     "associative_comparisons": 1592,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 16595,
+    "events": 16606,
     "segments": 666,
     "compressed_snapshot": true,
     "snapshot_events": 16558
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 454,
+  "evidence_reviews": 457,
   "workspace": [
     {
       "node_id": "concept:48d492d08e9d314c034c",
@@ -105,8 +105,8 @@
       "successes": 440
     },
     "consolidate": {
-      "attempts": 557,
-      "successes": 557
+      "attempts": 558,
+      "successes": 558
     },
     "connect": {
       "attempts": 442,
