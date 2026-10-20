@@ -23,16 +23,30 @@ def _recent_success_ratio(episodes: list[dict[str, Any]]) -> float:
     return sum(1 for e in episodes if e.get("success")) / len(episodes)
 
 
+def _recent_curiosity_ratio(episodes: list[dict[str, Any]]) -> float:
+    if not episodes:
+        return 0.5
+    curiosity_keywords = {"read", "explore", "revise", "question", "learn", "hypothesis"}
+    curious_count = 0
+    for e in episodes:
+        desc = str(e.get("description", "")).lower()
+        tags = [str(t).lower() for t in e.get("tags", [])]
+        if any(kw in desc or any(kw in tag for tag in tags) for kw in curiosity_keywords):
+            curious_count += 1
+    return curious_count / len(episodes)
+
+
 def assess_homeostasis(
     memory_limit: int = 500,
     configured_remote: list[str] | None = None,
 ) -> dict[str, Any]:
-    """Assess operational needs without collapsing them into one score."""
+    """Assess operational and cognitive exploratory needs without collapsing them into one score."""
     episodes = recent_episodes(24)
     providers = read_json("providers.json", {})
     runtime = read_json("runtime.json", {})
 
     success_ratio = _recent_success_ratio(episodes)
+    curiosity_ratio = _recent_curiosity_ratio(episodes)
     retained_episodes = episode_count()
     configured_remote = configured_remote or [
         name for name in providers if name != "fallback"
@@ -57,7 +71,14 @@ def assess_homeostasis(
             "critical" if success_ratio < 0.5 else "watch" if success_ratio < 0.8 else "stable",
             success_ratio,
             ">=0.80 recent successful tasks",
-            f"{sum(1 for e in episodes if e.get('success'))}/{len(episodes) or 0} recent tasks succeeded",
+            f"{sum(1 for e in episodes if e.get("success"))}/{len(episodes) or 0} recent tasks succeeded",
+        ),
+        Need(
+            "conceptual_curiosity",
+            "critical" if curiosity_ratio < 0.1 else "watch" if curiosity_ratio < 0.3 else "stable",
+            curiosity_ratio,
+            ">=0.30 recent episodes involving reading, belief revision, or exploration",
+            f"{sum(1 for e in episodes if any(kw in str(e.get('description','')).lower() for kw in ('read','explore','revise','question','learn','hypothesis')))}/{len(episodes) or 0} recent episodes show exploratory behavior",
         ),
         Need(
             "reasoning_redundancy",
@@ -80,6 +101,7 @@ def assess_homeostasis(
         "generation": int(runtime.get("generation", 0)),
         "needs": [asdict(n) for n in needs],
         "recent_success_ratio": success_ratio,
+        "recent_curiosity_ratio": curiosity_ratio,
         "retained_episode_count": retained_episodes,
         "configured_remote_providers": sorted(configured_remote),
         "usable_remote_providers": usable_remote,
