@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-20T04:58:12.153023+00:00",
-  "generation": 3918,
-  "focus": "Psychology: Briefer Course",
-  "last_action": "read",
+  "timestamp": "2026-10-20T05:00:03.828066+00:00",
+  "generation": 3919,
+  "focus": "The Story of the Mind",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 3916,
   "last_search_generation": 3910,
@@ -14,7 +14,7 @@
     "nodes": 10045,
     "synapses": 63272,
     "active": 120,
-    "archived_synapses": 33314
+    "archived_synapses": 33368
   },
   "memory": {
     "episodes": 3552,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 15143,
+    "events": 15147,
     "segments": 598,
     "compressed_snapshot": true,
     "snapshot_events": 15087
@@ -35,12 +35,12 @@
   "evidence_reviews": 387,
   "workspace": [
     {
-      "node_id": "concept:2331eb33ce2c3766148e",
-      "label": "philosophy",
+      "node_id": "concept:dfd34a31322c29f8",
+      "label": "concepts",
       "activation": 1.0,
-      "novelty": 0.18796992481203006,
+      "novelty": 0.3305785123966942,
       "conflict": 0,
-      "score": 0.9107518796992482
+      "score": 0.9492561983471075
     },
     {
       "node_id": "concept:64b218956223eb12d13e",
@@ -75,20 +75,20 @@
       "score": 0.8942422320862398
     },
     {
+      "node_id": "concept:1abe5f34c25e621d",
+      "label": "characteristic",
+      "activation": 1.0,
+      "novelty": 0.12610340479192939,
+      "conflict": 0,
+      "score": 0.8940479192938209
+    },
+    {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
       "activation": 1.0,
       "novelty": 0.11869436201780414,
       "conflict": 0,
       "score": 0.8920474777448071
-    },
-    {
-      "node_id": "concept:5a2a957b269e8f0f",
-      "label": "external",
-      "activation": 1.0,
-      "novelty": 0.09610764055742432,
-      "conflict": 0,
-      "score": 0.8859490629505047
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 515
     },
     "connect": {
-      "attempts": 404,
-      "successes": 404
+      "attempts": 405,
+      "successes": 405
     },
     "evolve": {
       "attempts": 21,
