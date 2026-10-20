@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-20T09:52:05.584064+00:00",
-  "generation": 3974,
-  "focus": "The Master of Destiny: A Biography of the Brain",
-  "last_action": "read",
+  "timestamp": "2026-10-20T09:53:58.676511+00:00",
+  "generation": 3975,
+  "focus": "A Treatise Concerning the Principles of Human Knowledge",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 3973,
   "last_search_generation": 3956,
   "cortex": {
-    "nodes": 10108,
-    "synapses": 63921,
+    "nodes": 10113,
+    "synapses": 63961,
     "active": 120,
-    "archived_synapses": 34349
+    "archived_synapses": 34291
   },
   "memory": {
     "episodes": 3581,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 15558,
+    "events": 15563,
     "segments": 618,
     "compressed_snapshot": true,
     "snapshot_events": 15518
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 402,
   "workspace": [
+    {
+      "node_id": "concept:5a2a957b269e8f0f",
+      "label": "external",
+      "activation": 1.0,
+      "novelty": 0.09447331128956071,
+      "conflict": 0,
+      "score": 0.8855077940481815
+    },
     {
       "node_id": "concept:c847bcd57c312119",
       "label": "selected",
@@ -43,52 +51,44 @@
       "score": 0.8821220811142976
     },
     {
-      "node_id": "concept:f7fcf8b59972ef7bb16e",
-      "label": "detailed",
+      "node_id": "concept:7111684708cd2f68a436",
+      "label": "dismissed",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:512738161b2a7913e5e5",
-      "label": "laboratory",
+      "node_id": "concept:5b16732bc04ea106a93d",
+      "label": "reminded",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:4004bde35d03eb3d837e",
-      "label": "princeton",
+      "node_id": "concept:e98841308f569acde044",
+      "label": "vulture",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:f78fcae67d4aa99819ff",
-      "label": "explanation",
+      "node_id": "concept:517d44570506499f793c",
+      "label": "kinship",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:aac0a0f664a6a15e2670",
+      "label": "commonly",
       "activation": 0.46,
       "novelty": 0.7874015748031495,
       "conflict": 0,
       "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:c187e609c81b018134ab",
-      "label": "problems",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:d413f65286221536df21",
-      "label": "ones",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 417
     },
     "consolidate": {
-      "attempts": 527,
-      "successes": 527
+      "attempts": 528,
+      "successes": 528
     },
     "connect": {
       "attempts": 416,
