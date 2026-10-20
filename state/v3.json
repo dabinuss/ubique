@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-20T11:36:40.152274+00:00",
-  "generation": 3992,
+  "timestamp": "2026-10-20T11:38:32.851651+00:00",
+  "generation": 3993,
   "focus": "Human, All Too Human: A Book for Free Spirits",
-  "last_action": "read",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "observed_associations",
   "last_provider": null,
   "last_provider_generation": 3990,
   "last_search_generation": 3979,
   "cortex": {
-    "nodes": 10125,
+    "nodes": 10126,
     "synapses": 64256,
     "active": 120,
     "archived_synapses": 34524
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 15701,
+    "events": 15706,
     "segments": 624,
     "compressed_snapshot": true,
     "snapshot_events": 15690
@@ -51,6 +51,14 @@
       "score": 0.9060750853242321
     },
     {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 1.0,
+      "novelty": 0.13783597518952448,
+      "conflict": 0,
+      "score": 0.8972157133011716
+    },
+    {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
@@ -59,12 +67,12 @@
       "score": 0.8852927400468384
     },
     {
-      "node_id": "concept:c847bcd57c312119",
-      "label": "selected",
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
       "activation": 1.0,
-      "novelty": 0.0819336337566571,
+      "novelty": 0.046178711613945975,
       "conflict": 0,
-      "score": 0.8821220811142976
+      "score": 0.8724682521357654
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -81,14 +89,6 @@
       "novelty": 0.021159542953872196,
       "conflict": 0,
       "score": 0.8657130765975456
-    },
-    {
-      "node_id": "concept:bc64f64fb479ef52a788",
-      "label": "reversed",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 8
     },
     "experiment": {
-      "attempts": 15,
-      "successes": 13
+      "attempts": 16,
+      "successes": 14
     },
     "question": {
       "attempts": 11,
