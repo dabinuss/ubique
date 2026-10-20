@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-20T21:37:29.433559+00:00",
-  "generation": 4097,
-  "focus": "A Treatise Concerning the Principles of Human Knowledge",
-  "last_action": "read",
+  "timestamp": "2026-10-20T21:39:21.011135+00:00",
+  "generation": 4098,
+  "focus": "Mental Evolution in Man: Origin of Human Faculty",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 4097,
   "last_search_generation": 4094,
   "cortex": {
-    "nodes": 10258,
-    "synapses": 65924,
+    "nodes": 10261,
+    "synapses": 65974,
     "active": 120,
-    "archived_synapses": 34928
+    "archived_synapses": 34924
   },
   "memory": {
     "episodes": 3650,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 16529,
+    "events": 16534,
     "segments": 662,
     "compressed_snapshot": true,
     "snapshot_events": 16472
@@ -38,17 +38,25 @@
       "node_id": "concept:48d492d08e9d314c034c",
       "label": "studies",
       "activation": 1.0,
-      "novelty": 0.22624434389140272,
+      "novelty": 0.22396416573348266,
       "conflict": 0,
-      "score": 0.9210859728506788
+      "score": 0.9204703247480404
     },
     {
       "node_id": "concept:65ee89092efbf78ab19a",
       "label": "optimistic",
       "activation": 1.0,
-      "novelty": 0.2173913043478261,
+      "novelty": 0.21528525296017226,
       "conflict": 0,
-      "score": 0.9186956521739131
+      "score": 0.9181270182992465
+    },
+    {
+      "node_id": "concept:85ca6d6d291c070dbcb2",
+      "label": "conduct",
+      "activation": 1.0,
+      "novelty": 0.21321961620469085,
+      "conflict": 0,
+      "score": 0.9175692963752666
     },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
@@ -57,14 +65,6 @@
       "novelty": 0.14992503748125938,
       "conflict": 0,
       "score": 0.9004797601199401
-    },
-    {
-      "node_id": "concept:e2d5a675d4eab169",
-      "label": "continue",
-      "activation": 1.0,
-      "novelty": 0.13956734124214934,
-      "conflict": 0,
-      "score": 0.8976831821353803
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
@@ -105,8 +105,8 @@
       "successes": 438
     },
     "consolidate": {
-      "attempts": 554,
-      "successes": 554
+      "attempts": 555,
+      "successes": 555
     },
     "connect": {
       "attempts": 440,
