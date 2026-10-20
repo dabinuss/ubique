@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-20T14:03:17.686465+00:00",
-  "generation": 4019,
-  "focus": "The Master of Destiny: A Biography of the Brain",
-  "last_action": "read",
+  "timestamp": "2026-10-20T14:05:07.849965+00:00",
+  "generation": 4020,
+  "focus": "An Introduction to Psychology",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 4018,
   "last_search_generation": 4002,
   "cortex": {
-    "nodes": 10161,
+    "nodes": 10163,
     "synapses": 64736,
     "active": 120,
-    "archived_synapses": 34830
+    "archived_synapses": 34908
   },
   "memory": {
     "episodes": 3607,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 15909,
-    "segments": 633,
+    "events": 15913,
+    "segments": 634,
     "compressed_snapshot": true,
     "snapshot_events": 15866
   },
@@ -43,36 +43,12 @@
       "score": 0.9519931856899491
     },
     {
-      "node_id": "concept:48d492d08e9d314c034c",
-      "label": "studies",
-      "activation": 1.0,
-      "novelty": 0.24906600249066005,
-      "conflict": 0,
-      "score": 0.9272478206724784
-    },
-    {
-      "node_id": "concept:65ee89092efbf78ab19a",
-      "label": "optimistic",
-      "activation": 1.0,
-      "novelty": 0.23837902264600713,
-      "conflict": 0,
-      "score": 0.924362336114422
-    },
-    {
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
       "novelty": 0.16433853738701726,
       "conflict": 0,
       "score": 0.9043714050944947
-    },
-    {
-      "node_id": "concept:2331eb33ce2c3766148e",
-      "label": "philosophy",
-      "activation": 1.0,
-      "novelty": 0.1607717041800643,
-      "conflict": 0,
-      "score": 0.9034083601286174
     },
     {
       "node_id": "concept:02aab799561baeb9",
@@ -89,6 +65,30 @@
       "novelty": 0.13783597518952448,
       "conflict": 0,
       "score": 0.8972157133011716
+    },
+    {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.11325028312570781,
+      "conflict": 0,
+      "score": 0.8905775764439412
+    },
+    {
+      "node_id": "concept:6907de2e8144a57274c7",
+      "label": "treatise",
+      "activation": 1.0,
+      "novelty": 0.11043622308117063,
+      "conflict": 0,
+      "score": 0.889817780231916
+    },
+    {
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.06961364427427776,
+      "conflict": 0,
+      "score": 0.8787956839540549
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 587
     },
     "explore": {
-      "attempts": 427,
-      "successes": 425
+      "attempts": 428,
+      "successes": 426
     },
     "consolidate": {
       "attempts": 537,
