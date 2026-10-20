@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-20T07:20:53.614221+00:00",
-  "generation": 3944,
-  "focus": "Psychology: Briefer Course",
-  "last_action": "read",
+  "timestamp": "2026-10-20T07:22:52.918537+00:00",
+  "generation": 3945,
+  "focus": "A Treatise Concerning the Principles of Human Knowledge",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "gemini",
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": null,
   "last_provider_generation": 3944,
   "last_search_generation": 3933,
   "cortex": {
-    "nodes": 10064,
+    "nodes": 10066,
     "synapses": 63554,
     "active": 120,
-    "archived_synapses": 33886
+    "archived_synapses": 34010
   },
   "memory": {
     "episodes": 3566,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 15332,
+    "events": 15336,
     "segments": 607,
     "compressed_snapshot": true,
     "snapshot_events": 15332
@@ -45,14 +45,6 @@
     {
       "node_id": "concept:3f8b4464a99de3dc8c5c",
       "label": "religious",
-      "activation": 1.0,
-      "novelty": 0.1519756838905775,
-      "conflict": 0,
-      "score": 0.901033434650456
-    },
-    {
-      "node_id": "concept:ac32f27ba7a1346f43c0",
-      "label": "cognition",
       "activation": 1.0,
       "novelty": 0.1519756838905775,
       "conflict": 0,
@@ -83,6 +75,14 @@
       "score": 0.8918772136953956
     },
     {
+      "node_id": "concept:5a2a957b269e8f0f",
+      "label": "external",
+      "activation": 1.0,
+      "novelty": 0.09610764055742432,
+      "conflict": 0,
+      "score": 0.8859490629505047
+    },
+    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -101,8 +101,8 @@
       "successes": 571
     },
     "explore": {
-      "attempts": 414,
-      "successes": 412
+      "attempts": 415,
+      "successes": 413
     },
     "consolidate": {
       "attempts": 521,
