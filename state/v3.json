@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-21T00:55:40.221776+00:00",
-  "generation": 4133,
-  "focus": "The Master of Destiny: A Biography of the Brain",
-  "last_action": "read",
+  "timestamp": "2026-10-21T00:57:26.330984+00:00",
+  "generation": 4134,
+  "focus": "A Treatise Concerning the Principles of Human Knowledge",
+  "last_action": "question",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "How does the view in the first passage relate to the second concerning insight, into, without? Which assumptions differ?",
   "last_provider": null,
   "last_provider_generation": 4131,
   "last_search_generation": 4117,
@@ -14,11 +14,11 @@
     "nodes": 10299,
     "synapses": 66567,
     "active": 120,
-    "archived_synapses": 34861
+    "archived_synapses": 34889
   },
   "memory": {
     "episodes": 3664,
-    "claims": 2136,
+    "claims": 2137,
     "stances": 26,
     "interests": 82,
     "associative_comparisons": 1610,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 16783,
+    "events": 16789,
     "segments": 674,
     "compressed_snapshot": true,
     "snapshot_events": 16726
@@ -59,20 +59,20 @@
       "score": 0.9144354838709678
     },
     {
-      "node_id": "concept:64b218956223eb12d13e",
-      "label": "principles",
-      "activation": 1.0,
-      "novelty": 0.14792899408284024,
-      "conflict": 0,
-      "score": 0.8999408284023669
-    },
-    {
       "node_id": "concept:02aab799561baeb9",
       "label": "concerning",
       "activation": 1.0,
       "novelty": 0.13956734124214934,
       "conflict": 0,
       "score": 0.8976831821353803
+    },
+    {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 1.0,
+      "novelty": 0.12755102040816327,
+      "conflict": 0,
+      "score": 0.8944387755102041
     },
     {
       "node_id": "concept:24ea913efda289dc1b17",
@@ -83,12 +83,12 @@
       "score": 0.891377106333527
     },
     {
-      "node_id": "concept:e0f895872d65b2528fee",
-      "label": "knowledge",
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
       "activation": 1.0,
-      "novelty": 0.10570824524312897,
+      "novelty": 0.06531678641410843,
       "conflict": 0,
-      "score": 0.8885412262156449
+      "score": 0.8776355323318092
     }
   ],
   "skills": {
@@ -121,8 +121,8 @@
       "successes": 25
     },
     "question": {
-      "attempts": 19,
-      "successes": 19
+      "attempts": 20,
+      "successes": 20
     },
     "library": {
       "attempts": 1,
