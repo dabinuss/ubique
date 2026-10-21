@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-21T10:02:28.204626+00:00",
-  "generation": 4233,
-  "focus": "The Psychology of the Emotions",
-  "last_action": "read",
+  "timestamp": "2026-10-21T10:04:24.154462+00:00",
+  "generation": 4234,
+  "focus": "Human, All Too Human: A Book for Free Spirits",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": null,
   "last_provider_generation": 4233,
   "last_search_generation": 4232,
   "cortex": {
-    "nodes": 10405,
+    "nodes": 10406,
     "synapses": 67883,
     "active": 120,
-    "archived_synapses": 35607
+    "archived_synapses": 35649
   },
   "memory": {
     "episodes": 3736,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 17558,
+    "events": 17562,
     "segments": 710,
     "compressed_snapshot": true,
     "snapshot_events": 17487
@@ -41,30 +41,6 @@
       "novelty": 0.351493848857645,
       "conflict": 0,
       "score": 0.9549033391915642
-    },
-    {
-      "node_id": "concept:ca52e7d1c18961a8c5b3",
-      "label": "united",
-      "activation": 1.0,
-      "novelty": 0.3305785123966942,
-      "conflict": 0,
-      "score": 0.9492561983471075
-    },
-    {
-      "node_id": "concept:923b4b90ea64343e4a1c",
-      "label": "states",
-      "activation": 1.0,
-      "novelty": 0.30349013657056145,
-      "conflict": 0,
-      "score": 0.9419423368740516
-    },
-    {
-      "node_id": "concept:244210e48437b6556980",
-      "label": "project",
-      "activation": 1.0,
-      "novelty": 0.19286403085824494,
-      "conflict": 0,
-      "score": 0.9120732883317262
     },
     {
       "node_id": "concept:48d492d08e9d314c034c",
@@ -89,6 +65,30 @@
       "novelty": 0.13783597518952448,
       "conflict": 0,
       "score": 0.8972157133011716
+    },
+    {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 1.0,
+      "novelty": 0.12128562765312309,
+      "conflict": 0,
+      "score": 0.8927471194663432
+    },
+    {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.09910802775024777,
+      "conflict": 0,
+      "score": 0.886759167492567
+    },
+    {
+      "node_id": "concept:6907de2e8144a57274c7",
+      "label": "treatise",
+      "activation": 1.0,
+      "novelty": 0.08741258741258742,
+      "conflict": 0,
+      "score": 0.8836013986013986
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 632
     },
     "explore": {
-      "attempts": 461,
-      "successes": 458
+      "attempts": 462,
+      "successes": 459
     },
     "consolidate": {
       "attempts": 585,
