@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-21T13:35:36.255517+00:00",
-  "generation": 4270,
-  "focus": "The Story of the Mind",
-  "last_action": "read",
+  "timestamp": "2026-10-21T13:37:20.939600+00:00",
+  "generation": 4271,
+  "focus": "Psychology of the Unconscious",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 4267,
   "last_search_generation": 4255,
   "cortex": {
-    "nodes": 10466,
-    "synapses": 68575,
+    "nodes": 10467,
+    "synapses": 68587,
     "active": 120,
-    "archived_synapses": 35759
+    "archived_synapses": 35723
   },
   "memory": {
     "episodes": 3751,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 17831,
-    "segments": 723,
+    "events": 17836,
+    "segments": 724,
     "compressed_snapshot": true,
     "snapshot_events": 17816
   },
@@ -51,14 +51,6 @@
       "score": 0.8920474777448071
     },
     {
-      "node_id": "concept:5a2a957b269e8f0f",
-      "label": "external",
-      "activation": 1.0,
-      "novelty": 0.08316008316008315,
-      "conflict": 0,
-      "score": 0.8824532224532224
-    },
-    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -75,20 +67,28 @@
       "score": 0.8667474696988631
     },
     {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
-      "activation": 1.0,
-      "novelty": 0.02070607723366808,
+      "node_id": "concept:edca249d8d1f9a5b7d1a",
+      "label": "calculate",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8655906408530905
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:6969adeeb34371ec2687",
-      "label": "eaking",
+      "node_id": "concept:c6f452234557cb0f1783",
+      "label": "agraph",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:97488fbab3282166738a",
+      "label": "charge",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 463
     },
     "consolidate": {
-      "attempts": 593,
-      "successes": 593
+      "attempts": 594,
+      "successes": 594
     },
     "connect": {
       "attempts": 475,
