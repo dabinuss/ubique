@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-21T21:03:27.696279+00:00",
-  "generation": 4348,
-  "focus": "The Mind and the Brain",
-  "last_action": "read",
+  "timestamp": "2026-10-21T21:05:25.922020+00:00",
+  "generation": 4349,
+  "focus": "A Treatise of Human Nature",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 2330 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 4347,
   "last_search_generation": 4347,
@@ -14,7 +14,7 @@
     "nodes": 10575,
     "synapses": 69597,
     "active": 120,
-    "archived_synapses": 35835
+    "archived_synapses": 35813
   },
   "memory": {
     "episodes": 3798,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 18456,
+    "events": 18461,
     "segments": 758,
     "compressed_snapshot": true,
     "snapshot_events": 18445
@@ -35,44 +35,28 @@
   "evidence_reviews": 528,
   "workspace": [
     {
+      "node_id": "concept:ca52e7d1c18961a8c5b3",
+      "label": "united",
+      "activation": 1.0,
+      "novelty": 0.32573289902280134,
+      "conflict": 0,
+      "score": 0.9479478827361565
+    },
+    {
+      "node_id": "concept:923b4b90ea64343e4a1c",
+      "label": "states",
+      "activation": 1.0,
+      "novelty": 0.30349013657056145,
+      "conflict": 0,
+      "score": 0.9419423368740516
+    },
+    {
       "node_id": "concept:721048dc35951006",
       "label": "observations",
       "activation": 1.0,
       "novelty": 0.2173913043478261,
       "conflict": 0,
       "score": 0.9186956521739131
-    },
-    {
-      "node_id": "concept:3853eb486f0ccd5b3023",
-      "label": "varieties",
-      "activation": 1.0,
-      "novelty": 0.14503263234227703,
-      "conflict": 0,
-      "score": 0.8991588107324149
-    },
-    {
-      "node_id": "concept:2331eb33ce2c3766148e",
-      "label": "philosophy",
-      "activation": 1.0,
-      "novelty": 0.12828736369467608,
-      "conflict": 0,
-      "score": 0.8946375881975626
-    },
-    {
-      "node_id": "concept:3f8b4464a99de3dc8c5c",
-      "label": "religious",
-      "activation": 1.0,
-      "novelty": 0.12330456226880396,
-      "conflict": 0,
-      "score": 0.8932922318125771
-    },
-    {
-      "node_id": "concept:53e5e7c5a884893739c4",
-      "label": "experience",
-      "activation": 1.0,
-      "novelty": 0.10989010989010989,
-      "conflict": 0,
-      "score": 0.8896703296703297
     },
     {
       "node_id": "concept:e0f895872d65b2528fee",
@@ -89,6 +73,22 @@
       "novelty": 0.07874015748031496,
       "conflict": 0,
       "score": 0.8812598425196851
+    },
+    {
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.0611807892321811,
+      "conflict": 0,
+      "score": 0.8765188130926889
+    },
+    {
+      "node_id": "concept:54476ce93ea4a148",
+      "label": "distinguish",
+      "activation": 1.0,
+      "novelty": 0.04776689754000478,
+      "conflict": 0,
+      "score": 0.8728970623358014
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 476
     },
     "consolidate": {
-      "attempts": 611,
-      "successes": 611
+      "attempts": 612,
+      "successes": 612
     },
     "connect": {
       "attempts": 489,
