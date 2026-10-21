@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-21T15:48:46.433411+00:00",
-  "generation": 4296,
-  "focus": "A Treatise Concerning the Principles of Human Knowledge",
-  "last_action": "experiment",
+  "timestamp": "2026-10-21T15:50:45.046618+00:00",
+  "generation": 4297,
+  "focus": "Meditations",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "observed_associations",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 4296,
   "last_search_generation": 4278,
   "cortex": {
     "nodes": 10506,
     "synapses": 68962,
     "active": 120,
-    "archived_synapses": 36002
+    "archived_synapses": 35898
   },
   "memory": {
     "episodes": 3767,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 18031,
+    "events": 18036,
     "segments": 734,
     "compressed_snapshot": true,
     "snapshot_events": 17987
@@ -43,14 +43,6 @@
       "score": 0.8920474777448071
     },
     {
-      "node_id": "concept:94877da84edb5445",
-      "label": "distinguishes",
-      "activation": 0.8270396851799399,
-      "novelty": 0.4175365344467641,
-      "conflict": 0,
-      "score": 0.882795500594195
-    },
-    {
       "node_id": "concept:02f77488efc6c9cf",
       "label": "destiny",
       "activation": 1.0,
@@ -62,33 +54,41 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.035656979853806385,
+      "novelty": 0.0355998576005696,
       "conflict": 0,
-      "score": 0.8696273845605278
+      "score": 0.8696119615521538
+    },
+    {
+      "node_id": "concept:94877da84edb5445",
+      "label": "distinguishes",
+      "activation": 0.7867774548550694,
+      "novelty": 0.4098360655737705,
+      "conflict": 0,
+      "score": 0.8597800142295542
     },
     {
       "node_id": "concept:acc9b4a31be0cec8d242",
       "label": "hereafter",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:771ddab9b936047a7c44",
       "label": "obscure",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.7917984251968504
     },
     {
       "node_id": "concept:b5120a6cfd2b71f92ce7",
       "label": "calmness",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.7917984251968504
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 468
     },
     "consolidate": {
-      "attempts": 599,
-      "successes": 599
+      "attempts": 600,
+      "successes": 600
     },
     "connect": {
       "attempts": 480,
