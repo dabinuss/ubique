@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-21T20:43:21.327186+00:00",
-  "generation": 4344,
-  "focus": "The Varieties of Religious Experience: A Study in Human Nature",
-  "last_action": "explore",
-  "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "timestamp": "2026-10-21T20:45:25.365625+00:00",
+  "generation": 4345,
+  "focus": "Human Nature and Conduct",
+  "last_action": "evolve",
+  "last_action_success": false,
+  "last_action_detail": "{\"accepted\": false, \"title\": \"Rejected evolution\", \"summary\": \"\", \"branch\": null, \"pr_url\": null, \"commit_sha\": null, \"reason\": \"proposal rejected: Unterminated string starting at: line 7 column 18 (char 547)\", \"baseline_score\": null, \"candidate_score\": null}",
   "last_provider": null,
   "last_provider_generation": 4341,
   "last_search_generation": 4324,
@@ -14,7 +14,7 @@
     "nodes": 10562,
     "synapses": 69523,
     "active": 120,
-    "archived_synapses": 35709
+    "archived_synapses": 35785
   },
   "memory": {
     "episodes": 3789,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 18391,
+    "events": 18397,
     "segments": 756,
     "compressed_snapshot": true,
     "snapshot_events": 18339
@@ -37,10 +37,10 @@
     {
       "node_id": "concept:721048dc35951006",
       "label": "observations",
-      "activation": 0.9995533862793641,
+      "activation": 0.996217221741016,
       "novelty": 0.2173913043478261,
       "conflict": 0,
-      "score": 0.9184634130391824
+      "score": 0.9167286074792413
     },
     {
       "node_id": "concept:3853eb486f0ccd5b3023",
@@ -113,7 +113,7 @@
       "successes": 488
     },
     "evolve": {
-      "attempts": 26,
+      "attempts": 27,
       "successes": 8
     },
     "experiment": {
