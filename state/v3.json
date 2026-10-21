@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-21T09:07:53.393957+00:00",
-  "generation": 4223,
-  "focus": "Dream Psychology: Psychoanalysis for Beginners",
-  "last_action": "read",
+  "timestamp": "2026-10-21T09:09:52.611034+00:00",
+  "generation": 4224,
+  "focus": "The Physical Basis of Mind",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "observed_associations",
   "last_provider": null,
   "last_provider_generation": 4222,
   "last_search_generation": 4209,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 17476,
-    "segments": 706,
+    "events": 17481,
+    "segments": 707,
     "compressed_snapshot": true,
     "snapshot_events": 17407
   },
@@ -45,10 +45,18 @@
     {
       "node_id": "concept:ca52e7d1c18961a8c5b3",
       "label": "united",
-      "activation": 0.9658028450977486,
+      "activation": 0.9687300853038373,
       "novelty": 0.3305785123966942,
       "conflict": 0,
-      "score": 0.9314736777979367
+      "score": 0.9329958427051028
+    },
+    {
+      "node_id": "concept:48d492d08e9d314c034c",
+      "label": "studies",
+      "activation": 1.0,
+      "novelty": 0.19627085377821393,
+      "conflict": 0,
+      "score": 0.9129931305201178
     },
     {
       "node_id": "concept:244210e48437b6556980",
@@ -59,36 +67,28 @@
       "score": 0.9125291828793776
     },
     {
+      "node_id": "concept:65ee89092efbf78ab19a",
+      "label": "optimistic",
+      "activation": 1.0,
+      "novelty": 0.19120458891013387,
+      "conflict": 0,
+      "score": 0.9116252390057362
+    },
+    {
+      "node_id": "concept:2331eb33ce2c3766148e",
+      "label": "philosophy",
+      "activation": 1.0,
+      "novelty": 0.13956734124214934,
+      "conflict": 0,
+      "score": 0.8976831821353803
+    },
+    {
       "node_id": "concept:923b4b90ea64343e4a1c",
       "label": "states",
-      "activation": 0.9023733939675204,
+      "activation": 0.9020294775944119,
       "novelty": 0.30349013657056145,
       "conflict": 0,
-      "score": 0.8911765017371622
-    },
-    {
-      "node_id": "concept:5a2a957b269e8f0f",
-      "label": "external",
-      "activation": 1.0,
-      "novelty": 0.08410428931875527,
-      "conflict": 0,
-      "score": 0.8827081581160641
-    },
-    {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.06363347120585428,
-      "conflict": 0,
-      "score": 0.8771810372255806
-    },
-    {
-      "node_id": "concept:10d0d9c7a5909812",
-      "label": "test",
-      "activation": 1.0,
-      "novelty": 0.0481811611659841,
-      "conflict": 0,
-      "score": 0.8730089135148158
+      "score": 0.8909976652231457
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 8
     },
     "experiment": {
-      "attempts": 35,
-      "successes": 33
+      "attempts": 36,
+      "successes": 34
     },
     "question": {
       "attempts": 24,
