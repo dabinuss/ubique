@@ -195,24 +195,21 @@ class SemanticLearner:
                               ". Their interpretations may agree or disagree; "
                               "this is an invitation to investigate, not proof."),
                 "uncertainty": 0.75}
-            # Word overlap is useful for asking a question, not a confirmed
-            # insight or evidence for the authors agreeing on the same claim.
-            comparison["epistemic_status"] = "unverified_association"
-            self.journal.append("association_hypothesis", comparison, generation=generation)
-            self.comparisons.add(fingerprint)
-            link = self.world.claim(comparison["statement"], status="HYPOTHESIS",
-                                    source_refs=pair, confidence=0.12,
-                                    generation=generation)
-            comparison["claim_id"] = link["id"]
-            result.append(comparison)
-            # Keep actual author sentences next to a lexical comparison.
-            # The agent may investigate them freely without assuming agreement.
             first = source_sentence(str(episode.get("text", "")))
             second = source_sentence(str(other.get("text", "")))
             comparison["passages"] = [first, second]
             comparison["question"] = (
-                "What is the relationship between these two source passages "
-                "about " + ", ".join(shared[:3]) + "?")
+                "How do the authors' claims differ or align concerning " +
+                ", ".join(shared[:3]) + "? What evidence could distinguish them?")
+            comparison["epistemic_status"] = "unverified_association"
+            comparison["interpretation_quality"] = "exploratory_not_entailment"
+            link = self.world.claim(comparison["statement"], status="HYPOTHESIS",
+                                    source_refs=pair, confidence=0.12,
+                                    generation=generation)
+            comparison["claim_id"] = link["id"]
+            self.journal.append("association_hypothesis", comparison, generation=generation)
+            self.comparisons.add(fingerprint)
+            result.append(comparison)
             left = self.cortex.ensure(shared[0])
             right = self.cortex.ensure(shared[-1])
             self.cortex.connect(left.id, right.id, relation="compared_in_sources",
