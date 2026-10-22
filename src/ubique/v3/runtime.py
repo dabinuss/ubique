@@ -24,6 +24,7 @@ from .workspace import Workspace
 from .planner import Planner
 from .self_model import SelfContinuity
 from .library import KnowledgeLibrary
+from .book_discovery import discover_public_books
 from .evolution import Evolution
 from .semantics import SemanticLearner
 from .inquiry import enquire
@@ -286,6 +287,22 @@ class UbiqueV3:
             return Result("rest",True,"Local activation decayed")
         if chosen.kind=="search":
             return self._research(focus,generation)
+        if chosen.kind=="library" and chosen.payload.get("action")=="discover":
+            query=str(chosen.payload.get("query","")).strip()
+            try:
+                outcome=discover_public_books(query,limit=2)
+                found=outcome.get("added",[])
+                result=Result("library",bool(found),
+                              "Discovered "+str(len(found))+" public-domain books",
+                              payload={"query":query,"books":found})
+            except Exception as exc:
+                result=Result("library",False,type(exc).__name__+": "+str(exc)[:300],
+                              payload={"query":query})
+            self.journal.append("library_discovery",{
+                "query":query,"success":result.success,
+                "effect":result.effect,"books":result.payload.get("books",[])},
+                generation=generation)
+            return result
         if chosen.kind in {"evolve","edit_code"}:
             if not self.providers or not self.providers.available():
                 return Result(chosen.kind,False,"Remote code contributor deferred")
@@ -429,7 +446,7 @@ class UbiqueV3:
             candidates=self.planner.rank(candidates,last=self.history)
             chosen=select(candidates,self.curiosity,self.history)
             result=self._act(chosen,generation=generation,focus=focus)
-            if not result.success and chosen.kind in {"search","read"}:
+            if not result.success and chosen.kind in {"search","read","library"}:
                 # Preserve the failed attempt as experience, but never waste
                 # the entire learning cycle on a blocked external source.
                 self.journal.append("action_outcome",{
