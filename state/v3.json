@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-22T09:31:22.907650+00:00",
-  "generation": 4483,
-  "focus": "The Physical Basis of Mind",
-  "last_action": "read",
+  "timestamp": "2026-10-22T09:33:29.207929+00:00",
+  "generation": 4484,
+  "focus": "The Nicomachean Ethics of Aristotle",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "gemini",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 4483,
   "last_search_generation": 4462,
   "cortex": {
-    "nodes": 10730,
-    "synapses": 71268,
+    "nodes": 10733,
+    "synapses": 71298,
     "active": 120,
-    "archived_synapses": 36840
+    "archived_synapses": 36764
   },
   "memory": {
     "episodes": 3871,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 19465,
-    "segments": 813,
+    "events": 19470,
+    "segments": 814,
     "compressed_snapshot": true,
     "snapshot_events": 19407
   },
@@ -41,6 +41,14 @@
       "novelty": 0.12610340479192939,
       "conflict": 0,
       "score": 0.8940479192938209
+    },
+    {
+      "node_id": "concept:24ea913efda289dc1b17",
+      "label": "most",
+      "activation": 1.0,
+      "novelty": 0.11154489682097045,
+      "conflict": 0,
+      "score": 0.8901171221416622
     },
     {
       "node_id": "concept:3f8b4464a99de3dc8c5c",
@@ -75,20 +83,12 @@
       "score": 0.8755754254398616
     },
     {
-      "node_id": "concept:dd7cf0a1d49819b9",
-      "label": "uncertain",
+      "node_id": "concept:10d0d9c7a5909812",
+      "label": "test",
       "activation": 1.0,
       "novelty": 0.0481811611659841,
       "conflict": 0,
       "score": 0.8730089135148158
-    },
-    {
-      "node_id": "concept:02f77488efc6c9cf",
-      "label": "destiny",
-      "activation": 1.0,
-      "novelty": 0.040535062829347386,
-      "conflict": 0,
-      "score": 0.8709444669639239
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 497
     },
     "consolidate": {
-      "attempts": 642,
-      "successes": 642
+      "attempts": 643,
+      "successes": 643
     },
     "connect": {
       "attempts": 517,
