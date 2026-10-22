@@ -44,6 +44,17 @@ def source_sentence(text: str) -> str:
     return ""
 
 
+def evidence_excerpt(text: str) -> str:
+    """Return an exact, readable source excerpt even for short passages."""
+    quote = source_sentence(text)
+    if quote:
+        return quote
+    alternatives = meaningful_sentences(text, limit=4)
+    if alternatives:
+        return alternatives[0][:480]
+    return " ".join(clean_source(text).split())[:350]
+
+
 class SemanticLearner:
     def __init__(self, journal: Journal, hippocampus: Hippocampus,
                  world: WorldModel, cortex: Cortex, *, exploration_factor: float = 0.1):
@@ -195,8 +206,8 @@ class SemanticLearner:
                               ". Their interpretations may agree or disagree; "
                               "this is an invitation to investigate, not proof."),
                 "uncertainty": 0.75}
-            first = source_sentence(str(episode.get("text", "")))
-            second = source_sentence(str(other.get("text", "")))
+            first = evidence_excerpt(str(episode.get("text", "")))
+            second = evidence_excerpt(str(other.get("text", "")))
             comparison["passages"] = [first, second]
             comparison["question"] = (
                 "How do the authors' claims differ or align concerning " +
