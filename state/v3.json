@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-22T20:41:02.875584+00:00",
-  "generation": 4603,
-  "focus": "Psychology: Briefer Course",
-  "last_action": "read",
+  "timestamp": "2026-10-22T20:42:51.770730+00:00",
+  "generation": 4604,
+  "focus": "The Psychology of the Emotions",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 4602,
   "last_search_generation": 4600,
   "cortex": {
-    "nodes": 10862,
+    "nodes": 10864,
     "synapses": 72831,
     "active": 120,
-    "archived_synapses": 37067
+    "archived_synapses": 37047
   },
   "memory": {
     "episodes": 3938,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 20434,
+    "events": 20439,
     "segments": 862,
     "compressed_snapshot": true,
     "snapshot_events": 20404
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 624,
   "workspace": [
+    {
+      "node_id": "concept:dfd34a31322c29f8",
+      "label": "concepts",
+      "activation": 1.0,
+      "novelty": 0.31201248049922,
+      "conflict": 0,
+      "score": 0.9442433697347894
+    },
     {
       "node_id": "concept:48d492d08e9d314c034c",
       "label": "studies",
@@ -51,20 +59,20 @@
       "score": 0.8994160583941606
     },
     {
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
+      "activation": 1.0,
+      "novelty": 0.12610340479192939,
+      "conflict": 0,
+      "score": 0.8940479192938209
+    },
+    {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
       "activation": 1.0,
-      "novelty": 0.11098779134295228,
+      "novelty": 0.10989010989010989,
       "conflict": 0,
-      "score": 0.8899667036625971
-    },
-    {
-      "node_id": "concept:02aab799561baeb9",
-      "label": "concerning",
-      "activation": 1.0,
-      "novelty": 0.10934937124111536,
-      "conflict": 0,
-      "score": 0.8895243302351012
+      "score": 0.8896703296703297
     },
     {
       "node_id": "concept:24ea913efda289dc1b17",
@@ -75,20 +83,12 @@
       "score": 0.8885412262156449
     },
     {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
       "activation": 1.0,
-      "novelty": 0.028702640642939155,
+      "novelty": 0.09212344541685859,
       "conflict": 0,
-      "score": 0.8677497129735936
-    },
-    {
-      "node_id": "concept:30adc606fce3d6b75837",
-      "label": "leading",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8848733302625518
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 516
     },
     "consolidate": {
-      "attempts": 669,
-      "successes": 669
+      "attempts": 670,
+      "successes": 670
     },
     "connect": {
       "attempts": 539,
