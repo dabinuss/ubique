@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-22T10:12:49.706895+00:00",
-  "generation": 4492,
+  "timestamp": "2026-10-22T10:14:48.319681+00:00",
+  "generation": 4493,
   "focus": "The Physical Basis of Mind",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 4488,
   "last_search_generation": 4485,
   "cortex": {
-    "nodes": 10742,
-    "synapses": 71369,
+    "nodes": 10744,
+    "synapses": 71399,
     "active": 120,
-    "archived_synapses": 36761
+    "archived_synapses": 36727
   },
   "memory": {
     "episodes": 3876,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 19549,
+    "events": 19554,
     "segments": 817,
     "compressed_snapshot": true,
     "snapshot_events": 19495
@@ -35,12 +35,12 @@
   "evidence_reviews": 576,
   "workspace": [
     {
-      "node_id": "concept:3853eb486f0ccd5b3023",
-      "label": "varieties",
+      "node_id": "concept:923b4b90ea64343e4a1c",
+      "label": "states",
       "activation": 1.0,
-      "novelty": 0.12610340479192939,
+      "novelty": 0.29542097488921715,
       "conflict": 0,
-      "score": 0.8940479192938209
+      "score": 0.9397636632200888
     },
     {
       "node_id": "concept:24ea913efda289dc1b17",
@@ -49,14 +49,6 @@
       "novelty": 0.11043622308117063,
       "conflict": 0,
       "score": 0.889817780231916
-    },
-    {
-      "node_id": "concept:3f8b4464a99de3dc8c5c",
-      "label": "religious",
-      "activation": 1.0,
-      "novelty": 0.10934937124111536,
-      "conflict": 0,
-      "score": 0.8895243302351012
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
@@ -89,6 +81,14 @@
       "novelty": 0.0481811611659841,
       "conflict": 0,
       "score": 0.8730089135148158
+    },
+    {
+      "node_id": "concept:dd7cf0a1d49819b9",
+      "label": "uncertain",
+      "activation": 1.0,
+      "novelty": 0.0481811611659841,
+      "conflict": 0,
+      "score": 0.8730089135148158
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 498
     },
     "consolidate": {
-      "attempts": 644,
-      "successes": 644
+      "attempts": 645,
+      "successes": 645
     },
     "connect": {
       "attempts": 519,
