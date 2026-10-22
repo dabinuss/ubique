@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-22T22:48:25.580744+00:00",
-  "generation": 4625,
-  "focus": "The Republic of Plato",
-  "last_action": "read",
+  "timestamp": "2026-10-22T22:50:22.545697+00:00",
+  "generation": 4626,
+  "focus": "The Nature of Man: Studies in Optimistic Philosophy",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 4624,
   "last_search_generation": 4623,
   "cortex": {
-    "nodes": 10901,
-    "synapses": 73254,
+    "nodes": 10904,
+    "synapses": 73288,
     "active": 120,
-    "archived_synapses": 37326
+    "archived_synapses": 37270
   },
   "memory": {
     "episodes": 3949,
@@ -26,46 +26,14 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 20607,
-    "segments": 870,
+    "events": 20612,
+    "segments": 871,
     "compressed_snapshot": true,
     "snapshot_events": 20582
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 635,
   "workspace": [
-    {
-      "node_id": "concept:dfd34a31322c29f8",
-      "label": "concepts",
-      "activation": 1.0,
-      "novelty": 0.3076923076923077,
-      "conflict": 0,
-      "score": 0.9430769230769231
-    },
-    {
-      "node_id": "concept:64b218956223eb12d13e",
-      "label": "principles",
-      "activation": 1.0,
-      "novelty": 0.12610340479192939,
-      "conflict": 0,
-      "score": 0.8940479192938209
-    },
-    {
-      "node_id": "concept:2331eb33ce2c3766148e",
-      "label": "philosophy",
-      "activation": 1.0,
-      "novelty": 0.10621348911311737,
-      "conflict": 0,
-      "score": 0.8886776420605418
-    },
-    {
-      "node_id": "concept:24ea913efda289dc1b17",
-      "label": "most",
-      "activation": 1.0,
-      "novelty": 0.10570824524312897,
-      "conflict": 0,
-      "score": 0.8885412262156449
-    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -75,20 +43,52 @@
       "score": 0.8848733302625518
     },
     {
-      "node_id": "concept:5a2a957b269e8f0f",
-      "label": "external",
-      "activation": 1.0,
-      "novelty": 0.07049700387733522,
-      "conflict": 0,
-      "score": 0.8790341910468806
-    },
-    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
       "novelty": 0.053134962805526036,
       "conflict": 0,
       "score": 0.8743464399574921
+    },
+    {
+      "node_id": "concept:8c0a47d3266f1cb7",
+      "label": "continuity",
+      "activation": 1.0,
+      "novelty": 0.04924895345973898,
+      "conflict": 0,
+      "score": 0.8732972174341296
+    },
+    {
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.028157116711248768,
+      "conflict": 0,
+      "score": 0.8676024215120373
+    },
+    {
+      "node_id": "concept:ab04d19d35b8aea643ad",
+      "label": "δίκαιον",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:50781ae6a4d70a21d399",
+      "label": "quasi",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:dd39ddc0efc1d9a721df",
+      "label": "δίχαιον",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 519
     },
     "consolidate": {
-      "attempts": 674,
-      "successes": 674
+      "attempts": 675,
+      "successes": 675
     },
     "connect": {
       "attempts": 543,
