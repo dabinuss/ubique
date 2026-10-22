@@ -46,7 +46,26 @@ class Evolution:
         candidates=evolving_modules()
         if not candidates:
             return {"success":False,"provider":"none","result":"No evolvable module available"}
-        target=target if target in candidates else candidates[generation % len(candidates)]
+        if target not in candidates:
+            # Select the part of the living cognition path relevant to the
+            # observed problem; retain the entire ordinary source surface.
+            linked=(
+                ("library", "src/ubique/v3/library.py"),
+                ("reading", "src/ubique/v3/actions.py"),
+                ("source", "src/ubique/v3/semantics.py"),
+                ("evidence", "src/ubique/v3/evidence.py"),
+                ("comparison", "src/ubique/v3/semantics.py"),
+                ("question", "src/ubique/v3/inquiry.py"),
+                ("experiment", "src/ubique/v3/experimentation.py"),
+                ("provider", "src/ubique/v3/providers.py"),
+                ("memory", "src/ubique/v3/storage.py"),
+            )
+            target=next((path for word,path in linked
+                         if word in reason.lower() and path in candidates), "")
+            if not target:
+                active=[p for p in candidates if p.startswith("src/ubique/v3/")]
+                pool=active or candidates
+                target=pool[generation % len(pool)]
         existing=(ROOT/target).read_text(encoding="utf-8")
         intent={"reason":reason[:1200],"generation":generation,
                 "target":target,"reversible":True,"provenance":"agent_action"}
@@ -63,6 +82,10 @@ class Evolution:
                 "updated Python source text}]. Suggest one or several coherent source changes when justified "
                 "without erasing memories or journal continuity. "
                 "A test suite and reversible PR validate any code change. "
+                "Describe the observable change expected in the running v3 "
+                "cycle, and update its active call path when needed. Prefer "
+                "substantive behavior over unused helpers or cosmetic edits. "
+                "Keep exploratory beliefs revisable. "
                 "Reason: "+reason[:1100]+"\n"
                 "Existing file: "+target+"\n"+existing[:14500]
             )
