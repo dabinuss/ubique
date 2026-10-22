@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-22T19:28:03.391923+00:00",
-  "generation": 4591,
+  "timestamp": "2026-10-22T19:29:58.200733+00:00",
+  "generation": 4592,
   "focus": "The Riddle of the Universe",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 4590,
   "last_search_generation": 4577,
   "cortex": {
     "nodes": 10856,
-    "synapses": 72635,
+    "synapses": 72677,
     "active": 120,
-    "archived_synapses": 36943
+    "archived_synapses": 36919
   },
   "memory": {
     "episodes": 3928,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 20324,
-    "segments": 856,
+    "events": 20329,
+    "segments": 857,
     "compressed_snapshot": true,
     "snapshot_events": 20313
   },
@@ -35,20 +35,12 @@
   "evidence_reviews": 619,
   "workspace": [
     {
-      "node_id": "concept:48d492d08e9d314c034c",
-      "label": "studies",
-      "activation": 1.0,
-      "novelty": 0.14992503748125938,
-      "conflict": 0,
-      "score": 0.9004797601199401
-    },
-    {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
       "activation": 1.0,
-      "novelty": 0.11500862564692352,
+      "novelty": 0.11383039271485486,
       "conflict": 0,
-      "score": 0.8910523289246695
+      "score": 0.8907342060330108
     },
     {
       "node_id": "concept:02aab799561baeb9",
@@ -89,6 +81,14 @@
       "novelty": 0.02885170225043278,
       "conflict": 0,
       "score": 0.8677899596076168
+    },
+    {
+      "node_id": "concept:cd96b5def4ed2b502ab6",
+      "label": "shelter",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 515
     },
     "consolidate": {
-      "attempts": 666,
-      "successes": 666
+      "attempts": 667,
+      "successes": 667
     },
     "connect": {
       "attempts": 537,
