@@ -18,6 +18,21 @@ from .storage import Journal
 BOILERPLATE = ("project gutenberg", "license", "copyright",
                "produced by", "ebook", "electronic edition", "transcriber")
 
+GENERIC_TERMS = {
+    "about", "after", "again", "against", "also", "another", "because",
+    "being", "between", "could", "every", "first", "from", "have",
+    "however", "into", "itself", "more", "most", "much", "must",
+    "only", "other", "others", "over", "same", "some", "such",
+    "than", "that", "their", "them", "there", "these", "those",
+    "through", "under", "upon", "very", "were", "what", "when",
+    "where", "which", "while", "with", "without", "would", "your",
+    "many", "make", "made", "might", "still", "then", "this",
+}
+
+def meaningful_overlap(words) -> set[str]:
+    return {word for word in words if len(word) >= 4 and word not in GENERIC_TERMS}
+
+
 
 def source_sentence(text: str) -> str:
     chunks = meaningful_sentences(text, limit=8)
