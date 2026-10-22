@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-22T06:24:33.797417+00:00",
-  "generation": 4448,
-  "focus": "The Riddle of the Universe",
-  "last_action": "read",
+  "timestamp": "2026-10-22T06:26:33.344115+00:00",
+  "generation": 4449,
+  "focus": "The Varieties of Religious Experience: A Study in Human Nature",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 4443,
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": "gemini",
+  "last_provider_generation": 4449,
   "last_search_generation": 4439,
   "cortex": {
-    "nodes": 10686,
+    "nodes": 10687,
     "synapses": 70792,
     "active": 120,
-    "archived_synapses": 36584
+    "archived_synapses": 36636
   },
   "memory": {
-    "episodes": 3852,
-    "claims": 2433,
+    "episodes": 3854,
+    "claims": 2434,
     "stances": 26,
     "interests": 85,
     "associative_comparisons": 1824,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 19216,
-    "segments": 798,
+    "events": 19224,
+    "segments": 799,
     "compressed_snapshot": true,
     "snapshot_events": 19159
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 562,
+  "evidence_reviews": 563,
   "workspace": [
     {
       "node_id": "concept:48d492d08e9d314c034c",
@@ -62,9 +62,17 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.03137747097583935,
+      "novelty": 0.031333228889237036,
       "conflict": 0,
-      "score": 0.8684719171634767
+      "score": 0.868459971800094
+    },
+    {
+      "node_id": "concept:40f024a500acd053",
+      "label": "domain",
+      "activation": 1.0,
+      "novelty": 0.024934546814611647,
+      "conflict": 0,
+      "score": 0.8667323276399452
     },
     {
       "node_id": "concept:8b16ced79976e6a1",
@@ -75,20 +83,12 @@
       "score": 0.865528821541927
     },
     {
-      "node_id": "concept:a902050c5bcf946730e7",
-      "label": "alternation",
+      "node_id": "concept:8797660f0778497e8543",
+      "label": "actualises",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
-    },
-    {
-      "node_id": "concept:d3a223b8cbf4a9d90625",
-      "label": "energies",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 634
     },
     "connect": {
-      "attempts": 509,
-      "successes": 508
+      "attempts": 510,
+      "successes": 509
     },
     "evolve": {
       "attempts": 28,
