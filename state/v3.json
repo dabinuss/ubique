@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-22T19:46:06.466900+00:00",
-  "generation": 4594,
+  "timestamp": "2026-10-22T19:47:50.128101+00:00",
+  "generation": 4595,
   "focus": "The Riddle of the Universe",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 4590,
   "last_search_generation": 4577,
   "cortex": {
-    "nodes": 10860,
-    "synapses": 72721,
+    "nodes": 10861,
+    "synapses": 72733,
     "active": 120,
-    "archived_synapses": 36979
+    "archived_synapses": 36907
   },
   "memory": {
     "episodes": 3929,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 20344,
+    "events": 20349,
     "segments": 858,
     "compressed_snapshot": true,
     "snapshot_events": 20313
@@ -59,14 +59,6 @@
       "score": 0.8885412262156449
     },
     {
-      "node_id": "concept:53e5e7c5a884893739c4",
-      "label": "experience",
-      "activation": 1.0,
-      "novelty": 0.09694619486185167,
-      "conflict": 0,
-      "score": 0.8861754726127
-    },
-    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -83,12 +75,20 @@
       "score": 0.8677798588099699
     },
     {
-      "node_id": "concept:cd96b5def4ed2b502ab6",
-      "label": "shelter",
+      "node_id": "concept:360cfa2fcd5378a7f4be",
+      "label": "irrepressible",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:aa0a6fa59aad9034f8a3",
+      "label": "multiplicity",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 515
     },
     "consolidate": {
-      "attempts": 667,
-      "successes": 667
+      "attempts": 668,
+      "successes": 668
     },
     "connect": {
       "attempts": 538,
