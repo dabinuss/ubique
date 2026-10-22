@@ -116,8 +116,8 @@ class SemanticLearner:
                 source_refs=[eid], confidence=0.28, generation=generation)
             result.append({"type": "quotation", "claim": claim["id"], "evidence_ids": [eid]})
 
-        current = set(content_terms(str(episode.get("text", ""))[:1700], 24))
-        current |= set(content_terms(str(episode.get("payload", {}).get("title", "")), 12))
+        current = meaningful_overlap(content_terms(str(episode.get("text", ""))[:1700], 36))
+        current |= meaningful_overlap(content_terms(str(episode.get("payload", {}).get("title", "")), 12))
         earlier = self.hippocampus.all_episodes()
         choices: list[tuple[int, dict, set[str]]] = []
         for other in reversed(earlier):
@@ -126,8 +126,8 @@ class SemanticLearner:
             family = self.family(other)
             if not family or family == self.family(episode):
                 continue
-            concepts = set(content_terms(str(other.get("text", ""))[:1700], 24))
-            concepts |= set(content_terms(str(other.get("payload", {}).get("title", "")), 12))
+            concepts = meaningful_overlap(content_terms(str(other.get("text", ""))[:1700], 36))
+            concepts |= meaningful_overlap(content_terms(str(other.get("payload", {}).get("title", "")), 12))
             shared = current & concepts
             # --- Begin exploratory threshold logic ---
             # Normal requirement: at least 2 shared terms.
@@ -157,8 +157,8 @@ class SemanticLearner:
                 family = self.family(other)
                 if not family or family == self.family(episode):
                     continue
-                concepts = set(terms(str(other.get("text", ""))[:1700], 24))
-                concepts |= set(content_terms(str(other.get("payload", {}).get("title", "")), 12))
+                concepts = meaningful_overlap(content_terms(str(other.get("text", ""))[:1700], 36))
+                concepts |= meaningful_overlap(content_terms(str(other.get("payload", {}).get("title", "")), 12))
                 shared = current & concepts
                 if len(shared) >= 1:
                     choices.append((len(shared), other, shared))
