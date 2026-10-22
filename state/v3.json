@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-22T11:07:58.727408+00:00",
-  "generation": 4502,
-  "focus": "The Nature of Man: Studies in Optimistic Philosophy",
-  "last_action": "consolidate",
-  "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "timestamp": "2026-10-22T11:22:06.168254+00:00",
+  "generation": 4503,
+  "focus": "The Physical Basis of Mind",
+  "last_action": "evolve",
+  "last_action_success": false,
+  "last_action_detail": "{\"accepted\": false, \"title\": \"Add persistent environment observation history for continual learning\", \"summary\": \"Ubique benefits from retaining a chronological log of its environment observations so it can reflect on past states, detect trends, and refine its curiosity and reasoning over time. This change introduces a lightweight JSON‑Lines history file that records each call to `observe_environm",
   "last_provider": null,
   "last_provider_generation": 4500,
   "last_search_generation": 4485,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 19629,
+    "events": 19635,
     "segments": 821,
     "compressed_snapshot": true,
     "snapshot_events": 19575
@@ -62,9 +62,9 @@
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.05738880918220947,
+      "novelty": 0.057240984544934176,
       "conflict": 0,
-      "score": 0.8754949784791966
+      "score": 0.8754550658271323
     },
     {
       "node_id": "concept:4277d3259d4e4993",
@@ -78,17 +78,17 @@
       "node_id": "concept:8b16ced79976e6a1",
       "label": "action",
       "activation": 1.0,
-      "novelty": 0.02034587995930824,
+      "novelty": 0.02032726903140563,
       "conflict": 0,
-      "score": 0.8654933875890132
+      "score": 0.8654883626384795
     },
     {
       "node_id": "concept:0b92bacd14cca69abd48",
       "label": "consequent",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -113,7 +113,7 @@
       "successes": 519
     },
     "evolve": {
-      "attempts": 28,
+      "attempts": 29,
       "successes": 9
     },
     "experiment": {
