@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-22T13:11:03.191732+00:00",
-  "generation": 4522,
-  "focus": "Human Nature and Conduct",
-  "last_action": "read",
+  "timestamp": "2026-10-22T13:13:09.696883+00:00",
+  "generation": 4523,
+  "focus": "The Nature of Man: Studies in Optimistic Philosophy",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 4522,
   "last_search_generation": 4508,
   "cortex": {
-    "nodes": 10765,
-    "synapses": 71672,
+    "nodes": 10772,
+    "synapses": 71714,
     "active": 120,
-    "archived_synapses": 36704
+    "archived_synapses": 36622
   },
   "memory": {
     "episodes": 3889,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 19774,
+    "events": 19779,
     "segments": 828,
     "compressed_snapshot": true,
     "snapshot_events": 19739
@@ -67,28 +67,28 @@
       "score": 0.884976873265495
     },
     {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.056657223796034,
-      "conflict": 0,
-      "score": 0.8752974504249291
-    },
-    {
-      "node_id": "concept:4277d3259d4e4993",
-      "label": "conclusion",
-      "activation": 1.0,
-      "novelty": 0.046860356138706656,
-      "conflict": 0,
-      "score": 0.8726522961574508
-    },
-    {
       "node_id": "concept:411f62e7fd037280",
       "label": "actually",
       "activation": 1.0,
       "novelty": 0.04627487274409996,
       "conflict": 0,
       "score": 0.872494215640907
+    },
+    {
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.030349013657056143,
+      "conflict": 0,
+      "score": 0.8681942336874051
+    },
+    {
+      "node_id": "concept:2ea3c7963d2a748ffda1",
+      "label": "descendants",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 503
     },
     "consolidate": {
-      "attempts": 651,
-      "successes": 651
+      "attempts": 652,
+      "successes": 652
     },
     "connect": {
       "attempts": 524,
