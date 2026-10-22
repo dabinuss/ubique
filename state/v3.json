@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-22T13:09:07.968614+00:00",
-  "generation": 4521,
-  "focus": "The Story of the Mind",
-  "last_action": "experiment",
+  "timestamp": "2026-10-22T13:11:03.191732+00:00",
+  "generation": 4522,
+  "focus": "Human Nature and Conduct",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "observed_associations",
-  "last_provider": null,
-  "last_provider_generation": 4518,
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": "groq",
+  "last_provider_generation": 4522,
   "last_search_generation": 4508,
   "cortex": {
-    "nodes": 10759,
-    "synapses": 71623,
+    "nodes": 10765,
+    "synapses": 71672,
     "active": 120,
-    "archived_synapses": 36691
+    "archived_synapses": 36704
   },
   "memory": {
-    "episodes": 3888,
-    "claims": 2497,
+    "episodes": 3889,
+    "claims": 2500,
     "stances": 26,
     "interests": 85,
-    "associative_comparisons": 1870,
+    "associative_comparisons": 1872,
     "screened_interpretations": 1,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 19763,
+    "events": 19774,
     "segments": 828,
     "compressed_snapshot": true,
     "snapshot_events": 19739
@@ -43,14 +43,6 @@
       "score": 0.9376978417266189
     },
     {
-      "node_id": "concept:410083735735a10e658a",
-      "label": "allow",
-      "activation": 1.0,
-      "novelty": 0.11621150493898895,
-      "conflict": 0,
-      "score": 0.891377106333527
-    },
-    {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
       "activation": 1.0,
@@ -59,12 +51,20 @@
       "score": 0.891377106333527
     },
     {
+      "node_id": "concept:410083735735a10e658a",
+      "label": "allow",
+      "activation": 1.0,
+      "novelty": 0.115606936416185,
+      "conflict": 0,
+      "score": 0.89121387283237
+    },
+    {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
       "activation": 1.0,
-      "novelty": 0.09289363678588018,
+      "novelty": 0.09250693802035152,
       "conflict": 0,
-      "score": 0.8850812819321876
+      "score": 0.884976873265495
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -97,8 +97,8 @@
       "successes": 103
     },
     "read": {
-      "attempts": 690,
-      "successes": 690
+      "attempts": 691,
+      "successes": 691
     },
     "explore": {
       "attempts": 507,
