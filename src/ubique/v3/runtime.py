@@ -426,6 +426,24 @@ class UbiqueV3:
                 if generation-last_search>=20:
                     candidates.append(Candidate("search","Acquire new general knowledge about "+focus,
                               {"topic":focus},.76))
+            # Book discovery can compete with thought and reading, even offline
+            # from language providers. Recent lookups are remembered so public
+            # catalogues are not contacted on every heartbeat.
+            recent_discovery=self.journal.recent("library_discovery",limit=1)
+            last_discovery=(int(recent_discovery[-1].get("generation",0) or 0)
+                            if recent_discovery else -100)
+            if generation-last_discovery>=29 and (generation%17==0 or
+                  not reading_candidates(self.curiosity)):
+                from ..library import library_catalog
+                wishes=[item for item in library_catalog(250)
+                        if item.get("status")=="wanted"]
+                query=(wishes[generation % len(wishes)].get("title","")
+                       if wishes and generation%3 else focus)
+                if query:
+                    candidates.append(Candidate("library",
+                        "Seek an attributable public-domain text about "+query,
+                        {"action":"discover","query":query},.92,
+                        source="independent_curiosity"))
             # Code changes are a legitimate action when observed failures recur.
             # They compete with reading and thought rather than being mandatory.
             failures=sum(1 for kind in ("search","connect","experiment","read")
