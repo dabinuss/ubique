@@ -24,6 +24,7 @@ from .workspace import Workspace
 from .planner import Planner
 from .self_model import SelfContinuity
 from .library import KnowledgeLibrary
+from .book_discovery import discover_public_books
 from .evolution import Evolution
 from .semantics import SemanticLearner
 from .inquiry import enquire
@@ -286,6 +287,22 @@ class UbiqueV3:
             return Result("rest",True,"Local activation decayed")
         if chosen.kind=="search":
             return self._research(focus,generation)
+        if chosen.kind=="library" and chosen.payload.get("action")=="discover":
+            query=str(chosen.payload.get("query","")).strip()
+            try:
+                outcome=discover_public_books(query,limit=2)
+                found=outcome.get("added",[])
+                result=Result("library",bool(found),
+                              "Discovered "+str(len(found))+" public-domain books",
+                              payload={"query":query,"books":found})
+            except Exception as exc:
+                result=Result("library",False,type(exc).__name__+": "+str(exc)[:300],
+                              payload={"query":query})
+            self.journal.append("library_discovery",{
+                "query":query,"success":result.success,
+                "effect":result.effect,"books":result.payload.get("books",[])},
+                generation=generation)
+            return result
         if chosen.kind in {"evolve","edit_code"}:
             if not self.providers or not self.providers.available():
                 return Result(chosen.kind,False,"Remote code contributor deferred")
@@ -409,6 +426,24 @@ class UbiqueV3:
                 if generation-last_search>=20:
                     candidates.append(Candidate("search","Acquire new general knowledge about "+focus,
                               {"topic":focus},.76))
+            # Book discovery can compete with thought and reading, even offline
+            # from language providers. Recent lookups are remembered so public
+            # catalogues are not contacted on every heartbeat.
+            recent_discovery=self.journal.recent("library_discovery",limit=1)
+            last_discovery=(int(recent_discovery[-1].get("generation",0) or 0)
+                            if recent_discovery else -100)
+            if generation-last_discovery>=29 and (generation%17==0 or
+                  not reading_candidates(self.curiosity)):
+                from ..library import library_catalog
+                wishes=[item for item in library_catalog(250)
+                        if item.get("status")=="wanted"]
+                query=(wishes[generation % len(wishes)].get("title","")
+                       if wishes and generation%3 else focus)
+                if query:
+                    candidates.append(Candidate("library",
+                        "Seek an attributable public-domain text about "+query,
+                        {"action":"discover","query":query},.92,
+                        source="independent_curiosity"))
             # Code changes are a legitimate action when observed failures recur.
             # They compete with reading and thought rather than being mandatory.
             failures=sum(1 for kind in ("search","connect","experiment","read")
@@ -429,7 +464,7 @@ class UbiqueV3:
             candidates=self.planner.rank(candidates,last=self.history)
             chosen=select(candidates,self.curiosity,self.history)
             result=self._act(chosen,generation=generation,focus=focus)
-            if not result.success and chosen.kind in {"search","read"}:
+            if not result.success and chosen.kind in {"search","read","library"}:
                 # Preserve the failed attempt as experience, but never waste
                 # the entire learning cycle on a blocked external source.
                 self.journal.append("action_outcome",{

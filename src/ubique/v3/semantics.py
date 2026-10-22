@@ -6,7 +6,7 @@ text co-occurrence into a scientific fact or a confident personal belief.
 from __future__ import annotations
 
 import re
-import random  # <-- new import for stochastic exploration
+import random  # stochastic exploratory associations
 from typing import Set
 
 from .hippocampus import Hippocampus, terms
@@ -18,6 +18,21 @@ from .storage import Journal
 BOILERPLATE = ("project gutenberg", "license", "copyright",
                "produced by", "ebook", "electronic edition", "transcriber")
 
+GENERIC_TERMS = {
+    "about", "after", "again", "against", "also", "another", "because",
+    "being", "between", "could", "every", "first", "from", "have",
+    "however", "into", "itself", "more", "most", "much", "must",
+    "only", "other", "others", "over", "same", "some", "such",
+    "than", "that", "their", "them", "there", "these", "those",
+    "through", "under", "upon", "very", "were", "what", "when",
+    "where", "which", "while", "with", "without", "would", "your",
+    "many", "make", "made", "might", "still", "then", "this",
+}
+
+def meaningful_overlap(words) -> set[str]:
+    return {word for word in words if len(word) >= 4 and word not in GENERIC_TERMS}
+
+
 
 def source_sentence(text: str) -> str:
     chunks = meaningful_sentences(text, limit=8)
@@ -27,6 +42,17 @@ def source_sentence(text: str) -> str:
                 and not any(t in value.casefold() for t in BOILERPLATE)):
             return value
     return ""
+
+
+def evidence_excerpt(text: str) -> str:
+    """Return an exact, readable source excerpt even for short passages."""
+    quote = source_sentence(text)
+    if quote:
+        return quote
+    alternatives = meaningful_sentences(text, limit=4)
+    if alternatives:
+        return alternatives[0][:480]
+    return " ".join(clean_source(text).split())[:350]
 
 
 class SemanticLearner:
@@ -101,8 +127,8 @@ class SemanticLearner:
                 source_refs=[eid], confidence=0.28, generation=generation)
             result.append({"type": "quotation", "claim": claim["id"], "evidence_ids": [eid]})
 
-        current = set(content_terms(str(episode.get("text", ""))[:1700], 24))
-        current |= set(content_terms(str(episode.get("payload", {}).get("title", "")), 12))
+        current = meaningful_overlap(content_terms(str(episode.get("text", ""))[:1700], 36))
+        current |= meaningful_overlap(content_terms(str(episode.get("payload", {}).get("title", "")), 12))
         earlier = self.hippocampus.all_episodes()
         choices: list[tuple[int, dict, set[str]]] = []
         for other in reversed(earlier):
@@ -111,8 +137,8 @@ class SemanticLearner:
             family = self.family(other)
             if not family or family == self.family(episode):
                 continue
-            concepts = set(content_terms(str(other.get("text", ""))[:1700], 24))
-            concepts |= set(content_terms(str(other.get("payload", {}).get("title", "")), 12))
+            concepts = meaningful_overlap(content_terms(str(other.get("text", ""))[:1700], 36))
+            concepts |= meaningful_overlap(content_terms(str(other.get("payload", {}).get("title", "")), 12))
             shared = current & concepts
             # --- Begin exploratory threshold logic ---
             # Normal requirement: at least 2 shared terms.
@@ -142,8 +168,8 @@ class SemanticLearner:
                 family = self.family(other)
                 if not family or family == self.family(episode):
                     continue
-                concepts = set(terms(str(other.get("text", ""))[:1700], 24))
-                concepts |= set(content_terms(str(other.get("payload", {}).get("title", "")), 12))
+                concepts = meaningful_overlap(content_terms(str(other.get("text", ""))[:1700], 36))
+                concepts |= meaningful_overlap(content_terms(str(other.get("payload", {}).get("title", "")), 12))
                 shared = current & concepts
                 if len(shared) >= 1:
                     choices.append((len(shared), other, shared))
@@ -180,24 +206,21 @@ class SemanticLearner:
                               ". Their interpretations may agree or disagree; "
                               "this is an invitation to investigate, not proof."),
                 "uncertainty": 0.75}
-            # Word overlap is useful for asking a question, not a confirmed
-            # insight or evidence for the authors agreeing on the same claim.
+            first = evidence_excerpt(str(episode.get("text", "")))
+            second = evidence_excerpt(str(other.get("text", "")))
+            comparison["passages"] = [first, second]
+            comparison["question"] = (
+                "How do the authors' claims differ or align concerning " +
+                ", ".join(shared[:3]) + "? What evidence could distinguish them?")
             comparison["epistemic_status"] = "unverified_association"
-            self.journal.append("association_hypothesis", comparison, generation=generation)
-            self.comparisons.add(fingerprint)
+            comparison["interpretation_quality"] = "exploratory_not_entailment"
             link = self.world.claim(comparison["statement"], status="HYPOTHESIS",
                                     source_refs=pair, confidence=0.12,
                                     generation=generation)
             comparison["claim_id"] = link["id"]
+            self.journal.append("association_hypothesis", comparison, generation=generation)
+            self.comparisons.add(fingerprint)
             result.append(comparison)
-            # Keep actual author sentences next to a lexical comparison.
-            # The agent may investigate them freely without assuming agreement.
-            first = source_sentence(str(episode.get("text", "")))
-            second = source_sentence(str(other.get("text", "")))
-            comparison["passages"] = [first, second]
-            comparison["question"] = (
-                "What is the relationship between these two source passages "
-                "about " + ", ".join(shared[:3]) + "?")
             left = self.cortex.ensure(shared[0])
             right = self.cortex.ensure(shared[-1])
             self.cortex.connect(left.id, right.id, relation="compared_in_sources",

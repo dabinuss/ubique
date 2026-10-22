@@ -71,14 +71,14 @@ def assess_homeostasis(
             "critical" if success_ratio < 0.5 else "watch" if success_ratio < 0.8 else "stable",
             success_ratio,
             ">=0.80 recent successful tasks",
-            f"{sum(1 for e in episodes if e.get("success"))}/{len(episodes) or 0} recent tasks succeeded",
+            f"{sum(1 for e in episodes if e.get('success'))}/{len(episodes) or 0} recent tasks succeeded",
         ),
         Need(
             "conceptual_curiosity",
             "critical" if curiosity_ratio < 0.1 else "watch" if curiosity_ratio < 0.3 else "stable",
             curiosity_ratio,
             ">=0.30 recent episodes involving reading, belief revision, or exploration",
-            f"{sum(1 for e in episodes if any(kw in str(e.get('description','')).lower() for kw in ('read','explore','revise','question','learn','hypothesis')))}/{len(episodes) or 0} recent episodes show exploratory behavior",
+            f"{sum(1 for e in episodes if any(kw in str(e.get('description', '')).lower() for kw in ('read', 'explore', 'revise', 'question', 'learn', 'hypothesis')))}/{len(episodes) or 0} recent episodes show exploratory behavior",
         ),
         Need(
             "reasoning_redundancy",
