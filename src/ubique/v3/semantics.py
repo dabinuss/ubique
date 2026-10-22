@@ -6,7 +6,7 @@ text co-occurrence into a scientific fact or a confident personal belief.
 from __future__ import annotations
 
 import re
-import random  # <-- new import for stochastic exploration
+import random  # stochastic exploratory associations
 from typing import Set
 
 from .hippocampus import Hippocampus, terms
