@@ -33,6 +33,7 @@ def run_benchmark() -> dict:
 
     auto = autonomous_task(24, remote_reasoning_available=True)
     checks.append(("healthy_cycle_reflects", auto.body.startswith("/reflect")))
+    checks.append(("curiosity_cross_source_awareness", "library" in auto.body.lower() or "read" in auto.body.lower() or "reflect" in auto.body.lower()))
 
     auto = autonomous_task(25, remote_reasoning_available=False)
     checks.append(("no_remote_uses_status", auto.body.startswith("/status")))
