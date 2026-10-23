@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-23T16:49:54.976244+00:00",
-  "generation": 4822,
-  "focus": "The Republic of Plato",
-  "last_action": "read",
+  "timestamp": "2026-10-23T16:52:00.715089+00:00",
+  "generation": 4823,
+  "focus": "Psychology: Briefer Course",
+  "last_action": "question",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 4817,
+  "last_action_detail": "How does the view in the first passage relate to the second concerning even, life? Which assumptions differ?",
+  "last_provider": "groq",
+  "last_provider_generation": 4823,
   "last_search_generation": 4807,
   "cortex": {
-    "nodes": 11099,
-    "synapses": 75872,
+    "nodes": 11101,
+    "synapses": 75876,
     "active": 120,
-    "archived_synapses": 38520
+    "archived_synapses": 38572
   },
   "memory": {
     "episodes": 4058,
-    "claims": 2802,
+    "claims": 2806,
     "stances": 27,
     "interests": 85,
     "associative_comparisons": 2068,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 22104,
+    "events": 22116,
     "segments": 950,
     "compressed_snapshot": true,
     "snapshot_events": 22088
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 696,
+  "evidence_reviews": 699,
   "workspace": [
     {
       "node_id": "concept:3853eb486f0ccd5b3023",
@@ -49,14 +49,6 @@
       "novelty": 0.09099181073703366,
       "conflict": 0,
       "score": 0.8845677888989991
-    },
-    {
-      "node_id": "concept:e0f895872d65b2528fee",
-      "label": "knowledge",
-      "activation": 1.0,
-      "novelty": 0.08845643520566121,
-      "conflict": 0,
-      "score": 0.8838832375055286
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
@@ -89,6 +81,14 @@
       "novelty": 0.02553626149131767,
       "conflict": 0,
       "score": 0.8668947906026558
+    },
+    {
+      "node_id": "concept:e84f85ada03f83187e3e",
+      "label": "sides",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -121,8 +121,8 @@
       "successes": 90
     },
     "question": {
-      "attempts": 64,
-      "successes": 64
+      "attempts": 65,
+      "successes": 65
     },
     "library": {
       "attempts": 2,
