@@ -66,9 +66,7 @@ class SemanticLearner:
             Core components of the Ubique cognitive stack.
         exploration_factor:
             Probability (0‑1) that the learner will *relax* the minimum
-            shared‑term threshold from 2 to 1 for a given observation. This
-            small stochastic tweak encourages occasional broader curiosity
-            without overwhelming the system with low‑quality comparisons.
+            shared‑term threshold from 2 to 1 for a given observation.
         """
         self.journal = journal
         self.hippocampus = hippocampus
@@ -76,21 +74,10 @@ class SemanticLearner:
         self.cortex = cortex
         self.comparisons = {str(ev["data"].get("id")) for ev in journal.events()
                             if ev["kind"] in {"insight","association_hypothesis"}}
-        # Store the exploration factor for later use
         self.exploration_factor = exploration_factor
-        # Cache of all terms seen in prior episodes – used for deterministic novelty check
         self._seen_terms: Set[str] = self._build_seen_terms_cache()
 
     def _build_seen_terms_cache(self) -> Set[str]:
-        """Collect every term that has appeared in earlier episodes.
-
-        The cache is built once at construction time; it is inexpensive and
-        provides a quick way to test whether a term is *novel* with respect to
-        the learner's experience so far. Because the learner only adds new
-        comparisons after observation, the cache does not need to be updated
-        during a single run – the change is reversible by simply removing this
-        method and the associated attribute.
-        """
         seen: Set[str] = set()
         for ev in self.hippocampus.all_episodes():
             txt = str(ev.get("text", ""))
@@ -105,15 +92,6 @@ class SemanticLearner:
         return source if source.startswith(("library:", "http://", "https://")) else ""
 
     def observe(self, episode: dict, *, generation: int | None = None) -> list[dict]:
-        """Interpret an observed book passage and compare separate source texts.
-
-        The method now occasionally relaxes the shared‑term requirement to
-        foster exploratory connections. Additionally, if at least one of the
-        shared terms has never been seen before, the learner will also accept
-        the comparison even when only a single term overlaps. This deterministic
-        novelty boost works alongside the existing stochastic `exploration_factor`
-        and preserves all original behaviours.
-        """
         if episode.get("epistemic_status") != "source_passage":
             return []
         eid = episode.get("id")
@@ -127,40 +105,42 @@ class SemanticLearner:
                 source_refs=[eid], confidence=0.28, generation=generation)
             result.append({"type": "quotation", "claim": claim["id"], "evidence_ids": [eid]})
 
-        current = meaningful_overlap(content_terms(str(episode.get("text", ""))[:1700], 36))
-        current |= meaningful_overlap(content_terms(str(episode.get("payload", {}).get("title", "")), 12))
+        current = meaningful_overlap(content_terms(str(episode.get(
+            "text", ""))[:1700], 36))
+        current |= meaningful_overlap(content_terms(str(episode.get(
+            "payload", {}).get("title", "")), 12))
         earlier = self.hippocampus.all_episodes()
-        choices: list[tuple[int, dict, set[str]]] = []
+        choices: list[tuple[float, dict, set[str]]] = []
+
         for other in reversed(earlier):
             if other.get("id") == eid or other.get("epistemic_status") != "source_passage":
                 continue
             family = self.family(other)
             if not family or family == self.family(episode):
                 continue
-            concepts = meaningful_overlap(content_terms(str(other.get("text", ""))[:1700], 36))
-            concepts |= meaningful_overlap(content_terms(str(other.get("payload", {}).get("title", "")), 12))
+            concepts = meaningful_overlap(content_terms(str(other.get(
+                "text", ""))[:1700], 36))
+            concepts |= meaningful_overlap(content_terms(str(other.get(
+                "payload", {}).get("title", "")), 12))
             shared = current & concepts
-            # --- Begin exploratory threshold logic ---
-            # Normal requirement: at least 2 shared terms.
-            # With probability `exploration_factor`, accept a single shared term.
+            
             min_shared = 2
             if random.random() < self.exploration_factor:
                 min_shared = 1
-            # Deterministic novelty boost: if any shared term is novel, also allow 1.
             if len(shared) == 1:
                 term = next(iter(shared))
                 if term not in self._seen_terms:
                     min_shared = 1
+
             if len(shared) >= min_shared:
-                choices.append((len(shared), other, shared))
-            # --- End exploratory threshold logic ---
+                # Compute a bridge weight: rare terms that act as conceptual
+                # hinges receive higher scoring priority.
+                novelty_bonus = sum(1.5 for t in shared if t not in self._seen_terms)
+                relevance_score = float(len(shared)) + novelty_bonus
+                choices.append((relevance_score, other, shared))
             if len(choices) >= 80:
                 break
-        # --- Begin fallback search logic ---
-        # If no candidates were found under the normal or stochastic rules,
-        # perform a deterministic pass that accepts a single shared term.
-        # This guarantees that a source passage can still generate a hypothesis
-        # rather than silently failing, improving the curiosity loop.
+
         if not choices:
             for other in reversed(earlier):
                 if other.get("id") == eid or other.get("epistemic_status") != "source_passage":
@@ -168,41 +148,35 @@ class SemanticLearner:
                 family = self.family(other)
                 if not family or family == self.family(episode):
                     continue
-                concepts = meaningful_overlap(content_terms(str(other.get("text", ""))[:1700], 36))
-                concepts |= meaningful_overlap(content_terms(str(other.get("payload", {}).get("title", "")), 12))
+                concepts = meaningful_overlap(content_terms(str(other.get(
+                    "text", ""))[:1700], 36))
+                concepts |= meaningful_overlap(content_terms(str(other.get(
+                    "payload", {}).get("title", "")), 12))
                 shared = current & concepts
                 if len(shared) >= 1:
-                    choices.append((len(shared), other, shared))
+                    relevance_score = float(len(shared)) + sum(1.5 for t in shared if t not in self._seen_terms)
+                    choices.append((relevance_score, other, shared))
                 if len(choices) >= 80:
                     break
-        # --- End fallback search logic ---
-        # --- Begin novelty‑aware sorting ---
-        def _novelty_score(shared_set: set[str]) -> int:
-            """Count how many shared terms have never been seen before.
 
-            A higher score pushes the candidate higher in the ranking, encouraging
-            the learner to explore genuinely new connections.
-            """
-            return sum(1 for term in shared_set if term not in self._seen_terms)
+        # Sort by computed relevance score (incorporating both term count and rarity bridge bonus)
+        choices.sort(key=lambda row: row[0], reverse=True)
 
-        # Sort primarily by number of shared terms, secondarily by novelty score.
-        choices.sort(key=lambda row: (row[0], _novelty_score(row[2])), reverse=True)
-        # --- End novelty‑aware sorting ---
         for _, other, shared in choices[:2]:
             pair = sorted([eid, other["id"]])
             fingerprint = "comparison:" + key("|".join(pair))
             if fingerprint in self.comparisons:
                 continue
-            shared = sorted(shared)[:5]
-            if not shared:
+            sorted_shared = sorted(shared)[:5]
+            if not sorted_shared:
                 continue
             comparison = {
                 "id": fingerprint, "kind": "cross_source_comparison",
-                "topic": ", ".join(shared),
+                "topic": ", ".join(sorted_shared),
                 "source_families": [self.family(episode), self.family(other)],
                 "evidence_ids": pair,
                 "statement": ("Two independent source passages contain overlapping "
-                              "terms: " + ", ".join(shared) +
+                              "terms: " + ", ".join(sorted_shared) +
                               ". Their interpretations may agree or disagree; "
                               "this is an invitation to investigate, not proof."),
                 "uncertainty": 0.75}
@@ -211,7 +185,7 @@ class SemanticLearner:
             comparison["passages"] = [first, second]
             comparison["question"] = (
                 "How do the authors' claims differ or align concerning " +
-                ", ".join(shared[:3]) + "? What evidence could distinguish them?")
+                ", ".join(sorted_shared[:3]) + "? What evidence could distinguish them?")
             comparison["epistemic_status"] = "unverified_association"
             comparison["interpretation_quality"] = "exploratory_not_entailment"
             link = self.world.claim(comparison["statement"], status="HYPOTHESIS",
@@ -221,8 +195,8 @@ class SemanticLearner:
             self.journal.append("association_hypothesis", comparison, generation=generation)
             self.comparisons.add(fingerprint)
             result.append(comparison)
-            left = self.cortex.ensure(shared[0])
-            right = self.cortex.ensure(shared[-1])
+            left = self.cortex.ensure(sorted_shared[0])
+            right = self.cortex.ensure(sorted_shared[-1])
             self.cortex.connect(left.id, right.id, relation="compared_in_sources",
                                 weight=0.16, event_id=fingerprint)
         return result
