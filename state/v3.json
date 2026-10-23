@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-23T09:38:34.532915+00:00",
-  "generation": 4743,
-  "focus": "Psychology: Briefer Course",
-  "last_action": "read",
+  "timestamp": "2026-10-23T09:40:26.942399+00:00",
+  "generation": 4744,
+  "focus": "The World as Will and Idea, Volume 1",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 4743,
   "last_search_generation": 4738,
   "cortex": {
-    "nodes": 11020,
-    "synapses": 74753,
+    "nodes": 11022,
+    "synapses": 74825,
     "active": 120,
-    "archived_synapses": 37813
+    "archived_synapses": 37861
   },
   "memory": {
     "episodes": 4018,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 21517,
+    "events": 21522,
     "segments": 917,
     "compressed_snapshot": true,
     "snapshot_events": 21477
@@ -59,12 +59,20 @@
       "score": 0.8732972174341296
     },
     {
+      "node_id": "concept:54476ce93ea4a148",
+      "label": "distinguish",
+      "activation": 1.0,
+      "novelty": 0.046860356138706656,
+      "conflict": 0,
+      "score": 0.8726522961574508
+    },
+    {
       "node_id": "concept:02f77488efc6c9cf",
       "label": "destiny",
       "activation": 1.0,
-      "novelty": 0.03876720294630743,
+      "novelty": 0.03869969040247678,
       "conflict": 0,
-      "score": 0.870467144795503
+      "score": 0.8704489164086688
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -75,20 +83,12 @@
       "score": 0.8671580063626723
     },
     {
-      "node_id": "concept:ea9c0339aaf9bae833ec",
-      "label": "baboon",
+      "node_id": "concept:454dac05fc118a96031a",
+      "label": "cerebrum",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.78452319391635
-    },
-    {
-      "node_id": "concept:e60a8702a5edeb8c66b3",
-      "label": "macacus",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 535
     },
     "consolidate": {
-      "attempts": 700,
-      "successes": 700
+      "attempts": 701,
+      "successes": 701
     },
     "connect": {
       "attempts": 568,
