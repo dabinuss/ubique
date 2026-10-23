@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-23T14:52:32.801455+00:00",
-  "generation": 4799,
-  "focus": "The Varieties of Religious Experience: A Study in Human Nature",
-  "last_action": "read",
+  "timestamp": "2026-10-23T14:54:35.708329+00:00",
+  "generation": 4800,
+  "focus": "Dream Psychology: Psychoanalysis for Beginners",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 4794,
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": "groq",
+  "last_provider_generation": 4800,
   "last_search_generation": 4784,
   "cortex": {
-    "nodes": 11068,
-    "synapses": 75522,
+    "nodes": 11069,
+    "synapses": 75526,
     "active": 120,
-    "archived_synapses": 38336
+    "archived_synapses": 38334
   },
   "memory": {
     "episodes": 4051,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 21939,
+    "events": 21943,
     "segments": 940,
     "compressed_snapshot": true,
     "snapshot_events": 21913
@@ -35,12 +35,20 @@
   "evidence_reviews": 690,
   "workspace": [
     {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.08845643520566121,
+      "conflict": 0,
+      "score": 0.8838832375055286
+    },
+    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.02604505795025394,
+      "novelty": 0.025984149668702092,
       "conflict": 0,
-      "score": 0.8670321656465687
+      "score": 0.8670157204105495
     },
     {
       "node_id": "concept:f2d44b8ac655a7ad",
@@ -51,44 +59,36 @@
       "score": 0.866762680025047
     },
     {
-      "node_id": "concept:6c47a47077630aafb5fe",
-      "label": "manifesting",
+      "node_id": "concept:b50b9b3a45059ef41c4c",
+      "label": "myth",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:4d0c2002b4b9acc52bc9",
-      "label": "outset",
+      "node_id": "concept:2305eb51db07a7c206b9",
+      "label": "aptitudes",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:5a77858b6a1505b68863",
-      "label": "pains",
+      "node_id": "concept:979a3a5fbffb6dfb5821",
+      "label": "sole",
       "activation": 0.46,
-      "novelty": 0.6688963210702341,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7598020066889632
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:c6cae054230db251a631",
-      "label": "pleasures",
+      "node_id": "concept:5eda77e0bbf5aac3",
+      "label": "recollection",
       "activation": 0.46,
-      "novelty": 0.6493506493506493,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.7545246753246754
-    },
-    {
-      "node_id": "concept:266d1c70a4cbe7cdb557",
-      "label": "needs",
-      "activation": 0.46,
-      "novelty": 0.4338394793926248,
-      "conflict": 0,
-      "score": 0.6963366594360088
+      "score": 0.8170854625550661
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 713
     },
     "connect": {
-      "attempts": 579,
-      "successes": 578
+      "attempts": 580,
+      "successes": 579
     },
     "evolve": {
       "attempts": 32,
