@@ -134,8 +134,8 @@ class SemanticLearner:
 
             if len(shared) >= min_shared:
                 # Compute a bridge weight: rare terms that act as conceptual
-                # hinges receive higher scoring priority.
-                novelty_bonus = sum(1.5 for t in shared if t not in self._seen_terms)
+                # hinges receive higher scoring priority and depth.
+                novelty_bonus = sum(2.0 for t in shared if t not in self._seen_terms)
                 relevance_score = float(len(shared)) + novelty_bonus
                 choices.append((relevance_score, other, shared))
             if len(choices) >= 80:
@@ -154,7 +154,7 @@ class SemanticLearner:
                     "payload", {}).get("title", "")), 12))
                 shared = current & concepts
                 if len(shared) >= 1:
-                    relevance_score = float(len(shared)) + sum(1.5 for t in shared if t not in self._seen_terms)
+                    relevance_score = float(len(shared)) + sum(2.0 for t in shared if t not in self._seen_terms)
                     choices.append((relevance_score, other, shared))
                 if len(choices) >= 80:
                     break
@@ -175,21 +175,21 @@ class SemanticLearner:
                 "topic": ", ".join(sorted_shared),
                 "source_families": [self.family(episode), self.family(other)],
                 "evidence_ids": pair,
-                "statement": ("Two independent source passages contain overlapping "
-                              "terms: " + ", ".join(sorted_shared) +
-                              ". Their interpretations may agree or disagree; "
-                              "this is an invitation to investigate, not proof."),
-                "uncertainty": 0.75}
+                "statement": ("Two independent source passages share conceptual "
+                              "hinges in terms: " + ", ".join(sorted_shared) +
+                              ". Their interpretations may illuminate or contrast; "
+                              "this is an invitation to examine, not a definitive conclusion."),
+                "uncertainty": 0.78}
             first = evidence_excerpt(str(episode.get("text", "")))
             second = evidence_excerpt(str(other.get("text", "")))
             comparison["passages"] = [first, second]
             comparison["question"] = (
-                "How do the authors' claims differ or align concerning " +
-                ", ".join(sorted_shared[:3]) + "? What evidence could distinguish them?")
+                "In what ways do the perspectives of both authors intersect or diverge regarding " +
+                 ", ".join(sorted_shared[:3]) + "? What further source evidence could test this relationship?")
             comparison["epistemic_status"] = "unverified_association"
             comparison["interpretation_quality"] = "exploratory_not_entailment"
             link = self.world.claim(comparison["statement"], status="HYPOTHESIS",
-                                    source_refs=pair, confidence=0.12,
+                                    source_refs=pair, confidence=0.10,
                                     generation=generation)
             comparison["claim_id"] = link["id"]
             self.journal.append("association_hypothesis", comparison, generation=generation)
@@ -198,5 +198,5 @@ class SemanticLearner:
             left = self.cortex.ensure(sorted_shared[0])
             right = self.cortex.ensure(sorted_shared[-1])
             self.cortex.connect(left.id, right.id, relation="compared_in_sources",
-                                weight=0.16, event_id=fingerprint)
+                                weight=0.18, event_id=fingerprint)
         return result
