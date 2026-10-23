@@ -29,9 +29,9 @@ GENERIC_TERMS = {
     "many", "make", "made", "might", "still", "then", "this",
 }
 
+
 def meaningful_overlap(words) -> set[str]:
     return {word for word in words if len(word) >= 4 and word not in GENERIC_TERMS}
-
 
 
 def source_sentence(text: str) -> str:
@@ -91,13 +91,36 @@ class SemanticLearner:
         source = str(record.get("source", ""))
         return source if source.startswith(("library:", "http://", "https://")) else ""
 
+    # ---------------------------------------------------------------------
+    # Adaptive exploration helpers
+    # ---------------------------------------------------------------------
+    def _adjust_exploration_factor(self, produced_comparisons: bool) -> None:
+        """Tweak ``self.exploration_factor`` based on recent productivity.
+
+        * If the current observation yielded **no** new cross‑source
+          comparisons, we become a little more exploratory, nudging the
+          probability of relaxing the shared‑term threshold upward.
+        * If at least one comparison was produced, we gently pull the
+          factor back toward a more conservative baseline.
+
+        The adjustments are small (±0.01‑0.02) and bounded between 0.05 and
+        0.30 to keep the system stable while still allowing it to react to
+        sparse or dense knowledge regions.
+        """
+        if produced_comparisons:
+            # Slightly reduce exploration to avoid runaway randomness.
+            self.exploration_factor = max(self.exploration_factor - 0.01, 0.05)
+        else:
+            # Increase curiosity when we are stuck.
+            self.exploration_factor = min(self.exploration_factor + 0.02, 0.30)
+
     def observe(self, episode: dict, *, generation: int | None = None) -> list[dict]:
         if episode.get("epistemic_status") != "source_passage":
             return []
         eid = episode.get("id")
         if not eid or not self.family(episode):
             return []
-        result = []
+        result: list[dict] = []
         sentence = source_sentence(str(episode.get("text", "")))
         if sentence:
             claim = self.world.claim(
@@ -133,8 +156,6 @@ class SemanticLearner:
                     min_shared = 1
 
             if len(shared) >= min_shared:
-                # Compute a bridge weight: rare terms that act as conceptual
-                # hinges receive higher scoring priority and depth.
                 novelty_bonus = sum(2.0 for t in shared if t not in self._seen_terms)
                 relevance_score = float(len(shared)) + novelty_bonus
                 choices.append((relevance_score, other, shared))
@@ -199,4 +220,9 @@ class SemanticLearner:
             right = self.cortex.ensure(sorted_shared[-1])
             self.cortex.connect(left.id, right.id, relation="compared_in_sources",
                                 weight=0.18, event_id=fingerprint)
+        # -----------------------------------------------------------------
+        # Adjust exploration factor based on whether we produced any new
+        # cross‑source comparisons during this call.
+        # -----------------------------------------------------------------
+        self._adjust_exploration_factor(produced_comparisons=bool(result))
         return result
