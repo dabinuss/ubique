@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-23T15:26:30.873711+00:00",
-  "generation": 4804,
-  "focus": "Dream Psychology: Psychoanalysis for Beginners",
-  "last_action": "read",
+  "timestamp": "2026-10-23T15:28:22.841330+00:00",
+  "generation": 4805,
+  "focus": "The Riddle of the Universe",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 4800,
   "last_search_generation": 4784,
@@ -14,7 +14,7 @@
     "nodes": 11070,
     "synapses": 75592,
     "active": 120,
-    "archived_synapses": 38396
+    "archived_synapses": 38412
   },
   "memory": {
     "episodes": 4052,
@@ -26,14 +26,30 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 21968,
-    "segments": 942,
+    "events": 21972,
+    "segments": 943,
     "compressed_snapshot": true,
     "snapshot_events": 21913
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 690,
   "workspace": [
+    {
+      "node_id": "concept:3853eb486f0ccd5b3023",
+      "label": "varieties",
+      "activation": 1.0,
+      "novelty": 0.10373443983402489,
+      "conflict": 0,
+      "score": 0.8880082987551867
+    },
+    {
+      "node_id": "concept:3f8b4464a99de3dc8c5c",
+      "label": "religious",
+      "activation": 1.0,
+      "novelty": 0.09328358208955224,
+      "conflict": 0,
+      "score": 0.8851865671641792
+    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -43,12 +59,20 @@
       "score": 0.8838832375055286
     },
     {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 1.0,
+      "novelty": 0.08605851979345956,
+      "conflict": 0,
+      "score": 0.8832358003442342
+    },
+    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.025803122177783515,
+      "novelty": 0.025743338911056766,
       "conflict": 0,
-      "score": 0.8669668429880015
+      "score": 0.8669507015059854
     },
     {
       "node_id": "concept:f2d44b8ac655a7ad",
@@ -59,36 +83,12 @@
       "score": 0.866762680025047
     },
     {
-      "node_id": "concept:b50b9b3a45059ef41c4c",
-      "label": "myth",
+      "node_id": "concept:180366dd3b2cc124570a",
+      "label": "afraid",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7996081632653061
-    },
-    {
-      "node_id": "concept:2305eb51db07a7c206b9",
-      "label": "aptitudes",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:979a3a5fbffb6dfb5821",
-      "label": "sole",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:5eda77e0bbf5aac3",
-      "label": "recollection",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 747
     },
     "explore": {
-      "attempts": 551,
-      "successes": 545
+      "attempts": 552,
+      "successes": 546
     },
     "consolidate": {
       "attempts": 715,
