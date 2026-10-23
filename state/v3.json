@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-23T02:11:47.607861+00:00",
-  "generation": 4661,
-  "focus": "The Republic of Plato",
-  "last_action": "evolve",
+  "timestamp": "2026-10-23T02:13:46.347170+00:00",
+  "generation": 4662,
+  "focus": "The Varieties of Religious Experience: A Study in Human Nature",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "{\"accepted\": true, \"title\": \"Enhance Cross-Source Curiosity with Asymmetric Bridge-Term Weighting\", \"summary\": \"Updates the SemanticLearner to weigh rare, bridging vocabulary more heavily during cross-source association ranking. Rather than treating all overlapping terms equally, the learner now prioritizes shared terms that appear infrequently in its seen cache, encouraging novel conceptual bridg",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 4658,
   "last_search_generation": 4646,
@@ -14,7 +14,7 @@
     "nodes": 10938,
     "synapses": 73761,
     "active": 120,
-    "archived_synapses": 37353
+    "archived_synapses": 37261
   },
   "memory": {
     "episodes": 3968,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 20874,
+    "events": 20879,
     "segments": 887,
     "compressed_snapshot": true,
     "snapshot_events": 20853
@@ -38,25 +38,25 @@
       "node_id": "concept:48d492d08e9d314c034c",
       "label": "studies",
       "activation": 1.0,
-      "novelty": 0.1440922190201729,
-      "conflict": 0,
-      "score": 0.8989048991354467
-    },
-    {
-      "node_id": "concept:65ee89092efbf78ab19a",
-      "label": "optimistic",
-      "activation": 1.0,
       "novelty": 0.14316392269148176,
       "conflict": 0,
       "score": 0.8986542591267002
     },
     {
+      "node_id": "concept:65ee89092efbf78ab19a",
+      "label": "optimistic",
+      "activation": 1.0,
+      "novelty": 0.1422475106685633,
+      "conflict": 0,
+      "score": 0.8984068278805122
+    },
+    {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
       "activation": 1.0,
-      "novelty": 0.10373443983402489,
+      "novelty": 0.10325245224574083,
       "conflict": 0,
-      "score": 0.8880082987551867
+      "score": 0.8878781621063501
     },
     {
       "node_id": "concept:e0f895872d65b2528fee",
@@ -78,17 +78,17 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.027631942525559547,
+      "novelty": 0.027597626604112045,
       "conflict": 0,
-      "score": 0.8674606244819012
+      "score": 0.8674513591831103
     },
     {
       "node_id": "concept:bd58d49701dfcfa6068d",
       "label": "temptations",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 524
     },
     "consolidate": {
-      "attempts": 682,
-      "successes": 682
+      "attempts": 683,
+      "successes": 683
     },
     "connect": {
       "attempts": 551,
