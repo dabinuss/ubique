@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-23T14:32:47.960829+00:00",
-  "generation": 4795,
+  "timestamp": "2026-10-23T14:34:55.588145+00:00",
+  "generation": 4796,
   "focus": "The Varieties of Religious Experience: A Study in Human Nature",
-  "last_action": "read",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "observed_associations",
   "last_provider": null,
   "last_provider_generation": 4794,
   "last_search_generation": 4784,
@@ -14,7 +14,7 @@
     "nodes": 11066,
     "synapses": 75488,
     "active": 120,
-    "archived_synapses": 38244
+    "archived_synapses": 38308
   },
   "memory": {
     "episodes": 4050,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 21913,
+    "events": 21918,
     "segments": 938,
     "compressed_snapshot": true,
     "snapshot_events": 21913
@@ -34,22 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 690,
   "workspace": [
-    {
-      "node_id": "concept:172e09329d10f852",
-      "label": "continued",
-      "activation": 1.0,
-      "novelty": 0.09447331128956071,
-      "conflict": 0,
-      "score": 0.8855077940481815
-    },
-    {
-      "node_id": "concept:e0f895872d65b2528fee",
-      "label": "knowledge",
-      "activation": 1.0,
-      "novelty": 0.08845643520566121,
-      "conflict": 0,
-      "score": 0.8838832375055286
-    },
     {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
@@ -67,28 +51,44 @@
       "score": 0.866762680025047
     },
     {
-      "node_id": "concept:e3d1277adcd760abb052",
-      "label": "rises",
+      "node_id": "concept:6c47a47077630aafb5fe",
+      "label": "manifesting",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:4d0c2002b4b9acc52bc9",
+      "label": "outset",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:5a77858b6a1505b68863",
+      "label": "pains",
       "activation": 0.46,
       "novelty": 0.7352941176470589,
       "conflict": 0,
       "score": 0.777729411764706
     },
     {
-      "node_id": "concept:b5a0aa306476543fef18",
-      "label": "possibility",
+      "node_id": "concept:c6cae054230db251a631",
+      "label": "pleasures",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.7713708185053381
     },
     {
-      "node_id": "concept:9d4a137846d164fc874b",
-      "label": "awaking",
+      "node_id": "concept:266d1c70a4cbe7cdb557",
+      "label": "needs",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.4608294930875576,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.7036239631336406
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 12
     },
     "experiment": {
-      "attempts": 89,
-      "successes": 87
+      "attempts": 90,
+      "successes": 88
     },
     "question": {
       "attempts": 62,
