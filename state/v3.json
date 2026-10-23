@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-23T15:52:23.821183+00:00",
-  "generation": 4811,
-  "focus": "Dream Psychology: Psychoanalysis for Beginners",
-  "last_action": "read",
+  "timestamp": "2026-10-23T15:54:19.064321+00:00",
+  "generation": 4812,
+  "focus": "The Nature of Man: Studies in Optimistic Philosophy",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 4811,
   "last_search_generation": 4807,
   "cortex": {
-    "nodes": 11079,
+    "nodes": 11080,
     "synapses": 75659,
     "active": 120,
-    "archived_synapses": 38435
+    "archived_synapses": 38429
   },
   "memory": {
     "episodes": 4056,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 22032,
+    "events": 22037,
     "segments": 945,
     "compressed_snapshot": true,
     "snapshot_events": 22005
@@ -67,28 +67,28 @@
       "score": 0.8827081581160641
     },
     {
+      "node_id": "concept:8153c4e65bb853c8",
+      "label": "identity",
+      "activation": 1.0,
+      "novelty": 0.048285852245292124,
+      "conflict": 0,
+      "score": 0.8730371801062289
+    },
+    {
+      "node_id": "concept:0570b840b0d58779",
+      "label": "formation",
+      "activation": 1.0,
+      "novelty": 0.04676174888940847,
+      "conflict": 0,
+      "score": 0.8726256722001404
+    },
+    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
       "novelty": 0.025565639780135496,
       "conflict": 0,
       "score": 0.8669027227406367
-    },
-    {
-      "node_id": "concept:f2d44b8ac655a7ad",
-      "label": "public",
-      "activation": 1.0,
-      "novelty": 0.025046963055729496,
-      "conflict": 0,
-      "score": 0.866762680025047
-    },
-    {
-      "node_id": "concept:180366dd3b2cc124570a",
-      "label": "afraid",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 546
     },
     "consolidate": {
-      "attempts": 715,
-      "successes": 715
+      "attempts": 716,
+      "successes": 716
     },
     "connect": {
       "attempts": 582,
