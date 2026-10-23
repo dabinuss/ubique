@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-23T20:14:50.763057+00:00",
-  "generation": 4858,
-  "focus": "The Riddle of the Universe",
-  "last_action": "read",
+  "timestamp": "2026-10-23T20:16:51.322153+00:00",
+  "generation": 4859,
+  "focus": "The Master of Destiny: A Biography of the Brain",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 4857,
   "last_search_generation": 4853,
@@ -14,7 +14,7 @@
     "nodes": 11127,
     "synapses": 76285,
     "active": 120,
-    "archived_synapses": 38623
+    "archived_synapses": 38511
   },
   "memory": {
     "episodes": 4075,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 22405,
+    "events": 22410,
     "segments": 968,
     "compressed_snapshot": true,
     "snapshot_events": 22343
@@ -43,6 +43,30 @@
       "score": 0.8932922318125771
     },
     {
+      "node_id": "concept:3853eb486f0ccd5b3023",
+      "label": "varieties",
+      "activation": 1.0,
+      "novelty": 0.0986679822397632,
+      "conflict": 0,
+      "score": 0.8866403552047362
+    },
+    {
+      "node_id": "concept:3f8b4464a99de3dc8c5c",
+      "label": "religious",
+      "activation": 1.0,
+      "novelty": 0.08916629514043692,
+      "conflict": 0,
+      "score": 0.884074899687918
+    },
+    {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 1.0,
+      "novelty": 0.08254230293025175,
+      "conflict": 0,
+      "score": 0.8822864217911681
+    },
+    {
       "node_id": "concept:6907de2e8144a57274c7",
       "label": "treatise",
       "activation": 1.0,
@@ -54,41 +78,17 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.024990628514307136,
+      "novelty": 0.024934546814611647,
       "conflict": 0,
-      "score": 0.8667474696988631
+      "score": 0.8667323276399452
     },
     {
-      "node_id": "concept:fe98a4b07a9f4ee4ec66",
-      "label": "regulator",
+      "node_id": "concept:5dc27af287fa554aa10f",
+      "label": "flat",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:ff9592d1c519e13e1a76",
-      "label": "preclude",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:a4075864ad5e7545961d",
-      "label": "liberation",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:084e990a49ba65e62292",
-      "label": "reject",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 554
     },
     "consolidate": {
-      "attempts": 726,
-      "successes": 726
+      "attempts": 727,
+      "successes": 727
     },
     "connect": {
       "attempts": 591,
