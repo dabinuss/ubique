@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-23T20:56:38.964121+00:00",
-  "generation": 4867,
-  "focus": "Mental Evolution in Man: Origin of Human Faculty",
-  "last_action": "read",
+  "timestamp": "2026-10-23T20:58:43.014776+00:00",
+  "generation": 4868,
+  "focus": "The Master of Destiny: A Biography of the Brain",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 4862,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 4868,
   "last_search_generation": 4853,
   "cortex": {
-    "nodes": 11139,
-    "synapses": 76357,
+    "nodes": 11141,
+    "synapses": 76371,
     "active": 120,
-    "archived_synapses": 38691
+    "archived_synapses": 38641
   },
   "memory": {
     "episodes": 4077,
-    "claims": 2863,
+    "claims": 2869,
     "stances": 27,
     "interests": 85,
     "associative_comparisons": 2098,
@@ -26,14 +26,30 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 22462,
+    "events": 22479,
     "segments": 972,
     "compressed_snapshot": true,
     "snapshot_events": 22427
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 721,
+  "evidence_reviews": 727,
   "workspace": [
+    {
+      "node_id": "concept:48d492d08e9d314c034c",
+      "label": "studies",
+      "activation": 1.0,
+      "novelty": 0.12610340479192939,
+      "conflict": 0,
+      "score": 0.8940479192938209
+    },
+    {
+      "node_id": "concept:65ee89092efbf78ab19a",
+      "label": "optimistic",
+      "activation": 1.0,
+      "novelty": 0.12539184952978058,
+      "conflict": 0,
+      "score": 0.8938557993730407
+    },
     {
       "node_id": "concept:3853eb486f0ccd5b3023",
       "label": "varieties",
@@ -43,12 +59,20 @@
       "score": 0.8857265364459266
     },
     {
+      "node_id": "concept:2331eb33ce2c3766148e",
+      "label": "philosophy",
+      "activation": 1.0,
+      "novelty": 0.09328358208955224,
+      "conflict": 0,
+      "score": 0.8851865671641792
+    },
+    {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
       "activation": 1.0,
-      "novelty": 0.08845643520566121,
+      "novelty": 0.0881057268722467,
       "conflict": 0,
-      "score": 0.8838832375055286
+      "score": 0.8837885462555066
     },
     {
       "node_id": "concept:3f8b4464a99de3dc8c5c",
@@ -65,30 +89,6 @@
       "novelty": 0.08103727714748785,
       "conflict": 0,
       "score": 0.8818800648298217
-    },
-    {
-      "node_id": "concept:6907de2e8144a57274c7",
-      "label": "treatise",
-      "activation": 1.0,
-      "novelty": 0.0643707756678468,
-      "conflict": 0,
-      "score": 0.8773801094303186
-    },
-    {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.02476780185758514,
-      "conflict": 0,
-      "score": 0.8666873065015481
-    },
-    {
-      "node_id": "concept:e3357168559308547f0d",
-      "label": "blindness",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 556
     },
     "consolidate": {
-      "attempts": 728,
-      "successes": 728
+      "attempts": 729,
+      "successes": 729
     },
     "connect": {
       "attempts": 593,
