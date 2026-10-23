@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-23T01:15:40.776395+00:00",
-  "generation": 4651,
-  "focus": "The World as Will and Idea, Volume 1",
-  "last_action": "read",
+  "timestamp": "2026-10-23T01:17:46.451208+00:00",
+  "generation": 4652,
+  "focus": "The Story of the Mind",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 4647,
   "last_search_generation": 4646,
   "cortex": {
     "nodes": 10926,
-    "synapses": 73673,
+    "synapses": 73685,
     "active": 120,
-    "archived_synapses": 37243
+    "archived_synapses": 37193
   },
   "memory": {
     "episodes": 3962,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 20800,
+    "events": 20805,
     "segments": 882,
     "compressed_snapshot": true,
     "snapshot_events": 20768
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 645,
   "workspace": [
+    {
+      "node_id": "concept:2331eb33ce2c3766148e",
+      "label": "philosophy",
+      "activation": 1.0,
+      "novelty": 0.10520778537611784,
+      "conflict": 0,
+      "score": 0.8884061020515519
+    },
     {
       "node_id": "concept:3f8b4464a99de3dc8c5c",
       "label": "religious",
@@ -59,36 +67,28 @@
       "score": 0.8674885591457495
     },
     {
-      "node_id": "concept:064e5a3fa2a99fcde09c",
-      "label": "metaphysicians",
+      "node_id": "concept:bdafec9fe2f2bf4495a8",
+      "label": "indisposition",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:1551d1eb020a113540d8",
-      "label": "holy",
+      "node_id": "concept:42f38c12577ba328f23a",
+      "label": "happiness",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.7713708185053381
     },
     {
-      "node_id": "concept:9e96274abcf3df0dfcd1",
-      "label": "horror",
+      "node_id": "concept:ced636336aacc18b987f",
+      "label": "herself",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.6493506493506493,
       "conflict": 0,
-      "score": 0.777729411764706
-    },
-    {
-      "node_id": "concept:5fde095c479bdfd93ade",
-      "label": "refuse",
-      "activation": 0.46,
-      "novelty": 0.5970149253731344,
-      "conflict": 0,
-      "score": 0.7403940298507463
+      "score": 0.7545246753246754
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 523
     },
     "consolidate": {
-      "attempts": 680,
-      "successes": 680
+      "attempts": 681,
+      "successes": 681
     },
     "connect": {
       "attempts": 549,
