@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-24T14:24:09.730432+00:00",
-  "generation": 5049,
-  "focus": "Human Nature and Conduct",
-  "last_action": "experiment",
+  "timestamp": "2026-10-24T14:26:03.942002+00:00",
+  "generation": 5050,
+  "focus": "The Riddle of the Universe",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "observed_associations",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 5049,
   "last_search_generation": 5037,
   "cortex": {
     "nodes": 11302,
     "synapses": 78652,
     "active": 120,
-    "archived_synapses": 39430
+    "archived_synapses": 39282
   },
   "memory": {
     "episodes": 4167,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 23844,
+    "events": 23849,
     "segments": 1063,
     "compressed_snapshot": true,
     "snapshot_events": 23844
@@ -62,33 +62,33 @@
       "node_id": "concept:b5bb73d125bb095d0ea3",
       "label": "utters",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:87e56ce6429768c90138",
       "label": "altogether",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:a3a7f053ae2eadb1fb93",
-      "label": "accent",
       "activation": 0.46,
       "novelty": 0.8163265306122448,
       "conflict": 0,
       "score": 0.7996081632653061
     },
     {
+      "node_id": "concept:a3a7f053ae2eadb1fb93",
+      "label": "accent",
+      "activation": 0.46,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.7917984251968504
+    },
+    {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.8126669225015893,
-      "novelty": 0.02080299563137092,
+      "activation": 0.806928454749719,
+      "novelty": 0.020783539436766082,
       "conflict": 0,
-      "score": 0.7682036085212967
+      "score": 0.7652143521177808
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 587
     },
     "consolidate": {
-      "attempts": 771,
-      "successes": 771
+      "attempts": 772,
+      "successes": 772
     },
     "connect": {
       "attempts": 629,
