@@ -32,10 +32,20 @@ def compare_sources(left: dict, right: dict) -> dict | None:
     else:
         _, a, b, shared = max(scored, key=lambda row: row[0])
     topic = ", ".join(shared[:3]) or "the relationship between these ideas"
-    question = ("How does the view in the first passage relate to the second "
-                "concerning " + topic + "? Which assumptions differ?")
+    left_terms = set(content_terms(a, 35))
+    right_terms = set(content_terms(b, 35))
+    unique_left = sorted(left_terms - right_terms)[:2]
+    unique_right = sorted(right_terms - left_terms)[:2]
+    if unique_left and unique_right:
+        question = ("How are " + topic + " connected when one passage also examines " +
+                    ", ".join(unique_left) + " and the other examines " +
+                    ", ".join(unique_right) + "? Which assumptions differ?")
+    else:
+        question = ("How do the authors approach " + topic +
+                    " in their separate passages? Which assumptions differ?")
     return {"question": question, "passages": [a[:480], b[:480]],
             "topics": shared[:6], "source_ids": [left["id"], right["id"]],
+            "distinctive_terms": [unique_left, unique_right],
             "status": "open_question", "uncertainty": 0.8}
 
 def enquire(hippocampus, journal, world, *, generation: int | None = None) -> dict | None:

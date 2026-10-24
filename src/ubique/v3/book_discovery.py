@@ -88,15 +88,30 @@ def discover_public_books(query: str, *, limit: int = 2) -> dict:
              if item.get("status") in {"available", "offered"}}
     found: dict[str, tuple[int, dict, str, str]] = {}
     failures = []
-    for search in _queries(query):
-        request = Request(CATALOGUE + "?" + urlencode({"search": search}),
+    plan = [("search", phrase) for phrase in _queries(query)]
+    # Gutendex searches titles/authors, while topic searches subject metadata.
+    # Scientific wishes often name a subject, not a Gutenberg book title.
+    related = [theme for word in _words(query) for theme in RELATED.get(word, ())]
+    if related:
+        plan.append(("topic", related[0]))
+    attempted = []
+    for parameter, search in plan[:4]:
+        # An already found relevant title needs no additional fallback query.
+        if parameter=="topic" and found:
+            break
+        attempted.append({"mode": parameter, "query": search})
+        request = Request(CATALOGUE + "?" + urlencode({parameter: search}),
                           headers={"User-Agent": "UbiqueResearch/3.0 (autonomous learning)"})
         try:
-            with urlopen(request, timeout=12) as response:
+            with urlopen(request, timeout=8) as response:
                 catalogue = json.loads(response.read(250_000).decode("utf-8"))
+            if not isinstance(catalogue, dict):
+                raise ValueError("Catalogue did not return an object")
         except (OSError, ValueError, UnicodeError) as exc:
             failures.append(type(exc).__name__)
-            continue
+            # A dead upstream host should not consume four timeouts in one
+            # heartbeat. The runtime will retry on a later generation.
+            break
         for book in catalogue.get("results", [])[:30]:
             if not isinstance(book, dict) or book.get("copyright") is not False:
                 continue
@@ -144,4 +159,4 @@ def discover_public_books(query: str, *, limit: int = 2) -> dict:
         _write_index(index)
     return {"query": query, "added": added,
             "status": "found" if added else ("source_unavailable" if failures else "no_match"),
-            "attempted_queries": _queries(query), "errors": failures}
+            "attempted_queries": attempted, "errors": failures}

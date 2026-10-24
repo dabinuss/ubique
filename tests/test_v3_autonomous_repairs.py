@@ -32,7 +32,8 @@ def test_discovery_broadens_precise_research_wish_without_forging_a_book(tmp_pat
     queries = []
 
     def fake(request, timeout=12):
-        search = parse_qs(urlsplit(request.full_url).query)["search"][0]
+        params = parse_qs(urlsplit(request.full_url).query)
+        search = (params.get("search") or params.get("topic") or [""])[0]
         queries.append(search)
         if search != "physiology":
             return CatalogueResponse({"results": []})

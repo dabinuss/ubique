@@ -167,7 +167,24 @@ def validate_proposal(raw_text: str) -> dict[str, Any]:
         seen.add(path)
 
         if not isinstance(content, str):
-            raise ValueError(f"content for {path} must be text")
+            # Compact exact replacements avoid truncated JSON on long modules.
+            # The expanded source still goes through the same isolated checks.
+            replacements = change.get("replacements")
+            if not isinstance(replacements, list) or not 1 <= len(replacements) <= 12:
+                raise ValueError(f"content or 1..12 replacements required for {path}")
+            source = _safe_path(path)
+            if not source.is_file():
+                raise ValueError(f"cannot patch absent source file: {path}")
+            content = source.read_text(encoding="utf-8")
+            for replacement in replacements:
+                if not isinstance(replacement, dict):
+                    raise ValueError(f"invalid replacement in {path}")
+                old, new = replacement.get("old"), replacement.get("new")
+                if not isinstance(old, str) or not old or not isinstance(new, str):
+                    raise ValueError(f"replacement needs nonempty old and text new in {path}")
+                if content.count(old) != 1:
+                    raise ValueError(f"replacement must match exactly once in {path}")
+                content = content.replace(old, new, 1)
         if len(content.encode("utf-8")) > MAX_FILE_BYTES:
             raise ValueError(f"content too large: {path}")
 

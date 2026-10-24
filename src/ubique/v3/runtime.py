@@ -258,6 +258,38 @@ class UbiqueV3:
                                 {"cues":terms(str(recall[0].get("text",""))) if recall else []},.45))
         return candidates[:MAX_CANDIDATES]
 
+    def _discovery_candidate(self, generation:int, focus:str,
+                             candidates:list[Candidate])->Candidate|None:
+        # Avoid scheduling two external investigations in one heartbeat.
+        if not focus or any(c.kind=="search" for c in candidates):
+            return None
+        recent=self.journal.recent("library_discovery",limit=1)
+        earlier=recent[-1].get("data",{}) if recent else {}
+        last=int(recent[-1].get("generation",0) or 0) if recent else -100
+        status=str(earlier.get("status",""))
+        if (not status and not earlier.get("success")
+                and any(word in str(earlier.get("effect","")).lower()
+                        for word in ("timed out","timeouterror","urlerror","http error"))):
+            status="source_unavailable"
+        retry_after=(5 if status=="source_unavailable"
+                     else 12 if status=="no_match" else 29)
+        if generation-last<retry_after:
+            return None
+        if generation%5!=0 and reading_candidates(self.curiosity):
+            return None
+        from ..library import library_catalog
+        wishes=[item for item in library_catalog(250)
+                if item.get("status")=="wanted"]
+        query=(wishes[generation%len(wishes)].get("title","")
+               if wishes and generation%3 else focus)
+        if not query:
+            return None
+        return Candidate("library",
+            "Seek an attributable public-domain text about "+query,
+            {"action":"discover","query":query},
+            1.10+min(.7,max(0,generation-last-29)*.012),
+            source="independent_curiosity")
+
     def _research(self,topic:str,generation:int)->Result:
         from .research import discover
         if not topic:return Result("search",False,"No topic available")
@@ -302,14 +334,21 @@ class UbiqueV3:
                 outcome=discover_public_books(query,limit=2)
                 found=outcome.get("added",[])
                 result=Result("library",bool(found),
-                              "Discovered "+str(len(found))+" public-domain books",
-                              payload={"query":query,"books":found})
+                              "Discovery "+str(outcome.get("status","unknown"))+
+                              ": "+str(len(found))+" public-domain books",
+                              payload={"query":query,"books":found,
+                                       "status":outcome.get("status"),
+                                       "attempted_queries":outcome.get("attempted_queries",[]),
+                                       "errors":outcome.get("errors",[])})
             except Exception as exc:
                 result=Result("library",False,type(exc).__name__+": "+str(exc)[:300],
                               payload={"query":query})
             self.journal.append("library_discovery",{
                 "query":query,"success":result.success,
-                "effect":result.effect,"books":result.payload.get("books",[])},
+                "effect":result.effect,"books":result.payload.get("books",[]),
+                "status":result.payload.get("status","source_unavailable" if not result.success else "found"),
+                "attempted_queries":result.payload.get("attempted_queries",[]),
+                "errors":result.payload.get("errors",[])},
                 generation=generation)
             return result
         if chosen.kind in {"evolve","edit_code"}:
@@ -435,25 +474,9 @@ class UbiqueV3:
                 if generation-last_search>=20:
                     candidates.append(Candidate("search","Acquire new general knowledge about "+focus,
                               {"topic":focus},.83+min(.55,max(0,generation-last_search-20)*.008)))
-            # Book discovery can compete with thought and reading, even offline
-            # from language providers. Recent lookups are remembered so public
-            # catalogues are not contacted on every heartbeat.
-            recent_discovery=self.journal.recent("library_discovery",limit=1)
-            last_discovery=(int(recent_discovery[-1].get("generation",0) or 0)
-                            if recent_discovery else -100)
-            if generation-last_discovery>=29 and (generation%17==0 or
-                  not reading_candidates(self.curiosity)):
-                from ..library import library_catalog
-                wishes=[item for item in library_catalog(250)
-                        if item.get("status")=="wanted"]
-                query=(wishes[generation % len(wishes)].get("title","")
-                       if wishes and generation%3 else focus)
-                if query:
-                    candidates.append(Candidate("library",
-                        "Seek an attributable public-domain text about "+query,
-                        {"action":"discover","query":query},
-                        1.10+min(.7,max(0,generation-last_discovery-29)*.012),
-                        source="independent_curiosity"))
+            discovery=self._discovery_candidate(generation,focus,candidates)
+            if discovery is not None:
+                candidates.append(discovery)
             # Code changes are a legitimate action when observed failures recur.
             # They compete with reading and thought rather than being mandatory.
             failures=sum(1 for kind in ("search","connect","experiment","read")
