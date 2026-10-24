@@ -442,7 +442,8 @@ class UbiqueV3:
                 if query:
                     candidates.append(Candidate("library",
                         "Seek an attributable public-domain text about "+query,
-                        {"action":"discover","query":query},.92,
+                        {"action":"discover","query":query},
+                        1.10+min(.7,max(0,generation-last_discovery-29)*.012),
                         source="independent_curiosity"))
             # Code changes are a legitimate action when observed failures recur.
             # They compete with reading and thought rather than being mandatory.
