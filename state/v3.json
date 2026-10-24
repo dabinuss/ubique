@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-24T14:41:53.793239+00:00",
-  "generation": 5052,
-  "focus": "A Treatise of Human Nature",
-  "last_action": "read",
+  "timestamp": "2026-10-24T14:43:46.034850+00:00",
+  "generation": 5053,
+  "focus": "The Physical Basis of Mind",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 5049,
   "last_search_generation": 5037,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 23864,
+    "events": 23868,
     "segments": 1063,
     "compressed_snapshot": true,
     "snapshot_events": 23844
@@ -34,14 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 786,
   "workspace": [
-    {
-      "node_id": "concept:64b218956223eb12d13e",
-      "label": "principles",
-      "activation": 1.0,
-      "novelty": 0.11267605633802817,
-      "conflict": 0,
-      "score": 0.8904225352112676
-    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -59,36 +51,44 @@
       "score": 0.8770347003154575
     },
     {
-      "node_id": "concept:b5bb73d125bb095d0ea3",
-      "label": "utters",
+      "node_id": "concept:d30e09d43a09016c332c",
+      "label": "ction",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:87e56ce6429768c90138",
-      "label": "altogether",
+      "node_id": "concept:e6158e7d3167c190f6b4",
+      "label": "objectified",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.78452319391635
-    },
-    {
-      "node_id": "concept:a3a7f053ae2eadb1fb93",
-      "label": "accent",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.8029143654768275,
+      "activation": 0.8014313579894142,
       "novelty": 0.020744736023234105,
       "conflict": 0,
-      "score": 0.7631165487742235
+      "score": 0.7623453848807686
+    },
+    {
+      "node_id": "concept:284d1e8c4918248233df",
+      "label": "passed",
+      "activation": 0.46,
+      "novelty": 0.5970149253731344,
+      "conflict": 0,
+      "score": 0.7403940298507463
+    },
+    {
+      "node_id": "concept:a637996908ea33349070",
+      "label": "movement",
+      "activation": 0.46,
+      "novelty": 0.4338394793926248,
+      "conflict": 0,
+      "score": 0.6963366594360088
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 792
     },
     "explore": {
-      "attempts": 593,
-      "successes": 587
+      "attempts": 594,
+      "successes": 588
     },
     "consolidate": {
       "attempts": 772,
