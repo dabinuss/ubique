@@ -229,4 +229,9 @@ class SemanticLearner:
         # cross‑source comparisons during this call.
         # -----------------------------------------------------------------
         self._adjust_exploration_factor(produced_comparisons=bool(result))
+        latest = set(terms(str(episode.get("text", "")), 24))
+        latest.update(terms(str(episode.get("payload", {}).get("title", "")), 12))
+        for word in latest:
+            self._seen_terms.add(word)
+            self._term_frequency[word] = self._term_frequency.get(word, 0) + 1
         return result
