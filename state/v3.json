@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-24T07:38:42.571955+00:00",
-  "generation": 4979,
-  "focus": "The Psychology of the Emotions",
-  "last_action": "question",
+  "timestamp": "2026-10-24T07:52:44.521823+00:00",
+  "generation": 4980,
+  "focus": "Psychology of the Unconscious",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "How does the view in the first passage relate to the second concerning the relationship between these ideas? Which assumptions differ?",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 4976,
   "last_search_generation": 4968,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 23308,
+    "events": 23312,
     "segments": 1028,
     "compressed_snapshot": true,
     "snapshot_events": 23262
@@ -62,33 +62,33 @@
       "node_id": "concept:820effb874a485bf6151",
       "label": "deaf",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8080135593220339
     },
     {
       "node_id": "concept:a7aa1b9790748b71e5c2",
       "label": "mute",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:5ff847581f0423b2417a",
-      "label": "unaided",
       "activation": 0.46,
       "novelty": 0.8474576271186441,
       "conflict": 0,
       "score": 0.8080135593220339
     },
     {
-      "node_id": "concept:1c48f6310f1c849b4ac3",
-      "label": "mind",
-      "activation": 0.8216803187767613,
-      "novelty": 0.021260763261401087,
+      "node_id": "concept:5ff847581f0423b2417a",
+      "label": "unaided",
+      "activation": 0.46,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.7730141718444943
+      "score": 0.7996081632653061
+    },
+    {
+      "node_id": "concept:d07561c1df8bc350ca1e",
+      "label": "civilized",
+      "activation": 0.46,
+      "novelty": 0.6896551724137931,
+      "conflict": 0,
+      "score": 0.7654068965517242
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 778
     },
     "explore": {
-      "attempts": 580,
-      "successes": 574
+      "attempts": 581,
+      "successes": 575
     },
     "consolidate": {
       "attempts": 755,
