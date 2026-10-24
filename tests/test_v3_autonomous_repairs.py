@@ -103,3 +103,26 @@ def test_new_archive_bound_and_lossless_chain(tmp_path, monkeypatch):
     for n in range(25):
         j.append("memory", {"sequence": n, "text": "remember this" * 10})
     assert [e["data"]["sequence"] for e in Journal(tmp_path / "v3").events(verify=True)] == list(range(25))
+
+
+def test_completed_source_question_does_not_monopolize_followup(tmp_path):
+    from ubique.config import Config
+    from ubique.v3.runtime import UbiqueV3
+
+    agent = UbiqueV3(Config.from_env(), storage_root=tmp_path / "v3",
+                     enable_remote=False)
+    for name in ("one", "two"):
+        agent.hippocampus.encode(
+            "Learning, attention and memory shape our understanding of experience.",
+            source="library:" + name, epistemic_status="source_passage")
+    from ubique.v3.inquiry import enquire
+    inquiry = enquire(agent.hippocampus, agent.journal, agent.world, generation=6)
+    assert inquiry is not None
+    first = agent._candidates(11, "memory", [], [])
+    experiments = [x for x in first if x.kind == "experiment"]
+    assert experiments and experiments[0].payload["experiment_type"] == "compare_sources"
+    result = agent._act(experiments[0], generation=11, focus="memory")
+    assert result.success
+    future = agent._candidates(22, "memory", [], [])
+    next_experiment = [x for x in future if x.kind == "experiment"][0]
+    assert next_experiment.payload["experiment_type"] == "association_probe"
