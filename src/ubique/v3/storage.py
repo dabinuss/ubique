@@ -17,8 +17,10 @@ from typing import Any, Iterator
 from ..state import ROOT
 
 SCHEMA = 3
-SEGMENT_LIMIT = 750_000
-ARCHIVE_LIMIT = 1_500_000
+# Use fewer immutable, verified archives as new memories accumulate.
+# Older shards stay untouched so no historical events are discarded.
+SEGMENT_LIMIT = 2_000_000
+ARCHIVE_LIMIT = 2_500_000
 
 
 def utc_now() -> str:
