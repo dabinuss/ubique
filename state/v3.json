@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-24T00:59:53.603913+00:00",
-  "generation": 4911,
+  "timestamp": "2026-10-24T01:13:59.914057+00:00",
+  "generation": 4912,
   "focus": "Human Nature and Conduct",
-  "last_action": "consolidate",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 4906,
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": "gemini",
+  "last_provider_generation": 4912,
   "last_search_generation": 4899,
   "cortex": {
-    "nodes": 11170,
-    "synapses": 76940,
+    "nodes": 11172,
+    "synapses": 76942,
     "active": 120,
     "archived_synapses": 38788
   },
   "memory": {
-    "episodes": 4092,
-    "claims": 2905,
+    "episodes": 4094,
+    "claims": 2907,
     "stances": 27,
     "interests": 85,
     "associative_comparisons": 2124,
@@ -26,21 +26,21 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 22782,
+    "events": 22792,
     "segments": 994,
     "compressed_snapshot": true,
     "snapshot_events": 22758
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 735,
+  "evidence_reviews": 737,
   "workspace": [
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
       "activation": 1.0,
-      "novelty": 0.08410428931875527,
+      "novelty": 0.08347245409015025,
       "conflict": 0,
-      "score": 0.8827081581160641
+      "score": 0.8825375626043406
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
@@ -70,9 +70,9 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.02425418384671356,
+      "novelty": 0.024227740763173834,
       "conflict": 0,
-      "score": 0.8665486296386127
+      "score": 0.8665414900060571
     },
     {
       "node_id": "concept:8b16ced79976e6a1",
@@ -85,10 +85,10 @@
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
-      "activation": 0.9219938802862891,
+      "activation": 0.9652561956191694,
       "novelty": 0.04551661356395084,
       "conflict": 0,
-      "score": 0.8317263034111371
+      "score": 0.8542227073842348
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 766
     },
     "explore": {
-      "attempts": 569,
-      "successes": 563
+      "attempts": 570,
+      "successes": 564
     },
     "consolidate": {
       "attempts": 739,
