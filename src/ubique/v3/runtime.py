@@ -354,7 +354,7 @@ class UbiqueV3:
         delta["tick"]={"kind":"cortex_tick","data":{"tick":self.cortex.tick}}
         self.journal.append("graph_delta",{"changes":list(delta.values())},generation=generation)
         self.cortex.changes.clear()
-        if self.journal.manifest["events"]-self.journal.manifest["snapshot_events"]>=80:
+        if self.journal.manifest["events"]-self.journal.manifest["snapshot_events"]>=160:
             self.journal.snapshot(self.cortex.as_dict())
         status={"version":3,"architecture":"neurocognitive-v3",
                 "timestamp":utc_now(),"generation":generation,"focus":focus,
