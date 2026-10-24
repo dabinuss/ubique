@@ -223,8 +223,13 @@ class UbiqueV3:
         # Autonomous experiments and questions compete naturally with reading.
         # They work offline and do not need a predetermined philosophical answer.
         if generation % 11 == 0 or "experiment" not in self.history[-40:]:
-            inquiries=self.journal.recent("inquiry",limit=4)
-            pending=inquiries[-1].get("data",{}) if inquiries else {}
+            completed={tuple(sorted(e.get("data",{}).get("evidence_ids",[])))
+                       for e in self.journal.recent("experiment_observation",limit=60)
+                       if e.get("data",{}).get("kind")=="compare_sources"}
+            inquiries=self.journal.recent("inquiry",limit=30)
+            pending=next((e.get("data",{}) for e in reversed(inquiries)
+                          if tuple(sorted(e.get("data",{}).get("source_ids",[])))
+                          not in completed), {})
             candidates.append(Candidate("experiment",
                 "Investigate evidence for an open question",
                 {"experiment_type":"compare_sources" if pending else "association_probe",
