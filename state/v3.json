@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-24T12:17:38.833265+00:00",
-  "generation": 5028,
-  "focus": "The World as Will and Idea, Volume 1",
-  "last_action": "read",
+  "timestamp": "2026-10-24T12:19:42.706138+00:00",
+  "generation": 5029,
+  "focus": "Human Nature and Conduct",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 5027,
   "last_search_generation": 5014,
   "cortex": {
-    "nodes": 11290,
+    "nodes": 11292,
     "synapses": 78498,
     "active": 120,
     "archived_synapses": 39478
@@ -26,10 +26,10 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 23670,
-    "segments": 1052,
+    "events": 23675,
+    "segments": 1053,
     "compressed_snapshot": true,
-    "snapshot_events": 23594
+    "snapshot_events": 23675
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 770,
@@ -41,6 +41,22 @@
       "novelty": 0.4255319148936171,
       "conflict": 0,
       "score": 0.9748936170212767
+    },
+    {
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
+      "activation": 1.0,
+      "novelty": 0.115606936416185,
+      "conflict": 0,
+      "score": 0.89121387283237
+    },
+    {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.07874015748031496,
+      "conflict": 0,
+      "score": 0.8812598425196851
     },
     {
       "node_id": "concept:6907de2e8144a57274c7",
@@ -73,22 +89,6 @@
       "novelty": 0.04496402877697842,
       "conflict": 0,
       "score": 0.8721402877697841
-    },
-    {
-      "node_id": "concept:02f77488efc6c9cf",
-      "label": "destiny",
-      "activation": 1.0,
-      "novelty": 0.03653635367190355,
-      "conflict": 0,
-      "score": 0.8698648154914139
-    },
-    {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.0224870699347875,
-      "conflict": 0,
-      "score": 0.8660715088823927
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 583
     },
     "consolidate": {
-      "attempts": 766,
-      "successes": 766
+      "attempts": 767,
+      "successes": 767
     },
     "connect": {
       "attempts": 625,
