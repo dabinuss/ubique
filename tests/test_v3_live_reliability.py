@@ -71,7 +71,7 @@ def test_catalogue_topic_fallback_discovers_genuine_source(tmp_path, monkeypatch
     book = library.library_catalog()[0]
     assert book["status"] == "available"
     assert book["read_count"] == 0
-    assert book["public_domain_catalogue_id"] == 827
+    assert library._load_index()["items"][0]["public_domain_catalogue_id"] == 827
     assert book["source_url"].startswith("https://www.gutenberg.org/")
 
 
@@ -125,9 +125,11 @@ def test_earlier_failed_book_search_retried_without_busy_loop(tmp_path, monkeypa
     bot.journal.append("library_discovery", {
         "query": "Memory", "success": False, "status": "source_unavailable",
         "effect": "TimeoutError: read operation timed out"}, generation=99)
-    immediate = bot._candidates(100, "memory", [], [])
-    assert not any(c.kind == "library" and
-                   c.payload.get("action") == "discover" for c in immediate)
-    due = bot._candidates(105, "memory", [], [])
-    assert any(c.kind == "library" and c.payload.get("action") == "discover"
-               for c in due)
+    existing = [Candidate("read", "Continue reading", {"title": "Test"}, .7)]
+    assert bot._discovery_candidate(100, "memory", existing) is None
+    due = bot._discovery_candidate(105, "memory", existing)
+    assert due is not None and due.kind == "library"
+    assert due.payload["action"] == "discover"
+    assert bot._discovery_candidate(105, "memory", [
+        Candidate("search", "Already researching", {"topic": "memory"}, .7)
+    ]) is None
