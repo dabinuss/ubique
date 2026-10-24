@@ -474,36 +474,9 @@ class UbiqueV3:
                 if generation-last_search>=20:
                     candidates.append(Candidate("search","Acquire new general knowledge about "+focus,
                               {"topic":focus},.83+min(.55,max(0,generation-last_search-20)*.008)))
-            # Book discovery can compete with thought and reading, even offline
-            # from language providers. Recent lookups are remembered so public
-            # catalogues are not contacted on every heartbeat.
-            recent_discovery=self.journal.recent("library_discovery",limit=1)
-            previous_discovery=recent_discovery[-1].get("data",{}) if recent_discovery else {}
-            last_discovery=(int(recent_discovery[-1].get("generation",0) or 0)
-                            if recent_discovery else -100)
-            previous_status=str(previous_discovery.get("status",""))
-            if (not previous_status and not previous_discovery.get("success")
-                    and any(signal in str(previous_discovery.get("effect","")).lower()
-                            for signal in ("timed out", "timeouterror", "urlerror", "http error"))):
-                previous_status="source_unavailable"  # old journal compatibility
-            # Network outages merit earlier reattempts than completed searches.
-            # Even a failing endpoint cannot spin in every heartbeat.
-            retry_after=(5 if previous_status=="source_unavailable"
-                         else 12 if previous_status=="no_match"
-                         else 29)
-            due=generation-last_discovery>=retry_after
-            if due and (generation%5==0 or not reading_candidates(self.curiosity)):
-                from ..library import library_catalog
-                wishes=[item for item in library_catalog(250)
-                        if item.get("status")=="wanted"]
-                query=(wishes[generation % len(wishes)].get("title","")
-                       if wishes and generation%3 else focus)
-                if query:
-                    candidates.append(Candidate("library",
-                        "Seek an attributable public-domain text about "+query,
-                        {"action":"discover","query":query},
-                        1.10+min(.7,max(0,generation-last_discovery-29)*.012),
-                        source="independent_curiosity"))
+            discovery=self._discovery_candidate(generation,focus,candidates)
+            if discovery is not None:
+                candidates.append(discovery)
             # Code changes are a legitimate action when observed failures recur.
             # They compete with reading and thought rather than being mandatory.
             failures=sum(1 for kind in ("search","connect","experiment","read")
