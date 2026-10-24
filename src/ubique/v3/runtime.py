@@ -258,6 +258,38 @@ class UbiqueV3:
                                 {"cues":terms(str(recall[0].get("text",""))) if recall else []},.45))
         return candidates[:MAX_CANDIDATES]
 
+    def _discovery_candidate(self, generation:int, focus:str,
+                             candidates:list[Candidate])->Candidate|None:
+        # Avoid scheduling two external investigations in one heartbeat.
+        if not focus or any(c.kind=="search" for c in candidates):
+            return None
+        recent=self.journal.recent("library_discovery",limit=1)
+        earlier=recent[-1].get("data",{}) if recent else {}
+        last=int(recent[-1].get("generation",0) or 0) if recent else -100
+        status=str(earlier.get("status",""))
+        if (not status and not earlier.get("success")
+                and any(word in str(earlier.get("effect","")).lower()
+                        for word in ("timed out","timeouterror","urlerror","http error"))):
+            status="source_unavailable"
+        retry_after=(5 if status=="source_unavailable"
+                     else 12 if status=="no_match" else 29)
+        if generation-last<retry_after:
+            return None
+        if generation%5!=0 and reading_candidates(self.curiosity):
+            return None
+        from ..library import library_catalog
+        wishes=[item for item in library_catalog(250)
+                if item.get("status")=="wanted"]
+        query=(wishes[generation%len(wishes)].get("title","")
+               if wishes and generation%3 else focus)
+        if not query:
+            return None
+        return Candidate("library",
+            "Seek an attributable public-domain text about "+query,
+            {"action":"discover","query":query},
+            1.10+min(.7,max(0,generation-last-29)*.012),
+            source="independent_curiosity")
+
     def _research(self,topic:str,generation:int)->Result:
         from .research import discover
         if not topic:return Result("search",False,"No topic available")
