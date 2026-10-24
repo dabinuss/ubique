@@ -450,6 +450,10 @@ class UbiqueV3:
             last_discovery=(int(recent_discovery[-1].get("generation",0) or 0)
                             if recent_discovery else -100)
             previous_status=str(previous_discovery.get("status",""))
+            if (not previous_status and not previous_discovery.get("success")
+                    and any(signal in str(previous_discovery.get("effect","")).lower()
+                            for signal in ("timed out", "timeouterror", "urlerror", "http error"))):
+                previous_status="source_unavailable"  # old journal compatibility
             # Network outages merit earlier reattempts than completed searches.
             # Even a failing endpoint cannot spin in every heartbeat.
             retry_after=(5 if previous_status=="source_unavailable"
