@@ -223,10 +223,19 @@ class UbiqueV3:
         # Autonomous experiments and questions compete naturally with reading.
         # They work offline and do not need a predetermined philosophical answer.
         if generation % 11 == 0 or "experiment" not in self.history[-40:]:
+            completed={tuple(sorted(e.get("data",{}).get("evidence_ids",[])))
+                       for e in self.journal.recent("experiment_observation",limit=60)
+                       if e.get("data",{}).get("kind")=="compare_sources"}
+            inquiries=self.journal.recent("inquiry",limit=30)
+            pending=next((e.get("data",{}) for e in reversed(inquiries)
+                          if tuple(sorted(e.get("data",{}).get("source_ids",[])))
+                          not in completed), {})
             candidates.append(Candidate("experiment",
-                "Investigate an uncertain association using local memory",
-                {"experiment_type":"association_probe","hypothesis":focus},
-                .73, source="curiosity"))
+                "Investigate evidence for an open question",
+                {"experiment_type":"compare_sources" if pending else "association_probe",
+                 "hypothesis":pending.get("question",focus),
+                 "source_ids":pending.get("source_ids",[])},
+                .77, source="curiosity"))
         if generation % 13 == 0 or "question" not in self.history[-40:]:
             candidates.append(Candidate("question",
                 "Compare distinct books and leave an open question",
@@ -350,7 +359,7 @@ class UbiqueV3:
         delta["tick"]={"kind":"cortex_tick","data":{"tick":self.cortex.tick}}
         self.journal.append("graph_delta",{"changes":list(delta.values())},generation=generation)
         self.cortex.changes.clear()
-        if self.journal.manifest["events"]-self.journal.manifest["snapshot_events"]>=80:
+        if self.journal.manifest["events"]-self.journal.manifest["snapshot_events"]>=160:
             self.journal.snapshot(self.cortex.as_dict())
         status={"version":3,"architecture":"neurocognitive-v3",
                 "timestamp":utc_now(),"generation":generation,"focus":focus,
@@ -425,7 +434,7 @@ class UbiqueV3:
                 last_search=int(read_json("v3.json",{}).get("last_search_generation",-100) or -100)
                 if generation-last_search>=20:
                     candidates.append(Candidate("search","Acquire new general knowledge about "+focus,
-                              {"topic":focus},.76))
+                              {"topic":focus},.83+min(.55,max(0,generation-last_search-20)*.008)))
             # Book discovery can compete with thought and reading, even offline
             # from language providers. Recent lookups are remembered so public
             # catalogues are not contacted on every heartbeat.
@@ -442,7 +451,8 @@ class UbiqueV3:
                 if query:
                     candidates.append(Candidate("library",
                         "Seek an attributable public-domain text about "+query,
-                        {"action":"discover","query":query},.92,
+                        {"action":"discover","query":query},
+                        1.10+min(.7,max(0,generation-last_discovery-29)*.012),
                         source="independent_curiosity"))
             # Code changes are a legitimate action when observed failures recur.
             # They compete with reading and thought rather than being mandatory.

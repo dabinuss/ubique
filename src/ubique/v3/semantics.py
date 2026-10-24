@@ -75,15 +75,18 @@ class SemanticLearner:
         self.comparisons = {str(ev["data"].get("id")) for ev in journal.events()
                             if ev["kind"] in {"insight","association_hypothesis"}}
         self.exploration_factor = exploration_factor
+        self._term_frequency: dict[str, int] = {}
         self._seen_terms: Set[str] = self._build_seen_terms_cache()
 
     def _build_seen_terms_cache(self) -> Set[str]:
         seen: Set[str] = set()
         for ev in self.hippocampus.all_episodes():
             txt = str(ev.get("text", ""))
-            seen.update(terms(txt, 24))
             title = str(ev.get("payload", {}).get("title", ""))
-            seen.update(terms(title, 12))
+            concepts = set(terms(txt, 24)) | set(terms(title, 12))
+            seen.update(concepts)
+            for word in concepts:
+                self._term_frequency[word] = self._term_frequency.get(word, 0) + 1
         return seen
 
     @staticmethod
@@ -157,7 +160,7 @@ class SemanticLearner:
 
             if len(shared) >= min_shared:
                 # Enhanced rarity weighting: emphasize rare conceptual bridges
-                novelty_bonus = sum(2.5 for t in shared if t not in self._seen_terms)
+                novelty_bonus = sum(2.5 / (1 + self._term_frequency.get(t, 0)) for t in shared)
                 relevance_score = float(len(shared)) + novelty_bonus
                 choices.append((relevance_score, other, shared))
             if len(choices) >= 80:
@@ -176,7 +179,7 @@ class SemanticLearner:
                     "payload", {}).get("title", "")), 12))
                 shared = current & concepts
                 if len(shared) >= 1:
-                    relevance_score = float(len(shared)) + sum(2.5 for t in shared if t not in self._seen_terms)
+                    relevance_score = float(len(shared)) + sum(2.5 / (1 + self._term_frequency.get(t, 0)) for t in shared)
                     choices.append((relevance_score, other, shared))
                 if len(choices) >= 80:
                     break
@@ -226,4 +229,9 @@ class SemanticLearner:
         # cross‑source comparisons during this call.
         # -----------------------------------------------------------------
         self._adjust_exploration_factor(produced_comparisons=bool(result))
+        latest = set(terms(str(episode.get("text", "")), 24))
+        latest.update(terms(str(episode.get("payload", {}).get("title", "")), 12))
+        for word in latest:
+            self._seen_terms.add(word)
+            self._term_frequency[word] = self._term_frequency.get(word, 0) + 1
         return result

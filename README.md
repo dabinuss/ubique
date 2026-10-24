@@ -129,7 +129,7 @@ FZG remains an optional library item rather than a governing doctrine.
 
 The existing protected evolution kernel remains active.
 
-Ubique v2 may select self-modification as one competing action, but candidate code still stays inside the evolvable Python surface, runs without credential-shaped environment variables, must compile, must pass the test suite and cannot modify the protected evolution/recovery/credential kernel.
+Ubique v2 may select self-modification as one competing action, but candidate code still stays inside the evolvable Python surface, runs without credential-shaped environment variables, must compile and import successfully, and cannot modify the protected evolution/recovery/credential kernel. Full pytest regressions are advisory during autonomous evolution, then independently reported by CI. Autonomous changes currently commit directly to main rather than opening a PR; their history remains recoverable through Git.
 
 The new src/ubique/brain package is part of the evolvable cognitive surface.
 

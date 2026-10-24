@@ -67,6 +67,14 @@ class Evolution:
                 pool=active or candidates
                 target=pool[generation % len(pool)]
         existing=(ROOT/target).read_text(encoding="utf-8")
+        # Concrete experiences, not a fixed scalar score, inform proposals.
+        history=[e.get("data",{}) for e in self.journal.recent("action_outcome",limit=24)]
+        failures=[{"kind":e.get("kind"),"effect":str(e.get("effect",""))[:280],
+                   "reason":str(e.get("reason",""))[:180]}
+                  for e in history if e.get("success") is False][-6:]
+        changes=[{"success":e.get("data",{}).get("success"),
+                  "result":str(e.get("data",{}).get("result",""))[:250]}
+                 for e in self.journal.recent("change_outcome",limit=5)]
         intent={"reason":reason[:1200],"generation":generation,
                 "target":target,"reversible":True,"provenance":"agent_action"}
         self.journal.append("change_intent",intent,generation=generation)
@@ -86,8 +94,13 @@ class Evolution:
                 "cycle, and update its active call path when needed. Prefer "
                 "substantive behavior over unused helpers or cosmetic edits. "
                 "Keep exploratory beliefs revisable. "
+                "Prefer repairing a demonstrated failure or enabling a new "
+                "cognitive behavior rather than merely changing numerical "
+                "weights, unless an observed effect justifies those weights. "
                 "Reason: "+reason[:1100]+"\n"
-                "Existing file: "+target+"\n"+existing[:14500]
+                "Recent failed actions: "+json.dumps(failures,ensure_ascii=False)[:1800]+"\n"
+                "Recent change outcomes: "+json.dumps(changes,ensure_ascii=False)[:1400]+"\n"
+                "Existing file: "+target+"\n"+existing[:13000]
             )
             proposed=NeurocognitiveRuntime(self.config).router.generate(prompt)
             provider=proposed.provider
