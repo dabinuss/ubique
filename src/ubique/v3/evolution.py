@@ -67,6 +67,14 @@ class Evolution:
                 pool=active or candidates
                 target=pool[generation % len(pool)]
         existing=(ROOT/target).read_text(encoding="utf-8")
+        # Concrete experiences, not a fixed scalar score, inform proposals.
+        history=[e.get("data",{}) for e in self.journal.recent("action_outcome",limit=24)]
+        failures=[{"kind":e.get("kind"),"effect":str(e.get("effect",""))[:280],
+                   "reason":str(e.get("reason",""))[:180]}
+                  for e in history if e.get("success") is False][-6:]
+        changes=[{"success":e.get("data",{}).get("success"),
+                  "result":str(e.get("data",{}).get("result",""))[:250]}
+                 for e in self.journal.recent("change_outcome",limit=5)]
         intent={"reason":reason[:1200],"generation":generation,
                 "target":target,"reversible":True,"provenance":"agent_action"}
         self.journal.append("change_intent",intent,generation=generation)
