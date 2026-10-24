@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-24T16:52:28.895204+00:00",
-  "generation": 5075,
-  "focus": "The Physical Basis of Mind",
-  "last_action": "read",
+  "timestamp": "2026-10-24T16:54:29.884738+00:00",
+  "generation": 5076,
+  "focus": "The Republic of Plato",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 5072,
   "last_search_generation": 5060,
   "cortex": {
     "nodes": 11323,
-    "synapses": 78914,
+    "synapses": 78928,
     "active": 120,
-    "archived_synapses": 39724
+    "archived_synapses": 39670
   },
   "memory": {
     "episodes": 4183,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 24056,
+    "events": 24061,
     "segments": 1068,
     "compressed_snapshot": true,
     "snapshot_events": 24006
@@ -43,6 +43,22 @@
       "score": 0.8874949083503056
     },
     {
+      "node_id": "concept:3853eb486f0ccd5b3023",
+      "label": "varieties",
+      "activation": 1.0,
+      "novelty": 0.09025270758122744,
+      "conflict": 0,
+      "score": 0.8843682310469314
+    },
+    {
+      "node_id": "concept:3f8b4464a99de3dc8c5c",
+      "label": "religious",
+      "activation": 1.0,
+      "novelty": 0.0819336337566571,
+      "conflict": 0,
+      "score": 0.8821220811142976
+    },
+    {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
       "activation": 1.0,
@@ -54,9 +70,9 @@
       "node_id": "concept:53e5e7c5a884893739c4",
       "label": "experience",
       "activation": 1.0,
-      "novelty": 0.07426661715558856,
+      "novelty": 0.07377351530800443,
       "conflict": 0,
-      "score": 0.8800519866320089
+      "score": 0.8799188491331613
     },
     {
       "node_id": "concept:5a2a957b269e8f0f",
@@ -73,22 +89,6 @@
       "novelty": 0.058445353594389245,
       "conflict": 0,
       "score": 0.875780245470485
-    },
-    {
-      "node_id": "concept:f2d44b8ac655a7ad",
-      "label": "public",
-      "activation": 1.0,
-      "novelty": 0.025046963055729496,
-      "conflict": 0,
-      "score": 0.866762680025047
-    },
-    {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.022239519626376072,
-      "conflict": 0,
-      "score": 0.8660046702991215
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 591
     },
     "consolidate": {
-      "attempts": 776,
-      "successes": 776
+      "attempts": 777,
+      "successes": 777
     },
     "connect": {
       "attempts": 635,
