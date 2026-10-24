@@ -96,6 +96,9 @@ def discover_public_books(query: str, *, limit: int = 2) -> dict:
         plan.append(("topic", related[0]))
     attempted = []
     for parameter, search in plan[:4]:
+        # An already found relevant title needs no additional fallback query.
+        if parameter=="topic" and found:
+            break
         attempted.append({"mode": parameter, "query": search})
         request = Request(CATALOGUE + "?" + urlencode({parameter: search}),
                           headers={"User-Agent": "UbiqueResearch/3.0 (autonomous learning)"})
