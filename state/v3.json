@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-24T14:09:58.147465+00:00",
-  "generation": 5048,
-  "focus": "The Nicomachean Ethics of Aristotle",
-  "last_action": "consolidate",
+  "timestamp": "2026-10-24T14:24:09.730432+00:00",
+  "generation": 5049,
+  "focus": "Human Nature and Conduct",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 5044,
+  "last_action_detail": "observed_associations",
+  "last_provider": "groq",
+  "last_provider_generation": 5049,
   "last_search_generation": 5037,
   "cortex": {
     "nodes": 11302,
     "synapses": 78652,
     "active": 120,
-    "archived_synapses": 39442
+    "archived_synapses": 39430
   },
   "memory": {
     "episodes": 4167,
-    "claims": 3041,
+    "claims": 3045,
     "stances": 27,
     "interests": 85,
     "associative_comparisons": 2210,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 23829,
-    "segments": 1062,
+    "events": 23844,
+    "segments": 1063,
     "compressed_snapshot": true,
-    "snapshot_events": 23759
+    "snapshot_events": 23844
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 782,
+  "evidence_reviews": 786,
   "workspace": [
     {
       "node_id": "concept:64b218956223eb12d13e",
@@ -62,33 +62,33 @@
       "node_id": "concept:b5bb73d125bb095d0ea3",
       "label": "utters",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8080135593220339
     },
     {
       "node_id": "concept:87e56ce6429768c90138",
       "label": "altogether",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:a3a7f053ae2eadb1fb93",
-      "label": "accent",
       "activation": 0.46,
       "novelty": 0.8474576271186441,
       "conflict": 0,
       "score": 0.8080135593220339
     },
     {
+      "node_id": "concept:a3a7f053ae2eadb1fb93",
+      "label": "accent",
+      "activation": 0.46,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.7996081632653061
+    },
+    {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.8166162734185046,
-      "novelty": 0.020822488287350338,
+      "activation": 0.8126669225015893,
+      "novelty": 0.02080299563137092,
       "conflict": 0,
-      "score": 0.770262534015207
+      "score": 0.7682036085212967
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 14
     },
     "experiment": {
-      "attempts": 112,
-      "successes": 110
+      "attempts": 113,
+      "successes": 111
     },
     "question": {
       "attempts": 81,
