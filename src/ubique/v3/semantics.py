@@ -77,6 +77,8 @@ class SemanticLearner:
         self.exploration_factor = exploration_factor
         self._term_frequency: dict[str, int] = {}
         self._seen_terms: Set[str] = self._build_seen_terms_cache()
+        # Counter for consecutive observations that yield no new comparisons.
+        self._no_comp_counter: int = 0
 
     def _build_seen_terms_cache(self) -> Set[str]:
         seen: Set[str] = set()
@@ -98,24 +100,23 @@ class SemanticLearner:
     # Adaptive exploration helpers
     # ---------------------------------------------------------------------
     def _adjust_exploration_factor(self, produced_comparisons: bool) -> None:
-        """Tweak ``self.exploration_factor`` based on recent productivity.
+        """Adapt ``self.exploration_factor`` using a streak counter.
 
-        * If the current observation yielded **no** new cross‑source
-          comparisons, we become a little more exploratory, nudging the
-          probability of relaxing the shared‑term threshold upward.
-        * If at least one comparison was produced, we gently pull the
-          factor back toward a more conservative baseline.
-
-        The adjustments are small (±0.01‑0.02) and bounded between 0.05 and
-        0.30 to keep the system stable while still allowing it to react to
-        sparse or dense knowledge regions.
+        When consecutive observations produce no new cross‑source comparisons,
+        the learner becomes increasingly exploratory, raising the chance of
+        relaxing the shared‑term threshold. A successful observation resets the
+        streak and gently reduces exploration.
         """
         if produced_comparisons:
-            # Slightly reduce exploration to avoid runaway randomness.
+            # Reset the failure streak and slightly reduce exploration.
+            self._no_comp_counter = 0
             self.exploration_factor = max(self.exploration_factor - 0.01, 0.05)
         else:
-            # Increase curiosity when we are stuck.
-            self.exploration_factor = min(self.exploration_factor + 0.02, 0.30)
+            # Increment the streak and increase exploration more aggressively.
+            self._no_comp_counter = getattr(self, "_no_comp_counter", 0) + 1
+            # Scale the increment: 0.02 per consecutive failure, capped at 0.10.
+            increment = min(0.02 * self._no_comp_counter, 0.10)
+            self.exploration_factor = min(self.exploration_factor + increment, 0.40)
 
     def observe(self, episode: dict, *, generation: int | None = None) -> list[dict]:
         if episode.get("epistemic_status") != "source_passage":
