@@ -75,15 +75,18 @@ class SemanticLearner:
         self.comparisons = {str(ev["data"].get("id")) for ev in journal.events()
                             if ev["kind"] in {"insight","association_hypothesis"}}
         self.exploration_factor = exploration_factor
+        self._term_frequency: dict[str, int] = {}
         self._seen_terms: Set[str] = self._build_seen_terms_cache()
 
     def _build_seen_terms_cache(self) -> Set[str]:
         seen: Set[str] = set()
         for ev in self.hippocampus.all_episodes():
             txt = str(ev.get("text", ""))
-            seen.update(terms(txt, 24))
             title = str(ev.get("payload", {}).get("title", ""))
-            seen.update(terms(title, 12))
+            concepts = set(terms(txt, 24)) | set(terms(title, 12))
+            seen.update(concepts)
+            for word in concepts:
+                self._term_frequency[word] = self._term_frequency.get(word, 0) + 1
         return seen
 
     @staticmethod
