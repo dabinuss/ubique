@@ -302,14 +302,21 @@ class UbiqueV3:
                 outcome=discover_public_books(query,limit=2)
                 found=outcome.get("added",[])
                 result=Result("library",bool(found),
-                              "Discovered "+str(len(found))+" public-domain books",
-                              payload={"query":query,"books":found})
+                              "Discovery "+str(outcome.get("status","unknown"))+
+                              ": "+str(len(found))+" public-domain books",
+                              payload={"query":query,"books":found,
+                                       "status":outcome.get("status"),
+                                       "attempted_queries":outcome.get("attempted_queries",[]),
+                                       "errors":outcome.get("errors",[])})
             except Exception as exc:
                 result=Result("library",False,type(exc).__name__+": "+str(exc)[:300],
                               payload={"query":query})
             self.journal.append("library_discovery",{
                 "query":query,"success":result.success,
-                "effect":result.effect,"books":result.payload.get("books",[])},
+                "effect":result.effect,"books":result.payload.get("books",[]),
+                "status":result.payload.get("status","source_unavailable" if not result.success else "found"),
+                "attempted_queries":result.payload.get("attempted_queries",[]),
+                "errors":result.payload.get("errors",[])},
                 generation=generation)
             return result
         if chosen.kind in {"evolve","edit_code"}:
