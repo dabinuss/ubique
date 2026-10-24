@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-24T03:01:35.071566+00:00",
-  "generation": 4930,
-  "focus": "A Treatise of Human Nature",
-  "last_action": "read",
+  "timestamp": "2026-10-24T03:03:35.546723+00:00",
+  "generation": 4931,
+  "focus": "Dream Psychology: Psychoanalysis for Beginners",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "gemini",
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": null,
   "last_provider_generation": 4930,
   "last_search_generation": 4922,
   "cortex": {
-    "nodes": 11201,
+    "nodes": 11203,
     "synapses": 77299,
     "active": 120,
-    "archived_synapses": 39059
+    "archived_synapses": 39079
   },
   "memory": {
     "episodes": 4107,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 22944,
-    "segments": 1003,
+    "events": 22948,
+    "segments": 1004,
     "compressed_snapshot": true,
     "snapshot_events": 22924
   },
@@ -75,20 +75,20 @@
       "score": 0.8725727590221188
     },
     {
+      "node_id": "concept:ff6d7c8948492bd2",
+      "label": "issue",
+      "activation": 1.0,
+      "novelty": 0.04608294930875576,
+      "conflict": 0,
+      "score": 0.8724423963133641
+    },
+    {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
       "activation": 1.0,
       "novelty": 0.04542357483533954,
       "conflict": 0,
       "score": 0.8722643652055417
-    },
-    {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.02381235861412073,
-      "conflict": 0,
-      "score": 0.8664293368258127
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 743
     },
     "connect": {
-      "attempts": 606,
-      "successes": 605
+      "attempts": 607,
+      "successes": 606
     },
     "evolve": {
       "attempts": 33,
