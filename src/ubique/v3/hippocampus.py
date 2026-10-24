@@ -10,7 +10,11 @@ from .storage import Journal
 def terms(text: str, limit=16) -> list[str]:
     stop={"that","this","with","from","about","would","could","when","then","which",
           "there","where","their","these","haben","wurde","einer","einen","einem",
-          "nicht","auch","diese","dass","sowie","between","human","study"}
+          "nicht","auch","diese","dass","sowie","between","human","study",
+          "have","having","been","were","does","doing","them","into","upon",
+          "many","some","more","most","much","after","before","however",
+          "although","therefore","whereas","concerning","regarding",
+          "very","just","only","true","really","those","ours","your"}
     words=re.findall(r"[^\W\d_]{4,}",text.casefold(),flags=re.UNICODE)
     return list(dict.fromkeys(w for w in words if w not in stop))[:limit]
 
