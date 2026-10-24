@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-24T20:55:04.189192+00:00",
-  "generation": 5118,
-  "focus": "The Republic of Plato",
-  "last_action": "read",
+  "timestamp": "2026-10-24T20:57:05.986186+00:00",
+  "generation": 5119,
+  "focus": "The Riddle of the Universe",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 5117,
   "last_search_generation": 5106,
   "cortex": {
-    "nodes": 11375,
-    "synapses": 79606,
+    "nodes": 11379,
+    "synapses": 79618,
     "active": 120,
-    "archived_synapses": 40024
+    "archived_synapses": 39998
   },
   "memory": {
     "episodes": 4197,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 24434,
-    "segments": 1076,
+    "events": 24439,
+    "segments": 1077,
     "compressed_snapshot": true,
     "snapshot_events": 24342
   },
@@ -59,14 +59,6 @@
       "score": 0.8696119615521538
     },
     {
-      "node_id": "concept:45dedc0facfe17e7",
-      "label": "limit",
-      "activation": 0.9881699622087817,
-      "novelty": 0.04715868898844613,
-      "conflict": 0,
-      "score": 0.8665812263754469
-    },
-    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -83,12 +75,20 @@
       "score": 0.8651184834123222
     },
     {
-      "node_id": "concept:4194b692f5789e4b2236",
-      "label": "objection",
+      "node_id": "concept:36de516cc97cb4f65786",
+      "label": "optic",
       "activation": 0.46,
-      "novelty": 0.6688963210702341,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7598020066889632
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:b6867a22afe526042cc5",
+      "label": "thalami",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 598
     },
     "consolidate": {
-      "attempts": 787,
-      "successes": 787
+      "attempts": 788,
+      "successes": 788
     },
     "connect": {
       "attempts": 643,
