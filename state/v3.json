@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-24T22:28:13.623756+00:00",
-  "generation": 5134,
-  "focus": "Mental Evolution in Man: Origin of Human Faculty",
-  "last_action": "experiment",
+  "timestamp": "2026-10-24T22:30:22.526303+00:00",
+  "generation": 5135,
+  "focus": "The World as Will and Idea, Volume 1",
+  "last_action": "evolve",
   "last_action_success": true,
-  "last_action_detail": "observed_associations",
-  "last_provider": "groq",
+  "last_action_detail": "{\"accepted\": true, \"title\": \"Adaptive curiosity streak: amplify exploration after consecutive failures\", \"summary\": \"Introduce a short‑term counter to track consecutive observations that produce no new cross‑source comparisons. When the learner is stuck, increase the exploration_factor more aggressively (up to 0.40) to boost the chance of relaxing the shared‑term threshold and discovering rare con",
+  "last_provider": null,
   "last_provider_generation": 5134,
   "last_search_generation": 5129,
   "cortex": {
     "nodes": 11401,
     "synapses": 79771,
     "active": 120,
-    "archived_synapses": 40021
+    "archived_synapses": 40151
   },
   "memory": {
     "episodes": 4207,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 24576,
+    "events": 24584,
     "segments": 1080,
     "compressed_snapshot": true,
     "snapshot_events": 24502
@@ -75,16 +75,16 @@
       "score": 0.8658239861949957
     },
     {
-      "node_id": "concept:466f94f021ed71d43566",
-      "label": "excellences",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "node_id": "concept:1c48f6310f1c849b4ac3",
+      "label": "mind",
+      "activation": 0.8774993466774036,
+      "novelty": 0.020161290322580645,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.8017432086593467
     },
     {
-      "node_id": "concept:fa6c553ef0afc84fe89e",
-      "label": "expressly",
+      "node_id": "concept:466f94f021ed71d43566",
+      "label": "excellences",
       "activation": 0.46,
       "novelty": 0.8163265306122448,
       "conflict": 0,
@@ -113,8 +113,8 @@
       "successes": 645
     },
     "evolve": {
-      "attempts": 35,
-      "successes": 14
+      "attempts": 36,
+      "successes": 15
     },
     "experiment": {
       "attempts": 122,
