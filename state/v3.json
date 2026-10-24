@@ -1,38 +1,38 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-24T18:06:50.503596+00:00",
-  "generation": 5088,
-  "focus": "The Psychology of the Emotions",
+  "timestamp": "2026-10-24T18:08:42.121459+00:00",
+  "generation": 5089,
+  "focus": "The Nature of Man: Studies in Optimistic Philosophy",
   "last_action": "connect",
   "last_action_success": true,
   "last_action_detail": "Formed tentative analogy",
-  "last_provider": null,
-  "last_provider_generation": 5083,
+  "last_provider": "groq",
+  "last_provider_generation": 5089,
   "last_search_generation": 5083,
   "cortex": {
-    "nodes": 11336,
-    "synapses": 79115,
+    "nodes": 11339,
+    "synapses": 79121,
     "active": 120,
     "archived_synapses": 39811
   },
   "memory": {
     "episodes": 4188,
-    "claims": 3096,
+    "claims": 3101,
     "stances": 27,
     "interests": 85,
     "associative_comparisons": 2236,
-    "screened_interpretations": 3,
+    "screened_interpretations": 4,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 24172,
-    "segments": 1070,
+    "events": 24186,
+    "segments": 1071,
     "compressed_snapshot": true,
     "snapshot_events": 24168
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 812,
+  "evidence_reviews": 817,
   "workspace": [
     {
       "node_id": "concept:040b0e3f05e74417",
@@ -49,6 +49,14 @@
       "novelty": 0.10325245224574083,
       "conflict": 0,
       "score": 0.8878781621063501
+    },
+    {
+      "node_id": "concept:85ca6d6d291c070dbcb2",
+      "label": "conduct",
+      "activation": 1.0,
+      "novelty": 0.10183299389002036,
+      "conflict": 0,
+      "score": 0.8874949083503056
     },
     {
       "node_id": "concept:3853eb486f0ccd5b3023",
@@ -81,14 +89,6 @@
       "novelty": 0.0728066982162359,
       "conflict": 0,
       "score": 0.8796578085183837
-    },
-    {
-      "node_id": "concept:6907de2e8144a57274c7",
-      "label": "treatise",
-      "activation": 1.0,
-      "novelty": 0.058292043136111915,
-      "conflict": 0,
-      "score": 0.8757388516467504
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 780
     },
     "connect": {
-      "attempts": 637,
-      "successes": 636
+      "attempts": 638,
+      "successes": 637
     },
     "evolve": {
       "attempts": 35,
