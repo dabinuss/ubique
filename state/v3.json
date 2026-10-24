@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-24T07:20:36.634202+00:00",
-  "generation": 4976,
-  "focus": "The Psychology of the Emotions",
-  "last_action": "read",
+  "timestamp": "2026-10-24T07:22:50.068443+00:00",
+  "generation": 4977,
+  "focus": "The Republic of Plato",
+  "last_action": "evolve",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "gemini",
+  "last_action_detail": "{\"accepted\": true, \"title\": \"Enhance Cross-Source Semantic Curiosity with Asymmetric Bridge Bonuses\", \"summary\": \"Refines SemanticLearner's exploration and conceptual bridge discovery by dynamically weighing rare terms that act as conceptual bridges across previously distant text families. This encourages Ubique to notice subtler connections without destabilizing its core epistemic boundaries.\", \"",
+  "last_provider": null,
   "last_provider_generation": 4976,
   "last_search_generation": 4968,
   "cortex": {
-    "nodes": 11237,
+    "nodes": 11239,
     "synapses": 77846,
     "active": 120,
     "archived_synapses": 39240
@@ -26,22 +26,14 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 23291,
-    "segments": 1026,
+    "events": 23297,
+    "segments": 1027,
     "compressed_snapshot": true,
     "snapshot_events": 23262
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 758,
   "workspace": [
-    {
-      "node_id": "concept:02aab799561baeb9",
-      "label": "concerning",
-      "activation": 1.0,
-      "novelty": 0.10373443983402489,
-      "conflict": 0,
-      "score": 0.8880082987551867
-    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -67,28 +59,36 @@
       "score": 0.8661969244893275
     },
     {
+      "node_id": "concept:820effb874a485bf6151",
+      "label": "deaf",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:a7aa1b9790748b71e5c2",
+      "label": "mute",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:5ff847581f0423b2417a",
+      "label": "unaided",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.8647821644402076,
-      "novelty": 0.021342439440828087,
+      "activation": 0.8664888566894994,
+      "novelty": 0.02130152305889871,
       "conflict": 0,
-      "score": 0.7954491841579316
-    },
-    {
-      "node_id": "concept:d2e2bfc18f19fbdcd8f5",
-      "label": "affords",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:9641f8e5a5fdce4d073e",
-      "label": "ntent",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.7963256167044424
     }
   ],
   "skills": {
@@ -113,8 +113,8 @@
       "successes": 615
     },
     "evolve": {
-      "attempts": 33,
-      "successes": 13
+      "attempts": 34,
+      "successes": 14
     },
     "experiment": {
       "attempts": 106,
