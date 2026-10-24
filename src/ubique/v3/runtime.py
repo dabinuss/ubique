@@ -439,10 +439,17 @@ class UbiqueV3:
             # from language providers. Recent lookups are remembered so public
             # catalogues are not contacted on every heartbeat.
             recent_discovery=self.journal.recent("library_discovery",limit=1)
+            previous_discovery=recent_discovery[-1].get("data",{}) if recent_discovery else {}
             last_discovery=(int(recent_discovery[-1].get("generation",0) or 0)
                             if recent_discovery else -100)
-            if generation-last_discovery>=29 and (generation%17==0 or
-                  not reading_candidates(self.curiosity)):
+            previous_status=str(previous_discovery.get("status",""))
+            # Network outages merit earlier reattempts than completed searches.
+            # Even a failing endpoint cannot spin in every heartbeat.
+            retry_after=(5 if previous_status=="source_unavailable"
+                         else 12 if previous_status=="no_match"
+                         else 29)
+            due=generation-last_discovery>=retry_after
+            if due and (generation%5==0 or not reading_candidates(self.curiosity)):
                 from ..library import library_catalog
                 wishes=[item for item in library_catalog(250)
                         if item.get("status")=="wanted"]
