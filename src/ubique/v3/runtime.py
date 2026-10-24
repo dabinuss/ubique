@@ -425,7 +425,7 @@ class UbiqueV3:
                 last_search=int(read_json("v3.json",{}).get("last_search_generation",-100) or -100)
                 if generation-last_search>=20:
                     candidates.append(Candidate("search","Acquire new general knowledge about "+focus,
-                              {"topic":focus},.76))
+                              {"topic":focus},.83+min(.55,max(0,generation-last_search-20)*.008)))
             # Book discovery can compete with thought and reading, even offline
             # from language providers. Recent lookups are remembered so public
             # catalogues are not contacted on every heartbeat.
