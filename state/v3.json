@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-24T22:54:23.832094+00:00",
-  "generation": 5141,
-  "focus": "The Riddle of the Universe",
-  "last_action": "connect",
+  "timestamp": "2026-10-24T22:56:26.752401+00:00",
+  "generation": 5142,
+  "focus": "The Analysis of Mind",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 5134,
   "last_search_generation": 5129,
@@ -14,7 +14,7 @@
     "nodes": 11407,
     "synapses": 79830,
     "active": 120,
-    "archived_synapses": 40096
+    "archived_synapses": 40054
   },
   "memory": {
     "episodes": 4209,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 24626,
+    "events": 24631,
     "segments": 1081,
     "compressed_snapshot": true,
     "snapshot_events": 24502
@@ -38,25 +38,33 @@
       "node_id": "concept:65ee89092efbf78ab19a",
       "label": "optimistic",
       "activation": 1.0,
-      "novelty": 0.1088139281828074,
+      "novelty": 0.10828370330265295,
       "conflict": 0,
-      "score": 0.8893797606093581
+      "score": 0.8892365998917164
     },
     {
       "node_id": "concept:48d492d08e9d314c034c",
       "label": "studies",
       "activation": 1.0,
-      "novelty": 0.10672358591248667,
+      "novelty": 0.10621348911311737,
       "conflict": 0,
-      "score": 0.8888153681963715
+      "score": 0.8886776420605418
+    },
+    {
+      "node_id": "concept:85ca6d6d291c070dbcb2",
+      "label": "conduct",
+      "activation": 1.0,
+      "novelty": 0.1,
+      "conflict": 0,
+      "score": 0.887
     },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
       "activation": 1.0,
-      "novelty": 0.08442380751371888,
+      "novelty": 0.08410428931875527,
       "conflict": 0,
-      "score": 0.8827944280287041
+      "score": 0.8827081581160641
     },
     {
       "node_id": "concept:e0f895872d65b2528fee",
@@ -70,9 +78,9 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.021466137168616506,
+      "novelty": 0.02144542140253056,
       "conflict": 0,
-      "score": 0.8657958570355264
+      "score": 0.8657902637786834
     },
     {
       "node_id": "concept:8b16ced79976e6a1",
@@ -81,14 +89,6 @@
       "novelty": 0.01889287738522577,
       "conflict": 0,
       "score": 0.8651010768940111
-    },
-    {
-      "node_id": "concept:85ca6d6d291c070dbcb2",
-      "label": "conduct",
-      "activation": 0.8977229522870349,
-      "novelty": 0.1,
-      "conflict": 0,
-      "score": 0.8338159351892582
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 601
     },
     "consolidate": {
-      "attempts": 792,
-      "successes": 792
+      "attempts": 793,
+      "successes": 793
     },
     "connect": {
       "attempts": 647,
