@@ -94,8 +94,13 @@ class Evolution:
                 "cycle, and update its active call path when needed. Prefer "
                 "substantive behavior over unused helpers or cosmetic edits. "
                 "Keep exploratory beliefs revisable. "
+                "Prefer repairing a demonstrated failure or enabling a new "
+                "cognitive behavior rather than merely changing numerical "
+                "weights, unless an observed effect justifies those weights. "
                 "Reason: "+reason[:1100]+"\n"
-                "Existing file: "+target+"\n"+existing[:14500]
+                "Recent failed actions: "+json.dumps(failures,ensure_ascii=False)[:1800]+"\n"
+                "Recent change outcomes: "+json.dumps(changes,ensure_ascii=False)[:1400]+"\n"
+                "Existing file: "+target+"\n"+existing[:13000]
             )
             proposed=NeurocognitiveRuntime(self.config).router.generate(prompt)
             provider=proposed.provider
