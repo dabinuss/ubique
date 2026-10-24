@@ -156,7 +156,8 @@ class SemanticLearner:
                     min_shared = 1
 
             if len(shared) >= min_shared:
-                novelty_bonus = sum(2.0 for t in shared if t not in self._seen_terms)
+                # Enhanced rarity weighting: emphasize rare conceptual bridges
+                novelty_bonus = sum(2.5 for t in shared if t not in self._seen_terms)
                 relevance_score = float(len(shared)) + novelty_bonus
                 choices.append((relevance_score, other, shared))
             if len(choices) >= 80:
@@ -175,12 +176,12 @@ class SemanticLearner:
                     "payload", {}).get("title", "")), 12))
                 shared = current & concepts
                 if len(shared) >= 1:
-                    relevance_score = float(len(shared)) + sum(2.0 for t in shared if t not in self._seen_terms)
+                    relevance_score = float(len(shared)) + sum(2.5 for t in shared if t not in self._seen_terms)
                     choices.append((relevance_score, other, shared))
                 if len(choices) >= 80:
                     break
 
-        # Sort by computed relevance score (incorporating both term count and rarity bridge bonus)
+        # Sort by computed relevance score (incorporating both term count and enhanced rarity bridge bonus)
         choices.sort(key=lambda row: row[0], reverse=True)
 
         for _, other, shared in choices[:2]:
