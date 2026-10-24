@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-24T09:10:53.682117+00:00",
-  "generation": 4995,
+  "timestamp": "2026-10-24T09:12:52.540860+00:00",
+  "generation": 4996,
   "focus": "The Master of Destiny: A Biography of the Brain",
-  "last_action": "connect",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 4993,
   "last_search_generation": 4991,
@@ -14,7 +14,7 @@
     "nodes": 11252,
     "synapses": 78069,
     "active": 120,
-    "archived_synapses": 39483
+    "archived_synapses": 39417
   },
   "memory": {
     "episodes": 4145,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 23438,
+    "events": 23443,
     "segments": 1036,
     "compressed_snapshot": true,
     "snapshot_events": 23429
@@ -67,20 +67,20 @@
       "score": 0.8730371801062289
     },
     {
-      "node_id": "concept:0570b840b0d58779",
-      "label": "formation",
-      "activation": 1.0,
-      "novelty": 0.04542357483533954,
-      "conflict": 0,
-      "score": 0.8722643652055417
-    },
-    {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
       "activation": 1.0,
       "novelty": 0.04542357483533954,
       "conflict": 0,
       "score": 0.8722643652055417
+    },
+    {
+      "node_id": "concept:0570b840b0d58779",
+      "label": "formation",
+      "activation": 1.0,
+      "novelty": 0.04533091568449683,
+      "conflict": 0,
+      "score": 0.8722393472348142
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -105,8 +105,8 @@
       "successes": 577
     },
     "consolidate": {
-      "attempts": 758,
-      "successes": 758
+      "attempts": 759,
+      "successes": 759
     },
     "connect": {
       "attempts": 619,
