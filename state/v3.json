@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-24T00:33:53.176370+00:00",
-  "generation": 4904,
-  "focus": "Meditations",
-  "last_action": "read",
+  "timestamp": "2026-10-24T00:35:49.601806+00:00",
+  "generation": 4905,
+  "focus": "Human Nature and Conduct",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 4900,
   "last_search_generation": 4899,
   "cortex": {
-    "nodes": 11165,
-    "synapses": 76814,
+    "nodes": 11167,
+    "synapses": 76890,
     "active": 120,
-    "archived_synapses": 38802
+    "archived_synapses": 38818
   },
   "memory": {
     "episodes": 4089,
@@ -26,14 +26,30 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 22738,
-    "segments": 990,
+    "events": 22743,
+    "segments": 991,
     "compressed_snapshot": true,
     "snapshot_events": 22677
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 733,
   "workspace": [
+    {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.08572653236176597,
+      "conflict": 0,
+      "score": 0.883146163737677
+    },
+    {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 1.0,
+      "novelty": 0.08074283407347597,
+      "conflict": 0,
+      "score": 0.8818005651998386
+    },
     {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
@@ -43,52 +59,36 @@
       "score": 0.8776355323318092
     },
     {
-      "node_id": "concept:0570b840b0d58779",
-      "label": "formation",
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
       "activation": 1.0,
-      "novelty": 0.04561003420752566,
+      "novelty": 0.04579803068468056,
       "conflict": 0,
-      "score": 0.8723147092360319
+      "score": 0.8723654682848638
     },
     {
       "node_id": "concept:02f77488efc6c9cf",
       "label": "destiny",
       "activation": 1.0,
-      "novelty": 0.03758691975192633,
+      "novelty": 0.0375234521575985,
       "conflict": 0,
-      "score": 0.8701484683330201
+      "score": 0.8701313320825517
+    },
+    {
+      "node_id": "concept:2ad562319767157087dd",
+      "label": "feature",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.8904727805027242,
-      "novelty": 0.022509848058525607,
+      "activation": 0.8933706672156481,
+      "novelty": 0.022464337863641468,
       "conflict": 0,
-      "score": 0.8091235048372185
-    },
-    {
-      "node_id": "concept:a8e10c933d2128957dae",
-      "label": "gibbons",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
-    },
-    {
-      "node_id": "concept:3be1d422a46085e17f4a",
-      "label": "pets",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
-    },
-    {
-      "node_id": "concept:3b1d11e61aa240fd7d54",
-      "label": "governmental",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.8106181181753203
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 562
     },
     "consolidate": {
-      "attempts": 737,
-      "successes": 737
+      "attempts": 738,
+      "successes": 738
     },
     "connect": {
       "attempts": 601,
