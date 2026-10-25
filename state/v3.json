@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-25T12:32:44.246357+00:00",
-  "generation": 5277,
-  "focus": "The Psychology of the Emotions",
-  "last_action": "read",
+  "timestamp": "2026-10-25T12:34:39.320020+00:00",
+  "generation": 5278,
+  "focus": "Human Nature and Conduct",
+  "last_action": "question",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "How are the relationship between these ideas connected when one passage also examines denominative, expressive and the other examines belief, better? Which assumptions differ?",
   "last_provider": null,
   "last_provider_generation": 5276,
   "last_search_generation": 5267,
@@ -18,7 +18,7 @@
   },
   "memory": {
     "episodes": 4284,
-    "claims": 3300,
+    "claims": 3301,
     "stances": 30,
     "interests": 85,
     "associative_comparisons": 2360,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 25709,
+    "events": 25715,
     "segments": 1108,
     "compressed_snapshot": true,
     "snapshot_events": 25659
@@ -34,14 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 891,
   "workspace": [
-    {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 1.0,
-      "novelty": 0.04487323311644604,
-      "conflict": 0,
-      "score": 0.8721157729414404
-    },
     {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
@@ -59,36 +51,44 @@
       "score": 0.8654783402658011
     },
     {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
-      "activation": 1.0,
-      "novelty": 0.018515089798185523,
-      "conflict": 0,
-      "score": 0.86499907424551
-    },
-    {
-      "node_id": "concept:9f6eec7d586f63c4644e",
-      "label": "realize",
+      "node_id": "concept:02f086eb77504748cf51",
+      "label": "definitions",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:1c48f6310f1c849b4ac3",
-      "label": "mind",
-      "activation": 0.8363715854260415,
-      "novelty": 0.01884481296523132,
-      "conflict": 0,
-      "score": 0.7800013239221542
-    },
-    {
-      "node_id": "concept:4d5e9d7cc535a741bace",
-      "label": "recollecting",
+      "node_id": "concept:8ff919109e2290e91fdf",
+      "label": "ians",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:2c07fac8fb6f8cfa8a14",
+      "label": "sundry",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:b20ad0b74eb57154da6b",
+      "label": "indicative",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:0b6f395ca14ac202374d",
+      "label": "sign",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -121,8 +121,8 @@
       "successes": 133
     },
     "question": {
-      "attempts": 96,
-      "successes": 96
+      "attempts": 97,
+      "successes": 97
     },
     "library": {
       "attempts": 2,
