@@ -1,8 +1,8 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-25T15:47:53.209736+00:00",
-  "generation": 5308,
+  "timestamp": "2026-10-25T15:49:46.986136+00:00",
+  "generation": 5309,
   "focus": "A Treatise of Human Nature",
   "last_action": "connect",
   "last_action_success": true,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 25960,
-    "segments": 1114,
+    "events": 25964,
+    "segments": 1115,
     "compressed_snapshot": true,
     "snapshot_events": 25830
   },
@@ -54,9 +54,17 @@
       "node_id": "concept:02f77488efc6c9cf",
       "label": "destiny",
       "activation": 1.0,
-      "novelty": 0.03476447071093342,
+      "novelty": 0.034710170079833395,
       "conflict": 0,
-      "score": 0.8693864070919521
+      "score": 0.8693717459215551
+    },
+    {
+      "node_id": "concept:7308d385d05396e9",
+      "label": "representations",
+      "activation": 0.9336827628104404,
+      "novelty": 0.15408320493066255,
+      "conflict": 0,
+      "score": 0.867117501992708
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -70,21 +78,13 @@
       "node_id": "concept:9f165139a8c2894a47ae",
       "label": "female",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:34c5accab266cb049700",
       "label": "bolder",
-      "activation": 0.46,
-      "novelty": 0.9569377990430623,
-      "conflict": 0,
-      "score": 0.837573205741627
-    },
-    {
-      "node_id": "concept:3e590b17ee6772531162",
-      "label": "confined",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
@@ -109,8 +109,8 @@
       "successes": 835
     },
     "connect": {
-      "attempts": 680,
-      "successes": 679
+      "attempts": 681,
+      "successes": 680
     },
     "evolve": {
       "attempts": 37,
