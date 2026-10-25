@@ -1,47 +1,39 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-25T06:43:44.603379+00:00",
-  "generation": 5218,
-  "focus": "The Mind and the Brain",
-  "last_action": "read",
+  "timestamp": "2026-10-25T06:45:46.400654+00:00",
+  "generation": 5219,
+  "focus": "The Psychology of the Emotions",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 5214,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "gemini",
+  "last_provider_generation": 5219,
   "last_search_generation": 5198,
   "cortex": {
-    "nodes": 11478,
-    "synapses": 80854,
+    "nodes": 11480,
+    "synapses": 80882,
     "active": 120,
-    "archived_synapses": 40268
+    "archived_synapses": 40170
   },
   "memory": {
-    "episodes": 4250,
-    "claims": 3240,
-    "stances": 27,
+    "episodes": 4251,
+    "claims": 3241,
+    "stances": 28,
     "interests": 85,
     "associative_comparisons": 2318,
-    "screened_interpretations": 5,
+    "screened_interpretations": 6,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 25224,
-    "segments": 1096,
+    "events": 25234,
+    "segments": 1097,
     "compressed_snapshot": true,
     "snapshot_events": 25161
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 869,
+  "evidence_reviews": 871,
   "workspace": [
-    {
-      "node_id": "concept:ca52e7d1c18961a8c5b3",
-      "label": "united",
-      "activation": 1.0,
-      "novelty": 0.3164556962025316,
-      "conflict": 0,
-      "score": 0.9454430379746837
-    },
     {
       "node_id": "concept:dfd34a31322c29f8",
       "label": "concepts",
@@ -57,6 +49,14 @@
       "novelty": 0.10230179028132992,
       "conflict": 0,
       "score": 0.887621483375959
+    },
+    {
+      "node_id": "concept:e2d5a675d4eab169",
+      "label": "continue",
+      "activation": 1.0,
+      "novelty": 0.09487666034155598,
+      "conflict": 0,
+      "score": 0.8856166982922202
     },
     {
       "node_id": "concept:3853eb486f0ccd5b3023",
@@ -105,8 +105,8 @@
       "successes": 612
     },
     "consolidate": {
-      "attempts": 812,
-      "successes": 812
+      "attempts": 813,
+      "successes": 813
     },
     "connect": {
       "attempts": 662,
@@ -129,5 +129,5 @@
       "successes": 0
     }
   },
-  "active_stances": 30
+  "active_stances": 31
 }
