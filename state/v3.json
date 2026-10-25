@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-25T21:03:47.985345+00:00",
-  "generation": 5361,
-  "focus": "Human Nature and Conduct",
-  "last_action": "consolidate",
+  "timestamp": "2026-10-25T21:17:56.718644+00:00",
+  "generation": 5362,
+  "focus": "The Varieties of Religious Experience: A Study in Human Nature",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": "groq",
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": null,
   "last_provider_generation": 5361,
   "last_search_generation": 5359,
   "cortex": {
     "nodes": 11632,
     "synapses": 82971,
     "active": 120,
-    "archived_synapses": 40555
+    "archived_synapses": 40637
   },
   "memory": {
     "episodes": 4323,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 26427,
+    "events": 26431,
     "segments": 1125,
     "compressed_snapshot": true,
     "snapshot_events": 26322
@@ -70,9 +70,17 @@
       "node_id": "concept:6907de2e8144a57274c7",
       "label": "treatise",
       "activation": 1.0,
-      "novelty": 0.05250721974271463,
+      "novelty": 0.05238344683080147,
       "conflict": 0,
-      "score": 0.8741769493305329
+      "score": 0.8741435306443164
+    },
+    {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.04487323311644604,
+      "conflict": 0,
+      "score": 0.8721157729414404
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -81,14 +89,6 @@
       "novelty": 0.03924646781789639,
       "conflict": 0,
       "score": 0.870596546310832
-    },
-    {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.019455252918287938,
-      "conflict": 0,
-      "score": 0.8652529182879378
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 851
     },
     "explore": {
-      "attempts": 638,
-      "successes": 632
+      "attempts": 639,
+      "successes": 633
     },
     "consolidate": {
       "attempts": 849,
