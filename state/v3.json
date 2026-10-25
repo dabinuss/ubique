@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-25T22:51:24.618481+00:00",
-  "generation": 5378,
-  "focus": "Psychology: Briefer Course",
-  "last_action": "explore",
+  "timestamp": "2026-10-25T22:53:31.550537+00:00",
+  "generation": 5379,
+  "focus": "The Mind and the Brain",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": "groq",
+  "last_action_detail": "observed_comparison",
+  "last_provider": null,
   "last_provider_generation": 5378,
   "last_search_generation": 5359,
   "cortex": {
     "nodes": 11647,
     "synapses": 83190,
     "active": 120,
-    "archived_synapses": 40726
+    "archived_synapses": 40746
   },
   "memory": {
     "episodes": 4326,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 26544,
-    "segments": 1128,
+    "events": 26549,
+    "segments": 1129,
     "compressed_snapshot": true,
     "snapshot_events": 26485
   },
@@ -70,25 +70,25 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.019203072491598656,
+      "novelty": 0.019186492709132773,
       "conflict": 0,
-      "score": 0.8651848295727316
-    },
-    {
-      "node_id": "concept:85ca6d6d291c070dbcb2",
-      "label": "conduct",
-      "activation": 0.8861720881171087,
-      "novelty": 0.09099181073703366,
-      "conflict": 0,
-      "score": 0.8253772747198956
+      "score": 0.8651803530314659
     },
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.8931692788888284,
-      "novelty": 0.01804891255301868,
+      "activation": 0.9160500023921088,
+      "novelty": 0.018034265103697027,
       "conflict": 0,
-      "score": 0.8093212314115058
+      "score": 0.8212152528218948
+    },
+    {
+      "node_id": "concept:85ca6d6d291c070dbcb2",
+      "label": "conduct",
+      "activation": 0.8421183035291657,
+      "novelty": 0.09062075215224286,
+      "conflict": 0,
+      "score": 0.8023691209162718
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 15
     },
     "experiment": {
-      "attempts": 143,
-      "successes": 141
+      "attempts": 144,
+      "successes": 142
     },
     "question": {
       "attempts": 103,
