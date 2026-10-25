@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-25T09:49:04.915664+00:00",
-  "generation": 5250,
-  "focus": "Human Nature and Conduct",
-  "last_action": "read",
+  "timestamp": "2026-10-25T09:50:57.142164+00:00",
+  "generation": 5251,
+  "focus": "The Psychology of the Emotions",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 5248,
   "last_search_generation": 5244,
@@ -14,7 +14,7 @@
     "nodes": 11500,
     "synapses": 81332,
     "active": 120,
-    "archived_synapses": 40232
+    "archived_synapses": 40262
   },
   "memory": {
     "episodes": 4273,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 25498,
+    "events": 25502,
     "segments": 1103,
     "compressed_snapshot": true,
     "snapshot_events": 25485
@@ -34,6 +34,30 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 880,
   "workspace": [
+    {
+      "node_id": "concept:3853eb486f0ccd5b3023",
+      "label": "varieties",
+      "activation": 1.0,
+      "novelty": 0.08254230293025175,
+      "conflict": 0,
+      "score": 0.8822864217911681
+    },
+    {
+      "node_id": "concept:3f8b4464a99de3dc8c5c",
+      "label": "religious",
+      "activation": 1.0,
+      "novelty": 0.0755287009063444,
+      "conflict": 0,
+      "score": 0.880392749244713
+    },
+    {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 1.0,
+      "novelty": 0.06770480704129993,
+      "conflict": 0,
+      "score": 0.878280297901151
+    },
     {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
@@ -51,44 +75,20 @@
       "score": 0.8720913569189432
     },
     {
-      "node_id": "concept:ec752d1d10b6d764a0e3",
-      "label": "algebra",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.020552872263898878,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8655492755112528
     },
     {
-      "node_id": "concept:8148b7fefaf89ebf8e79",
-      "label": "geometry",
+      "node_id": "concept:d0d092b83d4aefab43b6",
+      "label": "intense",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:22b090dd46c756d3c307",
-      "label": "absorb",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:b353c86ecca83ccdef01",
-      "label": "leaving",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:ca75eaf4e00caa4b9b1d",
-      "label": "arithmetic",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.8080135593220339
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 831
     },
     "explore": {
-      "attempts": 622,
-      "successes": 616
+      "attempts": 623,
+      "successes": 617
     },
     "consolidate": {
       "attempts": 820,
