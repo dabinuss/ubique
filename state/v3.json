@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-25T14:59:15.682922+00:00",
-  "generation": 5302,
+  "timestamp": "2026-10-25T15:01:16.079980+00:00",
+  "generation": 5303,
   "focus": "A Treatise of Human Nature",
-  "last_action": "experiment",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "observed_comparison",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 5299,
   "last_search_generation": 5290,
@@ -14,7 +14,7 @@
     "nodes": 11552,
     "synapses": 82018,
     "active": 120,
-    "archived_synapses": 40520
+    "archived_synapses": 40512
   },
   "memory": {
     "episodes": 4295,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 25917,
+    "events": 25922,
     "segments": 1113,
     "compressed_snapshot": true,
     "snapshot_events": 25830
@@ -38,9 +38,9 @@
       "node_id": "concept:85ca6d6d291c070dbcb2",
       "label": "conduct",
       "activation": 1.0,
-      "novelty": 0.09569377990430622,
+      "novelty": 0.09528346831824679,
       "conflict": 0,
-      "score": 0.8858373205741628
+      "score": 0.8857265364459266
     },
     {
       "node_id": "concept:4277d3259d4e4993",
@@ -54,37 +54,37 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.020070245860511794,
+      "novelty": 0.020052135552436335,
       "conflict": 0,
-      "score": 0.8654189663823382
+      "score": 0.8654140765991578
     },
     {
       "node_id": "concept:7308d385d05396e9",
       "label": "representations",
-      "activation": 0.919562467545906,
-      "novelty": 0.1596169193934557,
+      "activation": 0.8898447769842945,
+      "novelty": 0.1584786053882726,
       "conflict": 0,
-      "score": 0.8612690513601042
+      "score": 0.8455085074866668
+    },
+    {
+      "node_id": "concept:1c48f6310f1c849b4ac3",
+      "label": "mind",
+      "activation": 0.8958635184480893,
+      "novelty": 0.018654976214905326,
+      "conflict": 0,
+      "score": 0.8108858731710309
     },
     {
       "node_id": "concept:e8704d852719b7fe8865",
       "label": "whiffs",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8080135593220339
     },
     {
       "node_id": "concept:fe05d9917b524532b651",
       "label": "peppermint",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:cbd44e661d7e1e4c1c25",
-      "label": "rried",
       "activation": 0.46,
       "novelty": 0.8474576271186441,
       "conflict": 0,
@@ -105,8 +105,8 @@
       "successes": 624
     },
     "consolidate": {
-      "attempts": 833,
-      "successes": 833
+      "attempts": 834,
+      "successes": 834
     },
     "connect": {
       "attempts": 679,
