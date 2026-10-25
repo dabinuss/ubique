@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-25T15:45:48.859013+00:00",
-  "generation": 5307,
-  "focus": "Psychology of the Unconscious",
-  "last_action": "read",
+  "timestamp": "2026-10-25T15:47:53.209736+00:00",
+  "generation": 5308,
+  "focus": "A Treatise of Human Nature",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 5304,
   "last_search_generation": 5290,
   "cortex": {
-    "nodes": 11560,
+    "nodes": 11562,
     "synapses": 82123,
     "active": 120,
-    "archived_synapses": 40559
+    "archived_synapses": 40589
   },
   "memory": {
     "episodes": 4300,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 25956,
+    "events": 25960,
     "segments": 1114,
     "compressed_snapshot": true,
     "snapshot_events": 25830
@@ -51,6 +51,14 @@
       "score": 0.8724166475051736
     },
     {
+      "node_id": "concept:02f77488efc6c9cf",
+      "label": "destiny",
+      "activation": 1.0,
+      "novelty": 0.03476447071093342,
+      "conflict": 0,
+      "score": 0.8693864070919521
+    },
+    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -59,36 +67,28 @@
       "score": 0.8653946053946053
     },
     {
-      "node_id": "concept:1c48f6310f1c849b4ac3",
-      "label": "mind",
-      "activation": 0.9120782300431564,
-      "novelty": 0.018639328984156572,
-      "conflict": 0,
-      "score": 0.8193132984481636
-    },
-    {
-      "node_id": "concept:7308d385d05396e9",
-      "label": "representations",
-      "activation": 0.81432789742072,
-      "novelty": 0.15408320493066255,
-      "conflict": 0,
-      "score": 0.8050529719900533
-    },
-    {
-      "node_id": "concept:e8704d852719b7fe8865",
-      "label": "whiffs",
+      "node_id": "concept:9f165139a8c2894a47ae",
+      "label": "female",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:fe05d9917b524532b651",
-      "label": "peppermint",
+      "node_id": "concept:34c5accab266cb049700",
+      "label": "bolder",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:3e590b17ee6772531162",
+      "label": "confined",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 835
     },
     "connect": {
-      "attempts": 679,
-      "successes": 678
+      "attempts": 680,
+      "successes": 679
     },
     "evolve": {
       "attempts": 37,
