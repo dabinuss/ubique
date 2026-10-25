@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-25T19:41:49.484535+00:00",
-  "generation": 5345,
-  "focus": "Psychology of the Unconscious",
-  "last_action": "read",
+  "timestamp": "2026-10-25T19:43:55.854930+00:00",
+  "generation": 5346,
+  "focus": "Psychology: Briefer Course",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "observed_comparison",
   "last_provider": null,
   "last_provider_generation": 5344,
   "last_search_generation": 5336,
   "cortex": {
-    "nodes": 11608,
+    "nodes": 11609,
     "synapses": 82677,
     "active": 120,
-    "archived_synapses": 40531
+    "archived_synapses": 40657
   },
   "memory": {
     "episodes": 4317,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 26283,
+    "events": 26288,
     "segments": 1122,
     "compressed_snapshot": true,
     "snapshot_events": 26155
@@ -43,12 +43,36 @@
       "score": 0.9086925157799821
     },
     {
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
+      "activation": 1.0,
+      "novelty": 0.10723860589812333,
+      "conflict": 0,
+      "score": 0.8889544235924933
+    },
+    {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
       "activation": 1.0,
       "novelty": 0.07451564828614009,
       "conflict": 0,
       "score": 0.8801192250372578
+    },
+    {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 1.0,
+      "novelty": 0.06648936170212766,
+      "conflict": 0,
+      "score": 0.8779521276595745
+    },
+    {
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.0397377309755613,
+      "conflict": 0,
+      "score": 0.8707291873634015
     },
     {
       "node_id": "concept:02f77488efc6c9cf",
@@ -65,30 +89,6 @@
       "novelty": 0.019489378288832588,
       "conflict": 0,
       "score": 0.8652621321379848
-    },
-    {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
-      "activation": 1.0,
-      "novelty": 0.01839249586168843,
-      "conflict": 0,
-      "score": 0.8649659738826558
-    },
-    {
-      "node_id": "concept:1c48f6310f1c849b4ac3",
-      "label": "mind",
-      "activation": 0.9413131131518778,
-      "novelty": 0.018346940647647008,
-      "conflict": 0,
-      "score": 0.8344364928138412
-    },
-    {
-      "node_id": "concept:ceca0937310bd07ee315",
-      "label": "masquerading",
-      "activation": 0.46,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 15
     },
     "experiment": {
-      "attempts": 140,
-      "successes": 138
+      "attempts": 141,
+      "successes": 139
     },
     "question": {
       "attempts": 101,
