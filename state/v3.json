@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-25T12:30:39.636047+00:00",
-  "generation": 5276,
-  "focus": "A Treatise of Human Nature",
-  "last_action": "connect",
+  "timestamp": "2026-10-25T12:32:44.246357+00:00",
+  "generation": 5277,
+  "focus": "The Psychology of the Emotions",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": "groq",
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": null,
   "last_provider_generation": 5276,
   "last_search_generation": 5267,
   "cortex": {
-    "nodes": 11517,
-    "synapses": 81564,
+    "nodes": 11522,
+    "synapses": 81594,
     "active": 120,
-    "archived_synapses": 40548
+    "archived_synapses": 40576
   },
   "memory": {
-    "episodes": 4283,
-    "claims": 3297,
+    "episodes": 4284,
+    "claims": 3300,
     "stances": 30,
     "interests": 85,
-    "associative_comparisons": 2358,
+    "associative_comparisons": 2360,
     "screened_interpretations": 11,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 25698,
+    "events": 25709,
     "segments": 1108,
     "compressed_snapshot": true,
     "snapshot_events": 25659
@@ -54,9 +54,9 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.02030869212022746,
+      "novelty": 0.020290149132596125,
       "conflict": 0,
-      "score": 0.8654833468724614
+      "score": 0.8654783402658011
     },
     {
       "node_id": "concept:8b16ced79976e6a1",
@@ -70,14 +70,6 @@
       "node_id": "concept:9f6eec7d586f63c4644e",
       "label": "realize",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:4d5e9d7cc535a741bace",
-      "label": "recollecting",
-      "activation": 0.46,
       "novelty": 0.7604562737642586,
       "conflict": 0,
       "score": 0.78452319391635
@@ -85,10 +77,18 @@
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.8433297195668644,
-      "novelty": 0.018860807242549984,
+      "activation": 0.8363715854260415,
+      "novelty": 0.01884481296523132,
       "conflict": 0,
-      "score": 0.783623872130258
+      "score": 0.7800013239221542
+    },
+    {
+      "node_id": "concept:4d5e9d7cc535a741bace",
+      "label": "recollecting",
+      "activation": 0.46,
+      "novelty": 0.7352941176470589,
+      "conflict": 0,
+      "score": 0.777729411764706
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 136
     },
     "read": {
-      "attempts": 835,
-      "successes": 835
+      "attempts": 836,
+      "successes": 836
     },
     "explore": {
       "attempts": 626,
