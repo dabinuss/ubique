@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-25T08:52:25.482700+00:00",
-  "generation": 5240,
-  "focus": "A Treatise of Human Nature",
-  "last_action": "read",
+  "timestamp": "2026-10-25T08:54:43.441136+00:00",
+  "generation": 5241,
+  "focus": "Human Nature and Conduct",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 5236,
   "last_search_generation": 5221,
   "cortex": {
-    "nodes": 11492,
-    "synapses": 81193,
+    "nodes": 11495,
+    "synapses": 81215,
     "active": 120,
-    "archived_synapses": 40271
+    "archived_synapses": 40259
   },
   "memory": {
     "episodes": 4264,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 25406,
+    "events": 25411,
     "segments": 1101,
     "compressed_snapshot": true,
     "snapshot_events": 25323
@@ -43,40 +43,24 @@
       "score": 0.8764283541222999
     },
     {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
+      "node_id": "concept:0570b840b0d58779",
+      "label": "formation",
       "activation": 1.0,
-      "novelty": 0.04167534903104814,
+      "novelty": 0.04478280340349306,
       "conflict": 0,
-      "score": 0.871252344238383
+      "score": 0.8720913569189432
     },
     {
-      "node_id": "concept:8c133ee1225769fef870",
-      "label": "orms",
+      "node_id": "concept:c5e6b2dd5ff49b36b937",
+      "label": "vertebrates",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:b0ed59456b5f9e1e256a",
-      "label": "criticised",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:32c870923fced53850ca",
-      "label": "confusion",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:a751fdc279a968911c26",
-      "label": "irreducible",
+      "node_id": "concept:af8f827a0c20db87fdd3",
+      "label": "biology",
       "activation": 0.46,
       "novelty": 0.8810572687224669,
       "conflict": 0,
@@ -85,10 +69,26 @@
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.8285779419853306,
-      "novelty": 0.019219680953296174,
+      "activation": 0.8234409818555324,
+      "novelty": 0.019203072491598656,
       "conflict": 0,
-      "score": 0.7760498436897619
+      "score": 0.7733741401376085
+    },
+    {
+      "node_id": "concept:7c12bd84acfceacc8a75",
+      "label": "recognition",
+      "activation": 0.46,
+      "novelty": 0.6896551724137931,
+      "conflict": 0,
+      "score": 0.7654068965517242
+    },
+    {
+      "node_id": "concept:dce1905351040e792f97",
+      "label": "branches",
+      "activation": 0.46,
+      "novelty": 0.6688963210702341,
+      "conflict": 0,
+      "score": 0.7598020066889632
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 615
     },
     "consolidate": {
-      "attempts": 817,
-      "successes": 817
+      "attempts": 818,
+      "successes": 818
     },
     "connect": {
       "attempts": 666,
