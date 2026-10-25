@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-25T13:52:58.852819+00:00",
-  "generation": 5293,
+  "timestamp": "2026-10-25T14:07:12.949321+00:00",
+  "generation": 5294,
   "focus": "A Treatise of Human Nature",
-  "last_action": "evolve",
-  "last_action_success": false,
-  "last_action_detail": "No external code-generation provider available",
-  "last_provider": "groq",
+  "last_action": "consolidate",
+  "last_action_success": true,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 5293,
   "last_search_generation": 5290,
   "cortex": {
-    "nodes": 11538,
-    "synapses": 81870,
+    "nodes": 11541,
+    "synapses": 81938,
     "active": 120,
-    "archived_synapses": 40548
+    "archived_synapses": 40540
   },
   "memory": {
     "episodes": 4293,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 25849,
-    "segments": 1111,
+    "events": 25854,
+    "segments": 1112,
     "compressed_snapshot": true,
     "snapshot_events": 25830
   },
@@ -61,34 +61,34 @@
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.8855870724753035,
-      "novelty": 0.018717828731867104,
+      "activation": 0.881980452316373,
+      "novelty": 0.018702075930428278,
       "conflict": 0,
-      "score": 0.805559091444762
+      "score": 0.8036793957057297
     },
     {
       "node_id": "concept:bcffaab67df49e37c9e3",
       "label": "ability",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.78452319391635
     },
     {
       "node_id": "concept:fa19c8092afe6015a0e8",
       "label": "ationally",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.7352941176470589,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.777729411764706
     },
     {
       "node_id": "concept:65045134064dd4d90566",
       "label": "selection",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.7352941176470589,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.777729411764706
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 623
     },
     "consolidate": {
-      "attempts": 830,
-      "successes": 830
+      "attempts": 831,
+      "successes": 831
     },
     "connect": {
       "attempts": 677,
