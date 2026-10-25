@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-25T09:44:44.871524+00:00",
-  "generation": 5248,
-  "focus": "The Master of Destiny: A Biography of the Brain",
-  "last_action": "read",
+  "timestamp": "2026-10-25T09:46:51.365922+00:00",
+  "generation": 5249,
+  "focus": "A Treatise of Human Nature",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "gemini",
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": null,
   "last_provider_generation": 5248,
   "last_search_generation": 5244,
   "cortex": {
-    "nodes": 11499,
+    "nodes": 11500,
     "synapses": 81299,
     "active": 120,
-    "archived_synapses": 40229
+    "archived_synapses": 40235
   },
   "memory": {
     "episodes": 4272,
@@ -26,10 +26,10 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 25481,
-    "segments": 1102,
+    "events": 25485,
+    "segments": 1103,
     "compressed_snapshot": true,
-    "snapshot_events": 25323
+    "snapshot_events": 25485
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 880,
@@ -51,44 +51,44 @@
       "score": 0.8720913569189432
     },
     {
+      "node_id": "concept:ec752d1d10b6d764a0e3",
+      "label": "algebra",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:8148b7fefaf89ebf8e79",
+      "label": "geometry",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:22b090dd46c756d3c307",
+      "label": "absorb",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:b353c86ecca83ccdef01",
+      "label": "leaving",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.8739243067142636,
-      "novelty": 0.019054878048780487,
+      "activation": 0.8765358461478489,
+      "novelty": 0.019022256039566292,
       "conflict": 0,
-      "score": 0.7995854565645878
-    },
-    {
-      "node_id": "concept:c5e6b2dd5ff49b36b937",
-      "label": "vertebrates",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
-    },
-    {
-      "node_id": "concept:af8f827a0c20db87fdd3",
-      "label": "biology",
-      "activation": 0.46,
-      "novelty": 0.6896551724137931,
-      "conflict": 0,
-      "score": 0.7654068965517242
-    },
-    {
-      "node_id": "concept:7c12bd84acfceacc8a75",
-      "label": "recognition",
-      "activation": 0.46,
-      "novelty": 0.56657223796034,
-      "conflict": 0,
-      "score": 0.7321745042492918
-    },
-    {
-      "node_id": "concept:dce1905351040e792f97",
-      "label": "branches",
-      "activation": 0.46,
-      "novelty": 0.5524861878453039,
-      "conflict": 0,
-      "score": 0.7283712707182322
+      "score": 0.8009346491275644
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 820
     },
     "connect": {
-      "attempts": 667,
-      "successes": 666
+      "attempts": 668,
+      "successes": 667
     },
     "evolve": {
       "attempts": 36,
