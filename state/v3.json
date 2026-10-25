@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-25T23:14:02.348130+00:00",
-  "generation": 5383,
-  "focus": "The Nature of Man: Studies in Optimistic Philosophy",
-  "last_action": "consolidate",
+  "timestamp": "2026-10-25T23:28:07.066940+00:00",
+  "generation": 5384,
+  "focus": "Psychology: Briefer Course",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 5378,
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": "groq",
+  "last_provider_generation": 5384,
   "last_search_generation": 5382,
   "cortex": {
-    "nodes": 11649,
-    "synapses": 83299,
+    "nodes": 11651,
+    "synapses": 83311,
     "active": 120,
-    "archived_synapses": 40799
+    "archived_synapses": 40891
   },
   "memory": {
     "episodes": 4330,
-    "claims": 3430,
+    "claims": 3435,
     "stances": 30,
     "interests": 86,
     "associative_comparisons": 2428,
@@ -26,14 +26,22 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 26594,
-    "segments": 1129,
+    "events": 26608,
+    "segments": 1130,
     "compressed_snapshot": true,
     "snapshot_events": 26485
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 953,
+  "evidence_reviews": 958,
   "workspace": [
+    {
+      "node_id": "concept:85ca6d6d291c070dbcb2",
+      "label": "conduct",
+      "activation": 1.0,
+      "novelty": 0.09025270758122744,
+      "conflict": 0,
+      "score": 0.8843682310469314
+    },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
@@ -46,49 +54,41 @@
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
       "activation": 1.0,
-      "novelty": 0.07328691828508611,
+      "novelty": 0.07304601899196494,
       "conflict": 0,
-      "score": 0.8797874679369733
+      "score": 0.8797224251278306
     },
     {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.019120458891013385,
+      "novelty": 0.01908761213972132,
       "conflict": 0,
-      "score": 0.8651625239005736
-    },
-    {
-      "node_id": "concept:85ca6d6d291c070dbcb2",
-      "label": "conduct",
-      "activation": 0.945934958283101,
-      "novelty": 0.09025270758122744,
-      "conflict": 0,
-      "score": 0.856254409354144
+      "score": 0.8651536552777248
     },
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.928373865332559,
-      "novelty": 0.018005041411595247,
+      "activation": 0.9189664245107049,
+      "novelty": 0.017990465053521632,
       "conflict": 0,
-      "score": 0.8276157711540615
+      "score": 0.8227199663100174
     },
     {
       "node_id": "concept:0d9b4ee8fc77963ce2cd",
       "label": "reveals",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8080135593220339
     },
     {
       "node_id": "concept:151815aa25096c1b28fe",
       "label": "originates",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 854
     },
     "connect": {
-      "attempts": 695,
-      "successes": 694
+      "attempts": 696,
+      "successes": 695
     },
     "evolve": {
       "attempts": 38,
