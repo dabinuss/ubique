@@ -152,11 +152,17 @@ class SemanticLearner:
             shared = current & concepts
             
             min_shared = 2
+            # Primary relaxation: stochastic exploration factor.
             if random.random() < self.exploration_factor:
                 min_shared = 1
+            # Deterministic relaxation for a single shared term that is either
+            # unseen before or demonstrably rare in the corpus (frequency ≤ 2).
             if len(shared) == 1:
                 term = next(iter(shared))
                 if term not in self._seen_terms:
+                    min_shared = 1
+                elif self._term_frequency.get(term, 0) <= 2:
+                    # Treat low‑frequency terms as valuable conceptual bridges.
                     min_shared = 1
 
             if len(shared) >= min_shared:
