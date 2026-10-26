@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-26T20:01:08.231721+00:00",
-  "generation": 5559,
-  "focus": "A Treatise of Human Nature",
-  "last_action": "explore",
-  "last_action_success": false,
-  "last_action_detail": "No meaningful associations activated",
-  "last_provider": "groq",
+  "timestamp": "2026-10-26T20:15:25.387877+00:00",
+  "generation": 5560,
+  "focus": "The Analysis of Mind",
+  "last_action": "read",
+  "last_action_success": true,
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": null,
   "last_provider_generation": 5559,
   "last_search_generation": 5543,
   "cortex": {
-    "nodes": 11803,
-    "synapses": 85403,
+    "nodes": 11806,
+    "synapses": 85433,
     "active": 120,
-    "archived_synapses": 42099
+    "archived_synapses": 42097
   },
   "memory": {
-    "episodes": 4418,
-    "claims": 3625,
+    "episodes": 4419,
+    "claims": 3628,
     "stances": 31,
     "interests": 86,
-    "associative_comparisons": 2532,
+    "associative_comparisons": 2534,
     "screened_interpretations": 13,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 28016,
+    "events": 28029,
     "segments": 1166,
     "compressed_snapshot": true,
     "snapshot_events": 28016
@@ -78,17 +78,17 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.01784598911394664,
+      "novelty": 0.01783166904422254,
       "conflict": 0,
-      "score": 0.8648184170607656
+      "score": 0.8648145506419402
     },
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.9843985752783222,
+      "activation": 0.9834789833768494,
       "novelty": 0.016947716295229218,
       "conflict": 0,
-      "score": 0.8564631425444396
+      "score": 0.8559849547556737
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 148
     },
     "read": {
-      "attempts": 886,
-      "successes": 886
+      "attempts": 887,
+      "successes": 887
     },
     "explore": {
       "attempts": 670,
