@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-26T04:28:42.076278+00:00",
-  "generation": 5435,
-  "focus": "The Psychology of the Emotions",
-  "last_action": "read",
+  "timestamp": "2026-10-26T04:30:48.421877+00:00",
+  "generation": 5436,
+  "focus": "The Mind and the Brain",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "gemini",
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": null,
   "last_provider_generation": 5435,
   "last_search_generation": 5428,
   "cortex": {
-    "nodes": 11707,
+    "nodes": 11709,
     "synapses": 83975,
     "active": 120,
-    "archived_synapses": 41137
+    "archived_synapses": 41149
   },
   "memory": {
     "episodes": 4360,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 27013,
+    "events": 27017,
     "segments": 1140,
     "compressed_snapshot": true,
     "snapshot_events": 26975
@@ -51,28 +51,12 @@
       "score": 0.883508924684371
     },
     {
-      "node_id": "concept:ac32f27ba7a1346f43c0",
-      "label": "cognition",
-      "activation": 1.0,
-      "novelty": 0.08378718056137412,
-      "conflict": 0,
-      "score": 0.8826225387515712
-    },
-    {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
       "activation": 1.0,
       "novelty": 0.07710100231303008,
       "conflict": 0,
       "score": 0.8808172706245181
-    },
-    {
-      "node_id": "concept:172e09329d10f852",
-      "label": "continued",
-      "activation": 1.0,
-      "novelty": 0.0768344218209758,
-      "conflict": 0,
-      "score": 0.8807452938916636
     },
     {
       "node_id": "concept:e0f895872d65b2528fee",
@@ -89,6 +73,22 @@
       "novelty": 0.05738880918220947,
       "conflict": 0,
       "score": 0.8754949784791966
+    },
+    {
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.018670649738610906,
+      "conflict": 0,
+      "score": 0.8650410754294249
+    },
+    {
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
+      "activation": 1.0,
+      "novelty": 0.018166954310109912,
+      "conflict": 0,
+      "score": 0.8649050776637297
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 866
     },
     "explore": {
-      "attempts": 649,
-      "successes": 643
+      "attempts": 650,
+      "successes": 644
     },
     "consolidate": {
       "attempts": 867,
