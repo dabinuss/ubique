@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-26T21:24:51.687082+00:00",
-  "generation": 5570,
-  "focus": "The World as Will and Idea, Volume 1",
-  "last_action": "read",
+  "timestamp": "2026-10-26T21:27:05.939228+00:00",
+  "generation": 5571,
+  "focus": "The Mind and the Brain",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 5565,
+  "last_action_detail": "observed_associations",
+  "last_provider": "groq",
+  "last_provider_generation": 5571,
   "last_search_generation": 5566,
   "cortex": {
-    "nodes": 11826,
+    "nodes": 11827,
     "synapses": 85593,
     "active": 120,
-    "archived_synapses": 42079
+    "archived_synapses": 42151
   },
   "memory": {
     "episodes": 4424,
-    "claims": 3642,
+    "claims": 3648,
     "stances": 31,
     "interests": 86,
     "associative_comparisons": 2544,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 28117,
+    "events": 28134,
     "segments": 1168,
     "compressed_snapshot": true,
     "snapshot_events": 28016
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 1040,
+  "evidence_reviews": 1046,
   "workspace": [
     {
       "node_id": "concept:3853eb486f0ccd5b3023",
@@ -67,14 +67,6 @@
       "score": 0.8698486230165967
     },
     {
-      "node_id": "concept:02f77488efc6c9cf",
-      "label": "destiny",
-      "activation": 1.0,
-      "novelty": 0.0327653997378768,
-      "conflict": 0,
-      "score": 0.8688466579292269
-    },
-    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -83,8 +75,16 @@
       "score": 0.8647800300964859
     },
     {
-      "node_id": "concept:0d6f248ad863ad9b53f0",
-      "label": "foresees",
+      "node_id": "concept:6051c9461b4d52add5b7",
+      "label": "ravens",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:1e599277046ca1008131",
+      "label": "spends",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
@@ -117,8 +117,8 @@
       "successes": 16
     },
     "experiment": {
-      "attempts": 162,
-      "successes": 160
+      "attempts": 163,
+      "successes": 161
     },
     "question": {
       "attempts": 116,
