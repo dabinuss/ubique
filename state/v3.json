@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-26T06:36:32.213028+00:00",
-  "generation": 5456,
-  "focus": "The Psychology of the Emotions",
-  "last_action": "experiment",
+  "timestamp": "2026-10-26T06:38:38.532133+00:00",
+  "generation": 5457,
+  "focus": "The Physical Basis of Mind",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "observed_comparison",
-  "last_provider": null,
-  "last_provider_generation": 5452,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "gemini",
+  "last_provider_generation": 5457,
   "last_search_generation": 5451,
   "cortex": {
     "nodes": 11723,
     "synapses": 84253,
     "active": 120,
-    "archived_synapses": 41195
+    "archived_synapses": 41235
   },
   "memory": {
-    "episodes": 4371,
-    "claims": 3504,
+    "episodes": 4372,
+    "claims": 3505,
     "stances": 30,
     "interests": 86,
     "associative_comparisons": 2474,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 27169,
+    "events": 27177,
     "segments": 1145,
     "compressed_snapshot": true,
     "snapshot_events": 27142
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 975,
+  "evidence_reviews": 976,
   "workspace": [
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
@@ -54,41 +54,41 @@
       "node_id": "concept:8a1e7a652a0438bc9a14",
       "label": "ictly",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:455838fc7f78d7dde7a0",
       "label": "insoluble",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:c5dfd110181fa703b0a5",
-      "label": "denoting",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:00699f600cf5a0ff5747",
-      "label": "collections",
       "activation": 0.46,
       "novelty": 0.8810572687224669,
       "conflict": 0,
       "score": 0.8170854625550661
     },
     {
+      "node_id": "concept:c5dfd110181fa703b0a5",
+      "label": "denoting",
+      "activation": 0.46,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.8170854625550661
+    },
+    {
+      "node_id": "concept:00699f600cf5a0ff5747",
+      "label": "collections",
+      "activation": 0.46,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.8080135593220339
+    },
+    {
       "node_id": "concept:2e254d09db855d56cdd2",
       "label": "particulars",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.78452319391635
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 647
     },
     "consolidate": {
-      "attempts": 873,
-      "successes": 873
+      "attempts": 874,
+      "successes": 874
     },
     "connect": {
       "attempts": 710,
