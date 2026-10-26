@@ -1,14 +1,14 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-26T10:00:29.843147+00:00",
-  "generation": 5490,
-  "focus": "The Varieties of Religious Experience: A Study in Human Nature",
-  "last_action": "read",
+  "timestamp": "2026-10-26T10:02:44.154161+00:00",
+  "generation": 5491,
+  "focus": "Dream Psychology: Psychoanalysis for Beginners",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 5486,
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": "gemini",
+  "last_provider_generation": 5491,
   "last_search_generation": 5474,
   "cortex": {
     "nodes": 11759,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 27437,
+    "events": 27441,
     "segments": 1152,
     "compressed_snapshot": true,
     "snapshot_events": 27316
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 986,
   "workspace": [
+    {
+      "node_id": "concept:040b0e3f05e74417",
+      "label": "experiment",
+      "activation": 1.0,
+      "novelty": 0.27359781121751026,
+      "conflict": 0,
+      "score": 0.9338714090287279
+    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -59,36 +67,28 @@
       "score": 0.8650074183976262
     },
     {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
-      "activation": 1.0,
-      "novelty": 0.01812250815512867,
+      "node_id": "concept:ed142ddaa38e131ca699",
+      "label": "disappear",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8648930772018848
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:7b42b4d835af0339e63f",
-      "label": "rightness",
+      "node_id": "concept:b2b9c54954296c4cff5e",
+      "label": "begins",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:8d38d62ae82d65a24f0e",
-      "label": "ration",
+      "node_id": "concept:6df37daaa46ce714fa41",
+      "label": "week",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:4138363f661262d6a705",
-      "label": "deliberating",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 881
     },
     "connect": {
-      "attempts": 716,
-      "successes": 715
+      "attempts": 717,
+      "successes": 716
     },
     "evolve": {
       "attempts": 38,
