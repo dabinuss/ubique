@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-26T02:22:12.651264+00:00",
-  "generation": 5415,
-  "focus": "Human Nature and Conduct",
-  "last_action": "read",
+  "timestamp": "2026-10-26T02:24:19.439490+00:00",
+  "generation": 5416,
+  "focus": "Dream Psychology: Psychoanalysis for Beginners",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 5412,
   "last_search_generation": 5405,
   "cortex": {
     "nodes": 11685,
-    "synapses": 83669,
+    "synapses": 83683,
     "active": 120,
-    "archived_synapses": 41063
+    "archived_synapses": 41055
   },
   "memory": {
     "episodes": 4348,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 26860,
+    "events": 26865,
     "segments": 1136,
     "compressed_snapshot": true,
     "snapshot_events": 26812
@@ -46,9 +46,17 @@
       "node_id": "concept:48d492d08e9d314c034c",
       "label": "studies",
       "activation": 1.0,
-      "novelty": 0.09136592051164916,
+      "novelty": 0.09099181073703366,
       "conflict": 0,
-      "score": 0.8846687985381454
+      "score": 0.8845677888989991
+    },
+    {
+      "node_id": "concept:ac32f27ba7a1346f43c0",
+      "label": "cognition",
+      "activation": 1.0,
+      "novelty": 0.08474576271186442,
+      "conflict": 0,
+      "score": 0.8828813559322035
     },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
@@ -57,6 +65,14 @@
       "novelty": 0.07791195948578107,
       "conflict": 0,
       "score": 0.8810362290611609
+    },
+    {
+      "node_id": "concept:172e09329d10f852",
+      "label": "continued",
+      "activation": 1.0,
+      "novelty": 0.07736943907156674,
+      "conflict": 0,
+      "score": 0.880889748549323
     },
     {
       "node_id": "concept:e0f895872d65b2528fee",
@@ -73,22 +89,6 @@
       "novelty": 0.064,
       "conflict": 0,
       "score": 0.8772800000000001
-    },
-    {
-      "node_id": "concept:4277d3259d4e4993",
-      "label": "conclusion",
-      "activation": 1.0,
-      "novelty": 0.045987583352494824,
-      "conflict": 0,
-      "score": 0.8724166475051736
-    },
-    {
-      "node_id": "concept:02f77488efc6c9cf",
-      "label": "destiny",
-      "activation": 1.0,
-      "novelty": 0.033709758975223325,
-      "conflict": 0,
-      "score": 0.8691016349233103
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 641
     },
     "consolidate": {
-      "attempts": 861,
-      "successes": 861
+      "attempts": 862,
+      "successes": 862
     },
     "connect": {
       "attempts": 702,
