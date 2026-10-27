@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T23:07:01.911850+00:00",
-  "generation": 5859,
+  "timestamp": "2026-10-27T23:09:23.222355+00:00",
+  "generation": 5860,
   "focus": "Illustrated Catalogue of the Collections Obtained from the Pueblos of Zuñi, New Mexico, and Wolpi, Arizona, in 1881: Third Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1881-82, Government Printing Office, Washington, 1884, pages 511-594",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 5854,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 5860,
   "last_search_generation": 5773,
   "cortex": {
-    "nodes": 12273,
-    "synapses": 89140,
+    "nodes": 12284,
+    "synapses": 89206,
     "active": 120,
-    "archived_synapses": 43860
+    "archived_synapses": 43838
   },
   "memory": {
     "episodes": 4622,
-    "claims": 4088,
+    "claims": 4095,
     "stances": 31,
     "interests": 95,
     "associative_comparisons": 2812,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 30734,
-    "segments": 1230,
+    "events": 30753,
+    "segments": 1231,
     "compressed_snapshot": true,
     "snapshot_events": 30667
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 1167,
+  "evidence_reviews": 1174,
   "workspace": [
     {
       "node_id": "concept:1abe5f34c25e621d",
@@ -43,14 +43,6 @@
       "score": 0.8850812819321876
     },
     {
-      "node_id": "concept:0fc468dc240a979e",
-      "label": "collection",
-      "activation": 1.0,
-      "novelty": 0.042471862391165856,
-      "conflict": 0,
-      "score": 0.8714674028456149
-    },
-    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -59,32 +51,40 @@
       "score": 0.8692418278281706
     },
     {
-      "node_id": "concept:f2d44b8ac655a7ad",
-      "label": "public",
-      "activation": 1.0,
-      "novelty": 0.025046963055729496,
-      "conflict": 0,
-      "score": 0.866762680025047
-    },
-    {
-      "node_id": "concept:577aeee7d0d03b5a45a6",
-      "label": "cuts",
+      "node_id": "concept:7c6eefba80293ea42a92",
+      "label": "pigment",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:e7bf93b428bead01dad6",
-      "label": "plates",
+      "node_id": "concept:c454a455918b652d3cf5",
+      "label": "reduced",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:5b72fd8854e740a6892c",
-      "label": "triangles",
+      "node_id": "concept:1a0dc227b5aa78f84008",
+      "label": "thin",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:8270f2824111e04d9278",
+      "label": "solution",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:b4d2062daaed8dcfe507",
+      "label": "brushes",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
@@ -105,8 +105,8 @@
       "successes": 705
     },
     "consolidate": {
-      "attempts": 952,
-      "successes": 952
+      "attempts": 953,
+      "successes": 953
     },
     "connect": {
       "attempts": 759,
