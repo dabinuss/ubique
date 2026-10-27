@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T00:08:16.677182+00:00",
-  "generation": 5596,
-  "focus": "The Physical Basis of Mind",
-  "last_action": "read",
+  "timestamp": "2026-10-27T00:10:17.907768+00:00",
+  "generation": 5597,
+  "focus": "The World as Will and Idea, Volume 1",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 5593,
   "last_search_generation": 5589,
   "cortex": {
-    "nodes": 11856,
+    "nodes": 11857,
     "synapses": 85959,
     "active": 120,
     "archived_synapses": 42341
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 28348,
-    "segments": 1173,
+    "events": 28352,
+    "segments": 1174,
     "compressed_snapshot": true,
     "snapshot_events": 28348
   },
@@ -43,12 +43,28 @@
       "score": 0.8801869158878506
     },
     {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 1.0,
+      "novelty": 0.05938242280285036,
+      "conflict": 0,
+      "score": 0.8760332541567697
+    },
+    {
       "node_id": "concept:6907de2e8144a57274c7",
       "label": "treatise",
       "activation": 1.0,
-      "novelty": 0.04776689754000478,
+      "novelty": 0.047664442326024785,
       "conflict": 0,
-      "score": 0.8728970623358014
+      "score": 0.8728693994280268
+    },
+    {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.0446927374301676,
+      "conflict": 0,
+      "score": 0.8720670391061454
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -62,33 +78,17 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.01755001755001755,
+      "novelty": 0.017536168347216132,
       "conflict": 0,
-      "score": 0.8647385047385048
+      "score": 0.8647347654537485
     },
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.9593557878218644,
-      "novelty": 0.01670564650851988,
+      "activation": 0.9625509623130484,
+      "novelty": 0.01668056713928274,
       "conflict": 0,
-      "score": 0.8433755342246698
-    },
-    {
-      "node_id": "concept:d041924c15885af6d065",
-      "label": "signal",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:55aa661d2bc8df313a49",
-      "label": "guided",
-      "activation": 0.46,
-      "novelty": 0.6896551724137931,
-      "conflict": 0,
-      "score": 0.7654068965517242
+      "score": 0.8450302535303915
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 893
     },
     "explore": {
-      "attempts": 675,
-      "successes": 668
+      "attempts": 676,
+      "successes": 669
     },
     "consolidate": {
       "attempts": 908,
