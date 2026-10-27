@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T22:37:02.246927+00:00",
-  "generation": 5851,
+  "timestamp": "2026-10-27T22:39:18.031604+00:00",
+  "generation": 5852,
   "focus": "Illustrated Catalogue of the Collections Obtained from the Pueblos of Zuñi, New Mexico, and Wolpi, Arizona, in 1881: Third Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1881-82, Government Printing Office, Washington, 1884, pages 511-594",
-  "last_action": "read",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "observed_comparison",
   "last_provider": null,
   "last_provider_generation": 5848,
   "last_search_generation": 5773,
   "cortex": {
-    "nodes": 12250,
+    "nodes": 12255,
     "synapses": 89096,
     "active": 120,
     "archived_synapses": 43864
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 30667,
+    "events": 30672,
     "segments": 1229,
     "compressed_snapshot": true,
     "snapshot_events": 30667
@@ -35,20 +35,12 @@
   "evidence_reviews": 1165,
   "workspace": [
     {
-      "node_id": "concept:3f8b4464a99de3dc8c5c",
-      "label": "religious",
-      "activation": 1.0,
-      "novelty": 0.06273525721455459,
-      "conflict": 0,
-      "score": 0.8769385194479298
-    },
-    {
       "node_id": "concept:0fc468dc240a979e",
       "label": "collection",
       "activation": 1.0,
-      "novelty": 0.04296455424274973,
+      "novelty": 0.04279905842071475,
       "conflict": 0,
-      "score": 0.8716004296455424
+      "score": 0.871555745773593
     },
     {
       "node_id": "concept:f2d44b8ac655a7ad",
@@ -59,36 +51,44 @@
       "score": 0.866762680025047
     },
     {
-      "node_id": "concept:aff64e4fd520bd185cb0",
-      "label": "country",
+      "node_id": "concept:8f635b05b8f631bc28f6",
+      "label": "encampment",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:e32c00605b2e5aa6ef64",
-      "label": "nsbrück",
+      "node_id": "concept:e0a9f1462aebae94dc3c",
+      "label": "franconian",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:947cf7772f364c947aa5",
-      "label": "hiesel",
+      "node_id": "concept:45c1fef36e87f9ee925f",
+      "label": "troops",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:fc3086f6d1e06809f75e",
-      "label": "murder",
+      "node_id": "concept:f8ad0148b8ecce4b2baa",
+      "label": "ascending",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:f77fcbb21ddefc82222a",
+      "label": "hill",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 19
     },
     "experiment": {
-      "attempts": 185,
-      "successes": 183
+      "attempts": 186,
+      "successes": 184
     },
     "question": {
       "attempts": 137,
