@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T12:31:08.479585+00:00",
-  "generation": 5739,
-  "focus": "The World as Will and Idea (Vol. 1 of 3)",
-  "last_action": "read",
+  "timestamp": "2026-10-27T12:33:34.715417+00:00",
+  "generation": 5740,
+  "focus": "The Physical Basis of Mind",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 5735,
   "last_search_generation": 5727,
   "cortex": {
     "nodes": 12002,
-    "synapses": 87598,
+    "synapses": 87626,
     "active": 120,
-    "archived_synapses": 42944
+    "archived_synapses": 42888
   },
   "memory": {
     "episodes": 4528,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 29606,
+    "events": 29613,
     "segments": 1203,
     "compressed_snapshot": true,
     "snapshot_events": 29514
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1103,
   "workspace": [
+    {
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
+      "activation": 1.0,
+      "novelty": 0.10230179028132992,
+      "conflict": 0,
+      "score": 0.887621483375959
+    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -67,28 +75,20 @@
       "score": 0.8645898852528686
     },
     {
-      "node_id": "concept:69858c814bc9663dfb93",
-      "label": "excepted",
+      "node_id": "concept:ba1b620317039da45ff6",
+      "label": "assigns",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.78452319391635
     },
     {
-      "node_id": "concept:0fa55d12730ec27e6d62",
-      "label": "steriori",
+      "node_id": "concept:f79ad9b40704c4a9008b",
+      "label": "phere",
       "activation": 0.46,
       "novelty": 0.7352941176470589,
       "conflict": 0,
       "score": 0.777729411764706
-    },
-    {
-      "node_id": "concept:d01c8b3ded4e36c4de7d",
-      "label": "founded",
-      "activation": 0.46,
-      "novelty": 0.49140049140049136,
-      "conflict": 0,
-      "score": 0.7118781326781327
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 687
     },
     "consolidate": {
-      "attempts": 934,
-      "successes": 934
+      "attempts": 935,
+      "successes": 935
     },
     "connect": {
       "attempts": 752,
