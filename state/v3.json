@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T10:07:54.415887+00:00",
-  "generation": 5712,
-  "focus": "Psychology of the Unconscious",
-  "last_action": "read",
+  "timestamp": "2026-10-27T10:10:01.360507+00:00",
+  "generation": 5713,
+  "focus": "The World as Will and Idea, Volume 1",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 5712,
   "last_search_generation": 5704,
   "cortex": {
     "nodes": 11972,
-    "synapses": 87318,
+    "synapses": 87344,
     "active": 120,
-    "archived_synapses": 42898
+    "archived_synapses": 42824
   },
   "memory": {
     "episodes": 4512,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 29378,
+    "events": 29383,
     "segments": 1197,
     "compressed_snapshot": true,
     "snapshot_events": 29330
@@ -51,6 +51,14 @@
       "score": 0.8783361629881155
     },
     {
+      "node_id": "concept:411f62e7fd037280",
+      "label": "actually",
+      "activation": 1.0,
+      "novelty": 0.04589261128958238,
+      "conflict": 0,
+      "score": 0.8723910050481873
+    },
+    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -67,28 +75,20 @@
       "score": 0.8646145957955906
     },
     {
-      "node_id": "concept:7be403e3cc8226224891",
-      "label": "chosen",
+      "node_id": "concept:c3ccedf562d9529001d8",
+      "label": "crude",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.7654068965517242
     },
     {
-      "node_id": "concept:57777d28b11a44a474e1",
-      "label": "passing",
+      "node_id": "concept:b1766efa56ecba2d07bb",
+      "label": "arising",
       "activation": 0.46,
-      "novelty": 0.6309148264984227,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.7495470031545741
-    },
-    {
-      "node_id": "concept:f78fcae67d4aa99819ff",
-      "label": "explanation",
-      "activation": 0.46,
-      "novelty": 0.6309148264984227,
-      "conflict": 0,
-      "score": 0.7495470031545741
+      "score": 0.7654068965517242
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 683
     },
     "consolidate": {
-      "attempts": 928,
-      "successes": 928
+      "attempts": 929,
+      "successes": 929
     },
     "connect": {
       "attempts": 748,
