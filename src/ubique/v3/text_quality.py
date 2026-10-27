@@ -1,12 +1,11 @@
-"""Separate source prose from public-domain boilerplate without policing ideas.
+"""Separate genuine source prose from publisher boilerplate and dialogue glue.
 
-This is an attention aid, not a ban-list for subjects. Original excerpts remain
-in episodic memory; cleaning only influences semantic sampling and activation.
+Nothing here bans a subject, source, question or speculative interpretation.
+The original passages remain available for free association and rereading.
 """
 from __future__ import annotations
 import re
 
-# Explicit publishing metadata, not topics or philosophical positions.
 FRONT_MATTER = (
     "project gutenberg", "gutenberg ebook", "gutenberg license",
     "produced by", "transcribed by", "electronic edition",
@@ -21,15 +20,26 @@ META_TERMS = {
     "transcriber", "proofreading", "distributed", "redistribute",
     "anyone", "anywhere", "www", "http", "https",
 }
+# These are poor standalone comparison topics, although the original
+# passages may of course use them meaningfully in their normal contexts.
+DISCOURSE_TERMS = {
+    "every", "other", "others", "another", "also", "therefore",
+    "however", "although", "either", "neither", "rather", "whereas",
+    "which", "whose", "while", "after", "before", "there", "these",
+    "those", "here", "upon", "allow", "allowed", "because", "being",
+    "having", "shall", "might", "could", "would", "should", "given",
+    "following", "further",
+}
+CATALOGUE_TERMS = {
+    "illustrated", "catalogue", "catalog", "ebook", "volume", "vol",
+    "printed", "published", "edition", "index", "contents", "pages",
+}
 START = re.compile(r"\*{3}\s*START OF (?:THE|THIS) PROJECT GUTENBERG EBOOK[^\n]*\*{3}", re.I)
 END = re.compile(r"\*{3}\s*END OF (?:THE|THIS) PROJECT GUTENBERG EBOOK", re.I)
 
-def clean_source(text: str) -> str:
-    """Preserve author text while excluding obvious Gutenberg headers/licenses.
 
-    A short literary mention of Gutenberg is preserved; only recognizable
-    publishing lines or long boilerplate fragments are omitted.
-    """
+def clean_source(text: str) -> str:
+    """Remove recognizable publishing lines, never the author's original ideas."""
     text = str(text or "")
     match = START.search(text)
     if match:
@@ -53,12 +63,19 @@ def clean_source(text: str) -> str:
         lines.append(line)
     return "\n".join(lines)
 
+
 def content_terms(text: str, limit: int = 24) -> list[str]:
     from .hippocampus import terms
-    # Filtering stays intentionally narrow: grammar, ideology and unexpected
-    # subjects are never globally rejected.
     return [term for term in terms(clean_source(text), max(64, limit * 5))
             if term not in META_TERMS][:limit]
+
+
+def concept_terms(text: str, limit: int = 24) -> list[str]:
+    """Substantive attention cues; not a truth or curiosity restriction."""
+    stop = DISCOURSE_TERMS | CATALOGUE_TERMS
+    return [term for term in content_terms(text, max(80, limit * 6))
+            if term not in stop][:limit]
+
 
 def meaningful_sentences(text: str, limit: int = 10) -> list[str]:
     clean = clean_source(text)

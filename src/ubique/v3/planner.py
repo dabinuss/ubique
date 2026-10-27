@@ -1,8 +1,9 @@
-"""Procedural action memory: learn from observed outcomes rather than rigid scheduling."""
+"""Procedural action memory learned from outcomes, not rigid benchmarks."""
 from __future__ import annotations
 from collections import defaultdict
 from .actions import Candidate
 from .storage import Journal
+from .change_feedback import review_changes
 
 class Planner:
     def __init__(self, journal: Journal):
@@ -14,24 +15,24 @@ class Planner:
                 if d.get("kind"):
                     self.quality[d["kind"]][0] += int(bool(d.get("success")))
                     self.quality[d["kind"]][1] += 1
+        recent = journal.recent("action_outcome", limit=1)
+        previous_generation = int(recent[-1].get("generation") or 0) if recent else 0
+        if previous_generation and previous_generation % 12 == 0:
+            review_changes(journal, previous_generation)
 
     def rank(self, candidates: list[Candidate], *, last: list[str], urgency: float = 0.5):
         seen = set()
         for item in candidates:
             wins, total = self.quality[item.kind]
-            # Reliability bonus (Laplace smoothing)
             if total:
                 reliability = (wins + 1) / (total + 2)
-                item.score += 0.14 * (reliability - 0.5)
+                item.score += .14 * (reliability - .5)
             else:
-                # Curiosity boost: never‑seen kinds get a small positive nudge
-                item.score += 0.10
-            # Penalty for recent repetition
-            item.score -= 0.025 * last[-10:].count(item.kind)
-            # Penalty for identical payload seen in this ranking pass
+                item.score += .10
+            item.score -= .025 * last[-10:].count(item.kind)
             payload_marker = (item.kind, str(item.payload))
             if payload_marker in seen:
-                item.score -= 0.15
+                item.score -= .15
             seen.add(payload_marker)
         return sorted(candidates, key=lambda x: x.score, reverse=True)
 

@@ -1,259 +1,163 @@
-'''Evidence-first local semantic learning from independently sourced passages.
-
-This subsystem forms *retrievable, revisable* comparisons. It never converts
-text co-occurrence into a scientific fact or a confident personal belief.
-'''
+"""Source-grounded, revisable comparisons. Association never implies truth."""
 from __future__ import annotations
-
-import re
-import random  # stochastic exploratory associations
-from typing import Set
-
-from .hippocampus import Hippocampus, terms
-from .text_quality import clean_source, content_terms, meaningful_sentences
-from .world_model import WorldModel, key
-from .representation import Cortex
-from .storage import Journal
-
-BOILERPLATE = ("project gutenberg", "license", "copyright",
-               "produced by", "ebook", "electronic edition", "transcriber")
+import random
+from .hippocampus import terms
+from .text_quality import clean_source, concept_terms, meaningful_sentences
+from .world_model import key
 
 GENERIC_TERMS = {
     "about", "after", "again", "against", "also", "another", "because",
     "being", "between", "could", "every", "first", "from", "have",
-    "however", "into", "itself", "more", "most", "much", "must",
-    "only", "other", "others", "over", "same", "some", "such",
-    "than", "that", "their", "them", "there", "these", "those",
-    "through", "under", "upon", "very", "were", "what", "when",
-    "where", "which", "while", "with", "without", "would", "your",
-    "many", "make", "made", "might", "still", "then", "this",
+    "however", "into", "itself", "more", "most", "much", "must", "only",
+    "other", "others", "over", "same", "some", "such", "than", "that",
+    "their", "them", "there", "these", "those", "through", "under",
+    "upon", "very", "were", "what", "when", "where", "which", "while",
+    "with", "without", "would", "your", "many", "make", "made",
+    "might", "still", "then", "this",
 }
+BOILERPLATE = ("project gutenberg", "license", "copyright", "produced by",
+               "ebook", "electronic edition", "transcriber")
 
 
 def meaningful_overlap(words) -> set[str]:
-    return {word for word in words if len(word) >= 3 and word not in GENERIC_TERMS}
+    return {w for w in words if len(w) >= 3 and w not in GENERIC_TERMS}
 
 
 def source_sentence(text: str) -> str:
-    chunks = meaningful_sentences(text, limit=8)
-    for sentence in chunks:
-        value = " ".join(sentence.split())
-        if (65 <= len(value) <= 330 and len(terms(value)) >= 6
-                and not any(t in value.casefold() for t in BOILERPLATE)):
-            return value
+    for sentence in meaningful_sentences(text, limit=8):
+        s = " ".join(sentence.split())
+        if (65 <= len(s) <= 330 and len(terms(s)) >= 6
+                and not any(t in s.casefold() for t in BOILERPLATE)):
+            return s
     return ""
 
 
 def evidence_excerpt(text: str) -> str:
-    """Return an exact, readable source excerpt even for short passages."""
     quote = source_sentence(text)
     if quote:
         return quote
-    alternatives = meaningful_sentences(text, limit=4)
-    if alternatives:
-        return alternatives[0][:480]
-    return " ".join(clean_source(text).split())[:350]
+    choices = meaningful_sentences(text, limit=4)
+    return choices[0][:480] if choices else " ".join(clean_source(text).split())[:350]
 
 
 class SemanticLearner:
-    def __init__(self, journal: Journal, hippocampus: Hippocampus,
-                 world: WorldModel, cortex: Cortex, *, exploration_factor: float = 0.1):
-        """Create a learner.
-
-        Parameters
-        ----------
-        journal, hippocampus, world, cortex:
-            Core components of the Ubique cognitive stack.
-        exploration_factor:
-            Probability (0‑1) that the learner will *relax* the minimum
-            shared‑term threshold from 2 to 1 for a given observation.
-        """
-        self.journal = journal
-        self.hippocampus = hippocampus
-        self.world = world
-        self.cortex = cortex
-        self.comparisons = {str(ev["data"].get("id")) for ev in journal.events()
-                            if ev["kind"] in {"insight","association_hypothesis"}}
+    def __init__(self, journal, hippocampus, world, cortex, *, exploration_factor=.1):
+        self.journal, self.hippocampus = journal, hippocampus
+        self.world, self.cortex = world, cortex
         self.exploration_factor = exploration_factor
-        self._term_frequency: dict[str, int] = {}
-        self._seen_terms: Set[str] = self._build_seen_terms_cache()
-        # Counter for consecutive observations that yield no new comparisons.
-        self._no_comp_counter: int = 0
-
-    def _build_seen_terms_cache(self) -> Set[str]:
-        seen: Set[str] = set()
-        for ev in self.hippocampus.all_episodes():
-            txt = str(ev.get("text", ""))
-            title = str(ev.get("payload", {}).get("title", ""))
-            concepts = set(terms(txt, 24)) | set(terms(title, 12))
-            seen.update(concepts)
-            for word in concepts:
-                self._term_frequency[word] = self._term_frequency.get(word, 0) + 1
-        return seen
+        self.comparisons = {
+            str(e["data"].get("id")) for e in journal.events()
+            if e["kind"] in {"insight", "association_hypothesis"}
+        }
+        self._term_frequency = {}
+        self._seen_terms = self._build_seen_terms_cache()
+        self._no_comp_counter = 0
 
     @staticmethod
     def family(record: dict) -> str:
-        source = str(record.get("source", ""))
-        return source if source.startswith(("library:", "http://", "https://")) else ""
+        src = str(record.get("source", ""))
+        return src if src.startswith(("library:", "http://", "https://")) else ""
 
-    # ---------------------------------------------------------------------
-    # Adaptive exploration helpers
-    # ---------------------------------------------------------------------
-    def _adjust_exploration_factor(self, produced_comparisons: bool) -> None:
-        """Adapt ``self.exploration_factor`` using a streak counter.
+    def _concepts(self, record):
+        text = str(record.get("text", ""))[:1700]
+        cues = meaningful_overlap(concept_terms(text, 36))
+        title = str(record.get("payload", {}).get("title", ""))
+        if len(title) <= 120:
+            cues.update(meaningful_overlap(concept_terms(title, 12)))
+        return cues
 
-        When consecutive observations produce no new cross‑source comparisons,
-        the learner becomes increasingly exploratory, raising the chance of
-        relaxing the shared‑term threshold. A successful observation resets the
-        streak and gently reduces exploration.
-        """
+    def _build_seen_terms_cache(self):
+        seen = set()
+        for ep in self.hippocampus.all_episodes():
+            concepts = self._concepts(ep)
+            seen.update(concepts)
+            for term in concepts:
+                self._term_frequency[term] = self._term_frequency.get(term, 0) + 1
+        return seen
+
+    def _adjust_exploration_factor(self, produced_comparisons: bool):
         if produced_comparisons:
-            # Reset the failure streak and slightly reduce exploration.
             self._no_comp_counter = 0
-            self.exploration_factor = max(self.exploration_factor - 0.01, 0.05)
+            self.exploration_factor = max(.05, self.exploration_factor - .01)
         else:
-            # Increment the streak and increase exploration more aggressively.
-            self._no_comp_counter = getattr(self, "_no_comp_counter", 0) + 1
-            # Scale the increment: 0.02 per consecutive failure, capped at 0.10.
-            increment = min(0.02 * self._no_comp_counter, 0.10)
-            self.exploration_factor = min(self.exploration_factor + increment, 0.40)
+            self._no_comp_counter += 1
+            self.exploration_factor = min(
+                .40, self.exploration_factor + min(.02 * self._no_comp_counter, .10))
 
-    def observe(self, episode: dict, *, generation: int | None = None) -> list[dict]:
+    def observe(self, episode: dict, *, generation=None) -> list[dict]:
         if episode.get("epistemic_status") != "source_passage":
             return []
         eid = episode.get("id")
         if not eid or not self.family(episode):
             return []
-        result: list[dict] = []
+        result = []
         sentence = source_sentence(str(episode.get("text", "")))
         if sentence:
             claim = self.world.claim(
                 "Source passage: " + sentence, status="SOURCE_CLAIM",
-                source_refs=[eid], confidence=0.28, generation=generation)
-            result.append({"type": "quotation", "claim": claim["id"], "evidence_ids": [eid]})
-
-        current = meaningful_overlap(content_terms(str(episode.get(
-            "text", ""))[:1700], 36))
-        current |= meaningful_overlap(content_terms(str(episode.get(
-            "payload", {}).get("title", "")), 12))
+                source_refs=[eid], confidence=.28, generation=generation)
+            result.append({"type": "quotation", "claim": claim["id"],
+                           "evidence_ids": [eid]})
+        current = self._concepts(episode)
         earlier = self.hippocampus.all_episodes()
-        choices: list[tuple[float, dict, set[str]]] = []
-
+        choices = []
         for other in reversed(earlier):
-            if other.get("id") == eid or other.get("epistemic_status") != "source_passage":
+            if (other.get("id") == eid or
+                    other.get("epistemic_status") != "source_passage" or
+                    not self.family(other) or
+                    self.family(other) == self.family(episode)):
                 continue
-            family = self.family(other)
-            if not family or family == self.family(episode):
-                continue
-            concepts = meaningful_overlap(content_terms(str(other.get(
-                "text", ""))[:1700], 36))
-            concepts |= meaningful_overlap(content_terms(str(other.get(
-                "payload", {}).get("title", "")), 12))
-            shared = current & concepts
-            
-            min_shared = 2
-            # Primary relaxation: stochastic exploration factor.
-            if random.random() < self.exploration_factor:
+            shared = current & self._concepts(other)
+            min_shared = 1 if random.random() < self.exploration_factor else 2
+            if len(shared) == 1 and self._term_frequency.get(next(iter(shared)), 0) <= 2:
                 min_shared = 1
-            # Deterministic relaxation for a single shared term that is either
-            # unseen before or demonstrably rare in the corpus (frequency ≤ 2).
-            if len(shared) == 1:
-                term = next(iter(shared))
-                if term not in self._seen_terms:
-                    min_shared = 1
-                elif self._term_frequency.get(term, 0) <= 2:
-                    # Treat low‑frequency terms as valuable conceptual bridges.
-                    min_shared = 1
-
-            if len(shared) >= min_shared:
-                # Enhanced rarity weighting: emphasize rare conceptual bridges
-                novelty_bonus = sum(2.5 / (1 + self._term_frequency.get(t, 0)) for t in shared)
-                relevance_score = float(len(shared)) + novelty_bonus
-                choices.append((relevance_score, other, shared))
+            if len(shared) < min_shared:
+                continue
+            novelty = sum(2.5 / (1 + self._term_frequency.get(t, 0)) for t in shared)
+            choices.append((len(shared) + novelty, other, shared))
             if len(choices) >= 80:
                 break
-
-        if not choices:
-            for other in reversed(earlier):
-                if other.get("id") == eid or other.get("epistemic_status") != "source_passage":
-                    continue
-                family = self.family(other)
-                if not family or family == self.family(episode):
-                    continue
-                concepts = meaningful_overlap(content_terms(str(other.get(
-                    "text", ""))[:1700], 36))
-                concepts |= meaningful_overlap(content_terms(str(other.get(
-                    "payload", {}).get("title", "")), 12))
-                shared = current & concepts
-                fallback_min = 1 if self.exploration_factor > 0.25 else 2
-                if len(shared) >= fallback_min or (len(shared) == 1 and self._term_frequency.get(next(iter(shared)), 0) <= 2):
-                    relevance_score = float(len(shared)) + sum(2.5 / (1 + self._term_frequency.get(t, 0)) for t in shared)
-                    choices.append((relevance_score, other, shared))
-                if len(choices) >= 80:
-                    break
-            # Additional fallback: if still no choices, link to the most recent
-            # source from a different family even without shared terms, to seed
-            # future exploration.
-            if not choices:
-                for other in reversed(earlier):
-                    if other.get("id") == eid or other.get("epistemic_status") != "source_passage":
-                        continue
-                    family = self.family(other)
-                    if not family or family == self.family(episode):
-                        continue
-                    # Create a minimal comparison with empty shared set.
-                    relevance_score = 0.1  # low confidence placeholder
-                    choices.append((relevance_score, other, set()))
-                    break
-
-        # Sort by computed relevance score (incorporating both term count and enhanced rarity bridge bonus)
-        choices.sort(key=lambda row: row[0], reverse=True)
-
+        # Do not manufacture an empty-topic comparison: earlier code added
+        # such a choice only to silently discard it a few lines later.
+        choices.sort(key=lambda entry: entry[0], reverse=True)
+        produced = 0
         for _, other, shared in choices[:2]:
             pair = sorted([eid, other["id"]])
-            fingerprint = "comparison:" + key("|".join(pair))
-            if fingerprint in self.comparisons:
+            identifier = "comparison:" + key("|".join(pair))
+            if identifier in self.comparisons or not shared:
                 continue
-            sorted_shared = sorted(shared)[:5]
-            if not sorted_shared:
-                continue
+            words = sorted(shared)[:5]
+            question = ("Where do these authors agree or differ regarding " +
+                        ", ".join(words[:3]) + "? What further evidence could test this?")
             comparison = {
-                "id": fingerprint, "kind": "cross_source_comparison",
-                "topic": ", ".join(sorted_shared),
-                "source_families": [self.family(episode), self.family(other)],
+                "id": identifier, "kind": "cross_source_comparison",
+                "topic": ", ".join(words), "source_families": [
+                    self.family(episode), self.family(other)],
                 "evidence_ids": pair,
-                "statement": ("Two independent source passages share conceptual "
-                              "hinges in terms: " + ", ".join(sorted_shared) +
-                              ". Their interpretations may illuminate or contrast; "
-                              "this is an invitation to examine, not a definitive conclusion."),
-                "uncertainty": 0.78}
-            first = evidence_excerpt(str(episode.get("text", "")))
-            second = evidence_excerpt(str(other.get("text", "")))
-            comparison["passages"] = [first, second]
-            comparison["question"] = (
-                "In what ways do the perspectives of both authors intersect or diverge regarding " +
-                 ", ".join(sorted_shared[:3]) + "? What further source evidence could test this relationship?")
-            comparison["epistemic_status"] = "unverified_association"
-            comparison["interpretation_quality"] = "exploratory_not_entailment"
-            link = self.world.claim(comparison["statement"], status="HYPOTHESIS",
-                                    source_refs=pair, confidence=0.10,
-                                    generation=generation)
-            comparison["claim_id"] = link["id"]
-            self.journal.append("association_hypothesis", comparison, generation=generation)
-            self.comparisons.add(fingerprint)
+                "statement": ("Two passages share conceptual terms: " +
+                              ", ".join(words) +
+                              ". This is a hypothesis for exploration, not proof."),
+                "uncertainty": .78, "passages": [
+                    evidence_excerpt(str(episode.get("text", ""))),
+                    evidence_excerpt(str(other.get("text", "")))],
+                "question": question, "epistemic_status": "unverified_association",
+                "interpretation_quality": "exploratory_not_entailment",
+            }
+            claim = self.world.claim(
+                comparison["statement"], status="HYPOTHESIS",
+                source_refs=pair, confidence=.10, generation=generation)
+            comparison["claim_id"] = claim["id"]
+            self.journal.append("association_hypothesis", comparison,
+                                generation=generation)
+            self.comparisons.add(identifier)
             result.append(comparison)
-            left = self.cortex.ensure(sorted_shared[0])
-            right = self.cortex.ensure(sorted_shared[-1])
-            self.cortex.connect(left.id, right.id, relation="compared_in_sources",
-                                weight=0.18, event_id=fingerprint)
-        # -----------------------------------------------------------------
-        # Adjust exploration factor based on whether we produced any new
-        # cross‑source comparisons during this call.
-        # -----------------------------------------------------------------
-        self._adjust_exploration_factor(produced_comparisons=bool(result))
-        latest = set(terms(str(episode.get("text", "")), 24))
-        latest.update(terms(str(episode.get("payload", {}).get("title", "")), 12))
-        for word in latest:
-            self._seen_terms.add(word)
-            self._term_frequency[word] = self._term_frequency.get(word, 0) + 1
+            produced += 1
+            a, b = self.cortex.ensure(words[0]), self.cortex.ensure(words[-1])
+            self.cortex.connect(a.id, b.id, relation="compared_in_sources",
+                                weight=.18, event_id=identifier)
+        # An extracted quotation by itself is not a successful comparison.
+        self._adjust_exploration_factor(produced_comparisons=produced > 0)
+        for term in self._concepts(episode):
+            self._seen_terms.add(term)
+            self._term_frequency[term] = self._term_frequency.get(term, 0) + 1
         return result
