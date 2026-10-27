@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T19:30:16.749754+00:00",
-  "generation": 5814,
+  "timestamp": "2026-10-27T19:33:13.628596+00:00",
+  "generation": 5815,
   "focus": "Illustrated catalogue of the historical and world-renowned collection of torture instruments, etc., from the Royal Castle of Nuremberg : $b amongst which will be found the celebrated original iron maiden (eiserne Jungfrau)",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_provider": null,
   "last_provider_generation": 5814,
   "last_search_generation": 5773,
   "cortex": {
-    "nodes": 12122,
-    "synapses": 88757,
+    "nodes": 12127,
+    "synapses": 88759,
     "active": 120,
-    "archived_synapses": 43357
+    "archived_synapses": 43359
   },
   "memory": {
-    "episodes": 4588,
-    "claims": 4001,
+    "episodes": 4589,
+    "claims": 4004,
     "stances": 31,
     "interests": 93,
-    "associative_comparisons": 2766,
+    "associative_comparisons": 2768,
     "screened_interpretations": 18,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 30319,
+    "events": 30330,
     "segments": 1221,
     "compressed_snapshot": true,
     "snapshot_events": 30174
@@ -67,6 +67,14 @@
       "score": 0.8768908351579607
     },
     {
+      "node_id": "concept:0fc468dc240a979e",
+      "label": "collection",
+      "activation": 1.0,
+      "novelty": 0.04551661356395084,
+      "conflict": 0,
+      "score": 0.8722894856622667
+    },
+    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -81,14 +89,6 @@
       "novelty": 0.025046963055729496,
       "conflict": 0,
       "score": 0.866762680025047
-    },
-    {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.01681944327642755,
-      "conflict": 0,
-      "score": 0.8645412496846354
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 157
     },
     "read": {
-      "attempts": 976,
-      "successes": 976
+      "attempts": 977,
+      "successes": 977
     },
     "explore": {
       "attempts": 703,
