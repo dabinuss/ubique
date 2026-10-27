@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T18:28:46.119282+00:00",
-  "generation": 5806,
+  "timestamp": "2026-10-27T18:31:39.558925+00:00",
+  "generation": 5807,
   "focus": "Illustrated catalogue of the historical and world-renowned collection of torture instruments, etc., from the Royal Castle of Nuremberg : $b amongst which will be found the celebrated original iron maiden (eiserne Jungfrau)",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 5803,
   "last_search_generation": 5773,
   "cortex": {
     "nodes": 12106,
-    "synapses": 88614,
+    "synapses": 88664,
     "active": 120,
-    "archived_synapses": 43290
+    "archived_synapses": 43238
   },
   "memory": {
     "episodes": 4581,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 30239,
+    "events": 30244,
     "segments": 1219,
     "compressed_snapshot": true,
     "snapshot_events": 30174
@@ -59,6 +59,14 @@
       "score": 0.8723400365630714
     },
     {
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.03465603881476347,
+      "conflict": 0,
+      "score": 0.8693571304799861
+    },
+    {
       "node_id": "concept:f2d44b8ac655a7ad",
       "label": "public",
       "activation": 1.0,
@@ -75,16 +83,8 @@
       "score": 0.8645515846257585
     },
     {
-      "node_id": "concept:3e5bd0feb6a233ac79e9",
-      "label": "tentative",
-      "activation": 0.46,
-      "novelty": 0.9569377990430623,
-      "conflict": 0,
-      "score": 0.837573205741627
-    },
-    {
-      "node_id": "concept:46769cb395678250a53a",
-      "label": "wavering",
+      "node_id": "concept:a8cfe88d9a7a4e4d6ceb",
+      "label": "osition",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
@@ -105,8 +105,8 @@
       "successes": 695
     },
     "consolidate": {
-      "attempts": 945,
-      "successes": 945
+      "attempts": 946,
+      "successes": 946
     },
     "connect": {
       "attempts": 759,
