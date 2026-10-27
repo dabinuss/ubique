@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T15:37:46.063957+00:00",
-  "generation": 5774,
-  "focus": "Psychology: Briefer Course",
-  "last_action": "read",
+  "timestamp": "2026-10-27T15:40:07.791716+00:00",
+  "generation": 5775,
+  "focus": "The World as Will and Idea, Volume 1",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 5769,
+  "last_action_detail": "observed_comparison",
+  "last_provider": "groq",
+  "last_provider_generation": 5775,
   "last_search_generation": 5773,
   "cortex": {
-    "nodes": 12048,
+    "nodes": 12050,
     "synapses": 88114,
     "active": 120,
-    "archived_synapses": 43152
+    "archived_synapses": 43160
   },
   "memory": {
     "episodes": 4560,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 29954,
+    "events": 29961,
     "segments": 1211,
     "compressed_snapshot": true,
     "snapshot_events": 29842
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1123,
   "workspace": [
+    {
+      "node_id": "concept:dfd34a31322c29f8",
+      "label": "concepts",
+      "activation": 1.0,
+      "novelty": 0.2518891687657431,
+      "conflict": 0,
+      "score": 0.9280100755667506
+    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -59,36 +67,28 @@
       "score": 0.8694306671323786
     },
     {
-      "node_id": "concept:2041fa93d4868db1e1bd",
-      "label": "spectatori",
+      "node_id": "concept:d968e224a0e0dbfbb51f",
+      "label": "ante",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:2522fb7024fe0a83e6b9",
-      "label": "quad",
+      "node_id": "concept:72231043bc1807e6f740",
+      "label": "post",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:acbaab98ce2d73916cc0",
-      "label": "similis",
+      "node_id": "concept:a06d7b2b0415505dbf70",
+      "label": "thorough",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7996081632653061
-    },
-    {
-      "node_id": "concept:28f72d83d4626de17add",
-      "label": "avigated",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 19
     },
     "experiment": {
-      "attempts": 179,
-      "successes": 177
+      "attempts": 180,
+      "successes": 178
     },
     "question": {
       "attempts": 131,
