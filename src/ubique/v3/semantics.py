@@ -185,7 +185,8 @@ class SemanticLearner:
                 concepts |= meaningful_overlap(content_terms(str(other.get(
                     "payload", {}).get("title", "")), 12))
                 shared = current & concepts
-                if len(shared) >= 1:
+                fallback_min = 1 if self.exploration_factor > 0.25 else 2
+                if len(shared) >= fallback_min or (len(shared) == 1 and self._term_frequency.get(next(iter(shared)), 0) <= 2):
                     relevance_score = float(len(shared)) + sum(2.5 / (1 + self._term_frequency.get(t, 0)) for t in shared)
                     choices.append((relevance_score, other, shared))
                 if len(choices) >= 80:
