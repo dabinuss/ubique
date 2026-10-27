@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T07:59:09.712166+00:00",
-  "generation": 5687,
-  "focus": "The World as Will and Idea (Vol. 1 of 3)",
-  "last_action": "experiment",
+  "timestamp": "2026-10-27T08:01:28.757658+00:00",
+  "generation": 5688,
+  "focus": "The Physical Basis of Mind",
+  "last_action": "evolve",
   "last_action_success": true,
-  "last_action_detail": "observed_comparison",
+  "last_action_detail": "{\"accepted\": true, \"title\": \"Boost term normalization and unigram discovery in semantic learning\", \"summary\": \"Lower the minimum meaningful term length filter from 4 to 3 in `meaningful_overlap` to capture important short conceptual terms, improving cross-source bridge detection and mitigating source unavailability issues.\", \"branch\": \"main\", \"pr_url\": null, \"commit_sha\": \"e25df122ebcb28c783b30255",
   "last_provider": null,
   "last_provider_generation": 5684,
   "last_search_generation": 5658,
@@ -14,7 +14,7 @@
     "nodes": 11949,
     "synapses": 87076,
     "active": 120,
-    "archived_synapses": 42752
+    "archived_synapses": 42888
   },
   "memory": {
     "episodes": 4495,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 29149,
+    "events": 29155,
     "segments": 1192,
     "compressed_snapshot": true,
     "snapshot_events": 28999
@@ -78,17 +78,17 @@
       "node_id": "concept:2f39f3cf71016ba99af0",
       "label": "fichte",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:1161842e2b6d8f3f3354",
       "label": "simplest",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.7917984251968504
     }
   ],
   "skills": {
@@ -113,8 +113,8 @@
       "successes": 744
     },
     "evolve": {
-      "attempts": 40,
-      "successes": 17
+      "attempts": 41,
+      "successes": 18
     },
     "experiment": {
       "attempts": 172,
