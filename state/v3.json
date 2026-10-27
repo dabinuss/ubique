@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T20:23:32.666642+00:00",
-  "generation": 5825,
+  "timestamp": "2026-10-27T20:26:09.329898+00:00",
+  "generation": 5826,
   "focus": "Illustrated catalogue of the historical and world-renowned collection of torture instruments, etc., from the Royal Castle of Nuremberg : $b amongst which will be found the celebrated original iron maiden (eiserne Jungfrau)",
-  "last_action": "read",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 5820,
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": "groq",
+  "last_provider_generation": 5826,
   "last_search_generation": 5773,
   "cortex": {
-    "nodes": 12164,
-    "synapses": 88940,
+    "nodes": 12167,
+    "synapses": 88946,
     "active": 120,
     "archived_synapses": 43554
   },
   "memory": {
-    "episodes": 4599,
-    "claims": 4025,
+    "episodes": 4602,
+    "claims": 4027,
     "stances": 31,
     "interests": 93,
     "associative_comparisons": 2780,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 30429,
-    "segments": 1223,
+    "events": 30440,
+    "segments": 1224,
     "compressed_snapshot": true,
     "snapshot_events": 30341
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 1150,
+  "evidence_reviews": 1152,
   "workspace": [
     {
       "node_id": "concept:64b218956223eb12d13e",
@@ -59,6 +59,14 @@
       "score": 0.8754153582643449
     },
     {
+      "node_id": "concept:5a2a957b269e8f0f",
+      "label": "external",
+      "activation": 1.0,
+      "novelty": 0.0530082162735224,
+      "conflict": 0,
+      "score": 0.8743122183938512
+    },
+    {
       "node_id": "concept:411f62e7fd037280",
       "label": "actually",
       "activation": 1.0,
@@ -73,14 +81,6 @@
       "novelty": 0.04542357483533954,
       "conflict": 0,
       "score": 0.8722643652055417
-    },
-    {
-      "node_id": "concept:0fc468dc240a979e",
-      "label": "collection",
-      "activation": 1.0,
-      "novelty": 0.04478280340349306,
-      "conflict": 0,
-      "score": 0.8720913569189432
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -101,8 +101,8 @@
       "successes": 983
     },
     "explore": {
-      "attempts": 704,
-      "successes": 697
+      "attempts": 705,
+      "successes": 698
     },
     "consolidate": {
       "attempts": 948,
