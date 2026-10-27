@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T10:56:05.047196+00:00",
-  "generation": 5723,
-  "focus": "The World as Will and Idea, Volume 1",
-  "last_action": "read",
+  "timestamp": "2026-10-27T10:58:13.719134+00:00",
+  "generation": 5724,
+  "focus": "World Development Report 1990",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 5718,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 5724,
   "last_search_generation": 5704,
   "cortex": {
-    "nodes": 11988,
+    "nodes": 11990,
     "synapses": 87466,
     "active": 120,
-    "archived_synapses": 42890
+    "archived_synapses": 42878
   },
   "memory": {
     "episodes": 4520,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 29467,
-    "segments": 1199,
+    "events": 29472,
+    "segments": 1200,
     "compressed_snapshot": true,
     "snapshot_events": 29330
   },
@@ -51,14 +51,6 @@
       "score": 0.8779521276595745
     },
     {
-      "node_id": "concept:411f62e7fd037280",
-      "label": "actually",
-      "activation": 1.0,
-      "novelty": 0.04589261128958238,
-      "conflict": 0,
-      "score": 0.8723910050481873
-    },
-    {
       "node_id": "concept:8b16ced79976e6a1",
       "label": "action",
       "activation": 1.0,
@@ -75,20 +67,28 @@
       "score": 0.8646004430056229
     },
     {
-      "node_id": "concept:4ca9927cd78292ae8429",
-      "label": "geoffroy",
+      "node_id": "concept:cc6d3fd0501f019d6dbb",
+      "label": "distils",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:736bffc9a4bbae12fa60",
-      "label": "hilaire",
+      "node_id": "concept:0e138157efe3a1a4cb30",
+      "label": "fragrant",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:12c0d48004bfe1c31470",
+      "label": "stamina",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 685
     },
     "consolidate": {
-      "attempts": 930,
-      "successes": 930
+      "attempts": 931,
+      "successes": 931
     },
     "connect": {
       "attempts": 750,
