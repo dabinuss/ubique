@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T09:15:50.753840+00:00",
-  "generation": 5700,
-  "focus": "The World as Will and Idea, Volume 1",
+  "timestamp": "2026-10-27T09:18:12.422140+00:00",
+  "generation": 5701,
+  "focus": "The World as Will and Idea (Vol. 1 of 3)",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 5695,
+  "last_provider": "groq",
+  "last_provider_generation": 5701,
   "last_search_generation": 5658,
   "cortex": {
-    "nodes": 11961,
-    "synapses": 87170,
+    "nodes": 11964,
+    "synapses": 87201,
     "active": 120,
-    "archived_synapses": 42970
+    "archived_synapses": 42969
   },
   "memory": {
-    "episodes": 4503,
-    "claims": 3824,
+    "episodes": 4504,
+    "claims": 3827,
     "stances": 31,
     "interests": 91,
-    "associative_comparisons": 2654,
+    "associative_comparisons": 2656,
     "screened_interpretations": 16,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 29252,
+    "events": 29263,
     "segments": 1194,
     "compressed_snapshot": true,
     "snapshot_events": 29166
@@ -34,6 +34,22 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1093,
   "workspace": [
+    {
+      "node_id": "concept:2331eb33ce2c3766148e",
+      "label": "philosophy",
+      "activation": 1.0,
+      "novelty": 0.07401924500370097,
+      "conflict": 0,
+      "score": 0.8799851961509992
+    },
+    {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.06791171477079797,
+      "conflict": 0,
+      "score": 0.8783361629881155
+    },
     {
       "node_id": "concept:ff6d7c8948492bd2",
       "label": "issue",
@@ -59,36 +75,20 @@
       "score": 0.8695507605235233
     },
     {
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.017117425539198906,
+      "conflict": 0,
+      "score": 0.8646217048955838
+    },
+    {
       "node_id": "concept:dfd34a31322c29f8",
       "label": "concepts",
-      "activation": 0.8493144094369318,
+      "activation": 0.8269315489784429,
       "novelty": 0.2638522427440633,
       "conflict": 0,
-      "score": 0.8528835984481018
-    },
-    {
-      "node_id": "concept:8a39178d327e72a92d3b",
-      "label": "circle",
-      "activation": 0.46,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.7996081632653061
-    },
-    {
-      "node_id": "concept:2f5a18029b3e4d8a5675",
-      "label": "convertible",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
-    },
-    {
-      "node_id": "concept:9e37d7396105b44cb012",
-      "label": "stands",
-      "activation": 0.46,
-      "novelty": 0.6134969325153374,
-      "conflict": 0,
-      "score": 0.7448441717791412
+      "score": 0.8412445110096876
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 153
     },
     "read": {
-      "attempts": 932,
-      "successes": 932
+      "attempts": 933,
+      "successes": 933
     },
     "explore": {
       "attempts": 689,
