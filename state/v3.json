@@ -1,33 +1,33 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T20:35:41.147116+00:00",
-  "generation": 5830,
+  "timestamp": "2026-10-27T20:39:21.254994+00:00",
+  "generation": 5831,
   "focus": "Illustrated catalogue of the historical and world-renowned collection of torture instruments, etc., from the Royal Castle of Nuremberg : $b amongst which will be found the celebrated original iron maiden (eiserne Jungfrau)",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 5826,
+  "last_provider": "groq",
+  "last_provider_generation": 5831,
   "last_search_generation": 5773,
   "cortex": {
-    "nodes": 12174,
-    "synapses": 88949,
+    "nodes": 12178,
+    "synapses": 88951,
     "active": 120,
-    "archived_synapses": 43581
+    "archived_synapses": 43597
   },
   "memory": {
-    "episodes": 4605,
-    "claims": 4036,
+    "episodes": 4606,
+    "claims": 4039,
     "stances": 31,
     "interests": 93,
-    "associative_comparisons": 2786,
+    "associative_comparisons": 2788,
     "screened_interpretations": 18,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 30479,
-    "segments": 1224,
+    "events": 30490,
+    "segments": 1225,
     "compressed_snapshot": true,
     "snapshot_events": 30341
   },
@@ -43,14 +43,6 @@
       "score": 0.8797874679369733
     },
     {
-      "node_id": "concept:e0f895872d65b2528fee",
-      "label": "knowledge",
-      "activation": 1.0,
-      "novelty": 0.0620347394540943,
-      "conflict": 0,
-      "score": 0.8767493796526056
-    },
-    {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
@@ -62,9 +54,9 @@
       "node_id": "concept:0fc468dc240a979e",
       "label": "collection",
       "activation": 1.0,
-      "novelty": 0.044424700133274105,
+      "novelty": 0.044247787610619475,
       "conflict": 0,
-      "score": 0.8719946690359841
+      "score": 0.8719469026548674
     },
     {
       "node_id": "concept:b39ea7408bbea9e9",
@@ -83,8 +75,16 @@
       "score": 0.866762680025047
     },
     {
-      "node_id": "concept:9a32cc42cff6447069b2",
-      "label": "parricide",
+      "node_id": "concept:76720b4a11848dbb511a",
+      "label": "drove",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:b50c135402fcbd647171",
+      "label": "streets",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
@@ -97,8 +97,8 @@
       "successes": 157
     },
     "read": {
-      "attempts": 986,
-      "successes": 986
+      "attempts": 987,
+      "successes": 987
     },
     "explore": {
       "attempts": 706,
