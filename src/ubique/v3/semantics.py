@@ -31,7 +31,7 @@ GENERIC_TERMS = {
 
 
 def meaningful_overlap(words) -> set[str]:
-    return {word for word in words if len(word) >= 4 and word not in GENERIC_TERMS}
+    return {word for word in words if len(word) >= 3 and word not in GENERIC_TERMS}
 
 
 def source_sentence(text: str) -> str:
