@@ -1,8 +1,8 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T05:05:11.793119+00:00",
-  "generation": 5651,
+  "timestamp": "2026-10-27T05:07:24.404823+00:00",
+  "generation": 5652,
   "focus": "The World as Will and Idea (Vol. 1 of 3)",
   "last_action": "read",
   "last_action_success": true,
@@ -11,25 +11,25 @@
   "last_provider_generation": 5650,
   "last_search_generation": 5635,
   "cortex": {
-    "nodes": 11921,
-    "synapses": 86617,
+    "nodes": 11922,
+    "synapses": 86625,
     "active": 120,
-    "archived_synapses": 42601
+    "archived_synapses": 42579
   },
   "memory": {
-    "episodes": 4471,
-    "claims": 3761,
+    "episodes": 4472,
+    "claims": 3763,
     "stances": 31,
     "interests": 91,
-    "associative_comparisons": 2610,
+    "associative_comparisons": 2612,
     "screened_interpretations": 16,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 28828,
-    "segments": 1184,
+    "events": 28839,
+    "segments": 1185,
     "compressed_snapshot": true,
-    "snapshot_events": 28679
+    "snapshot_events": 28839
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1083,
@@ -41,6 +41,14 @@
       "novelty": 0.0702740688685875,
       "conflict": 0,
       "score": 0.8789739985945186
+    },
+    {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 1.0,
+      "novelty": 0.058445353594389245,
+      "conflict": 0,
+      "score": 0.875780245470485
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -67,28 +75,20 @@
       "score": 0.8646830283583384
     },
     {
-      "node_id": "concept:6615c10bf0ce8af9515d",
-      "label": "permanence",
+      "node_id": "concept:6436fecfc458363a95a1",
+      "label": "attempted",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:755ae53c606de37cba3b",
-      "label": "urians",
+      "node_id": "concept:b0ed59456b5f9e1e256a",
+      "label": "criticised",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:ef04406dbfecf1b56e6c",
-      "label": "knowable",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.8080135593220339
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 152
     },
     "read": {
-      "attempts": 913,
-      "successes": 913
+      "attempts": 914,
+      "successes": 914
     },
     "explore": {
       "attempts": 684,
