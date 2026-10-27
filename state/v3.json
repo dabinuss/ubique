@@ -1,8 +1,8 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T19:35:59.513067+00:00",
-  "generation": 5816,
+  "timestamp": "2026-10-27T19:38:42.301736+00:00",
+  "generation": 5817,
   "focus": "Illustrated catalogue of the historical and world-renowned collection of torture instruments, etc., from the Royal Castle of Nuremberg : $b amongst which will be found the celebrated original iron maiden (eiserne Jungfrau)",
   "last_action": "read",
   "last_action_success": true,
@@ -11,23 +11,23 @@
   "last_provider_generation": 5814,
   "last_search_generation": 5773,
   "cortex": {
-    "nodes": 12133,
-    "synapses": 88761,
+    "nodes": 12140,
+    "synapses": 88763,
     "active": 120,
-    "archived_synapses": 43361
+    "archived_synapses": 43413
   },
   "memory": {
-    "episodes": 4590,
-    "claims": 4007,
+    "episodes": 4591,
+    "claims": 4010,
     "stances": 31,
     "interests": 93,
-    "associative_comparisons": 2770,
+    "associative_comparisons": 2772,
     "screened_interpretations": 18,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 30341,
-    "segments": 1221,
+    "events": 30352,
+    "segments": 1222,
     "compressed_snapshot": true,
     "snapshot_events": 30341
   },
@@ -43,14 +43,6 @@
       "score": 0.8986542591267002
     },
     {
-      "node_id": "concept:64b218956223eb12d13e",
-      "label": "principles",
-      "activation": 1.0,
-      "novelty": 0.09955201592832255,
-      "conflict": 0,
-      "score": 0.8868790443006471
-    },
-    {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
       "activation": 1.0,
@@ -59,32 +51,40 @@
       "score": 0.8795936139332365
     },
     {
-      "node_id": "concept:e0f895872d65b2528fee",
-      "label": "knowledge",
-      "activation": 1.0,
-      "novelty": 0.06255864873318737,
-      "conflict": 0,
-      "score": 0.8768908351579607
-    },
-    {
       "node_id": "concept:0fc468dc240a979e",
       "label": "collection",
       "activation": 1.0,
-      "novelty": 0.04533091568449683,
+      "novelty": 0.045146726862302484,
       "conflict": 0,
-      "score": 0.8722393472348142
+      "score": 0.8721896162528218
     },
     {
-      "node_id": "concept:6a047c8045b1051eaf85",
-      "label": "urious",
+      "node_id": "concept:f80105efab6d863fd8fc",
+      "label": "letter",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:606ffb40f5cc2760811d",
-      "label": "brank",
+      "node_id": "concept:e9daf3e4235e6aa3faa3",
+      "label": "munich",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:388c1058bda15cf5e4cb",
+      "label": "brands",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:9f0b8b04fe0e80ba046c",
+      "label": "branding",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
@@ -97,8 +97,8 @@
       "successes": 157
     },
     "read": {
-      "attempts": 978,
-      "successes": 978
+      "attempts": 979,
+      "successes": 979
     },
     "explore": {
       "attempts": 703,
