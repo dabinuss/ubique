@@ -1,39 +1,47 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T23:48:14.907572+00:00",
-  "generation": 5867,
-  "focus": "Illustrated Catalogue of the Collections Obtained from the Pueblos of Zuñi, New Mexico, and Wolpi, Arizona, in 1881: Third Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1881-82, Government Printing Office, Washington, 1884, pages 511-594",
+  "timestamp": "2026-10-27T23:50:13.073763+00:00",
+  "generation": 5868,
+  "focus": "Illustrated Catalogue of the Collections Obtained from the Indians of New Mexico And Arizona in 1879: Second Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1880-81, Government Printing Office, Washington, 1883, pages 307-428",
   "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Read 3717 source characters",
   "last_provider": null,
   "last_provider_generation": 5865,
   "last_search_generation": 5773,
   "cortex": {
-    "nodes": 12303,
-    "synapses": 89254,
+    "nodes": 12307,
+    "synapses": 89304,
     "active": 120,
-    "archived_synapses": 44104
+    "archived_synapses": 44106
   },
   "memory": {
-    "episodes": 4625,
-    "claims": 4111,
+    "episodes": 4626,
+    "claims": 4114,
     "stances": 31,
     "interests": 95,
-    "associative_comparisons": 2818,
+    "associative_comparisons": 2820,
     "screened_interpretations": 18,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 30819,
+    "events": 30830,
     "segments": 1232,
     "compressed_snapshot": true,
-    "snapshot_events": 30667
+    "snapshot_events": 30830
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1181,
   "workspace": [
+    {
+      "node_id": "concept:244210e48437b6556980",
+      "label": "project",
+      "activation": 1.0,
+      "novelty": 0.15408320493066255,
+      "conflict": 0,
+      "score": 0.9016024653312789
+    },
     {
       "node_id": "concept:1abe5f34c25e621d",
       "label": "characteristic",
@@ -43,48 +51,40 @@
       "score": 0.884976873265495
     },
     {
+      "node_id": "concept:98792918967352b1",
+      "label": "processing",
+      "activation": 1.0,
+      "novelty": 0.06327111673521038,
+      "conflict": 0,
+      "score": 0.8770832015185068
+    },
+    {
       "node_id": "concept:0fc468dc240a979e",
       "label": "collection",
       "activation": 1.0,
-      "novelty": 0.04214963119072709,
+      "novelty": 0.041990342221289105,
       "conflict": 0,
-      "score": 0.8713804004214964
+      "score": 0.8713373923997481
     },
     {
-      "node_id": "concept:7112733729f24775a6e8",
-      "label": "austria",
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.03412386964681795,
+      "conflict": 0,
+      "score": 0.8692134448046409
+    },
+    {
+      "node_id": "concept:3d7db37d08f9140fd09f",
+      "label": "files",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:2daf0e6c79009f9234ed",
-      "label": "cherry",
-      "activation": 0.46,
-      "novelty": 0.9569377990430623,
-      "conflict": 0,
-      "score": 0.837573205741627
-    },
-    {
-      "node_id": "concept:513b890f4b2383c4e142",
-      "label": "minutely",
-      "activation": 0.46,
-      "novelty": 0.9569377990430623,
-      "conflict": 0,
-      "score": 0.837573205741627
-    },
-    {
-      "node_id": "concept:97b4cd23a41ed242fd5d",
-      "label": "exquisitely",
-      "activation": 0.46,
-      "novelty": 0.9569377990430623,
-      "conflict": 0,
-      "score": 0.837573205741627
-    },
-    {
-      "node_id": "concept:66d7a38ee861a1440677",
-      "label": "eminently",
+      "node_id": "concept:dfbb889cf19bda82ed8d",
+      "label": "display",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
@@ -97,8 +97,8 @@
       "successes": 157
     },
     "read": {
-      "attempts": 1002,
-      "successes": 1002
+      "attempts": 1003,
+      "successes": 1003
     },
     "explore": {
       "attempts": 714,
