@@ -191,6 +191,20 @@ class SemanticLearner:
                     choices.append((relevance_score, other, shared))
                 if len(choices) >= 80:
                     break
+            # Additional fallback: if still no choices, link to the most recent
+            # source from a different family even without shared terms, to seed
+            # future exploration.
+            if not choices:
+                for other in reversed(earlier):
+                    if other.get("id") == eid or other.get("epistemic_status") != "source_passage":
+                        continue
+                    family = self.family(other)
+                    if not family or family == self.family(episode):
+                        continue
+                    # Create a minimal comparison with empty shared set.
+                    relevance_score = 0.1  # low confidence placeholder
+                    choices.append((relevance_score, other, set()))
+                    break
 
         # Sort by computed relevance score (incorporating both term count and enhanced rarity bridge bonus)
         choices.sort(key=lambda row: row[0], reverse=True)
