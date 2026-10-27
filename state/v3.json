@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T14:55:33.032289+00:00",
-  "generation": 5766,
-  "focus": "Psychology of the Unconscious",
-  "last_action": "explore",
+  "timestamp": "2026-10-27T14:58:02.918774+00:00",
+  "generation": 5767,
+  "focus": "The Physical Basis of Mind",
+  "last_action": "evolve",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action_detail": "{\"accepted\": true, \"title\": \"Add minimal cross‑source fallback when no semantic overlap is found\", \"summary\": \"When SemanticLearner.observe fails to find any shared terms between the current episode and prior sources, it now creates a low‑confidence comparison with the most recent different‑family source even if there are zero shared terms. This seeds exploratory links, preventing dead‑ends and en",
   "last_provider": null,
   "last_provider_generation": 5763,
   "last_search_generation": 5750,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 29864,
+    "events": 29870,
     "segments": 1209,
     "compressed_snapshot": true,
     "snapshot_events": 29842
@@ -62,33 +62,33 @@
       "node_id": "concept:8b6df8c11847ada8266b",
       "label": "drawn",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:2d8d693177ac44895fc0",
       "label": "front",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:5c5d40ef2a10900a1f92",
       "label": "impelled",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:74a11fdc7152e4924918",
       "label": "intention",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     }
   ],
   "skills": {
@@ -113,8 +113,8 @@
       "successes": 755
     },
     "evolve": {
-      "attempts": 41,
-      "successes": 18
+      "attempts": 42,
+      "successes": 19
     },
     "experiment": {
       "attempts": 179,
