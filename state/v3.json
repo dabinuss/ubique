@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T18:03:41.840766+00:00",
-  "generation": 5801,
+  "timestamp": "2026-10-27T18:07:47.074776+00:00",
+  "generation": 5802,
   "focus": "Illustrated catalogue of the historical and world-renowned collection of torture instruments, etc., from the Royal Castle of Nuremberg : $b amongst which will be found the celebrated original iron maiden (eiserne Jungfrau)",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 5797,
   "last_search_generation": 5773,
   "cortex": {
-    "nodes": 12095,
+    "nodes": 12098,
     "synapses": 88542,
     "active": 120,
-    "archived_synapses": 43228
+    "archived_synapses": 43216
   },
   "memory": {
     "episodes": 4579,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 30196,
+    "events": 30201,
     "segments": 1218,
     "compressed_snapshot": true,
     "snapshot_events": 30174
@@ -35,12 +35,20 @@
   "evidence_reviews": 1135,
   "workspace": [
     {
+      "node_id": "concept:1abe5f34c25e621d",
+      "label": "characteristic",
+      "activation": 1.0,
+      "novelty": 0.09447331128956071,
+      "conflict": 0,
+      "score": 0.8855077940481815
+    },
+    {
       "node_id": "concept:0fc468dc240a979e",
       "label": "collection",
       "activation": 1.0,
-      "novelty": 0.046178711613945975,
+      "novelty": 0.045987583352494824,
       "conflict": 0,
-      "score": 0.8724682521357654
+      "score": 0.8724166475051736
     },
     {
       "node_id": "concept:f2d44b8ac655a7ad",
@@ -51,44 +59,36 @@
       "score": 0.866762680025047
     },
     {
-      "node_id": "concept:8a46854926e5416bae46",
-      "label": "collar",
+      "node_id": "concept:0dcfafab5f8035e779d7",
+      "label": "crown",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:9d52a3c8e4d6e27de4ad",
-      "label": "wife",
+      "node_id": "concept:6b6b85aed8adda90f7a7",
+      "label": "interior",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:edb465624291e4053c6c",
-      "label": "note",
+      "node_id": "concept:e467ee49094ed7960906",
+      "label": "cornered",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:a48fcb713243b3d460ca",
-      "label": "places",
+      "node_id": "concept:1ad945b5cd389656db0e",
+      "label": "knobs",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:d2504e52b8b07484a2b6",
-      "label": "catalogue",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 693
     },
     "consolidate": {
-      "attempts": 944,
-      "successes": 944
+      "attempts": 945,
+      "successes": 945
     },
     "connect": {
       "attempts": 759,
