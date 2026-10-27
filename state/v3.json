@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T01:22:12.743678+00:00",
-  "generation": 5608,
-  "focus": "The Riddle of the Universe",
-  "last_action": "explore",
+  "timestamp": "2026-10-27T01:24:39.032149+00:00",
+  "generation": 5609,
+  "focus": "Psychology of the Unconscious",
+  "last_action": "evolve",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action_detail": "{\"accepted\": true, \"title\": \"Graceful fallback matching for cross-source semantic comparison\", \"summary\": \"When strict concept overlap yields no matching choices in `SemanticLearner.observe`, the fallback pass currently attempts `len(shared) >= 1`. However, it iterates through earlier episodes without taking advantage of the already-adjusted exploration factor or considering low-frequency/rare bri",
   "last_provider": null,
   "last_provider_generation": 5605,
   "last_search_generation": 5589,
@@ -14,7 +14,7 @@
     "nodes": 11861,
     "synapses": 86049,
     "active": 120,
-    "archived_synapses": 42483
+    "archived_synapses": 42535
   },
   "memory": {
     "episodes": 4437,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 28428,
+    "events": 28434,
     "segments": 1176,
     "compressed_snapshot": true,
     "snapshot_events": 28348
@@ -59,14 +59,6 @@
       "score": 0.8728418549346018
     },
     {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 1.0,
-      "novelty": 0.0446927374301676,
-      "conflict": 0,
-      "score": 0.8720670391061454
-    },
-    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -75,20 +67,28 @@
       "score": 0.8647273045609736
     },
     {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 0.9820132555154418,
+      "novelty": 0.0446927374301676,
+      "conflict": 0,
+      "score": 0.862713931974175
+    },
+    {
       "node_id": "concept:5c0e1b9e11ef9e491c63",
       "label": "derivable",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:24e4e8632acbda7b9a94",
       "label": "ejective",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -113,8 +113,8 @@
       "successes": 739
     },
     "evolve": {
-      "attempts": 39,
-      "successes": 16
+      "attempts": 40,
+      "successes": 17
     },
     "experiment": {
       "attempts": 165,
