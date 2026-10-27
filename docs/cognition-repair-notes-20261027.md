@@ -1,3 +1,3 @@
 # Cognition repair
 
-Improve source-grounded inquiry and record whether autonomous modifications take effect.
+Improve source-grounded inquiry and assess autonomous changes.
