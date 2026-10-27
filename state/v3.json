@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T22:01:58.435213+00:00",
-  "generation": 5846,
+  "timestamp": "2026-10-27T22:16:12.200122+00:00",
+  "generation": 5847,
   "focus": "Illustrated catalogue of the historical and world-renowned collection of torture instruments, etc., from the Royal Castle of Nuremberg : $b amongst which will be found the celebrated original iron maiden (eiserne Jungfrau)",
-  "last_action": "evolve",
-  "last_action_success": false,
-  "last_action_detail": "{\"accepted\": false, \"title\": \"Allow minimal cross‑source comparison when no shared terms\", \"summary\": \"When two source passages have no overlapping meaningful terms, the previous logic skipped creating a comparison, leaving a dead‑end for exploration. This change introduces a placeholder term `<no_overlap>` so that a low‑confidence comparison is still recorded, enabling the system to seed future s",
+  "last_action": "read",
+  "last_action_success": true,
+  "last_action_detail": "Read 8000 source characters",
   "last_provider": null,
   "last_provider_generation": 5843,
   "last_search_generation": 5773,
   "cortex": {
     "nodes": 12231,
-    "synapses": 89091,
+    "synapses": 89093,
     "active": 120,
-    "archived_synapses": 43831
+    "archived_synapses": 43833
   },
   "memory": {
-    "episodes": 4614,
-    "claims": 4063,
+    "episodes": 4615,
+    "claims": 4066,
     "stances": 31,
     "interests": 95,
-    "associative_comparisons": 2796,
+    "associative_comparisons": 2798,
     "screened_interpretations": 18,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 30617,
+    "events": 30628,
     "segments": 1228,
     "compressed_snapshot": true,
     "snapshot_events": 30504
@@ -54,41 +54,41 @@
       "node_id": "concept:324dda50b038de7baf2b",
       "label": "appings",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:a2a52f3eba927ee4e451",
       "label": "horses",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:3bfcbeeee9f7c3007410",
       "label": "toys",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:dc3d50da8dac041f660e",
       "label": "stone",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:60c1af14cb847e7d654f",
       "label": "implements",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.7917984251968504
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 157
     },
     "read": {
-      "attempts": 991,
-      "successes": 991
+      "attempts": 992,
+      "successes": 992
     },
     "explore": {
       "attempts": 710,
