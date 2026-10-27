@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T19:47:16.125637+00:00",
-  "generation": 5820,
+  "timestamp": "2026-10-27T19:49:40.912911+00:00",
+  "generation": 5821,
   "focus": "Illustrated catalogue of the historical and world-renowned collection of torture instruments, etc., from the Royal Castle of Nuremberg : $b amongst which will be found the celebrated original iron maiden (eiserne Jungfrau)",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 5820,
   "last_search_generation": 5773,
   "cortex": {
-    "nodes": 12150,
-    "synapses": 88807,
+    "nodes": 12152,
+    "synapses": 88843,
     "active": 120,
-    "archived_synapses": 43411
+    "archived_synapses": 43435
   },
   "memory": {
     "episodes": 4596,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 30383,
+    "events": 30388,
     "segments": 1222,
     "compressed_snapshot": true,
     "snapshot_events": 30341
@@ -34,6 +34,30 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1150,
   "workspace": [
+    {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.06220839813374806,
+      "conflict": 0,
+      "score": 0.8767962674961121
+    },
+    {
+      "node_id": "concept:411f62e7fd037280",
+      "label": "actually",
+      "activation": 1.0,
+      "novelty": 0.04589261128958238,
+      "conflict": 0,
+      "score": 0.8723910050481873
+    },
+    {
+      "node_id": "concept:4277d3259d4e4993",
+      "label": "conclusion",
+      "activation": 1.0,
+      "novelty": 0.04542357483533954,
+      "conflict": 0,
+      "score": 0.8722643652055417
+    },
     {
       "node_id": "concept:0fc468dc240a979e",
       "label": "collection",
@@ -43,52 +67,28 @@
       "score": 0.8720913569189432
     },
     {
-      "node_id": "concept:5c2f28cf07a7083f16b5",
-      "label": "overlapping",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.03454828122300915,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8693280359302125
     },
     {
-      "node_id": "concept:1a38d27db8c216a40621",
-      "label": "drunkenness",
+      "node_id": "concept:2f59d6c939b18a6a056f",
+      "label": "acutest",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:13aedabb12f4dfcd7dcd",
-      "label": "blotched",
+      "node_id": "concept:b45b57c9a156d26ab232",
+      "label": "ethod",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:e710760a684bbae9ca11",
-      "label": "ornaments",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:a9e7a8af89a3e21f6b9e",
-      "label": "curious",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:d9325e0936a5cb483a42",
-      "label": "raised",
-      "activation": 0.46,
-      "novelty": 0.6896551724137931,
-      "conflict": 0,
-      "score": 0.7654068965517242
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 697
     },
     "consolidate": {
-      "attempts": 947,
-      "successes": 947
+      "attempts": 948,
+      "successes": 948
     },
     "connect": {
       "attempts": 759,
