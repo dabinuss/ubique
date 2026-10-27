@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-27T20:39:21.254994+00:00",
-  "generation": 5831,
+  "timestamp": "2026-10-27T20:41:35.208353+00:00",
+  "generation": 5832,
   "focus": "Illustrated catalogue of the historical and world-renowned collection of torture instruments, etc., from the Royal Castle of Nuremberg : $b amongst which will be found the celebrated original iron maiden (eiserne Jungfrau)",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 5831,
   "last_search_generation": 5773,
   "cortex": {
-    "nodes": 12178,
+    "nodes": 12183,
     "synapses": 88951,
     "active": 120,
-    "archived_synapses": 43597
+    "archived_synapses": 43535
   },
   "memory": {
     "episodes": 4606,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 30490,
+    "events": 30495,
     "segments": 1225,
     "compressed_snapshot": true,
     "snapshot_events": 30341
@@ -43,20 +43,12 @@
       "score": 0.8797874679369733
     },
     {
-      "node_id": "concept:5a2a957b269e8f0f",
-      "label": "external",
-      "activation": 1.0,
-      "novelty": 0.0530082162735224,
-      "conflict": 0,
-      "score": 0.8743122183938512
-    },
-    {
       "node_id": "concept:0fc468dc240a979e",
       "label": "collection",
       "activation": 1.0,
-      "novelty": 0.044247787610619475,
+      "novelty": 0.044072278536800354,
       "conflict": 0,
-      "score": 0.8719469026548674
+      "score": 0.8718995152049362
     },
     {
       "node_id": "concept:b39ea7408bbea9e9",
@@ -75,16 +67,24 @@
       "score": 0.866762680025047
     },
     {
-      "node_id": "concept:76720b4a11848dbb511a",
-      "label": "drove",
+      "node_id": "concept:0e2095e5b7f55a55a6a0",
+      "label": "delinquent",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:b50c135402fcbd647171",
-      "label": "streets",
+      "node_id": "concept:8e870799d5874472bca7",
+      "label": "altar",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:bba643f83f838f24a672",
+      "label": "crucified",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
@@ -105,8 +105,8 @@
       "successes": 699
     },
     "consolidate": {
-      "attempts": 948,
-      "successes": 948
+      "attempts": 949,
+      "successes": 949
     },
     "connect": {
       "attempts": 759,
