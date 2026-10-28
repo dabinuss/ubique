@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T13:46:18.591618+00:00",
-  "generation": 6053,
+  "timestamp": "2026-10-28T13:48:40.986800+00:00",
+  "generation": 6054,
   "focus": "Illustrated Catalogue of a Portion of the Collections Made During the Field Season of 1881: Third Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1881-82, Government Printing Office, Washington, 1884, pages 427-510",
   "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Read 7750 source characters",
   "last_provider": null,
   "last_provider_generation": 6052,
   "last_search_generation": 6049,
   "cortex": {
     "nodes": 12743,
-    "synapses": 90820,
+    "synapses": 90822,
     "active": 120,
-    "archived_synapses": 45936
+    "archived_synapses": 45938
   },
   "memory": {
-    "episodes": 4785,
-    "claims": 4494,
+    "episodes": 4786,
+    "claims": 4496,
     "stances": 31,
     "interests": 103,
-    "associative_comparisons": 3035,
+    "associative_comparisons": 3037,
     "screened_interpretations": 20,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 32659,
+    "events": 32670,
     "segments": 1269,
     "compressed_snapshot": true,
     "snapshot_events": 32659
@@ -35,12 +35,28 @@
   "evidence_reviews": 1260,
   "workspace": [
     {
-      "node_id": "concept:dfd34a31322c29f8",
-      "label": "concepts",
+      "node_id": "concept:ca52e7d1c18961a8c5b3",
+      "label": "united",
       "activation": 1.0,
-      "novelty": 0.2463054187192118,
+      "novelty": 0.30349013657056145,
       "conflict": 0,
-      "score": 0.9265024630541872
+      "score": 0.9419423368740516
+    },
+    {
+      "node_id": "concept:244210e48437b6556980",
+      "label": "project",
+      "activation": 1.0,
+      "novelty": 0.1519756838905775,
+      "conflict": 0,
+      "score": 0.901033434650456
+    },
+    {
+      "node_id": "concept:7308d385d05396e9",
+      "label": "representations",
+      "activation": 1.0,
+      "novelty": 0.1422475106685633,
+      "conflict": 0,
+      "score": 0.8984068278805122
     },
     {
       "node_id": "concept:e0f895872d65b2528fee",
@@ -59,36 +75,20 @@
       "score": 0.8723400365630714
     },
     {
+      "node_id": "concept:0fc468dc240a979e",
+      "label": "collection",
+      "activation": 1.0,
+      "novelty": 0.04144218814753419,
+      "conflict": 0,
+      "score": 0.8711893907998343
+    },
+    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.03228931223764934,
+      "novelty": 0.032242463324197966,
       "conflict": 0,
-      "score": 0.8687181143041653
-    },
-    {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.016643088957310478,
-      "conflict": 0,
-      "score": 0.8644936340184739
-    },
-    {
-      "node_id": "concept:79159126c7f037a1b22b",
-      "label": "appeared",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
-    },
-    {
-      "node_id": "concept:a2fa7f8b97da789f6d82",
-      "label": "tood",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.8687054650975334
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 162
     },
     "read": {
-      "attempts": 1096,
-      "successes": 1096
+      "attempts": 1097,
+      "successes": 1097
     },
     "explore": {
       "attempts": 747,
