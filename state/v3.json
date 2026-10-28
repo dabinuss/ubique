@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T20:14:37.002996+00:00",
-  "generation": 6112,
-  "focus": "The Nature of Man: Studies in Optimistic Philosophy",
-  "last_action": "read",
+  "timestamp": "2026-10-28T20:16:58.240053+00:00",
+  "generation": 6113,
+  "focus": "The Physical Basis of Mind",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 6109,
   "last_search_generation": 6095,
@@ -14,7 +14,7 @@
     "nodes": 12837,
     "synapses": 91941,
     "active": 120,
-    "archived_synapses": 45633
+    "archived_synapses": 45563
   },
   "memory": {
     "episodes": 4824,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 33204,
+    "events": 33209,
     "segments": 1281,
     "compressed_snapshot": true,
     "snapshot_events": 33153
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1297,
   "workspace": [
+    {
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
+      "activation": 1.0,
+      "novelty": 0.09694619486185167,
+      "conflict": 0,
+      "score": 0.8861754726127
+    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -75,20 +83,12 @@
       "score": 0.8644602296192285
     },
     {
-      "node_id": "concept:69c6b4e0e9941b273810",
-      "label": "sophism",
+      "node_id": "concept:d4e3fc7b0477747da28f",
+      "label": "gravity",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
-    },
-    {
-      "node_id": "concept:c68520eeebbdb1a278cb",
-      "label": "aralysed",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 748
     },
     "consolidate": {
-      "attempts": 990,
-      "successes": 990
+      "attempts": 991,
+      "successes": 991
     },
     "connect": {
       "attempts": 769,
