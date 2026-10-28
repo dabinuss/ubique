@@ -1,33 +1,33 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T02:11:37.129812+00:00",
-  "generation": 5899,
+  "timestamp": "2026-10-28T02:13:35.630600+00:00",
+  "generation": 5900,
   "focus": "Illustrated Catalogue of the Collections Obtained from the Indians of New Mexico in 1880: Second Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1880-81, Government Printing Office, Washington, 1883, pages 429-466",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": "gemini",
+  "last_provider": null,
   "last_provider_generation": 5899,
   "last_search_generation": 5773,
   "cortex": {
-    "nodes": 12379,
-    "synapses": 89506,
+    "nodes": 12383,
+    "synapses": 89508,
     "active": 120,
-    "archived_synapses": 44526
+    "archived_synapses": 44538
   },
   "memory": {
-    "episodes": 4650,
-    "claims": 4168,
+    "episodes": 4651,
+    "claims": 4171,
     "stances": 31,
     "interests": 96,
-    "associative_comparisons": 2850,
+    "associative_comparisons": 2852,
     "screened_interpretations": 18,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 31109,
-    "segments": 1238,
+    "events": 31120,
+    "segments": 1239,
     "compressed_snapshot": true,
     "snapshot_events": 30991
   },
@@ -41,14 +41,6 @@
       "novelty": 0.14316392269148176,
       "conflict": 0,
       "score": 0.8986542591267002
-    },
-    {
-      "node_id": "concept:3853eb486f0ccd5b3023",
-      "label": "varieties",
-      "activation": 1.0,
-      "novelty": 0.0681198910081744,
-      "conflict": 0,
-      "score": 0.8783923705722072
     },
     {
       "node_id": "concept:5a2a957b269e8f0f",
@@ -75,16 +67,24 @@
       "score": 0.8691571985755469
     },
     {
-      "node_id": "concept:e742b77851d6daca64b8",
-      "label": "yeast",
+      "node_id": "concept:e16a9d4d1cf9ead81f53",
+      "label": "scroll",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:c685a2c9bab235ccdd2a",
-      "label": "yellow",
+      "node_id": "concept:2c285f90c6bc8a5cccd3",
+      "label": "quail",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:b68e6884a9f49cb6a1d3",
+      "label": "antelope",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
@@ -97,8 +97,8 @@
       "successes": 157
     },
     "read": {
-      "attempts": 1018,
-      "successes": 1018
+      "attempts": 1019,
+      "successes": 1019
     },
     "explore": {
       "attempts": 720,
