@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T00:12:52.366347+00:00",
-  "generation": 5873,
+  "timestamp": "2026-10-28T00:15:12.836463+00:00",
+  "generation": 5874,
   "focus": "Illustrated Catalogue of the Collections Obtained from the Indians of New Mexico And Arizona in 1879: Second Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1880-81, Government Printing Office, Washington, 1883, pages 307-428",
-  "last_action": "read",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "observed_associations",
   "last_provider": null,
   "last_provider_generation": 5871,
   "last_search_generation": 5773,
   "cortex": {
-    "nodes": 12320,
+    "nodes": 12324,
     "synapses": 89316,
     "active": 120,
-    "archived_synapses": 44152
+    "archived_synapses": 44232
   },
   "memory": {
     "episodes": 4632,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 30886,
+    "events": 30891,
     "segments": 1233,
     "compressed_snapshot": true,
     "snapshot_events": 30830
@@ -35,36 +35,12 @@
   "evidence_reviews": 1185,
   "workspace": [
     {
-      "node_id": "concept:244210e48437b6556980",
-      "label": "project",
-      "activation": 1.0,
-      "novelty": 0.1530221882172915,
-      "conflict": 0,
-      "score": 0.9013159908186688
-    },
-    {
-      "node_id": "concept:98792918967352b1",
-      "label": "processing",
-      "activation": 1.0,
-      "novelty": 0.06309148264984227,
-      "conflict": 0,
-      "score": 0.8770347003154575
-    },
-    {
       "node_id": "concept:0fc468dc240a979e",
       "label": "collection",
       "activation": 1.0,
       "novelty": 0.04183225266680611,
       "conflict": 0,
       "score": 0.8712947082200377
-    },
-    {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.03407155025553663,
-      "conflict": 0,
-      "score": 0.869199318568995
     },
     {
       "node_id": "concept:f2d44b8ac655a7ad",
@@ -83,8 +59,32 @@
       "score": 0.8666724329667614
     },
     {
-      "node_id": "concept:fe4d55b9ffa53044e447",
-      "label": "rope",
+      "node_id": "concept:1c48f6310f1c849b4ac3",
+      "label": "mind",
+      "activation": 0.9517597474014914,
+      "novelty": 0.016253555465258026,
+      "conflict": 0,
+      "score": 0.8393035286243953
+    },
+    {
+      "node_id": "concept:2059fcf1f25e5d27af1a",
+      "label": "grooved",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:2b55e9221d15cca1d314",
+      "label": "metamorphic",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:350a770c0ec9f353e1a5",
+      "label": "rock",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
@@ -117,8 +117,8 @@
       "successes": 19
     },
     "experiment": {
-      "attempts": 187,
-      "successes": 185
+      "attempts": 188,
+      "successes": 186
     },
     "question": {
       "attempts": 137,
