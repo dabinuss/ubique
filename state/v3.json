@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T03:17:22.523045+00:00",
-  "generation": 5913,
+  "timestamp": "2026-10-28T03:19:19.064744+00:00",
+  "generation": 5914,
   "focus": "Illustrated Catalogue of the Collections Obtained from the Pueblos of Zuñi, New Mexico, and Wolpi, Arizona, in 1881: Third Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1881-82, Government Printing Office, Washington, 1884, pages 511-594",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 5911,
   "last_search_generation": 5773,
   "cortex": {
-    "nodes": 12405,
-    "synapses": 89546,
+    "nodes": 12408,
+    "synapses": 89638,
     "active": 120,
-    "archived_synapses": 44732
+    "archived_synapses": 44714
   },
   "memory": {
     "episodes": 4661,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 31227,
+    "events": 31232,
     "segments": 1241,
     "compressed_snapshot": true,
     "snapshot_events": 31158
@@ -43,40 +43,16 @@
       "score": 0.8690467414977383
     },
     {
-      "node_id": "concept:257d8188d398175b202b",
-      "label": "sealing",
+      "node_id": "concept:3b6b49e8e232ea080181",
+      "label": "twig",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:82bd81ea4b0302554165",
-      "label": "cooking",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:b9043c16af362f30807d",
-      "label": "sweet",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:713c358ab91c47c6e9dc",
-      "label": "fermented",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:aec6c3d03f013562eb39",
-      "label": "meal",
+      "node_id": "concept:c3657998722524e9f92f",
+      "label": "defined",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
@@ -86,9 +62,33 @@
       "node_id": "concept:2df5712e1cf303a50fac",
       "label": "vessel",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8080135593220339
+    },
+    {
+      "node_id": "concept:1c999646c80ca97ba602",
+      "label": "showing",
+      "activation": 0.46,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.7996081632653061
+    },
+    {
+      "node_id": "concept:426bd089d92ad0b1a7f8",
+      "label": "ditto",
+      "activation": 0.46,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.7917984251968504
+    },
+    {
+      "node_id": "concept:bc64f64fb479ef52a788",
+      "label": "reversed",
+      "activation": 0.46,
+      "novelty": 0.7352941176470589,
+      "conflict": 0,
+      "score": 0.777729411764706
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 716
     },
     "consolidate": {
-      "attempts": 961,
-      "successes": 961
+      "attempts": 962,
+      "successes": 962
     },
     "connect": {
       "attempts": 759,
