@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T17:15:10.708708+00:00",
-  "generation": 6085,
-  "focus": "The Nature of Man: Studies in Optimistic Philosophy",
+  "timestamp": "2026-10-28T17:17:45.292402+00:00",
+  "generation": 6086,
+  "focus": "Dream Psychology: Psychoanalysis for Beginners",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 6081,
+  "last_provider": "groq",
+  "last_provider_generation": 6086,
   "last_search_generation": 6072,
   "cortex": {
-    "nodes": 12783,
-    "synapses": 91353,
+    "nodes": 12786,
+    "synapses": 91383,
     "active": 120,
-    "archived_synapses": 45679
+    "archived_synapses": 45673
   },
   "memory": {
-    "episodes": 4801,
-    "claims": 4551,
+    "episodes": 4802,
+    "claims": 4554,
     "stances": 31,
     "interests": 104,
-    "associative_comparisons": 3061,
+    "associative_comparisons": 3063,
     "screened_interpretations": 23,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 32945,
+    "events": 32956,
     "segments": 1276,
     "compressed_snapshot": true,
     "snapshot_events": 32829
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1278,
   "workspace": [
+    {
+      "node_id": "concept:dfd34a31322c29f8",
+      "label": "concepts",
+      "activation": 1.0,
+      "novelty": 0.23584905660377356,
+      "conflict": 0,
+      "score": 0.9236792452830189
+    },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
@@ -59,36 +67,28 @@
       "score": 0.8686802764828807
     },
     {
-      "node_id": "concept:e6dd4cae8ed7d8727540",
-      "label": "rests",
+      "node_id": "concept:0ab6217f21e927499076",
+      "label": "smuggle",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:7c9bbe5ec9b3fb774e8f",
-      "label": "tool",
+      "node_id": "concept:08f0be883564cbf2d003",
+      "label": "derived",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.4024144869215292,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.6878519114688129
     },
     {
-      "node_id": "concept:dffc177fd0bbfd674906",
-      "label": "demand",
+      "node_id": "concept:f376ed6d1bfe649f",
+      "label": "significance",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.35714285714285715,
       "conflict": 0,
-      "score": 0.777729411764706
-    },
-    {
-      "node_id": "concept:9ed142d60c4571b67f14",
-      "label": "genius",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.6756285714285715
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 163
     },
     "read": {
-      "attempts": 1106,
-      "successes": 1106
+      "attempts": 1107,
+      "successes": 1107
     },
     "explore": {
       "attempts": 752,
