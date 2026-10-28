@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T12:20:27.963892+00:00",
-  "generation": 6036,
+  "timestamp": "2026-10-28T12:22:33.364196+00:00",
+  "generation": 6037,
   "focus": "Illustrated Catalogue of a Portion of the Collections Made During the Field Season of 1881: Third Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1881-82, Government Printing Office, Washington, 1884, pages 427-510",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 6035,
   "last_search_generation": 6026,
   "cortex": {
-    "nodes": 12704,
+    "nodes": 12707,
     "synapses": 90483,
     "active": 120,
-    "archived_synapses": 45863
+    "archived_synapses": 45803
   },
   "memory": {
     "episodes": 4764,
@@ -26,30 +26,14 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 32484,
+    "events": 32490,
     "segments": 1266,
     "compressed_snapshot": true,
-    "snapshot_events": 32326
+    "snapshot_events": 32490
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1249,
   "workspace": [
-    {
-      "node_id": "concept:dfd34a31322c29f8",
-      "label": "concepts",
-      "activation": 1.0,
-      "novelty": 0.24906600249066005,
-      "conflict": 0,
-      "score": 0.9272478206724784
-    },
-    {
-      "node_id": "concept:2331eb33ce2c3766148e",
-      "label": "philosophy",
-      "activation": 1.0,
-      "novelty": 0.0711743772241993,
-      "conflict": 0,
-      "score": 0.8792170818505338
-    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -83,8 +67,24 @@
       "score": 0.8712102968652689
     },
     {
-      "node_id": "concept:ff4df7709dede26b811d",
-      "label": "purchased",
+      "node_id": "concept:709523528f4df152c0cf",
+      "label": "caps",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:0d75675f93f141e5526d",
+      "label": "necks",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:f200472158617ac555f6",
+      "label": "subglobular",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
@@ -105,8 +105,8 @@
       "successes": 736
     },
     "consolidate": {
-      "attempts": 975,
-      "successes": 975
+      "attempts": 976,
+      "successes": 976
     },
     "connect": {
       "attempts": 760,
