@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T23:39:50.894284+00:00",
-  "generation": 6150,
+  "timestamp": "2026-10-28T23:42:11.340146+00:00",
+  "generation": 6151,
   "focus": "The World as Will and Idea (Vol. 1 of 3)",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 6149,
   "last_search_generation": 6141,
   "cortex": {
-    "nodes": 12902,
-    "synapses": 92406,
+    "nodes": 12904,
+    "synapses": 92472,
     "active": 120,
-    "archived_synapses": 45466
+    "archived_synapses": 45368
   },
   "memory": {
     "episodes": 4858,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 33571,
+    "events": 33576,
     "segments": 1289,
     "compressed_snapshot": true,
     "snapshot_events": 33488
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1319,
   "workspace": [
+    {
+      "node_id": "concept:721048dc35951006",
+      "label": "observations",
+      "activation": 1.0,
+      "novelty": 0.1680672268907563,
+      "conflict": 0,
+      "score": 0.9053781512605041
+    },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
@@ -62,33 +70,25 @@
       "node_id": "concept:a204c4da83f5063f88c2",
       "label": "ildhood",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8080135593220339
     },
     {
-      "node_id": "concept:147ee8f75832b13c44ce",
-      "label": "decidedly",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "node_id": "concept:8fad434ca5007153",
+      "label": "intelligence",
+      "activation": 0.76,
+      "novelty": 0.2607561929595828,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8056041720990874
     },
     {
-      "node_id": "concept:971f4ebdb867ebb7ed81",
-      "label": "preponderates",
+      "node_id": "concept:2247ba99a2ffdb217f75",
+      "label": "superfluous",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.6688963210702341,
       "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:3115c3c27201b00614c5",
-      "label": "hurries",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.7598020066889632
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 753
     },
     "consolidate": {
-      "attempts": 997,
-      "successes": 997
+      "attempts": 998,
+      "successes": 998
     },
     "connect": {
       "attempts": 775,
