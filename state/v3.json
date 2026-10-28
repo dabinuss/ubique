@@ -1,39 +1,55 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T10:42:48.929976+00:00",
-  "generation": 6014,
+  "timestamp": "2026-10-28T10:45:11.554624+00:00",
+  "generation": 6015,
   "focus": "Illustrated Catalogue of the Collections Obtained from the Indians of New Mexico in 1880: Second Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1880-81, Government Printing Office, Washington, 1883, pages 429-466",
   "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Read 6561 source characters",
   "last_provider": null,
   "last_provider_generation": 6013,
   "last_search_generation": 6003,
   "cortex": {
-    "nodes": 12658,
-    "synapses": 90295,
+    "nodes": 12660,
+    "synapses": 90297,
     "active": 120,
-    "archived_synapses": 45761
+    "archived_synapses": 45763
   },
   "memory": {
-    "episodes": 4746,
-    "claims": 4410,
+    "episodes": 4747,
+    "claims": 4413,
     "stances": 31,
     "interests": 103,
-    "associative_comparisons": 2990,
+    "associative_comparisons": 2992,
     "screened_interpretations": 18,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 32242,
-    "segments": 1261,
+    "events": 32255,
+    "segments": 1262,
     "compressed_snapshot": true,
     "snapshot_events": 32162
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1230,
   "workspace": [
+    {
+      "node_id": "concept:ca52e7d1c18961a8c5b3",
+      "label": "united",
+      "activation": 1.0,
+      "novelty": 0.30349013657056145,
+      "conflict": 0,
+      "score": 0.9419423368740516
+    },
+    {
+      "node_id": "concept:7308d385d05396e9",
+      "label": "representations",
+      "activation": 1.0,
+      "novelty": 0.14316392269148176,
+      "conflict": 0,
+      "score": 0.8986542591267002
+    },
     {
       "node_id": "concept:3853eb486f0ccd5b3023",
       "label": "varieties",
@@ -43,52 +59,36 @@
       "score": 0.8783923705722072
     },
     {
-      "node_id": "concept:2ffb6e3b73cce5c2327d",
-      "label": "sash",
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.032669062397909183,
+      "conflict": 0,
+      "score": 0.8688206468474355
+    },
+    {
+      "node_id": "concept:036fae5cdb5faace43e1",
+      "label": "keeping",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:0292a279b6c1b38a1dd1",
-      "label": "praying",
+      "node_id": "concept:3a55a1b23f2710974cdc",
+      "label": "comply",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:29a3e14798aa2363dc0c",
+      "label": "compliance",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:f2b259a7fe2dd487dd27",
-      "label": "apparently",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:d86982d2329abe574051",
-      "label": "arms",
-      "activation": 0.46,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.7996081632653061
-    },
-    {
-      "node_id": "concept:d916ba52b3f83d67fd25",
-      "label": "crossing",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:4d7120eb6c796b042735",
-      "label": "extended",
-      "activation": 0.46,
-      "novelty": 0.5141388174807199,
-      "conflict": 0,
-      "score": 0.7180174807197944
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 160
     },
     "read": {
-      "attempts": 1079,
-      "successes": 1079
+      "attempts": 1080,
+      "successes": 1080
     },
     "explore": {
       "attempts": 740,
