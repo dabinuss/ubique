@@ -1,8 +1,8 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T08:50:12.230737+00:00",
-  "generation": 5986,
+  "timestamp": "2026-10-28T08:52:32.995553+00:00",
+  "generation": 5987,
   "focus": "Illustrated Catalogue of a Portion of the Collections Made During the Field Season of 1881: Third Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1881-82, Government Printing Office, Washington, 1884, pages 427-510",
   "last_action": "read",
   "last_action_success": true,
@@ -11,22 +11,22 @@
   "last_provider_generation": 5984,
   "last_search_generation": 5957,
   "cortex": {
-    "nodes": 12568,
-    "synapses": 90182,
+    "nodes": 12573,
+    "synapses": 90184,
     "active": 120,
-    "archived_synapses": 45782
+    "archived_synapses": 45784
   },
   "memory": {
-    "episodes": 4722,
-    "claims": 4338,
+    "episodes": 4723,
+    "claims": 4341,
     "stances": 31,
     "interests": 103,
-    "associative_comparisons": 2950,
+    "associative_comparisons": 2952,
     "screened_interpretations": 18,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 31923,
+    "events": 31934,
     "segments": 1256,
     "compressed_snapshot": true,
     "snapshot_events": 31823
@@ -51,6 +51,14 @@
       "score": 0.8986542591267002
     },
     {
+      "node_id": "concept:0fc468dc240a979e",
+      "label": "collection",
+      "activation": 1.0,
+      "novelty": 0.04167534903104814,
+      "conflict": 0,
+      "score": 0.871252344238383
+    },
+    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -59,36 +67,28 @@
       "score": 0.8688859634688169
     },
     {
-      "node_id": "concept:6d3f51bc6aedfe16c6c3",
-      "label": "bibliotheque",
+      "node_id": "concept:d5294f63632888def99b",
+      "label": "comprises",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:009c405cb56962095d24",
-      "label": "pgdp",
+      "node_id": "concept:868a3e473845f6903968",
+      "label": "taos",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:ca8b22d0db83a22db163",
-      "label": "team",
+      "node_id": "concept:a957ca457aa3248076fd",
+      "label": "compactly",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:3b9c358f36f0a31b6ad3",
-      "label": "file",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 159
     },
     "read": {
-      "attempts": 1062,
-      "successes": 1062
+      "attempts": 1063,
+      "successes": 1063
     },
     "explore": {
       "attempts": 736,
