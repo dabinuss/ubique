@@ -1,9 +1,9 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T09:56:09.221667+00:00",
-  "generation": 5999,
-  "focus": "Illustrated Catalogue of a Portion of the Collections Made During the Field Season of 1881: Third Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1881-82, Government Printing Office, Washington, 1884, pages 427-510",
+  "timestamp": "2026-10-28T09:58:21.932002+00:00",
+  "generation": 6000,
+  "focus": "Illustrated Catalogue of the Collections Obtained from the Indians of New Mexico in 1880: Second Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1880-81, Government Printing Office, Washington, 1883, pages 429-466",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
@@ -11,29 +11,37 @@
   "last_provider_generation": 5996,
   "last_search_generation": 5957,
   "cortex": {
-    "nodes": 12612,
-    "synapses": 90234,
+    "nodes": 12614,
+    "synapses": 90236,
     "active": 120,
-    "archived_synapses": 45758
+    "archived_synapses": 45760
   },
   "memory": {
-    "episodes": 4730,
-    "claims": 4371,
+    "episodes": 4731,
+    "claims": 4374,
     "stances": 31,
     "interests": 103,
-    "associative_comparisons": 2966,
+    "associative_comparisons": 2968,
     "screened_interpretations": 18,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 32059,
-    "segments": 1258,
+    "events": 32072,
+    "segments": 1259,
     "compressed_snapshot": true,
     "snapshot_events": 31988
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1217,
   "workspace": [
+    {
+      "node_id": "concept:5a2a957b269e8f0f",
+      "label": "external",
+      "activation": 1.0,
+      "novelty": 0.05177323323841575,
+      "conflict": 0,
+      "score": 0.8739787729743722
+    },
     {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
@@ -43,52 +51,44 @@
       "score": 0.8688466579292269
     },
     {
-      "node_id": "concept:4b56ea8eae2d74b90e34",
-      "label": "partially",
+      "node_id": "concept:414368fe263be1f1dcab",
+      "label": "ollas",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:65e5fe2a2b5c8c3fc687",
-      "label": "quartzite",
+      "node_id": "concept:70759270a72969447552",
+      "label": "predominating",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:371b3dbb6e309c5c2f9e",
-      "label": "pestle",
+      "node_id": "concept:fb169e2dc800463c577d",
+      "label": "polished",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.6688963210702341,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.7598020066889632
     },
     {
-      "node_id": "concept:f31f8b34458f31df3b46",
-      "label": "basaltic",
+      "node_id": "concept:baaf53622a51d975235f",
+      "label": "shown",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.4608294930875576,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.7036239631336406
     },
     {
-      "node_id": "concept:7c7738c3a34590ce3579",
-      "label": "metate",
+      "node_id": "concept:d35c416a85b807e9b538",
+      "label": "large",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.3407155025553663,
       "conflict": 0,
-      "score": 0.837573205741627
-    },
-    {
-      "node_id": "concept:90b9875b8fd21e368001",
-      "label": "worn",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.6711931856899489
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 159
     },
     "read": {
-      "attempts": 1070,
-      "successes": 1070
+      "attempts": 1071,
+      "successes": 1071
     },
     "explore": {
       "attempts": 738,
