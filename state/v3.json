@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T03:02:19.178630+00:00",
-  "generation": 5906,
+  "timestamp": "2026-10-28T03:04:27.286450+00:00",
+  "generation": 5907,
   "focus": "Illustrated Catalogue of the Collections Obtained from the Indians of New Mexico in 1880: Second Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1880-81, Government Printing Office, Washington, 1883, pages 429-466",
-  "last_action": "read",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "observed_comparison",
   "last_provider": null,
   "last_provider_generation": 5905,
   "last_search_generation": 5773,
   "cortex": {
-    "nodes": 12389,
+    "nodes": 12391,
     "synapses": 89536,
     "active": 120,
     "archived_synapses": 44602
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 31158,
+    "events": 31163,
     "segments": 1240,
     "compressed_snapshot": true,
     "snapshot_events": 31158
@@ -43,14 +43,6 @@
       "score": 0.8986542591267002
     },
     {
-      "node_id": "concept:0570b840b0d58779",
-      "label": "formation",
-      "activation": 1.0,
-      "novelty": 0.04478280340349306,
-      "conflict": 0,
-      "score": 0.8720913569189432
-    },
-    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -59,36 +51,44 @@
       "score": 0.8690467414977383
     },
     {
-      "node_id": "concept:e0cdb7a32821b29f1b65",
-      "label": "ater",
+      "node_id": "concept:3958765b23d8a51d3445",
+      "label": "vine",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:7def9c79e5be6d7a7002",
-      "label": "bottle",
+      "node_id": "concept:846d124b6785689c70bc",
+      "label": "flowers",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:1775f06ac13a1198fd72",
-      "label": "canteen",
+      "node_id": "concept:f1a0263c6f89306c0fec",
+      "label": "scalloped",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:3c10ae9ffa45b8d8685c",
-      "label": "täsh",
+      "node_id": "concept:998164de21fb458f4235",
+      "label": "doubly",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.78452319391635
+    },
+    {
+      "node_id": "concept:ae4e19fd6a9209da19e1",
+      "label": "marginal",
+      "activation": 0.46,
+      "novelty": 0.7352941176470589,
+      "conflict": 0,
+      "score": 0.777729411764706
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 19
     },
     "experiment": {
-      "attempts": 190,
-      "successes": 188
+      "attempts": 191,
+      "successes": 189
     },
     "question": {
       "attempts": 139,
