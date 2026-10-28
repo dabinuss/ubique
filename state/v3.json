@@ -1,8 +1,8 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T07:50:00.745917+00:00",
-  "generation": 5970,
+  "timestamp": "2026-10-28T07:52:15.277388+00:00",
+  "generation": 5971,
   "focus": "Illustrated Catalogue of the Collections Obtained from the Indians of New Mexico And Arizona in 1879: Second Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1880-81, Government Printing Office, Washington, 1883, pages 307-428",
   "last_action": "read",
   "last_action_success": true,
@@ -11,22 +11,22 @@
   "last_provider_generation": 5967,
   "last_search_generation": 5957,
   "cortex": {
-    "nodes": 12544,
-    "synapses": 90143,
+    "nodes": 12548,
+    "synapses": 90145,
     "active": 120,
-    "archived_synapses": 45729
+    "archived_synapses": 45769
   },
   "memory": {
-    "episodes": 4711,
-    "claims": 4312,
+    "episodes": 4712,
+    "claims": 4315,
     "stances": 31,
     "interests": 103,
-    "associative_comparisons": 2934,
+    "associative_comparisons": 2936,
     "screened_interpretations": 18,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 31784,
+    "events": 31795,
     "segments": 1253,
     "compressed_snapshot": true,
     "snapshot_events": 31660
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1203,
   "workspace": [
+    {
+      "node_id": "concept:5a2a957b269e8f0f",
+      "label": "external",
+      "activation": 1.0,
+      "novelty": 0.05189413596263622,
+      "conflict": 0,
+      "score": 0.8740114167099118
+    },
     {
       "node_id": "concept:0fc468dc240a979e",
       "label": "collection",
@@ -51,44 +59,36 @@
       "score": 0.8688859634688169
     },
     {
-      "node_id": "concept:c6a1427d7119cd3c049d",
-      "label": "beautiful",
+      "node_id": "concept:e58d50d05376db717f94",
+      "label": "medicines",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:3c6a8279d628d1606538",
-      "label": "specimen",
+      "node_id": "concept:4813494d137e1631bba3",
+      "label": "root",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:9ab66bfeedb11be87f4a",
-      "label": "chaste",
+      "node_id": "concept:c56579d77a35e87ce752",
+      "label": "rheumatism",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:2d3c822d9399e7ac0eac",
-      "label": "covered",
+      "node_id": "concept:a9356ed139a8b21aa2fc",
+      "label": "zerba",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:d5bd6cd5b42dc7f1fef2",
-      "label": "artistic",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 159
     },
     "read": {
-      "attempts": 1054,
-      "successes": 1054
+      "attempts": 1055,
+      "successes": 1055
     },
     "explore": {
       "attempts": 732,
