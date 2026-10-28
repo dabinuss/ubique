@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T01:48:27.378912+00:00",
-  "generation": 5894,
+  "timestamp": "2026-10-28T02:02:35.925493+00:00",
+  "generation": 5895,
   "focus": "Illustrated Catalogue of the Collections Obtained from the Pueblos of Zuñi, New Mexico, and Wolpi, Arizona, in 1881: Third Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1881-82, Government Printing Office, Washington, 1884, pages 511-594",
-  "last_action": "consolidate",
+  "last_action": "library",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": "gemini",
+  "last_action_detail": "Discovery found: 2 public-domain books",
+  "last_provider": null,
   "last_provider_generation": 5894,
   "last_search_generation": 5773,
   "cortex": {
     "nodes": 12370,
     "synapses": 89500,
     "active": 120,
-    "archived_synapses": 44458
+    "archived_synapses": 44484
   },
   "memory": {
     "episodes": 4645,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 31064,
-    "segments": 1237,
+    "events": 31069,
+    "segments": 1238,
     "compressed_snapshot": true,
     "snapshot_events": 30991
   },
@@ -46,49 +46,49 @@
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
-      "novelty": 0.05238344683080147,
+      "novelty": 0.05226025607525477,
       "conflict": 0,
-      "score": 0.8741435306443164
+      "score": 0.8741102691403189
     },
     {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.03401939105290015,
+      "novelty": 0.03396739130434783,
       "conflict": 0,
-      "score": 0.8691852355842831
+      "score": 0.8691711956521739
     },
     {
       "node_id": "concept:0a7d502755551f676ced",
       "label": "scrolls",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:81c9d6128b5fcd7bbe4b",
-      "label": "diamond",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:ae4e19fd6a9209da19e1",
-      "label": "marginal",
       "activation": 0.46,
       "novelty": 0.8474576271186441,
       "conflict": 0,
       "score": 0.8080135593220339
     },
     {
-      "node_id": "concept:9331f09c96d5e52ecbef",
-      "label": "broad",
+      "node_id": "concept:81c9d6128b5fcd7bbe4b",
+      "label": "diamond",
+      "activation": 0.46,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.8080135593220339
+    },
+    {
+      "node_id": "concept:ae4e19fd6a9209da19e1",
+      "label": "marginal",
       "activation": 0.46,
       "novelty": 0.8163265306122448,
       "conflict": 0,
       "score": 0.7996081632653061
+    },
+    {
+      "node_id": "concept:9331f09c96d5e52ecbef",
+      "label": "broad",
+      "activation": 0.46,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.7917984251968504
     }
   ],
   "skills": {
@@ -125,8 +125,8 @@
       "successes": 138
     },
     "library": {
-      "attempts": 5,
-      "successes": 3
+      "attempts": 6,
+      "successes": 4
     }
   },
   "active_stances": 34
