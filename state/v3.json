@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T07:54:31.928257+00:00",
-  "generation": 5972,
+  "timestamp": "2026-10-28T07:56:55.529895+00:00",
+  "generation": 5973,
   "focus": "Illustrated Catalogue of the Collections Obtained from the Indians of New Mexico And Arizona in 1879: Second Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1880-81, Government Printing Office, Washington, 1883, pages 307-428",
-  "last_action": "explore",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 5967,
+  "last_action_detail": "observed_comparison",
+  "last_provider": "gemini",
+  "last_provider_generation": 5973,
   "last_search_generation": 5957,
   "cortex": {
-    "nodes": 12550,
-    "synapses": 90145,
+    "nodes": 12551,
+    "synapses": 90147,
     "active": 120,
     "archived_synapses": 45769
   },
   "memory": {
     "episodes": 4712,
-    "claims": 4315,
+    "claims": 4316,
     "stances": 31,
     "interests": 103,
     "associative_comparisons": 2936,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 31799,
+    "events": 31806,
     "segments": 1253,
     "compressed_snapshot": true,
     "snapshot_events": 31660
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 1203,
+  "evidence_reviews": 1204,
   "workspace": [
     {
       "node_id": "concept:5a2a957b269e8f0f",
@@ -62,33 +62,33 @@
       "node_id": "concept:83c817a1d7048a56d4dc",
       "label": "sinker",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:01024deec75e9c0eb827",
       "label": "rounded",
-      "activation": 0.46,
-      "novelty": 0.9569377990430623,
-      "conflict": 0,
-      "score": 0.837573205741627
-    },
-    {
-      "node_id": "concept:f179a509d32bd92c923f",
-      "label": "center",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.8269064220183486
     },
     {
+      "node_id": "concept:f179a509d32bd92c923f",
+      "label": "center",
+      "activation": 0.46,
+      "novelty": 0.8810572687224669,
+      "conflict": 0,
+      "score": 0.8170854625550661
+    },
+    {
       "node_id": "concept:2059fcf1f25e5d27af1a",
       "label": "grooved",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 19
     },
     "experiment": {
-      "attempts": 196,
-      "successes": 194
+      "attempts": 197,
+      "successes": 195
     },
     "question": {
       "attempts": 144,
