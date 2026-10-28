@@ -1,8 +1,8 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T13:01:58.113697+00:00",
-  "generation": 6044,
+  "timestamp": "2026-10-28T13:04:26.943216+00:00",
+  "generation": 6045,
   "focus": "Illustrated Catalogue of a Portion of the Collections Made During the Field Season of 1881: Third Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1881-82, Government Printing Office, Washington, 1884, pages 427-510",
   "last_action": "read",
   "last_action_success": true,
@@ -11,29 +11,45 @@
   "last_provider_generation": 6041,
   "last_search_generation": 6026,
   "cortex": {
-    "nodes": 12719,
-    "synapses": 90531,
+    "nodes": 12723,
+    "synapses": 90570,
     "active": 120,
-    "archived_synapses": 45915
+    "archived_synapses": 45936
   },
   "memory": {
-    "episodes": 4770,
-    "claims": 4477,
+    "episodes": 4771,
+    "claims": 4480,
     "stances": 31,
     "interests": 103,
-    "associative_comparisons": 3021,
+    "associative_comparisons": 3023,
     "screened_interpretations": 19,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 32552,
-    "segments": 1267,
+    "events": 32565,
+    "segments": 1268,
     "compressed_snapshot": true,
     "snapshot_events": 32490
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1255,
   "workspace": [
+    {
+      "node_id": "concept:dfd34a31322c29f8",
+      "label": "concepts",
+      "activation": 1.0,
+      "novelty": 0.2463054187192118,
+      "conflict": 0,
+      "score": 0.9265024630541872
+    },
+    {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.06151953245155337,
+      "conflict": 0,
+      "score": 0.8766102737619195
+    },
     {
       "node_id": "concept:6907de2e8144a57274c7",
       "label": "treatise",
@@ -51,44 +67,28 @@
       "score": 0.8712102968652689
     },
     {
-      "node_id": "concept:2daa8d4a05dfc643abb4",
-      "label": "south",
+      "node_id": "concept:22d5925ed64680ab5f3f",
+      "label": "heavy",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.8170854625550661
     },
     {
-      "node_id": "concept:b41e6560a4467aa44f85",
-      "label": "america",
+      "node_id": "concept:ed5465b9220df9ce176d",
+      "label": "hard",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.78452319391635
     },
     {
-      "node_id": "concept:b9bfd32099465cb6f8a4",
-      "label": "newport",
+      "node_id": "concept:080484b7e27e069f2691",
+      "label": "expressed",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.6309148264984227,
       "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:fbfdf186038f834c76c8",
-      "label": "junction",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:cfa5b483895333db22f1",
-      "label": "rivers",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.7495470031545741
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 161
     },
     "read": {
-      "attempts": 1092,
-      "successes": 1092
+      "attempts": 1093,
+      "successes": 1093
     },
     "explore": {
       "attempts": 746,
