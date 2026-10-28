@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T10:14:49.769903+00:00",
-  "generation": 6007,
+  "timestamp": "2026-10-28T10:17:16.422335+00:00",
+  "generation": 6008,
   "focus": "Illustrated Catalogue of a Portion of the Collections Made During the Field Season of 1881: Third Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1881-82, Government Printing Office, Washington, 1884, pages 427-510",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_provider": null,
   "last_provider_generation": 6007,
   "last_search_generation": 6003,
   "cortex": {
-    "nodes": 12633,
-    "synapses": 90275,
+    "nodes": 12636,
+    "synapses": 90277,
     "active": 120,
-    "archived_synapses": 45803
+    "archived_synapses": 45805
   },
   "memory": {
-    "episodes": 4741,
-    "claims": 4390,
+    "episodes": 4742,
+    "claims": 4393,
     "stances": 31,
     "interests": 103,
-    "associative_comparisons": 2980,
+    "associative_comparisons": 2982,
     "screened_interpretations": 18,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 32162,
+    "events": 32173,
     "segments": 1260,
     "compressed_snapshot": true,
     "snapshot_events": 32162
@@ -34,14 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1223,
   "workspace": [
-    {
-      "node_id": "concept:5a2a957b269e8f0f",
-      "label": "external",
-      "activation": 1.0,
-      "novelty": 0.05177323323841575,
-      "conflict": 0,
-      "score": 0.8739787729743722
-    },
     {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
@@ -51,44 +43,52 @@
       "score": 0.8688466579292269
     },
     {
-      "node_id": "concept:1374b6a164fbdd56ba6f",
-      "label": "artly",
+      "node_id": "concept:a6b1880837d5e928dfd2",
+      "label": "shaft",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:d0b3cba71f725563d316",
+      "label": "bolt",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:616be06545e5dd7daec5",
+      "label": "stratum",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:0736fd5b7cc7ab7dfe82",
+      "label": "collector",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:e93d59a02163f846fecf",
-      "label": "soil",
+      "node_id": "concept:a11ae06469c63740d7b0",
+      "label": "half",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.7654068965517242
     },
     {
-      "node_id": "concept:9322a5ab677b597d79a8",
-      "label": "conical",
+      "node_id": "concept:83e01dda3eb5a450a0a4",
+      "label": "portion",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.5813953488372093,
       "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:6575522ed86603106086",
-      "label": "graphite",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:c9e2a10ce30cfb5b667c",
-      "label": "flattish",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.7361767441860465
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 160
     },
     "read": {
-      "attempts": 1074,
-      "successes": 1074
+      "attempts": 1075,
+      "successes": 1075
     },
     "explore": {
       "attempts": 739,
