@@ -157,6 +157,26 @@ class SemanticLearner:
                                 weight=.18, event_id=identifier)
         # An extracted quotation by itself is not a successful comparison.
         self._adjust_exploration_factor(produced_comparisons=produced > 0)
+
+        # Fallback: if no cross‑source comparison was produced but we have a
+        # meaningful sentence, generate a self‑directed exploratory question.
+        if produced == 0 and sentence:
+            cues = meaningful_overlap(concept_terms(sentence, 12))
+            if cues:
+                words = sorted(cues)[:3]
+                question = ("What insights can be drawn from this passage about " +
+                            ", ".join(words) + "?")
+                exploration = {
+                    "type": "exploratory_question",
+                    "question": question,
+                    "evidence_ids": [eid],
+                    "epistemic_status": "unverified_association",
+                }
+                # Record in journal for later reflection.
+                self.journal.append("exploratory_question", exploration,
+                                    generation=generation)
+                result.append(exploration)
+
         for term in self._concepts(episode):
             self._seen_terms.add(term)
             self._term_frequency[term] = self._term_frequency.get(term, 0) + 1
