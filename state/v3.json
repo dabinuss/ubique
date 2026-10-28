@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T07:19:02.485817+00:00",
-  "generation": 5967,
+  "timestamp": "2026-10-28T07:33:24.069578+00:00",
+  "generation": 5968,
   "focus": "Illustrated Catalogue of the Collections Obtained from the Indians of New Mexico And Arizona in 1879: Second Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1880-81, Government Printing Office, Washington, 1883, pages 307-428",
-  "last_action": "question",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "How do the authors approach figures, flowers differently, given their emphases on birds, decorated and bowl, eating? Which assumptions differ?",
-  "last_provider": "gemini",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 5967,
   "last_search_generation": 5957,
   "cortex": {
     "nodes": 12541,
-    "synapses": 90125,
+    "synapses": 90139,
     "active": 120,
-    "archived_synapses": 45617
+    "archived_synapses": 45683
   },
   "memory": {
     "episodes": 4709,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 31755,
+    "events": 31760,
     "segments": 1252,
     "compressed_snapshot": true,
     "snapshot_events": 31660
@@ -46,49 +46,49 @@
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.03305785123966942,
+      "novelty": 0.03300874731803928,
       "conflict": 0,
-      "score": 0.8689256198347108
+      "score": 0.8689123617758707
     },
     {
       "node_id": "concept:94242acf9ddd7089d2d8",
       "label": "globular",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:9d9d94f9b37f2fa37cdf",
       "label": "decorated",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.7713708185053381
     },
     {
       "node_id": "concept:0c62f876ef1dea830de9",
       "label": "tail",
       "activation": 0.46,
-      "novelty": 0.6688963210702341,
+      "novelty": 0.6493506493506493,
       "conflict": 0,
-      "score": 0.7598020066889632
+      "score": 0.7545246753246754
     },
     {
       "node_id": "concept:2348f998744212575d85",
       "label": "open",
       "activation": 0.46,
-      "novelty": 0.56657223796034,
+      "novelty": 0.5524861878453039,
       "conflict": 0,
-      "score": 0.7321745042492918
+      "score": 0.7283712707182322
     },
     {
       "node_id": "concept:7a5179eecc0fe18760ba",
       "label": "bird",
       "activation": 0.46,
-      "novelty": 0.5263157894736842,
+      "novelty": 0.5141388174807199,
       "conflict": 0,
-      "score": 0.7213052631578948
+      "score": 0.7180174807197944
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 725
     },
     "consolidate": {
-      "attempts": 967,
-      "successes": 967
+      "attempts": 968,
+      "successes": 968
     },
     "connect": {
       "attempts": 759,
