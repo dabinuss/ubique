@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T10:05:24.250538+00:00",
-  "generation": 6003,
-  "focus": "Illustrated Catalogue of the Collections Obtained from the Indians of New Mexico in 1880: Second Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1880-81, Government Printing Office, Washington, 1883, pages 429-466",
-  "last_action": "search",
+  "timestamp": "2026-10-28T10:07:55.021423+00:00",
+  "generation": 6004,
+  "focus": "V.H. Hallock & Son's floral annual for 1889",
+  "last_action": "evolve",
   "last_action_success": true,
-  "last_action_detail": "Acquired 3 attributable external articles",
+  "last_action_detail": "{\"accepted\": true, \"title\": \"Add self‑directed exploratory fallback when no cross‑source comparison is found\", \"summary\": \"When SemanticLearner.observe fails to produce a cross‑source comparison, it now generates a brief exploratory question based on the extracted sentence. This encourages curiosity and keeps the learning cycle active even with isolated source passages, improving experiential lear",
   "last_provider": null,
   "last_provider_generation": 6001,
   "last_search_generation": 6003,
@@ -14,7 +14,7 @@
     "nodes": 12623,
     "synapses": 90251,
     "active": 120,
-    "archived_synapses": 45783
+    "archived_synapses": 45799
   },
   "memory": {
     "episodes": 4739,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 32121,
+    "events": 32127,
     "segments": 1259,
     "compressed_snapshot": true,
     "snapshot_events": 31988
@@ -54,41 +54,41 @@
       "node_id": "concept:a324f9f0aa0b7bcf32e9",
       "label": "mortar",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:5ed45566f29d2f055b27",
       "label": "lava",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:2c91825a17704095f632",
       "label": "hatchets",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:bb79caae5f8c42a67e56",
       "label": "blunt",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:4ba3e8e3765f2970eb37",
       "label": "square",
       "activation": 0.46,
-      "novelty": 0.6896551724137931,
+      "novelty": 0.6688963210702341,
       "conflict": 0,
-      "score": 0.7654068965517242
+      "score": 0.7598020066889632
     }
   ],
   "skills": {
@@ -113,8 +113,8 @@
       "successes": 758
     },
     "evolve": {
-      "attempts": 43,
-      "successes": 19
+      "attempts": 44,
+      "successes": 20
     },
     "experiment": {
       "attempts": 198,
