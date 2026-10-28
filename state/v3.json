@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-28T12:36:34.985343+00:00",
-  "generation": 6038,
+  "timestamp": "2026-10-28T12:38:45.896472+00:00",
+  "generation": 6039,
   "focus": "Illustrated Catalogue of a Portion of the Collections Made During the Field Season of 1881: Third Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1881-82, Government Printing Office, Washington, 1884, pages 427-510",
-  "last_action": "read",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "observed_comparison",
   "last_provider": null,
   "last_provider_generation": 6035,
   "last_search_generation": 6026,
   "cortex": {
-    "nodes": 12707,
+    "nodes": 12713,
     "synapses": 90485,
     "active": 120,
     "archived_synapses": 45805
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 32501,
+    "events": 32506,
     "segments": 1266,
     "compressed_snapshot": true,
     "snapshot_events": 32490
@@ -34,22 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1249,
   "workspace": [
-    {
-      "node_id": "concept:e0f895872d65b2528fee",
-      "label": "knowledge",
-      "activation": 1.0,
-      "novelty": 0.06151953245155337,
-      "conflict": 0,
-      "score": 0.8766102737619195
-    },
-    {
-      "node_id": "concept:53e5e7c5a884893739c4",
-      "label": "experience",
-      "activation": 1.0,
-      "novelty": 0.05680204487361545,
-      "conflict": 0,
-      "score": 0.8753365521158762
-    },
     {
       "node_id": "concept:6907de2e8144a57274c7",
       "label": "treatise",
@@ -67,28 +51,44 @@
       "score": 0.8712102968652689
     },
     {
-      "node_id": "concept:709523528f4df152c0cf",
-      "label": "caps",
+      "node_id": "concept:2daa8d4a05dfc643abb4",
+      "label": "south",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:0d75675f93f141e5526d",
-      "label": "necks",
+      "node_id": "concept:b41e6560a4467aa44f85",
+      "label": "america",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:f200472158617ac555f6",
-      "label": "subglobular",
+      "node_id": "concept:b9bfd32099465cb6f8a4",
+      "label": "newport",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:fbfdf186038f834c76c8",
+      "label": "junction",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:cfa5b483895333db22f1",
+      "label": "rivers",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 20
     },
     "experiment": {
-      "attempts": 201,
-      "successes": 199
+      "attempts": 202,
+      "successes": 200
     },
     "question": {
       "attempts": 147,
