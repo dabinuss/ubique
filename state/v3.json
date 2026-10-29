@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-29T02:17:11.141519+00:00",
-  "generation": 6177,
-  "focus": "The World as Will and Idea, Volume 1",
-  "last_action": "explore",
-  "last_action_success": false,
-  "last_action_detail": "No meaningful associations activated",
-  "last_provider": "gemini",
+  "timestamp": "2026-10-29T02:31:21.994941+00:00",
+  "generation": 6178,
+  "focus": "The World as Will and Idea (Vol. 2 of 3)",
+  "last_action": "consolidate",
+  "last_action_success": true,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 6177,
   "last_search_generation": 6164,
   "cortex": {
     "nodes": 12916,
     "synapses": 92658,
     "active": 120,
-    "archived_synapses": 45260
+    "archived_synapses": 45210
   },
   "memory": {
     "episodes": 4872,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 33795,
-    "segments": 1294,
+    "events": 33800,
+    "segments": 1295,
     "compressed_snapshot": true,
     "snapshot_events": 33650
   },
@@ -62,33 +62,33 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.016421709499958945,
+      "novelty": 0.016409583196586808,
       "conflict": 0,
-      "score": 0.8644338615649889
-    },
-    {
-      "node_id": "concept:fcb008d8cbb3b8dd",
-      "label": "investigation",
-      "activation": 0.6925865681614805,
-      "novelty": 0.31201248049922,
-      "conflict": 0,
-      "score": 0.7843883851787593
+      "score": 0.8644305874630784
     },
     {
       "node_id": "concept:7217f864490897031e87",
       "label": "ascribe",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.7713708185053381
+    },
+    {
+      "node_id": "concept:fcb008d8cbb3b8dd",
+      "label": "investigation",
+      "activation": 0.6671806387283922,
+      "novelty": 0.3076923076923077,
+      "conflict": 0,
+      "score": 0.770010855215687
     },
     {
       "node_id": "concept:3b97260d76d3d7dfa0c6",
       "label": "holds",
       "activation": 0.46,
-      "novelty": 0.6134969325153374,
+      "novelty": 0.5970149253731344,
       "conflict": 0,
-      "score": 0.7448441717791412
+      "score": 0.7403940298507463
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 755
     },
     "consolidate": {
-      "attempts": 1003,
-      "successes": 1003
+      "attempts": 1004,
+      "successes": 1004
     },
     "connect": {
       "attempts": 780,
