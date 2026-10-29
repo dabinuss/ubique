@@ -121,6 +121,24 @@ class SemanticLearner:
         # such a choice only to silently discard it a few lines later.
         choices.sort(key=lambda entry: entry[0], reverse=True)
         produced = 0
+        if not choices and len(current) >= 2:
+            for other in reversed(earlier):
+                if (other.get("id") == eid or
+                        other.get("epistemic_status") != "source_passage" or
+                        not self.family(other) or
+                        self.family(other) == self.family(episode)):
+                    continue
+                other_concepts = self._concepts(other)
+                if not other_concepts:
+                    continue
+                # Fallback: find any terms with low global frequency to bridge different vocabularies
+                rare_shared = {t for t in (current | other_concepts) if self._term_frequency.get(t, 0) <= 1}
+                if rare_shared:
+                    choices.append((1.5, other, rare_shared))
+                    if len(choices) >= 10:
+                        break
+            choices.sort(key=lambda entry: entry[0], reverse=True)
+
         for _, other, shared in choices[:2]:
             pair = sorted([eid, other["id"]])
             identifier = "comparison:" + key("|".join(pair))
