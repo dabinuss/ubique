@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-29T15:41:17.842751+00:00",
-  "generation": 6304,
-  "focus": "Phenomena of the Mind Related to Human Perception and Representations",
-  "last_action": "read",
+  "timestamp": "2026-10-29T15:43:44.033928+00:00",
+  "generation": 6305,
+  "focus": "Analysis of the phenomena of the human mind, 1829.",
+  "last_action": "question",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "How do the authors approach freely, public differently, given their emphases on command, difficulties and accessible, archive? Which assumptions differ?",
   "last_provider": null,
   "last_provider_generation": 6302,
   "last_search_generation": 6302,
   "cortex": {
-    "nodes": 13051,
+    "nodes": 13052,
     "synapses": 94435,
     "active": 120,
     "archived_synapses": 46189
   },
   "memory": {
     "episodes": 4937,
-    "claims": 4865,
+    "claims": 4866,
     "stances": 32,
     "interests": 112,
     "associative_comparisons": 3225,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 34852,
+    "events": 34858,
     "segments": 1320,
     "compressed_snapshot": true,
     "snapshot_events": 34793
@@ -59,6 +59,14 @@
       "score": 0.8680729555987443
     },
     {
+      "node_id": "concept:f2d44b8ac655a7ad",
+      "label": "public",
+      "activation": 1.0,
+      "novelty": 0.025046963055729496,
+      "conflict": 0,
+      "score": 0.866762680025047
+    },
+    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -67,28 +75,20 @@
       "score": 0.86421875
     },
     {
-      "node_id": "concept:e0e6c2af073e4c0724a6",
-      "label": "attentive",
+      "node_id": "concept:27ce1d1bf4270020e179",
+      "label": "send",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:b200897121bfd4012645",
-      "label": "evolve",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "node_id": "concept:1c48f6310f1c849b4ac3",
+      "label": "mind",
+      "activation": 0.8588429462713029,
+      "novelty": 0.014982395685070041,
       "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:1bb8fef038550a12eaa0",
-      "label": "assemblages",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.7906435788960464
     }
   ],
   "skills": {
@@ -121,8 +121,8 @@
       "successes": 222
     },
     "question": {
-      "attempts": 164,
-      "successes": 164
+      "attempts": 165,
+      "successes": 165
     },
     "library": {
       "attempts": 7,
