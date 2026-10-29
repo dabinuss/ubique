@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-29T15:58:05.208298+00:00",
-  "generation": 6306,
-  "focus": "Latent semantic analysis: A theory of the psychology of language and mind",
-  "last_action": "read",
+  "timestamp": "2026-10-29T16:00:34.607027+00:00",
+  "generation": 6307,
+  "focus": "Phenomena of the Mind Related to Human Perception and Representations",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 6302,
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": "groq",
+  "last_provider_generation": 6307,
   "last_search_generation": 6302,
   "cortex": {
-    "nodes": 13052,
-    "synapses": 94463,
+    "nodes": 13059,
+    "synapses": 94483,
     "active": 120,
     "archived_synapses": 46257
   },
   "memory": {
     "episodes": 4938,
-    "claims": 4869,
+    "claims": 4876,
     "stances": 32,
     "interests": 112,
     "associative_comparisons": 3227,
@@ -26,21 +26,29 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 34869,
-    "segments": 1320,
+    "events": 34887,
+    "segments": 1321,
     "compressed_snapshot": true,
     "snapshot_events": 34793
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 1391,
+  "evidence_reviews": 1398,
   "workspace": [
     {
-      "node_id": "concept:1ac22c9b0c6163e4",
-      "label": "deliberately",
+      "node_id": "concept:2331eb33ce2c3766148e",
+      "label": "philosophy",
       "activation": 1.0,
-      "novelty": 0.4098360655737705,
+      "novelty": 0.0643707756678468,
       "conflict": 0,
-      "score": 0.9706557377049181
+      "score": 0.8773801094303186
+    },
+    {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.04460303300624443,
+      "conflict": 0,
+      "score": 0.872042818911686
     },
     {
       "node_id": "concept:6907de2e8144a57274c7",
@@ -75,20 +83,12 @@
       "score": 0.86421875
     },
     {
-      "node_id": "concept:27ce1d1bf4270020e179",
-      "label": "send",
+      "node_id": "concept:ebf8b5757eb4402e046e",
+      "label": "indebted",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:1c48f6310f1c849b4ac3",
-      "label": "mind",
-      "activation": 0.8489745575058948,
-      "novelty": 0.014972301242701005,
-      "conflict": 0,
-      "score": 0.7855092912385946
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 1159
     },
     "explore": {
-      "attempts": 783,
-      "successes": 774
+      "attempts": 784,
+      "successes": 775
     },
     "consolidate": {
       "attempts": 1036,
