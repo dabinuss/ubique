@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-29T12:33:37.719832+00:00",
-  "generation": 6271,
-  "focus": "A Treatise of Human Nature",
-  "last_action": "read",
+  "timestamp": "2026-10-29T12:35:55.694899+00:00",
+  "generation": 6272,
+  "focus": "The Master of Destiny: A Biography of the Brain",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 6268,
   "last_search_generation": 6256,
@@ -14,7 +14,7 @@
     "nodes": 12991,
     "synapses": 93702,
     "active": 120,
-    "archived_synapses": 45772
+    "archived_synapses": 45802
   },
   "memory": {
     "episodes": 4923,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 34546,
+    "events": 34550,
     "segments": 1313,
     "compressed_snapshot": true,
     "snapshot_events": 34461
@@ -34,14 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1364,
   "workspace": [
-    {
-      "node_id": "concept:ca52e7d1c18961a8c5b3",
-      "label": "united",
-      "activation": 1.0,
-      "novelty": 0.30349013657056145,
-      "conflict": 0,
-      "score": 0.9419423368740516
-    },
     {
       "node_id": "concept:dfd34a31322c29f8",
       "label": "concepts",
@@ -75,20 +67,28 @@
       "score": 0.8681276339554487
     },
     {
-      "node_id": "concept:f2d44b8ac655a7ad",
-      "label": "public",
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
       "activation": 1.0,
-      "novelty": 0.025046963055729496,
+      "novelty": 0.017170329670329672,
       "conflict": 0,
-      "score": 0.866762680025047
+      "score": 0.8646359890109891
     },
     {
-      "node_id": "concept:40f024a500acd053",
-      "label": "domain",
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
       "activation": 1.0,
-      "novelty": 0.024712714691708885,
+      "novelty": 0.015836566632354106,
       "conflict": 0,
-      "score": 0.8666724329667614
+      "score": 0.8642758729907356
+    },
+    {
+      "node_id": "concept:a781436b557557d90651",
+      "label": "unfettered",
+      "activation": 0.46,
+      "novelty": 0.6493506493506493,
+      "conflict": 0,
+      "score": 0.7545246753246754
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 1028
     },
     "connect": {
-      "attempts": 798,
-      "successes": 796
+      "attempts": 799,
+      "successes": 797
     },
     "evolve": {
       "attempts": 46,
