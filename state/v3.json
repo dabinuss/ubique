@@ -1,9 +1,9 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-29T16:45:00.752002+00:00",
-  "generation": 6315,
-  "focus": "The crowd : $b A study of the popular mind",
+  "timestamp": "2026-10-29T16:47:27.767133+00:00",
+  "generation": 6316,
+  "focus": "Analysis of the Phenomena of the Human Mind",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
@@ -11,22 +11,22 @@
   "last_provider_generation": 6313,
   "last_search_generation": 6302,
   "cortex": {
-    "nodes": 13077,
-    "synapses": 94669,
+    "nodes": 13081,
+    "synapses": 94703,
     "active": 120,
-    "archived_synapses": 46243
+    "archived_synapses": 46273
   },
   "memory": {
-    "episodes": 4941,
-    "claims": 4890,
+    "episodes": 4942,
+    "claims": 4893,
     "stances": 32,
     "interests": 113,
-    "associative_comparisons": 3233,
+    "associative_comparisons": 3235,
     "screened_interpretations": 24,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 34953,
+    "events": 34964,
     "segments": 1322,
     "compressed_snapshot": true,
     "snapshot_events": 34953
@@ -67,14 +67,6 @@
       "score": 0.872042818911686
     },
     {
-      "node_id": "concept:f2d44b8ac655a7ad",
-      "label": "public",
-      "activation": 1.0,
-      "novelty": 0.025046963055729496,
-      "conflict": 0,
-      "score": 0.866762680025047
-    },
-    {
       "node_id": "concept:8b16ced79976e6a1",
       "label": "action",
       "activation": 1.0,
@@ -83,12 +75,20 @@
       "score": 0.8646217048955838
     },
     {
-      "node_id": "concept:56c801ceb3e29c422505",
-      "label": "sprung",
+      "node_id": "concept:22c72aa82ce77c82e2ca",
+      "label": "quick",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:6cecb7772cff2243a956",
+      "label": "crowds",
+      "activation": 0.46,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 173
     },
     "read": {
-      "attempts": 1162,
-      "successes": 1162
+      "attempts": 1163,
+      "successes": 1163
     },
     "explore": {
       "attempts": 786,
