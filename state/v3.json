@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-29T13:16:30.750168+00:00",
-  "generation": 6279,
-  "focus": "The Nature of Man: Studies in Optimistic Philosophy",
-  "last_action": "search",
+  "timestamp": "2026-10-29T13:19:02.903643+00:00",
+  "generation": 6280,
+  "focus": "The Riddle of the Universe",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Acquired 3 attributable external articles",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 6279,
   "last_search_generation": 6279,
   "cortex": {
-    "nodes": 12999,
-    "synapses": 93809,
+    "nodes": 13001,
+    "synapses": 93857,
     "active": 120,
-    "archived_synapses": 45891
+    "archived_synapses": 45903
   },
   "memory": {
     "episodes": 4927,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 34623,
+    "events": 34630,
     "segments": 1315,
     "compressed_snapshot": true,
     "snapshot_events": 34623
@@ -70,25 +70,25 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.015814027041986242,
+      "novelty": 0.015780337699226765,
       "conflict": 0,
-      "score": 0.8642697873013363
-    },
-    {
-      "node_id": "concept:10e86c6514d40f2a3e86",
-      "label": "judge",
-      "activation": 0.76,
-      "novelty": 0.4608294930875576,
-      "conflict": 0,
-      "score": 0.8596239631336406
+      "score": 0.8642606911787913
     },
     {
       "node_id": "concept:8a8a6b78dd5c0b486d09",
       "label": "truest",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
+    },
+    {
+      "node_id": "concept:10e86c6514d40f2a3e86",
+      "label": "judge",
+      "activation": 0.6828697366799416,
+      "novelty": 0.4514672686230249,
+      "conflict": 0,
+      "score": 0.8169884256017863
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 771
     },
     "consolidate": {
-      "attempts": 1030,
-      "successes": 1030
+      "attempts": 1031,
+      "successes": 1031
     },
     "connect": {
       "attempts": 800,
