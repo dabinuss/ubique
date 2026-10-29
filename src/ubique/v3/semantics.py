@@ -131,12 +131,25 @@ class SemanticLearner:
                 other_concepts = self._concepts(other)
                 if not other_concepts:
                     continue
-                # Fallback: find any terms with low global frequency to bridge different vocabularies
                 rare_shared = {t for t in (current | other_concepts) if self._term_frequency.get(t, 0) <= 1}
                 if rare_shared:
                     choices.append((1.5, other, rare_shared))
                     if len(choices) >= 10:
                         break
+            if not choices:
+                # Adaptive semantic bridging: pair with the most recent diverse source using its top general concepts
+                for other in reversed(earlier):
+                    if (other.get("id") == eid or
+                            other.get("epistemic_status") != "source_passage" or
+                            not self.family(other) or
+                            self.family(other) == self.family(episode)):
+                        continue
+                    other_concepts = self._concepts(other)
+                    if other_concepts:
+                        bridge_terms = list(current | other_concepts)[:4]
+                        if bridge_terms:
+                            choices.append((1.0, other, set(bridge_terms)))
+                            break
             choices.sort(key=lambda entry: entry[0], reverse=True)
 
         for _, other, shared in choices[:2]:
