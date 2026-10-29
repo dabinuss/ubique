@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-29T09:09:17.722830+00:00",
-  "generation": 6240,
-  "focus": "The World as Will and Idea (Vol. 3 of 3)",
-  "last_action": "question",
+  "timestamp": "2026-10-29T09:23:34.247270+00:00",
+  "generation": 6241,
+  "focus": "The Story of the Mind",
+  "last_action": "evolve",
   "last_action_success": true,
-  "last_action_detail": "How do the authors approach state, states differently, given their emphases on accepting, against and admit, alone? Which assumptions differ?",
+  "last_action_detail": "{\"accepted\": true, \"title\": \"Introduce adaptive semantic bridging when concept overlap fails\", \"summary\": \"When SemanticLearner.observe encounters zero strict or rare term overlaps across disparate source families, it now constructs a generalized thematic bridge using top unigrams from both passages, preventing exploratory stagnation and encouraging continuous cross-source learning.\", \"branch\": \"m",
   "last_provider": null,
   "last_provider_generation": 6239,
   "last_search_generation": 6233,
@@ -14,7 +14,7 @@
     "nodes": 12957,
     "synapses": 93254,
     "active": 120,
-    "archived_synapses": 45718
+    "archived_synapses": 45772
   },
   "memory": {
     "episodes": 4908,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 34298,
+    "events": 34304,
     "segments": 1307,
     "compressed_snapshot": true,
     "snapshot_events": 34298
@@ -86,9 +86,9 @@
       "node_id": "concept:747a8f398395dde8e524",
       "label": "website",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.7713708185053381
     }
   ],
   "skills": {
@@ -113,8 +113,8 @@
       "successes": 789
     },
     "evolve": {
-      "attempts": 45,
-      "successes": 21
+      "attempts": 46,
+      "successes": 22
     },
     "experiment": {
       "attempts": 219,
