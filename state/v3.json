@@ -1,9 +1,9 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-29T00:14:26.271247+00:00",
-  "generation": 6155,
-  "focus": "The World as Will and Idea (Vol. 1 of 3)",
+  "timestamp": "2026-10-29T00:16:47.096383+00:00",
+  "generation": 6156,
+  "focus": "The World as Will and Idea, Volume 1",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
@@ -11,22 +11,22 @@
   "last_provider_generation": 6154,
   "last_search_generation": 6141,
   "cortex": {
-    "nodes": 12909,
-    "synapses": 92500,
+    "nodes": 12910,
+    "synapses": 92528,
     "active": 120,
-    "archived_synapses": 45328
+    "archived_synapses": 45340
   },
   "memory": {
-    "episodes": 4860,
-    "claims": 4670,
+    "episodes": 4861,
+    "claims": 4673,
     "stances": 32,
     "interests": 107,
-    "associative_comparisons": 3123,
+    "associative_comparisons": 3125,
     "screened_interpretations": 24,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 33610,
+    "events": 33621,
     "segments": 1290,
     "compressed_snapshot": true,
     "snapshot_events": 33488
@@ -43,12 +43,20 @@
       "score": 0.9053781512605041
     },
     {
-      "node_id": "concept:2331eb33ce2c3766148e",
-      "label": "philosophy",
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
       "activation": 1.0,
-      "novelty": 0.06939625260235947,
+      "novelty": 0.09569377990430622,
       "conflict": 0,
-      "score": 0.878736988202637
+      "score": 0.8858373205741628
+    },
+    {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.05954153021732658,
+      "conflict": 0,
+      "score": 0.8760762131586781
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -67,28 +75,20 @@
       "score": 0.8644503049283008
     },
     {
-      "node_id": "concept:8fad434ca5007153",
-      "label": "intelligence",
-      "activation": 0.7640466539766227,
-      "novelty": 0.24906600249066005,
+      "node_id": "concept:26a0ee5c659ab6a85d59",
+      "label": "oppose",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8045520807403221
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:a204c4da83f5063f88c2",
-      "label": "ildhood",
+      "node_id": "concept:78bcc51a6a534d683a6c",
+      "label": "unalterable",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.777729411764706
-    },
-    {
-      "node_id": "concept:2247ba99a2ffdb217f75",
-      "label": "superfluous",
-      "activation": 0.46,
-      "novelty": 0.5970149253731344,
-      "conflict": 0,
-      "score": 0.7403940298507463
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 166
     },
     "read": {
-      "attempts": 1128,
-      "successes": 1128
+      "attempts": 1129,
+      "successes": 1129
     },
     "explore": {
       "attempts": 761,
