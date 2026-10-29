@@ -1,39 +1,47 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-29T08:26:24.049173+00:00",
-  "generation": 6232,
+  "timestamp": "2026-10-29T08:28:44.828593+00:00",
+  "generation": 6233,
   "focus": "The Physical Basis of Mind",
-  "last_action": "read",
+  "last_action": "search",
   "last_action_success": true,
-  "last_action_detail": "Read 2914 source characters",
+  "last_action_detail": "Acquired 3 attributable external articles",
   "last_provider": null,
   "last_provider_generation": 6228,
-  "last_search_generation": 6210,
+  "last_search_generation": 6233,
   "cortex": {
-    "nodes": 12950,
-    "synapses": 93211,
+    "nodes": 12954,
+    "synapses": 93252,
     "active": 120,
-    "archived_synapses": 45669
+    "archived_synapses": 45668
   },
   "memory": {
-    "episodes": 4902,
-    "claims": 4756,
+    "episodes": 4905,
+    "claims": 4762,
     "stances": 32,
-    "interests": 107,
-    "associative_comparisons": 3177,
+    "interests": 108,
+    "associative_comparisons": 3183,
     "screened_interpretations": 24,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 34231,
-    "segments": 1305,
+    "events": 34254,
+    "segments": 1306,
     "compressed_snapshot": true,
     "snapshot_events": 34134
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1343,
   "workspace": [
+    {
+      "node_id": "concept:ca52e7d1c18961a8c5b3",
+      "label": "united",
+      "activation": 1.0,
+      "novelty": 0.30349013657056145,
+      "conflict": 0,
+      "score": 0.9419423368740516
+    },
     {
       "node_id": "concept:85ca6d6d291c070dbcb2",
       "label": "conduct",
@@ -43,12 +51,20 @@
       "score": 0.8816432865731463
     },
     {
-      "node_id": "concept:e0f895872d65b2528fee",
-      "label": "knowledge",
+      "node_id": "concept:f2d44b8ac655a7ad",
+      "label": "public",
       "activation": 1.0,
-      "novelty": 0.058599472604746565,
+      "novelty": 0.025046963055729496,
       "conflict": 0,
-      "score": 0.8758218576032817
+      "score": 0.866762680025047
+    },
+    {
+      "node_id": "concept:40f024a500acd053",
+      "label": "domain",
+      "activation": 1.0,
+      "novelty": 0.024712714691708885,
+      "conflict": 0,
+      "score": 0.8666724329667614
     },
     {
       "node_id": "concept:8b16ced79976e6a1",
@@ -67,34 +83,18 @@
       "score": 0.8643065635218119
     },
     {
-      "node_id": "concept:6f4f1b1c9d25ee4a551e",
-      "label": "illness",
+      "node_id": "concept:747a8f398395dde8e524",
+      "label": "website",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:f953f70b9132340e2782",
-      "label": "boring",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:35948abf54d601e665ca",
-      "label": "onanistic",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.837573205741627
     }
   ],
   "skills": {
     "search": {
-      "attempts": 170,
-      "successes": 169
+      "attempts": 171,
+      "successes": 170
     },
     "read": {
       "attempts": 1146,
