@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-29T15:28:45.381967+00:00",
-  "generation": 6299,
-  "focus": "The World as Will and Idea (Vol. 3 of 3)",
-  "last_action": "read",
+  "timestamp": "2026-10-29T15:31:15.525662+00:00",
+  "generation": 6300,
+  "focus": "The Analysis of Mind",
+  "last_action": "library",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Discovery found: 2 public-domain books",
   "last_provider": null,
   "last_provider_generation": 6296,
   "last_search_generation": 6279,
   "cortex": {
-    "nodes": 13028,
+    "nodes": 13029,
     "synapses": 94226,
     "active": 120,
-    "archived_synapses": 46068
+    "archived_synapses": 46098
   },
   "memory": {
     "episodes": 4931,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 34777,
+    "events": 34782,
     "segments": 1319,
     "compressed_snapshot": true,
     "snapshot_events": 34623
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1385,
   "workspace": [
+    {
+      "node_id": "concept:1ac22c9b0c6163e4",
+      "label": "deliberately",
+      "activation": 1.0,
+      "novelty": 0.4098360655737705,
+      "conflict": 0,
+      "score": 0.9706557377049181
+    },
     {
       "node_id": "concept:dd7cf0a1d49819b9",
       "label": "uncertain",
@@ -51,6 +59,14 @@
       "score": 0.8716454604270003
     },
     {
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.02989983555090447,
+      "conflict": 0,
+      "score": 0.8680729555987443
+    },
+    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -59,36 +75,20 @@
       "score": 0.86421875
     },
     {
+      "node_id": "concept:47da8304ae5945372119",
+      "label": "ranges",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.9436684955641483,
+      "activation": 0.9427051610245698,
       "novelty": 0.015084093823063579,
       "conflict": 0,
-      "score": 0.8347803230255844
-    },
-    {
-      "node_id": "concept:d5fddb679716700b4e79",
-      "label": "appetitive",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:2575c1463c44aecf4e40",
-      "label": "wouldst",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:b2dc971f4895ca1f298f",
-      "label": "decrease",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.8342793890650035
     }
   ],
   "skills": {
@@ -125,8 +125,8 @@
       "successes": 164
     },
     "library": {
-      "attempts": 6,
-      "successes": 4
+      "attempts": 7,
+      "successes": 5
     }
   },
   "active_stances": 35
