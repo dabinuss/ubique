@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-29T19:35:40.561752+00:00",
-  "generation": 6345,
+  "timestamp": "2026-10-29T19:38:04.882692+00:00",
+  "generation": 6346,
   "focus": "The crowd : $b A study of the popular mind",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 6341,
   "last_search_generation": 6325,
   "cortex": {
-    "nodes": 13124,
+    "nodes": 13126,
     "synapses": 95406,
     "active": 120,
-    "archived_synapses": 46512
+    "archived_synapses": 46472
   },
   "memory": {
     "episodes": 4966,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 35266,
+    "events": 35271,
     "segments": 1328,
     "compressed_snapshot": true,
     "snapshot_events": 35117
@@ -43,22 +43,6 @@
       "score": 0.8749171270718232
     },
     {
-      "node_id": "concept:411f62e7fd037280",
-      "label": "actually",
-      "activation": 1.0,
-      "novelty": 0.04570383912248629,
-      "conflict": 0,
-      "score": 0.8723400365630714
-    },
-    {
-      "node_id": "concept:54476ce93ea4a148",
-      "label": "distinguish",
-      "activation": 1.0,
-      "novelty": 0.04551661356395084,
-      "conflict": 0,
-      "score": 0.8722894856622667
-    },
-    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -67,28 +51,44 @@
       "score": 0.8680297397769516
     },
     {
-      "node_id": "concept:a57c4e7933ced6b6d227",
-      "label": "fellow",
+      "node_id": "concept:ca5072f8d72f81cf3472",
+      "label": "unwarranted",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:1c5303d7210d5cdf35fb",
+      "label": "recognitions",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:12557e9cd30b3df863e0",
+      "label": "spapers",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:ff4a41f6aa62a1c97c05",
-      "label": "litter",
+      "node_id": "concept:ba7ff6a98b7dd5ab9629",
+      "label": "mistaken",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.7996081632653061
     },
     {
-      "node_id": "concept:c81a7b1e755bdf87160f",
-      "label": "kittens",
+      "node_id": "concept:3deac28c1e76d856eed0",
+      "label": "mechanism",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 779
     },
     "consolidate": {
-      "attempts": 1043,
-      "successes": 1043
+      "attempts": 1044,
+      "successes": 1044
     },
     "connect": {
       "attempts": 807,
