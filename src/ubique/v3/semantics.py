@@ -195,8 +195,18 @@ class SemanticLearner:
             cues = meaningful_overlap(concept_terms(sentence, 12))
             if cues:
                 words = sorted(cues)[:3]
-                question = ("What insights can be drawn from this passage about " +
-                            ", ".join(words) + "?")
+                # Augment curiosity by suggesting additional high-frequency concepts
+                frequent_terms = sorted(
+                    (t for t in self._term_frequency if t not in cues),
+                    key=lambda t: self._term_frequency[t],
+                    reverse=True)[:3]
+                extra = ", ".join(frequent_terms)
+                if extra:
+                    question = ("What insights can be drawn from this passage about " +
+                                ", ".join(words) + "? Also consider " + extra + ".")
+                else:
+                    question = ("What insights can be drawn from this passage about " +
+                                ", ".join(words) + "?")
                 exploration = {
                     "type": "exploratory_question",
                     "question": question,
