@@ -1,39 +1,47 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-29T16:36:57.522629+00:00",
-  "generation": 6312,
+  "timestamp": "2026-10-29T16:39:30.517578+00:00",
+  "generation": 6313,
   "focus": "The crowd : $b A study of the popular mind",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 6307,
+  "last_provider": "groq",
+  "last_provider_generation": 6313,
   "last_search_generation": 6302,
   "cortex": {
-    "nodes": 13068,
-    "synapses": 94577,
+    "nodes": 13075,
+    "synapses": 94633,
     "active": 120,
-    "archived_synapses": 46239
+    "archived_synapses": 46241
   },
   "memory": {
-    "episodes": 4939,
-    "claims": 4879,
+    "episodes": 4940,
+    "claims": 4887,
     "stances": 32,
     "interests": 113,
-    "associative_comparisons": 3229,
+    "associative_comparisons": 3231,
     "screened_interpretations": 24,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 34916,
+    "events": 34937,
     "segments": 1322,
     "compressed_snapshot": true,
     "snapshot_events": 34793
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 1398,
+  "evidence_reviews": 1403,
   "workspace": [
+    {
+      "node_id": "concept:f59729641e18423b",
+      "label": "characteristics",
+      "activation": 1.0,
+      "novelty": 0.14503263234227703,
+      "conflict": 0,
+      "score": 0.8991588107324149
+    },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
@@ -75,20 +83,12 @@
       "score": 0.866762680025047
     },
     {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
       "activation": 1.0,
-      "novelty": 0.015614021391209309,
+      "novelty": 0.017117425539198906,
       "conflict": 0,
-      "score": 0.8642157857756265
-    },
-    {
-      "node_id": "concept:ebf8b5757eb4402e046e",
-      "label": "indebted",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.8646217048955838
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 173
     },
     "read": {
-      "attempts": 1160,
-      "successes": 1160
+      "attempts": 1161,
+      "successes": 1161
     },
     "explore": {
       "attempts": 786,
