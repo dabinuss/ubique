@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-29T10:21:59.318238+00:00",
-  "generation": 6251,
-  "focus": "The Psychology of the Emotions",
-  "last_action": "read",
+  "timestamp": "2026-10-29T10:24:19.785622+00:00",
+  "generation": 6252,
+  "focus": "Psychology of the Unconscious",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "gemini",
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": null,
   "last_provider_generation": 6251,
   "last_search_generation": 6233,
   "cortex": {
     "nodes": 12970,
     "synapses": 93419,
     "active": 120,
-    "archived_synapses": 45795
+    "archived_synapses": 45815
   },
   "memory": {
     "episodes": 4914,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 34378,
+    "events": 34382,
     "segments": 1309,
     "compressed_snapshot": true,
     "snapshot_events": 34298
@@ -43,20 +43,20 @@
       "score": 0.9419423368740516
     },
     {
+      "node_id": "concept:dfd34a31322c29f8",
+      "label": "concepts",
+      "activation": 1.0,
+      "novelty": 0.22396416573348266,
+      "conflict": 0,
+      "score": 0.9204703247480404
+    },
+    {
       "node_id": "concept:721048dc35951006",
       "label": "observations",
       "activation": 1.0,
       "novelty": 0.16680567139282734,
       "conflict": 0,
       "score": 0.9050375312760635
-    },
-    {
-      "node_id": "concept:85ca6d6d291c070dbcb2",
-      "label": "conduct",
-      "activation": 1.0,
-      "novelty": 0.08016032064128256,
-      "conflict": 0,
-      "score": 0.8816432865731463
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -83,12 +83,12 @@
       "score": 0.8666724329667614
     },
     {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
       "activation": 1.0,
-      "novelty": 0.0172102228723862,
+      "novelty": 0.01584786053882726,
       "conflict": 0,
-      "score": 0.8646467601755443
+      "score": 0.8642789223454834
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 1023
     },
     "connect": {
-      "attempts": 793,
-      "successes": 791
+      "attempts": 794,
+      "successes": 792
     },
     "evolve": {
       "attempts": 46,
