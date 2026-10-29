@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-29T04:12:41.486528+00:00",
-  "generation": 6195,
-  "focus": "The Republic of Plato",
-  "last_action": "read",
+  "timestamp": "2026-10-29T04:14:59.450034+00:00",
+  "generation": 6196,
+  "focus": "Dream Psychology: Psychoanalysis for Beginners",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 6194,
   "last_search_generation": 6187,
   "cortex": {
-    "nodes": 12931,
-    "synapses": 92910,
+    "nodes": 12934,
+    "synapses": 92984,
     "active": 120,
-    "archived_synapses": 45220
+    "archived_synapses": 45190
   },
   "memory": {
     "episodes": 4884,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 33955,
+    "events": 33960,
     "segments": 1298,
     "compressed_snapshot": true,
     "snapshot_events": 33811
@@ -35,20 +35,28 @@
   "evidence_reviews": 1331,
   "workspace": [
     {
-      "node_id": "concept:64b218956223eb12d13e",
-      "label": "principles",
+      "node_id": "concept:65ee89092efbf78ab19a",
+      "label": "optimistic",
       "activation": 1.0,
-      "novelty": 0.09447331128956071,
+      "novelty": 0.08539709649871904,
       "conflict": 0,
-      "score": 0.8855077940481815
+      "score": 0.8830572160546541
+    },
+    {
+      "node_id": "concept:48d492d08e9d314c034c",
+      "label": "studies",
+      "activation": 1.0,
+      "novelty": 0.07736943907156674,
+      "conflict": 0,
+      "score": 0.880889748549323
     },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
       "activation": 1.0,
-      "novelty": 0.06729475100942127,
+      "novelty": 0.06688963210702341,
       "conflict": 0,
-      "score": 0.8781695827725438
+      "score": 0.8780602006688965
     },
     {
       "node_id": "concept:e0f895872d65b2528fee",
@@ -67,28 +75,20 @@
       "score": 0.8735985897758751
     },
     {
-      "node_id": "concept:15fe82a0863ec3a2e6c0",
-      "label": "mething",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "node_id": "concept:40f024a500acd053",
+      "label": "domain",
+      "activation": 1.0,
+      "novelty": 0.024712714691708885,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8666724329667614
     },
     {
-      "node_id": "concept:cd7b47ab569cfd16ca93",
-      "label": "casting",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.016337199803953602,
       "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:6a930006ef296ea04b81",
-      "label": "converse",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.8644110439470676
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 756
     },
     "consolidate": {
-      "attempts": 1007,
-      "successes": 1007
+      "attempts": 1008,
+      "successes": 1008
     },
     "connect": {
       "attempts": 783,
