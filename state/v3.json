@@ -1,39 +1,47 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-29T23:13:54.060628+00:00",
-  "generation": 6386,
+  "timestamp": "2026-10-29T23:16:19.821775+00:00",
+  "generation": 6387,
   "focus": "The crowd : $b A study of the popular mind",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 6381,
+  "last_provider": "groq",
+  "last_provider_generation": 6387,
   "last_search_generation": 6371,
   "cortex": {
-    "nodes": 13213,
-    "synapses": 96692,
+    "nodes": 13219,
+    "synapses": 96734,
     "active": 120,
-    "archived_synapses": 46700
+    "archived_synapses": 46702
   },
   "memory": {
-    "episodes": 4993,
-    "claims": 5032,
+    "episodes": 4998,
+    "claims": 5037,
     "stances": 32,
     "interests": 116,
-    "associative_comparisons": 3313,
+    "associative_comparisons": 3315,
     "screened_interpretations": 24,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 35667,
-    "segments": 1336,
+    "events": 35686,
+    "segments": 1337,
     "compressed_snapshot": true,
     "snapshot_events": 35605
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 1446,
+  "evidence_reviews": 1448,
   "workspace": [
+    {
+      "node_id": "concept:e2d5a675d4eab169",
+      "label": "continue",
+      "activation": 1.0,
+      "novelty": 0.07049700387733522,
+      "conflict": 0,
+      "score": 0.8790341910468806
+    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -59,36 +67,28 @@
       "score": 0.8719707381955222
     },
     {
-      "node_id": "concept:d5df61d74243bc947cb9",
-      "label": "acquire",
+      "node_id": "concept:2e4c8419a75da0ebd68f",
+      "label": "pitiable",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:f54d93092faef94425c2",
+      "label": "prosperity",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:4c3b61ed20f14cb60937",
-      "label": "prepares",
+      "node_id": "concept:9c9b13446cd96efb130c",
+      "label": "spanish",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:f26868afb399d3023e79",
-      "label": "beliefs",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:e93d59a02163f846fecf",
-      "label": "soil",
-      "activation": 0.46,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 176
     },
     "read": {
-      "attempts": 1193,
-      "successes": 1193
+      "attempts": 1194,
+      "successes": 1194
     },
     "explore": {
       "attempts": 793,
