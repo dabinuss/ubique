@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-29T16:39:30.517578+00:00",
-  "generation": 6313,
-  "focus": "The crowd : $b A study of the popular mind",
-  "last_action": "read",
+  "timestamp": "2026-10-29T16:42:42.414294+00:00",
+  "generation": 6314,
+  "focus": "Analysis of the Phenomena of the Human Mind",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "observed_comparison",
+  "last_provider": null,
   "last_provider_generation": 6313,
   "last_search_generation": 6302,
   "cortex": {
-    "nodes": 13075,
+    "nodes": 13076,
     "synapses": 94633,
     "active": 120,
-    "archived_synapses": 46241
+    "archived_synapses": 46243
   },
   "memory": {
     "episodes": 4940,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 34937,
+    "events": 34942,
     "segments": 1322,
     "compressed_snapshot": true,
     "snapshot_events": 34793
@@ -51,28 +51,20 @@
       "score": 0.8773801094303186
     },
     {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.05813953488372093,
+      "conflict": 0,
+      "score": 0.8756976744186047
+    },
+    {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
       "activation": 1.0,
       "novelty": 0.04460303300624443,
       "conflict": 0,
       "score": 0.872042818911686
-    },
-    {
-      "node_id": "concept:6907de2e8144a57274c7",
-      "label": "treatise",
-      "activation": 1.0,
-      "novelty": 0.04313133491481561,
-      "conflict": 0,
-      "score": 0.8716454604270003
-    },
-    {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.02981959147159684,
-      "conflict": 0,
-      "score": 0.8680512896973311
     },
     {
       "node_id": "concept:f2d44b8ac655a7ad",
@@ -89,6 +81,14 @@
       "novelty": 0.017117425539198906,
       "conflict": 0,
       "score": 0.8646217048955838
+    },
+    {
+      "node_id": "concept:56c801ceb3e29c422505",
+      "label": "sprung",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 22
     },
     "experiment": {
-      "attempts": 224,
-      "successes": 222
+      "attempts": 225,
+      "successes": 223
     },
     "question": {
       "attempts": 165,
