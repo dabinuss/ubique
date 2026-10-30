@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-30T03:21:45.873458+00:00",
-  "generation": 6434,
+  "timestamp": "2026-10-30T03:24:16.158134+00:00",
+  "generation": 6435,
   "focus": "The crowd : $b A study of the popular mind",
-  "last_action": "read",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "observed_associations",
   "last_provider": null,
   "last_provider_generation": 6432,
   "last_search_generation": 6417,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 36107,
+    "events": 36114,
     "segments": 1347,
     "compressed_snapshot": true,
     "snapshot_events": 36107
@@ -59,6 +59,14 @@
       "score": 0.875615962984384
     },
     {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.04433606739082244,
+      "conflict": 0,
+      "score": 0.8719707381955222
+    },
+    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -75,20 +83,12 @@
       "score": 0.8645863767623578
     },
     {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.015333895576171125,
-      "conflict": 0,
-      "score": 0.8641401518055662
-    },
-    {
-      "node_id": "concept:409a14887e0958f1efcd",
-      "label": "glory",
+      "node_id": "concept:eacc8fd94a5e6644d69d",
+      "label": "tends",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 24
     },
     "experiment": {
-      "attempts": 234,
-      "successes": 232
+      "attempts": 235,
+      "successes": 233
     },
     "question": {
       "attempts": 173,
