@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-30T04:10:44.511217+00:00",
-  "generation": 6445,
+  "timestamp": "2026-10-30T04:13:07.541694+00:00",
+  "generation": 6446,
   "focus": "The crowd : $b A study of the popular mind",
-  "last_action": "read",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "observed_associations",
   "last_provider": null,
   "last_provider_generation": 6443,
   "last_search_generation": 6440,
@@ -14,7 +14,7 @@
     "nodes": 13296,
     "synapses": 97848,
     "active": 120,
-    "archived_synapses": 47332
+    "archived_synapses": 47344
   },
   "memory": {
     "episodes": 5042,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 36214,
+    "events": 36219,
     "segments": 1350,
     "compressed_snapshot": true,
     "snapshot_events": 36107
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1458,
   "workspace": [
+    {
+      "node_id": "concept:f59729641e18423b",
+      "label": "characteristics",
+      "activation": 1.0,
+      "novelty": 0.13614703880190607,
+      "conflict": 0,
+      "score": 0.8967597004765147
+    },
     {
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
@@ -67,24 +75,16 @@
       "score": 0.8641372969659822
     },
     {
-      "node_id": "concept:e0921c982fd0cf2c1dd5",
-      "label": "ulty",
+      "node_id": "concept:3e9ae4c1660ed4dafa30",
+      "label": "matters",
       "activation": 0.46,
       "novelty": 0.8474576271186441,
       "conflict": 0,
       "score": 0.8080135593220339
     },
     {
-      "node_id": "concept:a5bed2020bd1f4ea3eca",
-      "label": "identifying",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:1ba7573640bbbb13a9e2",
-      "label": "stroke",
+      "node_id": "concept:f26868afb399d3023e79",
+      "label": "beliefs",
       "activation": 0.46,
       "novelty": 0.8474576271186441,
       "conflict": 0,
@@ -117,8 +117,8 @@
       "successes": 24
     },
     "experiment": {
-      "attempts": 235,
-      "successes": 233
+      "attempts": 236,
+      "successes": 234
     },
     "question": {
       "attempts": 173,
