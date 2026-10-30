@@ -1,47 +1,39 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-30T01:31:40.735745+00:00",
-  "generation": 6414,
-  "focus": "The Riddle of the Universe",
+  "timestamp": "2026-10-30T01:34:28.394215+00:00",
+  "generation": 6415,
+  "focus": "Analysis of the Phenomena of the Human Mind",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 6409,
+  "last_provider": "gemini",
+  "last_provider_generation": 6415,
   "last_search_generation": 6394,
   "cortex": {
-    "nodes": 13265,
-    "synapses": 97352,
+    "nodes": 13266,
+    "synapses": 97373,
     "active": 120,
-    "archived_synapses": 46962
+    "archived_synapses": 46959
   },
   "memory": {
-    "episodes": 5016,
-    "claims": 5077,
+    "episodes": 5019,
+    "claims": 5081,
     "stances": 32,
     "interests": 116,
-    "associative_comparisons": 3343,
+    "associative_comparisons": 3345,
     "screened_interpretations": 24,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 35925,
+    "events": 35942,
     "segments": 1343,
     "compressed_snapshot": true,
-    "snapshot_events": 35770
+    "snapshot_events": 35942
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 1451,
+  "evidence_reviews": 1452,
   "workspace": [
-    {
-      "node_id": "concept:54476ce93ea4a148",
-      "label": "distinguish",
-      "activation": 1.0,
-      "novelty": 0.04551661356395084,
-      "conflict": 0,
-      "score": 0.8722894856622667
-    },
     {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
@@ -49,14 +41,6 @@
       "novelty": 0.028926815157651144,
       "conflict": 0,
       "score": 0.8678102400925658
-    },
-    {
-      "node_id": "concept:f2d44b8ac655a7ad",
-      "label": "public",
-      "activation": 1.0,
-      "novelty": 0.025046963055729496,
-      "conflict": 0,
-      "score": 0.866762680025047
     },
     {
       "node_id": "concept:8b16ced79976e6a1",
@@ -67,28 +51,44 @@
       "score": 0.8645863767623578
     },
     {
-      "node_id": "concept:5eb67f9f8409b9c3f739",
-      "label": "brown",
+      "node_id": "concept:f55101cb5e7453c770d2",
+      "label": "exercise",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:600d397e0d9fcb9172cf",
-      "label": "exposing",
+      "node_id": "concept:bbaeee6b2728f8466446",
+      "label": "consequents",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:a1a91ce39ef417e70366",
-      "label": "blended",
+      "node_id": "concept:7dc9ac227f08ae26118d",
+      "label": "antecedents",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:22b090dd46c756d3c307",
+      "label": "absorb",
       "activation": 0.46,
       "novelty": 0.8163265306122448,
       "conflict": 0,
       "score": 0.7996081632653061
+    },
+    {
+      "node_id": "concept:3e2b8f7655a269367d05",
+      "label": "trains",
+      "activation": 0.46,
+      "novelty": 0.6896551724137931,
+      "conflict": 0,
+      "score": 0.7654068965517242
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 177
     },
     "read": {
-      "attempts": 1205,
-      "successes": 1205
+      "attempts": 1206,
+      "successes": 1206
     },
     "explore": {
       "attempts": 795,
