@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-30T03:00:02.021184+00:00",
-  "generation": 6430,
+  "timestamp": "2026-10-30T03:02:29.627962+00:00",
+  "generation": 6431,
   "focus": "Analysis of the Phenomena of the Human Mind",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 6426,
   "last_search_generation": 6417,
@@ -14,7 +14,7 @@
     "nodes": 13285,
     "synapses": 97648,
     "active": 120,
-    "archived_synapses": 47248
+    "archived_synapses": 47160
   },
   "memory": {
     "episodes": 5029,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 36078,
-    "segments": 1346,
+    "events": 36083,
+    "segments": 1347,
     "compressed_snapshot": true,
     "snapshot_events": 35942
   },
@@ -43,20 +43,20 @@
       "score": 0.8839786856127887
     },
     {
+      "node_id": "concept:3f8b4464a99de3dc8c5c",
+      "label": "religious",
+      "activation": 1.0,
+      "novelty": 0.06101281269066504,
+      "conflict": 0,
+      "score": 0.8764734594264796
+    },
+    {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
       "activation": 1.0,
       "novelty": 0.0578368999421631,
       "conflict": 0,
       "score": 0.875615962984384
-    },
-    {
-      "node_id": "concept:53e5e7c5a884893739c4",
-      "label": "experience",
-      "activation": 1.0,
-      "novelty": 0.054039448797622264,
-      "conflict": 0,
-      "score": 0.8745906511753581
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -83,12 +83,12 @@
       "score": 0.8641458733205374
     },
     {
-      "node_id": "concept:a0a67482ddf6566228c1",
-      "label": "meddle",
+      "node_id": "concept:409a14887e0958f1efcd",
+      "label": "glory",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 788
     },
     "consolidate": {
-      "attempts": 1058,
-      "successes": 1058
+      "attempts": 1059,
+      "successes": 1059
     },
     "connect": {
       "attempts": 815,
