@@ -85,7 +85,8 @@ class SemanticLearner:
                 .40, self.exploration_factor + min(.02 * self._no_comp_counter, .10))
 
     def observe(self, episode: dict, *, generation=None) -> list[dict]:
-        if episode.get("epistemic_status") != "source_passage":
+        status = episode.get("epistemic_status")
+        if status not in {"source_passage", "exploratory_question", "association_hypothesis", "insight"}:
             return []
         eid = episode.get("id")
         if not eid or not self.family(episode):
@@ -103,7 +104,7 @@ class SemanticLearner:
         choices = []
         for other in reversed(earlier):
             if (other.get("id") == eid or
-                    other.get("epistemic_status") != "source_passage" or
+                    other.get("epistemic_status") not in {"source_passage", "exploratory_question", "association_hypothesis", "insight"} or
                     not self.family(other) or
                     self.family(other) == self.family(episode)):
                 continue
