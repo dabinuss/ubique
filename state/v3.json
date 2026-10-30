@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-30T12:24:53.463959+00:00",
-  "generation": 6528,
-  "focus": "The Varieties of Religious Experience: A Study in Human Nature",
-  "last_action": "read",
+  "timestamp": "2026-10-30T12:27:10.639932+00:00",
+  "generation": 6529,
+  "focus": "The Nature of Man: Studies in Optimistic Philosophy",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": null,
   "last_provider_generation": 6528,
   "last_search_generation": 6509,
   "cortex": {
-    "nodes": 13400,
+    "nodes": 13401,
     "synapses": 99241,
     "active": 120,
-    "archived_synapses": 48353
+    "archived_synapses": 48391
   },
   "memory": {
     "episodes": 5100,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 36937,
-    "segments": 1369,
+    "events": 36941,
+    "segments": 1370,
     "compressed_snapshot": true,
     "snapshot_events": 36783
   },
@@ -46,9 +46,9 @@
       "node_id": "concept:244210e48437b6556980",
       "label": "project",
       "activation": 1.0,
-      "novelty": 0.1413427561837456,
+      "novelty": 0.13956734124214934,
       "conflict": 0,
-      "score": 0.8981625441696113
+      "score": 0.8976831821353803
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
@@ -67,14 +67,6 @@
       "score": 0.8710249081257657
     },
     {
-      "node_id": "concept:ec731dc2702dd67c",
-      "label": "resolved",
-      "activation": 1.0,
-      "novelty": 0.0316906987799081,
-      "conflict": 0,
-      "score": 0.8685564886705752
-    },
-    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -89,6 +81,14 @@
       "novelty": 0.025046963055729496,
       "conflict": 0,
       "score": 0.866762680025047
+    },
+    {
+      "node_id": "concept:40f024a500acd053",
+      "label": "domain",
+      "activation": 1.0,
+      "novelty": 0.024685262898049867,
+      "conflict": 0,
+      "score": 0.8666650209824736
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 1242
     },
     "explore": {
-      "attempts": 807,
-      "successes": 798
+      "attempts": 808,
+      "successes": 799
     },
     "consolidate": {
       "attempts": 1079,
