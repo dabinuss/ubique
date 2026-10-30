@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-30T04:15:18.257880+00:00",
-  "generation": 6447,
+  "timestamp": "2026-10-30T04:17:38.432372+00:00",
+  "generation": 6448,
   "focus": "The crowd : $b A study of the popular mind",
-  "last_action": "read",
+  "last_action": "question",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "How do the authors approach present, they differently, given their emphases on beliefs, century and account, antecedents? Which assumptions differ?",
   "last_provider": null,
   "last_provider_generation": 6443,
   "last_search_generation": 6440,
   "cortex": {
-    "nodes": 13300,
+    "nodes": 13303,
     "synapses": 97881,
     "active": 120,
     "archived_synapses": 47343
   },
   "memory": {
     "episodes": 5043,
-    "claims": 5120,
+    "claims": 5121,
     "stances": 32,
     "interests": 116,
     "associative_comparisons": 3379,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 36230,
+    "events": 36236,
     "segments": 1350,
     "compressed_snapshot": true,
     "snapshot_events": 36107
@@ -49,6 +49,14 @@
       "novelty": 0.09212344541685859,
       "conflict": 0,
       "score": 0.8848733302625518
+    },
+    {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.04381161007667032,
+      "conflict": 0,
+      "score": 0.871829134720701
     },
     {
       "node_id": "concept:ec731dc2702dd67c",
@@ -75,20 +83,12 @@
       "score": 0.8641372969659822
     },
     {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 0.9488560801247413,
-      "novelty": 0.04381161007667032,
-      "conflict": 0,
-      "score": 0.8452342963855666
-    },
-    {
-      "node_id": "concept:3e9ae4c1660ed4dafa30",
-      "label": "matters",
+      "node_id": "concept:99e4ce19020332ce2c0b",
+      "label": "tiberius",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -121,8 +121,8 @@
       "successes": 234
     },
     "question": {
-      "attempts": 173,
-      "successes": 173
+      "attempts": 174,
+      "successes": 174
     },
     "library": {
       "attempts": 7,
