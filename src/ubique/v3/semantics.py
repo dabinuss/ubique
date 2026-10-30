@@ -104,9 +104,9 @@ class SemanticLearner:
         choices = []
         for other in reversed(earlier):
             if (other.get("id") == eid or
-                    other.get("epistemic_status") not in {"source_passage", "exploratory_question", "association_hypothesis", "insight"} or
-                    not self.family(other) or
-                    self.family(other) == self.family(episode)):
+                    other.get("epistemic_status") not in {"source_passage", "exploratory_question", "association_hypothesis", "insight"}):
+                continue
+            if self.family(other) and self.family(other) == self.family(episode):
                 continue
             shared = current & self._concepts(other)
             min_shared = 1 if random.random() < self.exploration_factor else 2
