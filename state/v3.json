@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-30T11:21:19.044023+00:00",
-  "generation": 6521,
-  "focus": "The World as Will and Idea (Vol. 3 of 3)",
-  "last_action": "read",
+  "timestamp": "2026-10-30T11:23:26.274850+00:00",
+  "generation": 6522,
+  "focus": "The Nature of Man: Studies in Optimistic Philosophy",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 6517,
   "last_search_generation": 6509,
   "cortex": {
     "nodes": 13392,
-    "synapses": 99151,
+    "synapses": 99165,
     "active": 120,
-    "archived_synapses": 48307
+    "archived_synapses": 48309
   },
   "memory": {
     "episodes": 5095,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 36888,
+    "events": 36893,
     "segments": 1368,
     "compressed_snapshot": true,
     "snapshot_events": 36783
@@ -35,12 +35,36 @@
   "evidence_reviews": 1482,
   "workspace": [
     {
+      "node_id": "concept:ca52e7d1c18961a8c5b3",
+      "label": "united",
+      "activation": 1.0,
+      "novelty": 0.30349013657056145,
+      "conflict": 0,
+      "score": 0.9419423368740516
+    },
+    {
+      "node_id": "concept:244210e48437b6556980",
+      "label": "project",
+      "activation": 1.0,
+      "novelty": 0.1422475106685633,
+      "conflict": 0,
+      "score": 0.8984068278805122
+    },
+    {
       "node_id": "concept:53e5e7c5a884893739c4",
       "label": "experience",
       "activation": 1.0,
       "novelty": 0.0536480686695279,
       "conflict": 0,
       "score": 0.8744849785407727
+    },
+    {
+      "node_id": "concept:0fc468dc240a979e",
+      "label": "collection",
+      "activation": 1.0,
+      "novelty": 0.040908161178155045,
+      "conflict": 0,
+      "score": 0.871045203518102
     },
     {
       "node_id": "concept:ec731dc2702dd67c",
@@ -59,36 +83,12 @@
       "score": 0.8676314301865462
     },
     {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
+      "node_id": "concept:f2d44b8ac655a7ad",
+      "label": "public",
       "activation": 1.0,
-      "novelty": 0.01521838380763963,
+      "novelty": 0.025046963055729496,
       "conflict": 0,
-      "score": 0.8641089636280628
-    },
-    {
-      "node_id": "concept:433c3507c372d907a357",
-      "label": "protection",
-      "activation": 0.46,
-      "novelty": 0.9569377990430623,
-      "conflict": 0,
-      "score": 0.837573205741627
-    },
-    {
-      "node_id": "concept:884e4523ed453ba57253",
-      "label": "undertake",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:56cfecb822dc9ce0c8b1",
-      "label": "tive",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.866762680025047
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 798
     },
     "consolidate": {
-      "attempts": 1076,
-      "successes": 1076
+      "attempts": 1077,
+      "successes": 1077
     },
     "connect": {
       "attempts": 829,
