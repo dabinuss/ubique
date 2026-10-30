@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-30T06:37:48.118257+00:00",
-  "generation": 6472,
+  "timestamp": "2026-10-30T06:52:11.233497+00:00",
+  "generation": 6473,
   "focus": "The crowd : $b A study of the popular mind",
-  "last_action": "consolidate",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": "gemini",
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": null,
   "last_provider_generation": 6472,
   "last_search_generation": 6463,
   "cortex": {
-    "nodes": 13329,
-    "synapses": 98335,
+    "nodes": 13332,
+    "synapses": 98371,
     "active": 120,
-    "archived_synapses": 47539
+    "archived_synapses": 47565
   },
   "memory": {
-    "episodes": 5059,
-    "claims": 5154,
+    "episodes": 5060,
+    "claims": 5157,
     "stances": 33,
     "interests": 116,
-    "associative_comparisons": 3401,
+    "associative_comparisons": 3403,
     "screened_interpretations": 25,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 36449,
+    "events": 36460,
     "segments": 1356,
     "compressed_snapshot": true,
     "snapshot_events": 36442
@@ -43,52 +43,52 @@
       "score": 0.8645689144597681
     },
     {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 0.9247572670945026,
+      "novelty": 0.04363953742090334,
+      "conflict": 0,
+      "score": 0.8326564539927852
+    },
+    {
       "node_id": "concept:bb5bc759491c6516e2f9",
       "label": "juries",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
-    },
-    {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 0.9277690077754082,
-      "novelty": 0.04363953742090334,
-      "conflict": 0,
-      "score": 0.8342225591468562
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:6b34604bebd7e949d7e9",
       "label": "nvestigation",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:b644645820b3f5e51709",
       "label": "versed",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:99fd0b148570ac9770e7",
       "label": "occasion",
       "activation": 0.46,
-      "novelty": 0.6309148264984227,
+      "novelty": 0.6134969325153374,
       "conflict": 0,
-      "score": 0.7495470031545741
+      "score": 0.7448441717791412
     },
     {
       "node_id": "concept:74e892c91130daa5e9c5",
       "label": "observe",
       "activation": 0.46,
-      "novelty": 0.5025125628140703,
+      "novelty": 0.49140049140049136,
       "conflict": 0,
-      "score": 0.714878391959799
+      "score": 0.7118781326781327
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 180
     },
     "read": {
-      "attempts": 1225,
-      "successes": 1225
+      "attempts": 1226,
+      "successes": 1226
     },
     "explore": {
       "attempts": 802,
