@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-30T04:53:29.353043+00:00",
-  "generation": 6453,
-  "focus": "The Story of the Mind",
-  "last_action": "read",
+  "timestamp": "2026-10-30T04:55:52.312549+00:00",
+  "generation": 6454,
+  "focus": "The Varieties of Religious Experience: A Study in Human Nature",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 6449,
   "last_search_generation": 6440,
   "cortex": {
     "nodes": 13308,
-    "synapses": 97958,
+    "synapses": 97972,
     "active": 120,
-    "archived_synapses": 47436
+    "archived_synapses": 47304
   },
   "memory": {
     "episodes": 5046,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 36276,
+    "events": 36281,
     "segments": 1352,
     "compressed_snapshot": true,
     "snapshot_events": 36276
@@ -38,9 +38,17 @@
       "node_id": "concept:f59729641e18423b",
       "label": "characteristics",
       "activation": 1.0,
-      "novelty": 0.13614703880190607,
+      "novelty": 0.13449899125756556,
       "conflict": 0,
-      "score": 0.8967597004765147
+      "score": 0.8963147276395427
+    },
+    {
+      "node_id": "concept:3f8b4464a99de3dc8c5c",
+      "label": "religious",
+      "activation": 1.0,
+      "novelty": 0.06051437216338881,
+      "conflict": 0,
+      "score": 0.876338880484115
     },
     {
       "node_id": "concept:f2d44b8ac655a7ad",
@@ -51,40 +59,32 @@
       "score": 0.866762680025047
     },
     {
+      "node_id": "concept:ff486b00a4a6f60ebf54",
+      "label": "omposed",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:e87ba7a0b779d8b797f8",
+      "label": "ended",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:346bfd6f92262b2a99bc",
+      "label": "races",
+      "activation": 0.46,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.7996081632653061
+    },
+    {
       "node_id": "concept:8f2f41ee3474ac2c3b5e",
       "label": "popes",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:12423e0482f3e81cb1d2",
-      "label": "consent",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:e67a476b614d998408f7",
-      "label": "interviewed",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:d4df985a9f5837b32e9f",
-      "label": "submitting",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:00f78640c2f74cc572cb",
-      "label": "emperors",
       "activation": 0.46,
       "novelty": 0.8163265306122448,
       "conflict": 0,
@@ -105,8 +105,8 @@
       "successes": 791
     },
     "consolidate": {
-      "attempts": 1062,
-      "successes": 1062
+      "attempts": 1063,
+      "successes": 1063
     },
     "connect": {
       "attempts": 819,
