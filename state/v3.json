@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-30T00:08:39.128100+00:00",
-  "generation": 6399,
+  "timestamp": "2026-10-30T00:11:03.286901+00:00",
+  "generation": 6400,
   "focus": "Analysis of the Phenomena of the Human Mind",
-  "last_action": "evolve",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "{\"accepted\": true, \"title\": \"Introduce domain-flexible thematic resonance when exact source passages are unavailable\", \"summary\": \"When strict source passages cannot be retrieved due to external unavailability, SemanticLearner now relaxes strict 'source_passage' checks during exploration cycles, allowing the system to form cross-source comparisons from internal generalized memory or related textua",
+  "last_action_detail": "Read 8000 source characters",
   "last_provider": null,
   "last_provider_generation": 6398,
   "last_search_generation": 6394,
   "cortex": {
-    "nodes": 13242,
-    "synapses": 97091,
+    "nodes": 13243,
+    "synapses": 97127,
     "active": 120,
-    "archived_synapses": 46881
+    "archived_synapses": 46923
   },
   "memory": {
-    "episodes": 5006,
-    "claims": 5057,
+    "episodes": 5007,
+    "claims": 5060,
     "stances": 32,
     "interests": 116,
-    "associative_comparisons": 3331,
+    "associative_comparisons": 3333,
     "screened_interpretations": 24,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 35804,
+    "events": 35817,
     "segments": 1339,
     "compressed_snapshot": true,
     "snapshot_events": 35770
@@ -54,41 +54,41 @@
       "node_id": "concept:267e82882c1b6671b5c5",
       "label": "compress",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:be655c6eb13ba1611317",
-      "label": "ssociation",
-      "activation": 0.46,
       "novelty": 0.8810572687224669,
       "conflict": 0,
       "score": 0.8170854625550661
     },
     {
-      "node_id": "concept:a18fb03f234f22a57de6",
-      "label": "resists",
+      "node_id": "concept:be655c6eb13ba1611317",
+      "label": "ssociation",
       "activation": 0.46,
       "novelty": 0.8474576271186441,
       "conflict": 0,
       "score": 0.8080135593220339
+    },
+    {
+      "node_id": "concept:a18fb03f234f22a57de6",
+      "label": "resists",
+      "activation": 0.46,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:66af36d5b0569fdef4d9",
       "label": "separation",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:d18f849bb8c5ffef9e1b",
       "label": "compression",
       "activation": 0.46,
-      "novelty": 0.5141388174807199,
+      "novelty": 0.5025125628140703,
       "conflict": 0,
-      "score": 0.7180174807197944
+      "score": 0.714878391959799
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 177
     },
     "read": {
-      "attempts": 1199,
-      "successes": 1199
+      "attempts": 1200,
+      "successes": 1200
     },
     "explore": {
       "attempts": 794,
