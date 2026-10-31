@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-31T11:42:06.658348+00:00",
-  "generation": 6767,
-  "focus": "Psychology of the Unconscious",
-  "last_action": "read",
+  "timestamp": "2026-10-31T11:44:36.090119+00:00",
+  "generation": 6768,
+  "focus": "The Analysis of Mind",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 6766,
   "last_search_generation": 6762,
@@ -14,7 +14,7 @@
     "nodes": 13608,
     "synapses": 101847,
     "active": 120,
-    "archived_synapses": 51643
+    "archived_synapses": 51695
   },
   "memory": {
     "episodes": 5235,
@@ -26,14 +26,22 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 39016,
-    "segments": 1421,
+    "events": 39020,
+    "segments": 1422,
     "compressed_snapshot": true,
     "snapshot_events": 38941
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1586,
   "workspace": [
+    {
+      "node_id": "concept:5a2a957b269e8f0f",
+      "label": "external",
+      "activation": 1.0,
+      "novelty": 0.04496402877697842,
+      "conflict": 0,
+      "score": 0.8721402877697841
+    },
     {
       "node_id": "concept:0f50089ba6762040",
       "label": "master",
@@ -59,36 +67,28 @@
       "score": 0.8638829366506076
     },
     {
-      "node_id": "concept:1bf417bd87162d5d77a5",
-      "label": "beast",
+      "node_id": "concept:1ad7b215f012310b97e9",
+      "label": "creatour",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.7713708185053381
     },
     {
-      "node_id": "concept:2f35f561e326a8b6661c",
-      "label": "affirme",
+      "node_id": "concept:9dff50df08c635815f4b",
+      "label": "frame",
       "activation": 0.46,
-      "novelty": 0.6309148264984227,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.7495470031545741
+      "score": 0.7654068965517242
     },
     {
-      "node_id": "concept:9ef4238d097e0e92779d",
-      "label": "brutes",
+      "node_id": "concept:965abb254b10e268bd85",
+      "label": "creation",
       "activation": 0.46,
-      "novelty": 0.5390835579514824,
+      "novelty": 0.5524861878453039,
       "conflict": 0,
-      "score": 0.7247525606469003
-    },
-    {
-      "node_id": "concept:10e86c6514d40f2a3e86",
-      "label": "judge",
-      "activation": 0.46,
-      "novelty": 0.4024144869215292,
-      "conflict": 0,
-      "score": 0.6878519114688129
+      "score": 0.7283712707182322
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 1129
     },
     "connect": {
-      "attempts": 866,
-      "successes": 864
+      "attempts": 867,
+      "successes": 865
     },
     "evolve": {
       "attempts": 51,
