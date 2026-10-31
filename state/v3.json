@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-31T15:54:22.907435+00:00",
-  "generation": 6811,
-  "focus": "Meditations",
-  "last_action": "read",
+  "timestamp": "2026-10-31T15:56:55.473415+00:00",
+  "generation": 6812,
+  "focus": "Analysis of the Phenomena of the Human Mind",
+  "last_action": "question",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 6806,
+  "last_action_detail": "How do the authors approach country, works differently, given their emphases on affairs, almost and addition, agreement? Which assumptions differ?",
+  "last_provider": "groq",
+  "last_provider_generation": 6812,
   "last_search_generation": 6808,
   "cortex": {
-    "nodes": 13638,
-    "synapses": 102207,
+    "nodes": 13642,
+    "synapses": 102219,
     "active": 120,
-    "archived_synapses": 51967
+    "archived_synapses": 51997
   },
   "memory": {
     "episodes": 5253,
-    "claims": 5601,
+    "claims": 5603,
     "stances": 33,
     "interests": 121,
     "associative_comparisons": 3681,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 39390,
+    "events": 39398,
     "segments": 1431,
     "compressed_snapshot": true,
     "snapshot_events": 39283
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 1606,
+  "evidence_reviews": 1607,
   "workspace": [
     {
       "node_id": "concept:ca52e7d1c18961a8c5b3",
@@ -59,6 +59,14 @@
       "score": 0.8938557993730407
     },
     {
+      "node_id": "concept:85ca6d6d291c070dbcb2",
+      "label": "conduct",
+      "activation": 1.0,
+      "novelty": 0.07763975155279504,
+      "conflict": 0,
+      "score": 0.8809627329192546
+    },
+    {
       "node_id": "concept:7ebb2602e32acad4",
       "label": "smoke",
       "activation": 1.0,
@@ -81,14 +89,6 @@
       "novelty": 0.025506950644050504,
       "conflict": 0,
       "score": 0.8668868766738937
-    },
-    {
-      "node_id": "concept:f2d44b8ac655a7ad",
-      "label": "public",
-      "activation": 1.0,
-      "novelty": 0.024990628514307136,
-      "conflict": 0,
-      "score": 0.8667474696988631
     }
   ],
   "skills": {
@@ -121,8 +121,8 @@
       "successes": 268
     },
     "question": {
-      "attempts": 199,
-      "successes": 199
+      "attempts": 200,
+      "successes": 200
     },
     "library": {
       "attempts": 8,
