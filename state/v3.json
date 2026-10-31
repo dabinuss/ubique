@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-31T02:09:22.184956+00:00",
-  "generation": 6654,
-  "focus": "Harvey Cohn (Biographies)",
-  "last_action": "read",
+  "timestamp": "2026-10-31T02:11:56.256268+00:00",
+  "generation": 6655,
+  "focus": "The World as Will and Idea (Vol. 3 of 3)",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "observed_associations",
   "last_provider": null,
   "last_provider_generation": 6653,
   "last_search_generation": 6647,
   "cortex": {
-    "nodes": 13513,
+    "nodes": 13514,
     "synapses": 101001,
     "active": 120,
     "archived_synapses": 49877
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 37944,
+    "events": 37951,
     "segments": 1397,
     "compressed_snapshot": true,
     "snapshot_events": 37933
@@ -35,12 +35,28 @@
   "evidence_reviews": 1542,
   "workspace": [
     {
-      "node_id": "concept:64b218956223eb12d13e",
-      "label": "principles",
+      "node_id": "concept:3853eb486f0ccd5b3023",
+      "label": "varieties",
       "activation": 1.0,
-      "novelty": 0.08952551477170993,
+      "novelty": 0.06291286568103177,
       "conflict": 0,
-      "score": 0.8841718889883616
+      "score": 0.8769864737338786
+    },
+    {
+      "node_id": "concept:3f8b4464a99de3dc8c5c",
+      "label": "religious",
+      "activation": 1.0,
+      "novelty": 0.05813953488372093,
+      "conflict": 0,
+      "score": 0.8756976744186047
+    },
+    {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 1.0,
+      "novelty": 0.05226025607525477,
+      "conflict": 0,
+      "score": 0.8741102691403189
     },
     {
       "node_id": "concept:8c0a47d3266f1cb7",
@@ -59,14 +75,6 @@
       "score": 0.8722393472348142
     },
     {
-      "node_id": "concept:6907de2e8144a57274c7",
-      "label": "treatise",
-      "activation": 1.0,
-      "novelty": 0.040535062829347386,
-      "conflict": 0,
-      "score": 0.8709444669639239
-    },
-    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -78,17 +86,9 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.01465630954125751,
+      "novelty": 0.014637002341920375,
       "conflict": 0,
-      "score": 0.8639572035761396
-    },
-    {
-      "node_id": "concept:498ab976ec9b38d00d09",
-      "label": "formulated",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.8639519906323185
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 26
     },
     "experiment": {
-      "attempts": 255,
-      "successes": 253
+      "attempts": 256,
+      "successes": 254
     },
     "question": {
       "attempts": 188,
