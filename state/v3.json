@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-31T22:03:41.269438+00:00",
-  "generation": 6867,
-  "focus": "Psychology: Briefer Course",
-  "last_action": "explore",
+  "timestamp": "2026-10-31T22:06:37.315393+00:00",
+  "generation": 6868,
+  "focus": "Psychology of the Unconscious",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 6863,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 6868,
   "last_search_generation": 6854,
   "cortex": {
-    "nodes": 13691,
-    "synapses": 102962,
+    "nodes": 13696,
+    "synapses": 102994,
     "active": 120,
-    "archived_synapses": 51938
+    "archived_synapses": 51902
   },
   "memory": {
     "episodes": 5274,
-    "claims": 5657,
+    "claims": 5662,
     "stances": 33,
     "interests": 121,
     "associative_comparisons": 3707,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 39825,
+    "events": 39840,
     "segments": 1443,
     "compressed_snapshot": true,
     "snapshot_events": 39778
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 1637,
+  "evidence_reviews": 1642,
   "workspace": [
     {
       "node_id": "concept:721048dc35951006",
@@ -70,25 +70,25 @@
       "node_id": "concept:cc9abd0b6178798df195",
       "label": "suffered",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.7996081632653061
-    },
-    {
-      "node_id": "concept:05053c87ac93c4210dff",
-      "label": "incapacity",
-      "activation": 0.46,
       "novelty": 0.7874015748031495,
       "conflict": 0,
       "score": 0.7917984251968504
     },
     {
-      "node_id": "concept:37e83efdeaa02c6ef0f6",
-      "label": "reviving",
+      "node_id": "concept:05053c87ac93c4210dff",
+      "label": "incapacity",
       "activation": 0.46,
       "novelty": 0.7604562737642586,
       "conflict": 0,
       "score": 0.78452319391635
+    },
+    {
+      "node_id": "concept:37e83efdeaa02c6ef0f6",
+      "label": "reviving",
+      "activation": 0.46,
+      "novelty": 0.7352941176470589,
+      "conflict": 0,
+      "score": 0.777729411764706
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 848
     },
     "consolidate": {
-      "attempts": 1153,
-      "successes": 1153
+      "attempts": 1154,
+      "successes": 1154
     },
     "connect": {
       "attempts": 886,
