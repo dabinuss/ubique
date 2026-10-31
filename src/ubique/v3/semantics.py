@@ -106,8 +106,10 @@ class SemanticLearner:
             if (other.get("id") == eid or
                     other.get("epistemic_status") not in {"source_passage", "exploratory_question", "association_hypothesis", "insight"}):
                 continue
-            # Relax strict family restriction if options are extremely scarce
-            if self.family(other) and self.family(other) == self.family(episode) and len(earlier) > 10:
+            # Relax strict family restriction if options are extremely scarce,
+            # but allow same-family comparisons when curiosity is high or the dataset is modest.
+            if (self.family(other) and self.family(other) == self.family(episode) and
+                len(earlier) > 10 and self.exploration_factor < 0.2):
                 continue
             shared = current & self._concepts(other)
             min_shared = 1 if random.random() < self.exploration_factor else 2
