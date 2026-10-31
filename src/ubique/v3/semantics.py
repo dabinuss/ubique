@@ -135,7 +135,7 @@ class SemanticLearner:
                 other_concepts = self._concepts(other)
                 if not other_concepts:
                     continue
-                rare_shared = {t for t in (current | other_concepts) if self._term_frequency.get(t, 0) <= 1}
+                rare_shared = {t for t in (current & other_concepts) if self._term_frequency.get(t, 0) <= 1}
                 if rare_shared:
                     choices.append((1.5, other, rare_shared))
                     if len(choices) >= 10:
