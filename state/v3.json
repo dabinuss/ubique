@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-31T14:12:33.112502+00:00",
-  "generation": 6794,
-  "focus": "The Analysis of Mind",
-  "last_action": "evolve",
+  "timestamp": "2026-10-31T14:14:56.243190+00:00",
+  "generation": 6795,
+  "focus": "The Nicomachean Ethics of Aristotle",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "{\"accepted\": true, \"title\": \"Enable same-family comparisons under high curiosity\", \"summary\": \"Adjust the family restriction logic so that when the exploration_factor is elevated (indicating strong curiosity) or the episode pool is modest, the learner does not skip same-family sources. This increases the chance of generating meaningful cross‑source comparisons, reducing reliance on generic explora",
-  "last_provider": null,
-  "last_provider_generation": 6789,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 6795,
   "last_search_generation": 6785,
   "cortex": {
     "nodes": 13628,
-    "synapses": 102022,
+    "synapses": 102030,
     "active": 120,
-    "archived_synapses": 51798
+    "archived_synapses": 51840
   },
   "memory": {
     "episodes": 5246,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 39250,
-    "segments": 1427,
+    "events": 39257,
+    "segments": 1428,
     "compressed_snapshot": true,
     "snapshot_events": 39121
   },
@@ -70,25 +70,25 @@
       "node_id": "concept:9685bc8d4703cf6712a5",
       "label": "ortunities",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
-    },
-    {
-      "node_id": "concept:95713e9cbdd1dfcb2d40",
-      "label": "replacement",
-      "activation": 0.46,
       "novelty": 0.7117437722419929,
       "conflict": 0,
       "score": 0.7713708185053381
     },
     {
+      "node_id": "concept:95713e9cbdd1dfcb2d40",
+      "label": "replacement",
+      "activation": 0.46,
+      "novelty": 0.6896551724137931,
+      "conflict": 0,
+      "score": 0.7654068965517242
+    },
+    {
       "node_id": "concept:c097a031849cabfc7d0a",
       "label": "paragraph",
       "activation": 0.46,
-      "novelty": 0.5390835579514824,
+      "novelty": 0.5263157894736842,
       "conflict": 0,
-      "score": 0.7247525606469003
+      "score": 0.7213052631578948
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 836
     },
     "consolidate": {
-      "attempts": 1134,
-      "successes": 1134
+      "attempts": 1135,
+      "successes": 1135
     },
     "connect": {
       "attempts": 870,
