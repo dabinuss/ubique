@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-10-31T19:05:46.631796+00:00",
-  "generation": 6839,
-  "focus": "Psychology of the Unconscious",
-  "last_action": "read",
+  "timestamp": "2026-10-31T19:08:25.034722+00:00",
+  "generation": 6840,
+  "focus": "The World as Will and Idea (Vol. 2 of 3)",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 6834,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 6840,
   "last_search_generation": 6831,
   "cortex": {
-    "nodes": 13672,
-    "synapses": 102566,
+    "nodes": 13675,
+    "synapses": 102598,
     "active": 120,
-    "archived_synapses": 51976
+    "archived_synapses": 51934
   },
   "memory": {
     "episodes": 5264,
-    "claims": 5632,
+    "claims": 5635,
     "stances": 33,
     "interests": 121,
     "associative_comparisons": 3695,
@@ -26,14 +26,22 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 39615,
+    "events": 39628,
     "segments": 1437,
     "compressed_snapshot": true,
     "snapshot_events": 39615
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 1623,
+  "evidence_reviews": 1626,
   "workspace": [
+    {
+      "node_id": "concept:721048dc35951006",
+      "label": "observations",
+      "activation": 1.0,
+      "novelty": 0.1596169193934557,
+      "conflict": 0,
+      "score": 0.9030965682362331
+    },
     {
       "node_id": "concept:c42aa7872617a44d",
       "label": "biography",
@@ -75,20 +83,12 @@
       "score": 0.8678102400925658
     },
     {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.014242985329725111,
-      "conflict": 0,
-      "score": 0.8638456060390258
-    },
-    {
-      "node_id": "concept:21902391baeeaa67754b",
-      "label": "projections",
+      "node_id": "concept:574c5ad0dae5778fe316",
+      "label": "contemplated",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 843
     },
     "consolidate": {
-      "attempts": 1145,
-      "successes": 1145
+      "attempts": 1146,
+      "successes": 1146
     },
     "connect": {
       "attempts": 879,
