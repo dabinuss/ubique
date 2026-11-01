@@ -1,8 +1,8 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-01T00:05:26.969416+00:00",
-  "generation": 6887,
+  "timestamp": "2026-11-01T00:07:30.530986+00:00",
+  "generation": 6888,
   "focus": "Plato's American Republic : $b Done out of the original",
   "last_action": "read",
   "last_action_success": true,
@@ -11,22 +11,22 @@
   "last_provider_generation": 6885,
   "last_search_generation": 6877,
   "cortex": {
-    "nodes": 13710,
-    "synapses": 103211,
+    "nodes": 13712,
+    "synapses": 103233,
     "active": 120,
-    "archived_synapses": 51937
+    "archived_synapses": 51945
   },
   "memory": {
-    "episodes": 5282,
-    "claims": 5676,
+    "episodes": 5283,
+    "claims": 5679,
     "stances": 33,
     "interests": 122,
-    "associative_comparisons": 3719,
+    "associative_comparisons": 3721,
     "screened_interpretations": 28,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 39985,
+    "events": 39996,
     "segments": 1448,
     "compressed_snapshot": true,
     "snapshot_events": 39945
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1647,
   "workspace": [
+    {
+      "node_id": "concept:ca52e7d1c18961a8c5b3",
+      "label": "united",
+      "activation": 1.0,
+      "novelty": 0.29542097488921715,
+      "conflict": 0,
+      "score": 0.9397636632200888
+    },
     {
       "node_id": "concept:3676cba44f159ed1",
       "label": "cognitive",
@@ -49,6 +57,14 @@
       "novelty": 0.02518891687657431,
       "conflict": 0,
       "score": 0.866801007556675
+    },
+    {
+      "node_id": "concept:f2d44b8ac655a7ad",
+      "label": "public",
+      "activation": 1.0,
+      "novelty": 0.024990628514307136,
+      "conflict": 0,
+      "score": 0.8667474696988631
     },
     {
       "node_id": "concept:8b16ced79976e6a1",
@@ -67,28 +83,12 @@
       "score": 0.863777808870855
     },
     {
-      "node_id": "concept:956a589e487932bf1556",
-      "label": "partiality",
+      "node_id": "concept:ddc3d3bbdea3c27fac7e",
+      "label": "woodruff",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.777729411764706
-    },
-    {
-      "node_id": "concept:d1ce0bd85c3af2ed5742",
-      "label": "eeking",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:b2d7f24e833051d5fc29",
-      "label": "reverse",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 198
     },
     "read": {
-      "attempts": 1330,
-      "successes": 1330
+      "attempts": 1331,
+      "successes": 1331
     },
     "explore": {
       "attempts": 859,
