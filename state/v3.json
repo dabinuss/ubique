@@ -1,8 +1,8 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-01T17:36:56.851875+00:00",
-  "generation": 7074,
+  "timestamp": "2026-11-01T17:39:36.277708+00:00",
+  "generation": 7075,
   "focus": "The Republic of Plato",
   "last_action": "read",
   "last_action_success": true,
@@ -11,29 +11,53 @@
   "last_provider_generation": 7072,
   "last_search_generation": 7061,
   "cortex": {
-    "nodes": 13993,
-    "synapses": 105234,
+    "nodes": 13994,
+    "synapses": 105236,
     "active": 120,
-    "archived_synapses": 52566
+    "archived_synapses": 52568
   },
   "memory": {
-    "episodes": 5413,
-    "claims": 5993,
+    "episodes": 5414,
+    "claims": 5996,
     "stances": 33,
     "interests": 130,
-    "associative_comparisons": 3915,
+    "associative_comparisons": 3917,
     "screened_interpretations": 31,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 41717,
-    "segments": 1486,
+    "events": 41730,
+    "segments": 1487,
     "compressed_snapshot": true,
     "snapshot_events": 41608
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1717,
   "workspace": [
+    {
+      "node_id": "concept:3853eb486f0ccd5b3023",
+      "label": "varieties",
+      "activation": 1.0,
+      "novelty": 0.060024009603841535,
+      "conflict": 0,
+      "score": 0.8762064825930374
+    },
+    {
+      "node_id": "concept:3f8b4464a99de3dc8c5c",
+      "label": "religious",
+      "activation": 1.0,
+      "novelty": 0.05524861878453039,
+      "conflict": 0,
+      "score": 0.8749171270718232
+    },
+    {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 1.0,
+      "novelty": 0.04991265285749938,
+      "conflict": 0,
+      "score": 0.873476416271525
+    },
     {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
@@ -51,44 +75,20 @@
       "score": 0.8643916720884841
     },
     {
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.01377505337833184,
+      "conflict": 0,
+      "score": 0.8637192644121496
+    },
+    {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
       "activation": 1.0,
       "novelty": 0.010570824524312896,
       "conflict": 0,
       "score": 0.8628541226215645
-    },
-    {
-      "node_id": "concept:90eae63487cae2df5b79",
-      "label": "land",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:fe3c1932b4b822762e4b",
-      "label": "canaanite",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:22e4f6912a6980d6fd59",
-      "label": "foot",
-      "activation": 0.46,
-      "novelty": 0.6493506493506493,
-      "conflict": 0,
-      "score": 0.7545246753246754
-    },
-    {
-      "node_id": "concept:e75eb6e2d3fb49fbec43",
-      "label": "surrender",
-      "activation": 0.46,
-      "novelty": 0.5141388174807199,
-      "conflict": 0,
-      "score": 0.7180174807197944
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 206
     },
     "read": {
-      "attempts": 1404,
-      "successes": 1404
+      "attempts": 1405,
+      "successes": 1405
     },
     "explore": {
       "attempts": 880,
