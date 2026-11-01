@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-01T04:51:00.821292+00:00",
-  "generation": 6940,
+  "timestamp": "2026-11-01T04:53:29.357096+00:00",
+  "generation": 6941,
   "focus": "Conscience and Sin: Daily Meditations for Lent, Including Week-days and Sundays",
-  "last_action": "read",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "observed_associations",
   "last_provider": null,
   "last_provider_generation": 6936,
   "last_search_generation": 6923,
   "cortex": {
-    "nodes": 13793,
+    "nodes": 13795,
     "synapses": 103904,
     "active": 120,
-    "archived_synapses": 52180
+    "archived_synapses": 52204
   },
   "memory": {
     "episodes": 5321,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 40436,
+    "events": 40441,
     "segments": 1459,
     "compressed_snapshot": true,
     "snapshot_events": 40296
@@ -51,44 +51,44 @@
       "score": 0.8644207941056079
     },
     {
-      "node_id": "concept:9cd153c28c6f5a5b8204",
-      "label": "prudence",
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.013947974056768255,
+      "conflict": 0,
+      "score": 0.8637659529953274
+    },
+    {
+      "node_id": "concept:f1f718f462fbc4fc8c04",
+      "label": "rebellion",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:df2d4e6b3cd1ddc0ef09",
+      "label": "supremacy",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:ddc729f45bd9852662db",
+      "label": "intelligences",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:66741d31e728a07f13d4",
-      "label": "invoked",
+      "node_id": "concept:ff88bf24065193426262",
+      "label": "hierarchy",
       "activation": 0.46,
-      "novelty": 0.6309148264984227,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.7495470031545741
-    },
-    {
-      "node_id": "concept:ad4a328064f87017ae39",
-      "label": "sundays",
-      "activation": 0.46,
-      "novelty": 0.5263157894736842,
-      "conflict": 0,
-      "score": 0.7213052631578948
-    },
-    {
-      "node_id": "concept:bbb7e4fdad15d6f05906",
-      "label": "lent",
-      "activation": 0.46,
-      "novelty": 0.5141388174807199,
-      "conflict": 0,
-      "score": 0.7180174807197944
-    },
-    {
-      "node_id": "concept:3955f8fd92cda2c17a22",
-      "label": "probability",
-      "activation": 0.46,
-      "novelty": 0.5025125628140703,
-      "conflict": 0,
-      "score": 0.714878391959799
+      "score": 0.7654068965517242
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 28
     },
     "experiment": {
-      "attempts": 281,
-      "successes": 279
+      "attempts": 282,
+      "successes": 280
     },
     "question": {
       "attempts": 207,
