@@ -1,47 +1,39 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-01T05:32:26.070227+00:00",
-  "generation": 6947,
-  "focus": "The Capital (Sunday, March 16, 1873)",
+  "timestamp": "2026-11-01T05:35:05.113263+00:00",
+  "generation": 6948,
+  "focus": "The form of confession: a later medieval genre for examining conscience",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 6942,
+  "last_provider": "gemini",
+  "last_provider_generation": 6948,
   "last_search_generation": 6946,
   "cortex": {
-    "nodes": 13803,
-    "synapses": 103953,
+    "nodes": 13808,
+    "synapses": 103956,
     "active": 120,
-    "archived_synapses": 52237
+    "archived_synapses": 52238
   },
   "memory": {
-    "episodes": 5328,
-    "claims": 5769,
+    "episodes": 5330,
+    "claims": 5774,
     "stances": 33,
     "interests": 127,
-    "associative_comparisons": 3781,
+    "associative_comparisons": 3783,
     "screened_interpretations": 28,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 40509,
+    "events": 40525,
     "segments": 1460,
     "compressed_snapshot": true,
     "snapshot_events": 40460
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 1660,
+  "evidence_reviews": 1662,
   "workspace": [
-    {
-      "node_id": "concept:f2d44b8ac655a7ad",
-      "label": "public",
-      "activation": 1.0,
-      "novelty": 0.02476780185758514,
-      "conflict": 0,
-      "score": 0.8666873065015481
-    },
     {
       "node_id": "concept:8b16ced79976e6a1",
       "label": "action",
@@ -59,36 +51,44 @@
       "score": 0.8637659529953274
     },
     {
-      "node_id": "concept:871d075450c57d1afa07",
-      "label": "questioning",
+      "node_id": "concept:d24933106396dd933c4a",
+      "label": "cain",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:e010fd1ce1acc173e3b4",
-      "label": "grace",
+      "node_id": "concept:fa3765663b75dd11e4a3",
+      "label": "cursed",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:1f22b5bc251d915c59fa",
-      "label": "uneasy",
+      "node_id": "concept:30b69f6a31d4453bfa9d",
+      "label": "behold",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:e8643cc1425c997e07fa",
-      "label": "worthlessness",
+      "node_id": "concept:165ec249b51ec398647b",
+      "label": "despisers",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:23eeb69c681dfdb8eacc",
+      "label": "garden",
+      "activation": 0.46,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.7917984251968504
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 201
     },
     "read": {
-      "attempts": 1352,
-      "successes": 1352
+      "attempts": 1353,
+      "successes": 1353
     },
     "explore": {
       "attempts": 867,
