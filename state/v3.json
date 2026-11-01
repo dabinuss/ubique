@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-01T10:44:36.211952+00:00",
-  "generation": 7005,
+  "timestamp": "2026-11-01T10:47:05.667690+00:00",
+  "generation": 7006,
   "focus": "Conscience and Sin: Daily Meditations for Lent, Including Week-days and Sundays",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 7004,
   "last_search_generation": 6992,
   "cortex": {
-    "nodes": 13922,
-    "synapses": 104677,
+    "nodes": 13924,
+    "synapses": 104751,
     "active": 120,
-    "archived_synapses": 52383
+    "archived_synapses": 52301
   },
   "memory": {
     "episodes": 5375,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 41074,
+    "events": 41079,
     "segments": 1472,
     "compressed_snapshot": true,
     "snapshot_events": 40957
@@ -34,30 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1682,
   "workspace": [
-    {
-      "node_id": "concept:0f50089ba6762040",
-      "label": "master",
-      "activation": 1.0,
-      "novelty": 0.02877697841726619,
-      "conflict": 0,
-      "score": 0.8677697841726619
-    },
-    {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.024521824423737126,
-      "conflict": 0,
-      "score": 0.866620892594409
-    },
-    {
-      "node_id": "concept:1ac22c9b0c6163e4",
-      "label": "deliberately",
-      "activation": 0.8038384619586184,
-      "novelty": 0.39525691699604737,
-      "conflict": 0,
-      "score": 0.8647153678074144
-    },
     {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
@@ -67,28 +43,52 @@
       "score": 0.8637494792389946
     },
     {
-      "node_id": "concept:e2bbb74d442a1d0f6ce1",
-      "label": "aliens",
+      "node_id": "concept:53422065450f754912fc",
+      "label": "curse",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:d304e1d1e2dbe6ccc0e6",
-      "label": "nigh",
+      "node_id": "concept:9a9cc4cc35ec9e755e11",
+      "label": "saviour",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.5263157894736842,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.7213052631578948
     },
     {
-      "node_id": "concept:2410e4e9b51da59eb8a3",
-      "label": "gainst",
+      "node_id": "concept:3cb968a982080be1d7a5",
+      "label": "heart",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.5141388174807199,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.7180174807197944
+    },
+    {
+      "node_id": "concept:dbb3b50e59c7326b2ff7",
+      "label": "ground",
+      "activation": 0.46,
+      "novelty": 0.4608294930875576,
+      "conflict": 0,
+      "score": 0.7036239631336406
+    },
+    {
+      "node_id": "concept:096b3764d961902778a5",
+      "label": "lord",
+      "activation": 0.46,
+      "novelty": 0.351493848857645,
+      "conflict": 0,
+      "score": 0.6741033391915643
+    },
+    {
+      "node_id": "concept:1fd6227a465211891ddf",
+      "label": "isaac",
+      "activation": 0.46,
+      "novelty": 0.2840909090909091,
+      "conflict": 0,
+      "score": 0.6559045454545456
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 864
     },
     "consolidate": {
-      "attempts": 1179,
-      "successes": 1179
+      "attempts": 1180,
+      "successes": 1180
     },
     "connect": {
       "attempts": 901,
