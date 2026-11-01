@@ -112,7 +112,12 @@ class SemanticLearner:
                 len(earlier) > 10 and self.exploration_factor < 0.2):
                 continue
             shared = current & self._concepts(other)
-            min_shared = 1 if random.random() < self.exploration_factor else 2
+            # Adjust required shared term count based on curiosity level.
+            if self.exploration_factor >= 0.15:
+                min_shared = 1
+            else:
+                min_shared = 2
+            # Allow a single low‑frequency term even when curiosity is modest.
             if len(shared) == 1 and self._term_frequency.get(next(iter(shared)), 0) <= 2:
                 min_shared = 1
             if len(shared) < min_shared:
