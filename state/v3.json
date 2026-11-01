@@ -1,13 +1,13 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-01T02:46:26.100076+00:00",
-  "generation": 6914,
+  "timestamp": "2026-11-01T02:49:00.881229+00:00",
+  "generation": 6915,
   "focus": "Meditations",
-  "last_action": "connect",
+  "last_action": "library",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": "gemini",
+  "last_action_detail": "Discovery found: 2 public-domain books",
+  "last_provider": null,
   "last_provider_generation": 6914,
   "last_search_generation": 6900,
   "cortex": {
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 40203,
+    "events": 40208,
     "segments": 1454,
     "compressed_snapshot": true,
     "snapshot_events": 40113
@@ -62,33 +62,33 @@
       "node_id": "concept:518521ee4be5352acc07",
       "label": "americanization",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.7996081632653061
-    },
-    {
-      "node_id": "concept:7e3257a014cd30acfe77",
-      "label": "resist",
-      "activation": 0.46,
       "novelty": 0.7874015748031495,
       "conflict": 0,
       "score": 0.7917984251968504
     },
     {
+      "node_id": "concept:7e3257a014cd30acfe77",
+      "label": "resist",
+      "activation": 0.46,
+      "novelty": 0.7604562737642586,
+      "conflict": 0,
+      "score": 0.78452319391635
+    },
+    {
       "node_id": "concept:8bbcba42d48dcffe6ea6",
       "label": "yield",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.7654068965517242
     },
     {
       "node_id": "concept:54a7c25dd3c81d3acaff",
       "label": "souls",
       "activation": 0.46,
-      "novelty": 0.5025125628140703,
+      "novelty": 0.49140049140049136,
       "conflict": 0,
-      "score": 0.714878391959799
+      "score": 0.7118781326781327
     }
   ],
   "skills": {
@@ -125,8 +125,8 @@
       "successes": 206
     },
     "library": {
-      "attempts": 9,
-      "successes": 7
+      "attempts": 10,
+      "successes": 8
     }
   },
   "active_stances": 36
