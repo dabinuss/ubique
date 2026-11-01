@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-01T23:24:20.641555+00:00",
-  "generation": 7135,
-  "focus": "Meditations",
-  "last_action": "read",
+  "timestamp": "2026-11-01T23:26:48.124479+00:00",
+  "generation": 7136,
+  "focus": "The World as Will and Idea (Vol. 2 of 3)",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 7135,
   "last_search_generation": 7130,
   "cortex": {
-    "nodes": 14057,
-    "synapses": 105634,
+    "nodes": 14060,
+    "synapses": 105684,
     "active": 120,
-    "archived_synapses": 52796
+    "archived_synapses": 52748
   },
   "memory": {
     "episodes": 5450,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 42286,
-    "segments": 1501,
+    "events": 42291,
+    "segments": 1502,
     "compressed_snapshot": true,
     "snapshot_events": 42265
   },
@@ -67,20 +67,20 @@
       "score": 0.8751430173864274
     },
     {
+      "node_id": "concept:3f8b4464a99de3dc8c5c",
+      "label": "religious",
+      "activation": 1.0,
+      "novelty": 0.054975261132490384,
+      "conflict": 0,
+      "score": 0.8748433205057724
+    },
+    {
       "node_id": "concept:53e5e7c5a884893739c4",
       "label": "experience",
       "activation": 1.0,
       "novelty": 0.049578582052553305,
       "conflict": 0,
       "score": 0.8733862171541895
-    },
-    {
-      "node_id": "concept:0f50089ba6762040",
-      "label": "master",
-      "activation": 1.0,
-      "novelty": 0.028702640642939155,
-      "conflict": 0,
-      "score": 0.8677497129735936
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -105,8 +105,8 @@
       "successes": 879
     },
     "consolidate": {
-      "attempts": 1205,
-      "successes": 1205
+      "attempts": 1206,
+      "successes": 1206
     },
     "connect": {
       "attempts": 918,
