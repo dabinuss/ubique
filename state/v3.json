@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-01T21:07:37.852625+00:00",
-  "generation": 7110,
+  "timestamp": "2026-11-01T21:10:09.081143+00:00",
+  "generation": 7111,
   "focus": "The Nature of Man: Studies in Optimistic Philosophy",
-  "last_action": "evolve",
+  "last_action": "question",
   "last_action_success": true,
-  "last_action_detail": "{\"accepted\": true, \"title\": \"Enable exploratory questioning when source sentence extraction fails\", \"summary\": \"Add a fallback to use cleaned episode text when no suitable source sentence is found, allowing the system to still generate meaningful exploratory questions and maintain curiosity despite missing source passages.\", \"branch\": \"main\", \"pr_url\": null, \"commit_sha\": \"87bce1520f11a33924827c63",
+  "last_action_detail": "How do the authors approach call, habitual differently, given their emphases on absent, accept and centre, consciousness? Which assumptions differ?",
   "last_provider": null,
   "last_provider_generation": 7106,
   "last_search_generation": 7107,
@@ -14,11 +14,11 @@
     "nodes": 14022,
     "synapses": 105465,
     "active": 120,
-    "archived_synapses": 52561
+    "archived_synapses": 52589
   },
   "memory": {
     "episodes": 5436,
-    "claims": 6047,
+    "claims": 6048,
     "stances": 33,
     "interests": 130,
     "associative_comparisons": 3947,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 42054,
-    "segments": 1495,
+    "events": 42060,
+    "segments": 1496,
     "compressed_snapshot": true,
     "snapshot_events": 41931
   },
@@ -61,34 +61,34 @@
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.9313766208080343,
-      "novelty": 0.010481081647626036,
+      "activation": 0.9215455867156137,
+      "novelty": 0.010476140589806716,
       "conflict": 0,
-      "score": 0.8271457348650368
+      "score": 0.822032263051367
     },
     {
       "node_id": "concept:74447c93a877849368ea",
       "label": "unsocial",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.7917984251968504
     },
     {
       "node_id": "concept:5aea2b70e3c02473b37a",
       "label": "oint",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.78452319391635
     },
     {
       "node_id": "concept:d342ed822e55a972f807",
       "label": "estimated",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.78452319391635
     }
   ],
   "skills": {
@@ -121,8 +121,8 @@
       "successes": 293
     },
     "question": {
-      "attempts": 218,
-      "successes": 218
+      "attempts": 219,
+      "successes": 219
     },
     "library": {
       "attempts": 10,
