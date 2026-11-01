@@ -1,8 +1,8 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-01T03:57:08.268731+00:00",
-  "generation": 6928,
+  "timestamp": "2026-11-01T03:59:26.812097+00:00",
+  "generation": 6929,
   "focus": "The Patriarchs: Being Meditations upon Enoch, Noah, Abraham, Isaac, Jacob, Joseph, Job; The Canticles, Heaven and Earth.",
   "last_action": "read",
   "last_action_success": true,
@@ -11,23 +11,23 @@
   "last_provider_generation": 6925,
   "last_search_generation": 6923,
   "cortex": {
-    "nodes": 13780,
-    "synapses": 103830,
+    "nodes": 13781,
+    "synapses": 103832,
     "active": 120,
-    "archived_synapses": 52094
+    "archived_synapses": 52096
   },
   "memory": {
-    "episodes": 5311,
-    "claims": 5739,
+    "episodes": 5312,
+    "claims": 5742,
     "stances": 33,
     "interests": 127,
-    "associative_comparisons": 3759,
+    "associative_comparisons": 3761,
     "screened_interpretations": 28,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 40335,
-    "segments": 1456,
+    "events": 40346,
+    "segments": 1457,
     "compressed_snapshot": true,
     "snapshot_events": 40296
   },
@@ -41,14 +41,6 @@
       "novelty": 0.05511160099200882,
       "conflict": 0,
       "score": 0.8748801322678423
-    },
-    {
-      "node_id": "concept:5a2a957b269e8f0f",
-      "label": "external",
-      "activation": 1.0,
-      "novelty": 0.04329941545789132,
-      "conflict": 0,
-      "score": 0.8716908421736307
     },
     {
       "node_id": "concept:f2d44b8ac655a7ad",
@@ -67,28 +59,36 @@
       "score": 0.8644207941056079
     },
     {
+      "node_id": "concept:4f0a9ddd28a850e97f95",
+      "label": "actings",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:df8eb42b37df4f774564",
+      "label": "creature",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:19ec6af8eddb1c0e8811",
+      "label": "communications",
+      "activation": 0.46,
+      "novelty": 0.8474576271186441,
+      "conflict": 0,
+      "score": 0.8080135593220339
+    },
+    {
       "node_id": "concept:bcbd1485f9f1395be6b7",
       "label": "patriarchs",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:623d837ca10cf7aef45a",
-      "label": "enoch",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:cf3a3bbe331c3950d16a",
-      "label": "noah",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8080135593220339
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 200
     },
     "read": {
-      "attempts": 1344,
-      "successes": 1344
+      "attempts": 1345,
+      "successes": 1345
     },
     "explore": {
       "attempts": 865,
