@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-01T19:24:49.204616+00:00",
-  "generation": 7093,
+  "timestamp": "2026-11-01T19:27:02.280721+00:00",
+  "generation": 7094,
   "focus": "Meditations",
-  "last_action": "read",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 7089,
   "last_search_generation": 7084,
   "cortex": {
-    "nodes": 14011,
-    "synapses": 105379,
+    "nodes": 14015,
+    "synapses": 105395,
     "active": 120,
-    "archived_synapses": 52469
+    "archived_synapses": 52483
   },
   "memory": {
     "episodes": 5427,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 41901,
+    "events": 41905,
     "segments": 1491,
     "compressed_snapshot": true,
     "snapshot_events": 41771
@@ -51,6 +51,14 @@
       "score": 0.8749171270718232
     },
     {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.04288164665523156,
+      "conflict": 0,
+      "score": 0.8715780445969126
+    },
+    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -62,33 +70,25 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.01377505337833184,
+      "novelty": 0.013766519823788546,
       "conflict": 0,
-      "score": 0.8637192644121496
+      "score": 0.8637169603524228
     },
     {
-      "node_id": "concept:6f3170d6db374d81f26b",
-      "label": "wonders",
+      "node_id": "concept:1c48f6310f1c849b4ac3",
+      "label": "mind",
+      "activation": 1.0,
+      "novelty": 0.01054073995994519,
+      "conflict": 0,
+      "score": 0.8628459997891853
+    },
+    {
+      "node_id": "concept:8d01331027ac8fe4a37c",
+      "label": "chap",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
-    },
-    {
-      "node_id": "concept:57c4991869b96345e62c",
-      "label": "prophet",
-      "activation": 0.46,
-      "novelty": 0.8163265306122448,
-      "conflict": 0,
-      "score": 0.7996081632653061
-    },
-    {
-      "node_id": "concept:e259202cf023eab7796e",
-      "label": "signs",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 1412
     },
     "explore": {
-      "attempts": 882,
-      "successes": 872
+      "attempts": 883,
+      "successes": 873
     },
     "consolidate": {
       "attempts": 1197,
