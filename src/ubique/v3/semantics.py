@@ -93,6 +93,8 @@ class SemanticLearner:
             return []
         result = []
         sentence = source_sentence(str(episode.get("text", "")))
+        if not sentence:
+            sentence = clean_source(str(episode.get("text", "")))[:350]
         if sentence:
             claim = self.world.claim(
                 "Source passage: " + sentence, status="SOURCE_CLAIM",
