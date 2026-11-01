@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-01T10:41:56.158345+00:00",
-  "generation": 7004,
+  "timestamp": "2026-11-01T10:44:36.211952+00:00",
+  "generation": 7005,
   "focus": "Conscience and Sin: Daily Meditations for Lent, Including Week-days and Sundays",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_provider": null,
   "last_provider_generation": 7004,
   "last_search_generation": 6992,
   "cortex": {
-    "nodes": 13920,
-    "synapses": 104676,
+    "nodes": 13922,
+    "synapses": 104677,
     "active": 120,
-    "archived_synapses": 52382
+    "archived_synapses": 52383
   },
   "memory": {
-    "episodes": 5374,
-    "claims": 5881,
+    "episodes": 5375,
+    "claims": 5884,
     "stances": 33,
     "interests": 130,
-    "associative_comparisons": 3845,
+    "associative_comparisons": 3847,
     "screened_interpretations": 31,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 41061,
+    "events": 41074,
     "segments": 1472,
     "compressed_snapshot": true,
     "snapshot_events": 40957
@@ -34,14 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1682,
   "workspace": [
-    {
-      "node_id": "concept:1ac22c9b0c6163e4",
-      "label": "deliberately",
-      "activation": 0.8369543191317073,
-      "novelty": 0.39525691699604737,
-      "conflict": 0,
-      "score": 0.8819356135374206
-    },
     {
       "node_id": "concept:0f50089ba6762040",
       "label": "master",
@@ -59,6 +51,14 @@
       "score": 0.866620892594409
     },
     {
+      "node_id": "concept:1ac22c9b0c6163e4",
+      "label": "deliberately",
+      "activation": 0.8038384619586184,
+      "novelty": 0.39525691699604737,
+      "conflict": 0,
+      "score": 0.8647153678074144
+    },
+    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -67,28 +67,28 @@
       "score": 0.8637494792389946
     },
     {
-      "node_id": "concept:520011ae027bd5b30281",
-      "label": "refuses",
+      "node_id": "concept:e2bbb74d442a1d0f6ce1",
+      "label": "aliens",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:085afa73a88616efa822",
-      "label": "acknowledge",
+      "node_id": "concept:d304e1d1e2dbe6ccc0e6",
+      "label": "nigh",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:f1f718f462fbc4fc8c04",
-      "label": "rebellion",
+      "node_id": "concept:2410e4e9b51da59eb8a3",
+      "label": "gainst",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 203
     },
     "read": {
-      "attempts": 1378,
-      "successes": 1378
+      "attempts": 1379,
+      "successes": 1379
     },
     "explore": {
       "attempts": 873,
