@@ -1,8 +1,8 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-01T14:16:07.221427+00:00",
-  "generation": 7042,
+  "timestamp": "2026-11-01T14:18:18.269325+00:00",
+  "generation": 7043,
   "focus": "Plato's American Republic : $b Done out of the original",
   "last_action": "read",
   "last_action_success": true,
@@ -11,37 +11,29 @@
   "last_provider_generation": 7038,
   "last_search_generation": 7038,
   "cortex": {
-    "nodes": 13968,
-    "synapses": 105033,
+    "nodes": 13970,
+    "synapses": 105035,
     "active": 120,
-    "archived_synapses": 52467
+    "archived_synapses": 52469
   },
   "memory": {
-    "episodes": 5395,
-    "claims": 5944,
+    "episodes": 5396,
+    "claims": 5947,
     "stances": 33,
     "interests": 130,
-    "associative_comparisons": 3887,
+    "associative_comparisons": 3889,
     "screened_interpretations": 31,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 41425,
-    "segments": 1479,
+    "events": 41436,
+    "segments": 1480,
     "compressed_snapshot": true,
     "snapshot_events": 41280
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1699,
   "workspace": [
-    {
-      "node_id": "concept:ca52e7d1c18961a8c5b3",
-      "label": "united",
-      "activation": 1.0,
-      "novelty": 0.28776978417266186,
-      "conflict": 0,
-      "score": 0.9376978417266189
-    },
     {
       "node_id": "concept:244210e48437b6556980",
       "label": "project",
@@ -59,36 +51,44 @@
       "score": 0.8830572160546541
     },
     {
-      "node_id": "concept:0fc468dc240a979e",
-      "label": "collection",
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
       "activation": 1.0,
-      "novelty": 0.040535062829347386,
+      "novelty": 0.01628929793125916,
       "conflict": 0,
-      "score": 0.8709444669639239
+      "score": 0.86439811044144
     },
     {
-      "node_id": "concept:f2d44b8ac655a7ad",
-      "label": "public",
-      "activation": 1.0,
-      "novelty": 0.02476780185758514,
+      "node_id": "concept:b116c99a2c11258bdc6b",
+      "label": "egypt",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8666873065015481
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:40f024a500acd053",
-      "label": "domain",
-      "activation": 1.0,
-      "novelty": 0.024657872025644186,
+      "node_id": "concept:f55101cb5e7453c770d2",
+      "label": "exercise",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.866657625446924
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.02438726984514084,
+      "node_id": "concept:8c585378513f5f7a2e14",
+      "label": "recovery",
+      "activation": 0.46,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.8665845628581881
+      "score": 0.78452319391635
+    },
+    {
+      "node_id": "concept:c6a1427d7119cd3c049d",
+      "label": "beautiful",
+      "activation": 0.46,
+      "novelty": 0.7352941176470589,
+      "conflict": 0,
+      "score": 0.777729411764706
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 205
     },
     "read": {
-      "attempts": 1393,
-      "successes": 1393
+      "attempts": 1394,
+      "successes": 1394
     },
     "explore": {
       "attempts": 877,
