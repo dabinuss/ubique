@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-01T19:29:46.106412+00:00",
-  "generation": 7095,
+  "timestamp": "2026-11-01T19:32:11.743074+00:00",
+  "generation": 7096,
   "focus": "Meditations",
-  "last_action": "experiment",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "observed_comparison",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 7095,
   "last_search_generation": 7084,
   "cortex": {
     "nodes": 14015,
     "synapses": 105399,
     "active": 120,
-    "archived_synapses": 52483
+    "archived_synapses": 52423
   },
   "memory": {
     "episodes": 5431,
@@ -26,10 +26,10 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 41926,
+    "events": 41931,
     "segments": 1492,
     "compressed_snapshot": true,
-    "snapshot_events": 41771
+    "snapshot_events": 41931
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1729,
@@ -70,25 +70,25 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.013757996835660728,
+      "novelty": 0.013749484394335211,
       "conflict": 0,
-      "score": 0.8637146591456284
+      "score": 0.8637123607864705
     },
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
       "activation": 1.0,
-      "novelty": 0.010535742506453144,
+      "novelty": 0.010530749789385004,
       "conflict": 0,
-      "score": 0.8628446504767424
+      "score": 0.8628433024431339
     },
     {
       "node_id": "concept:8d01331027ac8fe4a37c",
       "label": "chap",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 873
     },
     "consolidate": {
-      "attempts": 1197,
-      "successes": 1197
+      "attempts": 1198,
+      "successes": 1198
     },
     "connect": {
       "attempts": 911,
