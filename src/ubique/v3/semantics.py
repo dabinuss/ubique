@@ -94,7 +94,24 @@ class SemanticLearner:
         result = []
         sentence = source_sentence(str(episode.get("text", "")))
         if not sentence:
-            sentence = clean_source(str(episode.get("text", "")))[:350]
+            # If no suitable sentence and the source is a library, note unavailability.
+            if self.family(episode).startswith("library:"):
+                # Generate an exploratory question about missing source content.
+                question = (f"The referenced source appears unavailable. "
+                            f"Can we locate an alternative public‑domain text for "
+                            f"'{episode.get('payload', {}).get('title', 'the source')}'?")
+                exploration = {
+                    "type": "exploratory_question",
+                    "question": question,
+                    "evidence_ids": [eid],
+                    "epistemic_status": "unverified_association",
+                }
+                self.journal.append("exploratory_question", exploration,
+                                    generation=generation)
+                result.append(exploration)
+                sentence = ""  # keep empty to avoid quotation claim
+            else:
+                sentence = clean_source(str(episode.get("text", "")))[:350]
         if sentence:
             claim = self.world.claim(
                 "Source passage: " + sentence, status="SOURCE_CLAIM",
