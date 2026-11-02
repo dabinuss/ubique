@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-02T13:43:32.187075+00:00",
-  "generation": 7264,
+  "timestamp": "2026-11-02T13:46:30.389592+00:00",
+  "generation": 7265,
   "focus": "The Riddle of the Universe",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 7259,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 7265,
   "last_search_generation": 7245,
   "cortex": {
-    "nodes": 14134,
-    "synapses": 107345,
+    "nodes": 14139,
+    "synapses": 107365,
     "active": 120,
-    "archived_synapses": 52673
+    "archived_synapses": 52593
   },
   "memory": {
     "episodes": 5505,
-    "claims": 6197,
+    "claims": 6203,
     "stances": 34,
     "interests": 131,
     "associative_comparisons": 4037,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 43224,
+    "events": 43243,
     "segments": 1533,
     "compressed_snapshot": true,
     "snapshot_events": 43089
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 1781,
+  "evidence_reviews": 1787,
   "workspace": [
     {
       "node_id": "concept:411f62e7fd037280",
@@ -67,6 +67,14 @@
       "score": 0.8663076743371101
     },
     {
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
+      "activation": 1.0,
+      "novelty": 0.016077170418006433,
+      "conflict": 0,
+      "score": 0.8643408360128617
+    },
+    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -75,20 +83,12 @@
       "score": 0.8635310272673773
     },
     {
-      "node_id": "concept:1c48f6310f1c849b4ac3",
-      "label": "mind",
-      "activation": 0.9590985229119436,
-      "novelty": 0.010063399416322834,
-      "conflict": 0,
-      "score": 0.8414483497566179
-    },
-    {
       "node_id": "concept:e6ed81de730988e16a4b",
       "label": "hich",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 900
     },
     "consolidate": {
-      "attempts": 1241,
-      "successes": 1241
+      "attempts": 1242,
+      "successes": 1242
     },
     "connect": {
       "attempts": 945,
