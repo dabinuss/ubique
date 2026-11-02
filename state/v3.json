@@ -1,55 +1,39 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-02T18:50:31.460732+00:00",
-  "generation": 7309,
-  "focus": "The Story of the Mind",
-  "last_action": "read",
+  "timestamp": "2026-11-02T18:53:31.942830+00:00",
+  "generation": 7310,
+  "focus": "Analysis of the Phenomena of the Human Mind",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 7305,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 7310,
   "last_search_generation": 7291,
   "cortex": {
-    "nodes": 14151,
-    "synapses": 107754,
+    "nodes": 14154,
+    "synapses": 107760,
     "active": 120,
-    "archived_synapses": 52528
+    "archived_synapses": 52480
   },
   "memory": {
     "episodes": 5525,
-    "claims": 6242,
+    "claims": 6247,
     "stances": 34,
     "interests": 131,
     "associative_comparisons": 4061,
-    "screened_interpretations": 34,
+    "screened_interpretations": 35,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 43592,
-    "segments": 1544,
+    "events": 43609,
+    "segments": 1545,
     "compressed_snapshot": true,
     "snapshot_events": 43573
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 1808,
+  "evidence_reviews": 1813,
   "workspace": [
-    {
-      "node_id": "concept:4277d3259d4e4993",
-      "label": "conclusion",
-      "activation": 1.0,
-      "novelty": 0.044247787610619475,
-      "conflict": 0,
-      "score": 0.8719469026548674
-    },
-    {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 1.0,
-      "novelty": 0.04279905842071475,
-      "conflict": 0,
-      "score": 0.871555745773593
-    },
     {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
@@ -67,28 +51,44 @@
       "score": 0.864325190228274
     },
     {
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.013016596160104133,
+      "conflict": 0,
+      "score": 0.8635144809632282
+    },
+    {
+      "node_id": "concept:fedcc8d1af5f19c07d75",
+      "label": "exchanged",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:4862f447f2c7f272fa2f",
+      "label": "pack",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:f4a048aaa845c7547fb5",
+      "label": "lived",
+      "activation": 0.46,
+      "novelty": 0.7604562737642586,
+      "conflict": 0,
+      "score": 0.78452319391635
+    },
+    {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.8295171929363765,
-      "novelty": 0.009937394415184339,
+      "activation": 0.8278641839265394,
+      "novelty": 0.009932952570151478,
       "conflict": 0,
-      "score": 0.7740320368190156
-    },
-    {
-      "node_id": "concept:467ae055376b59fb22e6",
-      "label": "varies",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:820effb874a485bf6151",
-      "label": "deaf",
-      "activation": 0.46,
-      "novelty": 0.6309148264984227,
-      "conflict": 0,
-      "score": 0.7495470031545741
+      "score": 0.7731712728357414
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 907
     },
     "consolidate": {
-      "attempts": 1253,
-      "successes": 1253
+      "attempts": 1254,
+      "successes": 1254
     },
     "connect": {
       "attempts": 954,
