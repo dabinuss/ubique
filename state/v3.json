@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-02T17:34:41.583485+00:00",
-  "generation": 7299,
+  "timestamp": "2026-11-02T17:37:44.969119+00:00",
+  "generation": 7300,
   "focus": "The Physical Basis of Mind",
-  "last_action": "experiment",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "observed_associations",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 7299,
   "last_search_generation": 7291,
   "cortex": {
     "nodes": 14143,
     "synapses": 107636,
     "active": 120,
-    "archived_synapses": 52478
+    "archived_synapses": 52448
   },
   "memory": {
     "episodes": 5523,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 43522,
+    "events": 43529,
     "segments": 1542,
     "compressed_snapshot": true,
     "snapshot_events": 43413
@@ -77,18 +77,18 @@
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.8654307574404713,
-      "novelty": 0.01,
+      "activation": 0.8634485578349945,
+      "novelty": 0.00999550202408916,
       "conflict": 0,
-      "score": 0.7927239938690451
+      "score": 0.7916920356207013
     },
     {
       "node_id": "concept:52cffaac9427e988b0cf",
       "label": "beds",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.78452319391635
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 906
     },
     "consolidate": {
-      "attempts": 1250,
-      "successes": 1250
+      "attempts": 1251,
+      "successes": 1251
     },
     "connect": {
       "attempts": 952,
