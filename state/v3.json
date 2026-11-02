@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-02T14:41:42.069357+00:00",
-  "generation": 7272,
+  "timestamp": "2026-11-02T14:44:18.824379+00:00",
+  "generation": 7273,
   "focus": "The Riddle of the Universe",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 7271,
   "last_search_generation": 7268,
   "cortex": {
     "nodes": 14139,
-    "synapses": 107403,
+    "synapses": 107481,
     "active": 120,
-    "archived_synapses": 52617
+    "archived_synapses": 52539
   },
   "memory": {
     "episodes": 5513,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 43309,
+    "events": 43314,
     "segments": 1535,
     "compressed_snapshot": true,
     "snapshot_events": 43253
@@ -38,9 +38,9 @@
       "node_id": "concept:411f62e7fd037280",
       "label": "actually",
       "activation": 1.0,
-      "novelty": 0.0446927374301676,
+      "novelty": 0.04451368795904741,
       "conflict": 0,
-      "score": 0.8720670391061454
+      "score": 0.8720186957489429
     },
     {
       "node_id": "concept:4277d3259d4e4993",
@@ -75,20 +75,20 @@
       "score": 0.8643376978070527
     },
     {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.01307787876806382,
+      "node_id": "concept:2cea274d0bedc39ec4ab",
+      "label": "picture",
+      "activation": 0.46,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8635310272673773
+      "score": 0.7996081632653061
     },
     {
-      "node_id": "concept:e6ed81de730988e16a4b",
-      "label": "hich",
+      "node_id": "concept:1223204fb6437b1599c5",
+      "label": "judging",
       "activation": 0.46,
-      "novelty": 0.6493506493506493,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.7545246753246754
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 901
     },
     "consolidate": {
-      "attempts": 1243,
-      "successes": 1243
+      "attempts": 1244,
+      "successes": 1244
     },
     "connect": {
       "attempts": 946,
