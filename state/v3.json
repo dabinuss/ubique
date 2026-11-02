@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-02T23:13:14.480994+00:00",
-  "generation": 7347,
-  "focus": "The Nicomachean Ethics of Aristotle",
-  "last_action": "evolve",
+  "timestamp": "2026-11-02T23:16:03.643322+00:00",
+  "generation": 7348,
+  "focus": "The Analysis of Mind",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "{\"accepted\": true, \"title\": \"Handle unavailable library sources with exploratory prompts\", \"summary\": \"When a library source yields no extractable sentence, generate an exploratory question indicating the source is unavailable and suggest seeking an alternative public‑domain text. This improves curiosity handling for missing library content without altering existing comparison logic.\", \"branch\": \"",
+  "last_action_detail": "observed_comparison",
   "last_provider": null,
   "last_provider_generation": 7344,
   "last_search_generation": 7337,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 43902,
+    "events": 43907,
     "segments": 1554,
     "compressed_snapshot": true,
     "snapshot_events": 43902
@@ -69,26 +69,26 @@
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.9757021296427658,
+      "activation": 0.9611342183099812,
       "novelty": 0.00985367295659457,
       "conflict": 0,
-      "score": 0.8500255991125187
+      "score": 0.8424502852194709
     },
     {
       "node_id": "concept:80cd439e9d634f1cbc24",
       "label": "econd",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:c0bd51e0416194e148ce",
       "label": "alike",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 32
     },
     "experiment": {
-      "attempts": 318,
-      "successes": 316
+      "attempts": 319,
+      "successes": 317
     },
     "question": {
       "attempts": 234,
