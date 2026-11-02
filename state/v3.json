@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-02T15:01:32.215959+00:00",
-  "generation": 7275,
+  "timestamp": "2026-11-02T15:16:29.962791+00:00",
+  "generation": 7276,
   "focus": "The Riddle of the Universe",
-  "last_action": "consolidate",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 7271,
+  "last_action_detail": "observed_associations",
+  "last_provider": "groq",
+  "last_provider_generation": 7276,
   "last_search_generation": 7268,
   "cortex": {
     "nodes": 14139,
-    "synapses": 107481,
+    "synapses": 107489,
     "active": 120,
-    "archived_synapses": 52491
+    "archived_synapses": 52487
   },
   "memory": {
-    "episodes": 5513,
-    "claims": 6206,
+    "episodes": 5517,
+    "claims": 6211,
     "stances": 34,
     "interests": 131,
     "associative_comparisons": 4045,
@@ -26,25 +26,25 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 43325,
+    "events": 43344,
     "segments": 1536,
     "compressed_snapshot": true,
     "snapshot_events": 43253
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 1787,
+  "evidence_reviews": 1792,
   "workspace": [
-    {
-      "node_id": "concept:411f62e7fd037280",
-      "label": "actually",
-      "activation": 1.0,
-      "novelty": 0.04433606739082244,
-      "conflict": 0,
-      "score": 0.8719707381955222
-    },
     {
       "node_id": "concept:4277d3259d4e4993",
       "label": "conclusion",
+      "activation": 1.0,
+      "novelty": 0.044247787610619475,
+      "conflict": 0,
+      "score": 0.8719469026548674
+    },
+    {
+      "node_id": "concept:411f62e7fd037280",
+      "label": "actually",
       "activation": 1.0,
       "novelty": 0.044247787610619475,
       "conflict": 0,
@@ -78,17 +78,17 @@
       "node_id": "concept:2cea274d0bedc39ec4ab",
       "label": "picture",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.7352941176470589,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.777729411764706
     },
     {
       "node_id": "concept:1223204fb6437b1599c5",
       "label": "judging",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.7352941176470589,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.777729411764706
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 31
     },
     "experiment": {
-      "attempts": 310,
-      "successes": 308
+      "attempts": 311,
+      "successes": 309
     },
     "question": {
       "attempts": 229,
