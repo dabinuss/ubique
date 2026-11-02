@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-02T20:53:03.703302+00:00",
-  "generation": 7327,
-  "focus": "The World as Will and Idea (Vol. 2 of 3)",
-  "last_action": "read",
+  "timestamp": "2026-11-02T20:55:44.181392+00:00",
+  "generation": 7328,
+  "focus": "The Nature of Man: Studies in Optimistic Philosophy",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 7327,
   "last_search_generation": 7314,
   "cortex": {
-    "nodes": 14173,
-    "synapses": 108003,
+    "nodes": 14175,
+    "synapses": 108039,
     "active": 120,
-    "archived_synapses": 52617
+    "archived_synapses": 52601
   },
   "memory": {
     "episodes": 5530,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 43742,
+    "events": 43747,
     "segments": 1549,
     "compressed_snapshot": true,
     "snapshot_events": 43742
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1821,
   "workspace": [
+    {
+      "node_id": "concept:040b0e3f05e74417",
+      "label": "experiment",
+      "activation": 1.0,
+      "novelty": 0.2518891687657431,
+      "conflict": 0,
+      "score": 0.9280100755667506
+    },
     {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
@@ -54,41 +62,33 @@
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
       "activation": 1.0,
-      "novelty": 0.009871181086817038,
+      "novelty": 0.00986241925144238,
       "conflict": 0,
-      "score": 0.8626652188934407
+      "score": 0.8626628531978895
     },
     {
-      "node_id": "concept:b1127a2f73bde220b978",
-      "label": "bethel",
+      "node_id": "concept:543f6262e01d94a4eed0",
+      "label": "farthest",
       "activation": 0.46,
-      "novelty": 0.6896551724137931,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7654068965517242
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:4c898449c679ddcdb3e2",
-      "label": "misgivings",
+      "node_id": "concept:c228bb999f494bb7eb16",
+      "label": "excitable",
       "activation": 0.46,
-      "novelty": 0.6896551724137931,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7654068965517242
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:e3b1baf50529a0473b14",
-      "label": "soiled",
+      "node_id": "concept:037beaafcba0557f52ab",
+      "label": "periphery",
       "activation": 0.46,
-      "novelty": 0.6896551724137931,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7654068965517242
-    },
-    {
-      "node_id": "concept:d6e21286621a8586f7e5",
-      "label": "house",
-      "activation": 0.46,
-      "novelty": 0.4255319148936171,
-      "conflict": 0,
-      "score": 0.6940936170212766
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 911
     },
     "consolidate": {
-      "attempts": 1258,
-      "successes": 1258
+      "attempts": 1259,
+      "successes": 1259
     },
     "connect": {
       "attempts": 957,
