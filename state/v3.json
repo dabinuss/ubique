@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-02T07:32:49.573781+00:00",
-  "generation": 7209,
-  "focus": "The Mind and the Brain",
-  "last_action": "read",
+  "timestamp": "2026-11-02T07:35:30.918185+00:00",
+  "generation": 7210,
+  "focus": "A Treatise of Human Nature",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 7208,
   "last_search_generation": 7199,
   "cortex": {
     "nodes": 14105,
-    "synapses": 106617,
+    "synapses": 106633,
     "active": 120,
-    "archived_synapses": 52843
+    "archived_synapses": 52771
   },
   "memory": {
     "episodes": 5482,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 42818,
-    "segments": 1519,
+    "events": 42825,
+    "segments": 1520,
     "compressed_snapshot": true,
     "snapshot_events": 42755
   },
@@ -35,12 +35,36 @@
   "evidence_reviews": 1766,
   "workspace": [
     {
+      "node_id": "concept:c42aa7872617a44d",
+      "label": "biography",
+      "activation": 1.0,
+      "novelty": 0.07902015013828527,
+      "conflict": 0,
+      "score": 0.881335440537337
+    },
+    {
       "node_id": "concept:4277d3259d4e4993",
       "label": "conclusion",
       "activation": 1.0,
       "novelty": 0.044247787610619475,
       "conflict": 0,
       "score": 0.8719469026548674
+    },
+    {
+      "node_id": "concept:02f77488efc6c9cf",
+      "label": "destiny",
+      "activation": 1.0,
+      "novelty": 0.030143180105501134,
+      "conflict": 0,
+      "score": 0.8681386586284854
+    },
+    {
+      "node_id": "concept:0f50089ba6762040",
+      "label": "master",
+      "activation": 1.0,
+      "novelty": 0.028555111364934327,
+      "conflict": 0,
+      "score": 0.8677098800685323
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -51,44 +75,20 @@
       "score": 0.8663477136475843
     },
     {
-      "node_id": "concept:14e32f3cbdd3b4c414be",
-      "label": "legs",
+      "node_id": "concept:15948a8c1e1d3d7babc1",
+      "label": "chanced",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:6ac9a32c0ca8e84e5bf0",
-      "label": "cards",
+      "node_id": "concept:2b447a850b890144660c",
+      "label": "gown",
       "activation": 0.46,
-      "novelty": 0.6493506493506493,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7545246753246754
-    },
-    {
-      "node_id": "concept:1c48f6310f1c849b4ac3",
-      "label": "mind",
-      "activation": 0.788762237137816,
-      "novelty": 0.010258514567090687,
-      "conflict": 0,
-      "score": 0.7529261622447788
-    },
-    {
-      "node_id": "concept:0d4fc4a78d3706edccaf",
-      "label": "table",
-      "activation": 0.46,
-      "novelty": 0.4338394793926248,
-      "conflict": 0,
-      "score": 0.6963366594360088
-    },
-    {
-      "node_id": "concept:fa1f14f6d1bf2114a533",
-      "label": "knows",
-      "activation": 0.46,
-      "novelty": 0.39525691699604737,
-      "conflict": 0,
-      "score": 0.6859193675889328
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 891
     },
     "consolidate": {
-      "attempts": 1226,
-      "successes": 1226
+      "attempts": 1227,
+      "successes": 1227
     },
     "connect": {
       "attempts": 933,
