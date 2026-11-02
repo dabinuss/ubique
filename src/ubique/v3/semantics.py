@@ -135,9 +135,8 @@ class SemanticLearner:
         if not choices and len(current) >= 2:
             for other in reversed(earlier):
                 if (other.get("id") == eid or
-                        other.get("epistemic_status") != "source_passage" or
-                        not self.family(other) or
-                        self.family(other) == self.family(episode)):
+                        other.get("epistemic_status") not in {"source_passage", "exploratory_question", "association_hypothesis", "insight"} or
+                        not self.family(other)):
                     continue
                 other_concepts = self._concepts(other)
                 if not other_concepts:
