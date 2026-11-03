@@ -224,7 +224,10 @@ class SemanticLearner:
                 words = sorted(cues)[:3]
                 # Augment curiosity by suggesting additional high-frequency concepts
                 frequent_terms = sorted(
-                    (t for t in self._term_frequency if t not in cues),
+                    (t for t in self._term_frequency
+                     if t not in cues
+                     and t not in GENERIC_TERMS
+                     and len(t) >= 3),
                     key=lambda t: self._term_frequency[t],
                     reverse=True)[:3]
                 extra = ", ".join(frequent_terms)
