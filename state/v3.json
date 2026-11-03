@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-03T14:37:15.662639+00:00",
-  "generation": 7485,
-  "focus": "A Treatise of Human Nature",
-  "last_action": "consolidate",
-  "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 7480,
+  "timestamp": "2026-11-03T14:52:04.773880+00:00",
+  "generation": 7486,
+  "focus": "The Nicomachean Ethics of Aristotle",
+  "last_action": "explore",
+  "last_action_success": false,
+  "last_action_detail": "No meaningful associations activated",
+  "last_provider": "groq",
+  "last_provider_generation": 7486,
   "last_search_generation": 7475,
   "cortex": {
     "nodes": 14287,
     "synapses": 109755,
     "active": 120,
-    "archived_synapses": 53719
+    "archived_synapses": 53895
   },
   "memory": {
-    "episodes": 5606,
-    "claims": 6381,
+    "episodes": 5609,
+    "claims": 6383,
     "stances": 35,
     "interests": 131,
     "associative_comparisons": 4161,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 44941,
-    "segments": 1588,
+    "events": 44952,
+    "segments": 1589,
     "compressed_snapshot": true,
     "snapshot_events": 44888
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 1861,
+  "evidence_reviews": 1863,
   "workspace": [
     {
       "node_id": "concept:65ee89092efbf78ab19a",
@@ -70,9 +70,9 @@
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.02210677572676025,
+      "novelty": 0.022084805653710248,
       "conflict": 0,
-      "score": 0.8659688294462253
+      "score": 0.8659628975265019
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -85,10 +85,10 @@
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.9504530360716111,
+      "activation": 0.9520470045324659,
       "novelty": 0.009532434107049235,
       "conflict": 0,
-      "score": 0.836809335966141
+      "score": 0.8376381995657856
     }
   ],
   "skills": {
@@ -101,7 +101,7 @@
       "successes": 1473
     },
     "explore": {
-      "attempts": 947,
+      "attempts": 948,
       "successes": 936
     },
     "consolidate": {
