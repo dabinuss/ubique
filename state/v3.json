@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-03T14:34:23.079017+00:00",
-  "generation": 7484,
-  "focus": "The Riddle of the Universe",
-  "last_action": "read",
+  "timestamp": "2026-11-03T14:37:15.662639+00:00",
+  "generation": 7485,
+  "focus": "A Treatise of Human Nature",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 7480,
   "last_search_generation": 7475,
   "cortex": {
     "nodes": 14287,
-    "synapses": 109741,
+    "synapses": 109755,
     "active": 120,
-    "archived_synapses": 53775
+    "archived_synapses": 53719
   },
   "memory": {
     "episodes": 5606,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 44934,
+    "events": 44941,
     "segments": 1588,
     "compressed_snapshot": true,
     "snapshot_events": 44888
@@ -67,6 +67,14 @@
       "score": 0.8742442627275127
     },
     {
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.02210677572676025,
+      "conflict": 0,
+      "score": 0.8659688294462253
+    },
+    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -75,20 +83,12 @@
       "score": 0.8633200122963418
     },
     {
-      "node_id": "concept:6cd512a819ae26ee1999",
-      "label": "snatch",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.918436787388652,
+      "activation": 0.9504530360716111,
       "novelty": 0.009532434107049235,
       "conflict": 0,
-      "score": 0.8201608866510024
+      "score": 0.836809335966141
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 936
     },
     "consolidate": {
-      "attempts": 1299,
-      "successes": 1299
+      "attempts": 1300,
+      "successes": 1300
     },
     "connect": {
       "attempts": 990,
