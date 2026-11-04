@@ -78,11 +78,13 @@ class SemanticLearner:
     def _adjust_exploration_factor(self, produced_comparisons: bool):
         if produced_comparisons:
             self._no_comp_counter = 0
-            self.exploration_factor = max(.05, self.exploration_factor - .01)
+            # Decrease curiosity more gently to avoid abrupt drops.
+            self.exploration_factor = max(.05, self.exploration_factor - .005)
         else:
             self._no_comp_counter += 1
+            # Increase curiosity in smaller increments, capping the boost.
             self.exploration_factor = min(
-                .40, self.exploration_factor + min(.02 * self._no_comp_counter, .10))
+                .40, self.exploration_factor + min(.01 * self._no_comp_counter, .05))
 
     def observe(self, episode: dict, *, generation=None) -> list[dict]:
         status = episode.get("epistemic_status")
