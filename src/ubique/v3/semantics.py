@@ -227,7 +227,8 @@ class SemanticLearner:
                     (t for t in self._term_frequency
                      if t not in cues
                      and t not in GENERIC_TERMS
-                     and len(t) >= 3),
+                     and len(t) >= 3
+                     and t not in BOILERPLATE),
                     key=lambda t: self._term_frequency[t],
                     reverse=True)[:3]
                 extra = ", ".join(frequent_terms)
