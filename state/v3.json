@@ -1,23 +1,23 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-04T20:29:54.587574+00:00",
-  "generation": 7638,
-  "focus": "Franklin Paine Mall: The Story of a Mind",
-  "last_action": "read",
+  "timestamp": "2026-11-04T20:32:44.623912+00:00",
+  "generation": 7639,
+  "focus": "The Psychology of the Emotions",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 7633,
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": "groq",
+  "last_provider_generation": 7639,
   "last_search_generation": 7636,
   "cortex": {
-    "nodes": 14364,
+    "nodes": 14365,
     "synapses": 110826,
     "active": 120,
     "archived_synapses": 55388
   },
   "memory": {
-    "episodes": 5684,
+    "episodes": 5688,
     "claims": 6506,
     "stances": 35,
     "interests": 132,
@@ -26,14 +26,22 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 46097,
-    "segments": 1626,
+    "events": 46105,
+    "segments": 1627,
     "compressed_snapshot": true,
     "snapshot_events": 46082
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 1903,
   "workspace": [
+    {
+      "node_id": "concept:3f8b4464a99de3dc8c5c",
+      "label": "religious",
+      "activation": 1.0,
+      "novelty": 0.047664442326024785,
+      "conflict": 0,
+      "score": 0.8728693994280268
+    },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
@@ -59,36 +67,28 @@
       "score": 0.8624904302910115
     },
     {
-      "node_id": "concept:a43ac7b069a33fe30bf3",
-      "label": "depart",
+      "node_id": "concept:5934b08dfb9ec6a32471",
+      "label": "psychologic",
       "activation": 0.46,
-      "novelty": 0.6896551724137931,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7654068965517242
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:673377053e0e835f539d",
-      "label": "instigation",
+      "node_id": "concept:5a46e33c625a2723b8bc",
+      "label": "zeal",
       "activation": 0.46,
-      "novelty": 0.6896551724137931,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7654068965517242
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:76b1ee582dbd709cf8e9",
-      "label": "passion",
+      "node_id": "concept:2700f7d8dd9cbae7fcbb",
+      "label": "preparations",
       "activation": 0.46,
-      "novelty": 0.6134969325153374,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7448441717791412
-    },
-    {
-      "node_id": "concept:ae04a7da6a71c4ff0356",
-      "label": "opposed",
-      "activation": 0.46,
-      "novelty": 0.5970149253731344,
-      "conflict": 0,
-      "score": 0.7403940298507463
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 1343
     },
     "connect": {
-      "attempts": 1021,
-      "successes": 1018
+      "attempts": 1022,
+      "successes": 1019
     },
     "evolve": {
       "attempts": 61,
