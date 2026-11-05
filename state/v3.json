@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-05T06:10:39.033597+00:00",
-  "generation": 7719,
-  "focus": "The Story of the Mind",
-  "last_action": "explore",
+  "timestamp": "2026-11-05T06:13:37.029961+00:00",
+  "generation": 7720,
+  "focus": "Human Nature and Conduct",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 7714,
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": "gemini",
+  "last_provider_generation": 7720,
   "last_search_generation": 7659,
   "cortex": {
-    "nodes": 14396,
-    "synapses": 111388,
+    "nodes": 14398,
+    "synapses": 111426,
     "active": 120,
     "archived_synapses": 55358
   },
   "memory": {
-    "episodes": 5712,
-    "claims": 6558,
+    "episodes": 5713,
+    "claims": 6561,
     "stances": 36,
     "interests": 132,
-    "associative_comparisons": 4267,
+    "associative_comparisons": 4269,
     "screened_interpretations": 37,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 46651,
+    "events": 46664,
     "segments": 1647,
     "compressed_snapshot": true,
     "snapshot_events": 46571
@@ -54,9 +54,9 @@
       "node_id": "concept:6907de2e8144a57274c7",
       "label": "treatise",
       "activation": 1.0,
-      "novelty": 0.03417634996582365,
+      "novelty": 0.03412386964681795,
       "conflict": 0,
-      "score": 0.8692276144907725
+      "score": 0.8692134448046409
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -78,17 +78,17 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.011506817789540302,
+      "novelty": 0.01150086256469235,
       "conflict": 0,
-      "score": 0.8631068408031759
+      "score": 0.8631052328924669
     },
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.9699580818570953,
+      "activation": 0.984727837847369,
       "novelty": 0.009080590238365494,
       "conflict": 0,
-      "score": 0.8468299619300483
+      "score": 0.8545102350449907
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 232
     },
     "read": {
-      "attempts": 1502,
-      "successes": 1502
+      "attempts": 1503,
+      "successes": 1503
     },
     "explore": {
       "attempts": 988,
