@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-05T23:55:25.339589+00:00",
-  "generation": 7857,
-  "focus": "The Psychology of the Emotions",
-  "last_action": "read",
+  "timestamp": "2026-11-05T23:57:47.866419+00:00",
+  "generation": 7858,
+  "focus": "Psychology of the Unconscious",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 7854,
   "last_search_generation": 7843,
   "cortex": {
-    "nodes": 14468,
+    "nodes": 14470,
     "synapses": 113025,
     "active": 120,
     "archived_synapses": 54769
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 47725,
+    "events": 47729,
     "segments": 1681,
     "compressed_snapshot": true,
     "snapshot_events": 47725
@@ -34,38 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2000,
   "workspace": [
-    {
-      "node_id": "concept:3853eb486f0ccd5b3023",
-      "label": "varieties",
-      "activation": 1.0,
-      "novelty": 0.0493583415597236,
-      "conflict": 0,
-      "score": 0.8733267522211254
-    },
-    {
-      "node_id": "concept:3f8b4464a99de3dc8c5c",
-      "label": "religious",
-      "activation": 1.0,
-      "novelty": 0.04551661356395084,
-      "conflict": 0,
-      "score": 0.8722894856622667
-    },
-    {
-      "node_id": "concept:53e5e7c5a884893739c4",
-      "label": "experience",
-      "activation": 1.0,
-      "novelty": 0.044247787610619475,
-      "conflict": 0,
-      "score": 0.8719469026548674
-    },
-    {
-      "node_id": "concept:411f62e7fd037280",
-      "label": "actually",
-      "activation": 1.0,
-      "novelty": 0.04363953742090334,
-      "conflict": 0,
-      "score": 0.8717826751036439
-    },
     {
       "node_id": "concept:3676cba44f159ed1",
       "label": "cognitive",
@@ -85,10 +53,42 @@
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.9609657918799602,
-      "novelty": 0.008761938140716727,
+      "activation": 0.9611411483076976,
+      "novelty": 0.008755034144633165,
       "conflict": 0,
-      "score": 0.8420679350755729
+      "score": 0.8421572563390538
+    },
+    {
+      "node_id": "concept:6089854c94ca5454b76b",
+      "label": "london",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:14b611ddbeddd6ce4422",
+      "label": "macmillans",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:c604dabc9591840978d2",
+      "label": "stanley",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:53573d9d9e2738d00788",
+      "label": "hapman",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 1405
     },
     "connect": {
-      "attempts": 1068,
-      "successes": 1065
+      "attempts": 1069,
+      "successes": 1066
     },
     "evolve": {
       "attempts": 64,
