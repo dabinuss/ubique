@@ -101,7 +101,8 @@ class SemanticLearner:
                 # Generate an exploratory question about missing source content.
                 question = (f"The referenced source appears unavailable. "
                             f"Can we locate an alternative public‑domain text for "
-                            f"'{episode.get('payload', {}).get('title', 'the source')}'?")
+                            f"'{episode.get('payload', {}).get('title', 'the source')}'? "
+                            f"Consider searching repositories such as Project Gutenberg or the Internet Archive.")
                 exploration = {
                     "type": "exploratory_question",
                     "question": question,
