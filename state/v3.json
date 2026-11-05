@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-05T13:22:35.864170+00:00",
-  "generation": 7781,
-  "focus": "The World as Will and Idea (Vol. 3 of 3)",
-  "last_action": "read",
+  "timestamp": "2026-11-05T13:24:59.610913+00:00",
+  "generation": 7782,
+  "focus": "Psychology: Briefer Course",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": null,
   "last_provider_generation": 7781,
   "last_search_generation": 7751,
   "cortex": {
     "nodes": 14425,
     "synapses": 112106,
     "active": 120,
-    "archived_synapses": 54806
+    "archived_synapses": 54832
   },
   "memory": {
     "episodes": 5744,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 47168,
+    "events": 47172,
     "segments": 1662,
     "compressed_snapshot": true,
     "snapshot_events": 47061
@@ -35,20 +35,12 @@
   "evidence_reviews": 1966,
   "workspace": [
     {
-      "node_id": "concept:ca52e7d1c18961a8c5b3",
-      "label": "united",
+      "node_id": "concept:1abe5f34c25e621d",
+      "label": "characteristic",
       "activation": 1.0,
-      "novelty": 0.2805049088359046,
+      "novelty": 0.07763975155279504,
       "conflict": 0,
-      "score": 0.9357363253856943
-    },
-    {
-      "node_id": "concept:244210e48437b6556980",
-      "label": "project",
-      "activation": 1.0,
-      "novelty": 0.11267605633802817,
-      "conflict": 0,
-      "score": 0.8904225352112676
+      "score": 0.8809627329192546
     },
     {
       "node_id": "concept:65ee89092efbf78ab19a",
@@ -83,12 +75,20 @@
       "score": 0.8717136659436009
     },
     {
-      "node_id": "concept:0fc468dc240a979e",
-      "label": "collection",
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
       "activation": 1.0,
-      "novelty": 0.040241448692152924,
+      "novelty": 0.011222085063404781,
       "conflict": 0,
-      "score": 0.8708651911468814
+      "score": 0.8630299629671194
+    },
+    {
+      "node_id": "concept:d96f56c19db3df3bd53f",
+      "label": "supplying",
+      "activation": 0.46,
+      "novelty": 0.6896551724137931,
+      "conflict": 0,
+      "score": 0.7654068965517242
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 1384
     },
     "connect": {
-      "attempts": 1051,
-      "successes": 1048
+      "attempts": 1052,
+      "successes": 1049
     },
     "evolve": {
       "attempts": 63,
