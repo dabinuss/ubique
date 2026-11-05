@@ -143,7 +143,8 @@ class SemanticLearner:
                 min_shared = 1
             if len(shared) < min_shared:
                 continue
-            novelty = sum(2.5 / (1 + self._term_frequency.get(t, 0)) for t in shared)
+            # Increase emphasis on rare terms to boost curiosity-driven novelty.
+            novelty = sum(3.0 / (1 + self._term_frequency.get(t, 0)) for t in shared)
             choices.append((len(shared) + novelty, other, shared))
             if len(choices) >= 80:
                 break
