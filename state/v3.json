@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-05T17:53:37.173604+00:00",
-  "generation": 7806,
+  "timestamp": "2026-11-05T17:56:02.381279+00:00",
+  "generation": 7807,
   "focus": "Psychology: Briefer Course",
-  "last_action": "read",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 7803,
   "last_search_generation": 7751,
   "cortex": {
-    "nodes": 14440,
+    "nodes": 14442,
     "synapses": 112454,
     "active": 120,
-    "archived_synapses": 54850
+    "archived_synapses": 54884
   },
   "memory": {
     "episodes": 5754,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 47336,
-    "segments": 1668,
+    "events": 47340,
+    "segments": 1669,
     "compressed_snapshot": true,
     "snapshot_events": 47224
   },
@@ -59,6 +59,14 @@
       "score": 0.8717826751036439
     },
     {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.041990342221289105,
+      "conflict": 0,
+      "score": 0.8713373923997481
+    },
+    {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
@@ -67,28 +75,20 @@
       "score": 0.8694306671323786
     },
     {
-      "node_id": "concept:be6d0fc3ae70ab91596e",
-      "label": "removes",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "node_id": "concept:1c48f6310f1c849b4ac3",
+      "label": "mind",
+      "activation": 1.0,
+      "novelty": 0.008891655181612059,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.8624007468990353
     },
     {
-      "node_id": "concept:573aba5ca002eab98701",
-      "label": "departs",
+      "node_id": "concept:80822c900bdbb19f8582",
+      "label": "expectations",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:ea4c55ca1f43fc93f10c",
-      "label": "exhausted",
-      "activation": 0.46,
-      "novelty": 0.6896551724137931,
-      "conflict": 0,
-      "score": 0.7654068965517242
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 1515
     },
     "explore": {
-      "attempts": 1003,
-      "successes": 989
+      "attempts": 1004,
+      "successes": 990
     },
     "consolidate": {
       "attempts": 1391,
