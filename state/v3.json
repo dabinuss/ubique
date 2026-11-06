@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-06T23:38:07.120540+00:00",
-  "generation": 8057,
-  "focus": "Psychology: Briefer Course",
-  "last_action": "explore",
-  "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 8053,
+  "timestamp": "2026-11-06T23:41:01.644092+00:00",
+  "generation": 8058,
+  "focus": "Meditations",
+  "last_action": "evolve",
+  "last_action_success": false,
+  "last_action_detail": "No external code-generation provider available",
+  "last_provider": "groq",
+  "last_provider_generation": 8058,
   "last_search_generation": 8050,
   "cortex": {
     "nodes": 14598,
     "synapses": 115134,
     "active": 120,
-    "archived_synapses": 55426
+    "archived_synapses": 55424
   },
   "memory": {
     "episodes": 5848,
-    "claims": 6860,
+    "claims": 6862,
     "stances": 37,
     "interests": 134,
     "associative_comparisons": 4431,
@@ -26,21 +26,21 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 49235,
+    "events": 49245,
     "segments": 1731,
     "compressed_snapshot": true,
     "snapshot_events": 49185
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2071,
+  "evidence_reviews": 2073,
   "workspace": [
     {
       "node_id": "concept:c42aa7872617a44d",
       "label": "biography",
       "activation": 1.0,
-      "novelty": 0.0643707756678468,
+      "novelty": 0.06418485237483953,
       "conflict": 0,
-      "score": 0.8773801094303186
+      "score": 0.8773299101412066
     },
     {
       "node_id": "concept:3853eb486f0ccd5b3023",
@@ -78,9 +78,9 @@
       "node_id": "concept:02f77488efc6c9cf",
       "label": "destiny",
       "activation": 1.0,
-      "novelty": 0.026322716504343247,
+      "novelty": 0.02629157355067701,
       "conflict": 0,
-      "score": 0.8671071334561726
+      "score": 0.8670987248586828
     },
     {
       "node_id": "concept:b39ea7408bbea9e9",
@@ -113,7 +113,7 @@
       "successes": 1106
     },
     "evolve": {
-      "attempts": 66,
+      "attempts": 67,
       "successes": 38
     },
     "experiment": {
