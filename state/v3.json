@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-06T03:57:25.512766+00:00",
-  "generation": 7893,
-  "focus": "Psychology of the Unconscious",
-  "last_action": "read",
+  "timestamp": "2026-11-06T03:59:54.213330+00:00",
+  "generation": 7894,
+  "focus": "The Master of Destiny: A Biography of the Brain",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 7888,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "gemini",
+  "last_provider_generation": 7894,
   "last_search_generation": 7889,
   "cortex": {
-    "nodes": 14482,
-    "synapses": 113309,
+    "nodes": 14483,
+    "synapses": 113347,
     "active": 120,
-    "archived_synapses": 54815
+    "archived_synapses": 54749
   },
   "memory": {
     "episodes": 5787,
-    "claims": 6727,
+    "claims": 6728,
     "stances": 36,
     "interests": 133,
     "associative_comparisons": 4349,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 47998,
+    "events": 48005,
     "segments": 1690,
     "compressed_snapshot": true,
     "snapshot_events": 47886
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2010,
+  "evidence_reviews": 2011,
   "workspace": [
     {
       "node_id": "concept:2331eb33ce2c3766148e",
@@ -41,6 +41,22 @@
       "novelty": 0.048923679060665366,
       "conflict": 0,
       "score": 0.8732093933463796
+    },
+    {
+      "node_id": "concept:5a2a957b269e8f0f",
+      "label": "external",
+      "activation": 1.0,
+      "novelty": 0.03428179636612959,
+      "conflict": 0,
+      "score": 0.8692560850188551
+    },
+    {
+      "node_id": "concept:6907de2e8144a57274c7",
+      "label": "treatise",
+      "activation": 1.0,
+      "novelty": 0.03291097581043278,
+      "conflict": 0,
+      "score": 0.8688859634688169
     },
     {
       "node_id": "concept:8b16ced79976e6a1",
@@ -54,9 +70,9 @@
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.01102718200363897,
+      "novelty": 0.011016248967226661,
       "conflict": 0,
-      "score": 0.8629773391409825
+      "score": 0.8629743872211513
     },
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
@@ -67,28 +83,12 @@
       "score": 0.8623417172593235
     },
     {
-      "node_id": "concept:c210c58df65425808dc5",
-      "label": "meditations",
-      "activation": 0.9379907082355249,
-      "novelty": 0.014598540145985401,
-      "conflict": 0,
-      "score": 0.831696774121889
-    },
-    {
-      "node_id": "concept:4957900f389e6b2e7976",
-      "label": "burns",
+      "node_id": "concept:d3d8884305feb55c3605",
+      "label": "carryd",
       "activation": 0.46,
-      "novelty": 0.6493506493506493,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7545246753246754
-    },
-    {
-      "node_id": "concept:15bcbadff2792ccb7f21",
-      "label": "speedily",
-      "activation": 0.46,
-      "novelty": 0.5524861878453039,
-      "conflict": 0,
-      "score": 0.7283712707182322
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 1006
     },
     "consolidate": {
-      "attempts": 1415,
-      "successes": 1415
+      "attempts": 1416,
+      "successes": 1416
     },
     "connect": {
       "attempts": 1076,
