@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-06T17:19:19.032636+00:00",
-  "generation": 8004,
-  "focus": "Analysis of the Phenomena of the Human Mind",
-  "last_action": "search",
+  "timestamp": "2026-11-06T17:22:28.898766+00:00",
+  "generation": 8005,
+  "focus": "A Treatise of Human Nature",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Acquired 3 attributable external articles",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 8002,
   "last_search_generation": 8004,
@@ -14,7 +14,7 @@
     "nodes": 14552,
     "synapses": 114440,
     "active": 120,
-    "archived_synapses": 55274
+    "archived_synapses": 55252
   },
   "memory": {
     "episodes": 5829,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 48807,
+    "events": 48814,
     "segments": 1718,
     "compressed_snapshot": true,
     "snapshot_events": 48695
@@ -59,28 +59,20 @@
       "score": 0.8715114048177361
     },
     {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 0.9936052934871864,
-      "novelty": 0.04167534903104814,
-      "conflict": 0,
-      "score": 0.8679270968517199
-    },
-    {
       "node_id": "concept:02f77488efc6c9cf",
       "label": "destiny",
       "activation": 1.0,
-      "novelty": 0.026670222696359516,
+      "novelty": 0.02663825253063399,
       "conflict": 0,
-      "score": 0.8672009601280171
+      "score": 0.8671923281832712
     },
     {
       "node_id": "concept:0f50089ba6762040",
       "label": "master",
       "activation": 1.0,
-      "novelty": 0.024795437639474338,
+      "novelty": 0.02476780185758514,
       "conflict": 0,
-      "score": 0.8666947681626582
+      "score": 0.8666873065015481
     },
     {
       "node_id": "concept:c9b6dab517b9d127",
@@ -89,6 +81,14 @@
       "novelty": 0.02358490566037736,
       "conflict": 0,
       "score": 0.866367924528302
+    },
+    {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 0.9883616341466792,
+      "novelty": 0.04167534903104814,
+      "conflict": 0,
+      "score": 0.8652003939946562
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 1024
     },
     "consolidate": {
-      "attempts": 1447,
-      "successes": 1447
+      "attempts": 1448,
+      "successes": 1448
     },
     "connect": {
       "attempts": 1098,
