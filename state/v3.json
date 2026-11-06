@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-06T23:35:13.296939+00:00",
-  "generation": 8056,
-  "focus": "The Republic of Plato",
-  "last_action": "read",
+  "timestamp": "2026-11-06T23:38:07.120540+00:00",
+  "generation": 8057,
+  "focus": "Psychology: Briefer Course",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 8053,
   "last_search_generation": 8050,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 49231,
+    "events": 49235,
     "segments": 1731,
     "compressed_snapshot": true,
     "snapshot_events": 49185
@@ -35,12 +35,28 @@
   "evidence_reviews": 2071,
   "workspace": [
     {
+      "node_id": "concept:c42aa7872617a44d",
+      "label": "biography",
+      "activation": 1.0,
+      "novelty": 0.0643707756678468,
+      "conflict": 0,
+      "score": 0.8773801094303186
+    },
+    {
       "node_id": "concept:3853eb486f0ccd5b3023",
       "label": "varieties",
       "activation": 1.0,
       "novelty": 0.045238633793259445,
       "conflict": 0,
       "score": 0.8722144311241802
+    },
+    {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.04167534903104814,
+      "conflict": 0,
+      "score": 0.871252344238383
     },
     {
       "node_id": "concept:3f8b4464a99de3dc8c5c",
@@ -59,36 +75,20 @@
       "score": 0.8710046871815773
     },
     {
+      "node_id": "concept:02f77488efc6c9cf",
+      "label": "destiny",
+      "activation": 1.0,
+      "novelty": 0.026322716504343247,
+      "conflict": 0,
+      "score": 0.8671071334561726
+    },
+    {
       "node_id": "concept:b39ea7408bbea9e9",
       "label": "closed",
       "activation": 1.0,
       "novelty": 0.025654181631605953,
       "conflict": 0,
       "score": 0.8669266290405337
-    },
-    {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
-      "activation": 1.0,
-      "novelty": 0.01489203276247208,
-      "conflict": 0,
-      "score": 0.8640208488458676
-    },
-    {
-      "node_id": "concept:c210c58df65425808dc5",
-      "label": "meditations",
-      "activation": 1.0,
-      "novelty": 0.014080540692762603,
-      "conflict": 0,
-      "score": 0.863801745987046
-    },
-    {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.010441683199331732,
-      "conflict": 0,
-      "score": 0.8628192544638196
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 1545
     },
     "explore": {
-      "attempts": 1047,
-      "successes": 1033
+      "attempts": 1048,
+      "successes": 1034
     },
     "consolidate": {
       "attempts": 1463,
