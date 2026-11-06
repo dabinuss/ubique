@@ -1,14 +1,14 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-06T13:53:46.308327+00:00",
-  "generation": 7978,
+  "timestamp": "2026-11-06T14:08:48.384384+00:00",
+  "generation": 7979,
   "focus": "Mental Evolution in Man: Origin of Human Faculty",
-  "last_action": "consolidate",
-  "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 7973,
+  "last_action": "evolve",
+  "last_action_success": false,
+  "last_action_detail": "No external code-generation provider available",
+  "last_provider": "groq",
+  "last_provider_generation": 7979,
   "last_search_generation": 7958,
   "cortex": {
     "nodes": 14528,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 48586,
-    "segments": 1711,
+    "events": 48592,
+    "segments": 1712,
     "compressed_snapshot": true,
     "snapshot_events": 48531
   },
@@ -46,25 +46,25 @@
       "node_id": "concept:65ee89092efbf78ab19a",
       "label": "optimistic",
       "activation": 1.0,
-      "novelty": 0.05738880918220947,
+      "novelty": 0.057240984544934176,
       "conflict": 0,
-      "score": 0.8754949784791966
+      "score": 0.8754550658271323
     },
     {
       "node_id": "concept:48d492d08e9d314c034c",
       "label": "studies",
       "activation": 1.0,
-      "novelty": 0.04991265285749938,
+      "novelty": 0.04980079681274901,
       "conflict": 0,
-      "score": 0.873476416271525
+      "score": 0.8734462151394422
     },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
       "activation": 1.0,
-      "novelty": 0.04807692307692307,
+      "novelty": 0.04797313504437515,
       "conflict": 0,
-      "score": 0.8729807692307692
+      "score": 0.8729527464619813
     },
     {
       "node_id": "concept:8153c4e65bb853c8",
@@ -113,7 +113,7 @@
       "successes": 1090
     },
     "evolve": {
-      "attempts": 65,
+      "attempts": 66,
       "successes": 38
     },
     "experiment": {
