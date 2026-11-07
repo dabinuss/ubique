@@ -1,13 +1,13 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-07T14:32:54.494107+00:00",
-  "generation": 8194,
-  "focus": "The Nature of Man: Studies in Optimistic Philosophy",
-  "last_action": "read",
+  "timestamp": "2026-11-07T14:35:53.403847+00:00",
+  "generation": 8195,
+  "focus": "The Psychology of the Emotions",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "observed_comparison",
+  "last_provider": null,
   "last_provider_generation": 8194,
   "last_search_generation": 8188,
   "cortex": {
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 50319,
+    "events": 50326,
     "segments": 1768,
     "compressed_snapshot": true,
     "snapshot_events": 50212
@@ -41,14 +41,6 @@
       "novelty": 0.13783597518952448,
       "conflict": 0,
       "score": 0.8972157133011716
-    },
-    {
-      "node_id": "concept:64b218956223eb12d13e",
-      "label": "principles",
-      "activation": 1.0,
-      "novelty": 0.06939625260235947,
-      "conflict": 0,
-      "score": 0.878736988202637
     },
     {
       "node_id": "concept:e0f895872d65b2528fee",
@@ -75,20 +67,28 @@
       "score": 0.8711685625646328
     },
     {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.018828845791752966,
-      "conflict": 0,
-      "score": 0.8650837883637734
-    },
-    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.010258514567090687,
+      "novelty": 0.010253781081773905,
       "conflict": 0,
-      "score": 0.8627697989331145
+      "score": 0.862768520892079
+    },
+    {
+      "node_id": "concept:4a49c3b2035a18687310",
+      "label": "inertia",
+      "activation": 0.46,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.7996081632653061
+    },
+    {
+      "node_id": "concept:f7ecefc770b921cd7090",
+      "label": "urge",
+      "activation": 0.46,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 39
     },
     "experiment": {
-      "attempts": 391,
-      "successes": 389
+      "attempts": 392,
+      "successes": 390
     },
     "question": {
       "attempts": 290,
