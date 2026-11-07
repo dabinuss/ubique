@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-07T21:51:51.817201+00:00",
-  "generation": 8273,
-  "focus": "The Principles of Psychology, Volume 1 (of 2)",
-  "last_action": "read",
+  "timestamp": "2026-11-07T21:54:36.927997+00:00",
+  "generation": 8274,
+  "focus": "The Queenship of Our Lady in the liturgy",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 8268,
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": "groq",
+  "last_provider_generation": 8274,
   "last_search_generation": 8257,
   "cortex": {
-    "nodes": 14841,
-    "synapses": 117783,
+    "nodes": 14844,
+    "synapses": 117784,
     "active": 120,
-    "archived_synapses": 56913
+    "archived_synapses": 56944
   },
   "memory": {
     "episodes": 5983,
-    "claims": 7144,
+    "claims": 7149,
     "stances": 38,
     "interests": 146,
     "associative_comparisons": 4605,
@@ -26,22 +26,14 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 51082,
+    "events": 51096,
     "segments": 1788,
     "compressed_snapshot": true,
     "snapshot_events": 51042
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2151,
+  "evidence_reviews": 2156,
   "workspace": [
-    {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 1.0,
-      "novelty": 0.04136504653567735,
-      "conflict": 0,
-      "score": 0.8711685625646328
-    },
     {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
@@ -59,36 +51,44 @@
       "score": 0.8622203947368421
     },
     {
-      "node_id": "concept:0405c2487fa9c151d482",
-      "label": "stabbed",
+      "node_id": "concept:044c5f4a04d6114914bd",
+      "label": "escaped",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:55579b557896d0ce1764",
-      "label": "anna",
+      "node_id": "concept:b4ca32d7b0dbfc0fe269",
+      "label": "cruel",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:4bfe8d39107516060026",
-      "label": "prophetess",
+      "node_id": "concept:508b784754ead1679bc2",
+      "label": "herod",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:ad313e758ba53ea287c1",
-      "label": "maiden",
+      "node_id": "concept:03b6b3e9163de296faeb",
+      "label": "flight",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:a44c47b1ee24665db1a3",
+      "label": "sword",
+      "activation": 0.46,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 1510
     },
     "connect": {
-      "attempts": 1141,
-      "successes": 1138
+      "attempts": 1142,
+      "successes": 1139
     },
     "evolve": {
       "attempts": 69,
