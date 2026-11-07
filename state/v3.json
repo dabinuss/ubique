@@ -1,54 +1,62 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-07T18:09:22.656257+00:00",
-  "generation": 8233,
+  "timestamp": "2026-11-07T18:12:25.572445+00:00",
+  "generation": 8234,
   "focus": "The Principles of Psychology, Volume 1 (of 2)",
-  "last_action": "read",
+  "last_action": "search",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 8228,
-  "last_search_generation": 8211,
+  "last_action_detail": "Acquired 3 attributable external articles",
+  "last_provider": "groq",
+  "last_provider_generation": 8234,
+  "last_search_generation": 8234,
   "cortex": {
-    "nodes": 14791,
-    "synapses": 117252,
+    "nodes": 14796,
+    "synapses": 117268,
     "active": 120,
-    "archived_synapses": 56694
+    "archived_synapses": 56712
   },
   "memory": {
-    "episodes": 5952,
+    "episodes": 5955,
     "claims": 7081,
     "stances": 38,
     "interests": 146,
-    "associative_comparisons": 4559,
+    "associative_comparisons": 4565,
     "screened_interpretations": 40,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 50695,
+    "events": 50720,
     "segments": 1778,
     "compressed_snapshot": true,
-    "snapshot_events": 50547
+    "snapshot_events": 50720
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2138,
   "workspace": [
     {
-      "node_id": "concept:9dd492f965f4e0e6",
-      "label": "inflammation",
-      "activation": 0.76,
-      "novelty": 0.5970149253731344,
+      "node_id": "concept:721048dc35951006",
+      "label": "observations",
+      "activation": 1.0,
+      "novelty": 0.13783597518952448,
       "conflict": 0,
-      "score": 0.8963940298507462
+      "score": 0.8972157133011716
     },
     {
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.06550933508024893,
+      "novelty": 0.06512536633018562,
       "conflict": 0,
-      "score": 0.8776875204716672
+      "score": 0.8775838489091501
+    },
+    {
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.0187336080929187,
+      "conflict": 0,
+      "score": 0.8650580741850882
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -59,42 +67,34 @@
       "score": 0.8627532758884413
     },
     {
-      "node_id": "concept:6efe9bb6e8a00dfbf96c",
-      "label": "interferences",
+      "node_id": "concept:a3cacb75505cc02b52b4",
+      "label": "localization",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:07655e4ae09c01899c32",
-      "label": "séquard",
+      "node_id": "concept:a39f899adb17e2b43435",
+      "label": "angular",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:4012bbe9bdfc54c18992",
-      "label": "insisted",
+      "node_id": "concept:a6e6e6f194180f89d95d",
+      "label": "gyrus",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7996081632653061
-    },
-    {
-      "node_id": "concept:5eb67f9f8409b9c3f739",
-      "label": "brown",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.837573205741627
     }
   ],
   "skills": {
     "search": {
-      "attempts": 253,
-      "successes": 252
+      "attempts": 254,
+      "successes": 253
     },
     "read": {
       "attempts": 1588,
