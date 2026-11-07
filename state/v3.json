@@ -1,39 +1,47 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-07T17:01:48.002580+00:00",
-  "generation": 8222,
-  "focus": "Mater Christi: Meditations on Our Lady",
+  "timestamp": "2026-11-07T17:04:46.607103+00:00",
+  "generation": 8223,
+  "focus": "Mountain Meditations, and some subjects of the day and the war",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 8217,
+  "last_provider": "groq",
+  "last_provider_generation": 8223,
   "last_search_generation": 8211,
   "cortex": {
-    "nodes": 14770,
-    "synapses": 117045,
+    "nodes": 14772,
+    "synapses": 117079,
     "active": 120,
-    "archived_synapses": 56603
+    "archived_synapses": 56605
   },
   "memory": {
-    "episodes": 5943,
-    "claims": 7054,
+    "episodes": 5947,
+    "claims": 7062,
     "stances": 38,
     "interests": 146,
-    "associative_comparisons": 4549,
+    "associative_comparisons": 4551,
     "screened_interpretations": 40,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 50584,
+    "events": 50608,
     "segments": 1775,
     "compressed_snapshot": true,
     "snapshot_events": 50547
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2127,
+  "evidence_reviews": 2132,
   "workspace": [
+    {
+      "node_id": "concept:3f8b4464a99de3dc8c5c",
+      "label": "religious",
+      "activation": 1.0,
+      "novelty": 0.04113533525298231,
+      "conflict": 0,
+      "score": 0.8711065405183052
+    },
     {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
@@ -43,52 +51,44 @@
       "score": 0.8627532758884413
     },
     {
-      "node_id": "concept:b476db5dfcc1ea08",
-      "label": "transformations",
-      "activation": 0.76,
-      "novelty": 0.3883495145631068,
+      "node_id": "concept:4d51fd998fd3a724c06a",
+      "label": "mercy",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8400543689320388
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:324540f5b5f393b477fd",
-      "label": "formations",
+      "node_id": "concept:3edb1ac55732ac8667de",
+      "label": "ntreats",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:ee4da74a5167ba44c26b",
-      "label": "rtheless",
+      "node_id": "concept:bcd3a888401fba8a4b04",
+      "label": "jurisdiction",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:09cbad3beca70ddbcc89",
-      "label": "analyze",
+      "node_id": "concept:d90d45c9ea4d2db1dc87",
+      "label": "purgatory",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:419a636ccc2aa55c7347",
-      "label": "reveal",
+      "node_id": "concept:fa5cbdbe1d7afd7b7e5f",
+      "label": "treasures",
       "activation": 0.46,
-      "novelty": 0.5524861878453039,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7283712707182322
-    },
-    {
-      "node_id": "concept:75519932722f6e16485a",
-      "label": "substitute",
-      "activation": 0.46,
-      "novelty": 0.47058823529411764,
-      "conflict": 0,
-      "score": 0.7062588235294118
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 252
     },
     "read": {
-      "attempts": 1583,
-      "successes": 1583
+      "attempts": 1584,
+      "successes": 1584
     },
     "explore": {
       "attempts": 1075,
