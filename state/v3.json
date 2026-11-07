@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-07T23:50:22.553492+00:00",
-  "generation": 8294,
+  "timestamp": "2026-11-07T23:53:31.071817+00:00",
+  "generation": 8295,
   "focus": "The Principles of Psychology, Volume 1 (of 2)",
-  "last_action": "experiment",
+  "last_action": "evolve",
   "last_action_success": true,
-  "last_action_detail": "observed_associations",
+  "last_action_detail": "{\"accepted\": true, \"title\": \"Fix suggest_repositories method signature to avoid TypeError\", \"summary\": \"The `suggest_repositories` method was defined without a `self` parameter but called as an instance method (`self.suggest_repositories`). This caused a runtime error, preventing the system from generating fallback exploratory questions when a library source is unavailable. Adding `self` to the si",
   "last_provider": null,
   "last_provider_generation": 8291,
   "last_search_generation": 8280,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 51272,
+    "events": 51280,
     "segments": 1793,
     "compressed_snapshot": true,
     "snapshot_events": 51203
@@ -78,17 +78,17 @@
       "node_id": "concept:4c55a8552a2c7261f61f",
       "label": "theirs",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:f64d9de8ec135cfa5037",
       "label": "talking",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     }
   ],
   "skills": {
@@ -113,8 +113,8 @@
       "successes": 1141
     },
     "evolve": {
-      "attempts": 69,
-      "successes": 40
+      "attempts": 70,
+      "successes": 41
     },
     "experiment": {
       "attempts": 401,
