@@ -1,54 +1,46 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-07T15:14:09.678726+00:00",
-  "generation": 8200,
-  "focus": "The Principles of Psychology, Volume 1 (of 2)",
+  "timestamp": "2026-11-07T15:16:51.700108+00:00",
+  "generation": 8201,
+  "focus": "Meditations",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_provider": null,
   "last_provider_generation": 8200,
   "last_search_generation": 8188,
   "cortex": {
     "nodes": 14710,
-    "synapses": 116520,
+    "synapses": 116548,
     "active": 120,
-    "archived_synapses": 56306
+    "archived_synapses": 56346
   },
   "memory": {
-    "episodes": 5926,
-    "claims": 7005,
+    "episodes": 5927,
+    "claims": 7008,
     "stances": 38,
     "interests": 141,
-    "associative_comparisons": 4525,
+    "associative_comparisons": 4527,
     "screened_interpretations": 40,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 50370,
-    "segments": 1769,
+    "events": 50381,
+    "segments": 1770,
     "compressed_snapshot": true,
-    "snapshot_events": 50212
+    "snapshot_events": 50381
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2114,
   "workspace": [
     {
-      "node_id": "concept:721048dc35951006",
-      "label": "observations",
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
       "activation": 1.0,
-      "novelty": 0.13783597518952448,
+      "novelty": 0.06896551724137931,
       "conflict": 0,
-      "score": 0.8972157133011716
-    },
-    {
-      "node_id": "concept:e0f895872d65b2528fee",
-      "label": "knowledge",
-      "activation": 1.0,
-      "novelty": 0.0511770726714432,
-      "conflict": 0,
-      "score": 0.8738178096212896
+      "score": 0.8786206896551725
     },
     {
       "node_id": "concept:feb25aff76d880178f2b",
@@ -59,12 +51,12 @@
       "score": 0.872042818911686
     },
     {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
       "activation": 1.0,
-      "novelty": 0.04136504653567735,
+      "novelty": 0.040241448692152924,
       "conflict": 0,
-      "score": 0.8711685625646328
+      "score": 0.8708651911468814
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -75,20 +67,28 @@
       "score": 0.8627583388670379
     },
     {
-      "node_id": "concept:4a49c3b2035a18687310",
-      "label": "inertia",
+      "node_id": "concept:5839746e84ebecbfc208",
+      "label": "recurred",
       "activation": 0.46,
-      "novelty": 0.6896551724137931,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7654068965517242
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:f7ecefc770b921cd7090",
-      "label": "urge",
+      "node_id": "concept:957c5093fd587f69fd69",
+      "label": "retinal",
       "activation": 0.46,
-      "novelty": 0.6896551724137931,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7654068965517242
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:bd9dc5f78dac9fad83a6",
+      "label": "flame",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 251
     },
     "read": {
-      "attempts": 1574,
-      "successes": 1574
+      "attempts": 1575,
+      "successes": 1575
     },
     "explore": {
       "attempts": 1072,
