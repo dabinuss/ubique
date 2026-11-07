@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-07T19:20:18.821929+00:00",
-  "generation": 8245,
-  "focus": "Psychology of the Unconscious",
-  "last_action": "read",
+  "timestamp": "2026-11-07T19:23:11.441891+00:00",
+  "generation": 8246,
+  "focus": "The Psychology of the Emotions",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 8245,
   "last_search_generation": 8234,
   "cortex": {
     "nodes": 14814,
     "synapses": 117431,
     "active": 120,
-    "archived_synapses": 56733
+    "archived_synapses": 56641
   },
   "memory": {
     "episodes": 5964,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 50827,
+    "events": 50832,
     "segments": 1781,
     "compressed_snapshot": true,
     "snapshot_events": 50720
@@ -43,6 +43,14 @@
       "score": 0.8769864737338786
     },
     {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.04136504653567735,
+      "conflict": 0,
+      "score": 0.8711685625646328
+    },
+    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -51,44 +59,36 @@
       "score": 0.8627494908350306
     },
     {
-      "node_id": "concept:b476db5dfcc1ea08",
-      "label": "transformations",
-      "activation": 0.7070484686153845,
-      "novelty": 0.351493848857645,
+      "node_id": "concept:a8e1930342f67f726b3e",
+      "label": "obeys",
+      "activation": 0.46,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8025685428715641
+      "score": 0.8080135593220339
     },
     {
-      "node_id": "concept:ea077ff913f0f89b0fb8",
-      "label": "investigator",
+      "node_id": "concept:3a4b077ae91cf0415902",
+      "label": "projected",
       "activation": 0.46,
-      "novelty": 0.6688963210702341,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7598020066889632
+      "score": 0.78452319391635
     },
     {
-      "node_id": "concept:1c74ff27b4e3021c5d3c",
-      "label": "repression",
-      "activation": 0.46,
-      "novelty": 0.5970149253731344,
+      "node_id": "concept:19271ca877be7ab9",
+      "label": "intellectual",
+      "activation": 0.76,
+      "novelty": 0.1631321370309951,
       "conflict": 0,
-      "score": 0.7403940298507463
+      "score": 0.7792456769983687
     },
     {
-      "node_id": "concept:397d7847b96deb2d82e2",
-      "label": "condensation",
+      "node_id": "concept:f2b259a7fe2dd487dd27",
+      "label": "apparently",
       "activation": 0.46,
-      "novelty": 0.5970149253731344,
+      "novelty": 0.4098360655737705,
       "conflict": 0,
-      "score": 0.7403940298507463
-    },
-    {
-      "node_id": "concept:47a54ed4b81f3cc7b909",
-      "label": "explicitly",
-      "activation": 0.46,
-      "novelty": 0.5263157894736842,
-      "conflict": 0,
-      "score": 0.7213052631578948
+      "score": 0.6898557377049181
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 1063
     },
     "consolidate": {
-      "attempts": 1505,
-      "successes": 1505
+      "attempts": 1506,
+      "successes": 1506
     },
     "connect": {
       "attempts": 1138,
