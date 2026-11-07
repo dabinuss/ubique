@@ -1,8 +1,8 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-07T11:27:48.974143+00:00",
-  "generation": 8161,
+  "timestamp": "2026-11-07T11:30:42.460325+00:00",
+  "generation": 8162,
   "focus": "The Principles of Psychology, Volume 1 (of 2)",
   "last_action": "read",
   "last_action_success": true,
@@ -11,23 +11,23 @@
   "last_provider_generation": 8160,
   "last_search_generation": 8142,
   "cortex": {
-    "nodes": 14646,
-    "synapses": 115858,
+    "nodes": 14647,
+    "synapses": 115895,
     "active": 120,
-    "archived_synapses": 55762
+    "archived_synapses": 55759
   },
   "memory": {
-    "episodes": 5894,
-    "claims": 6932,
+    "episodes": 5895,
+    "claims": 6934,
     "stances": 37,
     "interests": 136,
-    "associative_comparisons": 4481,
+    "associative_comparisons": 4483,
     "screened_interpretations": 39,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 49989,
-    "segments": 1758,
+    "events": 50000,
+    "segments": 1759,
     "compressed_snapshot": true,
     "snapshot_events": 49881
   },
@@ -35,12 +35,20 @@
   "evidence_reviews": 2095,
   "workspace": [
     {
-      "node_id": "concept:53e5e7c5a884893739c4",
-      "label": "experience",
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
       "activation": 1.0,
-      "novelty": 0.04038772213247173,
+      "novelty": 0.07604562737642585,
       "conflict": 0,
-      "score": 0.8709046849757673
+      "score": 0.880532319391635
+    },
+    {
+      "node_id": "concept:6907de2e8144a57274c7",
+      "label": "treatise",
+      "activation": 1.0,
+      "novelty": 0.03076923076923077,
+      "conflict": 0,
+      "score": 0.8683076923076924
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -53,42 +61,34 @@
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.9812452636543854,
-      "novelty": 0.008300477277443454,
+      "activation": 0.9918677814667366,
+      "novelty": 0.00829737802854298,
       "conflict": 0,
-      "score": 0.85248866596519
+      "score": 0.8580115384304097
     },
     {
-      "node_id": "concept:aa28021970602acc4060",
-      "label": "stimulating",
+      "node_id": "concept:4727010b0ff5d76ebd6b",
+      "label": "harvard",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:1761900d12a06f0f7d6c",
-      "label": "ordinating",
+      "node_id": "concept:43188edff8709eb685ba",
+      "label": "holt",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:fb3a7850111f293bfc97",
-      "label": "nervous",
+      "node_id": "concept:f168ccdd91548c5a8c87",
+      "label": "company",
       "activation": 0.46,
-      "novelty": 0.4514672686230249,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7010961625282168
-    },
-    {
-      "node_id": "concept:e19bbccafeb36e6a8444",
-      "label": "centres",
-      "activation": 0.46,
-      "novelty": 0.39525691699604737,
-      "conflict": 0,
-      "score": 0.6859193675889328
+      "score": 0.78452319391635
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 249
     },
     "read": {
-      "attempts": 1558,
-      "successes": 1558
+      "attempts": 1559,
+      "successes": 1559
     },
     "explore": {
       "attempts": 1067,
