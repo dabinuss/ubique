@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-07T19:14:48.608871+00:00",
-  "generation": 8243,
-  "focus": "The Principles of Psychology, Volume 1 (of 2)",
-  "last_action": "read",
+  "timestamp": "2026-11-07T19:17:38.401400+00:00",
+  "generation": 8244,
+  "focus": "The Analysis of Mind",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 8240,
   "last_search_generation": 8234,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 50801,
+    "events": 50805,
     "segments": 1780,
     "compressed_snapshot": true,
     "snapshot_events": 50720
@@ -35,28 +35,12 @@
   "evidence_reviews": 2140,
   "workspace": [
     {
-      "node_id": "concept:721048dc35951006",
-      "label": "observations",
-      "activation": 1.0,
-      "novelty": 0.13783597518952448,
-      "conflict": 0,
-      "score": 0.8972157133011716
-    },
-    {
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
       "novelty": 0.06291286568103177,
       "conflict": 0,
       "score": 0.8769864737338786
-    },
-    {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.018702075930428278,
-      "conflict": 0,
-      "score": 0.8650495605012156
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -69,26 +53,42 @@
     {
       "node_id": "concept:b476db5dfcc1ea08",
       "label": "transformations",
-      "activation": 0.7026190820769231,
-      "novelty": 0.36900369003690037,
+      "activation": 0.76,
+      "novelty": 0.35714285714285715,
       "conflict": 0,
-      "score": 0.8049929189899632
+      "score": 0.8316285714285714
     },
     {
-      "node_id": "concept:5169ccf2d4d42aae63ad",
-      "label": "sies",
+      "node_id": "concept:ea077ff913f0f89b0fb8",
+      "label": "investigator",
       "activation": 0.46,
-      "novelty": 0.6309148264984227,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.7495470031545741
+      "score": 0.7654068965517242
     },
     {
-      "node_id": "concept:fd62862b6dc213bee77c",
-      "label": "horse",
+      "node_id": "concept:1c74ff27b4e3021c5d3c",
+      "label": "repression",
       "activation": 0.46,
       "novelty": 0.6134969325153374,
       "conflict": 0,
       "score": 0.7448441717791412
+    },
+    {
+      "node_id": "concept:397d7847b96deb2d82e2",
+      "label": "condensation",
+      "activation": 0.46,
+      "novelty": 0.6134969325153374,
+      "conflict": 0,
+      "score": 0.7448441717791412
+    },
+    {
+      "node_id": "concept:47a54ed4b81f3cc7b909",
+      "label": "explicitly",
+      "activation": 0.46,
+      "novelty": 0.5390835579514824,
+      "conflict": 0,
+      "score": 0.7247525606469003
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 1505
     },
     "connect": {
-      "attempts": 1137,
-      "successes": 1134
+      "attempts": 1138,
+      "successes": 1135
     },
     "evolve": {
       "attempts": 69,
