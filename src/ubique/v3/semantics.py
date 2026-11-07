@@ -87,7 +87,7 @@ class SemanticLearner:
                 .40, self.exploration_factor + min(.01 * self._no_comp_counter, .05))
 
     # Helper to suggest more relevant public‑domain repositories based on title keywords.
-    def suggest_repositories(title: str) -> str:
+    def suggest_repositories(self, title: str) -> str:
         """Return a comma‑separated list of repositories likely to contain the requested text.
         Simple heuristic: biomedical or scientific titles get PubMed Central/NIH suggestions;
         other titles fall back to general repositories.
