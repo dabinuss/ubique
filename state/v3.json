@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-07T16:34:02.557642+00:00",
-  "generation": 8216,
-  "focus": "THE LETTERS OF LADY ANNE BACON",
-  "last_action": "evolve",
+  "timestamp": "2026-11-07T16:36:43.350721+00:00",
+  "generation": 8217,
+  "focus": "Patronage, Performativity, and Ideas of Corpus Christi",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "{\"accepted\": true, \"title\": \"Improve fallback source suggestions for unavailable library entries\", \"summary\": \"When a referenced library source cannot be retrieved, the generated exploratory question now suggests repositories tailored to the topic (e.g., PubMed Central for biomedical titles) instead of only generic Project Gutenberg/Internet Archive. This enhances the system's ability to locate re",
-  "last_provider": null,
-  "last_provider_generation": 8211,
+  "last_action_detail": "observed_associations",
+  "last_provider": "groq",
+  "last_provider_generation": 8217,
   "last_search_generation": 8211,
   "cortex": {
-    "nodes": 14762,
-    "synapses": 116983,
+    "nodes": 14765,
+    "synapses": 116995,
     "active": 120,
-    "archived_synapses": 56593
+    "archived_synapses": 56629
   },
   "memory": {
     "episodes": 5940,
-    "claims": 7047,
+    "claims": 7049,
     "stances": 38,
     "interests": 146,
     "associative_comparisons": 4545,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 50538,
-    "segments": 1773,
+    "events": 50547,
+    "segments": 1774,
     "compressed_snapshot": true,
-    "snapshot_events": 50381
+    "snapshot_events": 50547
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2125,
+  "evidence_reviews": 2127,
   "workspace": [
     {
       "node_id": "concept:3f8b4464a99de3dc8c5c",
@@ -46,49 +46,49 @@
       "node_id": "concept:b78e58750d4f05fb33ff",
       "label": "lesson",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:67425801bf1a60fe7ca3",
       "label": "temple",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:5691093abe2dd0a51a92",
-      "label": "offering",
       "activation": 0.46,
       "novelty": 0.8810572687224669,
       "conflict": 0,
       "score": 0.8170854625550661
     },
     {
-      "node_id": "concept:2cdbdd82910725464b02",
-      "label": "sorrow",
+      "node_id": "concept:5691093abe2dd0a51a92",
+      "label": "offering",
       "activation": 0.46,
       "novelty": 0.8474576271186441,
       "conflict": 0,
       "score": 0.8080135593220339
     },
     {
-      "node_id": "concept:d386ad4551768b2cd367",
-      "label": "expects",
+      "node_id": "concept:2cdbdd82910725464b02",
+      "label": "sorrow",
       "activation": 0.46,
       "novelty": 0.8163265306122448,
       "conflict": 0,
       "score": 0.7996081632653061
     },
     {
+      "node_id": "concept:d386ad4551768b2cd367",
+      "label": "expects",
+      "activation": 0.46,
+      "novelty": 0.7874015748031495,
+      "conflict": 0,
+      "score": 0.7917984251968504
+    },
+    {
       "node_id": "concept:c45ea648830a6116387c",
       "label": "mater",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.7654068965517242
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 40
     },
     "experiment": {
-      "attempts": 393,
-      "successes": 391
+      "attempts": 394,
+      "successes": 392
     },
     "question": {
       "attempts": 291,
