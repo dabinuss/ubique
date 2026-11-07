@@ -1,39 +1,47 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-07T22:58:55.925607+00:00",
-  "generation": 8284,
+  "timestamp": "2026-11-07T23:01:33.056026+00:00",
+  "generation": 8285,
   "focus": "Mountain Meditations, and some subjects of the day and the war",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 8279,
+  "last_provider": "groq",
+  "last_provider_generation": 8285,
   "last_search_generation": 8280,
   "cortex": {
-    "nodes": 14858,
-    "synapses": 118083,
+    "nodes": 14862,
+    "synapses": 118115,
     "active": 120,
     "archived_synapses": 56997
   },
   "memory": {
-    "episodes": 5988,
-    "claims": 7166,
+    "episodes": 5989,
+    "claims": 7173,
     "stances": 38,
     "interests": 149,
-    "associative_comparisons": 4615,
+    "associative_comparisons": 4617,
     "screened_interpretations": 40,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 51182,
-    "segments": 1790,
+    "events": 51203,
+    "segments": 1791,
     "compressed_snapshot": true,
-    "snapshot_events": 51042
+    "snapshot_events": 51203
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2158,
+  "evidence_reviews": 2162,
   "workspace": [
+    {
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
+      "activation": 1.0,
+      "novelty": 0.0620347394540943,
+      "conflict": 0,
+      "score": 0.8767493796526056
+    },
     {
       "node_id": "concept:ae835b22fe866b40",
       "label": "circumstances",
@@ -41,6 +49,14 @@
       "novelty": 0.05417118093174431,
       "conflict": 0,
       "score": 0.874626218851571
+    },
+    {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.04136504653567735,
+      "conflict": 0,
+      "score": 0.8711685625646328
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -51,44 +67,28 @@
       "score": 0.8650368435780245
     },
     {
-      "node_id": "concept:0f31f3c236a30bf26a11",
-      "label": "prophecies",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.01016002032004064,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.862743205486411
     },
     {
-      "node_id": "concept:dc3efb9c9199001d32cd",
-      "label": "galilee",
+      "node_id": "concept:c465a314b76283674757",
+      "label": "graphic",
       "activation": 0.46,
-      "novelty": 0.6896551724137931,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7654068965517242
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:3027b52a8b8f7584576e",
-      "label": "quarters",
+      "node_id": "concept:10fd874b68dad080ed70",
+      "label": "write",
       "activation": 0.46,
-      "novelty": 0.6896551724137931,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.7654068965517242
-    },
-    {
-      "node_id": "concept:6a0da33e42e56de46a7f",
-      "label": "nazareth",
-      "activation": 0.46,
-      "novelty": 0.6896551724137931,
-      "conflict": 0,
-      "score": 0.7654068965517242
-    },
-    {
-      "node_id": "concept:b116c99a2c11258bdc6b",
-      "label": "egypt",
-      "activation": 0.46,
-      "novelty": 0.5970149253731344,
-      "conflict": 0,
-      "score": 0.7403940298507463
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 255
     },
     "read": {
-      "attempts": 1607,
-      "successes": 1607
+      "attempts": 1608,
+      "successes": 1608
     },
     "explore": {
       "attempts": 1082,
