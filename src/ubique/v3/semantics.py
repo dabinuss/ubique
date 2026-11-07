@@ -233,7 +233,7 @@ class SemanticLearner:
                      and t not in GENERIC_TERMS
                      and len(t) >= 3
                      and t not in BOILERPLATE
-                     and t not in {"review", "chapter", "two", "particular", "virtues"}),
+                     and t not in {"review", "chapter", "two", "particular", "virtues", "volume", "edition", "section", "part"}),
                     key=lambda t: self._term_frequency[t],
                     reverse=True)[:3]
                 extra = ", ".join(frequent_terms)
