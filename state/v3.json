@@ -1,9 +1,9 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-07T15:16:51.700108+00:00",
-  "generation": 8201,
-  "focus": "Meditations",
+  "timestamp": "2026-11-07T15:19:22.667173+00:00",
+  "generation": 8202,
+  "focus": "The Psychology of the Emotions",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
@@ -11,22 +11,22 @@
   "last_provider_generation": 8200,
   "last_search_generation": 8188,
   "cortex": {
-    "nodes": 14710,
-    "synapses": 116548,
+    "nodes": 14711,
+    "synapses": 116580,
     "active": 120,
-    "archived_synapses": 56346
+    "archived_synapses": 56340
   },
   "memory": {
-    "episodes": 5927,
-    "claims": 7008,
+    "episodes": 5928,
+    "claims": 7011,
     "stances": 38,
     "interests": 141,
-    "associative_comparisons": 4527,
+    "associative_comparisons": 4529,
     "screened_interpretations": 40,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 50381,
+    "events": 50392,
     "segments": 1770,
     "compressed_snapshot": true,
     "snapshot_events": 50381
@@ -38,25 +38,17 @@
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.06896551724137931,
+      "novelty": 0.06854009595613433,
       "conflict": 0,
-      "score": 0.8786206896551725
-    },
-    {
-      "node_id": "concept:feb25aff76d880178f2b",
-      "label": "forcing",
-      "activation": 1.0,
-      "novelty": 0.04460303300624443,
-      "conflict": 0,
-      "score": 0.872042818911686
+      "score": 0.8785058259081564
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
       "label": "experience",
       "activation": 1.0,
-      "novelty": 0.040241448692152924,
+      "novelty": 0.04016870857601928,
       "conflict": 0,
-      "score": 0.8708651911468814
+      "score": 0.8708455513155253
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -67,28 +59,36 @@
       "score": 0.8627583388670379
     },
     {
-      "node_id": "concept:5839746e84ebecbfc208",
-      "label": "recurred",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "node_id": "concept:1c48f6310f1c849b4ac3",
+      "label": "mind",
+      "activation": 1.0,
+      "novelty": 0.008269588587967749,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8622327889187513
     },
     {
-      "node_id": "concept:957c5093fd587f69fd69",
-      "label": "retinal",
+      "node_id": "concept:10fd874b68dad080ed70",
+      "label": "write",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
-      "node_id": "concept:bd9dc5f78dac9fad83a6",
-      "label": "flame",
+      "node_id": "concept:69e1b1f7ae9d01694066",
+      "label": "complicated",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.78452319391635
+    },
+    {
+      "node_id": "concept:8e19545f050320bc5fa3",
+      "label": "spoken",
+      "activation": 0.46,
+      "novelty": 0.5025125628140703,
+      "conflict": 0,
+      "score": 0.714878391959799
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 251
     },
     "read": {
-      "attempts": 1575,
-      "successes": 1575
+      "attempts": 1576,
+      "successes": 1576
     },
     "explore": {
       "attempts": 1072,
