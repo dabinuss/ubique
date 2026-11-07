@@ -86,6 +86,19 @@ class SemanticLearner:
             self.exploration_factor = min(
                 .40, self.exploration_factor + min(.01 * self._no_comp_counter, .05))
 
+    # Helper to suggest more relevant public‑domain repositories based on title keywords.
+    def suggest_repositories(title: str) -> str:
+        """Return a comma‑separated list of repositories likely to contain the requested text.
+        Simple heuristic: biomedical or scientific titles get PubMed Central/NIH suggestions;
+        other titles fall back to general repositories.
+        """
+        lower = title.lower()
+        scientific_markers = ("neuro", "biology", "psychology", "medicine", "clinical", "pharmac", "physiology")
+        if any(marker in lower for marker in scientific_markers):
+            return "PubMed Central, arXiv, or the NIH Open Access repository"
+        return "Project Gutenberg, Internet Archive, or HathiTrust"
+
+
     def observe(self, episode: dict, *, generation=None) -> list[dict]:
         status = episode.get("epistemic_status")
         if status not in {"source_passage", "exploratory_question", "association_hypothesis", "insight"}:
@@ -102,7 +115,7 @@ class SemanticLearner:
                 question = (f"The referenced source appears unavailable. "
                             f"Can we locate an alternative public‑domain text for "
                             f"'{episode.get('payload', {}).get('title', 'the source')}'? "
-                            f"Consider searching repositories such as Project Gutenberg or the Internet Archive.")
+                            f"Consider searching repositories such as {self.suggest_repositories(episode.get('payload', {}).get('title', ''))}.")
                 exploration = {
                     "type": "exploratory_question",
                     "question": question,
