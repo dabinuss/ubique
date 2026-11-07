@@ -1,39 +1,47 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-07T13:35:32.447215+00:00",
-  "generation": 8182,
-  "focus": "Psychology of the Unconscious",
+  "timestamp": "2026-11-07T13:38:31.018420+00:00",
+  "generation": 8183,
+  "focus": "The Psychology of the Emotions",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 8177,
+  "last_provider": "groq",
+  "last_provider_generation": 8183,
   "last_search_generation": 8165,
   "cortex": {
-    "nodes": 14688,
-    "synapses": 116309,
+    "nodes": 14690,
+    "synapses": 116343,
     "active": 120,
-    "archived_synapses": 56011
+    "archived_synapses": 56005
   },
   "memory": {
-    "episodes": 5909,
-    "claims": 6968,
+    "episodes": 5910,
+    "claims": 6971,
     "stances": 37,
     "interests": 140,
-    "associative_comparisons": 4503,
+    "associative_comparisons": 4505,
     "screened_interpretations": 39,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 50174,
-    "segments": 1764,
+    "events": 50185,
+    "segments": 1765,
     "compressed_snapshot": true,
     "snapshot_events": 50042
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2100,
   "workspace": [
+    {
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
+      "activation": 1.0,
+      "novelty": 0.07186489399928135,
+      "conflict": 0,
+      "score": 0.8794035213798059
+    },
     {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
@@ -51,44 +59,36 @@
       "score": 0.8622369511184755
     },
     {
-      "node_id": "concept:c9927aafd210b71727ec",
-      "label": "unrealized",
+      "node_id": "concept:e401fb707e19d33232f7",
+      "label": "achine",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:11eee8478dd8858a8e3b",
-      "label": "gains",
+      "node_id": "concept:967dd4a091e2d8c87a87",
+      "label": "emit",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:fa44132b238e67958fb1",
-      "label": "discovery",
+      "node_id": "concept:f6000d4ef895fd961f13",
+      "label": "pillow",
       "activation": 0.46,
-      "novelty": 0.6896551724137931,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7654068965517242
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:ce95dd809b76d553b03e",
-      "label": "fulfilment",
+      "node_id": "concept:cc31708ddd2e83d8e3c1",
+      "label": "sewing",
       "activation": 0.46,
-      "novelty": 0.6493506493506493,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7545246753246754
-    },
-    {
-      "node_id": "concept:4064d02ab3988c91c089",
-      "label": "symbolisms",
-      "activation": 0.46,
-      "novelty": 0.5970149253731344,
-      "conflict": 0,
-      "score": 0.7403940298507463
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 250
     },
     "read": {
-      "attempts": 1566,
-      "successes": 1566
+      "attempts": 1567,
+      "successes": 1567
     },
     "explore": {
       "attempts": 1070,
