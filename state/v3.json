@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-07T20:46:48.073650+00:00",
-  "generation": 8263,
+  "timestamp": "2026-11-07T20:49:51.603115+00:00",
+  "generation": 8264,
   "focus": "Mountain Meditations, and some subjects of the day and the war",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 8262,
   "last_search_generation": 8257,
   "cortex": {
-    "nodes": 14827,
-    "synapses": 117608,
+    "nodes": 14828,
+    "synapses": 117668,
     "active": 120,
-    "archived_synapses": 56764
+    "archived_synapses": 56730
   },
   "memory": {
     "episodes": 5979,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 51005,
+    "events": 51010,
     "segments": 1785,
     "compressed_snapshot": true,
     "snapshot_events": 50880
@@ -41,6 +41,14 @@
       "novelty": 0.04296455424274973,
       "conflict": 0,
       "score": 0.8716004296455424
+    },
+    {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.04136504653567735,
+      "conflict": 0,
+      "score": 0.8711685625646328
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
@@ -62,33 +70,25 @@
       "node_id": "concept:b476db5dfcc1ea08",
       "label": "transformations",
       "activation": 0.76,
-      "novelty": 0.28776978417266186,
+      "novelty": 0.2805049088359046,
       "conflict": 0,
-      "score": 0.8128978417266187
+      "score": 0.8109363253856943
     },
     {
-      "node_id": "concept:f274537aaf2c509726a5",
-      "label": "regression",
+      "node_id": "concept:4625b3e4ac03ca1a0913",
+      "label": "demosthenes",
       "activation": 0.46,
       "novelty": 0.7604562737642586,
       "conflict": 0,
       "score": 0.78452319391635
     },
     {
-      "node_id": "concept:f5831dc294a8a74b8be4",
-      "label": "infantile",
+      "node_id": "concept:a6a2729cbf6bcadce577",
+      "label": "thanks",
       "activation": 0.46,
-      "novelty": 0.5970149253731344,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7403940298507463
-    },
-    {
-      "node_id": "concept:ead906edc10fc4ba3c56",
-      "label": "ation",
-      "activation": 0.46,
-      "novelty": 0.4024144869215292,
-      "conflict": 0,
-      "score": 0.6878519114688129
+      "score": 0.78452319391635
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 1065
     },
     "consolidate": {
-      "attempts": 1508,
-      "successes": 1508
+      "attempts": 1509,
+      "successes": 1509
     },
     "connect": {
       "attempts": 1140,
