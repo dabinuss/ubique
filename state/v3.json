@@ -1,13 +1,13 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-07T12:32:42.851676+00:00",
-  "generation": 8172,
+  "timestamp": "2026-11-07T12:35:32.118341+00:00",
+  "generation": 8173,
   "focus": "Psychology of the Unconscious: A Study of the Transformations and Symbolisms of the Libido. A Contribution to the History of the Evolution of Thought",
-  "last_action": "read",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "observed_comparison",
+  "last_provider": null,
   "last_provider_generation": 8172,
   "last_search_generation": 8165,
   "cortex": {
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 50107,
+    "events": 50113,
     "segments": 1762,
     "compressed_snapshot": true,
     "snapshot_events": 50042
@@ -43,14 +43,6 @@
       "score": 0.8795298372513563
     },
     {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
-      "activation": 1.0,
-      "novelty": 0.014773230905599056,
-      "conflict": 0,
-      "score": 0.8639887723445119
-    },
-    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -59,36 +51,44 @@
       "score": 0.8627839356601537
     },
     {
-      "node_id": "concept:1c48f6310f1c849b4ac3",
-      "label": "mind",
-      "activation": 1.0,
-      "novelty": 0.008288094152749574,
-      "conflict": 0,
-      "score": 0.8622377854212424
-    },
-    {
-      "node_id": "concept:04dd9c7e9464019a848b",
-      "label": "authorized",
-      "activation": 0.46,
-      "novelty": 0.9569377990430623,
-      "conflict": 0,
-      "score": 0.837573205741627
-    },
-    {
       "node_id": "concept:4064d02ab3988c91c089",
       "label": "symbolisms",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8080135593220339
     },
     {
       "node_id": "concept:a7b4dc56dac9faf3fec9",
       "label": "contribution",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8080135593220339
+    },
+    {
+      "node_id": "concept:07fddbc2bc8345af5295",
+      "label": "eveal",
+      "activation": 0.46,
+      "novelty": 0.8163265306122448,
+      "conflict": 0,
+      "score": 0.7996081632653061
+    },
+    {
+      "node_id": "concept:b476db5dfcc1ea08",
+      "label": "transformations",
+      "activation": 0.46,
+      "novelty": 0.7117437722419929,
+      "conflict": 0,
+      "score": 0.7713708185053381
+    },
+    {
+      "node_id": "concept:1196c7b1e0e55580b8b0",
+      "label": "reactions",
+      "activation": 0.46,
+      "novelty": 0.6896551724137931,
+      "conflict": 0,
+      "score": 0.7654068965517242
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 39
     },
     "experiment": {
-      "attempts": 389,
-      "successes": 387
+      "attempts": 390,
+      "successes": 388
     },
     "question": {
       "attempts": 288,
