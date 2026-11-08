@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-08T17:56:46.156722+00:00",
-  "generation": 8471,
-  "focus": "Mountain Meditations, and some subjects of the day and the war",
-  "last_action": "read",
+  "timestamp": "2026-11-08T17:59:46.264619+00:00",
+  "generation": 8472,
+  "focus": "The Principles of Psychology, Volume 1 (of 2)",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 8466,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 8472,
   "last_search_generation": 8464,
   "cortex": {
-    "nodes": 15032,
-    "synapses": 119971,
+    "nodes": 15037,
+    "synapses": 120017,
     "active": 120,
-    "archived_synapses": 58259
+    "archived_synapses": 58243
   },
   "memory": {
     "episodes": 6105,
-    "claims": 7419,
+    "claims": 7425,
     "stances": 38,
     "interests": 149,
     "associative_comparisons": 4791,
@@ -26,21 +26,21 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 52860,
+    "events": 52877,
     "segments": 1841,
     "compressed_snapshot": true,
     "snapshot_events": 52849
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2221,
+  "evidence_reviews": 2227,
   "workspace": [
     {
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.04786979415988511,
+      "novelty": 0.047664442326024785,
       "conflict": 0,
-      "score": 0.872924844423169
+      "score": 0.8728693994280268
     },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
@@ -57,6 +57,14 @@
       "novelty": 0.04338394793926247,
       "conflict": 0,
       "score": 0.8717136659436009
+    },
+    {
+      "node_id": "concept:54476ce93ea4a148",
+      "label": "distinguish",
+      "activation": 1.0,
+      "novelty": 0.043215211754537596,
+      "conflict": 0,
+      "score": 0.8716681071737251
     },
     {
       "node_id": "concept:ac32f27ba7a1346f43c0",
@@ -81,14 +89,6 @@
       "novelty": 0.018241517694272163,
       "conflict": 0,
       "score": 0.8649252097774536
-    },
-    {
-      "node_id": "concept:c6af71bcd8ce2ad7f345",
-      "label": "midshipman",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 1088
     },
     "consolidate": {
-      "attempts": 1548,
-      "successes": 1548
+      "attempts": 1549,
+      "successes": 1549
     },
     "connect": {
       "attempts": 1169,
