@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-08T15:00:48.310514+00:00",
-  "generation": 8444,
+  "timestamp": "2026-11-08T15:04:03.395983+00:00",
+  "generation": 8445,
   "focus": "Mountain Meditations, and some subjects of the day and the war",
-  "last_action": "explore",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 8444,
   "last_search_generation": 8441,
   "cortex": {
     "nodes": 15011,
     "synapses": 119778,
     "active": 120,
-    "archived_synapses": 57934
+    "archived_synapses": 57948
   },
   "memory": {
     "episodes": 6094,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 52615,
+    "events": 52622,
     "segments": 1834,
     "compressed_snapshot": true,
     "snapshot_events": 52518
@@ -54,9 +54,9 @@
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.049689440993788817,
+      "novelty": 0.049578582052553305,
       "conflict": 0,
-      "score": 0.873416149068323
+      "score": 0.8733862171541895
     },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
@@ -70,9 +70,9 @@
       "node_id": "concept:e2d5a675d4eab169",
       "label": "continue",
       "activation": 1.0,
-      "novelty": 0.04355400696864111,
+      "novelty": 0.04346881112801565,
       "conflict": 0,
-      "score": 0.8717595818815331
+      "score": 0.8717365790045644
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -85,10 +85,10 @@
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 1.0,
+      "activation": 0.9995938549367817,
       "novelty": 0.008148299042574863,
       "conflict": 0,
-      "score": 0.8622000407414954
+      "score": 0.8619888453086217
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 1085
     },
     "consolidate": {
-      "attempts": 1543,
-      "successes": 1543
+      "attempts": 1544,
+      "successes": 1544
     },
     "connect": {
       "attempts": 1165,
