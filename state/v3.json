@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-08T11:08:41.220540+00:00",
-  "generation": 8405,
+  "timestamp": "2026-11-08T11:11:31.864132+00:00",
+  "generation": 8406,
   "focus": "The Principles of Psychology, Volume 1 (of 2)",
-  "last_action": "read",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 8404,
   "last_search_generation": 8395,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 52249,
-    "segments": 1823,
+    "events": 52253,
+    "segments": 1824,
     "compressed_snapshot": true,
     "snapshot_events": 52187
   },
@@ -35,28 +35,12 @@
   "evidence_reviews": 2180,
   "workspace": [
     {
-      "node_id": "concept:64b218956223eb12d13e",
-      "label": "principles",
-      "activation": 1.0,
-      "novelty": 0.053262316910785625,
-      "conflict": 0,
-      "score": 0.8743808255659122
-    },
-    {
       "node_id": "concept:3f8b4464a99de3dc8c5c",
       "label": "religious",
       "activation": 1.0,
       "novelty": 0.04075810067250866,
       "conflict": 0,
       "score": 0.8710046871815773
-    },
-    {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
-      "activation": 1.0,
-      "novelty": 0.0146756677428823,
-      "conflict": 0,
-      "score": 0.8639624302905782
     },
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
@@ -67,28 +51,44 @@
       "score": 0.86220489159283
     },
     {
-      "node_id": "concept:4c5170ac863026d3dbc2",
-      "label": "returning",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
-    },
-    {
-      "node_id": "concept:2b8644e24f72dbea9f07",
-      "label": "visionary",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
-    },
-    {
-      "node_id": "concept:cf2d9706736982fb2616",
-      "label": "spare",
+      "node_id": "concept:c77d9be8eef912d561da",
+      "label": "eaven",
       "activation": 0.46,
       "novelty": 0.7117437722419929,
       "conflict": 0,
       "score": 0.7713708185053381
+    },
+    {
+      "node_id": "concept:5abde01ff920313c1491",
+      "label": "verse",
+      "activation": 0.46,
+      "novelty": 0.7117437722419929,
+      "conflict": 0,
+      "score": 0.7713708185053381
+    },
+    {
+      "node_id": "concept:a9a3e38ee26db300babf",
+      "label": "blessed",
+      "activation": 0.46,
+      "novelty": 0.5025125628140703,
+      "conflict": 0,
+      "score": 0.714878391959799
+    },
+    {
+      "node_id": "concept:12681deafadfa535f0ad",
+      "label": "follows",
+      "activation": 0.46,
+      "novelty": 0.49140049140049136,
+      "conflict": 0,
+      "score": 0.7118781326781327
+    },
+    {
+      "node_id": "concept:284d1e8c4918248233df",
+      "label": "passed",
+      "activation": 0.46,
+      "novelty": 0.4514672686230249,
+      "conflict": 0,
+      "score": 0.7010961625282168
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 1535
     },
     "connect": {
-      "attempts": 1158,
-      "successes": 1155
+      "attempts": 1159,
+      "successes": 1156
     },
     "evolve": {
       "attempts": 71,
