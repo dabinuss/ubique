@@ -1,38 +1,38 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-08T02:52:09.213230+00:00",
-  "generation": 8324,
+  "timestamp": "2026-11-08T02:55:19.436733+00:00",
+  "generation": 8325,
   "focus": "Mater Christi: Meditations on Our Lady",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 8319,
+  "last_provider": "gemini",
+  "last_provider_generation": 8325,
   "last_search_generation": 8280,
   "cortex": {
-    "nodes": 14901,
-    "synapses": 118686,
+    "nodes": 14903,
+    "synapses": 118717,
     "active": 120,
-    "archived_synapses": 56946
+    "archived_synapses": 56947
   },
   "memory": {
-    "episodes": 6007,
-    "claims": 7226,
+    "episodes": 6010,
+    "claims": 7230,
     "stances": 38,
     "interests": 149,
-    "associative_comparisons": 4649,
+    "associative_comparisons": 4651,
     "screened_interpretations": 40,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 51522,
+    "events": 51539,
     "segments": 1801,
     "compressed_snapshot": true,
-    "snapshot_events": 51363
+    "snapshot_events": 51539
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2170,
+  "evidence_reviews": 2171,
   "workspace": [
     {
       "node_id": "concept:721048dc35951006",
@@ -67,28 +67,28 @@
       "score": 0.8650284011546698
     },
     {
-      "node_id": "concept:e06ee22d358e131b6b10",
-      "label": "ower",
+      "node_id": "concept:bb4436a5d4b63b3cbfdd",
+      "label": "forgave",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:cd8736cdd6b052cfd09a",
+      "label": "somehow",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:b652ea885f7a74758cd5",
-      "label": "stab",
+      "node_id": "concept:c57d7e92019708b614c9",
+      "label": "voice",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.56657223796034,
       "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:a44c47b1ee24665db1a3",
-      "label": "sword",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.7321745042492918
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 255
     },
     "read": {
-      "attempts": 1624,
-      "successes": 1624
+      "attempts": 1625,
+      "successes": 1625
     },
     "explore": {
       "attempts": 1086,
