@@ -1,13 +1,13 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-08T17:31:03.482741+00:00",
-  "generation": 8466,
-  "focus": "Meditations",
-  "last_action": "read",
+  "timestamp": "2026-11-08T17:33:52.709487+00:00",
+  "generation": 8467,
+  "focus": "Mountain Meditations, and some subjects of the day and the war",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": null,
   "last_provider_generation": 8466,
   "last_search_generation": 8464,
   "cortex": {
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 52829,
-    "segments": 1839,
+    "events": 52833,
+    "segments": 1840,
     "compressed_snapshot": true,
     "snapshot_events": 52686
   },
@@ -38,9 +38,17 @@
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.04849660523763336,
+      "novelty": 0.048285852245292124,
       "conflict": 0,
-      "score": 0.873094083414161
+      "score": 0.8730371801062289
+    },
+    {
+      "node_id": "concept:2331eb33ce2c3766148e",
+      "label": "philosophy",
+      "activation": 1.0,
+      "novelty": 0.0446927374301676,
+      "conflict": 0,
+      "score": 0.8720670391061454
     },
     {
       "node_id": "concept:411f62e7fd037280",
@@ -67,28 +75,20 @@
       "score": 0.8712102968652689
     },
     {
-      "node_id": "concept:57692ad09e5a7262c141",
-      "label": "speculated",
-      "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.018241517694272163,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8649252097774536
     },
     {
-      "node_id": "concept:4599c3012a9fed95c4bd",
-      "label": "recalls",
+      "node_id": "concept:c6af71bcd8ce2ad7f345",
+      "label": "midshipman",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:948dbde67a8ef961ee8b",
-      "label": "medical",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 1673
     },
     "explore": {
-      "attempts": 1101,
-      "successes": 1087
+      "attempts": 1102,
+      "successes": 1088
     },
     "consolidate": {
       "attempts": 1547,
