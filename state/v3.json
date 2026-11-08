@@ -1,9 +1,9 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-08T11:51:31.284428+00:00",
-  "generation": 8412,
-  "focus": "Mental Evolution in Man: Origin of Human Faculty",
+  "timestamp": "2026-11-08T11:54:18.136618+00:00",
+  "generation": 8413,
+  "focus": "The Analysis of Mind",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
@@ -11,22 +11,22 @@
   "last_provider_generation": 8410,
   "last_search_generation": 8395,
   "cortex": {
-    "nodes": 14978,
-    "synapses": 119468,
+    "nodes": 14986,
+    "synapses": 119509,
     "active": 120,
-    "archived_synapses": 57678
+    "archived_synapses": 57713
   },
   "memory": {
-    "episodes": 6071,
-    "claims": 7331,
+    "episodes": 6072,
+    "claims": 7334,
     "stances": 38,
     "interests": 149,
-    "associative_comparisons": 4737,
+    "associative_comparisons": 4739,
     "screened_interpretations": 40,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 52298,
+    "events": 52309,
     "segments": 1825,
     "compressed_snapshot": true,
     "snapshot_events": 52187
@@ -38,9 +38,17 @@
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.052882072977260705,
+      "novelty": 0.05263157894736842,
       "conflict": 0,
-      "score": 0.8742781597038605
+      "score": 0.8742105263157895
+    },
+    {
+      "node_id": "concept:8c0a47d3266f1cb7",
+      "label": "continuity",
+      "activation": 1.0,
+      "novelty": 0.046178711613945975,
+      "conflict": 0,
+      "score": 0.8724682521357654
     },
     {
       "node_id": "concept:3f8b4464a99de3dc8c5c",
@@ -51,6 +59,14 @@
       "score": 0.8710046871815773
     },
     {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 1.0,
+      "novelty": 0.0397377309755613,
+      "conflict": 0,
+      "score": 0.8707291873634015
+    },
+    {
       "node_id": "concept:8b16ced79976e6a1",
       "label": "action",
       "activation": 1.0,
@@ -59,36 +75,20 @@
       "score": 0.8639545953863055
     },
     {
-      "node_id": "concept:73ee841a001760993425",
-      "label": "requisite",
+      "node_id": "concept:93789903e59081ad1479",
+      "label": "pendulum",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:a8761f21027783757e79",
+      "label": "volitional",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:0c54347974761ee84bbd",
-      "label": "essary",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:0df95db845ad82834fe1",
-      "label": "proficients",
-      "activation": 0.46,
-      "novelty": 0.8810572687224669,
-      "conflict": 0,
-      "score": 0.8170854625550661
-    },
-    {
-      "node_id": "concept:692e4e5decffcf5eac86",
-      "label": "minimum",
-      "activation": 0.46,
-      "novelty": 0.6493506493506493,
-      "conflict": 0,
-      "score": 0.7545246753246754
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 259
     },
     "read": {
-      "attempts": 1656,
-      "successes": 1656
+      "attempts": 1657,
+      "successes": 1657
     },
     "explore": {
       "attempts": 1095,
