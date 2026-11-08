@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-08T16:22:35.749380+00:00",
-  "generation": 8455,
+  "timestamp": "2026-11-08T16:25:25.993501+00:00",
+  "generation": 8456,
   "focus": "The Principles of Psychology, Volume 1 (of 2)",
-  "last_action": "read",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": null,
   "last_provider_generation": 8455,
   "last_search_generation": 8441,
   "cortex": {
     "nodes": 15018,
     "synapses": 119796,
     "active": 120,
-    "archived_synapses": 58168
+    "archived_synapses": 58174
   },
   "memory": {
     "episodes": 6098,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 52716,
-    "segments": 1836,
+    "events": 52720,
+    "segments": 1837,
     "compressed_snapshot": true,
     "snapshot_events": 52686
   },
@@ -35,60 +35,60 @@
   "evidence_reviews": 2212,
   "workspace": [
     {
-      "node_id": "concept:ae835b22fe866b40",
-      "label": "circumstances",
-      "activation": 1.0,
-      "novelty": 0.054039448797622264,
-      "conflict": 0,
-      "score": 0.8745906511753581
-    },
-    {
-      "node_id": "concept:e0f895872d65b2528fee",
-      "label": "knowledge",
-      "activation": 1.0,
-      "novelty": 0.0501378791677112,
-      "conflict": 0,
-      "score": 0.8735372273752822
-    },
-    {
-      "node_id": "concept:64b218956223eb12d13e",
-      "label": "principles",
-      "activation": 1.0,
-      "novelty": 0.049140049140049144,
-      "conflict": 0,
-      "score": 0.8732678132678133
-    },
-    {
-      "node_id": "concept:e2d5a675d4eab169",
-      "label": "continue",
-      "activation": 1.0,
-      "novelty": 0.04304778303917348,
-      "conflict": 0,
-      "score": 0.871622901420577
-    },
-    {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.01827151470856934,
-      "conflict": 0,
-      "score": 0.8649333089713138
-    },
-    {
-      "node_id": "concept:7f284f994514d4f6c0a5",
-      "label": "archaic",
+      "node_id": "concept:6f4f1b1c9d25ee4a551e",
+      "label": "illness",
       "activation": 0.46,
       "novelty": 0.6688963210702341,
       "conflict": 0,
       "score": 0.7598020066889632
     },
     {
-      "node_id": "concept:708bfe160a216590ebdb",
-      "label": "illnesses",
+      "node_id": "concept:f953f70b9132340e2782",
+      "label": "boring",
       "activation": 0.46,
-      "novelty": 0.6688963210702341,
+      "novelty": 0.5813953488372093,
       "conflict": 0,
-      "score": 0.7598020066889632
+      "score": 0.7361767441860465
+    },
+    {
+      "node_id": "concept:35948abf54d601e665ca",
+      "label": "onanistic",
+      "activation": 0.46,
+      "novelty": 0.56657223796034,
+      "conflict": 0,
+      "score": 0.7321745042492918
+    },
+    {
+      "node_id": "concept:2295ff7a8bd8b3f2884c",
+      "label": "patient",
+      "activation": 0.46,
+      "novelty": 0.4807692307692307,
+      "conflict": 0,
+      "score": 0.7090076923076924
+    },
+    {
+      "node_id": "concept:b093720ae25363643156",
+      "label": "symptom",
+      "activation": 0.46,
+      "novelty": 0.4424778761061947,
+      "conflict": 0,
+      "score": 0.6986690265486726
+    },
+    {
+      "node_id": "concept:7208794c984ea1c75d13",
+      "label": "seen",
+      "activation": 0.46,
+      "novelty": 0.24096385542168672,
+      "conflict": 0,
+      "score": 0.6442602409638555
+    },
+    {
+      "node_id": "concept:1ba2ebb275e86668d38c",
+      "label": "perhaps",
+      "activation": 0.46,
+      "novelty": 0.22396416573348266,
+      "conflict": 0,
+      "score": 0.6396703247480404
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 1545
     },
     "connect": {
-      "attempts": 1166,
-      "successes": 1163
+      "attempts": 1167,
+      "successes": 1164
     },
     "evolve": {
       "attempts": 72,
