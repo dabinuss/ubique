@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-08T06:05:55.336540+00:00",
-  "generation": 8358,
-  "focus": "The Republic of Plato",
-  "last_action": "read",
+  "timestamp": "2026-11-08T06:08:54.975241+00:00",
+  "generation": 8359,
+  "focus": "Mater Christi: Meditations on Our Lady",
+  "last_action": "question",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 8353,
+  "last_action_detail": "How do the authors approach according, second differently, given their emphases on bouquet, christi and accordingly, anon? Which assumptions differ?",
+  "last_provider": "gemini",
+  "last_provider_generation": 8359,
   "last_search_generation": 8349,
   "cortex": {
-    "nodes": 14934,
+    "nodes": 14935,
     "synapses": 119083,
     "active": 120,
     "archived_synapses": 57145
   },
   "memory": {
-    "episodes": 6036,
-    "claims": 7274,
+    "episodes": 6038,
+    "claims": 7276,
     "stances": 38,
     "interests": 149,
     "associative_comparisons": 4689,
@@ -26,22 +26,14 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 51844,
+    "events": 51854,
     "segments": 1810,
     "compressed_snapshot": true,
     "snapshot_events": 51700
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2175,
+  "evidence_reviews": 2176,
   "workspace": [
-    {
-      "node_id": "concept:64b218956223eb12d13e",
-      "label": "principles",
-      "activation": 1.0,
-      "novelty": 0.055663790704146954,
-      "conflict": 0,
-      "score": 0.8750292234901198
-    },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
@@ -49,14 +41,6 @@
       "novelty": 0.041211621677313,
       "conflict": 0,
       "score": 0.8711271378528747
-    },
-    {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
-      "activation": 1.0,
-      "novelty": 0.014704801117564887,
-      "conflict": 0,
-      "score": 0.8639702963017426
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -67,28 +51,44 @@
       "score": 0.8627319639785491
     },
     {
-      "node_id": "concept:7265a0b018fc6ac6f7d2",
-      "label": "heavenly",
+      "node_id": "concept:c812b846bd8b54cfdf71",
+      "label": "angels",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:a54e71f0e17f5aaf7946",
-      "label": "jesus",
+      "node_id": "concept:c974e17b8e7321ce8c12",
+      "label": "gate",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:21c0fbc5d08ad4b948ce",
-      "label": "attraction",
+      "node_id": "concept:4813494d137e1631bba3",
+      "label": "root",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:23ab2b37a43e639b6276",
+      "label": "redeemed",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:b045d5ce9ecebf509c02",
+      "label": "colloquy",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -121,8 +121,8 @@
       "successes": 403
     },
     "question": {
-      "attempts": 300,
-      "successes": 300
+      "attempts": 301,
+      "successes": 301
     },
     "library": {
       "attempts": 12,
