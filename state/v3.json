@@ -1,32 +1,32 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-08T09:28:06.071438+00:00",
-  "generation": 8387,
-  "focus": "The Psychology of the Emotions",
+  "timestamp": "2026-11-08T09:31:02.002637+00:00",
+  "generation": 8388,
+  "focus": "Psychology of the Unconscious",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": "gemini",
+  "last_provider": null,
   "last_provider_generation": 8387,
   "last_search_generation": 8372,
   "cortex": {
-    "nodes": 14956,
-    "synapses": 119308,
+    "nodes": 14961,
+    "synapses": 119330,
     "active": 120,
-    "archived_synapses": 57328
+    "archived_synapses": 57336
   },
   "memory": {
-    "episodes": 6056,
-    "claims": 7303,
+    "episodes": 6057,
+    "claims": 7306,
     "stances": 38,
     "interests": 149,
-    "associative_comparisons": 4713,
+    "associative_comparisons": 4715,
     "screened_interpretations": 40,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 52087,
+    "events": 52098,
     "segments": 1818,
     "compressed_snapshot": true,
     "snapshot_events": 52025
@@ -51,6 +51,14 @@
       "score": 0.8899667036625971
     },
     {
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
+      "activation": 1.0,
+      "novelty": 0.055386319579063974,
+      "conflict": 0,
+      "score": 0.8749543062863474
+    },
+    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -59,36 +67,28 @@
       "score": 0.8649907578558227
     },
     {
-      "node_id": "concept:739ffeedc343fd36de0f",
-      "label": "permitted",
+      "node_id": "concept:2149fac79658885917e8",
+      "label": "inattentive",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:c952c8c0aa7a8245ab05",
-      "label": "invalidity",
+      "node_id": "concept:d3fb7168cbef420e2983",
+      "label": "gets",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:267d294ad2fe2618846a",
-      "label": "provision",
+      "node_id": "concept:9be4da6d7bc79e615e21",
+      "label": "discrepant",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.78452319391635
-    },
-    {
-      "node_id": "concept:445be54d48a2e6294369",
-      "label": "void",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 258
     },
     "read": {
-      "attempts": 1647,
-      "successes": 1647
+      "attempts": 1648,
+      "successes": 1648
     },
     "explore": {
       "attempts": 1092,
