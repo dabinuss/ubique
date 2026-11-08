@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-08T13:17:17.068844+00:00",
-  "generation": 8425,
+  "timestamp": "2026-11-08T13:20:20.866829+00:00",
+  "generation": 8426,
   "focus": "The Principles of Psychology, Volume 1 (of 2)",
-  "last_action": "read",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "observed_comparison",
   "last_provider": null,
   "last_provider_generation": 8421,
   "last_search_generation": 8418,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 52425,
+    "events": 52430,
     "segments": 1829,
     "compressed_snapshot": true,
     "snapshot_events": 52357
@@ -51,28 +51,12 @@
       "score": 0.8738178096212896
     },
     {
-      "node_id": "concept:8c0a47d3266f1cb7",
-      "label": "continuity",
-      "activation": 1.0,
-      "novelty": 0.046178711613945975,
-      "conflict": 0,
-      "score": 0.8724682521357654
-    },
-    {
       "node_id": "concept:411f62e7fd037280",
       "label": "actually",
       "activation": 1.0,
       "novelty": 0.04338394793926247,
       "conflict": 0,
       "score": 0.8717136659436009
-    },
-    {
-      "node_id": "concept:53e5e7c5a884893739c4",
-      "label": "experience",
-      "activation": 1.0,
-      "novelty": 0.0397377309755613,
-      "conflict": 0,
-      "score": 0.8707291873634015
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -83,12 +67,28 @@
       "score": 0.8649577671685642
     },
     {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
-      "activation": 1.0,
-      "novelty": 0.014627367805163462,
+      "node_id": "concept:44ff30f3c7242b3c1bc8",
+      "label": "wings",
+      "activation": 0.46,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.8639493893073942
+      "score": 0.7713708185053381
+    },
+    {
+      "node_id": "concept:5982f892947ea523f3a9",
+      "label": "scans",
+      "activation": 0.46,
+      "novelty": 0.7117437722419929,
+      "conflict": 0,
+      "score": 0.7713708185053381
+    },
+    {
+      "node_id": "concept:7ac2f54c4d2627e30e72",
+      "label": "conjoin",
+      "activation": 0.46,
+      "novelty": 0.6896551724137931,
+      "conflict": 0,
+      "score": 0.7654068965517242
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 41
     },
     "experiment": {
-      "attempts": 411,
-      "successes": 409
+      "attempts": 412,
+      "successes": 410
     },
     "question": {
       "attempts": 305,
