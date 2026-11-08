@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-08T07:38:37.876452+00:00",
-  "generation": 8374,
+  "timestamp": "2026-11-08T07:53:41.004491+00:00",
+  "generation": 8375,
   "focus": "Mater Christi: Meditations on Our Lady",
-  "last_action": "evolve",
-  "last_action_success": false,
-  "last_action_detail": "{\"accepted\": false, \"title\": \"Fix truncated fallback exploratory question generation snippet\", \"summary\": \"Complete the truncated fallback question assignment in semantics.py to restore proper generation of curiosity-driven exploratory questions.\", \"branch\": null, \"pr_url\": null, \"commit_sha\": null, \"reason\": \"candidate tests failed:\\n*** Error compiling 'src/ubique/v3/semantics.py'...\\n  File \\\"s",
+  "last_action": "consolidate",
+  "last_action_success": true,
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 8370,
   "last_search_generation": 8372,
@@ -14,7 +14,7 @@
     "nodes": 14938,
     "synapses": 119110,
     "active": 120,
-    "archived_synapses": 57228
+    "archived_synapses": 57212
   },
   "memory": {
     "episodes": 6047,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 51982,
-    "segments": 1814,
+    "events": 51989,
+    "segments": 1815,
     "compressed_snapshot": true,
     "snapshot_events": 51861
   },
@@ -62,33 +62,33 @@
       "node_id": "concept:c2a5ac3a8c0223f31369",
       "label": "taking",
       "activation": 0.46,
-      "novelty": 0.5970149253731344,
+      "novelty": 0.5813953488372093,
       "conflict": 0,
-      "score": 0.7403940298507463
+      "score": 0.7361767441860465
     },
     {
       "node_id": "concept:100af44f57bf59a3281f",
       "label": "becoming",
       "activation": 0.46,
-      "novelty": 0.5970149253731344,
+      "novelty": 0.5813953488372093,
       "conflict": 0,
-      "score": 0.7403940298507463
+      "score": 0.7361767441860465
     },
     {
       "node_id": "concept:5bdb80bb414f60760ab5",
       "label": "mysteries",
       "activation": 0.46,
-      "novelty": 0.5524861878453039,
+      "novelty": 0.5390835579514824,
       "conflict": 0,
-      "score": 0.7283712707182322
+      "score": 0.7247525606469003
     },
     {
       "node_id": "concept:dc726d0a525fdaf759e4",
       "label": "suggest",
       "activation": 0.46,
-      "novelty": 0.4807692307692307,
+      "novelty": 0.47058823529411764,
       "conflict": 0,
-      "score": 0.7090076923076924
+      "score": 0.7062588235294118
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 1077
     },
     "consolidate": {
-      "attempts": 1528,
-      "successes": 1528
+      "attempts": 1529,
+      "successes": 1529
     },
     "connect": {
       "attempts": 1155,
