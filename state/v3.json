@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-08T01:27:19.254354+00:00",
-  "generation": 8311,
-  "focus": "Meditations",
-  "last_action": "read",
+  "timestamp": "2026-11-08T01:30:00.600108+00:00",
+  "generation": 8312,
+  "focus": "Analysis of the Phenomena of the Human Mind",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 8308,
   "last_search_generation": 8280,
   "cortex": {
-    "nodes": 14888,
-    "synapses": 118437,
+    "nodes": 14890,
+    "synapses": 118487,
     "active": 120,
-    "archived_synapses": 56953
+    "archived_synapses": 56891
   },
   "memory": {
     "episodes": 6003,
@@ -26,8 +26,8 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 51430,
-    "segments": 1797,
+    "events": 51435,
+    "segments": 1798,
     "compressed_snapshot": true,
     "snapshot_events": 51363
   },
@@ -38,9 +38,9 @@
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.06018657839301835,
+      "novelty": 0.0598623166716552,
       "conflict": 0,
-      "score": 0.8762503761661149
+      "score": 0.8761628255013469
     },
     {
       "node_id": "concept:e0f895872d65b2528fee",
@@ -49,14 +49,6 @@
       "novelty": 0.05036514731805591,
       "conflict": 0,
       "score": 0.8735985897758751
-    },
-    {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.01862370798025887,
-      "conflict": 0,
-      "score": 0.8650284011546698
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -75,16 +67,24 @@
       "score": 0.8622154755066875
     },
     {
-      "node_id": "concept:19dbaf77a5ecfc85a6af",
-      "label": "cord",
+      "node_id": "concept:dff22754ace5cbab4fbb",
+      "label": "moderate",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:ef379363dd0cb7be6663",
-      "label": "uniform",
+      "node_id": "concept:d1e1e0290b22d3ee4acc",
+      "label": "archiv",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:6aa7fd3a09ebf6cee003",
+      "label": "nothnagel",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
@@ -105,8 +105,8 @@
       "successes": 1070
     },
     "consolidate": {
-      "attempts": 1516,
-      "successes": 1516
+      "attempts": 1517,
+      "successes": 1517
     },
     "connect": {
       "attempts": 1146,
