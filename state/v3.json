@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-08T15:52:54.911731+00:00",
-  "generation": 8453,
+  "timestamp": "2026-11-08T16:07:26.465294+00:00",
+  "generation": 8454,
   "focus": "The Principles of Psychology, Volume 1 (of 2)",
-  "last_action": "evolve",
-  "last_action_success": false,
-  "last_action_detail": "{\"accepted\": false, \"title\": \"Rejected evolution\", \"summary\": \"\", \"branch\": null, \"pr_url\": null, \"commit_sha\": null, \"reason\": \"proposal rejected: replacement must match exactly once in src/ubique/v3/semantics.py\", \"baseline_score\": null, \"candidate_score\": null}",
+  "last_action": "consolidate",
+  "last_action_success": true,
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 8449,
   "last_search_generation": 8441,
@@ -14,7 +14,7 @@
     "nodes": 15014,
     "synapses": 119783,
     "active": 120,
-    "archived_synapses": 58155
+    "archived_synapses": 58175
   },
   "memory": {
     "episodes": 6097,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 52692,
+    "events": 52697,
     "segments": 1836,
     "compressed_snapshot": true,
     "snapshot_events": 52686
@@ -78,17 +78,17 @@
       "node_id": "concept:7f284f994514d4f6c0a5",
       "label": "archaic",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.7654068965517242
     },
     {
       "node_id": "concept:708bfe160a216590ebdb",
       "label": "illnesses",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.7654068965517242
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 1086
     },
     "consolidate": {
-      "attempts": 1544,
-      "successes": 1544
+      "attempts": 1545,
+      "successes": 1545
     },
     "connect": {
       "attempts": 1166,
