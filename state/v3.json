@@ -1,33 +1,33 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-08T14:37:36.778952+00:00",
-  "generation": 8440,
+  "timestamp": "2026-11-08T14:40:34.932446+00:00",
+  "generation": 8441,
   "focus": "Mountain Meditations, and some subjects of the day and the war",
-  "last_action": "read",
+  "last_action": "search",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Acquired 3 attributable external articles",
   "last_provider": null,
   "last_provider_generation": 8438,
-  "last_search_generation": 8418,
+  "last_search_generation": 8441,
   "cortex": {
-    "nodes": 15010,
+    "nodes": 15011,
     "synapses": 119778,
     "active": 120,
     "archived_synapses": 57968
   },
   "memory": {
-    "episodes": 6087,
+    "episodes": 6090,
     "claims": 7377,
     "stances": 38,
     "interests": 149,
-    "associative_comparisons": 4763,
+    "associative_comparisons": 4769,
     "screened_interpretations": 40,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 52563,
-    "segments": 1832,
+    "events": 52588,
+    "segments": 1833,
     "compressed_snapshot": true,
     "snapshot_events": 52518
   },
@@ -35,12 +35,28 @@
   "evidence_reviews": 2199,
   "workspace": [
     {
+      "node_id": "concept:ae835b22fe866b40",
+      "label": "circumstances",
+      "activation": 1.0,
+      "novelty": 0.054039448797622264,
+      "conflict": 0,
+      "score": 0.8745906511753581
+    },
+    {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.05025125628140704,
+      "conflict": 0,
+      "score": 0.87356783919598
+    },
+    {
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.05036514731805591,
+      "novelty": 0.0501378791677112,
       "conflict": 0,
-      "score": 0.8735985897758751
+      "score": 0.8735372273752822
     },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
@@ -51,50 +67,34 @@
       "score": 0.8721157729414404
     },
     {
+      "node_id": "concept:e2d5a675d4eab169",
+      "label": "continue",
+      "activation": 1.0,
+      "novelty": 0.04381161007667032,
+      "conflict": 0,
+      "score": 0.871829134720701
+    },
+    {
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.018316695668101474,
+      "conflict": 0,
+      "score": 0.8649455078303874
+    },
+    {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
       "activation": 1.0,
       "novelty": 0.008151287903488751,
       "conflict": 0,
       "score": 0.862200847733942
-    },
-    {
-      "node_id": "concept:e6a9161cc06aa678ad93",
-      "label": "chasm",
-      "activation": 0.46,
-      "novelty": 0.9569377990430623,
-      "conflict": 0,
-      "score": 0.837573205741627
-    },
-    {
-      "node_id": "concept:3bb65d34c9e568a02fb3",
-      "label": "yawns",
-      "activation": 0.46,
-      "novelty": 0.9569377990430623,
-      "conflict": 0,
-      "score": 0.837573205741627
-    },
-    {
-      "node_id": "concept:a0a416e1b1bb34846487",
-      "label": "strongest",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:52563f898870e6ce7817",
-      "label": "admitted",
-      "activation": 0.46,
-      "novelty": 0.5390835579514824,
-      "conflict": 0,
-      "score": 0.7247525606469003
     }
   ],
   "skills": {
     "search": {
-      "attempts": 261,
-      "successes": 260
+      "attempts": 262,
+      "successes": 261
     },
     "read": {
       "attempts": 1666,
