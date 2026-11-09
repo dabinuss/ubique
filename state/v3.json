@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-09T09:27:11.974901+00:00",
-  "generation": 8608,
-  "focus": "Mental Evolution in Man: Origin of Human Faculty",
-  "last_action": "read",
+  "timestamp": "2026-11-09T09:30:13.262899+00:00",
+  "generation": 8609,
+  "focus": "Psychology of the Unconscious",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "gemini",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 8608,
   "last_search_generation": 8602,
   "cortex": {
     "nodes": 15228,
     "synapses": 121712,
     "active": 120,
-    "archived_synapses": 59492
+    "archived_synapses": 59482
   },
   "memory": {
     "episodes": 6198,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 54095,
+    "events": 54100,
     "segments": 1876,
     "compressed_snapshot": true,
     "snapshot_events": 54021
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2282,
   "workspace": [
+    {
+      "node_id": "concept:040b0e3f05e74417",
+      "label": "experiment",
+      "activation": 1.0,
+      "novelty": 0.23584905660377356,
+      "conflict": 0,
+      "score": 0.9236792452830189
+    },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
@@ -59,36 +67,28 @@
       "score": 0.8648222896945883
     },
     {
-      "node_id": "concept:a35bbf3a3240f9fe9a39",
-      "label": "mccabe",
+      "node_id": "concept:c152d5bbb379c3f94e74",
+      "label": "conservative",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:aaf369274120552b4209",
-      "label": "clergy",
+      "node_id": "concept:469fb1948602cdc99fe5",
+      "label": "reproduce",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.6493506493506493,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.7545246753246754
     },
     {
-      "node_id": "concept:abc8bf03c52961b29373",
-      "label": "denounce",
+      "node_id": "concept:a48fcb713243b3d460ca",
+      "label": "places",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.56657223796034,
       "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:b0cce4d33179e5bc7c97",
-      "label": "incentives",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.7321745042492918
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 1101
     },
     "consolidate": {
-      "attempts": 1579,
-      "successes": 1579
+      "attempts": 1580,
+      "successes": 1580
     },
     "connect": {
       "attempts": 1190,
