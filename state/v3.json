@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-09T12:43:09.062692+00:00",
-  "generation": 8638,
-  "focus": "The Nicomachean Ethics of Aristotle",
-  "last_action": "read",
+  "timestamp": "2026-11-09T12:46:22.099176+00:00",
+  "generation": 8639,
+  "focus": "Psychology: Briefer Course",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 8636,
   "last_search_generation": 8625,
@@ -14,7 +14,7 @@
     "nodes": 15256,
     "synapses": 122043,
     "active": 120,
-    "archived_synapses": 59757
+    "archived_synapses": 59795
   },
   "memory": {
     "episodes": 6216,
@@ -26,10 +26,10 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 54338,
+    "events": 54342,
     "segments": 1884,
     "compressed_snapshot": true,
-    "snapshot_events": 54181
+    "snapshot_events": 54342
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2286,
@@ -51,6 +51,22 @@
       "score": 0.8872452068617558
     },
     {
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
+      "activation": 1.0,
+      "novelty": 0.04451368795904741,
+      "conflict": 0,
+      "score": 0.8720186957489429
+    },
+    {
+      "node_id": "concept:3676cba44f159ed1",
+      "label": "cognitive",
+      "activation": 1.0,
+      "novelty": 0.04113533525298231,
+      "conflict": 0,
+      "score": 0.8711065405183052
+    },
+    {
       "node_id": "concept:f2d44b8ac655a7ad",
       "label": "public",
       "activation": 1.0,
@@ -67,28 +83,12 @@
       "score": 0.8666355369869747
     },
     {
-      "node_id": "concept:5cc3f82838ba7260203e",
-      "label": "office",
+      "node_id": "concept:4dd5b6e2bf3bfd4f6a27",
+      "label": "manifold",
       "activation": 0.46,
-      "novelty": 0.6688963210702341,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.7598020066889632
-    },
-    {
-      "node_id": "concept:739ffeedc343fd36de0f",
-      "label": "permitted",
-      "activation": 0.46,
-      "novelty": 0.5813953488372093,
-      "conflict": 0,
-      "score": 0.7361767441860465
-    },
-    {
-      "node_id": "concept:b74e6b8e7391a61cba6b",
-      "label": "federal",
-      "activation": 0.46,
-      "novelty": 0.5524861878453039,
-      "conflict": 0,
-      "score": 0.7283712707182322
+      "score": 0.8080135593220339
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 1585
     },
     "connect": {
-      "attempts": 1195,
-      "successes": 1191
+      "attempts": 1196,
+      "successes": 1192
     },
     "evolve": {
       "attempts": 74,
