@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-09T22:43:20.755023+00:00",
-  "generation": 8699,
-  "focus": "The Varieties of Religious Experience: A Study in Human Nature",
-  "last_action": "read",
+  "timestamp": "2026-11-09T22:46:33.056872+00:00",
+  "generation": 8700,
+  "focus": "A Treatise of Human Nature",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 8699,
   "last_search_generation": 8694,
   "cortex": {
-    "nodes": 15300,
-    "synapses": 122521,
+    "nodes": 15301,
+    "synapses": 122551,
     "active": 120,
-    "archived_synapses": 60079
+    "archived_synapses": 60095
   },
   "memory": {
     "episodes": 6240,
@@ -26,14 +26,22 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 54813,
-    "segments": 1900,
+    "events": 54820,
+    "segments": 1901,
     "compressed_snapshot": true,
     "snapshot_events": 54662
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2313,
   "workspace": [
+    {
+      "node_id": "concept:c42aa7872617a44d",
+      "label": "biography",
+      "activation": 1.0,
+      "novelty": 0.06084575600851841,
+      "conflict": 0,
+      "score": 0.8764283541222999
+    },
     {
       "node_id": "concept:65ee89092efbf78ab19a",
       "label": "optimistic",
@@ -59,14 +67,6 @@
       "score": 0.8722144311241802
     },
     {
-      "node_id": "concept:54476ce93ea4a148",
-      "label": "distinguish",
-      "activation": 1.0,
-      "novelty": 0.04183225266680611,
-      "conflict": 0,
-      "score": 0.8712947082200377
-    },
-    {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
       "activation": 1.0,
@@ -75,20 +75,20 @@
       "score": 0.8712734864300626
     },
     {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
+      "node_id": "concept:02f77488efc6c9cf",
+      "label": "destiny",
       "activation": 1.0,
-      "novelty": 0.017577781683951486,
+      "novelty": 0.025654181631605953,
       "conflict": 0,
-      "score": 0.864746001054667
+      "score": 0.8669266290405337
     },
     {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
+      "node_id": "concept:0f50089ba6762040",
+      "label": "master",
       "activation": 1.0,
-      "novelty": 0.009901970492127933,
+      "novelty": 0.023660238968413582,
       "conflict": 0,
-      "score": 0.8626735320328747
+      "score": 0.8663882645214718
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 1115
     },
     "consolidate": {
-      "attempts": 1602,
-      "successes": 1602
+      "attempts": 1603,
+      "successes": 1603
     },
     "connect": {
       "attempts": 1208,
