@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-09T00:51:13.670520+00:00",
-  "generation": 8534,
+  "timestamp": "2026-11-09T00:53:48.376510+00:00",
+  "generation": 8535,
   "focus": "The Principles of Psychology, Volume 1 (of 2)",
-  "last_action": "connect",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": "gemini",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 8534,
   "last_search_generation": 8533,
   "cortex": {
     "nodes": 15134,
-    "synapses": 120867,
+    "synapses": 120881,
     "active": 120,
-    "archived_synapses": 59017
+    "archived_synapses": 58969
   },
   "memory": {
     "episodes": 6152,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 53471,
+    "events": 53478,
     "segments": 1857,
     "compressed_snapshot": true,
     "snapshot_events": 53355
@@ -46,9 +46,9 @@
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
       "activation": 1.0,
-      "novelty": 0.0493583415597236,
+      "novelty": 0.04924895345973898,
       "conflict": 0,
-      "score": 0.8733267522211254
+      "score": 0.8732972174341296
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
@@ -70,25 +70,25 @@
       "node_id": "concept:614fe60cf73250088d2c",
       "label": "tongues",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:f7c01c78ffa3ffbaa1e1",
       "label": "miracles",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.7917984251968504
     },
     {
       "node_id": "concept:d0d0ff9462aa863cbfdc",
       "label": "prophecy",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.7917984251968504
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 1094
     },
     "consolidate": {
-      "attempts": 1561,
-      "successes": 1561
+      "attempts": 1562,
+      "successes": 1562
     },
     "connect": {
       "attempts": 1179,
