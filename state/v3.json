@@ -1,33 +1,33 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-09T05:22:50.076452+00:00",
-  "generation": 8574,
+  "timestamp": "2026-11-09T05:25:44.707346+00:00",
+  "generation": 8575,
   "focus": "Mountain Meditations, and some subjects of the day and the war",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": "gemini",
+  "last_provider": null,
   "last_provider_generation": 8574,
   "last_search_generation": 8533,
   "cortex": {
-    "nodes": 15201,
-    "synapses": 121348,
+    "nodes": 15203,
+    "synapses": 121384,
     "active": 120,
-    "archived_synapses": 59298
+    "archived_synapses": 59318
   },
   "memory": {
-    "episodes": 6172,
-    "claims": 7574,
+    "episodes": 6173,
+    "claims": 7577,
     "stances": 38,
     "interests": 149,
-    "associative_comparisons": 4877,
+    "associative_comparisons": 4879,
     "screened_interpretations": 43,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 53794,
-    "segments": 1867,
+    "events": 53807,
+    "segments": 1868,
     "compressed_snapshot": true,
     "snapshot_events": 53686
   },
@@ -35,20 +35,12 @@
   "evidence_reviews": 2275,
   "workspace": [
     {
-      "node_id": "concept:45dedc0facfe17e7",
-      "label": "limit",
-      "activation": 1.0,
-      "novelty": 0.04676174888940847,
-      "conflict": 0,
-      "score": 0.8726256722001404
-    },
-    {
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.04505519261094841,
+      "novelty": 0.04487323311644604,
       "conflict": 0,
-      "score": 0.8721649020049562
+      "score": 0.8721157729414404
     },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
@@ -59,22 +51,6 @@
       "score": 0.8708849022374521
     },
     {
-      "node_id": "concept:53e5e7c5a884893739c4",
-      "label": "experience",
-      "activation": 1.0,
-      "novelty": 0.039596119580281135,
-      "conflict": 0,
-      "score": 0.8706909522866759
-    },
-    {
-      "node_id": "concept:40f024a500acd053",
-      "label": "domain",
-      "activation": 1.0,
-      "novelty": 0.024576062914721062,
-      "conflict": 0,
-      "score": 0.8666355369869747
-    },
-    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -83,12 +59,36 @@
       "score": 0.8648613611811307
     },
     {
-      "node_id": "concept:31f7a65e315586ac198b",
-      "label": "toto",
+      "node_id": "concept:9b828e2f3cec3b60d126",
+      "label": "counterpart",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:a703788f832056626d71",
+      "label": "minimal",
       "activation": 0.46,
       "novelty": 0.9174311926605504,
       "conflict": 0,
       "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:762356d5e163422f5529",
+      "label": "reposes",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:611ae55800211e46c7b1",
+      "label": "similarly",
+      "activation": 0.46,
+      "novelty": 0.7117437722419929,
+      "conflict": 0,
+      "score": 0.7713708185053381
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 265
     },
     "read": {
-      "attempts": 1708,
-      "successes": 1708
+      "attempts": 1709,
+      "successes": 1709
     },
     "explore": {
       "attempts": 1112,
