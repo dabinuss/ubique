@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-09T16:51:10.200980+00:00",
-  "generation": 8673,
-  "focus": "The Master of Destiny: A Biography of the Brain",
-  "last_action": "read",
+  "timestamp": "2026-11-09T16:54:13.379521+00:00",
+  "generation": 8674,
+  "focus": "Psychology of the Unconscious",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 8670,
   "last_search_generation": 8671,
   "cortex": {
-    "nodes": 15279,
+    "nodes": 15281,
     "synapses": 122281,
     "active": 120,
     "archived_synapses": 59961
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 54620,
+    "events": 54624,
     "segments": 1894,
     "compressed_snapshot": true,
     "snapshot_events": 54502
@@ -35,12 +35,28 @@
   "evidence_reviews": 2304,
   "workspace": [
     {
+      "node_id": "concept:65ee89092efbf78ab19a",
+      "label": "optimistic",
+      "activation": 1.0,
+      "novelty": 0.054039448797622264,
+      "conflict": 0,
+      "score": 0.8745906511753581
+    },
+    {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
       "activation": 1.0,
       "novelty": 0.0488162069807176,
       "conflict": 0,
       "score": 0.8731803758847938
+    },
+    {
+      "node_id": "concept:48d492d08e9d314c034c",
+      "label": "studies",
+      "activation": 1.0,
+      "novelty": 0.04627487274409996,
+      "conflict": 0,
+      "score": 0.872494215640907
     },
     {
       "node_id": "concept:64b218956223eb12d13e",
@@ -51,6 +67,14 @@
       "score": 0.8716681071737251
     },
     {
+      "node_id": "concept:2331eb33ce2c3766148e",
+      "label": "philosophy",
+      "activation": 1.0,
+      "novelty": 0.04263483265828182,
+      "conflict": 0,
+      "score": 0.8715114048177361
+    },
+    {
       "node_id": "concept:54476ce93ea4a148",
       "label": "distinguish",
       "activation": 1.0,
@@ -59,36 +83,12 @@
       "score": 0.8712947082200377
     },
     {
-      "node_id": "concept:3676cba44f159ed1",
-      "label": "cognitive",
-      "activation": 1.0,
-      "novelty": 0.04105933073290905,
-      "conflict": 0,
-      "score": 0.8710860192978855
-    },
-    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
       "novelty": 0.017647577869937352,
       "conflict": 0,
       "score": 0.8647648460248831
-    },
-    {
-      "node_id": "concept:1c48f6310f1c849b4ac3",
-      "label": "mind",
-      "activation": 0.9814379435208449,
-      "novelty": 0.007970032677133976,
-      "conflict": 0,
-      "score": 0.8524996394536655
-    },
-    {
-      "node_id": "concept:d1cc3f846df301176322",
-      "label": "unsophisticated",
-      "activation": 0.46,
-      "novelty": 0.6688963210702341,
-      "conflict": 0,
-      "score": 0.7598020066889632
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 1595
     },
     "connect": {
-      "attempts": 1202,
-      "successes": 1198
+      "attempts": 1203,
+      "successes": 1199
     },
     "evolve": {
       "attempts": 74,
