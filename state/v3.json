@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-09T15:42:29.772442+00:00",
-  "generation": 8662,
-  "focus": "A Treatise of Human Nature",
-  "last_action": "read",
+  "timestamp": "2026-11-09T15:45:33.831228+00:00",
+  "generation": 8663,
+  "focus": "The Varieties of Religious Experience: A Study in Human Nature",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 8659,
   "last_search_generation": 8648,
   "cortex": {
-    "nodes": 15269,
+    "nodes": 15270,
     "synapses": 122227,
     "active": 120,
     "archived_synapses": 59917
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 54513,
+    "events": 54517,
     "segments": 1891,
     "compressed_snapshot": true,
     "snapshot_events": 54502
@@ -34,14 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2293,
   "workspace": [
-    {
-      "node_id": "concept:ca52e7d1c18961a8c5b3",
-      "label": "united",
-      "activation": 1.0,
-      "novelty": 0.2702702702702703,
-      "conflict": 0,
-      "score": 0.932972972972973
-    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -59,6 +51,14 @@
       "score": 0.8717136659436009
     },
     {
+      "node_id": "concept:54476ce93ea4a148",
+      "label": "distinguish",
+      "activation": 1.0,
+      "novelty": 0.04263483265828182,
+      "conflict": 0,
+      "score": 0.8715114048177361
+    },
+    {
       "node_id": "concept:3676cba44f159ed1",
       "label": "cognitive",
       "activation": 1.0,
@@ -67,28 +67,28 @@
       "score": 0.8710860192978855
     },
     {
-      "node_id": "concept:f2d44b8ac655a7ad",
-      "label": "public",
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
       "activation": 1.0,
-      "novelty": 0.024740227610094014,
+      "novelty": 0.017703815172169603,
       "conflict": 0,
-      "score": 0.8666798614547255
-    },
-    {
-      "node_id": "concept:40f024a500acd053",
-      "label": "domain",
-      "activation": 1.0,
-      "novelty": 0.024576062914721062,
-      "conflict": 0,
-      "score": 0.8666355369869747
+      "score": 0.8647800300964859
     },
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
       "activation": 1.0,
-      "novelty": 0.008004482510205716,
+      "novelty": 0.007998720204767237,
       "conflict": 0,
-      "score": 0.8621612102777556
+      "score": 0.8621596544552872
+    },
+    {
+      "node_id": "concept:d1cc3f846df301176322",
+      "label": "unsophisticated",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -109,8 +109,8 @@
       "successes": 1592
     },
     "connect": {
-      "attempts": 1199,
-      "successes": 1195
+      "attempts": 1200,
+      "successes": 1196
     },
     "evolve": {
       "attempts": 74,
