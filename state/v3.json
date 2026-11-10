@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-10T17:53:29.652694+00:00",
-  "generation": 8865,
+  "timestamp": "2026-11-10T17:56:03.032946+00:00",
+  "generation": 8866,
   "focus": "The Physical Basis of Mind",
-  "last_action": "read",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "observed_comparison",
   "last_provider": null,
   "last_provider_generation": 8863,
   "last_search_generation": 8855,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 56195,
+    "events": 56200,
     "segments": 1944,
     "compressed_snapshot": true,
     "snapshot_events": 56134
@@ -43,20 +43,28 @@
       "score": 0.8940479192938209
     },
     {
-      "node_id": "concept:e2d5a675d4eab169",
-      "label": "continue",
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
       "activation": 1.0,
-      "novelty": 0.04016870857601928,
+      "novelty": 0.0375234521575985,
       "conflict": 0,
-      "score": 0.8708455513155253
+      "score": 0.8701313320825517
     },
     {
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.03526093088857546,
+      "novelty": 0.0351493848857645,
       "conflict": 0,
-      "score": 0.8695204513399155
+      "score": 0.8694903339191564
+    },
+    {
+      "node_id": "concept:b39ea7408bbea9e9",
+      "label": "closed",
+      "activation": 1.0,
+      "novelty": 0.025506950644050504,
+      "conflict": 0,
+      "score": 0.8668868766738937
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -75,20 +83,12 @@
       "score": 0.8620977391034108
     },
     {
-      "node_id": "concept:7369949b47ef2c6ba26f",
-      "label": "rule",
+      "node_id": "concept:147c9347800031cf8149",
+      "label": "attaining",
       "activation": 0.46,
-      "novelty": 0.6134969325153374,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.7448441717791412
-    },
-    {
-      "node_id": "concept:b5293f2894ae49fccb44",
-      "label": "whilst",
-      "activation": 0.46,
-      "novelty": 0.5970149253731344,
-      "conflict": 0,
-      "score": 0.7403940298507463
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 41
     },
     "experiment": {
-      "attempts": 450,
-      "successes": 448
+      "attempts": 451,
+      "successes": 449
     },
     "question": {
       "attempts": 333,
