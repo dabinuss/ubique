@@ -1,13 +1,13 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-10T11:41:01.914928+00:00",
-  "generation": 8806,
+  "timestamp": "2026-11-10T11:44:02.757309+00:00",
+  "generation": 8807,
   "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "read",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "gemini",
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": null,
   "last_provider_generation": 8806,
   "last_search_generation": 8786,
   "cortex": {
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 55617,
+    "events": 55621,
     "segments": 1927,
     "compressed_snapshot": true,
     "snapshot_events": 55482
@@ -54,9 +54,9 @@
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.040535062829347386,
+      "novelty": 0.04038772213247173,
       "conflict": 0,
-      "score": 0.8709444669639239
+      "score": 0.8709046849757673
     },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
@@ -67,28 +67,28 @@
       "score": 0.8708849022374521
     },
     {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.01722356183258698,
+      "node_id": "concept:16b974583155fdcb11fb",
+      "label": "ring",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.8646503616947985
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:3a52fefb09eabc70701a",
-      "label": "upholders",
+      "node_id": "concept:ac774701696bbed86d8f",
+      "label": "asserts",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     },
     {
-      "node_id": "concept:191c415261817259c49f",
-      "label": "careful",
+      "node_id": "concept:d0d092b83d4aefab43b6",
+      "label": "intense",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.7713708185053381
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 1752
     },
     "explore": {
-      "attempts": 1148,
-      "successes": 1132
+      "attempts": 1149,
+      "successes": 1133
     },
     "consolidate": {
       "attempts": 1631,
