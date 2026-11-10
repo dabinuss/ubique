@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-10T07:11:42.914105+00:00",
-  "generation": 8768,
-  "focus": "Psychology of the Unconscious",
-  "last_action": "consolidate",
-  "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "timestamp": "2026-11-10T07:27:01.606494+00:00",
+  "generation": 8769,
+  "focus": "Psychology: Briefer Course",
+  "last_action": "evolve",
+  "last_action_success": false,
+  "last_action_detail": "{\"accepted\": false, \"title\": \"Fix truncated fallback exploratory question generation snippet\", \"summary\": \"Complete the fallback question assignment in semantics.py to restore proper generation of curiosity-driven exploratory questions when no cross-source comparison is produced.\", \"branch\": null, \"pr_url\": null, \"commit_sha\": null, \"reason\": \"candidate tests failed:\\n*** Error compiling 'src/ubiq",
   "last_provider": null,
   "last_provider_generation": 8767,
   "last_search_generation": 8763,
@@ -14,7 +14,7 @@
     "nodes": 15345,
     "synapses": 123431,
     "active": 120,
-    "archived_synapses": 60085
+    "archived_synapses": 60117
   },
   "memory": {
     "episodes": 6271,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 55326,
+    "events": 55332,
     "segments": 1918,
     "compressed_snapshot": true,
     "snapshot_events": 55321
@@ -35,16 +35,16 @@
   "evidence_reviews": 2334,
   "workspace": [
     {
-      "node_id": "concept:64b218956223eb12d13e",
-      "label": "principles",
-      "activation": 1.0,
-      "novelty": 0.04222972972972973,
-      "conflict": 0,
-      "score": 0.8714020270270271
-    },
-    {
       "node_id": "concept:3853eb486f0ccd5b3023",
       "label": "varieties",
+      "activation": 1.0,
+      "novelty": 0.04214963119072709,
+      "conflict": 0,
+      "score": 0.8713804004214964
+    },
+    {
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
       "activation": 1.0,
       "novelty": 0.04214963119072709,
       "conflict": 0,
@@ -78,9 +78,9 @@
       "node_id": "concept:6907de2e8144a57274c7",
       "label": "treatise",
       "activation": 1.0,
-      "novelty": 0.028926815157651144,
+      "novelty": 0.02885170225043278,
       "conflict": 0,
-      "score": 0.8678102400925658
+      "score": 0.8677899596076168
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -113,7 +113,7 @@
       "successes": 1218
     },
     "evolve": {
-      "attempts": 74,
+      "attempts": 75,
       "successes": 41
     },
     "experiment": {
