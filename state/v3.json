@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-10T10:18:35.074005+00:00",
-  "generation": 8794,
+  "timestamp": "2026-11-10T10:21:15.352640+00:00",
+  "generation": 8795,
   "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "read",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 8789,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "gemini",
+  "last_provider_generation": 8795,
   "last_search_generation": 8786,
   "cortex": {
-    "nodes": 15361,
-    "synapses": 123716,
+    "nodes": 15363,
+    "synapses": 123718,
     "active": 120,
-    "archived_synapses": 60100
+    "archived_synapses": 60066
   },
   "memory": {
-    "episodes": 6285,
-    "claims": 7769,
+    "episodes": 6287,
+    "claims": 7770,
     "stances": 39,
     "interests": 151,
     "associative_comparisons": 5017,
@@ -26,37 +26,29 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 55526,
+    "events": 55535,
     "segments": 1924,
     "compressed_snapshot": true,
     "snapshot_events": 55482
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2337,
+  "evidence_reviews": 2338,
   "workspace": [
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
       "activation": 1.0,
-      "novelty": 0.04860267314702309,
+      "novelty": 0.04839099927413501,
       "conflict": 0,
-      "score": 0.8731227217496962
-    },
-    {
-      "node_id": "concept:411f62e7fd037280",
-      "label": "actually",
-      "activation": 1.0,
-      "novelty": 0.04329941545789132,
-      "conflict": 0,
-      "score": 0.8716908421736307
+      "score": 0.8730655698040164
     },
     {
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.04167534903104814,
+      "novelty": 0.04151961801951422,
       "conflict": 0,
-      "score": 0.871252344238383
+      "score": 0.8712102968652689
     },
     {
       "node_id": "concept:3676cba44f159ed1",
@@ -67,12 +59,12 @@
       "score": 0.871045203518102
     },
     {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
       "activation": 1.0,
-      "novelty": 0.009644131545954287,
+      "novelty": 0.017277125086385625,
       "conflict": 0,
-      "score": 0.8626039155174077
+      "score": 0.8646648237733241
     },
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
@@ -83,12 +75,20 @@
       "score": 0.8621132548037413
     },
     {
-      "node_id": "concept:4505b3c14c7746bda8c7",
-      "label": "entering",
+      "node_id": "concept:6764e0a23e050f117639",
+      "label": "edifice",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:93bc5d02dc2a24b53653",
+      "label": "collapse",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 1130
     },
     "consolidate": {
-      "attempts": 1628,
-      "successes": 1628
+      "attempts": 1629,
+      "successes": 1629
     },
     "connect": {
       "attempts": 1226,
