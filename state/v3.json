@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-10T23:51:55.832389+00:00",
-  "generation": 8919,
+  "timestamp": "2026-11-10T23:55:23.305838+00:00",
+  "generation": 8920,
   "focus": "The World as Will and Idea (Vol. 3 of 3)",
-  "last_action": "read",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 8914,
+  "last_action_detail": "observed_associations",
+  "last_provider": "groq",
+  "last_provider_generation": 8920,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15502,
+    "nodes": 15503,
     "synapses": 125439,
     "active": 120,
-    "archived_synapses": 60667
+    "archived_synapses": 60761
   },
   "memory": {
     "episodes": 6363,
-    "claims": 7964,
+    "claims": 7969,
     "stances": 39,
     "interests": 151,
     "associative_comparisons": 5123,
@@ -26,22 +26,22 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 7964,
-    "with_evidence_refs": 6929,
-    "without_evidence_refs": 1035,
+    "total": 7969,
+    "with_evidence_refs": 6931,
+    "without_evidence_refs": 1038,
     "source_claims": 1758,
-    "hypotheses": 6080,
+    "hypotheses": 6085,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 56665,
-    "segments": 1960,
+    "events": 56682,
+    "segments": 1961,
     "compressed_snapshot": true,
     "snapshot_events": 56637
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2412,
+  "evidence_reviews": 2417,
   "workspace": [
     {
       "node_id": "concept:040b0e3f05e74417",
@@ -60,12 +60,28 @@
       "score": 0.8743808255659122
     },
     {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.04666355576294914,
+      "conflict": 0,
+      "score": 0.8725991600559964
+    },
+    {
       "node_id": "concept:411f62e7fd037280",
       "label": "actually",
       "activation": 1.0,
       "novelty": 0.04296455424274973,
       "conflict": 0,
       "score": 0.8716004296455424
+    },
+    {
+      "node_id": "concept:ac32f27ba7a1346f43c0",
+      "label": "cognition",
+      "activation": 1.0,
+      "novelty": 0.03966679888932963,
+      "conflict": 0,
+      "score": 0.870710035700119
     },
     {
       "node_id": "concept:3f8b4464a99de3dc8c5c",
@@ -76,28 +92,12 @@
       "score": 0.8703946102021174
     },
     {
-      "node_id": "concept:c9b6dab517b9d127",
-      "label": "library",
-      "activation": 1.0,
-      "novelty": 0.023239600278875203,
-      "conflict": 0,
-      "score": 0.8662746920752964
-    },
-    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
       "novelty": 0.009594166746618057,
       "conflict": 0,
       "score": 0.862590425021587
-    },
-    {
-      "node_id": "concept:cbe6c21f476874ab9cea",
-      "label": "anæsthesia",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
     }
   ],
   "skills": {
@@ -126,8 +126,8 @@
       "successes": 41
     },
     "experiment": {
-      "attempts": 455,
-      "successes": 453
+      "attempts": 456,
+      "successes": 454
     },
     "question": {
       "attempts": 337,
