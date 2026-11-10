@@ -205,3 +205,23 @@ def test_real_book_source_is_primed_before_focus_selection(tmp_path):
                if n.activation>=.45 and n.label in labels}
     assert len(activated)>=3,activated
     assert any(x.label in activated for x in brain.workspace.items)
+
+
+def test_learning_diagnostics_keep_hypotheses_distinct_from_evidence():
+    from ubique.v3.learning_diagnostics import summarize_claims
+    claims = {
+        "a": {"status": "SOURCE_CLAIM", "source_refs": ["passage:1"]},
+        "b": {"status": "HYPOTHESIS", "source_refs": []},
+        "c": {"status": "HYPOTHESIS", "source_refs": ["passage:2"]},
+        "d": {"status": "DISPUTED", "source_refs": ["passage:3"]},
+        "e": {"status": "CORROBORATED", "source_refs": ["passage:4"]},
+    }
+    observed = summarize_claims(claims)
+    assert observed == {
+        "total": 5, "with_evidence_refs": 4, "without_evidence_refs": 1,
+        "source_claims": 1, "hypotheses": 2,
+        "corroborated_labels": 1, "disputed_or_rejected": 1,
+    }
+    assert summarize_claims({})["total"] == 0
+    # Read-only analysis must not change or promote hypotheses.
+    assert claims["b"]["status"] == "HYPOTHESIS"
