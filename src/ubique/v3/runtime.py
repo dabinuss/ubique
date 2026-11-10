@@ -79,7 +79,8 @@ class UbiqueV3:
         # without deleting unrelated or older memories from the cortex.
         recent_sources=[e for e in reversed(self.hippocampus.all_episodes())
                         if e.get("epistemic_status")=="source_passage"
-                        and str(e.get("source","")).startswith("library:")][:4]
+                        and str(e.get("source","")).startswith(
+                            ("library:", "http://", "https://"))][:4]
         # Ground attention in the author's readable passage, not a catalogue
         # title or publisher metadata. Keep all original episodes retrievable.
         source_terms=set()
