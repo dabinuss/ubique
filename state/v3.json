@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-10T18:43:59.524290+00:00",
-  "generation": 8874,
+  "timestamp": "2026-11-10T18:47:00.784970+00:00",
+  "generation": 8875,
   "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "explore",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 8874,
   "last_search_generation": 8855,
   "cortex": {
     "nodes": 15459,
-    "synapses": 124824,
+    "synapses": 124838,
     "active": 120,
-    "archived_synapses": 60158
+    "archived_synapses": 60132
   },
   "memory": {
     "episodes": 6344,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 56262,
+    "events": 56269,
     "segments": 1947,
     "compressed_snapshot": true,
     "snapshot_events": 56134
@@ -46,9 +46,9 @@
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.03449465332873405,
+      "novelty": 0.034441191665231616,
       "conflict": 0,
-      "score": 0.8693135563987582
+      "score": 0.8692991217496127
     },
     {
       "node_id": "concept:b39ea7408bbea9e9",
@@ -70,25 +70,25 @@
       "node_id": "concept:bc195530db8c2e51ab6b",
       "label": "darker",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:5c0b77a6689a14d98cf2",
       "label": "unsubstantial",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.7917984251968504
     },
     {
       "node_id": "concept:a8cb7d9bb2208adef832",
       "label": "vaporous",
       "activation": 0.46,
-      "novelty": 0.8163265306122448,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.7996081632653061
+      "score": 0.7917984251968504
     }
   ],
   "skills": {
@@ -105,8 +105,8 @@
       "successes": 1142
     },
     "consolidate": {
-      "attempts": 1645,
-      "successes": 1645
+      "attempts": 1646,
+      "successes": 1646
     },
     "connect": {
       "attempts": 1238,
