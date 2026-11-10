@@ -180,20 +180,9 @@ class SemanticLearner:
                     choices.append((1.5, other, rare_shared))
                     if len(choices) >= 10:
                         break
-            if not choices:
-                # Adaptive semantic bridging: pair with the most recent diverse source using its top general concepts
-                for other in reversed(earlier):
-                    if (other.get("id") == eid or
-                            other.get("epistemic_status") != "source_passage" or
-                            not self.family(other) or
-                            self.family(other) == self.family(episode)):
-                        continue
-                    other_concepts = self._concepts(other)
-                    if other_concepts:
-                        bridge_terms = list(current | other_concepts)[:4]
-                        if bridge_terms:
-                            choices.append((1.0, other, set(bridge_terms)))
-                            break
+            # Do not invent a shared topic from the union of unrelated
+            # passages. Open-ended speculative comparisons remain available
+            # through the separate inquiry path, explicitly marked as such.
             choices.sort(key=lambda entry: entry[0], reverse=True)
 
         for _, other, shared in choices[:2]:
