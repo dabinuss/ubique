@@ -153,3 +153,48 @@ def test_recent_focus_excludes_publishing_title_from_primed_attention(tmp_path, 
     active = {n.label for n in bot.cortex.nodes.values() if n.activation >= .45}
     assert "biological" in active or "organisms" in active
     assert not ({"gutenberg", "ebook", "united", "states"} & active)
+
+
+def test_recent_research_passage_competes_for_workspace_attention(tmp_path, monkeypatch):
+    from ubique.config import Config
+    from ubique.v3.runtime import UbiqueV3
+    import ubique.v3.runtime as runtime
+
+    bot = UbiqueV3(Config.from_env(), storage_root=tmp_path/"v3",
+                   enable_remote=False)
+    source = {
+        "id": "research:1", "source": "https://example.org/research/biology",
+        "epistemic_status": "source_passage",
+        "text": "Ecological diversity changes among biological populations. "
+                "Experimental evidence documents cellular adaptation and genetics.",
+        "payload": {"title": "Research article"},
+    }
+    monkeypatch.setattr(bot.hippocampus, "all_episodes", lambda: [source])
+    monkeypatch.setattr(bot.hippocampus, "replay", lambda *args: [])
+    monkeypatch.setattr(runtime, "reading_candidates", lambda *args: [])
+    _, recall = bot._recent_focus(100)
+    assert any(e["id"] == "research:1" for e in recall)
+    active = {n.label for n in bot.cortex.nodes.values() if n.activation >= .45}
+    assert {"ecological", "diversity", "biological"} & active
+
+
+def test_non_source_provider_text_is_not_promoted_to_source_grounding(tmp_path, monkeypatch):
+    from ubique.config import Config
+    from ubique.v3.runtime import UbiqueV3
+    import ubique.v3.runtime as runtime
+
+    bot = UbiqueV3(Config.from_env(), storage_root=tmp_path/"v3",
+                   enable_remote=False)
+    imagined = {
+        "id": "idea:1", "source": "https://example.org/idea",
+        "epistemic_status": "imagined",
+        "text": "Invented purple plasma explains all biological evolution.",
+        "payload": {},
+    }
+    monkeypatch.setattr(bot.hippocampus, "all_episodes", lambda: [imagined])
+    monkeypatch.setattr(bot.hippocampus, "replay", lambda *args: [])
+    monkeypatch.setattr(runtime, "reading_candidates", lambda *args: [])
+    _, recall = bot._recent_focus(100)
+    assert not recall
+    assert not any(n.label == "plasma" and n.activation >= .45
+                   for n in bot.cortex.nodes.values())
