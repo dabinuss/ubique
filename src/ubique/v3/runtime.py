@@ -19,7 +19,7 @@ from .world_model import WorldModel
 from .consolidation import Consolidator
 from .actions import Candidate, Result, build_registry, reading_candidates, select
 from .providers import ThinkingProviders, make_prompt
-from .text_quality import content_terms, clean_source
+from .text_quality import content_terms, concept_terms, clean_source
 from .workspace import Workspace
 from .planner import Planner
 from .self_model import SelfContinuity
@@ -79,18 +79,18 @@ class UbiqueV3:
         recent_sources=[e for e in reversed(self.hippocampus.all_episodes())
                         if e.get("epistemic_status")=="source_passage"
                         and str(e.get("source","")).startswith("library:")][:4]
+        # Ground attention in the author's readable passage, not a catalogue
+        # title or publisher metadata. Keep all original episodes retrievable.
         source_terms=set()
-        for episode in recent_sources:
-            source_terms.update(content_terms(str(episode.get("text",""))[:3500],60))
-            source_terms.update(content_terms(str(episode.get("payload",{}).get("title","")),12))
-        # Contextual cortical reactivation: genuine current book passages
-        # need to become active *before* competing with residual old issue nodes.
-        # Limited to a few cues to preserve free association and memory variety.
         book_cues=[]
-        for episode in recent_sources[:2]:
-            book_cues+=content_terms(str(episode.get("payload",{}).get("title","")),8)
-            book_cues+=content_terms(str(episode.get("text",""))[:1800],14)
-        cues=[c for c in dict.fromkeys(book_cues) if not is_system_topic(c)][:18]
+        for episode in recent_sources:
+            passage=str(episode.get("text",""))[:3500]
+            substantive=concept_terms(passage,60)
+            source_terms.update(substantive)
+            if len(book_cues)<18 and episode in recent_sources[:2]:
+                book_cues.extend(concept_terms(passage[:1800],18))
+        cues=[c for c in dict.fromkeys(book_cues)
+              if c in source_terms and not is_system_topic(c)][:18]
         if cues:
             self.cortex.activate(cues,strength=.46)
         workspace=self.workspace.compete(self.cortex,interest={
