@@ -106,11 +106,17 @@ def test_v3_evolution_generates_source_grounded_reversible_proposal(tmp_path,mon
         accepted=True,title="Try new associations",summary="test",branch="test",pr_url="url",
         commit_sha="abcd",reason=None,baseline_score=None,candidate_score=None))
     journal=Journal(tmp_path/"memory"/"v3")
+    journal.append("change_outcome", {
+        "success": False,
+        "intent": {"target": "src/ubique/v3/workspace.py"},
+        "result": "previous-error: replacement snippet did not match",
+    }, generation=420)
     result=Evolution(journal,Config.from_env()).attempt(
         "Observed too many repetitive thought associations",generation=500)
     assert result["success"]
     assert prompts and "Ubique v3" in prompts[0]
     assert "def think()" in prompts[0]
+    assert "previous-error: replacement snippet did not match" in prompts[0]
     kinds=[x["kind"] for x in journal.events(verify=True)]
     assert "change_intent" in kinds and "change_outcome" in kinds
 
