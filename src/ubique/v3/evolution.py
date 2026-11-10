@@ -72,9 +72,19 @@ class Evolution:
         failures=[{"kind":e.get("kind"),"effect":str(e.get("effect",""))[:280],
                    "reason":str(e.get("reason",""))[:180]}
                   for e in history if e.get("success") is False][-6:]
+        recent_changes=self.journal.recent("change_outcome",limit=24)
+        # Make earlier unsuccessful proposals visible even after several
+        # successful edits. Otherwise the model repeatedly rediscovers a
+        # known failure without knowing why it failed.
+        selected_changes=(
+            [e for e in recent_changes if e.get("data",{}).get("success") is False][-4:]
+            + recent_changes[-3:])
+        unique_changes={e.get("id",str(i)):e
+                        for i,e in enumerate(selected_changes)}
         changes=[{"success":e.get("data",{}).get("success"),
-                  "result":str(e.get("data",{}).get("result",""))[:250]}
-                 for e in self.journal.recent("change_outcome",limit=5)]
+                  "target":str(e.get("data",{}).get("intent",{}).get("target",""))[:120],
+                  "result":str(e.get("data",{}).get("result",""))[:400]}
+                 for e in unique_changes.values()]
         intent={"reason":reason[:1200],"generation":generation,
                 "target":target,"reversible":True,"provenance":"agent_action"}
         self.journal.append("change_intent",intent,generation=generation)
