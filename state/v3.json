@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-10T03:02:34.331814+00:00",
-  "generation": 8733,
-  "focus": "A Treatise of Human Nature",
-  "last_action": "read",
+  "timestamp": "2026-11-10T03:05:34.544919+00:00",
+  "generation": 8734,
+  "focus": "The Nicomachean Ethics of Aristotle",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 8727,
+  "last_action_detail": "observed_associations",
+  "last_provider": "groq",
+  "last_provider_generation": 8734,
   "last_search_generation": 8717,
   "cortex": {
     "nodes": 15320,
     "synapses": 122985,
     "active": 120,
-    "archived_synapses": 60117
+    "archived_synapses": 60157
   },
   "memory": {
     "episodes": 6250,
-    "claims": 7719,
+    "claims": 7723,
     "stances": 39,
     "interests": 149,
     "associative_comparisons": 4981,
@@ -26,13 +26,13 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 55059,
+    "events": 55072,
     "segments": 1909,
     "compressed_snapshot": true,
     "snapshot_events": 54988
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2324,
+  "evidence_reviews": 2328,
   "workspace": [
     {
       "node_id": "concept:721048dc35951006",
@@ -41,14 +41,6 @@
       "novelty": 0.12610340479192939,
       "conflict": 0,
       "score": 0.8940479192938209
-    },
-    {
-      "node_id": "concept:244210e48437b6556980",
-      "label": "project",
-      "activation": 1.0,
-      "novelty": 0.10090817356205853,
-      "conflict": 0,
-      "score": 0.8872452068617558
     },
     {
       "node_id": "concept:65ee89092efbf78ab19a",
@@ -67,6 +59,14 @@
       "score": 0.8719707381955222
     },
     {
+      "node_id": "concept:3853eb486f0ccd5b3023",
+      "label": "varieties",
+      "activation": 1.0,
+      "novelty": 0.04363953742090334,
+      "conflict": 0,
+      "score": 0.8717826751036439
+    },
+    {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
       "activation": 1.0,
@@ -75,20 +75,20 @@
       "score": 0.8710655737704918
     },
     {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
+      "node_id": "concept:3f8b4464a99de3dc8c5c",
+      "label": "religious",
       "activation": 1.0,
-      "novelty": 0.0174809894240014,
+      "novelty": 0.0397377309755613,
       "conflict": 0,
-      "score": 0.8647198671444805
+      "score": 0.8707291873634015
     },
     {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
       "activation": 1.0,
-      "novelty": 0.009818842358485935,
+      "novelty": 0.03876720294630743,
       "conflict": 0,
-      "score": 0.8626510874367912
+      "score": 0.870467144795503
     }
   ],
   "skills": {
@@ -117,8 +117,8 @@
       "successes": 41
     },
     "experiment": {
-      "attempts": 439,
-      "successes": 437
+      "attempts": 440,
+      "successes": 438
     },
     "question": {
       "attempts": 324,
