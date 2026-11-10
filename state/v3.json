@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-10T16:25:40.364281+00:00",
-  "generation": 8852,
-  "focus": "Psychology of the Unconscious",
-  "last_action": "read",
+  "timestamp": "2026-11-10T16:28:33.648810+00:00",
+  "generation": 8853,
+  "focus": "Psychology: Briefer Course",
+  "last_action": "question",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": "groq",
+  "last_action_detail": "How do the authors approach images, what differently, given their emphases on ability, defective and block, chiefly? Which assumptions differ?",
+  "last_provider": null,
   "last_provider_generation": 8852,
   "last_search_generation": 8832,
   "cortex": {
-    "nodes": 15428,
+    "nodes": 15429,
     "synapses": 124542,
     "active": 120,
     "archived_synapses": 60094
   },
   "memory": {
     "episodes": 6331,
-    "claims": 7858,
+    "claims": 7859,
     "stances": 39,
     "interests": 151,
     "associative_comparisons": 5067,
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 56053,
+    "events": 56059,
     "segments": 1940,
     "compressed_snapshot": true,
     "snapshot_events": 55971
@@ -34,6 +34,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2367,
   "workspace": [
+    {
+      "node_id": "concept:e2d5a675d4eab169",
+      "label": "continue",
+      "activation": 1.0,
+      "novelty": 0.040241448692152924,
+      "conflict": 0,
+      "score": 0.8708651911468814
+    },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
@@ -46,9 +54,9 @@
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.036297640653357534,
+      "novelty": 0.0361794500723589,
       "conflict": 0,
-      "score": 0.8698003629764066
+      "score": 0.869768451519537
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -67,28 +75,20 @@
       "score": 0.8620984727781449
     },
     {
-      "node_id": "concept:340bbcf62fb5b430085a",
-      "label": "vigor",
+      "node_id": "concept:9d248136bfbecd673d50",
+      "label": "commence",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:938f2545c4d658d965b6",
-      "label": "visualizing",
+      "node_id": "concept:a0a416e1b1bb34846487",
+      "label": "strongest",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.837573205741627
-    },
-    {
-      "node_id": "concept:4acfccfbec10ea281d05",
-      "label": "faint",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.7917984251968504
     }
   ],
   "skills": {
@@ -121,8 +121,8 @@
       "successes": 448
     },
     "question": {
-      "attempts": 332,
-      "successes": 332
+      "attempts": 333,
+      "successes": 333
     },
     "library": {
       "attempts": 13,
