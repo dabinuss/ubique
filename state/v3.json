@@ -1,39 +1,47 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-10T11:38:28.376967+00:00",
-  "generation": 8805,
-  "focus": "The Physical Basis of Mind",
+  "timestamp": "2026-11-10T11:41:01.914928+00:00",
+  "generation": 8806,
+  "focus": "The Principles of Psychology, Volume 2 (of 2)",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 8801,
+  "last_provider": "gemini",
+  "last_provider_generation": 8806,
   "last_search_generation": 8786,
   "cortex": {
-    "nodes": 15368,
-    "synapses": 123802,
+    "nodes": 15370,
+    "synapses": 123828,
     "active": 120,
-    "archived_synapses": 60118
+    "archived_synapses": 60108
   },
   "memory": {
-    "episodes": 6290,
-    "claims": 7779,
+    "episodes": 6292,
+    "claims": 7784,
     "stances": 39,
     "interests": 151,
-    "associative_comparisons": 5023,
+    "associative_comparisons": 5025,
     "screened_interpretations": 46,
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 55601,
+    "events": 55617,
     "segments": 1927,
     "compressed_snapshot": true,
     "snapshot_events": 55482
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2338,
+  "evidence_reviews": 2340,
   "workspace": [
+    {
+      "node_id": "concept:040b0e3f05e74417",
+      "label": "experiment",
+      "activation": 1.0,
+      "novelty": 0.22857142857142856,
+      "conflict": 0,
+      "score": 0.9217142857142857
+    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -46,9 +54,9 @@
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.04068348250610253,
+      "novelty": 0.040535062829347386,
       "conflict": 0,
-      "score": 0.8709845402766476
+      "score": 0.8709444669639239
     },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
@@ -67,28 +75,20 @@
       "score": 0.8646503616947985
     },
     {
-      "node_id": "concept:9527c1c86df82e51bc87",
-      "label": "homogeneous",
+      "node_id": "concept:3a52fefb09eabc70701a",
+      "label": "upholders",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:38a3c50b7c1f9635ef15",
-      "label": "texture",
+      "node_id": "concept:191c415261817259c49f",
+      "label": "careful",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.7352941176470589,
       "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:aa6ed6c957fcc3809faf",
-      "label": "brightness",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
-      "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.777729411764706
     }
   ],
   "skills": {
@@ -97,8 +97,8 @@
       "successes": 275
     },
     "read": {
-      "attempts": 1751,
-      "successes": 1751
+      "attempts": 1752,
+      "successes": 1752
     },
     "explore": {
       "attempts": 1148,
