@@ -27,6 +27,7 @@ from .library import KnowledgeLibrary
 from .book_discovery import discover_public_books
 from .evolution import Evolution
 from .semantics import SemanticLearner
+from .learning_diagnostics import summarize_claims
 from .inquiry import enquire
 from .experimentation import run_local_experiment
 from .evidence import assess, is_system_topic
@@ -424,6 +425,7 @@ class UbiqueV3:
                               in {"plausible","directly_supported"}),
                           "historical_insight_labels":sum(1 for e in self.journal.events()
                               if e["kind"]=="insight")},
+                "knowledge_diagnostics":summarize_claims(self.world.claims),
                 "journal":{"events":self.journal.manifest["events"],
                            "segments":len(self.journal._files()),
                            "compressed_snapshot":self.journal.snapshot_path.is_file(),
