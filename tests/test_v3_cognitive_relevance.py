@@ -91,3 +91,65 @@ def test_workspace_retains_publishing_noise_but_prefers_lived_concepts():
         cortex, grounding={"attention", "memory", "every"})]
     assert labels.index("memory") < labels.index("every")
     assert labels.index("attention") < labels.index("every")
+
+
+def test_unrelated_passages_do_not_create_a_shared_topic_hypothesis():
+    from ubique.v3.semantics import SemanticLearner
+
+    archaeology = episode(
+        "early", "archaeology",
+        "Archaeologists excavated ancient ceramic vessels near desert settlements. "
+        "Their excavation documented clay pottery, sediment layers and stone tools."
+    )
+    psychology = episode(
+        "new", "psychology",
+        "Researchers investigated emotional memory, cognition and perception. "
+        "Their experiments measured attention, recall and psychological learning."
+    )
+
+    class Journal:
+        def __init__(self):
+            self.saved = []
+        def events(self):
+            return []
+        def append(self, kind, data, **kwargs):
+            self.saved.append((kind, data))
+
+    class Hippocampus:
+        def all_episodes(self):
+            return [archaeology, psychology]
+
+    class World:
+        def claim(self, *args, **kwargs):
+            return {"id": "claim"}
+
+    class Cortex:
+        def ensure(self, *args, **kwargs):
+            raise AssertionError("Unrelated sources should not gain a comparison synapse")
+
+    journal = Journal()
+    learner = SemanticLearner(journal, Hippocampus(), World(), Cortex())
+    learner.observe(psychology, generation=25)
+    assert not any(kind == "association_hypothesis" for kind, _ in journal.saved)
+    assert any(kind == "exploratory_question" for kind, _ in journal.saved)
+
+
+def test_recent_focus_excludes_publishing_title_from_primed_attention(tmp_path, monkeypatch):
+    from ubique.config import Config
+    from ubique.v3.runtime import UbiqueV3
+    import ubique.v3.runtime as runtime
+
+    bot = UbiqueV3(Config.from_env(), storage_root=tmp_path/"v3", enable_remote=False)
+    source = episode(
+        "source", "real-book",
+        "Biological organisms adapt across environments through evolutionary "
+        "selection. Scientists examine cellular structure and ecological change."
+    )
+    source["payload"] = {"title": "PROJECT GUTENBERG UNITED STATES EBOOK LIBRARY"}
+    monkeypatch.setattr(bot.hippocampus, "all_episodes", lambda: [source])
+    monkeypatch.setattr(bot.hippocampus, "replay", lambda *args: [])
+    monkeypatch.setattr(runtime, "reading_candidates", lambda *args: [])
+    bot._recent_focus(100)
+    active = {n.label for n in bot.cortex.nodes.values() if n.activation >= .45}
+    assert "biological" in active or "organisms" in active
+    assert not ({"gutenberg", "ebook", "united", "states"} & active)
