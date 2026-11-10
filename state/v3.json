@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-10T18:19:43.620422+00:00",
-  "generation": 8870,
+  "timestamp": "2026-11-10T18:22:30.749782+00:00",
+  "generation": 8871,
   "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "read",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 8869,
   "last_search_generation": 8855,
   "cortex": {
-    "nodes": 15453,
+    "nodes": 15454,
     "synapses": 124804,
     "active": 120,
     "archived_synapses": 60132
@@ -26,7 +26,7 @@
     "historical_insight_labels": 136
   },
   "journal": {
-    "events": 56241,
+    "events": 56245,
     "segments": 1946,
     "compressed_snapshot": true,
     "snapshot_events": 56134
@@ -34,14 +34,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2385,
   "workspace": [
-    {
-      "node_id": "concept:721048dc35951006",
-      "label": "observations",
-      "activation": 1.0,
-      "novelty": 0.12610340479192939,
-      "conflict": 0,
-      "score": 0.8940479192938209
-    },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
       "label": "experience",
@@ -54,9 +46,9 @@
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.034818941504178275,
+      "novelty": 0.034710170079833395,
       "conflict": 0,
-      "score": 0.8694011142061282
+      "score": 0.8693717459215551
     },
     {
       "node_id": "concept:b39ea7408bbea9e9",
@@ -67,14 +59,6 @@
       "score": 0.8668554018027168
     },
     {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.009619084263178146,
-      "conflict": 0,
-      "score": 0.8625971527510581
-    },
-    {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
       "activation": 1.0,
@@ -83,12 +67,28 @@
       "score": 0.862097005941517
     },
     {
-      "node_id": "concept:3d4d101cd7ea9e5effe9",
-      "label": "knife",
+      "node_id": "concept:bc195530db8c2e51ab6b",
+      "label": "darker",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:5c0b77a6689a14d98cf2",
+      "label": "unsubstantial",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
+    },
+    {
+      "node_id": "concept:a8cb7d9bb2208adef832",
+      "label": "vaporous",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -101,8 +101,8 @@
       "successes": 1773
     },
     "explore": {
-      "attempts": 1156,
-      "successes": 1140
+      "attempts": 1157,
+      "successes": 1141
     },
     "consolidate": {
       "attempts": 1644,
