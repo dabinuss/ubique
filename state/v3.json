@@ -1,103 +1,103 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-11T16:31:50.679303+00:00",
-  "generation": 9017,
-  "focus": "The Story of the Mind",
+  "timestamp": "2026-11-11T16:47:14.114007+00:00",
+  "generation": 9018,
+  "focus": "Psychology: Briefer Course",
   "last_action": "consolidate",
   "last_action_success": true,
   "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 9010,
+  "last_provider": "groq",
+  "last_provider_generation": 9018,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15565,
-    "synapses": 126253,
+    "nodes": 15572,
+    "synapses": 126306,
     "active": 120,
-    "archived_synapses": 61171
+    "archived_synapses": 61122
   },
   "memory": {
-    "episodes": 6413,
-    "claims": 8085,
+    "episodes": 6414,
+    "claims": 8092,
     "stances": 39,
     "interests": 151,
-    "associative_comparisons": 5201,
-    "screened_interpretations": 48,
+    "associative_comparisons": 5203,
+    "screened_interpretations": 49,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8085,
-    "with_evidence_refs": 7043,
-    "without_evidence_refs": 1042,
+    "total": 8092,
+    "with_evidence_refs": 7049,
+    "without_evidence_refs": 1043,
     "source_claims": 1791,
-    "hypotheses": 6168,
+    "hypotheses": 6174,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 57453,
+    "events": 57477,
     "segments": 1986,
     "compressed_snapshot": true,
     "snapshot_events": 57328
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2435,
+  "evidence_reviews": 2441,
   "workspace": [
     {
-      "node_id": "concept:eb110b1ecff69e3b",
-      "label": "successful",
+      "node_id": "concept:ae835b22fe866b40",
+      "label": "circumstances",
       "activation": 1.0,
-      "novelty": 0.3883495145631068,
+      "novelty": 0.053262316910785625,
       "conflict": 0,
-      "score": 0.9648543689320388
+      "score": 0.8743808255659122
     },
     {
-      "node_id": "concept:8153c4e65bb853c8",
-      "label": "identity",
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
       "activation": 1.0,
-      "novelty": 0.047058823529411764,
+      "novelty": 0.04627487274409996,
       "conflict": 0,
-      "score": 0.8727058823529412
+      "score": 0.872494215640907
     },
     {
-      "node_id": "concept:48d492d08e9d314c034c",
-      "label": "studies",
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
       "activation": 1.0,
-      "novelty": 0.04231013327691983,
+      "novelty": 0.037397157816005985,
       "conflict": 0,
-      "score": 0.8714237359847683
-    },
-    {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 1.0,
-      "novelty": 0.0400962309542903,
-      "conflict": 0,
-      "score": 0.8708259823576585
-    },
-    {
-      "node_id": "concept:2331eb33ce2c3766148e",
-      "label": "philosophy",
-      "activation": 1.0,
-      "novelty": 0.03966679888932963,
-      "conflict": 0,
-      "score": 0.870710035700119
-    },
-    {
-      "node_id": "concept:5a2a957b269e8f0f",
-      "label": "external",
-      "activation": 1.0,
-      "novelty": 0.02930832356389215,
-      "conflict": 0,
-      "score": 0.8679132473622508
+      "score": 0.8700972326103216
     },
     {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.009557031585989393,
+      "novelty": 0.009552923194497517,
       "conflict": 0,
-      "score": 0.8625803985282172
+      "score": 0.8625792892625144
+    },
+    {
+      "node_id": "concept:0bf68c8f585383bc2918",
+      "label": "tragedy",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:8b4c3c90635993d8ba7c",
+      "label": "interests",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:ffe97bba510b9f5cf1bb",
+      "label": "grade",
+      "activation": 0.46,
+      "novelty": 0.9174311926605504,
+      "conflict": 0,
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1163
     },
     "consolidate": {
-      "attempts": 1684,
-      "successes": 1684
+      "attempts": 1685,
+      "successes": 1685
     },
     "connect": {
       "attempts": 1265,
