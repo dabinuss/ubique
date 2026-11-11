@@ -1,9 +1,9 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-11T16:09:18.237980+00:00",
-  "generation": 9015,
-  "focus": "The World as Will and Idea (Vol. 3 of 3)",
+  "timestamp": "2026-11-11T16:31:50.679303+00:00",
+  "generation": 9017,
+  "focus": "The Story of the Mind",
   "last_action": "consolidate",
   "last_action_success": true,
   "last_action_detail": "nrem consolidation",
@@ -11,38 +11,46 @@
   "last_provider_generation": 9010,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15564,
-    "synapses": 126249,
+    "nodes": 15565,
+    "synapses": 126253,
     "active": 120,
-    "archived_synapses": 61167
+    "archived_synapses": 61171
   },
   "memory": {
-    "episodes": 6407,
-    "claims": 8073,
+    "episodes": 6413,
+    "claims": 8085,
     "stances": 39,
     "interests": 151,
-    "associative_comparisons": 5189,
+    "associative_comparisons": 5201,
     "screened_interpretations": 48,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8073,
-    "with_evidence_refs": 7031,
+    "total": 8085,
+    "with_evidence_refs": 7043,
     "without_evidence_refs": 1042,
-    "source_claims": 1786,
-    "hypotheses": 6161,
+    "source_claims": 1791,
+    "hypotheses": 6168,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 57410,
-    "segments": 1985,
+    "events": 57453,
+    "segments": 1986,
     "compressed_snapshot": true,
     "snapshot_events": 57328
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2435,
   "workspace": [
+    {
+      "node_id": "concept:eb110b1ecff69e3b",
+      "label": "successful",
+      "activation": 1.0,
+      "novelty": 0.3883495145631068,
+      "conflict": 0,
+      "score": 0.9648543689320388
+    },
     {
       "node_id": "concept:8153c4e65bb853c8",
       "label": "identity",
@@ -90,14 +98,6 @@
       "novelty": 0.009557031585989393,
       "conflict": 0,
       "score": 0.8625803985282172
-    },
-    {
-      "node_id": "concept:1c48f6310f1c849b4ac3",
-      "label": "mind",
-      "activation": 1.0,
-      "novelty": 0.0076781326781326775,
-      "conflict": 0,
-      "score": 0.8620730958230958
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1163
     },
     "consolidate": {
-      "attempts": 1683,
-      "successes": 1683
+      "attempts": 1684,
+      "successes": 1684
     },
     "connect": {
       "attempts": 1265,
