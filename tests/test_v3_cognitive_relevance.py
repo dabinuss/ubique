@@ -198,3 +198,39 @@ def test_non_source_provider_text_is_not_promoted_to_source_grounding(tmp_path, 
     assert not recall
     assert not any(n.label == "plasma" and n.activation >= .45
                    for n in bot.cortex.nodes.values())
+
+
+def test_semantic_observation_returns_cleanly_and_updates_term_cache():
+    """Regression for the runtime NameError after fallback inquiry."""
+    from ubique.v3.semantics import SemanticLearner
+
+    source = episode("read:1", "psychology", MEMORY + " " + LEARNING)
+
+    class Journal:
+        def __init__(self):
+            self.records = []
+        def events(self):
+            return []
+        def append(self, kind, data, **kwargs):
+            self.records.append((kind, data))
+
+    class Hippocampus:
+        def all_episodes(self):
+            return [source]
+
+    class World:
+        def claim(self, *args, **kwargs):
+            return {"id": "quoted-source"}
+
+    class Cortex:
+        def ensure(self, *args):
+            raise AssertionError("No prior independent source to compare")
+
+    journal = Journal()
+    learner = SemanticLearner(journal, Hippocampus(), World(), Cortex())
+    output = learner.observe(source, generation=23)
+
+    assert isinstance(output, list)
+    assert any(entry.get("type") == "exploratory_question" for entry in output)
+    assert learner._term_frequency.get("memory", 0) >= 2
+    assert any(kind == "exploratory_question" for kind, _ in journal.records)
