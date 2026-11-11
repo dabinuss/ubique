@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-11T01:47:48.111702+00:00",
-  "generation": 8936,
-  "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-11T02:02:55.832645+00:00",
+  "generation": 8937,
+  "focus": "The Analysis of Mind",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 8931,
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": "gemini",
+  "last_provider_generation": 8937,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15510,
+    "nodes": 15513,
     "synapses": 125568,
     "active": 120,
-    "archived_synapses": 60658
+    "archived_synapses": 60718
   },
   "memory": {
     "episodes": 6372,
-    "claims": 7989,
+    "claims": 7990,
     "stances": 39,
     "interests": 151,
     "associative_comparisons": 5137,
@@ -26,31 +26,23 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 7989,
-    "with_evidence_refs": 6951,
+    "total": 7990,
+    "with_evidence_refs": 6952,
     "without_evidence_refs": 1038,
     "source_claims": 1764,
-    "hypotheses": 6099,
+    "hypotheses": 6100,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 56813,
+    "events": 56819,
     "segments": 1965,
     "compressed_snapshot": true,
     "snapshot_events": 56813
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2418,
+  "evidence_reviews": 2419,
   "workspace": [
-    {
-      "node_id": "concept:040b0e3f05e74417",
-      "label": "experiment",
-      "activation": 1.0,
-      "novelty": 0.22857142857142856,
-      "conflict": 0,
-      "score": 0.9217142857142857
-    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -60,44 +52,52 @@
       "score": 0.8725727590221188
     },
     {
-      "node_id": "concept:411f62e7fd037280",
-      "label": "actually",
+      "node_id": "concept:10d0d9c7a5909812",
+      "label": "test",
       "activation": 1.0,
-      "novelty": 0.04296455424274973,
+      "novelty": 0.04627487274409996,
       "conflict": 0,
-      "score": 0.8716004296455424
+      "score": 0.872494215640907
     },
     {
-      "node_id": "concept:3853eb486f0ccd5b3023",
-      "label": "varieties",
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
       "activation": 1.0,
-      "novelty": 0.04214963119072709,
+      "novelty": 0.0375234521575985,
       "conflict": 0,
-      "score": 0.8713804004214964
+      "score": 0.8701313320825517
     },
     {
-      "node_id": "concept:ac32f27ba7a1346f43c0",
-      "label": "cognition",
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
       "activation": 1.0,
-      "novelty": 0.039525691699604744,
+      "novelty": 0.03201024327784891,
       "conflict": 0,
-      "score": 0.8706719367588933
+      "score": 0.8686427656850193
     },
     {
-      "node_id": "concept:b39ea7408bbea9e9",
-      "label": "closed",
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
       "activation": 1.0,
-      "novelty": 0.0253613999492772,
+      "novelty": 0.016909029421711193,
       "conflict": 0,
-      "score": 0.866847577986305
+      "score": 0.8645654379438621
     },
     {
-      "node_id": "concept:1c48f6310f1c849b4ac3",
-      "label": "mind",
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
       "activation": 1.0,
-      "novelty": 0.007736943907156673,
+      "novelty": 0.014107356986668549,
       "conflict": 0,
-      "score": 0.8620889748549323
+      "score": 0.8638089863864005
+    },
+    {
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.009594166746618057,
+      "conflict": 0,
+      "score": 0.862590425021587
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 1660
     },
     "connect": {
-      "attempts": 1248,
-      "successes": 1244
+      "attempts": 1249,
+      "successes": 1245
     },
     "evolve": {
       "attempts": 77,
