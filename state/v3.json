@@ -1,56 +1,48 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-11T11:14:49.071444+00:00",
-  "generation": 8971,
+  "timestamp": "2026-11-11T11:17:36.964742+00:00",
+  "generation": 8972,
   "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "explore",
+  "last_action": "read",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 8966,
+  "last_action_detail": "Read 8000 source characters",
+  "last_provider": "gemini",
+  "last_provider_generation": 8972,
   "last_search_generation": 8901,
   "cortex": {
     "nodes": 15526,
-    "synapses": 125772,
+    "synapses": 125805,
     "active": 120,
-    "archived_synapses": 60708
+    "archived_synapses": 60709
   },
   "memory": {
-    "episodes": 6393,
-    "claims": 8029,
+    "episodes": 6395,
+    "claims": 8033,
     "stances": 39,
     "interests": 151,
-    "associative_comparisons": 5167,
+    "associative_comparisons": 5169,
     "screened_interpretations": 48,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8029,
-    "with_evidence_refs": 6990,
-    "without_evidence_refs": 1039,
-    "source_claims": 1775,
-    "hypotheses": 6128,
+    "total": 8033,
+    "with_evidence_refs": 6993,
+    "without_evidence_refs": 1040,
+    "source_claims": 1776,
+    "hypotheses": 6131,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 57092,
+    "events": 57108,
     "segments": 1974,
     "compressed_snapshot": true,
     "snapshot_events": 56991
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2425,
+  "evidence_reviews": 2427,
   "workspace": [
-    {
-      "node_id": "concept:ff6d7c8948492bd2",
-      "label": "issue",
-      "activation": 1.0,
-      "novelty": 0.04296455424274973,
-      "conflict": 0,
-      "score": 0.8716004296455424
-    },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
@@ -63,41 +55,49 @@
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.031466331025802395,
+      "novelty": 0.031421838177533384,
       "conflict": 0,
-      "score": 0.8684959093769666
+      "score": 0.868483896307934
+    },
+    {
+      "node_id": "concept:ff6d7c8948492bd2",
+      "label": "issue",
+      "activation": 0.990594085451187,
+      "novelty": 0.04288164665523156,
+      "conflict": 0,
+      "score": 0.8666869690315298
     },
     {
       "node_id": "concept:e72c3f6ba0c5b9f97dec",
       "label": "nstead",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.78452319391635
     },
     {
       "node_id": "concept:3b6dc2fe604d23d364a0",
       "label": "luther",
       "activation": 0.46,
-      "novelty": 0.56657223796034,
+      "novelty": 0.5524861878453039,
       "conflict": 0,
-      "score": 0.7321745042492918
+      "score": 0.7283712707182322
     },
     {
       "node_id": "concept:05151c392c6eec137835",
       "label": "christman",
       "activation": 0.46,
-      "novelty": 0.56657223796034,
+      "novelty": 0.5524861878453039,
       "conflict": 0,
-      "score": 0.7321745042492918
+      "score": 0.7283712707182322
     },
     {
       "node_id": "concept:4af009dcd561b8060a9e",
       "label": "therapy",
       "activation": 0.46,
-      "novelty": 0.56657223796034,
+      "novelty": 0.5524861878453039,
       "conflict": 0,
-      "score": 0.7321745042492918
+      "score": 0.7283712707182322
     }
   ],
   "skills": {
@@ -106,8 +106,8 @@
       "successes": 280
     },
     "read": {
-      "attempts": 1788,
-      "successes": 1788
+      "attempts": 1789,
+      "successes": 1789
     },
     "explore": {
       "attempts": 1173,
