@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-11T08:26:32.874833+00:00",
-  "generation": 8965,
+  "timestamp": "2026-11-11T08:29:38.516323+00:00",
+  "generation": 8966,
   "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "experiment",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "observed_comparison",
-  "last_provider": null,
-  "last_provider_generation": 8960,
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": "gemini",
+  "last_provider_generation": 8966,
   "last_search_generation": 8901,
   "cortex": {
     "nodes": 15526,
     "synapses": 125714,
     "active": 120,
-    "archived_synapses": 60648
+    "archived_synapses": 60680
   },
   "memory": {
-    "episodes": 6391,
-    "claims": 8028,
+    "episodes": 6392,
+    "claims": 8029,
     "stances": 39,
     "interests": 151,
     "associative_comparisons": 5165,
@@ -26,22 +26,22 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8028,
-    "with_evidence_refs": 6989,
+    "total": 8029,
+    "with_evidence_refs": 6990,
     "without_evidence_refs": 1039,
     "source_claims": 1775,
-    "hypotheses": 6127,
+    "hypotheses": 6128,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 57061,
+    "events": 57068,
     "segments": 1973,
     "compressed_snapshot": true,
     "snapshot_events": 56991
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2424,
+  "evidence_reviews": 2425,
   "workspace": [
     {
       "node_id": "concept:ff6d7c8948492bd2",
@@ -87,17 +87,17 @@
       "node_id": "concept:e72c3f6ba0c5b9f97dec",
       "label": "nstead",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:9e6142221f11cede26ad",
       "label": "impropriety",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 1670
     },
     "connect": {
-      "attempts": 1254,
-      "successes": 1250
+      "attempts": 1255,
+      "successes": 1251
     },
     "evolve": {
       "attempts": 77,
