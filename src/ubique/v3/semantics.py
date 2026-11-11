@@ -255,6 +255,7 @@ class SemanticLearner:
                 self.journal.append("exploratory_question", exploration,
                                     generation=generation)
                 result.append(exploration)
+        return resultend(exploration)
         for term in self._concepts(episode):
             self._seen_terms.add(term)
             self._term_frequency[term] = self._term_frequency.get(term, 0) + 1
