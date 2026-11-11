@@ -1,13 +1,13 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-11T05:58:19.859566+00:00",
-  "generation": 8948,
+  "timestamp": "2026-11-11T06:13:17.204614+00:00",
+  "generation": 8949,
   "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "consolidate",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": "gemini",
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": null,
   "last_provider_generation": 8948,
   "last_search_generation": 8901,
   "cortex": {
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 56919,
+    "events": 56923,
     "segments": 1968,
     "compressed_snapshot": true,
     "snapshot_events": 56813
@@ -60,20 +60,20 @@
       "score": 0.8892365998917164
     },
     {
-      "node_id": "concept:ff6d7c8948492bd2",
-      "label": "issue",
-      "activation": 1.0,
-      "novelty": 0.04372540445999126,
-      "conflict": 0,
-      "score": 0.8718058592041977
-    },
-    {
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.0319642000958926,
+      "novelty": 0.03191828917969997,
       "conflict": 0,
-      "score": 0.868630334025891
+      "score": 0.8686179380785191
+    },
+    {
+      "node_id": "concept:ff6d7c8948492bd2",
+      "label": "issue",
+      "activation": 0.9900940854511869,
+      "novelty": 0.04363953742090334,
+      "conflict": 0,
+      "score": 0.8666315995382612
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -87,17 +87,17 @@
       "node_id": "concept:be169a7e712b89de7b3d",
       "label": "relieve",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:775c0875bdbfaac58149",
       "label": "sufferings",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 1664
     },
     "connect": {
-      "attempts": 1250,
-      "successes": 1246
+      "attempts": 1251,
+      "successes": 1247
     },
     "evolve": {
       "attempts": 77,
