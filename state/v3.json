@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-11T21:25:27.725168+00:00",
-  "generation": 9043,
-  "focus": "The Republic of Plato",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-11T21:40:12.496357+00:00",
+  "generation": 9044,
+  "focus": "Analysis of the Phenomena of the Human Mind",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 9040,
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": "groq",
+  "last_provider_generation": 9044,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15589,
-    "synapses": 126484,
+    "nodes": 15597,
+    "synapses": 126504,
     "active": 120,
     "archived_synapses": 61220
   },
   "memory": {
     "episodes": 6432,
-    "claims": 8121,
+    "claims": 8123,
     "stances": 39,
     "interests": 151,
     "associative_comparisons": 5211,
@@ -26,22 +26,22 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8121,
+    "total": 8123,
     "with_evidence_refs": 7071,
-    "without_evidence_refs": 1050,
+    "without_evidence_refs": 1052,
     "source_claims": 1794,
-    "hypotheses": 6200,
+    "hypotheses": 6202,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 57673,
+    "events": 57681,
     "segments": 1992,
     "compressed_snapshot": true,
     "snapshot_events": 57652
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2456,
+  "evidence_reviews": 2458,
   "workspace": [
     {
       "node_id": "concept:dfd34a31322c29f8",
@@ -50,6 +50,14 @@
       "novelty": 0.17467248908296945,
       "conflict": 0,
       "score": 0.9071615720524018
+    },
+    {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.046178711613945975,
+      "conflict": 0,
+      "score": 0.8724682521357654
     },
     {
       "node_id": "concept:54476ce93ea4a148",
@@ -84,20 +92,12 @@
       "score": 0.8625704493526276
     },
     {
-      "node_id": "concept:a524644266885e16a3bb",
-      "label": "fictional",
+      "node_id": "concept:4f776f73584ed3874ab3",
+      "label": "ntil",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:2e768911a276023c4568",
-      "label": "narratives",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 1693
     },
     "connect": {
-      "attempts": 1271,
-      "successes": 1267
+      "attempts": 1272,
+      "successes": 1268
     },
     "evolve": {
       "attempts": 78,
