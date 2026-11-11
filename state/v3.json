@@ -1,41 +1,41 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-11T00:19:10.618181+00:00",
-  "generation": 8924,
+  "timestamp": "2026-11-11T00:22:21.207032+00:00",
+  "generation": 8925,
   "focus": "The World as Will and Idea (Vol. 3 of 3)",
   "last_action": "read",
   "last_action_success": true,
   "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 8920,
+  "last_provider": "gemini",
+  "last_provider_generation": 8925,
   "last_search_generation": 8901,
   "cortex": {
     "nodes": 15505,
-    "synapses": 125484,
+    "synapses": 125503,
     "active": 120,
-    "archived_synapses": 60776
+    "archived_synapses": 60773
   },
   "memory": {
-    "episodes": 6364,
-    "claims": 7972,
+    "episodes": 6365,
+    "claims": 7975,
     "stances": 39,
     "interests": 151,
-    "associative_comparisons": 5125,
+    "associative_comparisons": 5127,
     "screened_interpretations": 48,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 7972,
-    "with_evidence_refs": 6934,
+    "total": 7975,
+    "with_evidence_refs": 6937,
     "without_evidence_refs": 1038,
-    "source_claims": 1759,
-    "hypotheses": 6087,
+    "source_claims": 1760,
+    "hypotheses": 6089,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 56708,
+    "events": 56721,
     "segments": 1962,
     "compressed_snapshot": true,
     "snapshot_events": 56637
@@ -50,14 +50,6 @@
       "novelty": 0.22857142857142856,
       "conflict": 0,
       "score": 0.9217142857142857
-    },
-    {
-      "node_id": "concept:ae835b22fe866b40",
-      "label": "circumstances",
-      "activation": 1.0,
-      "novelty": 0.053262316910785625,
-      "conflict": 0,
-      "score": 0.8743808255659122
     },
     {
       "node_id": "concept:e0f895872d65b2528fee",
@@ -76,6 +68,14 @@
       "score": 0.8716004296455424
     },
     {
+      "node_id": "concept:3853eb486f0ccd5b3023",
+      "label": "varieties",
+      "activation": 1.0,
+      "novelty": 0.04214963119072709,
+      "conflict": 0,
+      "score": 0.8713804004214964
+    },
+    {
       "node_id": "concept:ac32f27ba7a1346f43c0",
       "label": "cognition",
       "activation": 1.0,
@@ -92,12 +92,12 @@
       "score": 0.8703946102021174
     },
     {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
+      "node_id": "concept:b39ea7408bbea9e9",
+      "label": "closed",
       "activation": 1.0,
-      "novelty": 0.009594166746618057,
+      "novelty": 0.0253613999492772,
       "conflict": 0,
-      "score": 0.862590425021587
+      "score": 0.866847577986305
     }
   ],
   "skills": {
@@ -106,8 +106,8 @@
       "successes": 280
     },
     "read": {
-      "attempts": 1787,
-      "successes": 1787
+      "attempts": 1788,
+      "successes": 1788
     },
     "explore": {
       "attempts": 1163,
