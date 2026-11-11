@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-11T12:10:16.089284+00:00",
-  "generation": 8981,
-  "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "read",
+  "timestamp": "2026-11-11T12:13:28.807059+00:00",
+  "generation": 8982,
+  "focus": "The Riddle of the Universe",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Read 8000 source characters",
-  "last_provider": null,
-  "last_provider_generation": 8976,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "gemini",
+  "last_provider_generation": 8982,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15543,
-    "synapses": 125979,
+    "nodes": 15544,
+    "synapses": 125991,
     "active": 120,
-    "archived_synapses": 60873
+    "archived_synapses": 60837
   },
   "memory": {
     "episodes": 6400,
-    "claims": 8048,
+    "claims": 8049,
     "stances": 39,
     "interests": 151,
     "associative_comparisons": 5177,
@@ -26,31 +26,23 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8048,
-    "with_evidence_refs": 7006,
+    "total": 8049,
+    "with_evidence_refs": 7007,
     "without_evidence_refs": 1042,
     "source_claims": 1780,
-    "hypotheses": 6142,
+    "hypotheses": 6143,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 57185,
+    "events": 57192,
     "segments": 1977,
     "compressed_snapshot": true,
     "snapshot_events": 57152
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2429,
+  "evidence_reviews": 2430,
   "workspace": [
-    {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 1.0,
-      "novelty": 0.0400962309542903,
-      "conflict": 0,
-      "score": 0.8708259823576585
-    },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
       "label": "experience",
@@ -76,28 +68,36 @@
       "score": 0.8620788420080074
     },
     {
-      "node_id": "concept:878753e1802cc00b609e",
-      "label": "nudging",
+      "node_id": "concept:dd84d56cb2744ee00384",
+      "label": "conducted",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:b60dc2594d6f8f4c1374",
-      "label": "eyeball",
+      "node_id": "concept:dc1a2c2a0c6d2bf02608",
+      "label": "astonishing",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:f7994089c916d8ec3e60",
-      "label": "upside",
+      "node_id": "concept:8a64ff09886cc35fe5f5",
+      "label": "maximum",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.7713708185053381
+    },
+    {
+      "node_id": "concept:c549779d79e5c8e9c9a6",
+      "label": "rate",
+      "activation": 0.46,
+      "novelty": 0.6493506493506493,
+      "conflict": 0,
+      "score": 0.7545246753246754
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1158
     },
     "consolidate": {
-      "attempts": 1673,
-      "successes": 1673
+      "attempts": 1674,
+      "successes": 1674
     },
     "connect": {
       "attempts": 1257,
