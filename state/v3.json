@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-11T16:47:14.114007+00:00",
-  "generation": 9018,
-  "focus": "Psychology: Briefer Course",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-11T17:02:31.608368+00:00",
+  "generation": 9019,
+  "focus": "The Analysis of Mind",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": "groq",
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": null,
   "last_provider_generation": 9018,
   "last_search_generation": 8901,
   "cortex": {
     "nodes": 15572,
     "synapses": 126306,
     "active": 120,
-    "archived_synapses": 61122
+    "archived_synapses": 61166
   },
   "memory": {
     "episodes": 6414,
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 57477,
+    "events": 57481,
     "segments": 1986,
     "compressed_snapshot": true,
     "snapshot_events": 57328
@@ -47,9 +47,9 @@
       "node_id": "concept:ae835b22fe866b40",
       "label": "circumstances",
       "activation": 1.0,
-      "novelty": 0.053262316910785625,
+      "novelty": 0.053134962805526036,
       "conflict": 0,
-      "score": 0.8743808255659122
+      "score": 0.8743464399574921
     },
     {
       "node_id": "concept:e0f895872d65b2528fee",
@@ -60,14 +60,6 @@
       "score": 0.872494215640907
     },
     {
-      "node_id": "concept:53e5e7c5a884893739c4",
-      "label": "experience",
-      "activation": 1.0,
-      "novelty": 0.037397157816005985,
-      "conflict": 0,
-      "score": 0.8700972326103216
-    },
-    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -76,28 +68,36 @@
       "score": 0.8625792892625144
     },
     {
-      "node_id": "concept:0bf68c8f585383bc2918",
-      "label": "tragedy",
+      "node_id": "concept:0b3a7b8b9dcb165c4bb9",
+      "label": "ceremony",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8080135593220339
     },
     {
-      "node_id": "concept:8b4c3c90635993d8ba7c",
-      "label": "interests",
+      "node_id": "concept:17b7c532154f66a3fcfd",
+      "label": "chiwantopel",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8080135593220339
     },
     {
-      "node_id": "concept:ffe97bba510b9f5cf1bb",
-      "label": "grade",
+      "node_id": "concept:abcd0ee1fc2cdf511d8a",
+      "label": "declaration",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.7352941176470589,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.777729411764706
+    },
+    {
+      "node_id": "concept:280d44ab1e9f79b5cce2",
+      "label": "welcome",
+      "activation": 0.46,
+      "novelty": 0.6493506493506493,
+      "conflict": 0,
+      "score": 0.7545246753246754
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 1685
     },
     "connect": {
-      "attempts": 1265,
-      "successes": 1261
+      "attempts": 1266,
+      "successes": 1262
     },
     "evolve": {
       "attempts": 78,
