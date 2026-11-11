@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-11T06:13:17.204614+00:00",
-  "generation": 8949,
+  "timestamp": "2026-11-11T06:16:35.753764+00:00",
+  "generation": 8950,
   "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "connect",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 8948,
   "last_search_generation": 8901,
   "cortex": {
     "nodes": 15519,
-    "synapses": 125614,
+    "synapses": 125640,
     "active": 120,
-    "archived_synapses": 60800
+    "archived_synapses": 60700
   },
   "memory": {
     "episodes": 6380,
@@ -35,8 +35,8 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 56923,
-    "segments": 1968,
+    "events": 56930,
+    "segments": 1969,
     "compressed_snapshot": true,
     "snapshot_events": 56813
   },
@@ -63,17 +63,9 @@
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.03191828917969997,
+      "novelty": 0.03187250996015936,
       "conflict": 0,
-      "score": 0.8686179380785191
-    },
-    {
-      "node_id": "concept:ff6d7c8948492bd2",
-      "label": "issue",
-      "activation": 0.9900940854511869,
-      "novelty": 0.04363953742090334,
-      "conflict": 0,
-      "score": 0.8666315995382612
+      "score": 0.8686055776892432
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -84,20 +76,28 @@
       "score": 0.8645550400674822
     },
     {
+      "node_id": "concept:ff6d7c8948492bd2",
+      "label": "issue",
+      "activation": 0.9824712355211602,
+      "novelty": 0.04355400696864111,
+      "conflict": 0,
+      "score": 0.8626446243525365
+    },
+    {
       "node_id": "concept:be169a7e712b89de7b3d",
       "label": "relieve",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     },
     {
       "node_id": "concept:775c0875bdbfaac58149",
       "label": "sufferings",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8170854625550661
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1151
     },
     "consolidate": {
-      "attempts": 1664,
-      "successes": 1664
+      "attempts": 1665,
+      "successes": 1665
     },
     "connect": {
       "attempts": 1251,
