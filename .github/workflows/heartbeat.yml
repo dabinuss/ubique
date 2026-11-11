@@ -45,6 +45,7 @@ jobs:
         run: python -m pip install -e ".[dev]"
 
       - name: Run agent
+        id: agent
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
@@ -69,6 +70,7 @@ jobs:
         run: python -m ubique
 
       - name: Persist autonomous state
+        id: persist
         if: always()
         run: |
           git config user.name "ubique-agent[bot]"
@@ -148,6 +150,25 @@ jobs:
           sleep "$DELAY"
 
           curl --fail-with-body --silent --show-error \
+            --request POST \
+            --header "Accept: application/vnd.github+json" \
+            --header "Authorization: Bearer ${GITHUB_TOKEN}" \
+            --header "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/heartbeat.yml/dispatches" \
+            --data '{"ref":"main"}'
+
+      - name: Recover after failed agent cycle
+        # A runtime exception must not halt autonomous scheduling indefinitely.
+        # Retry at a conservative pace; persist errors are not silently retried.
+        if: ${{ failure() && steps.agent.outcome == 'failure' && steps.persist.outcome == 'success' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        shell: bash
+        run: |
+          echo "Agent failed; arranging a bounded recovery heartbeat in five minutes."
+          sleep 300
+          curl --fail-with-body --silent --show-error --retry 2 --retry-delay 5 \
             --request POST \
             --header "Accept: application/vnd.github+json" \
             --header "Authorization: Bearer ${GITHUB_TOKEN}" \
