@@ -1,56 +1,48 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-11T23:18:54.952292+00:00",
-  "generation": 9056,
-  "focus": "Psychology: Briefer Course",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-11T23:34:18.057153+00:00",
+  "generation": 9057,
+  "focus": "The Analysis of Mind",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": "groq",
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": null,
   "last_provider_generation": 9056,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15605,
-    "synapses": 126660,
+    "nodes": 15608,
+    "synapses": 126662,
     "active": 120,
-    "archived_synapses": 61204
+    "archived_synapses": 61206
   },
   "memory": {
-    "episodes": 6442,
-    "claims": 8150,
+    "episodes": 6443,
+    "claims": 8153,
     "stances": 39,
     "interests": 151,
-    "associative_comparisons": 5225,
+    "associative_comparisons": 5227,
     "screened_interpretations": 49,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8150,
-    "with_evidence_refs": 7092,
+    "total": 8153,
+    "with_evidence_refs": 7095,
     "without_evidence_refs": 1058,
-    "source_claims": 1800,
-    "hypotheses": 6223,
+    "source_claims": 1801,
+    "hypotheses": 6225,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 57808,
-    "segments": 1995,
+    "events": 57819,
+    "segments": 1996,
     "compressed_snapshot": true,
-    "snapshot_events": 57652
+    "snapshot_events": 57819
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2467,
   "workspace": [
-    {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.016568635572860577,
-      "conflict": 0,
-      "score": 0.8644735316046723
-    },
     {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
@@ -60,44 +52,52 @@
       "score": 0.8625682488347761
     },
     {
-      "node_id": "concept:d1068beeb96a6a799376",
-      "label": "compass",
+      "node_id": "concept:fdd5b692371a86efaf28",
+      "label": "vaguely",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:42258bfc34d01f0078c5",
-      "label": "weber",
+      "node_id": "concept:00aa81e121a96f235638",
+      "label": "disparate",
       "activation": 0.46,
       "novelty": 0.9569377990430623,
       "conflict": 0,
       "score": 0.837573205741627
     },
     {
-      "node_id": "concept:4728b0c37dc84206db31",
-      "label": "convey",
+      "node_id": "concept:9b9b69a0d52e726320f9",
+      "label": "motionless",
       "activation": 0.46,
-      "novelty": 0.6134969325153374,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7448441717791412
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:9e9ef157670b0cfd8a42",
-      "label": "extensive",
+      "node_id": "concept:1e4453a98c9d741737a0",
+      "label": "difficult",
       "activation": 0.46,
-      "novelty": 0.5970149253731344,
+      "novelty": 0.49140049140049136,
       "conflict": 0,
-      "score": 0.7403940298507463
+      "score": 0.7118781326781327
     },
     {
-      "node_id": "concept:a0af9f865bf637e67368",
-      "label": "path",
+      "node_id": "concept:31e54e952e25cdde3cd9",
+      "label": "subjective",
       "activation": 0.46,
-      "novelty": 0.5970149253731344,
+      "novelty": 0.47058823529411764,
       "conflict": 0,
-      "score": 0.7403940298507463
+      "score": 0.7062588235294118
+    },
+    {
+      "node_id": "concept:690a8d18f75dfaa79dd8",
+      "label": "moments",
+      "activation": 0.46,
+      "novelty": 0.4514672686230249,
+      "conflict": 0,
+      "score": 0.7010961625282168
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 1698
     },
     "connect": {
-      "attempts": 1274,
-      "successes": 1270
+      "attempts": 1275,
+      "successes": 1271
     },
     "evolve": {
       "attempts": 78,
