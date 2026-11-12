@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-12T21:20:13.114422+00:00",
-  "generation": 9208,
-  "focus": "The Analysis of Mind",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-12T21:35:51.081722+00:00",
+  "generation": 9209,
+  "focus": "The World as Will and Idea, Volume 1",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 9203,
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": "groq",
+  "last_provider_generation": 9209,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15711,
+    "nodes": 15713,
     "synapses": 127636,
     "active": 120,
     "archived_synapses": 62384
@@ -35,22 +35,14 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 58944,
-    "segments": 2032,
+    "events": 58948,
+    "segments": 2033,
     "compressed_snapshot": true,
     "snapshot_events": 58835
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2508,
   "workspace": [
-    {
-      "node_id": "concept:721048dc35951006",
-      "label": "observations",
-      "activation": 1.0,
-      "novelty": 0.12195121951219513,
-      "conflict": 0,
-      "score": 0.8929268292682928
-    },
     {
       "node_id": "concept:411f62e7fd037280",
       "label": "actually",
@@ -84,6 +76,14 @@
       "score": 0.8700972326103216
     },
     {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 1.0,
+      "novelty": 0.037085110328203226,
+      "conflict": 0,
+      "score": 0.8700129797886149
+    },
+    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -92,12 +92,12 @@
       "score": 0.8643034746573159
     },
     {
-      "node_id": "concept:6f281157ab246f0e1f35",
-      "label": "explore",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
+      "activation": 1.0,
+      "novelty": 0.013740982480247339,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.8637100652696668
     }
   ],
   "skills": {
@@ -110,8 +110,8 @@
       "successes": 1798
     },
     "explore": {
-      "attempts": 1215,
-      "successes": 1198
+      "attempts": 1216,
+      "successes": 1199
     },
     "consolidate": {
       "attempts": 1749,
