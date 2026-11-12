@@ -1,41 +1,41 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-12T04:12:44.210109+00:00",
-  "generation": 9090,
+  "timestamp": "2026-11-12T04:27:43.519830+00:00",
+  "generation": 9091,
   "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "consolidate",
-  "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": "gemini",
+  "last_action": "read",
+  "last_action_success": false,
+  "last_action_detail": "NameError: name 'resultend' is not defined",
+  "last_provider": null,
   "last_provider_generation": 9090,
   "last_search_generation": 8901,
   "cortex": {
     "nodes": 15630,
-    "synapses": 126794,
+    "synapses": 126802,
     "active": 120,
-    "archived_synapses": 61564
+    "archived_synapses": 61604
   },
   "memory": {
-    "episodes": 6456,
-    "claims": 8179,
+    "episodes": 6462,
+    "claims": 8197,
     "stances": 39,
     "interests": 151,
-    "associative_comparisons": 5241,
+    "associative_comparisons": 5253,
     "screened_interpretations": 49,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8179,
-    "with_evidence_refs": 7120,
+    "total": 8197,
+    "with_evidence_refs": 7138,
     "without_evidence_refs": 1059,
-    "source_claims": 1806,
-    "hypotheses": 6246,
+    "source_claims": 1812,
+    "hypotheses": 6258,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 58045,
+    "events": 58086,
     "segments": 2004,
     "compressed_snapshot": true,
     "snapshot_events": 57981
@@ -55,49 +55,49 @@
       "node_id": "concept:48d492d08e9d314c034c",
       "label": "studies",
       "activation": 1.0,
-      "novelty": 0.0415973377703827,
+      "novelty": 0.04151961801951422,
       "conflict": 0,
-      "score": 0.8712312811980034
+      "score": 0.8712102968652689
     },
     {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.01634921932477724,
+      "novelty": 0.01632519794302506,
       "conflict": 0,
-      "score": 0.8644142892176898
+      "score": 0.8644078034446168
     },
     {
       "node_id": "concept:9265130c140cc946439c",
       "label": "conspicuity",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.7713708185053381
     },
     {
       "node_id": "concept:d97b2a20a6daca8842a9",
       "label": "woods",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.7713708185053381
     },
     {
       "node_id": "concept:ba0ed317bfab6eb1f3b5",
       "label": "squirrels",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.7713708185053381
     },
     {
       "node_id": "concept:54028a76dcc528deee28",
       "label": "diminishes",
       "activation": 0.46,
-      "novelty": 0.6688963210702341,
+      "novelty": 0.6493506493506493,
       "conflict": 0,
-      "score": 0.7598020066889632
+      "score": 0.7545246753246754
     }
   ],
   "skills": {
@@ -106,7 +106,7 @@
       "successes": 280
     },
     "read": {
-      "attempts": 1798,
+      "attempts": 1799,
       "successes": 1798
     },
     "explore": {
