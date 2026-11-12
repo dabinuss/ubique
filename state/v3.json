@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-12T03:04:24.541847+00:00",
-  "generation": 9081,
-  "focus": "The Story of the Mind",
-  "last_action": "connect",
+  "timestamp": "2026-11-12T03:07:26.594796+00:00",
+  "generation": 9082,
+  "focus": "The Master of Destiny: A Biography of the Brain",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 9078,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15620,
+    "nodes": 15628,
     "synapses": 126792,
     "active": 120,
-    "archived_synapses": 61502
+    "archived_synapses": 61526
   },
   "memory": {
     "episodes": 6453,
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 57992,
+    "events": 57997,
     "segments": 2002,
     "compressed_snapshot": true,
     "snapshot_events": 57981
@@ -43,6 +43,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2473,
   "workspace": [
+    {
+      "node_id": "concept:411f62e7fd037280",
+      "label": "actually",
+      "activation": 1.0,
+      "novelty": 0.04288164665523156,
+      "conflict": 0,
+      "score": 0.8715780445969126
+    },
     {
       "node_id": "concept:ff6d7c8948492bd2",
       "label": "issue",
@@ -68,36 +76,28 @@
       "score": 0.8644175392670157
     },
     {
-      "node_id": "concept:b1e7667cc15924310572",
-      "label": "vastness",
+      "node_id": "concept:9265130c140cc946439c",
+      "label": "conspicuity",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:64aa7eaf567b8b50c8ed",
-      "label": "interpenetrated",
+      "node_id": "concept:d97b2a20a6daca8842a9",
+      "label": "woods",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:969656cc5f0c62c224fb",
-      "label": "respective",
+      "node_id": "concept:ba0ed317bfab6eb1f3b5",
+      "label": "squirrels",
       "activation": 0.46,
-      "novelty": 0.6493506493506493,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7545246753246754
-    },
-    {
-      "node_id": "concept:a3e5918c39441096100c",
-      "label": "hesitation",
-      "activation": 0.46,
-      "novelty": 0.6134969325153374,
-      "conflict": 0,
-      "score": 0.7448441717791412
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1174
     },
     "consolidate": {
-      "attempts": 1706,
-      "successes": 1706
+      "attempts": 1707,
+      "successes": 1707
     },
     "connect": {
       "attempts": 1281,
