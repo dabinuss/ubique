@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-12T22:34:41.783680+00:00",
-  "generation": 9216,
-  "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "read",
-  "last_action_success": false,
-  "last_action_detail": "NameError: name 'resultend' is not defined",
+  "timestamp": "2026-11-12T22:50:10.464867+00:00",
+  "generation": 9217,
+  "focus": "The Master of Destiny: A Biography of the Brain",
+  "last_action": "question",
+  "last_action_success": true,
+  "last_action_detail": "How do the authors approach past, present, such differently, given their emphases on appearances, circumstances and action, appeared? Which assumptions differ?",
   "last_provider": null,
   "last_provider_generation": 9214,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15714,
+    "nodes": 15716,
     "synapses": 127726,
     "active": 120,
-    "archived_synapses": 62426
+    "archived_synapses": 62438
   },
   "memory": {
     "episodes": 6526,
-    "claims": 8331,
+    "claims": 8332,
     "stances": 40,
     "interests": 151,
     "associative_comparisons": 5327,
@@ -26,17 +26,17 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8331,
-    "with_evidence_refs": 7261,
+    "total": 8332,
+    "with_evidence_refs": 7262,
     "without_evidence_refs": 1070,
     "source_claims": 1843,
-    "hypotheses": 6359,
+    "hypotheses": 6360,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 59020,
-    "segments": 2034,
+    "events": 59026,
+    "segments": 2035,
     "compressed_snapshot": true,
     "snapshot_events": 59020
   },
@@ -44,36 +44,28 @@
   "evidence_reviews": 2508,
   "workspace": [
     {
-      "node_id": "concept:411f62e7fd037280",
-      "label": "actually",
+      "node_id": "concept:ae835b22fe866b40",
+      "label": "circumstances",
       "activation": 1.0,
-      "novelty": 0.042716787697565144,
+      "novelty": 0.05082592121982211,
       "conflict": 0,
-      "score": 0.8715335326783427
+      "score": 0.873722998729352
     },
     {
-      "node_id": "concept:48d492d08e9d314c034c",
-      "label": "studies",
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
       "activation": 1.0,
-      "novelty": 0.04075810067250866,
+      "novelty": 0.04551661356395084,
       "conflict": 0,
-      "score": 0.8710046871815773
+      "score": 0.8722894856622667
     },
     {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
+      "node_id": "concept:4277d3259d4e4993",
+      "label": "conclusion",
       "activation": 1.0,
-      "novelty": 0.03945551390806865,
+      "novelty": 0.042471862391165856,
       "conflict": 0,
-      "score": 0.8706529887551786
-    },
-    {
-      "node_id": "concept:3f8b4464a99de3dc8c5c",
-      "label": "religious",
-      "activation": 1.0,
-      "novelty": 0.037397157816005985,
-      "conflict": 0,
-      "score": 0.8700972326103216
+      "score": 0.8714674028456149
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
@@ -84,12 +76,20 @@
       "score": 0.8700129797886149
     },
     {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
+      "node_id": "concept:172e09329d10f852",
+      "label": "continued",
       "activation": 1.0,
-      "novelty": 0.015915963711602737,
+      "novelty": 0.03391555027980329,
       "conflict": 0,
-      "score": 0.8642973102021327
+      "score": 0.8691571985755469
+    },
+    {
+      "node_id": "concept:5a2a957b269e8f0f",
+      "label": "external",
+      "activation": 1.0,
+      "novelty": 0.028015128169211374,
+      "conflict": 0,
+      "score": 0.8675640846056871
     },
     {
       "node_id": "concept:8b16ced79976e6a1",
@@ -130,8 +130,8 @@
       "successes": 480
     },
     "question": {
-      "attempts": 357,
-      "successes": 357
+      "attempts": 358,
+      "successes": 358
     },
     "library": {
       "attempts": 14,
