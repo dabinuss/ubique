@@ -1,27 +1,27 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-11T23:58:14.550788+00:00",
-  "generation": 9061,
-  "focus": "The World as Will and Idea (Vol. 3 of 3)",
-  "last_action": "question",
+  "timestamp": "2026-11-12T00:20:23.109000+00:00",
+  "generation": 9063,
+  "focus": "The Principles of Psychology, Volume 2 (of 2)",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "How do the authors approach centres, nerve, perceptive differently, given their emphases on afterwards, alone and adapted, cells? Which assumptions differ?",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 9061,
   "last_search_generation": 8901,
   "cortex": {
     "nodes": 15613,
     "synapses": 126665,
     "active": 120,
-    "archived_synapses": 61271
+    "archived_synapses": 61353
   },
   "memory": {
-    "episodes": 6445,
+    "episodes": 6446,
     "claims": 8162,
     "stances": 39,
     "interests": 151,
-    "associative_comparisons": 5231,
+    "associative_comparisons": 5233,
     "screened_interpretations": 49,
     "historical_insight_labels": 136
   },
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 57857,
+    "events": 57869,
     "segments": 1997,
     "compressed_snapshot": true,
     "snapshot_events": 57819
@@ -43,6 +43,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2469,
   "workspace": [
+    {
+      "node_id": "concept:ff6d7c8948492bd2",
+      "label": "issue",
+      "activation": 1.0,
+      "novelty": 0.04279905842071475,
+      "conflict": 0,
+      "score": 0.871555745773593
+    },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
@@ -52,52 +60,44 @@
       "score": 0.8708259823576585
     },
     {
-      "node_id": "concept:b8d392423af071a7d25c",
-      "label": "irradiate",
-      "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
+      "activation": 1.0,
+      "novelty": 0.03081189339084887,
       "conflict": 0,
-      "score": 0.837573205741627
-    },
-    {
-      "node_id": "concept:b23b6005132ced3ff0e9",
-      "label": "subjectively",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.8683192112155291
     },
     {
       "node_id": "concept:725f5d7a43fcf4d35af2",
       "label": "perceptive",
       "activation": 0.46,
-      "novelty": 0.6309148264984227,
+      "novelty": 0.6134969325153374,
       "conflict": 0,
-      "score": 0.7495470031545741
+      "score": 0.7448441717791412
     },
     {
-      "node_id": "concept:8d1c8a7a12c3739bb3b9",
-      "label": "excited",
+      "node_id": "concept:3b6dc2fe604d23d364a0",
+      "label": "luther",
       "activation": 0.46,
-      "novelty": 0.49140049140049136,
+      "novelty": 0.5390835579514824,
       "conflict": 0,
-      "score": 0.7118781326781327
+      "score": 0.7247525606469003
     },
     {
-      "node_id": "concept:fa25baee7bacec5c8ca2",
-      "label": "centre",
+      "node_id": "concept:05151c392c6eec137835",
+      "label": "christman",
       "activation": 0.46,
-      "novelty": 0.4255319148936171,
+      "novelty": 0.5390835579514824,
       "conflict": 0,
-      "score": 0.6940936170212766
+      "score": 0.7247525606469003
     },
     {
-      "node_id": "concept:4c3200fefd8b69413376",
-      "label": "tendency",
+      "node_id": "concept:4af009dcd561b8060a9e",
+      "label": "therapy",
       "activation": 0.46,
-      "novelty": 0.4024144869215292,
+      "novelty": 0.5390835579514824,
       "conflict": 0,
-      "score": 0.6878519114688129
+      "score": 0.7247525606469003
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1171
     },
     "consolidate": {
-      "attempts": 1699,
-      "successes": 1699
+      "attempts": 1700,
+      "successes": 1700
     },
     "connect": {
       "attempts": 1276,
