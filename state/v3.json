@@ -1,41 +1,41 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-12T11:00:31.420187+00:00",
-  "generation": 9136,
-  "focus": "Analysis of the Phenomena of the Human Mind",
-  "last_action": "connect",
-  "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "timestamp": "2026-11-12T11:04:02.827148+00:00",
+  "generation": 9137,
+  "focus": "The Principles of Psychology, Volume 2 (of 2)",
+  "last_action": "read",
+  "last_action_success": false,
+  "last_action_detail": "NameError: name 'resultend' is not defined",
   "last_provider": null,
   "last_provider_generation": 9135,
   "last_search_generation": 8901,
   "cortex": {
     "nodes": 15663,
-    "synapses": 127067,
+    "synapses": 127076,
     "active": 120,
-    "archived_synapses": 61897
+    "archived_synapses": 62000
   },
   "memory": {
-    "episodes": 6485,
-    "claims": 8220,
+    "episodes": 6491,
+    "claims": 8237,
     "stances": 40,
     "interests": 151,
-    "associative_comparisons": 5267,
+    "associative_comparisons": 5279,
     "screened_interpretations": 50,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8220,
-    "with_evidence_refs": 7161,
+    "total": 8237,
+    "with_evidence_refs": 7178,
     "without_evidence_refs": 1059,
-    "source_claims": 1816,
-    "hypotheses": 6277,
+    "source_claims": 1822,
+    "hypotheses": 6288,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 58380,
+    "events": 58421,
     "segments": 2015,
     "compressed_snapshot": true,
     "snapshot_events": 58308
@@ -55,49 +55,49 @@
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.030349013657056143,
+      "novelty": 0.03030762236702531,
       "conflict": 0,
-      "score": 0.8681942336874051
+      "score": 0.8681830580390968
     },
     {
       "node_id": "concept:ff6d7c8948492bd2",
       "label": "issue",
-      "activation": 0.9703705782855886,
-      "novelty": 0.04214963119072709,
+      "activation": 0.9662979596453698,
+      "novelty": 0.04206983592763988,
       "conflict": 0,
-      "score": 0.8559731011300025
+      "score": 0.853833794716055
     },
     {
       "node_id": "concept:902ea063707e5c69a2e9",
       "label": "iences",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
-    },
-    {
-      "node_id": "concept:fe41cc968e9814f57a3e",
-      "label": "ripe",
       "activation": 0.46,
       "novelty": 0.7352941176470589,
       "conflict": 0,
       "score": 0.777729411764706
     },
     {
+      "node_id": "concept:fe41cc968e9814f57a3e",
+      "label": "ripe",
+      "activation": 0.46,
+      "novelty": 0.7117437722419929,
+      "conflict": 0,
+      "score": 0.7713708185053381
+    },
+    {
       "node_id": "concept:eea8ec0d450873055807",
       "label": "hatch",
       "activation": 0.46,
-      "novelty": 0.6688963210702341,
+      "novelty": 0.6493506493506493,
       "conflict": 0,
-      "score": 0.7598020066889632
+      "score": 0.7545246753246754
     },
     {
       "node_id": "concept:c06b0cfe0cc5e900c577",
       "label": "flower",
       "activation": 0.46,
-      "novelty": 0.6309148264984227,
+      "novelty": 0.6134969325153374,
       "conflict": 0,
-      "score": 0.7495470031545741
+      "score": 0.7448441717791412
     }
   ],
   "skills": {
@@ -106,7 +106,7 @@
       "successes": 280
     },
     "read": {
-      "attempts": 1799,
+      "attempts": 1800,
       "successes": 1798
     },
     "explore": {
