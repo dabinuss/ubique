@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-12T11:04:02.827148+00:00",
-  "generation": 9137,
-  "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "read",
-  "last_action_success": false,
-  "last_action_detail": "NameError: name 'resultend' is not defined",
+  "timestamp": "2026-11-12T11:19:13.639546+00:00",
+  "generation": 9138,
+  "focus": "The Physical Basis of Mind",
+  "last_action": "connect",
+  "last_action_success": true,
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 9135,
   "last_search_generation": 8901,
@@ -35,14 +35,22 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 58421,
-    "segments": 2015,
+    "events": 58425,
+    "segments": 2016,
     "compressed_snapshot": true,
     "snapshot_events": 58308
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2482,
   "workspace": [
+    {
+      "node_id": "concept:721048dc35951006",
+      "label": "observations",
+      "activation": 1.0,
+      "novelty": 0.12330456226880396,
+      "conflict": 0,
+      "score": 0.8932922318125771
+    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -52,52 +60,44 @@
       "score": 0.8723654682848638
     },
     {
-      "node_id": "concept:64b218956223eb12d13e",
-      "label": "principles",
+      "node_id": "concept:5a2a957b269e8f0f",
+      "label": "external",
       "activation": 1.0,
-      "novelty": 0.03030762236702531,
+      "novelty": 0.02837281883955171,
       "conflict": 0,
-      "score": 0.8681830580390968
+      "score": 0.867660661086679
     },
     {
-      "node_id": "concept:ff6d7c8948492bd2",
-      "label": "issue",
-      "activation": 0.9662979596453698,
-      "novelty": 0.04206983592763988,
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.016112140497865142,
       "conflict": 0,
-      "score": 0.853833794716055
+      "score": 0.8643502779344236
     },
     {
-      "node_id": "concept:902ea063707e5c69a2e9",
-      "label": "iences",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
+      "activation": 1.0,
+      "novelty": 0.013817880337156281,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.8637308276910323
     },
     {
-      "node_id": "concept:fe41cc968e9814f57a3e",
-      "label": "ripe",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:eea8ec0d450873055807",
-      "label": "hatch",
+      "node_id": "concept:86474ae6ea984de34722",
+      "label": "sending",
       "activation": 0.46,
       "novelty": 0.6493506493506493,
       "conflict": 0,
       "score": 0.7545246753246754
     },
     {
-      "node_id": "concept:c06b0cfe0cc5e900c577",
-      "label": "flower",
+      "node_id": "concept:c082456a7766e23a18db",
+      "label": "medium",
       "activation": 0.46,
-      "novelty": 0.6134969325153374,
+      "novelty": 0.5813953488372093,
       "conflict": 0,
-      "score": 0.7448441717791412
+      "score": 0.7361767441860465
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 1725
     },
     "connect": {
-      "attempts": 1294,
-      "successes": 1290
+      "attempts": 1295,
+      "successes": 1291
     },
     "evolve": {
       "attempts": 78,
