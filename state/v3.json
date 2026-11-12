@@ -1,42 +1,42 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-12T20:00:24.737387+00:00",
-  "generation": 9199,
-  "focus": "A Treatise of Human Nature",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-12T20:23:08.153193+00:00",
+  "generation": 9201,
+  "focus": "Human Nature and Conduct",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 9197,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15702,
+    "nodes": 15705,
     "synapses": 127517,
     "active": 120,
-    "archived_synapses": 62347
+    "archived_synapses": 62353
   },
   "memory": {
-    "episodes": 6518,
-    "claims": 8309,
+    "episodes": 6519,
+    "claims": 8312,
     "stances": 40,
     "interests": 151,
-    "associative_comparisons": 5311,
+    "associative_comparisons": 5313,
     "screened_interpretations": 52,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8309,
-    "with_evidence_refs": 7239,
+    "total": 8312,
+    "with_evidence_refs": 7242,
     "without_evidence_refs": 1070,
-    "source_claims": 1836,
-    "hypotheses": 6344,
+    "source_claims": 1837,
+    "hypotheses": 6346,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 58890,
-    "segments": 2030,
+    "events": 58901,
+    "segments": 2031,
     "compressed_snapshot": true,
     "snapshot_events": 58835
   },
@@ -52,6 +52,22 @@
       "score": 0.8929268292682928
     },
     {
+      "node_id": "concept:411f62e7fd037280",
+      "label": "actually",
+      "activation": 1.0,
+      "novelty": 0.042716787697565144,
+      "conflict": 0,
+      "score": 0.8715335326783427
+    },
+    {
+      "node_id": "concept:48d492d08e9d314c034c",
+      "label": "studies",
+      "activation": 1.0,
+      "novelty": 0.040832993058391186,
+      "conflict": 0,
+      "score": 0.8710249081257657
+    },
+    {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
       "activation": 1.0,
@@ -60,20 +76,12 @@
       "score": 0.8706529887551786
     },
     {
-      "node_id": "concept:172e09329d10f852",
-      "label": "continued",
+      "node_id": "concept:3f8b4464a99de3dc8c5c",
+      "label": "religious",
       "activation": 1.0,
-      "novelty": 0.03412386964681795,
+      "novelty": 0.03784295175023652,
       "conflict": 0,
-      "score": 0.8692134448046409
-    },
-    {
-      "node_id": "concept:5a2a957b269e8f0f",
-      "label": "external",
-      "activation": 1.0,
-      "novelty": 0.028121484814398197,
-      "conflict": 0,
-      "score": 0.8675928008998877
+      "score": 0.8702175969725638
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -84,20 +92,12 @@
       "score": 0.8643127545723186
     },
     {
-      "node_id": "concept:992aa527610e0e4f77fc",
-      "label": "vesting",
+      "node_id": "concept:6f281157ab246f0e1f35",
+      "label": "explore",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.78452319391635
-    },
-    {
-      "node_id": "concept:6c0a579f38b0e548486f",
-      "label": "lawyers",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -110,8 +110,8 @@
       "successes": 1798
     },
     "explore": {
-      "attempts": 1214,
-      "successes": 1197
+      "attempts": 1215,
+      "successes": 1198
     },
     "consolidate": {
       "attempts": 1746,
