@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-12T12:31:12.888631+00:00",
-  "generation": 9146,
-  "focus": "The World as Will and Idea, Volume 1",
-  "last_action": "read",
-  "last_action_success": false,
-  "last_action_detail": "NameError: name 'resultend' is not defined",
-  "last_provider": "gemini",
+  "timestamp": "2026-11-12T12:46:15.672159+00:00",
+  "generation": 9147,
+  "focus": "Human Nature and Conduct",
+  "last_action": "connect",
+  "last_action_success": true,
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": null,
   "last_provider_generation": 9146,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15665,
+    "nodes": 15669,
     "synapses": 127084,
     "active": 120,
-    "archived_synapses": 62136
+    "archived_synapses": 62174
   },
   "memory": {
     "episodes": 6501,
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 58512,
+    "events": 58516,
     "segments": 2018,
     "compressed_snapshot": true,
     "snapshot_events": 58512
@@ -43,14 +43,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2484,
   "workspace": [
-    {
-      "node_id": "concept:721048dc35951006",
-      "label": "observations",
-      "activation": 1.0,
-      "novelty": 0.12262415695892091,
-      "conflict": 0,
-      "score": 0.8931085223789086
-    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -60,12 +52,36 @@
       "score": 0.8723654682848638
     },
     {
-      "node_id": "concept:5a2a957b269e8f0f",
-      "label": "external",
+      "node_id": "concept:3676cba44f159ed1",
+      "label": "cognitive",
       "activation": 1.0,
-      "novelty": 0.028336639274582034,
+      "novelty": 0.04060913705583756,
       "conflict": 0,
-      "score": 0.8676508926041373
+      "score": 0.8709644670050762
+    },
+    {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.0400962309542903,
+      "conflict": 0,
+      "score": 0.8708259823576585
+    },
+    {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 1.0,
+      "novelty": 0.037209302325581395,
+      "conflict": 0,
+      "score": 0.870046511627907
+    },
+    {
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
+      "activation": 1.0,
+      "novelty": 0.03030762236702531,
+      "conflict": 0,
+      "score": 0.8681830580390968
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -76,28 +92,12 @@
       "score": 0.8643376978070527
     },
     {
-      "node_id": "concept:8b16ced79976e6a1",
-      "label": "action",
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
       "activation": 1.0,
-      "novelty": 0.013809293654629568,
+      "novelty": 0.0094593955446247,
       "conflict": 0,
-      "score": 0.8637285092867499
-    },
-    {
-      "node_id": "concept:86474ae6ea984de34722",
-      "label": "sending",
-      "activation": 0.46,
-      "novelty": 0.5263157894736842,
-      "conflict": 0,
-      "score": 0.7213052631578948
-    },
-    {
-      "node_id": "concept:c082456a7766e23a18db",
-      "label": "medium",
-      "activation": 0.46,
-      "novelty": 0.4807692307692307,
-      "conflict": 0,
-      "score": 0.7090076923076924
+      "score": 0.8625540367970488
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 1728
     },
     "connect": {
-      "attempts": 1296,
-      "successes": 1292
+      "attempts": 1297,
+      "successes": 1293
     },
     "evolve": {
       "attempts": 78,
