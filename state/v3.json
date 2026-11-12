@@ -1,55 +1,55 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-12T12:16:10.759558+00:00",
-  "generation": 9145,
-  "focus": "Analysis of the Phenomena of the Human Mind",
-  "last_action": "consolidate",
-  "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 9141,
+  "timestamp": "2026-11-12T12:31:12.888631+00:00",
+  "generation": 9146,
+  "focus": "The World as Will and Idea, Volume 1",
+  "last_action": "read",
+  "last_action_success": false,
+  "last_action_detail": "NameError: name 'resultend' is not defined",
+  "last_provider": "gemini",
+  "last_provider_generation": 9146,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15663,
-    "synapses": 127076,
+    "nodes": 15665,
+    "synapses": 127084,
     "active": 120,
-    "archived_synapses": 62130
+    "archived_synapses": 62136
   },
   "memory": {
-    "episodes": 6493,
-    "claims": 8239,
+    "episodes": 6501,
+    "claims": 8256,
     "stances": 40,
     "interests": 151,
-    "associative_comparisons": 5279,
+    "associative_comparisons": 5291,
     "screened_interpretations": 50,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8239,
-    "with_evidence_refs": 7180,
+    "total": 8256,
+    "with_evidence_refs": 7197,
     "without_evidence_refs": 1059,
-    "source_claims": 1822,
-    "hypotheses": 6290,
+    "source_claims": 1828,
+    "hypotheses": 6301,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 58467,
-    "segments": 2017,
+    "events": 58512,
+    "segments": 2018,
     "compressed_snapshot": true,
-    "snapshot_events": 58308
+    "snapshot_events": 58512
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2483,
+  "evidence_reviews": 2484,
   "workspace": [
     {
       "node_id": "concept:721048dc35951006",
       "label": "observations",
       "activation": 1.0,
-      "novelty": 0.12330456226880396,
+      "novelty": 0.12262415695892091,
       "conflict": 0,
-      "score": 0.8932922318125771
+      "score": 0.8931085223789086
     },
     {
       "node_id": "concept:e0f895872d65b2528fee",
@@ -71,9 +71,9 @@
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.016077170418006433,
+      "novelty": 0.0160655474335288,
       "conflict": 0,
-      "score": 0.8643408360128617
+      "score": 0.8643376978070527
     },
     {
       "node_id": "concept:8b16ced79976e6a1",
@@ -87,17 +87,17 @@
       "node_id": "concept:86474ae6ea984de34722",
       "label": "sending",
       "activation": 0.46,
-      "novelty": 0.5390835579514824,
+      "novelty": 0.5263157894736842,
       "conflict": 0,
-      "score": 0.7247525606469003
+      "score": 0.7213052631578948
     },
     {
       "node_id": "concept:c082456a7766e23a18db",
       "label": "medium",
       "activation": 0.46,
-      "novelty": 0.49140049140049136,
+      "novelty": 0.4807692307692307,
       "conflict": 0,
-      "score": 0.7118781326781327
+      "score": 0.7090076923076924
     }
   ],
   "skills": {
@@ -106,7 +106,7 @@
       "successes": 280
     },
     "read": {
-      "attempts": 1800,
+      "attempts": 1801,
       "successes": 1798
     },
     "explore": {
