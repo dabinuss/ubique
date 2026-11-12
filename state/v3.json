@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-12T00:20:23.109000+00:00",
-  "generation": 9063,
+  "timestamp": "2026-11-12T00:35:01.929095+00:00",
+  "generation": 9064,
   "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "consolidate",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "observed_comparison",
   "last_provider": null,
   "last_provider_generation": 9061,
   "last_search_generation": 8901,
@@ -14,7 +14,7 @@
     "nodes": 15613,
     "synapses": 126665,
     "active": 120,
-    "archived_synapses": 61353
+    "archived_synapses": 61397
   },
   "memory": {
     "episodes": 6446,
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 57869,
+    "events": 57874,
     "segments": 1997,
     "compressed_snapshot": true,
     "snapshot_events": 57819
@@ -43,14 +43,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2469,
   "workspace": [
-    {
-      "node_id": "concept:ff6d7c8948492bd2",
-      "label": "issue",
-      "activation": 1.0,
-      "novelty": 0.04279905842071475,
-      "conflict": 0,
-      "score": 0.871555745773593
-    },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
@@ -63,41 +55,49 @@
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
       "activation": 1.0,
-      "novelty": 0.03081189339084887,
+      "novelty": 0.03076923076923077,
       "conflict": 0,
-      "score": 0.8683192112155291
+      "score": 0.8683076923076924
+    },
+    {
+      "node_id": "concept:ff6d7c8948492bd2",
+      "label": "issue",
+      "activation": 0.990594085451187,
+      "novelty": 0.042716787697565144,
+      "conflict": 0,
+      "score": 0.8666424571129598
     },
     {
       "node_id": "concept:725f5d7a43fcf4d35af2",
       "label": "perceptive",
       "activation": 0.46,
-      "novelty": 0.6134969325153374,
+      "novelty": 0.5970149253731344,
       "conflict": 0,
-      "score": 0.7448441717791412
+      "score": 0.7403940298507463
     },
     {
       "node_id": "concept:3b6dc2fe604d23d364a0",
       "label": "luther",
       "activation": 0.46,
-      "novelty": 0.5390835579514824,
+      "novelty": 0.5263157894736842,
       "conflict": 0,
-      "score": 0.7247525606469003
+      "score": 0.7213052631578948
     },
     {
       "node_id": "concept:05151c392c6eec137835",
       "label": "christman",
       "activation": 0.46,
-      "novelty": 0.5390835579514824,
+      "novelty": 0.5263157894736842,
       "conflict": 0,
-      "score": 0.7247525606469003
+      "score": 0.7213052631578948
     },
     {
       "node_id": "concept:4af009dcd561b8060a9e",
       "label": "therapy",
       "activation": 0.46,
-      "novelty": 0.5390835579514824,
+      "novelty": 0.5263157894736842,
       "conflict": 0,
-      "score": 0.7247525606469003
+      "score": 0.7213052631578948
     }
   ],
   "skills": {
@@ -126,8 +126,8 @@
       "successes": 43
     },
     "experiment": {
-      "attempts": 469,
-      "successes": 467
+      "attempts": 470,
+      "successes": 468
     },
     "question": {
       "attempts": 347,
