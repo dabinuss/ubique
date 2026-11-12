@@ -1,27 +1,27 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-12T13:30:40.676780+00:00",
-  "generation": 9153,
-  "focus": "The Physical Basis of Mind",
-  "last_action": "explore",
+  "timestamp": "2026-11-12T13:42:15.553507+00:00",
+  "generation": 9155,
+  "focus": "Psychology: Briefer Course",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": "groq",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 9153,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15669,
-    "synapses": 127084,
+    "nodes": 15670,
+    "synapses": 127182,
     "active": 120,
-    "archived_synapses": 62204
+    "archived_synapses": 62172
   },
   "memory": {
-    "episodes": 6501,
+    "episodes": 6502,
     "claims": 8256,
     "stances": 40,
     "interests": 151,
-    "associative_comparisons": 5291,
+    "associative_comparisons": 5293,
     "screened_interpretations": 50,
     "historical_insight_labels": 136
   },
@@ -35,14 +35,22 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 58545,
-    "segments": 2019,
+    "events": 58559,
+    "segments": 2020,
     "compressed_snapshot": true,
     "snapshot_events": 58512
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2484,
   "workspace": [
+    {
+      "node_id": "concept:eb110b1ecff69e3b",
+      "label": "successful",
+      "activation": 1.0,
+      "novelty": 0.3883495145631068,
+      "conflict": 0,
+      "score": 0.9648543689320388
+    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -52,20 +60,20 @@
       "score": 0.8723654682848638
     },
     {
-      "node_id": "concept:3676cba44f159ed1",
-      "label": "cognitive",
-      "activation": 1.0,
-      "novelty": 0.04060913705583756,
-      "conflict": 0,
-      "score": 0.8709644670050762
-    },
-    {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
       "activation": 1.0,
       "novelty": 0.0400962309542903,
       "conflict": 0,
       "score": 0.8708259823576585
+    },
+    {
+      "node_id": "concept:2331eb33ce2c3766148e",
+      "label": "philosophy",
+      "activation": 1.0,
+      "novelty": 0.03938558487593541,
+      "conflict": 0,
+      "score": 0.8706341079165025
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
@@ -90,14 +98,6 @@
       "novelty": 0.016053941242575052,
       "conflict": 0,
       "score": 0.8643345641354954
-    },
-    {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.009455370650529501,
-      "conflict": 0,
-      "score": 0.862552950075643
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1188
     },
     "consolidate": {
-      "attempts": 1730,
-      "successes": 1730
+      "attempts": 1731,
+      "successes": 1731
     },
     "connect": {
       "attempts": 1298,
