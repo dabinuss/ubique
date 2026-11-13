@@ -1,7 +1,11 @@
 {
-  "timestamp": "2026-11-13T23:07:41.272450+00:00",
-  "generation": 9384,
-  "should_continue": false,
+  "timestamp": "2026-11-13T23:14:59.574973+00:00",
+  "generation": 9385,
   "mode": "quiet",
-  "reason": "v3_failed:NameError"
+  "should_continue": false,
+  "minimum_delay_seconds": 60,
+  "reason": "v3:consolidate",
+  "selected_action": "consolidate",
+  "workspace_activation": 1.0,
+  "watchdog_schedule": "3,18,33,48 * * * *"
 }
