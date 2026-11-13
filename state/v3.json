@@ -1,47 +1,47 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-13T16:13:44.123876+00:00",
-  "generation": 9337,
-  "focus": "The Varieties of Religious Experience: A Study in Human Nature",
-  "last_action": "explore",
+  "timestamp": "2026-11-13T16:24:11.880405+00:00",
+  "generation": 9339,
+  "focus": "The World as Will and Idea (Vol. 2 of 3)",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 9333,
+  "last_action_detail": "observed_comparison",
+  "last_provider": "groq",
+  "last_provider_generation": 9339,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15814,
-    "synapses": 128895,
+    "nodes": 15818,
+    "synapses": 128915,
     "active": 120,
     "archived_synapses": 62095
   },
   "memory": {
-    "episodes": 6565,
-    "claims": 8427,
+    "episodes": 6566,
+    "claims": 8431,
     "stances": 40,
     "interests": 151,
-    "associative_comparisons": 5363,
+    "associative_comparisons": 5365,
     "screened_interpretations": 52,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8427,
-    "with_evidence_refs": 7335,
+    "total": 8431,
+    "with_evidence_refs": 7339,
     "without_evidence_refs": 1092,
-    "source_claims": 1859,
-    "hypotheses": 6439,
+    "source_claims": 1860,
+    "hypotheses": 6442,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 59826,
+    "events": 59840,
     "segments": 2064,
     "compressed_snapshot": true,
-    "snapshot_events": 59675
+    "snapshot_events": 59840
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2544,
+  "evidence_reviews": 2545,
   "workspace": [
     {
       "node_id": "concept:e0f895872d65b2528fee",
@@ -60,12 +60,12 @@
       "score": 0.870467144795503
     },
     {
-      "node_id": "concept:5a2a957b269e8f0f",
-      "label": "external",
+      "node_id": "concept:6907de2e8144a57274c7",
+      "label": "treatise",
       "activation": 1.0,
-      "novelty": 0.02739350773866594,
+      "novelty": 0.027159152634437807,
       "conflict": 0,
-      "score": 0.8673962470894399
+      "score": 0.8673329712112983
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -76,6 +76,14 @@
       "score": 0.8641660237617652
     },
     {
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.009320533134495294,
+      "conflict": 0,
+      "score": 0.8625165439463138
+    },
+    {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
       "activation": 1.0,
@@ -84,20 +92,12 @@
       "score": 0.8620159784962294
     },
     {
-      "node_id": "concept:c55df1c6481becc48455",
-      "label": "haviourist",
+      "node_id": "concept:ad7fbdd96e2166ace3e2",
+      "label": "scottish",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.7917984251968504
-    },
-    {
-      "node_id": "concept:deab03cd4306dc1435c9",
-      "label": "referring",
-      "activation": 0.46,
-      "novelty": 0.7874015748031495,
-      "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -126,8 +126,8 @@
       "successes": 45
     },
     "experiment": {
-      "attempts": 493,
-      "successes": 491
+      "attempts": 494,
+      "successes": 492
     },
     "question": {
       "attempts": 367,
