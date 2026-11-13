@@ -1,47 +1,47 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-13T18:40:19.796542+00:00",
-  "generation": 9355,
-  "focus": "The Nature of Man: Studies in Optimistic Philosophy",
-  "last_action": "consolidate",
-  "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 9350,
+  "timestamp": "2026-11-13T18:55:38.426927+00:00",
+  "generation": 9356,
+  "focus": "The Varieties of Religious Experience: A Study in Human Nature",
+  "last_action": "read",
+  "last_action_success": false,
+  "last_action_detail": "NameError: name 'resultend' is not defined",
+  "last_provider": "groq",
+  "last_provider_generation": 9356,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15827,
-    "synapses": 129111,
+    "nodes": 15828,
+    "synapses": 129120,
     "active": 120,
-    "archived_synapses": 61861
+    "archived_synapses": 61870
   },
   "memory": {
-    "episodes": 6568,
-    "claims": 8440,
+    "episodes": 6574,
+    "claims": 8459,
     "stances": 40,
     "interests": 151,
-    "associative_comparisons": 5369,
+    "associative_comparisons": 5381,
     "screened_interpretations": 52,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8440,
-    "with_evidence_refs": 7348,
+    "total": 8459,
+    "with_evidence_refs": 7367,
     "without_evidence_refs": 1092,
-    "source_claims": 1862,
-    "hypotheses": 6449,
+    "source_claims": 1867,
+    "hypotheses": 6463,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 59941,
+    "events": 59990,
     "segments": 2068,
     "compressed_snapshot": true,
     "snapshot_events": 59840
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2547,
+  "evidence_reviews": 2551,
   "workspace": [
     {
       "node_id": "concept:e0f895872d65b2528fee",
@@ -71,9 +71,9 @@
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.015386982612709649,
+      "novelty": 0.015376335819174292,
       "conflict": 0,
-      "score": 0.8641544853054317
+      "score": 0.8641516106711771
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -87,17 +87,17 @@
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
       "activation": 1.0,
-      "novelty": 0.007456565505927971,
+      "novelty": 0.007454064328575156,
       "conflict": 0,
-      "score": 0.8620132726866006
+      "score": 0.8620125973687154
     },
     {
       "node_id": "concept:8636c9478370900bee1a",
       "label": "asking",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.7352941176470589,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.777729411764706
     }
   ],
   "skills": {
@@ -106,7 +106,7 @@
       "successes": 280
     },
     "read": {
-      "attempts": 1802,
+      "attempts": 1803,
       "successes": 1798
     },
     "explore": {
