@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-13T15:16:51.280305+00:00",
-  "generation": 9331,
-  "focus": "The World as Will and Idea, Volume 1",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-13T15:32:34.295381+00:00",
+  "generation": 9332,
+  "focus": "The Nature of Man: Studies in Optimistic Philosophy",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 9328,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15805,
+    "nodes": 15807,
     "synapses": 128853,
     "active": 120,
     "archived_synapses": 61983
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 59779,
+    "events": 59783,
     "segments": 2062,
     "compressed_snapshot": true,
     "snapshot_events": 59675
@@ -43,6 +43,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2537,
   "workspace": [
+    {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.04542357483533954,
+      "conflict": 0,
+      "score": 0.8722643652055417
+    },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
@@ -55,49 +63,41 @@
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
-      "novelty": 0.027427317608337904,
+      "novelty": 0.02739350773866594,
       "conflict": 0,
-      "score": 0.8674053757542513
-    },
-    {
-      "node_id": "concept:f2d44b8ac655a7ad",
-      "label": "public",
-      "activation": 1.0,
-      "novelty": 0.024521824423737126,
-      "conflict": 0,
-      "score": 0.866620892594409
+      "score": 0.8673962470894399
     },
     {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.015515903801396435,
+      "novelty": 0.01549426712116517,
       "conflict": 0,
-      "score": 0.8641892940263771
+      "score": 0.8641834521227147
     },
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
-      "activation": 0.9867466743912153,
-      "novelty": 0.007471607890017932,
+      "activation": 0.9876721386151907,
+      "novelty": 0.007466587023071754,
       "conflict": 0,
-      "score": 0.8551256048137368
+      "score": 0.8556054905761286
     },
     {
-      "node_id": "concept:215e4630b443981745e3",
-      "label": "rmaid",
+      "node_id": "concept:c55df1c6481becc48455",
+      "label": "haviourist",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:fbb88453ce9b3ea986b4",
-      "label": "entia",
+      "node_id": "concept:deab03cd4306dc1435c9",
+      "label": "referring",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 1791
     },
     "connect": {
-      "attempts": 1338,
-      "successes": 1334
+      "attempts": 1339,
+      "successes": 1335
     },
     "evolve": {
       "attempts": 81,
