@@ -1,41 +1,41 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-13T03:10:18.994234+00:00",
-  "generation": 9243,
+  "timestamp": "2026-11-13T03:13:29.742877+00:00",
+  "generation": 9244,
   "focus": "Analysis of the Phenomena of the Human Mind",
-  "last_action": "evolve",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "{\"accepted\": true, \"title\": \"Fix truncated fallback exploratory question generation block\", \"summary\": \"Completes the truncated code block in semantics.py where fallback exploratory questions were appended and returned. This fixes the syntax error and enables proper curiosity-driven exploratory questions when no cross-source comparison is produced.\", \"branch\": \"main\", \"pr_url\": null, \"commit_sha\":",
-  "last_provider": "gemini",
+  "last_action_detail": "nrem consolidation",
+  "last_provider": null,
   "last_provider_generation": 9243,
   "last_search_generation": 8901,
   "cortex": {
     "nodes": 15735,
-    "synapses": 128028,
+    "synapses": 128090,
     "active": 120,
-    "archived_synapses": 62508
+    "archived_synapses": 62418
   },
   "memory": {
-    "episodes": 6533,
-    "claims": 8348,
+    "episodes": 6534,
+    "claims": 8351,
     "stances": 40,
     "interests": 151,
-    "associative_comparisons": 5333,
+    "associative_comparisons": 5335,
     "screened_interpretations": 52,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8348,
-    "with_evidence_refs": 7275,
+    "total": 8351,
+    "with_evidence_refs": 7278,
     "without_evidence_refs": 1073,
-    "source_claims": 1845,
-    "hypotheses": 6374,
+    "source_claims": 1846,
+    "hypotheses": 6376,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 59195,
+    "events": 59207,
     "segments": 2041,
     "compressed_snapshot": true,
     "snapshot_events": 59181
@@ -71,9 +71,9 @@
       "node_id": "concept:0fc468dc240a979e",
       "label": "collection",
       "activation": 1.0,
-      "novelty": 0.03843197540353574,
+      "novelty": 0.038365624400537125,
       "conflict": 0,
-      "score": 0.8703766333589547
+      "score": 0.8703587185881452
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
@@ -114,8 +114,8 @@
       "successes": 1205
     },
     "consolidate": {
-      "attempts": 1761,
-      "successes": 1761
+      "attempts": 1762,
+      "successes": 1762
     },
     "connect": {
       "attempts": 1319,
