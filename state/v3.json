@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-13T07:42:53.445588+00:00",
-  "generation": 9278,
-  "focus": "The Principles of Psychology, Volume 1 (of 2)",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-13T07:57:55.499470+00:00",
+  "generation": 9279,
+  "focus": "The World as Will and Idea (Vol. 2 of 3)",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 9277,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15762,
+    "nodes": 15769,
     "synapses": 128379,
     "active": 120,
-    "archived_synapses": 62227
+    "archived_synapses": 62229
   },
   "memory": {
     "episodes": 6544,
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 59422,
+    "events": 59426,
     "segments": 2049,
     "compressed_snapshot": true,
     "snapshot_events": 59343
@@ -43,6 +43,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2521,
   "workspace": [
+    {
+      "node_id": "concept:1abe5f34c25e621d",
+      "label": "characteristic",
+      "activation": 1.0,
+      "novelty": 0.06854009595613433,
+      "conflict": 0,
+      "score": 0.8785058259081564
+    },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
@@ -52,12 +60,12 @@
       "score": 0.870485436893204
     },
     {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
       "activation": 1.0,
-      "novelty": 0.015669069257286117,
+      "novelty": 0.013656538067599864,
       "conflict": 0,
-      "score": 0.8642306486994673
+      "score": 0.8636872652782519
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -68,36 +76,28 @@
       "score": 0.8625271433919881
     },
     {
-      "node_id": "concept:a8e414a352f74065f842",
-      "label": "radation",
+      "node_id": "concept:add7fe85971a083ca065",
+      "label": "ingdom",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:767aefbe7aa9423e9cfa",
-      "label": "undeniable",
+      "node_id": "concept:08b513db711ca5c11837",
+      "label": "birthright",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:cc1b1210f1ce69eef0bc",
-      "label": "investigating",
+      "node_id": "concept:4844fdfbc864ac106bb9",
+      "label": "earned",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.78452319391635
-    },
-    {
-      "node_id": "concept:44a9f14d5ad36fc8b237",
-      "label": "organised",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -110,8 +110,8 @@
       "successes": 1798
     },
     "explore": {
-      "attempts": 1230,
-      "successes": 1213
+      "attempts": 1231,
+      "successes": 1214
     },
     "consolidate": {
       "attempts": 1773,
