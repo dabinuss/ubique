@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-14T07:33:54.668243+00:00",
-  "generation": 9446,
-  "focus": "The Riddle of the Universe",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-14T07:48:59.890166+00:00",
+  "generation": 9447,
+  "focus": "Analysis of the Phenomena of the Human Mind",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 9441,
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": "gemini",
+  "last_provider_generation": 9447,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15882,
+    "nodes": 15886,
     "synapses": 130043,
     "active": 120,
     "archived_synapses": 62545
   },
   "memory": {
     "episodes": 6605,
-    "claims": 8518,
+    "claims": 8519,
     "stances": 41,
     "interests": 151,
     "associative_comparisons": 5411,
@@ -26,22 +26,22 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8518,
+    "total": 8519,
     "with_evidence_refs": 7417,
-    "without_evidence_refs": 1101,
+    "without_evidence_refs": 1102,
     "source_claims": 1878,
-    "hypotheses": 6511,
+    "hypotheses": 6512,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 60587,
+    "events": 60593,
     "segments": 2090,
     "compressed_snapshot": true,
     "snapshot_events": 60502
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2573,
+  "evidence_reviews": 2574,
   "workspace": [
     {
       "node_id": "concept:ae835b22fe866b40",
@@ -68,6 +68,22 @@
       "score": 0.8704126494408022
     },
     {
+      "node_id": "concept:3f8b4464a99de3dc8c5c",
+      "label": "religious",
+      "activation": 1.0,
+      "novelty": 0.036656891495601175,
+      "conflict": 0,
+      "score": 0.8698973607038123
+    },
+    {
+      "node_id": "concept:53e5e7c5a884893739c4",
+      "label": "experience",
+      "activation": 1.0,
+      "novelty": 0.03635702599527359,
+      "conflict": 0,
+      "score": 0.8698163970187238
+    },
+    {
       "node_id": "concept:6907de2e8144a57274c7",
       "label": "treatise",
       "activation": 1.0,
@@ -82,22 +98,6 @@
       "novelty": 0.009219988936013277,
       "conflict": 0,
       "score": 0.8624893970127236
-    },
-    {
-      "node_id": "concept:2914bb7cf853f9b40e47",
-      "label": "tempted",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
-    },
-    {
-      "node_id": "concept:a47bc2990e8dab02a033",
-      "label": "nurture",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 1831
     },
     "connect": {
-      "attempts": 1367,
-      "successes": 1363
+      "attempts": 1368,
+      "successes": 1364
     },
     "evolve": {
       "attempts": 82,
