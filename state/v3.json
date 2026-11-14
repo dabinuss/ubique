@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-14T09:39:01.274289+00:00",
-  "generation": 9462,
-  "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-14T09:54:14.207622+00:00",
+  "generation": 9463,
+  "focus": "Analysis of the Phenomena of the Human Mind",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 9458,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15892,
+    "nodes": 15894,
     "synapses": 130229,
     "active": 120,
     "archived_synapses": 62751
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 60692,
+    "events": 60696,
     "segments": 2094,
     "compressed_snapshot": true,
     "snapshot_events": 60664
@@ -44,28 +44,12 @@
   "evidence_reviews": 2576,
   "workspace": [
     {
-      "node_id": "concept:ae835b22fe866b40",
-      "label": "circumstances",
-      "activation": 1.0,
-      "novelty": 0.04946821667078902,
-      "conflict": 0,
-      "score": 0.8733564185011131
-    },
-    {
       "node_id": "concept:8153c4e65bb853c8",
       "label": "identity",
       "activation": 1.0,
       "novelty": 0.046959380136182206,
       "conflict": 0,
       "score": 0.8726790326367693
-    },
-    {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 1.0,
-      "novelty": 0.03897116134060795,
-      "conflict": 0,
-      "score": 0.8705222135619641
     },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
@@ -92,6 +76,22 @@
       "score": 0.8698163970187238
     },
     {
+      "node_id": "concept:e2d5a675d4eab169",
+      "label": "continue",
+      "activation": 1.0,
+      "novelty": 0.034334763948497854,
+      "conflict": 0,
+      "score": 0.8692703862660944
+    },
+    {
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
+      "activation": 1.0,
+      "novelty": 0.029660388551090024,
+      "conflict": 0,
+      "score": 0.8680083049087943
+    },
+    {
       "node_id": "concept:6907de2e8144a57274c7",
       "label": "treatise",
       "activation": 1.0,
@@ -110,8 +110,8 @@
       "successes": 1798
     },
     "explore": {
-      "attempts": 1266,
-      "successes": 1249
+      "attempts": 1267,
+      "successes": 1250
     },
     "consolidate": {
       "attempts": 1836,
