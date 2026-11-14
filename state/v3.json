@@ -1,72 +1,48 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-14T05:24:05.645773+00:00",
-  "generation": 9429,
+  "timestamp": "2026-11-14T05:34:36.533377+00:00",
+  "generation": 9431,
   "focus": "A Treatise of Human Nature",
-  "last_action": "connect",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": null,
-  "last_provider_generation": 9424,
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": "gemini",
+  "last_provider_generation": 9431,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15869,
-    "synapses": 129752,
+    "nodes": 15871,
+    "synapses": 129758,
     "active": 120,
     "archived_synapses": 62538
   },
   "memory": {
-    "episodes": 6595,
-    "claims": 8504,
+    "episodes": 6600,
+    "claims": 8508,
     "stances": 41,
     "interests": 151,
-    "associative_comparisons": 5403,
+    "associative_comparisons": 5405,
     "screened_interpretations": 53,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8504,
-    "with_evidence_refs": 7405,
-    "without_evidence_refs": 1099,
+    "total": 8508,
+    "with_evidence_refs": 7407,
+    "without_evidence_refs": 1101,
     "source_claims": 1875,
-    "hypotheses": 6500,
+    "hypotheses": 6504,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 60462,
+    "events": 60485,
     "segments": 2086,
     "compressed_snapshot": true,
     "snapshot_events": 60341
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2567,
+  "evidence_reviews": 2571,
   "workspace": [
-    {
-      "node_id": "concept:dfd34a31322c29f8",
-      "label": "concepts",
-      "activation": 1.0,
-      "novelty": 0.1719690455717971,
-      "conflict": 0,
-      "score": 0.9064316423043852
-    },
-    {
-      "node_id": "concept:f59729641e18423b",
-      "label": "characteristics",
-      "activation": 1.0,
-      "novelty": 0.0986679822397632,
-      "conflict": 0,
-      "score": 0.8866403552047362
-    },
-    {
-      "node_id": "concept:411f62e7fd037280",
-      "label": "actually",
-      "activation": 1.0,
-      "novelty": 0.042716787697565144,
-      "conflict": 0,
-      "score": 0.8715335326783427
-    },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
@@ -92,12 +68,36 @@
       "score": 0.8672009601280171
     },
     {
+      "node_id": "concept:6907de2e8144a57274c7",
+      "label": "treatise",
+      "activation": 1.0,
+      "novelty": 0.02657454158915759,
+      "conflict": 0,
+      "score": 0.8671751262290726
+    },
+    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
-      "novelty": 0.009231479344564966,
+      "novelty": 0.009227646027498386,
       "conflict": 0,
-      "score": 0.8624924994230325
+      "score": 0.8624914644274246
+    },
+    {
+      "node_id": "concept:ad7fbdd96e2166ace3e2",
+      "label": "scottish",
+      "activation": 0.46,
+      "novelty": 0.7352941176470589,
+      "conflict": 0,
+      "score": 0.777729411764706
+    },
+    {
+      "node_id": "concept:0fee7196f6817d6f81e7",
+      "label": "introduce",
+      "activation": 0.46,
+      "novelty": 0.5970149253731344,
+      "conflict": 0,
+      "score": 0.7403940298507463
     }
   ],
   "skills": {
@@ -110,8 +110,8 @@
       "successes": 1798
     },
     "explore": {
-      "attempts": 1259,
-      "successes": 1242
+      "attempts": 1260,
+      "successes": 1243
     },
     "consolidate": {
       "attempts": 1824,
