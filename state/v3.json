@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-14T19:28:53.026694+00:00",
-  "generation": 9531,
-  "focus": "The Physical Basis of Mind",
-  "last_action": "connect",
+  "timestamp": "2026-11-14T19:32:17.912747+00:00",
+  "generation": 9532,
+  "focus": "The Nicomachean Ethics of Aristotle",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": null,
-  "last_provider_generation": 9526,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 9532,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15938,
-    "synapses": 130699,
+    "nodes": 15942,
+    "synapses": 130711,
     "active": 120,
-    "archived_synapses": 62759
+    "archived_synapses": 62713
   },
   "memory": {
     "episodes": 6636,
-    "claims": 8599,
+    "claims": 8603,
     "stances": 41,
     "interests": 151,
     "associative_comparisons": 5439,
@@ -26,23 +26,31 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8599,
-    "with_evidence_refs": 7481,
+    "total": 8603,
+    "with_evidence_refs": 7485,
     "without_evidence_refs": 1118,
     "source_claims": 1891,
-    "hypotheses": 6577,
+    "hypotheses": 6581,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 61187,
-    "segments": 2110,
+    "events": 61200,
+    "segments": 2111,
     "compressed_snapshot": true,
     "snapshot_events": 61159
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2609,
+  "evidence_reviews": 2613,
   "workspace": [
+    {
+      "node_id": "concept:3f8b4464a99de3dc8c5c",
+      "label": "religious",
+      "activation": 1.0,
+      "novelty": 0.036297640653357534,
+      "conflict": 0,
+      "score": 0.8698003629764066
+    },
     {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
@@ -68,36 +76,28 @@
       "score": 0.8619728910160389
     },
     {
-      "node_id": "concept:f2110e6cf92b93ae7b8b",
-      "label": "novel",
+      "node_id": "concept:40961b2f78daa25d1e47",
+      "label": "substituted",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:3d7eb3d3dab17ee509a6",
-      "label": "chair",
+      "node_id": "concept:f6952d6eef555ddd87ac",
+      "label": "penis",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:1d2550bc320e6f50e1dd",
-      "label": "recognized",
+      "node_id": "concept:7d4e02d31a7eb0f8b579",
+      "label": "realm",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.777729411764706
-    },
-    {
-      "node_id": "concept:a104852673b0dbb798f0",
-      "label": "conceived",
-      "activation": 0.46,
-      "novelty": 0.5970149253731344,
-      "conflict": 0,
-      "score": 0.7403940298507463
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1261
     },
     "consolidate": {
-      "attempts": 1859,
-      "successes": 1859
+      "attempts": 1860,
+      "successes": 1860
     },
     "connect": {
       "attempts": 1387,
