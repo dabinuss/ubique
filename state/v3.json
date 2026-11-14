@@ -1,48 +1,56 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-14T02:07:57.758270+00:00",
-  "generation": 9406,
-  "focus": "The Varieties of Religious Experience: A Study in Human Nature",
-  "last_action": "connect",
+  "timestamp": "2026-11-14T02:17:54.118675+00:00",
+  "generation": 9408,
+  "focus": "A Treatise of Human Nature",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": null,
-  "last_provider_generation": 9401,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "gemini",
+  "last_provider_generation": 9408,
   "last_search_generation": 8901,
   "cortex": {
     "nodes": 15856,
     "synapses": 129558,
     "active": 120,
-    "archived_synapses": 62396
+    "archived_synapses": 62328
   },
   "memory": {
-    "episodes": 6586,
-    "claims": 8489,
+    "episodes": 6591,
+    "claims": 8496,
     "stances": 41,
     "interests": 151,
-    "associative_comparisons": 5395,
+    "associative_comparisons": 5399,
     "screened_interpretations": 53,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8489,
-    "with_evidence_refs": 7390,
+    "total": 8496,
+    "with_evidence_refs": 7397,
     "without_evidence_refs": 1099,
-    "source_claims": 1871,
-    "hypotheses": 6489,
+    "source_claims": 1873,
+    "hypotheses": 6494,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 60315,
-    "segments": 2080,
+    "events": 60341,
+    "segments": 2081,
     "compressed_snapshot": true,
-    "snapshot_events": 60164
+    "snapshot_events": 60341
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2565,
+  "evidence_reviews": 2567,
   "workspace": [
+    {
+      "node_id": "concept:dfd34a31322c29f8",
+      "label": "concepts",
+      "activation": 1.0,
+      "novelty": 0.1719690455717971,
+      "conflict": 0,
+      "score": 0.9064316423043852
+    },
     {
       "node_id": "concept:721048dc35951006",
       "label": "observations",
@@ -50,6 +58,14 @@
       "novelty": 0.11383039271485486,
       "conflict": 0,
       "score": 0.8907342060330108
+    },
+    {
+      "node_id": "concept:f59729641e18423b",
+      "label": "characteristics",
+      "activation": 1.0,
+      "novelty": 0.09910802775024777,
+      "conflict": 0,
+      "score": 0.886759167492567
     },
     {
       "node_id": "concept:7308d385d05396e9",
@@ -60,6 +76,14 @@
       "score": 0.8865225933202359
     },
     {
+      "node_id": "concept:411f62e7fd037280",
+      "label": "actually",
+      "activation": 1.0,
+      "novelty": 0.042716787697565144,
+      "conflict": 0,
+      "score": 0.8715335326783427
+    },
+    {
       "node_id": "concept:3676cba44f159ed1",
       "label": "cognitive",
       "activation": 1.0,
@@ -68,36 +92,12 @@
       "score": 0.8709046849757673
     },
     {
-      "node_id": "concept:0fc468dc240a979e",
-      "label": "collection",
+      "node_id": "concept:2331eb33ce2c3766148e",
+      "label": "philosophy",
       "activation": 1.0,
-      "novelty": 0.037778617302606725,
+      "novelty": 0.03856536829926726,
       "conflict": 0,
-      "score": 0.8702002266717039
-    },
-    {
-      "node_id": "concept:6907de2e8144a57274c7",
-      "label": "treatise",
-      "activation": 1.0,
-      "novelty": 0.026670222696359516,
-      "conflict": 0,
-      "score": 0.8672009601280171
-    },
-    {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.009246844514309491,
-      "conflict": 0,
-      "score": 0.8624966480188636
-    },
-    {
-      "node_id": "concept:1c48f6310f1c849b4ac3",
-      "label": "mind",
-      "activation": 1.0,
-      "novelty": 0.007416747014759327,
-      "conflict": 0,
-      "score": 0.8620025216939851
+      "score": 0.8704126494408022
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1238
     },
     "consolidate": {
-      "attempts": 1816,
-      "successes": 1816
+      "attempts": 1817,
+      "successes": 1817
     },
     "connect": {
       "attempts": 1357,
