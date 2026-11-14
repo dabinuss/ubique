@@ -1,9 +1,9 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-14T08:37:28.893696+00:00",
-  "generation": 9454,
-  "focus": "A Treatise of Human Nature",
+  "timestamp": "2026-11-14T08:52:53.598717+00:00",
+  "generation": 9455,
+  "focus": "Human Nature and Conduct",
   "last_action": "consolidate",
   "last_action_success": true,
   "last_action_detail": "nrem consolidation",
@@ -11,10 +11,10 @@
   "last_provider_generation": 9452,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15886,
-    "synapses": 130085,
+    "nodes": 15890,
+    "synapses": 130127,
     "active": 120,
-    "archived_synapses": 62593
+    "archived_synapses": 62577
   },
   "memory": {
     "episodes": 6608,
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 60643,
+    "events": 60650,
     "segments": 2092,
     "compressed_snapshot": true,
     "snapshot_events": 60502
@@ -50,6 +50,14 @@
       "novelty": 0.04946821667078902,
       "conflict": 0,
       "score": 0.8733564185011131
+    },
+    {
+      "node_id": "concept:8153c4e65bb853c8",
+      "label": "identity",
+      "activation": 1.0,
+      "novelty": 0.046959380136182206,
+      "conflict": 0,
+      "score": 0.8726790326367693
     },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
@@ -90,14 +98,6 @@
       "novelty": 0.026511134676564158,
       "conflict": 0,
       "score": 0.8671580063626723
-    },
-    {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.00921234454168586,
-      "conflict": 0,
-      "score": 0.8624873330262552
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1247
     },
     "consolidate": {
-      "attempts": 1833,
-      "successes": 1833
+      "attempts": 1834,
+      "successes": 1834
     },
     "connect": {
       "attempts": 1369,
