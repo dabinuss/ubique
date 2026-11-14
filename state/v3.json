@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-14T01:08:04.912680+00:00",
-  "generation": 9398,
+  "timestamp": "2026-11-14T01:10:51.733207+00:00",
+  "generation": 9399,
   "focus": "A Treatise of Human Nature",
-  "last_action": "connect",
+  "last_action": "question",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "last_action_detail": "How do the authors approach great, life differently, given their emphases on called, century and attained, came? Which assumptions differ?",
   "last_provider": null,
   "last_provider_generation": 9397,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15846,
+    "nodes": 15854,
     "synapses": 129512,
     "active": 120,
     "archived_synapses": 62338
   },
   "memory": {
     "episodes": 6584,
-    "claims": 8487,
+    "claims": 8488,
     "stances": 41,
     "interests": 151,
     "associative_comparisons": 5395,
@@ -26,17 +26,17 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8487,
-    "with_evidence_refs": 7389,
+    "total": 8488,
+    "with_evidence_refs": 7390,
     "without_evidence_refs": 1098,
     "source_claims": 1871,
-    "hypotheses": 6487,
+    "hypotheses": 6488,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 60268,
-    "segments": 2078,
+    "events": 60274,
+    "segments": 2079,
     "compressed_snapshot": true,
     "snapshot_events": 60164
   },
@@ -44,12 +44,12 @@
   "evidence_reviews": 2564,
   "workspace": [
     {
-      "node_id": "concept:ca52e7d1c18961a8c5b3",
-      "label": "united",
+      "node_id": "concept:721048dc35951006",
+      "label": "observations",
       "activation": 1.0,
-      "novelty": 0.2702702702702703,
+      "novelty": 0.11806375442739081,
       "conflict": 0,
-      "score": 0.932972972972973
+      "score": 0.8918772136953956
     },
     {
       "node_id": "concept:7308d385d05396e9",
@@ -76,6 +76,14 @@
       "score": 0.8702002266717039
     },
     {
+      "node_id": "concept:6907de2e8144a57274c7",
+      "label": "treatise",
+      "activation": 1.0,
+      "novelty": 0.026961445133459157,
+      "conflict": 0,
+      "score": 0.867279590186034
+    },
+    {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
       "activation": 1.0,
@@ -90,14 +98,6 @@
       "novelty": 0.007416747014759327,
       "conflict": 0,
       "score": 0.8620025216939851
-    },
-    {
-      "node_id": "concept:cf3baf3e0481f5053135",
-      "label": "phallic",
-      "activation": 0.46,
-      "novelty": 0.6134969325153374,
-      "conflict": 0,
-      "score": 0.7448441717791412
     }
   ],
   "skills": {
@@ -130,8 +130,8 @@
       "successes": 496
     },
     "question": {
-      "attempts": 371,
-      "successes": 371
+      "attempts": 372,
+      "successes": 372
     },
     "library": {
       "attempts": 14,
