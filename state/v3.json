@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-14T05:37:38.742930+00:00",
-  "generation": 9432,
-  "focus": "The World as Will and Idea (Vol. 2 of 3)",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-14T05:53:22.442691+00:00",
+  "generation": 9433,
+  "focus": "Human Nature and Conduct",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 9431,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15873,
+    "nodes": 15877,
     "synapses": 129800,
     "active": 120,
     "archived_synapses": 62470
@@ -35,10 +35,10 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 60497,
-    "segments": 2086,
+    "events": 60502,
+    "segments": 2087,
     "compressed_snapshot": true,
-    "snapshot_events": 60341
+    "snapshot_events": 60502
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2571,
@@ -60,14 +60,6 @@
       "score": 0.8704126494408022
     },
     {
-      "node_id": "concept:5a2a957b269e8f0f",
-      "label": "external",
-      "activation": 1.0,
-      "novelty": 0.026670222696359516,
-      "conflict": 0,
-      "score": 0.8672009601280171
-    },
-    {
       "node_id": "concept:6907de2e8144a57274c7",
       "label": "treatise",
       "activation": 1.0,
@@ -84,20 +76,28 @@
       "score": 0.8624904302910115
     },
     {
-      "node_id": "concept:ad7fbdd96e2166ace3e2",
-      "label": "scottish",
+      "node_id": "concept:dc602477f692b688bded",
+      "label": "underlie",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:0fee7196f6817d6f81e7",
-      "label": "introduce",
+      "node_id": "concept:44e8809d6720c56c00d2",
+      "label": "heaped",
       "activation": 0.46,
-      "novelty": 0.5813953488372093,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7361767441860465
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:02edbe1bbec68e50b801",
+      "label": "overwhelmingly",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -110,8 +110,8 @@
       "successes": 1798
     },
     "explore": {
-      "attempts": 1260,
-      "successes": 1243
+      "attempts": 1261,
+      "successes": 1244
     },
     "consolidate": {
       "attempts": 1825,
