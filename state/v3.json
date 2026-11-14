@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-14T04:32:30.751182+00:00",
-  "generation": 9424,
+  "timestamp": "2026-11-14T04:47:51.873073+00:00",
+  "generation": 9425,
   "focus": "A Treatise of Human Nature",
-  "last_action": "consolidate",
+  "last_action": "question",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": "gemini",
+  "last_action_detail": "How do the authors approach fact, they differently, given their emphases on decision, evidence and against, appears? Which assumptions differ?",
+  "last_provider": null,
   "last_provider_generation": 9424,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15864,
+    "nodes": 15865,
     "synapses": 129644,
     "active": 120,
     "archived_synapses": 62494
   },
   "memory": {
     "episodes": 6595,
-    "claims": 8503,
+    "claims": 8504,
     "stances": 41,
     "interests": 151,
     "associative_comparisons": 5403,
@@ -26,16 +26,16 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8503,
-    "with_evidence_refs": 7404,
+    "total": 8504,
+    "with_evidence_refs": 7405,
     "without_evidence_refs": 1099,
     "source_claims": 1875,
-    "hypotheses": 6499,
+    "hypotheses": 6500,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 60436,
+    "events": 60444,
     "segments": 2085,
     "compressed_snapshot": true,
     "snapshot_events": 60341
@@ -50,14 +50,6 @@
       "novelty": 0.1719690455717971,
       "conflict": 0,
       "score": 0.9064316423043852
-    },
-    {
-      "node_id": "concept:721048dc35951006",
-      "label": "observations",
-      "activation": 1.0,
-      "novelty": 0.11325028312570781,
-      "conflict": 0,
-      "score": 0.8905775764439412
     },
     {
       "node_id": "concept:f59729641e18423b",
@@ -95,9 +87,17 @@
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
       "activation": 1.0,
-      "novelty": 0.02673439379762064,
+      "novelty": 0.026702269692923903,
       "conflict": 0,
-      "score": 0.8672182863253577
+      "score": 0.8672096128170894
+    },
+    {
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.009231479344564966,
+      "conflict": 0,
+      "score": 0.8624924994230325
     }
   ],
   "skills": {
@@ -130,8 +130,8 @@
       "successes": 498
     },
     "question": {
-      "attempts": 373,
-      "successes": 373
+      "attempts": 374,
+      "successes": 374
     },
     "library": {
       "attempts": 14,
