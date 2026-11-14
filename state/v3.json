@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-14T21:31:54.065741+00:00",
-  "generation": 9546,
-  "focus": "The Principles of Psychology, Volume 1 (of 2)",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-14T21:47:25.210830+00:00",
+  "generation": 9547,
+  "focus": "The Master of Destiny: A Biography of the Brain",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 9543,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15947,
+    "nodes": 15948,
     "synapses": 130725,
     "active": 120,
     "archived_synapses": 62643
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 61297,
+    "events": 61301,
     "segments": 2114,
     "compressed_snapshot": true,
     "snapshot_events": 61159
@@ -43,6 +43,22 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2619,
   "workspace": [
+    {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.04460303300624443,
+      "conflict": 0,
+      "score": 0.872042818911686
+    },
+    {
+      "node_id": "concept:2331eb33ce2c3766148e",
+      "label": "philosophy",
+      "activation": 1.0,
+      "novelty": 0.03843197540353574,
+      "conflict": 0,
+      "score": 0.8703766333589547
+    },
     {
       "node_id": "concept:3f8b4464a99de3dc8c5c",
       "label": "religious",
@@ -55,49 +71,33 @@
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.0146756677428823,
+      "novelty": 0.014665982254161472,
       "conflict": 0,
-      "score": 0.8639624302905782
+      "score": 0.8639598152086236
     },
     {
-      "node_id": "concept:1c48f6310f1c849b4ac3",
-      "label": "mind",
-      "activation": 1.0,
-      "novelty": 0.007302201613786557,
-      "conflict": 0,
-      "score": 0.8619715944357225
-    },
-    {
-      "node_id": "concept:d05c34e72352778bfa90",
-      "label": "theatre",
+      "node_id": "concept:fde281f3efb869cd55ba",
+      "label": "satisfied",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:8dd9ed10798ded82a255",
-      "label": "amateur",
+      "node_id": "concept:2caf12e458200ad23c3e",
+      "label": "clearer",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.78452319391635
     },
     {
-      "node_id": "concept:c1c289b55166195bdd40",
-      "label": "feminist",
+      "node_id": "concept:a9382f7e93be5b15ba16",
+      "label": "inclined",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.5970149253731344,
       "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:522ce7057fd0523adcd6",
-      "label": "margaret",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.7403940298507463
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 1865
     },
     "connect": {
-      "attempts": 1390,
-      "successes": 1386
+      "attempts": 1391,
+      "successes": 1387
     },
     "evolve": {
       "attempts": 83,
