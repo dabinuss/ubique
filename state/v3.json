@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-14T12:28:45.566705+00:00",
-  "generation": 9480,
-  "focus": "The Master of Destiny: A Biography of the Brain",
-  "last_action": "evolve",
+  "timestamp": "2026-11-14T12:31:35.957681+00:00",
+  "generation": 9481,
+  "focus": "The Principles of Psychology, Volume 1 (of 2)",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "{\"accepted\": true, \"title\": \"Fix truncated fallback block in semantics.py\", \"summary\": \"Completes the fallback block in semantics.py by adding the closing parenthesis and bracket for result.append(exploration) and the final closing brace of the observe method, repairing module compilation and test execution.\", \"branch\": \"main\", \"pr_url\": null, \"commit_sha\": \"787fc2fdc353a57c82f50dc333181d5230ae9d9",
-  "last_provider": null,
-  "last_provider_generation": 9475,
+  "last_action_detail": "observed_associations",
+  "last_provider": "groq",
+  "last_provider_generation": 9481,
   "last_search_generation": 8901,
   "cortex": {
     "nodes": 15906,
     "synapses": 130364,
     "active": 120,
-    "archived_synapses": 62700
+    "archived_synapses": 62750
   },
   "memory": {
-    "episodes": 6617,
-    "claims": 8543,
+    "episodes": 6621,
+    "claims": 8546,
     "stances": 41,
     "interests": 151,
     "associative_comparisons": 5423,
@@ -26,22 +26,22 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8543,
+    "total": 8546,
     "with_evidence_refs": 7438,
-    "without_evidence_refs": 1105,
+    "without_evidence_refs": 1108,
     "source_claims": 1883,
-    "hypotheses": 6531,
+    "hypotheses": 6534,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 60815,
+    "events": 60830,
     "segments": 2098,
     "compressed_snapshot": true,
-    "snapshot_events": 60664
+    "snapshot_events": 60830
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2581,
+  "evidence_reviews": 2584,
   "workspace": [
     {
       "node_id": "concept:e2d5a675d4eab169",
@@ -87,17 +87,17 @@
       "node_id": "concept:40df7df8c9ad3055fb82",
       "label": "accomplish",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:a85099cd5a3dd017757d",
       "label": "avail",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     }
   ],
   "skills": {
@@ -126,8 +126,8 @@
       "successes": 47
     },
     "experiment": {
-      "attempts": 505,
-      "successes": 503
+      "attempts": 506,
+      "successes": 504
     },
     "question": {
       "attempts": 377,
