@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-14T06:36:00.035211+00:00",
-  "generation": 9439,
-  "focus": "Psychology of the Unconscious",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-14T06:51:21.207727+00:00",
+  "generation": 9440,
+  "focus": "The Psychology of the Emotions",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 9435,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 15879,
+    "nodes": 15882,
     "synapses": 129967,
     "active": 120,
     "archived_synapses": 62605
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 60542,
+    "events": 60548,
     "segments": 2088,
     "compressed_snapshot": true,
     "snapshot_events": 60502
@@ -44,12 +44,20 @@
   "evidence_reviews": 2572,
   "workspace": [
     {
+      "node_id": "concept:ae835b22fe866b40",
+      "label": "circumstances",
+      "activation": 1.0,
+      "novelty": 0.04946821667078902,
+      "conflict": 0,
+      "score": 0.8733564185011131
+    },
+    {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
       "activation": 1.0,
-      "novelty": 0.03945551390806865,
+      "novelty": 0.03938558487593541,
       "conflict": 0,
-      "score": 0.8706529887551786
+      "score": 0.8706341079165025
     },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
@@ -76,28 +84,20 @@
       "score": 0.8624893970127236
     },
     {
-      "node_id": "concept:dc602477f692b688bded",
-      "label": "underlie",
+      "node_id": "concept:2914bb7cf853f9b40e47",
+      "label": "tempted",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:44e8809d6720c56c00d2",
-      "label": "heaped",
+      "node_id": "concept:a47bc2990e8dab02a033",
+      "label": "nurture",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.78452319391635
-    },
-    {
-      "node_id": "concept:02edbe1bbec68e50b801",
-      "label": "overwhelmingly",
-      "activation": 0.46,
-      "novelty": 0.7604562737642586,
-      "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 1828
     },
     "connect": {
-      "attempts": 1365,
-      "successes": 1361
+      "attempts": 1366,
+      "successes": 1362
     },
     "evolve": {
       "attempts": 82,
