@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-15T10:41:50.629406+00:00",
-  "generation": 9636,
-  "focus": "The World as Will and Idea (Vol. 3 of 3)",
-  "last_action": "experiment",
+  "timestamp": "2026-11-15T10:52:29.593922+00:00",
+  "generation": 9638,
+  "focus": "The World as Will and Idea (Vol. 1 of 3)",
+  "last_action": "evolve",
   "last_action_success": true,
-  "last_action_detail": "observed_comparison",
+  "last_action_detail": "{\"accepted\": true, \"title\": \"Fix truncated fallback exploratory question generation snippet in semantics.py\", \"summary\": \"Complete the truncated result.append(exploration) statement in the fallback exploratory question block of semantics.py to ensure syntactically valid code and restore curiosity-driven exploratory questions.\", \"branch\": \"main\", \"pr_url\": null, \"commit_sha\": \"3f04ff8bd1dbece668304",
   "last_provider": null,
   "last_provider_generation": 9634,
   "last_search_generation": 8901,
@@ -17,25 +17,25 @@
     "archived_synapses": 62962
   },
   "memory": {
-    "episodes": 6677,
-    "claims": 8671,
+    "episodes": 6678,
+    "claims": 8672,
     "stances": 42,
     "interests": 151,
-    "associative_comparisons": 5473,
+    "associative_comparisons": 5475,
     "screened_interpretations": 57,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8671,
-    "with_evidence_refs": 7543,
+    "total": 8672,
+    "with_evidence_refs": 7544,
     "without_evidence_refs": 1128,
     "source_claims": 1904,
-    "hypotheses": 6636,
+    "hypotheses": 6637,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 61891,
+    "events": 61904,
     "segments": 2136,
     "compressed_snapshot": true,
     "snapshot_events": 61806
@@ -60,12 +60,12 @@
       "score": 0.8725991600559964
     },
     {
-      "node_id": "concept:3f8b4464a99de3dc8c5c",
-      "label": "religious",
+      "node_id": "concept:2331eb33ce2c3766148e",
+      "label": "philosophy",
       "activation": 1.0,
-      "novelty": 0.03588731383455949,
+      "novelty": 0.038299502106472615,
       "conflict": 0,
-      "score": 0.869689574735331
+      "score": 0.8703408655687477
     },
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
@@ -76,28 +76,28 @@
       "score": 0.8619485440046188
     },
     {
-      "node_id": "concept:d512d96ea31ab0b9bb9b",
-      "label": "interrupted",
+      "node_id": "concept:51f048a4ab1a15ffdad4",
+      "label": "sapiens",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.7713708185053381
     },
     {
-      "node_id": "concept:665c08c04775bf4e1d9e",
-      "label": "disposition",
+      "node_id": "concept:ee8d28ea4f5d3733b709",
+      "label": "bipedalism",
+      "activation": 0.46,
+      "novelty": 0.7117437722419929,
+      "conflict": 0,
+      "score": 0.7713708185053381
+    },
+    {
+      "node_id": "concept:70aafb4266950c0d17c3",
+      "label": "homo",
       "activation": 0.46,
       "novelty": 0.6896551724137931,
       "conflict": 0,
       "score": 0.7654068965517242
-    },
-    {
-      "node_id": "concept:bc6bc4d6eff436ab1112",
-      "label": "perceptions",
-      "activation": 0.46,
-      "novelty": 0.6134969325153374,
-      "conflict": 0,
-      "score": 0.7448441717791412
     }
   ],
   "skills": {
@@ -122,8 +122,8 @@
       "successes": 1409
     },
     "evolve": {
-      "attempts": 84,
-      "successes": 47
+      "attempts": 85,
+      "successes": 48
     },
     "experiment": {
       "attempts": 520,
