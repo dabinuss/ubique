@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-16T08:53:09.810464+00:00",
-  "generation": 9795,
+  "timestamp": "2026-11-16T09:08:07.013466+00:00",
+  "generation": 9796,
   "focus": "Psychology of the Unconscious",
-  "last_action": "consolidate",
-  "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action": "evolve",
+  "last_action_success": false,
+  "last_action_detail": "{\"accepted\": false, \"title\": \"Rejected evolution\", \"summary\": \"\", \"branch\": null, \"pr_url\": null, \"commit_sha\": null, \"reason\": \"proposal rejected: proposal did not contain a JSON object\", \"baseline_score\": null, \"candidate_score\": null}",
   "last_provider": null,
   "last_provider_generation": 9792,
   "last_search_generation": 8901,
@@ -35,8 +35,8 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 62960,
-    "segments": 2174,
+    "events": 62966,
+    "segments": 2175,
     "compressed_snapshot": true,
     "snapshot_events": 62944
   },
@@ -47,9 +47,9 @@
       "node_id": "concept:1abe5f34c25e621d",
       "label": "characteristic",
       "activation": 1.0,
-      "novelty": 0.06309148264984227,
+      "novelty": 0.06291286568103177,
       "conflict": 0,
-      "score": 0.8770347003154575
+      "score": 0.8769864737338786
     },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
@@ -79,25 +79,25 @@
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
       "activation": 1.0,
-      "novelty": 0.007128854036713598,
+      "novelty": 0.00712428311901115,
       "conflict": 0,
-      "score": 0.8619247905899128
+      "score": 0.861923556442133
     },
     {
       "node_id": "concept:6c48910f8711c3c1de27",
       "label": "amiliar",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:8e4764c3e0510a1c0bc3",
       "label": "gaping",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -122,7 +122,7 @@
       "successes": 1447
     },
     "evolve": {
-      "attempts": 86,
+      "attempts": 87,
       "successes": 48
     },
     "experiment": {
