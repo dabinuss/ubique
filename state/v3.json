@@ -1,47 +1,47 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-16T05:53:26.504640+00:00",
-  "generation": 9774,
+  "timestamp": "2026-11-16T06:04:20.194497+00:00",
+  "generation": 9776,
   "focus": "The Principles of Psychology, Volume 1 (of 2)",
-  "last_action": "connect",
+  "last_action": "question",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
-  "last_provider": null,
-  "last_provider_generation": 9770,
+  "last_action_detail": "How do the authors approach they, under differently, given their emphases on affirm, best and agreeable, chapter? Which assumptions differ?",
+  "last_provider": "gemini",
+  "last_provider_generation": 9776,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 16065,
-    "synapses": 132030,
+    "nodes": 16067,
+    "synapses": 132032,
     "active": 120,
     "archived_synapses": 62922
   },
   "memory": {
-    "episodes": 6726,
-    "claims": 8769,
+    "episodes": 6731,
+    "claims": 8773,
     "stances": 44,
     "interests": 151,
-    "associative_comparisons": 5519,
+    "associative_comparisons": 5521,
     "screened_interpretations": 59,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8769,
-    "with_evidence_refs": 7629,
-    "without_evidence_refs": 1140,
+    "total": 8773,
+    "with_evidence_refs": 7632,
+    "without_evidence_refs": 1141,
     "source_claims": 1921,
-    "hypotheses": 6717,
+    "hypotheses": 6721,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 62819,
-    "segments": 2169,
+    "events": 62842,
+    "segments": 2170,
     "compressed_snapshot": true,
     "snapshot_events": 62780
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2675,
+  "evidence_reviews": 2678,
   "workspace": [
     {
       "node_id": "concept:6d4cd66a62bfdfa5",
@@ -58,14 +58,6 @@
       "novelty": 0.03890293717175647,
       "conflict": 0,
       "score": 0.8705037930363744
-    },
-    {
-      "node_id": "concept:2331eb33ce2c3766148e",
-      "label": "philosophy",
-      "activation": 1.0,
-      "novelty": 0.038102495713469235,
-      "conflict": 0,
-      "score": 0.8702876738426368
     },
     {
       "node_id": "concept:e2d5a675d4eab169",
@@ -92,12 +84,20 @@
       "score": 0.8619303639093445
     },
     {
-      "node_id": "concept:3ddb409b91aa3a076771",
-      "label": "doers",
+      "node_id": "concept:3cf46ab4906eb199effd",
+      "label": "announced",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.6134969325153374,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.7448441717791412
+    },
+    {
+      "node_id": "concept:eddd094a65fe7e599d3d",
+      "label": "gunn",
+      "activation": 0.46,
+      "novelty": 0.6134969325153374,
+      "conflict": 0,
+      "score": 0.7448441717791412
     }
   ],
   "skills": {
@@ -130,8 +130,8 @@
       "successes": 530
     },
     "question": {
-      "attempts": 398,
-      "successes": 398
+      "attempts": 399,
+      "successes": 399
     },
     "library": {
       "attempts": 14,
