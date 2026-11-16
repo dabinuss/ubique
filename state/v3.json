@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-16T17:52:29.645908+00:00",
-  "generation": 9842,
-  "focus": "The Principles of Psychology, Volume 1 (of 2)",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-16T18:07:50.177503+00:00",
+  "generation": 9843,
+  "focus": "The Republic of Plato",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 9838,
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": "groq",
+  "last_provider_generation": 9843,
   "last_search_generation": 8901,
   "cortex": {
     "nodes": 16111,
-    "synapses": 132309,
+    "synapses": 132313,
     "active": 120,
     "archived_synapses": 63287
   },
   "memory": {
     "episodes": 6757,
-    "claims": 8819,
+    "claims": 8822,
     "stances": 44,
     "interests": 151,
     "associative_comparisons": 5541,
@@ -26,39 +26,23 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8819,
-    "with_evidence_refs": 7669,
+    "total": 8822,
+    "with_evidence_refs": 7672,
     "without_evidence_refs": 1150,
     "source_claims": 1928,
-    "hypotheses": 6760,
+    "hypotheses": 6763,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 63291,
+    "events": 63301,
     "segments": 2186,
     "compressed_snapshot": true,
     "snapshot_events": 63273
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2697,
+  "evidence_reviews": 2700,
   "workspace": [
-    {
-      "node_id": "concept:721048dc35951006",
-      "label": "observations",
-      "activation": 1.0,
-      "novelty": 0.10621348911311737,
-      "conflict": 0,
-      "score": 0.8886776420605418
-    },
-    {
-      "node_id": "concept:54476ce93ea4a148",
-      "label": "distinguish",
-      "activation": 1.0,
-      "novelty": 0.04060913705583756,
-      "conflict": 0,
-      "score": 0.8709644670050762
-    },
     {
       "node_id": "concept:3f8b4464a99de3dc8c5c",
       "label": "religious",
@@ -71,33 +55,49 @@
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
       "activation": 1.0,
-      "novelty": 0.007078894276713978,
+      "novelty": 0.007076640011322624,
       "conflict": 0,
-      "score": 0.8619113014547128
+      "score": 0.8619106928030571
     },
     {
-      "node_id": "concept:14b6711acf7ec3d804c2",
-      "label": "quantitas",
+      "node_id": "concept:d93a9a958f6512adbe08",
+      "label": "significantly",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.7917984251968504
     },
     {
-      "node_id": "concept:45591c70c8b034bcb107",
-      "label": "motus",
+      "node_id": "concept:6e81d0dbcaf1061d3730",
+      "label": "cité",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.7917984251968504
     },
     {
-      "node_id": "concept:7d2857159e3091222d89",
-      "label": "velocity",
+      "node_id": "concept:ea922779e43666e57f5b",
+      "label": "rêves",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.7917984251968504
+    },
+    {
+      "node_id": "concept:347b6e461cf153171235",
+      "label": "symbolism",
+      "activation": 0.46,
+      "novelty": 0.5970149253731344,
+      "conflict": 0,
+      "score": 0.7403940298507463
+    },
+    {
+      "node_id": "concept:d2641888ed6426afd3d3",
+      "label": "miller",
+      "activation": 0.46,
+      "novelty": 0.56657223796034,
+      "conflict": 0,
+      "score": 0.7321745042492918
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 1967
     },
     "connect": {
-      "attempts": 1462,
-      "successes": 1458
+      "attempts": 1463,
+      "successes": 1459
     },
     "evolve": {
       "attempts": 87,
