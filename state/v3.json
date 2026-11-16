@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-16T19:23:50.721536+00:00",
-  "generation": 9854,
+  "timestamp": "2026-11-16T19:39:19.987558+00:00",
+  "generation": 9855,
   "focus": "The Principles of Psychology, Volume 1 (of 2)",
-  "last_action": "question",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "How do the authors approach fact, must, they differently, given their emphases on accept, apolar and animalculæ, avoid? Which assumptions differ?",
-  "last_provider": null,
-  "last_provider_generation": 9849,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "groq",
+  "last_provider_generation": 9855,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 16113,
-    "synapses": 132344,
+    "nodes": 16117,
+    "synapses": 132370,
     "active": 120,
-    "archived_synapses": 63342
+    "archived_synapses": 63306
   },
   "memory": {
     "episodes": 6762,
-    "claims": 8831,
+    "claims": 8834,
     "stances": 44,
     "interests": 151,
     "associative_comparisons": 5545,
@@ -26,30 +26,30 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8831,
-    "with_evidence_refs": 7681,
+    "total": 8834,
+    "with_evidence_refs": 7684,
     "without_evidence_refs": 1150,
     "source_claims": 1929,
-    "hypotheses": 6771,
+    "hypotheses": 6774,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 63377,
+    "events": 63390,
     "segments": 2189,
     "compressed_snapshot": true,
     "snapshot_events": 63273
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2704,
+  "evidence_reviews": 2707,
   "workspace": [
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
       "activation": 1.0,
-      "novelty": 0.0384985563041386,
+      "novelty": 0.03843197540353574,
       "conflict": 0,
-      "score": 0.8703946102021174
+      "score": 0.8703766333589547
     },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
@@ -63,41 +63,41 @@
       "node_id": "concept:20ddf8eaafbb891d175a",
       "label": "apolar",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8080135593220339
     },
     {
       "node_id": "concept:af5e1459cf345d3d422a",
       "label": "disappeared",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8080135593220339
     },
     {
       "node_id": "concept:c125d0397b605657bc89",
       "label": "accept",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.7352941176470589,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.777729411764706
     },
     {
       "node_id": "concept:dc51ef030baf1aba7b57",
       "label": "infancy",
       "activation": 0.46,
-      "novelty": 0.6134969325153374,
+      "novelty": 0.5970149253731344,
       "conflict": 0,
-      "score": 0.7448441717791412
+      "score": 0.7403940298507463
     },
     {
       "node_id": "concept:e0b919fec08134919b81",
       "label": "regarded",
       "activation": 0.46,
-      "novelty": 0.5390835579514824,
+      "novelty": 0.5263157894736842,
       "conflict": 0,
-      "score": 0.7247525606469003
+      "score": 0.7213052631578948
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1323
     },
     "consolidate": {
-      "attempts": 1970,
-      "successes": 1970
+      "attempts": 1971,
+      "successes": 1971
     },
     "connect": {
       "attempts": 1465,
