@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-17T00:54:24.341536+00:00",
-  "generation": 9875,
-  "focus": "The Riddle of the Universe",
-  "last_action": "evolve",
+  "timestamp": "2026-11-17T00:57:39.508717+00:00",
+  "generation": 9876,
+  "focus": "Psychology: Briefer Course",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "{\"accepted\": true, \"title\": \"Fix truncated source file in semantics.py\", \"summary\": \"Repair the truncated ending of src/ubique/v3/semantics.py to restore full file integrity and ensure successful test execution.\", \"branch\": \"main\", \"pr_url\": null, \"commit_sha\": \"4769c1b50b5151f6d6badfc7e1b5a66cb939f8c3\", \"reason\": null, \"baseline_score\": 10, \"candidate_score\": 10}",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 9873,
   "last_search_generation": 8901,
@@ -14,7 +14,7 @@
     "nodes": 16129,
     "synapses": 132462,
     "active": 120,
-    "archived_synapses": 63430
+    "archived_synapses": 63444
   },
   "memory": {
     "episodes": 6766,
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 63520,
+    "events": 63525,
     "segments": 2194,
     "compressed_snapshot": true,
     "snapshot_events": 63435
@@ -47,9 +47,9 @@
       "node_id": "concept:48d492d08e9d314c034c",
       "label": "studies",
       "activation": 1.0,
-      "novelty": 0.039525691699604744,
+      "novelty": 0.03945551390806865,
       "conflict": 0,
-      "score": 0.8706719367588933
+      "score": 0.8706529887551786
     },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
@@ -71,33 +71,33 @@
       "node_id": "concept:63be8044d77188f24a00",
       "label": "assure",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:92bc2e412115876270c8",
       "label": "infer",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.9174311926605504,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.8269064220183486
     },
     {
       "node_id": "concept:d8198efa3604d1648534",
       "label": "clock",
       "activation": 0.46,
-      "novelty": 0.8810572687224669,
+      "novelty": 0.8474576271186441,
       "conflict": 0,
-      "score": 0.8170854625550661
+      "score": 0.8080135593220339
     },
     {
       "node_id": "concept:9d16f739f94eddd6300d",
       "label": "outward",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.6896551724137931,
       "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.7654068965517242
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1327
     },
     "consolidate": {
-      "attempts": 1978,
-      "successes": 1978
+      "attempts": 1979,
+      "successes": 1979
     },
     "connect": {
       "attempts": 1471,
