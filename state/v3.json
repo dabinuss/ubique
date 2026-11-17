@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-17T15:58:22.725275+00:00",
-  "generation": 9983,
-  "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-17T16:13:43.811569+00:00",
+  "generation": 9984,
+  "focus": "A Treatise of Human Nature",
+  "last_action": "question",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "How do the authors approach difficulty, great differently, given their emphases on attained, came and bridge, child? Which assumptions differ?",
   "last_provider": null,
   "last_provider_generation": 9979,
   "last_search_generation": 8901,
@@ -18,7 +18,7 @@
   },
   "memory": {
     "episodes": 6797,
-    "claims": 8924,
+    "claims": 8925,
     "stances": 47,
     "interests": 151,
     "associative_comparisons": 5587,
@@ -26,23 +26,31 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8924,
-    "with_evidence_refs": 7762,
+    "total": 8925,
+    "with_evidence_refs": 7763,
     "without_evidence_refs": 1162,
     "source_claims": 1948,
-    "hypotheses": 6845,
+    "hypotheses": 6846,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 64221,
-    "segments": 2219,
+    "events": 64227,
+    "segments": 2220,
     "compressed_snapshot": true,
     "snapshot_events": 64083
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2735,
   "workspace": [
+    {
+      "node_id": "concept:ca52e7d1c18961a8c5b3",
+      "label": "united",
+      "activation": 1.0,
+      "novelty": 0.26702269692923897,
+      "conflict": 0,
+      "score": 0.9320961281708946
+    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -52,28 +60,12 @@
       "score": 0.8714020270270271
     },
     {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
-      "activation": 1.0,
-      "novelty": 0.03784295175023652,
-      "conflict": 0,
-      "score": 0.8702175969725638
-    },
-    {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
       "activation": 1.0,
       "novelty": 0.037714501225721286,
       "conflict": 0,
       "score": 0.8701829153309448
-    },
-    {
-      "node_id": "concept:e2d5a675d4eab169",
-      "label": "continue",
-      "activation": 1.0,
-      "novelty": 0.030983733539891558,
-      "conflict": 0,
-      "score": 0.8683656080557707
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -92,12 +84,20 @@
       "score": 0.8618872540453641
     },
     {
-      "node_id": "concept:9d0c52ae7023170cf843",
-      "label": "christopher",
+      "node_id": "concept:beaafa510bcc774b1be0",
+      "label": "monster",
       "activation": 0.46,
-      "novelty": 0.9569377990430623,
+      "novelty": 0.7352941176470589,
       "conflict": 0,
-      "score": 0.837573205741627
+      "score": 0.777729411764706
+    },
+    {
+      "node_id": "concept:523d902b852d396980ba",
+      "label": "rahus",
+      "activation": 0.46,
+      "novelty": 0.7352941176470589,
+      "conflict": 0,
+      "score": 0.777729411764706
     }
   ],
   "skills": {
@@ -130,8 +130,8 @@
       "successes": 551
     },
     "question": {
-      "attempts": 414,
-      "successes": 414
+      "attempts": 415,
+      "successes": 415
     },
     "library": {
       "attempts": 14,
