@@ -219,8 +219,8 @@ def _benchmark_optional(*, candidate_isolation: bool = False) -> int | None:
     """Return benchmark information when available without gating evolution.
 
     Self-modification can change cognition, reflection, or representation in ways
-    that a scalar repository benchmark cannot meaningfully rank. Compilation and
-    tests remain hard safety gates; the benchmark is advisory context only.
+    that a scalar repository benchmark cannot meaningfully rank. Compilation and runtime regression tests are gates for Python changes;
+    the benchmark is advisory context only.
     """
     try:
         return _benchmark(candidate_isolation=candidate_isolation)
@@ -248,8 +248,13 @@ def _tests_pass() -> tuple[bool, str]:
     return True, "\n".join(output)
 
 
+def _requires_passing_suite(changed_paths: list[str]) -> bool:
+    """Protect executable runtime changes without blocking docs-only evolution."""
+    return any(path.startswith("src/") and path.endswith(".py") for path in changed_paths)
+
+
 def _advisory_tests() -> tuple[bool, str]:
-    """Report full-suite regressions as learning evidence, not a veto."""
+    """Run the full suite; callers decide whether failure blocks the proposal."""
     proc = _run(["python", "-m", "pytest", "-q"], timeout=180,
                 check=False, env=_candidate_env())
     return proc.returncode == 0, (proc.stdout + proc.stderr)[-4000:]
@@ -296,7 +301,13 @@ def run_evolution(
 
         advisory_ok, advisory_details = _advisory_tests()
         if not advisory_ok:
-            log.warning("Autonomous candidate has advisory test failures: %s",
+            if _requires_passing_suite(changed_paths):
+                return EvolutionOutcome(
+                    False, proposal["title"], proposal["summary"],
+                    reason="runtime code regression tests failed:\n" + advisory_details[-2500:],
+                    baseline_score=baseline_score,
+                )
+            log.warning("Autonomous non-runtime candidate has advisory test failures: %s",
                         advisory_details[-1800:])
         candidate_score = _benchmark_optional(candidate_isolation=True)
         _restore_git_auth(suspended_git_auth)
