@@ -1,41 +1,41 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-17T15:47:46.305698+00:00",
-  "generation": 9981,
-  "focus": "The Nicomachean Ethics of Aristotle",
-  "last_action": "connect",
+  "timestamp": "2026-11-17T15:58:22.725275+00:00",
+  "generation": 9983,
+  "focus": "The Principles of Psychology, Volume 2 (of 2)",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Formed tentative analogy",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 9979,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 16208,
-    "synapses": 133315,
+    "nodes": 16212,
+    "synapses": 133316,
     "active": 120,
-    "archived_synapses": 62763
+    "archived_synapses": 62732
   },
   "memory": {
-    "episodes": 6795,
-    "claims": 8920,
+    "episodes": 6797,
+    "claims": 8924,
     "stances": 47,
     "interests": 151,
-    "associative_comparisons": 5583,
+    "associative_comparisons": 5587,
     "screened_interpretations": 63,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8920,
-    "with_evidence_refs": 7758,
+    "total": 8924,
+    "with_evidence_refs": 7762,
     "without_evidence_refs": 1162,
-    "source_claims": 1947,
-    "hypotheses": 6842,
+    "source_claims": 1948,
+    "hypotheses": 6845,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 64202,
+    "events": 64221,
     "segments": 2219,
     "compressed_snapshot": true,
     "snapshot_events": 64083
@@ -43,6 +43,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2735,
   "workspace": [
+    {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.04222972972972973,
+      "conflict": 0,
+      "score": 0.8714020270270271
+    },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
@@ -52,12 +60,12 @@
       "score": 0.8702175969725638
     },
     {
-      "node_id": "concept:53e5e7c5a884893739c4",
-      "label": "experience",
+      "node_id": "concept:2331eb33ce2c3766148e",
+      "label": "philosophy",
       "activation": 1.0,
-      "novelty": 0.03428179636612959,
+      "novelty": 0.037714501225721286,
       "conflict": 0,
-      "score": 0.8692560850188551
+      "score": 0.8701829153309448
     },
     {
       "node_id": "concept:e2d5a675d4eab169",
@@ -84,20 +92,12 @@
       "score": 0.8618872540453641
     },
     {
-      "node_id": "concept:f81e19a3e3da39ee424f",
-      "label": "tinct",
+      "node_id": "concept:9d0c52ae7023170cf843",
+      "label": "christopher",
       "activation": 0.46,
-      "novelty": 0.7117437722419929,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7713708185053381
-    },
-    {
-      "node_id": "concept:2d9a2132862d44bb5150",
-      "label": "exemplars",
-      "activation": 0.46,
-      "novelty": 0.7117437722419929,
-      "conflict": 0,
-      "score": 0.7713708185053381
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1348
     },
     "consolidate": {
-      "attempts": 2013,
-      "successes": 2013
+      "attempts": 2014,
+      "successes": 2014
     },
     "connect": {
       "attempts": 1496,
