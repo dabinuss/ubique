@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-17T07:33:13.318587+00:00",
-  "generation": 9921,
-  "focus": "A Treatise of Human Nature",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-17T07:48:46.878173+00:00",
+  "generation": 9922,
+  "focus": "The World as Will and Idea (Vol. 3 of 3)",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "observed_comparison",
   "last_provider": null,
   "last_provider_generation": 9917,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 16149,
+    "nodes": 16153,
     "synapses": 132670,
     "active": 120,
     "archived_synapses": 63016
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 63819,
+    "events": 63824,
     "segments": 2205,
     "compressed_snapshot": true,
     "snapshot_events": 63760
@@ -43,14 +43,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2721,
   "workspace": [
-    {
-      "node_id": "concept:e0f895872d65b2528fee",
-      "label": "knowledge",
-      "activation": 1.0,
-      "novelty": 0.0425531914893617,
-      "conflict": 0,
-      "score": 0.8714893617021278
-    },
     {
       "node_id": "concept:64b218956223eb12d13e",
       "label": "principles",
@@ -63,41 +55,49 @@
       "node_id": "concept:6907de2e8144a57274c7",
       "label": "treatise",
       "activation": 1.0,
-      "novelty": 0.0253613999492772,
+      "novelty": 0.025332488917036097,
       "conflict": 0,
-      "score": 0.866847577986305
+      "score": 0.8668397720075998
     },
     {
-      "node_id": "concept:3cf46ab4906eb199effd",
-      "label": "announced",
+      "node_id": "concept:e53325697fb13beee9b2",
+      "label": "lement",
       "activation": 0.46,
-      "novelty": 0.4338394793926248,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.6963366594360088
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:eddd094a65fe7e599d3d",
-      "label": "gunn",
+      "node_id": "concept:900b3da0b1d9e76d8789",
+      "label": "degeneracy",
       "activation": 0.46,
-      "novelty": 0.4338394793926248,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.6963366594360088
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:124f08e2ce881b978d2a",
-      "label": "guardians",
+      "node_id": "concept:1bf3e004fd407ccbcc4e",
+      "label": "morbid",
       "activation": 0.46,
-      "novelty": 0.4175365344467641,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.6919348643006263
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:eba4ae33f54ae0f96bed",
-      "label": "galaxy",
+      "node_id": "concept:12df7f0ee89f9d7f17fb",
+      "label": "propose",
       "activation": 0.46,
-      "novelty": 0.4175365344467641,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.6919348643006263
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:8e506e203cf1774df7e0",
+      "label": "fears",
+      "activation": 0.46,
+      "novelty": 0.7117437722419929,
+      "conflict": 0,
+      "score": 0.7713708185053381
     }
   ],
   "skills": {
@@ -126,8 +126,8 @@
       "successes": 49
     },
     "experiment": {
-      "attempts": 546,
-      "successes": 544
+      "attempts": 547,
+      "successes": 545
     },
     "question": {
       "attempts": 410,
