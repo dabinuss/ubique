@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-17T06:12:12.434910+00:00",
-  "generation": 9912,
-  "focus": "The World as Will and Idea (Vol. 1 of 3)",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-17T06:34:31.007723+00:00",
+  "generation": 9914,
+  "focus": "The Riddle of the Universe",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 9911,
   "last_search_generation": 8901,
@@ -14,14 +14,14 @@
     "nodes": 16148,
     "synapses": 132600,
     "active": 120,
-    "archived_synapses": 63144
+    "archived_synapses": 63178
   },
   "memory": {
-    "episodes": 6776,
+    "episodes": 6777,
     "claims": 8874,
     "stances": 46,
     "interests": 151,
-    "associative_comparisons": 5563,
+    "associative_comparisons": 5565,
     "screened_interpretations": 62,
     "historical_insight_labels": 136
   },
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 63760,
+    "events": 63771,
     "segments": 2203,
     "compressed_snapshot": true,
     "snapshot_events": 63760
@@ -43,14 +43,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2720,
   "workspace": [
-    {
-      "node_id": "concept:ae835b22fe866b40",
-      "label": "circumstances",
-      "activation": 1.0,
-      "novelty": 0.04746084480303749,
-      "conflict": 0,
-      "score": 0.8728144280968202
-    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -60,44 +52,52 @@
       "score": 0.8715114048177361
     },
     {
-      "node_id": "concept:0e0b1daa1aba5ebe",
-      "label": "question",
+      "node_id": "concept:64b218956223eb12d13e",
+      "label": "principles",
       "activation": 1.0,
-      "novelty": 0.038102495713469235,
+      "novelty": 0.02873976145997988,
       "conflict": 0,
-      "score": 0.8702876738426368
+      "score": 0.8677597355941946
     },
     {
-      "node_id": "concept:0fc468dc240a979e",
-      "label": "collection",
+      "node_id": "concept:6907de2e8144a57274c7",
+      "label": "treatise",
       "activation": 1.0,
-      "novelty": 0.03647638154295094,
+      "novelty": 0.025419420437214034,
       "conflict": 0,
-      "score": 0.8698486230165967
+      "score": 0.8668632435180479
     },
     {
-      "node_id": "concept:53e5e7c5a884893739c4",
-      "label": "experience",
-      "activation": 1.0,
-      "novelty": 0.03454828122300915,
-      "conflict": 0,
-      "score": 0.8693280359302125
-    },
-    {
-      "node_id": "concept:31e73ca869764686",
-      "label": "nature",
-      "activation": 1.0,
-      "novelty": 0.0088386070355312,
-      "conflict": 0,
-      "score": 0.8623864238995935
-    },
-    {
-      "node_id": "concept:1ebf578083dd5232f35f",
-      "label": "itions",
+      "node_id": "concept:3cf46ab4906eb199effd",
+      "label": "announced",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.5025125628140703,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.714878391959799
+    },
+    {
+      "node_id": "concept:eddd094a65fe7e599d3d",
+      "label": "gunn",
+      "activation": 0.46,
+      "novelty": 0.5025125628140703,
+      "conflict": 0,
+      "score": 0.714878391959799
+    },
+    {
+      "node_id": "concept:124f08e2ce881b978d2a",
+      "label": "guardians",
+      "activation": 0.46,
+      "novelty": 0.4807692307692307,
+      "conflict": 0,
+      "score": 0.7090076923076924
+    },
+    {
+      "node_id": "concept:eba4ae33f54ae0f96bed",
+      "label": "galaxy",
+      "activation": 0.46,
+      "novelty": 0.4807692307692307,
+      "conflict": 0,
+      "score": 0.7090076923076924
     }
   ],
   "skills": {
@@ -110,8 +110,8 @@
       "successes": 1798
     },
     "explore": {
-      "attempts": 1352,
-      "successes": 1334
+      "attempts": 1353,
+      "successes": 1335
     },
     "consolidate": {
       "attempts": 1991,
