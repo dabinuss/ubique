@@ -1,14 +1,14 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-17T18:46:47.947874+00:00",
-  "generation": 10001,
-  "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "explore",
+  "timestamp": "2026-11-17T18:50:25.237369+00:00",
+  "generation": 10002,
+  "focus": "Psychology: Briefer Course",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 9996,
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": "groq",
+  "last_provider_generation": 10002,
   "last_search_generation": 8901,
   "cortex": {
     "nodes": 16224,
@@ -18,7 +18,7 @@
   },
   "memory": {
     "episodes": 6799,
-    "claims": 8941,
+    "claims": 8943,
     "stances": 47,
     "interests": 151,
     "associative_comparisons": 5591,
@@ -26,22 +26,22 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8941,
+    "total": 8943,
     "with_evidence_refs": 7773,
-    "without_evidence_refs": 1168,
+    "without_evidence_refs": 1170,
     "source_claims": 1949,
-    "hypotheses": 6861,
+    "hypotheses": 6863,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 64350,
+    "events": 64358,
     "segments": 2224,
     "compressed_snapshot": true,
     "snapshot_events": 64243
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2746,
+  "evidence_reviews": 2748,
   "workspace": [
     {
       "node_id": "concept:ca52e7d1c18961a8c5b3",
@@ -79,9 +79,9 @@
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
-      "novelty": 0.01340931947703654,
+      "novelty": 0.013401232913428037,
       "conflict": 0,
-      "score": 0.8636205162588
+      "score": 0.8636183328866256
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -95,9 +95,9 @@
       "node_id": "concept:4fac4ed5dfc736192855",
       "label": "aims",
       "activation": 0.46,
-      "novelty": 0.6134969325153374,
+      "novelty": 0.5970149253731344,
       "conflict": 0,
-      "score": 0.7448441717791412
+      "score": 0.7403940298507463
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 2020
     },
     "connect": {
-      "attempts": 1500,
-      "successes": 1496
+      "attempts": 1501,
+      "successes": 1497
     },
     "evolve": {
       "attempts": 89,
