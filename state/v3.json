@@ -1,41 +1,41 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-17T18:57:16.264072+00:00",
-  "generation": 10004,
+  "timestamp": "2026-11-17T19:07:54.166617+00:00",
+  "generation": 10006,
   "focus": "The Principles of Psychology, Volume 1 (of 2)",
-  "last_action": "explore",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
+  "last_action_detail": "nrem consolidation",
   "last_provider": null,
   "last_provider_generation": 10002,
   "last_search_generation": 8901,
   "cortex": {
     "nodes": 16224,
-    "synapses": 133401,
+    "synapses": 133403,
     "active": 120,
-    "archived_synapses": 62789
+    "archived_synapses": 62763
   },
   "memory": {
-    "episodes": 6799,
-    "claims": 8943,
+    "episodes": 6801,
+    "claims": 8946,
     "stances": 47,
     "interests": 151,
-    "associative_comparisons": 5591,
+    "associative_comparisons": 5595,
     "screened_interpretations": 63,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8943,
-    "with_evidence_refs": 7773,
+    "total": 8946,
+    "with_evidence_refs": 7776,
     "without_evidence_refs": 1170,
-    "source_claims": 1949,
-    "hypotheses": 6863,
+    "source_claims": 1950,
+    "hypotheses": 6865,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 64366,
+    "events": 64385,
     "segments": 2225,
     "compressed_snapshot": true,
     "snapshot_events": 64243
@@ -52,12 +52,12 @@
       "score": 0.9320961281708946
     },
     {
-      "node_id": "concept:e0f895872d65b2528fee",
-      "label": "knowledge",
+      "node_id": "concept:3676cba44f159ed1",
+      "label": "cognitive",
       "activation": 1.0,
-      "novelty": 0.04222972972972973,
+      "novelty": 0.03945551390806865,
       "conflict": 0,
-      "score": 0.8714020270270271
+      "score": 0.8706529887551786
     },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
@@ -66,14 +66,6 @@
       "novelty": 0.03784295175023652,
       "conflict": 0,
       "score": 0.8702175969725638
-    },
-    {
-      "node_id": "concept:2331eb33ce2c3766148e",
-      "label": "philosophy",
-      "activation": 1.0,
-      "novelty": 0.03765060240963856,
-      "conflict": 0,
-      "score": 0.8701656626506025
     },
     {
       "node_id": "concept:8974969f9f1dd713",
@@ -92,12 +84,20 @@
       "score": 0.8623732091060914
     },
     {
-      "node_id": "concept:4fac4ed5dfc736192855",
-      "label": "aims",
-      "activation": 0.46,
-      "novelty": 0.56657223796034,
+      "node_id": "concept:1c48f6310f1c849b4ac3",
+      "label": "mind",
+      "activation": 1.0,
+      "novelty": 0.006978854072161351,
       "conflict": 0,
-      "score": 0.7321745042492918
+      "score": 0.8618842905994837
+    },
+    {
+      "node_id": "concept:4a2705266f16e4b78aef",
+      "label": "nonhumans",
+      "activation": 0.46,
+      "novelty": 0.5970149253731344,
+      "conflict": 0,
+      "score": 0.7403940298507463
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1353
     },
     "consolidate": {
-      "attempts": 2020,
-      "successes": 2020
+      "attempts": 2021,
+      "successes": 2021
     },
     "connect": {
       "attempts": 1502,
