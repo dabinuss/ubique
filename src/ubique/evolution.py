@@ -219,8 +219,8 @@ def _benchmark_optional(*, candidate_isolation: bool = False) -> int | None:
     """Return benchmark information when available without gating evolution.
 
     Self-modification can change cognition, reflection, or representation in ways
-    that a scalar repository benchmark cannot meaningfully rank. Compilation and
-    tests remain hard safety gates; the benchmark is advisory context only.
+    that a scalar repository benchmark cannot meaningfully rank. Compilation and runtime regression tests are gates for Python changes;
+    the benchmark is advisory context only.
     """
     try:
         return _benchmark(candidate_isolation=candidate_isolation)
@@ -254,7 +254,7 @@ def _requires_passing_suite(changed_paths: list[str]) -> bool:
 
 
 def _advisory_tests() -> tuple[bool, str]:
-    """Report full-suite regressions as learning evidence, not a veto."""
+    """Run the full suite; callers decide whether failure blocks the proposal."""
     proc = _run(["python", "-m", "pytest", "-q"], timeout=180,
                 check=False, env=_candidate_env())
     return proc.returncode == 0, (proc.stdout + proc.stderr)[-4000:]
@@ -304,7 +304,7 @@ def run_evolution(
             if _requires_passing_suite(changed_paths):
                 return EvolutionOutcome(
                     False, proposal["title"], proposal["summary"],
-                    reason="runtime code regression tests failed:\\n" + advisory_details[-2500:],
+                    reason="runtime code regression tests failed:\n" + advisory_details[-2500:],
                     baseline_score=baseline_score,
                 )
             log.warning("Autonomous non-runtime candidate has advisory test failures: %s",
