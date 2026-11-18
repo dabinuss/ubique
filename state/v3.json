@@ -1,41 +1,41 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-18T11:31:22.167891+00:00",
-  "generation": 10119,
-  "focus": "The Physical Basis of Mind",
-  "last_action": "explore",
+  "timestamp": "2026-11-18T11:42:20.738729+00:00",
+  "generation": 10121,
+  "focus": "The Master of Destiny: A Biography of the Brain",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 10115,
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": "gemini",
+  "last_provider_generation": 10121,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 16304,
+    "nodes": 16313,
     "synapses": 134197,
     "active": 120,
-    "archived_synapses": 62931
+    "archived_synapses": 62975
   },
   "memory": {
-    "episodes": 6842,
-    "claims": 9031,
+    "episodes": 6843,
+    "claims": 9033,
     "stances": 48,
     "interests": 151,
-    "associative_comparisons": 5625,
+    "associative_comparisons": 5627,
     "screened_interpretations": 64,
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 9031,
-    "with_evidence_refs": 7840,
+    "total": 9033,
+    "with_evidence_refs": 7842,
     "without_evidence_refs": 1191,
-    "source_claims": 1963,
-    "hypotheses": 6937,
+    "source_claims": 1964,
+    "hypotheses": 6938,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 65144,
+    "events": 65155,
     "segments": 2253,
     "compressed_snapshot": true,
     "snapshot_events": 65058
@@ -43,14 +43,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2785,
   "workspace": [
-    {
-      "node_id": "concept:721048dc35951006",
-      "label": "observations",
-      "activation": 1.0,
-      "novelty": 0.10325245224574083,
-      "conflict": 0,
-      "score": 0.8878781621063501
-    },
     {
       "node_id": "concept:31e73ca869764686",
       "label": "nature",
@@ -68,36 +60,44 @@
       "score": 0.8618586081090385
     },
     {
-      "node_id": "concept:241daf2e753a6a2f37a1",
-      "label": "tall",
+      "node_id": "concept:3165df34fcec14548163",
+      "label": "institute",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:a1557604f30f9988a36f",
-      "label": "slender",
+      "node_id": "concept:849c39839ba518113161",
+      "label": "elisabeth",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:d087b612de88bb812445",
-      "label": "bulky",
+      "node_id": "concept:2b2ff63949b46caaa980",
+      "label": "lukas",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:87346eb282352fda74ad",
-      "label": "fence",
+      "node_id": "concept:f6cf99670ca3aa730d75",
+      "label": "austrian",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:db20d1a5865eb62c4bd4",
+      "label": "psychiatrist",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 2059
     },
     "connect": {
-      "attempts": 1529,
-      "successes": 1525
+      "attempts": 1530,
+      "successes": 1526
     },
     "evolve": {
       "attempts": 91,
