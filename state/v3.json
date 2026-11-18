@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-18T04:11:38.853637+00:00",
-  "generation": 10069,
+  "timestamp": "2026-11-18T04:26:46.421084+00:00",
+  "generation": 10070,
   "focus": "The Principles of Psychology, Volume 2 (of 2)",
   "last_action": "consolidate",
   "last_action_success": true,
   "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 10064,
+  "last_provider": "gemini",
+  "last_provider_generation": 10070,
   "last_search_generation": 8901,
   "cortex": {
     "nodes": 16258,
     "synapses": 133699,
     "active": 120,
-    "archived_synapses": 62755
+    "archived_synapses": 62789
   },
   "memory": {
-    "episodes": 6825,
-    "claims": 8995,
+    "episodes": 6827,
+    "claims": 8998,
     "stances": 47,
     "interests": 151,
     "associative_comparisons": 5611,
@@ -26,22 +26,22 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 8995,
-    "with_evidence_refs": 7809,
-    "without_evidence_refs": 1186,
+    "total": 8998,
+    "with_evidence_refs": 7810,
+    "without_evidence_refs": 1188,
     "source_claims": 1956,
-    "hypotheses": 6908,
+    "hypotheses": 6911,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 64820,
-    "segments": 2240,
+    "events": 64833,
+    "segments": 2241,
     "compressed_snapshot": true,
     "snapshot_events": 64736
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2775,
+  "evidence_reviews": 2776,
   "workspace": [
     {
       "node_id": "concept:0570b840b0d58779",
@@ -63,9 +63,9 @@
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
       "activation": 1.0,
-      "novelty": 0.03765060240963856,
+      "novelty": 0.03758691975192633,
       "conflict": 0,
-      "score": 0.8701656626506025
+      "score": 0.8701484683330201
     },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
@@ -79,25 +79,25 @@
       "node_id": "concept:53e5e7c5a884893739c4",
       "label": "experience",
       "activation": 1.0,
-      "novelty": 0.03345600535296086,
+      "novelty": 0.033405712376816436,
       "conflict": 0,
-      "score": 0.8690331214452995
+      "score": 0.8690195423417404
     },
     {
       "node_id": "concept:8b16ced79976e6a1",
       "label": "action",
       "activation": 1.0,
-      "novelty": 0.012567550584391103,
+      "novelty": 0.012560447151918609,
       "conflict": 0,
-      "score": 0.8633932386577856
+      "score": 0.863391320731018
     },
     {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
       "activation": 1.0,
-      "novelty": 0.006939625260235948,
+      "novelty": 0.006935293709688605,
       "conflict": 0,
-      "score": 0.8618736988202638
+      "score": 0.8618725293016161
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1365
     },
     "consolidate": {
-      "attempts": 2042,
-      "successes": 2042
+      "attempts": 2043,
+      "successes": 2043
     },
     "connect": {
       "attempts": 1517,
