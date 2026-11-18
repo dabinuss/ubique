@@ -1,20 +1,20 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-18T02:05:35.731123+00:00",
-  "generation": 10053,
+  "timestamp": "2026-11-18T02:20:51.690848+00:00",
+  "generation": 10054,
   "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "consolidate",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": "gemini",
+  "last_action_detail": "observed_comparison",
+  "last_provider": null,
   "last_provider_generation": 10053,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 16246,
+    "nodes": 16250,
     "synapses": 133567,
     "active": 120,
-    "archived_synapses": 62771
+    "archived_synapses": 62781
   },
   "memory": {
     "episodes": 6821,
@@ -35,8 +35,8 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 64724,
-    "segments": 2236,
+    "events": 64729,
+    "segments": 2237,
     "compressed_snapshot": true,
     "snapshot_events": 64571
   },
@@ -44,12 +44,28 @@
   "evidence_reviews": 2772,
   "workspace": [
     {
-      "node_id": "concept:3f8b4464a99de3dc8c5c",
-      "label": "religious",
+      "node_id": "concept:0570b840b0d58779",
+      "label": "formation",
       "activation": 1.0,
-      "novelty": 0.034818941504178275,
+      "novelty": 0.04288164665523156,
       "conflict": 0,
-      "score": 0.8694011142061282
+      "score": 0.8715780445969126
+    },
+    {
+      "node_id": "concept:2331eb33ce2c3766148e",
+      "label": "philosophy",
+      "activation": 1.0,
+      "novelty": 0.03765060240963856,
+      "conflict": 0,
+      "score": 0.8701656626506025
+    },
+    {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.03727171077152441,
+      "conflict": 0,
+      "score": 0.8700633619083116
     },
     {
       "node_id": "concept:53e5e7c5a884893739c4",
@@ -68,36 +84,20 @@
       "score": 0.863551930540025
     },
     {
-      "node_id": "concept:3cf46ab4906eb199effd",
-      "label": "announced",
-      "activation": 0.46,
-      "novelty": 0.4175365344467641,
+      "node_id": "concept:8b16ced79976e6a1",
+      "label": "action",
+      "activation": 1.0,
+      "novelty": 0.012581781580271767,
       "conflict": 0,
-      "score": 0.6919348643006263
+      "score": 0.8633970810266733
     },
     {
-      "node_id": "concept:eddd094a65fe7e599d3d",
-      "label": "gunn",
+      "node_id": "concept:7836790352e86b98665f",
+      "label": "coincidence",
       "activation": 0.46,
-      "novelty": 0.4175365344467641,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.6919348643006263
-    },
-    {
-      "node_id": "concept:d0b4034c6ca7ee87f65c",
-      "label": "ahead",
-      "activation": 0.46,
-      "novelty": 0.39525691699604737,
-      "conflict": 0,
-      "score": 0.6859193675889328
-    },
-    {
-      "node_id": "concept:124f08e2ce881b978d2a",
-      "label": "guardians",
-      "activation": 0.46,
-      "novelty": 0.39525691699604737,
-      "conflict": 0,
-      "score": 0.6859193675889328
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -126,8 +126,8 @@
       "successes": 50
     },
     "experiment": {
-      "attempts": 560,
-      "successes": 558
+      "attempts": 561,
+      "successes": 559
     },
     "question": {
       "attempts": 420,
