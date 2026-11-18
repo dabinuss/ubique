@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-18T21:14:55.206668+00:00",
-  "generation": 10148,
-  "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-18T21:30:29.818486+00:00",
+  "generation": 10149,
+  "focus": "The Principles of Psychology, Volume 1 (of 2)",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 10145,
+  "last_action_detail": "Recombined existing memories",
+  "last_provider": "groq",
+  "last_provider_generation": 10149,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 16331,
+    "nodes": 16332,
     "synapses": 134417,
     "active": 120,
-    "archived_synapses": 63015
+    "archived_synapses": 63121
   },
   "memory": {
-    "episodes": 6852,
-    "claims": 9048,
+    "episodes": 6856,
+    "claims": 9052,
     "stances": 49,
     "interests": 151,
     "associative_comparisons": 5635,
@@ -26,22 +26,22 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 9048,
-    "with_evidence_refs": 7856,
-    "without_evidence_refs": 1192,
+    "total": 9052,
+    "with_evidence_refs": 7857,
+    "without_evidence_refs": 1195,
     "source_claims": 1967,
-    "hypotheses": 6950,
+    "hypotheses": 6954,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 65330,
+    "events": 65346,
     "segments": 2260,
     "compressed_snapshot": true,
     "snapshot_events": 65225
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2790,
+  "evidence_reviews": 2794,
   "workspace": [
     {
       "node_id": "concept:e0f895872d65b2528fee",
@@ -79,25 +79,25 @@
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
       "activation": 1.0,
-      "novelty": 0.006868839509564859,
+      "novelty": 0.0068667170225914995,
       "conflict": 0,
-      "score": 0.8618545866675826
+      "score": 0.8618540135960997
     },
     {
-      "node_id": "concept:9d0c52ae7023170cf843",
-      "label": "christopher",
+      "node_id": "concept:c29455335ab18bb4deca",
+      "label": "οντωσ",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:5fb56dd8f1e3df59799f",
-      "label": "cherniak",
+      "node_id": "concept:ffe97bba510b9f5cf1bb",
+      "label": "grade",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.8810572687224669,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.8170854625550661
     }
   ],
   "skills": {
@@ -110,8 +110,8 @@
       "successes": 1798
     },
     "explore": {
-      "attempts": 1397,
-      "successes": 1379
+      "attempts": 1398,
+      "successes": 1380
     },
     "consolidate": {
       "attempts": 2070,
