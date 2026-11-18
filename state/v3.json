@@ -1,9 +1,9 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-18T17:06:22.173178+00:00",
-  "generation": 10136,
-  "focus": "The Nicomachean Ethics of Aristotle",
+  "timestamp": "2026-11-18T17:09:33.536651+00:00",
+  "generation": 10137,
+  "focus": "The World as Will and Idea (Vol. 3 of 3)",
   "last_action": "connect",
   "last_action_success": true,
   "last_action_detail": "Formed tentative analogy",
@@ -11,7 +11,7 @@
   "last_provider_generation": 10132,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 16320,
+    "nodes": 16325,
     "synapses": 134381,
     "active": 120,
     "archived_synapses": 62917
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 65252,
+    "events": 65256,
     "segments": 2257,
     "compressed_snapshot": true,
     "snapshot_events": 65225
@@ -43,6 +43,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2787,
   "workspace": [
+    {
+      "node_id": "concept:e0f895872d65b2528fee",
+      "label": "knowledge",
+      "activation": 1.0,
+      "novelty": 0.04183225266680611,
+      "conflict": 0,
+      "score": 0.8712947082200377
+    },
     {
       "node_id": "concept:5a2a957b269e8f0f",
       "label": "external",
@@ -68,36 +76,28 @@
       "score": 0.8623508924684371
     },
     {
-      "node_id": "concept:60cd4a798cf319dbdbcf",
-      "label": "cxciii",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "node_id": "concept:1c48f6310f1c849b4ac3",
+      "label": "mind",
+      "activation": 1.0,
+      "novelty": 0.00687096330905593,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.8618551600934452
     },
     {
-      "node_id": "concept:6cb09fe72a3471a776f9",
-      "label": "chance",
+      "node_id": "concept:14b24b1a09c9e7ebad6c",
+      "label": "euripus",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:b27d71b05542f265e4b3",
-      "label": "shrouded",
+      "node_id": "concept:b25f3ebeacea006190a4",
+      "label": "perpetually",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.777729411764706
-    },
-    {
-      "node_id": "concept:1ede956d5a5471eda991",
-      "label": "disciplined",
-      "activation": 0.46,
-      "novelty": 0.7352941176470589,
-      "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 2066
     },
     "connect": {
-      "attempts": 1534,
-      "successes": 1530
+      "attempts": 1535,
+      "successes": 1531
     },
     "evolve": {
       "attempts": 91,
