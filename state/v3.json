@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-17T23:55:54.929313+00:00",
-  "generation": 10037,
-  "focus": "The Nicomachean Ethics of Aristotle",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-18T00:11:30.610806+00:00",
+  "generation": 10038,
+  "focus": "The Principles of Psychology, Volume 1 (of 2)",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 10036,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 16231,
+    "nodes": 16234,
     "synapses": 133488,
     "active": 120,
     "archived_synapses": 62762
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 64618,
+    "events": 64622,
     "segments": 2233,
     "compressed_snapshot": true,
     "snapshot_events": 64571
@@ -43,14 +43,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2767,
   "workspace": [
-    {
-      "node_id": "concept:e0f895872d65b2528fee",
-      "label": "knowledge",
-      "activation": 1.0,
-      "novelty": 0.04222972972972973,
-      "conflict": 0,
-      "score": 0.8714020270270271
-    },
     {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
@@ -76,28 +68,36 @@
       "score": 0.8660838215412348
     },
     {
-      "node_id": "concept:d05c34e72352778bfa90",
-      "label": "theatre",
-      "activation": 0.46,
-      "novelty": 0.4514672686230249,
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.01324942033786022,
       "conflict": 0,
-      "score": 0.7010961625282168
+      "score": 0.8635773434912224
     },
     {
-      "node_id": "concept:8dd9ed10798ded82a255",
-      "label": "amateur",
+      "node_id": "concept:32132b88895d8e7e3814",
+      "label": "precarious",
       "activation": 0.46,
-      "novelty": 0.4514672686230249,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7010961625282168
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:c1c289b55166195bdd40",
-      "label": "feminist",
+      "node_id": "concept:d859a706a3c5a6eb4130",
+      "label": "contingency",
       "activation": 0.46,
-      "novelty": 0.4514672686230249,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7010961625282168
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:dcca594f3e5a7eecf273",
+      "label": "caricatured",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -110,8 +110,8 @@
       "successes": 1798
     },
     "explore": {
-      "attempts": 1375,
-      "successes": 1357
+      "attempts": 1376,
+      "successes": 1358
     },
     "consolidate": {
       "attempts": 2032,
