@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-19T11:51:50.196470+00:00",
-  "generation": 10177,
-  "focus": "The World as Will and Idea (Vol. 3 of 3)",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-19T12:07:16.959122+00:00",
+  "generation": 10178,
+  "focus": "The Principles of Psychology, Volume 1 (of 2)",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 10173,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 16335,
+    "nodes": 16340,
     "synapses": 134491,
     "active": 120,
     "archived_synapses": 62963
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 65532,
+    "events": 65536,
     "segments": 2267,
     "compressed_snapshot": true,
     "snapshot_events": 65388
@@ -43,6 +43,14 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2801,
   "workspace": [
+    {
+      "node_id": "concept:411f62e7fd037280",
+      "label": "actually",
+      "activation": 1.0,
+      "novelty": 0.042471862391165856,
+      "conflict": 0,
+      "score": 0.8714674028456149
+    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -60,44 +68,36 @@
       "score": 0.8692847317744155
     },
     {
-      "node_id": "concept:dc602477f692b688bded",
-      "label": "underlie",
-      "activation": 0.46,
-      "novelty": 0.5970149253731344,
+      "node_id": "concept:1c48f6310f1c849b4ac3",
+      "label": "mind",
+      "activation": 1.0,
+      "novelty": 0.006849784231796699,
       "conflict": 0,
-      "score": 0.7403940298507463
+      "score": 0.861849441742585
     },
     {
-      "node_id": "concept:44e8809d6720c56c00d2",
-      "label": "heaped",
+      "node_id": "concept:ad21acb889da17fe038f",
+      "label": "continental",
       "activation": 0.46,
-      "novelty": 0.5970149253731344,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7403940298507463
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:02edbe1bbec68e50b801",
-      "label": "overwhelmingly",
+      "node_id": "concept:e34f64497d462d98b139",
+      "label": "obliged",
       "activation": 0.46,
-      "novelty": 0.5970149253731344,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7403940298507463
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:1049f5a86fdd377109a1",
-      "label": "shewed",
+      "node_id": "concept:a841e04df172227920a1",
+      "label": "aberrations",
       "activation": 0.46,
-      "novelty": 0.5970149253731344,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7403940298507463
-    },
-    {
-      "node_id": "concept:afba1a0ce1c8af744d19",
-      "label": "materials",
-      "activation": 0.46,
-      "novelty": 0.5813953488372093,
-      "conflict": 0,
-      "score": 0.7361767441860465
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 2081
     },
     "connect": {
-      "attempts": 1543,
-      "successes": 1539
+      "attempts": 1544,
+      "successes": 1540
     },
     "evolve": {
       "attempts": 91,
