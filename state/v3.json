@@ -1,13 +1,13 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-20T09:07:34.031407+00:00",
-  "generation": 10191,
-  "focus": "The Principles of Psychology, Volume 1 (of 2)",
-  "last_action": "evolve",
+  "timestamp": "2026-11-20T09:11:15.779228+00:00",
+  "generation": 10192,
+  "focus": "The Nature of Man: Studies in Optimistic Philosophy",
+  "last_action": "question",
   "last_action_success": true,
-  "last_action_detail": "{\"accepted\": true, \"title\": \"Fix truncated source file in SemanticLearner observation fallback\", \"summary\": \"Completes the truncated block at the end of SemanticLearner.observe where the exploratory question fallback was appending to result without returning or closing the list correctly.\", \"branch\": \"main\", \"pr_url\": null, \"commit_sha\": \"a115838d2b30cd4dfff68f2b92af11a27f7f1545\", \"reason\": null, ",
-  "last_provider": "gemini",
+  "last_action_detail": "How do the authors approach ideas, same, thought differently, given their emphases on asked, besides and actually, associations? Which assumptions differ?",
+  "last_provider": null,
   "last_provider_generation": 10191,
   "last_search_generation": 8901,
   "cortex": {
@@ -18,7 +18,7 @@
   },
   "memory": {
     "episodes": 6872,
-    "claims": 9070,
+    "claims": 9071,
     "stances": 50,
     "interests": 151,
     "associative_comparisons": 5647,
@@ -26,17 +26,17 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 9070,
-    "with_evidence_refs": 7872,
+    "total": 9071,
+    "with_evidence_refs": 7873,
     "without_evidence_refs": 1198,
     "source_claims": 1969,
-    "hypotheses": 6970,
+    "hypotheses": 6971,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 65617,
-    "segments": 2270,
+    "events": 65623,
+    "segments": 2271,
     "compressed_snapshot": true,
     "snapshot_events": 65549
   },
@@ -63,41 +63,41 @@
       "node_id": "concept:3cf46ab4906eb199effd",
       "label": "announced",
       "activation": 0.46,
-      "novelty": 0.4024144869215292,
+      "novelty": 0.39525691699604737,
       "conflict": 0,
-      "score": 0.6878519114688129
+      "score": 0.6859193675889328
     },
     {
       "node_id": "concept:eddd094a65fe7e599d3d",
       "label": "gunn",
       "activation": 0.46,
-      "novelty": 0.4024144869215292,
+      "novelty": 0.39525691699604737,
       "conflict": 0,
-      "score": 0.6878519114688129
+      "score": 0.6859193675889328
     },
     {
       "node_id": "concept:d0b4034c6ca7ee87f65c",
       "label": "ahead",
       "activation": 0.46,
-      "novelty": 0.38167938931297707,
+      "novelty": 0.37523452157598497,
       "conflict": 0,
-      "score": 0.6822534351145039
+      "score": 0.6805133208255161
     },
     {
       "node_id": "concept:124f08e2ce881b978d2a",
       "label": "guardians",
       "activation": 0.46,
-      "novelty": 0.38167938931297707,
+      "novelty": 0.37523452157598497,
       "conflict": 0,
-      "score": 0.6822534351145039
+      "score": 0.6805133208255161
     },
     {
       "node_id": "concept:eba4ae33f54ae0f96bed",
       "label": "galaxy",
       "activation": 0.46,
-      "novelty": 0.38167938931297707,
+      "novelty": 0.37523452157598497,
       "conflict": 0,
-      "score": 0.6822534351145039
+      "score": 0.6805133208255161
     }
   ],
   "skills": {
@@ -130,8 +130,8 @@
       "successes": 570
     },
     "question": {
-      "attempts": 429,
-      "successes": 429
+      "attempts": 430,
+      "successes": 430
     },
     "library": {
       "attempts": 14,
