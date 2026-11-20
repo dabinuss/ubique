@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-20T02:27:36.142699+00:00",
-  "generation": 10190,
-  "focus": "The Varieties of Religious Experience: A Study in Human Nature",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-20T09:07:34.031407+00:00",
+  "generation": 10191,
+  "focus": "The Principles of Psychology, Volume 1 (of 2)",
+  "last_action": "evolve",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 10185,
+  "last_action_detail": "{\"accepted\": true, \"title\": \"Fix truncated source file in SemanticLearner observation fallback\", \"summary\": \"Completes the truncated block at the end of SemanticLearner.observe where the exploratory question fallback was appending to result without returning or closing the list correctly.\", \"branch\": \"main\", \"pr_url\": null, \"commit_sha\": \"a115838d2b30cd4dfff68f2b92af11a27f7f1545\", \"reason\": null, ",
+  "last_provider": "gemini",
+  "last_provider_generation": 10191,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 16346,
-    "synapses": 134555,
+    "nodes": 16348,
+    "synapses": 134557,
     "active": 120,
     "archived_synapses": 62987
   },
   "memory": {
-    "episodes": 6870,
-    "claims": 9069,
+    "episodes": 6872,
+    "claims": 9070,
     "stances": 50,
     "interests": 151,
     "associative_comparisons": 5647,
@@ -26,22 +26,22 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 9069,
-    "with_evidence_refs": 7871,
+    "total": 9070,
+    "with_evidence_refs": 7872,
     "without_evidence_refs": 1198,
     "source_claims": 1969,
-    "hypotheses": 6969,
+    "hypotheses": 6970,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 65607,
+    "events": 65617,
     "segments": 2270,
     "compressed_snapshot": true,
     "snapshot_events": 65549
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2801,
+  "evidence_reviews": 2802,
   "workspace": [
     {
       "node_id": "concept:411f62e7fd037280",
@@ -55,49 +55,49 @@
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
       "activation": 1.0,
-      "novelty": 0.006843455945252352,
+      "novelty": 0.006841349114045291,
       "conflict": 0,
-      "score": 0.8618477331052181
+      "score": 0.8618471642607923
     },
     {
       "node_id": "concept:3cf46ab4906eb199effd",
       "label": "announced",
       "activation": 0.46,
-      "novelty": 0.4098360655737705,
+      "novelty": 0.4024144869215292,
       "conflict": 0,
-      "score": 0.6898557377049181
+      "score": 0.6878519114688129
     },
     {
       "node_id": "concept:eddd094a65fe7e599d3d",
       "label": "gunn",
       "activation": 0.46,
-      "novelty": 0.4098360655737705,
+      "novelty": 0.4024144869215292,
       "conflict": 0,
-      "score": 0.6898557377049181
+      "score": 0.6878519114688129
     },
     {
       "node_id": "concept:d0b4034c6ca7ee87f65c",
       "label": "ahead",
       "activation": 0.46,
-      "novelty": 0.3883495145631068,
+      "novelty": 0.38167938931297707,
       "conflict": 0,
-      "score": 0.6840543689320389
+      "score": 0.6822534351145039
     },
     {
       "node_id": "concept:124f08e2ce881b978d2a",
       "label": "guardians",
       "activation": 0.46,
-      "novelty": 0.3883495145631068,
+      "novelty": 0.38167938931297707,
       "conflict": 0,
-      "score": 0.6840543689320389
+      "score": 0.6822534351145039
     },
     {
       "node_id": "concept:eba4ae33f54ae0f96bed",
       "label": "galaxy",
       "activation": 0.46,
-      "novelty": 0.3883495145631068,
+      "novelty": 0.38167938931297707,
       "conflict": 0,
-      "score": 0.6840543689320389
+      "score": 0.6822534351145039
     }
   ],
   "skills": {
@@ -122,8 +122,8 @@
       "successes": 1543
     },
     "evolve": {
-      "attempts": 91,
-      "successes": 51
+      "attempts": 92,
+      "successes": 52
     },
     "experiment": {
       "attempts": 572,
