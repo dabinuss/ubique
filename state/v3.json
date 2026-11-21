@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-21T07:33:39.134503+00:00",
-  "generation": 10222,
-  "focus": "The Analysis of Mind",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-21T07:49:16.688662+00:00",
+  "generation": 10223,
+  "focus": "The Psychology of the Emotions",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 10217,
+  "last_action_detail": "Formed tentative analogy",
+  "last_provider": "gemini",
+  "last_provider_generation": 10223,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 16355,
+    "nodes": 16362,
     "synapses": 134618,
     "active": 120,
-    "archived_synapses": 62882
+    "archived_synapses": 62942
   },
   "memory": {
-    "episodes": 6881,
-    "claims": 9093,
+    "episodes": 6882,
+    "claims": 9095,
     "stances": 50,
     "interests": 151,
     "associative_comparisons": 5657,
@@ -26,23 +26,31 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 9093,
-    "with_evidence_refs": 7890,
-    "without_evidence_refs": 1203,
+    "total": 9095,
+    "with_evidence_refs": 7891,
+    "without_evidence_refs": 1204,
     "source_claims": 1973,
-    "hypotheses": 6989,
+    "hypotheses": 6991,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 65822,
+    "events": 65831,
     "segments": 2278,
     "compressed_snapshot": true,
     "snapshot_events": 65714
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2808,
+  "evidence_reviews": 2810,
   "workspace": [
+    {
+      "node_id": "concept:10d0d9c7a5909812",
+      "label": "test",
+      "activation": 1.0,
+      "novelty": 0.04608294930875576,
+      "conflict": 0,
+      "score": 0.8724423963133641
+    },
     {
       "node_id": "concept:e0f895872d65b2528fee",
       "label": "knowledge",
@@ -52,52 +60,44 @@
       "score": 0.871252344238383
     },
     {
-      "node_id": "concept:39b88951a7e55856940a",
-      "label": "assisted",
-      "activation": 0.46,
-      "novelty": 0.6896551724137931,
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.03727171077152441,
       "conflict": 0,
-      "score": 0.7654068965517242
+      "score": 0.8700633619083116
     },
     {
-      "node_id": "concept:f5778592072e93a9a160",
-      "label": "slavery",
+      "node_id": "concept:d4191834714542dcf3e5",
+      "label": "incident",
       "activation": 0.46,
-      "novelty": 0.6493506493506493,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7545246753246754
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:da925a30e31f7fdaa704",
-      "label": "older",
+      "node_id": "concept:62de08164094c656322e",
+      "label": "rearrangement",
       "activation": 0.46,
-      "novelty": 0.6134969325153374,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7448441717791412
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:25cf621809d2abf7eae5",
-      "label": "fluctuation",
+      "node_id": "concept:5e6e1434fceaca923ec0",
+      "label": "squaring",
       "activation": 0.46,
-      "novelty": 0.5524861878453039,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7283712707182322
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:6a934b45144e3758911e",
-      "label": "secure",
+      "node_id": "concept:8293bf8fdcb04a38d53c",
+      "label": "shoulders",
       "activation": 0.46,
-      "novelty": 0.5141388174807199,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7180174807197944
-    },
-    {
-      "node_id": "concept:b7679dfa95094e8a9417",
-      "label": "eternal",
-      "activation": 0.46,
-      "novelty": 0.3883495145631068,
-      "conflict": 0,
-      "score": 0.6840543689320389
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 2096
     },
     "connect": {
-      "attempts": 1554,
-      "successes": 1550
+      "attempts": 1555,
+      "successes": 1551
     },
     "evolve": {
       "attempts": 92,
