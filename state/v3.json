@@ -1,9 +1,9 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-22T23:27:23.715632+00:00",
-  "generation": 10254,
-  "focus": "The Republic of Plato",
+  "timestamp": "2026-11-22T23:43:21.739625+00:00",
+  "generation": 10255,
+  "focus": "The World as Will and Idea (Vol. 1 of 3)",
   "last_action": "consolidate",
   "last_action_success": true,
   "last_action_detail": "nrem consolidation",
@@ -11,10 +11,10 @@
   "last_provider_generation": 10251,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 16375,
-    "synapses": 134747,
+    "nodes": 16383,
+    "synapses": 134787,
     "active": 120,
-    "archived_synapses": 62825
+    "archived_synapses": 62715
   },
   "memory": {
     "episodes": 6891,
@@ -35,29 +35,29 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 66029,
+    "events": 66036,
     "segments": 2286,
     "compressed_snapshot": true,
-    "snapshot_events": 65875
+    "snapshot_events": 66036
   },
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2815,
   "workspace": [
     {
+      "node_id": "concept:10d0d9c7a5909812",
+      "label": "test",
+      "activation": 1.0,
+      "novelty": 0.045987583352494824,
+      "conflict": 0,
+      "score": 0.8724166475051736
+    },
+    {
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
       "activation": 1.0,
-      "novelty": 0.036961744594344856,
+      "novelty": 0.03690036900369004,
       "conflict": 0,
-      "score": 0.8699796710404732
-    },
-    {
-      "node_id": "concept:3f8b4464a99de3dc8c5c",
-      "label": "religious",
-      "activation": 1.0,
-      "novelty": 0.034334763948497854,
-      "conflict": 0,
-      "score": 0.8692703862660944
+      "score": 0.8699630996309964
     },
     {
       "node_id": "concept:e2d5a675d4eab169",
@@ -76,28 +76,28 @@
       "score": 0.8675355847055541
     },
     {
-      "node_id": "concept:8974969f9f1dd713",
-      "label": "without",
-      "activation": 1.0,
-      "novelty": 0.012631844880944864,
-      "conflict": 0,
-      "score": 0.8634105981178553
-    },
-    {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
       "activation": 1.0,
-      "novelty": 0.006784950978729179,
+      "novelty": 0.006782880010852608,
       "conflict": 0,
-      "score": 0.8618319367642568
+      "score": 0.8618313776029303
     },
     {
-      "node_id": "concept:82165524751b35d559e4",
-      "label": "vaise",
+      "node_id": "concept:fe435913d2038a836bbc",
+      "label": "staining",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:171cd9969103f91b3289",
+      "label": "decisive",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1401
     },
     "consolidate": {
-      "attempts": 2107,
-      "successes": 2107
+      "attempts": 2108,
+      "successes": 2108
     },
     "connect": {
       "attempts": 1562,
