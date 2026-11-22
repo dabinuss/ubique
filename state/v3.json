@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-22T01:13:27.360099+00:00",
-  "generation": 10233,
-  "focus": "The World as Will and Idea (Vol. 3 of 3)",
-  "last_action": "explore",
+  "timestamp": "2026-11-22T08:00:01.188455+00:00",
+  "generation": 10234,
+  "focus": "The World as Will and Idea (Vol. 1 of 3)",
+  "last_action": "consolidate",
   "last_action_success": true,
-  "last_action_detail": "Recombined existing memories",
-  "last_provider": null,
-  "last_provider_generation": 10229,
+  "last_action_detail": "nrem consolidation",
+  "last_provider": "gemini",
+  "last_provider_generation": 10234,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 16366,
-    "synapses": 134668,
+    "nodes": 16368,
+    "synapses": 134670,
     "active": 120,
-    "archived_synapses": 62910
+    "archived_synapses": 62786
   },
   "memory": {
-    "episodes": 6884,
-    "claims": 9102,
+    "episodes": 6886,
+    "claims": 9103,
     "stances": 50,
     "interests": 151,
     "associative_comparisons": 5659,
@@ -26,22 +26,22 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 9102,
-    "with_evidence_refs": 7896,
+    "total": 9103,
+    "with_evidence_refs": 7897,
     "without_evidence_refs": 1206,
     "source_claims": 1974,
-    "hypotheses": 6997,
+    "hypotheses": 6998,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 65896,
+    "events": 65905,
     "segments": 2281,
     "compressed_snapshot": true,
     "snapshot_events": 65875
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2813,
+  "evidence_reviews": 2814,
   "workspace": [
     {
       "node_id": "concept:10d0d9c7a5909812",
@@ -55,9 +55,9 @@
       "node_id": "concept:0e0b1daa1aba5ebe",
       "label": "question",
       "activation": 1.0,
-      "novelty": 0.037023324694557574,
+      "novelty": 0.036961744594344856,
       "conflict": 0,
-      "score": 0.8699962976675306
+      "score": 0.8699796710404732
     },
     {
       "node_id": "concept:3f8b4464a99de3dc8c5c",
@@ -79,25 +79,25 @@
       "node_id": "concept:e9dca10d65145f3c3244",
       "label": "expectancy",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:64b527581fc67f473b50",
       "label": "movingly",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     },
     {
       "node_id": "concept:4f2aad5d11f26f9248fb",
       "label": "conversions",
       "activation": 0.46,
-      "novelty": 0.8474576271186441,
+      "novelty": 0.8163265306122448,
       "conflict": 0,
-      "score": 0.8080135593220339
+      "score": 0.7996081632653061
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1397
     },
     "consolidate": {
-      "attempts": 2099,
-      "successes": 2099
+      "attempts": 2100,
+      "successes": 2100
     },
     "connect": {
       "attempts": 1557,
