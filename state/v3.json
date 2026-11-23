@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-23T04:24:05.436649+00:00",
-  "generation": 10270,
+  "timestamp": "2026-11-23T04:27:45.714160+00:00",
+  "generation": 10271,
   "focus": "The Principles of Psychology, Volume 2 (of 2)",
-  "last_action": "evolve",
+  "last_action": "explore",
   "last_action_success": true,
-  "last_action_detail": "{\"accepted\": true, \"title\": \"Repair truncated code and maintain journal continuity\", \"summary\": \"Completes the truncated block at the end of SemanticLearner.observe() in semantics.py to properly return the result list of exploratory questions and maintain clean syntax.\", \"branch\": \"main\", \"pr_url\": null, \"commit_sha\": \"393aab03185d881847a33ead2c69d79d6a3b2660\", \"reason\": null, \"baseline_score\": 10",
+  "last_action_detail": "Recombined existing memories",
   "last_provider": null,
   "last_provider_generation": 10268,
   "last_search_generation": 8901,
@@ -14,7 +14,7 @@
     "nodes": 16383,
     "synapses": 134842,
     "active": 120,
-    "archived_synapses": 62662
+    "archived_synapses": 62732
   },
   "memory": {
     "episodes": 6896,
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 66128,
+    "events": 66132,
     "segments": 2290,
     "compressed_snapshot": true,
     "snapshot_events": 66036
@@ -79,25 +79,25 @@
       "node_id": "concept:4d591b76b7170de5ed66",
       "label": "prison",
       "activation": 0.46,
-      "novelty": 0.7874015748031495,
+      "novelty": 0.7604562737642586,
       "conflict": 0,
-      "score": 0.7917984251968504
+      "score": 0.78452319391635
     },
     {
       "node_id": "concept:2870b96cfef35429140e",
       "label": "doors",
       "activation": 0.46,
-      "novelty": 0.7352941176470589,
+      "novelty": 0.7117437722419929,
       "conflict": 0,
-      "score": 0.777729411764706
+      "score": 0.7713708185053381
     },
     {
       "node_id": "concept:cf1a8e2ff02dcd9e6858",
       "label": "hearing",
       "activation": 0.46,
-      "novelty": 0.6134969325153374,
+      "novelty": 0.5970149253731344,
       "conflict": 0,
-      "score": 0.7448441717791412
+      "score": 0.7403940298507463
     }
   ],
   "skills": {
@@ -110,8 +110,8 @@
       "successes": 1798
     },
     "explore": {
-      "attempts": 1422,
-      "successes": 1404
+      "attempts": 1423,
+      "successes": 1405
     },
     "consolidate": {
       "attempts": 2112,
