@@ -1,17 +1,17 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-25T20:26:26.697730+00:00",
-  "generation": 10332,
-  "focus": "The Nicomachean Ethics of Aristotle",
-  "last_action": "consolidate",
+  "timestamp": "2026-11-25T20:42:13.960173+00:00",
+  "generation": 10333,
+  "focus": "Psychology: Briefer Course",
+  "last_action": "connect",
   "last_action_success": true,
-  "last_action_detail": "nrem consolidation",
+  "last_action_detail": "Formed tentative analogy",
   "last_provider": null,
   "last_provider_generation": 10331,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 16401,
+    "nodes": 16402,
     "synapses": 135236,
     "active": 120,
     "archived_synapses": 62486
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 66516,
+    "events": 66520,
     "segments": 2305,
     "compressed_snapshot": true,
     "snapshot_events": 66362
@@ -60,6 +60,14 @@
       "score": 0.8688076985809818
     },
     {
+      "node_id": "concept:8974969f9f1dd713",
+      "label": "without",
+      "activation": 1.0,
+      "novelty": 0.012454851164528585,
+      "conflict": 0,
+      "score": 0.8633628098144228
+    },
+    {
       "node_id": "concept:1c48f6310f1c849b4ac3",
       "label": "mind",
       "activation": 1.0,
@@ -68,36 +76,28 @@
       "score": 0.8618202656239466
     },
     {
-      "node_id": "concept:3cf46ab4906eb199effd",
-      "label": "announced",
+      "node_id": "concept:fb9cf75606b4070dd6a9",
+      "label": "enabled",
       "activation": 0.46,
-      "novelty": 0.351493848857645,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.6741033391915643
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:eddd094a65fe7e599d3d",
-      "label": "gunn",
+      "node_id": "concept:b0688a56fae3ddb430c1",
+      "label": "employ",
       "activation": 0.46,
-      "novelty": 0.351493848857645,
+      "novelty": 0.7874015748031495,
       "conflict": 0,
-      "score": 0.6741033391915643
+      "score": 0.7917984251968504
     },
     {
-      "node_id": "concept:d0b4034c6ca7ee87f65c",
-      "label": "ahead",
+      "node_id": "concept:bfcf44328d2b807c8cfd",
+      "label": "discourse",
       "activation": 0.46,
-      "novelty": 0.33557046979865773,
+      "novelty": 0.6688963210702341,
       "conflict": 0,
-      "score": 0.6698040268456376
-    },
-    {
-      "node_id": "concept:124f08e2ce881b978d2a",
-      "label": "guardians",
-      "activation": 0.46,
-      "novelty": 0.33557046979865773,
-      "conflict": 0,
-      "score": 0.6698040268456376
+      "score": 0.7598020066889632
     }
   ],
   "skills": {
@@ -118,8 +118,8 @@
       "successes": 2134
     },
     "connect": {
-      "attempts": 1580,
-      "successes": 1576
+      "attempts": 1581,
+      "successes": 1577
     },
     "evolve": {
       "attempts": 93,
