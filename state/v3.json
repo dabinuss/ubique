@@ -1,12 +1,12 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-26T12:08:00.416244+00:00",
-  "generation": 10349,
-  "focus": "The Psychology of the Emotions",
-  "last_action": "evolve",
+  "timestamp": "2026-11-26T12:19:45.809169+00:00",
+  "generation": 10351,
+  "focus": "Psychology of the Unconscious",
+  "last_action": "experiment",
   "last_action_success": true,
-  "last_action_detail": "{\"accepted\": true, \"title\": \"Fix truncated source-ending in semantics.py fallback block\", \"summary\": \"Completed the truncated return statement in semantics.py's observe fallback block, enabling successful execution of exploratory question generation when no cross-source comparisons are produced.\", \"branch\": \"main\", \"pr_url\": null, \"commit_sha\": \"a7cc7ce39b2eae97b774d9e91f019aa6cef6c113\", \"reason\":",
+  "last_action_detail": "observed_comparison",
   "last_provider": null,
   "last_provider_generation": 10348,
   "last_search_generation": 8901,
@@ -17,11 +17,11 @@
     "archived_synapses": 62558
   },
   "memory": {
-    "episodes": 6919,
+    "episodes": 6920,
     "claims": 9156,
     "stances": 51,
     "interests": 151,
-    "associative_comparisons": 5695,
+    "associative_comparisons": 5697,
     "screened_interpretations": 68,
     "historical_insight_labels": 136
   },
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 66624,
+    "events": 66636,
     "segments": 2309,
     "compressed_snapshot": true,
     "snapshot_events": 66524
@@ -43,6 +43,22 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2826,
   "workspace": [
+    {
+      "node_id": "concept:2331eb33ce2c3766148e",
+      "label": "philosophy",
+      "activation": 1.0,
+      "novelty": 0.03671745915182669,
+      "conflict": 0,
+      "score": 0.8699137139709932
+    },
+    {
+      "node_id": "concept:6907de2e8144a57274c7",
+      "label": "treatise",
+      "activation": 1.0,
+      "novelty": 0.024494794856093082,
+      "conflict": 0,
+      "score": 0.8666135946111451
+    },
     {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
@@ -52,52 +68,36 @@
       "score": 0.8633571650606156
     },
     {
-      "node_id": "concept:a6380b7d3ad7a3772542",
-      "label": "synoptic",
-      "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "node_id": "concept:31e73ca869764686",
+      "label": "nature",
+      "activation": 1.0,
+      "novelty": 0.008572653236176597,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.8623146163737678
     },
     {
-      "node_id": "concept:9de86b482e09cb5e5588",
-      "label": "mimicry",
+      "node_id": "concept:0fee7196f6817d6f81e7",
+      "label": "introduce",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.4807692307692307,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.7090076923076924
     },
     {
-      "node_id": "concept:15b45021ccf8ed60039e",
-      "label": "hatred",
+      "node_id": "concept:ad7fbdd96e2166ace3e2",
+      "label": "scottish",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.4338394793926248,
       "conflict": 0,
-      "score": 0.8269064220183486
+      "score": 0.6963366594360088
     },
     {
-      "node_id": "concept:fe5b0b1c5a954c1cd2c9",
-      "label": "outspoken",
+      "node_id": "concept:e2411f90645028dcc347",
+      "label": "influential",
       "activation": 0.46,
-      "novelty": 0.9174311926605504,
+      "novelty": 0.3305785123966942,
       "conflict": 0,
-      "score": 0.8269064220183486
-    },
-    {
-      "node_id": "concept:9c0211c51d04574fdaee",
-      "label": "detail",
-      "activation": 0.46,
-      "novelty": 0.8474576271186441,
-      "conflict": 0,
-      "score": 0.8080135593220339
-    },
-    {
-      "node_id": "concept:a8421af85259088be34c",
-      "label": "comparing",
-      "activation": 0.46,
-      "novelty": 0.6134969325153374,
-      "conflict": 0,
-      "score": 0.7448441717791412
+      "score": 0.6684561983471076
     }
   ],
   "skills": {
@@ -126,8 +126,8 @@
       "successes": 54
     },
     "experiment": {
-      "attempts": 586,
-      "successes": 584
+      "attempts": 587,
+      "successes": 585
     },
     "question": {
       "attempts": 441,

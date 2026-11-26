@@ -1,7 +1,11 @@
 {
-  "timestamp": "2026-11-26T12:11:50.915493+00:00",
-  "generation": 10350,
-  "should_continue": false,
-  "mode": "quiet",
-  "reason": "v3_failed:NameError"
+  "timestamp": "2026-11-26T12:19:45.980549+00:00",
+  "generation": 10351,
+  "mode": "active",
+  "should_continue": true,
+  "minimum_delay_seconds": 60,
+  "reason": "v3:experiment",
+  "selected_action": "experiment",
+  "workspace_activation": 1.0,
+  "watchdog_schedule": "3,18,33,48 * * * *"
 }
