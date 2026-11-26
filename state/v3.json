@@ -1,24 +1,24 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-26T21:55:11.042422+00:00",
-  "generation": 10364,
-  "focus": "The World as Will and Idea, Volume 1",
+  "timestamp": "2026-11-26T22:11:27.256535+00:00",
+  "generation": 10365,
+  "focus": "Analysis of the Phenomena of the Human Mind",
   "last_action": "consolidate",
   "last_action_success": true,
   "last_action_detail": "nrem consolidation",
-  "last_provider": null,
-  "last_provider_generation": 10359,
+  "last_provider": "gemini",
+  "last_provider_generation": 10365,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 16414,
+    "nodes": 16415,
     "synapses": 135343,
     "active": 120,
     "archived_synapses": 62537
   },
   "memory": {
-    "episodes": 6926,
-    "claims": 9164,
+    "episodes": 6928,
+    "claims": 9165,
     "stances": 51,
     "interests": 151,
     "associative_comparisons": 5701,
@@ -26,22 +26,22 @@
     "historical_insight_labels": 136
   },
   "knowledge_diagnostics": {
-    "total": 9164,
-    "with_evidence_refs": 7957,
+    "total": 9165,
+    "with_evidence_refs": 7958,
     "without_evidence_refs": 1207,
     "source_claims": 1988,
-    "hypotheses": 7045,
+    "hypotheses": 7046,
     "corroborated_labels": 0,
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 66720,
+    "events": 66731,
     "segments": 2313,
     "compressed_snapshot": true,
     "snapshot_events": 66686
   },
   "migration": "v3_snapshot_and_deltas",
-  "evidence_reviews": 2827,
+  "evidence_reviews": 2828,
   "workspace": [
     {
       "node_id": "concept:2331eb33ce2c3766148e",
@@ -52,12 +52,28 @@
       "score": 0.8698810612991765
     },
     {
+      "node_id": "concept:0e0b1daa1aba5ebe",
+      "label": "question",
+      "activation": 1.0,
+      "novelty": 0.03653635367190355,
+      "conflict": 0,
+      "score": 0.8698648154914139
+    },
+    {
       "node_id": "concept:6907de2e8144a57274c7",
       "label": "treatise",
       "activation": 1.0,
       "novelty": 0.024333860566978952,
       "conflict": 0,
       "score": 0.8665701423530843
+    },
+    {
+      "node_id": "concept:5a2a957b269e8f0f",
+      "label": "external",
+      "activation": 1.0,
+      "novelty": 0.022464337863641468,
+      "conflict": 0,
+      "score": 0.8660653712231832
     },
     {
       "node_id": "concept:31e73ca869764686",
@@ -68,36 +84,20 @@
       "score": 0.862300417483173
     },
     {
-      "node_id": "concept:3fd01edf8b070f07",
-      "label": "conclusively",
+      "node_id": "concept:09eb29b13e2eb4aa47ed",
+      "label": "ption",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:8f289b828ab9b83eec66",
+      "label": "vary",
       "activation": 0.46,
       "novelty": 0.6493506493506493,
       "conflict": 0,
       "score": 0.7545246753246754
-    },
-    {
-      "node_id": "concept:041ab86fbaaa651aba7c",
-      "label": "cited",
-      "activation": 0.46,
-      "novelty": 0.5970149253731344,
-      "conflict": 0,
-      "score": 0.7403940298507463
-    },
-    {
-      "node_id": "concept:6c4aef2bcbd30f82e94e",
-      "label": "abysses",
-      "activation": 0.46,
-      "novelty": 0.5813953488372093,
-      "conflict": 0,
-      "score": 0.7361767441860465
-    },
-    {
-      "node_id": "concept:0f82aca66af91493b1ff",
-      "label": "length",
-      "activation": 0.46,
-      "novelty": 0.3883495145631068,
-      "conflict": 0,
-      "score": 0.6840543689320389
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1423
     },
     "consolidate": {
-      "attempts": 2144,
-      "successes": 2144
+      "attempts": 2145,
+      "successes": 2145
     },
     "connect": {
       "attempts": 1588,
