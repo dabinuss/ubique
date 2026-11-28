@@ -1,9 +1,9 @@
 {
   "version": 3,
   "architecture": "neurocognitive-v3",
-  "timestamp": "2026-11-28T04:41:11.583930+00:00",
-  "generation": 10414,
-  "focus": "The Republic of Plato",
+  "timestamp": "2026-11-28T04:57:29.583483+00:00",
+  "generation": 10415,
+  "focus": "The Riddle of the Universe",
   "last_action": "consolidate",
   "last_action_success": true,
   "last_action_detail": "nrem consolidation",
@@ -11,10 +11,10 @@
   "last_provider_generation": 10410,
   "last_search_generation": 8901,
   "cortex": {
-    "nodes": 16425,
+    "nodes": 16430,
     "synapses": 135496,
     "active": 120,
-    "archived_synapses": 62730
+    "archived_synapses": 62732
   },
   "memory": {
     "episodes": 6945,
@@ -35,7 +35,7 @@
     "disputed_or_rejected": 0
   },
   "journal": {
-    "events": 67044,
+    "events": 67051,
     "segments": 2325,
     "compressed_snapshot": true,
     "snapshot_events": 67018
@@ -43,14 +43,6 @@
   "migration": "v3_snapshot_and_deltas",
   "evidence_reviews": 2835,
   "workspace": [
-    {
-      "node_id": "concept:e0f895872d65b2528fee",
-      "label": "knowledge",
-      "activation": 1.0,
-      "novelty": 0.041211621677313,
-      "conflict": 0,
-      "score": 0.8711271378528747
-    },
     {
       "node_id": "concept:2331eb33ce2c3766148e",
       "label": "philosophy",
@@ -68,14 +60,6 @@
       "score": 0.8687690808704125
     },
     {
-      "node_id": "concept:e2d5a675d4eab169",
-      "label": "continue",
-      "activation": 1.0,
-      "novelty": 0.027944669554282524,
-      "conflict": 0,
-      "score": 0.8675450607796564
-    },
-    {
       "node_id": "concept:8974969f9f1dd713",
       "label": "without",
       "activation": 1.0,
@@ -84,20 +68,36 @@
       "score": 0.8633181762320266
     },
     {
-      "node_id": "concept:8dba6bdfdceaf274ccb7",
-      "label": "repetitions",
+      "node_id": "concept:80c3505221edfd5dc273",
+      "label": "saloons",
       "activation": 0.46,
-      "novelty": 0.7604562737642586,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.78452319391635
+      "score": 0.837573205741627
     },
     {
-      "node_id": "concept:bb5d54010a1c2cd39b11",
-      "label": "whoever",
+      "node_id": "concept:1bbf708cf261914ac207",
+      "label": "fumes",
       "activation": 0.46,
-      "novelty": 0.6493506493506493,
+      "novelty": 0.9569377990430623,
       "conflict": 0,
-      "score": 0.7545246753246754
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:f0dd258095f14992b824",
+      "label": "liquor",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
+    },
+    {
+      "node_id": "concept:c830c7ed6860eb48aa01",
+      "label": "accursed",
+      "activation": 0.46,
+      "novelty": 0.9569377990430623,
+      "conflict": 0,
+      "score": 0.837573205741627
     }
   ],
   "skills": {
@@ -114,8 +114,8 @@
       "successes": 1434
     },
     "consolidate": {
-      "attempts": 2161,
-      "successes": 2161
+      "attempts": 2162,
+      "successes": 2162
     },
     "connect": {
       "attempts": 1601,
